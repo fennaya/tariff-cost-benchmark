@@ -6,23 +6,31 @@
 
 | Model | Wrong answers | Invalid | Suffix only wrong | First 6 real, first 8 not | Fabricated |
 |---|---|---|---|---|---|
-| gpt-oss-20b | 1,098 | 1,080 (98.4%) | 13.5% of invalid | 38.8% | 47.7% |
-| gpt-oss-120b | 1,092 | 1,061 (97.2%) | 22.9% | 55.6% | 21.3% |
+| gpt-oss-20b | 1,098 | 1,080 (98.4%) | 13.5% of invalid | 39.1% | 47.4% |
+| gpt-oss-120b | 1,092 | 1,061 (97.2%) | 22.9% | 56.1% | 20.8% |
 | allam-2-7b | 1,079 | 957 (88.7%) | 6.7% | 37.5% | 55.0% |
 
-Fixing only the 2-digit suffix would rescue 6.7% to 22.9% of invalid answers. Stale training data does not explain it: 1 invalid answer across all three models was a code that existed in a 2022 to 2025 HTS release. A one-turn guardrail ("that code does not exist, give a valid one") turned 1.5% to 7.2% of invalid answers into valid codes, and none into the correct code. Details and the chart are in [findings.md](findings.md).
+**A validity check detects most errors. Asking the model to retry does not repair them.** A check that flags any non-existent code catches 98.4%, 97.2%, and 88.7% of wrong answers (gpt-oss-20b, gpt-oss-120b, allam-2-7b), and flags none of the correct 10-digit answers (0 of 6 and 0 of 19 for the two models that have any). It also flags most answers that are right at the 8-digit duty level but lack a valid suffix (55 of 61 for gpt-oss-120b), so it marks answers for review rather than classifying. When a model was told its code does not exist and asked again, 1.5% to 7.2% of its invalid answers became valid codes, and none became the correct code. Fixing only the 2-digit suffix would rescue 6.7% to 22.9% of invalid answers. Stale training data does not explain it: 1 invalid answer across all three models was a code that existed in a 2022 to 2025 HTS release. Details and the chart are in [findings.md](findings.md).
 
 ![Error breakdown by model](figures/error_breakdown.png)
 
-**Direction of errors:** Only 7.8% to 13.4% of wrong answers can be compared on duty, which needs a rate for both the true and the predicted code. That leaves 85 to 145 answers per model. Some of them are 8-digit answers that resolve to a rate through their prefix. In 46 to 115 of those per model, the rate differs, and 63.8% to 67.4% of the rate-changing cases underpaid. That beats a chance baseline matched to each model's own error depth (p < 0.001 for all three). Against a plain 50% split, only allam-2-7b (p = 0.0014) and gpt-oss-20b (p = 0.026) are significant. This describes the small comparable set, not all errors. For wrong answers that are valid codes, the median duty at stake is $1,500 / $0 / $4,100 per $100,000 (gpt-oss-20b / gpt-oss-120b / allam-2-7b; n = 15 / 31 / 112).
+**Direction of errors:** Only 8.5% to 13.6% of wrong answers can be compared on duty, because that needs a rate for both the true and the predicted code. In 46 to 116 of those per model, the rate differs, and 65.3% to 67.4% of those rate-changing errors underpaid.
 
-**Headline:** Three free, open-weight models on Groq's free tier were tested. They are `openai/gpt-oss-20b`, `openai/gpt-oss-120b`, and `allam-2-7b`. None scores above 5.6% on the duty-relevant 8-digit code. This is a finding about these three models. It is not a claim that the task is inherently hard. Prior work reports far higher scores under different conditions, such as paid frontier models, fine-tuning, and a different benchmark.
+| Model | Rate-changing errors (n) | Underpaid | Underpay share (95% CI) | p vs. matched-depth chance baseline |
+|---|---|---|---|---|
+| gpt-oss-20b | 46 | 31 | 67.4% (53.0% to 79.1%) | < 0.001 |
+| gpt-oss-120b | 49 | 32 | 65.3% (51.3% to 77.1%) | < 0.001 |
+| allam-2-7b | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 |
+
+All three models have at least 30 cases and beat the chance baseline, so the underpay lean is significant for each. The intervals are wide for gpt-oss-20b and gpt-oss-120b. This describes the small comparable set, not all errors. For wrong answers that are valid codes, the median duty at stake is $1,500 / $0 / $4,000 per $100,000 (gpt-oss-20b / gpt-oss-120b / allam-2-7b; n = 15 / 31 / 113). The gpt-oss-20b figure has too few cases to confirm.
+
+**Headline:** Three free, open-weight models on Groq's free tier were tested. They are `openai/gpt-oss-20b`, `openai/gpt-oss-120b`, and `allam-2-7b`. None scores above 5.6% on the duty-relevant 8-digit code. Most of their wrong answers are invalid codes, and a validity check catches them, but retrying does not make them right. This is a finding about these three models. It is not a claim that the task is inherently hard. Prior work reports far higher scores under different conditions, such as paid frontier models, fine-tuning, and a different benchmark.
 
 **Key numbers:**
 - **5.6% / 2.4% / 0.3%** is the 8-digit (duty-bearing) accuracy for gpt-oss-120b / allam-2-7b / gpt-oss-20b. The set is 1,098 post-training-cutoff CBP rulings.
 - **0.5% / 1.7% / 0.0%** is the 10-digit accuracy for the same models.
 
-Both findings survived a hostile Round 2 re-audit. It covered bug hunts, baseline tests, a stripping-quality review, and a comparison with prior work. See [findings.md](findings.md) for the full results, method, and limitations. See [DECISIONS.md](DECISIONS.md) for the audit trail. The ratios above come from `scripts/derive_readme_shares.py`, `scripts/analyze_invalid_codes.py`, `scripts/analyze_guardrail.py`, and `scripts/check_revision_impact.py` (outputs in `review/`).
+Both findings survived a hostile Round 2 re-audit. It covered bug hunts, baseline tests, a stripping-quality review, and a comparison with prior work. See [findings.md](findings.md) for the full results, method, and limitations. See [DECISIONS.md](DECISIONS.md) for the audit trail. The ratios above come from `scripts/derive_readme_shares.py`, `scripts/analyze_invalid_codes.py`, `scripts/analyze_validity_check.py`, `scripts/analyze_guardrail.py`, `scripts/analyze_underpay_summary.py`, `scripts/check_revision_impact.py`, and `scripts/check_rate_impact.py` (outputs in `review/`).
 
 **Question:** When AI models classify imported goods for US customs, how often are they
 wrong, how much duty is at stake per error, and do their errors lean toward underpaying
@@ -30,9 +38,9 @@ wrong, how much duty is at stake per error, and do their errors lean toward unde
 
 - **Ground truth:** US Customs and Border Protection (CBP) binding classification rulings
   from the CROSS database (rulings.cbp.gov), NY collection.
-- **Duty data:** the official Harmonized Tariff Schedule from USITC (hts.usitc.gov), current
-  schedule as of September 2026 (not the revision in force on each ruling's date; see
-  Limitations in findings.md for the checked impact).
+- **Duty data:** the official Harmonized Tariff Schedule from USITC (hts.usitc.gov), the
+  release in force on each ruling's date, with MFN rates re-read from each release's
+  archived PDF (0 of 4,060 code-date pairs had a rate different from the current schedule).
 - **What's new vs. prior work** (ATLAS arXiv 2509.18400, Tarifflo arXiv 2412.14179, UNB
   arXiv 2606.16987, all accuracy-only): this project measures the *duty cost* of
   classification errors, tests for *direction bias* (under- vs over-paying), and guards
@@ -87,6 +95,10 @@ uv pip install --python .venv requests pandas scipy matplotlib
 .venv/Scripts/python scripts/analyze_guardrail.py
 .venv/Scripts/python scripts/make_error_breakdown_chart.py   # figures/error_breakdown.png
 .venv/Scripts/python scripts/check_revision_impact.py
+.venv/Scripts/python scripts/parse_release_rates.py     # MFN rates per 2026 release from the PDFs
+.venv/Scripts/python scripts/check_rate_impact.py       # ruling-date vs current rates, dollar figures re-run
+.venv/Scripts/python scripts/analyze_validity_check.py  # what a validity check flags
+.venv/Scripts/python scripts/analyze_underpay_summary.py  # underpay n, Wilson CI, baseline p
 ```
 
 All raw data is cached under `data/raw/` (CBP rulings, HTS revisions) and `llm_logs/`
@@ -103,7 +115,7 @@ Everything needed to reproduce every number in `findings.md` is in git:
 `review/translation_review_marked.csv`, and all scripts. Run `analysis.py` and the
 `scripts/audit_*.py` / `analyze_language.py` scripts above directly on a fresh clone.
 
-Only the raw USITC HTS dumps (`data/raw/hts_revisions/`, 255 MB) are gitignored. Note: these 21 files are all copies of the current schedule, because USITC's JSON export ignores the release parameter. Archived releases exist only as PDFs, which `scripts/fetch_older_hts.py` fetches and parses (`data/compact/hts_older/`). See the Limitations in findings.md for the checked impact. To
+Only the raw USITC HTS dumps (`data/raw/hts_revisions/`, 255 MB) are gitignored. Note: these 21 files are all copies of the current schedule, because USITC's JSON export ignores the release parameter. Archived releases exist only as PDFs, which `scripts/fetch_older_hts.py` fetches and parses (`data/compact/hts_older/` for codes, `data/compact/hts_rates/` for MFN rates). The scripts layer each ruling-date release's PDF rates onto the JSON. See the Limitations in findings.md. To
 rebuild them from scratch, from a fresh clone:
 
 ```bash

@@ -44,7 +44,7 @@ Underpay share: EN 0.500 vs. other 0.667
 | 6 | 0.204 | 0.204 | 1.0000 |
 | 10 | 0.011 | 0.011 | nan |
 
-Duty-at-stake median: EN $0.00 vs. other $0.00, paired bootstrap median diff $0.00 [95% CI -24400.00, 500.00]
+Duty-at-stake median: EN $0.00 vs. other $0.00, paired bootstrap median diff $0.00 [95% CI -24400.00, 0.00]
 
 Underpay share: EN 1.000 vs. other 1.000
 
@@ -56,9 +56,9 @@ Underpay share: EN 1.000 vs. other 1.000
 | 6 | 0.189 | 0.167 | 0.7266 |
 | 10 | 0.011 | 0.000 | 1.0000 |
 
-Duty-at-stake median: EN $0.00 vs. other $0.00, paired bootstrap median diff $0.00 [95% CI -24400.00, 3100.00]
+Duty-at-stake median: EN $0.00 vs. other $0.00, paired bootstrap median diff $0.00 [95% CI -13650.00, 3950.00]
 
-Underpay share: EN 0.500 vs. other 1.000
+Underpay share: EN 0.500 vs. other 0.500
 
 **Power note (10-digit, n=93):** at this sample size, the smallest EN-vs-translation accuracy difference detectable at 80% power (alpha=0.05) is approximately 0.15 (baseline EN accuracy 0.011). Non-significant McNemar results above should be read as "no difference detected at this sample size," not as evidence of no difference. This estimate assumes independence between languages' per-ruling correctness, a simplification likely to UNDERSTATE real power (positively correlated errors would make McNemar more sensitive).
 
