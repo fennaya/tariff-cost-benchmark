@@ -48,9 +48,27 @@ def read_revision_rows(release_id):
         return json.load(f)
 
 
-def load_revision(release_id):
-    if release_id in _revision_cache:
-        return _revision_cache[release_id]
+RELEASE_RATES_DIR = ROOT / "data" / "compact" / "hts_rates"  # General rates parsed from the archived PDFs
+
+
+def _release_rates(release_id):
+    import gzip
+    fp = RELEASE_RATES_DIR / f"{release_id}.rates.json.gz"
+    if not fp.exists():
+        return {}
+    with gzip.open(fp, "rt", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def load_revision(release_id, use_release_rates=True):
+    """code-digits -> General rate text for one HTS release. The JSON export is always the
+    CURRENT schedule (DECISIONS.md 2026-10-06), so with use_release_rates the rates parsed
+    from that release's own archived PDF (parse_release_rates.py) are layered on top: they
+    replace the JSON text when they parse cleanly, and add 8/6-digit parent lines the JSON
+    has no row for. use_release_rates=False gives the original JSON-only lookup."""
+    key = (release_id, use_release_rates)
+    if key in _revision_cache:
+        return _revision_cache[key]
     data = read_revision_rows(release_id)
     lookup = {}
     for row in data:
@@ -58,7 +76,13 @@ def load_revision(release_id):
         digits = re.sub(r"\D", "", htsno)
         if digits:
             lookup[digits] = row.get("general", "")
-    _revision_cache[release_id] = lookup
+    if use_release_rates:
+        for code, text in _release_rates(release_id).items():
+            if classify_rate(text)[0] != "other":
+                lookup[code] = text
+            elif code not in lookup:
+                lookup[code] = ""
+    _revision_cache[key] = lookup
     return lookup
 
 
@@ -83,7 +107,7 @@ def classify_rate(rate_str):
     """Return (rate_type, ad_valorem_pct_or_None)."""
     if rate_str is None:
         return "missing", None
-    s = rate_str.strip()
+    s = re.sub(r"<[^>]+>", "", rate_str).strip()  # USITC markup, e.g. "2.5% <u></u>" (5 rates in ch. 87)
     if s == "":
         return "missing", None
     if s.lower() == "free":
