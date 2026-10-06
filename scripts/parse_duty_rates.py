@@ -103,11 +103,11 @@ def resolve_rate(lookup, true_code_10digit):
     return "", None  # code exists at every level checked but every rate field was empty
 
 
-def classify_rate(rate_str):
+def classify_rate(rate_str, strip_markup=True):
     """Return (rate_type, ad_valorem_pct_or_None)."""
     if rate_str is None:
         return "missing", None
-    s = re.sub(r"<[^>]+>", "", rate_str).strip()  # USITC markup, e.g. "2.5% <u></u>" (5 rates in ch. 87)
+    s = (re.sub(r"<[^>]+>", "", rate_str) if strip_markup else rate_str).strip()  # USITC markup, e.g. "2.5% <u></u>" (5 rates in ch. 87); strip_markup=False reproduces the original Phase 3 behavior
     if s == "":
         return "missing", None
     if s.lower() == "free":

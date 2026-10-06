@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 from analysis import digit_match, rate_pct_for, load_model_results, wilson_ci  # noqa: E402
-from parse_duty_rates import classify_rate, revision_for_date  # noqa: E402
+from parse_duty_rates import classify_rate, revision_for_date, resolve_rate, load_revision, read_revision_rows  # noqa: E402
 
 MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
 RATES_DIR = ROOT / "data" / "compact" / "hts_rates"
@@ -55,6 +55,17 @@ def pdf_pct(code, release):
     return None
 
 
+def json_only_pct(code, date_str, strip_markup):
+    """Rate from the JSON export alone (always the current schedule), as Phase 3 did."""
+    if not code or len(code) != 10:
+        return None
+    rate_str, err = resolve_rate(load_revision(release_for(date_str), False), code)
+    if err:
+        return None
+    rate_type, pct = classify_rate(rate_str, strip_markup=strip_markup)
+    return pct if rate_type in ("ad_valorem", "free") else None
+
+
 def release_for(date_str):
     return revision_for_date(datetime.fromisoformat(date_str.replace("Z", "")))
 
@@ -73,7 +84,7 @@ def main():
     parser_bad = time_diff = combined = 0
     cur_has_rate = 0
     for (code, date) in pairs:
-        j = rate_pct_for(code, date)
+        j = json_only_pct(code, date, True)
         pc = pdf_pct(code, CURRENT)
         pr = pdf_pct(code, release_for(date))
         if j is not None:
@@ -96,11 +107,12 @@ def main():
           "| Model | basis | comparable wrong answers (n) | rate differs (n) | underpaid | underpay share (Wilson 95% CI) | median duty at stake per $100k | IQR |",
           "|---|---|---|---|---|---|---|---|"]
     for m in MODELS:
-        for basis in ("current JSON (as reported)", "ruling-date release"):
+        for basis in ("original Phase 3 (JSON only, markup unparsed)", "JSON only, markup stripped", "ruling-date release rates (final)"):
             diffs, signed = [], []
             for r in per_model[m]:
-                if basis.startswith("current"):
-                    t, p = rate_pct_for(r["true_code"], r["rulingDate"]), rate_pct_for(r.get("predicted_code"), r["rulingDate"])
+                if basis.startswith("original") or basis.startswith("JSON only"):
+                    strip = not basis.startswith("original")
+                    t, p = json_only_pct(r["true_code"], r["rulingDate"], strip), json_only_pct(r.get("predicted_code"), r["rulingDate"], strip)
                 else:
                     t = pdf_pct(r["true_code"], release_for(r["rulingDate"]))
                     p = pdf_pct(r.get("predicted_code"), release_for(r["rulingDate"]))
@@ -115,6 +127,26 @@ def main():
             L.append(f"| {m} | {basis} | {len(signed)} | {len(nz)} | {under} | {under / len(nz):.1%} ({lo:.1%} to {hi:.1%}) | ${med:,.0f} | ${q1:,.0f} to ${q3:,.0f} |")
             res.setdefault(m, {})[basis] = {"comparable": len(signed), "rate_differs": len(nz), "underpaid": under,
                                             "wilson": [lo, hi], "median": med, "q1": q1, "q3": q3}
+    # Parser accuracy and markup facts, measured on the current release (Rev20 PDF vs JSON export)
+    import re
+    cur_rows = read_revision_rows("CURRENT")
+    if cur_rows is not None:
+        j = {}
+        n_markup = 0
+        for row in cur_rows:
+            d = re.sub(r"\D", "", row.get("htsno") or "")
+            if len(d) in (6, 8):
+                g = row.get("general") or ""
+                j[d] = g
+                if "<" in g and classify_rate(g, strip_markup=False)[0] == "other" and classify_rate(g)[0] in ("ad_valorem", "free"):
+                    n_markup += 1
+        rated = [d for d, g in j.items() if classify_rate(g)[0] in ("ad_valorem", "free")]
+        pdf = rates(CURRENT)
+        miss = [d for d in rated if classify_rate(pdf.get(d))[:1] != classify_rate(j[d])[:1] or classify_rate(pdf.get(d)) != classify_rate(j[d])]
+        L += ["", "## Parser accuracy and markup (6/8-digit rows of the current release)", "",
+              f"- JSON rows with an ad valorem or free General rate: {len(rated):,}; not reproduced by the PDF parse: {len(miss)} (of which in chapters 1-97: {sum(1 for d in miss if int(d[:2]) <= 97)}).",
+              f"- JSON rates carrying HTML markup that the original classifier read as 'other' but are ad valorem or free once stripped: {n_markup}."]
+        res["parser_rows"] = len(rated); res["parser_missed"] = len(miss); res["markup_rates"] = n_markup
     (ROOT / "review" / "revision_rates.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     (ROOT / "review" / "revision_rates.json").write_text(json.dumps(res, indent=2), encoding="utf-8")
     print("\n".join(L))

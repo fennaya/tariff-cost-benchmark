@@ -28,7 +28,7 @@ for m in ORDER:
         f"{use} | {use}/{w} = {use / w:.1%} | {dt['n_nonzero_diff']} | "
         f"{dt['underpay_count']}/{dt['n_nonzero_diff']} = {dt['underpay_share']:.1%} |")
 lines += ["", "## Overlap: usable-rate wrong answers that are also tagged INVALID_CODE", "",
-          "A predicted 8-digit code is tagged invalid (not a 10-digit code in the HTS) but still resolves to a rate by prefix walk, so the two groups overlap.", "",
+          "Only 10-digit answers get a rate (analysis.rate_pct_for). A 10-digit answer that is not in the HTS is tagged invalid but can still resolve to a rate through its 8-, 6- or 4-digit prefix, so the two groups overlap.", "",
           "| Model | wrong with usable rate | of which tagged invalid | of which valid 10-digit code |", "|---|---|---|---|"]
 for m in ORDER:
     rows = load_model_results(ROOT / "llm_logs" / m)

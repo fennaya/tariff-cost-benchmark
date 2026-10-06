@@ -264,7 +264,7 @@ def main():
     # results -- found 2026-10-01 when only allam-2-7b, the one un-nested model, showed
     # up in a 3-model run).
     all_metrics = {}
-    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")) and "lang_" not in p.name)
+    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")) and "lang_" not in p.name and not p.name.startswith("gemini"))
     for model_dir in model_dirs:
         model_id = model_dir.relative_to(LLM_LOGS_DIR).as_posix()
         rows = load_model_results(model_dir)

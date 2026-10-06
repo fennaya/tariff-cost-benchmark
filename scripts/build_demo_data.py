@@ -39,7 +39,7 @@ def main():
 
     per_ruling = {}
     for model_dir in sorted(LLM_LOGS_DIR.iterdir()):
-        if not model_dir.is_dir():
+        if not model_dir.is_dir() or model_dir.name.startswith("gemini"):
             continue
         for fp in model_dir.glob("*.json"):
             r = json.loads(fp.read_text(encoding="utf-8"))
