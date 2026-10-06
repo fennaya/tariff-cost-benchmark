@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362365",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8708937500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089990",
+  "raw_response": {
+    "id": "chatcmpl-b3cae1eb-b6c3-4e07-a22a-a3102e7aceb9",
+    "object": "chat.completion",
+    "created": 1791310467,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90.00\", \"reason\": \"Clutch release bearing is a motor vehicle part classified under heading 8708 as other parts and accessories of motor vehicles.\"}",
+          "reasoning": "Need correct 10-digit. Likely 8708.99.90.00 is 10 digits. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218250298,
+      "prompt_tokens": 308,
+      "prompt_time": 0.080686913,
+      "completion_tokens": 79,
+      "completion_time": 0.167060037,
+      "total_tokens": 387,
+      "total_time": 0.24774695,
+      "completion_tokens_details": {
+        "reasoning_tokens": 26
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m496s4c8eeh8687db27xt6q9",
+      "seed": 372877467
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Clutch release bearing is a motor vehicle part classified under heading 8708 as other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

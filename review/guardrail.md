@@ -1,0 +1,11 @@
+# Guardrail test: one follow-up turn after an invalid first answer
+
+200 rulings (data/gemini_subset.csv), Groq models only. Follow-up text: "That code does not exist in the current HTS. Give a valid 10-digit code."
+
+| Model | invalid first answers | follow-up valid code (fixed) | fixed and correct (10-digit) | still invalid | 8-digit acc before | 8-digit acc after | 10-digit acc before | 10-digit acc after |
+|---|---|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 196 of 200 | 3 (1.5%) | 0 | 193 (98.5%) | 1/200 (0.5%) | 1/200 (0.5%) | 0/200 (0.0%) | 0/200 (0.0%) |
+| openai/gpt-oss-120b | 195 of 200 | 14 (7.2%) | 0 | 181 (92.8%) | 15/200 (7.5%) | 13/200 (6.5%) | 1/200 (0.5%) | 1/200 (0.5%) |
+| allam-2-7b | 179 of 200 | 4 (2.2%) | 0 | 175 (97.8%) | 4/200 (2.0%) | 1/200 (0.5%) | 1/200 (0.5%) | 1/200 (0.5%) |
+
+Still-invalid counts include follow-ups that returned no answer at all because the request failed with HTTP 400 (context window exceeded): openai/gpt-oss-20b: 0, openai/gpt-oss-120b: 0, allam-2-7b: 1.

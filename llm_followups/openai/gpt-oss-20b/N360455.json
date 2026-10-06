@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360455",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8708998180",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8708909000",
+  "raw_response": {
+    "id": "chatcmpl-4a3a5fa2-a1e4-4dd3-bee2-4b88b1c7fc76",
+    "object": "chat.completion",
+    "created": 1791310141,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.90.90.00\",\"reason\":\"The racks are accessories for motor vehicles, classified under parts and accessories of motor vehicles.\"}",
+          "reasoning": "Need valid HTS 10-digit. Bicycle racks for vehicles likely 8708.90.90.00? Actually 8708.90.90.00 is \"Other parts and accessories of motor vehicles\". But 10-digit: 8708.90.90.00 is 10 digits? It's 8708.90.90.00 (4+2+2+2). That's 10 digits. But maybe more specific: 8708.90.90.00 is correct. But earlier said not exist. Maybe 8708.90.90.00 exists. Let's give that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213411221,
+      "prompt_tokens": 379,
+      "prompt_time": 0.024778596,
+      "completion_tokens": 169,
+      "completion_time": 0.188865802,
+      "total_tokens": 548,
+      "total_time": 0.213644398,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e11c8bbf69",
+    "x_groq": {
+      "id": "req_01m496f5ajeat8p7jw91zpfkme",
+      "seed": 987654938
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708909000",
+  "predicted_reason": "The racks are accessories for motor vehicles, classified under parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

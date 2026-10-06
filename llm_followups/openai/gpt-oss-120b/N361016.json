@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "85444900",
+  "raw_response": {
+    "id": "chatcmpl-86e5532c-2401-4d36-83fd-5f6498dd4765",
+    "object": "chat.completion",
+    "created": 1791310213,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.49.90\",\n  \"reason\": \"The assembly is an electrical wiring and PCB component with connectors used in aviation headsets, classified under 'Other electrical apparatus for switching or protecting circuits' (HTS 8544.49.90).\"\n}",
+          "reasoning": "Need correct 10-digit code. Likely 8544.49.90? Check HTS: 8544.49.90 is \"Other\" for printed circuits etc. Actually 8544.49.90 = \"Other\" electrical apparatus for switching/protecting circuits. Use 8544.49.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194808973,
+      "prompt_tokens": 386,
+      "prompt_time": 0.084191457,
+      "completion_tokens": 139,
+      "completion_time": 0.293896438,
+      "total_tokens": 525,
+      "total_time": 0.378087895,
+      "completion_tokens_details": {
+        "reasoning_tokens": 68
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m496hbmxemxb55f4gn6bvxb2",
+      "seed": 250980781
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444990",
+  "predicted_reason": "The assembly is an electrical wiring and PCB component with connectors used in aviation headsets, classified under 'Other electrical apparatus for switching or protecting circuits' (HTS 8544.49.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

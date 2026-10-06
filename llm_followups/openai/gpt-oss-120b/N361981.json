@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361981",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63026090",
+  "raw_response": {
+    "id": "chatcmpl-ee171e55-be5e-4444-b61e-0d7d11a9ae7f",
+    "object": "chat.completion",
+    "created": 1791310391,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.60.9090\",\n  \"reason\": \"Decorative pillow-shaped home furnishing made of polyester fabric and fiberfill, classified under 'Other furnishing articles of textile materials, not elsewhere specified' (HTS 6302.60.9090).\"\n}",
+          "reasoning": "Need correct 10-digit code. Likely 6302.60.90 is 8 digits. Full 10-digit: 6302.60.9090? Check: 6302.60.9090 is \"Other furnishing articles, of textile materials, not elsewhere specified\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017805849,
+      "prompt_tokens": 501,
+      "prompt_time": 0.022570755,
+      "completion_tokens": 134,
+      "completion_time": 0.281693261,
+      "total_tokens": 635,
+      "total_time": 0.304264016,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m496psqwe3yajgsmmb8k5fbd",
+      "seed": 1819188164
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302609090",
+  "predicted_reason": "Decorative pillow-shaped home furnishing made of polyester fabric and fiberfill, classified under 'Other furnishing articles of textile materials, not elsewhere specified' (HTS 6302.60.9090).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

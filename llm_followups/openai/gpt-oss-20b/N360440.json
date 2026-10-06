@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360440",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "8708998180",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089090",
+  "raw_response": {
+    "id": "chatcmpl-66544463-7b13-4249-b64a-bdd9de09b1a0",
+    "object": "chat.completion",
+    "created": 1791310135,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.90.90.90\",\"reason\":\"It is a coolant manifold assembly for passenger vehicles, classified as an other part or accessory of a motor vehicle.\"}",
+          "reasoning": "Need valid 10-digit HTS. For automotive parts: 8708.90.90.90? Actually 8708.90.90 is 8 digits. Need 10: 8708.90.90.90? But HTS has 10 digits: 8708.90.90.90? Wait format: 8708.90.90.90? Actually 8708.90.90.90 is 10 digits? 8708.90.90.90 = 4+2+2+2 =10. So use 8708.90.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149409381,
+      "prompt_tokens": 427,
+      "prompt_time": 0.021993988,
+      "completion_tokens": 177,
+      "completion_time": 0.21595722,
+      "total_tokens": 604,
+      "total_time": 0.237951208,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m496ezfze1gb1d7z9kjjv7np",
+      "seed": 238071033
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708909090",
+  "predicted_reason": "It is a coolant manifold assembly for passenger vehicles, classified as an other part or accessory of a motor vehicle.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

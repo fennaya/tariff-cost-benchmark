@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363690",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8703220000",
+  "raw_response": {
+    "id": "chatcmpl-3cc879dc-90e1-4692-b983-484ed90ee853",
+    "object": "chat.completion",
+    "created": 1791310655,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.22.0015\", \"reason\": \"Used passenger car with a spark\u2011ignition engine of 2,500\u202fcc falls under heading 8703.22 for motor cars of 1,501\u20112,500\u202fcc, subheading for used vehicles.\"}",
+          "reasoning": "Need correct 10-digit code. For used cars: 8703.23.00.00 is for 2,501-3,000 cc. 2500 cc falls in 2,501? Actually 2500 is up to 2500, so 8703.22 is 1501-2500. Need 10-digit: 8703.22.0010? Check US: 8703.22.0010 is for \"Other motor vehicles for the transport of persons (other than those of heading 8702), with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity not exceeding 2,500 cc, new\". For used, suffix .30? Actually used vehicles: 8703.22.0010 is new, 8703.22.0015 is used? Need lookup: I think 8703.22.0010 is for new, 8703.22.0015 for used. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207452105,
+      "prompt_tokens": 345,
+      "prompt_time": 0.035067412,
+      "completion_tokens": 279,
+      "completion_time": 0.583913085,
+      "total_tokens": 624,
+      "total_time": 0.618980497,
+      "completion_tokens_details": {
+        "reasoning_tokens": 205
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m496ytqxeg2rrnzn6c81a2w8",
+      "seed": 161196113
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703220015",
+  "predicted_reason": "Used passenger car with a spark\u2011ignition engine of 2,500\u202fcc falls under heading 8703.22 for motor cars of 1,501\u20112,500\u202fcc, subheading for used vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360406",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8481809045",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089990",
+  "raw_response": {
+    "id": "chatcmpl-be59b5c6-eb5a-4d5a-85c1-819ff8ad4a1f",
+    "object": "chat.completion",
+    "created": 1791310118,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90.00\",\n  \"reason\": \"The assembly is a thermostat valve and related components, classified as other parts and accessories for motor vehicles (HTS 8708.99.90.00).\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8708.99.90.00 is 10 digits. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.333527244,
+      "prompt_tokens": 343,
+      "prompt_time": 0.020715273,
+      "completion_tokens": 91,
+      "completion_time": 0.19327354,
+      "total_tokens": 434,
+      "total_time": 0.213988813,
+      "completion_tokens_details": {
+        "reasoning_tokens": 26
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m496eez4eyqawzzha75j3ex9",
+      "seed": 1098305064
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "The assembly is a thermostat valve and related components, classified as other parts and accessories for motor vehicles (HTS 8708.99.90.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

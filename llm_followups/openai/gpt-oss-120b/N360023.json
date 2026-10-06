@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360023",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "6217109510",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029900",
+  "raw_response": {
+    "id": "chatcmpl-ae673630-67f8-4e6f-864a-640732b14cbc",
+    "object": "chat.completion",
+    "created": 1791310063,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6304.99.9090\", \"reason\": \"Reusable cotton bibs are classified as other made\u2011up articles of cotton (not garments), falling under heading 6304 and the subheading for other items of cotton not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Bibs made of cotton, not garments? Likely 6304.99.90? Actually 6304 is other made up articles, includes bibs? 6304.99.90 is \"Other made up articles, of other textile materials, not elsewhere specified\". 10-digit: 6304.99.9090? Check format: 6 digits then 2 then 4. So 6304.99.9090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.304399137,
+      "prompt_tokens": 420,
+      "prompt_time": 0.024037301,
+      "completion_tokens": 166,
+      "completion_time": 0.348883374,
+      "total_tokens": 586,
+      "total_time": 0.372920675,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496crzsec5sz4k0gy47yhhb",
+      "seed": 2052319032
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6304999090",
+  "predicted_reason": "Reusable cotton bibs are classified as other made\u2011up articles of cotton (not garments), falling under heading 6304 and the subheading for other items of cotton not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

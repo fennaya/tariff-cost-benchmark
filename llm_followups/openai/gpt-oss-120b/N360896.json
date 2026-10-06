@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360896",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403999040",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73269099",
+  "raw_response": {
+    "id": "chatcmpl-18cbfe4f-6b71-4130-bfa7-a61f877321bd",
+    "object": "chat.completion",
+    "created": 1791310180,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7326.90.9010\",\n  \"reason\": \"Steel shelving accessories (pegboard and rail) are classified as other articles of iron or steel not elsewhere specified, falling under HTS 7326.90.9010.\"\n}",
+          "reasoning": "Need correct 10-digit code. Likely 7326.90.9010? Check: 7326.90.90 is other articles of iron or steel, other. 10-digit US: 7326.90.9010 is \"Other articles of iron or steel, not elsewhere specified, other\". Let's propose 7326.90.9010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.142833037,
+      "prompt_tokens": 635,
+      "prompt_time": 0.035941928,
+      "completion_tokens": 143,
+      "completion_time": 0.304046121,
+      "total_tokens": 778,
+      "total_time": 0.339988049,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c652c0ffaa",
+    "x_groq": {
+      "id": "req_01m496gak7e74vz323m3q9vxxe",
+      "seed": 374813434
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7326909010",
+  "predicted_reason": "Steel shelving accessories (pegboard and rail) are classified as other articles of iron or steel not elsewhere specified, falling under HTS 7326.90.9010.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

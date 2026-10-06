@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N361446",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "4901990070",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4820909000",
+  "raw_response": {
+    "id": "chatcmpl-a06e28fa-096d-4de6-9058-41af41b78410",
+    "object": "chat.completion",
+    "created": 1791310342,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4820.90.9900\", \"reason\": \"These books are classified under section XX of the HTSUS, which covers printed matter, including books, pamphlets, and similar works. The code 4820.90.9900 is for 'Other printed matter, not elsewhere classified.'\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.083633366,
+      "prompt_tokens": 403,
+      "prompt_time": 0.011449355,
+      "completion_tokens": 84,
+      "completion_time": 0.059669266,
+      "total_tokens": 487,
+      "total_time": 0.071118621
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496na53eh8bwsa7wgaydqmx",
+      "seed": 443710970
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4820909900",
+  "predicted_reason": "These books are classified under section XX of the HTSUS, which covers printed matter, including books, pamphlets, and similar works. The code 4820.90.9900 is for 'Other printed matter, not elsewhere classified.'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

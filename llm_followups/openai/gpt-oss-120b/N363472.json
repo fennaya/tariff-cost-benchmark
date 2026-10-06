@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363472",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "7613000000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "90192000",
+  "raw_response": {
+    "id": "chatcmpl-4d5b4c01-62b5-4806-aa8d-c813872fd576",
+    "object": "chat.completion",
+    "created": 1791310645,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9019.20.00.00\", \"reason\": \"Composite overwrapped pressure vessels for high\u2011pressure gases fall under heading 9019 for pressure vessels not of iron or steel, specifically subheading 9019.20 for composite vessels.\"}",
+          "reasoning": "Need correct 10-digit. Likely 9019.20.00.00? Check HTS: 9019.20.00 is 4-digit? Actually 9019.20.00 is 8-digit. 10-digit add .00. So 9019.20.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048784853,
+      "prompt_tokens": 292,
+      "prompt_time": 0.014644831,
+      "completion_tokens": 134,
+      "completion_time": 0.280774228,
+      "total_tokens": 426,
+      "total_time": 0.295419059,
+      "completion_tokens_details": {
+        "reasoning_tokens": 68
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m496yhyge8dbfz81z3gsy075",
+      "seed": 503072454
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9019200000",
+  "predicted_reason": "Composite overwrapped pressure vessels for high\u2011pressure gases fall under heading 9019 for pressure vessels not of iron or steel, specifically subheading 9019.20 for composite vessels.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

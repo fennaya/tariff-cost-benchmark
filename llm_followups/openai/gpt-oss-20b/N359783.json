@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359783",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8716805090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089090",
+  "raw_response": {
+    "id": "chatcmpl-de22271e-05b4-4b62-b37e-6adae064051e",
+    "object": "chat.completion",
+    "created": 1791310009,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.90.90 00\",\"reason\":\"Heavy\u2011duty low\u2011bed trailers for heavy trucks are classified under 8708.90.90 00 in the HTSUS.\"}",
+          "reasoning": "Need correct HTS 10-digit. For trailers: 8708.90.90? Actually 8708.90.90 is \"Other\". But 8708.90.90 is 8708.90.90? Wait 8708.90.90 is 8708.90.90? 8708.90.90 is 8708.90.90? The HTS 10-digit: 8708.90.90? Actually 8708.90.90 is 8708.90.90? The 10-digit format: 8708.90.90? That's 8 digits? Actually 8708.90.90 is 8 digits. Need 10 digits: 8708.90.90? Wait 8708.90.90 is 8 digits. The 10-digit includes 2 more digits: 8708.90.90?? Actually 8708.90.90 is 8 digits. The 10-digit would be 8708.90.90?? maybe 8708.90.90?? But standard HTS 10-digit: 8708.90.90??. For example 8708.90.90 00. So answer: 8708.90.90 00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.210094869,
+      "prompt_tokens": 419,
+      "prompt_time": 0.029617622,
+      "completion_tokens": 323,
+      "completion_time": 0.350624283,
+      "total_tokens": 742,
+      "total_time": 0.380241905,
+      "completion_tokens_details": {
+        "reasoning_tokens": 268
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ed70b23331",
+    "x_groq": {
+      "id": "req_01m496b45gercv4g5rv0jwp81v",
+      "seed": 1657793341
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708909000",
+  "predicted_reason": "Heavy\u2011duty low\u2011bed trailers for heavy trucks are classified under 8708.90.90 00 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

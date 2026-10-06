@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359944",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "7318290000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "83024190",
+  "raw_response": {
+    "id": "chatcmpl-fbbf70f5-2680-45f0-8ffc-d84b8138f497",
+    "object": "chat.completion",
+    "created": 1791310050,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8302.41.9090\", \"reason\": \"Classified as a hinge pin (headless, unthreaded) used in a plastic door panel, falling under heading 8302.41 for hinges and related hardware.\"}",
+          "reasoning": "Need correct 10-digit code. Likely 8302.41.90 is 8-digit. Full 10-digit: 8302.41.9090? Check: 8302.41.90 is 8-digit; 8302.41.9090 is 10-digit. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04782288,
+      "prompt_tokens": 324,
+      "prompt_time": 0.017246392,
+      "completion_tokens": 129,
+      "completion_time": 0.270702057,
+      "total_tokens": 453,
+      "total_time": 0.287948449,
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m496cctfet1b2s9p07etvad5",
+      "seed": 1507963058
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8302419090",
+  "predicted_reason": "Classified as a hinge pin (headless, unthreaded) used in a plastic door panel, falling under heading 8302.41 for hinges and related hardware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

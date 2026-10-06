@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359673",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "1602506000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "0202200000",
+  "raw_response": {
+    "id": "chatcmpl-fda8d646-050e-4477-b70b-49ec614f958d",
+    "object": "chat.completion",
+    "created": 1791309982,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0202.20.00.00\",\"reason\":\"Marinated, trimmed whole\u2011muscle cuts of bovine meat are classified under 0202.20.00.00 \u2013 fresh or chilled bovine meat, cut or trimmed, not otherwise specified.\"}",
+          "reasoning": "Need valid 10-digit HTSUS. For marinated beef cuts: 0202.20.00.00? Actually HTS 0202.20.00.00 exists? Let's check: 0202.20.00.00 is \"Fresh or chilled bovine meat, cut or trimmed, not otherwise specified\". Might be valid. But 10-digit: 0202.20.00.00 is 10 digits? It's 4+2+2+2 =10. Yes. So maybe correct. But user says not exist. Maybe correct code is 0202.20.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20942227,
+      "prompt_tokens": 583,
+      "prompt_time": 0.035771465,
+      "completion_tokens": 199,
+      "completion_time": 0.206777428,
+      "total_tokens": 782,
+      "total_time": 0.242548893,
+      "completion_tokens_details": {
+        "reasoning_tokens": 132
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_816fc87d18",
+    "x_groq": {
+      "id": "req_01m496aa12egs9tv2g24gq0anq",
+      "seed": 854248313
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0202200000",
+  "predicted_reason": "Marinated, trimmed whole\u2011muscle cuts of bovine meat are classified under 0202.20.00.00 \u2013 fresh or chilled bovine meat, cut or trimmed, not otherwise specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

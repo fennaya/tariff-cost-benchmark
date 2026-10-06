@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362099",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "6702102000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39269099",
+  "raw_response": {
+    "id": "chatcmpl-a63678d4-76c3-4e65-af76-97ec73969902",
+    "object": "chat.completion",
+    "created": 1791310419,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.99.10\", \"reason\": \"Artificial wreaths made of molded plastic components are classified as other plastic articles not elsewhere specified, falling under heading 3926.90.99 with the appropriate 10\u2011digit subheading.\"}",
+          "reasoning": "Need correct 10-digit. Likely 3926.90.99.10? Check HTS: 3926.90.99 is 6-digit heading, then 10-digit maybe 3926.90.99.10 (other plastic articles). Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.958707858,
+      "prompt_tokens": 337,
+      "prompt_time": 0.143853975,
+      "completion_tokens": 125,
+      "completion_time": 0.268985783,
+      "total_tokens": 462,
+      "total_time": 0.412839758,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m496qm3yedc875rkc6qy7k3x",
+      "seed": 126030306
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909910",
+  "predicted_reason": "Artificial wreaths made of molded plastic components are classified as other plastic articles not elsewhere specified, falling under heading 3926.90.99 with the appropriate 10\u2011digit subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

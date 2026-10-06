@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362150",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8431200000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84798999",
+  "raw_response": {
+    "id": "chatcmpl-59b9fafc-c543-4822-93ec-4fc4128ff157",
+    "object": "chat.completion",
+    "created": 1791310432,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.90.00\", \"reason\": \"The kit comprises aluminum and steel subassemblies for a robotic lifting system, classifiable as other parts of machines of heading 8479.\"}",
+          "reasoning": "Need correct 10-digit. Likely 8479.89.90? 8479.89.90 is \"Other parts of machines of heading 8479\". 10-digit: 8479.89.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204847665,
+      "prompt_tokens": 540,
+      "prompt_time": 0.023578104,
+      "completion_tokens": 109,
+      "completion_time": 0.229908121,
+      "total_tokens": 649,
+      "total_time": 0.253486225,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m496r1yeen7vj8yctjh2e7bg",
+      "seed": 1075149335
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8479899000",
+  "predicted_reason": "The kit comprises aluminum and steel subassemblies for a robotic lifting system, classifiable as other parts of machines of heading 8479.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

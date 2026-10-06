@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362045",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8531809051",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8517909000",
+  "raw_response": {
+    "id": "chatcmpl-a5f1b327-b739-488b-9ca2-a7c1cb3bf440",
+    "object": "chat.completion",
+    "created": 1791310464,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.90.9000\",\"reason\":\"The system is an electronic security apparatus with integrated sensors and AI for threat detection, fitting heading 8517.90.90 for other electronic security apparatus.\"}",
+          "reasoning": "Need valid 10-digit. Likely 8517.90.90 00? Actually 10-digit: 8517.90.90 00? That's 10 digits including decimals? Format: 4 digits . 2 digits . 4 digits. So 8517.90.9000. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.212194534,
+      "prompt_tokens": 670,
+      "prompt_time": 0.051318692,
+      "completion_tokens": 124,
+      "completion_time": 0.148504441,
+      "total_tokens": 794,
+      "total_time": 0.199823133,
+      "completion_tokens_details": {
+        "reasoning_tokens": 68
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496s0vfebt81vkhharpg15s",
+      "seed": 2100870477
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517909000",
+  "predicted_reason": "The system is an electronic security apparatus with integrated sensors and AI for threat detection, fitting heading 8517.90.90 for other electronic security apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

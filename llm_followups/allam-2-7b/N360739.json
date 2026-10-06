@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N360739",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "2106909995",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "0906901500",
+  "raw_response": {
+    "id": "chatcmpl-eb026fda-2118-4429-97fc-a5b83f30f3a1",
+    "object": "chat.completion",
+    "created": 1791310195,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0906.90.9000\", \"reason\": \"The product can be classified under the heading for meat substitutes, which falls under the larger category of 0906.90, and '9000' represents items that cannot be classified nearer.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086618341,
+      "prompt_tokens": 404,
+      "prompt_time": 0.011457614,
+      "completion_tokens": 73,
+      "completion_time": 0.052175437,
+      "total_tokens": 477,
+      "total_time": 0.063633051
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496gtj5e4ttp2nmcy97m9av",
+      "seed": 1384898116
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0906909000",
+  "predicted_reason": "The product can be classified under the heading for meat substitutes, which falls under the larger category of 0906.90, and '9000' represents items that cannot be classified nearer.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

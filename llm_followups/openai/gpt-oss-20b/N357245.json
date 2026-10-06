@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N357245",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "9617001000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73259090",
+  "raw_response": {
+    "id": "chatcmpl-1341abc4-e1f5-4816-8bc3-32228db07d8a",
+    "object": "chat.completion",
+    "created": 1791309960,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7325.90.90.90\",\"reason\":\"Stainless\u2011steel double\u2011walled vacuum water bottle is classified under 7325.90.90.90, other articles of stainless steel.\"}",
+          "reasoning": "Need valid HTS 10-digit. For stainless steel water bottle: 7325.90.90.90? Actually 7325.90.90 is 10-digit? 7325.90.90 is 8 digits. Need 10: 7325.90.90.90? But HTS uses 10 digits: 7325.90.90.90. Let's output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.147718131,
+      "prompt_tokens": 576,
+      "prompt_time": 0.034292353,
+      "completion_tokens": 142,
+      "completion_time": 0.150919591,
+      "total_tokens": 718,
+      "total_time": 0.185211944,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m4969mv9e98vvkv1ejrtvggj",
+      "seed": 1537275087
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7325909090",
+  "predicted_reason": "Stainless\u2011steel double\u2011walled vacuum water bottle is classified under 7325.90.90.90, other articles of stainless steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

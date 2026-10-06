@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362745",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "4901990060",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4903001000",
+  "raw_response": {
+    "id": "chatcmpl-90325866-5ee0-458c-accf-df4954671e52",
+    "object": "chat.completion",
+    "created": 1791310512,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4903.00.0010\", \"reason\": \"Printed books containing line art illustrations for coloring are classified under HTS chapter 49, heading 4903 (printed books, pictures, and other printed matter)\"}",
+          "reasoning": "Need correct code: likely 4903.00.1000? Actually HTS 4903.00.10? 10-digit: 4903.00.1000 is valid? Check: 4903.00.10 is 8-digit. 10-digit add 00. So 4903.00.1000 is okay. But they said doesn't exist. Maybe use 4903.00.0010? Actually 4903.00.0010 is \"Printed books, other than textbooks, in serial form\". Might be 4903.00.0010 for picture books. Use 4903.00.0010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.322438767,
+      "prompt_tokens": 276,
+      "prompt_time": 0.122578855,
+      "completion_tokens": 197,
+      "completion_time": 0.413051183,
+      "total_tokens": 473,
+      "total_time": 0.535630038,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m496tfstezk9anzkz2tr5qac",
+      "seed": 49204484
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4903000010",
+  "predicted_reason": "Printed books containing line art illustrations for coloring are classified under HTS chapter 49, heading 4903 (printed books, pictures, and other printed matter)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

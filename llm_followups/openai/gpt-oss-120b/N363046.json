@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363046",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4814200000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39189000",
+  "raw_response": {
+    "id": "chatcmpl-9fa85935-22e8-4ad8-a1c6-2726f085dfbd",
+    "object": "chat.completion",
+    "created": 1791310619,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3918.10.0010\", \"reason\": \"Vinyl wallcoverings on a paper backing fall under heading 3918 for plastic wallcoverings, specifically subheading 3918.10 for vinyl wallcoverings.\"}",
+          "reasoning": "Need correct 10-digit. Vinyl wallcoverings likely 3918.10.00 (vinyl wallcoverings). Check: 3918.10.00 = \"Wallcoverings, of plastics\". 10-digit: 3918.10.0010? Actually 6-digit heading 3918.10.00, then 4-digit for further. Could be 3918.10.0010 (wallcoverings of plastics, of vinyl). Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018598335,
+      "prompt_tokens": 291,
+      "prompt_time": 0.017737214,
+      "completion_tokens": 162,
+      "completion_time": 0.342687561,
+      "total_tokens": 453,
+      "total_time": 0.360424775,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496xrb5etja8rvr3dajvxy6",
+      "seed": 269918316
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3918100010",
+  "predicted_reason": "Vinyl wallcoverings on a paper backing fall under heading 3918 for plastic wallcoverings, specifically subheading 3918.10 for vinyl wallcoverings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

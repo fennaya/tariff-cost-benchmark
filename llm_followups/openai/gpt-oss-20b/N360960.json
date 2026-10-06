@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360960",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "8709100060",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84219090",
+  "raw_response": {
+    "id": "chatcmpl-9c55c3b4-9624-4dca-a96d-5fe2336158e3",
+    "object": "chat.completion",
+    "created": 1791310223,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"Motorized guided vehicles for transporting goods, not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit HTS. For automated guided vehicles: 8421.90.90? Actually 8421.90.90 is \"Other motor vehicles for transporting goods\". But 8421.90.90 is 8 digits? It's 8421.90.90 (8). Need 10-digit: 8421.90.90.00? Actually HTS 10-digit: 8421.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221815017,
+      "prompt_tokens": 432,
+      "prompt_time": 0.021536815,
+      "completion_tokens": 135,
+      "completion_time": 0.146826025,
+      "total_tokens": 567,
+      "total_time": 0.16836284,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m496hnzdeqaby7q2ay4mka0m",
+      "seed": 1243454162
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "Motorized guided vehicles for transporting goods, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

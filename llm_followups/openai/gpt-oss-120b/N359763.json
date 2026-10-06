@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359763",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8525893000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8525803000",
+  "raw_response": {
+    "id": "chatcmpl-d7562a4c-b46a-4715-b124-100d44b1b448",
+    "object": "chat.completion",
+    "created": 1791309990,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8525.80.20.00\", \"reason\": \"Classified as a video camera (digital camera module) that captures images but does not record, falling under heading 8525.80 for other video cameras.\"}",
+          "reasoning": "Need correct code. Likely 8525.80.30.00? Check HTS: 8525.80.30.00 exists? Actually 8525.80.30.00 is \"Other video cameras, digital cameras, etc.\" Might be valid. But user says not exist. Could use 8525.80.20.00? That's \"Video cameras, digital cameras, etc.\" Need 10-digit. Let's pick 8525.80.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.60053026,
+      "prompt_tokens": 325,
+      "prompt_time": 0.074762215,
+      "completion_tokens": 166,
+      "completion_time": 0.361691979,
+      "total_tokens": 491,
+      "total_time": 0.436454194,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m496ahmve8bs4r8dhw1rw569",
+      "seed": 872253954
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8525802000",
+  "predicted_reason": "Classified as a video camera (digital camera module) that captures images but does not record, falling under heading 8525.80 for other video cameras.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

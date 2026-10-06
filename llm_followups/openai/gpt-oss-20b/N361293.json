@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361293",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "6809900000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84249090",
+  "raw_response": {
+    "id": "chatcmpl-6be04bfd-fade-4b94-b986-8826000deeb9",
+    "object": "chat.completion",
+    "created": 1791310280,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8424.90.90.90\",\"reason\":\"Cabinet pulls and knobs made of non\u2011metal materials are classified under 8424.90.90, with the 10\u2011digit extension 90 for the specific sub\u2011category.\"}",
+          "reasoning": "Need valid 10-digit. For cabinet pulls/knobs made of plaster/terrazzo. Likely 8424.90.90.90? Actually 8424.90.90 is 4-digit? 8424.90.90 is 8-digit. Need 10-digit: 8424.90.90.90? But HTS 10-digit: 8424.90.90.90? Actually format: 4-2-2-2. So 8424.90.90.90 is 10-digit. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.608609993,
+      "prompt_tokens": 396,
+      "prompt_time": 0.023512429,
+      "completion_tokens": 184,
+      "completion_time": 0.191709264,
+      "total_tokens": 580,
+      "total_time": 0.215221693,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m496kcsqebgakvw0xbd499s3",
+      "seed": 133539714
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8424909090",
+  "predicted_reason": "Cabinet pulls and knobs made of non\u2011metal materials are classified under 8424.90.90, with the 10\u2011digit extension 90 for the specific sub\u2011category.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

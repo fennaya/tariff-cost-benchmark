@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N363802",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9403100040",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7908909000",
+  "raw_response": {
+    "id": "chatcmpl-db769666-2cd9-4169-84a8-ed32e711f19f",
+    "object": "chat.completion",
+    "created": 1791313334,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7919.90.9000\", \"reason\": \"The product is classified as 'Steel storage cabinets' under the subheading 7919.90.9000 of the HTSUS.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.30500382,
+      "prompt_tokens": 433,
+      "prompt_time": 0.012298682,
+      "completion_tokens": 64,
+      "completion_time": 0.04564116,
+      "total_tokens": 497,
+      "total_time": 0.057939842
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m499gkpdevdsghq5cr7mz75v",
+      "seed": 718980177
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7919909000",
+  "predicted_reason": "The product is classified as 'Steel storage cabinets' under the subheading 7919.90.9000 of the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

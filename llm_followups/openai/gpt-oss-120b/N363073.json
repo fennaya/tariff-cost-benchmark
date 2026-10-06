@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363073",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "1605290500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "20059030",
+  "raw_response": {
+    "id": "chatcmpl-cc5017ca-7a23-4781-8e7c-0261eaa14c9e",
+    "object": "chat.completion",
+    "created": 1791310620,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2005.90.30.00\",\n  \"reason\": \"Frozen, pre-fried shrimp coated with potato is a prepared crustacean product not elsewhere specified, falling under heading 2005.90.30.00.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 2005.90.30.00? Check: 2005.90.30.00 is \"Other prepared or preserved crustaceans, not elsewhere specified\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.327189005,
+      "prompt_tokens": 404,
+      "prompt_time": 0.017673593,
+      "completion_tokens": 112,
+      "completion_time": 0.240779251,
+      "total_tokens": 516,
+      "total_time": 0.258452844,
+      "completion_tokens_details": {
+        "reasoning_tokens": 47
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m496xrz7e71bah6qbm12h3ft",
+      "seed": 1082801628
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2005903000",
+  "predicted_reason": "Frozen, pre-fried shrimp coated with potato is a prepared crustacean product not elsewhere specified, falling under heading 2005.90.30.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

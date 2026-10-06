@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360960",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "8709100060",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84259900",
+  "raw_response": {
+    "id": "chatcmpl-eac1b1d7-f9f1-4b9a-bb3d-7fd33af4428b",
+    "object": "chat.completion",
+    "created": 1791310195,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.59.90\",\n  \"reason\": \"The P2200 is an industrial self\u2011propelled material handling vehicle (heavy\u2011load transporter) that falls under heading 8425 for tractors and other industrial trucks not otherwise specified.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8425.59.90? Check: 8425.59.90 is \"Other tractors, other than self-propelled\". Actually 8425.59.90 = \"Other tractors, other than self-propelled, for agricultural use\"? Need check. For industrial trucks: 8425.59.90 is \"Other tractors, other than self-propelled, for industrial use\"? Might be 8425.59.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.18053719,
+      "prompt_tokens": 450,
+      "prompt_time": 0.023179344,
+      "completion_tokens": 171,
+      "completion_time": 0.362603291,
+      "total_tokens": 621,
+      "total_time": 0.385782635,
+      "completion_tokens_details": {
+        "reasoning_tokens": 104
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m496gsxzehfrwqe8r6p4rm7t",
+      "seed": 767044337
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84255990",
+  "predicted_reason": "The P2200 is an industrial self\u2011propelled material handling vehicle (heavy\u2011load transporter) that falls under heading 8425 for tractors and other industrial trucks not otherwise specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

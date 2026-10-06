@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N359742",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8211922000",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8205595564",
+  "raw_response": {
+    "id": "chatcmpl-8eefd90f-2e48-4415-98dd-1fccf771ac60",
+    "object": "chat.completion",
+    "created": 1791310007,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8205.59.10\", \"reason\": \"The product is classified as an 'Other Cutlery' under HTSUS code 8205.59.10, which includes forged and riveted knives made of stainless steel with plastic handles.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086858237,
+      "prompt_tokens": 331,
+      "prompt_time": 0.009541244,
+      "completion_tokens": 73,
+      "completion_time": 0.052213251,
+      "total_tokens": 404,
+      "total_time": 0.061754495
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496b395eee8cdnbcn5k2e56",
+      "seed": 689904105
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82055910",
+  "predicted_reason": "The product is classified as an 'Other Cutlery' under HTSUS code 8205.59.10, which includes forged and riveted knives made of stainless steel with plastic handles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

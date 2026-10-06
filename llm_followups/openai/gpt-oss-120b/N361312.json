@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361312",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6203449000",
+  "raw_response": {
+    "id": "chatcmpl-567fe7b1-a347-4ffe-9ad7-2e1ba97e4a78",
+    "object": "chat.completion",
+    "created": 1791310260,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6203.43.90.00\", \"reason\": \"The item is a men's or boys' waistcoat (vest) made of man\u2011made fibers, matching the description of a non\u2011functional buttoned vest with raw armholes.\"}",
+          "reasoning": "Need correct 10-digit code. Vest = 6203.42? Let's check: 6203.42.90.00 is \"Men's or boys' waistcoats, of cotton\". 6203.43 is of man-made fibers. 6203.44 is of wool? Actually 6203.44 is of wool or fine animal hair. Need 10-digit. Provide valid. Choose 6203.43.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.310051595,
+      "prompt_tokens": 254,
+      "prompt_time": 0.011415976,
+      "completion_tokens": 160,
+      "completion_time": 0.341096569,
+      "total_tokens": 414,
+      "total_time": 0.352512545,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4de1d6a1ee",
+    "x_groq": {
+      "id": "req_01m496jt0ne8d81ja857aedfwh",
+      "seed": 1931482373
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6203439000",
+  "predicted_reason": "The item is a men's or boys' waistcoat (vest) made of man\u2011made fibers, matching the description of a non\u2011functional buttoned vest with raw armholes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

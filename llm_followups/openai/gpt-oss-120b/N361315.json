@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361315",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9305900000",
+  "raw_response": {
+    "id": "chatcmpl-753f7a02-1804-40a0-9d41-07a9d81f9801",
+    "object": "chat.completion",
+    "created": 1791310263,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9305.90.0010\",\n  \"reason\": \"Swords are classified as weapons not elsewhere specified under heading 9305, which covers other weapons, parts and accessories.\"\n}",
+          "reasoning": "Need correct code for swords. HTS 9305.90.0000 exists? Actually 9305.90.0000 is \"Other weapons, parts and accessories\". Might be valid. But user says not exist. Could use 9305.90.0010? Need 10 digits. Let's pick 9305.90.0010 \"Other weapons, parts and accessories, other\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.208449468,
+      "prompt_tokens": 236,
+      "prompt_time": 0.010116595,
+      "completion_tokens": 141,
+      "completion_time": 0.293145781,
+      "total_tokens": 377,
+      "total_time": 0.303262376,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496jw74e3btz4dnen9k7g53",
+      "seed": 1775292558
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9305900010",
+  "predicted_reason": "Swords are classified as weapons not elsewhere specified under heading 9305, which covers other weapons, parts and accessories.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

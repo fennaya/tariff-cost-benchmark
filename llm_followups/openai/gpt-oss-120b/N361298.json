@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361298",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5509530030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "54029300",
+  "raw_response": {
+    "id": "chatcmpl-258c07db-05e5-4267-991b-1fc5d80610c6",
+    "object": "chat.completion",
+    "created": 1791310255,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"5402.93.00.00\",\n  \"reason\": \"Yarn composed of a blend of staple cotton and polyester fibers (\u224852% polyester) falls under heading 5402 for man\u2011made fiber yarns, subheading 93 for blends containing 50% or more polyester.\"\n}",
+          "reasoning": "Need correct code: Yarn of cotton and polyester likely 5402.93.00? Actually 5402.93.00 is \"Yarns of man\u2011made fibers, containing 50% or more of other fibers, not carded\". Need check. Might be 5402.93.00 exists. But they said not. Could use 5402.93.00 is 8-digit. Need 10-digit: 5402.93.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197656338,
+      "prompt_tokens": 498,
+      "prompt_time": 0.021083826,
+      "completion_tokens": 179,
+      "completion_time": 0.375600197,
+      "total_tokens": 677,
+      "total_time": 0.396684023,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m496jmt2e3zb54d3q2s6agd1",
+      "seed": 1582334964
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5402930000",
+  "predicted_reason": "Yarn composed of a blend of staple cotton and polyester fibers (\u224852% polyester) falls under heading 5402 for man\u2011made fiber yarns, subheading 93 for blends containing 50% or more polyester.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

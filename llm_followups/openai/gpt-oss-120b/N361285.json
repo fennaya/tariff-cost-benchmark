@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361285",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8431499020",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8425930000",
+  "raw_response": {
+    "id": "chatcmpl-a61419aa-d599-49e6-b68a-f18921995813",
+    "object": "chat.completion",
+    "created": 1791310242,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.93.90.00\",\n  \"reason\": \"Hydraulic excavator\u2011mounted shear attachments are classified as other cutting machines for metal (heading 8425.93) and fall under the residual subheading 90.\"\n}",
+          "reasoning": "Need correct code. Likely 8425.93.90.00? Check HTS: 8425.93 is \"Other cutting machines for metal; other\". 8425.93.90.00 is \"Other\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018169124,
+      "prompt_tokens": 289,
+      "prompt_time": 0.087052021,
+      "completion_tokens": 118,
+      "completion_time": 0.248001739,
+      "total_tokens": 407,
+      "total_time": 0.33505376,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m496j8deehvb1jnw0hyc4wc4",
+      "seed": 138640280
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425939000",
+  "predicted_reason": "Hydraulic excavator\u2011mounted shear attachments are classified as other cutting machines for metal (heading 8425.93) and fall under the residual subheading 90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360873",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "3004390055",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3004909000",
+  "raw_response": {
+    "id": "chatcmpl-53fe0635-a055-4f84-b284-9a23484a3dcc",
+    "object": "chat.completion",
+    "created": 1791310201,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90 00\",\"reason\":\"Testosterone gel is a hormone preparation, classified under heading 3004.90.90 for other hormone preparations.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. Testosterone gel likely under 3004.90.90 00? But 10-digit: 3004.90.90 00? Actually HTS has 10 digits: 3004.90.90 00? Wait format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Actually 10-digit: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Example: 3004.90.90 00. That's 4+2+2+2=10 digits with periods. So 3004.90.90 00 is valid. But earlier said not exist. Maybe correct code is 3004.90.90 00. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.003043419,
+      "prompt_tokens": 240,
+      "prompt_time": 0.013480347,
+      "completion_tokens": 222,
+      "completion_time": 0.270190284,
+      "total_tokens": 462,
+      "total_time": 0.283670631,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m496h0n3eg990bwqs8h51ns6",
+      "seed": 1354034271
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Testosterone gel is a hormone preparation, classified under heading 3004.90.90 for other hormone preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

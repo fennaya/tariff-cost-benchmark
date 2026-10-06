@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N355043",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6801909000",
+  "raw_response": {
+    "id": "chatcmpl-bb2ad77f-241c-44c0-b776-90ddfd6f99bd",
+    "object": "chat.completion",
+    "created": 1791309954,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6801.90.90.00\",\"reason\":\"Branco Dunas is a natural granite stone used for countertops and surfaces, fitting the HTS 6801.90.90.00 entry for other natural stone.\"}",
+          "reasoning": "Need valid 10-digit HTS. For natural stone, granite: 6801.90.90.00? Actually 6801.90.90.00 is 10-digit? It's 6801.90.90.00 (10 digits). But maybe not exist. Let's check: 6801.90.90.00 is for \"Other natural stone\". Might exist. But maybe need 6801.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297913585,
+      "prompt_tokens": 415,
+      "prompt_time": 0.022618661,
+      "completion_tokens": 156,
+      "completion_time": 0.170575297,
+      "total_tokens": 571,
+      "total_time": 0.193193958,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a8c584dda7",
+    "x_groq": {
+      "id": "req_01m4969fcvef08jytxpxv13dsw",
+      "seed": 1107659450
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6801909000",
+  "predicted_reason": "Branco Dunas is a natural granite stone used for countertops and surfaces, fitting the HTS 6801.90.90.00 entry for other natural stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

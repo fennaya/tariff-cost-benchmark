@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359977",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8517120000",
+  "raw_response": {
+    "id": "chatcmpl-e431055c-9743-4ed5-8cc4-fa24df31c5bf",
+    "object": "chat.completion",
+    "created": 1791310075,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.12.00.00\",\"reason\":\"The device is a data transmission/reception gateway for access control, classified under heading 8517.12 for other data transmission apparatus.\"}",
+          "reasoning": "Need valid 10-digit. Likely 8517.12.00.00? Actually 10-digit: 8517.12.00.00? That's 8 digits? 8517.12.00.00 is 10 inc decimals? Format: 4 digits, decimal, 2, decimal, 4. So 8517.12.00.00 is 10. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.265958341,
+      "prompt_tokens": 389,
+      "prompt_time": 0.026889054,
+      "completion_tokens": 139,
+      "completion_time": 0.166249082,
+      "total_tokens": 528,
+      "total_time": 0.193138136,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d6de37e6be",
+    "x_groq": {
+      "id": "req_01m496d576ec8arkra5kb82d23",
+      "seed": 1384064098
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517120000",
+  "predicted_reason": "The device is a data transmission/reception gateway for access control, classified under heading 8517.12 for other data transmission apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

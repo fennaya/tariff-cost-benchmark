@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361833",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "7308909590",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73089090",
+  "raw_response": {
+    "id": "chatcmpl-8d8ebab0-a528-4688-87fd-3d410ae0082f",
+    "object": "chat.completion",
+    "created": 1791310376,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7308.90.90.00\",\n  \"reason\": \"Steel liquid containment barriers are treated as other structures and parts of iron or steel not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit code. Likely 7308.90.90.00 is 8-digit? Actually HTS 10-digit includes .00. So 7308.90.90.00 exists. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017804667,
+      "prompt_tokens": 402,
+      "prompt_time": 0.023640451,
+      "completion_tokens": 100,
+      "completion_time": 0.212124582,
+      "total_tokens": 502,
+      "total_time": 0.235765033,
+      "completion_tokens_details": {
+        "reasoning_tokens": 49
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496pb1peb4rnrpvb384c40p",
+      "seed": 613725714
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Steel liquid containment barriers are treated as other structures and parts of iron or steel not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

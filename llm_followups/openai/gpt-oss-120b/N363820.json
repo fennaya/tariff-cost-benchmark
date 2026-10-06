@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363820",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "0604903000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "06029000",
+  "raw_response": {
+    "id": "chatcmpl-c775a74d-f9d2-4ae3-a49b-2c3d8c26a76d",
+    "object": "chat.completion",
+    "created": 1791310683,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0602.90.0010\", \"reason\": \"Dried poppy seed capsules intended solely for decorative use fall under heading 0602 for other dried flowers, buds and branches, specifically subheading 0602.90.0010 for other dried botanical items not elsewhere specified.\"}",
+          "reasoning": "Need correct code. Likely 0602.90.00 is valid? Actually HTS 0602.90.00 exists: \"Other dried flowers, buds and branches\". It's 6-2-2-2? 0602.90.00 is 8 digits. Need 10-digit: 0602.90.0010? Usually 10-digit adds country? Actually 10-digit US: 0602.90.0010 for \"Other dried flowers, buds and branches, not elsewhere specified\". Might be 0602.90.0010. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.214297015,
+      "prompt_tokens": 377,
+      "prompt_time": 0.016757168,
+      "completion_tokens": 196,
+      "completion_time": 0.410178405,
+      "total_tokens": 573,
+      "total_time": 0.426935573,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m496zp8ae3hv6rekwp6zjfqj",
+      "seed": 946562353
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0602900010",
+  "predicted_reason": "Dried poppy seed capsules intended solely for decorative use fall under heading 0602 for other dried flowers, buds and branches, specifically subheading 0602.90.0010 for other dried botanical items not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

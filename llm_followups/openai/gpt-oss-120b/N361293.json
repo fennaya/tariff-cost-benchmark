@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361293",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "6809900000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8302490000",
+  "raw_response": {
+    "id": "chatcmpl-fe9d0abc-353b-4c6d-ab76-995e2a3bc13d",
+    "object": "chat.completion",
+    "created": 1791310251,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8302.49.90.00\",\n  \"reason\": \"Furniture fittings (cabinet pulls and knobs) made of non\u2011metal materials other than wood, classified under other furniture fittings.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8302.41.90.00? Let's check: 8302.41 - metal furniture fittings? But material is gypsum/plaster. Could be 8302.49.90.00 (Other furniture fittings of other materials). Need valid 10-digit. Use 8302.49.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049608136,
+      "prompt_tokens": 398,
+      "prompt_time": 0.018481374,
+      "completion_tokens": 132,
+      "completion_time": 0.281227343,
+      "total_tokens": 530,
+      "total_time": 0.299708717,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m496jh09egjb9jqcx2a4kf60",
+      "seed": 359892155
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8302499000",
+  "predicted_reason": "Furniture fittings (cabinet pulls and knobs) made of non\u2011metal materials other than wood, classified under other furniture fittings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

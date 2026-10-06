@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361305",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "62046210",
+  "raw_response": {
+    "id": "chatcmpl-8b6f7869-8ed8-4946-a8eb-ba08feeb379d",
+    "object": "chat.completion",
+    "created": 1791310286,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6204.62.10.10\",\"reason\":\"The description matches a jacket or coat with a hook\u2011and\u2011loop fastener and a foam waist band, classified under 6204.62.10.10 in the HTSUS.\"}",
+          "reasoning": "Need valid 10-digit. Maybe 6204.62.10.10? Actually 6204.62.10 is 8-digit. Need 10-digit: 6204.62.10.10. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.097036956,
+      "prompt_tokens": 270,
+      "prompt_time": 0.02036582,
+      "completion_tokens": 113,
+      "completion_time": 0.132507806,
+      "total_tokens": 383,
+      "total_time": 0.152873626,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e99e93f2ac",
+    "x_groq": {
+      "id": "req_01m496kkcaef8t1xpexx74921w",
+      "seed": 2122616174
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204621010",
+  "predicted_reason": "The description matches a jacket or coat with a hook\u2011and\u2011loop fastener and a foam waist band, classified under 6204.62.10.10 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

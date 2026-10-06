@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363470",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7117907500",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7113909000",
+  "raw_response": {
+    "id": "chatcmpl-66d26b9f-6546-4c00-99fa-3a659a122af2",
+    "object": "chat.completion",
+    "created": 1791310694,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7113.90.90.00\",\"reason\":\"Earrings made of polymer clay with metal components are classified under 7113.90.90.00, the HTSUS heading for other earrings.\"}",
+          "reasoning": "Need valid 10-digit. For polymer clay earrings with metal parts. Likely 7113.90.90.00? But 10-digit: 7113.90.90.00 is 10 digits? Actually format: 4 digits + . + 2 + . + 4. That's 10 digits including periods? They want 10-digit code like 7113.90.90.00. That is 10 digits? 4+2+4=10. So it's valid. But maybe heading 7113.90.90.00 exists? Let's check: 7113 is \"Earrings, other\". Subheading 90 is \"Other\". Then 90.00 is \"Other\". So yes exists. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.390798582,
+      "prompt_tokens": 267,
+      "prompt_time": 0.019503679,
+      "completion_tokens": 214,
+      "completion_time": 0.220574648,
+      "total_tokens": 481,
+      "total_time": 0.240078327,
+      "completion_tokens_details": {
+        "reasoning_tokens": 157
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m49701fzepzthvpqr366g87c",
+      "seed": 1119585948
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7113909000",
+  "predicted_reason": "Earrings made of polymer clay with metal components are classified under 7113.90.90.00, the HTSUS heading for other earrings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

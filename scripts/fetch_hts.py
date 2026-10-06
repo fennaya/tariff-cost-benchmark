@@ -1,4 +1,8 @@
 """
+CORRECTION (2026-10-06): the `release` parameter described below is ignored by this
+endpoint, so every file this script saved is a copy of the CURRENT schedule. Archived
+releases exist only as PDFs; see scripts/fetch_older_hts.py and DECISIONS.md.
+
 Phase 3: download the HTS revisions in force across the ruling dates from USITC.
 
 Endpoint discovered from hts.usitc.gov's own Export page network calls:

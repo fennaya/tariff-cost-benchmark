@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360271",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "9403896015",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39269099",
+  "raw_response": {
+    "id": "chatcmpl-e205f9e0-e00f-464b-accb-7b361b00e412",
+    "object": "chat.completion",
+    "created": 1791310108,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9995\", \"reason\": \"The chest is a collapsible storage container made primarily of nonwoven polypropylene plastic, classifiable under other articles of plastics not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Likely 3926.90.9995? Check: 3926.90.9995 is \"Other articles of plastics, not elsewhere specified\". Use 10 digits: 3926.90.9995."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048677146,
+      "prompt_tokens": 386,
+      "prompt_time": 0.055786966,
+      "completion_tokens": 108,
+      "completion_time": 0.224188987,
+      "total_tokens": 494,
+      "total_time": 0.279975953,
+      "completion_tokens_details": {
+        "reasoning_tokens": 53
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m496e5zrerdbwmhtzt57tz3p",
+      "seed": 1627952239
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909995",
+  "predicted_reason": "The chest is a collapsible storage container made primarily of nonwoven polypropylene plastic, classifiable under other articles of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

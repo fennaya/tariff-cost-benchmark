@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361363",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "48119100",
+  "raw_response": {
+    "id": "chatcmpl-e38b7b7c-7a69-4c6a-97bb-24b77c7d2af8",
+    "object": "chat.completion",
+    "created": 1791310281,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.91.00.00\", \"reason\": \"Printed tissue paper is classified under heading 4811.91 for printed toilet paper and facial tissue.\"}",
+          "reasoning": "Need correct code: printed tissue paper likely 4811.91.00? Actually HTS 4811.91.00 is \"Toilet paper and facial tissue, printed\". That's valid. But maybe need 10 digits: 4811.91.00.00? Actually 10-digit includes 4-2-2-2: 4811.91.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.215911982,
+      "prompt_tokens": 291,
+      "prompt_time": 0.012774025,
+      "completion_tokens": 134,
+      "completion_time": 1.554118371,
+      "total_tokens": 425,
+      "total_time": 1.566892396,
+      "completion_tokens_details": {
+        "reasoning_tokens": 85
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m496kd45e1dtabcdbtfxf2hv",
+      "seed": 175276271
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4811910000",
+  "predicted_reason": "Printed tissue paper is classified under heading 4811.91 for printed toilet paper and facial tissue.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

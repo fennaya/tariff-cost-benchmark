@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362083",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "3105590000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "31059900",
+  "raw_response": {
+    "id": "chatcmpl-a9dc49c1-97ca-4d4e-a40a-862c1702148e",
+    "object": "chat.completion",
+    "created": 1791310415,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.99.00.00\", \"reason\": \"Fertilizer mixtures containing nitrogen, phosphates, micronutrients and biostimulants, classified under heading 3105 as other fertilizer mixtures not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Likely 3105.99.00.00? Actually HTS 10-digit: 3105.99.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.210759851,
+      "prompt_tokens": 502,
+      "prompt_time": 0.022757821,
+      "completion_tokens": 100,
+      "completion_time": 0.209524421,
+      "total_tokens": 602,
+      "total_time": 0.232282242,
+      "completion_tokens_details": {
+        "reasoning_tokens": 39
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m496qgthec4sg57j7tzb3v54",
+      "seed": 833979843
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3105990000",
+  "predicted_reason": "Fertilizer mixtures containing nitrogen, phosphates, micronutrients and biostimulants, classified under heading 3105 as other fertilizer mixtures not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363127",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "1605290500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1605303000",
+  "raw_response": {
+    "id": "chatcmpl-4b810913-4efe-4f80-8b83-1298de814c45",
+    "object": "chat.completion",
+    "created": 1791310621,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"1605.30.30.00\",\n  \"reason\": \"Frozen prepared crustacean product (shrimp) in a rice flour wrapper, classified under other prepared or preserved crustaceans, frozen\"\n}",
+          "reasoning": "Need correct code. Frozen shrimp spring rolls likely under 2005? Actually 2005 is fish. For crustaceans prepared: 1605.30.30.00? Check HTS: 1605.30.30.00 maybe not. Real code: 1605.30.30.00 is \"Other prepared or preserved crustaceans, frozen\". Might be valid. But need 10-digit. Could be 1605.30.30.00 is 8 digits? Actually HTS 10-digit includes 2-2-2-2-2. 1605.30.30.00 is 10 digits. Should be valid. Maybe they think not. Could be 2005.90.90.90? No. Let's choose 2005.90.90.90 is for other prepared fish. Not shrimp. Use 1605.30.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297152921,
+      "prompt_tokens": 402,
+      "prompt_time": 0.019370081,
+      "completion_tokens": 253,
+      "completion_time": 0.533218064,
+      "total_tokens": 655,
+      "total_time": 0.552588145,
+      "completion_tokens_details": {
+        "reasoning_tokens": 193
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c652c0ffaa",
+    "x_groq": {
+      "id": "req_01m496xsraeenvqr6th67nn8tn",
+      "seed": 713832241
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1605303000",
+  "predicted_reason": "Frozen prepared crustacean product (shrimp) in a rice flour wrapper, classified under other prepared or preserved crustaceans, frozen",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361392",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "61046310",
+  "raw_response": {
+    "id": "chatcmpl-52fb86fe-1df6-4e74-ba67-b8b7596e8da3",
+    "object": "chat.completion",
+    "created": 1791310292,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6104.63.10\", \"reason\": \"A women's robe/dress with elastic waist and raw edges is classified as a women's or girls' knitted or crocheted dress of cotton.\"}",
+          "reasoning": "Need correct 10-digit. Likely 6104.63.10? Actually HTS 6104.63.10 is valid? 6104.63.10 is \"Women's or girls' dresses, knitted or crocheted, of cotton, other\". That's 10 digits. It's valid. But maybe need 6104.63.10. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.0534345,
+      "prompt_tokens": 279,
+      "prompt_time": 0.064255632,
+      "completion_tokens": 130,
+      "completion_time": 0.271741355,
+      "total_tokens": 409,
+      "total_time": 0.335996987,
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m496ks8ce6j9dzrtnf6e5v62",
+      "seed": 562627599
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61046310",
+  "predicted_reason": "A women's robe/dress with elastic waist and raw edges is classified as a women's or girls' knitted or crocheted dress of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

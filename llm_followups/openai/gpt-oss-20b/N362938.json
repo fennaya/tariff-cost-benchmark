@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362938",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004390080",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3004100000",
+  "raw_response": {
+    "id": "chatcmpl-3e81cb38-dc8b-4ad4-87d6-0bf053322c9c",
+    "object": "chat.completion",
+    "created": 1791310625,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Progesterone in capsule form is classified under 3004.10.00.00 for hormones other than those of the endocrine system.\"}",
+          "reasoning": "Need valid HTS 10-digit. Progesterone is a hormone, under 3004.10.00.00? Actually 3004.10.00.00 is for hormones other than those of the endocrine system. But 10-digit: 3004.10.00.00? That's 8 digits. Need 10: 3004.10.00.00? Actually HTS has 10 digits: 3004.10.00.00? Wait format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Actually 10-digit: 4-2-2-2. So 3004.10.00.00 is 4-2-2-2. That's 10 digits including periods. So it's valid. But maybe need 3004.10.00.00? It's fine. But maybe progesterone is 3004.10.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.193786868,
+      "prompt_tokens": 318,
+      "prompt_time": 0.024506188,
+      "completion_tokens": 258,
+      "completion_time": 0.278398036,
+      "total_tokens": 576,
+      "total_time": 0.302904224,
+      "completion_tokens_details": {
+        "reasoning_tokens": 204
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m496xyp7eezvmtgsmkb8s4cz",
+      "seed": 2037752286
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Progesterone in capsule form is classified under 3004.10.00.00 for hormones other than those of the endocrine system.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361768",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9505900000",
+  "raw_response": {
+    "id": "chatcmpl-1fa090f1-f76c-4d0b-8522-c934baa12d37",
+    "object": "chat.completion",
+    "created": 1791310363,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9990\", \"reason\": \"The items are plastic decorative ornaments (wall/door hangings) made of man\u2011made materials, classified under other plastic articles not elsewhere specified\"}",
+          "reasoning": "Need correct code likely 9505.90.0010? Check HTS: 9505.90.0010 is \"Other\" toys? Actually 9505.90.0010 = \"Other toys, not elsewhere specified\". Might be 9503? Decorative articles: 9503.00.0010? 9503.00.0010 = \"Other toys\". Hmm. Maybe 3926.90.9990 for other plastic articles. Likely 3926.90.9990."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047878359,
+      "prompt_tokens": 352,
+      "prompt_time": 0.017013612,
+      "completion_tokens": 164,
+      "completion_time": 0.341425898,
+      "total_tokens": 516,
+      "total_time": 0.35843951,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m496nykfew9tebbhsk1vg9x0",
+      "seed": 1757865447
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "The items are plastic decorative ornaments (wall/door hangings) made of man\u2011made materials, classified under other plastic articles not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

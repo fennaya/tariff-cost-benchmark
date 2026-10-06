@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361764",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9403200050",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "94032000",
+  "raw_response": {
+    "id": "chatcmpl-5b73fc16-e1b3-4388-9c38-735b9757989b",
+    "object": "chat.completion",
+    "created": 1791310360,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.0010\",\n  \"reason\": \"The item is a metal office workstation with a wood tabletop, classified under other metal furniture.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 9403.20.0010? Check: 9403.20.0010 is \"Other furniture, of metal, not elsewhere specified\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.193392592,
+      "prompt_tokens": 454,
+      "prompt_time": 0.021848953,
+      "completion_tokens": 91,
+      "completion_time": 0.193770646,
+      "total_tokens": 545,
+      "total_time": 0.215619599,
+      "completion_tokens_details": {
+        "reasoning_tokens": 42
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m496nvp4e7a8vc7y4rx44exj",
+      "seed": 168864693
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403200010",
+  "predicted_reason": "The item is a metal office workstation with a wood tabletop, classified under other metal furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

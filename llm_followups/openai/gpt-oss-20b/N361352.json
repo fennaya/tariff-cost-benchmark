@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361352",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8302500000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7308909000",
+  "raw_response": {
+    "id": "chatcmpl-608121c5-ec3f-4bbd-90a0-16ed5ae11587",
+    "object": "chat.completion",
+    "created": 1791310306,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Steel wall\u2011mounted cantilever racks and hook\u2011mount shelving kits are classified under 7308.90.90.00 \u2013 other articles of iron or steel\"}",
+          "reasoning": "Need valid 10-digit HTS. For steel shelving racks: 7308.90.90.00? Actually 7308.90.90.00 is \"Other articles of iron or steel\". But 10-digit: 7308.90.90.00. That exists. Maybe need 7308.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.15504381,
+      "prompt_tokens": 694,
+      "prompt_time": 0.104481703,
+      "completion_tokens": 133,
+      "completion_time": 0.155130587,
+      "total_tokens": 827,
+      "total_time": 0.25961229,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m496m6ngey9r63p9npcrngr5",
+      "seed": 110895089
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Steel wall\u2011mounted cantilever racks and hook\u2011mount shelving kits are classified under 7308.90.90.00 \u2013 other articles of iron or steel",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

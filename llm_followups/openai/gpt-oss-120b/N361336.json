@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361336",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "90189080",
+  "raw_response": {
+    "id": "chatcmpl-6d8a7f35-9ca5-42c1-96b4-97c16ce12684",
+    "object": "chat.completion",
+    "created": 1791310271,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.9095\",\n  \"reason\": \"Wireless communications accessory for medical ventilators, classified as an other medical instrument or appliance not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 9018.90.9095? Check: 9018.90.9095 is \"Other instruments, appliances and machines, having a function not specified elsewhere, for medical, surgical, dental or veterinary uses, not elsewhere specified\". Use 10-digit: 9018.90.9095."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301096476,
+      "prompt_tokens": 445,
+      "prompt_time": 0.018336759,
+      "completion_tokens": 123,
+      "completion_time": 0.260797869,
+      "total_tokens": 568,
+      "total_time": 0.279134628,
+      "completion_tokens_details": {
+        "reasoning_tokens": 72
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m496k458ex1vcxr0p376e8c4",
+      "seed": 753687384
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018909095",
+  "predicted_reason": "Wireless communications accessory for medical ventilators, classified as an other medical instrument or appliance not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

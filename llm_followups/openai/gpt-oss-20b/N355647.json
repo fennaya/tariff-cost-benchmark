@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N355647",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "7020006000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "68019090",
+  "raw_response": {
+    "id": "chatcmpl-8297b6d7-961e-4499-a263-5d090830901c",
+    "object": "chat.completion",
+    "created": 1791309957,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6801.90.90.00\",\"reason\":\"Composite glass slabs for countertops are classified under 6801.90.90.00 \u2013 other glassware.\"}",
+          "reasoning": "Need valid 10-digit. For glassware, 6801.90.90 is 8-digit. 10-digit would be 6801.90.90.00? Actually HTS 10-digit: 6801.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.096298471,
+      "prompt_tokens": 437,
+      "prompt_time": 0.030091555,
+      "completion_tokens": 106,
+      "completion_time": 0.114138428,
+      "total_tokens": 543,
+      "total_time": 0.144229983,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m4969j34e50ta24mh46tzzbq",
+      "seed": 74956911
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6801909000",
+  "predicted_reason": "Composite glass slabs for countertops are classified under 6801.90.90.00 \u2013 other glassware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

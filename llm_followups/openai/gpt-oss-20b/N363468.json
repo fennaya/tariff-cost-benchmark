@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363468",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8543709100",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8517620000",
+  "raw_response": {
+    "id": "chatcmpl-d379b128-5a37-427d-b893-24ab4ad5b526",
+    "object": "chat.completion",
+    "created": 1791310690,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.62.00.00\",\"reason\":\"It is an electronic integrated circuit or micro\u2011circuit for audio processing, fitting the HTSUS heading for such devices.\"}",
+          "reasoning": "Need valid 10-digit. For DSP used in audio equipment: 8517.62.00.00 is 8-digit? Actually 8517.62.00.00 is 10-digit? It's 8517.62.00.00 (8 digits plus two decimals). That's 10 digits including decimals? Format: 8517.62.00.00 is 10 digits including decimals. Should be valid. But maybe need 8517.62.00.00? It's valid. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047089677,
+      "prompt_tokens": 421,
+      "prompt_time": 0.024855941,
+      "completion_tokens": 158,
+      "completion_time": 0.181597988,
+      "total_tokens": 579,
+      "total_time": 0.206453929,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4315eb300",
+    "x_groq": {
+      "id": "req_01m496zxhte0485zzzpgzvb4r5",
+      "seed": 548423198
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517620000",
+  "predicted_reason": "It is an electronic integrated circuit or micro\u2011circuit for audio processing, fitting the HTSUS heading for such devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

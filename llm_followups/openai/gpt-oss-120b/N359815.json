@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359815",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8306420000",
+  "raw_response": {
+    "id": "chatcmpl-7e8cbd1d-3a55-48a6-9443-48eb4eca0742",
+    "object": "chat.completion",
+    "created": 1791310016,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8306.90.00.00\", \"reason\": \"Galvanized iron decorative ornaments are classified as other plated or coated iron articles under heading 8306.90\"}",
+          "reasoning": "Need correct code: decorative metal ornaments likely 8306.90.00.00 (Other articles of iron or steel, plated). 8306.90 is \"Other articles of iron or steel, plated or coated\". 10-digit: 8306.90.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194004842,
+      "prompt_tokens": 556,
+      "prompt_time": 0.029317631,
+      "completion_tokens": 111,
+      "completion_time": 0.234514666,
+      "total_tokens": 667,
+      "total_time": 0.263832297,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m496bbwhekss1nhg8vcm8yg9",
+      "seed": 486250655
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8306900000",
+  "predicted_reason": "Galvanized iron decorative ornaments are classified as other plated or coated iron articles under heading 8306.90",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

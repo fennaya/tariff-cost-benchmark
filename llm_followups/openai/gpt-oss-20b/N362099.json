@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362099",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "6702102000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6307909000",
+  "raw_response": {
+    "id": "chatcmpl-fc17997b-b5b5-45dc-b6a5-469e19bfdb11",
+    "object": "chat.completion",
+    "created": 1791310477,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6307.90.90.00\",\"reason\":\"Plastic wreaths with decorative flowers are classified under 6307.90.90.00\"}",
+          "reasoning": "Need valid 10-digit. For plastic wreaths maybe 6307.90.90.00? But 10-digit: 6307.90.90.00 is 10? Actually 6307.90.90.00 is 10 digits? 6307 90 90 00 = 10 digits. But maybe not exist. Could be 6307.90.90.00? Let's check: 6307.90.90.00 is \"Other articles of plastic, not elsewhere specified\". Might exist. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.856491643,
+      "prompt_tokens": 316,
+      "prompt_time": 0.01890862,
+      "completion_tokens": 158,
+      "completion_time": 0.179964518,
+      "total_tokens": 474,
+      "total_time": 0.198873138,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m496scpdem5v02tscs8tacdd",
+      "seed": 1811262304
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307909000",
+  "predicted_reason": "Plastic wreaths with decorative flowers are classified under 6307.90.90.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

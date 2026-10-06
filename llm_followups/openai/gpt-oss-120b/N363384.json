@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363384",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "3926209050",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6203429000",
+  "raw_response": {
+    "id": "chatcmpl-70504879-dd15-46d9-a681-8242879b24a0",
+    "object": "chat.completion",
+    "created": 1791310629,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6203.42.90.00\",\n  \"reason\": \"Men's jacket made primarily of synthetic (polyurethane) material falls under heading 6203.42 for men's or boys' jackets of synthetic fibers, with subheading 90 for other such garments.\"\n}",
+          "reasoning": "Need correct 10-digit code. For men's jackets of synthetic fibers: 6203.42.90.00 is 8-digit? Actually HTS 10-digit includes 4-2-2-2-? Usually 6203.42.90.00 is 10 digits? 6203 (4) .42 (2) .90 (2) .00 (2) = 10 digits. Might be valid. But maybe correct is 6203.42.90.00 exists. If not, maybe 6203.42.90.00 is valid. Could be 6203.42.90.00 is for \"Other garments, men's or boys', of synthetic fibers, not elsewhere specified\". Might be correct. Provide alternative: 6203.42.90.00. Ensure reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.037979072,
+      "prompt_tokens": 295,
+      "prompt_time": 0.0156897,
+      "completion_tokens": 243,
+      "completion_time": 0.508890736,
+      "total_tokens": 538,
+      "total_time": 0.524580436,
+      "completion_tokens_details": {
+        "reasoning_tokens": 171
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496y22ded0bmv8p6md5nkb8",
+      "seed": 97982893
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6203429000",
+  "predicted_reason": "Men's jacket made primarily of synthetic (polyurethane) material falls under heading 6203.42 for men's or boys' jackets of synthetic fibers, with subheading 90 for other such garments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

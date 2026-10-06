@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360570",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8703230190",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8703230000",
+  "raw_response": {
+    "id": "chatcmpl-ee6cc140-ce94-413c-9b44-476a961a6f0c",
+    "object": "chat.completion",
+    "created": 1791310141,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.00.00\", \"reason\": \"The Audi S5 Sportback is a passenger motor car with a gasoline spark\u2011ignition engine exceeding 2,500\u202fcc, fitting HTSUS subheading 8703.23 for such vehicles.\"}",
+          "reasoning": "Need correct 10-digit code for passenger cars. HTS 2024: 8703.23.00.00 is valid? Actually 8703.23.00.00 exists: \"Motor cars and other motor vehicles principally designed for the transport of persons (other than those of heading 8702), with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity exceeding 2,500 cc\". Might be 8703.23.00.00. That's 10 digits. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048383905,
+      "prompt_tokens": 377,
+      "prompt_time": 0.017425669,
+      "completion_tokens": 178,
+      "completion_time": 0.3819108,
+      "total_tokens": 555,
+      "total_time": 0.399336469,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m496f5k6e1srzdymhf549wae",
+      "seed": 860842861
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703230000",
+  "predicted_reason": "The Audi S5 Sportback is a passenger motor car with a gasoline spark\u2011ignition engine exceeding 2,500\u202fcc, fitting HTSUS subheading 8703.23 for such vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

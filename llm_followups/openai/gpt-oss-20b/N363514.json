@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363514",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "9504500000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9503500000",
+  "raw_response": {
+    "id": "chatcmpl-404cd3e3-8d1a-4ad0-9f63-23b163aba7ca",
+    "object": "chat.completion",
+    "created": 1791310702,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9503.50.00.00\",\"reason\":\"The steering wheel kit is a gaming peripheral for a PC, classified under 9503.50.00.00 \u2013 other gaming accessories.\"}",
+          "reasoning": "Need valid HTS 10-digit. Steering wheel peripheral likely 9503.50.00.00? Actually HTS 9503.50.00.00 exists? Let's check: 9503.50.00.00 is \"Other gaming accessories\". Yes 10-digit: 9503.50.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.313259012,
+      "prompt_tokens": 377,
+      "prompt_time": 0.030033289,
+      "completion_tokens": 126,
+      "completion_time": 0.147439128,
+      "total_tokens": 503,
+      "total_time": 0.177472417,
+      "completion_tokens_details": {
+        "reasoning_tokens": 72
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a8c584dda7",
+    "x_groq": {
+      "id": "req_01m497095aen7ajxs19evnd9g0",
+      "seed": 533377777
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503500000",
+  "predicted_reason": "The steering wheel kit is a gaming peripheral for a PC, classified under 9503.50.00.00 \u2013 other gaming accessories.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

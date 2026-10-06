@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360900",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9405994090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6304909000",
+  "raw_response": {
+    "id": "chatcmpl-9ea60f2d-2e6c-456a-8b4d-b9ac0351de54",
+    "object": "chat.completion",
+    "created": 1791310211,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6304.90.90.00\",\"reason\":\"Silk lampshades are classified under 6304.90.90.00, other articles of silk, not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit HTSUS. Lampshade silk likely 6304.90.90.00? But 6304.90.90.00 is 10-digit? Actually 6304.90.90.00 is 10-digit? It's 4+2+2+2 =10. But maybe 6304.90.90.00 exists? Might be 6304.90.90.00. But user says not exist. Maybe correct is 6304.90.90.00? Let's give 6304.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.03643738,
+      "prompt_tokens": 285,
+      "prompt_time": 0.015377864,
+      "completion_tokens": 176,
+      "completion_time": 0.183168375,
+      "total_tokens": 461,
+      "total_time": 0.198546239,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9340e7d14d",
+    "x_groq": {
+      "id": "req_01m496hafpeacbqntb1emydh58",
+      "seed": 1503288878
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6304909000",
+  "predicted_reason": "Silk lampshades are classified under 6304.90.90.00, other articles of silk, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

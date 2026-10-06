@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363470",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7117907500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "71179000",
+  "raw_response": {
+    "id": "chatcmpl-3b9a5775-8515-42f8-9d89-ef4603af4417",
+    "object": "chat.completion",
+    "created": 1791310644,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7117.90.0010\",\n  \"reason\": \"Earrings made of polymer clay with metal findings are classified as imitation jewelry of other materials, falling under heading 7117 and subheading 90 for other imitation jewelry.\"\n}",
+          "reasoning": "Need correct 10-digit code. I think HTS 7117.90.00 is valid 8-digit; need 10-digit like 7117.90.0010? Actually 7117.90.00 is 8-digit. 10-digit add subheading: 7117.90.0010 (Other). Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.056545743,
+      "prompt_tokens": 271,
+      "prompt_time": 0.030849862,
+      "completion_tokens": 138,
+      "completion_time": 0.288276709,
+      "total_tokens": 409,
+      "total_time": 0.319126571,
+      "completion_tokens_details": {
+        "reasoning_tokens": 73
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m496yh1peq88dj7j237753rt",
+      "seed": 1411444277
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7117900010",
+  "predicted_reason": "Earrings made of polymer clay with metal findings are classified as imitation jewelry of other materials, falling under heading 7117 and subheading 90 for other imitation jewelry.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

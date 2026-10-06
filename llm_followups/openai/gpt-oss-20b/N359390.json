@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359390",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3004102000",
+  "raw_response": {
+    "id": "chatcmpl-ff5e29c5-9717-4334-8adf-6997bf07afc4",
+    "object": "chat.completion",
+    "created": 1791309972,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.20.00\",\"reason\":\"Sodium phenylbutyrate is a medicinal preparation containing an organic compound, fitting the heading for other medicinal preparations containing other organic compounds.\"}",
+          "reasoning": "Need valid HTS 10-digit. For medicinal preparations containing other organic compounds: 3004.10.20.00? Actually HTS 10-digit: 3004.10.20.00 is 10-digit? It's 8? Wait format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit sub-sub? Actually 10-digit: 4+2+2+2 = 10. So 3004.10.20.00 is 10-digit. But maybe not exist. Let's check: 3004.10.20.00 is \"Other medicinal preparations containing other organic compounds\". That exists. But maybe not for sodium phenylbutyrate? Could be 3004.10.20.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.201604171,
+      "prompt_tokens": 314,
+      "prompt_time": 0.038064772,
+      "completion_tokens": 218,
+      "completion_time": 0.250917626,
+      "total_tokens": 532,
+      "total_time": 0.288982398,
+      "completion_tokens_details": {
+        "reasoning_tokens": 164
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_66891002f6",
+    "x_groq": {
+      "id": "req_01m496a0wnev9sv244t4w9e820",
+      "seed": 301125888
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004102000",
+  "predicted_reason": "Sodium phenylbutyrate is a medicinal preparation containing an organic compound, fitting the heading for other medicinal preparations containing other organic compounds.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

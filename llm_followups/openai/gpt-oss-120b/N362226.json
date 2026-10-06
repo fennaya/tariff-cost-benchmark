@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362226",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8704310120",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8704991000",
+  "raw_response": {
+    "id": "chatcmpl-89747a26-b267-4296-808f-e0698f60c68c",
+    "object": "chat.completion",
+    "created": 1791310455,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8704.21.00.00\",\n  \"reason\": \"Four\u2011wheel off\u2011road utility terrain vehicles with gasoline engines of 1000\u202fcc or less are classified under heading 8704, subheading 8704.21 (vehicles with gasoline engines, 1000\u202fcc or less).\"\n}",
+          "reasoning": "Need correct 10-digit code for UTVs. Likely 8704.21.00.00 (four\u2011wheel vehicles, 1000 cc or less, for agriculture). Check: 8704.21 = \"Four\u2011wheel vehicles, gasoline, 1000 cc or less\". 8704.22 diesel. So 8704.21.00.00 is 10-digit. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294325784,
+      "prompt_tokens": 1062,
+      "prompt_time": 0.046132831,
+      "completion_tokens": 168,
+      "completion_time": 0.361264386,
+      "total_tokens": 1230,
+      "total_time": 0.407397217,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m496rqztea08etxgmh29xpz7",
+      "seed": 1781853201
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8704210000",
+  "predicted_reason": "Four\u2011wheel off\u2011road utility terrain vehicles with gasoline engines of 1000\u202fcc or less are classified under heading 8704, subheading 8704.21 (vehicles with gasoline engines, 1000\u202fcc or less).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

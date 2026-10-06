@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362508",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8708952000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73089090",
+  "raw_response": {
+    "id": "chatcmpl-abe91f6d-87c9-4695-8648-b60a0ea1df88",
+    "object": "chat.completion",
+    "created": 1791310491,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7308.90.90.00\",\n  \"reason\": \"Semi-finished seamless steel tubes, not elsewhere specified, used as components for automotive airbag inflators.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 7308.90.90.10? Check: 7308.90.90.00 is \"Other\" steel tubes. 10-digit US: 7308.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194348052,
+      "prompt_tokens": 355,
+      "prompt_time": 0.019599591,
+      "completion_tokens": 108,
+      "completion_time": 0.227964222,
+      "total_tokens": 463,
+      "total_time": 0.247563813,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m496svt7e94976fbmhaf0ncg",
+      "seed": 1510826940
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Semi-finished seamless steel tubes, not elsewhere specified, used as components for automotive airbag inflators.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

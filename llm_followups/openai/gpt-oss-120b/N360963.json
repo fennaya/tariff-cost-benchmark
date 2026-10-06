@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360963",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "7505221000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "90189000",
+  "raw_response": {
+    "id": "chatcmpl-5779c0ac-6a15-4953-abe1-3f3f72e1c9ca",
+    "object": "chat.completion",
+    "created": 1791310199,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.80.00\",\n  \"reason\": \"NiTi wire and strip used in medical devices fall under heading 9018 for medical, surgical, dental or veterinary instruments, specifically the subheading for other such items not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit. NiTi wire likely under 9018.90.80? Check HTS: 9018.90.80 is \"Other\" medical instruments. 9018.90.90 is \"Other\". Actually 9018.90.80 is \"Other, not elsewhere specified\". Need 10-digit: 9018.90.80.00? Usually 6-8-2. So 9018.90.80.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152729925,
+      "prompt_tokens": 290,
+      "prompt_time": 0.013165025,
+      "completion_tokens": 170,
+      "completion_time": 0.361957633,
+      "total_tokens": 460,
+      "total_time": 0.375122658,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m496gy88e1mbfcwhd06781gz",
+      "seed": 1472723933
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018908000",
+  "predicted_reason": "NiTi wire and strip used in medical devices fall under heading 9018 for medical, surgical, dental or veterinary instruments, specifically the subheading for other such items not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360739",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "2106909995",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "21069099",
+  "raw_response": {
+    "id": "chatcmpl-2d392384-15bd-4270-84ce-c584c6647321",
+    "object": "chat.completion",
+    "created": 1791310158,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2106.90.99.00\",\n  \"reason\": \"Frozen mycoprotein-based meat alternatives are classified as other food preparations not elsewhere specified, under heading 2106.90.99.00.\"\n}",
+          "reasoning": "Need correct code. Likely 2106.90.99 is 6-digit then 4-digit? Actually HTS 10-digit: 2106.90.99.00? Check: 2106.90.99.00 is \"Other food preparations not elsewhere specified\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.155388823,
+      "prompt_tokens": 433,
+      "prompt_time": 0.045956416,
+      "completion_tokens": 126,
+      "completion_time": 0.264729593,
+      "total_tokens": 559,
+      "total_time": 0.310686009,
+      "completion_tokens_details": {
+        "reasoning_tokens": 64
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m496fp69erw89mwh8jyzwze1",
+      "seed": 757968350
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909900",
+  "predicted_reason": "Frozen mycoprotein-based meat alternatives are classified as other food preparations not elsewhere specified, under heading 2106.90.99.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

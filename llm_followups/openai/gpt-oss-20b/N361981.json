@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361981",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9403501000",
+  "raw_response": {
+    "id": "chatcmpl-37e7a591-529c-4163-8958-4d356c4b61b8",
+    "object": "chat.completion",
+    "created": 1791310448,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.50.10.00\",\"reason\":\"Decorative pillow-like article made of polyester fibers, fitting the heading for other pillows, cushions, etc., of synthetic fibers.\"}",
+          "reasoning": "Need valid HTS 10-digit. For decorative pillows: 9403.50.10.00? Actually HTS 9403.50.10 is \"Other pillows, cushions, etc., of synthetic fibers\". 10-digit: 9403.50.10.00. That exists. But maybe 9403.50.10.00 is correct. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220991183,
+      "prompt_tokens": 487,
+      "prompt_time": 0.030517734,
+      "completion_tokens": 130,
+      "completion_time": 0.140138581,
+      "total_tokens": 617,
+      "total_time": 0.170656315,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e11c8bbf69",
+    "x_groq": {
+      "id": "req_01m496rhw8e78rw1gms4h323h4",
+      "seed": 615197441
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403501000",
+  "predicted_reason": "Decorative pillow-like article made of polyester fibers, fitting the heading for other pillows, cushions, etc., of synthetic fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

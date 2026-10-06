@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360440",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "8708998180",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089990",
+  "raw_response": {
+    "id": "chatcmpl-e23968a7-56b6-4911-b130-dc3a1e9c4c2a",
+    "object": "chat.completion",
+    "created": 1791310125,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90.00\",\n  \"reason\": \"The coolant manifold assembly is an automotive part not specifically listed, falling under 'Other parts and accessories of motor vehicles' (heading 8708).\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8708.99.90.00? Actually HTS 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit tariff, 2-digit statistical. For 8708.99.90.00 is valid. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.444818642,
+      "prompt_tokens": 433,
+      "prompt_time": 0.023216599,
+      "completion_tokens": 129,
+      "completion_time": 0.268207618,
+      "total_tokens": 562,
+      "total_time": 0.291424217,
+      "completion_tokens_details": {
+        "reasoning_tokens": 67
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m496eng5exw9mz5qt4hqv4qk",
+      "seed": 72304601
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "The coolant manifold assembly is an automotive part not specifically listed, falling under 'Other parts and accessories of motor vehicles' (heading 8708).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

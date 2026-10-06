@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362150",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8431200000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8425909000",
+  "raw_response": {
+    "id": "chatcmpl-30795ae7-3fd5-4489-9f3a-90ba2b02240e",
+    "object": "chat.completion",
+    "created": 1791310490,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8425.90.90.00\",\"reason\":\"The kit contains non\u2011motorized mechanical parts of a lifting robot, fitting the heading for other parts and accessories of machinery for lifting or handling.\"}",
+          "reasoning": "Need valid 10-digit HTS. Likely 8425.90.90.00 is 8-digit? Actually HTS 10-digit: 8425.90.90.00 is 10-digit? It's 8? 8425.90.90.00 is 10? 8425.90.90.00 has 8? Actually format: 4 digits, dot, 2, dot, 2, dot, 2. That's 10 digits including dots. So 8425.90.90.00 is valid. But maybe wrong. Could be 8425.90.90.00 is for \"Other parts and accessories of machinery for lifting or handling\". That seems correct. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207181692,
+      "prompt_tokens": 537,
+      "prompt_time": 0.042129213,
+      "completion_tokens": 209,
+      "completion_time": 0.227563092,
+      "total_tokens": 746,
+      "total_time": 0.269692305,
+      "completion_tokens_details": {
+        "reasoning_tokens": 154
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5979a0e1b7",
+    "x_groq": {
+      "id": "req_01m496st1ve4mtt3et5085t63v",
+      "seed": 1705233158
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425909000",
+  "predicted_reason": "The kit contains non\u2011motorized mechanical parts of a lifting robot, fitting the heading for other parts and accessories of machinery for lifting or handling.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

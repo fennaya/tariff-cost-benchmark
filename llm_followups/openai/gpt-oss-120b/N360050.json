@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360050",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "6306229030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6306129000",
+  "raw_response": {
+    "id": "chatcmpl-259f5f80-bd69-4b4b-b9ff-679a51a641a7",
+    "object": "chat.completion",
+    "created": 1791310070,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6306.12.90.00\", \"reason\": \"The item is a portable pop\u2011up tent made of polyester fabric coated with polyurethane and a fiberglass frame, classifying it under heading 6306 (tents) subheading 12 (of man\u2011made fibers) and further under sub\u2011heading 90 for other tents.\"}",
+          "reasoning": "Need correct code. Tents of man\u2011made fibers: 6306.12.90.00 is valid? Actually HTS 6306.12.90.00 exists: \"Other tents, of man\u2011made fibers, other than camping\". Might be 6306.12.90.00 is valid. But user says not exist. Maybe need 6306.12.90.00 is 8 digits? It's 8+2? It's 10 digits. Should be okay. Might be 6306.12.90.00 is correct. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.052820019,
+      "prompt_tokens": 842,
+      "prompt_time": 0.050772367,
+      "completion_tokens": 206,
+      "completion_time": 0.430602211,
+      "total_tokens": 1048,
+      "total_time": 0.481374578,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496d031ervbjas6fbc12g7v",
+      "seed": 2066060740
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6306129000",
+  "predicted_reason": "The item is a portable pop\u2011up tent made of polyester fabric coated with polyurethane and a fiberglass frame, classifying it under heading 6306 (tents) subheading 12 (of man\u2011made fibers) and further under sub\u2011heading 90 for other tents.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

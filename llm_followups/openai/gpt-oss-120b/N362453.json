@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362453",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8708295190",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089990",
+  "raw_response": {
+    "id": "chatcmpl-3f3c7591-e250-4098-be6f-3692f86afbbd",
+    "object": "chat.completion",
+    "created": 1791310480,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.9010\",\n  \"reason\": \"Classified as an other part and accessory of a motor vehicle body made of aluminum, not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8708.99.9010? Check: 8708.99.90 is 8-digit. 10-digit add subheading: 8708.99.9010 (Other parts and accessories of bodies of motor vehicles, other). Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047449549,
+      "prompt_tokens": 403,
+      "prompt_time": 0.019084468,
+      "completion_tokens": 114,
+      "completion_time": 0.240585429,
+      "total_tokens": 517,
+      "total_time": 0.259669897,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m496sgy0ev18wvrc5v60d4qn",
+      "seed": 497951194
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999010",
+  "predicted_reason": "Classified as an other part and accessory of a motor vehicle body made of aluminum, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

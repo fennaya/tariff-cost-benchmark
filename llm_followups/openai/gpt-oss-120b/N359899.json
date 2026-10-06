@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359899",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3305900000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "33049910",
+  "raw_response": {
+    "id": "chatcmpl-91622b58-1864-4f3e-ba62-6727bfc758f2",
+    "object": "chat.completion",
+    "created": 1791310042,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3304.99.1000\", \"reason\": \"Cosmetic hair tonic is a preparation for use on the hair, classified under heading 3304 as other hair preparations not elsewhere specified.\"}",
+          "reasoning": "Need correct code: likely 3305.10.00.00? Actually 3305 is preparations for skin care; hair preparations are 3304.99.10? Check: 3304.99.10 is \"Other preparations for use on the hair\" 10-digit 3304.99.1000. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.100005345,
+      "prompt_tokens": 342,
+      "prompt_time": 0.027497433,
+      "completion_tokens": 127,
+      "completion_time": 0.267063707,
+      "total_tokens": 469,
+      "total_time": 0.29456114,
+      "completion_tokens_details": {
+        "reasoning_tokens": 72
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m496c545e3y8ec3kqnhggjjq",
+      "seed": 278697020
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304991000",
+  "predicted_reason": "Cosmetic hair tonic is a preparation for use on the hair, classified under heading 3304 as other hair preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

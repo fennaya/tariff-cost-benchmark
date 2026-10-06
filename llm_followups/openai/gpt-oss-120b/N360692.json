@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360692",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "3213900000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "32131000",
+  "raw_response": {
+    "id": "chatcmpl-a2dc6fc8-c5f9-47af-a282-3b1a10e16f47",
+    "object": "chat.completion",
+    "created": 1791310157,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3213.10.00.00\", \"reason\": \"Artist oil paints in paste form packaged in tubes are classified under heading 3213 (paints and varnishes) subheading 3213.10 for oil paints, yielding the 10\u2011digit code 3213.10.00.00.\"}",
+          "reasoning": "Need correct code: Artist oil paints are under 3213.10.00.00? Actually HTS 10-digit: 3213.10.00.00 is valid. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018543671,
+      "prompt_tokens": 332,
+      "prompt_time": 0.016449,
+      "completion_tokens": 122,
+      "completion_time": 0.256528029,
+      "total_tokens": 454,
+      "total_time": 0.272977029,
+      "completion_tokens_details": {
+        "reasoning_tokens": 42
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m496fnk6et89pp8p3b5n1zaw",
+      "seed": 235714443
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3213100000",
+  "predicted_reason": "Artist oil paints in paste form packaged in tubes are classified under heading 3213 (paints and varnishes) subheading 3213.10 for oil paints, yielding the 10\u2011digit code 3213.10.00.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

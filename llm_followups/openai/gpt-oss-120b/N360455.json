@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360455",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8708998180",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87149990",
+  "raw_response": {
+    "id": "chatcmpl-45467ed7-d0dc-4856-85f7-886ec30b2d00",
+    "object": "chat.completion",
+    "created": 1791310126,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8714.99.90\", \"reason\": \"Hitch\u2011mounted bicycle transport racks are classified as other parts and accessories of motor vehicles.\"}",
+          "reasoning": "Need correct code: likely 8714.99.90 is 6-digit? Actually HTS 6-digit plus 4-digit. 8714.99.90 is valid? 8714.99.90 exists? Might be 8714.99.90 is for \"Other parts and accessories of motor vehicles\". Could be valid. But user says not exist. Maybe correct is 8714.99.90? Check. Could be 8714.99.90 is valid. But give another: 8714.99.90 is 6-2-2. It's valid. Might need 8714.99.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018049524,
+      "prompt_tokens": 386,
+      "prompt_time": 0.100905992,
+      "completion_tokens": 182,
+      "completion_time": 0.389705966,
+      "total_tokens": 568,
+      "total_time": 0.490611958,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m496epfzeh0b8f9p8mpmm3db",
+      "seed": 103352760
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87149990",
+  "predicted_reason": "Hitch\u2011mounted bicycle transport racks are classified as other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

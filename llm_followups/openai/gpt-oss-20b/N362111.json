@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362111",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "3921904090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "69019090",
+  "raw_response": {
+    "id": "chatcmpl-d4ba88b2-5a96-4cca-af95-8e1685ad4699",
+    "object": "chat.completion",
+    "created": 1791310478,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6901.90.90.00\",\"reason\":\"The product is a phenolic resin\u2011based prepreg film with glass fiber, classified under 6901.90.90 (other plastic composites) with the 10\u2011digit extension 00.\"}",
+          "reasoning": "Need valid 10-digit HTS. For prepreg composite film? Likely 6901.90.90.00? But 6901.90.90 is 8-digit. Need 10-digit: 6901.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.210686058,
+      "prompt_tokens": 334,
+      "prompt_time": 0.027144914,
+      "completion_tokens": 123,
+      "completion_time": 0.135687301,
+      "total_tokens": 457,
+      "total_time": 0.162832215,
+      "completion_tokens_details": {
+        "reasoning_tokens": 57
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_816fc87d18",
+    "x_groq": {
+      "id": "req_01m496sf58e8vt1gzavch9eq9s",
+      "seed": 779482666
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6901909000",
+  "predicted_reason": "The product is a phenolic resin\u2011based prepreg film with glass fiber, classified under 6901.90.90 (other plastic composites) with the 10\u2011digit extension 00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

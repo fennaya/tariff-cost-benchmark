@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359849",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1206909000",
+  "raw_response": {
+    "id": "chatcmpl-bbd3cbe9-8133-4fa5-b377-1f3b98b60e90",
+    "object": "chat.completion",
+    "created": 1791310040,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90 00\",\"reason\":\"Mineral foliar fertilizer with N, P, K and organic additives, not a pesticide, classified under 1206.90.90 00\"}",
+          "reasoning": "Need valid 10-digit HTS. For mineral fertilizers: 1206.90.90 00 is 8-digit? Actually HTS 10-digit: 1206.90.90 00. That's 10 digits including decimals? It's 8 digits plus 2 zeros. So 1206.90.90 00 is valid. But maybe need 1206.90.90 00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015662326,
+      "prompt_tokens": 512,
+      "prompt_time": 0.044653093,
+      "completion_tokens": 144,
+      "completion_time": 0.149130576,
+      "total_tokens": 656,
+      "total_time": 0.193783669,
+      "completion_tokens_details": {
+        "reasoning_tokens": 88
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d3e146e1a5",
+    "x_groq": {
+      "id": "req_01m496c3d8er3r647q5an5r87x",
+      "seed": 367361279
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Mineral foliar fertilizer with N, P, K and organic additives, not a pesticide, classified under 1206.90.90 00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

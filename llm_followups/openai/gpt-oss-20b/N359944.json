@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359944",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "7318290000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7318909000",
+  "raw_response": {
+    "id": "chatcmpl-a8a4337d-65ce-49ae-97ac-3589a8f19c6d",
+    "object": "chat.completion",
+    "created": 1791310066,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7318.90.90.00\",\"reason\":\"Small metal hinge pin for a headset is an article of iron or steel not elsewhere specified\"}",
+          "reasoning": "Need valid 10-digit. For metal hinge pins: 7318.90.90.00? Actually 7318.90.90.00 is valid? Check: 7318.90.90.00 is \"Other articles of iron or steel, not elsewhere specified\". That is 10 digits. So maybe correct. But user says not exist. Maybe need 7318.90.90.00 is correct. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.179632792,
+      "prompt_tokens": 315,
+      "prompt_time": 0.017757217,
+      "completion_tokens": 134,
+      "completion_time": 0.150090701,
+      "total_tokens": 449,
+      "total_time": 0.167847918,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m496cwageysatbh46tzqnam2",
+      "seed": 2066235753
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318909000",
+  "predicted_reason": "Small metal hinge pin for a headset is an article of iron or steel not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

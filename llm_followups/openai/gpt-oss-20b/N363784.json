@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363784",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3706106090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9701909000",
+  "raw_response": {
+    "id": "chatcmpl-ffa93a8a-a954-43c9-a229-716f6347c5be",
+    "object": "chat.completion",
+    "created": 1791310739,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9701.90.90.00\",\"reason\":\"It is a decorative wall art item made of film cells and a poster, classified under other articles of art.\"}",
+          "reasoning": "Need valid 10-digit HTS. For decorative wall art: 9701.90.90.00? Actually 9701.90.90.00 is \"Other articles of art, not elsewhere specified or included\". That's 10 digits? 9701.90.90.00 is 10 digits. But maybe not exist? Let's check: 9701.90.90.00 is valid. But maybe they want 9701.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.124386612,
+      "prompt_tokens": 411,
+      "prompt_time": 0.028992358,
+      "completion_tokens": 150,
+      "completion_time": 0.178582249,
+      "total_tokens": 561,
+      "total_time": 0.207574607,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e99e93f2ac",
+    "x_groq": {
+      "id": "req_01m4971dzkeg8sdfm5frgsp9d8",
+      "seed": 1452065557
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9701909000",
+  "predicted_reason": "It is a decorative wall art item made of film cells and a poster, classified under other articles of art.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361006",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "83021000",
+  "raw_response": {
+    "id": "chatcmpl-cd0fc876-9c87-4244-8efb-0020afda218f",
+    "object": "chat.completion",
+    "created": 1791310210,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8302.42.90.00\", \"reason\": \"The adjustable metal computer stand is a base/pedestal for supporting equipment, classifiable under other bases, pedestals, racks, etc., of iron or steel.\"}",
+          "reasoning": "Need correct 10-digit. Likely 8302.42.90? Actually stands for \"Other bases, pedestals, racks, etc., of metal\". HTS 8302.42.90 is \"Other bases, pedestals, racks, etc., of iron or steel, not elsewhere specified\". 10-digit: 8302.42.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.230448126,
+      "prompt_tokens": 409,
+      "prompt_time": 0.042549054,
+      "completion_tokens": 145,
+      "completion_time": 0.302131357,
+      "total_tokens": 554,
+      "total_time": 0.344680411,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m496h8cae7jvfn4s5afx71nm",
+      "seed": 1160270012
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8302429000",
+  "predicted_reason": "The adjustable metal computer stand is a base/pedestal for supporting equipment, classifiable under other bases, pedestals, racks, etc., of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

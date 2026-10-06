@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361647",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8409915085",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84711000",
+  "raw_response": {
+    "id": "chatcmpl-757f9580-a129-493f-99e3-866969b94da4",
+    "object": "chat.completion",
+    "created": 1791310377,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"84.71.10.00.00\",\"reason\":\"The timing chain guide assembly is a component of an internal combustion engine, fitting the HTS 10\u2011digit heading for parts of motor vehicles used for power transmission.\"}",
+          "reasoning": "Need valid HTS 10-digit. For engine parts: 84.71.10.00 is 8 digits? Actually HTS 10-digit: 84.71.10.00.00? Wait 10-digit: 84.71.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015776497,
+      "prompt_tokens": 393,
+      "prompt_time": 0.036230677,
+      "completion_tokens": 122,
+      "completion_time": 0.135097427,
+      "total_tokens": 515,
+      "total_time": 0.171328104,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ef00694abe",
+    "x_groq": {
+      "id": "req_01m496pcspewm8cfpta7xap87x",
+      "seed": 1350353984
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471100000",
+  "predicted_reason": "The timing chain guide assembly is a component of an internal combustion engine, fitting the HTS 10\u2011digit heading for parts of motor vehicles used for power transmission.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

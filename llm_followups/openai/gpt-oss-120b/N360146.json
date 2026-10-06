@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360146",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "7610100030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7610200000",
+  "raw_response": {
+    "id": "chatcmpl-2d53a12c-8447-4cae-b289-eaf2beecceda",
+    "object": "chat.completion",
+    "created": 1791310087,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7610.10.00.00\", \"reason\": \"Aluminum doors, windows and frames, including shower doors, are classified under heading 7610.10 in the HTSUS.\"}",
+          "reasoning": "Need correct code for aluminum shower door. Likely 7610.10.00.00 (Aluminum doors, windows, frames). Check: 7610.10 is for aluminum doors, windows, frames. So use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.092653065,
+      "prompt_tokens": 283,
+      "prompt_time": 0.014739886,
+      "completion_tokens": 105,
+      "completion_time": 0.220738921,
+      "total_tokens": 388,
+      "total_time": 0.235478807,
+      "completion_tokens_details": {
+        "reasoning_tokens": 49
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_b9a23305b9",
+    "x_groq": {
+      "id": "req_01m496dgp3ecatyegq1n36gyyx",
+      "seed": 325238157
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7610100000",
+  "predicted_reason": "Aluminum doors, windows and frames, including shower doors, are classified under heading 7610.10 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

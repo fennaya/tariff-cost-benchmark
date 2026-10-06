@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362742",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8471500150",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8471300000",
+  "raw_response": {
+    "id": "chatcmpl-1b8a825b-4953-4d2c-9328-0ed1a3b1bbd1",
+    "object": "chat.completion",
+    "created": 1791310568,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8471.30.00.00\",\"reason\":\"The motherboard incorporates an integrated AMD APU (CPU+GPU) and is a computing machine part, matching HTS 8471.30.00.00.\"}",
+          "reasoning": "Need valid 10-digit. For motherboards with integrated CPU? HTS 8471.30.00.00 is 8 digits? Actually 8471.30.00.00 is 10 digits? It's 8471.30.00.00 (8+2+2). That's 10 digits. But maybe not exist. Maybe 8471.30.00.00 is valid. But they say not exist. Maybe use 8471.30.00.00? Let's give 8471.30.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.266913973,
+      "prompt_tokens": 377,
+      "prompt_time": 0.020883439,
+      "completion_tokens": 174,
+      "completion_time": 0.204376857,
+      "total_tokens": 551,
+      "total_time": 0.225260296,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a8c584dda7",
+    "x_groq": {
+      "id": "req_01m496w6v6e4q961hejxemxs99",
+      "seed": 1775308978
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471300000",
+  "predicted_reason": "The motherboard incorporates an integrated AMD APU (CPU+GPU) and is a computing machine part, matching HTS 8471.30.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

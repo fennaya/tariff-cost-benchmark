@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363802",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9403100040",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9403200000",
+  "raw_response": {
+    "id": "chatcmpl-f3db92a0-36b9-48fc-955c-b777c74daaf7",
+    "object": "chat.completion",
+    "created": 1791310676,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.0010\",\n  \"reason\": \"Classified as other metal furniture (steel storage cabinet) under heading 9403.20, with the specific 10\u2011digit subheading for metal cabinets.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 9403.20.0010? Check: 9403.20.0010 is \"Other metal furniture, of a kind used in offices\". Might be 9403.20.0015? Use 9403.20.0010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.091750053,
+      "prompt_tokens": 445,
+      "prompt_time": 0.022466116,
+      "completion_tokens": 125,
+      "completion_time": 0.263250376,
+      "total_tokens": 570,
+      "total_time": 0.285716492,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m496zfnrenfst1d7qbjm04wz",
+      "seed": 1381183339
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403200010",
+  "predicted_reason": "Classified as other metal furniture (steel storage cabinet) under heading 9403.20, with the specific 10\u2011digit subheading for metal cabinets.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

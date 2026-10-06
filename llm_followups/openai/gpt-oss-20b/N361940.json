@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361940",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "4202920807",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39241010",
+  "raw_response": {
+    "id": "chatcmpl-05743327-53dc-4757-8deb-cd2d66cfee0f",
+    "object": "chat.completion",
+    "created": 1791310437,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.10.00\",\"reason\":\"Insulated cooler bag with plastic outer surface falls under plastic containers for food or drink, 1\u201310\u202fL capacity.\"}",
+          "reasoning": "Need correct HTS 10-digit. For insulated cooler bags plastic outer: 3924.10.10? Actually 3924.10.10 is \"Other containers, of plastics, for food or drink, with a capacity of 1 to 10 litres\". But cooler bag maybe 3924.10.10? But 10-digit: 3924.10.10? That's 8 digits. Need 10: 3924.10.10? Actually format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? For 10-digit: 3924.10.10? That's 8. Need 10: 3924.10.10? Wait 10-digit includes 4+2+2+2? Actually 10-digit: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Example: 3924.10.10.00? But HTS uses 10 digits: 4+2+2+2? Actually 10-digit: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Example: 3924.10.10.00? But official format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Actually 10-digit: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Wait: 10-digit: 4+2+2+2? That's 10. So 3924.10.10.00? That would be 4+2+2+2=10. So answer: 3924.10.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015881989,
+      "prompt_tokens": 275,
+      "prompt_time": 0.014937494,
+      "completion_tokens": 422,
+      "completion_time": 0.467663929,
+      "total_tokens": 697,
+      "total_time": 0.482601423,
+      "completion_tokens_details": {
+        "reasoning_tokens": 371
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d3e146e1a5",
+    "x_groq": {
+      "id": "req_01m496r720ej2bbv1n99qqffnp",
+      "seed": 9207364
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924101000",
+  "predicted_reason": "Insulated cooler bag with plastic outer surface falls under plastic containers for food or drink, 1\u201310\u202fL capacity.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

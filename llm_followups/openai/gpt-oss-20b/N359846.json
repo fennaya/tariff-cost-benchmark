@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359846",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1206909000",
+  "raw_response": {
+    "id": "chatcmpl-84abf879-51be-4085-8097-a18e1dc0c583",
+    "object": "chat.completion",
+    "created": 1791310032,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"Mineral mixed fertilizer containing nitrogen and phosphorus, not classified elsewhere.\"}",
+          "reasoning": "Need valid 10-digit HTS. For mineral fertilizers with nitrogen and phosphorus: 1206.90.90.00 is 8-digit? Actually HTS 10-digit: 1206.90.90.00 is 8-digit? Wait 1206.90.90.00 is 8-digit? It's 8 digits? 1206.90.90.00 has 8 digits including decimals? Actually HTS 10-digit: 1206.90.90.00 is 8 digits? Let's think: 1206.90.90.00 is 8 digits? 1206.90.90.00 has 8 digits? 1206 90 90 00 = 8 digits? Actually each pair is two digits: 12 06 90 90 00 = 10 digits? Wait 12 06 90 90 00 = 10 digits. So 1206.90.90.00 is 10-digit. So it's valid. But maybe need 1206.90.90.00? It's fine. But maybe need 1206.90.90.00? Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192888272,
+      "prompt_tokens": 440,
+      "prompt_time": 0.030733937,
+      "completion_tokens": 281,
+      "completion_time": 0.30586777,
+      "total_tokens": 721,
+      "total_time": 0.336601707,
+      "completion_tokens_details": {
+        "reasoning_tokens": 242
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m496bv6te5tbxtfa5yq0b8yt",
+      "seed": 858202770
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Mineral mixed fertilizer containing nitrogen and phosphorus, not classified elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

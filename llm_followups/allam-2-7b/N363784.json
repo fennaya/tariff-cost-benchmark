@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N363784",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3706106090",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7607908980",
+  "raw_response": {
+    "id": "chatcmpl-d5c6ec64-c771-4e76-8c19-a7dfa69800cd",
+    "object": "chat.completion",
+    "created": 1791313332,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.90.9000\", \"reason\": \"The product is classified under heading 9403 (Wooden furniture) as it consists of a wooden frame. Since it also includes a movie poster, film cells, and an LED lightbox unit, the 'other' subheading within this heading is used, indicating that these components are not typical furniture elements.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086704322,
+      "prompt_tokens": 450,
+      "prompt_time": 0.012587788,
+      "completion_tokens": 94,
+      "completion_time": 0.067092058,
+      "total_tokens": 544,
+      "total_time": 0.079679846
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m499gjjxe6erg3t5jw2p02aq",
+      "seed": 759777545
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403909000",
+  "predicted_reason": "The product is classified under heading 9403 (Wooden furniture) as it consists of a wooden frame. Since it also includes a movie poster, film cells, and an LED lightbox unit, the 'other' subheading within this heading is used, indicating that these components are not typical furniture elements.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

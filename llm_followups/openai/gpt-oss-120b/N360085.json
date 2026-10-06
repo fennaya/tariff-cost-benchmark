@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360085",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8483905080",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84834000",
+  "raw_response": {
+    "id": "chatcmpl-4bbc5210-8bba-411a-87ba-c85d4c770afc",
+    "object": "chat.completion",
+    "created": 1791310083,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.40.10.00\",\n  \"reason\": \"Worm wheel (gear) for a power steering system in a passenger vehicle falls under heading 8483 (gears and gearing) subheading 8483.40.10 for gears and gear boxes for motor vehicles.\"\n}",
+          "reasoning": "Need correct 10-digit code. Worm gear for vehicle: likely 8483.40.10? Check HTS: 8483.40.10 is \"Gears and gear boxes, for motor vehicles\". Actually 8483.40.10 = \"Gears and gear boxes, for motor vehicles\". 10-digit: 8483.40.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047782782,
+      "prompt_tokens": 341,
+      "prompt_time": 0.015568381,
+      "completion_tokens": 158,
+      "completion_time": 0.326482847,
+      "total_tokens": 499,
+      "total_time": 0.342051228,
+      "completion_tokens_details": {
+        "reasoning_tokens": 81
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496dde3e62bm537haadqyg8",
+      "seed": 1862404480
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483401000",
+  "predicted_reason": "Worm wheel (gear) for a power steering system in a passenger vehicle falls under heading 8483 (gears and gearing) subheading 8483.40.10 for gears and gear boxes for motor vehicles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

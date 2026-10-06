@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361947",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9403910080",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "94039000",
+  "raw_response": {
+    "id": "chatcmpl-ca9c8335-b894-455b-9be0-a1410b938650",
+    "object": "chat.completion",
+    "created": 1791310387,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.0010\",\n  \"reason\": \"The item is a wooden tabletop component (part of furniture) with a metal surface, classified under HTSUS heading 9403.20 for other wooden furniture parts.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 9403.20.00? That's wooden furniture parts. But copper clad metal surface maybe 9403.20.00 (wooden furniture parts). 10-digit: 9403.20.0010? Check: 9403.20.0010 is \"Other wooden furniture parts\". Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089324926,
+      "prompt_tokens": 361,
+      "prompt_time": 0.017002265,
+      "completion_tokens": 139,
+      "completion_time": 0.293333621,
+      "total_tokens": 500,
+      "total_time": 0.310335886,
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m496pnvhejb9hk439t7g7b5e",
+      "seed": 2114820917
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403200010",
+  "predicted_reason": "The item is a wooden tabletop component (part of furniture) with a metal surface, classified under HTSUS heading 9403.20 for other wooden furniture parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360465",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4016935050",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39269010",
+  "raw_response": {
+    "id": "chatcmpl-4a51681f-4455-473c-8776-9f64b74cef42",
+    "object": "chat.completion",
+    "created": 1791310131,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9990\", \"reason\": \"Plastic sealing kits with rubber components are classified as other plastic articles not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Likely 3926.90.99? Check: 3926.90.99 is \"Other articles of plastics\". 10-digit: 3926.90.9990? Actually 6-digit heading 3926.90, then 4-digit subheading 9990. So 3926.90.9990. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048029502,
+      "prompt_tokens": 384,
+      "prompt_time": 0.019328205,
+      "completion_tokens": 123,
+      "completion_time": 0.259786705,
+      "total_tokens": 507,
+      "total_time": 0.27911491,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m496evnxebjbyqpx8h2wgm2r",
+      "seed": 1930213160
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "Plastic sealing kits with rubber components are classified as other plastic articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

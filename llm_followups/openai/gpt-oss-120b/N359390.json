@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359390",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "30049000",
+  "raw_response": {
+    "id": "chatcmpl-d4c7341c-722a-4aa6-9891-b6698afedcce",
+    "object": "chat.completion",
+    "created": 1791309965,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.10.00\",\n  \"reason\": \"Sodium phenylbutyrate tablets are classified as other medicinal preparations (tablets) not elsewhere specified in Chapter 30.\"\n}",
+          "reasoning": "Need correct 10-digit code for sodium phenylbutyrate tablets, a pharmaceutical. Likely 3004.90.10? Check HTS: 3004.90.10 is \"Other medicinal preparations containing mixed or unmixed products, not elsewhere specified\". Actually 3004.90.10 is \"Other medicinal preparations containing mixed or unmixed products, not elsewhere specified\". 3004.90.90 is \"Other\". Need 10-digit: 3004.90.10.00? Format: 6-2-2-2? Usually 10-digit: 3004.90.10.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.019653966,
+      "prompt_tokens": 301,
+      "prompt_time": 0.017152086,
+      "completion_tokens": 193,
+      "completion_time": 0.409670921,
+      "total_tokens": 494,
+      "total_time": 0.426823007,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m4969t6cekvrdv20qbtk3xbw",
+      "seed": 1132496858
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004901000",
+  "predicted_reason": "Sodium phenylbutyrate tablets are classified as other medicinal preparations (tablets) not elsewhere specified in Chapter 30.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

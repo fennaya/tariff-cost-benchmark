@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361298",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5509530030",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "5201909000",
+  "raw_response": {
+    "id": "chatcmpl-5e404384-b157-44aa-9824-88c78078f86a",
+    "object": "chat.completion",
+    "created": 1791310283,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"5201.90.90.00\",\"reason\":\"Blended cotton/polyester carded ring-spun yarn\"}",
+          "reasoning": "Need valid 10-digit. For blended yarns 5201.90.90.00 is 8-digit? Actually HTS 10-digit: 5201.90.90.00 is 10? It's 8? Format 4.2.2.2? 5201.90.90.00 is 10? 5201.90.90.00 has 4+2+2+2=10. So valid. But maybe need 5201.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.036077832,
+      "prompt_tokens": 464,
+      "prompt_time": 0.024162697,
+      "completion_tokens": 148,
+      "completion_time": 0.15197616,
+      "total_tokens": 612,
+      "total_time": 0.176138857,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ef00694abe",
+    "x_groq": {
+      "id": "req_01m496kgjre6nvct883gcv5b7j",
+      "seed": 946676794
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5201909000",
+  "predicted_reason": "Blended cotton/polyester carded ring-spun yarn",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

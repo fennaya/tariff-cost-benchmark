@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360082",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8471410150",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8471300095",
+  "raw_response": {
+    "id": "chatcmpl-ef76af34-3cd6-4c61-89b8-f37106f8edf3",
+    "object": "chat.completion",
+    "created": 1791310080,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8471.30.0095\",\n  \"reason\": \"These are portable tablet computers with capacitive touchscreens running Android, used as integrated control consoles, falling under heading 8471.30 for portable digital automatic data processing machines.\"\n}",
+          "reasoning": "Need correct code: likely 8471.30.0095? Actually HTS 8471.30.0095 exists? 8471.30.0095 is for \"Other portable digital automatic data processing machines, weighing not more than 10 kg, other\". Might be valid. But they want 10-digit. Provide valid like 8471.30.0095. Ensure exists. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047465836,
+      "prompt_tokens": 434,
+      "prompt_time": 0.021318772,
+      "completion_tokens": 152,
+      "completion_time": 0.318331126,
+      "total_tokens": 586,
+      "total_time": 0.339649898,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m496dacyetw81yhchtph3qcp",
+      "seed": 388403513
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471300095",
+  "predicted_reason": "These are portable tablet computers with capacitive touchscreens running Android, used as integrated control consoles, falling under heading 8471.30 for portable digital automatic data processing machines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

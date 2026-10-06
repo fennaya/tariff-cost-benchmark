@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360911",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "71139090",
+  "raw_response": {
+    "id": "chatcmpl-04e5a5b4-d809-4b89-915d-c2149c543b8d",
+    "object": "chat.completion",
+    "created": 1791310212,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7113.90.90.00\",\"reason\":\"Decorative aluminum statue of a lion is classified under 'Other articles of aluminum'.\"}",
+          "reasoning": "Need valid HTS 10-digit. For decorative statues of animals made of metal: 7113.90.90? Actually 7113.90.90 is \"Other articles of aluminum\". But 10-digit: 7113.90.90.00? Wait 10-digit: 7113.90.90.00. But check: 7113.90.90.00 is \"Other articles of aluminum\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195467525,
+      "prompt_tokens": 262,
+      "prompt_time": 0.106000508,
+      "completion_tokens": 137,
+      "completion_time": 0.149984796,
+      "total_tokens": 399,
+      "total_time": 0.255985304,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5979a0e1b7",
+    "x_groq": {
+      "id": "req_01m496hb0gewca3j98z4k52a94",
+      "seed": 60408265
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7113909000",
+  "predicted_reason": "Decorative aluminum statue of a lion is classified under 'Other articles of aluminum'.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361404",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6208929000",
+  "raw_response": {
+    "id": "chatcmpl-6659a00b-d654-4c9f-bd70-b4f1d2e631f2",
+    "object": "chat.completion",
+    "created": 1791310298,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6208.92.90.00\", \"reason\": \"Classifies a women's knitted robe as other women's garments, knitted or crocheted, under heading 6208.92\"}",
+          "reasoning": "Need correct 10-digit. Robe likely women's outerwear, knitted, 6208.92.10? Let's check: 6208.92.10.00 is women's or girls' knitted or crocheted dresses? Actually 6208.92.10 is women's or girls' knitted or crocheted dresses. Robe maybe 6208.92.90 is other. Need valid 10-digit: 6208.92.90.00 exists. So earlier said doesn't exist? maybe need 6208.92.90.00 is valid. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213807061,
+      "prompt_tokens": 265,
+      "prompt_time": 0.01375752,
+      "completion_tokens": 171,
+      "completion_time": 0.355386295,
+      "total_tokens": 436,
+      "total_time": 0.369143815,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496kz38e3zt2jv5r31e43jb",
+      "seed": 1263692826
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6208929000",
+  "predicted_reason": "Classifies a women's knitted robe as other women's garments, knitted or crocheted, under heading 6208.92",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

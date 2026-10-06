@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361235",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73249000",
+  "raw_response": {
+    "id": "chatcmpl-8dca3bfc-f654-4b15-9985-a2f917bf5fcc",
+    "object": "chat.completion",
+    "created": 1791310240,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7324.90.0010\", \"reason\": \"Stainless steel rectangular container used as a receptacle is an other article of iron or steel not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit code. Likely 7324.90.0010? Check HTS: 7324.90.0010 = Other articles of iron or steel, not elsewhere specified, of stainless steel. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018015045,
+      "prompt_tokens": 277,
+      "prompt_time": 0.012777672,
+      "completion_tokens": 100,
+      "completion_time": 0.212727513,
+      "total_tokens": 377,
+      "total_time": 0.225505185,
+      "completion_tokens_details": {
+        "reasoning_tokens": 50
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m496j6bpencaavtnsd0a3kkb",
+      "seed": 972955358
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7324900010",
+  "predicted_reason": "Stainless steel rectangular container used as a receptacle is an other article of iron or steel not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N364038",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "8544429090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "85444010",
+  "raw_response": {
+    "id": "chatcmpl-05d26236-d1fc-4e8b-bbc6-414c0991ff9c",
+    "object": "chat.completion",
+    "created": 1791310780,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8544.40.10.00\",\"reason\":\"Electrical insulated 3\u2011conductor power cable for voltage not exceeding 1,000\u202fV, used to connect high\u2011fidelity components to a domestic outlet.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. For power cables 3-conductor, voltage <=1kV. HTS 8544.40.10? Actually 8544.40.10 is \"Electrical insulated conductors, of copper, for a voltage not exceeding 1,000 V, for use in power supply units\". But 10-digit: 8544.40.10.00? Wait 10-digit: 8544.40.10.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.438469159,
+      "prompt_tokens": 273,
+      "prompt_time": 0.014446083,
+      "completion_tokens": 163,
+      "completion_time": 0.174771454,
+      "total_tokens": 436,
+      "total_time": 0.189217537,
+      "completion_tokens_details": {
+        "reasoning_tokens": 104
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_99996fee8e",
+    "x_groq": {
+      "id": "req_01m4972nmne158wntbq88g8ft2",
+      "seed": 317491014
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8544401000",
+  "predicted_reason": "Electrical insulated 3\u2011conductor power cable for voltage not exceeding 1,000\u202fV, used to connect high\u2011fidelity components to a domestic outlet.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361384",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029900",
+  "raw_response": {
+    "id": "chatcmpl-bc27a271-d1b0-4c97-987f-e91a5e87df12",
+    "object": "chat.completion",
+    "created": 1791310286,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.99.0010\", \"reason\": \"The item is a generic made\u2011up textile article subject to FTC marking rules, classified under heading 6302 for other made\u2011up textile articles not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. Maybe 6302.99.0010? Check. Use 6302.99.0010 (Other made-up textile articles, other). Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300498018,
+      "prompt_tokens": 348,
+      "prompt_time": 0.015244706,
+      "completion_tokens": 100,
+      "completion_time": 0.207482302,
+      "total_tokens": 448,
+      "total_time": 0.222727008,
+      "completion_tokens_details": {
+        "reasoning_tokens": 39
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m496kkbqeevv7b0965jtstv3",
+      "seed": 919544206
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302990010",
+  "predicted_reason": "The item is a generic made\u2011up textile article subject to FTC marking rules, classified under heading 6302 for other made\u2011up textile articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

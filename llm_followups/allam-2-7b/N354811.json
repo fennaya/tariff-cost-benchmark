@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N354811",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "6802930010",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6813995000",
+  "raw_response": {
+    "id": "chatcmpl-e14b0ff2-fafe-45eb-a3e8-90a3f0808618",
+    "object": "chat.completion",
+    "created": 1791309950,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6813.99.9000\", \"reason\": \"The product is classified under heading 6813, which covers natural stones, including granite. As it cannot be precisely placed into an existing category, it is assigned to 'other natural stones not elsewhere specified or included' under subheading 6813.99.9000.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087492574,
+      "prompt_tokens": 418,
+      "prompt_time": 0.011780512,
+      "completion_tokens": 92,
+      "completion_time": 0.065865927,
+      "total_tokens": 510,
+      "total_time": 0.077646439
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m4969bfje8brbnrrynjch5gx",
+      "seed": 2139383897
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6813999000",
+  "predicted_reason": "The product is classified under heading 6813, which covers natural stones, including granite. As it cannot be precisely placed into an existing category, it is assigned to 'other natural stones not elsewhere specified or included' under subheading 6813.99.9000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

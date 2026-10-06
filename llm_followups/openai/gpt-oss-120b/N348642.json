@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N348642",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "5208212090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029100",
+  "raw_response": {
+    "id": "chatcmpl-f8d95106-7979-4dcc-b495-77f9fd973068",
+    "object": "chat.completion",
+    "created": 1791309950,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.91.0010\",\n  \"reason\": \"The product is plain\u2011woven 100\u202f% cotton medical gauze (multiple plies) without pharmaceutical impregnation, which is classified under heading 6302.91 for gauze, bandages and similar articles of cotton.\"\n}",
+          "reasoning": "Need correct code: likely 6302.91.0010? Check: 6302.91.0010 is \"Gauze, bandages and similar articles, of cotton, not impregnated\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087628689,
+      "prompt_tokens": 1114,
+      "prompt_time": 0.0608325,
+      "completion_tokens": 124,
+      "completion_time": 0.261089891,
+      "total_tokens": 1238,
+      "total_time": 0.321922391,
+      "completion_tokens_details": {
+        "reasoning_tokens": 47
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m4969annepfakg6c4w3hadsg",
+      "seed": 56154119
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302910010",
+  "predicted_reason": "The product is plain\u2011woven 100\u202f% cotton medical gauze (multiple plies) without pharmaceutical impregnation, which is classified under heading 6302.91 for gauze, bandages and similar articles of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

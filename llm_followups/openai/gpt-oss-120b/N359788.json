@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359788",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8509805095",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84223000",
+  "raw_response": {
+    "id": "chatcmpl-71369b14-2945-4ca1-9dd7-2ee67226b614",
+    "object": "chat.completion",
+    "created": 1791310006,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8422.30.10\",\n  \"reason\": \"Machinery for preparing or processing meat (sausage stuffing machines) not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8422.30.10? Check HTS: 8422.30.10 \u2013 \"Other machinery for preparing or processing meat, fish, or poultry, not elsewhere specified\". Sausage stuffers are meat processing. So 8422.30.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048968691,
+      "prompt_tokens": 502,
+      "prompt_time": 0.025305651,
+      "completion_tokens": 111,
+      "completion_time": 0.239569307,
+      "total_tokens": 613,
+      "total_time": 0.264874958,
+      "completion_tokens_details": {
+        "reasoning_tokens": 64
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496b22rebna3e0ndg4zsjs9",
+      "seed": 1929705975
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84223010",
+  "predicted_reason": "Machinery for preparing or processing meat (sausage stuffing machines) not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

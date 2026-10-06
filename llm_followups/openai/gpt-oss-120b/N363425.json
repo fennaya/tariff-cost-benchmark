@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363425",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "9505904000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "48191000",
+  "raw_response": {
+    "id": "chatcmpl-b015930a-e078-45ed-87eb-88bf5fe08785",
+    "object": "chat.completion",
+    "created": 1791310638,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4819.10.0010\", \"reason\": \"Decorative tissue paper garlands are paper products cut to shape and printed, falling under heading 4819.10 for paper cut to shape.\"}",
+          "reasoning": "Need correct code. Decorative tissue paper garland likely under 4819.10.00? Actually HTS 4819.10.00 is \"Paper, paperboard, cellulose wadding and webs of cellulose fibers, cut to shape, printed, etc.\" Might be valid. But user says not exist. Could be 4819.10.00 exists. Check maybe 4819.10.00 is valid. Might need 4819.10.00? It's 8 digits. Need 10-digit: 4819.10.0010? Actually 10-digit includes statistical suffix. Use 4819.10.0010 (Other). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300265171,
+      "prompt_tokens": 331,
+      "prompt_time": 0.016431388,
+      "completion_tokens": 196,
+      "completion_time": 0.415258635,
+      "total_tokens": 527,
+      "total_time": 0.431690023,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m496yak2eksrdnerbywt9tfw",
+      "seed": 24342225
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4819100010",
+  "predicted_reason": "Decorative tissue paper garlands are paper products cut to shape and printed, falling under heading 4819.10 for paper cut to shape.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

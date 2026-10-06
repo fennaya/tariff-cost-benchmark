@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1509000000",
+  "raw_response": {
+    "id": "chatcmpl-3f36832d-e800-41dc-8399-520be3b0cc63",
+    "object": "chat.completion",
+    "created": 1791310442,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1509.90.00.00\", \"reason\": \"Shea butter, a vegetable fat, is classified under heading 1509 as other vegetable fats and oils not elsewhere specified\"}",
+          "reasoning": "Need correct 10-digit code. Shea butter is under 1509.90.00.00? Actually 1509.90.00.00 is \"Other vegetable fats and oils and their fractions, not elsewhere specified\". Shea butter is 1509.90.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298938432,
+      "prompt_tokens": 551,
+      "prompt_time": 0.024502246,
+      "completion_tokens": 116,
+      "completion_time": 0.240947346,
+      "total_tokens": 667,
+      "total_time": 0.265449592,
+      "completion_tokens_details": {
+        "reasoning_tokens": 63
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m496rbg1e04vd3w5hvzybgdr",
+      "seed": 1487338450
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1509900000",
+  "predicted_reason": "Shea butter, a vegetable fat, is classified under heading 1509 as other vegetable fats and oils not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

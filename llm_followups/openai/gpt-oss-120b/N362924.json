@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362924",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7318290000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089990",
+  "raw_response": {
+    "id": "chatcmpl-f846ed9c-e71b-4e22-ab04-bdf0d4787292",
+    "object": "chat.completion",
+    "created": 1791310549,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.9090\", \"reason\": \"The steel compression limiter is an automotive accessory part not specifically classified elsewhere, falling under other parts and accessories of motor vehicles.\"}",
+          "reasoning": "Need correct code. Likely under 8708.99.90?? Actually 8708.99.90 is 6-digit? 8708.99.90 is 8-digit. Need 10-digit: 8708.99.9090 maybe. Check: 8708.99.9090 is \"Other parts and accessories of motor vehicles, not elsewhere specified\". Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048494881,
+      "prompt_tokens": 442,
+      "prompt_time": 0.02080738,
+      "completion_tokens": 135,
+      "completion_time": 0.288178127,
+      "total_tokens": 577,
+      "total_time": 0.308985507,
+      "completion_tokens_details": {
+        "reasoning_tokens": 83
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m496vm5tepp9dytvq5gdhkyv",
+      "seed": 1585694690
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999090",
+  "predicted_reason": "The steel compression limiter is an automotive accessory part not specifically classified elsewhere, falling under other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

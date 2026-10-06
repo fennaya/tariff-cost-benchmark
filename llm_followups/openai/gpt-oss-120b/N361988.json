@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361988",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9019200010",
+  "raw_response": {
+    "id": "chatcmpl-46cc0a44-4897-4015-a431-f4ef65171d9f",
+    "object": "chat.completion",
+    "created": 1791310396,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9019.20.0010\",\n  \"reason\": \"Classified as an electric therapeutic heating pad, which falls under heading 9019 (electro\u2011therapeutic apparatus) and the subheading for other electro\u2011therapeutic devices.\"\n}",
+          "reasoning": "Need correct code. Likely 9019.20.0010? Check HTS: 9019.20.0010 is \"Electrotherapeutic apparatus, other than those of heading 9018\". Might be valid. But user says not exist. Maybe correct is 9019.20.0015? Actually 9019.20.0010 exists. Could be 9019.20.0015 for other. Provide valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018280156,
+      "prompt_tokens": 503,
+      "prompt_time": 0.024166245,
+      "completion_tokens": 164,
+      "completion_time": 0.348786215,
+      "total_tokens": 667,
+      "total_time": 0.37295246,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496pygmesc9nsgaf4m2s2ee",
+      "seed": 860895645
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9019200010",
+  "predicted_reason": "Classified as an electric therapeutic heating pad, which falls under heading 9019 (electro\u2011therapeutic apparatus) and the subheading for other electro\u2011therapeutic devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

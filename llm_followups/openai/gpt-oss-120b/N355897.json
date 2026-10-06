@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N355897",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6802990090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "68022000",
+  "raw_response": {
+    "id": "chatcmpl-178b4417-1200-4452-8db3-573a60ce8cb6",
+    "object": "chat.completion",
+    "created": 1791309959,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.0010\", \"reason\": \"Polished, beveled metamorphic stone used for countertops and flooring is classified as other worked natural stone under heading 6802.20\"}",
+          "reasoning": "Need correct 10-digit code for natural stone, polished, for countertops: likely 6802.20.0010? Let's check: 6802.20.0010 is \"Granite, other than that of heading 6802.10, worked, polished, etc.\" Actually 6802.20 is \"Other worked stone (including slate)\". 10-digit: 6802.20.0010 = \"Other worked stone, polished, etc.\" Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048521162,
+      "prompt_tokens": 364,
+      "prompt_time": 0.01670373,
+      "completion_tokens": 155,
+      "completion_time": 0.329889074,
+      "total_tokens": 519,
+      "total_time": 0.346592804,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m4969mddepwr6szftscm4ac5",
+      "seed": 1850193134
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802200010",
+  "predicted_reason": "Polished, beveled metamorphic stone used for countertops and flooring is classified as other worked natural stone under heading 6802.20",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363362",
+  "rulingDate": "2026-07-30T00:00:00",
+  "true_code": "9504909080",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9503000000",
+  "raw_response": {
+    "id": "chatcmpl-0cd6a2e3-db99-4ddc-9672-a882f55129b9",
+    "object": "chat.completion",
+    "created": 1791310667,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9503.00.00.00\",\"reason\":\"Board game with cards and accessories is classified under 9503.00.00.00 \u2013 games, toys and sporting goods.\"}",
+          "reasoning": "Need valid HTS 10-digit. For board games: 9503.00.00.00 is 10-digit? Actually HTS 10-digit: 9503.00.00.00 is 10 digits? It's 4+2+2+2? 9503.00.00.00 is 10 digits? 9503 00 00 00. Yes. But maybe need 9503.00.00.00? It's valid. But maybe they want 9503.00.00.00? It's fine. But maybe they want 9503.00.00.00? Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192673347,
+      "prompt_tokens": 683,
+      "prompt_time": 0.035488038,
+      "completion_tokens": 186,
+      "completion_time": 0.205316838,
+      "total_tokens": 869,
+      "total_time": 0.240804876,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_66891002f6",
+    "x_groq": {
+      "id": "req_01m496z6t6eh29rp2s1by0d8qg",
+      "seed": 221269339
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503000000",
+  "predicted_reason": "Board game with cards and accessories is classified under 9503.00.00.00 \u2013 games, toys and sporting goods.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

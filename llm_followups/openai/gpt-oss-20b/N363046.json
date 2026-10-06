@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363046",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4814200000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "5318909010",
+  "raw_response": {
+    "id": "chatcmpl-8b72c416-8172-489e-ae8a-dd1544edfb2b",
+    "object": "chat.completion",
+    "created": 1791310638,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"5318.90.90.10\",\"reason\":\"Wallcoverings of vinyl adhered to paper backing are classified under 5318.90.90.10, other wallcoverings of other materials.\"}",
+          "reasoning": "Need correct HTS 10-digit. Vinyl wallcoverings likely 5318.90.90.10? But 5318.90.90.10 exists? Actually 5318.90.90.10 is \"Other wallcoverings of other materials\". 10-digit: 5318.90.90.10. That exists. Maybe need 5318.90.90.10. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.097125993,
+      "prompt_tokens": 297,
+      "prompt_time": 0.022286157,
+      "completion_tokens": 143,
+      "completion_time": 0.156200259,
+      "total_tokens": 440,
+      "total_time": 0.178486416,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_feb9b278f1",
+    "x_groq": {
+      "id": "req_01m496yatkef591wdbt842cr8h",
+      "seed": 1002702458
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5318909010",
+  "predicted_reason": "Wallcoverings of vinyl adhered to paper backing are classified under 5318.90.90.10, other wallcoverings of other materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362083",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "3105590000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "12069090",
+  "raw_response": {
+    "id": "chatcmpl-f1aa44f2-e5f1-499a-8854-0d08af31ccf2",
+    "object": "chat.completion",
+    "created": 1791310472,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"The product is a processed seed\u2011treatment fertilizer, classified under 1206.90.90.00 for other fertilizers not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. For fertilizers: 1206.90.90 is 8-digit? Actually HTS 10-digit: 1206.90.90.00? But 1206.90.90 is 8-digit. Need 10-digit: 1206.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219347333,
+      "prompt_tokens": 478,
+      "prompt_time": 0.024614785,
+      "completion_tokens": 129,
+      "completion_time": 0.137603096,
+      "total_tokens": 607,
+      "total_time": 0.162217881,
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m496s8pjesy8kfvzy3ge4hgz",
+      "seed": 1798523520
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "The product is a processed seed\u2011treatment fertilizer, classified under 1206.90.90.00 for other fertilizers not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

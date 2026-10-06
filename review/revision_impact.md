@@ -1,0 +1,35 @@
+# Revision-impact check (scripts/check_revision_impact.py)
+
+## 2026 releases (PDF-derived 10-digit codes) vs the current JSON schedule
+
+| Release | 10-digit codes | not in current JSON | in current JSON but not in release |
+|---|---|---|---|
+| 2026HTSBasic | 20246 | 630 | 333 |
+| 2026HTSRev1 | 20254 | 638 | 333 |
+| 2026HTSRev10 | 20321 | 558 | 186 |
+| 2026HTSRev11 | 20414 | 472 | 7 |
+| 2026HTSRev12 | 20416 | 474 | 7 |
+| 2026HTSRev13 | 20433 | 492 | 8 |
+| 2026HTSRev14 | 20436 | 495 | 8 |
+| 2026HTSRev15 | 20436 | 495 | 8 |
+| 2026HTSRev16 | 20436 | 495 | 8 |
+| 2026HTSRev17 | 20437 | 496 | 8 |
+| 2026HTSRev18 | 20439 | 498 | 8 |
+| 2026HTSRev19 | 20439 | 498 | 8 |
+| 2026HTSRev2 | 20341 | 579 | 187 |
+| 2026HTSRev20 | 20439 | 498 | 8 |
+| 2026HTSRev3 | 20343 | 580 | 186 |
+| 2026HTSRev4 | 20345 | 582 | 186 |
+| 2026HTSRev5 | 20311 | 548 | 186 |
+| 2026HTSRev6 | 20311 | 548 | 186 |
+| 2026HTSRev7 | 20312 | 549 | 186 |
+| 2026HTSRev8 | 20312 | 549 | 186 |
+| 2026HTSRev9 | 20318 | 555 | 186 |
+
+True codes of the 1098 usable rulings absent from their own ruling-date release (PDF-derived): **5**.
+
+10-digit predicted codes whose validity differs between the ruling-date PDF release and the current JSON:
+
+- openai/gpt-oss-20b: 0
+- openai/gpt-oss-120b: 1
+- allam-2-7b: 0

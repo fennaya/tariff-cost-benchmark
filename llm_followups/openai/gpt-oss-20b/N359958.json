@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359958",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8425800000",
+  "raw_response": {
+    "id": "chatcmpl-37bd5b84-f0b0-473b-833d-d5e914552f86",
+    "object": "chat.completion",
+    "created": 1791310069,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8425.80.00.00\",\"reason\":\"The item is a faucet aerator/tap sprayer, classified under 8425.80.00.00 \u2013 other parts of faucets, taps, etc.\"}",
+          "reasoning": "Need valid 10-digit. For faucet aerator likely 8425.80.00.00? Actually 8425.80.00.00 is 10-digit? It's 8425.80.00.00 (4+2+2+2). That's 10 digits including periods? It's 4+2+2+2=10 digits. But maybe correct is 8425.80.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205932564,
+      "prompt_tokens": 327,
+      "prompt_time": 0.018288001,
+      "completion_tokens": 152,
+      "completion_time": 0.167914007,
+      "total_tokens": 479,
+      "total_time": 0.186202008,
+      "completion_tokens_details": {
+        "reasoning_tokens": 93
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m496czcceng8v7xwz6agmaac",
+      "seed": 439793489
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425800000",
+  "predicted_reason": "The item is a faucet aerator/tap sprayer, classified under 8425.80.00.00 \u2013 other parts of faucets, taps, etc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

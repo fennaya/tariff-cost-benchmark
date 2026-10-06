@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360468",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9506696020",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "95069900",
+  "raw_response": {
+    "id": "chatcmpl-5b7b5903-bf5a-40a6-92e1-d82466c76f3e",
+    "object": "chat.completion",
+    "created": 1791310137,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9506.91.00.00\", \"reason\": \"Classified as other sports equipment (training balls) not intended for regular baseball play\"}",
+          "reasoning": "Need correct 10-digit. Likely 9506.91.00.00? Check: 9506.91 \u2013 Articles and equipment for gymnastics, other sports. Training balls? Actually 9506.91.00.00 is \"Other articles and equipment for sports\". Could be 9506.99.00.00 is \"Other\". But need 10 digits. Use 9506.91.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.338851854,
+      "prompt_tokens": 417,
+      "prompt_time": 0.032684575,
+      "completion_tokens": 135,
+      "completion_time": 0.315053573,
+      "total_tokens": 552,
+      "total_time": 0.347738148,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m496f1e8ehdshqxvtaxsanx9",
+      "seed": 1383341755
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9506910000",
+  "predicted_reason": "Classified as other sports equipment (training balls) not intended for regular baseball play",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

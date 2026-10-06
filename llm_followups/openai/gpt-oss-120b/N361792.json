@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361792",
+  "rulingDate": "2026-06-04T00:00:00",
+  "true_code": "6116107520",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6116102000",
+  "raw_response": {
+    "id": "chatcmpl-d6b2c100-9cbe-441c-b7bc-4e635dc6c641",
+    "object": "chat.completion",
+    "created": 1791310372,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6116.10.20.00\", \"reason\": \"The product is a polyester knit glove with a TPU membrane, classifying it as a textile glove of man\u2011made fibers under heading 6116.10 and subheading .20 for other textile gloves.\"}",
+          "reasoning": "Need correct 10-digit. Likely 6116.10.20.00? Actually HTSUS 2024: 6116.10.20.00 is valid? Check: 6116.10.20.00 \u2013 Gloves, mittens, mitts, of textile materials, of man\u2011made fibers, other than protective. Might be 6116.10.20.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047413366,
+      "prompt_tokens": 443,
+      "prompt_time": 0.020962502,
+      "completion_tokens": 157,
+      "completion_time": 0.323056265,
+      "total_tokens": 600,
+      "total_time": 0.344018767,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496p76xedpb6d7zq57wgyy3",
+      "seed": 505208400
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6116102000",
+  "predicted_reason": "The product is a polyester knit glove with a TPU membrane, classifying it as a textile glove of man\u2011made fibers under heading 6116.10 and subheading .20 for other textile gloves.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

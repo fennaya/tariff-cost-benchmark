@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362002",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39241010",
+  "raw_response": {
+    "id": "chatcmpl-2e08612f-98b6-4a1d-a539-e0ef2ba9b2cb",
+    "object": "chat.completion",
+    "created": 1791310459,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.10.00\",\"reason\":\"The item is a single-piece, die-cut, open-cell reticulated polyurethane foam component, classified under 3924.10.10.00 for other plastic articles not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. For polyurethane foam articles: 3924.10.10? Actually 3924.10.10 is \"Other articles of plastics, not elsewhere specified, of other plastics\". But 3924.10.10 is 10-digit? 3924.10.10 is 8 digits? Actually 3924.10.10 is 8? Wait format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit sub-sub? 10-digit: 3924.10.10? That's 8 digits. Need 10-digit: 3924.10.10.00? Actually HTSUS 10-digit: 3924.10.10.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20668979,
+      "prompt_tokens": 365,
+      "prompt_time": 0.022601779,
+      "completion_tokens": 222,
+      "completion_time": 0.257778274,
+      "total_tokens": 587,
+      "total_time": 0.280380053,
+      "completion_tokens_details": {
+        "reasoning_tokens": 158
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e11c8bbf69",
+    "x_groq": {
+      "id": "req_01m496rvq8e8s8kgygxq0mq2mg",
+      "seed": 158476574
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924101000",
+  "predicted_reason": "The item is a single-piece, die-cut, open-cell reticulated polyurethane foam component, classified under 3924.10.10.00 for other plastic articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

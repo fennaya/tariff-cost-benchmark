@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N362304",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "2008996500",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1905909000",
+  "raw_response": {
+    "id": "chatcmpl-21210076-36d4-4d47-ba12-2c147e3c4556",
+    "object": "chat.completion",
+    "created": 1791310522,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1905.90.9900\", \"reason\": \"The product is classified under 'Other Food Products Not Elsewhere Classified,' due to its being a food item made from a single ingredient (casava) and not fitting neatly into a specific category.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.083599291,
+      "prompt_tokens": 412,
+      "prompt_time": 0.011629022,
+      "completion_tokens": 69,
+      "completion_time": 0.049441642,
+      "total_tokens": 481,
+      "total_time": 0.061070664
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496tsm3e639f2p62vykga4p",
+      "seed": 271291576
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1905909900",
+  "predicted_reason": "The product is classified under 'Other Food Products Not Elsewhere Classified,' due to its being a food item made from a single ingredient (casava) and not fitting neatly into a specific category.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

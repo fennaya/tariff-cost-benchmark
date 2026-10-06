@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362910",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7013998090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "70189090",
+  "raw_response": {
+    "id": "chatcmpl-f30f01ec-f023-4fc5-ae5c-cd2e80229ce2",
+    "object": "chat.completion",
+    "created": 1791310541,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7018.90.90.00\", \"reason\": \"Decorative glassware not elsewhere specified, such as glass cylinders with LEDs, falls under heading 7018 and subheading 90.90 for other glassware.\"}",
+          "reasoning": "Need correct 10-digit. Likely 7018.90.90.00? Actually HTS 10-digit: 7018.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.383675364,
+      "prompt_tokens": 362,
+      "prompt_time": 0.036782706,
+      "completion_tokens": 101,
+      "completion_time": 0.214822169,
+      "total_tokens": 463,
+      "total_time": 0.251604875,
+      "completion_tokens_details": {
+        "reasoning_tokens": 39
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m496vcgsep5952nx49b2g8zv",
+      "seed": 2107723636
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7018909000",
+  "predicted_reason": "Decorative glassware not elsewhere specified, such as glass cylinders with LEDs, falls under heading 7018 and subheading 90.90 for other glassware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

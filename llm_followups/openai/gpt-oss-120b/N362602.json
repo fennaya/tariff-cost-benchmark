@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362602",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "3824993990",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "31059900",
+  "raw_response": {
+    "id": "chatcmpl-16792fd1-0f06-403a-b95e-94b3ffde01b5",
+    "object": "chat.completion",
+    "created": 1791310497,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3105.99.00.00\",\n  \"reason\": \"Classified as a mixture of inorganic chemical salts (synthetic reef aquarium salt) under heading 3105.99 for other mixtures of inorganic chemicals.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 3105.99.00?? Actually HTS 3105.99.00 is valid 8-digit; 10-digit add country? 3105.99.00.00? Usually 10-digit: 3105.99.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218225775,
+      "prompt_tokens": 287,
+      "prompt_time": 0.013585756,
+      "completion_tokens": 129,
+      "completion_time": 0.272245411,
+      "total_tokens": 416,
+      "total_time": 0.285831167,
+      "completion_tokens_details": {
+        "reasoning_tokens": 67
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m496t1f5ea48q6rj867h1atm",
+      "seed": 1571142482
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3105990000",
+  "predicted_reason": "Classified as a mixture of inorganic chemical salts (synthetic reef aquarium salt) under heading 3105.99 for other mixtures of inorganic chemicals.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

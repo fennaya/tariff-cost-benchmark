@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359763",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8525893000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8525801000",
+  "raw_response": {
+    "id": "chatcmpl-26fdac59-4b53-4711-9240-0812eaf7d796",
+    "object": "chat.completion",
+    "created": 1791309996,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8525.80.10.00\",\"reason\":\"Dual\u2011channel video camera module for vehicle mounting, classified under video cameras (other)\"}",
+          "reasoning": "Need valid 10-digit HTS. For video cameras: 8525.80.10.00 is 10-digit? Actually 8525.80.10.00 is 10 digits? 8525.80.10.00 has 10 digits including decimals? Format: 8525.80.10.00 is 10 digits? 8525 80 10 00. Yes. But maybe not exist. Let's pick 8525.80.10.00 is valid. But user says not exist. Maybe correct is 8525.80.10.00? Let's choose 8525.80.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.212482587,
+      "prompt_tokens": 308,
+      "prompt_time": 0.018905676,
+      "completion_tokens": 179,
+      "completion_time": 0.187998576,
+      "total_tokens": 487,
+      "total_time": 0.206904252,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5979a0e1b7",
+    "x_groq": {
+      "id": "req_01m496ar8neec9t3xj2kykrfx7",
+      "seed": 1238978496
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8525801000",
+  "predicted_reason": "Dual\u2011channel video camera module for vehicle mounting, classified under video cameras (other)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

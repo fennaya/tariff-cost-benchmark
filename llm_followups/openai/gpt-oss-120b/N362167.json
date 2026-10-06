@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362167",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "3505100092",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "11083000",
+  "raw_response": {
+    "id": "chatcmpl-62f57a70-9d5e-4a5b-8a6f-d96a4922b657",
+    "object": "chat.completion",
+    "created": 1791310436,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1108.30.0010\", \"reason\": \"Physically modified tapioca starch used as a food texturizer is classified under heading 1108.30 for other modified starches.\"}",
+          "reasoning": "Need correct 10-digit. Modified starches: 1108.30.00 is 8-digit. 10-digit would be 1108.30.0010? Actually HTSUS 10-digit: 1108.30.0010 is \"Modified starches, other than those of heading 1108.20\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.005031172,
+      "prompt_tokens": 400,
+      "prompt_time": 0.01764714,
+      "completion_tokens": 130,
+      "completion_time": 0.271561862,
+      "total_tokens": 530,
+      "total_time": 0.289209002,
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m496r5w8ejhvs085g3dytzk7",
+      "seed": 597521650
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1108300010",
+  "predicted_reason": "Physically modified tapioca starch used as a food texturizer is classified under heading 1108.30 for other modified starches.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

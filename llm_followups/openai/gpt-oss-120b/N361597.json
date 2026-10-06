@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361597",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "8704230100",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8701920000",
+  "raw_response": {
+    "id": "chatcmpl-dd44969d-cdb4-4936-b11e-13ac1ece6805",
+    "object": "chat.completion",
+    "created": 1791310336,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8701.92.90.00\", \"reason\": \"The forwarder is a self\u2011propelled forestry tractor not used for general transport, fitting heading 8701.92 for other self\u2011propelled tractors.\"}",
+          "reasoning": "Need correct 10-digit. Likely 8701.92.90.00? Check HTS: 8701.92.90.00 is \"Other tractors, self-propelled, other than those of heading 8702\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.199417363,
+      "prompt_tokens": 569,
+      "prompt_time": 0.026427632,
+      "completion_tokens": 116,
+      "completion_time": 0.244054691,
+      "total_tokens": 685,
+      "total_time": 0.270482323,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m496n3rseb88q21n6gjfdh83",
+      "seed": 196214207
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8701929000",
+  "predicted_reason": "The forwarder is a self\u2011propelled forestry tractor not used for general transport, fitting heading 8701.92 for other self\u2011propelled tractors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361174",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "2939790000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "2804200000",
+  "raw_response": {
+    "id": "chatcmpl-d22e2c2e-75c0-457b-aa40-923787ee741d",
+    "object": "chat.completion",
+    "created": 1791310233,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3815.90.0000\", \"reason\": \"A bulk crystalline powder of unspecified chemical composition is classified under \\\"Chemical products and preparations, not elsewhere specified or included\\\" (heading 3815)\"}",
+          "reasoning": "Need guess. Could be \"3105.99.0000\" for mineral fertilizers? But unknown. Provide valid code. Use generic \"3815.90.0000\" for chemical preparations not elsewhere. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017535065,
+      "prompt_tokens": 234,
+      "prompt_time": 0.008932172,
+      "completion_tokens": 103,
+      "completion_time": 0.218948475,
+      "total_tokens": 337,
+      "total_time": 0.227880647,
+      "completion_tokens_details": {
+        "reasoning_tokens": 46
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m496hzt9en2s4ctbyddtz5xf",
+      "seed": 505915384
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3815900000",
+  "predicted_reason": "A bulk crystalline powder of unspecified chemical composition is classified under \"Chemical products and preparations, not elsewhere specified or included\" (heading 3815)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

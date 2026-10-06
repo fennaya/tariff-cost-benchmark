@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N364038",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "8544429090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "85444900",
+  "raw_response": {
+    "id": "chatcmpl-04607e4f-549d-4714-afe6-520ef259e618",
+    "object": "chat.completion",
+    "created": 1791310700,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.49.00.00\", \"reason\": \"The item is an insulated 3\u2011conductor power cable for connecting equipment to a domestic outlet, classified under heading 8544 for insulated electric conductors, subheading 49 for other conductors.\"}",
+          "reasoning": "Need correct 10-digit code. For power cords, HTS 8544.49.00.00? Actually 8544.49.00.00 is 10-digit. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018311075,
+      "prompt_tokens": 288,
+      "prompt_time": 0.01750995,
+      "completion_tokens": 112,
+      "completion_time": 0.233193199,
+      "total_tokens": 400,
+      "total_time": 0.250703149,
+      "completion_tokens_details": {
+        "reasoning_tokens": 42
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m49707gve43vb3v04j135153",
+      "seed": 1066334609
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8544490000",
+  "predicted_reason": "The item is an insulated 3\u2011conductor power cable for connecting equipment to a domestic outlet, classified under heading 8544 for insulated electric conductors, subheading 49 for other conductors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

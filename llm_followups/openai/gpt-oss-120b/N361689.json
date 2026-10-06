@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361689",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8307103000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7307299090",
+  "raw_response": {
+    "id": "chatcmpl-ea1852b0-7e69-4e97-93f7-42a1397fc0e3",
+    "object": "chat.completion",
+    "created": 1791310341,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7307.29.8010\",\n  \"reason\": \"Flexible stainless\u2011steel corrugated tube with PVC outer covering classified as other tube & pipe fittings of iron or steel, not elsewhere specified.\"\n}",
+          "reasoning": "Need correct code. Likely 7307.29.8010? Check. Flexible stainless steel hose with PVC: could be 7307.29.8010 (Other tube & pipe fittings of iron or steel, other). Provide valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300202615,
+      "prompt_tokens": 320,
+      "prompt_time": 0.017919814,
+      "completion_tokens": 109,
+      "completion_time": 0.236794958,
+      "total_tokens": 429,
+      "total_time": 0.254714772,
+      "completion_tokens_details": {
+        "reasoning_tokens": 51
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m496n8h6e8z8b634fv7ha6ke",
+      "seed": 148420067
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7307298010",
+  "predicted_reason": "Flexible stainless\u2011steel corrugated tube with PVC outer covering classified as other tube & pipe fittings of iron or steel, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

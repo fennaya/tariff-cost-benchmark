@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N364227",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "6307101090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029990",
+  "raw_response": {
+    "id": "chatcmpl-8b3cc4d6-8be4-4995-bf20-df56430607a9",
+    "object": "chat.completion",
+    "created": 1791310703,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.99.90.00\",\n  \"reason\": \"A small sewn\u2011edge piece of cloth is a made\u2011up textile article not elsewhere specified, classified under heading 6302 (other made\u2011up articles of textile materials).\"\n}",
+          "reasoning": "Need correct 10-digit code. Small sewn cloth maybe \"6302.61.00\" (table linens) no. Could be \"6302.99.90\" is 8-digit? Actually HTS 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit tariff item, 2-digit statistical suffix. For example 6302.99.90.00. So provide that. Ensure exists. Use 6302.99.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295167447,
+      "prompt_tokens": 240,
+      "prompt_time": 0.010677022,
+      "completion_tokens": 174,
+      "completion_time": 0.362076341,
+      "total_tokens": 414,
+      "total_time": 0.372753363,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m4970anze46tb4wj1ejs7zg0",
+      "seed": 1795900958
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302999000",
+  "predicted_reason": "A small sewn\u2011edge piece of cloth is a made\u2011up textile article not elsewhere specified, classified under heading 6302 (other made\u2011up articles of textile materials).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

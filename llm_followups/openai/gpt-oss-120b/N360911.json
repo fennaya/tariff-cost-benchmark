@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360911",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "83062900",
+  "raw_response": {
+    "id": "chatcmpl-c9a3e4dc-e09f-4fa1-a5db-8e5cd68a11ff",
+    "object": "chat.completion",
+    "created": 1791310187,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8306.50.0010\", \"reason\": \"The aluminum decorative lion statue is an ornamental article of base metal other than iron or steel, classified under HTSUS 8306.50.0010.\"}",
+          "reasoning": "Need correct code: Aluminum decorative statues likely 8306.50.00? Check: 8306.50.00 \u2013 Other articles of iron or steel? Actually 8306 covers \"Other articles of base metal\". 8306.50 is \"Other articles of base metal, other than of iron or steel\". Need 10-digit: 8306.50.0010? Let's pick 8306.50.0010 \u2013 \"Other articles of base metal, other than of iron or steel, not elsewhere specified\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205447136,
+      "prompt_tokens": 279,
+      "prompt_time": 0.014886938,
+      "completion_tokens": 172,
+      "completion_time": 0.360749739,
+      "total_tokens": 451,
+      "total_time": 0.375636677,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m496gje3eqe920e2hw06gax9",
+      "seed": 1534397410
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8306500010",
+  "predicted_reason": "The aluminum decorative lion statue is an ornamental article of base metal other than iron or steel, classified under HTSUS 8306.50.0010.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359753",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "9406900130",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73089090",
+  "raw_response": {
+    "id": "chatcmpl-532c8c44-dbc9-4c99-884f-0b28f4c89683",
+    "object": "chat.completion",
+    "created": 1791309986,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7308.90.00.10\",\n  \"reason\": \"The product is a prefabricated building structure of cold\u2011formed steel with integrated sheathing and MEP components, classified under heading 7308 for structures of iron or steel, specifically the subheading for other prefabricated buildings.\"\n}",
+          "reasoning": "Need correct code: likely 7308.90.00.10? Check: 7308.90.00 is \"Structures (excluding prefabricated buildings) and parts of structures, of iron or steel, not elsewhere specified\". Prefabricated buildings are 7308.90.00? Actually 7308.90.00 includes prefabricated. Use 7308.90.00.10 as specific? Provide valid 10-digit. Use 7308.90.00.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047620405,
+      "prompt_tokens": 524,
+      "prompt_time": 0.023380777,
+      "completion_tokens": 184,
+      "completion_time": 0.384616022,
+      "total_tokens": 708,
+      "total_time": 0.407996799,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m496aeg6egcvvy4a9tqsh735",
+      "seed": 1641435768
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308900010",
+  "predicted_reason": "The product is a prefabricated building structure of cold\u2011formed steel with integrated sheathing and MEP components, classified under heading 7308 for structures of iron or steel, specifically the subheading for other prefabricated buildings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

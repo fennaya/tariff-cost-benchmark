@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362226",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8704310120",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8703200000",
+  "raw_response": {
+    "id": "chatcmpl-1fd981d3-dbd6-44f9-acd8-07be4a67729c",
+    "object": "chat.completion",
+    "created": 1791310505,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8703.20.00.00\",\"reason\":\"Off\u2011road utility vehicles with four or six wheels and internal combustion engines.\"}",
+          "reasoning": "Need correct HTS 10-digit for UTVs. Likely 8703.20.00.00? Actually HTS 8703.20.00.00 is \"Other motor vehicles, not otherwise specified\". But UTVs are in 8703.20.00.00? Let's check: 8703.20.00.00 is \"Other motor vehicles, not otherwise specified\". 8703.20.00.00 is 10-digit. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.232390791,
+      "prompt_tokens": 1031,
+      "prompt_time": 0.054443688,
+      "completion_tokens": 143,
+      "completion_time": 0.156321895,
+      "total_tokens": 1174,
+      "total_time": 0.210765583,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m496t9ejemcrz60f12w1n1j3",
+      "seed": 1886595713
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703200000",
+  "predicted_reason": "Off\u2011road utility vehicles with four or six wheels and internal combustion engines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

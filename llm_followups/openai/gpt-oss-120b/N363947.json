@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363947",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "4823906700",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "0000000000",
+  "raw_response": {
+    "id": "chatcmpl-b129a19a-0480-40ee-9c96-84e2230330cf",
+    "object": "chat.completion",
+    "created": 1791310698,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9995\", \"reason\": \"Based on the lack of specific details, the product is classified under miscellaneous plastic articles not elsewhere specified, which is a valid catch\u2011all 10\u2011digit HTSUS code\"}",
+          "reasoning": "Need guess? Probably cannot. Respond with valid generic like 3926.90.9995 (misc plastic). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.332086964,
+      "prompt_tokens": 236,
+      "prompt_time": 0.069408106,
+      "completion_tokens": 90,
+      "completion_time": 0.190440128,
+      "total_tokens": 326,
+      "total_time": 0.259848234,
+      "completion_tokens_details": {
+        "reasoning_tokens": 27
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m49704ykef9rrv11cjd6zamy",
+      "seed": 269683654
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909995",
+  "predicted_reason": "Based on the lack of specific details, the product is classified under miscellaneous plastic articles not elsewhere specified, which is a valid catch\u2011all 10\u2011digit HTSUS code",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

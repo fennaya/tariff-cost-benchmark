@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N351060",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "6110909030",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6109900000",
+  "raw_response": {
+    "id": "chatcmpl-f3979f6c-80a0-48ef-a004-6b4b97cd62b7",
+    "object": "chat.completion",
+    "created": 1791309951,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6109.90.00.00\",\"reason\":\"Mixed fiber women's knit sweater is classified under 6109.90 for other synthetic fibers\"}",
+          "reasoning": "Need valid 10-digit. For mixed fiber knitwear: 6109.90.00.00? Actually 6109.90.00.00 is 10-digit? It's 6109.90.00.00 (4+2+2+2). That is valid. But maybe 6109.90.00.00 exists. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149673723,
+      "prompt_tokens": 317,
+      "prompt_time": 0.021752431,
+      "completion_tokens": 119,
+      "completion_time": 0.131104117,
+      "total_tokens": 436,
+      "total_time": 0.152856548,
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_228717f27c",
+    "x_groq": {
+      "id": "req_01m4969bvmen0sk60tpnf79xdg",
+      "seed": 1510431146
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109900000",
+  "predicted_reason": "Mixed fiber women's knit sweater is classified under 6109.90 for other synthetic fibers",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}
