@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N357245",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "9617001000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73239300",
+  "raw_response": {
+    "id": "chatcmpl-b25e29ef-ecb5-4e0c-8f59-924cbf5895c5",
+    "object": "chat.completion",
+    "created": 1791309962,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7323.93.00.00\", \"reason\": \"Stainless steel drinking vessel (vacuum insulated bottle) falls under other articles of stainless steel, not elsewhere specified\"}",
+          "reasoning": "Need correct 10-digit. Likely 7323.93.00.00? Check: 7323.93.00.00 is \"Other articles of stainless steel, not elsewhere specified\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296106414,
+      "prompt_tokens": 574,
+      "prompt_time": 0.030700426,
+      "completion_tokens": 96,
+      "completion_time": 0.202576127,
+      "total_tokens": 670,
+      "total_time": 0.233276553,
+      "completion_tokens_details": {
+        "reasoning_tokens": 45
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m4969p9bec0td51wdr33naw8",
+      "seed": 773679965
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7323930000",
+  "predicted_reason": "Stainless steel drinking vessel (vacuum insulated bottle) falls under other articles of stainless steel, not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

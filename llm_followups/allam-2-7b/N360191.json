@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N360191",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3924905000",
+  "raw_response": {
+    "id": "chatcmpl-10b61d17-d298-4a85-a160-48cf42517c87",
+    "object": "chat.completion",
+    "created": 1791310124,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.90.9800\", \"reason\": \"The merchandise is classified as 'Other articles of plastic, not elsewhere specified or included', due to the bag's composition of multiple plastic materials and its purpose as a packaging item.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086167779,
+      "prompt_tokens": 333,
+      "prompt_time": 0.011598543,
+      "completion_tokens": 64,
+      "completion_time": 0.046027517,
+      "total_tokens": 397,
+      "total_time": 0.05762606
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496ensdeh7achttn3qetbe5",
+      "seed": 424165616
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924909800",
+  "predicted_reason": "The merchandise is classified as 'Other articles of plastic, not elsewhere specified or included', due to the bag's composition of multiple plastic materials and its purpose as a packaging item.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

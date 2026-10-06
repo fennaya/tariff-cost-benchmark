@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363426",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "9505904000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4901909000",
+  "raw_response": {
+    "id": "chatcmpl-46c770fe-e54c-473b-b5c1-40663880915f",
+    "object": "chat.completion",
+    "created": 1791310683,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.90.90.00\",\"reason\":\"Paper banners are classified under 4901.90.90.00, other paper articles not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. For paper banners likely 4901.90.90.00? Actually 4901.90.90.00 is 10-digit? It's 4901.90.90.00 (10 digits). But maybe not exist. Could be 4901.90.90.00 is valid. But maybe 4901.90.90.00 is correct. If not, maybe 4901.90.90.00 is correct. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.570751995,
+      "prompt_tokens": 327,
+      "prompt_time": 0.01850391,
+      "completion_tokens": 149,
+      "completion_time": 0.154785127,
+      "total_tokens": 476,
+      "total_time": 0.173289037,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m496zprtekrvnqrrvstyaew8",
+      "seed": 671698127
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901909000",
+  "predicted_reason": "Paper banners are classified under 4901.90.90.00, other paper articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

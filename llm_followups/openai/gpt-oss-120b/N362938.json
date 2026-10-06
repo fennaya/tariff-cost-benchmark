@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362938",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004390080",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "29337900",
+  "raw_response": {
+    "id": "chatcmpl-bb1b29d2-086a-4592-bb58-ec55dfc5299a",
+    "object": "chat.completion",
+    "created": 1791310614,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2933.79.00.00\", \"reason\": \"Progesterone capsules are classified as a hormone (progesterone) under HTS heading 2933.79.00.00 for other hormones and their derivatives not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit code. Progesterone is a hormone, HTS 2933.79.00 is 8-digit. 10-digit would be 2933.79.00.00? Actually 10-digit US: 2933.79.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088442469,
+      "prompt_tokens": 326,
+      "prompt_time": 0.018468353,
+      "completion_tokens": 129,
+      "completion_time": 0.279490749,
+      "total_tokens": 455,
+      "total_time": 0.297959102,
+      "completion_tokens_details": {
+        "reasoning_tokens": 63
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m496xkc3ewerq7tk0rgk7wfz",
+      "seed": 642739021
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2933790000",
+  "predicted_reason": "Progesterone capsules are classified as a hormone (progesterone) under HTS heading 2933.79.00.00 for other hormones and their derivatives not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

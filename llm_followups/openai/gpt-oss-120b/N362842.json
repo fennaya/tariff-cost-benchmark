@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362842",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8462100000",
+  "raw_response": {
+    "id": "chatcmpl-4ce771b6-e571-4115-82b5-da23ba493090",
+    "object": "chat.completion",
+    "created": 1791310530,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8462.29.90.00\",\n  \"reason\": \"The equipment is a specialized machine for handling and bundling lumber, falling under heading 8462 for other machines for working wood not elsewhere specified.\"\n}",
+          "reasoning": "Need correct code. Likely 8462.29.90.00? Check: 8462.29.90 \u2013 Other machines for working wood, not elsewhere specified. Use 8462.29.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018470573,
+      "prompt_tokens": 821,
+      "prompt_time": 0.046014088,
+      "completion_tokens": 109,
+      "completion_time": 0.231542918,
+      "total_tokens": 930,
+      "total_time": 0.277557006,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496v1h0e71shqamybf5jby6",
+      "seed": 786393617
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8462299000",
+  "predicted_reason": "The equipment is a specialized machine for handling and bundling lumber, falling under heading 8462 for other machines for working wood not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

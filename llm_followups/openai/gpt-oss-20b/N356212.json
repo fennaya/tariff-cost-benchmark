@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N356212",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "3808931500",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1206909000",
+  "raw_response": {
+    "id": "chatcmpl-f1130ad4-6324-4405-ae81-cea7f01fdb00",
+    "object": "chat.completion",
+    "created": 1791309959,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"Dicamba herbicides are classified under heading 1206, subheading 90, entry 90 for other agricultural chemicals.\"}",
+          "reasoning": "Need valid HTS 10-digit. Dicamba herbicides likely 1206.90.90.00? But 10-digit: 1206.90.90.00 is 10? Actually 4+2+2+2 =10. But maybe subheading 90 is 1206.90.90.00. Check if exists. Might be 1206.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192912495,
+      "prompt_tokens": 722,
+      "prompt_time": 0.041720544,
+      "completion_tokens": 140,
+      "completion_time": 0.141345848,
+      "total_tokens": 862,
+      "total_time": 0.183066392,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m4969m44e7a9rz1swvytxdp9",
+      "seed": 73286736
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Dicamba herbicides are classified under heading 1206, subheading 90, entry 90 for other agricultural chemicals.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

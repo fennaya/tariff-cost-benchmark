@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361006",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84258000",
+  "raw_response": {
+    "id": "chatcmpl-ae2f4e87-be46-430b-bf55-646c94482906",
+    "object": "chat.completion",
+    "created": 1791310238,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8425.80.00.00\",\"reason\":\"The item is a computer stand, which falls under 8425.80.00.00 for other computer accessories.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. For computer stand, likely 8425.80.00 is 6-digit. Need 10-digit: 8425.80.00.00? Actually HTSUS 10-digit: 8425.80.00.00. But check: 8425.80.00.00 is for \"Other computer accessories\". So output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194511999,
+      "prompt_tokens": 404,
+      "prompt_time": 0.025412328,
+      "completion_tokens": 134,
+      "completion_time": 0.14746738,
+      "total_tokens": 538,
+      "total_time": 0.172879708,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3cdd24b83b",
+    "x_groq": {
+      "id": "req_01m496j4h0ep6b9kefsd5yxq8f",
+      "seed": 1483986398
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425800000",
+  "predicted_reason": "The item is a computer stand, which falls under 8425.80.00.00 for other computer accessories.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

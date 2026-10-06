@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361928",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "6109901065",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6109100000",
+  "raw_response": {
+    "id": "chatcmpl-361f8a5b-f8f7-4663-a176-f4332689c384",
+    "object": "chat.completion",
+    "created": 1791310433,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6109.10.00.00\",\"reason\":\"The garment is a women\u2019s knitted tank top made of polyester, viscose, and elastane, fitting the HTSUS subheading 6109.10.00.00 for knitted or crocheted synthetic\u2011fiber apparel for women.\"}",
+          "reasoning": "Need valid 10-digit. For women's knitted tops: 6109.10.00.00? Actually 6109.10.00.00 is 6109.10.00.00? Wait 10-digit: 6109.10.00.00? That's 8 digits? Actually 6109.10.00.00 is 10 digits? 6109.10.00.00 = 4+2+2+2 =10. But maybe subheading 6109.10.00.00 exists? Let's check: 6109.10.00.00 is \"Knitted or crocheted apparel of synthetic fibers, of a kind used for women's or girls' clothing, other than shirts, blouses, jackets, coats, and suits\". That seems correct. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.138240671,
+      "prompt_tokens": 276,
+      "prompt_time": 0.015655525,
+      "completion_tokens": 244,
+      "completion_time": 0.270982574,
+      "total_tokens": 520,
+      "total_time": 0.286638099,
+      "completion_tokens_details": {
+        "reasoning_tokens": 170
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_63473661d7",
+    "x_groq": {
+      "id": "req_01m496r2z3etmsyzj3vs2ddbx4",
+      "seed": 1742433057
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109100000",
+  "predicted_reason": "The garment is a women\u2019s knitted tank top made of polyester, viscose, and elastane, fitting the HTSUS subheading 6109.10.00.00 for knitted or crocheted synthetic\u2011fiber apparel for women.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

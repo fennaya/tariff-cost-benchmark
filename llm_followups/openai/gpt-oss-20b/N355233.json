@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N355233",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "6802930090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6801909000",
+  "raw_response": {
+    "id": "chatcmpl-8cb2c3d6-740e-4380-96c3-ef07aeb8c672",
+    "object": "chat.completion",
+    "created": 1791309956,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6801.90.90.00\",\"reason\":\"The item is a natural granite stone used for countertops and surfaces, fitting the HTS 6801.90.90.00 entry for other natural stone.\"}",
+          "reasoning": "Need valid 10-digit HTS. For natural stone, 6801.90.90.00 is 8-digit? Actually HTS 10-digit: 6801.90.90.00 is 10-digit? It's 6801.90.90.00 (10 digits including decimals). But maybe 6801.90.90.00 is valid. But user says not exist. Maybe correct is 6801.90.90.00? Let's check: 6801 is natural stone. 6801.90 is other natural stone. 6801.90.90 is other natural stone, not further specified. 6801.90.90.00 is 10-digit. Should exist. Maybe they want 6801.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148481967,
+      "prompt_tokens": 400,
+      "prompt_time": 0.023558656,
+      "completion_tokens": 223,
+      "completion_time": 0.23187504,
+      "total_tokens": 623,
+      "total_time": 0.255433696,
+      "completion_tokens_details": {
+        "reasoning_tokens": 165
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m4969hd7ec8tmsmg8am23qep",
+      "seed": 413946004
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6801909000",
+  "predicted_reason": "The item is a natural granite stone used for countertops and surfaces, fitting the HTS 6801.90.90.00 entry for other natural stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

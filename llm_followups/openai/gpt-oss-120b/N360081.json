@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360081",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8471410150",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8471300095",
+  "raw_response": {
+    "id": "chatcmpl-0fcc7ce0-becb-4863-8942-27a4a08e2045",
+    "object": "chat.completion",
+    "created": 1791310075,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8471.30.0090\",\n  \"reason\": \"These are tablet computers with capacitive touchscreens operating on Android, classified under heading 8471.30 for portable digital automatic data processing machines, subheading 0090 for other such devices.\"\n}",
+          "reasoning": "Need correct code: likely 8471.30.0090? Actually HTS 8471.30.0090 is \"Other\". 10-digit: 8471.30.0090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.172973994,
+      "prompt_tokens": 423,
+      "prompt_time": 0.051137002,
+      "completion_tokens": 115,
+      "completion_time": 0.245174252,
+      "total_tokens": 538,
+      "total_time": 0.296311254,
+      "completion_tokens_details": {
+        "reasoning_tokens": 45
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d577f40f11",
+    "x_groq": {
+      "id": "req_01m496d5dgey0a8znpw8an8bje",
+      "seed": 1742193080
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471300090",
+  "predicted_reason": "These are tablet computers with capacitive touchscreens operating on Android, classified under heading 8471.30 for portable digital automatic data processing machines, subheading 0090 for other such devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

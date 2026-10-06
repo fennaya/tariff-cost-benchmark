@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361875",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9401999085",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9403100000",
+  "raw_response": {
+    "id": "chatcmpl-1afc280b-cfb1-4836-9c66-e4658ca7d82f",
+    "object": "chat.completion",
+    "created": 1791310431,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.10.00.00\",\"reason\":\"Aluminum chair frame for pontoon boats is a seat or chair for use in a vehicle, classified under 9403.10.00.00\"}",
+          "reasoning": "Need valid 10-digit. For aluminum chair frame for boats likely 9403.10.00.00? Actually 9403.10.00.00 is \"Seats and seat bases, for use in vehicles\". 10-digit: 9403.10.00.00. That exists. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300767546,
+      "prompt_tokens": 350,
+      "prompt_time": 0.022942971,
+      "completion_tokens": 121,
+      "completion_time": 0.134476337,
+      "total_tokens": 471,
+      "total_time": 0.157419308,
+      "completion_tokens_details": {
+        "reasoning_tokens": 65
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e23fc997ca",
+    "x_groq": {
+      "id": "req_01m496r127egpb5awcpexgapnc",
+      "seed": 759616009
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403100000",
+  "predicted_reason": "Aluminum chair frame for pontoon boats is a seat or chair for use in a vehicle, classified under 9403.10.00.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

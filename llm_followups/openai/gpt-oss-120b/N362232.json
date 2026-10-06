@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362232",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8708305090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8708999000",
+  "raw_response": {
+    "id": "chatcmpl-f42e4c00-2df1-44c3-962a-bdfaa0b230d7",
+    "object": "chat.completion",
+    "created": 1791310460,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90.00\", \"reason\": \"Brake pads are classified under heading 8708 as other parts and accessories of motor vehicles, specifically subheading 8708.99.90 for brake linings and pads.\"}",
+          "reasoning": "Need correct code: likely 8708.99.90.00 is valid? Actually HTSUS 10-digit: 8708.99.90.00 exists. Maybe they think not. Could be 8708.99.90.00 is correct. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018247837,
+      "prompt_tokens": 465,
+      "prompt_time": 0.031682583,
+      "completion_tokens": 123,
+      "completion_time": 0.260189759,
+      "total_tokens": 588,
+      "total_time": 0.291872342,
+      "completion_tokens_details": {
+        "reasoning_tokens": 59
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496rx3deyhar39b58kwesws",
+      "seed": 2131255652
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Brake pads are classified under heading 8708 as other parts and accessories of motor vehicles, specifically subheading 8708.99.90 for brake linings and pads.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

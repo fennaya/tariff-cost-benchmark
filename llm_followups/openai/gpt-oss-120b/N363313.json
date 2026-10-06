@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363313",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8205595560",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "40169900",
+  "raw_response": {
+    "id": "chatcmpl-68dfc52c-088a-429f-b248-db1ddb7ab5a3",
+    "object": "chat.completion",
+    "created": 1791310623,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4016.99.0010\", \"reason\": \"Falls under heading 4016 for other articles of vulcanized rubber, specifically subheading 4016.99 covering other rubber articles such as tire repair kits\"}",
+          "reasoning": "Need correct 10-digit. Likely 4016.99.0010? Check HTS: 4016.99.00 is 8-digit. 10-digit add 00. So 4016.99.0010 maybe. Provide valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152633938,
+      "prompt_tokens": 392,
+      "prompt_time": 0.017953614,
+      "completion_tokens": 115,
+      "completion_time": 0.242940427,
+      "total_tokens": 507,
+      "total_time": 0.260894041,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m496xw88e7et8t86pc75qd3h",
+      "seed": 307565417
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4016990010",
+  "predicted_reason": "Falls under heading 4016 for other articles of vulcanized rubber, specifically subheading 4016.99 covering other rubber articles such as tire repair kits",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

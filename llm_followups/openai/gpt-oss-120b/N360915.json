@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360915",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "90225500",
+  "raw_response": {
+    "id": "chatcmpl-7a93683b-6e15-4b05-9ab8-e7b694755750",
+    "object": "chat.completion",
+    "created": 1791310191,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9022.55.0010\",\n  \"reason\": \"Classified as a wearable electronic device for measuring physiological parameters, falling under heading 9022.55 for other instruments and apparatus for measuring or checking physiological parameters.\"\n}",
+          "reasoning": "Need correct 10-digit code. Wearable health monitor likely 9022.55.0010? Check HTS: 9022.55.0010 \u2013 Instruments and apparatus for measuring or checking blood pressure, etc? Actually 9022.55 is \"Other instruments and apparatus for measuring or checking physiological parameters\". Subheadings: 9022.55.0010 \u2013 Other. So 10-digit: 9022.55.0010. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.159709188,
+      "prompt_tokens": 396,
+      "prompt_time": 0.02468897,
+      "completion_tokens": 160,
+      "completion_time": 0.338827516,
+      "total_tokens": 556,
+      "total_time": 0.363516486,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m496gnyaee9r0kpt6fjf6q4w",
+      "seed": 514038975
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9022550010",
+  "predicted_reason": "Classified as a wearable electronic device for measuring physiological parameters, falling under heading 9022.55 for other instruments and apparatus for measuring or checking physiological parameters.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

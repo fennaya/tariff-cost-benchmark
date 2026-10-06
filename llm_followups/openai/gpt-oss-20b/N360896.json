@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360896",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403999040",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7308909000",
+  "raw_response": {
+    "id": "chatcmpl-43bb18e0-f1bb-4564-afa5-c92c36b2cf67",
+    "object": "chat.completion",
+    "created": 1791310207,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Steel shelving pegboards and K\u2011rails are metal shelving components not elsewhere specified, classified under heading 08, subheading 90 of chapter 73.\"}",
+          "reasoning": "Need valid 10-digit. For steel shelving components: 7308.90.90.00? Actually 7308.90.90.00 is \"Other articles of iron or steel\". But subheading 90 is \"Other\". 10-digit: 7308.90.90.00. That exists. Maybe 7308.90.90.00 is valid. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017101214,
+      "prompt_tokens": 619,
+      "prompt_time": 0.030268738,
+      "completion_tokens": 139,
+      "completion_time": 0.171459466,
+      "total_tokens": 758,
+      "total_time": 0.201728204,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d3e146e1a5",
+    "x_groq": {
+      "id": "req_01m496h6q9er18126psmzq5mgv",
+      "seed": 111882357
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Steel shelving pegboards and K\u2011rails are metal shelving components not elsewhere specified, classified under heading 08, subheading 90 of chapter 73.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

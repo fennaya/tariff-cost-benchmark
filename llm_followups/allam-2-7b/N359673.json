@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N359673",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "1602506000",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "0202200000",
+  "raw_response": {
+    "id": "chatcmpl-33c8e616-5733-4b49-98e1-c7ceb64a1988",
+    "object": "chat.completion",
+    "created": 1791309991,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0202.20.9000\", \"reason\": \"The described process involves marination, mechanical tumbling, and vacuum packaging, which classifies the product under HTS heading 0202.20, 'Beef (including veal), frozen or chilled, not further worked than trimming, other, other.' (Note that the exact code 0202.20.0000 does not exist, but a similar code has been provided.)\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.08736694,
+      "prompt_tokens": 599,
+      "prompt_time": 0.016571832,
+      "completion_tokens": 116,
+      "completion_time": 0.082888062,
+      "total_tokens": 715,
+      "total_time": 0.099459894
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496akd0ehfskdrh8tsk7q8g",
+      "seed": 348871830
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0202209000",
+  "predicted_reason": "The described process involves marination, mechanical tumbling, and vacuum packaging, which classifies the product under HTS heading 0202.20, 'Beef (including veal), frozen or chilled, not further worked than trimming, other, other.' (Note that the exact code 0202.20.0000 does not exist, but a similar code has been provided.)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

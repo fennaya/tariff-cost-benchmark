@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N360960",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "8709100060",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8439909000",
+  "raw_response": {
+    "id": "chatcmpl-8fbc6977-2558-4ef7-9942-f8e09ba47627",
+    "object": "chat.completion",
+    "created": 1791310233,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8439.90.90.99\", \"reason\": \"Machinery and equipment for handling or transporting goods, not elsewhere specified or included (99)\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.083250442,
+      "prompt_tokens": 436,
+      "prompt_time": 0.012255093,
+      "completion_tokens": 50,
+      "completion_time": 0.035710665,
+      "total_tokens": 486,
+      "total_time": 0.047965758
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496hzpkeydsem3raeq51r38",
+      "seed": 1976650252
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8439909099",
+  "predicted_reason": "Machinery and equipment for handling or transporting goods, not elsewhere specified or included (99)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

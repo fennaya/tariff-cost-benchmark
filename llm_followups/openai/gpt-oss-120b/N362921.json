@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362921",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "7607205000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39209000",
+  "raw_response": {
+    "id": "chatcmpl-6f968bc2-a5c2-4aba-89fa-04dab10c17ec",
+    "object": "chat.completion",
+    "created": 1791310544,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3920.90.0010\",\n  \"reason\": \"Classified under other plastic plates, sheets, film, foil and strip (HTS 3920.90) as a PET/aluminum composite film with adhesive.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 3920.90.0010? Check: 3920.90.00 is heading, subheadings 10-digit: 3920.90.0010 (Other). Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048662361,
+      "prompt_tokens": 334,
+      "prompt_time": 0.016056333,
+      "completion_tokens": 114,
+      "completion_time": 0.240222897,
+      "total_tokens": 448,
+      "total_time": 0.25627923,
+      "completion_tokens_details": {
+        "reasoning_tokens": 50
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496vfhpe1gt6atc36hf8fkq",
+      "seed": 714575867
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3920900010",
+  "predicted_reason": "Classified under other plastic plates, sheets, film, foil and strip (HTS 3920.90) as a PET/aluminum composite film with adhesive.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

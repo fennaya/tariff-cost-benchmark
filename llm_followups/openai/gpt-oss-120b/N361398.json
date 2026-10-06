@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361398",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "62052000",
+  "raw_response": {
+    "id": "chatcmpl-d6c80ada-c2eb-440a-a920-38f527020d29",
+    "object": "chat.completion",
+    "created": 1791310295,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6205.20.0010\", \"reason\": \"Matches a women's or girls' knitted blouse featuring a capped neck and unfinished back opening.\"}",
+          "reasoning": "Need correct 10-digit. Likely apparel: \"neck has capping\" maybe a shirt? Could be \"neckline with capping\" maybe a sweater? Hard. Choose generic: 6205.20.0010? Check HTS: 6205.20.0010 is \"Women's or girls' blouses, knitted or crocheted, of cotton\". That's 10 digits. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048796422,
+      "prompt_tokens": 246,
+      "prompt_time": 0.015240957,
+      "completion_tokens": 129,
+      "completion_time": 0.280757336,
+      "total_tokens": 375,
+      "total_time": 0.295998293,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496kw8zevgs88vhg7m3mrkn",
+      "seed": 1965163391
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6205200010",
+  "predicted_reason": "Matches a women's or girls' knitted blouse featuring a capped neck and unfinished back opening.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

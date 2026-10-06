@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362075",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4202924500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "42029290",
+  "raw_response": {
+    "id": "chatcmpl-a3529d0c-2b27-4a8d-945c-d51f5435317f",
+    "object": "chat.completion",
+    "created": 1791310410,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.92.90.00\", \"reason\": \"A plastic tote bag with wheels and handles is classified as other plastic suitcases and travel bags under heading 4202.92, subheading 90, requiring the full 10\u2011digit code 4202.92.90.00.\"}",
+          "reasoning": "Need correct 10-digit. Likely 4202.92.90.00? 10 digits: 4202.92.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.214617553,
+      "prompt_tokens": 334,
+      "prompt_time": 0.020275509,
+      "completion_tokens": 113,
+      "completion_time": 0.240316133,
+      "total_tokens": 447,
+      "total_time": 0.260591642,
+      "completion_tokens_details": {
+        "reasoning_tokens": 35
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496qbx6e598bx5aamr685wk",
+      "seed": 924623221
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202929000",
+  "predicted_reason": "A plastic tote bag with wheels and handles is classified as other plastic suitcases and travel bags under heading 4202.92, subheading 90, requiring the full 10\u2011digit code 4202.92.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

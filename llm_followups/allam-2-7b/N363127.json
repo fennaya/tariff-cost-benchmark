@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N363127",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "1605290500",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "0503909000",
+  "raw_response": {
+    "id": "chatcmpl-729b00ca-ecb5-455b-929d-4f13ac10a759",
+    "object": "chat.completion",
+    "created": 1791310636,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0503.90.99.00\", \"reason\": \"As the product is a frozen prepared food containing shrimp, it falls under heading 0503, which covers frozen prepared fruits, vegetables, and other prepared vegetables. The '99' at the end indicates 'other' and is used for products that cannot be classified under a specific heading. Please note that this classification is based on the provided description and may require further information for accuracy.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.085848795,
+      "prompt_tokens": 424,
+      "prompt_time": 0.011940026,
+      "completion_tokens": 110,
+      "completion_time": 0.078598887,
+      "total_tokens": 534,
+      "total_time": 0.090538913
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496y9qxeygtqd5z5x7cw676",
+      "seed": 2007033133
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0503909900",
+  "predicted_reason": "As the product is a frozen prepared food containing shrimp, it falls under heading 0503, which covers frozen prepared fruits, vegetables, and other prepared vegetables. The '99' at the end indicates 'other' and is used for products that cannot be classified under a specific heading. Please note that this classification is based on the provided description and may require further information for accuracy.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

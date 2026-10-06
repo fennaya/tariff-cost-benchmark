@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361150",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9503000071",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63079098",
+  "raw_response": {
+    "id": "chatcmpl-5d96baa4-2867-4c0b-80ec-cdf0adcc6892",
+    "object": "chat.completion",
+    "created": 1791310230,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6307.90.9095\",\n  \"reason\": \"The items are soft padded textile articles not classified elsewhere, falling under heading 6307 for other made\u2011up textile articles, subheading 6307.90.9095 for miscellaneous items.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 6307.90.9095? Check HTS: 6307.90.9095 is \"Other made-up articles of textile materials, not elsewhere specified, other\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.453691002,
+      "prompt_tokens": 272,
+      "prompt_time": 0.015886772,
+      "completion_tokens": 118,
+      "completion_time": 0.25307443,
+      "total_tokens": 390,
+      "total_time": 0.268961202,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_be28f5c9f2",
+    "x_groq": {
+      "id": "req_01m496hw1kemsad82kne5n1g5s",
+      "seed": 114059814
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307909095",
+  "predicted_reason": "The items are soft padded textile articles not classified elsewhere, falling under heading 6307 for other made\u2011up textile articles, subheading 6307.90.9095 for miscellaneous items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

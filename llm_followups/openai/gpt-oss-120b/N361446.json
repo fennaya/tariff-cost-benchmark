@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361446",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "49019900",
+  "raw_response": {
+    "id": "chatcmpl-c26f5798-b478-4e75-8352-8f3da3a40894",
+    "object": "chat.completion",
+    "created": 1791310310,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00.00\",\n  \"reason\": \"Hardcover printed books with illustrations that are not classified elsewhere fall under heading 4901, subheading 99 (other printed books), yielding the 10\u2011digit code 4901.99.00.00.\"\n}",
+          "reasoning": "Need correct 10-digit code: printed books, illustrated, hardcover. HTS 4901.10.00? Actually 4901.10.00 = \"Printed books, brochures, leaflets and similar printed matter, in single sheets, etc.\" Wait. 4901.10.00 is \"Printed books, brochures, leaflets and similar printed matter, in single sheets, etc.\" Not. 4901.99.00 is \"Other printed books, brochures, leaflets and similar printed matter\". 10-digit: 4901.99.00.00? Need 10 digits: 4901.99.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300053879,
+      "prompt_tokens": 397,
+      "prompt_time": 0.017276469,
+      "completion_tokens": 214,
+      "completion_time": 0.447034527,
+      "total_tokens": 611,
+      "total_time": 0.464310996,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m496mam4ehf9zcw3qyqj6taf",
+      "seed": 452446215
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901990000",
+  "predicted_reason": "Hardcover printed books with illustrations that are not classified elsewhere fall under heading 4901, subheading 99 (other printed books), yielding the 10\u2011digit code 4901.99.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

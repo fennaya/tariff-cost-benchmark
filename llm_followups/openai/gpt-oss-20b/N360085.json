@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360085",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8483905080",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8471100000",
+  "raw_response": {
+    "id": "chatcmpl-9346d247-c68f-42e7-ae9f-66211dd775e7",
+    "object": "chat.completion",
+    "created": 1791310102,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"84.71.10.00.00\",\"reason\":\"Worm wheels for power steering systems are classified under heading 84.71.10.00.00.\"}",
+          "reasoning": "Need valid 10-digit. For worm wheels maybe 84.71.10.00.00? Actually 84.71.10.00.00 is 8 digits? It's 8? Actually 84.71.10.00.00 is 8? Wait format: 84.71.10.00.00 is 8? It's 8 digits? 84.71.10.00.00 has 8? Actually 84.71.10.00.00 is 8? Let's count: 84 (2) .71 (2) .10 (2) .00 (2) .00 (2) = 10 digits? It's 2+2+2+2+2=10. So it's valid. But maybe correct heading is 84.71.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20642455,
+      "prompt_tokens": 324,
+      "prompt_time": 0.015770323,
+      "completion_tokens": 226,
+      "completion_time": 0.230979885,
+      "total_tokens": 550,
+      "total_time": 0.246750208,
+      "completion_tokens_details": {
+        "reasoning_tokens": 177
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m496dzjfetg8h6aysmepe81k",
+      "seed": 1186648243
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471100000",
+  "predicted_reason": "Worm wheels for power steering systems are classified under heading 84.71.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

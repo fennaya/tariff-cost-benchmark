@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359777",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "2106909998",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "2106909995",
+  "raw_response": {
+    "id": "chatcmpl-204e5cd4-097c-459a-9d9f-7ca9c4f04c3f",
+    "object": "chat.completion",
+    "created": 1791309998,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.9995\", \"reason\": \"Powdered dietary supplement classified under food preparations of Chapter 21, heading 2106.90 (other food preparations not elsewhere specified)\"}",
+          "reasoning": "Need correct 10-digit: likely 2106.90.9995? Actually 2106.90.9995 is valid? Might be 2106.90.9995 is 10-digit. But they said doesn't exist. Could use 2106.90.9995 is okay. Maybe use 2106.90.9995. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.041687999,
+      "prompt_tokens": 856,
+      "prompt_time": 0.041932826,
+      "completion_tokens": 132,
+      "completion_time": 0.27353433,
+      "total_tokens": 988,
+      "total_time": 0.315467156,
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m496ask4efr9hxms9j1b9sxj",
+      "seed": 1451647532
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909995",
+  "predicted_reason": "Powdered dietary supplement classified under food preparations of Chapter 21, heading 2106.90 (other food preparations not elsewhere specified)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

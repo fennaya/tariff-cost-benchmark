@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362485",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4420190000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9403909000",
+  "raw_response": {
+    "id": "chatcmpl-5490845c-5648-4637-9b7a-83b747b7d647",
+    "object": "chat.completion",
+    "created": 1791310548,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.90.90.00\",\"reason\":\"Decorative items made of medium density fiberboard are classified under 9403.90.90.00, other articles of wood or other materials, not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. For decorative items made of MDF likely 9403.90.90.00? But 9403.90.90.00 is 10-digit? Actually 9403.90.90.00 is 10 digits? 9403.90.90.00 has 10 digits including decimals? It's 4+2+2+2 =10. But maybe not exist. Could be 9403.90.90.00 is valid. But maybe 9403.90.90.00 is not in HTS. Let's choose 9403.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.215559153,
+      "prompt_tokens": 291,
+      "prompt_time": 0.015652426,
+      "completion_tokens": 190,
+      "completion_time": 0.19731469,
+      "total_tokens": 481,
+      "total_time": 0.212967116,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_816fc87d18",
+    "x_groq": {
+      "id": "req_01m496vkbhezw9y0ywxv8qmc19",
+      "seed": 1373532113
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403909000",
+  "predicted_reason": "Decorative items made of medium density fiberboard are classified under 9403.90.90.00, other articles of wood or other materials, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

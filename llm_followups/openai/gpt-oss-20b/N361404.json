@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361404",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6104100000",
+  "raw_response": {
+    "id": "chatcmpl-d5445062-0f37-428a-9697-ea8b9e47d8aa",
+    "object": "chat.completion",
+    "created": 1791310332,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6104.10.00.00\",\"reason\":\"The description refers to a robe, which is classified under 6104.10.00.00 for women's or girls' dresses, other than coats\"}",
+          "reasoning": "Need valid 10-digit. For women's robes: 6104.10.00.00? Actually 6104.10.00.00 is 6104.10.00.00? Wait 10-digit: 6104.10.00.00? That's 8 digits? Actually 6104.10.00.00 is 10 digits? 6104.10.00.00 = 4+2+2+2 =10. But maybe 6104.10.00.00 exists. But maybe 6104.10.00.00 is for women's or girls' dresses. But maybe 6104.10.00.00 is for women's or girls' dresses, other than coats. But robes? Could be 6104.10.00.00. Let's output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301288668,
+      "prompt_tokens": 257,
+      "prompt_time": 0.012794431,
+      "completion_tokens": 228,
+      "completion_time": 0.257306324,
+      "total_tokens": 485,
+      "total_time": 0.270100755,
+      "completion_tokens_details": {
+        "reasoning_tokens": 172
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m496n05yehhbx3kkc6haxgeb",
+      "seed": 124413199
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6104100000",
+  "predicted_reason": "The description refers to a robe, which is classified under 6104.10.00.00 for women's or girls' dresses, other than coats",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

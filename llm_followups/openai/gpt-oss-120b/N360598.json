@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360598",
+  "rulingDate": "2026-05-04T00:00:00",
+  "true_code": "9018194000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9018908010",
+  "raw_response": {
+    "id": "chatcmpl-31d707fd-97b5-4988-ab9e-764129b6ae74",
+    "object": "chat.completion",
+    "created": 1791310148,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9018.90.8015\", \"reason\": \"The braided shaft is a component of a flexible bronchoscope, classified under heading 9018.90 for other medical instruments and appliances, specifically the subheading for parts of endoscopic devices.\"}",
+          "reasoning": "Need correct code. Likely 9018.90.8015? Check HTS: 9018.90.8010 maybe not. Actually 9018.90.8015 is for other parts of endoscopes? Let's pick 9018.90.8015."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048379964,
+      "prompt_tokens": 449,
+      "prompt_time": 0.018729509,
+      "completion_tokens": 127,
+      "completion_time": 0.270626403,
+      "total_tokens": 576,
+      "total_time": 0.289355912,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496fcske13v0rzx9vy9gnhh",
+      "seed": 646433474
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018908015",
+  "predicted_reason": "The braided shaft is a component of a flexible bronchoscope, classified under heading 9018.90 for other medical instruments and appliances, specifically the subheading for parts of endoscopic devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

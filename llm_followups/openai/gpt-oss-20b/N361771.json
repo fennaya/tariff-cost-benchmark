@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361771",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "8302416080",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7308909000",
+  "raw_response": {
+    "id": "chatcmpl-c7a11ad1-5c9f-4aa6-a0ba-00491c94a153",
+    "object": "chat.completion",
+    "created": 1791310414,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Heavy\u2011duty steel awning brackets are classified under 7308.90.90.00, the heading for other articles of iron or steel not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. For steel brackets likely 7308.90.90.00? But 7308.90.90.00 exists? Actually 7308.90.90.00 is \"Other articles of iron or steel, not elsewhere specified or included\". That is 10-digit. So maybe correct. But user says doesn't exist. Maybe need 7308.90.90.00 is valid. Could be 7308.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.236762862,
+      "prompt_tokens": 369,
+      "prompt_time": 0.172636567,
+      "completion_tokens": 162,
+      "completion_time": 0.186920779,
+      "total_tokens": 531,
+      "total_time": 0.359557346,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496qfpmeez9hbdaegcw7g5j",
+      "seed": 1313424474
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Heavy\u2011duty steel awning brackets are classified under 7308.90.90.00, the heading for other articles of iron or steel not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

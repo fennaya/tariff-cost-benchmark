@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363283",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8501528040",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8501520000",
+  "raw_response": {
+    "id": "chatcmpl-e4bba451-b468-4763-ac03-c7bf99d68928",
+    "object": "chat.completion",
+    "created": 1791310622,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8501.52.00.00\",\n  \"reason\": \"The product is a polyphase AC electric motor (no gear) rated at 42.5\u202fkW, which falls under heading 8501 (electric motors) and subheading 8501.52 (polyphase motors of 31\u201150\u202fkW).\"\n}",
+          "reasoning": "Need correct 10-digit. For 42.5 kW polyphase AC motor: HTS 8501.52.00.00 is 10 digits? Actually 8501.52.00.00 is 10 digits (8501 52 00 00). Might be valid. But maybe subheading 8501.52 is for 31-50 kW. So it's correct. But user says doesn't exist. Could be 8501.52.00.00 is valid. Provide same. Maybe they want 8501.52.00.00. Provide again with reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048597371,
+      "prompt_tokens": 389,
+      "prompt_time": 0.019852785,
+      "completion_tokens": 214,
+      "completion_time": 0.444295798,
+      "total_tokens": 603,
+      "total_time": 0.464148583,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m496xvh0edy9wav03xesvrxq",
+      "seed": 1577690155
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8501520000",
+  "predicted_reason": "The product is a polyphase AC electric motor (no gear) rated at 42.5\u202fkW, which falls under heading 8501 (electric motors) and subheading 8501.52 (polyphase motors of 31\u201150\u202fkW).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359872",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "8421390190",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "90218000",
+  "raw_response": {
+    "id": "chatcmpl-a2ec4f02-6a19-4493-9e97-7d5f155fc0c8",
+    "object": "chat.completion",
+    "created": 1791310038,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9021.80.10.00\", \"reason\": \"Disposable CO\u2082 absorbent cartridges are classified as parts and accessories of breathing or anesthetic apparatus.\"}",
+          "reasoning": "Need correct 10-digit. Likely 9021.80.10? Check HTS: 9021.80.10 \u2013 \"Other breathing apparatus and gas masks, parts and accessories\". Actually 9021.80.10 is \"Other breathing apparatus and gas masks, parts and accessories\". Might be 9021.80.20? Need 10 digits: 9021.80.10.00? Usually 8-digit plus 2-digit. So 9021.80.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.037743987,
+      "prompt_tokens": 394,
+      "prompt_time": 0.016758692,
+      "completion_tokens": 157,
+      "completion_time": 0.327518513,
+      "total_tokens": 551,
+      "total_time": 0.344277205,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496c199ensay90yjkd2a95j",
+      "seed": 1554727414
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9021801000",
+  "predicted_reason": "Disposable CO\u2082 absorbent cartridges are classified as parts and accessories of breathing or anesthetic apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

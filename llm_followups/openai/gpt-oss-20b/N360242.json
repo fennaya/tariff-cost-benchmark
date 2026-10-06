@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360242",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "8483905080",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8471100000",
+  "raw_response": {
+    "id": "chatcmpl-540723f0-b37f-45d9-ae16-4f84292686f8",
+    "object": "chat.completion",
+    "created": 1791310116,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"84.71.10.00.00\",\"reason\":\"Stainless\u2011steel planetary gear components used in aircraft fuel control systems are classified under 84.71.10.00.00.\"}",
+          "reasoning": "Need valid HTS 10-digit. For gears: 84.71.10.00.00? Actually HTS 10-digit: 84.71.10.00.00 is 10-digit? It's 8+2? Actually HTS 10-digit: 84.71.10.00.00 is 10 digits? 84.71.10.00.00 has 10 digits including decimals? It's 8 digits before decimal? Actually HTS 10-digit: 84.71.10.00.00 is 10 digits: 84 71 10 00 00. So it's valid. But maybe need 84.71.10.00.00? It's fine. But maybe gear set part of aircraft fuel control system might be 84.71.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.198304326,
+      "prompt_tokens": 367,
+      "prompt_time": 0.063863795,
+      "completion_tokens": 230,
+      "completion_time": 0.242840176,
+      "total_tokens": 597,
+      "total_time": 0.306703971,
+      "completion_tokens_details": {
+        "reasoning_tokens": 176
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e11c8bbf69",
+    "x_groq": {
+      "id": "req_01m496edaced8r4714gf6xd5e1",
+      "seed": 1300785030
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471100000",
+  "predicted_reason": "Stainless\u2011steel planetary gear components used in aircraft fuel control systems are classified under 84.71.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

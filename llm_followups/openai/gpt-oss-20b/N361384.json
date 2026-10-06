@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361384",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4901100000",
+  "raw_response": {
+    "id": "chatcmpl-abaef02a-c965-43e5-b2ed-b1a8b5d3041f",
+    "object": "chat.completion",
+    "created": 1791310322,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.10.00.00\",\"reason\":\"The description refers to a textile item, and the most appropriate 10\u2011digit HTSUS code for cotton yarn is 4901.10.00.00\"}",
+          "reasoning": "Need valid 10-digit. Maybe 4901.10.00.00? Actually HTS 10-digit: 4901.10.00.00 is valid? I think 4901.10.00.00 is 10-digit. But maybe not. Could use 4901.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148338626,
+      "prompt_tokens": 333,
+      "prompt_time": 0.016153801,
+      "completion_tokens": 130,
+      "completion_time": 0.146572536,
+      "total_tokens": 463,
+      "total_time": 0.162726337,
+      "completion_tokens_details": {
+        "reasoning_tokens": 71
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m496mp3qetfs7rwsc6fqa6tj",
+      "seed": 1662048768
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901100000",
+  "predicted_reason": "The description refers to a textile item, and the most appropriate 10\u2011digit HTSUS code for cotton yarn is 4901.10.00.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

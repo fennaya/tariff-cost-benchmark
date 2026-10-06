@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361760",
+  "rulingDate": "2026-06-17T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "49019900",
+  "raw_response": {
+    "id": "chatcmpl-0124f5b1-e60c-4b69-94e5-415e1e8a92ab",
+    "object": "chat.completion",
+    "created": 1791310355,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.10.00.00\",\n  \"reason\": \"A hardcover board picture book for children is classified under HTSUS 4901.10.00 (children's picture books), with the full 10\u2011digit code 4901.10.00.00.\"\n}",
+          "reasoning": "Need correct 10-digit code. For printed books: 4901.10.00 (children's books?) Actually 4901.10.00 is \"Children's picture books, printed\". 4901.99.00 is \"Other printed books\". Both exist 8-digit; need 10-digit: add .00 at end. So 4901.10.00.00? HTS uses 10 digits: 4-2-2-2-? Usually 6-digit heading then 2-digit subheading then 2-digit further. For 4901.10.00 is 8-digit; 10-digit would be 4901.10.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306760515,
+      "prompt_tokens": 364,
+      "prompt_time": 0.037918395,
+      "completion_tokens": 223,
+      "completion_time": 0.467543824,
+      "total_tokens": 587,
+      "total_time": 0.505462219,
+      "completion_tokens_details": {
+        "reasoning_tokens": 147
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m496npbvep496bc3jkdf2v2n",
+      "seed": 1677924050
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901100000",
+  "predicted_reason": "A hardcover board picture book for children is classified under HTSUS 4901.10.00 (children's picture books), with the full 10\u2011digit code 4901.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

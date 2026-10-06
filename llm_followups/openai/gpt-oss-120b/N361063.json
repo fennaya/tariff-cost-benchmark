@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361063",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "49019900",
+  "raw_response": {
+    "id": "chatcmpl-a014740e-11ea-4692-9306-6624ec3e1edd",
+    "object": "chat.completion",
+    "created": 1791310219,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The document is a printed legal ruling, classified as other printed matter not elsewhere specified.\"\n}",
+          "reasoning": "Need correct code for printed publications: 4901.99.00? Actually HTS 4901.99.00 is valid? 4901.99.00 is \"Other printed books, brochures, leaflets and similar printed matter, including printed pictures\". It's 6-digit plus 2-digit subheading and 2-digit suffix = 10 digits: 4901.99.00. That exists. Maybe they think invalid. Could use 4901.99.00 is valid. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.096525802,
+      "prompt_tokens": 251,
+      "prompt_time": 0.047223447,
+      "completion_tokens": 153,
+      "completion_time": 0.328291789,
+      "total_tokens": 404,
+      "total_time": 0.375515236,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m496hhsgezbb8b26q211cc7v",
+      "seed": 949031288
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The document is a printed legal ruling, classified as other printed matter not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

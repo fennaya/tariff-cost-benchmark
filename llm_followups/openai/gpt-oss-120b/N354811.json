@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N354811",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6802200000",
+  "raw_response": {
+    "id": "chatcmpl-280e876d-6ffe-41ef-800a-3f0a247511a3",
+    "object": "chat.completion",
+    "created": 1791309954,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.00.00\", \"reason\": \"Polished granite slabs for countertops are classified under heading 6802.20 \u2013 other granite, cut and polished, requiring a 10\u2011digit code of 6802.20.00.00.\"}",
+          "reasoning": "Need correct code: 6802.20.00.00 maybe not exist; actual HTS: 6802.20.00.00 is \"Granite, other than that of heading 6802.10\". Check: 6802.20.00.00 exists. But maybe need 6802.20.00.00 is valid. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.299943074,
+      "prompt_tokens": 425,
+      "prompt_time": 0.017729545,
+      "completion_tokens": 148,
+      "completion_time": 0.309858515,
+      "total_tokens": 573,
+      "total_time": 0.32758806,
+      "completion_tokens_details": {
+        "reasoning_tokens": 78
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m4969ee5e01aga36zcz97mft",
+      "seed": 1284043096
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802200000",
+  "predicted_reason": "Polished granite slabs for countertops are classified under heading 6802.20 \u2013 other granite, cut and polished, requiring a 10\u2011digit code of 6802.20.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

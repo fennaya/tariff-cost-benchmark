@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N359899",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3305900000",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3304994000",
+  "raw_response": {
+    "id": "chatcmpl-2c5238ed-d02b-438f-90d4-9406c0ed9f20",
+    "object": "chat.completion",
+    "created": 1791310072,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3304.99.9000\", \"reason\": \"These products are classified as topical cosmetic preparations for hair care, falling under chapter 33 (Cosmetics and toilet preparations) and subheading 9990, which covers products not elsewhere classified.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.085892624,
+      "prompt_tokens": 338,
+      "prompt_time": 0.009684731,
+      "completion_tokens": 74,
+      "completion_time": 0.052936589,
+      "total_tokens": 412,
+      "total_time": 0.06262132
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496d2cvetj9y7pkbjzstmn4",
+      "seed": 1080145216
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304999000",
+  "predicted_reason": "These products are classified as topical cosmetic preparations for hair care, falling under chapter 33 (Cosmetics and toilet preparations) and subheading 9990, which covers products not elsewhere classified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

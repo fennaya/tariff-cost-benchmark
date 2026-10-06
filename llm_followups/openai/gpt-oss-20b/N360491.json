@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360491",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004390055",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3004100000",
+  "raw_response": {
+    "id": "chatcmpl-511abcb2-1666-457a-879d-6f985ddf31ff",
+    "object": "chat.completion",
+    "created": 1791310151,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Glucagon is a single\u2011active\u2011ingredient medicinal preparation, classified under 3004.10.00.00 for other medicinal preparations containing a single active ingredient.\"}",
+          "reasoning": "Need correct HTS 10-digit for glucagon injection. Likely 3004.10.00.00? But 10-digit: 3004.10.00.00? Actually HTS 10-digit: 3004.10.00.00? Wait 10-digit format: 3004.10.00.00? That's 8 digits? Actually 10-digit: 3004.10.00.00? That's 10 inc decimals? Format: 4 digits, decimal, 2 digits, decimal, 4 digits. So 3004.10.00.00 is 4+2+4=10. Yes. But earlier said not exist. Maybe correct is 3004.10.00.00. Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.173405871,
+      "prompt_tokens": 304,
+      "prompt_time": 0.017294806,
+      "completion_tokens": 221,
+      "completion_time": 0.277206899,
+      "total_tokens": 525,
+      "total_time": 0.294501705,
+      "completion_tokens_details": {
+        "reasoning_tokens": 161
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m496ff9aex097jg6sqarkjhc",
+      "seed": 936731020
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Glucagon is a single\u2011active\u2011ingredient medicinal preparation, classified under 3004.10.00.00 for other medicinal preparations containing a single active ingredient.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

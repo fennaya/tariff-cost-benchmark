@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363462",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "4202924500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39239000",
+  "raw_response": {
+    "id": "chatcmpl-cd21b786-fb42-47b9-a3ef-ae3eca7445f1",
+    "object": "chat.completion",
+    "created": 1791310641,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.90.9090\", \"reason\": \"Plastic tote bag with wheels classified as other plastic articles not elsewhere specified under heading 3923.\"}",
+          "reasoning": "Need correct 10-digit. Likely 3926.90.99? Plastic bags with wheels maybe 6305? Actually tote bag plastic = 3923.90.9090? Check: 3923.90.9090 is \"Other articles of plastics, not elsewhere specified\". 10-digit: 3923.90.9090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152779511,
+      "prompt_tokens": 322,
+      "prompt_time": 0.017212886,
+      "completion_tokens": 123,
+      "completion_time": 0.257714142,
+      "total_tokens": 445,
+      "total_time": 0.274927028,
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m496ye6ye5prvfx1ce5n3qk6",
+      "seed": 793902794
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3923909090",
+  "predicted_reason": "Plastic tote bag with wheels classified as other plastic articles not elsewhere specified under heading 3923.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

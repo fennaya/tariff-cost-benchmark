@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361092",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "4420190000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7308909000",
+  "raw_response": {
+    "id": "chatcmpl-0160df2b-7166-4d43-b2a3-d9643b760ee5",
+    "object": "chat.completion",
+    "created": 1791310251,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"The items are MDF tabletop d\u00e9cor pieces with painted lettering, fitting the general category for miscellaneous articles of wood or other materials (7308) and classified in the 10\u2011digit subheading 7308.90.90.00.\"}",
+          "reasoning": "Need valid 10-digit. For decorative items made of wood or other materials: 7308.90.90.00? Actually 7308.90.90 is 10-digit? 7308.90.90.00 is 10-digit. But maybe not exist. Maybe 7308.90.90.00 is valid. But they said not exist. Maybe use 7308.90.90.00 is correct. But maybe need 7308.90.90.00? Let's give 7308.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.1932535,
+      "prompt_tokens": 366,
+      "prompt_time": 0.022962456,
+      "completion_tokens": 190,
+      "completion_time": 0.210354665,
+      "total_tokens": 556,
+      "total_time": 0.233317121,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_816fc87d18",
+    "x_groq": {
+      "id": "req_01m496jgxgemat2g5w5yhwvpmd",
+      "seed": 1379479391
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "The items are MDF tabletop d\u00e9cor pieces with painted lettering, fitting the general category for miscellaneous articles of wood or other materials (7308) and classified in the 10\u2011digit subheading 7308.90.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

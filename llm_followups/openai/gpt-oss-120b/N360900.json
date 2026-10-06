@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360900",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9405994090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029100",
+  "raw_response": {
+    "id": "chatcmpl-213d7822-618c-4860-93b6-60f867360130",
+    "object": "chat.completion",
+    "created": 1791310186,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.91.00.00\", \"reason\": \"Pleated silk lampshade is a textile lampshade, classified under heading 6302.91 for lampshades and parts thereof of textile materials.\"}",
+          "reasoning": "Need correct code. Lampshades of textile: HTS 6302.91.00 is 8 digits. Need 10-digit: 6302.91.00.00 maybe. Actually 10-digit US: 6302.91.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.217197462,
+      "prompt_tokens": 300,
+      "prompt_time": 0.015311812,
+      "completion_tokens": 121,
+      "completion_time": 0.250123582,
+      "total_tokens": 421,
+      "total_time": 0.265435394,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m496ghnsev7bfjger47mka9m",
+      "seed": 497952321
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302910000",
+  "predicted_reason": "Pleated silk lampshade is a textile lampshade, classified under heading 6302.91 for lampshades and parts thereof of textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

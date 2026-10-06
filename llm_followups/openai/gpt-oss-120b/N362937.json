@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362937",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004200085",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "30049090",
+  "raw_response": {
+    "id": "chatcmpl-c288a7c3-5cac-476b-afbb-75f8a7675ec3",
+    "object": "chat.completion",
+    "created": 1791310612,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.9090\",\n  \"reason\": \"Fosfomycin tromethamine is a synthetic antibiotic formulated for oral administration, classified under heading 3004.90 (other medicaments containing antibiotics) with the specific subheading 3004.90.9090 for other pharmaceutical preparations.\"\n}",
+          "reasoning": "Need correct 10-digit. Antibiotics as pharmaceutical preparations: 3004.90.90 is 8-digit; need 10-digit like 3004.90.9090? Actually HTS 10-digit: 3004.90.9090. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.005634698,
+      "prompt_tokens": 301,
+      "prompt_time": 0.015182148,
+      "completion_tokens": 139,
+      "completion_time": 0.294340898,
+      "total_tokens": 440,
+      "total_time": 0.309523046,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496xhwmemyb7htydw02pyt2",
+      "seed": 2132995627
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909090",
+  "predicted_reason": "Fosfomycin tromethamine is a synthetic antibiotic formulated for oral administration, classified under heading 3004.90 (other medicaments containing antibiotics) with the specific subheading 3004.90.9090 for other pharmaceutical preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

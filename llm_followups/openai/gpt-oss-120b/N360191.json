@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360191",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39232100",
+  "raw_response": {
+    "id": "chatcmpl-f2e82061-e005-4a71-a375-f94d79026a62",
+    "object": "chat.completion",
+    "created": 1791310098,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.0010\", \"reason\": \"The bag is a polyethylene plastic bag (80% PE) and is classified under heading 3923.21 for polyethylene bags and sacks.\"}",
+          "reasoning": "Need correct 10-digit. Plastic bags of polyethylene: 3923.21.0010? Let's check: 3923.21.0010 is \"Bags, sacks and similar containers, of plastics, of polyethylene, not elsewhere specified\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088981987,
+      "prompt_tokens": 324,
+      "prompt_time": 0.013749011,
+      "completion_tokens": 111,
+      "completion_time": 0.238306228,
+      "total_tokens": 435,
+      "total_time": 0.252055239,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m496dw0devxbansadgktj568",
+      "seed": 92052382
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3923210010",
+  "predicted_reason": "The bag is a polyethylene plastic bag (80% PE) and is classified under heading 3923.21 for polyethylene bags and sacks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

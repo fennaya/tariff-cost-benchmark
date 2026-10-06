@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362992",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "6304930000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6307101000",
+  "raw_response": {
+    "id": "chatcmpl-7c78b09c-1f24-4818-a9b6-c994ca334b89",
+    "object": "chat.completion",
+    "created": 1791310632,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6307.10.10.00\",\"reason\":\"Pillow covers of synthetic fibers, printed, are classified under 6307.10.10.00\"}",
+          "reasoning": "Need correct HTS 10-digit. Pillow covers 6307.10.10.00? Actually 6307.10.10.00 is \"Pillow covers, of synthetic fibers, printed\". But 10-digit: 6307.10.10.00? That's 8 digits? Actually HTS 10-digit: 6307.10.10.00 is 10 digits? It's 6307.10.10.00 (10). So maybe correct. But user says doesn't exist. Maybe correct is 6307.10.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.051442831,
+      "prompt_tokens": 351,
+      "prompt_time": 0.028824867,
+      "completion_tokens": 169,
+      "completion_time": 0.183888274,
+      "total_tokens": 520,
+      "total_time": 0.212713141,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m496y5r8eq49n40h675nash5",
+      "seed": 731847709
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307101000",
+  "predicted_reason": "Pillow covers of synthetic fibers, printed, are classified under 6307.10.10.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359740",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615103025",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "76151000",
+  "raw_response": {
+    "id": "chatcmpl-38180b2c-b82f-44e4-ab2c-c17b1c72a607",
+    "object": "chat.completion",
+    "created": 1791309977,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7615.10.00.00\", \"reason\": \"Aluminum salad bar bowl with enamel interior is classified under heading 7615 for aluminum table, kitchen or other household articles.\"}",
+          "reasoning": "Need correct 10-digit code. Likely 7615.10.00.00? Check: HTS 7615.10.00.00 is \"Table, kitchen or other household articles and parts thereof, of aluminum, not elsewhere specified\". So 10-digit: 7615.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.01816128,
+      "prompt_tokens": 314,
+      "prompt_time": 0.015698388,
+      "completion_tokens": 124,
+      "completion_time": 0.259448173,
+      "total_tokens": 438,
+      "total_time": 0.275146561,
+      "completion_tokens_details": {
+        "reasoning_tokens": 70
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m496a5dqe30v140x1vw4mgxe",
+      "seed": 1297391842
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7615100000",
+  "predicted_reason": "Aluminum salad bar bowl with enamel interior is classified under heading 7615 for aluminum table, kitchen or other household articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

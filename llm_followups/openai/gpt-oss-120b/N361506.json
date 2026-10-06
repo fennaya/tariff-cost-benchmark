@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361506",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "8413600030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84832000",
+  "raw_response": {
+    "id": "chatcmpl-c672fa89-ed16-4fdf-ba44-ae0fed3c3c29",
+    "object": "chat.completion",
+    "created": 1791310322,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.20.00.00\",\n  \"reason\": \"Classified as a gear pump (a pump for liquids) under heading 8483, subheading 20 for other pumps.\"\n}",
+          "reasoning": "Need correct 10-digit. Gear pump likely 8483.20.00.10? Check HTS: 8483.20.00 is 6-digit. 10-digit add country? Actually 10-digit US: 8483.20.00.00. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04852964,
+      "prompt_tokens": 302,
+      "prompt_time": 0.014274402,
+      "completion_tokens": 120,
+      "completion_time": 0.251938365,
+      "total_tokens": 422,
+      "total_time": 0.266212767,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496mpr8erbrqqse2ex1ehn1",
+      "seed": 1555981868
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483200000",
+  "predicted_reason": "Classified as a gear pump (a pump for liquids) under heading 8483, subheading 20 for other pumps.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

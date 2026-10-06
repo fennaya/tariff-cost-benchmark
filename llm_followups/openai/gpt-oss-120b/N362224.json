@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362224",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8422309191",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8432200000",
+  "raw_response": {
+    "id": "chatcmpl-08eddbc0-82af-4633-9ab1-a56763a6cc9c",
+    "object": "chat.completion",
+    "created": 1791310447,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8432.20.10.00\",\n  \"reason\": \"Machinery for planting, transplanting, sowing or other agricultural purposes, specifically an industrial pot\u2011filling line.\"\n}",
+          "reasoning": "Need correct code. Likely 8432.20.10.00? Check HTS: 8432.20.10.00 \u2013 Machines for planting, transplanting, sowing, etc., other than hand-operated. Could be 8432.20.20.00? Actually 8432.20.10.00 is \"Other\". Provide valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.904278297,
+      "prompt_tokens": 465,
+      "prompt_time": 0.022181646,
+      "completion_tokens": 133,
+      "completion_time": 0.282607558,
+      "total_tokens": 598,
+      "total_time": 0.304789204,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496rff7evcag2tsc4c3z64m",
+      "seed": 1853917225
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8432201000",
+  "predicted_reason": "Machinery for planting, transplanting, sowing or other agricultural purposes, specifically an industrial pot\u2011filling line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

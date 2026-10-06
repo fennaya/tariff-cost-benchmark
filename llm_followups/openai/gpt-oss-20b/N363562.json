@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363562",
+  "rulingDate": "2026-08-10T00:00:00",
+  "true_code": "8486400030",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84299090",
+  "raw_response": {
+    "id": "chatcmpl-c5e92fd3-357d-4b52-a2a3-d92dec316610",
+    "object": "chat.completion",
+    "created": 1791310715,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8429.90.90.90\",\"reason\":\"Machine for positioning silicon wafers in semiconductor manufacturing, classified under other machines for semiconductor device production\"}",
+          "reasoning": "Need valid HTS 10-digit. For wafer stage machine. Likely 8429.90.90.90? Actually 8429.90.90 is 9 digits? 8429.90.90 is 8? Wait format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit sub-sub? 10-digit: 8429.90.90.90? Let's pick 8429.90.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.214143212,
+      "prompt_tokens": 279,
+      "prompt_time": 0.017861564,
+      "completion_tokens": 145,
+      "completion_time": 0.150257628,
+      "total_tokens": 424,
+      "total_time": 0.168119192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ed70b23331",
+    "x_groq": {
+      "id": "req_01m4970pfvee7t1ckryhvv3r40",
+      "seed": 2013912248
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8429909090",
+  "predicted_reason": "Machine for positioning silicon wafers in semiconductor manufacturing, classified under other machines for semiconductor device production",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

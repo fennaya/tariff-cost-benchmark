@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363538",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8507600000",
+  "raw_response": {
+    "id": "chatcmpl-cdb347e7-5245-4bed-b692-dd8101d7cf9b",
+    "object": "chat.completion",
+    "created": 1791310650,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8507.60.00.00\", \"reason\": \"Portable lithium\u2011ion power banks are classified under heading 8507.60 for other electric accumulators, not primary, used as power sources for electronic equipment.\"}",
+          "reasoning": "Need correct 10-digit. Power banks: HTS 8507.60.00.00? Actually 8507.60.00.00 is valid? 8507.60.00.00 is \"Other\" under 8507. Check: 8507.60.00.00 is \"Other\" for electric accumulators, not primary. Might be valid. But user says not exist. Maybe correct is 8507.60.00.00 is 8-digit? It's 8-digit plus 2 zeros. That's 10-digit. Should be okay. Could be 8507.60.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.239620813,
+      "prompt_tokens": 402,
+      "prompt_time": 0.020664719,
+      "completion_tokens": 196,
+      "completion_time": 0.415134301,
+      "total_tokens": 598,
+      "total_time": 0.43579902,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m496yp5sem2tgb28z44v4e8b",
+      "seed": 439494277
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8507600000",
+  "predicted_reason": "Portable lithium\u2011ion power banks are classified under heading 8507.60 for other electric accumulators, not primary, used as power sources for electronic equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

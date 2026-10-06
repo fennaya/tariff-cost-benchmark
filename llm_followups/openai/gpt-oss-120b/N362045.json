@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362045",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8531809051",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9027801000",
+  "raw_response": {
+    "id": "chatcmpl-fd3e4184-d044-430e-b69c-ba15783ad481",
+    "object": "chat.completion",
+    "created": 1791310407,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9027.80.20.00\",\n  \"reason\": \"The Express is a walk\u2011through metal detector system for concealed weapons, falling under heading 9027.80 for other metal detectors.\"\n}",
+          "reasoning": "Need correct code. Likely 9027.80.20? Check: 9027.80.20 is \"Other metal detectors\". 9027.80.10 maybe not. Use 9027.80.20."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.012130087,
+      "prompt_tokens": 671,
+      "prompt_time": 0.040104149,
+      "completion_tokens": 108,
+      "completion_time": 0.230624664,
+      "total_tokens": 779,
+      "total_time": 0.270728813,
+      "completion_tokens_details": {
+        "reasoning_tokens": 49
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m496q97medwsds57pyn11vbk",
+      "seed": 2074196704
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9027802000",
+  "predicted_reason": "The Express is a walk\u2011through metal detector system for concealed weapons, falling under heading 9027.80 for other metal detectors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

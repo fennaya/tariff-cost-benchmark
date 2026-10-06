@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361432",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8541430010",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87163000",
+  "raw_response": {
+    "id": "chatcmpl-82371d7f-df95-443f-820b-0ae3ac30b928",
+    "object": "chat.completion",
+    "created": 1791310306,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.30.00.00\", \"reason\": \"Classified as a non\u2011self\u2011propelled wheeled trailer (heading 8716) used for transport, with the solar panels considered accessories not altering the trailer\u2019s primary classification.\"}",
+          "reasoning": "Need correct 10-digit. Trailers under 8716.30.00? Actually 8716.30.00 is valid 8-digit? HTS 10-digit includes .00 at end. 8716.30.00.00? Let's check: 8716.30.00 is 8 digits? 8716 is heading, .30 subheading, .00 further. 10-digit would be 8716.30.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089102109,
+      "prompt_tokens": 394,
+      "prompt_time": 0.01831873,
+      "completion_tokens": 167,
+      "completion_time": 0.354400729,
+      "total_tokens": 561,
+      "total_time": 0.372719459,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m496m6s1ec58ra2ehq69ex3p",
+      "seed": 115278215
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8716300000",
+  "predicted_reason": "Classified as a non\u2011self\u2011propelled wheeled trailer (heading 8716) used for transport, with the solar panels considered accessories not altering the trailer\u2019s primary classification.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

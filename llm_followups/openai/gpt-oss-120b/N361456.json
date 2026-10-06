@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361456",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9503000073",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "98010000",
+  "raw_response": {
+    "id": "chatcmpl-0ab4db9c-3fa7-465b-99cc-717fa85d7602",
+    "object": "chat.completion",
+    "created": 1791310320,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9901.00.00\",\n  \"reason\": \"The document contains no specific product description, so the only appropriate classification is the generic code for goods returned after export.\"\n}",
+          "reasoning": "Need to pick a generic code like 9901.00.00? Actually 9901 is for \"Goods returned after being exported\". 9901.00.00 is valid. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.017998144,
+      "prompt_tokens": 578,
+      "prompt_time": 0.116686769,
+      "completion_tokens": 95,
+      "completion_time": 0.199038379,
+      "total_tokens": 673,
+      "total_time": 0.315725148,
+      "completion_tokens_details": {
+        "reasoning_tokens": 42
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496mk63ec7sh667m1fzbgsd",
+      "seed": 1760462931
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "99010000",
+  "predicted_reason": "The document contains no specific product description, so the only appropriate classification is the generic code for goods returned after export.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361556",
+  "rulingDate": "2026-06-12T00:00:00",
+  "true_code": "6106202010",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6109100000",
+  "raw_response": {
+    "id": "chatcmpl-51d2262d-f6b8-45d8-9a18-428ed058f187",
+    "object": "chat.completion",
+    "created": 1791310360,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6109.10.00.00\",\"reason\":\"The blouse is a women\u2019s garment made of polyester and spandex, fitting the HTSUS heading for blouses of synthetic fibers.\"}",
+          "reasoning": "Need valid 10-digit. For women's blouses polyester 95 spandex 5. Likely 6109.10.00.00? But 6109.10.00.00 is 6109.10.00.00? Actually 10-digit: 6109.10.00.00? That's 8 digits? 6109.10.00.00 is 10? 6109.10.00.00 = 4+2+2+2? It's 10 digits including periods. So 6109.10.00.00 is valid. But earlier said not exist. Maybe correct is 6109.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.259571616,
+      "prompt_tokens": 278,
+      "prompt_time": 0.438109956,
+      "completion_tokens": 198,
+      "completion_time": 0.215300478,
+      "total_tokens": 476,
+      "total_time": 0.653410434,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496nv48eqvr247ew1vgqgvy",
+      "seed": 305343797
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109100000",
+  "predicted_reason": "The blouse is a women\u2019s garment made of polyester and spandex, fitting the HTSUS heading for blouses of synthetic fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

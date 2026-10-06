@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363847",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703800020",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8703210000",
+  "raw_response": {
+    "id": "chatcmpl-95267469-78c1-4685-9d1b-d135324778c3",
+    "object": "chat.completion",
+    "created": 1791310686,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8703.23.00.00\",\n  \"reason\": \"The GV60 is a passenger motor vehicle powered solely by an electric motor, classified under other propulsion types for passenger cars.\"\n}",
+          "reasoning": "Need correct 10-digit code for electric vehicles: 8703.23.00.00? Actually 8703.21 is for gasoline, 8703.22 diesel, 8703.23 for other propulsion. For electric: 8703.23.00.00 is \"Other propulsion\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090066203,
+      "prompt_tokens": 295,
+      "prompt_time": 0.014506798,
+      "completion_tokens": 124,
+      "completion_time": 0.295851355,
+      "total_tokens": 419,
+      "total_time": 0.310358153,
+      "completion_tokens_details": {
+        "reasoning_tokens": 68
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m496zsgqe079ph4ezmjqdcvc",
+      "seed": 932689061
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703230000",
+  "predicted_reason": "The GV60 is a passenger motor vehicle powered solely by an electric motor, classified under other propulsion types for passenger cars.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

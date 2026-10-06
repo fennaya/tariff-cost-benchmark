@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363583",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8403100000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7308909000",
+  "raw_response": {
+    "id": "chatcmpl-1f2990ee-ba2f-482b-8d01-ea182f18b670",
+    "object": "chat.completion",
+    "created": 1791310720,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Gas\u2011fired condensing hydronic boilers for commercial use are classified under 7308.90.90.00\"}",
+          "reasoning": "Need valid HTS 10-digit. For gas-fired boilers: 7308.90.90.00? Actually 7308.90.90.00 is 10-digit? It's 7308.90.90.00 (10 digits). But maybe not exist. Let's pick 7308.90.90.00 is valid? Might be 7308.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.209353656,
+      "prompt_tokens": 426,
+      "prompt_time": 0.029694556,
+      "completion_tokens": 136,
+      "completion_time": 0.141263005,
+      "total_tokens": 562,
+      "total_time": 0.170957561,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m4970tmde098yr5rdqf63jb4",
+      "seed": 1963611620
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Gas\u2011fired condensing hydronic boilers for commercial use are classified under 7308.90.90.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362785",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "7018905000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4202220000",
+  "raw_response": {
+    "id": "chatcmpl-5f2bd163-032c-4c6d-a0a7-07a30f3866ea",
+    "object": "chat.completion",
+    "created": 1791310513,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.21.90.00\", \"reason\": \"A handbag/purse with a textile outer surface (polyester satin) and decorative sequins/beads, classified under handbags of textile material.\"}",
+          "reasoning": "Need correct 10-digit. Likely 4202.21.90.00 (handbags with textile). Check: 4202.21.90 \u2013 Handbags, with outer surface of textile, not leather. 10-digit: 4202.21.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207862095,
+      "prompt_tokens": 341,
+      "prompt_time": 0.017745869,
+      "completion_tokens": 119,
+      "completion_time": 0.250861682,
+      "total_tokens": 460,
+      "total_time": 0.268607551,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m496th6mekxawb1kydmj3g11",
+      "seed": 735180943
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202219000",
+  "predicted_reason": "A handbag/purse with a textile outer surface (polyester satin) and decorative sequins/beads, classified under handbags of textile material.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

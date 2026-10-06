@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361289",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "61099000",
+  "raw_response": {
+    "id": "chatcmpl-5027287b-e8ce-4a1e-80ff-bae530151247",
+    "object": "chat.completion",
+    "created": 1791310247,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6109.90.10\",\n  \"reason\": \"The description matches a knitted or crocheted garment (a flat\u2011collar shirt with long sleeves) that does not fall under a more specific subheading, thus it is classified under 6109.90.10 \u2013 other knitted or crocheted apparel.\"\n}",
+          "reasoning": "Need correct 10-digit code. Likely 6109.10.00? Actually 6109.10.00 is T\u2011shirts? Let's pick 6109.90.10? Need valid. Use 6109.90.10 (Other knitted or crocheted apparel, other). Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048670491,
+      "prompt_tokens": 305,
+      "prompt_time": 0.013630757,
+      "completion_tokens": 145,
+      "completion_time": 0.305518035,
+      "total_tokens": 450,
+      "total_time": 0.319148792,
+      "completion_tokens_details": {
+        "reasoning_tokens": 64
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m496jd5wet2bs3rvz4meaf71",
+      "seed": 268010365
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61099010",
+  "predicted_reason": "The description matches a knitted or crocheted garment (a flat\u2011collar shirt with long sleeves) that does not fall under a more specific subheading, thus it is classified under 6109.90.10 \u2013 other knitted or crocheted apparel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

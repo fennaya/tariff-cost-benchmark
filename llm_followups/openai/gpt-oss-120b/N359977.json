@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359977",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8517620000",
+  "raw_response": {
+    "id": "chatcmpl-ef15175a-3fff-425f-a095-9b53f6d97ecb",
+    "object": "chat.completion",
+    "created": 1791310058,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8517.62.00.00\",\n  \"reason\": \"A gateway that transmits and receives data for cloud\u2011based access control is classified as other apparatus for transmission or reception of data, not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8517.62.00.00 is valid? Actually HTS 8517.62.00.00 exists: \"Other apparatus for transmission or reception of voice, images or other data, including modems, routers and switches, not elsewhere specified\". That's 10 digits. It's valid. But user says not exist. Maybe need 8517.62.00.00 is correct. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.275791065,
+      "prompt_tokens": 398,
+      "prompt_time": 0.029685775,
+      "completion_tokens": 155,
+      "completion_time": 0.331793607,
+      "total_tokens": 553,
+      "total_time": 0.361479382,
+      "completion_tokens_details": {
+        "reasoning_tokens": 93
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m496cmvnesdbwm7wpea0kpjh",
+      "seed": 68634873
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517620000",
+  "predicted_reason": "A gateway that transmits and receives data for cloud\u2011based access control is classified as other apparatus for transmission or reception of data, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

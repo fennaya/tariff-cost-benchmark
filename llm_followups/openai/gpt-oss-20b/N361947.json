@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361947",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9403910080",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9403100000",
+  "raw_response": {
+    "id": "chatcmpl-01a22e47-2e24-42a5-a1e2-06f1ad5123bf",
+    "object": "chat.completion",
+    "created": 1791310444,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.10.00.00\",\"reason\":\"The item is a tabletop component for furniture, classified under heading 9403.10 for table tops, table bases, and table legs.\"}",
+          "reasoning": "Need valid 10-digit. Table tops are 9403.10.00.00? Actually 9403.10.00.00 is 9403.10.00.00? Wait 10-digit: 9403.10.00.00 is 10 digits? 9403.10.00.00 has 10 digits including periods? Actually format: 4 digits, period, 2 digits, period, 2 digits, period, 2 digits. So 9403.10.00.00 is 10 digits. But earlier said not exist. Maybe correct is 9403.10.00.00. Let's output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015742052,
+      "prompt_tokens": 352,
+      "prompt_time": 0.023105799,
+      "completion_tokens": 193,
+      "completion_time": 0.209090804,
+      "total_tokens": 545,
+      "total_time": 0.232196603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8d13edce1d",
+    "x_groq": {
+      "id": "req_01m496rd95eyh8bneaz0jzj9yj",
+      "seed": 1995450428
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403100000",
+  "predicted_reason": "The item is a tabletop component for furniture, classified under heading 9403.10 for table tops, table bases, and table legs.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

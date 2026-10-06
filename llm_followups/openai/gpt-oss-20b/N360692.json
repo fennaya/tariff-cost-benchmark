@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360692",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "3213900000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "32159010",
+  "raw_response": {
+    "id": "chatcmpl-916a6959-585c-4921-9bf1-3cda039dca56",
+    "object": "chat.completion",
+    "created": 1791310178,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3215.90.10.00\",\"reason\":\"Oil paints in paste form packaged in tubes are classified under 3215.90.10.00, other articles of paint, putty, etc.\"}",
+          "reasoning": "Need valid HTS 10-digit. Oil paint in tubes likely 3215.90.10? Actually 3215.90.10 is \"Other articles of paint, putty, etc.\" but 3215.90.10 is 10-digit? 3215.90.10 is 8-digit? Actually HTS 10-digit: 3215.90.10.00? Wait 10-digit: 3215.90.10.00. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.121434519,
+      "prompt_tokens": 317,
+      "prompt_time": 0.024744814,
+      "completion_tokens": 160,
+      "completion_time": 0.193449397,
+      "total_tokens": 477,
+      "total_time": 0.218194211,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m496ga35e2hb7432x154xm0n",
+      "seed": 1766202227
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3215901000",
+  "predicted_reason": "Oil paints in paste form packaged in tubes are classified under 3215.90.10.00, other articles of paint, putty, etc.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

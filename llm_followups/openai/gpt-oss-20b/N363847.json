@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363847",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703800020",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8703200000",
+  "raw_response": {
+    "id": "chatcmpl-42b1bf8d-a7fa-49fd-a0fc-8a933b1e3f63",
+    "object": "chat.completion",
+    "created": 1791310763,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8703.20.00.00\",\"reason\":\"All-electric passenger motor vehicles with a motor power of 50 kW or more.\"}",
+          "reasoning": "Need valid 10-digit HTS code for all-electric Hyundai GV60. Likely 8703.20.00.00? Actually HTS 8703.20.00.00 is \"Motor vehicles of a type designed for the transport of persons, having an engine of 50 kW or more\". For electric, 8703.20.00.00 is correct. But 10-digit: 8703.20.00.00? That's 8 digits? Actually HTS 10-digit: 8703.20.00.00 is 10 digits? It's 8703.20.00.00 (4+2+2+2). That's 10 digits. So output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.03040846,
+      "prompt_tokens": 283,
+      "prompt_time": 0.043749343,
+      "completion_tokens": 192,
+      "completion_time": 0.205196352,
+      "total_tokens": 475,
+      "total_time": 0.248945695,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_565badff47",
+    "x_groq": {
+      "id": "req_01m49724sjefd9db6grnmy1vw5",
+      "seed": 1559273321
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703200000",
+  "predicted_reason": "All-electric passenger motor vehicles with a motor power of 50 kW or more.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

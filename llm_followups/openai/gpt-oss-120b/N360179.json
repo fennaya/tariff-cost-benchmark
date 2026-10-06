@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360179",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "9008501000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9503009090",
+  "raw_response": {
+    "id": "chatcmpl-5b49e0f0-127d-4334-9067-064f5fdd1418",
+    "object": "chat.completion",
+    "created": 1791310090,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.9090\", \"reason\": \"A children's tracing projector art set is classified as a toy not elsewhere specified under heading 9503\"}",
+          "reasoning": "Need correct 10-digit. Likely 9503.00.9090 is 8-digit. Need 10-digit: 9503.00.9090? Actually HTS uses 10 digits: 9503.00.9090 is 10? 9503 (4) .00 (2) .9090 (4) = 10. It's valid. But maybe not existing. Could be 9503.00.9090 is valid. Another possibility 9503.00.9090 is \"Other toys, not elsewhere specified\". Should be fine. Maybe they want 9503.00.9090 is okay. Provide same."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151179728,
+      "prompt_tokens": 314,
+      "prompt_time": 0.016420967,
+      "completion_tokens": 185,
+      "completion_time": 0.393217739,
+      "total_tokens": 499,
+      "total_time": 0.409638706,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m496dkrsehjb7zcpqwts319j",
+      "seed": 556361330
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503009090",
+  "predicted_reason": "A children's tracing projector art set is classified as a toy not elsewhere specified under heading 9503",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

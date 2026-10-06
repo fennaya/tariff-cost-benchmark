@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360217",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "30049090",
+  "raw_response": {
+    "id": "chatcmpl-bd30374d-2a4f-48ad-b5ed-d09f72040594",
+    "object": "chat.completion",
+    "created": 1791310101,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.90.00\", \"reason\": \"Bumetanide tablets are medicinal preparations for human use not elsewhere specified, classified under heading 3004 and subheading 3004.90.90, yielding the 10\u2011digit code 3004.90.90.00.\"}",
+          "reasoning": "Need correct 10-digit code. Bumetanide tablets likely 3004.90.90.10? Check HTS: 3004.90.90.10 is \"Other medicinal preparations containing hormones or other products\". Actually need look up. Might be 3004.90.90.00? 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 4-digit further. For 3004.90.90.00 is valid? Usually 3004.90.90.00 is \"Other medicinal preparations\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.038517135,
+      "prompt_tokens": 322,
+      "prompt_time": 0.016045305,
+      "completion_tokens": 200,
+      "completion_time": 0.419354899,
+      "total_tokens": 522,
+      "total_time": 0.435400204,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m496dyxqe6crx7zvy67kzarj",
+      "seed": 1318388940
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Bumetanide tablets are medicinal preparations for human use not elsewhere specified, classified under heading 3004 and subheading 3004.90.90, yielding the 10\u2011digit code 3004.90.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

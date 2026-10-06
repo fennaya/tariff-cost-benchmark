@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361150",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9503000071",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9503001000",
+  "raw_response": {
+    "id": "chatcmpl-a5a52f9f-8177-4eef-8e60-e85c6fad7711",
+    "object": "chat.completion",
+    "created": 1791310258,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9503.00.10.00\",\"reason\":\"These are soft, padded textile shapes that fold into themselves, qualifying as soft toys under heading 9503.00.10.00.\"}",
+          "reasoning": "Need valid HTS 10-digit. Soft toys heading 9503.00.10.00? Actually 9503.00.10.00 is for soft toys. But 10-digit: 9503.00.10.00? That's 8 digits? Actually HTS 10-digit: 9503.00.10.00 is 10? It's 4+2+2+2? 9503.00.10.00 is 10 digits including periods? It's 4+2+2+2=10. So it's valid. But maybe need 9503.00.10.00? It's correct. But user says code does not exist. Maybe correct code is 9503.00.10.00? Let's double-check: HTS 9503.00.10.00 is \"Soft toys, of any material, not including dolls.\" That fits. So respond with that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.154648523,
+      "prompt_tokens": 263,
+      "prompt_time": 0.015087553,
+      "completion_tokens": 247,
+      "completion_time": 0.287793409,
+      "total_tokens": 510,
+      "total_time": 0.302880962,
+      "completion_tokens_details": {
+        "reasoning_tokens": 193
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_334cc21c60",
+    "x_groq": {
+      "id": "req_01m496jqv4eh6sbn0pb7vhs4sg",
+      "seed": 1371149652
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503001000",
+  "predicted_reason": "These are soft, padded textile shapes that fold into themselves, qualifying as soft toys under heading 9503.00.10.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

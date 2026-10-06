@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361305",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6104630000",
+  "raw_response": {
+    "id": "chatcmpl-63e7a446-9fda-4492-b9ac-6f8985fec1a6",
+    "object": "chat.completion",
+    "created": 1791310257,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6104.63.10.00\", \"reason\": \"The item is a women's knitted swimsuit with a back opening and waist band, fitting the description of women's or girls' swimsuits of man\u2011made fibers.\"}",
+          "reasoning": "Need correct code. Description sounds like a women's one-piece swimsuit? Could be \"women's or girls' swimsuits\" 6104.63.10.00? Check HTS: 6104.63.10.00 = Women's or girls' swimsuits, knitted or crocheted, of man-made fibers. That's 10 digits. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017978678,
+      "prompt_tokens": 250,
+      "prompt_time": 0.010183104,
+      "completion_tokens": 133,
+      "completion_time": 0.275619855,
+      "total_tokens": 383,
+      "total_time": 0.285802959,
+      "completion_tokens_details": {
+        "reasoning_tokens": 73
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496jpx1ec3vw7h61a3ef4c7",
+      "seed": 115879578
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6104631000",
+  "predicted_reason": "The item is a women's knitted swimsuit with a back opening and waist band, fitting the description of women's or girls' swimsuits of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

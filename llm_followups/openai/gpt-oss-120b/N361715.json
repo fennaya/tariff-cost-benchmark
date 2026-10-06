@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361715",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8421210000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "85098090",
+  "raw_response": {
+    "id": "chatcmpl-acaf84d4-3549-47c2-8129-898e8578e16c",
+    "object": "chat.completion",
+    "created": 1791310346,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8509.80.90.00\",\n  \"reason\": \"Robotic pool cleaner powered by a rechargeable battery falls under heading 8509 for other machines for cleaning, polishing or mechanical treatment of surfaces.\"\n}",
+          "reasoning": "Need correct code. Likely 8509.80.90 is 8 digits. Need 10-digit US: 8509.80.90.00. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049690103,
+      "prompt_tokens": 579,
+      "prompt_time": 0.107283694,
+      "completion_tokens": 99,
+      "completion_time": 0.207001909,
+      "total_tokens": 678,
+      "total_time": 0.314285603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 39
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496ne14ecq8sgkf8ayecdfa",
+      "seed": 1685163546
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8509809000",
+  "predicted_reason": "Robotic pool cleaner powered by a rechargeable battery falls under heading 8509 for other machines for cleaning, polishing or mechanical treatment of surfaces.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

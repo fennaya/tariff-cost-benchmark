@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361049",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "6110202046",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029990",
+  "raw_response": {
+    "id": "chatcmpl-8bf3de43-b435-41d9-842d-bf943181abb8",
+    "object": "chat.completion",
+    "created": 1791310216,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.99.90.00\",\n  \"reason\": \"The product relates to general textile fiber articles not elsewhere specified, which fall under heading 6302 and the catch\u2011all subheading 99.90 for other made\u2011up textile articles.\"\n}",
+          "reasoning": "Need valid code. Maybe 6302.99.90 is valid? Actually HTS 10-digit like 6302.99.90.00. Need 10 digits with two-digit suffix. Provide valid. Use 6302.99.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294599677,
+      "prompt_tokens": 349,
+      "prompt_time": 0.015109132,
+      "completion_tokens": 126,
+      "completion_time": 0.26422837,
+      "total_tokens": 475,
+      "total_time": 0.279337502,
+      "completion_tokens_details": {
+        "reasoning_tokens": 56
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m496heqaex8af1aan44veqng",
+      "seed": 608719104
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302999000",
+  "predicted_reason": "The product relates to general textile fiber articles not elsewhere specified, which fall under heading 6302 and the catch\u2011all subheading 99.90 for other made\u2011up textile articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

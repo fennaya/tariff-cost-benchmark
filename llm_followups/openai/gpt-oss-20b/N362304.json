@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362304",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "2008996500",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1905909000",
+  "raw_response": {
+    "id": "chatcmpl-84b0dac0-7671-42be-ac59-9c5de432fb74",
+    "object": "chat.completion",
+    "created": 1791310514,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1905.90.90.00\",\"reason\":\"Cassava flatbread with no added ingredients is classified under 1905.90.90.00, the general subheading for other bread, pastry, cakes, biscuits and similar products.\"}",
+          "reasoning": "Need valid 10-digit. For cassava flatbread likely 1905.90.90.00? But 1905.90.90.00 is 10 digits? Actually 1905.90.90.00 is 10 digits? It's 4+2+2+2 =10. But maybe subheading 1905.90.90.00 exists? Might be 1905.90.90.00. But maybe 1905.90.90.00 is not used. Could use 1905.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016121531,
+      "prompt_tokens": 438,
+      "prompt_time": 0.023342836,
+      "completion_tokens": 185,
+      "completion_time": 0.224116342,
+      "total_tokens": 623,
+      "total_time": 0.247459178,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9340e7d14d",
+    "x_groq": {
+      "id": "req_01m496tj94e0v9s3w0pqefn01d",
+      "seed": 1727664398
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1905909000",
+  "predicted_reason": "Cassava flatbread with no added ingredients is classified under 1905.90.90.00, the general subheading for other bread, pastry, cakes, biscuits and similar products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

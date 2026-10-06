@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361771",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "8302416080",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7308909000",
+  "raw_response": {
+    "id": "chatcmpl-47954d9c-cf7b-485e-a140-c912e76aa458",
+    "object": "chat.completion",
+    "created": 1791310367,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7308.90.90.00\",\n  \"reason\": \"Heavy\u2011duty steel awning brackets are parts of structures of iron or steel not elsewhere specified, falling under heading 7308 and subheading 7308.90.90.00.\"\n}",
+          "reasoning": "Need correct code. Likely 7308.90.90.00 is valid? Actually HTS 7308.90.90.00 exists. But maybe need 7308.90.90.00 is 8 digits plus .00. That's 10 digits. It's valid. But user says not exist. Maybe correct is 7308.90.90.00 indeed. Could be 7308.90.90.00. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.01032128,
+      "prompt_tokens": 370,
+      "prompt_time": 0.071978976,
+      "completion_tokens": 167,
+      "completion_time": 0.34868335,
+      "total_tokens": 537,
+      "total_time": 0.420662326,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m496p2daex29tfqdq5kqpx4n",
+      "seed": 1062033604
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Heavy\u2011duty steel awning brackets are parts of structures of iron or steel not elsewhere specified, falling under heading 7308 and subheading 7308.90.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

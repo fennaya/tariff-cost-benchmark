@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361988",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8517621000",
+  "raw_response": {
+    "id": "chatcmpl-a7beb66e-9595-40d3-be67-729c6185d6ad",
+    "object": "chat.completion",
+    "created": 1791310453,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.62.10.00\",\"reason\":\"Electric heating pad for personal use is classified under 8517.62.10.00, electric heating or cooling apparatus other than those for home use.\"}",
+          "reasoning": "Need valid HTS 10-digit. Heating pad likely 8517.62.10.00? But 8517.62.10 is 10-digit? Actually HTS 10-digit: 8517.62.10.00. That exists? Check: 8517.62.10.00 is \"Electric heating or cooling apparatus other than those for home use\". Might be correct. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.139020099,
+      "prompt_tokens": 504,
+      "prompt_time": 0.031610015,
+      "completion_tokens": 143,
+      "completion_time": 0.172718018,
+      "total_tokens": 647,
+      "total_time": 0.204328033,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_63473661d7",
+    "x_groq": {
+      "id": "req_01m496rp3qey1vg86jy75231ys",
+      "seed": 1166263023
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517621000",
+  "predicted_reason": "Electric heating pad for personal use is classified under 8517.62.10.00, electric heating or cooling apparatus other than those for home use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

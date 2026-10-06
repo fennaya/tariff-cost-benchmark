@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361194",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "4010125000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "40109990",
+  "raw_response": {
+    "id": "chatcmpl-50b8418d-6d45-4e03-ad8c-003ee7fa64c9",
+    "object": "chat.completion",
+    "created": 1791310236,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4010.12.00.00\", \"reason\": \"Rubber conveyor belts reinforced with textile materials fall under heading 4010, subheading 12 for conveyor or transmission belts of vulcanized rubber with textile reinforcement.\"}",
+          "reasoning": "Need correct code. Likely 4010.12.00? Check: 4010.12.00 = conveyor belts of rubber, reinforced. Actually 4010.12.00 is \"Conveyor or transmission belts, of vulcanized rubber, reinforced with textile material\". That's 8-digit; need 10-digit: 4010.12.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.004708214,
+      "prompt_tokens": 336,
+      "prompt_time": 0.015690538,
+      "completion_tokens": 143,
+      "completion_time": 0.301816055,
+      "total_tokens": 479,
+      "total_time": 0.317506593,
+      "completion_tokens_details": {
+        "reasoning_tokens": 81
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m496j2hmey2b2kwzmpjgdqcw",
+      "seed": 1086428054
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4010120000",
+  "predicted_reason": "Rubber conveyor belts reinforced with textile materials fall under heading 4010, subheading 12 for conveyor or transmission belts of vulcanized rubber with textile reinforcement.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

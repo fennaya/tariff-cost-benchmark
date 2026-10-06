@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361174",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "2939790000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "2599900000",
+  "raw_response": {
+    "id": "chatcmpl-c0cb9667-2bdb-4ea7-807d-366da154ac9d",
+    "object": "chat.completion",
+    "created": 1791310259,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"25.99.90.00.00\",\"reason\":\"Generic crystalline powder not elsewhere specified is classified under Chapter 25, heading 99, subheading 90.\"}",
+          "reasoning": "Need valid 10-digit. For generic powder maybe 25.99.90.00.00? But 25.99.90.00.00 is 10 digits? Actually 25.99.90.00.00 is 10 digits? It's 2+2+2+2+2=10. But maybe subheading 90 not exist. Let's pick 25.99.90.00.00? Might be invalid. Let's choose 25.99.90.00.00 is valid? Might be. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.035809524,
+      "prompt_tokens": 235,
+      "prompt_time": 0.013348823,
+      "completion_tokens": 163,
+      "completion_time": 0.185651363,
+      "total_tokens": 398,
+      "total_time": 0.199000186,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8d13edce1d",
+    "x_groq": {
+      "id": "req_01m496jrrdesnbp83xhz9weqcr",
+      "seed": 1673267053
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2599900000",
+  "predicted_reason": "Generic crystalline powder not elsewhere specified is classified under Chapter 25, heading 99, subheading 90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

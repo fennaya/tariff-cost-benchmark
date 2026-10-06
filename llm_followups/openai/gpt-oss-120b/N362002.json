@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362002",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39161000",
+  "raw_response": {
+    "id": "chatcmpl-06a54f07-b08b-4dd2-a10a-46c15bef81ea",
+    "object": "chat.completion",
+    "created": 1791310400,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3916.10.00.00\", \"reason\": \"The product is a die\u2011cut open\u2011cell reticulated polyurethane foam pad, which falls under cellular polyurethane plastics (HTS 3916.10.00.00).\"}",
+          "reasoning": "Need correct 10-digit code. Polyurethane foam, cellular, not reinforced: 3916.10.00.00? Actually HTS 3916.10.00.00 is \"Cellular polyurethane plastics, in primary forms\". 10-digit: 3916.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090818937,
+      "prompt_tokens": 365,
+      "prompt_time": 0.043221689,
+      "completion_tokens": 131,
+      "completion_time": 0.275056467,
+      "total_tokens": 496,
+      "total_time": 0.318278156,
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69dbc96c74",
+    "x_groq": {
+      "id": "req_01m496q2ccerktrpyk4d7g8man",
+      "seed": 666227224
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3916100000",
+  "predicted_reason": "The product is a die\u2011cut open\u2011cell reticulated polyurethane foam pad, which falls under cellular polyurethane plastics (HTS 3916.10.00.00).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

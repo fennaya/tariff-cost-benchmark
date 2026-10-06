@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359673",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "1602506000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "02023000",
+  "raw_response": {
+    "id": "chatcmpl-1f27df82-ea34-429a-96e8-69a7782b9578",
+    "object": "chat.completion",
+    "created": 1791309974,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0202.30.0010\", \"reason\": \"Marinated, vacuum\u2011tumbled whole\u2011muscle cuts of beef with bone are classified under heading 0202.30 for other cuts of bovine meat, with the 10\u2011digit subheading 0010 for frozen forms\"}",
+          "reasoning": "Need correct 10-digit code. Likely 0202.30.0010? Check: 0202.30.0010 is \"Other cuts, with bone, of beef, frozen\". Or 0202.30.0020 etc. Provide valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.302072694,
+      "prompt_tokens": 589,
+      "prompt_time": 0.153439499,
+      "completion_tokens": 131,
+      "completion_time": 0.276943688,
+      "total_tokens": 720,
+      "total_time": 0.430383187,
+      "completion_tokens_details": {
+        "reasoning_tokens": 56
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m496a252ezqs3w3pqsg6v7sm",
+      "seed": 425590043
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0202300010",
+  "predicted_reason": "Marinated, vacuum\u2011tumbled whole\u2011muscle cuts of beef with bone are classified under heading 0202.30 for other cuts of bovine meat, with the 10\u2011digit subheading 0010 for frozen forms",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

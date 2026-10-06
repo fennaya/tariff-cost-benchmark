@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362803",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5903202500",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "62089090",
+  "raw_response": {
+    "id": "chatcmpl-3d82343b-21be-4414-ba30-874c04e1fe10",
+    "object": "chat.completion",
+    "created": 1791310585,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6208.90.90.00\",\"reason\":\"Laminated textile of man\u2011made fibers with a polyurethane membrane used as a protective outer shell for firefighters.\"}",
+          "reasoning": "Need valid 10-digit HTS. For protective clothing outer shell laminated textile. Likely 6208.90.90? But 6208.90.90 is 8 digits? Actually HTS 10-digit: 6208.90.90.00? Wait 6208.90.90 is 8 digits. Need 10: 6208.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150959058,
+      "prompt_tokens": 327,
+      "prompt_time": 0.015959788,
+      "completion_tokens": 134,
+      "completion_time": 0.156855659,
+      "total_tokens": 461,
+      "total_time": 0.172815447,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_334cc21c60",
+    "x_groq": {
+      "id": "req_01m496wq1aebrv6nespg34tx3b",
+      "seed": 1604123050
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6208909000",
+  "predicted_reason": "Laminated textile of man\u2011made fibers with a polyurethane membrane used as a protective outer shell for firefighters.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

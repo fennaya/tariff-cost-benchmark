@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360321",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8708947550",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "87089990",
+  "raw_response": {
+    "id": "chatcmpl-3acb028b-5236-4d28-9710-261a0a5b943e",
+    "object": "chat.completion",
+    "created": 1791310115,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90.00\",\n  \"reason\": \"Tie\u2011rod assemblies are automotive steering system parts classified under heading 8708 (parts and accessories of motor vehicles), specifically the miscellaneous subheading 8708.99.90.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8708.99.90.10? Actually HTSUS 10-digit: 8708.99.90.00 is valid. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.201304222,
+      "prompt_tokens": 689,
+      "prompt_time": 0.030668689,
+      "completion_tokens": 110,
+      "completion_time": 0.234342782,
+      "total_tokens": 799,
+      "total_time": 0.265011471,
+      "completion_tokens_details": {
+        "reasoning_tokens": 42
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m496ebrne088m23117bxab9z",
+      "seed": 395433367
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Tie\u2011rod assemblies are automotive steering system parts classified under heading 8708 (parts and accessories of motor vehicles), specifically the miscellaneous subheading 8708.99.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

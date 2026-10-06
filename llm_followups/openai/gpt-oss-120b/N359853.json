@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359853",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "3824993990",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "31059910",
+  "raw_response": {
+    "id": "chatcmpl-36d09ab0-bb24-42b2-81ca-c761cdffc28b",
+    "object": "chat.completion",
+    "created": 1791310030,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.99.90.00\", \"reason\": \"Liquid mixed mineral fertilizer containing micronutrients not elsewhere specified, classified under other fertilizers\"}",
+          "reasoning": "Need correct 10-digit. Likely 3105.99.90? Check: 3105.99.90 is \"Other fertilizer, liquid, not elsewhere specified\". 10-digit: 3105.99.90.00? Actually HTSUS 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit tariff, 2-digit statistical. For 3105.99.90.00. So provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.420247069,
+      "prompt_tokens": 487,
+      "prompt_time": 0.022662353,
+      "completion_tokens": 143,
+      "completion_time": 0.305543928,
+      "total_tokens": 630,
+      "total_time": 0.328206281,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m496brs6exq8wdyekfrcyfrb",
+      "seed": 1452800354
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3105999000",
+  "predicted_reason": "Liquid mixed mineral fertilizer containing micronutrients not elsewhere specified, classified under other fertilizers",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

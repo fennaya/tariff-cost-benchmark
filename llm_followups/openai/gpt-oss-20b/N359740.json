@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359740",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615103025",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7610900000",
+  "raw_response": {
+    "id": "chatcmpl-924c445a-27df-426d-a329-514d4a9c9a88",
+    "object": "chat.completion",
+    "created": 1791309987,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7610.90.00.00\",\"reason\":\"Aluminum salad bowl with enamel interior is classified under 7610.90.00.00 \u2013 other aluminum and aluminum alloy articles, non-structural.\"}",
+          "reasoning": "Need valid 10-digit. For aluminum bowls: 7610.90.00.00? Actually 7610.90.00.00 is 10-digit? It's 7610.90.00.00 (4+2+2+2). That exists. Maybe 7610.90.00.00 is correct. But user says not exist. Maybe correct is 7610.90.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.229218456,
+      "prompt_tokens": 319,
+      "prompt_time": 0.018725094,
+      "completion_tokens": 150,
+      "completion_time": 0.157082131,
+      "total_tokens": 469,
+      "total_time": 0.175807225,
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_84bb35977d",
+    "x_groq": {
+      "id": "req_01m496af09eknv0934ptk17erv",
+      "seed": 1728587785
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7610900000",
+  "predicted_reason": "Aluminum salad bowl with enamel interior is classified under 7610.90.00.00 \u2013 other aluminum and aluminum alloy articles, non-structural.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

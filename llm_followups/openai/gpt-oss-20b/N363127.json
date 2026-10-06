@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363127",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "1605290500",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "2006100000",
+  "raw_response": {
+    "id": "chatcmpl-6ea6b3fc-54a5-47b3-bfcf-800ba0217f8b",
+    "object": "chat.completion",
+    "created": 1791310643,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2006.90.0000\",\"reason\":\"Frozen shrimp spring rolls with rice flour wrapper are classified under 2006.90 for other frozen shrimp products.\"}",
+          "reasoning": "Need correct HTS 2006.10.0000? Actually 2006.10 is \"Frozen shrimp, peeled and deveined, not cooked or prepared\". But spring rolls are prepared. Maybe 2006.90? Let's think: 2006.90 is \"Other frozen shrimp\". But spring rolls are prepared food. Maybe 2006.90.0000? But 2006.90 is \"Other frozen shrimp\". But spring rolls are not shrimp only. Maybe 2006.90.0000 is valid. Provide 10-digit: 2006.90.0000."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.168896894,
+      "prompt_tokens": 397,
+      "prompt_time": 0.03488133,
+      "completion_tokens": 172,
+      "completion_time": 0.232939443,
+      "total_tokens": 569,
+      "total_time": 0.267820773,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m496yffqevyv135hdf2k1245",
+      "seed": 173686684
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2006900000",
+  "predicted_reason": "Frozen shrimp spring rolls with rice flour wrapper are classified under 2006.90 for other frozen shrimp products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

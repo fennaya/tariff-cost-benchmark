@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360828",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "6211339061",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "62119300",
+  "raw_response": {
+    "id": "chatcmpl-c41f3d5e-3004-426b-8b76-439ab7071c2e",
+    "object": "chat.completion",
+    "created": 1791310167,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.93.00.10\", \"reason\": \"Man\u2011made fiber protective clothing (jacket and trousers) for chemical and flame hazards falls under heading 6211.93.00.10.\"}",
+          "reasoning": "Need correct 10-digit. Likely 6211.93.00.10? Check HTS: 6211.93.00.10 is \"Other protective clothing, of man-made fibers\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221156926,
+      "prompt_tokens": 581,
+      "prompt_time": 0.026714669,
+      "completion_tokens": 106,
+      "completion_time": 0.224688604,
+      "total_tokens": 687,
+      "total_time": 0.251403273,
+      "completion_tokens_details": {
+        "reasoning_tokens": 47
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m496fzeeeg0ahgytb7esk1av",
+      "seed": 515184395
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6211930010",
+  "predicted_reason": "Man\u2011made fiber protective clothing (jacket and trousers) for chemical and flame hazards falls under heading 6211.93.00.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

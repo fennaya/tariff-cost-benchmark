@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361569",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9403896015",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "94035010",
+  "raw_response": {
+    "id": "chatcmpl-8f4ec0b5-c71d-470c-a992-04318e25dd08",
+    "object": "chat.completion",
+    "created": 1791310366,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.50.10.00\",\"reason\":\"Patio tables and chairs with metal frames and stone surfaces are classified under 9403.50.10.00, other metal furniture not upholstered.\"}",
+          "reasoning": "Need valid HTS 10-digit. Patio furniture metal frames: 9403.50.10? Actually 9403.50.10 is \"Other furniture, of metal, not upholstered\". But 10-digit: 9403.50.10.00? Wait 10-digit format: 9403.50.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.449224414,
+      "prompt_tokens": 619,
+      "prompt_time": 0.038202141,
+      "completion_tokens": 130,
+      "completion_time": 0.133096078,
+      "total_tokens": 749,
+      "total_time": 0.171298219,
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496p1dset7azjeshf8g9xc0",
+      "seed": 1228298421
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403501000",
+  "predicted_reason": "Patio tables and chairs with metal frames and stone surfaces are classified under 9403.50.10.00, other metal furniture not upholstered.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

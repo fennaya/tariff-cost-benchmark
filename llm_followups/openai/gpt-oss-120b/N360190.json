@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360190",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39232100",
+  "raw_response": {
+    "id": "chatcmpl-cbd71855-5477-4bf3-a4fe-39a93f77012f",
+    "object": "chat.completion",
+    "created": 1791310093,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.0010\", \"reason\": \"Classified as plastic bags, sacks and similar packing containers of polymers of ethylene (LDPE) under heading 3923.21, the most specific 10\u2011digit code for such bags.\"}",
+          "reasoning": "Need correct 10-digit code. Plastic bags of polyethylene: 3923.21.0010? Let's check: HTS 3923.21.0010 is \"Plastic bags, sacks and similar packing containers, of polymers of ethylene, not elsewhere specified\". 10-digit includes 4-2-2-4. So 3923.21.0010. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300662814,
+      "prompt_tokens": 340,
+      "prompt_time": 0.026188255,
+      "completion_tokens": 149,
+      "completion_time": 0.316857318,
+      "total_tokens": 489,
+      "total_time": 0.343045573,
+      "completion_tokens_details": {
+        "reasoning_tokens": 81
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m496dpx0e51scc2f7ws2xc9f",
+      "seed": 212942280
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3923210010",
+  "predicted_reason": "Classified as plastic bags, sacks and similar packing containers of polymers of ethylene (LDPE) under heading 3923.21, the most specific 10\u2011digit code for such bags.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

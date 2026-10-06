@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363538",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "85091010",
+  "raw_response": {
+    "id": "chatcmpl-812e2197-fe4c-4c79-a359-2eb395bac835",
+    "object": "chat.completion",
+    "created": 1791310710,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"85.09.10.10.00\",\"reason\":\"The product is a lithium\u2011ion power bank, classified under 85.09.10.10.00 for other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity.\"}",
+          "reasoning": "Need valid HTS 10-digit. Power banks likely 85.09.10.10? Actually 85.09.10.10 is for \"Other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity; for the reception, transmission, conversion, regulation, or distribution of electricity, other than for use in the manufacture of electrical apparatus\". But power banks maybe 85.09.10.10? Let's check: 85.09.10.10 is \"Other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity; for the reception, transmission, conversion, regulation, or distribution of electricity, other than for use in the manufacture of electrical apparatus\". Might be correct. But maybe 85.09.10.10 is 10-digit? Actually 85.09.10.10 is 8 digits? Wait HTS 10-digit: 85.09.10.10 is 8 digits? Actually 85.09.10.10 is 8 digits? Format: 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? That's 8 digits. But HTS 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading, 2-digit subheading? Actually 10-digit: 2-2-2-2-2? Example: 85.09.10.10.00? Wait 10-digit: 2-2-2-2-2. So 85.09.10.10.00 would be 10-digit. So we need 10-digit. So maybe 85.09.10.10.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087057501,
+      "prompt_tokens": 404,
+      "prompt_time": 0.020706837,
+      "completion_tokens": 431,
+      "completion_time": 0.54266936,
+      "total_tokens": 835,
+      "total_time": 0.563376197,
+      "completion_tokens_details": {
+        "reasoning_tokens": 363
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m4970h18ez9a454r8zn44th4",
+      "seed": 1482888220
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8509101000",
+  "predicted_reason": "The product is a lithium\u2011ion power bank, classified under 85.09.10.10.00 for other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

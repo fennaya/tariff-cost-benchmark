@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359958",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84818000",
+  "raw_response": {
+    "id": "chatcmpl-d06cc07f-90bb-4d8f-aa8a-70c132acb054",
+    "object": "chat.completion",
+    "created": 1791310058,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8481.80.90.00\",\n  \"reason\": \"The item is a faucet aerator, a component of taps/valves, classified under heading 8481 for taps, cocks, valves and similar appliances, specifically under subheading 8481.80.90 (other).\"\n}",
+          "reasoning": "Need correct 10-digit. Faucet aerator likely 8481.80.90? Check HTS: 8481.80.90 is \"Other\" taps etc. 10-digit: 8481.80.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047802009,
+      "prompt_tokens": 329,
+      "prompt_time": 0.01564173,
+      "completion_tokens": 133,
+      "completion_time": 0.279149901,
+      "total_tokens": 462,
+      "total_time": 0.294791631,
+      "completion_tokens_details": {
+        "reasoning_tokens": 53
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496cm6ve48s5jxnjg5kw6qg",
+      "seed": 459013948
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8481809000",
+  "predicted_reason": "The item is a faucet aerator, a component of taps/valves, classified under heading 8481 for taps, cocks, valves and similar appliances, specifically under subheading 8481.80.90 (other).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

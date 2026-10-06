@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361392",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "61049010",
+  "raw_response": {
+    "id": "chatcmpl-45193ecb-b8c6-426a-b28a-842f8e89b5e8",
+    "object": "chat.completion",
+    "created": 1791310327,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6104.90.10.00\",\"reason\":\"The description matches a cotton robe with unfinished raw edges, classified under 6104.90.10.00 for other robes, gowns, capes, and similar articles of cotton.\"}",
+          "reasoning": "Need valid 10-digit. For robes: 6104.90.10? Actually 6104.90.10 is \"Other robes, gowns, capes, and similar articles, of cotton\". 10-digit: 6104.90.10.00? Wait 10-digit format: 6104.90.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.299894813,
+      "prompt_tokens": 271,
+      "prompt_time": 0.015672606,
+      "completion_tokens": 138,
+      "completion_time": 0.202626315,
+      "total_tokens": 409,
+      "total_time": 0.218298921,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a12402de73",
+    "x_groq": {
+      "id": "req_01m496mvcxew2tzrzk6vnqc1eh",
+      "seed": 1635890733
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6104901000",
+  "predicted_reason": "The description matches a cotton robe with unfinished raw edges, classified under 6104.90.10.00 for other robes, gowns, capes, and similar articles of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

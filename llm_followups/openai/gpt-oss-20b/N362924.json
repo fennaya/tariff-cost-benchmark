@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362924",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7318290000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7318909000",
+  "raw_response": {
+    "id": "chatcmpl-ce23b6f5-d74c-4696-b2b0-349e36d225ba",
+    "object": "chat.completion",
+    "created": 1791310619,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7318.90.90.00\",\"reason\":\"It is a small steel compression limiter used in automotive assemblies, classified as other articles of iron or steel.\"}",
+          "reasoning": "Need valid 10-digit HTS. Likely 7318.90.90.00 is 10 digits? Actually HTS 10-digit: 7318.90.90.00 is 10 digits? It's 4+2+2+2 =10. But maybe not exist. Could be 7318.90.90.00? Let's pick 7318.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.160585779,
+      "prompt_tokens": 439,
+      "prompt_time": 0.22631017,
+      "completion_tokens": 134,
+      "completion_time": 0.142464414,
+      "total_tokens": 573,
+      "total_time": 0.368774584,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_2b688e7cc3",
+    "x_groq": {
+      "id": "req_01m496xr6jepr8d0qtpdb36d6c",
+      "seed": 2096874376
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318909000",
+  "predicted_reason": "It is a small steel compression limiter used in automotive assemblies, classified as other articles of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

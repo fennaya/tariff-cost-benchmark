@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362921",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "7607205000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "39241000",
+  "raw_response": {
+    "id": "chatcmpl-2ed4a68e-0641-4c9b-8649-a45671716b92",
+    "object": "chat.completion",
+    "created": 1791310615,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.00.00\",\"reason\":\"PET/Aluminum composite film used as a passive component in electronic devices is classified under plastic films not elsewhere specified, 3924.10.00.00.\"}",
+          "reasoning": "Need valid 10-digit. For PET film with aluminum foil used in electronics. Likely 3924.10.00 is 4-digit. Need 10-digit: 3924.10.00.00? Actually HTS 10-digit: 3924.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.657028465,
+      "prompt_tokens": 336,
+      "prompt_time": 0.02064944,
+      "completion_tokens": 124,
+      "completion_time": 0.150240063,
+      "total_tokens": 460,
+      "total_time": 0.170889503,
+      "completion_tokens_details": {
+        "reasoning_tokens": 65
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496xm3rej69sq0cfpgs9jgf",
+      "seed": 1840837438
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924100000",
+  "predicted_reason": "PET/Aluminum composite film used as a passive component in electronic devices is classified under plastic films not elsewhere specified, 3924.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

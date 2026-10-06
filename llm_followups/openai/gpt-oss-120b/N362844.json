@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362844",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8516790000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84198990",
+  "raw_response": {
+    "id": "chatcmpl-7eb04506-dfa5-4a95-87f3-f786fee09855",
+    "object": "chat.completion",
+    "created": 1791310533,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8419.89.9090\",\n  \"reason\": \"Classified as a residential electric heating appliance (induction heater) not elsewhere specified, under heading 8419 for heating appliances.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8419.89.90 is 8-digit; need 10-digit like 8419.89.9090? Actually HTS 10-digit: 8419.89.9090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.364294034,
+      "prompt_tokens": 406,
+      "prompt_time": 0.018541627,
+      "completion_tokens": 110,
+      "completion_time": 0.233212032,
+      "total_tokens": 516,
+      "total_time": 0.251753659,
+      "completion_tokens_details": {
+        "reasoning_tokens": 53
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m496v4nkerkaqnxtwdx3e4kr",
+      "seed": 1850991465
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8419899090",
+  "predicted_reason": "Classified as a residential electric heating appliance (induction heater) not elsewhere specified, under heading 8419 for heating appliances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

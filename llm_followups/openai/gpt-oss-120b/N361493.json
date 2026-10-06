@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361493",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "76169990",
+  "raw_response": {
+    "id": "chatcmpl-f7ad6882-2e22-498c-a08e-767719c7198d",
+    "object": "chat.completion",
+    "created": 1791310321,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7616.99.9090\",\n  \"reason\": \"A non\u2011electrical aluminum tool (spray shield) falls under Chapter 76, heading 7616 for other articles of aluminum, subheading 99.9090 for items not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 7616.99.9090? Check format: 7616.99.9090 is 10 digits. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.02687933,
+      "prompt_tokens": 304,
+      "prompt_time": 0.080773325,
+      "completion_tokens": 108,
+      "completion_time": 0.22626295,
+      "total_tokens": 412,
+      "total_time": 0.307036275,
+      "completion_tokens_details": {
+        "reasoning_tokens": 36
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m496mn9bexz8ewg3m6q18a0z",
+      "seed": 801343932
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7616999090",
+  "predicted_reason": "A non\u2011electrical aluminum tool (spray shield) falls under Chapter 76, heading 7616 for other articles of aluminum, subheading 99.9090 for items not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

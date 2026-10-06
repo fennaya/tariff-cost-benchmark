@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N355896",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "6802930090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6802110010",
+  "raw_response": {
+    "id": "chatcmpl-c852e40c-7716-460d-a326-c44a3342a607",
+    "object": "chat.completion",
+    "created": 1791309959,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.11.0010\", \"reason\": \"Polished, beveled granite slabs used for countertops, cladding and flooring are classified under heading 6802.11 for worked granite, with subheading 0010 covering slabs and tiles\"}",
+          "reasoning": "Need correct code: 6802.11.0010 maybe not exist; actual HTS: 6802.11.0010 is for \"Granite, travertine, etc., worked, not elsewhere specified\". Check: 6802.11.0010 is valid? Might be 6802.11.0010 is 10-digit. Should be okay. But user says not exist. Could use 6802.11.0010 is correct. Maybe need 6802.11.0010? Provide alternative 6802.11.0010. Might be 6802.11.0010 is for \"Granite, travertine, etc., worked, not elsewhere specified\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.335247982,
+      "prompt_tokens": 407,
+      "prompt_time": 0.022290049,
+      "completion_tokens": 217,
+      "completion_time": 0.455495459,
+      "total_tokens": 624,
+      "total_time": 0.477785508,
+      "completion_tokens_details": {
+        "reasoning_tokens": 151
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m4969kb7ejyvzz6039d1t4pw",
+      "seed": 498669851
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802110010",
+  "predicted_reason": "Polished, beveled granite slabs used for countertops, cladding and flooring are classified under heading 6802.11 for worked granite, with subheading 0010 covering slabs and tiles",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

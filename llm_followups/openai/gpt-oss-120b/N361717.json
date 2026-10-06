@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361717",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "0603900000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "9703000090",
+  "raw_response": {
+    "id": "chatcmpl-e66e4c17-b780-40a7-878d-07c48b42a5b1",
+    "object": "chat.completion",
+    "created": 1791310353,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9703.00.0090\",\n  \"reason\": \"Classified as a unique, hand\u2011crafted decorative wall art (collector's piece) made of preserved natural flowers, falling under works of art, collectors' pieces.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 9703.00.0090? Actually HTS 9703.00.00 is works of art, collectors' pieces. 10-digit: 9703.00.0010? Let's check: 9703.00.0010 = \"Original paintings, drawings and pastels\". 9703.00.0020 = \"Original sculptures\". 9703.00.0030 = \"Original works of art, other than paintings, drawings, pastels, sculptures\". 9703.00.0040 = \"Antiques\". Might be 9703.00.0090 = \"Other works of art, collectors' pieces\". Need verify. Actually 9703.00.0090 exists as \"Other works of art, collectors' pieces\". So it's valid. But user says doesn't exist. Maybe need 9703.00.0090 is 8 digits. Need 10-digit: 9703.00.0090 is 10 inc periods? It's 4+2+4 =10 digits. It's valid. Might be 9703.00.0090. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.377608227,
+      "prompt_tokens": 433,
+      "prompt_time": 0.022043004,
+      "completion_tokens": 304,
+      "completion_time": 0.643514868,
+      "total_tokens": 737,
+      "total_time": 0.665557872,
+      "completion_tokens_details": {
+        "reasoning_tokens": 240
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496njpbe8ytb7pbrbdzxd5y",
+      "seed": 1379080162
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9703000090",
+  "predicted_reason": "Classified as a unique, hand\u2011crafted decorative wall art (collector's piece) made of preserved natural flowers, falling under works of art, collectors' pieces.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

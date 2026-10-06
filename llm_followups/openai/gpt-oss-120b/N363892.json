@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363892",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8425200000",
+  "raw_response": {
+    "id": "chatcmpl-bb348a56-8f18-49df-a5c3-1d0fc1d26d28",
+    "object": "chat.completion",
+    "created": 1791310695,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8425.20.10.00\", \"reason\": \"The device is a manually operated hydraulic jack system for lifting containers, fitting under heading 8425 (hydraulic jacks) subheading 20.10 for other hydraulic jacks.\"}",
+          "reasoning": "Need correct code. Likely 8425.20.10.00? Check HTS: 8425.20.10.00 = Hydraulic jacks, other than those of heading 8425.20.20? Actually 8425.20.10.00 is \"Hydraulic jacks, other than those of heading 8425.20.20\". Need 10 digits. Provide valid."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089386907,
+      "prompt_tokens": 514,
+      "prompt_time": 0.072917965,
+      "completion_tokens": 152,
+      "completion_time": 0.320265711,
+      "total_tokens": 666,
+      "total_time": 0.393183676,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m49702b5ev5vyv1z7sdac9cm",
+      "seed": 1990446405
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425201000",
+  "predicted_reason": "The device is a manually operated hydraulic jack system for lifting containers, fitting under heading 8425 (hydraulic jacks) subheading 20.10 for other hydraulic jacks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

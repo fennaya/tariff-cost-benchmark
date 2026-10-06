@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363534",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "95059090",
+  "raw_response": {
+    "id": "chatcmpl-78645e1b-2606-4b2f-b414-1bd553380fe1",
+    "object": "chat.completion",
+    "created": 1791310649,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.9090\", \"reason\": \"Costume apparel for amusement purposes is classified under HTSUS 9505.90.9090 as other articles for carnival or entertainment not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit code for costume. Likely 9505.90.9090? Check: 9505.90.9090 is \"Other articles for amusement, carnival, or other entertainment purposes, not elsewhere specified\". Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.304718657,
+      "prompt_tokens": 269,
+      "prompt_time": 0.017526439,
+      "completion_tokens": 111,
+      "completion_time": 0.232064699,
+      "total_tokens": 380,
+      "total_time": 0.249591138,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m496yndded7r3k7zawcagvp7",
+      "seed": 706792729
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9505909090",
+  "predicted_reason": "Costume apparel for amusement purposes is classified under HTSUS 9505.90.9090 as other articles for carnival or entertainment not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359616",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73181500",
+  "raw_response": {
+    "id": "chatcmpl-c5e21105-7f21-4cfb-9265-bed6c05c5ad6",
+    "object": "chat.completion",
+    "created": 1791309971,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7318.15.00.00\",\n  \"reason\": \"The mandrel is a steel article not specifically covered elsewhere, classifying it under 'Other articles of iron or steel, not elsewhere specified' (HTS 7318.15.00.00).\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 7318.15.00.00? Check HTS: 7318.15.00.00 is \"Other articles of iron or steel, not elsewhere specified\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.051765429,
+      "prompt_tokens": 425,
+      "prompt_time": 0.035934628,
+      "completion_tokens": 122,
+      "completion_time": 0.255480089,
+      "total_tokens": 547,
+      "total_time": 0.291414717,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m496a05mede9t915wekh35km",
+      "seed": 1690267951
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318150000",
+  "predicted_reason": "The mandrel is a steel article not specifically covered elsewhere, classifying it under 'Other articles of iron or steel, not elsewhere specified' (HTS 7318.15.00.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

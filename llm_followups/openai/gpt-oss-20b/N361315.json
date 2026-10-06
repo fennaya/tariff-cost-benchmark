@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361315",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "82071010",
+  "raw_response": {
+    "id": "chatcmpl-94cd1046-8f7d-441d-ad25-6fe24fc8fa8f",
+    "object": "chat.completion",
+    "created": 1791310295,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8207.10.10.00\",\"reason\":\"The product is a sword, which is classified under heading 8207.10.10 for swords, sabres, cutlasses, etc., with the standard 10\u2011digit HTSUS format.\"}",
+          "reasoning": "Need valid 10-digit. For swords: 8207.10.10? Actually 8207.10.10 is 10-digit? It's 8207.10.10 (8 digits). Need 10-digit: 8207.10.10.00? Actually HTS uses 10 digits: 8207.10.10.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.201369322,
+      "prompt_tokens": 232,
+      "prompt_time": 0.012058447,
+      "completion_tokens": 146,
+      "completion_time": 0.172789868,
+      "total_tokens": 378,
+      "total_time": 0.184848315,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m496kw3jeaw9aqg0wv54wwd2",
+      "seed": 1407089816
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8207101000",
+  "predicted_reason": "The product is a sword, which is classified under heading 8207.10.10 for swords, sabres, cutlasses, etc., with the standard 10\u2011digit HTSUS format.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

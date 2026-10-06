@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359791",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "4420908000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4420000000",
+  "raw_response": {
+    "id": "chatcmpl-3af5fccb-7a46-41ce-8062-621bcb859ec4",
+    "object": "chat.completion",
+    "created": 1791310010,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4421.99.9090\",\n  \"reason\": \"The altar is a decorative article made of medium density fiberboard (wood product) and is classified under \u2018Other wooden articles, not elsewhere specified\u2019 in the HTS.\"\n}",
+          "reasoning": "Need correct code. Likely 4421.99.9090? Let's think: \"Other articles of wood, wood waste\" 4421.99.9090 is \"Other wooden articles, not elsewhere specified\". Could be 4421.99.9090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017569017,
+      "prompt_tokens": 449,
+      "prompt_time": 0.025838738,
+      "completion_tokens": 124,
+      "completion_time": 0.25964408,
+      "total_tokens": 573,
+      "total_time": 0.285482818,
+      "completion_tokens_details": {
+        "reasoning_tokens": 59
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m496b63eepjtpw18wcng41m4",
+      "seed": 1009086478
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4421999090",
+  "predicted_reason": "The altar is a decorative article made of medium density fiberboard (wood product) and is classified under \u2018Other wooden articles, not elsewhere specified\u2019 in the HTS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

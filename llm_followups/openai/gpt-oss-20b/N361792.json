@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361792",
+  "rulingDate": "2026-06-04T00:00:00",
+  "true_code": "6116107520",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6114909000",
+  "raw_response": {
+    "id": "chatcmpl-4635e077-5df6-4597-b093-8e76765cb09d",
+    "object": "chat.completion",
+    "created": 1791310419,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6114.90.90.00\",\"reason\":\"The gloves are textile (polyester) with a thermoplastic polyurethane membrane, fitting the HTS heading for other textile gloves not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. For textile gloves 6114.90.90.00 is 8-digit? Actually HTS 10-digit: 6114.90.90.00 is 10-digit? It's 8? 6114.90.90.00 is 10? 6114.90.90.00 has 8? Actually 6114.90.90.00 is 10 digits: 6114.90.90.00 (4+2+2+2). So it's valid. But maybe need 6114.90.90.00? It's fine. But maybe need 6114.90.90.00? Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.199506625,
+      "prompt_tokens": 422,
+      "prompt_time": 0.167398795,
+      "completion_tokens": 197,
+      "completion_time": 0.217153451,
+      "total_tokens": 619,
+      "total_time": 0.384552246,
+      "completion_tokens_details": {
+        "reasoning_tokens": 143
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m496qmnjesyvvbdje3z675rk",
+      "seed": 1322258659
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6114909000",
+  "predicted_reason": "The gloves are textile (polyester) with a thermoplastic polyurethane membrane, fitting the HTS heading for other textile gloves not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

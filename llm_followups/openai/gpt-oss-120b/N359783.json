@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359783",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8716805090",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8716300000",
+  "raw_response": {
+    "id": "chatcmpl-69ad6486-a28f-4eb9-8785-dfc47ff3f2f0",
+    "object": "chat.completion",
+    "created": 1791310002,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.30.00.00\", \"reason\": \"The lowbed trailer is a non\u2011motorized road vehicle made primarily of steel, fitting HTS heading 8716 (road vehicles other than motor vehicles) subheading 30 (of iron or steel).\"}",
+          "reasoning": "Need correct 10-digit. Likely 8716.30.00.00 is valid? Actually HTS 8716.30.00.00 exists: \"Other vehicles, not motorized, of iron or steel\". That's 10 digits. Might be okay. But user says not exist. Could use 8716.30.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295331197,
+      "prompt_tokens": 446,
+      "prompt_time": 0.020718553,
+      "completion_tokens": 148,
+      "completion_time": 0.31404091,
+      "total_tokens": 594,
+      "total_time": 0.334759463,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m496axyne6h8qbnyn2tfy710",
+      "seed": 1694322407
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8716300000",
+  "predicted_reason": "The lowbed trailer is a non\u2011motorized road vehicle made primarily of steel, fitting HTS heading 8716 (road vehicles other than motor vehicles) subheading 30 (of iron or steel).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

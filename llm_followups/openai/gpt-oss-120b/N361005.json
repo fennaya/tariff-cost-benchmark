@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361005",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "8483405010",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8483400000",
+  "raw_response": {
+    "id": "chatcmpl-b9edc21f-0036-423d-8db9-ae3eb5d6c206",
+    "object": "chat.completion",
+    "created": 1791310205,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.10.00\", \"reason\": \"Classified as a planetary gear reducer (gearbox/speed changer) for industrial use, falling under HTS 8483.40.10.00.\"}",
+          "reasoning": "Need correct 10-digit code. Planetary gear reducer likely 8483.40.10.00? Check HTS: 8483.40.10.00 = Gearboxes and other speed changers, other than for motor vehicles. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297633113,
+      "prompt_tokens": 293,
+      "prompt_time": 0.016831331,
+      "completion_tokens": 116,
+      "completion_time": 0.244388302,
+      "total_tokens": 409,
+      "total_time": 0.261219633,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m496h4d8em7bk08faftgvvn0",
+      "seed": 1981120145
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483401000",
+  "predicted_reason": "Classified as a planetary gear reducer (gearbox/speed changer) for industrial use, falling under HTS 8483.40.10.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

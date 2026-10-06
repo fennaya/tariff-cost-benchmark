@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361760",
+  "rulingDate": "2026-06-17T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4901100000",
+  "raw_response": {
+    "id": "chatcmpl-44693c0f-c6bc-43ee-abd7-352fd84a3534",
+    "object": "chat.completion",
+    "created": 1791310396,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.10.00.00\",\"reason\":\"Hardcover board books are classified under 4901.10.00.00 for printed books.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. For books: 4901.10.00.00? Actually HTS 4901.10.00.00 is \"Books, brochures, leaflets, etc., printed, not including those of a type used for advertising.\" But 10-digit: 4901.10.00.00 is 10 digits? It's 4+2+2+2? Actually HTS code format: 4-digit HS, then 2-digit national, then 2-digit subheading, then 2-digit tariff. So 4901.10.00.00 is 10 digits. That exists. But maybe they want 4901.10.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20526763,
+      "prompt_tokens": 348,
+      "prompt_time": 0.023469486,
+      "completion_tokens": 199,
+      "completion_time": 0.215367456,
+      "total_tokens": 547,
+      "total_time": 0.238836942,
+      "completion_tokens_details": {
+        "reasoning_tokens": 153
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496pz0nebtbpzwseaxg5551",
+      "seed": 1788588395
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901100000",
+  "predicted_reason": "Hardcover board books are classified under 4901.10.00.00 for printed books.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

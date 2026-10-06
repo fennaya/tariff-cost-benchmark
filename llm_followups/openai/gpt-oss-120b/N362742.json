@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362742",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8471500150",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8473300010",
+  "raw_response": {
+    "id": "chatcmpl-57f2e383-08cf-4dfa-9a00-64ba8251dd0b",
+    "object": "chat.completion",
+    "created": 1791310506,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8473.30.0090\",\n  \"reason\": \"The product is a motherboard, a part of a computer containing integrated circuits, classified under heading 8473.30 for other parts of computers.\"\n}",
+          "reasoning": "Need correct 10-digit code for motherboards. HTS 8473.30.0090? Actually 8473.30.0010 maybe not. Real code: 8473.30.0010 is \"Parts of computers, other than hard drives, etc\". Might be valid. But need 10-digit. Could be 8473.30.0010 is 10 digits. It's valid. But user says not exist. Maybe correct is 8473.30.0010 is okay. Could also be 8473.30.0090. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.102438803,
+      "prompt_tokens": 382,
+      "prompt_time": 0.06209092,
+      "completion_tokens": 181,
+      "completion_time": 0.382510872,
+      "total_tokens": 563,
+      "total_time": 0.444601792,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69dbc96c74",
+    "x_groq": {
+      "id": "req_01m496t9rze6gthjtfehc6q2xv",
+      "seed": 642525694
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8473300090",
+  "predicted_reason": "The product is a motherboard, a part of a computer containing integrated circuits, classified under heading 8473.30 for other parts of computers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

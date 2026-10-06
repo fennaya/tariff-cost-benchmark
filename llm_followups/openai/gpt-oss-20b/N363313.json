@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363313",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8205595560",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84719090",
+  "raw_response": {
+    "id": "chatcmpl-314f1d78-ae5b-452c-a3a2-d29101458759",
+    "object": "chat.completion",
+    "created": 1791310659,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"84.71.90.90.00\",\"reason\":\"The kit consists mainly of rubber plugs and related repair tools, fitting the heading for other articles of rubber.\"}",
+          "reasoning": "Need valid HTS code. Tire repair kit with rubber plugs. Likely 84.71.90.90? Actually 84.71.90.90 is \"Other articles of rubber\". But 84.71.90.90 is 8 digits? It's 8. Need 10 digits: 84.71.90.90.00? Actually HTS has 10 digits: 84.71.90.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016383563,
+      "prompt_tokens": 390,
+      "prompt_time": 0.023673989,
+      "completion_tokens": 145,
+      "completion_time": 0.156241363,
+      "total_tokens": 535,
+      "total_time": 0.179915352,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_565badff47",
+    "x_groq": {
+      "id": "req_01m496yzs4ek7bht55s4fr9zby",
+      "seed": 2104700278
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8471909000",
+  "predicted_reason": "The kit consists mainly of rubber plugs and related repair tools, fitting the heading for other articles of rubber.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

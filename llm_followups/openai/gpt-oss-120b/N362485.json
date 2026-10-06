@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362485",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4420190000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "44129990",
+  "raw_response": {
+    "id": "chatcmpl-359bf437-7223-4708-b181-cbcff22459b6",
+    "object": "chat.completion",
+    "created": 1791310487,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.99.90.00\", \"reason\": \"Printed medium density fiberboard decorative panels are classified under wood panels (MDF) not elsewhere specified, subheading 4412.99.90 with the required 10\u2011digit extension.\"}",
+          "reasoning": "Need correct 10-digit. Likely 4412.99.9090? Check: 4412.99.90 is 8-digit. 10-digit add .00? Actually 10-digit format: 4412.99.90.00. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.223985013,
+      "prompt_tokens": 287,
+      "prompt_time": 0.079154031,
+      "completion_tokens": 126,
+      "completion_time": 0.267018428,
+      "total_tokens": 413,
+      "total_time": 0.346172459,
+      "completion_tokens_details": {
+        "reasoning_tokens": 59
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m496sqkvehmsqxa1w2g5sh10",
+      "seed": 786980520
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4412999000",
+  "predicted_reason": "Printed medium density fiberboard decorative panels are classified under wood panels (MDF) not elsewhere specified, subheading 4412.99.90 with the required 10\u2011digit extension.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

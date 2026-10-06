@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363868",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6307909800",
+  "raw_response": {
+    "id": "chatcmpl-cf061c34-c4b4-4b87-8d05-42d479cd0859",
+    "object": "chat.completion",
+    "created": 1791310692,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6307.90.98.00\", \"reason\": \"The wooden pet crate is classified as other wooden furniture not elsewhere specified, falling under heading 6307 for wooden furniture.\"}",
+          "reasoning": "Need correct code. Pet crate of wood likely under 6307.90.98? Check HTS: 6307.90.98 is \"Other wooden furniture, not elsewhere specified\". Might be valid. But need 10-digit: 6307.90.98.00 maybe. Ensure exists. Actually HTS 6307.90.98.00 is \"Other wooden furniture, not elsewhere specified\". That seems valid. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150655752,
+      "prompt_tokens": 354,
+      "prompt_time": 0.016724263,
+      "completion_tokens": 145,
+      "completion_time": 0.311214984,
+      "total_tokens": 499,
+      "total_time": 0.327939247,
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6c36ac20de",
+    "x_groq": {
+      "id": "req_01m496zzbdehbaz7ykjqqr1b8n",
+      "seed": 966981368
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307909800",
+  "predicted_reason": "The wooden pet crate is classified as other wooden furniture not elsewhere specified, falling under heading 6307 for wooden furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

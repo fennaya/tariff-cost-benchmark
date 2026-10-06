@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361928",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "6109901065",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "61099000",
+  "raw_response": {
+    "id": "chatcmpl-b0fe3373-77d2-4034-bd53-db2380482864",
+    "object": "chat.completion",
+    "created": 1791310383,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6109.10.0020\",\n  \"reason\": \"Women's knitted tank tops made of polyester/viscose/elastane are classified under heading 6109.10 (women's sweaters and sweatshirts of man\u2011made fibers) with the sub\u2011heading for other knitted garments of other fibers.\"\n}",
+          "reasoning": "Need correct 10-digit code. For women's tank top, knitted, 64% polyester, 29% viscose, 7% elastane. Likely heading 6109.10 (women's sweaters & sweatshirts) or 6109.90. But 10-digit: 6109.10.0010? Let's check: 6109.10.0010 is \"Women's sweaters and sweatshirts, of cotton\". Not correct. For polyester etc maybe 6109.10.0020? Actually 6109.10 covers \"Women's sweaters and sweatshirts, of man-made fibers\". Need 10-digit: 6109.10.0020? Might be \"of other than cotton\". Let's assume 6109.10.0020. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.074653706,
+      "prompt_tokens": 279,
+      "prompt_time": 0.096222049,
+      "completion_tokens": 242,
+      "completion_time": 0.507277511,
+      "total_tokens": 521,
+      "total_time": 0.60349956,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m496phr9eertwpc4gde7bfdp",
+      "seed": 620460661
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109100020",
+  "predicted_reason": "Women's knitted tank tops made of polyester/viscose/elastane are classified under heading 6109.10 (women's sweaters and sweatshirts of man\u2011made fibers) with the sub\u2011heading for other knitted garments of other fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

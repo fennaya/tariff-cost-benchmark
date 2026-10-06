@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363468",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8543709100",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8542310000",
+  "raw_response": {
+    "id": "chatcmpl-e0cadc03-b8b1-4108-ad23-a239357c1d79",
+    "object": "chat.completion",
+    "created": 1791310643,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8542.31.00.00\",\n  \"reason\": \"The product is a digital signal processor (DSP) \u2013 an electronic integrated circuit for processing audio signals, which falls under HTS heading 8542.31 for digital processors and controllers.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 8542.31.99.00? Check HTS: 8542.31.00.00 is for \"Electronic integrated circuits, digital signal processors\". Might be valid. But they said not exist. Could use 8542.31.90.00? Actually 8542.31.00.00 exists. Provide valid. Use 8542.31.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.236440429,
+      "prompt_tokens": 429,
+      "prompt_time": 0.02756038,
+      "completion_tokens": 160,
+      "completion_time": 0.339362845,
+      "total_tokens": 589,
+      "total_time": 0.366923225,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m496yfnaemrv2efqj890k839",
+      "seed": 876802572
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8542310000",
+  "predicted_reason": "The product is a digital signal processor (DSP) \u2013 an electronic integrated circuit for processing audio signals, which falls under HTS heading 8542.31 for digital processors and controllers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

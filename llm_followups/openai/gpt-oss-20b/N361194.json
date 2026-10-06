@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361194",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "4010125000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "40099010",
+  "raw_response": {
+    "id": "chatcmpl-1d02c493-bb9d-41e7-a71c-652dbb9662cb",
+    "object": "chat.completion",
+    "created": 1791310263,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4009.90.10.00\",\"reason\":\"Rubber conveyor belts with textile reinforcement are classified under 4009.90.10.00 \u2013 other articles of vulcanised rubber, not elsewhere specified.\"}",
+          "reasoning": "Need valid HTS 10-digit. Conveyor belts likely 4009.90.10? Actually 4009.90.10 is \"Other articles of vulcanised rubber, not elsewhere specified\". But 10-digit: 4009.90.10.00? Wait 10-digit format: 4009.90.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298041876,
+      "prompt_tokens": 319,
+      "prompt_time": 0.02160375,
+      "completion_tokens": 133,
+      "completion_time": 0.138386138,
+      "total_tokens": 452,
+      "total_time": 0.159989888,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m496jwdre3684my4atnarczn",
+      "seed": 921985779
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4009901000",
+  "predicted_reason": "Rubber conveyor belts with textile reinforcement are classified under 4009.90.10.00 \u2013 other articles of vulcanised rubber, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

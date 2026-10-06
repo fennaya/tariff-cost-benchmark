@@ -1,0 +1,46 @@
+{
+  "rulingNumber": "N360809",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403200050",
+  "model": "allam-2-7b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "7605200000",
+  "raw_response": {
+    "id": "chatcmpl-7815a284-2a6e-46a2-a570-65a098796a6d",
+    "object": "chat.completion",
+    "created": 1791310212,
+    "model": "allam-2-7b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7605.99.8000\", \"reason\": \"Storage chests and cabinets made of steel, not falling under any specific subheading, are classified under this general provision.\"} "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086139895,
+      "prompt_tokens": 527,
+      "prompt_time": 0.014701947,
+      "completion_tokens": 54,
+      "completion_time": 0.038610832,
+      "total_tokens": 581,
+      "total_time": 0.053312779
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ff744b2c7a",
+    "x_groq": {
+      "id": "req_01m496hb75ejgthtg6de4y3t0c",
+      "seed": 897002033
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7605998000",
+  "predicted_reason": "Storage chests and cabinets made of steel, not falling under any specific subheading, are classified under this general provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360217",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3004100000",
+  "raw_response": {
+    "id": "chatcmpl-d8948fd9-e964-473f-9c10-a26a7f559718",
+    "object": "chat.completion",
+    "created": 1791310109,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Medicinal preparations containing a single active ingredient, in tablet form.\"}",
+          "reasoning": "Need valid HTS 10-digit. For Bumetanide tablets: 3004.10.00.00 is 8-digit? Actually HTS 10-digit: 3004.10.00.00 is 8? Wait format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Actually 10-digit: 4+2+2+2. So 3004.10.00.00 is 10-digit? 3004 (chapter) .10 (heading) .00 (subheading) .00 (sub-sub). That's 10 digits. So it's valid. But maybe need 3004.10.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.189246611,
+      "prompt_tokens": 289,
+      "prompt_time": 0.015377005,
+      "completion_tokens": 190,
+      "completion_time": 0.207003676,
+      "total_tokens": 479,
+      "total_time": 0.222380681,
+      "completion_tokens_details": {
+        "reasoning_tokens": 151
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f102a3179c",
+    "x_groq": {
+      "id": "req_01m496e62qehfbsvb5kkwsz8qg",
+      "seed": 1087216582
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Medicinal preparations containing a single active ingredient, in tablet form.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

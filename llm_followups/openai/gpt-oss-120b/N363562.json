@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363562",
+  "rulingDate": "2026-08-10T00:00:00",
+  "true_code": "8486400030",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84798990",
+  "raw_response": {
+    "id": "chatcmpl-28c7f808-4c7c-4c8e-9bb1-f692c2444f1a",
+    "object": "chat.completion",
+    "created": 1791310650,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.90.00\", \"reason\": \"A specialized semiconductor wafer handling machine not elsewhere classified, falling under 'Other machines having individual functions'}",
+          "reasoning": "Need correct 10-digit. Likely 8479.89.90 is 8 digits. Full 10-digit: 8479.89.90.00? Actually HTS 10-digit: 8479.89.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047663936,
+      "prompt_tokens": 287,
+      "prompt_time": 0.015935551,
+      "completion_tokens": 102,
+      "completion_time": 0.217102099,
+      "total_tokens": 389,
+      "total_time": 0.23303765,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m496yq1xe2ttgjwt4dwfht5f",
+      "seed": 532443026
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Unterminated string starting at: line 1 column 41 (char 40)",
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

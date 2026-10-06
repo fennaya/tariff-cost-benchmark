@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361289",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "62046290",
+  "raw_response": {
+    "id": "chatcmpl-3ddd3352-5342-417f-b629-bea2192b86cf",
+    "object": "chat.completion",
+    "created": 1791310277,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6204.62.90.00\",\"reason\":\"Generic cotton jacket with tattered edges, classified under 6204.62.90.00 for other knitted or crocheted garments.\"}",
+          "reasoning": "Need valid 10-digit. For jacket? 6204.62.90 is 8-digit? Actually 6204.62.90 is 8-digit. Need 10-digit: 6204.62.90.00? But HTS uses 10 digits: 6204.62.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.037478984,
+      "prompt_tokens": 272,
+      "prompt_time": 0.015027921,
+      "completion_tokens": 123,
+      "completion_time": 0.148940868,
+      "total_tokens": 395,
+      "total_time": 0.163968789,
+      "completion_tokens_details": {
+        "reasoning_tokens": 70
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ef00694abe",
+    "x_groq": {
+      "id": "req_01m496ka6ce86bz48bt8khzz35",
+      "seed": 2077212924
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204629000",
+  "predicted_reason": "Generic cotton jacket with tattered edges, classified under 6204.62.90.00 for other knitted or crocheted garments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

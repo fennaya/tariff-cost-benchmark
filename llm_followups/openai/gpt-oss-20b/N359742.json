@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359742",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8211922000",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "82159010",
+  "raw_response": {
+    "id": "chatcmpl-640eb790-55d1-4394-b78b-a07a908cb774",
+    "object": "chat.completion",
+    "created": 1791309990,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8215.90.10.00\",\"reason\":\"The knife is a stainless\u2011steel chef\u2019s knife, which falls under heading 8215.90.10 for other knives, cutlery, etc., of stainless steel.\"}",
+          "reasoning": "Need valid 10-digit. For knives stainless steel: 8215.90.10? Actually 8215.90.10 is \"Other knives, cutlery, etc., of stainless steel, other than those of heading 8215.90.20\". Wait 8215.90.10 exists. But 10-digit: 8215.90.10.00? Actually 10-digit: 8215.90.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088306259,
+      "prompt_tokens": 306,
+      "prompt_time": 0.01497891,
+      "completion_tokens": 158,
+      "completion_time": 0.198981075,
+      "total_tokens": 464,
+      "total_time": 0.213959985,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m496aj81edatvww79ehpvdjt",
+      "seed": 1658078360
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8215901000",
+  "predicted_reason": "The knife is a stainless\u2011steel chef\u2019s knife, which falls under heading 8215.90.10 for other knives, cutlery, etc., of stainless steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

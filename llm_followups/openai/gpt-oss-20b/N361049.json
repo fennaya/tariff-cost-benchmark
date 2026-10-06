@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361049",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "6110202046",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "59011000",
+  "raw_response": {
+    "id": "chatcmpl-58657dc4-c7f7-46f9-8ebc-ff77f17e7276",
+    "object": "chat.completion",
+    "created": 1791310244,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"5901.10.00.00\",\"reason\":\"The product is a textile fiber product, which falls under Chapter 59, heading 01, subheading 10, and the 10\u2011digit HTSUS code is 5901.10.00.00.\"}",
+          "reasoning": "Need valid 10-digit. For textile fiber products generic? 5901.10.00 is 8-digit. Need 10-digit: 5901.10.00.00? Actually HTS has 10 digits: 5901.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.438102938,
+      "prompt_tokens": 325,
+      "prompt_time": 0.019859223,
+      "completion_tokens": 131,
+      "completion_time": 0.142585738,
+      "total_tokens": 456,
+      "total_time": 0.162444961,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_816fc87d18",
+    "x_groq": {
+      "id": "req_01m496ja9zea4vkze85f0mpeda",
+      "seed": 448073596
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5901100000",
+  "predicted_reason": "The product is a textile fiber product, which falls under Chapter 59, heading 01, subheading 10, and the 10\u2011digit HTSUS code is 5901.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

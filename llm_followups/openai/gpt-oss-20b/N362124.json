@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362124",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "42029090",
+  "raw_response": {
+    "id": "chatcmpl-9a276409-67eb-4527-917d-34d7b5ef7ad9",
+    "object": "chat.completion",
+    "created": 1791310485,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4202.90.90.90\",\"reason\":\"Cotton woven bags, not knitted or crocheted, are classified under 4202.90.90.90\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. For cotton bags: 4202.90.90.90? Actually 4202.90.90 is 4-digit? 4202.90.90 is 8-digit? HTS 10-digit: 4202.90.90.90? Let's check: 4202.90.90 is 8-digit. Need 10-digit: 4202.90.90.90? Might be 4202.90.90.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306716515,
+      "prompt_tokens": 626,
+      "prompt_time": 0.050222976,
+      "completion_tokens": 159,
+      "completion_time": 0.180521523,
+      "total_tokens": 785,
+      "total_time": 0.230744499,
+      "completion_tokens_details": {
+        "reasoning_tokens": 110
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e23fc997ca",
+    "x_groq": {
+      "id": "req_01m496sn0eehnbfckgyactjh0f",
+      "seed": 1495474886
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202909090",
+  "predicted_reason": "Cotton woven bags, not knitted or crocheted, are classified under 4202.90.90.90",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

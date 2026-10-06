@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360242",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "8483905080",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84834000",
+  "raw_response": {
+    "id": "chatcmpl-e6ec93de-1971-4c73-a8a8-7c85d35421da",
+    "object": "chat.completion",
+    "created": 1791310106,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.00.00\", \"reason\": \"Stainless\u2011steel gears and gear assemblies for planetary gear sets fall under heading 8483 (gears and gear boxes) subheading 8483.40 (other gears), requiring the full 10\u2011digit code.\"}",
+          "reasoning": "Need correct 10-digit code. Gears of stainless steel: 8483.40.00.00 is 8 digits? Actually HTSUS 10-digit: 8483.40.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218033307,
+      "prompt_tokens": 376,
+      "prompt_time": 0.019561811,
+      "completion_tokens": 123,
+      "completion_time": 0.258758369,
+      "total_tokens": 499,
+      "total_time": 0.27832018,
+      "completion_tokens_details": {
+        "reasoning_tokens": 49
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m496e2zyepxvy6sf74mv0fxx",
+      "seed": 2111037574
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483400000",
+  "predicted_reason": "Stainless\u2011steel gears and gear assemblies for planetary gear sets fall under heading 8483 (gears and gear boxes) subheading 8483.40 (other gears), requiring the full 10\u2011digit code.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

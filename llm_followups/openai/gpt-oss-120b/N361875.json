@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361875",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9401999085",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "76109000",
+  "raw_response": {
+    "id": "chatcmpl-a0f73556-31ee-452f-9fea-a95bdc278032",
+    "object": "chat.completion",
+    "created": 1791310379,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7610.90.0010\", \"reason\": \"Aluminum chair frame classified as other furniture of aluminum (HTS 7610.90.0010)\"}",
+          "reasoning": "Need correct 10-digit. Aluminum furniture parts: 7610.10.00 (chairs) 7610.90.00 is valid? Actually HTS 7610.90.00 exists: \"Other furniture of aluminum\". 10-digit is 7610.90.0010? Need 10-digit: first 6 digits 7610.90 then 4-digit suffix. Likely 7610.90.0010 for other furniture of aluminum, not elsewhere specified. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.200260929,
+      "prompt_tokens": 337,
+      "prompt_time": 0.015395516,
+      "completion_tokens": 155,
+      "completion_time": 0.327862232,
+      "total_tokens": 492,
+      "total_time": 0.343257748,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m496pdt1exb83dxemkn0g13s",
+      "seed": 617130819
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7610900010",
+  "predicted_reason": "Aluminum chair frame classified as other furniture of aluminum (HTS 7610.90.0010)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

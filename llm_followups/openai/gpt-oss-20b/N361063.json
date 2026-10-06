@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361063",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "0000000000",
+  "raw_response": {
+    "id": "chatcmpl-9d3b7ddf-8624-4bf9-91e9-3f5f1cdb3004",
+    "object": "chat.completion",
+    "created": 1791310248,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9801.90.0000\",\"reason\":\"The item is a customs ruling document, which falls under the general category for other non\u2011tariffable items.\"}",
+          "reasoning": "We need a valid 10-digit HTS code. Since it's a ruling, maybe treat as \"customs documents\" but no product. Could pick 9801.90.0000? But that's for \"Other\" for \"Other\" maybe. Use 9801.90.0000."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089323589,
+      "prompt_tokens": 249,
+      "prompt_time": 0.014465781,
+      "completion_tokens": 110,
+      "completion_time": 0.130010342,
+      "total_tokens": 359,
+      "total_time": 0.144476123,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c5a89987dc",
+    "x_groq": {
+      "id": "req_01m496je6fenjskvsdvj7xxvat",
+      "seed": 952801279
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9801900000",
+  "predicted_reason": "The item is a customs ruling document, which falls under the general category for other non\u2011tariffable items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359788",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8509805095",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8424909000",
+  "raw_response": {
+    "id": "chatcmpl-c085f140-4302-4eee-8ee6-509820b43c1b",
+    "object": "chat.completion",
+    "created": 1791310017,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8424.90.90.00\",\"reason\":\"Motorized sausage stuffing machines are classified under 8424.90.90.00, the heading for other machinery and apparatus for the food industry not elsewhere specified.\"}",
+          "reasoning": "Need valid 10-digit. For food processing machinery: 8424.90.90.00 is 8-digit. Need 10-digit: 8424.90.90.00? Actually 10-digit includes 2 decimal places: 8424.90.90.00 is 10? It's 8+2=10. But maybe correct is 8424.90.90.00. But they said not exist. Maybe correct is 8424.90.90.00? Let's give 8424.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152758144,
+      "prompt_tokens": 510,
+      "prompt_time": 0.093446953,
+      "completion_tokens": 176,
+      "completion_time": 0.188647767,
+      "total_tokens": 686,
+      "total_time": 0.28209472,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3826805fb8",
+    "x_groq": {
+      "id": "req_01m496bc6hepbrcrbrkvmhejv8",
+      "seed": 1486050189
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8424909000",
+  "predicted_reason": "Motorized sausage stuffing machines are classified under 8424.90.90.00, the heading for other machinery and apparatus for the food industry not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -13,6 +13,20 @@ models run on Groq's free tier**: `openai/gpt-oss-20b`, `openai/gpt-oss-120b`, a
 retrieval. Nothing here generalizes to larger, fine-tuned, or paid-tier models; where a
 comparison to such a model is made (prior work), that's flagged explicitly.
 
+## Lead finding
+
+**Free models mostly return HTS codes that do not exist, and most of those are not near misses.** Across 1,098 CBP rulings, 88.7% to 98.4% of wrong answers were invalid codes (see "Invalid codes" below). Classifying each invalid answer against the HTS shows what kind of invalid:
+
+| Model | Invalid answers | Suffix only wrong | First 6 digits real, first 8 not | Fabricated (no such 6-digit subheading) |
+|---|---|---|---|---|
+| gpt-oss-20b | 1,080 | 13.5% | 38.8% | 47.7% |
+| gpt-oss-120b | 1,061 | 22.9% | 55.6% | 21.3% |
+| allam-2-7b | 957 | 6.7% | 37.5% | 55.0% |
+
+Three things follow. A fix that only repaired the 2-digit suffix would rescue at most 6.7% to 22.9% of invalid answers. Stale training data does not explain the invalid answers: only 1 invalid answer across all three models was a code that existed in a 2022 to 2025 HTS release. Asking again does not help either: after one follow-up saying the code does not exist, 1.5% to 7.2% of invalid answers became valid codes, and none became the correct code. Chart: `figures/error_breakdown.png`.
+
+![Error breakdown by model](figures/error_breakdown.png)
+
 ## The question
 
 When AI models classify imported goods for US customs, how often are they wrong, how
@@ -43,8 +57,10 @@ them as final.
    issued.
 3. **Usable set:** only rulings that classify a single product into exactly one 10-digit
    HTS code: 1,098 of 1,816.
-4. **Duty rates:** column-1 General (MFN) rate for each true code, from the USITC HTS
-   revision in force on the ruling's date. Cost analysis uses ad valorem and free rates
+4. **Duty rates:** column-1 General (MFN) rate for each true code, from the current
+   USITC HTS schedule (September 2026). The per-revision files fetched earlier are all
+   copies of the current schedule, not the revision in force on each ruling's date; see
+   Limitations for the checked impact. Cost analysis uses ad valorem and free rates
    only. Section 301/232/reciprocal Chapter 99 duties are entirely out of scope (country-
    of-origin dependent, changed frequently through 2025-2026), so **every duty figure
    here is a lower bound**.
@@ -123,12 +139,33 @@ revision in force on the ruling date. Counts come from `data/processed/analysis_
 | gpt-oss-120b | 96.6% (1,061) | 97.2% (1,061 of 1,092) |
 | allam-2-7b | 87.2% (957) | 88.7% (957 of 1,079) |
 
-The overwhelming majority of wrong answers are not "classified under the wrong but
-real code". They are codes that do not exist in the HTS at all, often an 8-digit tariff
-item with a guessed or omitted statistical suffix. Manually tracing individual cases
-(DECISIONS.md) found this reflects genuine model behavior: systematic confusion between
-adjacent headings (HTS 6801 vs. 6802 for worked stone, 6109 vs. 6110 for knit garments)
-and a frequent failure to commit to the final 2-digit statistical suffix.
+#### What kind of invalid (`scripts/analyze_invalid_codes.py`, `review/invalid_breakdown.md`)
+
+Each invalid answer is checked against the HTS data used in this project. "Suffix only" means the first 8 digits exist. "First 6 real, first 8 not" means the 6-digit subheading exists but no 8-digit tariff item starts with the answer's first 8 digits. "Fabricated" means even the first 6 digits do not exist. "Outdated" means a 10-digit code that is not in the current HTS but appears in at least one 2022 to 2025 HTS release. Releases named "Prelim" (a 2022 preliminary draft never in force) are not counted. Each answer gets one class; outdated is checked first.
+
+Share of all 1,098 answers per model:
+
+| Model | Correct | Wrong, valid code | Invalid: suffix only | Invalid: first 6 real, first 8 not | Invalid: fabricated | Invalid: outdated | Invalid: no usable code |
+|---|---|---|---|---|---|---|---|
+| gpt-oss-20b | 0 (0.0%) | 18 (1.6%) | 146 (13.3%) | 419 (38.2%) | 515 (46.9%) | 0 (0.0%) | 0 (0.0%) |
+| gpt-oss-120b | 6 (0.5%) | 31 (2.8%) | 243 (22.1%) | 590 (53.7%) | 226 (20.6%) | 1 (0.1%) | 1 (0.1%) |
+| allam-2-7b | 19 (1.7%) | 122 (11.1%) | 64 (5.8%) | 359 (32.7%) | 526 (47.9%) | 0 (0.0%) | 8 (0.7%) |
+
+Of the suffix-only answers, 55 of 146 (gpt-oss-20b), 180 of 243 (gpt-oss-120b), and 21 of 64 (allam-2-7b) were exactly 8 digits, meaning the model left the suffix off. The single outdated answer (gpt-oss-120b, ruling N359777) was a suffix-only case: 2106909995 existed through 2025 and the ruling's true code is 2106909998. Manual tracing (DECISIONS.md) also found systematic confusion between adjacent headings (HTS 6801 vs. 6802 for worked stone, 6109 vs. 6110 for knit garments).
+
+An earlier version of this section said the invalid codes were "often an 8-digit tariff item with a guessed or omitted statistical suffix". The breakdown above does not support "often": suffix-only answers are 5.8% to 22.1% of all answers, and fabricated or wrong-first-8 answers are the bulk.
+
+### Guardrail test: one follow-up after an invalid answer
+
+On the fixed 200-ruling sample (`data/gemini_subset.csv`), when a model's first answer was invalid, it was sent one follow-up turn: "That code does not exist in the current HTS. Give a valid 10-digit code." The follow-up answer replaced the first answer. Same temperature and reasoning settings as the original run (`scripts/run_guardrail_followup.py`, `scripts/analyze_guardrail.py`, `review/guardrail.md`).
+
+| Model | Invalid first answers | Follow-up valid code | Of those, correct 10-digit | 8-digit accuracy before / after | 10-digit accuracy before / after |
+|---|---|---|---|---|---|
+| gpt-oss-20b | 196 of 200 | 3 (1.5%) | 0 | 1 / 1 of 200 | 0 / 0 of 200 |
+| gpt-oss-120b | 195 of 200 | 14 (7.2%) | 0 | 15 / 13 of 200 | 1 / 1 of 200 |
+| allam-2-7b | 179 of 200 | 4 (2.2%) | 0 | 4 / 1 of 200 | 1 / 1 of 200 |
+
+The guardrail fixed few answers and no fixed answer was correct. 8-digit accuracy fell for gpt-oss-120b and allam-2-7b, so the follow-up replaced some answers that had matched at 8 digits. One allam-2-7b follow-up could not be answered because the conversation exceeded that model's context window (counted as still invalid). Sample sizes are small, so treat the differences between models as indicative only.
 
 ### Direction bias: confirmed against chance, not just observed
 
@@ -169,6 +206,18 @@ A hypothesized mechanism (models defaulting to cheaper "Other" catch-all subhead
 more often than the true codes do) was checked and **ruled out**: predicted codes land
 in "Other" baskets *less* often than true codes across all 3 models (11-49% vs. 62-63%),
 which if anything would predict overpaying, not underpaying.
+
+### Duty at stake for valid wrong codes
+
+For wrong answers that are valid 10-digit codes and where both the true and predicted code resolve to an ad valorem or free rate (`review/invalid_breakdown.md`):
+
+| Model | Valid wrong codes | With usable rates (n) | Median duty at stake per $100,000 | IQR | Zero rate difference |
+|---|---|---|---|---|---|
+| gpt-oss-20b | 18 | 15 | $1,500 | $200 to $3,500 | 4 |
+| gpt-oss-120b | 31 | 31 | $0 | $0 to $1,350 | 16 |
+| allam-2-7b | 122 | 112 | $4,100 | $1,300 to $7,000 | 17 |
+
+These are MFN-only lower bounds and the n for two models is small (15 and 31), so the medians are rough.
 
 ### Free errors and duty at stake
 
@@ -273,6 +322,8 @@ it is used here as a comparison point.
 | Of usable set: rate field blank at every digit level checked (excluded) | 3 |
 
 ## Limitations (stated before interpretation)
+
+- **HTS revision data (found 2026-10-06).** USITC's JSON export ignores the `release` parameter and always returns the current schedule, so the 21 per-revision files fetched in Phase 3 are identical copies of the current schedule. Archived releases exist only as PDFs. Checked impact, using the archived PDFs for every 2026 release (`scripts/check_revision_impact.py`, `review/revision_impact.md`): validity of 10-digit predicted codes would differ for 1 answer (gpt-oss-120b) and 0 answers for each of the other two models, and 5 true codes are absent from both the current and their ruling-date release. Duty RATES were not re-checked against the ruling-date release (rates are not parsed from the PDFs), so the duty figures assume MFN rates did not change between each ruling date and September 2026.
 
 - All duty-at-stake figures are a **lower bound**: column-1 General (MFN) rates only,
   excluding all Section 301/232/reciprocal-tariff Chapter 99 overlays.

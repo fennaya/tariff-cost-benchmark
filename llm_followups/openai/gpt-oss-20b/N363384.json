@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363384",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "3926209050",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6204621000",
+  "raw_response": {
+    "id": "chatcmpl-a7f68dc5-7b13-4ebc-b802-6769086a7197",
+    "object": "chat.completion",
+    "created": 1791310670,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6204.62.10.00\",\"reason\":\"Men\u2019s faux leather jacket with polyurethane outer shell and polyester backing is classified under 6204.62.10.00 \u2013 jackets, coats, etc., of synthetic fibers, outer shell of synthetic fibers.\"}",
+          "reasoning": "Need valid 10-digit HTS. For synthetic leather jackets: 6204.62.10.00? Actually 6204.62.10.00 is \"Jackets, coats, etc., of synthetic fibers, outer shell of synthetic fibers\". But 10-digit: 6204.62.10.00. That exists. Maybe need 6204.62.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.191286713,
+      "prompt_tokens": 304,
+      "prompt_time": 0.014843254,
+      "completion_tokens": 152,
+      "completion_time": 0.160315576,
+      "total_tokens": 456,
+      "total_time": 0.17515883,
+      "completion_tokens_details": {
+        "reasoning_tokens": 85
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m496zam6ezbvg0dr6vz1qz1v",
+      "seed": 1241647902
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204621000",
+  "predicted_reason": "Men\u2019s faux leather jacket with polyurethane outer shell and polyester backing is classified under 6204.62.10.00 \u2013 jackets, coats, etc., of synthetic fibers, outer shell of synthetic fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

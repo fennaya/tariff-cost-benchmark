@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361321",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "63029100",
+  "raw_response": {
+    "id": "chatcmpl-bf5b91b0-0172-4338-a50a-79e0630076a5",
+    "object": "chat.completion",
+    "created": 1791310267,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.91.00.00\",\n  \"reason\": \"The item is an unfinished made\u2011up textile article (sleeves and hem with raw edges) of cotton, fitting the heading for other made\u2011up articles of cotton not elsewhere specified.\"\n}",
+          "reasoning": "Need correct 10-digit code. Raw unfinished edges likely \"unfinished textile fabrics\" 6304? Actually \"Sewn apparel\" raw edges maybe \"garments, not knitted, not finished\"? Could be \"6302.91.00.00\"? 10-digit includes 4-2-2-2? HTS 6302.91.00.00 is \"Other made-up articles, of cotton, not knitted or crocheted\". That's 10 digits. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018902185,
+      "prompt_tokens": 241,
+      "prompt_time": 0.009726911,
+      "completion_tokens": 170,
+      "completion_time": 0.361048655,
+      "total_tokens": 411,
+      "total_time": 0.370775566,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m496k167ejwrrjtzqyhtvsww",
+      "seed": 532774020
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302910000",
+  "predicted_reason": "The item is an unfinished made\u2011up textile article (sleeves and hem with raw edges) of cotton, fitting the heading for other made\u2011up articles of cotton not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

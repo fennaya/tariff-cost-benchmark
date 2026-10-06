@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362124",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6302600000",
+  "raw_response": {
+    "id": "chatcmpl-f5b7eead-98b0-4003-8f07-037ed0541e85",
+    "object": "chat.completion",
+    "created": 1791310428,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.60.10.00\", \"reason\": \"The reusable cotton woven gift bags are made\u2011up textile articles of cotton not elsewhere specified, falling under HTSUS 6302.60.10.00.\"}",
+          "reasoning": "Need correct 10-digit. Likely 6302.60.10.00? Check: 6302.60.10.00 = Other made-up articles of textile materials, of cotton, not elsewhere specified. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.159038624,
+      "prompt_tokens": 643,
+      "prompt_time": 0.049602676,
+      "completion_tokens": 110,
+      "completion_time": 0.230443941,
+      "total_tokens": 753,
+      "total_time": 0.280046617,
+      "completion_tokens_details": {
+        "reasoning_tokens": 48
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_068241849b",
+    "x_groq": {
+      "id": "req_01m496qy3ne1c9mzz5d1zv6sng",
+      "seed": 1524284215
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302601000",
+  "predicted_reason": "The reusable cotton woven gift bags are made\u2011up textile articles of cotton not elsewhere specified, falling under HTSUS 6302.60.10.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

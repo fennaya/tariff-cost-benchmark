@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362803",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5903202500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "5903000000",
+  "raw_response": {
+    "id": "chatcmpl-cea7b252-0854-4d04-bda7-d2f8ebc410ca",
+    "object": "chat.completion",
+    "created": 1791310518,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"5903.00.0010\", \"reason\": \"Woven fabric of synthetic/man\u2011made fibers laminated with a polyurethane plastic membrane, fitting heading 5903 for woven fabrics impregnated, coated or laminated with plastics.\"}",
+          "reasoning": "Need correct 10-digit. Likely 5903.00.0010? Check HTS: 5903.00.0010 is \"Woven fabrics of synthetic fibers, impregnated, coated or laminated with plastics, other\". So use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.663077042,
+      "prompt_tokens": 347,
+      "prompt_time": 0.018322081,
+      "completion_tokens": 115,
+      "completion_time": 0.240276035,
+      "total_tokens": 462,
+      "total_time": 0.258598116,
+      "completion_tokens_details": {
+        "reasoning_tokens": 54
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m496tncwe8j8ykf8r84f6036",
+      "seed": 763647866
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5903000010",
+  "predicted_reason": "Woven fabric of synthetic/man\u2011made fibers laminated with a polyurethane plastic membrane, fitting heading 5903 for woven fabrics impregnated, coated or laminated with plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

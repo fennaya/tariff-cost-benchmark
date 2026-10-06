@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361389",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "61049990",
+  "raw_response": {
+    "id": "chatcmpl-ca7f95c5-e0c9-4c62-8277-62f23e9f55ba",
+    "object": "chat.completion",
+    "created": 1791310289,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6206.30.10\", \"reason\": \"Classifies as women's or girls' garments (robes) of other textile materials, not knitted, not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Robe, women's, not knitted? Likely 6206.30.10? Actually 6206 is women's or girls' garments, not knitted, of cotton etc. Need generic: 6206.30.10 is \"Women's or girls' dresses, of other textile materials\". Robe maybe 6206.30.20? Let's pick 6206.30.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087586433,
+      "prompt_tokens": 252,
+      "prompt_time": 0.009633292,
+      "completion_tokens": 137,
+      "completion_time": 0.292785424,
+      "total_tokens": 389,
+      "total_time": 0.302418716,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m496kpe2e9m9vf5gv0mpxkz9",
+      "seed": 1883637206
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62063010",
+  "predicted_reason": "Classifies as women's or girls' garments (robes) of other textile materials, not knitted, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

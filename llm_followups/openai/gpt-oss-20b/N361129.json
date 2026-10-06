@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361129",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "3824999397",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "200610100000",
+  "raw_response": {
+    "id": "chatcmpl-8f21f637-e57a-4287-91d0-919740d0db88",
+    "object": "chat.completion",
+    "created": 1791310255,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2006.10.10.00.00\",\"reason\":\"The product is a food additive (mono\u2011 and diglycerides, carrageenan, guar gum) used in chocolate milk, classified under 2006.10.10.00.00 \u2013 other food additives, not elsewhere specified.\"}",
+          "reasoning": "Need valid HTS 10-digit. Food additives: 2006.10.10.00.00? Actually 2006.10.10.00.00 is \"Other food additives, not elsewhere specified\". That is 10 digits: 2006.10.10.00.00. It's valid. But maybe need 2006.10.10.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194343689,
+      "prompt_tokens": 379,
+      "prompt_time": 0.021619063,
+      "completion_tokens": 160,
+      "completion_time": 0.194841147,
+      "total_tokens": 539,
+      "total_time": 0.21646021,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_37c9245f64",
+    "x_groq": {
+      "id": "req_01m496jmxze2r9wy40mamspqs4",
+      "seed": 885728109
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "200610100000",
+  "predicted_reason": "The product is a food additive (mono\u2011 and diglycerides, carrageenan, guar gum) used in chocolate milk, classified under 2006.10.10.00.00 \u2013 other food additives, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

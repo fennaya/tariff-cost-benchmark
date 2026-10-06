@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362451",
+  "rulingDate": "2026-07-06T00:00:00",
+  "true_code": "8438800000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84198990",
+  "raw_response": {
+    "id": "chatcmpl-71d89b5e-b495-42ad-b8f3-7032e8cbee96",
+    "object": "chat.completion",
+    "created": 1791310476,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8419.89.9000\", \"reason\": \"Classified as other machinery for making beverages (fermentation tank with integrated pump) not elsewhere specified.\"}",
+          "reasoning": "Need correct code. Likely 8419.89.90 is valid? Actually 8419.89.90 exists. But maybe need 10 digits: 8419.89.9000. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049877823,
+      "prompt_tokens": 528,
+      "prompt_time": 0.031250711,
+      "completion_tokens": 93,
+      "completion_time": 0.194580955,
+      "total_tokens": 621,
+      "total_time": 0.225831666,
+      "completion_tokens_details": {
+        "reasoning_tokens": 45
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m496sd7desatd8kjc0ez7hm1",
+      "seed": 1005323581
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8419899000",
+  "predicted_reason": "Classified as other machinery for making beverages (fermentation tank with integrated pump) not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

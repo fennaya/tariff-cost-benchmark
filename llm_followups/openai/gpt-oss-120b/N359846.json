@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359846",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "31053000",
+  "raw_response": {
+    "id": "chatcmpl-81a46d84-7cc3-4a34-b1a9-3c55dc846b05",
+    "object": "chat.completion",
+    "created": 1791310020,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.30.0010\", \"reason\": \"Classified as a liquid compound fertilizer containing nitrogen and phosphorus, falling under heading 3105.30 for liquid fertilizers with two or more nutrients.\"}",
+          "reasoning": "Need correct 10-digit. Likely 3105.30.0010? Check: 3105.30.00 is heading 3105.30.00 \u2013 subheading 3105.30.00 (fertilizers, liquid, containing N and P). 10-digit: 3105.30.0010 (Other). Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048442167,
+      "prompt_tokens": 455,
+      "prompt_time": 0.024141699,
+      "completion_tokens": 132,
+      "completion_time": 0.280550381,
+      "total_tokens": 587,
+      "total_time": 0.30469208,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m496bfxtesd82zs05r59c7cr",
+      "seed": 1972130933
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3105300010",
+  "predicted_reason": "Classified as a liquid compound fertilizer containing nitrogen and phosphorus, falling under heading 3105.30 for liquid fertilizers with two or more nutrients.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

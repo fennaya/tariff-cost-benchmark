@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363583",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8403100000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "8419899000",
+  "raw_response": {
+    "id": "chatcmpl-3e7777ae-e7ea-437c-9f36-5eb035a155f5",
+    "object": "chat.completion",
+    "created": 1791310652,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8419.89.90.00\", \"reason\": \"These are commercial gas\u2011fired condensing hydronic boilers, classified under heading 8419 for boilers, subheading 8419.89 for other boilers not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Boilers gas-fired, condensing, for commercial. Likely 8419.89.90.00 is valid? Actually HTS 8419.89.90.00 exists. But user says not. Maybe correct is 8419.89.90.00 is 8-digit? It's 8+2? It's 10 digits with . . Should be 8419.89.90.00 (10). Might be okay. But provide alternative: 8419.89.90.00 is valid. Could be 8419.89.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088464236,
+      "prompt_tokens": 439,
+      "prompt_time": 0.019164509,
+      "completion_tokens": 193,
+      "completion_time": 0.407024498,
+      "total_tokens": 632,
+      "total_time": 0.426189007,
+      "completion_tokens_details": {
+        "reasoning_tokens": 128
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m496yr4neptrygt8dd8y387k",
+      "seed": 151841645
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8419899000",
+  "predicted_reason": "These are commercial gas\u2011fired condensing hydronic boilers, classified under heading 8419 for boilers, subheading 8419.89 for other boilers not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

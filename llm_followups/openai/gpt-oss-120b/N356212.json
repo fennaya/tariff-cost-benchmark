@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N356212",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "3808931500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3808910000",
+  "raw_response": {
+    "id": "chatcmpl-31ff154a-a6f8-47f4-aab9-2b8ccfacf258",
+    "object": "chat.completion",
+    "created": 1791309961,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3808.91.00.00\",\n  \"reason\": \"Dicamba herbicide formulations are classified as plant protection products containing a specific active ingredient, falling under heading 3808.91 for other herbicides.\"\n}",
+          "reasoning": "Need correct code: likely 3808.91.00.00 is valid? Actually HTS 3808.91.00.00 exists. But they say not. Could be 3808.91.00.00 is 8-digit? It's 8. Need 10-digit: 3808.91.00.00 is 10 inc dots? digits 4-2-2-2 =10. It's valid. Maybe need 3808.91.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.225735291,
+      "prompt_tokens": 738,
+      "prompt_time": 0.216883611,
+      "completion_tokens": 168,
+      "completion_time": 0.556783804,
+      "total_tokens": 906,
+      "total_time": 0.773667415,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m4969n28e1z8x6tw7486xxbt",
+      "seed": 1068269109
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3808910000",
+  "predicted_reason": "Dicamba herbicide formulations are classified as plant protection products containing a specific active ingredient, falling under heading 3808.91 for other herbicides.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

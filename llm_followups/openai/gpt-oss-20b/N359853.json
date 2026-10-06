@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359853",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "3824993990",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "1206909000",
+  "raw_response": {
+    "id": "chatcmpl-319e5a6b-e0d9-4c60-81fc-c7ce50da702f",
+    "object": "chat.completion",
+    "created": 1791310044,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"Mineral foliar fertilizer with micronutrients is classified under \\\"Other fertilizers, not elsewhere specified\\\".\"}",
+          "reasoning": "Need valid 10-digit. For fertilizers: 1206.90.90.00 is 8-digit? Actually HTS 10-digit: 1206.90.90.00 is 8? Wait 10-digit includes 2 decimal places? Actually HTS 10-digit: 1206.90.90.00 is 10? It's 8? Format: 4 digits, decimal, 2 digits, decimal, 2 digits, decimal, 2 digits? Actually 10-digit: 4.2.2.2. Example 1206.90.90.00 is 10? 4+2+2+2=10. So it's valid. But maybe need 1206.90.90.00? It's fine. But maybe need 1206.90.90.00? Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.193435652,
+      "prompt_tokens": 487,
+      "prompt_time": 0.029964329,
+      "completion_tokens": 222,
+      "completion_time": 0.227698737,
+      "total_tokens": 709,
+      "total_time": 0.257663066,
+      "completion_tokens_details": {
+        "reasoning_tokens": 176
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m496c756e65t9jg3dmp397sk",
+      "seed": 1432906323
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Mineral foliar fertilizer with micronutrients is classified under \"Other fertilizers, not elsewhere specified\".",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362430",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "2106909997",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "21069099",
+  "raw_response": {
+    "id": "chatcmpl-c15cb1ca-0e81-4dc4-bb80-6942952becac",
+    "object": "chat.completion",
+    "created": 1791310471,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.9990\", \"reason\": \"The product is a ready\u2011to\u2011eat plant\u2011based yogurt alternative, classified under heading 2106.90 as other food preparations not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit. Likely 2106.90.9990? Check: 2106.90.9990 is \"Other food preparations not elsewhere specified\". Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018827933,
+      "prompt_tokens": 440,
+      "prompt_time": 0.023872176,
+      "completion_tokens": 99,
+      "completion_time": 0.208954151,
+      "total_tokens": 539,
+      "total_time": 0.232826327,
+      "completion_tokens_details": {
+        "reasoning_tokens": 40
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m496s88mer8t9vpkxxd9spte",
+      "seed": 2012955931
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909990",
+  "predicted_reason": "The product is a ready\u2011to\u2011eat plant\u2011based yogurt alternative, classified under heading 2106.90 as other food preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

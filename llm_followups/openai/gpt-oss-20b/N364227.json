@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N364227",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "6307101090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "5208901000",
+  "raw_response": {
+    "id": "chatcmpl-e388d12d-03e3-46fd-9950-ef8bbeca54cf",
+    "object": "chat.completion",
+    "created": 1791310781,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"5208.90.90.00\",\"reason\":\"Generic cloth with sewn edges, not specified as knitted or crocheted, fits the heading for other fabrics.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code. Generic cloth sewn edges likely 5208.90.10.00? But 5208.90.10.00 maybe not exist. Let's pick 5208.90.90.00? Actually 5208.90 is \"Other fabrics\". Subheading 5208.90.10.00 \"Other fabrics, not knitted or crocheted, of cotton\". But we don't know material. Maybe 5208.90.90.00 \"Other fabrics, not knitted or crocheted, of other materials\". So 5208.90.90.00 is valid. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295995315,
+      "prompt_tokens": 232,
+      "prompt_time": 0.013424321,
+      "completion_tokens": 180,
+      "completion_time": 0.205898665,
+      "total_tokens": 412,
+      "total_time": 0.219322986,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a12402de73",
+    "x_groq": {
+      "id": "req_01m4972q0see4s123nnn4kaah2",
+      "seed": 817366934
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5208909000",
+  "predicted_reason": "Generic cloth with sewn edges, not specified as knitted or crocheted, fits the heading for other fabrics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

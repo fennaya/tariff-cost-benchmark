@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N362456",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "8479899597",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "73090090",
+  "raw_response": {
+    "id": "chatcmpl-c42390e9-9309-4d68-98c6-b68b528cfec1",
+    "object": "chat.completion",
+    "created": 1791310485,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7309.00.9000\",\n  \"reason\": \"Steel pressure vessels/tanks with internal diaphragms for water pressure regulation, classified under other iron or steel tanks.\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 7309.00.90 is 8-digit. Need 10-digit: 7309.00.9000. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.212632064,
+      "prompt_tokens": 506,
+      "prompt_time": 0.02912973,
+      "completion_tokens": 91,
+      "completion_time": 0.190298557,
+      "total_tokens": 597,
+      "total_time": 0.219428287,
+      "completion_tokens_details": {
+        "reasoning_tokens": 37
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m496snp6enpbq61t1sj6w0yn",
+      "seed": 803786674
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7309009000",
+  "predicted_reason": "Steel pressure vessels/tanks with internal diaphragms for water pressure regulation, classified under other iron or steel tanks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

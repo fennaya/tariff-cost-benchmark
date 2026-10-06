@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N355043",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "6802200000",
+  "raw_response": {
+    "id": "chatcmpl-70581e5f-5589-44be-8f29-62f7f965d1e3",
+    "object": "chat.completion",
+    "created": 1791309955,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.00.00\", \"reason\": \"Cut and polished granite slabs for countertops are classified under heading 6802.20 for granite and similar igneous stones.\"}",
+          "reasoning": "Need correct 10-digit. Granite slabs: 6802.20.00.00? Actually HTS 6802.20.00.00 is \"Granite, other than that of heading 6802.10, cut, polished, etc.\" Check: 6802.20.00.00 exists. maybe need 6802.20.00.00 is valid. But user says not exist. Could be 6802.20.00.00 is 8-digit? It's 8-digit plus .00 .00 = 10. Should be valid. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018546203,
+      "prompt_tokens": 418,
+      "prompt_time": 0.020469029,
+      "completion_tokens": 177,
+      "completion_time": 0.36983654,
+      "total_tokens": 595,
+      "total_time": 0.390305569,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m4969fszecv97m81x67r3tj8",
+      "seed": 402447480
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802200000",
+  "predicted_reason": "Cut and polished granite slabs for countertops are classified under heading 6802.20 for granite and similar igneous stones.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

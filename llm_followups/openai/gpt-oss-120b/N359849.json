@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359849",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "3105990000",
+  "raw_response": {
+    "id": "chatcmpl-05ee08d7-ae76-4a8c-898b-ff1a30c9ded8",
+    "object": "chat.completion",
+    "created": 1791310024,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.99.00.00\", \"reason\": \"Liquid mineral fertilizer containing N\u2011P\u2011K and organic additives, classified under heading 3105 for mineral or chemical fertilizers not elsewhere specified.\"}",
+          "reasoning": "Need correct 10-digit code. For fertilizers: 3105.99.00.00 is valid? Actually HTS 3105.99.00.00 exists (Other mineral or chemical fertilizers). It's 10 digits. So maybe they think invalid. Could give 3105.99.00.00 is correct. Provide again."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.141538806,
+      "prompt_tokens": 513,
+      "prompt_time": 0.025945303,
+      "completion_tokens": 128,
+      "completion_time": 0.27170958,
+      "total_tokens": 641,
+      "total_time": 0.297654883,
+      "completion_tokens_details": {
+        "reasoning_tokens": 71
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_be28f5c9f2",
+    "x_groq": {
+      "id": "req_01m496bksregf88n6y8g7ad3qj",
+      "seed": 1600908630
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3105990000",
+  "predicted_reason": "Liquid mineral fertilizer containing N\u2011P\u2011K and organic additives, classified under heading 3105 for mineral or chemical fertilizers not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

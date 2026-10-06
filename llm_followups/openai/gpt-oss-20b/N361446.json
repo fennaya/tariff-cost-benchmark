@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361446",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "49011010",
+  "raw_response": {
+    "id": "chatcmpl-724e5eb7-7c28-465d-8244-a4573dab5f36",
+    "object": "chat.completion",
+    "created": 1791310355,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.10.10.00\",\"reason\":\"Hardcover books with printed text and illustrations are classified under 4901.10.10.00 in the HTSUS.\"}",
+          "reasoning": "Need valid 10-digit HTSUS code for books. 4901.10.10? Actually 4901.10.10 is for books printed on paper. But 10-digit: 4901.10.10.00? Wait 10-digit format: 4901.10.10.00? Actually HTSUS 10-digit: 4901.10.10.00. But need 10 digits: 4901.10.10.00? That's 8 digits? Actually 4901.10.10.00 is 10 digits including decimal? It's 4+2+2+2 =10. So answer: 4901.10.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150501689,
+      "prompt_tokens": 382,
+      "prompt_time": 0.024515074,
+      "completion_tokens": 200,
+      "completion_time": 0.23468099,
+      "total_tokens": 582,
+      "total_time": 0.259196064,
+      "completion_tokens_details": {
+        "reasoning_tokens": 148
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_976a85d17a",
+    "x_groq": {
+      "id": "req_01m496npbweehtw4p4m3x4vmf0",
+      "seed": 1160537991
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901101000",
+  "predicted_reason": "Hardcover books with printed text and illustrations are classified under 4901.10.10.00 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

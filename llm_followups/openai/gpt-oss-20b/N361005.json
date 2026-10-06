@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361005",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "8483405010",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "84258000",
+  "raw_response": {
+    "id": "chatcmpl-399f6058-e331-4c1c-8ecc-4a090be5dc15",
+    "object": "chat.completion",
+    "created": 1791310231,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8425.80.00.00\",\"reason\":\"Planetary gearboxes with fixed reduction ratios are classified under 8425.80.00.00 \u2013 other gearboxes, gearboxes with planetary gears.\"}",
+          "reasoning": "Need valid 10-digit. For gearboxes 8425.80.00 is 8 digits? Actually HTS 10-digit: 8425.80.00.00? Wait 8425.80.00 is 8 digits. Need 10: 8425.80.00.00? But HTS uses 10 digits: 8425.80.00.00? Actually format: 8425.80.00.00. So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150680623,
+      "prompt_tokens": 283,
+      "prompt_time": 0.013980608,
+      "completion_tokens": 158,
+      "completion_time": 0.173626802,
+      "total_tokens": 441,
+      "total_time": 0.18760741,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f8aab374e8",
+    "x_groq": {
+      "id": "req_01m496hxjwe7wr871gqc5sjwv9",
+      "seed": 775222028
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425800000",
+  "predicted_reason": "Planetary gearboxes with fixed reduction ratios are classified under 8425.80.00.00 \u2013 other gearboxes, gearboxes with planetary gears.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

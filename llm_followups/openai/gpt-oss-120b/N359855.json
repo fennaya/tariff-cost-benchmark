@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N359855",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "31059900",
+  "raw_response": {
+    "id": "chatcmpl-26bf608b-f475-4413-aec3-c4fd1786a5a9",
+    "object": "chat.completion",
+    "created": 1791310035,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.99.00.00\", \"reason\": \"It is a liquid mineral fertilizer containing N\u2011P\u2011K and organic additives, classified under heading 3105.99 (mixed fertilizers) with the full 10\u2011digit code 3105.99.00.00.\"}",
+          "reasoning": "Need correct 10-digit code. For fertilizers: 3105.99.00.00 is 8-digit? Actually HTSUS 10-digit: 3105.99.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.413201897,
+      "prompt_tokens": 517,
+      "prompt_time": 0.027389716,
+      "completion_tokens": 121,
+      "completion_time": 0.261976354,
+      "total_tokens": 638,
+      "total_time": 0.28936607,
+      "completion_tokens_details": {
+        "reasoning_tokens": 46
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m496by2eezrtkd65dr5shagd",
+      "seed": 1919003983
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3105990000",
+  "predicted_reason": "It is a liquid mineral fertilizer containing N\u2011P\u2011K and organic additives, classified under heading 3105.99 (mixed fertilizers) with the full 10\u2011digit code 3105.99.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

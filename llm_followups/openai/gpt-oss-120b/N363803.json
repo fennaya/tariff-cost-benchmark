@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363803",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8543704500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "90251900",
+  "raw_response": {
+    "id": "chatcmpl-a3c32fda-80a7-48f8-b301-af1a2668bda2",
+    "object": "chat.completion",
+    "created": 1791310680,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9025.19.00.00\",\n  \"reason\": \"A crankshaft position sensor is an electronic transducer for detecting engine position, falling under heading 9025 (Instruments and apparatus for measuring or detecting) and subheading 9025.19 (Other instruments and apparatus).\"\n}",
+          "reasoning": "Need correct 10-digit. Likely 9025.19.00.00? Actually HTS 10-digit includes 4-2-2-2. 9025.19.00.00 is valid. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048536609,
+      "prompt_tokens": 394,
+      "prompt_time": 0.018343184,
+      "completion_tokens": 128,
+      "completion_time": 0.267820981,
+      "total_tokens": 522,
+      "total_time": 0.286164165,
+      "completion_tokens_details": {
+        "reasoning_tokens": 50
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m496zmdtee88fqg6bfypcc5c",
+      "seed": 757388342
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9025190000",
+  "predicted_reason": "A crankshaft position sensor is an electronic transducer for detecting engine position, falling under heading 9025 (Instruments and apparatus for measuring or detecting) and subheading 9025.19 (Other instruments and apparatus).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

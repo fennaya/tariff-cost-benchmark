@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N360981",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "6912004500",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "69120000",
+  "raw_response": {
+    "id": "chatcmpl-6226d3af-f45f-40fc-b8cf-42a512ce5b19",
+    "object": "chat.completion",
+    "created": 1791310202,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6912.00.0010\", \"reason\": \"Ceramic tableware (drinking cups) made of dolomite ceramic are classified under heading 6912 for other ceramic tableware.\"}",
+          "reasoning": "Need correct 10-digit. Likely 6912.00.0010? Check: 6912.00.0010 is \"Other ceramic tableware, of porcelain or china\". Actually 6912.00.0010 is \"Other\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048883613,
+      "prompt_tokens": 389,
+      "prompt_time": 0.018881206,
+      "completion_tokens": 110,
+      "completion_time": 0.231520025,
+      "total_tokens": 499,
+      "total_time": 0.250401231,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m496h1a4e9f8ne0fm5ph7g5r",
+      "seed": 250603271
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6912000010",
+  "predicted_reason": "Ceramic tableware (drinking cups) made of dolomite ceramic are classified under heading 6912 for other ceramic tableware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

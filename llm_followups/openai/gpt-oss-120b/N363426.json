@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N363426",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "9505904000",
+  "model": "openai/gpt-oss-120b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "4817000000",
+  "raw_response": {
+    "id": "chatcmpl-28bfb3a2-cc9b-472c-975e-52a7cca7283a",
+    "object": "chat.completion",
+    "created": 1791310639,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4817.10.0000\",\n  \"reason\": \"The banner is a paper product cut to shape (fringe) and attached to string, falling under heading 4817.10 for paper cut to shape.\"\n}",
+          "reasoning": "Need correct code. Likely 4817.10.0000? Check: 4817.10 is paper, paperboard, cellulose wadding, etc cut to shape. Actually 4817.10.00 is \"Paper, paperboard, cellulose wadding and webs of cellulose fibers, cut to shape\". So use 4817.10.0000."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.454097305,
+      "prompt_tokens": 343,
+      "prompt_time": 0.066923022,
+      "completion_tokens": 140,
+      "completion_time": 0.290968625,
+      "total_tokens": 483,
+      "total_time": 0.357891647,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m496ybh6e6nsbnvqtf2m59h1",
+      "seed": 1543146443
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4817100000",
+  "predicted_reason": "The banner is a paper product cut to shape (fringe) and attached to string, falling under heading 4817.10 for paper cut to shape.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

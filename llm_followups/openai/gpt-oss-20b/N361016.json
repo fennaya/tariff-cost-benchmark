@@ -1,0 +1,50 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-20b",
+  "followup_prompt": "That code does not exist in the current HTS. Give a valid 10-digit code.",
+  "first_predicted_code": "85176200",
+  "raw_response": {
+    "id": "chatcmpl-101279e4-c7b4-4472-8ca5-1d4662f929ad",
+    "object": "chat.completion",
+    "created": 1791310239,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.62.00.00\",\"reason\":\"Electrical wiring assembly with printed circuit board and connectors for aviation headsets is classified under electrical apparatus for switching, protecting or controlling electrical circuits.\"}",
+          "reasoning": "Need valid 10-digit HTS. Likely 8517.62.00.00? Actually HTS 10-digit: 8517.62.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194935625,
+      "prompt_tokens": 364,
+      "prompt_time": 0.020624143,
+      "completion_tokens": 93,
+      "completion_time": 0.100224178,
+      "total_tokens": 457,
+      "total_time": 0.120848321,
+      "completion_tokens_details": {
+        "reasoning_tokens": 40
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m496j54aecdvd7zh83cvg4xv",
+      "seed": 745955740
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517620000",
+  "predicted_reason": "Electrical wiring assembly with printed circuit board and connectors for aviation headsets is classified under electrical apparatus for switching, protecting or controlling electrical circuits.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}
