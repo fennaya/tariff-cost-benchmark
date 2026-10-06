@@ -48,3 +48,42 @@ def extract_codes(pdf_bytes):
             elif SUF.match(t) and parent8 and sx0 - 12 <= w[0] <= sx1 + 22:
                 codes.add(parent8 + t)
     return codes
+
+
+def clean_rate_text(text):
+    """Drops footnote markers such as '1/' or '4/5/' that the PDF prints beside a rate."""
+    if text is None:
+        return None
+    return " ".join(t for t in text.split() if not re.fullmatch(r"(?:\d+/)+", t))
+
+
+def extract_rates(pdf_source):
+    """{digits(4/6/8): General (column 1) rate text} from an archived release PDF. The
+    rate text is the words in the General column (between the 'General' and 'Special'
+    headers, minus a small left margin) that sit between a code's own row and the next code's
+    row. Validated against the current-schedule JSON in review/revision_rates.md."""
+    doc = pymupdf.open(pdf_source) if isinstance(pdf_source, str) else pymupdf.open(stream=pdf_source, filetype="pdf")
+    rates = {}
+    for page in doc:
+        words = page.get_text("words")
+        gen = [w for w in words if w[4] == "General"]
+        spe = [w for w in words if w[4] == "Special"]
+        head = [w for w in words if w[4] == "Heading/"]
+        if not (gen and spe and head):
+            continue
+        gx0, sx0, hx0 = gen[0][0], spe[0][0], head[0][0]
+        lo, hi = gx0 - 25, sx0 - 27
+        codes = sorted(
+            [(w[1], w[4].replace(".", "")) for w in words
+             if abs(w[0] - hx0) < 60 and (CODE8.match(w[4]) or CODE6.match(w[4]))],
+            key=lambda c: c[0])
+        if not codes:
+            continue
+        cells = [w for w in words if lo <= w[0] < hi and w[1] > gen[0][3] + 2]
+        for i, (y, code) in enumerate(codes):
+            y_end = codes[i + 1][0] if i + 1 < len(codes) else 1e9
+            toks = sorted((w for w in cells if y - 6 <= w[1] < y_end - 6), key=lambda w: (round(w[1]), w[0]))
+            text = " ".join(t[4] for t in toks).strip()
+            if text and code not in rates:
+                rates[code] = text
+    return rates
