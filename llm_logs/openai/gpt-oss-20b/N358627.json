@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358627",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-902e3db3-18ac-4791-8aaf-3962593d0870",
+    "object": "chat.completion",
+    "created": 1790608164,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7113.90.90.00\",\"reason\":\"The item is a collectible commemorative coin encapsulated in a plastic card, classified as a coin, medal, or token under heading 7113.\"}",
+          "reasoning": "Need HTS code. Likely 7113.90.90? Actually coins collectible: 7113.90.90 is \"Other coins, medals, tokens, etc.\" But encapsulated in plastic card maybe 7113.90.90. Need 10-digit: 7113.90.90? That's 8 digits. 10-digit: 7113.90.90?? Actually HTS 10-digit: 7113.90.90?? Wait 10-digit: 7113.90.90??. Let's pick 7113.90.90.00. Reason: collectible coins."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.139956063,
+      "prompt_tokens": 329,
+      "prompt_time": 0.016922616,
+      "completion_tokens": 185,
+      "completion_time": 0.21374825,
+      "total_tokens": 514,
+      "total_time": 0.230670866,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7d448090ba",
+    "x_groq": {
+      "id": "req_01m3m90hc2emqt5em2e000jhe8",
+      "seed": 378698681
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7113909000",
+  "predicted_reason": "The item is a collectible commemorative coin encapsulated in a plastic card, classified as a coin, medal, or token under heading 7113.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

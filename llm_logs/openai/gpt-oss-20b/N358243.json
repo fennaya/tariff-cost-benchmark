@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358243",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "9401790035",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-4bd038f0-2b2d-4f53-a363-28d71d7da37b",
+    "object": "chat.completion",
+    "created": 1790607959,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.10.20.00\",\"reason\":\"The product is a permanent outdoor bench with a metal frame and wooden seat planks, fitting the HTSUS heading for other furniture of metal, 9403.10.20.\"}",
+          "reasoning": "Need HTS code for outdoor bench. Likely 9403.10.10? Actually benches are furniture. 9403.10.10 is \"Other furniture, of wood\". But metal frame. 9403.10.20 is \"Other furniture, of metal\". But benches with seat planks wood. Could be 9403.10.20. So code 9403.10.20.00? 10-digit: 9403.10.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087099852,
+      "prompt_tokens": 388,
+      "prompt_time": 0.0193071,
+      "completion_tokens": 168,
+      "completion_time": 0.19432424,
+      "total_tokens": 556,
+      "total_time": 0.21363134,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c5a89987dc",
+    "x_groq": {
+      "id": "req_01m3m8t8nte12bj8zjkbbag5x2",
+      "seed": 1870208954
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403102000",
+  "predicted_reason": "The product is a permanent outdoor bench with a metal frame and wooden seat planks, fitting the HTSUS heading for other furniture of metal, 9403.10.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

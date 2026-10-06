@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363804",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9403100040",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-b9606055-6908-4097-95c3-5f828d51edb6",
+    "object": "chat.completion",
+    "created": 1790772374,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8425.90.90.00\",\"reason\":\"The cabinet is a specialized enclosure for electrical equipment, fitting the general category of other machinery and apparatus for the treatment of electricity.\"}",
+          "reasoning": "Need HTS code for server cabinet. Likely 8425.90.90? Actually 8425.90 is \"Other machinery and apparatus for the treatment of electricity\". But server cabinets are \"other\" maybe 8425.90.90. But maybe 8425.90.90 is \"Other\". Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.046230134,
+      "prompt_tokens": 261,
+      "prompt_time": 0.014639781,
+      "completion_tokens": 120,
+      "completion_time": 0.140486641,
+      "total_tokens": 381,
+      "total_time": 0.155126422,
+      "completion_tokens_details": {
+        "reasoning_tokens": 69
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3s5kv24e91vrvjhzydpkbpv",
+      "seed": 269400701
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425909000",
+  "predicted_reason": "The cabinet is a specialized enclosure for electrical equipment, fitting the general category of other machinery and apparatus for the treatment of electricity.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

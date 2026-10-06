@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361940",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "4202920807",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6dbc805d-8edb-4bdf-b715-88540c68315e",
+    "object": "chat.completion",
+    "created": 1790721150,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.10\",\"reason\":\"Insulated cooler bag with plastic outer surface is a plastic container used for food and beverages.\"}",
+          "reasoning": "Need HTS code for insulated cooler bag with plastic outer. Likely 3924.10.10? Actually 3924.10.10 is \"Other articles of plastics, not elsewhere specified or included, of a kind used for packaging, of a kind used for containers, etc.\" But cooler bag maybe 3924.10.10? Wait cooler bag is a container. Could be 3924.10.10. But maybe 3924.10.10 is \"Other articles of plastics, not elsewhere specified or included, of a kind used for packaging, of a kind used for containers, of a kind used for other purposes.\" But cooler bag is a container. Alternatively 3924.10.10 is for \"Other articles of plastics, not elsewhere specified or included, of a kind used for packaging, of a kind used for containers, of a kind used for other purposes.\" That seems generic. But cooler bag is a container for food. Could be 3924.10.10. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.141276709,
+      "prompt_tokens": 213,
+      "prompt_time": 0.010721446,
+      "completion_tokens": 252,
+      "completion_time": 0.300869445,
+      "total_tokens": 465,
+      "total_time": 0.311590891,
+      "completion_tokens_details": {
+        "reasoning_tokens": 210
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_34cb00738d",
+    "x_groq": {
+      "id": "req_01m3qmrjz4en88y3dxg6hr0qnn",
+      "seed": 433634596
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39241010",
+  "predicted_reason": "Insulated cooler bag with plastic outer surface is a plastic container used for food and beverages.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361890",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "4202919090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a61f54b2-8d96-4c15-a2e2-e0cd325ed2c3",
+    "object": "chat.completion",
+    "created": 1790809545,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.99.00\", \"reason\": \"Document cases for carrying papers are classified under heading 4202 as other bags, cases and similar containers not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for document cases, likely \"bags, cases, etc. of leather or plastic\". Likely 4202.31.00? Let's see: 4202 covers trunks, suitcases, etc. 4202.31 is \"of leather\". 4202.92 is \"of plastics\". Since outer surface either plastic sheeting or genuine leather, could be 4202.92.00 (of plastics) or 4202.31.00 (of leather). Most generic maybe 4202.92.00 for \"other\". Actually 4202.92 is \"of plastics\". 4202.99 is \"other\". Document cases likely \"other bags\". I'd choose 4202.99.00 \"Other\". Reason: document cases made of plastic or leather, not specifically covered. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047313622,
+      "prompt_tokens": 324,
+      "prompt_time": 0.015510913,
+      "completion_tokens": 224,
+      "completion_time": 0.477834942,
+      "total_tokens": 548,
+      "total_time": 0.493345855,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3t926gaeysrkcvpd1ex7zaw",
+      "seed": 723997585
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "42029900",
+  "predicted_reason": "Document cases for carrying papers are classified under heading 4202 as other bags, cases and similar containers not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

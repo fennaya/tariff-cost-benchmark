@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357215",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "9002909500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7ea7fd4f-fb00-4056-8483-e8ec436d40ce",
+    "object": "chat.completion",
+    "created": 1790725987,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9001.20.00\", \"reason\": \"Classified under heading 9001 for parts of headlamps and signalling lamps for vehicles.\"}",
+          "reasoning": "We need HTS code for lens holder assembly for automobile headlamp, plastic. Likely under 9001? Actually headlamp parts: 9001.10.00 (Headlamps and signalling lamps, of vehicle). But lens cover maybe 9001.20? Let's check: 9001.20.00 - Parts of headlamps. Yes. So code 9001.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048362411,
+      "prompt_tokens": 234,
+      "prompt_time": 0.00972353,
+      "completion_tokens": 135,
+      "completion_time": 0.280294943,
+      "total_tokens": 369,
+      "total_time": 0.290018473,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3qsc6rme2t8cww1ymdth5hc",
+      "seed": 205831732
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90012000",
+  "predicted_reason": "Classified under heading 9001 for parts of headlamps and signalling lamps for vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

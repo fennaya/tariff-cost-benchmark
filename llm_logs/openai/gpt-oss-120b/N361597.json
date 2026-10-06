@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361597",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "8704230100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e5b221c2-d5af-48c7-9495-02ddd4fb521a",
+    "object": "chat.completion",
+    "created": 1790799860,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8701.92.00.00\", \"reason\": \"Classified as a self\u2011propelled forestry forwarder, a heavy-duty tractor not used for general transport, falling under heading 8701.92 for other self\u2011propelled tractors.\"}",
+          "reasoning": "We need HTS code for forestry forwarder, self-propelled, diesel, heavy. Likely under 8701? That's tractors. But forestry forwarder is a \"self-propelled forestry machine\" maybe under 8701.91? Let's check: 8701.91 - tractors, self-propelled, for agricultural use? Actually 8701.91 is \"Self-propelled tractors, other than those of heading 8709\". 8709 is \"Parts\". Hmm. Forestry forwarder maybe under 8701.92 \"Other self-propelled tractors\". Could be 8701.92. Let's pick 8701.92."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.222958632,
+      "prompt_tokens": 482,
+      "prompt_time": 0.022690823,
+      "completion_tokens": 205,
+      "completion_time": 0.424766108,
+      "total_tokens": 687,
+      "total_time": 0.447456931,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3sztm8xeqqaa2kptr1dtq2r",
+      "seed": 2088549748
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8701920000",
+  "predicted_reason": "Classified as a self\u2011propelled forestry forwarder, a heavy-duty tractor not used for general transport, falling under heading 8701.92 for other self\u2011propelled tractors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

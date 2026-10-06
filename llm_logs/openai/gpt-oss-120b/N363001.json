@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363001",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8426190000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8b280517-e7f3-4c2c-9fbb-e0c618860b4e",
+    "object": "chat.completion",
+    "created": 1790845503,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8429.53.00.00\", \"reason\": \"The TRACS is a self\u2011propelled, diesel\u2011powered machine specifically designed for railway track maintenance and construction, fitting the definition of railway or tramway track maintenance machines under heading 8429.53.\"}",
+          "reasoning": "We need HTS for railroad maintenance machine. Likely under 8429? 8429.52? Let's think: \"Machinery for railway track maintenance\" maybe 8429.52.00.00 is \"Other machines, apparatus and equipment, for the manufacture of metal, etc.\" Not sure. Actually 8429.52 is \"Other machines, apparatus and equipment for the construction, mining, or other special industries\". Could be 8429.52.00.00. Or 8429.53 for railway. Check: 8429.53 is \"Railway or tramway track maintenance machines\". I think 8429.53.00.00. Yes. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.427173248,
+      "prompt_tokens": 414,
+      "prompt_time": 0.045279292,
+      "completion_tokens": 216,
+      "completion_time": 0.453186004,
+      "total_tokens": 630,
+      "total_time": 0.498465296,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3vbbhdwewr8kk4wdsn24fsq",
+      "seed": 197088931
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8429530000",
+  "predicted_reason": "The TRACS is a self\u2011propelled, diesel\u2011powered machine specifically designed for railway track maintenance and construction, fitting the definition of railway or tramway track maintenance machines under heading 8429.53.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359187",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-24812e42-5769-4dfd-ad29-ec7bb676edbc",
+    "object": "chat.completion",
+    "created": 1790727144,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.20.00\", \"reason\": \"Classified as wooden furniture parts (non-functional range hood covers) under heading 9403.20.00.\"}",
+          "reasoning": "We need HTS code for non-functional range hood covers made of wood/MDF. Likely classified under \"Furniture, wooden, not for use as furniture\"? Could be \"Other wooden articles\" 4419? 4419.90.00 covers \"Other wooden articles\". But range hood covers maybe \"parts of furniture\" 9403? 9403.20.00 is \"Other wooden furniture parts\". Since they are covers for range hoods, not functional cabinets. Likely 9403.20.00. Reason: wooden furniture parts. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296012997,
+      "prompt_tokens": 325,
+      "prompt_time": 0.064815057,
+      "completion_tokens": 167,
+      "completion_time": 0.346149381,
+      "total_tokens": 492,
+      "total_time": 0.410964438,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3qtfg17ej4t3ef93ftj4229",
+      "seed": 1803509509
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94032000",
+  "predicted_reason": "Classified as wooden furniture parts (non-functional range hood covers) under heading 9403.20.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

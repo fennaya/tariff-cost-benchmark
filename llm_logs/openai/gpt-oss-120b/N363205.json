@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363205",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7019901100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-14ce9ea3-22db-46e8-8837-d25bdc5f244a",
+    "object": "chat.completion",
+    "created": 1790847708,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.61.90\",\n  \"reason\": \"The product is a PVC\u2011coated fiberglass mesh screen used as a window/door shade, classifiable under heading 6302 for window blinds and shades of plastics.\"\n}",
+          "reasoning": "We need HTS for PVC coated fiberglass screen. Likely under 6302? Actually screens: 6302.61 - Window blinds and shades, of plastics. But retractable screen maybe 6302.60? Or 6302.91? Search memory: 6302.61.90? Could be 6302.61.90 \"Other window blinds and shades, of plastics\". PVC coated fiberglass maybe 6302.61.90. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197485409,
+      "prompt_tokens": 771,
+      "prompt_time": 0.035760598,
+      "completion_tokens": 162,
+      "completion_time": 0.349511328,
+      "total_tokens": 933,
+      "total_time": 0.385271926,
+      "completion_tokens_details": {
+        "reasoning_tokens": 98
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3vdev74ejxsynnc6pqyap3h",
+      "seed": 679320671
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63026190",
+  "predicted_reason": "The product is a PVC\u2011coated fiberglass mesh screen used as a window/door shade, classifiable under heading 6302 for window blinds and shades of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

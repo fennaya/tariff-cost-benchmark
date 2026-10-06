@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358338",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3d0e49dd-022a-415d-a806-48d0336703fb",
+    "object": "chat.completion",
+    "created": 1790608019,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.90.90.00\",\"reason\":\"It is a non\u2011mechanically propelled trailer used for transporting industrial containers, fitting the HTSUS heading 8708.90.90 for other trailers.\"}",
+          "reasoning": "Need HTS code for industrial container bomb cart trailer. Likely 8708.90.90? Actually trailers for containers: 8708.90.90 is \"Other trailers\". But for industrial container trailers maybe 8708.90.90. Need 10-digit: 8708.90.90XX? Actually 8708.90.90 is 8-digit. 10-digit adds 2 more digits for subheading. Could be 8708.90.90.00. Reason: trailer not mechanically propelled. So 8708.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.163988149,
+      "prompt_tokens": 239,
+      "prompt_time": 0.049457841,
+      "completion_tokens": 180,
+      "completion_time": 0.201645497,
+      "total_tokens": 419,
+      "total_time": 0.251103338,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8e23cedc90",
+    "x_groq": {
+      "id": "req_01m3m8w430e5nsg7phwfk8hr39",
+      "seed": 1793455761
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708909000",
+  "predicted_reason": "It is a non\u2011mechanically propelled trailer used for transporting industrial containers, fitting the HTSUS heading 8708.90.90 for other trailers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

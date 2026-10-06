@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361444",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8536908585",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-9e45f520-f8a6-4d4d-b228-6490df79ede4",
+    "object": "chat.completion",
+    "created": 1790703443,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8508.90.90.00\",\"reason\":\"The product is a liquid\u2011cooled copper busbar, an electrical conductor not otherwise specified, fitting the 8508.90.90 entry for other electrical conductors.\"}",
+          "reasoning": "Need HTS code for liquid-cooled busbar. Likely 8508.90.90? Actually busbars are electrical conductors. 8508.90.90 is \"Other electrical conductors, not otherwise specified\". But busbar is a conductor. Maybe 8508.90.90. But 8508.90.90 is for other electrical conductors. 8508.90.90 includes busbars? 8508.90.90 includes \"Other electrical conductors, not otherwise specified\". 8508.90.90 includes \"busbars\". So code 8508.90.90. But 10-digit: 8508.90.90.00? Actually 10-digit: 8508.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.166812248,
+      "prompt_tokens": 314,
+      "prompt_time": 0.074016272,
+      "completion_tokens": 223,
+      "completion_time": 0.23936389,
+      "total_tokens": 537,
+      "total_time": 0.313380162,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_334cc21c60",
+    "x_groq": {
+      "id": "req_01m3q3w7h7etm8m5fvhxs4my2x",
+      "seed": 774493773
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8508909000",
+  "predicted_reason": "The product is a liquid\u2011cooled copper busbar, an electrical conductor not otherwise specified, fitting the 8508.90.90 entry for other electrical conductors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

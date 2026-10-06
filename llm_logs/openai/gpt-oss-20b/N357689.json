@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357689",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "6110202079",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d165819d-9548-4f7b-99d9-9e5dd29deb2a",
+    "object": "chat.completion",
+    "created": 1790607671,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6109.10.10.00\",\"reason\":\"Knitted girls\u2019 blouses of cotton or cotton blends fall under 6109.10.10, the heading for other knitted or crocheted women\u2019s or girls\u2019 blouses, shirts, and similar articles of cotton.\"}",
+          "reasoning": "Need HTS 10-digit. Girl's blouse cotton/polyester knit. Likely 6109.10.10? Actually 6109.10.10 is \"Other knitted or crocheted women's or girls' blouses, shirts, and similar articles, of cotton\". But polyester mix? 6109.10.20 is for polyester. Mixed? 6109.10.30? Let's check: 6109.10.10: cotton; 6109.10.20: polyester; 6109.10.30: other synthetic. For mixed cotton/polyester, maybe 6109.10.10? Might be 6109.10.10 for cotton; but mixed? Could be 6109.10.10 for cotton; 6109.10.20 for polyester; 6109.10.30 for other synthetic. Mixed cotton/polyester likely 6109.10.10? Actually 6109.10.10 is \"Other knitted or crocheted women's or girls' blouses, shirts, and similar articles, of cotton\". Mixed not specified. Maybe 6109.10.10 covers all cotton or cotton blends? Might be 6109.10.10. But 6109.10.20 is polyester. So choose 6109.10.10. Provide 10-digit: 6109.10.10.00? Actually 10-digit: 6109.10.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150714917,
+      "prompt_tokens": 258,
+      "prompt_time": 0.012440652,
+      "completion_tokens": 376,
+      "completion_time": 0.442967445,
+      "total_tokens": 634,
+      "total_time": 0.455408097,
+      "completion_tokens_details": {
+        "reasoning_tokens": 305
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e2cb7a84ec",
+    "x_groq": {
+      "id": "req_01m3m8hfvnemyrp8qcmmj15v89",
+      "seed": 1100287197
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109101000",
+  "predicted_reason": "Knitted girls\u2019 blouses of cotton or cotton blends fall under 6109.10.10, the heading for other knitted or crocheted women\u2019s or girls\u2019 blouses, shirts, and similar articles of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

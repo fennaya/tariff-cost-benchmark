@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357207",
+  "rulingDate": "2026-01-06T00:00:00",
+  "true_code": "3403990000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0d2b60c7-e82f-4d9c-a4ac-787b93ad3910",
+    "object": "chat.completion",
+    "created": 1790725982,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2710.19.00.00\", \"reason\": \"Lithium-based industrial lubricating grease falls under heading 2710 for lubricating preparations, specifically subheading 2710.19 for other lubricating preparations not classified elsewhere.\"}",
+          "reasoning": "Need HTS for industrial lubricating grease lithium-based, not automotive. Likely 2710.19.00.00? Let's see: 2710 covers petroleum oils and oils obtained from bituminous minerals, etc., and preparations. 2710.19 is \"Other lubricating preparations\". 2710.19.00.00 is \"Other lubricating preparations\". That seems right. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.315198498,
+      "prompt_tokens": 235,
+      "prompt_time": 0.075953773,
+      "completion_tokens": 148,
+      "completion_time": 0.311852658,
+      "total_tokens": 383,
+      "total_time": 0.387806431,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3qsc1y7e20v0hd1b8tk6j9p",
+      "seed": 846012105
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2710190000",
+  "predicted_reason": "Lithium-based industrial lubricating grease falls under heading 2710 for lubricating preparations, specifically subheading 2710.19 for other lubricating preparations not classified elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

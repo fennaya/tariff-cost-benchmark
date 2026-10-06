@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359426",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909216",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-67385bd7-fdd4-424a-9fb9-1c45fa9084c1",
+    "object": "chat.completion",
+    "created": 1790904642,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.99.90.10\",\"reason\":\"Dasatinib is a pharmaceutical preparation not elsewhere specified, fitting the HTSUS heading 3004.99.90 for other pharmaceutical preparations.\"}",
+          "reasoning": "Need HTS code for pharmaceutical preparations, active ingredient dasatinib. Likely 3004.99.90? Actually 3004.99.90 is \"Other pharmaceutical preparations\". 3004.99.90 is for other preparations. 3004.99.90.10? But 10-digit: 3004.99.90.10? Wait 10-digit: 3004.99.90.10 is \"Other pharmaceutical preparations, not elsewhere specified\". But dasatinib is a drug. So 3004.99.90.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194329123,
+      "prompt_tokens": 242,
+      "prompt_time": 0.011733568,
+      "completion_tokens": 177,
+      "completion_time": 0.188949524,
+      "total_tokens": 419,
+      "total_time": 0.200683092,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m3x3ratwe82rdebkvs83b1rk",
+      "seed": 1341869512
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004999010",
+  "predicted_reason": "Dasatinib is a pharmaceutical preparation not elsewhere specified, fitting the HTSUS heading 3004.99.90 for other pharmaceutical preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

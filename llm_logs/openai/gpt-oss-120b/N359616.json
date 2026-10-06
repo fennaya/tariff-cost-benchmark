@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359616",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9707c68b-862e-4b72-b45c-3e5162a08416",
+    "object": "chat.completion",
+    "created": 1790730055,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7318.15.00\",\n  \"reason\": \"The mandrel is a steel article not classified elsewhere, fitting the category of 'Other articles of iron or steel, not elsewhere specified' under heading 7318.\"\n}",
+          "reasoning": "We need HTS code for steel mandrel plug. Likely under 7318.15.00? 7318 covers other articles of iron or steel, not elsewhere specified. Mandrels as \"drill bits\" maybe 8205.20? 8205.20 is \"hand tools, not elsewhere specified\". But it's a steel article, not a tool. Could be \"parts of machines\" 8483? Not. Likely 7318.15.00 \"Other articles of iron or steel, threaded, for use in machinery\". Actually 7318.15 is \"Other articles of iron or steel, not elsewhere specified\". Could be 7318.15.00. Provide.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018801803,
+      "prompt_tokens": 342,
+      "prompt_time": 0.016044183,
+      "completion_tokens": 208,
+      "completion_time": 0.435005391,
+      "total_tokens": 550,
+      "total_time": 0.451049574,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3qx8b7jewssss8txfy14mar",
+      "seed": 548642381
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73181500",
+  "predicted_reason": "The mandrel is a steel article not classified elsewhere, fitting the category of 'Other articles of iron or steel, not elsewhere specified' under heading 7318.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358745",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5e34ed52-d3d1-48f5-931e-e93060dcffa1",
+    "object": "chat.completion",
+    "created": 1790726842,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.80\",\n  \"reason\": \"The item is a theatrical costume comprising clothing and accessories, classified under HTSUS heading 9505.90 for other articles and equipment for amusement, not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for costume clothing. Likely 9505.90.80? Actually costumes are under 9505.90.80 (other toys). But clothing items maybe 6204? However costume as a whole maybe 9505.90.80 \"Articles and equipment for sports, gymnastics, etc., not elsewhere specified\". Wait costumes for theatrical use: 9505.90.80 \"Other\". Also 9505.90.90. But better: 9505.90.80 \"Other\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086734121,
+      "prompt_tokens": 221,
+      "prompt_time": 0.008355338,
+      "completion_tokens": 175,
+      "completion_time": 0.362814188,
+      "total_tokens": 396,
+      "total_time": 0.371169526,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qt6a2jen1stnwkr29r6k80",
+      "seed": 195218610
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059080",
+  "predicted_reason": "The item is a theatrical costume comprising clothing and accessories, classified under HTSUS heading 9505.90 for other articles and equipment for amusement, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

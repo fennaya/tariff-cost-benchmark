@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363777",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "9029204080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0d850dde-7ecd-4cb5-9a4d-8cc83006ed4a",
+    "object": "chat.completion",
+    "created": 1790860851,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9029.20.00\", \"reason\": \"The device is a wearable medical instrument for monitoring pulse rate and oxygen saturation, classified under other medical apparatus not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for wearable medical device PPG. Likely 9022.12.00? 9022.12 is \"Apparatus for measuring or checking blood pressure\". For pulse oximeters: 9029.20? Actually 9029.20 is \"Other instruments and appliances used in medical, surgical, dental or veterinary sciences, not elsewhere specified\". Pulse oximeters often 9029.20. But wearable continuous monitor maybe 9022.30? Let's pick 9029.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206821301,
+      "prompt_tokens": 360,
+      "prompt_time": 0.017147747,
+      "completion_tokens": 162,
+      "completion_time": 0.344165822,
+      "total_tokens": 522,
+      "total_time": 0.361313569,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3vszxqce74bdg1k9zejt9r6",
+      "seed": 140126020
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90292000",
+  "predicted_reason": "The device is a wearable medical instrument for monitoring pulse rate and oxygen saturation, classified under other medical apparatus not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

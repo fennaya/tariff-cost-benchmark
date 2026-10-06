@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359390",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-a5fad066-db35-4ca4-88a2-35f445a7d4bd",
+    "object": "chat.completion",
+    "created": 1790630307,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.20.00\",\"reason\":\"Sodium phenylbutyrate is a medicinal preparation containing an organic compound, classified under 3004.10.20 for other medicinal preparations containing other organic compounds.\"}",
+          "reasoning": "Need HTS code for sodium phenylbutyrate tablets. It's a pharmaceutical drug. HTS 3004.10.10? Actually 3004.10.10 is \"Other medicinal preparations containing alkaloids\". But phenylbutyrate is a drug, not alkaloid. 3004.10.20 is \"Other medicinal preparations containing other organic compounds\". Let's check: 3004.10.20 is \"Other medicinal preparations containing other organic compounds\". That likely. So code 3004.10.20.00? 10-digit: 3004.10.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016161494,
+      "prompt_tokens": 234,
+      "prompt_time": 0.011570146,
+      "completion_tokens": 191,
+      "completion_time": 0.201973305,
+      "total_tokens": 425,
+      "total_time": 0.213543451,
+      "completion_tokens_details": {
+        "reasoning_tokens": 131
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9b8528b477",
+    "x_groq": {
+      "id": "req_01m3my4905ejkt9r3fhv1daadp",
+      "seed": 399557657
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004102000",
+  "predicted_reason": "Sodium phenylbutyrate is a medicinal preparation containing an organic compound, classified under 3004.10.20 for other medicinal preparations containing other organic compounds.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

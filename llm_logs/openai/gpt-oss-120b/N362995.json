@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362995",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "8531200040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e3626013-66a3-4275-a6cf-7a0a2c664204",
+    "object": "chat.completion",
+    "created": 1790845177,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8541.40.00\", \"reason\": \"Classified under LED devices (light\u2011emitting diodes) as a complete LED assembly used for status indication.\"}",
+          "reasoning": "We need HTS code for LED assembly. Likely 8541.40.00? Actually LED lamps: 8541.40.00 is \"Light-emitting diodes\". But assemblies maybe 8542.39? Let's pick 8541.40.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.312310559,
+      "prompt_tokens": 340,
+      "prompt_time": 0.09535377,
+      "completion_tokens": 108,
+      "completion_time": 0.225607102,
+      "total_tokens": 448,
+      "total_time": 0.320960872,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3vb1jy3ea2ac7h3wrw0xkqv",
+      "seed": 1826377124
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85414000",
+  "predicted_reason": "Classified under LED devices (light\u2011emitting diodes) as a complete LED assembly used for status indication.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359133",
+  "rulingDate": "2026-03-11T00:00:00",
+  "true_code": "4823906700",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c6f6255d-a575-4a6f-bcfa-b4c849007967",
+    "object": "chat.completion",
+    "created": 1790904674,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4911.91.00\",\n  \"reason\": \"The items are printed cardboard sheets used for advertising signage, classified as other printed matter.\"\n}",
+          "reasoning": "We need HTS code for printed cardboard signage borders. Likely under heading 4820? Actually printed paper, cardboard, not for packaging. Could be \"Paperboard, coated, printed, for advertising\". HTS 4820.10.00? Let's check: 4820.10.00 - Paperboard, coated, impregnated, covered, or laminated with plastics, etc. Not. 4820.20.00 - Paperboard, coated, impregnated, covered, or laminated with other materials. Hmm.\n\nMaybe 4911.99.00 - Other printed matter, including printed pictures and photographs. But that's for printed matter not elsewhere specified. Could be 3919? No.\n\nBetter: 4820.20.00 is \"Paperboard, coated, impregnated, covered, or laminated with other materials\". Not printed.\n\nPrinted paper for advertising: 4911.10.00 - Printed books, brochures, leaflets. 4911.91.00 - Other printed matter, including printed pictures and photographs. Actually 4911.91.00 is \"Other printed matter, including printed pictures and photographs\". That seems plausible.\n\nThus choose 4911.91.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.533638605,
+      "prompt_tokens": 363,
+      "prompt_time": 0.132883905,
+      "completion_tokens": 295,
+      "completion_time": 0.628704235,
+      "total_tokens": 658,
+      "total_time": 0.76158814,
+      "completion_tokens_details": {
+        "reasoning_tokens": 248
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m3x3s97wea9rtvac547phjsq",
+      "seed": 695181858
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49119100",
+  "predicted_reason": "The items are printed cardboard sheets used for advertising signage, classified as other printed matter.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

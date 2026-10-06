@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361015",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "0901901000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f65504ed-9891-4806-9404-af6263b95735",
+    "object": "chat.completion",
+    "created": 1790780129,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1212.90.00\", \"reason\": \"Cascara is a dried, unprocessed agricultural by\u2011product (coffee cherry husk) classified under vegetable flours, meals and powders not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for dried coffee cherry husk (cascara). Likely under \"Coffee, roasted, not decaffeinated\" etc? But cascara is not coffee bean. Might be under \"Fruit, dried, other\" 0809? Coffee husks maybe 1211? Actually HS 1211 is \"Vegetable saps and extracts\". 0809 is \"Other nuts, fresh or dried\". Coffee beans are 0901. Coffee husks maybe 1211. Let's search memory: HTS 1211.90.00 - \"Other vegetable extracts, essences and concentrates\". Not.\n\nMaybe 1212 is \"Vegetable flours, meals and powder\". 1212.90.00 \"Other\". Dried coffee husk could be considered \"Coffee husks, dried\" maybe 1212.90.00.\n\nCheck: 1212.90.00 \"Other vegetable flours, meals and powder, not elsewhere specified\". Cascara is not flour.\n\nCould be 0809.90.00 \"Other nuts, fresh or dried\". Not.\n\nBetter: 1211.90.00 \"Other vegetable extracts, essences and concentrates\". Not.\n\nI think 1212.90.00 is plausible.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.217179471,
+      "prompt_tokens": 435,
+      "prompt_time": 0.017115924,
+      "completion_tokens": 321,
+      "completion_time": 0.883066219,
+      "total_tokens": 756,
+      "total_time": 0.900182143,
+      "completion_tokens_details": {
+        "reasoning_tokens": 262
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3sd0ersecerdadta9z0y359",
+      "seed": 895606834
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "12129000",
+  "predicted_reason": "Cascara is a dried, unprocessed agricultural by\u2011product (coffee cherry husk) classified under vegetable flours, meals and powders not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

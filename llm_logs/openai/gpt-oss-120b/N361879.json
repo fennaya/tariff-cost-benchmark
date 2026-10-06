@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361879",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "4803004000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cf92cb52-c152-4681-91b4-22cf45dfdc12",
+    "object": "chat.completion",
+    "created": 1790809119,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.30.00\", \"reason\": \"Uncoated, lightweight absorbent paper rolls used as raw material, not containing SAP, fall under paper and paperboard, uncoated, of a kind used for other purposes.\"}",
+          "reasoning": "We need HTS code for absorbent paper, uncoated, not SAP. Likely 4811.10.00? Let's see: 4811 covers paper and paperboard, coated, impregnated, etc. 4811.10 is \"paper and paperboard, coated, impregnated, covered, surface-treated, etc.\" Not. 4811.20 is \"paper and paperboard, uncoated, of a kind used for writing, printing or copying\". 4811.30 is \"paper and paperboard, uncoated, of a kind used for other purposes\". Within 4811.30, subheadings: 4811.30.00 is \"paper and paperboard, uncoated, of a kind used for other purposes\". Might be 4811.30.00. But there is also 4811.30.10? Actually HTSUS 2022: 4811.30.00 is \"Paper and paperboard, uncoated, of a kind used for other purposes\". So likely that.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205028162,
+      "prompt_tokens": 333,
+      "prompt_time": 0.013646845,
+      "completion_tokens": 288,
+      "completion_time": 0.597315284,
+      "total_tokens": 621,
+      "total_time": 0.610962129,
+      "completion_tokens_details": {
+        "reasoning_tokens": 224
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3t8n5hwehzvx7hs922tdp5e",
+      "seed": 813811328
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "48113000",
+  "predicted_reason": "Uncoated, lightweight absorbent paper rolls used as raw material, not containing SAP, fall under paper and paperboard, uncoated, of a kind used for other purposes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

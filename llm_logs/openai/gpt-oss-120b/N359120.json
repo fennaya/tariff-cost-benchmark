@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359120",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b0ad3466-31db-4e62-a25a-76469517092f",
+    "object": "chat.completion",
+    "created": 1790727095,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.92.90.00\", \"reason\": \"The item is a small synthetic leather pouch, classified under other articles of leather or composition leather not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for microphone leather cover, synthetic leather, drawstring pouch. Likely classified under \"Other articles of leather or composition leather\" 4202? Actually 4202 covers trunks, suitcases, etc. For small leather goods: 4202.31? Let's think: 4202.31 - Handbags, etc. Not. Maybe 4202.92 - Articles of leather or composition leather, other. 4202.92.90? 4202.92.90 is \"Other articles of leather or composition leather, not elsewhere specified\". Could be 4202.92.90. That's 8 digits; need 10-digit: 4202.92.90.00. So answer.\n\nReason: small synthetic leather pouch classified as other articles of leather/composition leather."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087369156,
+      "prompt_tokens": 258,
+      "prompt_time": 0.011823997,
+      "completion_tokens": 219,
+      "completion_time": 0.458035027,
+      "total_tokens": 477,
+      "total_time": 0.469859024,
+      "completion_tokens_details": {
+        "reasoning_tokens": 168
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3qte0d0e4ybraw2121g54yw",
+      "seed": 1813245878
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202929000",
+  "predicted_reason": "The item is a small synthetic leather pouch, classified under other articles of leather or composition leather not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

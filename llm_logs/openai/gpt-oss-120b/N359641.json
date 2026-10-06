@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359641",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7607205000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d76a1bef-db8c-4f2d-83e2-805ef5d461df",
+    "object": "chat.completion",
+    "created": 1790730512,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7610.10.90\", \"reason\": \"Aluminum foil laminated with a PET film and adhesive, classified under other aluminum foil products\"}",
+          "reasoning": "We need HTS code for aluminum laminate film used in furniture, composite with PET. Likely under 3919? Actually plastic films with metal. 3919.90.00? Or 7610? Aluminum foil laminated with plastic: 7610.10? 7610.10 is aluminum foil (rolled). Laminated with plastic maybe 7610.10.90? Check: HTS 7610.10.00 - Aluminum foil (rolled). But laminated may be under 7610.10.90 \"Other\". Could be 7610.10.90. Reason. I'll choose 7610.10.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048702933,
+      "prompt_tokens": 350,
+      "prompt_time": 0.020724643,
+      "completion_tokens": 178,
+      "completion_time": 0.369965493,
+      "total_tokens": 528,
+      "total_time": 0.390690136,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3qxp9vhea68jmwm8ttbdwyc",
+      "seed": 1452718373
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76101090",
+  "predicted_reason": "Aluminum foil laminated with a PET film and adhesive, classified under other aluminum foil products",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

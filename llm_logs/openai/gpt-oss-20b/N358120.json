@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358120",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-aff6713c-e81a-4649-b297-582a390db62f",
+    "object": "chat.completion",
+    "created": 1790607886,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9018.90.90\",\"reason\":\"It is a medical device with electronic monitoring but not a dispensing instrument, fitting the 'other instruments and apparatus for measuring or testing' category.\"}",
+          "reasoning": "Need HTS code. It's a medical device with electronic monitoring, not dispensing. Likely 9018.90.90? Actually 9018.90.90 is \"Other instruments and apparatus for measuring or testing\". But this is a medical device. Maybe 9018.90.90 covers other medical instruments. But it's electronic device with sensors. Could be 9018.90.90. But maybe 9018.90.90 is for other instruments. Alternatively 9018.90.90 includes \"Other instruments and apparatus for measuring or testing\". But this is a medication vial with electronic monitoring. Might be 9018.90.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.677713783,
+      "prompt_tokens": 304,
+      "prompt_time": 0.017561322,
+      "completion_tokens": 191,
+      "completion_time": 0.212939601,
+      "total_tokens": 495,
+      "total_time": 0.230500923,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_639a5351c8",
+    "x_groq": {
+      "id": "req_01m3m8r1dfe628d4jjt9xf5hgj",
+      "seed": 340202088
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189090",
+  "predicted_reason": "It is a medical device with electronic monitoring but not a dispensing instrument, fitting the 'other instruments and apparatus for measuring or testing' category.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

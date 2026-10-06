@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361392",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b3d6ba06-6148-494e-9e4e-95b5a5407fc4",
+    "object": "chat.completion",
+    "created": 1790792122,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6104.63.10\", \"reason\": \"The item is a women's robe/dress made of textile with elastic waist, classified under women's or girls' dresses, knitted or crocheted, of cotton.\"}",
+          "reasoning": "We need HTS code for a garment described: a robe, likely a women's dress? It's a robe with raw edges, elastic waist. Likely a \"women's or girls' nightgowns, pajamas, negligees\" etc. Could be \"garments, knitted or crocheted, of cotton\". Hard to know material. No material given. Assume textile, maybe cotton. HTS for women's or girls' dresses, knitted, of cotton: 6104.63.10? That's 6104.63.10 = women's or girls' dresses, knitted or crocheted, of cotton, not elsewhere specified. Or 6104.63.20 for other. Could be \"robes\" maybe \"nightgowns\". HTS 6108.21.00 for women's nightgowns of cotton? Actually 6108.21.00 = women's nightgowns, pajamas, negligees of cotton. The description is a robe, maybe outerwear? Could be \"coats, capes, cloaks\" 6204. But likely a \"dress\". I'd choose 6104.63.10.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205814349,
+      "prompt_tokens": 201,
+      "prompt_time": 0.011921352,
+      "completion_tokens": 294,
+      "completion_time": 0.620366277,
+      "total_tokens": 495,
+      "total_time": 0.632287629,
+      "completion_tokens_details": {
+        "reasoning_tokens": 236
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3sreffme4ztdwfcwk8pd27k",
+      "seed": 47781085
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61046310",
+  "predicted_reason": "The item is a women's robe/dress made of textile with elastic waist, classified under women's or girls' dresses, knitted or crocheted, of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

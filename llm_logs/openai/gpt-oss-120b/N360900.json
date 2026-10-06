@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360900",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9405994090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5467c3c8-90e3-4d98-9ed3-beae40b56645",
+    "object": "chat.completion",
+    "created": 1790777463,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.91.00\", \"reason\": \"The product is a lampshade made of pleated silk (a textile material) and thus falls under heading 6302.91 for lampshades and parts thereof of textile materials.\"}",
+          "reasoning": "Need HTS for lampshade made of silk with steel frame. Likely heading 6302? Actually lampshades: 9405.40? Check: 9405.40.00 - Lamps and lighting fittings, of plastics? Wait. 9405.40 is \"Other lamps and lighting fittings\". But textile lampshades maybe 6302.91? 6302.91.00 - Lampshades and parts thereof, of textile materials. Yes 6302.91.00 covers lampshades of textile. So code 6302.91.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207562739,
+      "prompt_tokens": 215,
+      "prompt_time": 0.02676833,
+      "completion_tokens": 190,
+      "completion_time": 0.401795019,
+      "total_tokens": 405,
+      "total_time": 0.428563349,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3saf3rcek8b9wkfp5gywgkw",
+      "seed": 209638787
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029100",
+  "predicted_reason": "The product is a lampshade made of pleated silk (a textile material) and thus falls under heading 6302.91 for lampshades and parts thereof of textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

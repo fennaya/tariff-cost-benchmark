@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362356",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8db306bc-ed09-4c0d-af63-c3f477f7b9c8",
+    "object": "chat.completion",
+    "created": 1790825073,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"Insufficient product details to assign a specific HTSUS code.\"}",
+          "reasoning": "We need to guess? Insufficient info. Probably cannot determine. Might respond with unknown. But must give code. Could use 9901.00.00.00 for \"Special classification provisions\"? Not sure. Maybe use 9999.00.00.00? Actually HTS codes are 10 digits like 9999.00.00.00? The format \"XXXX.XX.XXXX\". Provide placeholder? Might say cannot determine. But must output JSON. Could put null? Probably give \"0000.00.0000\". Provide reason insufficient info."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204415491,
+      "prompt_tokens": 162,
+      "prompt_time": 0.007136951,
+      "completion_tokens": 158,
+      "completion_time": 0.327486276,
+      "total_tokens": 320,
+      "total_time": 0.334623227,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3tqw2cdeqy8wbjh1a5e8kkx",
+      "seed": 1355322080
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "Insufficient product details to assign a specific HTSUS code.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

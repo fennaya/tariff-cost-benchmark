@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359115",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8544429090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-135614d5-999f-47a0-a139-88f8375bf9ac",
+    "object": "chat.completion",
+    "created": 1790727083,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.42.00\",\n  \"reason\": \"The product is a liquid\u2011cooled high\u2011power EV charging cable assembly (\u22641,000\u202fV) used for charging electric vehicle batteries, classifiable under HTSUS 8544.42.00 \u2013 electrical apparatus for charging electric accumulators.\"\n}",
+          "reasoning": "We need HTS code for EV charging cable assembly, liquid-cooled, <=1000V. Likely under 8544.42.00? 8544.42.00 is \"Electrical machines and apparatus, having individual functions, not elsewhere specified, for electric vehicle charging\". Actually 8544.42 is \"Electrical apparatus for charging electric accumulators\". Check: 8544.42.00 - \"Electrical apparatus for charging electric accumulators, for electric vehicles\". Could be 8544.42.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206731241,
+      "prompt_tokens": 370,
+      "prompt_time": 0.049174972,
+      "completion_tokens": 193,
+      "completion_time": 0.405951072,
+      "total_tokens": 563,
+      "total_time": 0.455126044,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3qtdn8tergt93dd8qqs8gk3",
+      "seed": 1253738727
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444200",
+  "predicted_reason": "The product is a liquid\u2011cooled high\u2011power EV charging cable assembly (\u22641,000\u202fV) used for charging electric vehicle batteries, classifiable under HTSUS 8544.42.00 \u2013 electrical apparatus for charging electric accumulators.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

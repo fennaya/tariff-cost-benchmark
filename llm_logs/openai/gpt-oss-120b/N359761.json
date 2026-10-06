@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359761",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "8544429090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-296e1e1e-b684-427f-a728-e565baa0228d",
+    "object": "chat.completion",
+    "created": 1790735335,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.49.00\",\n  \"reason\": \"The item is a wiring harness assembly used to make electrical connections within a machine, classified under HTSUS 8544.49.00 for other electrical apparatus for making connections.\"\n}",
+          "reasoning": "We need HTS for wiring harness assembly. Likely 8544.42.00? Actually 8544.42.00 is \"Electrical machines and apparatus, having individual functions, not specified elsewhere\". For wiring harnesses: 8544.49? Let's think: 8544.42 is \"Electrical apparatus for switching or protecting electrical circuits, or for making connections to or in electrical circuits\". Wiring harnesses maybe 8544.49.00 \"Other\". Could be 8544.49.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.22278016,
+      "prompt_tokens": 221,
+      "prompt_time": 0.010088856,
+      "completion_tokens": 176,
+      "completion_time": 0.366052314,
+      "total_tokens": 397,
+      "total_time": 0.37614117,
+      "completion_tokens_details": {
+        "reasoning_tokens": 110
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3r29fkhe3pb2kvja0yza7fx",
+      "seed": 1350779747
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444900",
+  "predicted_reason": "The item is a wiring harness assembly used to make electrical connections within a machine, classified under HTSUS 8544.49.00 for other electrical apparatus for making connections.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359569",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3824994190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a464318a-b818-4b50-8302-56f6d570183c",
+    "object": "chat.completion",
+    "created": 1790728132,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3815.00.00\", \"reason\": \"The product is a prepared wax mixture (beeswax, soybean wax, fragrance/mineral oil) intended for application to sports equipment, classifying it under prepared waxes.\"}",
+          "reasoning": "We need HTS for waxes used on sports equipment. Likely \"wax, prepared\" 3815? Actually HTS 3815.00.00 is \"Prepared waxes, o/w, for industrial use\". But for cosmetics? Could be 3401? No. Beeswax etc. 1520? Let's pick 3815.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047834951,
+      "prompt_tokens": 466,
+      "prompt_time": 0.01918295,
+      "completion_tokens": 139,
+      "completion_time": 0.29130087,
+      "total_tokens": 605,
+      "total_time": 0.31048382,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3qvdn49ebetbakdm39vd87x",
+      "seed": 100587051
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "38150000",
+  "predicted_reason": "The product is a prepared wax mixture (beeswax, soybean wax, fragrance/mineral oil) intended for application to sports equipment, classifying it under prepared waxes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

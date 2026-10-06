@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360637",
+  "rulingDate": "2026-05-04T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-61cfd17b-a60f-4640-8e1a-b657745ba227",
+    "object": "chat.completion",
+    "created": 1790768869,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.90\", \"reason\": \"Classified as a craft kit containing plastic components and accessories, falling under 'Other toys, not elsewhere specified'\"}",
+          "reasoning": "We need HTS for craft kits with plastic case and accessories. Likely 9503? No, that's toys. Could be 3926.90.99 (Other articles of plastics). Or 9503.00.10? Actually \"craft kits\" often under 9503.00.90 (Other toys). But plastic case with adhesives maybe 3924.90.99 (Other plates, sheets). Better: 9503.00.90 - \"Other toys, not elsewhere specified\". However craft kits maybe 9503.00.10 \"Dolls\". Hmm.\n\nProbably 9503.00.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049078703,
+      "prompt_tokens": 309,
+      "prompt_time": 0.015901575,
+      "completion_tokens": 182,
+      "completion_time": 0.38095628,
+      "total_tokens": 491,
+      "total_time": 0.396857855,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3s28vpbeb7vzq9pfp420dyd",
+      "seed": 1115646222
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95030090",
+  "predicted_reason": "Classified as a craft kit containing plastic components and accessories, falling under 'Other toys, not elsewhere specified'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

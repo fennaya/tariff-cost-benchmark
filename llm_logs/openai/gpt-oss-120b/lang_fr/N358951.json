@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358951",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fe14b8c7-ee7e-462d-9359-f77e0086a87d",
+    "object": "chat.completion",
+    "created": 1790905541,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8716.90.00\",\n  \"reason\": \"The product is a non-motorized industrial trailer with a tilt box, classified under HTS heading 8716 for trailers and semi\u2011trailers, specifically the subheading for other trailers.\"\n}",
+          "reasoning": "We need HTS for industrial trailer with tilt box, no engine. Likely heading 8716.00.00 for trailers and semi-trailers, other than those for motor vehicles. 8716.90.00 for other. Since it's a trailer with a tilt box, but still a trailer. So 8716.90.00? 8716.00.00 is for trailers for motor vehicles. 8716.90.00 is for other trailers. I'd choose 8716.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017913808,
+      "prompt_tokens": 638,
+      "prompt_time": 0.028899312,
+      "completion_tokens": 178,
+      "completion_time": 0.373839212,
+      "total_tokens": 816,
+      "total_time": 0.402738524,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3x4krsfesb8ns42ctj67cja",
+      "seed": 216898919
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87169000",
+  "predicted_reason": "The product is a non-motorized industrial trailer with a tilt box, classified under HTS heading 8716 for trailers and semi\u2011trailers, specifically the subheading for other trailers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

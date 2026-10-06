@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361705",
+  "rulingDate": "2026-06-12T00:00:00",
+  "true_code": "6110303053",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3051d981-2c4b-4253-9aa9-963547195139",
+    "object": "chat.completion",
+    "created": 1790802710,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.99.0000\",\n  \"reason\": \"General classification for miscellaneous textile fiber products not specified elsewhere, covering the broad category referenced in the labeling requirement.\"\n}",
+          "reasoning": "We need to infer HTS code: description is about labeling requirements, not product. Likely \"Other\" maybe 6302? But it's about textile fiber products labeling, not a specific product. Could be \"9701.00.00\" for museum objects? No.\n\nProbably the product is \"Textile fiber products\" generic. Could be heading 6302 - other made up articles of textile materials. But need 10-digit: 6302.99.0000? Let's choose 6302.99.0000 (Other made up textile articles, not elsewhere specified). Reason: generic textile fiber products.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152858713,
+      "prompt_tokens": 262,
+      "prompt_time": 0.015559762,
+      "completion_tokens": 179,
+      "completion_time": 0.376700323,
+      "total_tokens": 441,
+      "total_time": 0.392260085,
+      "completion_tokens_details": {
+        "reasoning_tokens": 127
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m3t2hkf4e0x93g4nfftrke6d",
+      "seed": 377989326
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302990000",
+  "predicted_reason": "General classification for miscellaneous textile fiber products not specified elsewhere, covering the broad category referenced in the labeling requirement.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

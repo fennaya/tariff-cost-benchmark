@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360246",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3004200083",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8ff7ee43-5c2e-4006-b4d7-ff385918d07b",
+    "object": "chat.completion",
+    "created": 1790757545,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00.00\",\n  \"reason\": \"Doxorubicin hydrochloride liposome injection is a medicinal product for therapeutic use classified under heading 3004 (medicaments) and specifically under subheading 3004.90 for other antineoplastic agents not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for doxorubicin hydrochloride liposome injection. Likely under 3004.90? Actually doxorubicin is an antineoplastic drug, HS 3004.90.00.00 for \"Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of mixed or unmixed products for therapeutic use, put up in measured doses or in forms or packings for retail sale\". Liposomal formulation maybe 3004.90.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.14736785,
+      "prompt_tokens": 233,
+      "prompt_time": 0.011549659,
+      "completion_tokens": 190,
+      "completion_time": 0.399797127,
+      "total_tokens": 423,
+      "total_time": 0.411346786,
+      "completion_tokens_details": {
+        "reasoning_tokens": 110
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6c36ac20de",
+    "x_groq": {
+      "id": "req_01m3rqf969eefaeydd73n6gnt9",
+      "seed": 294252149
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900000",
+  "predicted_reason": "Doxorubicin hydrochloride liposome injection is a medicinal product for therapeutic use classified under heading 3004 (medicaments) and specifically under subheading 3004.90 for other antineoplastic agents not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362921",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "7607205000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b41c91c2-536c-48e5-b65d-5ac071439f49",
+    "object": "chat.completion",
+    "created": 1790842688,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3920.90.00\",\n  \"reason\": \"Composite PET/aluminum film with adhesive is classified as other plastic plates, sheets, film, foil and strip not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for PET/aluminum composite film used as passive component. Likely under 3919? 3919.10.00? That's \"Self-adhesive plates, sheets, film, foil and the like, of plastics\". But includes aluminum? Might be under 7610? Aluminum foil with plastic backing maybe 7610.10.00 is \"Aluminum foil (rolled)\". Composite maybe 7610.90.00 other. However PET film with aluminum is \"plastic film, laminated with metal\". HTS 3920? 3920.90.00 \"Other plates, sheets, film, foil and strip, of plastics, not elsewhere specified\". Could be 3920.90.00. Reason: composite film of plastic and metal.\n\nI'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.427659529,
+      "prompt_tokens": 259,
+      "prompt_time": 0.026746169,
+      "completion_tokens": 221,
+      "completion_time": 0.463902259,
+      "total_tokens": 480,
+      "total_time": 0.490648428,
+      "completion_tokens_details": {
+        "reasoning_tokens": 166
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3v8nm2de3wsbj4n474snsed",
+      "seed": 373282259
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39209000",
+  "predicted_reason": "Composite PET/aluminum film with adhesive is classified as other plastic plates, sheets, film, foil and strip not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

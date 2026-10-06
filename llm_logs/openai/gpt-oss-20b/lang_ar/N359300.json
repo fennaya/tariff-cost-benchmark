@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359300",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3004909246",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c238b749-7756-4ffa-ae37-a8d55a6cf6ec",
+    "object": "chat.completion",
+    "created": 1790905644,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.10.00\",\"reason\":\"Clozapine tablets are classified under 3004.10.10.00 \u2013 pharmaceutical preparations containing other compounds.\"}",
+          "reasoning": "We need HTS code for clozapine tablets. It's a pharmaceutical product. HTS 3004.10.10.00? Actually 3004.10.10.00 is \"Pharmaceutical preparations containing other compounds\". Clozapine is a drug. HTS 3004.10.10.00 covers \"Other drugs, not elsewhere specified\". So code 3004.10.10.00. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149240141,
+      "prompt_tokens": 245,
+      "prompt_time": 0.01376694,
+      "completion_tokens": 141,
+      "completion_time": 0.142949805,
+      "total_tokens": 386,
+      "total_time": 0.156716745,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3826805fb8",
+    "x_groq": {
+      "id": "req_01m3x4pwvfe0pv6spj866c2gcv",
+      "seed": 1071343460
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004101000",
+  "predicted_reason": "Clozapine tablets are classified under 3004.10.10.00 \u2013 pharmaceutical preparations containing other compounds.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

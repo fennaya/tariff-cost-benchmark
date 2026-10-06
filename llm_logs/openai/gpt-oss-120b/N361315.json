@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361315",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b1e83aa9-c88f-435a-bd50-576180a1b4a8",
+    "object": "chat.completion",
+    "created": 1790789453,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9305.90.0000\",\n  \"reason\": \"A sword is classified as a weapon not elsewhere specified under heading 9305, which covers other weapons and parts.\"\n}",
+          "reasoning": "We need guess HTS for sword/shield? Likely weapons. Sword: 9305.90.0000? Actually swords under heading 9305 (Other weapons and parts). 9305.90.0000 is \"Other weapons, not elsewhere specified\". Shield maybe 9506? But combined? Probably 9305.90.0000."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297750797,
+      "prompt_tokens": 162,
+      "prompt_time": 0.00799677,
+      "completion_tokens": 129,
+      "completion_time": 0.274613698,
+      "total_tokens": 291,
+      "total_time": 0.282610468,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3snx0vre2m9anxbqwhkr0vp",
+      "seed": 142983569
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9305900000",
+  "predicted_reason": "A sword is classified as a weapon not elsewhere specified under heading 9305, which covers other weapons and parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

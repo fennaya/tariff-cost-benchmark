@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361808",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8479899599",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-58735ab1-9b84-4cbf-899f-b432c7c8dcea",
+    "object": "chat.completion",
+    "created": 1790806191,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.21.00\",\n  \"reason\": \"The system is a magnetic separator designed to remove ferrous metal from mixed recyclable streams, matching the definition of magnetic separators for ferrous metals.\"\n}",
+          "reasoning": "We need HTS code for magnetic separator equipment. Likely 8421.29.90? Actually magnetic separators for ferrous metals: 8421.29.90 - Other sorting or separating machines, self-propelled. Let's check: 8421.29.90 is \"Other sorting or separating machines, self-propelled\". But magnetic separators maybe 8421.29.90. Could be 8421.21.00 \"Magnetic separators for ferrous metals\". Let's recall: 8421.21.00 is \"Magnetic separators for ferrous metals\". Yes that seems right. So code 8421.21.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.223457513,
+      "prompt_tokens": 311,
+      "prompt_time": 0.024008559,
+      "completion_tokens": 197,
+      "completion_time": 0.414487366,
+      "total_tokens": 508,
+      "total_time": 0.438495925,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3t5vtxsea5ttsrfz4bkg63t",
+      "seed": 441131423
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84212100",
+  "predicted_reason": "The system is a magnetic separator designed to remove ferrous metal from mixed recyclable streams, matching the definition of magnetic separators for ferrous metals.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

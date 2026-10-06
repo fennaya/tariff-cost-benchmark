@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358480",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "0307520000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b26b1c07-1e4f-438b-9aae-0db306bbe451",
+    "object": "chat.completion",
+    "created": 1790726736,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0307.99.90\", \"reason\": \"Whole, raw, frozen octopus (a mollusc) falls under heading 0307 for frozen molluscs, specifically subheading 0307.99.90 for other frozen molluscs not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for frozen octopus, whole, raw, uncleaned? After processing but still considered frozen, whole octopus, not cooked. Likely heading 0307.99.90? Let's check: 0307 is \"Fish, crustaceans, molluscs and other aquatic invertebrates, frozen\". Subheading 0307.99 is \"Other\". Then 0307.99.90 is \"Other\". So code 0307.99.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205445193,
+      "prompt_tokens": 268,
+      "prompt_time": 0.011127004,
+      "completion_tokens": 177,
+      "completion_time": 0.367337404,
+      "total_tokens": 445,
+      "total_time": 0.378464408,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qt32dyebmrxm0ttnsjqqh7",
+      "seed": 172096662
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "03079990",
+  "predicted_reason": "Whole, raw, frozen octopus (a mollusc) falls under heading 0307 for frozen molluscs, specifically subheading 0307.99.90 for other frozen molluscs not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

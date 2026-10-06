@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362040",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8530800000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6e16f397-1716-49c7-ba8c-a78a0838b139",
+    "object": "chat.completion",
+    "created": 1790814136,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9025.19.00\",\n  \"reason\": \"The system is a safety detection apparatus combining camera, processor and alarm to detect hazards, classifiable as an instrument for measuring or detecting not elsewhere specified.\"\n}",
+          "reasoning": "We need to pick HTS code. This is a vehicle collision detection system with camera, computing unit, radio receiver, alarm. Likely under \"Vehicle safety systems\" 8708.99.90? Or \"Other parts and accessories of motor vehicles\" 8708.99.90. But it's a safety device, maybe 9025.19.00 (instruments for measuring or detecting). Could be 8526.91.00 (radar apparatus). However camera + AI detection system for vehicle safety likely classified under 9025.19.00 \"Other instruments, apparatus and models, not elsewhere specified, for measuring or detecting\". Or 8525.80.90 \"Other apparatus for transmission or reception of voice, images\". Hmm.\n\nProbably 9025.19.00. I'll answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219849331,
+      "prompt_tokens": 471,
+      "prompt_time": 0.020928401,
+      "completion_tokens": 227,
+      "completion_time": 0.473551148,
+      "total_tokens": 698,
+      "total_time": 0.494479549,
+      "completion_tokens_details": {
+        "reasoning_tokens": 167
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3tde9xyezrbpgmcaftffc4r",
+      "seed": 446446136
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90251900",
+  "predicted_reason": "The system is a safety detection apparatus combining camera, processor and alarm to detect hazards, classifiable as an instrument for measuring or detecting not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

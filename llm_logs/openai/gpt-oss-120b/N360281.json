@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360281",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8537109170",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a88f6210-e116-427e-9581-000f803f30e0",
+    "object": "chat.completion",
+    "created": 1790758239,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8531.10.00.00\",\n  \"reason\": \"The device is a thermostat/thermal switch assembly used for temperature control in heating equipment, classifiable under HTSUS heading 8531 for thermostats and temperature control devices.\"\n}",
+          "reasoning": "We need HTS code for thermostat assembly. Likely 8531.10.00? Actually thermostats: 8531.10.00 is \"Thermostats, thermostatic switches, other temperature control devices\". For printed circuit assemblies with bimetal thermostat maybe 8531.10.00. 10-digit: 8531.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20509007,
+      "prompt_tokens": 301,
+      "prompt_time": 0.060169721,
+      "completion_tokens": 148,
+      "completion_time": 0.309827408,
+      "total_tokens": 449,
+      "total_time": 0.369997129,
+      "completion_tokens_details": {
+        "reasoning_tokens": 81
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3rr4et5ebe9gz2msk2bpkkf",
+      "seed": 1236071545
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8531100000",
+  "predicted_reason": "The device is a thermostat/thermal switch assembly used for temperature control in heating equipment, classifiable under HTSUS heading 8531 for thermostats and temperature control devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

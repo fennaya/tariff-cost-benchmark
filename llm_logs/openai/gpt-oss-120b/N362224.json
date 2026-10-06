@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362224",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8422309191",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-87ba0f88-e0b6-4135-a884-8db0a7fab40a",
+    "object": "chat.completion",
+    "created": 1790820566,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8432.20.00.00\",\n  \"reason\": \"Classified as machinery for planting, transplanting, sowing or other agricultural purposes, specifically a pot-filling line for seedlings.\"\n}",
+          "reasoning": "We need HTS for machinery for filling trays with soil and paper liners. Likely 8425? 8425.90? 8425.90.90? Let's think: \"Machinery for making bags, sacks, etc.\" Not. Could be \"Other agricultural machinery\" 8432? 8432.20 for \"Machinery for planting, transplanting, sowing\". This is pot filler. Might be 8432.20.00.00. Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.317813619,
+      "prompt_tokens": 387,
+      "prompt_time": 0.159403816,
+      "completion_tokens": 159,
+      "completion_time": 0.330573305,
+      "total_tokens": 546,
+      "total_time": 0.489977121,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3tkjgm1e13vhnja7eftzn34",
+      "seed": 1996982679
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8432200000",
+  "predicted_reason": "Classified as machinery for planting, transplanting, sowing or other agricultural purposes, specifically a pot-filling line for seedlings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

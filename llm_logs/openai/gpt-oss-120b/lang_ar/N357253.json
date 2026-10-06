@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-63376efc-944f-4b73-8103-e9cf4f5d6202",
+    "object": "chat.completion",
+    "created": 1790904738,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Indocyanine green is a diagnostic radiopharmaceutical classified under other medicaments not elsewhere specified in heading 3004\"}",
+          "reasoning": "Need HTS for diagnostic radiopharmaceuticals, 25 mg ampoules, indocyanine green? Actually \"green indocyanine\" is a diagnostic agent for imaging. HTS: 3004.90.00? Let's see: 3004 is medicaments. 3004.90 is other medicaments. Indocyanine green is classified under 3004.90.00. So provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.095274378,
+      "prompt_tokens": 250,
+      "prompt_time": 0.009576752,
+      "completion_tokens": 140,
+      "completion_time": 0.294616503,
+      "total_tokens": 390,
+      "total_time": 0.304193255,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3x3v8ngedj94c98z7pk1weq",
+      "seed": 469091874
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Indocyanine green is a diagnostic radiopharmaceutical classified under other medicaments not elsewhere specified in heading 3004",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363491",
+  "rulingDate": "2026-08-12T00:00:00",
+  "true_code": "7317005560",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fcb39a45-a701-49af-8149-0a155c09cefd",
+    "object": "chat.completion",
+    "created": 1790855319,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7318.15.00.00\", \"reason\": \"The item is a stainless steel nail, which falls under heading 7318 for nails, tacks and similar articles of iron or steel, specifically subheading 7318.15 for stainless steel nails.\"}",
+          "reasoning": "We need HTS code for stainless steel nails. Likely 7318.15.00? Let's think: 7318 covers nails, tacks, etc of iron or steel. 7318.15 is \"of stainless steel\". 7318.15.00 is 10-digit? Actually HTSUS 10-digit: 7318.15.00.00. So format \"7318.15.00.00\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295498227,
+      "prompt_tokens": 243,
+      "prompt_time": 0.012104124,
+      "completion_tokens": 165,
+      "completion_time": 0.349225665,
+      "total_tokens": 408,
+      "total_time": 0.361329789,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3vmq3daek8rfzdtvme2tpge",
+      "seed": 1202186437
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318150000",
+  "predicted_reason": "The item is a stainless steel nail, which falls under heading 7318 for nails, tacks and similar articles of iron or steel, specifically subheading 7318.15 for stainless steel nails.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

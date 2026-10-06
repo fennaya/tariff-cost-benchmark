@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361792",
+  "rulingDate": "2026-06-04T00:00:00",
+  "true_code": "6116107520",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ba430609-88f7-4681-a940-e0ccb6249d4b",
+    "object": "chat.completion",
+    "created": 1790805612,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6116.10.20.00\", \"reason\": \"Polyester knit gloves with a TPU membrane are textile gloves of man\u2011made fibers, classified under heading 6116.10 (gloves, mittens, mitts of textile materials) and subheading .20 for man\u2011made fibers.\"}",
+          "reasoning": "We need HTS code for textile gloves with TPU membrane. Likely 6116.10.00.00 (gloves, mittens, mitts, of textile materials). For gloves with waterproof coating maybe 6116.10.20? Check: 6116.10.00.00 is gloves, mittens etc of textile materials. Subheadings: 6116.10.10 (of cotton), .20 (of man-made fibers). Since polyester is man-made, use 6116.10.20. So code 6116.10.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.308031116,
+      "prompt_tokens": 345,
+      "prompt_time": 0.019112528,
+      "completion_tokens": 204,
+      "completion_time": 0.427576257,
+      "total_tokens": 549,
+      "total_time": 0.446688785,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m3t5a55re6zv7bkzq53aanh7",
+      "seed": 966772019
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6116102000",
+  "predicted_reason": "Polyester knit gloves with a TPU membrane are textile gloves of man\u2011made fibers, classified under heading 6116.10 (gloves, mittens, mitts of textile materials) and subheading .20 for man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

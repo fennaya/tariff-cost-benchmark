@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357718",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-59916e00-f8bc-402e-ae8c-4240502c791d",
+    "object": "chat.completion",
+    "created": 1790607701,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3304.90.90.00\",\"reason\":\"Body spray cosmetics fall under heading 3304.90.90 for other cosmetics and toilet preparations.\"}",
+          "reasoning": "Need HTS code for body spray cosmetic. Likely 3304.90.90? Actually cosmetics: 3304.90.90 is \"Other cosmetics and toilet preparations\". 3304.90.90 includes \"Other\" including body sprays. 10-digit: 3304.90.90XX. Need specific. 3304.90.90 is 8-digit. 10-digit add 2 digits for subheading. For body sprays maybe 3304.90.90.00? Let's output 3304.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203956409,
+      "prompt_tokens": 309,
+      "prompt_time": 0.026633634,
+      "completion_tokens": 164,
+      "completion_time": 0.219516791,
+      "total_tokens": 473,
+      "total_time": 0.246150425,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m3m8jd37e0eaw3t0w6hjyfkk",
+      "seed": 127751558
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304909000",
+  "predicted_reason": "Body spray cosmetics fall under heading 3304.90.90 for other cosmetics and toilet preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

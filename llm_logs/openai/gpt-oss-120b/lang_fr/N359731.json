@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359731",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615107130",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fe03526a-b12d-456e-818d-3e45cf13ad6e",
+    "object": "chat.completion",
+    "created": 1790905534,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7615.90.00.00\",\n  \"reason\": \"Aluminum baking pan used for cooking falls under heading 7615 (Aluminum tableware, kitchenware and other articles) and subheading 7615.90 for other articles not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for aluminum baking pan. Likely 7615.10.00? Let's see: 7615 covers aluminum tableware, kitchenware. 7615.10 is \"Aluminum tableware, kitchenware, other than of a kind used for cooking\". Actually 7615.10 is \"Aluminum tableware, kitchenware, other than of a kind used for cooking\". For cooking utensils maybe 7615.90? Check: 7615.90 \"Other\". But baking pans used for cooking likely 7615.10? Actually 7615.10 is \"Aluminum tableware, kitchenware, other than of a kind used for cooking\". So cooking pans are cooking utensils, maybe 7615.90. Also 7615.10 is for items not used for cooking. So choose 7615.90. Format 10-digit: 7615.90.00? That's 8 digits. Need 10-digit: 7615.90.00.00. So \"7615.90.00.00\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048144518,
+      "prompt_tokens": 285,
+      "prompt_time": 0.015292992,
+      "completion_tokens": 297,
+      "completion_time": 0.619326792,
+      "total_tokens": 582,
+      "total_time": 0.634619784,
+      "completion_tokens_details": {
+        "reasoning_tokens": 225
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3x4khbnefxrq56t669x8d7c",
+      "seed": 989315909
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7615900000",
+  "predicted_reason": "Aluminum baking pan used for cooking falls under heading 7615 (Aluminum tableware, kitchenware and other articles) and subheading 7615.90 for other articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

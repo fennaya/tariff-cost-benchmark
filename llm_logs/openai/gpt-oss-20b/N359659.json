@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359659",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5e470a2c-02d5-4c75-ac84-1665dba80c24",
+    "object": "chat.completion",
+    "created": 1790640838,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8507.90.90.00\",\"reason\":\"The item is a rechargeable lithium\u2011polymer pouch cell, which falls under heading 8507.90.90 for other batteries.\"}",
+          "reasoning": "Need HTS code for rechargeable lithium polymer battery. Likely 8507.90.90? Actually batteries: 8507.90.90 for other batteries. For lithium polymer pouch cells: 8507.90.90. But 8507.90.90 is \"Other batteries\". 8507.90.90.00? 10-digit: 8507.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.158783,
+      "prompt_tokens": 304,
+      "prompt_time": 0.017461389,
+      "completion_tokens": 142,
+      "completion_time": 0.17533278,
+      "total_tokens": 446,
+      "total_time": 0.192794169,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d6de37e6be",
+    "x_groq": {
+      "id": "req_01m3n85nfaevm9t6grt193757m",
+      "seed": 1961873323
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8507909000",
+  "predicted_reason": "The item is a rechargeable lithium\u2011polymer pouch cell, which falls under heading 8507.90.90 for other batteries.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

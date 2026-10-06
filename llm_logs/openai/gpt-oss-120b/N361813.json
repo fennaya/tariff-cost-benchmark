@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361813",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "4901990040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7e6bf399-6fe7-4d16-9e81-1ed9f24a38ad",
+    "object": "chat.completion",
+    "created": 1790806527,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.10.00.00\",\n  \"reason\": \"The item is a printed softcover book of religious text, classified under printed books (HTS 4901.10.00.00).\"\n}",
+          "reasoning": "We need HTS code for a book, printed religious text. Likely 4901.99.00? Let's see: 4901 covers printed books, brochures, etc. 4901.10 is printed books, brochures, leaflets, etc., in paper. 4901.99 is other printed books. Religious books are still printed books. So 4901.10.00 is \"Printed books, brochures, leaflets and similar printed matter, whether or not in single sheets\". Actually 4901.10 is \"Printed books, brochures, leaflets and similar printed matter, whether or not in single sheets\". So likely 4901.10.00. Use 10-digit: 4901.10.00.00? Wait 10-digit includes 4-2-2-2? US uses 10 digits: chapter(2) heading(4) subheading(6) further(8) tariff(10). For 4901.10.00.00 is 4901.10.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04863796,
+      "prompt_tokens": 399,
+      "prompt_time": 0.017316034,
+      "completion_tokens": 282,
+      "completion_time": 0.595135746,
+      "total_tokens": 681,
+      "total_time": 0.61245178,
+      "completion_tokens_details": {
+        "reasoning_tokens": 220
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3t66369eawrtfd9dwy3dfyc",
+      "seed": 587446373
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901100000",
+  "predicted_reason": "The item is a printed softcover book of religious text, classified under printed books (HTS 4901.10.00.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

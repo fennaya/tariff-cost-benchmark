@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361997",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "8204110060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d07f1827-5089-4b46-9238-3ee65b437707",
+    "object": "chat.completion",
+    "created": 1790813417,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8205.60.00\", \"reason\": \"Classified under HTSUS 8205.60.00 for other hand tools, including steel hex (Allen) keys\"}",
+          "reasoning": "Need HTS for hand tools, hex keys. Likely 8205.51.00? Let's check: 8205.51.00 - Hand tools, pliers, etc? Actually 8205.51 is \"Hand tools, of which the handle is of wood, bone, etc.\" Not. 8205.60 is \"Other hand tools\". 8205.60.00 maybe. But specific for \"hex keys\" maybe 8205.60.00. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.098320624,
+      "prompt_tokens": 221,
+      "prompt_time": 0.054647773,
+      "completion_tokens": 156,
+      "completion_time": 0.32600932,
+      "total_tokens": 377,
+      "total_time": 0.380657093,
+      "completion_tokens_details": {
+        "reasoning_tokens": 104
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3tcrbw1e0kv155kam2n5kte",
+      "seed": 1148162114
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82056000",
+  "predicted_reason": "Classified under HTSUS 8205.60.00 for other hand tools, including steel hex (Allen) keys",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

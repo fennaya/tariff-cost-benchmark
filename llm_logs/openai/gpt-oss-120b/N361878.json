@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361878",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "9506996080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2b9cb24e-d6db-437f-9e6c-41d7017f75ca",
+    "object": "chat.completion",
+    "created": 1790808904,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9901.00.0000\", \"reason\": \"The description lacks product details, so the most appropriate classification is the catch\u2011all category for miscellaneous manufactured articles.\"}",
+          "reasoning": "We need guess. Very vague. Probably \"Bentz Lifetime Products Inc. P.O.\" maybe a mail order? Could be \"post office box\"? Not sure. Could be \"Bentz Lifetime Products\" makes \"Bentz Lifetime Products Inc.\" maybe they make \"Bicycle accessories\"? Actually Bentz Lifetime Products known for \"Bentz Lifetime Products Inc.\" makes \"Bicycle racks\"? Quick guess: maybe \"Bentz Lifetime Products\" makes \"Bicycle accessories\"? Could be \"Bentz Lifetime Products Inc.\" makes \"Bicycle helmets\"? Not sure.\n\nGiven lack, choose generic: \"9999.99.9999\"? Must be valid HTS. Maybe use \"9901.00.0000\" for \"Miscellaneous manufactured articles\". Use \"9901.00.0000\" is for \"Miscellaneous manufactured articles\". Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.091792687,
+      "prompt_tokens": 160,
+      "prompt_time": 0.009314465,
+      "completion_tokens": 222,
+      "completion_time": 0.464272382,
+      "total_tokens": 382,
+      "total_time": 0.473586847,
+      "completion_tokens_details": {
+        "reasoning_tokens": 172
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3t8emedeqya9yyhqnhteeec",
+      "seed": 123452302
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9901000000",
+  "predicted_reason": "The description lacks product details, so the most appropriate classification is the catch\u2011all category for miscellaneous manufactured articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

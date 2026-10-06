@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360729",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "8708806590",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c7fda931-7c27-4254-8d09-c9858a84367d",
+    "object": "chat.completion",
+    "created": 1790771682,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90.00\",\n  \"reason\": \"Stabilizer links are classified as other suspension parts of motor vehicles, falling under heading 8708.99.90 for parts not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for automotive suspension stabilizer link, likely part of \"suspension parts\" 8708.99? Actually 8708.99.90 is parts of motor vehicles. But more specific: \"suspension parts, other than springs\" 8708.99.90. 10-digit: 8708.99.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.019049598,
+      "prompt_tokens": 480,
+      "prompt_time": 0.026390177,
+      "completion_tokens": 142,
+      "completion_time": 0.304229805,
+      "total_tokens": 622,
+      "total_time": 0.330619982,
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3s4yq77ep9shtaj0enhvafj",
+      "seed": 1720715222
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Stabilizer links are classified as other suspension parts of motor vehicles, falling under heading 8708.99.90 for parts not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357571",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3d549101-3c5d-4904-9af1-c17e966b7a02",
+    "object": "chat.completion",
+    "created": 1790726277,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7308.94.10.00\",\n  \"reason\": \"Classified under metal structures (steel racks) used for handling, falling under heading 7308.94 for other iron or steel structures and parts thereof.\"\n}",
+          "reasoning": "We need HTS code for steel rack, likely \"metal shelving units\". Likely heading 7308.94? Let's think: 7308 covers structures and parts of structures, of iron or steel. 7308.94 is \"Other structures (excluding prefabricated buildings) and parts thereof, of iron or steel\". Could be 7308.94.10? Need 10-digit: 7308.94.10.00? Actually 10-digit format: 6-digit heading + 4-digit subheading. For 7308.94.10.00 maybe. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089855381,
+      "prompt_tokens": 255,
+      "prompt_time": 0.009587539,
+      "completion_tokens": 188,
+      "completion_time": 0.391753572,
+      "total_tokens": 443,
+      "total_time": 0.401341111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_76082d2bd0",
+    "x_groq": {
+      "id": "req_01m3qsn280eyt8a8cxtxatyk1b",
+      "seed": 1078632368
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308941000",
+  "predicted_reason": "Classified under metal structures (steel racks) used for handling, falling under heading 7308.94 for other iron or steel structures and parts thereof.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

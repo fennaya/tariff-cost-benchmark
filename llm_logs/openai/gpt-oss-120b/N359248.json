@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359248",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8421210000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c0173fb1-2d9c-4b36-b837-4f4a317aa3f2",
+    "object": "chat.completion",
+    "created": 1790727181,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8421.30.00\", \"reason\": \"Classified under HTSUS heading 8421 for mechanical cleaning machines, specifically subheading 8421.30 covering other cleaning machines such as robotic pool skimmers.\"}",
+          "reasoning": "We need HTS code for robotic pool skimmer, solar-powered cleaning robot. Likely under 8421? 8421.21? Let's think: \"Pool cleaning machines\" maybe 8421.21.90? Actually 8421 covers \"Mechanical appliances for cleaning, polishing, or scouring\". Subheading 8421.21 is \"Vacuum cleaners\". Not correct. 8421.29 is \"Other\". But pool skimmer maybe \"Other cleaning machines\". Could be 8421.99? Let's search memory: HTS 8421.99.90 \"Other\". Might be 8421.99.90. Another possibility: 8424 \"Mechanical appliances for projecting, dispersing or spraying liquids\". Not.\n\nMaybe 8421.21.90 is \"Other vacuum cleaners\". Not.\n\nBetter: 8421.30 \"Other cleaning machines\". Actually 8421.30 is \"Other cleaning machines\". Let's recall: 8421.30.00 \"Other cleaning machines\". So likely 8421.30.00.\n\nThus code 8421.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.198613817,
+      "prompt_tokens": 388,
+      "prompt_time": 0.020133439,
+      "completion_tokens": 292,
+      "completion_time": 0.615088522,
+      "total_tokens": 680,
+      "total_time": 0.635221961,
+      "completion_tokens_details": {
+        "reasoning_tokens": 231
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3qtgmmbebw93j54mxj5xqec",
+      "seed": 383331968
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84213000",
+  "predicted_reason": "Classified under HTSUS heading 8421 for mechanical cleaning machines, specifically subheading 8421.30 covering other cleaning machines such as robotic pool skimmers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

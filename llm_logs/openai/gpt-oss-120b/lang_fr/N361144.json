@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361144",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "8486200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1f110385-0f22-4c5e-b737-d470b4143862",
+    "object": "chat.completion",
+    "created": 1790905547,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.90\", \"reason\": \"The equipment is a specialized machine tool for cutting silicon wafers, classified under other machines with individual functions not elsewhere specified.\"}",
+          "reasoning": "We need HTS for equipment for cutting semiconductor wafers: likely \"Machinery for cutting, shaping, or finishing stone, ceramics, glass, etc.\" But for silicon wafers: could be \"8205.90.00.00\" (machine tools for cutting, shaping, etc., for metal?). Actually cutting machines for semiconductor wafers likely under 8479.89? Let's think: HTS 8479.89.90 is \"Other machines and mechanical appliances having individual functions, not elsewhere specified\". But there is specific heading 8479.89.90 for \"Other machines for working of metal or other materials\". However there is heading 8479.89.90 for \"Other machines for working of metal or other materials\". Could be 8479.89.90.\n\nBetter: 8479.89.90 - \"Other machines and mechanical appliances having individual functions, not elsewhere specified\". That seems plausible.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089048016,
+      "prompt_tokens": 297,
+      "prompt_time": 0.01478294,
+      "completion_tokens": 244,
+      "completion_time": 0.514211654,
+      "total_tokens": 541,
+      "total_time": 0.528994594,
+      "completion_tokens_details": {
+        "reasoning_tokens": 193
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3x4ky2seqdt862x7shan77c",
+      "seed": 377729023
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84798990",
+  "predicted_reason": "The equipment is a specialized machine tool for cutting silicon wafers, classified under other machines with individual functions not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

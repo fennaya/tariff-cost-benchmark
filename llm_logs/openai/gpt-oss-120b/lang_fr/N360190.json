@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360190",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9471a429-a444-411a-8c73-742dd8bc3099",
+    "object": "chat.completion",
+    "created": 1790905536,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.00\", \"reason\": \"Plastic bag made primarily of polyethylene, used for packaging, falls under heading 3923.21.00 for sacks and bags of plastics of a kind used for packaging.\"}",
+          "reasoning": "We need HTS code for plastic bag, multilayer, for packaging. Likely 3923.21.00? Let's see: 3923.21.00 - \"Sacks and bags, of plastics, of a kind used for packaging\". 3923.21.00 is \"Of polyethylene\". Since 80% PE. So code 3923.21.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089848806,
+      "prompt_tokens": 284,
+      "prompt_time": 0.014106844,
+      "completion_tokens": 145,
+      "completion_time": 0.304849769,
+      "total_tokens": 429,
+      "total_time": 0.318956613,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3x4kk7we7n883r5w63a0tqr",
+      "seed": 1044808727
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39232100",
+  "predicted_reason": "Plastic bag made primarily of polyethylene, used for packaging, falls under heading 3923.21.00 for sacks and bags of plastics of a kind used for packaging.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

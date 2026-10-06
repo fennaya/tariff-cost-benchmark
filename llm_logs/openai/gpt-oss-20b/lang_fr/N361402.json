@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361402",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5a0f697c-f287-4bc3-a0c6-446c0a3bbc46",
+    "object": "chat.completion",
+    "created": 1790905005,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6115.00.00.00\",\"reason\":\"Raw, unfinished knitted long sleeves and hem parts are classified under 6115, unfinished knitted or crocheted articles of apparel.\"}",
+          "reasoning": "We need HTS code for \"Les manches longues et le bas de l'ourlet sont bruts et non finis.\" French: \"The long sleeves and the bottom of the hem are raw and unfinished.\" Likely refers to clothing, unfinished garment parts. Could be \"unfinished knitted or crocheted articles of apparel\" maybe 6115? But raw unfinished sleeves? Might be \"unfinished knitted or crocheted articles of apparel\" 6115. But 10-digit? We give 10-digit format. Let's pick 6115.00.00.00? Actually 10-digit: 6115.00.00.00. Reason: raw unfinished knitted sleeves."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086677204,
+      "prompt_tokens": 169,
+      "prompt_time": 0.008368862,
+      "completion_tokens": 188,
+      "completion_time": 0.221727388,
+      "total_tokens": 357,
+      "total_time": 0.23009625,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3x43defe47trsc8hxrert02",
+      "seed": 1614565160
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6115000000",
+  "predicted_reason": "Raw, unfinished knitted long sleeves and hem parts are classified under 6115, unfinished knitted or crocheted articles of apparel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

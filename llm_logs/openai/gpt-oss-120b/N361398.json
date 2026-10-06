@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361398",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0df3d072-3d6f-49db-96c9-aa6dd69cecc8",
+    "object": "chat.completion",
+    "created": 1790792428,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6205.20.00\", \"reason\": \"Classified as women's or girls' blouses, knitted or crocheted, which best matches a garment neck with capping and unfinished back opening.\"}",
+          "reasoning": "We need guess. Description vague: neck with capping, deep back opening, raw unfinished edges. Could be garment? Maybe a shirt? Could be a \"neck\" of a garment like a shirt collar? Might be \"unfinished textile articles\"? Hard.\n\nProbably \"apparel accessories, parts of garments\"? Could be \"necklaces\"? No.\n\nDeep back opening suggests a garment like a vest? Could be \"sleeveless garment\"? Might be \"apparel, other, not knitted\"? Could be HTS 6204.62? That's women's or girls' dresses? Not sure.\n\nGiven uncertainty, choose generic \"6109.10.00\" for T-shirts? Hmm.\n\nI'll pick \"6205.20.00\" for women's blouses? Actually neck with capping... I'll choose \"6204.62.00\" women's or girls' dresses, knitted? Not.\n\nI'll answer with placeholder.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.725177768,
+      "prompt_tokens": 170,
+      "prompt_time": 0.007763969,
+      "completion_tokens": 240,
+      "completion_time": 0.502565811,
+      "total_tokens": 410,
+      "total_time": 0.51032978,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m3srqsc8ezvb3wv22kdcc0cw",
+      "seed": 1114526200
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62052000",
+  "predicted_reason": "Classified as women's or girls' blouses, knitted or crocheted, which best matches a garment neck with capping and unfinished back opening.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

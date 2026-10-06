@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362453",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8708295190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9246ff1a-60e9-4a65-9707-9a9fa3917b64",
+    "object": "chat.completion",
+    "created": 1790829540,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90\",\n  \"reason\": \"The item is a metal accessory/part for a motor vehicle (truck) not classified elsewhere, fitting the heading for other parts and accessories of motor vehicles.\"\n}",
+          "reasoning": "We need HTS code for aluminum slide rail assembly for truck. Likely under 7615? 7615.10 for aluminum structures? Actually 7615.10.00 is \"Structures (excluding prefabricated buildings) and parts of structures, of aluminum\". Slide rail assembly is a part of a vehicle, but not a vehicle part? Could be 8708.99.90 (parts and accessories of motor vehicles). But it's for cargo box side walls, a truck accessory. 8708.99.90 is \"Other parts and accessories of motor vehicles, not elsewhere specified\". Likely correct. Use 8708.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205799763,
+      "prompt_tokens": 322,
+      "prompt_time": 0.017549251,
+      "completion_tokens": 196,
+      "completion_time": 0.404070446,
+      "total_tokens": 518,
+      "total_time": 0.421619697,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3tw4chcez2byjjz3xz4evsa",
+      "seed": 1794153222
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "The item is a metal accessory/part for a motor vehicle (truck) not classified elsewhere, fitting the heading for other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

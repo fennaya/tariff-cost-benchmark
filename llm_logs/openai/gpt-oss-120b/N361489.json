@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361489",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9401710011",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-81cea7f9-de91-4458-a09c-2574c307ae3e",
+    "object": "chat.completion",
+    "created": 1790796539,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9401.30.00\",\n  \"reason\": \"Upholstered seats with solid hardwood components (primary frame) and fabric-covered foam, classified under seats with wooden frames, upholstered.\"\n}",
+          "reasoning": "We need HTS code for upholstered furniture seats with wood and metal frames. Likely 9401.30.00? Let's see: 9401.30.00 \u2013 Seats, with wooden frames, upholstered. Actually 9401.30.00 is \"Seats, with wooden frames, upholstered\". For metal frames: 9401.20.00 \u2013 Seats, with metal frames, upholstered. Since they have both wood and metal components. Might classify under wooden frames? The primary frame is solid hardwood components plus steel metal frame bases. Could be \"Seats, with wooden frames, upholstered\" still. Choose 9401.30.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.217044338,
+      "prompt_tokens": 388,
+      "prompt_time": 0.02269513,
+      "completion_tokens": 190,
+      "completion_time": 0.400071326,
+      "total_tokens": 578,
+      "total_time": 0.422766456,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3swn8qeejbvwkxrc6za4rrv",
+      "seed": 637275338
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94013000",
+  "predicted_reason": "Upholstered seats with solid hardwood components (primary frame) and fabric-covered foam, classified under seats with wooden frames, upholstered.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

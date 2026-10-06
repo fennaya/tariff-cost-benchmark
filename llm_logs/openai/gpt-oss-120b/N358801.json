@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358801",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "4911914040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-233e3cf2-3d3a-4b0e-a0fc-84ac1b680ad5",
+    "object": "chat.completion",
+    "created": 1790726887,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9706.00.00\",\n  \"reason\": \"The item is a printed canvas reproduction of artwork intended for decorative display, classifiable as a reproduction of a work of art.\"\n}",
+          "reasoning": "We need HTS code for printed canvas decorative art. Likely 9701.00.00? 9701 covers paintings, drawings and pastels, etc. But printed canvas is not a painting, it's a printed picture. Could be 9703 (original works of art) no. 4911? Printed pictures, designs on canvas, etc. 4911.99.90? That's printed pictures, designs on textiles. Canvas is textile? It's printed on canvas (a fabric). Could be 9703? Actually 9703 is \"Original sculptures\". Not.\n\nHTS 9701.10.00 = Paintings, drawings and pastels, executed wholly or partly by hand, etc. Not printed.\n\nHTS 9702 is \"Original engravings, prints and lithographs\". Not.\n\nHTS 9703 is \"Original sculptures\". Not.\n\nHTS 9704 is \"Antiques\". Not.\n\nThus printed canvas likely falls under 4911.99.90 \"Other printed pictures, designs and photographs on textiles, not elsewhere specified\". Or 9706? 9706 is \"Reproductions of works of art\". That might be appropriate: 9706.00.00 \"Reproductions of works of art, including limited editions\". Yes printed canvas reproduction.\n\nThus choose 9706.00.00. Reason: decorative printed canvas reproduction."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296247293,
+      "prompt_tokens": 263,
+      "prompt_time": 0.010950857,
+      "completion_tokens": 339,
+      "completion_time": 0.702342761,
+      "total_tokens": 602,
+      "total_time": 0.713293618,
+      "completion_tokens_details": {
+        "reasoning_tokens": 284
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3qt7n8aexz90cfaw8pt1jp0",
+      "seed": 1414834909
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "97060000",
+  "predicted_reason": "The item is a printed canvas reproduction of artwork intended for decorative display, classifiable as a reproduction of a work of art.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

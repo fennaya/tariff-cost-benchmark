@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362937",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004200085",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c34e7c79-e550-4ee1-b710-39858c926bd9",
+    "object": "chat.completion",
+    "created": 1790753772,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Fosfomycin tromethamine is an antimicrobial agent (antibiotic) and falls under heading 3004.10 of the HTSUS.\"}",
+          "reasoning": "Need HTS code for pharmaceutical preparations: Fosfomycin tromethamine, antibiotic. Likely 3004.10.00.00? Actually 3004 is \"Medicaments consisting of mixed or unmixed products of a chemical or physical nature, not elsewhere specified or included.\" 3004.10 is \"Antimicrobial agents, other than those of heading 3004.20\". 3004.10.00.00 is \"Antimicrobial agents, other than those of heading 3004.20\". But 3004.10.00.00 is for \"Antimicrobial agents, other than those of heading 3004.20\". Fosfomycin is an antibiotic. So code 3004.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.146878396,
+      "prompt_tokens": 214,
+      "prompt_time": 0.010534141,
+      "completion_tokens": 219,
+      "completion_time": 0.291143316,
+      "total_tokens": 433,
+      "total_time": 0.301677457,
+      "completion_tokens_details": {
+        "reasoning_tokens": 161
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e2cb7a84ec",
+    "x_groq": {
+      "id": "req_01m3rkw44mecvtc8kx6t3rkba6",
+      "seed": 160511492
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Fosfomycin tromethamine is an antimicrobial agent (antibiotic) and falls under heading 3004.10 of the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

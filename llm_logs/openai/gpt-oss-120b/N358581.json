@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358581",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "8703900100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9e025b5a-73d2-48eb-a905-412c0723fc06",
+    "object": "chat.completion",
+    "created": 1790726764,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90\", \"reason\": \"The item is a go\u2011kart chassis kit without engine or tires, classified as a part/accessory of a motor vehicle under heading 8708.\"}",
+          "reasoning": "We need HTS code for go-kart chassis kit without engine/tires. Likely heading 8701? Actually motor vehicles. Go-karts are \"vehicles, other than motor vehicles, for the transport of persons\". Might be 9503? Toys? Not toy. Likely 8703? That's motor vehicles for the transport of persons, with engine. Without engine maybe 8708? Parts and accessories of motor vehicles. Chassis could be 8708.99.90? Let's pick 8708.99.90 - parts of motor vehicles not elsewhere specified. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.196048216,
+      "prompt_tokens": 416,
+      "prompt_time": 0.020873289,
+      "completion_tokens": 180,
+      "completion_time": 0.384274413,
+      "total_tokens": 596,
+      "total_time": 0.405147702,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3qt3x22egqa0hr0z6ca7vq8",
+      "seed": 722581596
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "The item is a go\u2011kart chassis kit without engine or tires, classified as a part/accessory of a motor vehicle under heading 8708.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

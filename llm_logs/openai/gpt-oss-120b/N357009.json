@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357009",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-447d7b67-0554-4ab0-8559-5858f7ac7f7d",
+    "object": "chat.completion",
+    "created": 1790725923,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8302.49.00\", \"reason\": \"Carabiners are classified as other mountings, fittings and similar articles of base metal not elsewhere specified, falling under heading 8302.49.00.\"}",
+          "reasoning": "We need HTS code for carabiners made of steel/aluminum for climbing. Likely under heading 8302.49.00? 8302.49.00 is \"Other mountings, fittings and similar articles of base metal, other\". Carabiners are \"safety belts, safety harnesses, safety lanyards, and similar safety devices\" maybe 8302.41? Actually 8302.41 is \"Other mountings, fittings and similar articles of base metal, for use in machinery\". Not sure. Could be 8302.49.00 \"Other\". I think 8302.49.00.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294739502,
+      "prompt_tokens": 339,
+      "prompt_time": 0.013127675,
+      "completion_tokens": 195,
+      "completion_time": 0.403817968,
+      "total_tokens": 534,
+      "total_time": 0.416945643,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3qsa7nyekgag1ts3vg2r4gd",
+      "seed": 1374422210
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83024900",
+  "predicted_reason": "Carabiners are classified as other mountings, fittings and similar articles of base metal not elsewhere specified, falling under heading 8302.49.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

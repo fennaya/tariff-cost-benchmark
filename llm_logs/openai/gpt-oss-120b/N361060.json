@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361060",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "6212109020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-01a31cb7-f7cb-416f-81f7-0dfb6754577b",
+    "object": "chat.completion",
+    "created": 1790781771,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6109.10.0010\", \"reason\": \"The item is a knitted women's bralette made of nylon/spandex, classifiable under brassieres of man\u2011made fibers.\"}",
+          "reasoning": "Need HTS for women's brassiere, knitted, nylon/spandex. Likely 6109.10.00? Let's see: 6109.10.00 - Brassieres, girdles, corsets, braces, suspenders, garters and similar articles, knitted or crocheted, of man-made fibers. That's 4-digit then 6? Full 10-digit: 6109.10.0010? Actually 6109.10.00 is 8-digit. For 10-digit need further: 6109.10.0010 for women's? Check: 6109.10.0010 - Brassieres, knitted, of man-made fibers. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.254942601,
+      "prompt_tokens": 242,
+      "prompt_time": 0.009835482,
+      "completion_tokens": 196,
+      "completion_time": 0.409337526,
+      "total_tokens": 438,
+      "total_time": 0.419173008,
+      "completion_tokens_details": {
+        "reasoning_tokens": 143
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3sejk01ejg8cp04brqa50xg",
+      "seed": 1309332783
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109100010",
+  "predicted_reason": "The item is a knitted women's bralette made of nylon/spandex, classifiable under brassieres of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

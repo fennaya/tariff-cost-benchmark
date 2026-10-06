@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N350377",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "6303922010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-216da9ef-6867-4f9e-a5fd-52d0e994946c",
+    "object": "chat.completion",
+    "created": 1790607026,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.60.10.00\",\n  \"reason\": \"The product is a polyester fabric curtain (blackout) with plastic coatings, classified under synthetic fiber curtains of polyester.\"\n}",
+          "reasoning": "We need HTS for blackout curtains made of polyester fabric coated with foam or TPU. Likely heading 6302.60.90 (Other curtains and interior blinds, of synthetic fibers, other). 6302.60.90 is \"Other curtains (including drapes) and interior blinds, of synthetic fibers, not elsewhere specified\". Could be 6302.60.10 for polyester? Actually 6302.60.10 is \"of polyester\". But these are coated with plastic, still polyester. So 6302.60.10. 10-digit: 6302.60.10.00? Check: 6302.60.10.00 is \"Curtains and interior blinds, of polyester\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.141429964,
+      "prompt_tokens": 762,
+      "prompt_time": 0.035246828,
+      "completion_tokens": 207,
+      "completion_time": 0.439445473,
+      "total_tokens": 969,
+      "total_time": 0.474692301,
+      "completion_tokens_details": {
+        "reasoning_tokens": 152
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4b2f03d631",
+    "x_groq": {
+      "id": "req_01m3m7xs97eva99s87hfjjr6f9",
+      "seed": 1898020314
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302601000",
+  "predicted_reason": "The product is a polyester fabric curtain (blackout) with plastic coatings, classified under synthetic fiber curtains of polyester.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

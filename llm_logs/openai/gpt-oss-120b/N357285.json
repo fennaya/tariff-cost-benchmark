@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357285",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "9506996080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5c198f3a-22d8-4f5a-bdd3-2ba4cd8e1ab5",
+    "object": "chat.completion",
+    "created": 1790726057,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8308.90.90\",\n  \"reason\": \"Brass climbing nuts are non\u2011moving metal hardware items of a base metal (brass) classified under heading 8308 for other articles of base metal.\"\n}",
+          "reasoning": "We need HTS code for climbing nuts made of brass. Likely under \"Other articles of iron or steel\" no, brass is copper alloy. Look up: 8308.90.90? Actually 8308 covers \"Other fittings, for furniture, etc.\" Not. Maybe 8302? 8302.49.90 \"Other mountings, fittings and similar articles of base metal, other\". But climbing hardware often classified under 8308.50 \"Other mountings, fittings and similar articles of base metal, for use in building\". Hmm.\n\nBetter: 8308.90.90 \"Other\" includes \"Other articles of base metal\". Could be 8308.90.90.\n\nLet's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089931388,
+      "prompt_tokens": 480,
+      "prompt_time": 0.037656698,
+      "completion_tokens": 211,
+      "completion_time": 0.474894308,
+      "total_tokens": 691,
+      "total_time": 0.512551006,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3qseap8e76sgzwfq10v1zgs",
+      "seed": 779556774
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83089090",
+  "predicted_reason": "Brass climbing nuts are non\u2011moving metal hardware items of a base metal (brass) classified under heading 8308 for other articles of base metal.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

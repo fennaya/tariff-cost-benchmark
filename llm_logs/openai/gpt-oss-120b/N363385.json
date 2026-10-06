@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363385",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "4201006000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-615d7c2b-0760-4705-ad39-b11870b8e127",
+    "object": "chat.completion",
+    "created": 1790851584,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.91.00.00\", \"reason\": \"Knitted cotton garments for dogs are classified under 6302.91.00.00 as cotton knit apparel not elsewhere specified.\"}",
+          "reasoning": "Need HTS for dog sweaters. Likely under 6302.99.90? 6302.99.90 is \"Other garments, accessories, other made up articles, of other textile materials, not elsewhere specified\". For pet clothing maybe 6302.91? Actually 6302.91 is \"Garments, accessories, etc., of cotton, knitted or crocheted\". That's 6302.91.00.00. So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205335067,
+      "prompt_tokens": 241,
+      "prompt_time": 0.012718898,
+      "completion_tokens": 150,
+      "completion_time": 0.316396749,
+      "total_tokens": 391,
+      "total_time": 0.329115647,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3vh54e7excsztwqa9qfkgp5",
+      "seed": 85391330
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302910000",
+  "predicted_reason": "Knitted cotton garments for dogs are classified under 6302.91.00.00 as cotton knit apparel not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357802",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "2930909251",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3e84f5a1-7920-4b09-b048-6e4cb41f0d64",
+    "object": "chat.completion",
+    "created": 1790904989,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2901.90.99\",\"reason\":\"DMSO is an organic solvent not listed elsewhere, so it falls under 2901.90.99 \u2013 other organic solvents.\"}",
+          "reasoning": "Need HTS code for DMSO bulk, organic solvent. Likely 2901.90.99? Actually DMSO is organic solvent, not alcohol. HTS 2901.90.99 for other organic solvents. So 2901.90.99."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.193052525,
+      "prompt_tokens": 233,
+      "prompt_time": 0.01139908,
+      "completion_tokens": 109,
+      "completion_time": 0.113153852,
+      "total_tokens": 342,
+      "total_time": 0.124552932,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_37c9245f64",
+    "x_groq": {
+      "id": "req_01m3x42xchebsvevfxs80fb07y",
+      "seed": 521284509
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "29019099",
+  "predicted_reason": "DMSO is an organic solvent not listed elsewhere, so it falls under 2901.90.99 \u2013 other organic solvents.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

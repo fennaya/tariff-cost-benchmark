@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362040",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8530800000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-de9cd991-a8c7-4eb8-ab04-60a8b2b3bf32",
+    "object": "chat.completion",
+    "created": 1790908969,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9027.80.90\",\n  \"reason\": \"The product is a specialized vehicle safety detection system comprising cameras, processors, and alarms, classified under other instruments and apparatus for measuring or detecting (HTS 9027.80.90).\"\n}",
+          "reasoning": "We need HTS code for a system: camera, processing unit, radio receiver, alarm, for vehicle collision detection. Likely \"Vehicle safety systems\" under 9027? 9027.80.00? That's for instruments for measuring or detecting. Or 8526 for radar detectors? But AI detection system maybe \"Other apparatus for detection of persons, animals or objects, including radar, sonar, etc.\" That's 9027.80.90? Actually 9027.80.00 is \"Other instruments and apparatus for measuring or detecting\". Could be 9027.80.90 \"Other\". So choose 9027.80.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047822979,
+      "prompt_tokens": 550,
+      "prompt_time": 0.02845285,
+      "completion_tokens": 204,
+      "completion_time": 0.438526964,
+      "total_tokens": 754,
+      "total_time": 0.466979814,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3x7wc2yeh3vexctvq917ja4",
+      "seed": 377291743
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90278090",
+  "predicted_reason": "The product is a specialized vehicle safety detection system comprising cameras, processors, and alarms, classified under other instruments and apparatus for measuring or detecting (HTS 9027.80.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

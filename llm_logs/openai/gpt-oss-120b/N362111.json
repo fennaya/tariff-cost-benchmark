@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362111",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "3921904090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-85dce7c0-24f8-491f-aee2-0fefe8d83e4e",
+    "object": "chat.completion",
+    "created": 1790817404,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3909.90.00\", \"reason\": \"The product is a phenolic resin-based composite prepreg in film form, classified as other plates, sheets, film, foil or strip of plastics not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for phenolic resin prepreg with glass fiber. Likely under 3909? Actually composites: 6810? Let's think: HTS Chapter 39 plastics. Phenolic resin is a thermosetting plastic. Prepreg with glass fiber maybe under 6810? No, 6810 is articles of cement, asbestos. Look up: 3909.90.00? That's \"Other plates, sheets, film, foil and strip, of plastics\". But with glass fiber reinforcement maybe 3909.90.00 includes reinforced plastics? There is heading 3909.90.00 \"Other plates, sheets, film, foil and strip, of plastics, not elsewhere specified\". Could be 3909.90.00. However phenolic resin is under heading 3902? 3902 is \"Polyesters\". Phenolic resins are under 3902? Actually phenolic resins are under 3902.10? Wait: 3902.10 is \"Polyesters\". Phenolic resins are under 3902.90? Not sure. There is heading 3902.90 \"Other polyesters\". Phenolic resin is not polyester. Maybe heading 3901 \"Polymers of ethylene\". No.\n\nMaybe under 6810? No.\n\nBetter: HTS 6810.00.00 is \"Articles of cement, asbestos-cement, etc.\" Not.\n\nI think 3909.90.00 is appropriate. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.147661654,
+      "prompt_tokens": 261,
+      "prompt_time": 0.043172045,
+      "completion_tokens": 368,
+      "completion_time": 0.757620367,
+      "total_tokens": 629,
+      "total_time": 0.800792412,
+      "completion_tokens_details": {
+        "reasoning_tokens": 308
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3tgj088efzb92052ce0g9hg",
+      "seed": 92628780
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39099000",
+  "predicted_reason": "The product is a phenolic resin-based composite prepreg in film form, classified as other plates, sheets, film, foil or strip of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

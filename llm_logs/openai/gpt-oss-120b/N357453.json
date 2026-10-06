@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357453",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1602502140",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-efc2e1e7-691a-4bd8-b6c5-2fc150170bdf",
+    "object": "chat.completion",
+    "created": 1790726204,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1602.90.00.00\", \"reason\": \"The product is a fully cooked, seasoned beef preparation vacuum\u2011packed and frozen, classifying it under Chapter 16 heading 1602 (prepared or preserved meat) as other prepared meat products.\"}",
+          "reasoning": "We need HTS for prepared meat, cooked, frozen, with sauce. Likely 0203? 0203 is \"Meat of bovine animals, fresh, chilled or frozen\". But cooked meat is 0202? Actually 0202 is \"Meat of bovine animals, fresh, chilled or frozen\". Wait check: 0202 is \"Meat of bovine animals, fresh, chilled or frozen\". 0203 is \"Meat of bovine animals, boneless, fresh, chilled or frozen\"? Not sure. Cooked meat is under 0202? Actually 0202 is \"Meat of bovine animals, fresh, chilled or frozen\". 0203 is \"Meat of bovine animals, boneless, fresh, chilled or frozen\". Cooked meat is 0202? There is 0202.30 for \"Meat of bovine animals, fresh, chilled or frozen, not cut in pieces\"? Hmm.\n\nPrepared meat (cooked, seasoned) is under 0202.30? Actually 0202.30 is \"Meat of bovine animals, fresh, chilled or frozen, not cut in pieces\". 0202.40 is \"Meat of bovine animals, fresh, chilled or frozen, cut in pieces\". For cooked, there is 0202.90? Not.\n\nMaybe it's under 0202.90 \"Other\". But cooked meat is under Chapter 16? No, Chapter 16 is \"Preparations of meat, of fish or of crustaceans\". Yes 1602 is \"Prepared or preserved meat, not elsewhere specified\". 1602.90 is \"Other\". Since it's cooked, seasoned, vacuum packed, frozen, it's a preparation. So HTS 1602.90.00? 10-digit: 1602.90.00.00.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294904508,
+      "prompt_tokens": 381,
+      "prompt_time": 0.116973976,
+      "completion_tokens": 452,
+      "completion_time": 0.950890457,
+      "total_tokens": 833,
+      "total_time": 1.067864433,
+      "completion_tokens_details": {
+        "reasoning_tokens": 384
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3qsjt4we6nr02axh13ve62e",
+      "seed": 483611290
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1602900000",
+  "predicted_reason": "The product is a fully cooked, seasoned beef preparation vacuum\u2011packed and frozen, classifying it under Chapter 16 heading 1602 (prepared or preserved meat) as other prepared meat products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363491",
+  "rulingDate": "2026-08-12T00:00:00",
+  "true_code": "7317005560",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ee0afa12-7bad-4c91-b95b-108809cebef5",
+    "object": "chat.completion",
+    "created": 1790765550,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7318.90.90.00\",\"reason\":\"Stainless steel nails fall under 7318.90.90.00, the heading for other articles of iron or steel, including nails and similar fasteners.\"}",
+          "reasoning": "Need HTS code for stainless steel nails. Likely 7318.90.90? Actually nails: 7318.90.90 is \"Other articles of iron or steel\". But stainless steel? 7318.90.90 includes \"Other articles of iron or steel\". For stainless steel nails maybe 7318.90.90. But 7318.90.90 is for other articles of iron or steel. 7318.90.90 includes nails, screws, etc. So 7318.90.90.00? 10-digit: 7318.90.90.00. Reason: stainless steel nails."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194317215,
+      "prompt_tokens": 243,
+      "prompt_time": 0.011783003,
+      "completion_tokens": 193,
+      "completion_time": 0.196491354,
+      "total_tokens": 436,
+      "total_time": 0.208274357,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m3rz3js9emv87qxya4n7a9m0",
+      "seed": 1390908366
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318909000",
+  "predicted_reason": "Stainless steel nails fall under 7318.90.90.00, the heading for other articles of iron or steel, including nails and similar fasteners.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

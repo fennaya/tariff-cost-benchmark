@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357265",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-79eda9ce-ea8a-4db9-ac60-8e56fccf53b7",
+    "object": "chat.completion",
+    "created": 1790726032,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"0902.30.00\",\n  \"reason\": \"The product is a blend of green tea (matcha) and roasted brown rice intended for infusion, classifying it as green (not fermented) tea under heading 0902.30.\"\n}",
+          "reasoning": "We need HTS for tea, green tea with rice. Likely heading 0902: Tea, not fermented. Subheading 0902.30 for green tea (not fermented) in bulk. But mixed with rice? Possibly 0902.30.00? Actually 0902.30 is \"Green tea (not fermented)\". The mixture with rice may be considered \"tea, flavored\". Could be 0902.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.222812137,
+      "prompt_tokens": 277,
+      "prompt_time": 0.014883833,
+      "completion_tokens": 164,
+      "completion_time": 0.50711892,
+      "total_tokens": 441,
+      "total_time": 0.522002753,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3qsdjemeyfrrqzf5vkt8gst",
+      "seed": 222920044
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "09023000",
+  "predicted_reason": "The product is a blend of green tea (matcha) and roasted brown rice intended for infusion, classifying it as green (not fermented) tea under heading 0902.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356812",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8516790000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2cd49973-bfd8-44d6-901e-303d19522408",
+    "object": "chat.completion",
+    "created": 1790606950,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.62.20.00\",\"reason\":\"Electric skillet with heating element falls under 8517.62.20 \u2013 electric cooking or heating apparatus with a heating element.\"}",
+          "reasoning": "Need HTS code for electric skillet. Likely 8517.62.10? Actually 8517.62 is electric cooking or heating apparatus. 8517.62.10 is electric cooking or heating apparatus, other than those of heading 8517.62.20. But 8517.62.10 includes electric cooking appliances. 8517.62.20 is electric cooking appliances with a heating element. Wait check: 8517.62.10 is electric cooking or heating apparatus, other than those of heading 8517.62.20. 8517.62.20 is electric cooking or heating apparatus, with a heating element. So our product has heating element. So 8517.62.20. But need 10-digit: 8517.62.20.00? Actually 10-digit: 8517.62.20.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197493375,
+      "prompt_tokens": 211,
+      "prompt_time": 0.012206193,
+      "completion_tokens": 237,
+      "completion_time": 0.327664826,
+      "total_tokens": 448,
+      "total_time": 0.339871019,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3m7vfgjez0rsdbyt3ym557v",
+      "seed": 1249826589
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517622000",
+  "predicted_reason": "Electric skillet with heating element falls under 8517.62.20 \u2013 electric cooking or heating apparatus with a heating element.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

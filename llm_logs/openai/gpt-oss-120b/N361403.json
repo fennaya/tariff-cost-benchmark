@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361403",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a416a435-b9fa-483a-b39c-4c3a26392b5f",
+    "object": "chat.completion",
+    "created": 1790792922,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6204.63.00\",\n  \"reason\": \"The item is a garment (cape with sleeves) classified under women's or girls' outerwear and other apparel not knitted or crocheted.\"\n}",
+          "reasoning": "We need to guess classification. Description sounds like a garment, maybe a cape, sleeves, raw unfinished. Likely a \"costume\" or \"outerwear\". Could be \"women's or girls' dresses\"? Hard.\n\nProbably \"HTS 6204.63.00??\" That's women's or girls' dresses, knitted or crocheted? Not sure.\n\nMaybe it's a \"cape\" as outerwear, \"6201.93.00\" for women's or girls' overcoats, etc.\n\nGiven limited info, choose \"6204.63.00\" for women's or girls' dresses, not knitted? Actually 6204 is women's or girls' suits, ensembles, jackets, etc., not knitted. 6204.63 is \"Other\" maybe.\n\nI'll output something."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049542034,
+      "prompt_tokens": 182,
+      "prompt_time": 0.008798189,
+      "completion_tokens": 218,
+      "completion_time": 0.460643269,
+      "total_tokens": 400,
+      "total_time": 0.469441458,
+      "completion_tokens_details": {
+        "reasoning_tokens": 161
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3ss6wpgea2t2te6xhkn3baa",
+      "seed": 1510441198
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62046300",
+  "predicted_reason": "The item is a garment (cape with sleeves) classified under women's or girls' outerwear and other apparel not knitted or crocheted.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359366",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7318220000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7ee02e72-a1ed-4b2a-b325-9b3a2a711961",
+    "object": "chat.completion",
+    "created": 1790727253,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7318.15.00\", \"reason\": \"Flat steel washer made of SUS301 steel falls under heading 7318 for washers of iron or steel, specifically subheading 7318.15\"}",
+          "reasoning": "Need HTS for steel washers. Likely 7318.15.00? Let's see: 7318 covers \"Threaded rods, bolts, screws, nuts, coach screws, rivets, cotters, cotter pins, washers and similar articles, of iron or steel\". Subheading 7318.15 is \"Washers of iron or steel\". 7318.15.00 is correct. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204238637,
+      "prompt_tokens": 244,
+      "prompt_time": 0.009724435,
+      "completion_tokens": 144,
+      "completion_time": 0.296065818,
+      "total_tokens": 388,
+      "total_time": 0.305790253,
+      "completion_tokens_details": {
+        "reasoning_tokens": 88
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qtjv11exv8nsxg25m7487y",
+      "seed": 1122901039
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73181500",
+  "predicted_reason": "Flat steel washer made of SUS301 steel falls under heading 7318 for washers of iron or steel, specifically subheading 7318.15",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

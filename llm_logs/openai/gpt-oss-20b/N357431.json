@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357431",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "7306405040",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d6bd6551-723a-4928-a22a-45985f95d578",
+    "object": "chat.completion",
+    "created": 1790607514,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Welded, cold\u2011drawn stainless steel pipes with wall thickness \u22651.65\u202fmm and 0.5\u201324\u202f% Ni fall under 7308.90.90 (other stainless steel pipes)\"}",
+          "reasoning": "Need HTS 10-digit. Stainless steel pipes welded, cold drawn, wall thickness 1.65mm, nickel 0.5-24%. Likely 7308.90.90? Actually 7308.90.90 is \"Other\" stainless steel pipes. 7308.90.90 is 10-digit? 7308.90.90 is 8-digit. 10-digit would be 7308.90.90.00? But 10-digit includes 2 more digits for US. So 7308.90.90.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151782046,
+      "prompt_tokens": 229,
+      "prompt_time": 0.065441038,
+      "completion_tokens": 193,
+      "completion_time": 0.277963637,
+      "total_tokens": 422,
+      "total_time": 0.343404675,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_99996fee8e",
+    "x_groq": {
+      "id": "req_01m3m8cpk9emn80zb3491fxna9",
+      "seed": 864091511
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Welded, cold\u2011drawn stainless steel pipes with wall thickness \u22651.65\u202fmm and 0.5\u201324\u202f% Ni fall under 7308.90.90 (other stainless steel pipes)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

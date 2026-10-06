@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358981",
+  "rulingDate": "2026-03-11T00:00:00",
+  "true_code": "8903220015",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f200ff22-6047-4204-a36f-cce9514debe6",
+    "object": "chat.completion",
+    "created": 1790726964,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8903.00.0020\",\n  \"reason\": \"The vessel is a fiberglass recreational sailboat over 24 ft with an auxiliary diesel engine, classified under HTSUS heading 8903 for sailboats.\"\n}",
+          "reasoning": "Need HTS for sailboat 30 ft fiberglass with engine. Likely heading 8903.00.00? 8903.00.00 is \"Sailboats, other than racing, and other vessels propelled by sail\". For those with auxiliary engine, still 8903.00.00. 10-digit: 8903.00.0010? Actually US: 8903.00.0010 is \"Sailboats, other than racing, of 24 ft or less\". Need 30 ft, so maybe 8903.00.0020 for over 24 ft? Check: 8903.00.0010 = 24 ft or less, 8903.00.0020 = over 24 ft. So answer 8903.00.0020."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088675927,
+      "prompt_tokens": 310,
+      "prompt_time": 0.012119698,
+      "completion_tokens": 230,
+      "completion_time": 0.482579011,
+      "total_tokens": 540,
+      "total_time": 0.494698709,
+      "completion_tokens_details": {
+        "reasoning_tokens": 168
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3qta0g4e9tr1zdptqp669n6",
+      "seed": 678719966
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8903000020",
+  "predicted_reason": "The vessel is a fiberglass recreational sailboat over 24 ft with an auxiliary diesel engine, classified under HTSUS heading 8903 for sailboats.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

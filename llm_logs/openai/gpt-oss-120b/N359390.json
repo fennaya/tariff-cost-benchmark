@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359390",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-804a6bff-eb89-4af1-9dd7-511a14d9bd0f",
+    "object": "chat.completion",
+    "created": 1790727262,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Classified under medicinal preparations (tablets) not elsewhere specified in Chapter 30.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical sodium phenylbutyrate tablets. Likely under 3004.90.00? Actually 3004.90.00 is \"Medicaments consisting of mixed or unmixed products for therapeutic use, not elsewhere specified\". Sodium phenylbutyrate is a medicinal product. Could be 3004.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048733826,
+      "prompt_tokens": 234,
+      "prompt_time": 0.012145913,
+      "completion_tokens": 122,
+      "completion_time": 0.255561482,
+      "total_tokens": 356,
+      "total_time": 0.267707395,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3qtk4cxe6t8d45txh0nzxqs",
+      "seed": 1118919343
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Classified under medicinal preparations (tablets) not elsewhere specified in Chapter 30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362780",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "9014109000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3f156428-78e0-46cc-b788-832a88be7f31",
+    "object": "chat.completion",
+    "created": 1790836653,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9013.10.00\",\n  \"reason\": \"The item is a magnetic navigation instrument (aircraft compass) classified under HTS heading 9013 for magnetic, electromagnetic, and electrostatic instruments.\"\n}",
+          "reasoning": "We need HTS for aircraft navigation instrument. Likely 9013.80.00? Let's see: 9013.80.00 is \"Other instruments and apparatus for measuring or checking the flow, level, pressure, or other variables of liquids or gases\". Not. Navigation instruments: 9013.20.00 is \"Gyroscopic instruments\". Compasses: 9013.20.00? Actually 9013.20.00 is \"Gyroscopic instruments\". Compasses are under 9013.10.00? Check: 9013.10.00 - \"Magnetic, electromagnetic, and electrostatic instruments and apparatus\". Might be 9013.10.00 includes compasses. More specific: 9013.10.00 \"Magnetic, electromagnetic, and electrostatic instruments and apparatus\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219673484,
+      "prompt_tokens": 257,
+      "prompt_time": 0.01096123,
+      "completion_tokens": 232,
+      "completion_time": 0.487760205,
+      "total_tokens": 489,
+      "total_time": 0.498721435,
+      "completion_tokens_details": {
+        "reasoning_tokens": 172
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3v2xexbeyftpgf7874z0qyg",
+      "seed": 464870792
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90131000",
+  "predicted_reason": "The item is a magnetic navigation instrument (aircraft compass) classified under HTS heading 9013 for magnetic, electromagnetic, and electrostatic instruments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

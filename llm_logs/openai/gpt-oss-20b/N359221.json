@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359221",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8704310140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-0fbfe317-c88a-40a5-8c68-4ee503fa7238",
+    "object": "chat.completion",
+    "created": 1790624325,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8703.20.10\",\"reason\":\"Used 1990 Honda Acty truck falls under light motor vehicles for transport of goods, classified in HTS 8703.20.10.\"}",
+          "reasoning": "Need HTSUS code for used motor vehicle. 1990 Honda Acty truck, 545 cc engine. It's a light truck. HTS 8703.20.10? Actually 8703.20 is \"Motor vehicles for the transport of goods, other than those of heading 8703.10\". Subheading 8703.20.10 is \"Other than those of heading 8703.20.10\" Wait check: 8703.20.10 is \"Other than those of heading 8703.20.10\" confusing. Actually 8703.20.10 is \"Other than those of heading 8703.20.10\" maybe for trucks. 8703.20.10 is \"Other than those of heading 8703.20.10\" hmm. Let's pick 8703.20.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.043187158,
+      "prompt_tokens": 224,
+      "prompt_time": 0.013018774,
+      "completion_tokens": 235,
+      "completion_time": 0.250246428,
+      "total_tokens": 459,
+      "total_time": 0.263265202,
+      "completion_tokens_details": {
+        "reasoning_tokens": 181
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4315eb300",
+    "x_groq": {
+      "id": "req_01m3mrdqvre5crtwgk1xynebkp",
+      "seed": 1604351573
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87032010",
+  "predicted_reason": "Used 1990 Honda Acty truck falls under light motor vehicles for transport of goods, classified in HTS 8703.20.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

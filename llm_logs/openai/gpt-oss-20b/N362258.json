@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362258",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "9029204080",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-180703e7-4257-4e3e-9a59-b25963e0b791",
+    "object": "chat.completion",
+    "created": 1790732423,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9018.90.90.00\",\"reason\":\"It is a wrist\u2011worn, battery\u2011powered heart\u2011rate monitoring device, classified as a medical instrument for measuring physical quantities.\"}",
+          "reasoning": "Need HTS 10-digit. It's a wearable heart rate monitor. Likely 9018.90.90? Actually 9018.90.90 is \"Other instruments and apparatus for measuring or checking physical quantities\". But wearable heart rate monitor is a medical device? Could be 9018.90.90. But 9018.90.90 is for other instruments. 9018.90.90 includes \"Other instruments and apparatus for measuring or checking physical quantities, not elsewhere specified or included\". Heart rate monitor falls under 9018.90.90. 10-digit: 9018.90.90.00? Actually 9018.90.90 is 8-digit. 10-digit adds 2 more digits: 9018.90.90.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293599402,
+      "prompt_tokens": 472,
+      "prompt_time": 0.024065178,
+      "completion_tokens": 220,
+      "completion_time": 0.282884709,
+      "total_tokens": 692,
+      "total_time": 0.306949887,
+      "completion_tokens_details": {
+        "reasoning_tokens": 167
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0d0da6cfee",
+    "x_groq": {
+      "id": "req_01m3qzgksgenzaqjst8x7bnkb1",
+      "seed": 944237585
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018909000",
+  "predicted_reason": "It is a wrist\u2011worn, battery\u2011powered heart\u2011rate monitoring device, classified as a medical instrument for measuring physical quantities.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

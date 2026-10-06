@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358186",
+  "rulingDate": "2026-02-25T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-7cc776cc-268f-4430-be01-5740a43513a4",
+    "object": "chat.completion",
+    "created": 1790607927,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.10\",\"reason\":\"Rivaroxaban tablets are a pharmaceutical preparation in dosage form, classified under 3004.10.10 for medicaments in tablets.\"}",
+          "reasoning": "Need HTSUS code for pharmaceutical preparations. Rivaroxaban tablets. Likely 3004.10.10? Actually 3004 is \"Medicaments consisting of mixed or unmixed products of a chemical or physical nature, not elsewhere specified or included\". 3004.10 is \"Medicaments consisting of mixed or unmixed products of a chemical or physical nature, not elsewhere specified or included, in dosage form\". 3004.10.10 is \"Medicaments consisting of mixed or unmixed products of a chemical or physical nature, not elsewhere specified or included, in dosage form, in tablets\". So 3004.10.10. Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192956975,
+      "prompt_tokens": 224,
+      "prompt_time": 0.010875167,
+      "completion_tokens": 189,
+      "completion_time": 0.20981181,
+      "total_tokens": 413,
+      "total_time": 0.220686977,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c9afb2bdb4",
+    "x_groq": {
+      "id": "req_01m3m8s9tsecpvatwkjga50pnk",
+      "seed": 908590752
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30041010",
+  "predicted_reason": "Rivaroxaban tablets are a pharmaceutical preparation in dosage form, classified under 3004.10.10 for medicaments in tablets.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

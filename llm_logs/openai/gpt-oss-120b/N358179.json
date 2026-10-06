@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358179",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "8423100010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e6d1520c-cb62-466c-b38c-658e05db68f8",
+    "object": "chat.completion",
+    "created": 1790726580,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9022.13.00.00\", \"reason\": \"The device is an electronic weighing scale with medical functions intended for home health monitoring, classifying it as a weighing machine for medical purposes.\"}",
+          "reasoning": "We need HTS code for medical device scale with electronic, remote monitoring. Likely under 9022.12.00? 9022.12.00 is \"Other weighing machines, not otherwise specified\". But medical devices maybe 9022.13.00 \"Other weighing machines, for medical purposes\". Actually 9022.13.00 is \"Other weighing machines, for medical purposes\". Check: 9022.13.00 - \"Other weighing machines, for medical purposes\". So choose that. 10-digit: 9022.13.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.02273451,
+      "prompt_tokens": 424,
+      "prompt_time": 0.0218692,
+      "completion_tokens": 178,
+      "completion_time": 0.374190948,
+      "total_tokens": 602,
+      "total_time": 0.396060148,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qsya8hem4rdsbzt4q1k627",
+      "seed": 471525126
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9022130000",
+  "predicted_reason": "The device is an electronic weighing scale with medical functions intended for home health monitoring, classifying it as a weighing machine for medical purposes.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358929",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8422309130",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-be3ece95-8f7f-4294-b9f8-94cfe0d21495",
+    "object": "chat.completion",
+    "created": 1790726938,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8422.30.00\", \"reason\": \"The item is a packaging machine that seals trays under vacuum/MAP, which falls under HTS heading 8422 for packing, bottling and capping machines.\"}",
+          "reasoning": "We need HTS code for tray-sealing machine. Likely 8422? Actually packaging machines: 8422.30.00 for \"Other packing, bottling, and capping machines\". Check: 8422.30.00 - \"Other packing, bottling, and capping machines\". That fits. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300694308,
+      "prompt_tokens": 349,
+      "prompt_time": 0.093944677,
+      "completion_tokens": 130,
+      "completion_time": 0.271232453,
+      "total_tokens": 479,
+      "total_time": 0.36517713,
+      "completion_tokens_details": {
+        "reasoning_tokens": 70
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m3qt97jnec5akdvc1szae5sz",
+      "seed": 1446059971
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84223000",
+  "predicted_reason": "The item is a packaging machine that seals trays under vacuum/MAP, which falls under HTS heading 8422 for packing, bottling and capping machines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

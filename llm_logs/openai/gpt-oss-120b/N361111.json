@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361111",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "6116106500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c1dbedda-5315-4d5f-8724-e41a8930c05c",
+    "object": "chat.completion",
+    "created": 1790782997,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6116.20.00\",\n  \"reason\": \"Knitted glove made of man\u2011made fibers (nylon/polyurethane) falls under Chapter 61, heading 6116 for knitted gloves of man\u2011made fibers.\"\n}",
+          "reasoning": "We need HTS code for nylon/polyurethane coated glove with polyester drawstring. Likely under Chapter 61: Articles of apparel and clothing accessories, knitted or crocheted. Gloves: 6116.10? Let's check: 6116.10.00 - Gloves, mittens and mitts, knitted or crocheted, of cotton. 6116.20 - of man-made fibers. So 6116.20.00 is gloves of man-made fibers. Since coated maybe 6116.90? But coating maybe considered protective gloves, could be under 6216? Actually 6216 is other made-up articles, not knitted. Since it's knit, 6116.20.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.265012456,
+      "prompt_tokens": 217,
+      "prompt_time": 0.010015416,
+      "completion_tokens": 212,
+      "completion_time": 0.458277599,
+      "total_tokens": 429,
+      "total_time": 0.468293015,
+      "completion_tokens_details": {
+        "reasoning_tokens": 148
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3sfqzv4esmbk46c2s5m2aw6",
+      "seed": 1851094331
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61162000",
+  "predicted_reason": "Knitted glove made of man\u2011made fibers (nylon/polyurethane) falls under Chapter 61, heading 6116 for knitted gloves of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

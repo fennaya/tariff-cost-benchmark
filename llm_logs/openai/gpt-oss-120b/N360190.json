@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360190",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5ec621e4-0ce1-474e-b848-5b6e083897ab",
+    "object": "chat.completion",
+    "created": 1790756559,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.00\", \"reason\": \"The item is a plastic bag primarily composed of LDPE (a polymer of ethylene) and classified under heading 3923.21 for plastic bags, sacks and similar packing containers of polymers of ethylene.\"}",
+          "reasoning": "We need HTS for plastic bags, multi-layer, OPP, metallized PET, LDPE 80% weight. Likely heading 3923.21? 3923.21.00 is \"Plastic bags, sacks and similar packing containers, of polymers of ethylene\". But LDPE is polymer of ethylene. So 3923.21.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.015344632,
+      "prompt_tokens": 251,
+      "prompt_time": 0.010658148,
+      "completion_tokens": 149,
+      "completion_time": 0.315142999,
+      "total_tokens": 400,
+      "total_time": 0.325801147,
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3rph50fe56scrn698x1bak8",
+      "seed": 2015965892
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39232100",
+  "predicted_reason": "The item is a plastic bag primarily composed of LDPE (a polymer of ethylene) and classified under heading 3923.21 for plastic bags, sacks and similar packing containers of polymers of ethylene.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

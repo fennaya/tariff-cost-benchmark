@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359845",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e26ec241-0c43-432c-85d7-24db6b3c9531",
+    "object": "chat.completion",
+    "created": 1790740765,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.19.00\", \"reason\": \"The product is a liquid mineral fertilizer containing nitrogen (and often phosphorus/potassium) for agricultural use, classified under HTS heading 3105.19 for other liquid fertilizers containing nitrogen.\"}",
+          "reasoning": "Need HTS for liquid fertilizers, mineral mixed, nitrogen phosphorus potassium. Likely 3105.19.00? Actually 3105.19.00 is \"Other fertilizers, liquid, containing nitrogen\". 3105.11 is \"Urea\". 3105.20 is \"Other fertilizers, solid\". For liquid fertilizers containing nitrogen, phosphorus, potassium: 3105.19.00 \"Other fertilizers, liquid, containing nitrogen\". So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018021574,
+      "prompt_tokens": 1166,
+      "prompt_time": 0.072366511,
+      "completion_tokens": 160,
+      "completion_time": 0.340110676,
+      "total_tokens": 1326,
+      "total_time": 0.412477187,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3r7f669e0p848w8jm6nmxp8",
+      "seed": 421119868
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "31051900",
+  "predicted_reason": "The product is a liquid mineral fertilizer containing nitrogen (and often phosphorus/potassium) for agricultural use, classified under HTS heading 3105.19 for other liquid fertilizers containing nitrogen.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

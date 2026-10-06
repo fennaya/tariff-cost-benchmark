@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359777",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "2106909998",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-77f95c52-859f-4706-9f6c-95d3cab661f7",
+    "object": "chat.completion",
+    "created": 1790736277,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.9995\", \"reason\": \"Classified as a powdered dietary supplement not elsewhere specified, falling under Chapter 21 food preparations (2106.90)\"}",
+          "reasoning": "Need HTS for dietary supplement powder. Likely 2106.90.9995? Actually 2106.90 is \"Other food preparations not elsewhere specified\". For dietary supplements, often 2106.90.99. But 2106.90.99 is \"Other\". 2106.90.99.90? 10-digit: 2106.90.9995? Let's pick 2106.90.9995."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205694636,
+      "prompt_tokens": 784,
+      "prompt_time": 0.112392593,
+      "completion_tokens": 146,
+      "completion_time": 0.534211246,
+      "total_tokens": 930,
+      "total_time": 0.646603839,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m3r367ezeeqredevp078hnkb",
+      "seed": 337093392
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909995",
+  "predicted_reason": "Classified as a powdered dietary supplement not elsewhere specified, falling under Chapter 21 food preparations (2106.90)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

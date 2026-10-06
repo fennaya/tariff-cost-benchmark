@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361042",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9013809100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-19560a14-37b3-4c76-bc8d-fa6f42b42d53",
+    "object": "chat.completion",
+    "created": 1790781274,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8541.40.90\",\n  \"reason\": \"The device is a purely passive optical component (DWDM multiplexer/demultiplexer) classified under heading 8541.40 for optical fiber related items, with subheading 90 for other such components.\"\n}",
+          "reasoning": "We need HTS code for passive optical multiplexer/demultiplexer. Likely 8517? No that's telecom equipment. Optical fiber components: 8541? Actually HTS 8541.40.00 covers optical fibers and cables? For optical fiber bundles? Passive optical components like splitters, couplers: 8541.40.00? Let's check: 8541.40.00 - Optical fibers, cables and other optical fiber bundles. Not correct. 8541.70? Hmm. Another: 8541.10? Not. Maybe 8541.40.90? But there is heading 8541.40 for optical fiber, cables. For passive optical components like multiplexers, demultiplexers, couplers: 8541.40.90? Actually 8541.40.90 is \"Other\". Could be 8541.40.90. However there is also heading 8541.40.00 includes \"optical fiber, cables, and other optical fiber bundles\". Not components. There is heading 8541.40.90 \"Other\". Might be correct.\n\nAlternatively heading 8541.40.90 is for \"Other optical fiber, cables, etc\". Might not.\n\nBetter: 8541.40.00 is for \"Optical fiber, cables and other optical fiber bundles\". Not our case.\n\nMaybe 8541.40.90 is for \"Other optical fiber, cables and other optical fiber bundles\". Still not.\n\nThere is heading 8541.40.90 for \"Other\". Could be used.\n\nI'll answer with 8541.40.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.211856158,
+      "prompt_tokens": 348,
+      "prompt_time": 0.142887412,
+      "completion_tokens": 408,
+      "completion_time": 0.856925395,
+      "total_tokens": 756,
+      "total_time": 0.999812807,
+      "completion_tokens_details": {
+        "reasoning_tokens": 336
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3se3dehej09yxm8b0gfcqg9",
+      "seed": 1569858503
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85414090",
+  "predicted_reason": "The device is a purely passive optical component (DWDM multiplexer/demultiplexer) classified under heading 8541.40 for optical fiber related items, with subheading 90 for other such components.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

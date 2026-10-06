@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359850",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "3824993990",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-0392650c-7bc5-4cdf-886e-ee426c638606",
+    "object": "chat.completion",
+    "created": 1790652109,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1201.90.90.00\",\"reason\":\"Mineral foliar fertilizer containing copper and nickel sulfates falls under \\\"Other mineral fertilizers, not elsewhere specified\\\".\"}",
+          "reasoning": "Need HTS 10-digit. Mineral foliar fertilizer with copper sulfate, nickel sulfate. Likely 1201.90.90? Actually fertilizers: 1201.90.90 is \"Other fertilizers, not elsewhere specified\". But mineral fertilizers: 1201.90.90.00? 10-digit: 1201.90.90.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.145018188,
+      "prompt_tokens": 391,
+      "prompt_time": 0.025001313,
+      "completion_tokens": 127,
+      "completion_time": 0.146400323,
+      "total_tokens": 518,
+      "total_time": 0.171401636,
+      "completion_tokens_details": {
+        "reasoning_tokens": 78
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7d448090ba",
+    "x_groq": {
+      "id": "req_01m3njxmj4ebcrf0s8m771wqfp",
+      "seed": 932272295
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1201909000",
+  "predicted_reason": "Mineral foliar fertilizer containing copper and nickel sulfates falls under \"Other mineral fertilizers, not elsewhere specified\".",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

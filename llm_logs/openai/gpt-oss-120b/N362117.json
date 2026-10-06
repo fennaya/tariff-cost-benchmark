@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362117",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d4a81a6f-0b32-46f7-aae4-b1af2a782454",
+    "object": "chat.completion",
+    "created": 1790817633,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.90\",\n  \"reason\": \"Classified under other dental instruments made of metal, falling under heading 9018 for surgical, medical, dental instruments.\"\n}",
+          "reasoning": "We need HTS code for dental floss pick made of stainless steel. Likely under \"Dental floss\" or \"toothpicks\"? Stainless steel floss pick is a dental instrument. HTS 9018? Actually 9018.90? Let's think: 9018 covers surgical, medical, dental instruments. 9018.90.90 is \"Other\". But floss pick maybe 9018.90.90. Or 9018.90.10? Check: 9018.90.10 is \"Other instruments, appliances and implements, of plastics\". Not. 9018.90.90 is \"Other\". So code 9018.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150272222,
+      "prompt_tokens": 218,
+      "prompt_time": 0.010928535,
+      "completion_tokens": 198,
+      "completion_time": 0.416684189,
+      "total_tokens": 416,
+      "total_time": 0.427612724,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3tgs0rdezf80fda8w2zn6xe",
+      "seed": 1530995589
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189090",
+  "predicted_reason": "Classified under other dental instruments made of metal, falling under heading 9018 for surgical, medical, dental instruments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

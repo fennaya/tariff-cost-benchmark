@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361295",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8479899599",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6574da0c-c575-4935-a287-befbbff56a9d",
+    "object": "chat.completion",
+    "created": 1790788171,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8432.20.00\",\n  \"reason\": \"Classified as other agricultural/horticultural machinery not elsewhere specified, per NY ruling for tow-behind golf ball collection implement.\"\n}",
+          "reasoning": "We need HTS code for a golf ball collector implement, tow-behind, mechanical, not powered. Likely under \"agricultural, horticultural, forestry machinery\" or \"sports equipment\". Could be classified as \"Other machines for cleaning, sorting, separating, washing, or drying\" maybe 8421? But it's a mechanical implement for collecting golf balls, used on golf courses. Could be \"Other machines, not elsewhere specified, for cleaning, sorting, etc.\" 8421.99.90? However tow-behind implement maybe under \"Other agricultural implements\" 8432? 8432.20? Let's think: 8432 covers \"Other agricultural, horticultural, forestry, poultry-keeping or bee-keeping machinery\". Subheading 8432.20 is \"Other agricultural, horticultural, forestry, poultry-keeping or bee-keeping machinery\". 8432.20.00 is \"Other\". Might be appropriate.\n\nBut there is a specific ruling N360787. Might indicate classification. Likely they classified under 8432.20.00. So answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300001641,
+      "prompt_tokens": 235,
+      "prompt_time": 0.128026101,
+      "completion_tokens": 278,
+      "completion_time": 0.579852927,
+      "total_tokens": 513,
+      "total_time": 0.707879028,
+      "completion_tokens_details": {
+        "reasoning_tokens": 223
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3smnwacep4rh55eftqa1zaj",
+      "seed": 675897936
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84322000",
+  "predicted_reason": "Classified as other agricultural/horticultural machinery not elsewhere specified, per NY ruling for tow-behind golf ball collection implement.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

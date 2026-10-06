@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N348642",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "5208212090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ee8bf30b-5951-4ccb-880a-3964b1400b18",
+    "object": "chat.completion",
+    "created": 1790607025,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.91.00\",\n  \"reason\": \"Plain cotton medical gauze (multiple plies) falls under heading 6302.91 for gauze, bandages and similar articles of cotton, not impregnated with pharmaceutical substances.\"\n}",
+          "reasoning": "We need HTS for medical gauze, cotton, with x-ray detectable thread and RFID. Likely heading 3005? Actually gauze is textile, not medical device? HTS 3005 covers pharmaceutical goods. Gauze is under 6302? 6302.91? 6302.91.00 is gauze, bandages, dressings of cotton. Check: 6302.91.00 - \"Gauze, bandages and similar articles, impregnated, coated or covered with pharmaceutical substances\". But plain cotton gauze maybe 6302.91.90? Actually 6302.91.00 is \"Gauze, bandages and similar articles, of cotton, not impregnated\". Let's pick 6302.91.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049495789,
+      "prompt_tokens": 1027,
+      "prompt_time": 0.052954067,
+      "completion_tokens": 228,
+      "completion_time": 0.478261249,
+      "total_tokens": 1255,
+      "total_time": 0.531215316,
+      "completion_tokens_details": {
+        "reasoning_tokens": 161
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3m7xrfwezq89t5pdvx7htjp",
+      "seed": 840850308
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029100",
+  "predicted_reason": "Plain cotton medical gauze (multiple plies) falls under heading 6302.91 for gauze, bandages and similar articles of cotton, not impregnated with pharmaceutical substances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

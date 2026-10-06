@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359074",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9a6ea37d-9f05-4b19-8e25-d52e4de4145e",
+    "object": "chat.completion",
+    "created": 1790727056,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8526.91.90\",\n  \"reason\": \"Plastic ear cup assemblies are classified as parts of headphones/earphones under heading 8526.91.\"\n}",
+          "reasoning": "We need HTS code for plastic ear cup assemblies. Likely under 9021? Actually earphones parts. Could be 9021.80.00 (Other hearing aids, parts). But headset ear cup maybe 8526? No, that's radios. Ear cup assembly as part of headphones: 8526.91.00 (Headphones, earphones, etc). Parts? 8526.91.90 maybe. Check: 8526.91.00 - Headphones, earphones, etc. 8526.91.90 - Parts thereof. So ear cup assembly is part. So code 8526.91.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.0872941,
+      "prompt_tokens": 283,
+      "prompt_time": 0.012612607,
+      "completion_tokens": 189,
+      "completion_time": 0.392013607,
+      "total_tokens": 472,
+      "total_time": 0.404626214,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3qtctj6e8w84bg1hmq093at",
+      "seed": 1881345052
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85269190",
+  "predicted_reason": "Plastic ear cup assemblies are classified as parts of headphones/earphones under heading 8526.91.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

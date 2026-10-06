@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360065",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "9403200040",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-206d9da7-6562-4c9e-bb44-3be62b1851c9",
+    "object": "chat.completion",
+    "created": 1790662907,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.50.20.00\",\"reason\":\"A complete loft bed with a metal frame and wood-based panels, sold as a single unit without a mattress, fits the heading for beds with a metal frame.\"}",
+          "reasoning": "Need HTS 10-digit. Bed frame with stairs and storage. Likely 9403.50.10? Actually 9403.50 is \"beds, with or without mattresses, other than those of heading 9403.20\". 9403.50.10 is \"beds, other than those of heading 9403.20, with a frame of wood or other material\". But this has steel frame. 9403.50.20 is \"beds, other than those of heading 9403.20, with a frame of metal\". So 9403.50.20.10? Wait 9403.50.20 is for metal frame. Subheadings: 9403.50.20.10 \"beds, other than those of heading 9403.20, with a frame of metal, with a mattress\". But mattress separate. So 9403.50.20.00? Actually 9403.50.20.00 is \"beds, other than those of heading 9403.20, with a frame of metal\". So 9403.50.20.00. Provide 10-digit: 9403.50.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148881329,
+      "prompt_tokens": 403,
+      "prompt_time": 0.043615148,
+      "completion_tokens": 307,
+      "completion_time": 0.335238598,
+      "total_tokens": 710,
+      "total_time": 0.378853746,
+      "completion_tokens_details": {
+        "reasoning_tokens": 249
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_2b688e7cc3",
+    "x_groq": {
+      "id": "req_01m3nx755eeyssh6kyma4z544k",
+      "seed": 1671280894
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403502000",
+  "predicted_reason": "A complete loft bed with a metal frame and wood-based panels, sold as a single unit without a mattress, fits the heading for beds with a metal frame.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

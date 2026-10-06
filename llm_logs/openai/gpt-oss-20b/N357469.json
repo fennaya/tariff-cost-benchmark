@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357469",
+  "rulingDate": "2026-01-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-28f012bf-7ad3-4777-84f2-26715c173749",
+    "object": "chat.completion",
+    "created": 1790607562,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"61.10.20.10\",\"reason\":\"The item is a costume shirt, classified under heading 61.10.20.10 for costumes other than those of heading 61.10.20.20.\"}",
+          "reasoning": "Need HTS code for costume clothing. Likely 61.10.20.10? Actually costumes: 61.10.20.10 is \"Costumes, other than those of heading 61.10.20.20\". Wait 61.10.20.20 is \"Costumes, other than those of heading 61.10.20.10\". Let's pick 61.10.20.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220589459,
+      "prompt_tokens": 210,
+      "prompt_time": 0.012250311,
+      "completion_tokens": 151,
+      "completion_time": 0.21842619,
+      "total_tokens": 361,
+      "total_time": 0.230676501,
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_851252edc2",
+    "x_groq": {
+      "id": "req_01m3m8e4v8e53b0s2g7j9aq18n",
+      "seed": 1187858372
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61102010",
+  "predicted_reason": "The item is a costume shirt, classified under heading 61.10.20.10 for costumes other than those of heading 61.10.20.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

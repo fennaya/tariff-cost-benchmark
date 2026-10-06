@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362427",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "3824999397",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4d86d5dd-8217-4c96-b7cf-32fbbab2284d",
+    "object": "chat.completion",
+    "created": 1790827486,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6815.10.00\", \"reason\": \"The product is primarily silicon carbide, classified under heading 6815 for silicon carbide, regardless of its use as a carburizer in steel.\"}",
+          "reasoning": "Need to pick HTS code for silicon carbide used as carburizer. Likely under 6815.10.00? Actually silicon carbide is 6815.10.00 (silicon carbide). But if used as alloying? Still same. So provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048527139,
+      "prompt_tokens": 207,
+      "prompt_time": 0.008831727,
+      "completion_tokens": 111,
+      "completion_time": 0.229643033,
+      "total_tokens": 318,
+      "total_time": 0.23847476,
+      "completion_tokens_details": {
+        "reasoning_tokens": 56
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3tt5qdkeyv8xkb973t6ywjx",
+      "seed": 158868803
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "68151000",
+  "predicted_reason": "The product is primarily silicon carbide, classified under heading 6815 for silicon carbide, regardless of its use as a carburizer in steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

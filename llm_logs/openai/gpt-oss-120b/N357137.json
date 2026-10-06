@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357137",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2e2012ee-7fc2-46e2-a6c3-0f592c89e3c0",
+    "object": "chat.completion",
+    "created": 1790725958,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8302.42.00\",\n  \"reason\": \"Aluminum locking carabiners are classified as other mountings, fittings and similar articles of other base metals under heading 8302.42.00.\"\n}",
+          "reasoning": "We need HTS code for locking carabiners made of aluminum. Likely under 8302.50.00? Let's recall: 8302 covers \"Base metal mountings, fittings and similar articles\". 8302.50 is \"Other mountings, fittings and similar articles (including parts)\". But specific for \"carabiners\" maybe 8302.50.00. Or 8302.41? Actually 8302.41 is \"Other mountings, fittings and similar articles, of iron or steel\". 8302.42 is \"of other base metals\". Carabiners of aluminum (base metal) likely 8302.42.00. Let's check: 8302.42.00 - \"Other mountings, fittings and similar articles, of other base metals\". That seems right.\n\nThus HTS 8302.42.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.094569729,
+      "prompt_tokens": 384,
+      "prompt_time": 0.126937154,
+      "completion_tokens": 245,
+      "completion_time": 0.507510635,
+      "total_tokens": 629,
+      "total_time": 0.634447789,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3qsba5yev28c1vgjteh1yvh",
+      "seed": 980651241
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83024200",
+  "predicted_reason": "Aluminum locking carabiners are classified as other mountings, fittings and similar articles of other base metals under heading 8302.42.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

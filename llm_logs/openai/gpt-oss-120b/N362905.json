@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362905",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-43e346d9-c580-45ce-9813-caab55e76202",
+    "object": "chat.completion",
+    "created": 1790841791,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.20.00\",\n  \"reason\": \"The item is a metal costume armor for theatrical/carnival use, classified under HTS heading 9505.90.20 for costumes, masks, etc.\"\n}",
+          "reasoning": "We need HTS code for costume armor made of metal, likely \"costume jewelry\" or \"protective clothing\"? Likely heading 9505? Actually HTS for \"costumes, masks, etc.\" is 9505.00.00? Let's check: 9505.90.00 is \"Other articles of sporting goods\". 9505.90.20 is \"Costumes, masks, etc.\" Wait: 9505.90.20 is \"Costumes, masks, etc., for theatrical, carnival, or similar use\". So 9505.90.20. That's 8 digits. Need 10-digit: 9505.90.20.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.349481412,
+      "prompt_tokens": 293,
+      "prompt_time": 0.057286148,
+      "completion_tokens": 211,
+      "completion_time": 0.443286737,
+      "total_tokens": 504,
+      "total_time": 0.500572885,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3v7t8meek7bk5f30257da32",
+      "seed": 1435329648
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9505902000",
+  "predicted_reason": "The item is a metal costume armor for theatrical/carnival use, classified under HTS heading 9505.90.20 for costumes, masks, etc.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358886",
+  "rulingDate": "2026-03-11T00:00:00",
+  "true_code": "2009897099",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ed93a038-1e4c-4a56-ba7d-74cf33a45e6e",
+    "object": "chat.completion",
+    "created": 1790726917,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2008.99.20.00\", \"reason\": \"Organic coconut cream is a non-concentrated coconut cream product classified under heading 2008.99 for other coconut products, specifically subheading 20 for coconut cream and milk not concentrated.\"}",
+          "reasoning": "We need HTS for coconut cream. Likely heading 2008.99? Actually coconut cream is under 2008.99.00.00? Let's check: 2008.99.00.00 - Other coconut products. Coconut cream maybe 2008.99.20? Wait 2008.99.20.00 is \"Coconut cream and coconut milk, not concentrated\". Need check. I think 2008.99.20.00 is correct. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.03080452,
+      "prompt_tokens": 259,
+      "prompt_time": 0.060502595,
+      "completion_tokens": 170,
+      "completion_time": 0.358286138,
+      "total_tokens": 429,
+      "total_time": 0.418788733,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qt8js0esxs6jp62za3y32w",
+      "seed": 2055799552
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2008992000",
+  "predicted_reason": "Organic coconut cream is a non-concentrated coconut cream product classified under heading 2008.99 for other coconut products, specifically subheading 20 for coconut cream and milk not concentrated.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

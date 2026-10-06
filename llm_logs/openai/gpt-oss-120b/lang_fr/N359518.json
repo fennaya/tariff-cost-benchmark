@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359518",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-21a8092b-fc19-4a7d-8dd7-9e77c09c7d6d",
+    "object": "chat.completion",
+    "created": 1790906280,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.30.00\",\n  \"reason\": \"The product is a hydraulic separator that filters and purifies water systems, fitting the category of 'Other filtration or purification equipment' under heading 8421.\"\n}",
+          "reasoning": "We need HTS code for a hydraulic separator for hot/cold water, with air and impurity removal, magnetic separator. Likely under 8421? 8421.21? Let's think: 8421.21.00 - Oil and fuel filters. Not. 8421.29 - Other filtration. 8421.30 - Other. Actually 8421.30 is \"Other filtration or purification equipment\". Check: 8421.30.00 is \"Other filtration or purification equipment\". That seems right. So code 8421.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089832843,
+      "prompt_tokens": 413,
+      "prompt_time": 0.019229166,
+      "completion_tokens": 183,
+      "completion_time": 0.386649739,
+      "total_tokens": 596,
+      "total_time": 0.405878905,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3x5aa7rej1tear7g38gqkcb",
+      "seed": 1556078132
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84213000",
+  "predicted_reason": "The product is a hydraulic separator that filters and purifies water systems, fitting the category of 'Other filtration or purification equipment' under heading 8421.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362367",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "4415208000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0c7587d6-fc3c-4e78-8c5e-18a8045a53d5",
+    "object": "chat.completion",
+    "created": 1790825865,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.99.90\", \"reason\": \"The product is a molded wood particle board pallet, classified under other wooden articles not elsewhere specified.\"}",
+          "reasoning": "We need HTS for molded wood particle board pallets. Likely under 4412? 4412.99.90? Actually wood pallets: 4412.99.90 is \"Other wooden articles\". But molded wood particle board maybe under 4412.90? Let's think: 4412.99.90 is \"Other wooden articles, not elsewhere specified\". Pallets are 4412.99.90. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218007975,
+      "prompt_tokens": 250,
+      "prompt_time": 0.080101622,
+      "completion_tokens": 137,
+      "completion_time": 0.290374853,
+      "total_tokens": 387,
+      "total_time": 0.370476475,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3trm7pgenqvdsjc91satyh3",
+      "seed": 1388658955
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "44129990",
+  "predicted_reason": "The product is a molded wood particle board pallet, classified under other wooden articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

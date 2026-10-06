@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361715",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8421210000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-be5df02c-c3ca-42c7-9652-193c19f5dc02",
+    "object": "chat.completion",
+    "created": 1790803004,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8509.80.90\",\n  \"reason\": \"Classified as a battery\u2011powered autonomous cleaning machine (robotic pool cleaner) under heading 8509 for other machines used for cleaning, polishing or mechanical treatment of surfaces.\"\n}",
+          "reasoning": "We need HTS code for robotic pool cleaner battery powered. Likely 8509.80.90? Actually 8509.80.90 is \"Other machines of a kind used for cleaning, polishing, or other mechanical treatment of surfaces\". But pool cleaners maybe 8424? 8424.89.90 \"Other cleaning machines\". However battery-powered robotic pool cleaner is a \"vacuum cleaner\" type. HTS 8509.80.90 \"Other machines of a kind...\". I think 8509.80.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047721353,
+      "prompt_tokens": 494,
+      "prompt_time": 0.024429604,
+      "completion_tokens": 181,
+      "completion_time": 0.377885121,
+      "total_tokens": 675,
+      "total_time": 0.402314725,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3t2tjhwekx8z6xkc9qb9brz",
+      "seed": 2050313165
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85098090",
+  "predicted_reason": "Classified as a battery\u2011powered autonomous cleaning machine (robotic pool cleaner) under heading 8509 for other machines used for cleaning, polishing or mechanical treatment of surfaces.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363562",
+  "rulingDate": "2026-08-10T00:00:00",
+  "true_code": "8486400030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e5c68909-b54f-4e02-927c-0ddfb09245c1",
+    "object": "chat.completion",
+    "created": 1790858409,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.90\", \"reason\": \"Classified as a specialized machine for semiconductor wafer handling not listed elsewhere, falling under 'Other machines having individual functions'\"}",
+          "reasoning": "We need HTS code for wafer stage machine. Likely under 8479.89.99? Let's think: \"Other machines, apparatus for semiconductor manufacturing\". HTS 8471? Actually 8471 is automatic data processing machines. 8479 is \"Parts\". 8479.89.99 is \"Other\". But maybe 8479.89.90. However there is heading 8479.89.90 \"Other machines and mechanical appliances having individual functions, not specified elsewhere\". Could be 8479.89.90. Another possibility: 8479.89.99 \"Other\". Let's pick 8479.89.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.708276581,
+      "prompt_tokens": 217,
+      "prompt_time": 0.079485438,
+      "completion_tokens": 186,
+      "completion_time": 0.39630681,
+      "total_tokens": 403,
+      "total_time": 0.475792248,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3vqnc6refqbnk9z1je77gw9",
+      "seed": 26902773
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84798990",
+  "predicted_reason": "Classified as a specialized machine for semiconductor wafer handling not listed elsewhere, falling under 'Other machines having individual functions'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

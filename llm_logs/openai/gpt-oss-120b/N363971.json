@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363971",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "8458110030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-98991dc5-a216-4ff8-b1f3-5ac95ba96a1f",
+    "object": "chat.completion",
+    "created": 1790865165,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8458.10.00\",\n  \"reason\": \"The CNC horizontal turning\u2011milling machine is a metal machining center, classified under heading 8458 for machining centers for metal.\"\n}",
+          "reasoning": "We need HTS code for CNC turning-milling machine. Likely heading 8459.91? Actually 8459.91 is machine tools for working metal, other than lathes, etc. CNC turning-milling machine is a combination lathe/milling. Could be 8459.91.10? Let's check: 8459.91.00 is \"Machine tools (including machines for cold forming, stamping or punching) for working metal or other material, other than lathes, turning or boring machines\". But CNC turning-milling maybe considered \"lathes, turning or boring machines\". Actually 8458 is \"Machining centers\". 8458.10 is \"Machining centers, for metal\". CNC horizontal turning-milling maybe a machining center. 8458.10.00. So choose 8458.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.246255394,
+      "prompt_tokens": 227,
+      "prompt_time": 0.072497388,
+      "completion_tokens": 237,
+      "completion_time": 0.5008376,
+      "total_tokens": 464,
+      "total_time": 0.573334988,
+      "completion_tokens_details": {
+        "reasoning_tokens": 181
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3vy3jmcevybb2mzrf4sb5wq",
+      "seed": 52741395
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84581000",
+  "predicted_reason": "The CNC horizontal turning\u2011milling machine is a metal machining center, classified under heading 8458 for machining centers for metal.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

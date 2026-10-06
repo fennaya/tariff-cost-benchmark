@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359846",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c54e61dd-a4a6-41e4-adfd-c87d66a33ac9",
+    "object": "chat.completion",
+    "created": 1790741029,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.30.00\", \"reason\": \"Liquid compound fertilizer containing nitrogen, phosphorus, and other additives, classified under HTS chapter 31 as a compound fertilizer with two or more nutrients.\"}",
+          "reasoning": "We need HTS for liquid fertilizer containing nitrogen and phosphorus, not pesticide. Likely 3105.99.00? Let's see: 3105 covers mineral or chemical fertilizers, N-P-K. 3105.99.00 is \"Other\" fertilizers. 3105.10 is nitrogenous, 3105.20 phosphorus, 3105.30 compound N-P. Actually 3105.30 is \"Compound fertilizers containing two or more nutrients\". 3105.30.00? Check: 3105.30.00 is \"Compound fertilizers containing two or more nutrients\". That fits. So code 3105.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.146578882,
+      "prompt_tokens": 379,
+      "prompt_time": 0.017526931,
+      "completion_tokens": 195,
+      "completion_time": 0.411274531,
+      "total_tokens": 574,
+      "total_time": 0.428801462,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6c36ac20de",
+    "x_groq": {
+      "id": "req_01m3r7q86yeyev4xwhyxds2rr6",
+      "seed": 808919773
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "31053000",
+  "predicted_reason": "Liquid compound fertilizer containing nitrogen, phosphorus, and other additives, classified under HTS chapter 31 as a compound fertilizer with two or more nutrients.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

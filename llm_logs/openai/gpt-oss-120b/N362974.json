@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362974",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "2005999700",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8b251194-16a4-4769-ba73-9e43d5872f11",
+    "object": "chat.completion",
+    "created": 1790844710,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0703.99.00\", \"reason\": \"Classified under fresh or processed garlic (including fermented) not elsewhere specified\"}",
+          "reasoning": "We need HTS for dehydrated black garlic, a fresh garlic processed, likely under 0703? Garlic fresh is 0703. Dried garlic is 0703.99? Check: 0703.90? Actually 0703.90 is other fresh garlic. Dried garlic maybe 0703.99? But black garlic is fermented, not dried. Likely 0703.99. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.305774685,
+      "prompt_tokens": 729,
+      "prompt_time": 0.034794382,
+      "completion_tokens": 129,
+      "completion_time": 0.271255947,
+      "total_tokens": 858,
+      "total_time": 0.306050329,
+      "completion_tokens_details": {
+        "reasoning_tokens": 88
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3vakat8e7ms57z8pq06ahp1",
+      "seed": 1034014367
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "07039900",
+  "predicted_reason": "Classified under fresh or processed garlic (including fermented) not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

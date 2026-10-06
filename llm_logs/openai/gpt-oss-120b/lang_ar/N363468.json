@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363468",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8543709100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f0574ec1-564d-4c89-8d7c-3c0909635e1d",
+    "object": "chat.completion",
+    "created": 1790904735,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8542.31.00\",\n  \"reason\": \"The device is primarily a digital signal processor (DSP) integrated circuit used for audio signal processing, which falls under HTSUS heading 8542.31 for electronic integrated circuits.\"\n}",
+          "reasoning": "We need HTS for digital signal processor, not amplifier. Likely under 8517.62? Actually 8517.62 is \"Machines for the reception, conversion and transmission of voice, images or other data, including sound recording or reproducing apparatus\". But DSP maybe under 8542.31? 8542.31 is \"Electronic integrated circuits\". But a device with DSP, metal housing, connectors, used in audio processing, not a computer. Could be 8518.30 \"Other apparatus for sound or video recording, reproducing or transmitting\". However DSP is a component. Might be classified as \"digital signal processors\" under 8542.31. I think 8542.31.00 is \"Electronic integrated circuits, digital signal processors\". So choose that.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.145334626,
+      "prompt_tokens": 419,
+      "prompt_time": 0.096773169,
+      "completion_tokens": 230,
+      "completion_time": 0.491920534,
+      "total_tokens": 649,
+      "total_time": 0.588693703,
+      "completion_tokens_details": {
+        "reasoning_tokens": 164
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6fb4303df4",
+    "x_groq": {
+      "id": "req_01m3x3v5gnexwvkppre0py92qf",
+      "seed": 1755060846
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85423100",
+  "predicted_reason": "The device is primarily a digital signal processor (DSP) integrated circuit used for audio signal processing, which falls under HTSUS heading 8542.31 for electronic integrated circuits.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

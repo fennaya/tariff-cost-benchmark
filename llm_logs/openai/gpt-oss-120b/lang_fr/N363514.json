@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363514",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "9504500000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e6788c9e-399f-4291-b259-de1686110fee",
+    "object": "chat.completion",
+    "created": 1790904647,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9504.90.00\",\n  \"reason\": \"The kit is a set of gaming input peripherals (steering wheel, pedals, etc.) for PC use, classified as parts and accessories of video game machines under heading 9504.\"\n}",
+          "reasoning": "We need HTS for gaming controller accessories. Likely 9504.50.00? Actually 9504.50.00 is \"Video game consoles and machines, other than those of heading 9504.30\". Controllers? 9504.90.00 is \"Parts and accessories of heading 9504\". But specific: \"Game controllers\" maybe 9504.50.00 \"Other video game consoles and machines\". Hmm. For PC game controllers, could be 9504.90.00 \"Parts and accessories of articles of heading 9504\". The kit includes wheel, pedals, etc. It's a peripheral. So 9504.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047470954,
+      "prompt_tokens": 367,
+      "prompt_time": 0.016061854,
+      "completion_tokens": 210,
+      "completion_time": 0.443789657,
+      "total_tokens": 577,
+      "total_time": 0.459851511,
+      "completion_tokens_details": {
+        "reasoning_tokens": 143
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3x3rf53ef3tasz78kqykjsp",
+      "seed": 2005234344
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95049000",
+  "predicted_reason": "The kit is a set of gaming input peripherals (steering wheel, pedals, etc.) for PC use, classified as parts and accessories of video game machines under heading 9504.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

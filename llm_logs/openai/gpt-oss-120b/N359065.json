@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359065",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "8703330185",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8d7f46a3-c360-4901-a4a2-a82ade2ad7fd",
+    "object": "chat.completion",
+    "created": 1790727026,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.21.00.00\", \"reason\": \"Classified as a diesel-powered motor vehicle for the transport of persons (passenger vehicle) under heading 8703.21\"}",
+          "reasoning": "Need HTS for vehicle: diesel motor vehicle, 4-wheeled, passenger car? Land Cruiser is a 4WD SUV, 3-door, diesel. HTS chapter 87. For motor vehicles for transport of persons, HS 8703. For diesel engine, heading 8703.21? Actually 8703.21 is \"Vehicles with diesel engine, other than those of heading 8703.22\". Need subheading for 4-wheeled, 4,000 cc? Not given. Use generic: 8703.21.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151043648,
+      "prompt_tokens": 198,
+      "prompt_time": 0.007985584,
+      "completion_tokens": 178,
+      "completion_time": 0.3804292,
+      "total_tokens": 376,
+      "total_time": 0.388414784,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m3qtbx43eycbft5jy6kadsyn",
+      "seed": 884567078
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703210000",
+  "predicted_reason": "Classified as a diesel-powered motor vehicle for the transport of persons (passenger vehicle) under heading 8703.21",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

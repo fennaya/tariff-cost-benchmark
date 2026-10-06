@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362825",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "8716905060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5328a699-3fe9-493d-b23d-fee2f2497882",
+    "object": "chat.completion",
+    "created": 1790838289,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8714.99.90\", \"reason\": \"Classified as a wheel assembly with a polyurethane tread over a steel core, falling under other wheels and parts thereof not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for wheel assembly with polyurethane tread over steel core, with bearings. Likely under 8714? Wheels, non-motorized. 8714.99.90? Let's think: 8714.99.90 is \"Other parts and accessories of vehicles, other\". But wheels for vehicles: 8714.99.90 is \"Other wheels and parts thereof, of plastics\". Actually 8714.99.90: \"Other wheels and parts thereof, of other materials\". Might be 8714.99.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.242079852,
+      "prompt_tokens": 260,
+      "prompt_time": 0.014768067,
+      "completion_tokens": 171,
+      "completion_time": 0.359638237,
+      "total_tokens": 431,
+      "total_time": 0.374406304,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3v4fcd0eksrrwqkn8t0fetd",
+      "seed": 308028508
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87149990",
+  "predicted_reason": "Classified as a wheel assembly with a polyurethane tread over a steel core, falling under other wheels and parts thereof not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

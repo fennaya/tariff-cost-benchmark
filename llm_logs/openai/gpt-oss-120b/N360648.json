@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360648",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-584a28d6-d43d-4424-af77-1ae8f73e9999",
+    "object": "chat.completion",
+    "created": 1790769754,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8425.90.00.00\", \"reason\": \"Classified as other transport equipment (non-self-propelled wheeled carrier) not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for wheeled carrier for excavator, mainly steel. Likely under 8425? 8425.89? Actually \"Other transport equipment, other than railway or tramway rolling stock, and parts thereof\". Could be 8425.99.00.00 for other parts. But it's a vehicle? It's a wheeled carrier, not self-propelled. Might be classified under 8425.99.00.00 \"Other parts of vehicles\". However it's a complete carrier, not part of vehicle. Could be 8425.90.00.00 \"Other\" transport equipment. Let's pick 8425.90.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.110060045,
+      "prompt_tokens": 459,
+      "prompt_time": 0.028493742,
+      "completion_tokens": 189,
+      "completion_time": 0.400576028,
+      "total_tokens": 648,
+      "total_time": 0.42906977,
+      "completion_tokens_details": {
+        "reasoning_tokens": 140
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m3s33w97e2g9vzfjjc641xt3",
+      "seed": 893457977
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425900000",
+  "predicted_reason": "Classified as other transport equipment (non-self-propelled wheeled carrier) not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

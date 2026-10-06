@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360147",
+  "rulingDate": "2026-04-27T00:00:00",
+  "true_code": "8903992110",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cf809cf8-912d-4775-813f-5f3af645a099",
+    "object": "chat.completion",
+    "created": 1790754793,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8903.20.00.00\", \"reason\": \"Aluminum boat hulls (non\u2011motorized) under 300\u202ftons fall under heading 8903.20 for vessels of aluminum.\"}",
+          "reasoning": "We need HTS code for aluminum boat hull, not motorized, length 10.3m, > 20 ft. Likely heading 8903.90.00? Let's see: 8903 - Vessels of 300 tons or less, other than sailing vessels. Subheadings: 8903.10 - of iron or steel; 8903.20 - of aluminum; then further by length? Actually 8903.20.00 is \"of aluminum\". Might need further digits for \"hulls, not equipped\". Could be 8903.20.00.00. So 10-digit: 8903.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219974835,
+      "prompt_tokens": 315,
+      "prompt_time": 0.016346856,
+      "completion_tokens": 202,
+      "completion_time": 0.426185747,
+      "total_tokens": 517,
+      "total_time": 0.442532603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3rmv98sedr866qvjrphh2vy",
+      "seed": 1675337144
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8903200000",
+  "predicted_reason": "Aluminum boat hulls (non\u2011motorized) under 300\u202ftons fall under heading 8903.20 for vessels of aluminum.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

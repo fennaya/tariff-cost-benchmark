@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362388",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "6302315020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-400c3c75-c1e8-45d7-8908-8d250f8d5788",
+    "object": "chat.completion",
+    "created": 1790826378,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.60.10.00\",\n  \"reason\": \"Cotton bed linen set (flat sheet, fitted sheet, pillowcases) classified under heading 6302.60 for cotton bed linen, not knitted or crocheted.\"\n}",
+          "reasoning": "We need HTS for cotton bed sheets with lace embroidery. Likely heading 6302.60.10? Let's recall: 6302 is bed linen, table linen, toilet linen. 6302.60 is of cotton. Subheadings: 6302.60.10 = Bed linen, of cotton, printed? Actually 6302.60.10 is \"of cotton, not knitted or crocheted\". Need more specific: 6302.60.10 is \"of cotton, not knitted or crocheted\". The further digits: 6302.60.10.00? 10-digit code: 6302.60.10.00. That seems right. Reason: cotton bed sheet set. Ladder lace is embroidery but still cotton. So code 6302.60.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.208914225,
+      "prompt_tokens": 404,
+      "prompt_time": 0.020547286,
+      "completion_tokens": 236,
+      "completion_time": 0.495722658,
+      "total_tokens": 640,
+      "total_time": 0.516269944,
+      "completion_tokens_details": {
+        "reasoning_tokens": 170
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3ts3w22ebbsajqntxpqerm9",
+      "seed": 1956915945
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302601000",
+  "predicted_reason": "Cotton bed linen set (flat sheet, fitted sheet, pillowcases) classified under heading 6302.60 for cotton bed linen, not knitted or crocheted.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

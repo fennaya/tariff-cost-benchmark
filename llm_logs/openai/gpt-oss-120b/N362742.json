@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362742",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8471500150",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-91359b8a-4ac6-4208-acf0-721192d99174",
+    "object": "chat.completion",
+    "created": 1790834556,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8473.30.0010\",\n  \"reason\": \"The item is a motherboard (a part of a computer) containing integrated circuitry, classified under HTSUS heading 8473.30 for other parts of computers.\"\n}",
+          "reasoning": "We need HTS code for motherboard with integrated CPU/GPU. Likely 8473.30.0090? Actually HTS: 8473.30.0090 = \"Parts of computers, other than hard drives, etc.\" Motherboards are 8473.30.0090? Check: 8473.30.0090 is \"Other parts of computers, not elsewhere specified\". Motherboards with integrated circuits maybe 8473.30.0010? Let's assume 8473.30.0010 is \"Other parts of computers, for example motherboards\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.155515384,
+      "prompt_tokens": 298,
+      "prompt_time": 0.014267839,
+      "completion_tokens": 187,
+      "completion_time": 0.401544994,
+      "total_tokens": 485,
+      "total_time": 0.415812833,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m3v0xf7xenwa8tad2fc7xgt5",
+      "seed": 1269297491
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8473300010",
+  "predicted_reason": "The item is a motherboard (a part of a computer) containing integrated circuitry, classified under HTSUS heading 8473.30 for other parts of computers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

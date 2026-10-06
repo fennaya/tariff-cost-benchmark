@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359979",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "8483908040",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c6dbd762-ed41-4680-bc7a-bff5b3dffdfd",
+    "object": "chat.completion",
+    "created": 1790658750,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"It is a steel pinched bolt yoke, a component of a universal joint, classified under 7308.90.90 (other parts of universal joints)\"}",
+          "reasoning": "Need HTS 10-digit. Pinched bolt yoke, U-shaped, steel, part of universal joint. Likely under 7308.90.90? Actually 7308.90.90 is \"Other\" for other parts of universal joints. 7308.90.90 is 10-digit? 7308.90.90 is 8-digit. 10-digit would add .00? Actually HTS 10-digit: 7308.90.90.00. So code 7308.90.90.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016104903,
+      "prompt_tokens": 274,
+      "prompt_time": 0.015605513,
+      "completion_tokens": 176,
+      "completion_time": 0.185073051,
+      "total_tokens": 450,
+      "total_time": 0.200678564,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d3e146e1a5",
+    "x_groq": {
+      "id": "req_01m3ns89qveadbsj6qew45an9d",
+      "seed": 1770764102
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "It is a steel pinched bolt yoke, a component of a universal joint, classified under 7308.90.90 (other parts of universal joints)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

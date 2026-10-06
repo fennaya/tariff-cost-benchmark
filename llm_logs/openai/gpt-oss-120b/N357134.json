@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357134",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-20ef1fb8-f60b-45cc-b9f9-76e6e2a0a01e",
+    "object": "chat.completion",
+    "created": 1790725953,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9506.91.00\", \"reason\": \"Carabiners are classified as climbing equipment, which falls under HTS heading 9506.91 for sports articles and equipment.\"}",
+          "reasoning": "We need HTS code for carabiners made of aluminum, non-locking. Likely under heading 8302. (Articles of iron or steel) but aluminum is 7615? Actually carabiners are made of aluminum, classification likely 8302.93.00? Let's check: 8302.93.00 - Other mountings, fittings and similar articles of base metal, other than of iron or steel. Carabiners maybe 8302.93.00. Or 7615.10.00 for aluminum structures? I think 8302.93.00 is for \"Other mountings, fittings and similar articles, of base metal, other than of iron or steel\". Carabiners are \"climbing equipment\". Could be 9506.91.00 (Sports goods, articles and equipment for sports). Actually HTS: 9506.91.00 - Articles and equipment for sports, not elsewhere specified, includes climbing equipment? 9506.91.00 includes \"Climbing equipment\". Yes, 9506.91.00 is \"Articles and equipment for sports; ... climbing equipment\". So likely that. So answer: 9506.91.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207086947,
+      "prompt_tokens": 334,
+      "prompt_time": 0.027912117,
+      "completion_tokens": 301,
+      "completion_time": 0.631445404,
+      "total_tokens": 635,
+      "total_time": 0.659357521,
+      "completion_tokens_details": {
+        "reasoning_tokens": 248
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qsb4rxe1b9v536vnt8bhma",
+      "seed": 1798490699
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95069100",
+  "predicted_reason": "Carabiners are classified as climbing equipment, which falls under HTS heading 9506.91 for sports articles and equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

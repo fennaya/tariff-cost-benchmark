@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363847",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703800020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5af3c717-0e11-4eb3-ac9d-454159d44086",
+    "object": "chat.completion",
+    "created": 1790863255,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8703.21.00.00\",\n  \"reason\": \"The GV60 is a passenger motor vehicle powered solely by an electric motor, fitting the classification for electric passenger cars.\"\n}",
+          "reasoning": "We need HTS code for electric vehicle. Likely 8703.23.00.00? Let's see: 8703.23.00.00 = Motor vehicles with only electric motor for propulsion. 8703.23.00.00 is \"Motor vehicles with only electric motor for propulsion, other than those of heading 8703.21\". 8703.21 is for battery electric? Actually 8703.21 is \"Motor vehicles with only electric motor for propulsion, of a kind used for the transport of persons\". Wait check: 8703.21 is for \"Motor vehicles with only electric motor for propulsion, of a kind used for the transport of persons\". Then 8703.22 is for \"Motor vehicles with only electric motor for propulsion, of a kind used for the transport of goods\". 8703.23 is for \"Motor vehicles with only electric motor for propulsion, other\". The GV60 is a passenger vehicle, so 8703.21.00.00 likely. So answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.51242022,
+      "prompt_tokens": 220,
+      "prompt_time": 0.010953174,
+      "completion_tokens": 268,
+      "completion_time": 0.569299494,
+      "total_tokens": 488,
+      "total_time": 0.580252668,
+      "completion_tokens_details": {
+        "reasoning_tokens": 213
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3vw97gserhv6enzz3h1x1ce",
+      "seed": 775191871
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703210000",
+  "predicted_reason": "The GV60 is a passenger motor vehicle powered solely by an electric motor, fitting the classification for electric passenger cars.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

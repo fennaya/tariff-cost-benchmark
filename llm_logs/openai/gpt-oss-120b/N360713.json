@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360713",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8420101000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2fd5aa04-1395-43cf-931d-6deaf772ad5a",
+    "object": "chat.completion",
+    "created": 1790771034,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8421.99.90\", \"reason\": \"Classified as other printing machinery because it is a heat\u2011transfer calender used for textile finishing, not a printer but falls under the broad category of printing equipment.\"}",
+          "reasoning": "We need HTS code for industrial heat transfer machine for textiles. Likely under 8443? Actually 8443 is printing machinery. But this is not printing. Could be 8421? 8421 covers printing machinery. 8421.99? Let's think: 8421.99.90 \u2013 other printing machinery. But it's not printing. Maybe 8421.99.90 covers \"Other printing machinery\". Might be 8421.99.90.\n\nAlternatively 8421.99.90 is \"Other printing machinery\". Could be 8421.99.90.\n\nI'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018209356,
+      "prompt_tokens": 398,
+      "prompt_time": 0.019266176,
+      "completion_tokens": 186,
+      "completion_time": 0.397344628,
+      "total_tokens": 584,
+      "total_time": 0.416610804,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3s4ay81epc9344xnjhm3dc5",
+      "seed": 1919512089
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84219990",
+  "predicted_reason": "Classified as other printing machinery because it is a heat\u2011transfer calender used for textile finishing, not a printer but falls under the broad category of printing equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

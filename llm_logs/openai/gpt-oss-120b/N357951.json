@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357951",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "9403608093",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7d377c40-05ab-4eb4-86e6-ca5158fca4c1",
+    "object": "chat.completion",
+    "created": 1790726479,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.30.0010\", \"reason\": \"Unassembled wooden storage cabinet without metal or electrical parts falls under other wooden furniture, other (household)\"}",
+          "reasoning": "We need HTS for wooden furniture, unassembled cabinet, no metal, wood. Likely heading 9403.20.00? 9403.20.00 is \"Other wooden furniture, of a kind used in offices, schools, etc.\" But general wooden furniture: 9403.20.00 is \"Other wooden furniture, not elsewhere specified\". Actually 9403.20.00 is \"Other wooden furniture, of a kind used in offices, schools, etc.\" 9403.30.00 is \"Other wooden furniture, other\". Let's check: 9403.30.00 \"Other wooden furniture, other\". The cabinet is a storage cabinet, likely 9403.30.00. 10-digit code: 9403.30.0010? Need 10 digits: 9403.30.0010 is \"Other wooden furniture, other, of a kind used in households\". Might be 9403.30.0010. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.033515436,
+      "prompt_tokens": 571,
+      "prompt_time": 0.072228115,
+      "completion_tokens": 253,
+      "completion_time": 0.524965823,
+      "total_tokens": 824,
+      "total_time": 0.597193938,
+      "completion_tokens_details": {
+        "reasoning_tokens": 204
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3qsv7bhe3trjv762xrq7ywa",
+      "seed": 2077002232
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403300010",
+  "predicted_reason": "Unassembled wooden storage cabinet without metal or electrical parts falls under other wooden furniture, other (household)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361285",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8431499020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-655b21b3-be46-44eb-a4e7-a3836c353299",
+    "object": "chat.completion",
+    "created": 1790904716,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8429.91.00\",\n  \"reason\": \"Hydraulic excavator attachments are classified as parts of self-propelled earth\u2011moving machinery under heading 8429.91.\"\n}",
+          "reasoning": "We need HTS code for hydraulic attachments for excavators used in metal processing, recycling, demolition, forestry. Likely under \"Hydraulic excavator attachments\" - Chapter 84? Possibly 8429? Actually 8429.91 - parts of excavators? Let's think: 8429.91.00 - parts of excavators, self-propelled bulldozers, etc. But attachments maybe 8429.91.00. Or 8429.92? Check: 8429.91 is \"Parts of self-propelled bulldozers, front-end loaders, other self-propelled earth-moving machinery\". Attachments maybe 8429.92 \"Other parts\". Might be 8429.91. Let's choose 8429.91.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20741465,
+      "prompt_tokens": 240,
+      "prompt_time": 0.010184191,
+      "completion_tokens": 217,
+      "completion_time": 0.455192337,
+      "total_tokens": 457,
+      "total_time": 0.465376528,
+      "completion_tokens_details": {
+        "reasoning_tokens": 161
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3x3tj2eez6rhbtp7cbq0m9v",
+      "seed": 1991992890
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84299100",
+  "predicted_reason": "Hydraulic excavator attachments are classified as parts of self-propelled earth\u2011moving machinery under heading 8429.91.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

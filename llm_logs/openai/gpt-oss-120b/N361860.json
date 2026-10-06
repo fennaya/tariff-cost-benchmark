@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361860",
+  "rulingDate": "2026-06-12T00:00:00",
+  "true_code": "8471410150",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-55b5f4bd-533e-487b-92b4-e78e77094b63",
+    "object": "chat.completion",
+    "created": 1790808277,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8528.72.00.00\", \"reason\": \"Touchscreen video display units with integrated CPU and Android OS are classified as video monitors not incorporating television reception, color, of a kind used in computers.\"}",
+          "reasoning": "We need HTS code for smart video display unit with touchscreen, Android OS, for airline seatback. Likely under 8528.72.00? 8528.72 is \"Monitors and projectors, not incorporating television reception apparatus, color, of a kind used in computers\". But with OS maybe 8528.52? Actually 8528.52 is \"Television cameras, digital cameras\". Not.\n\nCould be 8528.69 \"Other monitors\". 8528.70 \"Other\". Let's think: 8528.72 is \"Video monitors, not incorporating TV reception, color, of a kind used in computers\". That seems apt. 8528.72.00 is 10-digit: 8528.72.00.00. So answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220261774,
+      "prompt_tokens": 319,
+      "prompt_time": 0.015187458,
+      "completion_tokens": 222,
+      "completion_time": 0.473590007,
+      "total_tokens": 541,
+      "total_time": 0.488777465,
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3t7vfmte008dtargcre9rfk",
+      "seed": 1686061931
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8528720000",
+  "predicted_reason": "Touchscreen video display units with integrated CPU and Android OS are classified as video monitors not incorporating television reception, color, of a kind used in computers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

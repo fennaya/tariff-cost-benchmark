@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358768",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a8028251-8b9b-42ed-985b-cd19203abaaa",
+    "object": "chat.completion",
+    "created": 1790726857,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9701.00.90\",\n  \"reason\": \"Decorative framed printed artwork is classified under HTS chapter 97 as printed pictures, which fall under heading 9701 and subheading 9701.00.90 for items not executed entirely by hand.\"\n}",
+          "reasoning": "We need HTS code for decorative framed printed artwork, likely 9701.00.10? 9701.00.10 is \"Paintings, drawings and pastels, executed entirely by hand, etc.\" But printed artwork is 9703? 9703.00.00 is \"Original sculptures and statuary\". Actually 9703 is \"Original sculptures\". For printed pictures, 9701.99? Let's think: 9701 covers paintings, drawings, prints, etc. 9701.00.10 is \"by hand\". 9701.00.90 is \"Other\". Since it's printed, not by hand, so 9701.00.90. So HTS 9701.00.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204622724,
+      "prompt_tokens": 226,
+      "prompt_time": 0.009603017,
+      "completion_tokens": 228,
+      "completion_time": 0.47332138,
+      "total_tokens": 454,
+      "total_time": 0.482924397,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qt6qspemp831egqnf941jd",
+      "seed": 185660499
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "97010090",
+  "predicted_reason": "Decorative framed printed artwork is classified under HTS chapter 97 as printed pictures, which fall under heading 9701 and subheading 9701.00.90 for items not executed entirely by hand.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

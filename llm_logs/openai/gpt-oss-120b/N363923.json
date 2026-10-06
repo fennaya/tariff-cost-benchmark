@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363923",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cd90beee-11d9-454d-8e7b-97f9fdc59bf7",
+    "object": "chat.completion",
+    "created": 1790864356,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9025.19.00\",\n  \"reason\": \"The device is a consumer electronic apparatus that converts ambient sound into tactile vibration, fitting the category of other sound\u2011recording/reproduction apparatus not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for a tactile audio device, like a haptic wristband that converts sound to vibration. Likely under \"Other sound or audio-visual equipment\" or \"Other parts\". Could be 9021? 9021.80.00 - Instruments for measuring or checking the flow, level, pressure etc not. Maybe 9025? 9025.19.00 - other apparatus for recording or reproducing sound. But it's a device that converts sound to vibration, not recording. Could be 8543.70.99 - parts of electrical machines? Or 8543.70.90 - other. However it's a consumer electronic device, likely under 8526.91.00 (radio receivers) no. Maybe 8543.70.90 \"Other electrical machines and apparatus, having individual functions, not elsewhere specified\". Could be 9021.80.00 \"Other instruments, appliances and machines for measuring or checking\". Not.\n\nBetter: 9025.19.00 \"Other apparatus for recording, transmission or reproduction of sound, not elsewhere specified\". That seems plausible.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 4.46930314,
+      "prompt_tokens": 237,
+      "prompt_time": 0.011648065,
+      "completion_tokens": 291,
+      "completion_time": 0.617106643,
+      "total_tokens": 528,
+      "total_time": 0.628754708,
+      "completion_tokens_details": {
+        "reasoning_tokens": 230
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3vxarkaek8r7xn9b1hh0xfg",
+      "seed": 603940681
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90251900",
+  "predicted_reason": "The device is a consumer electronic apparatus that converts ambient sound into tactile vibration, fitting the category of other sound\u2011recording/reproduction apparatus not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356961",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "8708704546",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fbf299df-1e5b-485c-80a1-915847e91122",
+    "object": "chat.completion",
+    "created": 1790725916,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90\",\n  \"reason\": \"The product is a complete wheel assembly (rubber tire mounted on aluminum rim) for golf carts, classified under 'Other parts and accessories of motor vehicles' (HTS 8708.99.90).\"\n}",
+          "reasoning": "We need HTS for tire and rim assembly for golf carts, size 57-63 cm diameter, aluminum rim, rubber tire. Likely heading 8708.99? Actually 8708.99.90 is parts and accessories of motor vehicles. But wheels for motor vehicles: 8708.99.90 covers \"Other parts and accessories of motor vehicles\". However specific for \"Wheels, rims and tires, of a kind used on motor vehicles\" is 8708.99.90? Actually 8708.99.90 is \"Other parts and accessories\". Wheels and rims are 8708.99.90? There is 8708.99.90 for \"Other parts and accessories\". But there is 8708.99.90 for \"Other\". Yet there is 8708.99.90 for \"Other\". Might be 8708.99.90.\n\nAlternatively heading 4011 for new pneumatic tires, but assembled with rim maybe 4011.20? 4011.20 is \"new pneumatic tires, of rubber, for motor vehicles\". But with rim? Usually tires alone. For wheel assemblies, 8708.99.90.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205976944,
+      "prompt_tokens": 365,
+      "prompt_time": 0.015139365,
+      "completion_tokens": 320,
+      "completion_time": 0.667800295,
+      "total_tokens": 685,
+      "total_time": 0.68293966,
+      "completion_tokens_details": {
+        "reasoning_tokens": 247
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qsa0mzev7t006w7j5qe9mk",
+      "seed": 732486562
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "The product is a complete wheel assembly (rubber tire mounted on aluminum rim) for golf carts, classified under 'Other parts and accessories of motor vehicles' (HTS 8708.99.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

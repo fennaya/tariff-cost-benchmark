@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359078",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4f472a2e-d6ce-4606-b3fd-d33e753d2a5c",
+    "object": "chat.completion",
+    "created": 1790727069,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8507.60.00\",\n  \"reason\": \"Classifies rechargeable lithium\u2011ion batteries used in electronic devices such as headsets.\"\n}",
+          "reasoning": "Need HTS for lithium ion batteries. Likely 8507.60.00? Actually 8507.60.00 is \"Lithium primary batteries\". For rechargeable: 8507.60.00 covers \"Other primary batteries\". Rechargeable lithium ion batteries are under 8507.60? Wait 8507.60 is \"Other primary batteries\". Rechargeable are 8507.60? No rechargeable are 8507.60? Actually 8507.20 is \"Lithium primary batteries\". 8507.60 is \"Other primary batteries\". Rechargeable are 8507.60? Might be 8507.60.00 for \"Other primary batteries\". But rechargeable are \"Lithium ion batteries\" under 8507.60.00? Check: HTS 8507.60.00 - \"Other primary batteries\". Not correct. Rechargeable batteries are under 8507.60? Actually 8507.60 is \"Other primary batteries\". Rechargeable are 8507.60? Hmm.\n\nBetter: 8507.60.00 is for \"Other primary batteries\". Rechargeable are \"Lithium ion batteries\" under 8507.60? I think correct code is 8507.60.00 for \"Lithium ion batteries, rechargeable\". Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.310364308,
+      "prompt_tokens": 257,
+      "prompt_time": 0.120556984,
+      "completion_tokens": 315,
+      "completion_time": 0.661135561,
+      "total_tokens": 572,
+      "total_time": 0.781692545,
+      "completion_tokens_details": {
+        "reasoning_tokens": 269
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3qtd6qqejyb5kpvc80e1vpr",
+      "seed": 1091134193
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85076000",
+  "predicted_reason": "Classifies rechargeable lithium\u2011ion batteries used in electronic devices such as headsets.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

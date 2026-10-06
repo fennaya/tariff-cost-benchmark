@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362925",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "8481809050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b5556ce0-b848-472b-96b7-dbe4538427e9",
+    "object": "chat.completion",
+    "created": 1790843197,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9018.90.00\", \"reason\": \"Classified under HTS heading 9018 as a medical gas pipeline and valve system for regulating life\u2011support gases, not specifically listed elsewhere.\"}",
+          "reasoning": "We need HTS code for medical gas pipeline system. Likely 9018.90.00? Actually 9018 covers \"Instruments and appliances for measuring or checking the flow, level, pressure, etc., of liquids or gases\". But a gas manifold system for medical use maybe 9018.90.00 (Other). Could be 9019? 9019 is \"Mech. breathing and cardiopulmonary\". Not. Maybe 9018.90.00 is correct.\n\nThus output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.196394388,
+      "prompt_tokens": 326,
+      "prompt_time": 0.016647703,
+      "completion_tokens": 162,
+      "completion_time": 0.358695891,
+      "total_tokens": 488,
+      "total_time": 0.375343594,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3v9554qe2q9nr5vht14x0m0",
+      "seed": 447749651
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189000",
+  "predicted_reason": "Classified under HTS heading 9018 as a medical gas pipeline and valve system for regulating life\u2011support gases, not specifically listed elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

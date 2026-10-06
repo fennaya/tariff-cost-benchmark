@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357689",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "6110202079",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2489c062-1df2-436b-b91e-bcbb7b317d9b",
+    "object": "chat.completion",
+    "created": 1790726338,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6109.90.00\", \"reason\": \"Girl's knitted blouse made of a cotton/polyester blend falls under heading 6109 for women's and girls' knitted or crocheted apparel, subheading 90 for other fibers.\"}",
+          "reasoning": "We need HTS code for girls' blouse, cotton/polyester knit. Likely 6109.10.00? Let's see: 6109 - knitted or crocheted apparel for women and girls. 6109.10 is of cotton. But blend cotton/polyester maybe 6109.90? Actually 6109.10 is of cotton; 6109.90 is of other fibers. Since 55% cotton 45% polyester, it's not \"of cotton\". So 6109.90.00 (Other). So code 6109.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207066528,
+      "prompt_tokens": 258,
+      "prompt_time": 0.0097452,
+      "completion_tokens": 187,
+      "completion_time": 0.384518312,
+      "total_tokens": 445,
+      "total_time": 0.394263512,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qspx6we6yr923y29yfg529",
+      "seed": 232726178
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61099000",
+  "predicted_reason": "Girl's knitted blouse made of a cotton/polyester blend falls under heading 6109 for women's and girls' knitted or crocheted apparel, subheading 90 for other fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

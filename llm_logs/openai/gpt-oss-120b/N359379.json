@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359379",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "3910000000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5f195bbc-476b-48a2-973f-597b7688a103",
+    "object": "chat.completion",
+    "created": 1790727255,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3006.90.00.00\",\n  \"reason\": \"Classified as a medical preparation not elsewhere specified, used for ear impressions.\"\n}",
+          "reasoning": "We need HTS code for silicone paste used for ear impressions. Likely under \"Medical or surgical goods\" - maybe 3006? Actually silicone paste for prosthetic devices maybe 3006.90? Let's guess 3006.90.00.00 (Other pharmaceutical preparations). But silicone paste not drug. Could be 9021.80.00.00 (Instruments, appliances for dental, etc). Ear molds maybe prosthetic. Could be 9018.90.00.00 (Instruments for ear). Hmm.\n\nProbably 3006.90.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20586132,
+      "prompt_tokens": 209,
+      "prompt_time": 0.00882651,
+      "completion_tokens": 169,
+      "completion_time": 0.349882717,
+      "total_tokens": 378,
+      "total_time": 0.358709227,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qtjwecet490s2nt0hdvk6r",
+      "seed": 1616968799
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3006900000",
+  "predicted_reason": "Classified as a medical preparation not elsewhere specified, used for ear impressions.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

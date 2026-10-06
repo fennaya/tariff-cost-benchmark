@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363464",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "2106909992",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-adea4263-9f7c-46a6-8cf8-661ebf409467",
+    "object": "chat.completion",
+    "created": 1790764000,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0203.10.10.00\",\"reason\":\"Smoked, cooked quail eggs are classified under 0203.10.10, eggs of poultry, fresh or chilled, whole, cooked, smoked, or otherwise prepared.\"}",
+          "reasoning": "Need HTS 10-digit. Smoked quail eggs ready-to-eat. Eggs of quail. Likely 0203.10.10? Actually 0203 is eggs of poultry, fresh or chilled. For cooked eggs maybe 0203.10.10? Let's check: 0203.10.10 is \"Eggs of poultry, fresh or chilled, whole, cooked, smoked, or otherwise prepared\". Quail eggs are poultry. So 0203.10.10. 10-digit maybe 0203.10.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206816833,
+      "prompt_tokens": 247,
+      "prompt_time": 0.050701664,
+      "completion_tokens": 182,
+      "completion_time": 0.253076888,
+      "total_tokens": 429,
+      "total_time": 0.303778552,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3rxm925ednannre57mrzv55",
+      "seed": 1509944086
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0203101000",
+  "predicted_reason": "Smoked, cooked quail eggs are classified under 0203.10.10, eggs of poultry, fresh or chilled, whole, cooked, smoked, or otherwise prepared.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

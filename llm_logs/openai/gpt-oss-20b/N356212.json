@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356212",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "3808931500",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-9c8efad0-dc7f-4c07-93b8-fd7e436ebc44",
+    "object": "chat.completion",
+    "created": 1790606938,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"Dicamba herbicides are classified as other agricultural chemicals under heading 1206, subheading 90, entry 90.\"}",
+          "reasoning": "Need HTS code for herbicides. Likely 1206.90.90? Actually chemicals for agriculture: 1206.90.90 is \"Other chemicals and preparations for use in agriculture, horticulture, forestry or horticulture\". For herbicides: 1206.90.90. But 1206.90.90 is for other chemicals. 1206.90.90 includes herbicides. So code 1206.90.90.00? 10-digit: 1206.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.196502965,
+      "prompt_tokens": 651,
+      "prompt_time": 0.046051596,
+      "completion_tokens": 166,
+      "completion_time": 0.187886413,
+      "total_tokens": 817,
+      "total_time": 0.233938009,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3cdd24b83b",
+    "x_groq": {
+      "id": "req_01m3m7v3zyevr9sp0w2wdbsfjg",
+      "seed": 1061632142
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Dicamba herbicides are classified as other agricultural chemicals under heading 1206, subheading 90, entry 90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

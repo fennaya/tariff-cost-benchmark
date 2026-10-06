@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359744",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "9603908050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4c1f412c-0ef8-49d8-868e-33e383e2eec0",
+    "object": "chat.completion",
+    "created": 1790735333,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9603.90.00.00\", \"reason\": \"Classified under heading 9603 for hand-held cleaning tools such as squeegees and brushes, with subheading 90 covering other items not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for a cleaning tool: squeegee with applicator sponge and handle, plastic bucket. Likely classified under \"Other cleaning brushes, hand mops, etc.\" Possibly 9603.90.00? Let's think: 9603 covers \"Brooms, brushes, mop heads, hand-held floor sweepers, etc.\" 9603.90 is \"Other\". But squeegee maybe under 9603.90. Or 9603.90.90? Actually 9603.90.00 is \"Other\". 9603.90.90 is further? Check: 9603.90.00 is heading 9603, subheading 90, then 00. So 10-digit: 9603.90.00.00? Wait 10-digit includes 4-2-2-2? Example: 9603.90.00.00. So answer.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203310545,
+      "prompt_tokens": 249,
+      "prompt_time": 0.011112797,
+      "completion_tokens": 257,
+      "completion_time": 0.552675742,
+      "total_tokens": 506,
+      "total_time": 0.563788539,
+      "completion_tokens_details": {
+        "reasoning_tokens": 195
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3r29d0ce14r6953jyxxrnca",
+      "seed": 872103369
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9603900000",
+  "predicted_reason": "Classified under heading 9603 for hand-held cleaning tools such as squeegees and brushes, with subheading 90 covering other items not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

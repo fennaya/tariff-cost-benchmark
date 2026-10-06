@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356923",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8544493080",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-08e1acfe-3f19-4d41-9d72-ef54f3e581df",
+    "object": "chat.completion",
+    "created": 1790607207,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8541.40.00.00\",\"reason\":\"LAN cable is a copper communication cable not covered by 8541.30, thus classified under 8541.40.\"}",
+          "reasoning": "Need HTS 10-digit. For LAN cable, 8541.40.00? Actually 8541.40.00 is \"Cables, of copper, of a kind used for telephone or telegraph or other communication, of a type used for telephone or telegraph or other communication, not including those of 8541.30\". Wait 8541.40 is \"Cables, of copper, of a kind used for telephone or telegraph or other communication, of a type used for telephone or telegraph or other communication, not including those of 8541.30\". But for LAN cable maybe 8541.40.00. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220299467,
+      "prompt_tokens": 282,
+      "prompt_time": 0.014209638,
+      "completion_tokens": 189,
+      "completion_time": 0.279383303,
+      "total_tokens": 471,
+      "total_time": 0.293592941,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_851252edc2",
+    "x_groq": {
+      "id": "req_01m3m83ayne0fvkbktkwj62psd",
+      "seed": 1384744139
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8541400000",
+  "predicted_reason": "LAN cable is a copper communication cable not covered by 8541.30, thus classified under 8541.40.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

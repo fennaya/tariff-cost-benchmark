@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357266",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-de6e406d-1534-45a7-94c0-fbed2591da3d",
+    "object": "chat.completion",
+    "created": 1790607344,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0901.10.10.00\",\"reason\":\"Tea, not including tea leaves, in tea bags\"}",
+          "reasoning": "Need HTS code for tea bags. Likely 0901.10.10.00? Actually 0901 is tea. 0901.10 is tea, not including tea leaves? 0901.10.10 is tea, not including tea leaves, in tea bags. So 0901.10.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.198252375,
+      "prompt_tokens": 303,
+      "prompt_time": 0.015878007,
+      "completion_tokens": 110,
+      "completion_time": 0.114825347,
+      "total_tokens": 413,
+      "total_time": 0.130703354,
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m3m87g4sefebp74hkjt5ww9p",
+      "seed": 1626989559
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0901101000",
+  "predicted_reason": "Tea, not including tea leaves, in tea bags",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

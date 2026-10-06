@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363546",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9019200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-466063cd-9411-4777-ab8b-2d8a446f315f",
+    "object": "chat.completion",
+    "created": 1790857225,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.90\",\n  \"reason\": \"The product is a plastic medical device (nasal atomizer) used for delivering medication, classified under Chapter 90 as other medical instruments not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for nasal atomizer assembly components, medical device, made of plastic. Likely under Chapter 90: Instruments and appliances for medical, surgical, dental or veterinary use. Look up: 9018.90? 9018.90.90? Let's think: 9018.90 - Other instruments, appliances and implements, n.e.s.o. (not elsewhere specified). But specific: \"Nasal atomizers\" maybe under 9018.90.90. Could be 9018.90.90 \"Other\". So provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.222348284,
+      "prompt_tokens": 376,
+      "prompt_time": 0.026372875,
+      "completion_tokens": 179,
+      "completion_time": 0.377269903,
+      "total_tokens": 555,
+      "total_time": 0.403642778,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3vph8deefwak5ssrebkytn4",
+      "seed": 813444896
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189090",
+  "predicted_reason": "The product is a plastic medical device (nasal atomizer) used for delivering medication, classified under Chapter 90 as other medical instruments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

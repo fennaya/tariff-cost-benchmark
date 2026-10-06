@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360469",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "7306505050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-471056fd-499e-412b-a2ea-a43a7032c82a",
+    "object": "chat.completion",
+    "created": 1790762670,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7304.39.00.00\",\n  \"reason\": \"Hot\u2011rolled electric resistance welded alloy steel circular pipe (31.8\u202fmm OD, 2.6\u202fmm wall) used as a structural component in vehicle doors falls under heading 7304 (steel tubes & pipes) and subheading 7304.39 for other welded steel pipes.\"\n}",
+          "reasoning": "We need HTS code for steel pipe, circular, ERW, alloy steel, for vehicle doors. Likely under heading 7307? Actually 7307 is tube & pipe fittings. 7304 is steel tubes & pipes, seamless or welded, of circular cross-section, of iron or steel. 7304.31? Let's see: 7304.31 - \"of iron or steel, of a kind used for the conveyance or transmission of fluids, of a diameter not exceeding 114.3 mm\". But for other uses? 7304.39 is \"Other\". Since it's alloy steel, welded, 31.8 mm OD, 2.6 mm wall. Likely 7304.31. However 7304.31 is for \"of a kind used for the conveyance or transmission of fluids\". Not our case. 7304.39 \"Other\". So choose 7304.39.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.14041165,
+      "prompt_tokens": 244,
+      "prompt_time": 0.015511568,
+      "completion_tokens": 292,
+      "completion_time": 0.611209795,
+      "total_tokens": 536,
+      "total_time": 0.626721363,
+      "completion_tokens_details": {
+        "reasoning_tokens": 200
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_be28f5c9f2",
+    "x_groq": {
+      "id": "req_01m3rwbnf2ewpv2df93eqga04p",
+      "seed": 1261956126
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7304390000",
+  "predicted_reason": "Hot\u2011rolled electric resistance welded alloy steel circular pipe (31.8\u202fmm OD, 2.6\u202fmm wall) used as a structural component in vehicle doors falls under heading 7304 (steel tubes & pipes) and subheading 7304.39 for other welded steel pipes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

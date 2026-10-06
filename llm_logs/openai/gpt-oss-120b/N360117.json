@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360117",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "6217109530",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b1ff2c9e-4ca4-499c-ac80-5d0e202a0c68",
+    "object": "chat.completion",
+    "created": 1790754501,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4203.30.00\", \"reason\": \"The item is a belt made of textile (polyester webbing) with a plastic (polyurethane) backing, classifiable under HTSUS 4203.30.00 for belts and similar articles of textile materials.\"}",
+          "reasoning": "We need HTS for fashion belt made of textile and plastic. Likely 4203.30.00? 4203.30.00 is \"Other articles of leather or composition leather; belts, suspenders, braces, suspenders\". But composition leather includes plastic? Could be 4203.30.00 \"Belts, suspenders, braces, suspenders, girdles, and similar articles, of textile materials\". Actually 4203.30 is \"Belts, suspenders, braces, suspenders, girdles and similar articles, of textile materials\". Yes. So code 4203.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204465194,
+      "prompt_tokens": 236,
+      "prompt_time": 0.012455627,
+      "completion_tokens": 205,
+      "completion_time": 0.425595124,
+      "total_tokens": 441,
+      "total_time": 0.438050751,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3rmjcbfe4kb28mgcsafqtdg",
+      "seed": 1717574985
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "42033000",
+  "predicted_reason": "The item is a belt made of textile (polyester webbing) with a plastic (polyurethane) backing, classifiable under HTSUS 4203.30.00 for belts and similar articles of textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

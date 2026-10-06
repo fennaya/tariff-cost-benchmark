@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359659",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a3c7626f-0604-47e2-aed0-0767376816e1",
+    "object": "chat.completion",
+    "created": 1790731156,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8507.60.00\",\n  \"reason\": \"The item is a rechargeable lithium polymer (secondary) battery, which falls under heading 8507 for batteries and specifically subheading 8507.60.00 for lithium batteries.\"\n}",
+          "reasoning": "We need HTS for rechargeable lithium polymer battery, small. Likely 8507.60.00? Actually 8507.60.00 is \"Lithium primary batteries\" maybe. Rechargeable lithium polymer under 8507.60.00? Check: 8507.60.00 - \"Lithium primary batteries\". For rechargeable: 8507.60.00? Wait rechargeable lithium batteries are 8507.60.00? Actually 8507.60.00 covers \"Lithium primary batteries\". Rechargeable lithium batteries are 8507.60.00? Might be 8507.60.00 includes both? Another heading 8507.60.00 \"Lithium primary batteries\". For rechargeable lithium-ion batteries: 8507.60.00? Actually 8507.60.00 is \"Lithium primary batteries\". Rechargeable lithium-ion are 8507.60.00? I think 8507.60.00 is \"Lithium primary batteries\". Rechargeable are 8507.60.00? Not sure. Could be 8507.60.00 \"Lithium primary batteries\". For rechargeable lithium polymer maybe 8507.60.00 still. Another code 8507.60.00 includes \"Lithium primary and secondary batteries\". I'll answer that.\n\nJSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088288902,
+      "prompt_tokens": 304,
+      "prompt_time": 0.015827125,
+      "completion_tokens": 339,
+      "completion_time": 0.712004184,
+      "total_tokens": 643,
+      "total_time": 0.727831309,
+      "completion_tokens_details": {
+        "reasoning_tokens": 273
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3qy9y8metjvez3ncsep2znq",
+      "seed": 1815127286
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85076000",
+  "predicted_reason": "The item is a rechargeable lithium polymer (secondary) battery, which falls under heading 8507 for batteries and specifically subheading 8507.60.00 for lithium batteries.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

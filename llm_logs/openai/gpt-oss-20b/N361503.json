@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361503",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-aa42fa3b-eabe-49e7-90e3-bad50f91ca1a",
+    "object": "chat.completion",
+    "created": 1790705595,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.20.0000\",\"reason\":\"Hardcover books containing printed matter are classified under heading 4901.20 of the HTSUS.\"}",
+          "reasoning": "We need HTS code for hardcover books. Likely 4901.10.0000? Actually 4901.10.0000 is \"Books, bound, of paper or paperboard, other than those of heading 4901.20\". 4901.20 is \"Books, bound, of paper or paperboard, of heading 4901.10, but containing printed matter\". Wait check: 4901.10 is \"Books, bound, of paper or paperboard, other than those of heading 4901.20\". 4901.20 is \"Books, bound, of paper or paperboard, of heading 4901.10, but containing printed matter\". Actually 4901.20 is \"Books, bound, of paper or paperboard, of heading 4901.10, but containing printed matter\". So our books contain printed matter. So 4901.20.00? The full 10-digit: 4901.20.0000. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087033216,
+      "prompt_tokens": 239,
+      "prompt_time": 0.01178366,
+      "completion_tokens": 255,
+      "completion_time": 0.321820614,
+      "total_tokens": 494,
+      "total_time": 0.333604274,
+      "completion_tokens_details": {
+        "reasoning_tokens": 209
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e99e93f2ac",
+    "x_groq": {
+      "id": "req_01m3q5xwtbe4jv74ckgy8ehkbj",
+      "seed": 1189645996
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901200000",
+  "predicted_reason": "Hardcover books containing printed matter are classified under heading 4901.20 of the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

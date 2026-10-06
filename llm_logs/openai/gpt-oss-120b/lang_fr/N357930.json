@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357930",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8413500090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4d967436-6c5c-43ab-a18e-d3f3b026c110",
+    "object": "chat.completion",
+    "created": 1790905627,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8429.90.90\", \"reason\": \"The unit is a complex oil\u2011field fracturing machine comprising pumps, motors and control equipment, classified under other machinery (heading 8429)\"}",
+          "reasoning": "We need HTS code for electric fracturing units on trailer: likely \"machinery for oil or gas drilling\" \u2013 maybe 8429? Actually hydraulic fracturing equipment: 8429.91? Let's think: 8429.91 - parts of machines of heading 8429. 8429 is \"Machinery for cleaning, filling, packing, or wrapping, etc.\" Not.\n\nOilfield equipment: 8481? No. 8481 is \"Machinery for preparing or making up textile fibers\". Not.\n\nMaybe 8483? 8483 is \"Transmission shafts\". Not.\n\nCould be 8424? 8424 is \"Air or vacuum pumps\". Not.\n\nThe unit is a combination of pump, motor, trailer. Likely classified under 8429.90 \"Other parts\". But whole unit maybe 8429.99? Actually 8429 is \"Other machinery, plant or laboratory equipment\". 8429.90 is \"Other\". Might be 8429.90.90.\n\nBetter: 8429.90.90 \"Other parts\". Hmm.\n\nProbably 8429.90.90.\n\nLet's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.196606221,
+      "prompt_tokens": 956,
+      "prompt_time": 0.047142157,
+      "completion_tokens": 292,
+      "completion_time": 0.663224805,
+      "total_tokens": 1248,
+      "total_time": 0.710366962,
+      "completion_tokens_details": {
+        "reasoning_tokens": 236
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3x4pc69e91t71rc2wxvj4dq",
+      "seed": 174269420
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84299090",
+  "predicted_reason": "The unit is a complex oil\u2011field fracturing machine comprising pumps, motors and control equipment, classified under other machinery (heading 8429)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

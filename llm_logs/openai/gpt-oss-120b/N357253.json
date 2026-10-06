@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-14e695e3-153c-4683-a088-2d60938fef0c",
+    "object": "chat.completion",
+    "created": 1790726020,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Indocyanine Green Injection is a diagnostic medicinal preparation not classified elsewhere, falling under HTS heading 3004 for medicaments for therapeutic or prophylactic uses.\"\n}",
+          "reasoning": "Need HTS code for medical diagnostic reagent, indocyanine green injection. Likely under 3004.90.00? Actually 3004.90.00 is \"Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of mixed or unmixed products for therapeutic or prophylactic uses, not elsewhere specified\". Diagnostic reagents maybe 3002.90.90? 3002 is \"Human blood; animal blood; ...\". 3003 is \"Medicaments containing antibiotics\". 3004 is \"Medicaments (excluding ... )\". 3005 is \"Wadding, gauze\". 3006 is \"Artificial joints\". So likely 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.216842634,
+      "prompt_tokens": 210,
+      "prompt_time": 0.009956986,
+      "completion_tokens": 217,
+      "completion_time": 0.45582407,
+      "total_tokens": 427,
+      "total_time": 0.465781056,
+      "completion_tokens_details": {
+        "reasoning_tokens": 154
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qsd6rge80802brb08g38dh",
+      "seed": 410492578
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Indocyanine Green Injection is a diagnostic medicinal preparation not classified elsewhere, falling under HTS heading 3004 for medicaments for therapeutic or prophylactic uses.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

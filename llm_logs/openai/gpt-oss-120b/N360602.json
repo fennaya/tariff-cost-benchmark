@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360602",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "8481309000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-af0eb311-9fc0-4ce0-9794-c6cf54ac3b9e",
+    "object": "chat.completion",
+    "created": 1790766772,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8481.80.0010\", \"reason\": \"The product is a plastic (polypropylene) check valve for liquids used in vehicles, classifiable under HTSUS heading 8481 for valves, taps, cocks, etc., of plastics.\"}",
+          "reasoning": "We need HTS code for valve made of plastic, for vehicles. Likely 8481.80.00? Check: 8481.80.00 - \"Valves, taps, cocks, etc., for liquids, of plastics\". 10-digit: 8481.80.0010? Need 10-digit US. 8481.80.0010 is \"Valves, taps, cocks, etc., for liquids, of plastics, other\". Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.054099905,
+      "prompt_tokens": 262,
+      "prompt_time": 0.016702423,
+      "completion_tokens": 170,
+      "completion_time": 0.354783152,
+      "total_tokens": 432,
+      "total_time": 0.371485575,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3s08vyteevaa3mgkrz8xrmv",
+      "seed": 784647846
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8481800010",
+  "predicted_reason": "The product is a plastic (polypropylene) check valve for liquids used in vehicles, classifiable under HTSUS heading 8481 for valves, taps, cocks, etc., of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

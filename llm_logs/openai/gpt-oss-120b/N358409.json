@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358409",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "4911914040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-485ee27c-72e9-4248-8873-87b02a171d2d",
+    "object": "chat.completion",
+    "created": 1790726679,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9706.00.00\", \"reason\": \"The item is a limited-edition printed reproduction of a painting, classified as a collector's piece rather than an original artwork.\"}",
+          "reasoning": "We need HTS code for printed reproduction on canvas, artwork. Likely heading 9701.00.00 (original paintings) vs 9703 for reproductions? 9703.00.00 is \"Original sculptures and statuary, and other works of art, being originals\". Actually 9701 is paintings, drawings, etc. 9703 is \"Original sculptures\". For reproductions, 9702? Let's recall: 9702 is \"Original engravings, prints and lithographs\". But printed reproductions are not original prints. Might be 9706? 9706 is \"Other works of art, collectors' pieces\". Hmm.\n\nCheck: 9701.10 - oil paintings; 9701.90 - other paintings. But these are original works. For reproductions, maybe 9706.00.00 \"Other works of art, collectors' pieces\". Could be 9706.00.00.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048144928,
+      "prompt_tokens": 248,
+      "prompt_time": 0.009416823,
+      "completion_tokens": 248,
+      "completion_time": 0.520272969,
+      "total_tokens": 496,
+      "total_time": 0.529689792,
+      "completion_tokens_details": {
+        "reasoning_tokens": 196
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3qt1a9ketnbw4s04e0ky7hf",
+      "seed": 131004467
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "97060000",
+  "predicted_reason": "The item is a limited-edition printed reproduction of a painting, classified as a collector's piece rather than an original artwork.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

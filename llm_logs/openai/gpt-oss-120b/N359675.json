@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359675",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "8708295160",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a7ad79fc-38e9-47a8-ad58-e7f08c25db54",
+    "object": "chat.completion",
+    "created": 1790731776,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90\",\n  \"reason\": \"These are structural safety components (roll bars, braces, roll cage) that are classified as other parts and accessories of motor vehicle bodies not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for automotive structural roll bars etc. Likely heading 8708.99? Actually parts of motor vehicles: \"Other parts and accessories of bodies (including cabs), of motor vehicles\". Roll cages are safety equipment maybe 8708.99.10? 8708.99.90? Let's pick 8708.99.90 \u2013 Other parts of motor vehicles, not elsewhere specified. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048180038,
+      "prompt_tokens": 613,
+      "prompt_time": 0.108529976,
+      "completion_tokens": 149,
+      "completion_time": 0.310422306,
+      "total_tokens": 762,
+      "total_time": 0.418952282,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3qyww26ed99jch99kcy2k6b",
+      "seed": 2039947821
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "These are structural safety components (roll bars, braces, roll cage) that are classified as other parts and accessories of motor vehicle bodies not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

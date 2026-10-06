@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359967",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cf58f133-db58-43f4-9f0b-86b2ac66fdcc",
+    "object": "chat.completion",
+    "created": 1790748004,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9032.89.00\",\n  \"reason\": \"Classified as an instrument that receives analog electrical signals and converts them to digital data for display, similar to data recorders covered under HTS 9032.89.00.\"\n}",
+          "reasoning": "We need HTS code. Likely 9027.80.00? Instruments for measuring or testing electricity? But it's a data acquisition unit, not measuring itself. Could be 9032.89.00 (Other instruments for measuring or testing electrical quantities). Actually 9032.89.00 is \"Other instruments, appliances and machines for measuring or detecting ...\". Might be 8543.70.99 (Electrical machines and apparatus, other). However similar rulings classify as \"data recorders\" under 9032.89.00. So choose 9032.89.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218022714,
+      "prompt_tokens": 433,
+      "prompt_time": 0.032894182,
+      "completion_tokens": 189,
+      "completion_time": 0.395300478,
+      "total_tokens": 622,
+      "total_time": 0.42819466,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3rec37seb5tdp2s9c7qvpsq",
+      "seed": 1245448240
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90328900",
+  "predicted_reason": "Classified as an instrument that receives analog electrical signals and converts them to digital data for display, similar to data recorders covered under HTS 9032.89.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

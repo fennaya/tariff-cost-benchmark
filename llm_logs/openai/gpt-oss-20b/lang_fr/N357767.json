@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357767",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "9401616011",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ff77392d-ab29-4734-bc3c-1ac224074918",
+    "object": "chat.completion",
+    "created": 1790904731,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9401.30.10.10\",\"reason\":\"Upholstered sofa with a wooden frame and metal components.\"}",
+          "reasoning": "We need HTS 10-digit. Sofa upholstered furniture. Likely 9401.30.10? Actually 9401.30 is \"Sofas, settees, armchairs and similar upholstered furniture\". 9401.30.10 is \"Sofas, settees, armchairs and similar upholstered furniture, of wood\". But this has wood frame. So 9401.30.10.10? Wait 10-digit: 9401.30.10.10? Actually 9401.30.10 is 10-digit? 9401.30.10 is 8-digit? 9401.30.10 is 8-digit. 10-digit adds .XX.XXXX. So 9401.30.10.10? But need 10-digit: 9401.30.10.10? Actually 9401.30.10.10 is 10-digit? 9401.30.10.10 is 10 digits? 9401.30.10.10 = 9401.30.10.10 (10 digits including periods). So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194909276,
+      "prompt_tokens": 549,
+      "prompt_time": 0.028039466,
+      "completion_tokens": 272,
+      "completion_time": 0.323599618,
+      "total_tokens": 821,
+      "total_time": 0.351639084,
+      "completion_tokens_details": {
+        "reasoning_tokens": 233
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m3x3v18ees0ry75myqmkf83j",
+      "seed": 2138491239
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9401301010",
+  "predicted_reason": "Upholstered sofa with a wooden frame and metal components.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

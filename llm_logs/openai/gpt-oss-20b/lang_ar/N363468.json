@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363468",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8543709100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-966f3581-f7ae-4f5b-a694-0f30b71f9d03",
+    "object": "chat.completion",
+    "created": 1790904773,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.90.90.00\",\"reason\":\"It is an integrated circuit (DSP) used for audio signal processing, not for amplification, fitting into 8517.90.90 (other electronic integrated circuits).\"}",
+          "reasoning": "Need HTS 10-digit. DSP processor for audio, no amplification. Likely 8517.90.90? Actually 8517.90.90 is \"Other electronic integrated circuits\". But DSP is integrated circuit. 8517.90.90 covers integrated circuits not elsewhere. 8517.90.90 is 10-digit? 8517.90.90 is 8-digit. 10-digit would add .00? Actually HTS 10-digit: 8517.90.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.097468036,
+      "prompt_tokens": 419,
+      "prompt_time": 0.147466706,
+      "completion_tokens": 171,
+      "completion_time": 0.191941262,
+      "total_tokens": 590,
+      "total_time": 0.339407968,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3x3wanqe58vcpbjtmtea2bp",
+      "seed": 646795022
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517909000",
+  "predicted_reason": "It is an integrated circuit (DSP) used for audio signal processing, not for amplification, fitting into 8517.90.90 (other electronic integrated circuits).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

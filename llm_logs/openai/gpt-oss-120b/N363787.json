@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363787",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9c2df3e2-01a2-4c15-a2c7-630b927b8cdb",
+    "object": "chat.completion",
+    "created": 1790861286,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.22.00.00\", \"reason\": \"Used passenger automobile with spark\u2011ignition piston engine of 1,994\u202fcc falls under heading 8703.22 for cars of 1,500\u20133,000\u202fcc.\"}",
+          "reasoning": "We need HTS code for used passenger car, 4-wheel, gasoline engine, 2000 cc, from Japan. HTSUS Chapter 87. For automobiles: 8703.21.00.00 is \"Motor cars and other motor vehicles for the transport of persons, with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity not exceeding 1,500 cc\". 8703.22 for >1500 cc but not exceeding 3000 cc. So 8703.22.00.00. Since used, still same heading. So code \"8703.22.00.00\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220931462,
+      "prompt_tokens": 259,
+      "prompt_time": 0.148131366,
+      "completion_tokens": 202,
+      "completion_time": 0.427326869,
+      "total_tokens": 461,
+      "total_time": 0.575458235,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3vtd600eckr736aj9yaywzz",
+      "seed": 1084044258
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703220000",
+  "predicted_reason": "Used passenger automobile with spark\u2011ignition piston engine of 1,994\u202fcc falls under heading 8703.22 for cars of 1,500\u20133,000\u202fcc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

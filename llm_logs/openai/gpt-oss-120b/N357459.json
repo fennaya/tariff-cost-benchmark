@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357459",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-473e736f-b438-4a68-ab6d-a7e8db1ceec5",
+    "object": "chat.completion",
+    "created": 1790726218,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.62.20.00\", \"reason\": \"The item is a women's adult-size costume dress made of man\u2011made textile fabric, classifiable under HTSUS heading 6204.62 for women's dresses of man\u2011made fibers.\"}",
+          "reasoning": "We need HTS code for women's costume dress made of man-made textile. Likely 6204.62.20? Let's think: 6204 = women's or girls' suits, ensembles, jackets, etc. 6204.62 = of man-made fibers, not knitted? Actually 6204.62 is \"Women's or girls' dresses, of man-made fibers\". 6204.62.20 is \"Other\". So 6204.62.20 is 10-digit: 6204.62.20.00? Need 10 digits: 6204.62.20.00. Provide that. Reason sentence."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.099649196,
+      "prompt_tokens": 303,
+      "prompt_time": 0.018818353,
+      "completion_tokens": 200,
+      "completion_time": 0.416846597,
+      "total_tokens": 503,
+      "total_time": 0.43566495,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_b9a23305b9",
+    "x_groq": {
+      "id": "req_01m3qsk82me1bv5he6ebvah54s",
+      "seed": 1098906394
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204622000",
+  "predicted_reason": "The item is a women's adult-size costume dress made of man\u2011made textile fabric, classifiable under HTSUS heading 6204.62 for women's dresses of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

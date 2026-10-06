@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358079",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e79d2206-5c33-466b-b37e-5bbb8700a0be",
+    "object": "chat.completion",
+    "created": 1790726525,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3304.99.00.00\", \"reason\": \"Facial cleansing/clay mask is classified as a cosmetic preparation under heading 3304, subheading 99 for other beauty or make\u2011up preparations.\"}",
+          "reasoning": "We need HTS code for facial mask with charcoal. Likely under cosmetics: 3304.99.00? 3304.99.00 is \"Other beauty or make-up preparations\". 3304.99.00 is 10-digit: 3304.99.00.00? Actually HTSUS 10-digit: chapter 33 heading 3304 subheading 99. Then further digits. 3304.99.00.00 is 10-digit. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047825627,
+      "prompt_tokens": 219,
+      "prompt_time": 0.012757906,
+      "completion_tokens": 164,
+      "completion_time": 0.34418621,
+      "total_tokens": 383,
+      "total_time": 0.356944116,
+      "completion_tokens_details": {
+        "reasoning_tokens": 104
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3qswmb6edbbfm1jf1apq200",
+      "seed": 282220652
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304990000",
+  "predicted_reason": "Facial cleansing/clay mask is classified as a cosmetic preparation under heading 3304, subheading 99 for other beauty or make\u2011up preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

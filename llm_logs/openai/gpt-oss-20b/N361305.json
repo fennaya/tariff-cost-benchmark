@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361305",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-66f8eb5f-ed19-43ba-b760-5293f89974ef",
+    "object": "chat.completion",
+    "created": 1790697282,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6204.62.10\",\"reason\":\"The item is an outer garment with a hook\u2011and\u2011loop fastener and a foam waist band, fitting the HTSUS heading for jackets, coats, or other outer garments with hook or loop fasteners.\"}",
+          "reasoning": "We need HTS code. Description: deep back opening raw unfinished closed with small tab of hook and loop fastener. Top has foam band at waist. Sounds like a garment? Maybe a jacket? But \"deep back opening raw and unfinished\" suggests a garment with raw back. Hook and loop fastener small tab. Foam band at waist. Could be a \"jacket\" or \"vest\". Maybe \"jacket, coat, or other outerwear\" with hook and loop fastener. HTS 6204.62.10? But 6204 is jackets, coats, etc. 6204.62 is \"other\" with hook or loop fastener. 6204.62.10 is \"other\" with hook or loop fastener. But 6204.62.10 is for \"jacket, coat, or other outer garment, of any material, with hook or loop fastener\". The description: raw back unfinished. Might be a \"jacket\" or \"coat\". So 6204.62.10. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.142051871,
+      "prompt_tokens": 183,
+      "prompt_time": 0.009841749,
+      "completion_tokens": 284,
+      "completion_time": 0.357553951,
+      "total_tokens": 467,
+      "total_time": 0.3673957,
+      "completion_tokens_details": {
+        "reasoning_tokens": 217
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_63473661d7",
+    "x_groq": {
+      "id": "req_01m3py06f1eknsbg1ay1kqq13z",
+      "seed": 1252441315
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62046210",
+  "predicted_reason": "The item is an outer garment with a hook\u2011and\u2011loop fastener and a foam waist band, fitting the HTSUS heading for jackets, coats, or other outer garments with hook or loop fasteners.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

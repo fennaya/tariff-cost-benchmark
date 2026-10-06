@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361911",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8441400000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-318062a7-287a-495b-8aff-c2e664bc8f46",
+    "object": "chat.completion",
+    "created": 1790810318,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8422.30.00.00\",\n  \"reason\": \"Classifies as machinery for making paper, paperboard, cellulose pulp and similar articles, which best fits a dedicated molded fiber production line.\"\n}",
+          "reasoning": "We need HTS for machinery for making molded fiber packaging. Likely 8422? 8422.30? That's for other machinery for making paper pulp etc. Actually \"Machinery for making paper, paperboard, cellulose pulp\" is 8421. But this is for molded fiber articles. Could be 8422.30 \"Machinery for making paper, paperboard, cellulose pulp, etc., other than those of heading 8421\". However it's for molded fiber packaging, not paper. Might be 8422.30. Provide code 8422.30.00? 10-digit: 8422.30.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297857893,
+      "prompt_tokens": 461,
+      "prompt_time": 0.023500688,
+      "completion_tokens": 197,
+      "completion_time": 0.408457559,
+      "total_tokens": 658,
+      "total_time": 0.431958247,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3t9srv3esys27rwrhn6vfr3",
+      "seed": 1095264630
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8422300000",
+  "predicted_reason": "Classifies as machinery for making paper, paperboard, cellulose pulp and similar articles, which best fits a dedicated molded fiber production line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

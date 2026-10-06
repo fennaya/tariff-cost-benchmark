@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358431",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "3407002000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7679188f-be78-496c-96b1-621084e54217",
+    "object": "chat.completion",
+    "created": 1790726704,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9503.00.90\",\n  \"reason\": \"The product is an activity toy kit containing modeling clay and a pull\u2011back car, classified as a toy not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for air-dry clay modeling kit with toy car parts. Likely under heading 9503 (toys) or 3926 (plastic articles). But clay modeling kits are often under 9503.13.00 (toys representing vehicles). However includes modeling material maybe 3924.90 (other plastics). Air-dry clay is considered \"modeling clay\" under 3919? Actually 3919.90.00 is \"Other polymerised products\". But kits for arts and crafts often 9503.00? I think 9503.00.90 \"Other toys\". Better: 9503.00.90 covers toys not elsewhere specified. So choose 9503.00.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296226824,
+      "prompt_tokens": 366,
+      "prompt_time": 0.015796074,
+      "completion_tokens": 207,
+      "completion_time": 0.425890998,
+      "total_tokens": 573,
+      "total_time": 0.441687072,
+      "completion_tokens_details": {
+        "reasoning_tokens": 152
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3qt22kmea0tzx9t5343zyyp",
+      "seed": 578838
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95030090",
+  "predicted_reason": "The product is an activity toy kit containing modeling clay and a pull\u2011back car, classified as a toy not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

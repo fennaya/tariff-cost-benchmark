@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N355043",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-274081a3-30e4-4f51-9d68-7352104c205f",
+    "object": "chat.completion",
+    "created": 1790607079,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.00.00\", \"reason\": \"Granite slabs (cut, polished stone) used for countertops fall under heading 6802.20 for granite and similar igneous stones.\"}",
+          "reasoning": "We need HTS for granite slabs. Likely 6802.20.00.00 (granite, travertine, etc., cut stone). Actually 6802.20.00 is \"Granite, other than that of heading 6802.10\". 6802.10 is \"Marble\". So granite slabs: 6802.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218513455,
+      "prompt_tokens": 340,
+      "prompt_time": 0.057803177,
+      "completion_tokens": 142,
+      "completion_time": 0.29953628,
+      "total_tokens": 482,
+      "total_time": 0.357339457,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3m7zd6hetv9a898r561ta0w",
+      "seed": 1547025181
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802200000",
+  "predicted_reason": "Granite slabs (cut, polished stone) used for countertops fall under heading 6802.20 for granite and similar igneous stones.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362937",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004200085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4926d212-02ed-4aa0-809c-86008e423e15",
+    "object": "chat.completion",
+    "created": 1790843513,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.90\",\n  \"reason\": \"Fosfomycin tromethamine is a synthetic antibiotic formulated as a medicament for oral use, falling under heading 3004.90 (other medicaments containing antibiotics).\"\n}",
+          "reasoning": "Need HTS for fosfomycin tromethamine, a pharmaceutical. Likely 3004.90? Actually HTS Chapter 30: pharmaceutical products. Fosfomycin tromethamine is a salt of fosfomycin. Likely classified under 3004.90.90 (Other medicaments containing antibiotics). 3004.90.90 is \"Other medicaments (excluding goods of heading 3002, 3005 or 3006) containing antibiotics\". So 3004.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.302607702,
+      "prompt_tokens": 214,
+      "prompt_time": 0.008149796,
+      "completion_tokens": 179,
+      "completion_time": 0.391661108,
+      "total_tokens": 393,
+      "total_time": 0.399810904,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c652c0ffaa",
+    "x_groq": {
+      "id": "req_01m3v9esw9etvtgv369q9sx91r",
+      "seed": 423647711
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Fosfomycin tromethamine is a synthetic antibiotic formulated as a medicament for oral use, falling under heading 3004.90 (other medicaments containing antibiotics).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361312",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a06ef9f3-2954-41c6-aa66-20a6d7b34594",
+    "object": "chat.completion",
+    "created": 1790905587,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6204.62.00.00\",\n  \"reason\": \"The product is an unfinished vest (waistcoat) with non-functional buttons, classifiable as a men's or boys' knitted or crocheted waistcoat.\"\n}",
+          "reasoning": "We need to guess classification. French description: \"Les emmanchures sont brutes et non finies. Le gilet est dot\u00e9 de cinq boutons non fonctionnels cousus sur le devant.\" Means: The armholes are raw and unfinished. The vest has five non-functional buttons sewn on the front. So it's a vest (waistcoat) unfinished, likely textile apparel. HTS for men's or women's vest, knitted or not? Likely \"Men's or boys' waistcoats, knitted or crocheted\" 6204.62? Let's check: HTS 6204.62.00.00 is \"Men's or boys' waistcoats, knitted or crocheted\". For women's? 6204.63 is for women's. Since unspecified, maybe generic. Use 6204.62.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018456442,
+      "prompt_tokens": 181,
+      "prompt_time": 0.006925229,
+      "completion_tokens": 238,
+      "completion_time": 0.497069552,
+      "total_tokens": 419,
+      "total_time": 0.503994781,
+      "completion_tokens_details": {
+        "reasoning_tokens": 175
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3x4n4w4e0gsfaet3rjzztc1",
+      "seed": 1119469886
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204620000",
+  "predicted_reason": "The product is an unfinished vest (waistcoat) with non-functional buttons, classifiable as a men's or boys' knitted or crocheted waistcoat.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

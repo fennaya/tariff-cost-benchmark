@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359367",
+  "rulingDate": "2026-03-16T00:00:00",
+  "true_code": "8544422000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d8c68a97-b58c-47d2-b498-ea43301843da",
+    "object": "chat.completion",
+    "created": 1790905537,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.00\", \"reason\": \"The product is an insulated audio signal cable with connectors, falling under insulated wires and cables fitted with connectors (HTS 8544.42.00).\"}",
+          "reasoning": "We need HTS for audio cable, signal only, 5-pin connector, stereo plugs. Likely 8544.42.00? Actually 8544 covers insulated wire, cable. 8544.42 is \"Other insulated wire, cable and other conductors, for a voltage not exceeding 1,000 V, fitted with connectors\". But audio signal cable maybe 8544.49? Let's check: 8544.49 is \"Other insulated wire, cable and other conductors\". Could be 8544.42.00 \"Other insulated wire, cable and other conductors, for a voltage not exceeding 1,000 V, fitted with connectors\". That seems right. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204514272,
+      "prompt_tokens": 316,
+      "prompt_time": 0.014774631,
+      "completion_tokens": 203,
+      "completion_time": 0.416260724,
+      "total_tokens": 519,
+      "total_time": 0.431035355,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3x4kmshe0cr1w1aq3cmn1mz",
+      "seed": 1265234002
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444200",
+  "predicted_reason": "The product is an insulated audio signal cable with connectors, falling under insulated wires and cables fitted with connectors (HTS 8544.42.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360704",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "8479899599",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5a8f76ca-2012-4331-ae7b-eb38c76df32b",
+    "object": "chat.completion",
+    "created": 1790770372,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.90.00\",\n  \"reason\": \"The equipment is a mechanical oil recovery system classified under 'Other filtering or purifying machinery' (HTS 8421.90).\"\n}",
+          "reasoning": "We need HTS code for oil recovery tank with suction pump. Likely 8421.21.00? That's \"Oil and fuel filters\". No. Maybe 8421.99? Actually 8421 is \"Centrifuges, including centrifugal dryers; filtering or purifying machinery\". 8421.21 is \"Oil filters\". Not. Could be 8421.99 \"Other\". Or 8424 \"Mechanical appliances for projecting, dispersing, or spraying liquids\". Not.\n\nMaybe 8421.30 \"Other filtering or purifying machinery\". The system extracts oil, not filter. Could be 8421.90 \"Other\". Let's pick 8421.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.097943917,
+      "prompt_tokens": 252,
+      "prompt_time": 0.072524541,
+      "completion_tokens": 203,
+      "completion_time": 0.429785547,
+      "total_tokens": 455,
+      "total_time": 0.502310088,
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3s3pqhhe4h9cvtmtyttcaxj",
+      "seed": 969819640
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84219000",
+  "predicted_reason": "The equipment is a mechanical oil recovery system classified under 'Other filtering or purifying machinery' (HTS 8421.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

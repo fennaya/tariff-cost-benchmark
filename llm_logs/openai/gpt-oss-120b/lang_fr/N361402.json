@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361402",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5a0d3df2-e1a5-42de-bd8d-215231a2178f",
+    "object": "chat.completion",
+    "created": 1790905694,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.91.00\",\n  \"reason\": \"The description refers to a garment with raw, unfinished sleeves and hem, fitting the category of unfinished made\u2011up textile articles.\"\n}",
+          "reasoning": "We need to guess HTS code. French description: \"Les manches longues et le bas de l'ourlet sont bruts et non finis.\" Means \"The long sleeves and the bottom hem are raw and unfinished.\" Likely a garment, maybe a shirt with unfinished sleeves and hem, maybe a knit garment? Could be \"unfinished garments\" maybe \"unfinished textile articles\". Likely classification: 6209.00.00? That's for T-shirts, singlets, etc. But long sleeves unfinished? Could be \"unfinished women's or girls' garments\" 6205? Actually 6205 is women's or girls' blouses, shirts and shirt-blouses. 6206 is men's or boys' shirts. Unfinished? There's a heading 6302 for \"Other made up articles, including dress patterns\". 6302.91 for \"unfinished garments\". Let's pick 6302.91.00 \"Other made up articles, including dress patterns, of textile materials, not knitted, not crocheted, unfinished\". So answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090750514,
+      "prompt_tokens": 169,
+      "prompt_time": 0.006564892,
+      "completion_tokens": 265,
+      "completion_time": 0.556475037,
+      "total_tokens": 434,
+      "total_time": 0.563039929,
+      "completion_tokens_details": {
+        "reasoning_tokens": 210
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3x4rdsne9jtd9tzmtak4mra",
+      "seed": 1293647623
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029100",
+  "predicted_reason": "The description refers to a garment with raw, unfinished sleeves and hem, fitting the category of unfinished made\u2011up textile articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

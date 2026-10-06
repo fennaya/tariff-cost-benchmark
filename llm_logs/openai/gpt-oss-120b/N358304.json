@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358304",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "8518220000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-13ef67a5-beae-488d-a872-6a3013f03890",
+    "object": "chat.completion",
+    "created": 1790726640,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8518.30.00\",\n  \"reason\": \"The product is a portable amplified loudspeaker system with a wireless transmitter, classifiable under HTSUS heading 8518 for loudspeakers, portable, with or without amplifier.\"\n}",
+          "reasoning": "We need HTS code for wireless TV assistive speaker. Likely under 8518.30.00? 8518.30.00 is \"Loudspeakers, portable, with or without amplifier\". Or 8526 for radio receivers? Actually speaker with transmitter maybe \"audio equipment\". 8518.30.00 covers \"Loudspeakers, portable, with or without amplifier\". The transmitter is accessory. Could be 8518.22.00 \"Headphones\". But overall system is a speaker. So 8518.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086084821,
+      "prompt_tokens": 288,
+      "prompt_time": 0.0116704,
+      "completion_tokens": 186,
+      "completion_time": 0.394467528,
+      "total_tokens": 474,
+      "total_time": 0.406137928,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3qt04gpehwrpx3hgq2ahn5h",
+      "seed": 1660598765
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85183000",
+  "predicted_reason": "The product is a portable amplified loudspeaker system with a wireless transmitter, classifiable under HTSUS heading 8518 for loudspeakers, portable, with or without amplifier.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

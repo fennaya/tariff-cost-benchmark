@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361982",
+  "rulingDate": "2026-06-15T00:00:00",
+  "true_code": "8716400000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a2df43bf-5c82-41c5-87a4-0e3b40ea1cde",
+    "object": "chat.completion",
+    "created": 1790812967,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8716.30.00\",\n  \"reason\": \"The items are unfinished trailer chassis (trailers and semi\u2011trailers) not equipped for transport, falling under heading 8716 for trailers and semi\u2011trailers, subheading 30 for other trailers.\"\n}",
+          "reasoning": "We need HTS code for unfinished trailer chassis, not ready to use. Likely under heading 8716? Actually trailers for road vehicles: 8716.30? Let's see: 8716.30 - Parts and accessories of motor vehicles. Not. Trailer chassis maybe 8716.90? Actually 8716 is \"Trailers and semi-trailers\". Subheadings: 8716.10 - with self-propulsion, 8716.20 - with self-propulsion, 8716.30 - with self-propulsion? Need check. Actually 8716.30 is \"Other trailers and semi-trailers\". 8716.30.00? Might be 8716.30.00. But unfinished? Could be classified under 8716.90 \"Other parts\". However chassis is a trailer. So 8716.30.00 seems appropriate. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089821338,
+      "prompt_tokens": 628,
+      "prompt_time": 0.025701619,
+      "completion_tokens": 262,
+      "completion_time": 0.548719797,
+      "total_tokens": 890,
+      "total_time": 0.574421416,
+      "completion_tokens_details": {
+        "reasoning_tokens": 190
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3tcam1feamt053g0fa426e5",
+      "seed": 2057256021
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87163000",
+  "predicted_reason": "The items are unfinished trailer chassis (trailers and semi\u2011trailers) not equipped for transport, falling under heading 8716 for trailers and semi\u2011trailers, subheading 30 for other trailers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

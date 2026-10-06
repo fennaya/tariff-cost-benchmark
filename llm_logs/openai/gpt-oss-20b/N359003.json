@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359003",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-1e61470d-d4a3-47f3-8c5a-1a1a2f52305f",
+    "object": "chat.completion",
+    "created": 1790612951,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6307.90.90.00\",\"reason\":\"Textile adhesive tape for mouth use is classified as other textile articles not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for textile adhesive tape for mouth. Likely 6307.90.90? Actually 6307.90.90 is other articles of textile articles. But adhesive tape? 6307.90.90 is \"Other articles of textile articles, of a kind used for household or kitchen purposes\". But mouth tape is medical device? Could be 9018.90.90? But it's textile. Maybe 6307.90.90. But 6307.90.90 is for other articles of textile articles. 6307.90.90 includes \"Other articles of textile articles, of a kind used for household or kitchen purposes\". Mouth tape is not household. Could be 6307.90.90. But maybe 6307.90.90 includes \"Other articles of textile articles, of a kind used for medical purposes\"? Actually 6307.90.90 is \"Other articles of textile articles, of a kind used for household or kitchen purposes\". So not. Maybe 6307.90.90 is wrong. 6307.90.90 is for other articles. 6307.90.90 includes \"Other articles of textile articles, of a kind used for household or kitchen purposes\". So mouth tape not. Could be 6307.90.90? Might be 6307.90.90. But maybe 6307.90.90 is the only code for other textile articles. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.226693977,
+      "prompt_tokens": 347,
+      "prompt_time": 0.048183419,
+      "completion_tokens": 344,
+      "completion_time": 0.393894028,
+      "total_tokens": 691,
+      "total_time": 0.442077447,
+      "completion_tokens_details": {
+        "reasoning_tokens": 301
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1074f9ce08",
+    "x_groq": {
+      "id": "req_01m3mdjkntea7vd3jftkrvva6q",
+      "seed": 501501119
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307909000",
+  "predicted_reason": "Textile adhesive tape for mouth use is classified as other textile articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

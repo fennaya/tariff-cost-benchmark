@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361188",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "8479899599",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f8aa7411-d052-45bb-8f7a-604aeab3d1c3",
+    "object": "chat.completion",
+    "created": 1790784723,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8205.20.0010\", \"reason\": \"Classified as a hand\u2011operated mechanical device for pulling (e.g., winches, capstans) under heading 8205.20\"}",
+          "reasoning": "We need HTS code for a stake puller, a mechanical device for pulling. Likely under \"Hand tools, portable\" maybe 8205? 8205.20? Let's think: 8205.20.00 \u2013 Hand-operated mechanical devices for pulling, etc. Actually 8205.20.00 is \"Hand-operated mechanical devices for pulling, such as winches, capstans, and the like\". Stake puller is a mechanical pulling device, powered by impact wrench (external). Might be classified under 8205.20.00. Provide code 8205.20.00. That's 8 digits; need 10-digit: 8205.20.0010? Usually 10-digit US: 8205.20.0010. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088742391,
+      "prompt_tokens": 264,
+      "prompt_time": 0.012764409,
+      "completion_tokens": 221,
+      "completion_time": 0.465463401,
+      "total_tokens": 485,
+      "total_time": 0.47822781,
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_b9a23305b9",
+    "x_groq": {
+      "id": "req_01m3shcny3ejhbw9egdpds5kvr",
+      "seed": 795315835
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8205200010",
+  "predicted_reason": "Classified as a hand\u2011operated mechanical device for pulling (e.g., winches, capstans) under heading 8205.20",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

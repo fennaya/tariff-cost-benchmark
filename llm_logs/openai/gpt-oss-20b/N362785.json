@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362785",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "7018905000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c2c60b9c-0376-461b-9e20-4bbc72697a4e",
+    "object": "chat.completion",
+    "created": 1790746806,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4202.90.90.00\",\"reason\":\"The item is a small textile bag (coin purse) made of polyester satin, fitting the description of other articles of textile fabrics used for luggage, handbags, etc.\"}",
+          "reasoning": "Need HTS code for coin purse. Likely 4202.90.90? Actually 4202.90.90 is \"Other articles of leather or composition leather, of a kind used for luggage, handbags, etc.\" But polyester satin not leather. Maybe 4202.90.90 covers \"Other articles of textile fabrics, of a kind used for luggage, handbags, etc.\" Wait 4202.90.90 is \"Other articles of textile fabrics, of a kind used for luggage, handbags, etc.\" But coin purse is small bag. Could be 4202.90.90. But 4202.90.90 is for \"Other articles of textile fabrics, of a kind used for luggage, handbags, etc.\" Yes. So code 4202.90.90. But need 10-digit: 4202.90.90.00? Actually HTS 10-digit: 4202.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086883166,
+      "prompt_tokens": 269,
+      "prompt_time": 0.018496848,
+      "completion_tokens": 259,
+      "completion_time": 0.281660768,
+      "total_tokens": 528,
+      "total_time": 0.300157616,
+      "completion_tokens_details": {
+        "reasoning_tokens": 200
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3rd7hjpeshbk34r442p4p3y",
+      "seed": 166890412
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202909000",
+  "predicted_reason": "The item is a small textile bag (coin purse) made of polyester satin, fitting the description of other articles of textile fabrics used for luggage, handbags, etc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

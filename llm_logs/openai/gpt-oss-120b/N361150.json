@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361150",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9503000071",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ef237d12-670b-48b9-8760-3fbae5adfc1b",
+    "object": "chat.completion",
+    "created": 1790783930,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6307.90.98\",\n  \"reason\": \"Soft padded textile articles not elsewhere specified are classified under heading 6307 for other made\u2011up textile articles, with subheading 6307.90.98 for miscellaneous items.\"\n}",
+          "reasoning": "We need HTS code for padded textile shapes that fold, called \"books\". Likely classified under \"Articles of textile materials, not elsewhere specified\". Could be \"soft flat padded textile shapes\" maybe \"toy\" or \"stuffed articles\". Could be \"Textile articles, not elsewhere specified, of cotton, etc.\" Hard.\n\nProbably 6307.90.98? 6307 covers other made-up textile articles, like \"Other made up articles, including dress patterns\". 6307.90 is \"Other\" not elsewhere. 6307.90.98 is \"Other\" for other uses.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.365972456,
+      "prompt_tokens": 186,
+      "prompt_time": 0.066279888,
+      "completion_tokens": 194,
+      "completion_time": 0.414839321,
+      "total_tokens": 380,
+      "total_time": 0.481119209,
+      "completion_tokens_details": {
+        "reasoning_tokens": 128
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3sgmfjwe5kv6p2ycgdms3x6",
+      "seed": 777799969
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63079098",
+  "predicted_reason": "Soft padded textile articles not elsewhere specified are classified under heading 6307 for other made\u2011up textile articles, with subheading 6307.90.98 for miscellaneous items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

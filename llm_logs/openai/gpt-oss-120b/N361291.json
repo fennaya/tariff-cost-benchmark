@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361291",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "8716310000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ab297dd6-e04e-4301-bb1b-00560afcd27a",
+    "object": "chat.completion",
+    "created": 1790787768,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8704.99.90\", \"reason\": \"Classified as a motor vehicle trailer not elsewhere specified, used for transporting propane.\"}",
+          "reasoning": "We need HTS code for propane tanker trailer. Likely under 8704? Actually trailers are vehicles: 8704.99? But it's a tank trailer for liquids, maybe 8704.99.10? Check: 8704.99.90 is parts? Actually 8704.99.90 is \"Other vehicles, not elsewhere specified\". But tank trailers maybe 8704.99.10 \"Other\". Could be 8704.99.90. I'll choose 8704.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048655539,
+      "prompt_tokens": 591,
+      "prompt_time": 0.040034808,
+      "completion_tokens": 152,
+      "completion_time": 0.320120642,
+      "total_tokens": 743,
+      "total_time": 0.36015545,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3sm9kz2e48bgr96wvqtyb1d",
+      "seed": 1437097733
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87049990",
+  "predicted_reason": "Classified as a motor vehicle trailer not elsewhere specified, used for transporting propane.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

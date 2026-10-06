@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357293",
+  "rulingDate": "2026-01-06T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c2da09e5-2ba6-475a-8629-d380c5bf4c17",
+    "object": "chat.completion",
+    "created": 1790607384,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"61.10.20.10.00\",\"reason\":\"The item is a theatrical costume for adult wear, fitting heading 61.10.20.10 for costumes for theatrical or other performances.\"}",
+          "reasoning": "Need HTS code for costume. Likely 61.10.20.10? Actually costumes for theatrical use: 61.10.20.10 is \"Costumes, other than those of heading 61.10.20.10, for theatrical or other performances\". Wait 61.10.20.10 is \"Costumes, other than those of heading 61.10.20.10, for theatrical or other performances\". Actually 61.10.20.10 is \"Costumes, other than those of heading 61.10.20.10, for theatrical or other performances\". That seems odd. Let's recall: 61.10.20.10 is \"Costumes, other than those of heading 61.10.20.10, for theatrical or other performances\". The heading 61.10.20.10 is \"Costumes, other than those of heading 61.10.20.10, for theatrical or other performances\". So the code is 61.10.20.10. But 10-digit: 61.10.20.10.00? Actually 10-digit: 61.10.20.10.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206696954,
+      "prompt_tokens": 214,
+      "prompt_time": 0.010444097,
+      "completion_tokens": 304,
+      "completion_time": 0.357962713,
+      "total_tokens": 518,
+      "total_time": 0.36840681,
+      "completion_tokens_details": {
+        "reasoning_tokens": 249
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m3m88qraewvrfhjepcpqxs32",
+      "seed": 385138933
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6110201000",
+  "predicted_reason": "The item is a theatrical costume for adult wear, fitting heading 61.10.20.10 for costumes for theatrical or other performances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359802",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3824999397",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-35e5b11e-fd3e-4614-b2ef-771bccc8cd0a",
+    "object": "chat.completion",
+    "created": 1790649033,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90\",\"reason\":\"It is a pharmaceutical preparation not elsewhere specified, classified under 3004.90.90\"}",
+          "reasoning": "Need HTS code for pharmaceutical compounding base, microemulsion preconcentrate. Likely 3004.90.90? Actually 3004 is \"Pharmaceutical preparations, not elsewhere specified\". 3004.90.90 is \"Other\". So 3004.90.90. Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.185792531,
+      "prompt_tokens": 486,
+      "prompt_time": 0.026714207,
+      "completion_tokens": 108,
+      "completion_time": 0.119127149,
+      "total_tokens": 594,
+      "total_time": 0.145841356,
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1c0f5282a2",
+    "x_groq": {
+      "id": "req_01m3nfzrt2e4jbw62mkyecxmgp",
+      "seed": 2117940861
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "It is a pharmaceutical preparation not elsewhere specified, classified under 3004.90.90",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359135",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "7312103012",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-79f7005a-21a8-4271-a831-bbaca7c55805",
+    "object": "chat.completion",
+    "created": 1790727113,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7315.20.00\",\n  \"reason\": \"Classified under wire of iron or steel (nonalloy) not elsewhere specified, covering prestressed concrete strands.\"\n}",
+          "reasoning": "Need HTS for nonalloy steel prestressed concrete strand. Likely heading 7315.00.00? Actually 7315 is \"Other wire of iron or steel\". But prestressed concrete strand maybe 7315.20? Check: 7315.20.00 \"Wire of iron or steel, not elsewhere specified\". Could be 7315.20.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017483398,
+      "prompt_tokens": 296,
+      "prompt_time": 0.011507608,
+      "completion_tokens": 135,
+      "completion_time": 0.285176285,
+      "total_tokens": 431,
+      "total_time": 0.296683893,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qtej15egx92m89bht9nvjd",
+      "seed": 48979484
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73152000",
+  "predicted_reason": "Classified under wire of iron or steel (nonalloy) not elsewhere specified, covering prestressed concrete strands.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

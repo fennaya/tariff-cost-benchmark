@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363470",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7117907500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-35033a3b-8838-4b56-b39c-1aa6b8e7e031",
+    "object": "chat.completion",
+    "created": 1790854068,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7117.90.00\",\n  \"reason\": \"Earrings are considered imitation jewelry, primarily of non\u2011metal material with metal findings plated in gold, falling under heading 7117 for imitation jewelry.\"\n}",
+          "reasoning": "We need HTS code for earrings of polymer clay with metal findings. Likely under heading 7117? Actually jewelry of base metal plated with precious metal: 7117.90.00? But material is polymer clay (plastic). Could be under 7117.19? Let's think: 7117 covers imitation jewelry, of base metal, plated with precious metal. But polymer clay is not metal. Could be under 3926.90.99 (other articles of plastics). However earrings are jewelry. HTS 7117.19.00 is \"Imitation jewelry, of base metal, plated with precious metal, other\". But base metal is stainless steel, but main component is polymer clay, not metal. Might be classified under 7117.90.00 \"Other imitation jewelry\". Actually 7117.90.00 is \"Other\". Let's choose 7117.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148050846,
+      "prompt_tokens": 191,
+      "prompt_time": 0.037469377,
+      "completion_tokens": 246,
+      "completion_time": 0.519034554,
+      "total_tokens": 437,
+      "total_time": 0.556503931,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dd854ee2d7",
+    "x_groq": {
+      "id": "req_01m3vkgx3he769ysasw1cf7m5n",
+      "seed": 894201447
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "71179000",
+  "predicted_reason": "Earrings are considered imitation jewelry, primarily of non\u2011metal material with metal findings plated in gold, falling under heading 7117 for imitation jewelry.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360725",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "7607205000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c0e8b00b-6b5e-4fed-9a83-4103fc69ea8a",
+    "object": "chat.completion",
+    "created": 1790771250,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3916.90.00\", \"reason\": \"Polyethylene sheet laminated with metal foil, not otherwise specified, falls under plastics sheets, films, foils (HTS 3916) and the composite nature places it in the 'other' subheading.\"}",
+          "reasoning": "We need HTS code. Likely 3916.10.00? That's plastics sheets, films, foils, of polyethylene. Aluminum foil laminated? Might be 3916.90? Actually laminated panels with metal: 7610? But composite panel of polyethylene with aluminum foil, used for signage. Could be classified under 3916.90.00 (Other plastics sheets). Or 7610.10.00 is aluminum foil. But composite maybe 3916.90.00. I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048840124,
+      "prompt_tokens": 196,
+      "prompt_time": 0.050716978,
+      "completion_tokens": 176,
+      "completion_time": 0.371737903,
+      "total_tokens": 372,
+      "total_time": 0.422454881,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3s4hgf3etjagwtnsfecc3bq",
+      "seed": 1183112252
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39169000",
+  "predicted_reason": "Polyethylene sheet laminated with metal foil, not otherwise specified, falls under plastics sheets, films, foils (HTS 3916) and the composite nature places it in the 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

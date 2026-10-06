@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360064",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "7615107125",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-73a4f0b2-025b-4f8b-88a4-eb4bf9159776",
+    "object": "chat.completion",
+    "created": 1790752621,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7612.90.9090\",\n  \"reason\": \"Disposable trays made of 100% aluminum foil are classified under heading 7612 (aluminum foil) and subheading 90.9090 for other articles of aluminum foil not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for disposable aluminum foil trays, 100% aluminum, thickness .05-.07 mm, used for food service. Likely heading 7612? Actually aluminum foil products: 7612.99? Let's think: 7612 covers aluminum foil and leaf, not coated. Subheading 7612.90 for other. But trays are shaped articles of aluminum foil. Could be 7612.90.99? Need 10-digit: 7612.90.9090? Check US: 7612.90.9090 is \"Other articles of aluminum foil, not elsewhere specified\". Likely correct. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.4069653,
+      "prompt_tokens": 348,
+      "prompt_time": 0.019610463,
+      "completion_tokens": 205,
+      "completion_time": 0.435180017,
+      "total_tokens": 553,
+      "total_time": 0.45479048,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m3rjs0c4eeqa55zkevk5gaks",
+      "seed": 2049655908
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7612909090",
+  "predicted_reason": "Disposable trays made of 100% aluminum foil are classified under heading 7612 (aluminum foil) and subheading 90.9090 for other articles of aluminum foil not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

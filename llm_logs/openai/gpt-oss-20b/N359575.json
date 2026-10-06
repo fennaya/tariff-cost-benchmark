@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359575",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e5e99177-55e0-4cea-8cf1-89ccf216f84c",
+    "object": "chat.completion",
+    "created": 1790638373,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"Used self\u2011propelled barrier transfer machine is classified as other road construction machinery.\"}",
+          "reasoning": "We need HTS code. Used MOOVOP Barrier Transfer Machine, a self-propelled machine for reconfiguring traffic lanes, lifting concrete barriers. Likely under \"Road construction machinery\" or \"Road maintenance machines\" - maybe 8421.90.90? Let's think: 8421 is \"Road, rail or air-traffic control equipment\". 8421.90 is \"Other\". But barrier transfer machine is a road construction machine. Could be 8421.90.90 \"Other\". Alternatively 8421.90.90 is \"Other road construction machinery\". Actually 8421.90.90 is \"Other road construction machinery\". That seems plausible. Provide 10-digit: 8421.90.90.00? Wait 10-digit format: 8421.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04279055,
+      "prompt_tokens": 392,
+      "prompt_time": 0.023186243,
+      "completion_tokens": 215,
+      "completion_time": 0.22850967,
+      "total_tokens": 607,
+      "total_time": 0.251695913,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_feb9b278f1",
+    "x_groq": {
+      "id": "req_01m3n5tdyheg891g5q0ngtfzy1",
+      "seed": 1005432674
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "Used self\u2011propelled barrier transfer machine is classified as other road construction machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358104",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "6404119020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a7e2c83f-ad47-45a2-8849-b2c113bd6368",
+    "object": "chat.completion",
+    "created": 1790726540,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6402.99.90\", \"reason\": \"Men's sneaker with textile-dominant upper and rubber/plastic sole falls under heading 6402 for footwear with rubber/plastic soles and other (non\u2011leather) uppers.\"}",
+          "reasoning": "We need HTS code for men's sneaker with textile upper, leather part, rubber sole. Likely heading 6402.99.90? 6402.99.90 is \"Other footwear with outer soles of rubber, plastics etc, not covered elsewhere\". For men's shoes of textile uppers: 6402.91.00 is \"Footwear with outer soles of rubber, leather uppers\". But textile upper -> 6402.99.90 maybe. Actually 6402.91 is leather uppers. 6402.99 is other uppers. So code 6402.99.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.01784942,
+      "prompt_tokens": 297,
+      "prompt_time": 0.014390987,
+      "completion_tokens": 195,
+      "completion_time": 0.407488554,
+      "total_tokens": 492,
+      "total_time": 0.421879541,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3qsx2qze0rt7cjgrqjkcxwg",
+      "seed": 1955437811
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "64029990",
+  "predicted_reason": "Men's sneaker with textile-dominant upper and rubber/plastic sole falls under heading 6402 for footwear with rubber/plastic soles and other (non\u2011leather) uppers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

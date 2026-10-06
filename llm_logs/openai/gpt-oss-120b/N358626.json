@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358626",
+  "rulingDate": "2026-03-09T00:00:00",
+  "true_code": "2931590080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3ea2075f-01da-47ec-a213-3814d9f5b99d",
+    "object": "chat.completion",
+    "created": 1790726789,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2933.39.00\", \"reason\": \"Classified under inorganic chemicals (phosphonic acids and salts) not elsewhere specified, covering bisphosphonate salts like clodronic acid disodium.\"}",
+          "reasoning": "Need HTS for clodronic acid disodium salt. Likely under 2933.99? It's a chemical, pharmaceutical. HTS 3004.90? Actually 3004.90.90 is \"Medicaments ... other\". But specific active ingredient maybe 2933.39? Bisphosphonates are inorganic chemicals. Clodronate is a salt of phosphonic acid. Might be under 2933.39. Let's choose 2933.39.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048646079,
+      "prompt_tokens": 210,
+      "prompt_time": 0.008483932,
+      "completion_tokens": 160,
+      "completion_time": 0.336583288,
+      "total_tokens": 370,
+      "total_time": 0.34506722,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3qt4pcze53tdz9mqzp0vcv9",
+      "seed": 1261399683
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "29333900",
+  "predicted_reason": "Classified under inorganic chemicals (phosphonic acids and salts) not elsewhere specified, covering bisphosphonate salts like clodronic acid disodium.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

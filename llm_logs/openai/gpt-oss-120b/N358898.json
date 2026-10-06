@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358898",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8544200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-958d9fdc-1044-4815-b865-972286deb4a9",
+    "object": "chat.completion",
+    "created": 1790726923,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.49.00\",\n  \"reason\": \"Passive multi\u2011channel video signal harness with connectors, no active electronics, classified under other cable assemblies with connectors.\"\n}",
+          "reasoning": "We need HTS for passive video signal harness. Likely under 8544? Actually 8544 is electronic integrated circuits. For wiring harnesses: 8544? No. 8544 is printed circuits. 8544? Hmm. Cable assemblies: 8544.39? Actually 8544.42? Let's think: 8544.42 is \"Connectors for electronic circuits\". But harness maybe 8544.49? Or 8544.70? Another: 8544.70 is \"Other\". But maybe 8544.70.00? However cable assemblies are under 8544.42? Actually 8544.42 is \"Connectors for electronic circuits\". The harness is a cable assembly with connectors. Could be 8544.49.00 \"Other\". Or 8544.70.00 \"Other\". Let's pick 8544.49.00.\n\nProvide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.051535713,
+      "prompt_tokens": 286,
+      "prompt_time": 0.078720851,
+      "completion_tokens": 242,
+      "completion_time": 0.506739346,
+      "total_tokens": 528,
+      "total_time": 0.585460197,
+      "completion_tokens_details": {
+        "reasoning_tokens": 190
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3qt8rs7erk96dnmykq8g1x9",
+      "seed": 1009653489
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444900",
+  "predicted_reason": "Passive multi\u2011channel video signal harness with connectors, no active electronics, classified under other cable assemblies with connectors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

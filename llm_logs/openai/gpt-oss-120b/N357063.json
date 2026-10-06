@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357063",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b24ec221-a937-40ca-ad26-9e9183357c1f",
+    "object": "chat.completion",
+    "created": 1790725930,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3926.90.9995\",\n  \"reason\": \"The PCB CLAW is a plastic tool (PETG) used for holding PCBs, classified under other articles of plastics not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for plastic tool, not a machine. Likely 3926.90.9995? 3926.90 is other articles of plastics. 3926.90.9995 is \"Other articles of plastics, not elsewhere specified\". So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087639554,
+      "prompt_tokens": 340,
+      "prompt_time": 0.016242454,
+      "completion_tokens": 117,
+      "completion_time": 0.245940805,
+      "total_tokens": 457,
+      "total_time": 0.262183259,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3qsafcmew2bvezcgthdj7yc",
+      "seed": 186629325
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909995",
+  "predicted_reason": "The PCB CLAW is a plastic tool (PETG) used for holding PCBs, classified under other articles of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

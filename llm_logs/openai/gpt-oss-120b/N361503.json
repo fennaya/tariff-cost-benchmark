@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361503",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-17a353e5-b75a-471f-be8d-ea0a6cc2214a",
+    "object": "chat.completion",
+    "created": 1790796907,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.10.00\", \"reason\": \"Hardcover printed books of 32 pages are classified under printed books (HTS 4901.10.00).\"}",
+          "reasoning": "Need HTS for printed books hardcover. Likely 4901.10.00? Actually 4901.10.00 is \"Printed books, brochures, leaflets and similar printed matter, in single sheets, etc.\" Wait 4901.10 is \"Printed books, brochures, leaflets and similar printed matter, in single sheets, etc.\" 4901.99 other. But hardcover books are 4901.10.00? Check: 4901.10.00 - \"Printed books, in single sheets, etc.\" Might be 4901.10.00 for printed books, including those bound. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018697054,
+      "prompt_tokens": 239,
+      "prompt_time": 0.011603015,
+      "completion_tokens": 183,
+      "completion_time": 0.390220196,
+      "total_tokens": 422,
+      "total_time": 0.401823211,
+      "completion_tokens_details": {
+        "reasoning_tokens": 132
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3sx0gype3rvq7wkc6fttf8q",
+      "seed": 595535635
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49011000",
+  "predicted_reason": "Hardcover printed books of 32 pages are classified under printed books (HTS 4901.10.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

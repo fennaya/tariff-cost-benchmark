@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359188",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2bb937e7-da21-404f-8152-4aa4dc1fc0d5",
+    "object": "chat.completion",
+    "created": 1790623073,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.90.90.00\",\"reason\":\"Wooden, non-functional range hood covers are classified as other furniture, not upholstered, of wood.\"}",
+          "reasoning": "Need HTS 10-digit. Wood range hood covers non-functional. Likely 9403? Actually furniture? But covers for appliances. Could be 9403.10.10? Let's think: 9403.10.10 is \"Other furniture, not upholstered, of wood\". But covers are not furniture. Maybe 9403.90.90? But covers for appliances maybe 9403.90.90. But 9403.90.90 is \"Other furniture, not upholstered, of other materials\". Not wood. Maybe 9403.90.90. But wood. Could be 9403.90.90. But 9403.90.90 is \"Other furniture, not upholstered, of other materials\". Not wood. Maybe 9403.90.90. But wood? 9403.90.90. But maybe 9403.90.90. But not.\n\nAlternatively, 9403.90.90 is for other furniture. But covers are not furniture. Could be 9403.90.90. But maybe 9403.90.90. But I'm not sure.\n\nMaybe 9403.90.90. But I'll choose 9403.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192154175,
+      "prompt_tokens": 291,
+      "prompt_time": 0.016449906,
+      "completion_tokens": 303,
+      "completion_time": 0.320390683,
+      "total_tokens": 594,
+      "total_time": 0.336840589,
+      "completion_tokens_details": {
+        "reasoning_tokens": 257
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m3mq7gxjeax87jed3c6f83tr",
+      "seed": 1069709293
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403909000",
+  "predicted_reason": "Wooden, non-functional range hood covers are classified as other furniture, not upholstered, of wood.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

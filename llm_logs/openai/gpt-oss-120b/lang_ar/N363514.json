@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363514",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "9504500000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8d4865a0-f1c7-41e4-84c7-9e21738fb52e",
+    "object": "chat.completion",
+    "created": 1790904646,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9504.90.00\", \"reason\": \"The item is a racing wheel controller accessory for PC gaming, classified as a part or accessory of video game consoles and machines.\"}",
+          "reasoning": "We need HTS for racing wheel controller. Likely 9504.50.00? Actually 9504.50.00 is \"Video game consoles and machines\". For controllers: 9504.50.00 includes \"Other video game consoles and machines\". But accessories? 9504.90.00 is \"Parts and accessories of video game consoles\". The wheel is an input device. Could be 9504.90.00. Let's choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047572559,
+      "prompt_tokens": 361,
+      "prompt_time": 0.016023845,
+      "completion_tokens": 148,
+      "completion_time": 0.30764738,
+      "total_tokens": 509,
+      "total_time": 0.323671225,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3x3regje3hb89cg88n62bbj",
+      "seed": 1027939969
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95049000",
+  "predicted_reason": "The item is a racing wheel controller accessory for PC gaming, classified as a part or accessory of video game consoles and machines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

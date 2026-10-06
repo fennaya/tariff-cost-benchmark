@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359859",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8704105060",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ccb5b892-8f21-4896-915e-e521a51c32ee",
+    "object": "chat.completion",
+    "created": 1790653384,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"Articulated off\u2011highway dumpers used for construction and mining fall under 8421.90.90.00, the heading for other motor vehicles for construction not elsewhere specified.\"}",
+          "reasoning": "Need HTSUS code for off-highway articulated dumpers. Likely 8421.90.90? Actually 8421.90.90 is \"Other motor vehicles for construction\". For dump trucks? 8421.90.90 covers \"Other motor vehicles for construction, not elsewhere specified\". Might be 8421.90.90. But 8421.90.90 is 10-digit? 8421.90.90.00? Actually 10-digit: 8421.90.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.042536218,
+      "prompt_tokens": 655,
+      "prompt_time": 0.032471069,
+      "completion_tokens": 177,
+      "completion_time": 0.186433376,
+      "total_tokens": 832,
+      "total_time": 0.218904445,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_feb9b278f1",
+    "x_groq": {
+      "id": "req_01m3nm4hapeny80sd8yz932b4d",
+      "seed": 1233987978
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "Articulated off\u2011highway dumpers used for construction and mining fall under 8421.90.90.00, the heading for other motor vehicles for construction not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360414",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8537109170",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-81d78df4-b0bc-46bb-af62-acf4dd425be7",
+    "object": "chat.completion",
+    "created": 1790760572,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8537.20.00\",\n  \"reason\": \"Aluminum cabinet used to house and protect electrical distribution equipment, classified under boards, panels, consoles, desks, cabinets and other bases for electric control or distribution (voltage \u22641,000\u202fV).\"\n}",
+          "reasoning": "We need HTS code for aluminum electrical cabinet. Likely 8537? Actually cabinets for electrical equipment: 8537.10? Let's check: 8537.10.00 - Boards, panels, consoles, desks, cabinets and other bases, for electric control... of a kind used in vehicles? Wait. 8537.10.00 is for \"Boards, panels, consoles, desks, cabinets and other bases, for electric control or distribution, of a kind used in motor vehicles\". Not ours.\n\nGeneral: 8537.20.00 - \"Boards, panels, consoles, desks, cabinets and other bases, for electric control or distribution, for a voltage not exceeding 1,000 V\". That seems right. Material aluminum not matter. So code 8537.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.202051471,
+      "prompt_tokens": 235,
+      "prompt_time": 0.01251812,
+      "completion_tokens": 241,
+      "completion_time": 0.507013966,
+      "total_tokens": 476,
+      "total_time": 0.519532086,
+      "completion_tokens_details": {
+        "reasoning_tokens": 169
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3rtbms2ejet57vrq9b4z23n",
+      "seed": 1997048879
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85372000",
+  "predicted_reason": "Aluminum cabinet used to house and protect electrical distribution equipment, classified under boards, panels, consoles, desks, cabinets and other bases for electric control or distribution (voltage \u22641,000\u202fV).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

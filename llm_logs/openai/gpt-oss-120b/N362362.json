@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362362",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "9505102500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a70d4de6-7a16-4027-8366-5779ee51b30b",
+    "object": "chat.completion",
+    "created": 1790825537,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.00\",\n  \"reason\": \"Christmas crackers are novelty party items classified under other toys not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for Christmas crackers (empty, cardboard tubes, textile). Likely under \"Paperboard tubes, cardboard\" or \"Toy\"?? Probably heading 9505? Actually Christmas crackers are novelty items, maybe 9505.00.00 (toys, games). But they are not toys themselves, they are party decorations. Could be 9505.90.00 (other toys). However they are made of cardboard and textile, not toys. Could be 9619.00.00 (parts of toys). Hmm.\n\nSearch memory: HTS 9505.90.00 \"Other toys, not elsewhere specified\". Likely.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.546938836,
+      "prompt_tokens": 351,
+      "prompt_time": 0.019459466,
+      "completion_tokens": 182,
+      "completion_time": 0.387374377,
+      "total_tokens": 533,
+      "total_time": 0.406833843,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0708ac49a5",
+    "x_groq": {
+      "id": "req_01m3tra5zbebzrqnrhtvywb75x",
+      "seed": 1203286495
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "Christmas crackers are novelty party items classified under other toys not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

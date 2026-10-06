@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357748",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ea367ac3-82f6-412a-9d7d-aaaff3b9678b",
+    "object": "chat.completion",
+    "created": 1790726383,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90\", \"reason\": \"The ECU is a vehicle part and accessory used in the steering wheel, classified under other parts and accessories of motor vehicles.\"}",
+          "reasoning": "We need HTS code for electronic control unit for vehicle steering wheel. Likely 8542.31.00? That's for electronic integrated circuits? Actually ECUs are \"electronic control units\" classified under 8542.31.00 (Electronic integrated circuits). But automotive ECU maybe 8708.99.90? That's parts for motor vehicles. However electronic component: 8542.31.00 \"Electronic integrated circuits\". But ECU is a \"vehicle part\" maybe 8708.99.90 \"Other parts and accessories of motor vehicles\". More specific 8708.99.90 includes \"Other parts and accessories\". I think 8708.99.90 is appropriate. Let's answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.094894051,
+      "prompt_tokens": 287,
+      "prompt_time": 0.0643955,
+      "completion_tokens": 197,
+      "completion_time": 0.409196163,
+      "total_tokens": 484,
+      "total_time": 0.473591663,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_76082d2bd0",
+    "x_groq": {
+      "id": "req_01m3qsr9q4eye95hatvpj142hy",
+      "seed": 475529156
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "The ECU is a vehicle part and accessory used in the steering wheel, classified under other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

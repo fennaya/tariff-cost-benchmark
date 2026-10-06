@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360963",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "7505221000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5dcb5876-af28-447e-ba9f-c0ec334ca163",
+    "object": "chat.completion",
+    "created": 1790778903,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.00\",\n  \"reason\": \"NiTi wire and strip used in medical devices are classified under heading 9018 for medical, surgical, dental or veterinary instruments and appliances, specifically the subheading for other such items.\"\n}",
+          "reasoning": "Need HTS for NiTi wire used in medical devices. Likely under 9018? Actually NiTi alloy wire for medical devices classified under 9018.90.00? 9018 is \"Instruments and appliances used in medical, surgical, dental or veterinary sciences\". But wires maybe under 9018.90.00 \"Other\". Could also be under 8108 (silver, gold etc). No. Probably 9018.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.14249405,
+      "prompt_tokens": 203,
+      "prompt_time": 0.010703577,
+      "completion_tokens": 165,
+      "completion_time": 0.347204313,
+      "total_tokens": 368,
+      "total_time": 0.35790789,
+      "completion_tokens_details": {
+        "reasoning_tokens": 98
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6fb4303df4",
+    "x_groq": {
+      "id": "req_01m3sbv21ve6nve20eewmtkf26",
+      "seed": 933092874
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189000",
+  "predicted_reason": "NiTi wire and strip used in medical devices are classified under heading 9018 for medical, surgical, dental or veterinary instruments and appliances, specifically the subheading for other such items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

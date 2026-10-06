@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359481",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e0288e3a-74ae-4c98-9a28-05f3537ce451",
+    "object": "chat.completion",
+    "created": 1790727330,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00.00\",\n  \"reason\": \"Ivabradine hydrochloride tablets are classified as medicinal preparations containing active pharmaceutical ingredients, falling under heading 3004 for medicaments.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical product, Ivabradine HCl tablets. Likely under 3004.90.00? Actually 3004.90.00 is \"Medicaments ... other\". More specific 3004.90.90? Check: 3004.90.00 is \"Medicaments ... other\". 3004.90.90 is \"Other\". The code format 10 digits: e.g., \"3004.90.00.00\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.09164798,
+      "prompt_tokens": 220,
+      "prompt_time": 0.010760327,
+      "completion_tokens": 158,
+      "completion_time": 0.33519946,
+      "total_tokens": 378,
+      "total_time": 0.345959787,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3qtn6kfep6bdvvk59pt0dc7",
+      "seed": 1201439953
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900000",
+  "predicted_reason": "Ivabradine hydrochloride tablets are classified as medicinal preparations containing active pharmaceutical ingredients, falling under heading 3004 for medicaments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

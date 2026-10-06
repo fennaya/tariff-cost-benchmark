@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359763",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8525893000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0f566708-b7c2-4487-8f8f-56624049291a",
+    "object": "chat.completion",
+    "created": 1790735512,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8525.80.30.00\", \"reason\": \"Classified as an other video camera (digital camera module) not capable of recording, falling under heading 8525.80.30 for other video cameras.\"}",
+          "reasoning": "Need HTS for camera module, not recording? Likely \"digital cameras\" 8525.80.30? But it's a camera module for vehicle, not for consumer. Could be \"video camera, digital, for vehicle\" under 8525.80.30 (other video cameras). 8525.80.30 is \"Other video cameras\". 10-digit: 8525.80.30.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.026321934,
+      "prompt_tokens": 244,
+      "prompt_time": 0.012877746,
+      "completion_tokens": 151,
+      "completion_time": 0.315154086,
+      "total_tokens": 395,
+      "total_time": 0.328031832,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3r2ewy4ep4skf0t52vsmxbq",
+      "seed": 788969206
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8525803000",
+  "predicted_reason": "Classified as an other video camera (digital camera module) not capable of recording, falling under heading 8525.80.30 for other video cameras.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

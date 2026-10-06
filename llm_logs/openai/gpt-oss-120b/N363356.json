@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363356",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "8536908585",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-920945d2-6ac2-4f67-b0b9-965c63b40754",
+    "object": "chat.completion",
+    "created": 1790850822,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9901.00.00\", \"reason\": \"The description refers to a customs ruling amendment, which is classified under HTSUS provision 9901 for special classification provisions.\"}",
+          "reasoning": "We need to guess HTS code? The description is about a ruling replacement, not a product. Likely \"miscellaneous\" maybe 9901.00.00? That's for \"Special classification provisions\". Use 9901.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047732556,
+      "prompt_tokens": 176,
+      "prompt_time": 0.007008294,
+      "completion_tokens": 104,
+      "completion_time": 0.220442904,
+      "total_tokens": 280,
+      "total_time": 0.227451198,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3vgdw9vesgv80zj9azeqyad",
+      "seed": 595086740
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "99010000",
+  "predicted_reason": "The description refers to a customs ruling amendment, which is classified under HTSUS provision 9901 for special classification provisions.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

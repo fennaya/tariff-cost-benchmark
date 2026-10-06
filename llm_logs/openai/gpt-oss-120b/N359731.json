@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359731",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615107130",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d69a8d08-62c4-46e3-96f8-178f9074e627",
+    "object": "chat.completion",
+    "created": 1790733302,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7604.10.00.00\", \"reason\": \"Aluminum sheet pan is a kitchenware article made of aluminum, classified under heading 7604 for aluminum tableware and kitchenware.\"}",
+          "reasoning": "We need HTS code for aluminum sheet pan, flat rectangular, used for baking. Likely under Chapter 76 (Aluminum). Heading 7604: Aluminum tableware, kitchenware, other articles. Subheading 7604.10? Let's check: 7604.10.00 \u2013 Aluminum tableware, kitchenware, other articles, of aluminum. But need more specific: 7604.10.00 is \"Aluminum tableware, kitchenware, other articles, of aluminum\". Could be 7604.10.00. So 10-digit: 7604.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.21446613,
+      "prompt_tokens": 257,
+      "prompt_time": 0.014606656,
+      "completion_tokens": 187,
+      "completion_time": 0.390436947,
+      "total_tokens": 444,
+      "total_time": 0.405043603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 131
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3r0bejfeyd84pz7e9re47td",
+      "seed": 2012931162
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7604100000",
+  "predicted_reason": "Aluminum sheet pan is a kitchenware article made of aluminum, classified under heading 7604 for aluminum tableware and kitchenware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

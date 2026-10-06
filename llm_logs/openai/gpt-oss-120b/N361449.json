@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361449",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "6114301020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2221869a-5ee0-481f-b14f-58d91b0aeff4",
+    "object": "chat.completion",
+    "created": 1790795477,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.99.00\", \"reason\": \"The item is a printed regulatory text, classified as printed books, pamphlets, and similar printed matter.\"}",
+          "reasoning": "We need HTS code for \"Section 134.11 ... marking requirement\". It's a legal text, not a product. Likely classification as \"Printed books, pamphlets, etc.\" Could be \"Publications\" under 4901.99? The description is a regulation text, a printed material. So HTS 4901.99.00? Actually 4901.99.00 is \"Other printed books, brochures, leaflets and similar printed matter, including printed pictures\". So use that.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049537924,
+      "prompt_tokens": 271,
+      "prompt_time": 0.012908459,
+      "completion_tokens": 156,
+      "completion_time": 0.327801455,
+      "total_tokens": 427,
+      "total_time": 0.340709914,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3svmw27e4b9czdvbgdr80nc",
+      "seed": 516802320
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The item is a printed regulatory text, classified as printed books, pamphlets, and similar printed matter.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

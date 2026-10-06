@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362777",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "9615196000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-76757928-46a4-4766-b5e5-ac13eb2593fc",
+    "object": "chat.completion",
+    "created": 1790836431,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6215.20.00\", \"reason\": \"Classified under heading 6215 for headbands and hair ornaments made of textile materials, even though they have a metal frame, the primary visible component is the polyester fabric.\"}",
+          "reasoning": "We need HTS for decorative headbands made of metal covered with textile. Likely classified under \"Headbands, hair ornaments\" 6105? Actually 6105 is gloves. Headgear accessories maybe 6215? Let's think: 6215.20 - hats, caps, etc of textile? But metal frame. Could be 8306? That's \"Statuary, ornaments\". But headband is accessory. Possibly 6215.30 - parts of hats? Hmm.\n\nSearch memory: HTS 6215.20.00 \"Headbands, hairnets, hair clips, etc., of textile materials\". Yes 6215.20.00 covers \"Headbands, hairnets, hair clips, hairpins, etc., of textile materials\". Since metal frame but covered with textile, still considered textile article? Likely 6215.20.00.\n\nThus code: 6215.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.15137468,
+      "prompt_tokens": 246,
+      "prompt_time": 0.011910038,
+      "completion_tokens": 255,
+      "completion_time": 0.535597963,
+      "total_tokens": 501,
+      "total_time": 0.547508001,
+      "completion_tokens_details": {
+        "reasoning_tokens": 193
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0708ac49a5",
+    "x_groq": {
+      "id": "req_01m3v2pnpnegq9qfa4nhxf7wzb",
+      "seed": 1237128894
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62152000",
+  "predicted_reason": "Classified under heading 6215 for headbands and hair ornaments made of textile materials, even though they have a metal frame, the primary visible component is the polyester fabric.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

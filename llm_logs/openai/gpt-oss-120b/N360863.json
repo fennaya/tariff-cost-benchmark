@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360863",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "1212999200",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9e93f99a-430b-4560-98a0-a245ccb45853",
+    "object": "chat.completion",
+    "created": 1790775352,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"0409.90.00\",\n  \"reason\": \"Bee pollen is classified as a bee product under heading 0409, which covers honey and other bee products.\"\n}",
+          "reasoning": "Need HTS code for bee pollen granules raw unprocessed. Likely under 1202? Actually bee products: honey 0409, pollen maybe 1202? Check: 1202 is \"Oil seeds and oleaginous fruits, etc.\" Not. Maybe 0409 covers honey, other bee products? 0409.90.00 \"Other honey; bee products\". Let's recall: 0409.90.00 is \"Other honey; bee products\". So bee pollen likely 0409.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197862683,
+      "prompt_tokens": 179,
+      "prompt_time": 0.007259679,
+      "completion_tokens": 165,
+      "completion_time": 0.345935158,
+      "total_tokens": 344,
+      "total_time": 0.353194837,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m3s8epgee50vb9z5zxj7rx0h",
+      "seed": 887450635
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "04099000",
+  "predicted_reason": "Bee pollen is classified as a bee product under heading 0409, which covers honey and other bee products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

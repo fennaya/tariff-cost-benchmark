@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N352616",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "5404198020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-57d4d90a-b394-42a6-9ea0-9de4f5c7c73b",
+    "object": "chat.completion",
+    "created": 1790607050,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.90\", \"reason\": \"Classified as an arts and crafts kit, which falls under the broader category of toys and similar articles not elsewhere specified in HTS Chapter 95\"}",
+          "reasoning": "We need HTS for art kit with yarn, wooden base, nails. Likely under 9503? That's toys. But not toy. Could be 9505? No. Maybe 3926? Plastic? Actually it's a \"arts and crafts kit\" 9503.30.00? 9503.00 is toys. 9505 is games. 9706 is works of art. Could be 9703? Hmm. Arts and crafts kits often classified under 9503.00.90 (other toys). But not toy. Could be 9619? Not. Maybe 4911? No.\n\nCheck HTS: 9503.00.90 - \"Other toys; other\". But they said not a toy. Could be 9619.00.00 - \"Other articles of plastics\". Not.\n\nProbably 9503.00.90. Use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.431902125,
+      "prompt_tokens": 449,
+      "prompt_time": 0.022740582,
+      "completion_tokens": 240,
+      "completion_time": 0.508341751,
+      "total_tokens": 689,
+      "total_time": 0.531082333,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3m7ygd5e0vr6w8nazswkgvr",
+      "seed": 894512204
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95030090",
+  "predicted_reason": "Classified as an arts and crafts kit, which falls under the broader category of toys and similar articles not elsewhere specified in HTS Chapter 95",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

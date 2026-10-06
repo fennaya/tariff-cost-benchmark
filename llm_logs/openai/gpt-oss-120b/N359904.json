@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359904",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "4821102000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c23d6e53-111f-44fd-88e0-dd9aa0aeb0f9",
+    "object": "chat.completion",
+    "created": 1790744763,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4820.10.00\",\n  \"reason\": \"Printed adhesive stickers on paper are classified under 'Stationery, including printed matter, of paper or paperboard' (HTS 4820.10.00).\"\n}",
+          "reasoning": "We need HTS code for printed adhesive stickers. Likely 4911.99.00? Actually 4911.99.00 is \"Other printed matter, including printed pictures and photographs\". For stickers, maybe 3919.90.00 (self-adhesive plates, sheets, etc., of plastics). But they are paper? Likely paper stickers: 4820.10.00 is \"Stationery, including printed matter, of paper or paperboard\". But adhesives? Could be 3919.90.00 for \"Other self-adhesive plates, sheets, film, foil, tape, etc., of plastics\". If paper, 4820.10.00 covers \"Stationery, including printed matter, of paper or paperboard\". However stickers are \"adhesive paper\". I think HTS 4820.10.00. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203391258,
+      "prompt_tokens": 259,
+      "prompt_time": 0.010165184,
+      "completion_tokens": 247,
+      "completion_time": 0.517053635,
+      "total_tokens": 506,
+      "total_time": 0.527218819,
+      "completion_tokens_details": {
+        "reasoning_tokens": 183
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3rb96bpesetq0ch9fvvnwe0",
+      "seed": 2115987060
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "48201000",
+  "predicted_reason": "Printed adhesive stickers on paper are classified under 'Stationery, including printed matter, of paper or paperboard' (HTS 4820.10.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362600",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "8538100000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-82d7221f-3f1d-4af4-9448-6872835a7e26",
+    "object": "chat.completion",
+    "created": 1790832891,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8537.10.00.00\",\n  \"reason\": \"Classifies empty aluminum electrical cabinets used to house electrical equipment as boards, panels, consoles, and cabinets for electric control or distribution under heading 8537.\"\n}",
+          "reasoning": "Need HTS code for empty aluminum electrical cabinet. Likely 8537? Actually cabinets for electrical equipment: 8537.10? Let's think: 8537 covers boards, panels, consoles, etc. 8537.10 is for \"Boards, panels, consoles, desks, cabinets and other bases, equipped with two or more apparatus of heading 85.35 or 85.36, for electric control or distribution\". Subheading 8537.10.00.00 for \"of a kind used for a voltage not exceeding 1,000 V\". For aluminum? Material not matter. So code 8537.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018791198,
+      "prompt_tokens": 205,
+      "prompt_time": 0.008261118,
+      "completion_tokens": 202,
+      "completion_time": 0.424199028,
+      "total_tokens": 407,
+      "total_time": 0.432460146,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3tzamzfewh91kskpj7d6yhg",
+      "seed": 214907562
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8537100000",
+  "predicted_reason": "Classifies empty aluminum electrical cabinets used to house electrical equipment as boards, panels, consoles, and cabinets for electric control or distribution under heading 8537.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

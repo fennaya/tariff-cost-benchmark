@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359300",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3004909246",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e89b767e-12e9-4c2f-9357-dd1b50dc2077",
+    "object": "chat.completion",
+    "created": 1790627902,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.10.00\",\"reason\":\"Clozapine tablets are pharmaceutical preparations of a single active ingredient, classified under 3004.10.10 for other compounds.\"}",
+          "reasoning": "Need HTS code for pharmaceutical preparations of clozapine tablets. Likely 3004.10.10? Actually HTS 3004.10.10 is \"Pharmaceutical preparations containing other compounds\". Clozapine is a drug. 3004.10.10 is for \"Other compounds\". So code 3004.10.10.00? 10-digit: 3004.10.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.312727943,
+      "prompt_tokens": 223,
+      "prompt_time": 0.012609165,
+      "completion_tokens": 146,
+      "completion_time": 0.156371567,
+      "total_tokens": 369,
+      "total_time": 0.168980732,
+      "completion_tokens_details": {
+        "reasoning_tokens": 93
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e23fc997ca",
+    "x_groq": {
+      "id": "req_01m3mvtw97ekm9gda820j9ma1c",
+      "seed": 910656951
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004101000",
+  "predicted_reason": "Clozapine tablets are pharmaceutical preparations of a single active ingredient, classified under 3004.10.10 for other compounds.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

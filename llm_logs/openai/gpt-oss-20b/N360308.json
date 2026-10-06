@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360308",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "9406900130",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5e50cbeb-1fd1-423b-a959-c29062b8e581",
+    "object": "chat.completion",
+    "created": 1790668407,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Portable steel storage units, flat-packed and assembled in the U.S., fall under 7308.90.90.00 for other steel articles.\"}",
+          "reasoning": "Need HTS code for portable steel storage units, flat-packed, assembled in US. Likely \"steel storage boxes\" maybe \"steel storage boxes, cabinets, etc.\" HTS 7308.90.90? Let's think: 7308 is \"Other articles of iron or steel\". 7308.90 is \"Other\". Subheading 7308.90.90 is \"Other\". But maybe 7308.90.90.00? Actually 10-digit: 7308.90.90.00. Reason: portable steel storage units. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151009954,
+      "prompt_tokens": 204,
+      "prompt_time": 0.011427999,
+      "completion_tokens": 175,
+      "completion_time": 0.177333814,
+      "total_tokens": 379,
+      "total_time": 0.188761813,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_976a85d17a",
+    "x_groq": {
+      "id": "req_01m3p2f066e99tw2f29d3xg44x",
+      "seed": 1331280123
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Portable steel storage units, flat-packed and assembled in the U.S., fall under 7308.90.90.00 for other steel articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

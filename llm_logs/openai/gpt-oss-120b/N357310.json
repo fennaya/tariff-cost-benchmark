@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357310",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3be1c68d-7923-4dfa-b3ce-f0c8565514fd",
+    "object": "chat.completion",
+    "created": 1790726086,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3304.99.00.00\", \"reason\": \"Both products are cosmetic skin care preparations (eye cream and facial/body balm) classified under heading 3304 for beauty or make\u2011up preparations not elsewhere specified.\"}",
+          "reasoning": "Need HTS for cosmetic creams. Likely 3304.99.00? 3304.99.00 is \"Other beauty or make-up preparations and preparations for skin care, not elsewhere specified\". 10-digit: 3304.99.00.00? Actually 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit further, 2-digit. For 3304.99.00.00. So provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206592867,
+      "prompt_tokens": 239,
+      "prompt_time": 0.01163864,
+      "completion_tokens": 162,
+      "completion_time": 0.334617372,
+      "total_tokens": 401,
+      "total_time": 0.346256012,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3qsf79geznvy581d33mpspn",
+      "seed": 1689341946
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304990000",
+  "predicted_reason": "Both products are cosmetic skin care preparations (eye cream and facial/body balm) classified under heading 3304 for beauty or make\u2011up preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

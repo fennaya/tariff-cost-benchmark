@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361556",
+  "rulingDate": "2026-06-12T00:00:00",
+  "true_code": "6106202010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-72590b86-ca65-4219-a940-a1fcf740fd74",
+    "object": "chat.completion",
+    "created": 1790798241,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6206.30.10.00\",\n  \"reason\": \"Classifies women's knitted blouse made of polyester/spandex (man\u2011made fibers) under heading 6206.30 for knitted or crocheted women's blouses of man\u2011made fibers.\"\n}",
+          "reasoning": "We need HTS for women's blouse, polyester/spandex, knitted. Likely 6206.30.10? Let's see: 6206 = women's or girls' blouses, shirts and shirt-blouses, knitted or crocheted. 6206.30 = of man-made fibers. Then subheading 10? Actually 6206.30.10 is \"Of cotton\"? Wait check: 6206.30.10 is of man-made fibers? Need 10-digit: 6206.30.10 00? Usually 10-digit includes 4-2-2-2-? Let's guess 6206.30.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017787217,
+      "prompt_tokens": 204,
+      "prompt_time": 0.009144929,
+      "completion_tokens": 210,
+      "completion_time": 0.444451526,
+      "total_tokens": 414,
+      "total_time": 0.453596455,
+      "completion_tokens_details": {
+        "reasoning_tokens": 141
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3sy979zex28b7ywbkt9gbzn",
+      "seed": 1466275420
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6206301000",
+  "predicted_reason": "Classifies women's knitted blouse made of polyester/spandex (man\u2011made fibers) under heading 6206.30 for knitted or crocheted women's blouses of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

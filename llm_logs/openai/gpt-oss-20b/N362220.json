@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362220",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-83b8b854-f432-4280-9f33-6a8385515732",
+    "object": "chat.completion",
+    "created": 1790730421,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7207.90.90.00\",\"reason\":\"The product is a structural timber frame kit for a gazebo, classified under other timber structures not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for structural timber frame kit, no walls, gazebo. Likely 7207.90.90? Actually 7207 is \"Other timber structures\". 7207.90 is \"Other\". 7207.90.10? Let's pick 7207.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.525323143,
+      "prompt_tokens": 265,
+      "prompt_time": 0.078758544,
+      "completion_tokens": 113,
+      "completion_time": 0.124570648,
+      "total_tokens": 378,
+      "total_time": 0.203329192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5979a0e1b7",
+    "x_groq": {
+      "id": "req_01m3qxkg8zew8tmwe7kq7my0mf",
+      "seed": 616762321
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7207909000",
+  "predicted_reason": "The product is a structural timber frame kit for a gazebo, classified under other timber structures not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

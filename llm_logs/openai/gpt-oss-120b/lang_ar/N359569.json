@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359569",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3824994190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e2ce0c96-471b-4c24-a0b1-b96a09d05575",
+    "object": "chat.completion",
+    "created": 1790904901,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.00\",\n  \"reason\": \"The product is a finished wax candle intended for use on hockey sticks, classified under heading 9505 for party goods and other articles of amusement, specifically the subheading for other items not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for wax candles for hockey sticks. Likely under 9505? Actually candles are under heading 9505 (party goods) or 3401 (soap). Wax candles are 9505.00.00? Check: 9505.90.00 other toys? Wait: 9505.90.00 is \"Other\". But candles for sports? Might be 9505.90.00. However there is also 3401.20.00 \"Wax, prepared for use in making candles\". But product is finished candles. So 9505.00.00 \"Party goods, including candles\". Actually 9505.00.00 is \"Party goods, including Christmas tree decorations\". Not sure. Let's pick 9505.90.00 \"Other\"."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203875033,
+      "prompt_tokens": 609,
+      "prompt_time": 0.02518331,
+      "completion_tokens": 234,
+      "completion_time": 0.485323204,
+      "total_tokens": 843,
+      "total_time": 0.510506514,
+      "completion_tokens_details": {
+        "reasoning_tokens": 164
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3x407d8ed38ynhyvxaraan2",
+      "seed": 2090635815
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "The product is a finished wax candle intended for use on hockey sticks, classified under heading 9505 for party goods and other articles of amusement, specifically the subheading for other items not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363147",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "8429521050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1aba9bfd-d432-413f-aa76-91a87e20bc11",
+    "object": "chat.completion",
+    "created": 1790847089,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8429.52.00.00\",\n  \"reason\": \"The item is a self\u2011propelled hydraulic excavator, which falls under heading 8429.52 for self\u2011propelled excavators.\"\n}",
+          "reasoning": "We need HTS for used self-propelled mini hydraulic excavator. Likely heading 8429? Actually excavators are under 8425? Let's recall: 8425 is \"Cranes, including cable-lift and the like\". 8425.90 is other. But excavators are under 8425.90? Actually 8425.90.90 maybe. Another: 8429 is \"Self-propelled bulldozers, excavators, etc.\" Wait check: 8429.51 is \"Self-propelled bulldozers\". 8429.52 is \"Self-propelled excavators\". Yes. So 8429.52.00 is \"Self-propelled excavators\". Need 10-digit: 8429.52.00.00. So answer. Reason: used self-propelled mini hydraulic excavator."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.052905024,
+      "prompt_tokens": 275,
+      "prompt_time": 0.084845238,
+      "completion_tokens": 243,
+      "completion_time": 0.522159191,
+      "total_tokens": 518,
+      "total_time": 0.607004429,
+      "completion_tokens_details": {
+        "reasoning_tokens": 182
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3vcvxr6ervr02nrhagzhj63",
+      "seed": 153124769
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8429520000",
+  "predicted_reason": "The item is a self\u2011propelled hydraulic excavator, which falls under heading 8429.52 for self\u2011propelled excavators.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357819",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "3004200075",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e0bee5eb-75f4-4f22-8984-2d12d10c966c",
+    "object": "chat.completion",
+    "created": 1790607752,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.99.90\",\"reason\":\"The product is a pharmaceutical injectable drug containing a single active ingredient, classified under 3004.99.90 for other medicinal preparations.\"}",
+          "reasoning": "Need HTS code for pharmaceutical drug: Doxorubicin Hydrochloride Liposome Injection. Likely 3004.99.90? Actually 3004 is \"Medicaments consisting of mixed or unmixed products of a single active ingredient, in any form\". For injectable drugs: 3004.99.90 is \"Other\". But liposome injection maybe 3004.99.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207198465,
+      "prompt_tokens": 233,
+      "prompt_time": 0.013936084,
+      "completion_tokens": 138,
+      "completion_time": 0.156973936,
+      "total_tokens": 371,
+      "total_time": 0.17091002,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m3m8kykwerhrs9gq9246nwmc",
+      "seed": 700967675
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049990",
+  "predicted_reason": "The product is a pharmaceutical injectable drug containing a single active ingredient, classified under 3004.99.90 for other medicinal preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

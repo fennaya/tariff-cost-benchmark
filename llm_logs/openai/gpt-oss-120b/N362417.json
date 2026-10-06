@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362417",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "8409915085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-57514104-cd2b-4e21-bde7-53e24c8d4b38",
+    "object": "chat.completion",
+    "created": 1790827139,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.20.00\", \"reason\": \"The component is a valve spring retainer, a part of the valve train for internal combustion engines, classified under valve springs and parts thereof.\"}",
+          "reasoning": "We need HTS code for valve spring retainer, likely part of engine valve train, metal parts. Likely 8483.90.00? Actually 8483 covers \"Other parts of machines of heading 8481, 8482\". 8481 is \"Taps, cocks, valves and similar appliances\". 8483.20 is \"Valve seats, valve guides, valve springs\". But retainer maybe 8483.20. Let's check: 8483.20.00 - Valve seats, valve guides, valve springs, and parts thereof, for internal combustion engines. That seems right. So code 8483.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221786466,
+      "prompt_tokens": 247,
+      "prompt_time": 0.012732789,
+      "completion_tokens": 195,
+      "completion_time": 0.566608549,
+      "total_tokens": 442,
+      "total_time": 0.579341338,
+      "completion_tokens_details": {
+        "reasoning_tokens": 140
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3tsv3xvesfayv2cfc6xy5ge",
+      "seed": 82581222
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84832000",
+  "predicted_reason": "The component is a valve spring retainer, a part of the valve train for internal combustion engines, classified under valve springs and parts thereof.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

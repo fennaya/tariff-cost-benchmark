@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360054",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3407002000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7f57da66-b29e-4b29-955b-d56df0ead34c",
+    "object": "chat.completion",
+    "created": 1790752329,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.90\", \"reason\": \"The product is a toy set primarily consisting of modeling compound (Play\u2011Doh) with accessories, classified under other toys not elsewhere specified.\"}",
+          "reasoning": "We need HTS for modeling compound toys. Likely 9503.00.00? Actually toys of plastic modeling compounds: 9503.00.00 is \"Tricycles, scooters, etc.\" No. 9503 is \"Tricycles, scooters, etc.\" Wait 9503 is \"Tricycles, scooters, etc.\" Actually 9503 is \"Tricycles, scooters, etc.\" Not. 9503 is \"Tricycles, scooters, etc.\" Hmm.\n\nPlay-Doh is classified under 9503.00.00? Let's recall: 9503.00.00 is \"Tricycles, scooters, etc.\" Not correct. 9503 is \"Tricycles, scooters, etc.\" 9503.00.90 other toys. Actually 9503.00.90 is \"Other toys, not elsewhere specified\". But modeling compound sets maybe 9503.00.90.\n\nAlternatively 9503.00.10 \"Toy dolls\". Not.\n\nBetter: 9503.00.90 \"Other toys, not elsewhere specified\". So answer.\n\nHTS code 9503.00.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194509587,
+      "prompt_tokens": 494,
+      "prompt_time": 0.02489782,
+      "completion_tokens": 294,
+      "completion_time": 0.616655545,
+      "total_tokens": 788,
+      "total_time": 0.641553365,
+      "completion_tokens_details": {
+        "reasoning_tokens": 239
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m3rjg38terzve04x0c7sfp8f",
+      "seed": 2051557541
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95030090",
+  "predicted_reason": "The product is a toy set primarily consisting of modeling compound (Play\u2011Doh) with accessories, classified under other toys not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

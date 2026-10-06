@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362680",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "8302500000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4bb8be26-6c2c-4595-ad57-fedd4c3b26bd",
+    "object": "chat.completion",
+    "created": 1790833490,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7315.99.90\", \"reason\": \"Fabricated iron/steel brackets classified as other parts of structures of iron or steel\"}",
+          "reasoning": "We need HTS code for iron sign brackets, L-shaped, made of steel. Likely under heading 7315? 7315.99? Let's think: \"Structures and parts of structures (for example, bridges and bridge sections, lock-gates, towers, lattice masts, roofs, roofing frameworks, doors and windows and their frames and thresholds for doors, shutters, balustrades, pillars and columns), of iron or steel\". Brackets maybe 7315.90.90? Or 7318 for other articles of iron or steel? 7318.15 for \"Other cast-iron articles\". But these are fabricated steel brackets, not cast. Could be 7315.99.90 \"Other\". Actually 7315.99.90 is \"Other\" for structures and parts. Might be 7315.99.90.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.309704645,
+      "prompt_tokens": 309,
+      "prompt_time": 0.086976109,
+      "completion_tokens": 222,
+      "completion_time": 0.458267825,
+      "total_tokens": 531,
+      "total_time": 0.545243934,
+      "completion_tokens_details": {
+        "reasoning_tokens": 179
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3tzwxx8e9c8s1b763jzzb10",
+      "seed": 190496639
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73159990",
+  "predicted_reason": "Fabricated iron/steel brackets classified as other parts of structures of iron or steel",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

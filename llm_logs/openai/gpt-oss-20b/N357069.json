@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357069",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "9018907560",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-f60636f1-506f-45d4-8da3-fbf78beee7b0",
+    "object": "chat.completion",
+    "created": 1790607232,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9018.90.90\",\"reason\":\"Device is a medical electrical stimulation instrument not elsewhere classified.\"}",
+          "reasoning": "Need HTS code. It's a medical device, neuromodulation, electrical stimulation device. Likely 9018.90.90? Actually 9018.90.90 is \"Other medical or surgical instruments and appliances\". But specific: 9018.90.90 covers other. 9018.90.90 includes \"Other\" including devices for stimulation. Could be 9018.90.90. But 9018.90.90 is 9018.90.90. Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047827605,
+      "prompt_tokens": 481,
+      "prompt_time": 0.024377673,
+      "completion_tokens": 142,
+      "completion_time": 0.14957861,
+      "total_tokens": 623,
+      "total_time": 0.173956283,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3m842z7e3zap8rnn1trv2k5",
+      "seed": 1112078436
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189090",
+  "predicted_reason": "Device is a medical electrical stimulation instrument not elsewhere classified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

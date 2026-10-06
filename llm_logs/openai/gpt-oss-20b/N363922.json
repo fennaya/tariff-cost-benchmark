@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363922",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703900100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-813e8174-7704-4576-a072-d5a26a3dbd4f",
+    "object": "chat.completion",
+    "created": 1790774078,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8711.90.90.00\",\"reason\":\"The product is a battery\u2011powered, four\u2011wheel mobility scooter used for personal transportation, fitting the HTSUS heading 8711.90.90 for other motor vehicles and related parts.\"}",
+          "reasoning": "Need HTS 10-digit. Power mobility scooter likely 8711.90.90? Actually 8711.90.90 is \"Other\". 8711.90.90 is \"Other\" for motor vehicles. For scooters: 8711.90.90. But 10-digit: 8711.90.90.00? Actually 10-digit: 8711.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016344525,
+      "prompt_tokens": 320,
+      "prompt_time": 0.022193078,
+      "completion_tokens": 156,
+      "completion_time": 0.168823421,
+      "total_tokens": 476,
+      "total_time": 0.191016499,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ef00694abe",
+    "x_groq": {
+      "id": "req_01m3s77v04evxr69japaghxnf6",
+      "seed": 1998933099
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8711909000",
+  "predicted_reason": "The product is a battery\u2011powered, four\u2011wheel mobility scooter used for personal transportation, fitting the HTSUS heading 8711.90.90 for other motor vehicles and related parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

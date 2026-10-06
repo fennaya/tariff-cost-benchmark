@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358433",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "4823906700",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4c582581-80ad-4c2c-8161-52e3d3502f24",
+    "object": "chat.completion",
+    "created": 1790726712,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.9090\", \"reason\": \"The item is a paperboard DIY puzzle kit classified as a toy/puzzle under heading 9503, other toys not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for paperboard puzzle kits. Likely 9503.00.00? 9503 is toys. But paper puzzles maybe 9503.00.90. However 9503.00.00 is \"tricycles, dolls etc\"? Actually 9503 covers \"tricycles, dolls, toys\". Puzzles are 9503.00.90 \"Other toys\". Could be 9503.00.90. So 10-digit: 9503.00.9090? US uses 10 digits: 9503.00.9090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294958784,
+      "prompt_tokens": 316,
+      "prompt_time": 0.017603616,
+      "completion_tokens": 182,
+      "completion_time": 0.378134414,
+      "total_tokens": 498,
+      "total_time": 0.39573803,
+      "completion_tokens_details": {
+        "reasoning_tokens": 127
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3qt2asce0pt40ngc16eh8g5",
+      "seed": 14653922
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503009090",
+  "predicted_reason": "The item is a paperboard DIY puzzle kit classified as a toy/puzzle under heading 9503, other toys not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

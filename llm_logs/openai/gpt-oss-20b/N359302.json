@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359302",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "3004909246",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-deda9de0-9487-47f0-86bb-cee29e22e709",
+    "object": "chat.completion",
+    "created": 1790628280,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.10.00\",\"reason\":\"Medicinal preparations of a single active ingredient in tablet form fall under 3004.10.10.00 in the HTSUS.\"}",
+          "reasoning": "Need HTSUS code for pharmaceutical preparations of Doxepin tablets. Likely 3004.10.10? Actually 3004 is \"Medicaments consisting of mixed or unmixed compounds of a single active ingredient\". For tablets: 3004.10.10 is \"Medicaments consisting of mixed or unmixed compounds of a single active ingredient, in dosage form, other than in the form of a solution for injection\". But for tablets: 3004.10.10 is \"Medicaments consisting of mixed or unmixed compounds of a single active ingredient, in dosage form, other than in the form of a solution for injection\". So 3004.10.10. But 10-digit: 3004.10.10.00? Actually 10-digit: 3004.10.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.043134702,
+      "prompt_tokens": 194,
+      "prompt_time": 0.013385034,
+      "completion_tokens": 227,
+      "completion_time": 0.242400749,
+      "total_tokens": 421,
+      "total_time": 0.255785783,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_feb9b278f1",
+    "x_groq": {
+      "id": "req_01m3mw6e62e7ra1744ma3gbdka",
+      "seed": 982904884
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004101000",
+  "predicted_reason": "Medicinal preparations of a single active ingredient in tablet form fall under 3004.10.10.00 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

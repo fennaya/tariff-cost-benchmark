@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N346242",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5208214090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-33a3b396-43ff-425d-a9c3-bef604f9b1dd",
+    "object": "chat.completion",
+    "created": 1790904752,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.21.00\",\n  \"reason\": \"The item is 100% cotton gauze fabric (plain weave, unimpregnated) used for wound covering, classified under Chapter 63 as wadding, gauze and similar products of cotton.\"\n}",
+          "reasoning": "We need HTS code for 100% cotton gauze, medical use. Likely 6302.21.00? Actually gauze fabric: Chapter 63 textiles. 6302.21.00 is \"Wadding, gauze, and similar products, of cotton, not impregnated\". For medical gauze maybe 3006? But that's surgical dressings. However product is fabric, not yet processed as dressing. So HTS 6302.21.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221307601,
+      "prompt_tokens": 542,
+      "prompt_time": 0.024081385,
+      "completion_tokens": 172,
+      "completion_time": 0.363639043,
+      "total_tokens": 714,
+      "total_time": 0.387720428,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3x3vnvveta94f45jvgmrcfc",
+      "seed": 1100393632
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63022100",
+  "predicted_reason": "The item is 100% cotton gauze fabric (plain weave, unimpregnated) used for wound covering, classified under Chapter 63 as wadding, gauze and similar products of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

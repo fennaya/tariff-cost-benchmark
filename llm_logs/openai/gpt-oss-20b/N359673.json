@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359673",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "1602506000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-4ed8d4fd-c07c-44f9-afeb-3a13de206a4c",
+    "object": "chat.completion",
+    "created": 1790641122,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0202.20.00.00\",\"reason\":\"Marinated, trimmed whole\u2011muscle cuts of bovine meat fall under 0202.20.00.00 \u2013 fresh or chilled bovine meat, cut or trimmed.\"}",
+          "reasoning": "Need HTS code for marinated beef cuts. Likely 0202.10.00.00? Actually 0202 is \"Meat of bovine animals, fresh or chilled, not cut or trimmed\". But cuts are trimmed whole-muscle cuts. 0202.10.00.00 is \"Meat of bovine animals, fresh or chilled, not cut or trimmed\". 0202.20.00.00 is \"Meat of bovine animals, fresh or chilled, cut or trimmed\". But marinated? 0202.20.00.00 includes \"cut or trimmed\". But marinated? Might be 0202.20.00.00. So code 0202.20.00.00. Provide 10-digit: 0202.20.00.00. Reason: marinated trimmed cuts."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296504341,
+      "prompt_tokens": 501,
+      "prompt_time": 0.029415487,
+      "completion_tokens": 238,
+      "completion_time": 0.246083274,
+      "total_tokens": 739,
+      "total_time": 0.275498761,
+      "completion_tokens_details": {
+        "reasoning_tokens": 176
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e23fc997ca",
+    "x_groq": {
+      "id": "req_01m3n8ea63ecj9ehrt5jpb7cxh",
+      "seed": 1379689135
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0202200000",
+  "predicted_reason": "Marinated, trimmed whole\u2011muscle cuts of bovine meat fall under 0202.20.00.00 \u2013 fresh or chilled bovine meat, cut or trimmed.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

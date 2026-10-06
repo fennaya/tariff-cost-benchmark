@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357470",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-00732672-20d8-4f3e-8dc2-1e35d11edb39",
+    "object": "chat.completion",
+    "created": 1790726247,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.00\", \"reason\": \"The item is a theatrical costume (Samurai Warrior) comprising clothing and accessories, classified under HTSUS 9505.90.00 for other articles and equipment for sports/theatrical use.\"}",
+          "reasoning": "Need HTS for costume, likely 9505.90.00? Actually costume apparel: 9505.90.00 is \"Articles and equipment for sports, not elsewhere specified\". Costumes for theatrical use: 9505.90.00? Or 9505.90.00 includes \"Costumes, masks, etc.\" Check: 9505.90.00 - \"Other articles and equipment for sports\". Hmm. Another: 9505.90.00 includes \"Other articles and equipment for sports\". Costume maybe 9505.90.00? There's also 9505.90.00 for \"Other\". But there is 9505.90.00 \"Other\". Could be 9505.90.00.\n\nAlternatively, HTS 9505.90.00 \"Other articles and equipment for sports\". Not perfect.\n\nMaybe 9505.90.00 is correct. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.019336394,
+      "prompt_tokens": 213,
+      "prompt_time": 0.008632751,
+      "completion_tokens": 257,
+      "completion_time": 0.535081341,
+      "total_tokens": 470,
+      "total_time": 0.543714092,
+      "completion_tokens_details": {
+        "reasoning_tokens": 190
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qsm4exevh89gwvya1vqnyb",
+      "seed": 682607340
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "The item is a theatrical costume (Samurai Warrior) comprising clothing and accessories, classified under HTSUS 9505.90.00 for other articles and equipment for sports/theatrical use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

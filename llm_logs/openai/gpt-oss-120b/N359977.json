@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359977",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9362c402-8961-48a4-90a8-e6b1900d109c",
+    "object": "chat.completion",
+    "created": 1790748417,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8517.62.00.00\",\n  \"reason\": \"The device is a data transmission/reception gateway for linking access control hardware to the cloud, classified as other apparatus for transmission or reception of data.\"\n}",
+          "reasoning": "We need HTS code for gateway device for access control, data transmission, not network security. Likely under 8517.62? That's \"Machines for the reception, conversion and transmission of voice, images or other data, including modems\". More specific: 8517.62.00.00 is \"Other apparatus for transmission or reception of voice, images or other data, including modems, routers, switches\". Could be 8517.62.20? Actually 8517.62.00.00 covers \"Other apparatus for transmission or reception of voice, images or other data, including modems, routers, switches, etc.\" So choose 8517.62.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.145531231,
+      "prompt_tokens": 317,
+      "prompt_time": 0.198340634,
+      "completion_tokens": 209,
+      "completion_time": 0.451460474,
+      "total_tokens": 526,
+      "total_time": 0.649801108,
+      "completion_tokens_details": {
+        "reasoning_tokens": 148
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6fb4303df4",
+    "x_groq": {
+      "id": "req_01m3rerpvkedvbnpempxvaby1t",
+      "seed": 274307275
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517620000",
+  "predicted_reason": "The device is a data transmission/reception gateway for linking access control hardware to the cloud, classified as other apparatus for transmission or reception of data.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

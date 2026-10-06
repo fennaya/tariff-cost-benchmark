@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358796",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-32ef5bcf-fc87-4070-b490-0275609330d1",
+    "object": "chat.completion",
+    "created": 1790726877,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.90.00\", \"reason\": \"The C48-1000 is a non\u2011self\u2011propelled flatbed trailer, classified under heading 8716 for trailers and semi\u2011trailers, with subheading 90 covering other types not elsewhere specified.\"}",
+          "reasoning": "We need HTS for flatbed trailer, not self-propelled, prototype. Likely under heading 8716? Actually trailers are under 8716 (road vehicles, other than motor vehicles). 8716.90.00? Let's see: 8716.90.00 - Other, not elsewhere specified. So 8716.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017286529,
+      "prompt_tokens": 290,
+      "prompt_time": 0.015097224,
+      "completion_tokens": 150,
+      "completion_time": 0.318162503,
+      "total_tokens": 440,
+      "total_time": 0.333259727,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3qt7ccqe45rt1grnzw7p0wq",
+      "seed": 1961420953
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87169000",
+  "predicted_reason": "The C48-1000 is a non\u2011self\u2011propelled flatbed trailer, classified under heading 8716 for trailers and semi\u2011trailers, with subheading 90 covering other types not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

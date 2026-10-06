@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357869",
+  "rulingDate": "2026-02-02T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ebe6c49a-e782-427a-807f-0fbd463d8fb1",
+    "object": "chat.completion",
+    "created": 1790726449,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.10.00\", \"reason\": \"The kits are costume accessory sets, classified under HTSUS heading 9505.90.10 for costume accessories.\"}",
+          "reasoning": "We need HTS code for costume accessory kits. Likely under 9505.00.00? Actually accessories: \"Costume accessories\" HS 9505.90? Let's think: 9505.90.00 is \"Other toys; other\". But costume accessories maybe 9505.90.90. However could be 9505.90.00. Another possibility: 9505.90.10 \"Costume accessories\". I recall US HTS: 9505.90.10 is \"Costume accessories\". Yes. So 10-digit: 9505.90.10.00? Actually 10-digit includes 2-digit chapter, 2-digit heading, 2-digit subheading, 2-digit further, 2-digit. For 9505.90.10.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.299805935,
+      "prompt_tokens": 310,
+      "prompt_time": 0.105703634,
+      "completion_tokens": 225,
+      "completion_time": 0.468740187,
+      "total_tokens": 535,
+      "total_time": 0.574443821,
+      "completion_tokens_details": {
+        "reasoning_tokens": 172
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3qst93xebd9wqxc3d2qj0kt",
+      "seed": 2137764519
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9505901000",
+  "predicted_reason": "The kits are costume accessory sets, classified under HTSUS heading 9505.90.10 for costume accessories.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359145",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "9403608040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-173c8388-3721-48b2-9503-424f7288b145",
+    "object": "chat.completion",
+    "created": 1790727119,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.0090\",\n  \"reason\": \"The product is a wooden dining table (furniture) with only minor metal fasteners, classified under other wooden furniture.\"\n}",
+          "reasoning": "We need HTS for wooden dining table, not assembled? It's a wooden table with metal plates but primarily wood. Likely heading 9403.20.00? Actually 9403.20.00 is wooden furniture, other than seats. Dining tables: 9403.20.00 \"Other wooden furniture\". 9403.20.00 is 10-digit? Full: 9403.20.0010? Let's check: 9403.20.0010 is \"Other wooden furniture, of a kind used in offices\". Might be 9403.20.0090 for other. Use 9403.20.0090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205599278,
+      "prompt_tokens": 588,
+      "prompt_time": 0.028310218,
+      "completion_tokens": 193,
+      "completion_time": 0.397677626,
+      "total_tokens": 781,
+      "total_time": 0.425987844,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3qteqr2e82rfgqpjk16p4ny",
+      "seed": 745412419
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "The product is a wooden dining table (furniture) with only minor metal fasteners, classified under other wooden furniture.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

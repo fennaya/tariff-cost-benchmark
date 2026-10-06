@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360885",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "3926903500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-796a2c4a-24e1-49fe-96a0-391652fb3644",
+    "object": "chat.completion",
+    "created": 1790775798,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3915.90.00\", \"reason\": \"Plastic beads and associated thread are classified as other articles of plastics, which fall under HTS heading 3915.90.00.\"}",
+          "reasoning": "We need HTS code for plastic beads and thread for jewelry making. Likely 9506? Actually HTS 9506 is toys. Beads are classified under 7117? Plastic beads: 3915.90.00 (other articles of plastics). But jewelry beads maybe 7117.90.00 (imitation jewelry). However beads themselves are not jewelry. Could be 3926.90.99 (other articles of plastics). I think 3915.90.00 \"Other articles of plastics\" includes beads. So choose that. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296597314,
+      "prompt_tokens": 216,
+      "prompt_time": 0.009396346,
+      "completion_tokens": 172,
+      "completion_time": 0.370108413,
+      "total_tokens": 388,
+      "total_time": 0.379504759,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3s8wa2ye8v9234v1sgh5qe1",
+      "seed": 628155099
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39159000",
+  "predicted_reason": "Plastic beads and associated thread are classified as other articles of plastics, which fall under HTS heading 3915.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

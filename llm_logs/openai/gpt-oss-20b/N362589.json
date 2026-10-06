@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362589",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "6201407511",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ec41af09-e7c7-4cba-8f96-2f0b61307a7f",
+    "object": "chat.completion",
+    "created": 1790742634,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6205.90.00.00\",\"reason\":\"Men\u2019s jacket made of both knit and woven fabrics, not predominantly one type, fits heading 6205.90.00 for other jackets and coats\"}",
+          "reasoning": "Need HTS 10-digit. Men\u2019s jacket knit and woven. Likely 6205.10.00? Actually 6205 is jackets, coats, etc. 6205.10.00 is for knitted or crocheted. 6205.20.00 is woven. Mixed? 6205.90.00 for other. Since both knit and woven less than 60% each, maybe 6205.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.138335636,
+      "prompt_tokens": 327,
+      "prompt_time": 0.019337751,
+      "completion_tokens": 151,
+      "completion_time": 0.187074602,
+      "total_tokens": 478,
+      "total_time": 0.206412353,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7d448090ba",
+    "x_groq": {
+      "id": "req_01m3r987j0erns6sb9v719nzr8",
+      "seed": 1913814069
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6205900000",
+  "predicted_reason": "Men\u2019s jacket made of both knit and woven fabrics, not predominantly one type, fits heading 6205.90.00 for other jackets and coats",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

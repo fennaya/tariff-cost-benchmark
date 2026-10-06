@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361506",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "8413600030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e43a0177-f203-4f90-a30b-0327ad5d325d",
+    "object": "chat.completion",
+    "created": 1790797064,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.20.00\",\n  \"reason\": \"The unit is a gear pump/motor assembly, classified under HTSUS 8483.20.00 for other pumps for liquids.\"\n}",
+          "reasoning": "We need HTS code for gear pump/motor. Likely 8483.90.00? Actually pumps, gear type: 8483.10? Let's recall: 8483.10 - Pumps for liquids, fuel, etc, of a kind used in internal combustion engines. 8483.20 - Other pumps for liquids. Gear pumps are in 8483.20? Check: 8483.20.00 - Other pumps for liquids, not elsewhere specified. Could be 8483.20.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294908804,
+      "prompt_tokens": 224,
+      "prompt_time": 0.011890139,
+      "completion_tokens": 171,
+      "completion_time": 0.364258059,
+      "total_tokens": 395,
+      "total_time": 0.376148198,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3sx59gperytrad2zgqnnmzy",
+      "seed": 246008002
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84832000",
+  "predicted_reason": "The unit is a gear pump/motor assembly, classified under HTSUS 8483.20.00 for other pumps for liquids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

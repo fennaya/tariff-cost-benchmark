@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360552",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "3824993990",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-839e5ad0-8a4b-4801-9137-c4b1cb374856",
+    "object": "chat.completion",
+    "created": 1790766041,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2523.20.00\",\n  \"reason\": \"The product is a mixture of pozzolanic materials and limestone, classified under heading 2523 for pozzolans (excluding cement).\"\n}",
+          "reasoning": "We need HTS code for pozzolan mixtures not cement. Likely 2523? Actually pozzolanic material falls under 2523.00.00 (Pozzolans, cement, etc). But mixtures with limestone maybe 2523.20? Check: 2523.20.00 - Pozzolans, other than those of heading 2523.10. 2523.10 is Portland cement. So pozzolan mixtures likely 2523.20.00. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018387914,
+      "prompt_tokens": 414,
+      "prompt_time": 0.022446381,
+      "completion_tokens": 166,
+      "completion_time": 0.353427673,
+      "total_tokens": 580,
+      "total_time": 0.375874054,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3rzjhtce8bsxmq7kbr5wse6",
+      "seed": 1883480321
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "25232000",
+  "predicted_reason": "The product is a mixture of pozzolanic materials and limestone, classified under heading 2523 for pozzolans (excluding cement).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

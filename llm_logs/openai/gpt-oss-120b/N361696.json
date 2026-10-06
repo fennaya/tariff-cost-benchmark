@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361696",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0b77618f-662a-4d46-9c58-ca406ddfd80a",
+    "object": "chat.completion",
+    "created": 1790802709,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7322.90.90\",\n  \"reason\": \"The item is a multi\u2011layer metal disc (stainless steel outer layers, aluminum core) classified as other articles of iron or steel clad with other metals, not yet shaped into cookware.\"\n}",
+          "reasoning": "We need HTS code for metal disc blank for cookware, multi-layer stainless steel/aluminum. Likely classified under \"Cookware, pots, pans, etc., of iron or steel\" 7323? But blank disc maybe \"metal plates, sheets, strip, of iron or steel, clad with other metal\" 7322.90? 7322.90.90? Let's think: 7322 covers \"Other articles of iron or steel, clad, plated or coated\". 7322.90.90 is \"Other\". Since it's a disc used as blank for cookware, maybe 7323.93 (stainless steel cookware). But it's not yet cookware. So 7322.90.90 seems plausible.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.22225599,
+      "prompt_tokens": 262,
+      "prompt_time": 0.014202298,
+      "completion_tokens": 221,
+      "completion_time": 0.469005036,
+      "total_tokens": 483,
+      "total_time": 0.483207334,
+      "completion_tokens_details": {
+        "reasoning_tokens": 153
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3t2hjgxekbvw25028c92m78",
+      "seed": 1895366164
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73229090",
+  "predicted_reason": "The item is a multi\u2011layer metal disc (stainless steel outer layers, aluminum core) classified as other articles of iron or steel clad with other metals, not yet shaped into cookware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

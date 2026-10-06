@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363274",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8533210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-555f12aa-10fe-4d5c-a738-1deaeca04f56",
+    "object": "chat.completion",
+    "created": 1790906928,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8542.32.00.00\",\n  \"reason\": \"The item is a thick\u2011film fixed resistor, a passive electronic component classified under HTS chapter 85, heading 8542 (resistors), subheading 32 for film resistors.\"\n}",
+          "reasoning": "We need HTS code for thick film fixed resistor, passive component. Likely 8542.31.00? Let's recall: 8542 covers resistors. 8542.31 is \"Fixed resistors, carbon composition\". But thick film? 8542.31 is \"Carbon composition resistors\". 8542.32 is \"Film resistors\". Actually 8542.31 is \"Carbon composition resistors\". 8542.32 is \"Film resistors\". So thick film resistor falls under 8542.32. Full 8-digit? US uses 10-digit: 8542.31.00.00 etc. For film resistors: 8542.31? Wait check: 8542.31 is carbon composition, 8542.32 is \"Film resistors\". So code: 8542.32.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04858175,
+      "prompt_tokens": 380,
+      "prompt_time": 0.015548743,
+      "completion_tokens": 255,
+      "completion_time": 0.529685035,
+      "total_tokens": 635,
+      "total_time": 0.545233778,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3x5y2n8ejfvm39bv5jemr7e",
+      "seed": 160100445
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8542320000",
+  "predicted_reason": "The item is a thick\u2011film fixed resistor, a passive electronic component classified under HTS chapter 85, heading 8542 (resistors), subheading 32 for film resistors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

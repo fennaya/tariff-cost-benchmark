@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361639",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "3004909216",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0e6934b0-ed48-4fce-837a-b3aed985a743",
+    "object": "chat.completion",
+    "created": 1790800287,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The item is a printed legal/ruling document, classified under printed matter not elsewhere specified.\"\n}",
+          "reasoning": "We need to classify. The description is a customs ruling letter, not a product. Likely \"Printed matter\" or \"Legal documents\". HTS for \"Printed books, pamphlets, etc.\" is 4901.99.00? Actually 4901.99.00 is \"Other printed books, brochures, leaflets\". Could be 4907 for \"Printed matter, including books, newspapers, etc.\" Wait 4907 is \"Printed pictures, designs and photographs\". The description is a ruling letter, a document. So classification: 4901.99.00 (Other printed matter, not elsewhere specified). Provide reason.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.096990539,
+      "prompt_tokens": 412,
+      "prompt_time": 0.048291802,
+      "completion_tokens": 182,
+      "completion_time": 0.38956105,
+      "total_tokens": 594,
+      "total_time": 0.437852852,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_b9a23305b9",
+    "x_groq": {
+      "id": "req_01m3t07mv0epzatewnb6f1sw2y",
+      "seed": 1331848368
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The item is a printed legal/ruling document, classified under printed matter not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359267",
+  "rulingDate": "2026-03-13T00:00:00",
+  "true_code": "8486900000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-dbe8f92b-846d-4c03-ad00-bd8f6979a07c",
+    "object": "chat.completion",
+    "created": 1790626136,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9001.90.90\",\"reason\":\"It is an optical component (lens manipulator) used in a semiconductor photolithography system, classified under other optical instruments.\"}",
+          "reasoning": "Need HTS code for lens manipulator module for DUV scanner. Likely 9001.90.90? Actually optical instruments: 9001.90.90 for other optical instruments. But this is part of semiconductor equipment. Could be 8543.90.90? But it's a component of semiconductor equipment. Maybe 8543.90.90 for other electrical apparatus. But it's a module with electronics. I'd choose 9001.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.193248482,
+      "prompt_tokens": 442,
+      "prompt_time": 0.023004924,
+      "completion_tokens": 146,
+      "completion_time": 0.153007339,
+      "total_tokens": 588,
+      "total_time": 0.176012263,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c9afb2bdb4",
+    "x_groq": {
+      "id": "req_01m3mt4zq4em1sveckkfza7440",
+      "seed": 1197397649
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90019090",
+  "predicted_reason": "It is an optical component (lens manipulator) used in a semiconductor photolithography system, classified under other optical instruments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

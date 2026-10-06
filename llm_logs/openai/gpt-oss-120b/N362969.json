@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362969",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4602198000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2f928820-f4dc-4673-a520-dbddce6f080d",
+    "object": "chat.completion",
+    "created": 1790844273,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9503.00.0000\",\n  \"reason\": \"The item is a decorative figurine made of mixed natural and synthetic materials, classified under 9503 as other ornaments, statuettes and artistic articles.\"\n}",
+          "reasoning": "We need HTS code for decorative figure made of various natural materials. Likely under heading 9503 (trinkets, ornaments). 9503.00.00? 9503.00.00 covers \"Other ornaments, statuettes and other articles of artistic craftsmanship, of precious metal etc.\" Actually 9503.00.00 is \"Other ornaments, statuettes and other articles of artistic craftsmanship, of base metal, etc.\" Might be 9505? 9505 is \"Articles and equipment for general physical exercise\". No. 9503 includes \"Other ornaments, statuettes and other articles of artistic craftsmanship, of wood, plaster, etc.\" Let's check: 9503.00.00 includes \"Other ornaments, statuettes and other articles of artistic craftsmanship, of base metal, of wood, of plaster, of glass, of ceramics, of plastic, of textile, of paper, of leather, of other materials.\" So decorative owl figure likely 9503.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048009596,
+      "prompt_tokens": 306,
+      "prompt_time": 0.045653579,
+      "completion_tokens": 269,
+      "completion_time": 0.561763986,
+      "total_tokens": 575,
+      "total_time": 0.607417565,
+      "completion_tokens_details": {
+        "reasoning_tokens": 208
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3va60k5e8cr7bk5bzq70dfh",
+      "seed": 1594016519
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503000000",
+  "predicted_reason": "The item is a decorative figurine made of mixed natural and synthetic materials, classified under 9503 as other ornaments, statuettes and artistic articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

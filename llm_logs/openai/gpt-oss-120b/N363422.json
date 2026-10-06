@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363422",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "7309000090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-61ac3325-e77b-4f90-9984-f8b2fcae9144",
+    "object": "chat.completion",
+    "created": 1790852472,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.00\",\n  \"reason\": \"The product is a steel storage cabinet without electrical components, classified as other metal furniture.\"\n}",
+          "reasoning": "We need HTS code for steel cabinet, not containing electrical components. Likely 9403.20.00? That's \"Other furniture, metal\". But cabinets for storage maybe 9403.20.00. Or 7610 for aluminum? Steel: 7308? That's \"Structures and parts of structures\". 7308.90.90 \"Other\". Could be 9403.20.00 \"Other metal furniture\". I'd choose 9403.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087404135,
+      "prompt_tokens": 333,
+      "prompt_time": 0.014865572,
+      "completion_tokens": 147,
+      "completion_time": 0.317553397,
+      "total_tokens": 480,
+      "total_time": 0.332418969,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3vj074eezeb7cgvcmees7kd",
+      "seed": 2124639560
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94032000",
+  "predicted_reason": "The product is a steel storage cabinet without electrical components, classified as other metal furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

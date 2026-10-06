@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360414",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8537109170",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-80656bd7-d7e6-4ff9-8594-f77aae44f0be",
+    "object": "chat.completion",
+    "created": 1790670225,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8537.90.90.00\",\"reason\":\"Aluminum electrical cabinets fall under 8537.90.90, which covers other electrical apparatus not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for aluminum electrical cabinet. Likely 8537.90.90? Actually electrical cabinets: 8537.90.90 is \"Other electrical apparatus\". But aluminum cabinet? 8537.90.90 covers \"Other electrical apparatus, not elsewhere specified\". But maybe 8537.90.90 includes cabinets. Alternatively 8537.90.90 is for \"Other electrical apparatus\". 8537.90.90 includes \"Other electrical apparatus, not elsewhere specified\". But cabinets are 8537.90.90? Wait 8537.90.90 is \"Other electrical apparatus\". 8537.90.90 includes \"Other electrical apparatus, not elsewhere specified\". But cabinets are 8537.90.90? Actually 8537.90.90 includes \"Other electrical apparatus\". 8537.90.90 includes \"Other electrical apparatus\". But maybe 8537.90.90 includes \"Other electrical apparatus\". But cabinets are 8537.90.90? Let's choose 8537.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148769245,
+      "prompt_tokens": 235,
+      "prompt_time": 0.013344786,
+      "completion_tokens": 270,
+      "completion_time": 0.299052498,
+      "total_tokens": 505,
+      "total_time": 0.312397284,
+      "completion_tokens_details": {
+        "reasoning_tokens": 221
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_228717f27c",
+    "x_groq": {
+      "id": "req_01m3p46fbwec1vv3c2290vj0gs",
+      "seed": 1897732939
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8537909000",
+  "predicted_reason": "Aluminum electrical cabinets fall under 8537.90.90, which covers other electrical apparatus not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

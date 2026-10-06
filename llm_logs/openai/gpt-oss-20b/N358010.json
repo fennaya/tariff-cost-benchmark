@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358010",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "3206500000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-07325b94-352d-4534-bdab-656753fc70d7",
+    "object": "chat.completion",
+    "created": 1790607851,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3808.90.90\",\"reason\":\"Quantum dots are inorganic semiconductor particles not elsewhere specified, classified under 3808.90.90 for other inorganic compounds.\"}",
+          "reasoning": "Need HTS code for quantum dots in organic solvent. Likely 3808.90.90? Actually 3808 is \"Other inorganic compounds, not elsewhere specified\". Quantum dots are inorganic semiconductor particles. They are not specified elsewhere. So 3808.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293366384,
+      "prompt_tokens": 228,
+      "prompt_time": 0.011064804,
+      "completion_tokens": 109,
+      "completion_time": 0.111972286,
+      "total_tokens": 337,
+      "total_time": 0.12303709,
+      "completion_tokens_details": {
+        "reasoning_tokens": 61
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a8c584dda7",
+    "x_groq": {
+      "id": "req_01m3m8q00re9ftzgatppbts9eq",
+      "seed": 506693138
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "38089090",
+  "predicted_reason": "Quantum dots are inorganic semiconductor particles not elsewhere specified, classified under 3808.90.90 for other inorganic compounds.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

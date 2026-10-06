@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362449",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "1905909030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fca040b9-bb22-4346-81ba-7c5ef526ba37",
+    "object": "chat.completion",
+    "created": 1790827909,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2005.90.90.00\", \"reason\": \"Classified under prepared snack foods obtained by extrusion/roasting of cereals, specifically other cheese-flavored extruded snacks.\"}",
+          "reasoning": "We need HTS for extruded snack, cheese flavored, corn/rice based. Likely 2005.00.90? Actually snack foods made from corn, rice, etc: 2005.90.90? Let's think: 2005 is \"Prepared foods obtained by the swelling or roasting of cereals, leguminous vegetables, nuts or other seeds\". Subheading 2005.90 is \"Other\". Then further digits: 2005.90.90 is \"Other\". So 10-digit: 2005.90.90.00? Usually 10-digit format: 2005.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018106579,
+      "prompt_tokens": 377,
+      "prompt_time": 0.014617229,
+      "completion_tokens": 188,
+      "completion_time": 0.392768529,
+      "total_tokens": 565,
+      "total_time": 0.407385758,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3ttjkwfepxb4xegq0fh9rh5",
+      "seed": 1583065687
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2005909000",
+  "predicted_reason": "Classified under prepared snack foods obtained by extrusion/roasting of cereals, specifically other cheese-flavored extruded snacks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

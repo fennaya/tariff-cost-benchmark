@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358306",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8436800090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-098f5df1-95d3-469d-9a99-b6658ef6defc",
+    "object": "chat.completion",
+    "created": 1790608000,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8429.90.90.00\",\"reason\":\"The RIC2Discover System is an electronic livestock feeding and weighing apparatus, fitting the general category of other machines and mechanical appliances not elsewhere specified.\"}",
+          "reasoning": "Need HTS code. It's a system for cattle feeding with RFID and weighing. Likely \"feed and water troughs\" with electronic control. Could be 7308.90.90? Actually 7308 is \"Other articles of iron or steel\". Not. Maybe 8429.90.90 \"Other machines and mechanical appliances\". But it's a system for livestock. Could be 8429.90.90. But maybe 8429.90.90 is \"Other machines and mechanical appliances\". 8429.90.90 includes \"Other machines and mechanical appliances, not elsewhere specified\". So 8429.90.90. But 8429.90.90 is 10-digit: 8429.90.90.00? Actually 10-digit: 8429.90.90.00. Provide. Reason: system for livestock feeding with electronic control."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206144275,
+      "prompt_tokens": 286,
+      "prompt_time": 0.016385546,
+      "completion_tokens": 237,
+      "completion_time": 0.254538928,
+      "total_tokens": 523,
+      "total_time": 0.270924474,
+      "completion_tokens_details": {
+        "reasoning_tokens": 182
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m3m8vh5je8ttr95vzjzkfzcb",
+      "seed": 1029254091
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8429909000",
+  "predicted_reason": "The RIC2Discover System is an electronic livestock feeding and weighing apparatus, fitting the general category of other machines and mechanical appliances not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

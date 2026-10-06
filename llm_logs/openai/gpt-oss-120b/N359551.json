@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359551",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8530800000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2197c25f-b0f2-4b20-87b9-1f622a30b4c2",
+    "object": "chat.completion",
+    "created": 1790727479,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8532.20.00.00\",\n  \"reason\": \"The system is an LED traffic signaling device used for pedestrian control, classified under heading 8532 for other lighting equipment.\"\n}",
+          "reasoning": "We need HTS code for pedestrian signal LED display unit. Likely under 8531? Actually traffic signal devices: 8531.10.00 (Electrical apparatus for switching or protecting electrical circuits, etc.) Not. Pedestrian signal lights are under 8531.20? Let's think: 8531.10 is for relays. 8531.20 is for \"other apparatus for switching, protecting or controlling electric circuits\". But traffic signals maybe 8531.90? Another heading 8532 for \"Electrical lighting or signaling equipment\". Yes 8532.10 is \"Lamps and lighting fittings\". 8532.20 is \"Other lighting equipment\". Pedestrian signal likely \"traffic signal lights\" under 8532.20. Check: 8532.20.00 \"Other lighting equipment (including searchlights, spotlights, floodlights, and other lamps)\". Might be 8532.20.00. But maybe 8531.90.90? Actually \"Traffic signal devices\" often classified under 8531.10? Quick guess: 8531.10.00 is \"relays\". Not.\n\nBetter: 8531.20.00 \"Other apparatus for switching, protecting or controlling electric circuits\". Traffic signal controllers maybe. The display unit is a signal light, likely 8532.20.00.\n\nThus provide code \"8532.20.00\". Need 10-digit: 8532.20.00.00? Actually 10-digit includes two more digits: 8532.20.00.00. Provide that.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204723143,
+      "prompt_tokens": 391,
+      "prompt_time": 0.01796031,
+      "completion_tokens": 385,
+      "completion_time": 0.798286117,
+      "total_tokens": 776,
+      "total_time": 0.816246427,
+      "completion_tokens_details": {
+        "reasoning_tokens": 329
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3qtsqkwe2k8zvn9h22d2jp5",
+      "seed": 1808147146
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8532200000",
+  "predicted_reason": "The system is an LED traffic signaling device used for pedestrian control, classified under heading 8532 for other lighting equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

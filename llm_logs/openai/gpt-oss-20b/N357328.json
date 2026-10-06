@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357328",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c7a5a2ea-2e21-4e9f-b6b8-d16027aa21de",
+    "object": "chat.completion",
+    "created": 1790607427,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"Herbal tincture extracts not elsewhere specified are classified under 1206.90.90.00\"}",
+          "reasoning": "Need HTS code for herbal tincture extracts. Likely 1206.90.90? Actually 1206.90.90 is \"Other preparations of plants or of plant parts, not elsewhere specified or included\". For tinctures maybe 1206.90.90. But 1206.90.90 is 10-digit? 1206.90.90 is 8 digits. 10-digit would be 1206.90.90.00? Actually HTS 10-digit: 1206.90.90.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149860502,
+      "prompt_tokens": 351,
+      "prompt_time": 0.017260661,
+      "completion_tokens": 164,
+      "completion_time": 0.180480406,
+      "total_tokens": 515,
+      "total_time": 0.197741067,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8e23cedc90",
+    "x_groq": {
+      "id": "req_01m3m8a1pbekpvr2vhrg7r8nze",
+      "seed": 449166428
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Herbal tincture extracts not elsewhere specified are classified under 1206.90.90.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

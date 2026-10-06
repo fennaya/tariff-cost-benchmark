@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359119",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ec20f858-27a6-4a15-bd73-281892228db2",
+    "object": "chat.completion",
+    "created": 1790727091,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4008.91.00\",\n  \"reason\": \"The product is a shaped EPDM rubber foam used as a component of a headset, classifiable as other articles of vulcanized rubber not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS code for EPDM foam used in headsets. Likely under \"Foam, cellular, of plastics, not elsewhere specified\" 3916.10.00? Actually 3916.10.00 is \"Foam, cellular, of plastics, not elsewhere specified\". EPDM is a rubber, maybe under 4001? Rubber articles? EPDM foam is a rubber foam, could be under 4001.20.00 \"Plates, sheets and strip of vulcanized rubber\". But foam shaped piece maybe \"Rubber articles, other\". 4008.91.00 \"Other articles of vulcanized rubber\". Could be 4008.91.00 \"Other articles of vulcanized rubber, nesoi\". I'd choose 4008.91.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.299372625,
+      "prompt_tokens": 263,
+      "prompt_time": 0.087187788,
+      "completion_tokens": 226,
+      "completion_time": 0.470919508,
+      "total_tokens": 489,
+      "total_time": 0.558107296,
+      "completion_tokens_details": {
+        "reasoning_tokens": 165
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3qtdw5ve8ysewthhhwmf72q",
+      "seed": 539630469
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "40089100",
+  "predicted_reason": "The product is a shaped EPDM rubber foam used as a component of a headset, classifiable as other articles of vulcanized rubber not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

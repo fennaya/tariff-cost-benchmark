@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356914",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "7309000090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5d21e6fa-92dd-4bfd-8dc8-23ff3919aefc",
+    "object": "chat.completion",
+    "created": 1790607205,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"Unmodified steel ISO shipping containers fall under 8421.90.90.00, the heading for other metal containers.\"}",
+          "reasoning": "We need HTS code for unmodified ISO shipping containers, steel, empty. Likely 8421.90.90? Actually shipping containers are under 8421.90.90? Wait 8421 is \"Containers, boxes, crates, cases, drums, barrels, and other containers, of metal\". 8421.90 is \"Other\". Subheading 8421.90.90 is \"Other containers of metal\". But shipping containers are 8421.90.90? Actually 8421.90.90 is \"Other containers of metal\". 8421.90.90 includes \"Other containers of metal, not elsewhere specified\". Shipping containers are 8421.90.90. But maybe 8421.90.90.00? The 10-digit code: 8421.90.90.00. Provide that. Reason: unmodified steel ISO shipping containers."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.14933732,
+      "prompt_tokens": 347,
+      "prompt_time": 0.016923439,
+      "completion_tokens": 237,
+      "completion_time": 0.25200133,
+      "total_tokens": 584,
+      "total_time": 0.268924769,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m3m838ske6rsj75bwx7ft3yr",
+      "seed": 2106656084
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "Unmodified steel ISO shipping containers fall under 8421.90.90.00, the heading for other metal containers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

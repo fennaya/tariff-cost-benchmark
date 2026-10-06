@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360271",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "9403896015",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3c43b10f-3a67-4746-8280-0c49cf1ae47a",
+    "object": "chat.completion",
+    "created": 1790757752,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.99\", \"reason\": \"The chest is a collapsible storage container made primarily of nonwoven polypropylene (a plastic), fitting the category of other articles of plastics not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for storage chest made of nonwoven polypropylene textile, collapsible. Likely classified under \"Other articles of plastics\" or \"Textiles, made of man-made fibers\". Could be 6309.00.00? That's for \"Other sacks and bags, of plastics\". But chest is a storage container, maybe 6302.91.00 (Other containers, of plastics). Actually 6302 covers \"Sacks and bags, of plastics\". 6302.91 is \"Other sacks and bags, of plastics\". Not chest.\n\nMaybe 6309.90.98 \"Other articles of textile materials\". But it's nonwoven polypropylene, considered \"plastic\". Could be 3926.90.99 \"Other articles of plastics\". That seems plausible: \"Other articles of plastics, not elsewhere specified\". So choose 3926.90.99.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294730068,
+      "prompt_tokens": 309,
+      "prompt_time": 0.020834338,
+      "completion_tokens": 239,
+      "completion_time": 0.507362854,
+      "total_tokens": 548,
+      "total_time": 0.528197192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 182
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3rqnjymetssc9fbkwabw9dy",
+      "seed": 7261888
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39269099",
+  "predicted_reason": "The chest is a collapsible storage container made primarily of nonwoven polypropylene (a plastic), fitting the category of other articles of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

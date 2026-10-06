@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361363",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-95a23dea-23e2-43d0-94f8-76dfacc877bc",
+    "object": "chat.completion",
+    "created": 1790790478,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.91.00\", \"reason\": \"Printed tissue paper falls under heading 4811.91 for printed toilet paper, handkerchiefs and similar paper products.\"}",
+          "reasoning": "Need HTS for printed tissue paper. Likely heading 4811.90? Tissue paper printed = 4811.91? Check: 4811.91 is \"Toilet paper, handkerchiefs, etc., of paper pulp, printed\". Actually 4811.91 is \"Toilet paper, handkerchiefs, etc., of paper pulp, printed\". Tissue paper maybe 4811.90 \"Other\". But printed tissue paper likely 4811.91. Provide code 4811.91.00? 6-digit then 2-digit then 4-digit. So \"4811.91.00\"."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.482412281,
+      "prompt_tokens": 219,
+      "prompt_time": 0.01191687,
+      "completion_tokens": 184,
+      "completion_time": 0.385343241,
+      "total_tokens": 403,
+      "total_time": 0.397260111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 132
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3spw9w6e7pvr9z16rbaafhh",
+      "seed": 151344438
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "48119100",
+  "predicted_reason": "Printed tissue paper falls under heading 4811.91 for printed toilet paper, handkerchiefs and similar paper products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360493",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6804ce14-5225-41cc-9bef-3722ba77d4fa",
+    "object": "chat.completion",
+    "created": 1790673420,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00.00\",\"reason\":\"Medicaments consisting of a single active ingredient in tablet form.\"}",
+          "reasoning": "Need HTSUS code for pharmaceutical tablets containing colestipol hydrochloride. Likely 3004.10.00.00? Actually 3004 is \"Medicaments consisting of mixed or unmixed products of a single active ingredient\". For tablets: 3004.10.00.00 is \"Medicaments consisting of mixed or unmixed products of a single active ingredient, in dosage form\". But need 10-digit: 3004.10.00.00? That's 8 digits. 10-digit includes subheadings: 3004.10.00.00.00? Actually HTSUS 10-digit: 3004.10.00.00.00. But maybe 3004.10.00.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149978718,
+      "prompt_tokens": 202,
+      "prompt_time": 0.009857081,
+      "completion_tokens": 200,
+      "completion_time": 0.233431703,
+      "total_tokens": 402,
+      "total_time": 0.243288784,
+      "completion_tokens_details": {
+        "reasoning_tokens": 160
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m3p77znjeka8q457pamns9xp",
+      "seed": 1635142480
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "300410000000",
+  "predicted_reason": "Medicaments consisting of a single active ingredient in tablet form.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356909",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "9013809100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-72535a4e-9ee5-45bc-8205-ba3c24b0e05e",
+    "object": "chat.completion",
+    "created": 1790904680,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.10.00\", \"reason\": \"The product is a passive optical network cabinet containing fiber optic splitters and connectors, classified under optical fiber cables and accessories without electrical components.\"}",
+          "reasoning": "We need HTS code for passive optical network (PON) cabinets, fiber optic splitters etc, no electrical components. Likely under 8517? No electrical. Maybe 8544? Actually fiber optic cables are 8544.10? Let's think: \"Optical fiber cables, assembled\" 8544.10.00. But cabinets with splitters are \"optical fiber distribution frames\" maybe 8544.10.00 covers fiber optic cables, not cabinets. Could be 8544.10.00 for \"optical fiber cables, assembled\". But cabinets are \"optical fiber distribution frames\" maybe 8544.10.00 also includes \"optical fiber cable accessories\". Another heading 8544.10.00 includes \"optical fiber cables, assembled, and optical fiber bundles\". Accessories maybe 8544.10.00. I think best is 8544.10.00.\n\nProvide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.099092412,
+      "prompt_tokens": 308,
+      "prompt_time": 0.081648397,
+      "completion_tokens": 247,
+      "completion_time": 0.522803507,
+      "total_tokens": 555,
+      "total_time": 0.604451904,
+      "completion_tokens_details": {
+        "reasoning_tokens": 193
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3x3sf5rewg9zn6enxhg2xkc",
+      "seed": 594591115
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85441000",
+  "predicted_reason": "The product is a passive optical network cabinet containing fiber optic splitters and connectors, classified under optical fiber cables and accessories without electrical components.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6d502611-0dd1-4616-bc94-be16987529dd",
+    "object": "chat.completion",
+    "created": 1790607330,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90.00\",\"reason\":\"Indocyanine Green Injection is a diagnostic pharmaceutical reagent, classified under 3004.90.90.00 for other medicaments not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for Indocyanine Green Injection. It's a pharmaceutical product, diagnostic reagent. Likely 3004.90.90? Actually 3004 is \"Medicaments consisting of mixed or unmixed products of a chemical or biological origin, not elsewhere specified or included\". For diagnostic reagents, maybe 3004.90.90. But 3004.90.90 is \"Other\". 3004.90.90 includes \"Other medicaments\". For diagnostic reagents, maybe 3004.90.90. But 3004.90.90 is 10-digit? 3004.90.90.00? Actually 10-digit: 3004.90.90.00. But we need 10-digit format: \"3004.90.90.00\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295770407,
+      "prompt_tokens": 210,
+      "prompt_time": 0.01025427,
+      "completion_tokens": 228,
+      "completion_time": 0.313941239,
+      "total_tokens": 438,
+      "total_time": 0.324195509,
+      "completion_tokens_details": {
+        "reasoning_tokens": 171
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a8c584dda7",
+    "x_groq": {
+      "id": "req_01m3m872e5e2981zzj5wa54q7n",
+      "seed": 2125086558
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Indocyanine Green Injection is a diagnostic pharmaceutical reagent, classified under 3004.90.90.00 for other medicaments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

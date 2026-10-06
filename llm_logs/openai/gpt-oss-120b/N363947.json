@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363947",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "4823906700",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cfcc3a6a-ee3d-477a-b89f-8bf1b17fc81d",
+    "object": "chat.completion",
+    "created": 1790864561,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"Insufficient product description to determine a specific HTSUS classification\"}",
+          "reasoning": "We need guess HTS code. No description. Likely unknown. Could respond with generic? Maybe \"0000.00.0000\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.506541719,
+      "prompt_tokens": 176,
+      "prompt_time": 0.007388755,
+      "completion_tokens": 73,
+      "completion_time": 0.155213157,
+      "total_tokens": 249,
+      "total_time": 0.162601912,
+      "completion_tokens_details": {
+        "reasoning_tokens": 33
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_60e4b492db",
+    "x_groq": {
+      "id": "req_01m3vxh3p1egvrbrz8gvn5cd9c",
+      "seed": 2113553241
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "Insufficient product description to determine a specific HTSUS classification",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

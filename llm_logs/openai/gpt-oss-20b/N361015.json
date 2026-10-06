@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361015",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "0901901000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c9565436-d7ac-411f-9945-df08e71dbc57",
+    "object": "chat.completion",
+    "created": 1790689112,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0901.90.90.00\",\"reason\":\"Dried coffee husk (cascara) is classified as other unroasted coffee, not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for dried coffee husk (cascara). Likely 0901.10.10? Actually 0901 is coffee, beans, roasted or unroasted. But husk is byproduct. Maybe 0901.90.90? Let's search memory: 0901.90.90 is \"Other coffee, unroasted, not elsewhere specified\". But husk maybe 0901.90.90. But 0901.90.90 is \"Other coffee, unroasted, not elsewhere specified\". Might be 0901.90.90. But 0901.90.90 is 4-digit. Need 10-digit: 0901.90.90.00? Actually 10-digit: 0901.90.90.00. Provide. Reason: dried coffee husk."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151227446,
+      "prompt_tokens": 435,
+      "prompt_time": 0.037392063,
+      "completion_tokens": 224,
+      "completion_time": 0.25395638,
+      "total_tokens": 659,
+      "total_time": 0.291348443,
+      "completion_tokens_details": {
+        "reasoning_tokens": 175
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1c0f5282a2",
+    "x_groq": {
+      "id": "req_01m3pp6vpeedt9p5x9m0f43bjy",
+      "seed": 2072144307
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0901909000",
+  "predicted_reason": "Dried coffee husk (cascara) is classified as other unroasted coffee, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

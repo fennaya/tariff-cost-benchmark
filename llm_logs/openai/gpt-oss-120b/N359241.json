@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359241",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "2106909980",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f21761a2-2b00-4386-9a9e-c8bec8ec8b29",
+    "object": "chat.completion",
+    "created": 1790727176,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2008.05.90\", \"reason\": \"Covers coconut milk and cream products not otherwise specified, matching the described coconut cream and milk items.\"}",
+          "reasoning": "We need HTS code for coconut cream/milk. Likely 2008.05.90? Actually HS: 2008.05.90 is \"Other coconut milk and cream\". 2008.05.10 is \"Coconut milk, not concentrated\". 2008.05.20 is \"Coconut cream\". Let's check US: Chapter 20, heading 2008. Subheading 2008.05.90 \"Other coconut milk and cream\". For coconut cream (22-24% fat) maybe 2008.05.20 \"Coconut cream\". Coconut milk maybe 2008.05.10 \"Coconut milk\". Since both, need single most applicable. Probably 2008.05.90 covers both? But specific: coconut cream is 2008.05.20. Coconut milk is 2008.05.10. Since description includes both, choose broader 2008.05.90. Provide code \"2008.05.90\". JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149956896,
+      "prompt_tokens": 604,
+      "prompt_time": 0.030750262,
+      "completion_tokens": 254,
+      "completion_time": 0.536070611,
+      "total_tokens": 858,
+      "total_time": 0.566820873,
+      "completion_tokens_details": {
+        "reasoning_tokens": 207
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6c36ac20de",
+    "x_groq": {
+      "id": "req_01m3qtgfhvezhstt185yy4h4ce",
+      "seed": 1810777897
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "20080590",
+  "predicted_reason": "Covers coconut milk and cream products not otherwise specified, matching the described coconut cream and milk items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

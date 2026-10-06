@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362773",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "4202122910",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2c5a2202-e569-47f6-bcec-554167fff12e",
+    "object": "chat.completion",
+    "created": 1790836262,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9090\", \"reason\": \"Molded rigid plastic case (briefcase/attach\u00e9) falls under other articles of plastics not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for molded plastic case similar to briefcase. Likely under heading 3926.90? Let's think: 3926 is \"Other articles of plastics and articles of other materials\". 3926.90 is \"Other\". Specifically 3926.90.90? 10-digit: 3926.90.9090? Actually US 10-digit: 3926.90.9090 is \"Other articles of plastics, not elsewhere specified\". A molded plastic case (briefcase) likely 3926.90.9090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205168483,
+      "prompt_tokens": 245,
+      "prompt_time": 0.011418106,
+      "completion_tokens": 171,
+      "completion_time": 0.360607862,
+      "total_tokens": 416,
+      "total_time": 0.372025968,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3v2hh3wey3rfg4sy7n8nzbh",
+      "seed": 450260250
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909090",
+  "predicted_reason": "Molded rigid plastic case (briefcase/attach\u00e9) falls under other articles of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

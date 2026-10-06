@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361914",
+  "rulingDate": "2026-06-24T00:00:00",
+  "true_code": "7113195091",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-11d38f37-8fd1-4963-bf61-d9f103fa1510",
+    "object": "chat.completion",
+    "created": 1790810820,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7113.19.00\",\n  \"reason\": \"Lapel pins made of 10K gold with gemstones are classified as articles of gold, other than jewelry, under heading 7113.19.00.\"\n}",
+          "reasoning": "Need HTS for lapel pins made of gold with stones. Likely heading 7117.19 (Jewelry, articles of precious metal, plated? Actually 7117.19 is \"Other articles of precious metal, whether or not plated or clad, other than jewelry\". But lapel pins are jewelry? Might be 7117.19. Or 7113.19 for articles of gold? 7113 is \"Articles of gold, whether or not plated\". 7113.19.00 is \"Other\". So choose 7113.19.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204537234,
+      "prompt_tokens": 381,
+      "prompt_time": 0.014752469,
+      "completion_tokens": 181,
+      "completion_time": 0.378884027,
+      "total_tokens": 562,
+      "total_time": 0.393636496,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3ta93fyez8skwn1ay90h3m8",
+      "seed": 1770842806
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "71131900",
+  "predicted_reason": "Lapel pins made of 10K gold with gemstones are classified as articles of gold, other than jewelry, under heading 7113.19.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

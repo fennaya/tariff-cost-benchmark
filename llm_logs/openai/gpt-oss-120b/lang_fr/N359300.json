@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359300",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3004909246",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f7fd127d-5f7e-49f6-9812-bfbebf5340c5",
+    "object": "chat.completion",
+    "created": 1790906476,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Clozapine tablets are classified as medicinal products not elsewhere specified, falling under heading 3004.90.00 for other pharmaceutical preparations.\"}",
+          "reasoning": "Need HTS for clozapine tablets, pharmaceutical. Likely 3004.90.00? Actually 3004.90.00 is \"Medicaments ... other\". Clozapine is a psychotropic drug, schedule. Might be under 3004.90.00. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049560463,
+      "prompt_tokens": 255,
+      "prompt_time": 0.012360484,
+      "completion_tokens": 119,
+      "completion_time": 0.244973849,
+      "total_tokens": 374,
+      "total_time": 0.257334333,
+      "completion_tokens_details": {
+        "reasoning_tokens": 63
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3x5g99be1yt1hjj07ane3z4",
+      "seed": 1719145260
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Clozapine tablets are classified as medicinal products not elsewhere specified, falling under heading 3004.90.00 for other pharmaceutical preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

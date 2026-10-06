@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357461",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fdec3582-5375-4390-a853-3f16fea16d4d",
+    "object": "chat.completion",
+    "created": 1790726223,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6104.63.90\",\n  \"reason\": \"Classified as children's apparel (hooded top, leggings, etc.) made of synthetic fibers, falling under heading 6104 for children's garments.\"\n}",
+          "reasoning": "Need HTS for children's costume clothing. Likely 9505? Actually costume apparel under heading 9505? No, 9505 is toys. Apparel under 6104? Costume for children: 9503? Wait: HTS 9505.99.90? But clothing accessories maybe 6109? Costume includes multiple pieces, likely classified under 9505.00.00? Let's pick 9505.90.00? Actually 9505.90.90 is \"Other toys\". Costume is not toy. It's apparel: 6104.63.90 (children's garments, of synthetic fibers). So choose 6104.63.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087729808,
+      "prompt_tokens": 205,
+      "prompt_time": 0.0082701,
+      "completion_tokens": 198,
+      "completion_time": 0.41147235,
+      "total_tokens": 403,
+      "total_time": 0.41974245,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4de1d6a1ee",
+    "x_groq": {
+      "id": "req_01m3qskctjey3877yzmt8ktmjz",
+      "seed": 744730487
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61046390",
+  "predicted_reason": "Classified as children's apparel (hooded top, leggings, etc.) made of synthetic fibers, falling under heading 6104 for children's garments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

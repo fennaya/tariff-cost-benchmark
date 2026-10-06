@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362523",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8503003500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3138deb0-ec10-4c83-b5f0-fdf6701a7f1c",
+    "object": "chat.completion",
+    "created": 1790831791,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8503.50.90\",\n  \"reason\": \"The item is a rotor core (part) for an electric motor, classified under heading 8503 for parts of electric motors, specifically subheading 8503.50 for rotors, stators and other motor parts.\"\n}",
+          "reasoning": "We need HTS code for laminated rotor core with permanent magnets for electric power steering motor. Likely under 8501? Electric motors parts. Rotor core with permanent magnets maybe 8501.31? Let's think: 8501.31 is \"Electric motors and generators (excluding generating sets) of an output not exceeding 750 kW, of which the rotor is of a type having a permanent magnet\". But that's whole motor. For parts: 8501.90? Or 8503? 8503 is \"Parts suitable for use solely or principally with the machines of heading 8501\". So rotor core likely 8503.50? Check: 8503.50 - \"Rotors, stators and other parts of electric motors\". More specific: 8503.50.90? Actually 8503.50 is \"Rotors, stators and other parts of electric motors\". Then further digits for subcategories. Likely 8503.50.90 (Other). So answer: \"8503.50.90\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.046972143,
+      "prompt_tokens": 216,
+      "prompt_time": 0.01050439,
+      "completion_tokens": 294,
+      "completion_time": 0.609701948,
+      "total_tokens": 510,
+      "total_time": 0.620206338,
+      "completion_tokens_details": {
+        "reasoning_tokens": 219
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3ty92y1ee09e4mjn315q5tj",
+      "seed": 1176068267
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85035090",
+  "predicted_reason": "The item is a rotor core (part) for an electric motor, classified under heading 8503 for parts of electric motors, specifically subheading 8503.50 for rotors, stators and other motor parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

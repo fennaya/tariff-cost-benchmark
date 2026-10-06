@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361009",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8523520010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e81c49da-a80d-463a-81ef-744653bc372b",
+    "object": "chat.completion",
+    "created": 1790779922,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8542.31.00\",\n  \"reason\": \"RFID inlay sheets contain integrated circuits with unrecorded memory, classifying them as electronic integrated circuits with a memory function under heading 8542.31.\"\n}",
+          "reasoning": "Need HTS for RFID inlay sheets, likely 8542.31.00? That's for \"Electronic integrated circuits, semiconductor devices, etc.\" RFID inlays are \"semiconductor media\" maybe 8542.31.00 \"Integrated circuits, other than those of heading 8541\". Could be 8542.31.00 \"Semiconductor devices, other than those of heading 8541, having a memory function\". Actually 8542.31 is \"Electronic integrated circuits, other than those of heading 8541, having at least one of the following: (a) a memory function\". Might be 8542.31.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.052390349,
+      "prompt_tokens": 256,
+      "prompt_time": 0.049725065,
+      "completion_tokens": 200,
+      "completion_time": 0.419706308,
+      "total_tokens": 456,
+      "total_time": 0.469431373,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3sct5emefxrshpmf458aca4",
+      "seed": 2112373587
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85423100",
+  "predicted_reason": "RFID inlay sheets contain integrated circuits with unrecorded memory, classifying them as electronic integrated circuits with a memory function under heading 8542.31.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

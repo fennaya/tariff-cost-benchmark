@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N355233",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "6802930090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-040dbbdf-f2af-4aa6-b433-f35aa9b7676b",
+    "object": "chat.completion",
+    "created": 1790607097,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.11.0010\", \"reason\": \"The product is worked granite (polished, beveled slabs) used for countertops and surfaces, classifiable under HTSUS 6802.11.0010.\"}",
+          "reasoning": "We need HTS for granite slabs. Likely 6802.11.0010? Let's recall: 6802 is \"Worked granite, basalt, etc.\" 6802.11 is \"Granite, worked\". 6802.11.0010 is \"Granite, worked, for building\". Actually 6802.11.0010 is \"Granite, worked, for building\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 3.656512713,
+      "prompt_tokens": 325,
+      "prompt_time": 0.020831413,
+      "completion_tokens": 149,
+      "completion_time": 0.312498101,
+      "total_tokens": 474,
+      "total_time": 0.333329514,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3m7zw5ke9v9vhqv34qec6sf",
+      "seed": 1746143280
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802110010",
+  "predicted_reason": "The product is worked granite (polished, beveled slabs) used for countertops and surfaces, classifiable under HTSUS 6802.11.0010.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

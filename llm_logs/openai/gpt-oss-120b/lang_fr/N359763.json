@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359763",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8525893000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-089b0e20-4745-4bef-9df4-c5292c428ee9",
+    "object": "chat.completion",
+    "created": 1790905564,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8525.80.20\",\n  \"reason\": \"The product is a camera module (part) for a dual\u2011channel video camera system used in vehicles, classified under parts of video cameras.\"\n}",
+          "reasoning": "We need HTS for camera module, not recording? Likely 8525.80.30? That's for video cameras, digital cameras. But it's a camera module for vehicle, not recording, maybe \"parts of video cameras\" 8525.80.90? Actually 8525.80.30 is \"digital video cameras\". 8525.80.90 is \"other\". Since it cannot record images, it's a camera module (part). Could be 8525.80.90 \"Other video cameras\". But it's a part, maybe 8525.80.20 \"Other parts\". Check: 8525.80.20 is \"Other parts of video cameras\". So likely that. Provide code 8525.80.20."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.397324004,
+      "prompt_tokens": 274,
+      "prompt_time": 0.011570516,
+      "completion_tokens": 214,
+      "completion_time": 0.444968783,
+      "total_tokens": 488,
+      "total_time": 0.456539299,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3x4me9gem8900pjsdhh4zqt",
+      "seed": 815093371
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85258020",
+  "predicted_reason": "The product is a camera module (part) for a dual\u2011channel video camera system used in vehicles, classified under parts of video cameras.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

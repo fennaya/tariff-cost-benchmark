@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358620",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "6802930090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-832511ca-685e-4192-9be7-fbcc7695402c",
+    "object": "chat.completion",
+    "created": 1790726778,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.11.0010\", \"reason\": \"Granite slabs, cut and polished for countertops and similar uses, thicker than 6\u202fmm\"}",
+          "reasoning": "We need HTS for granite slabs. Likely 6802.11.0015? Actually 6802.11.0015 is \"Granite, other than that of heading 6802.11.00, cut, polished, etc.\" Let's check: 6802.11 is \"Granite, other than that of heading 6802.11.00\"? Wait heading 6802.11 is \"Granite, other than that of heading 6802.11.00\"? Might be 6802.11.00 is \"Granite, cut, polished, etc.\" Need specific 10-digit: 6802.11.0015 maybe for \"Granite, cut, polished, etc., of a thickness of not more than 6 mm\"? Not sure. Actually 6802.11.0015 is \"Granite, cut, polished, etc., of a thickness of not more than 6 mm\". Our thickness 0.75 or 1.5 inches (~19-38 mm) >6mm. So maybe 6802.11.0010 for \"Granite, cut, polished, etc., of a thickness of more than 6 mm\". So answer: 6802.11.0010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018396704,
+      "prompt_tokens": 331,
+      "prompt_time": 0.020518811,
+      "completion_tokens": 307,
+      "completion_time": 0.63418397,
+      "total_tokens": 638,
+      "total_time": 0.654702781,
+      "completion_tokens_details": {
+        "reasoning_tokens": 260
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3qt4b25eyztvec4e1cafgtc",
+      "seed": 995285469
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802110010",
+  "predicted_reason": "Granite slabs, cut and polished for countertops and similar uses, thicker than 6\u202fmm",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

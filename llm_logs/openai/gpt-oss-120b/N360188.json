@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360188",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6a66ec94-c1d6-4d31-a0cb-0f1489110efa",
+    "object": "chat.completion",
+    "created": 1790756199,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.00\", \"reason\": \"Classified as plastic bags, sacks and similar packing containers made primarily of polyethylene (polymer of ethylene).\"}",
+          "reasoning": "We need HTS code for plastic bag multi-layered, OPP, metallized PET, LDPE, 80% polyethylene. Likely under 3923.21.00? 3923.21.00 is \"Plastic bags, sacks and similar packing containers, of polymers of ethylene\". But polyethylene is polymer of ethylene. Multi-layered with PET maybe still classified under 3923.21.00. So provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218898182,
+      "prompt_tokens": 251,
+      "prompt_time": 0.089480939,
+      "completion_tokens": 140,
+      "completion_time": 0.29426511,
+      "total_tokens": 391,
+      "total_time": 0.383746049,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3rp66fye1f9fc2pdw6sbjzm",
+      "seed": 1000470198
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39232100",
+  "predicted_reason": "Classified as plastic bags, sacks and similar packing containers made primarily of polyethylene (polymer of ethylene).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

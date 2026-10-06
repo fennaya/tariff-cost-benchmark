@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359744",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "9603908050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-48c50bd5-76c0-4416-8eb2-bb335253d8fd",
+    "object": "chat.completion",
+    "created": 1790905541,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9603.90.00\", \"reason\": \"The product is a cleaning tool (bucket with plastic body and aluminum-handled squeegee/spong) classified under 'Other household articles and parts thereof, of plastics'\"}",
+          "reasoning": "We need HTS code for car cleaning tool: bucket with handle, squeegee/spong e with aluminum handle. Likely under 9603? 9603.90.00? That's \"Other household articles and parts thereof, of plastics\". But includes cleaning tools? Actually 9603 covers \"Brooms, brushes, mop heads, etc.\" 9603.90.00 is \"Other\". Could be 9603.90.00. Or 9603.90.10? Let's pick 9603.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297460755,
+      "prompt_tokens": 268,
+      "prompt_time": 0.011341269,
+      "completion_tokens": 174,
+      "completion_time": 0.366045515,
+      "total_tokens": 442,
+      "total_time": 0.377386784,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3x4kqvqem1addj0hz3h6cc1",
+      "seed": 977092673
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "96039000",
+  "predicted_reason": "The product is a cleaning tool (bucket with plastic body and aluminum-handled squeegee/spong) classified under 'Other household articles and parts thereof, of plastics'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

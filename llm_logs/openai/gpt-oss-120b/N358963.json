@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358963",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "9401790015",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-794276ca-05ff-42a8-82a1-51b328a447e1",
+    "object": "chat.completion",
+    "created": 1790726950,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9401.71.00\", \"reason\": \"Classified as metal seats (folding chairs) integrated with a wagon, falling under 'Seats, of metal, not elsewhere specified'\"}",
+          "reasoning": "We need HTS code. Likely seats with wheels: portable folding chairs? Could be \"chairs, folding, of metal, with wooden seat\"? But includes wagon. Might be classified under \"Other furniture, of metal, not elsewhere specified\". Possibly 9401.80.00 (other seats, not upholstered). But includes canvas. Could be 9401.30.00 (metal furniture, seats). Actually 9401.30.00 is \"Metal furniture, of a kind used in offices\". Not. 9401.61.00 is \"Seats, of wood\". 9401.71.00 is \"Seats, of metal\". Let's pick 9401.71.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204026605,
+      "prompt_tokens": 286,
+      "prompt_time": 0.014264819,
+      "completion_tokens": 198,
+      "completion_time": 0.417018824,
+      "total_tokens": 484,
+      "total_time": 0.431283643,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3qt9jraen1rbzk7bdzqkyz2",
+      "seed": 539331836
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94017100",
+  "predicted_reason": "Classified as metal seats (folding chairs) integrated with a wagon, falling under 'Seats, of metal, not elsewhere specified'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

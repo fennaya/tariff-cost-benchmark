@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362924",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7318290000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-136fe9be-8a95-4606-a2ee-856b0e277e45",
+    "object": "chat.completion",
+    "created": 1790842968,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90\", \"reason\": \"A steel sleeve used as a compression limiter for an alternator splash shield is a vehicle part accessory not classified elsewhere.\"}",
+          "reasoning": "We need HTS code for a metal sleeve used as compression limiter in automotive. Likely classified under \"Other parts and accessories of motor vehicles\" 8708.99.90? But it's a steel component, not a fastener. Could be \"Other articles of iron or steel, not elsewhere specified\" 7318.15.90? Actually 7318 covers \"Other screws, bolts, nuts, etc.\" Not. 7318.15 is \"Other threaded fasteners\". Not.\n\nMaybe 8708.99.90 \"Other parts and accessories of motor vehicles, not elsewhere specified\". That seems appropriate.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151088079,
+      "prompt_tokens": 372,
+      "prompt_time": 0.027648,
+      "completion_tokens": 180,
+      "completion_time": 0.384437094,
+      "total_tokens": 552,
+      "total_time": 0.412085094,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m3v8y64req9tbmesddjf69bz",
+      "seed": 310126199
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "A steel sleeve used as a compression limiter for an alternator splash shield is a vehicle part accessory not classified elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

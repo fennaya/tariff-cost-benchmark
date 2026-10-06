@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359729",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8544493080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f06e20ec-3264-44f1-be2e-59213841598b",
+    "object": "chat.completion",
+    "created": 1790733154,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.00.00\", \"reason\": \"The product is a 2\u2011conductor insulated copper data cable rated 250\u202fV, falling under HTS heading 8544 for insulated wires and cables not exceeding 1,000\u202fV.\"}",
+          "reasoning": "We need HTS code for data cable, 2 insulated copper conductors, PVC sheath, 250V, data. Likely 8544.42.00? Let's see: HTS 8544 covers insulated wire and cable. 8544.42 is \"Other insulated (including enamelled) wire, cable and other insulated conductors, for a voltage not exceeding 1,000 V\". Subheading 8544.42.90 maybe. 10-digit: 8544.42.00.00? Actually 8544.42.00.00 is \"Other insulated wire, cable and other insulated conductors, for a voltage not exceeding 1,000 V\". That seems right. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.265854017,
+      "prompt_tokens": 246,
+      "prompt_time": 0.082451418,
+      "completion_tokens": 220,
+      "completion_time": 0.626868345,
+      "total_tokens": 466,
+      "total_time": 0.709319763,
+      "completion_tokens_details": {
+        "reasoning_tokens": 150
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4b2f03d631",
+    "x_groq": {
+      "id": "req_01m3r06xk4e0brte8tmya78akn",
+      "seed": 945340811
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8544420000",
+  "predicted_reason": "The product is a 2\u2011conductor insulated copper data cable rated 250\u202fV, falling under HTS heading 8544 for insulated wires and cables not exceeding 1,000\u202fV.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

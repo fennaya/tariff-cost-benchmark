@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360727",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "2935906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9d2b4948-d144-4e90-9884-8b3ce7c7a089",
+    "object": "chat.completion",
+    "created": 1790771437,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The description refers to printed informational material about FDA regulations, which falls under printed books, pamphlets, and other printed matter not elsewhere specified.\"\n}",
+          "reasoning": "We need to classify. The description is about FDA info, not a product. Likely not classifiable, maybe \"miscellaneous printed material\" 4901.99.00? It's informational pamphlet. Use 4901.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205445834,
+      "prompt_tokens": 242,
+      "prompt_time": 0.01305106,
+      "completion_tokens": 110,
+      "completion_time": 0.232617704,
+      "total_tokens": 352,
+      "total_time": 0.245668764,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3s4q7p8ecm8advc699zyjj0",
+      "seed": 910318068
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The description refers to printed informational material about FDA regulations, which falls under printed books, pamphlets, and other printed matter not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

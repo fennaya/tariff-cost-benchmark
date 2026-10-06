@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361765",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "4823700040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8ec991e9-a6b6-4448-a2d8-821ea0d68983",
+    "object": "chat.completion",
+    "created": 1790804784,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4819.10.0000\",\n  \"reason\": \"Molded paper pulp packaging inserts are classified under HTS chapter 48 as cartons, boxes and cases of paper pulp, paperboard or paper.\"\n}",
+          "reasoning": "Need HTS for molded paper pulp packaging inserts. Likely 4819.10.0000? That's paperboard, paper pulp, molded. Actually HTS 4819.10.00 is \"Cartons, boxes and cases, of paper pulp, paperboard or paper, not elsewhere specified\". Inserts maybe 4819.10.001? Use 4819.10.0000."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206002962,
+      "prompt_tokens": 188,
+      "prompt_time": 0.039227627,
+      "completion_tokens": 144,
+      "completion_time": 0.312457835,
+      "total_tokens": 332,
+      "total_time": 0.351685462,
+      "completion_tokens_details": {
+        "reasoning_tokens": 83
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3t4gx1be1trcs4jsgvczm3d",
+      "seed": 2143744371
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4819100000",
+  "predicted_reason": "Molded paper pulp packaging inserts are classified under HTS chapter 48 as cartons, boxes and cases of paper pulp, paperboard or paper.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

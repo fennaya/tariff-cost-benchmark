@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356879",
+  "rulingDate": "2026-01-09T00:00:00",
+  "true_code": "0904227600",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d21b2e1d-543e-441b-a2e0-70447b7ffda3",
+    "object": "chat.completion",
+    "created": 1790725909,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0904.20.30.00\", \"reason\": \"Red chili peppers that are dried, heat\u2011treated and ground qualify under heading 0904 (chili peppers) subheading 0904.20 (dried) and further classified as other dried pepper preparations.\"}",
+          "reasoning": "Need HTS for chili pepper powder. Likely 0904.20.00.00? Let's check: 0904 is \"Chili peppers and other peppers\". 0904.10 is fresh or chilled; 0904.20 is dried. For ground pepper? 0904.20.30? Actually 0904.20.30 is \"Other\". Need 10-digit: 0904.20.30.00? Let's assume 0904.20.30.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294121184,
+      "prompt_tokens": 254,
+      "prompt_time": 0.010239095,
+      "completion_tokens": 177,
+      "completion_time": 0.366502267,
+      "total_tokens": 431,
+      "total_time": 0.376741362,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3qs9t1tebjb04e4nbf0xca2",
+      "seed": 1372214183
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0904203000",
+  "predicted_reason": "Red chili peppers that are dried, heat\u2011treated and ground qualify under heading 0904 (chili peppers) subheading 0904.20 (dried) and further classified as other dried pepper preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

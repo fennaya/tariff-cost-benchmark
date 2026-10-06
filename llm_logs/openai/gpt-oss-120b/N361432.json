@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361432",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8541430010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-13216bca-4bb4-43e3-b332-bbdc88308d12",
+    "object": "chat.completion",
+    "created": 1790794186,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.30.00\", \"reason\": \"A non-self-propelled wheeled trailer used for transport, classified under heading 8716 as trailers and semi\u2011trailers, regardless of the attached solar panels.\"}",
+          "reasoning": "We need HTS code. Solar-powered trailer, steel chassis, no electronics. Likely under \"trailers and semi-trailers\" 8716.30? 8716.30.00 is \"Trailers and semi-trailers, other than those of heading 8714\". But with solar panels attached maybe classified under \"solar panels\" 8541.40? But it's a trailer, not self-propelled, primary function transport. So HTS 8716.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048736811,
+      "prompt_tokens": 313,
+      "prompt_time": 0.016545089,
+      "completion_tokens": 169,
+      "completion_time": 0.355084172,
+      "total_tokens": 482,
+      "total_time": 0.371629261,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3stdewwefwaeyf5c0rjnyc3",
+      "seed": 939233959
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87163000",
+  "predicted_reason": "A non-self-propelled wheeled trailer used for transport, classified under heading 8716 as trailers and semi\u2011trailers, regardless of the attached solar panels.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

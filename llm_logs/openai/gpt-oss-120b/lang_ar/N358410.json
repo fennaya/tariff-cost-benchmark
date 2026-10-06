@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358410",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "2933394100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fb89df6d-519e-41f9-b867-6035eb9a4696",
+    "object": "chat.completion",
+    "created": 1790904862,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"The product is a pharmaceutical active ingredient (PDE4 inhibitor) in powder form for therapeutic use, classified under HTSUS 3004.90.00 for other medicaments not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for pharmaceutical active ingredient, PDE4 inhibitor, powder. Likely under 3004.90.00? 3004 is medicaments consisting of mixed or unmixed products for therapeutic use, not elsewhere specified. PDE4 inhibitor as active pharmaceutical ingredient maybe 3004.90.00 (Other medicaments). So provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018119247,
+      "prompt_tokens": 208,
+      "prompt_time": 0.009292991,
+      "completion_tokens": 142,
+      "completion_time": 0.295250074,
+      "total_tokens": 350,
+      "total_time": 0.304543065,
+      "completion_tokens_details": {
+        "reasoning_tokens": 72
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3x3z15we7t9kqw0af63yxjp",
+      "seed": 931101765
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "The product is a pharmaceutical active ingredient (PDE4 inhibitor) in powder form for therapeutic use, classified under HTSUS 3004.90.00 for other medicaments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

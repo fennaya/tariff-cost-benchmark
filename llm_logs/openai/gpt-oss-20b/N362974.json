@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362974",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "2005999700",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6caa8d8d-1d3e-4552-838b-1dffbf0a3174",
+    "object": "chat.completion",
+    "created": 1790755369,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0713.10.90\",\"reason\":\"Processed, dehydrated black garlic bulbs intended for human consumption.\"}",
+          "reasoning": "Need HTS 10-digit. Dehydrated black garlic, processed garlic. Likely 0713.10.10? Actually 0713 is \"Garlic, fresh or chilled\". For processed: 0713.10.10 is \"Garlic, fresh or chilled, in the form of whole bulbs\". For processed: 0713.10.20? Wait 0713.10.20 is \"Garlic, fresh or chilled, in the form of whole bulbs, other\". But dehydrated? Maybe 0713.10.30? Let's check: 0713.10.30 is \"Garlic, fresh or chilled, in the form of whole bulbs, other\". Not right. For processed garlic: 0713.10.90? Actually 0713.10.90 is \"Garlic, fresh or chilled, in the form of whole bulbs, other\". Hmm.\n\nMaybe 0713.10.10 is for fresh. For processed: 0713.10.20? Wait 0713.10.20 is \"Garlic, fresh or chilled, in the form of whole bulbs, other\". I'm uncertain.\n\nBetter: 0713.10.10 is for fresh. For processed: 0713.10.20? Actually 0713.10.20 is \"Garlic, fresh or chilled, in the form of whole bulbs, other\". Might be same.\n\nBut dehydrated black garlic is processed, not fresh. Could be 0713.10.90? Let's choose 0713.10.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.046298754,
+      "prompt_tokens": 729,
+      "prompt_time": 0.039358989,
+      "completion_tokens": 363,
+      "completion_time": 0.417897878,
+      "total_tokens": 1092,
+      "total_time": 0.457256867,
+      "completion_tokens_details": {
+        "reasoning_tokens": 327
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3rncwdpekrtf10qwpsjt4hm",
+      "seed": 653330508
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "07131090",
+  "predicted_reason": "Processed, dehydrated black garlic bulbs intended for human consumption.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

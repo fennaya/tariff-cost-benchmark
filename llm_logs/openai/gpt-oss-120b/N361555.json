@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361555",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "1905901049",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6a6c46d5-8181-4874-a1db-f561632a627a",
+    "object": "chat.completion",
+    "created": 1790798104,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1905.90.90\", \"reason\": \"All items are ready\u2011baked, frozen bakery products (pretzels, breads, rolls) classified under other frozen bakery goods\"}",
+          "reasoning": "We need HTS for frozen baked goods: likely 1905.90.90? Actually baked goods frozen: 1905.90.90 is \"Other bakery products, not elsewhere specified, frozen\". Could be 1905.90.10? Let's pick 1905.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.140382827,
+      "prompt_tokens": 565,
+      "prompt_time": 0.027369668,
+      "completion_tokens": 116,
+      "completion_time": 0.248005039,
+      "total_tokens": 681,
+      "total_time": 0.275374707,
+      "completion_tokens_details": {
+        "reasoning_tokens": 63
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_be28f5c9f2",
+    "x_groq": {
+      "id": "req_01m3sy519fe8mrpzac7vr88hgg",
+      "seed": 661095130
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "19059090",
+  "predicted_reason": "All items are ready\u2011baked, frozen bakery products (pretzels, breads, rolls) classified under other frozen bakery goods",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362226",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8704310120",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-feb572ad-373b-4d9f-8fbc-67df613e3a93",
+    "object": "chat.completion",
+    "created": 1790821279,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8704.99.10.00\",\n  \"reason\": \"These are off\u2011road utility terrain vehicles with internal combustion engines, classified under heading 8704 (other motor vehicles) and subheading 8704.99 (other vehicles not elsewhere specified).\"\n}",
+          "reasoning": "Need HTS for off-road utility vehicles > 1000 cc? Likely 8704.99.00.00? 8704 covers motor vehicles for the transport of goods, other vehicles. 8704.99 is other. 8703 is motor cars. UTVs are 8704.99.10? 10-digit: 8704.99.10.00? Check: 8704.99.10.00 = Other vehicles, not elsewhere specified, with spark-ignition engine, other than those of heading 8703. Likely. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306107644,
+      "prompt_tokens": 970,
+      "prompt_time": 0.206665729,
+      "completion_tokens": 195,
+      "completion_time": 0.402568548,
+      "total_tokens": 1165,
+      "total_time": 0.609234277,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3tm88dqefnrfq5km47sz3km",
+      "seed": 1949866343
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8704991000",
+  "predicted_reason": "These are off\u2011road utility terrain vehicles with internal combustion engines, classified under heading 8704 (other motor vehicles) and subheading 8704.99 (other vehicles not elsewhere specified).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

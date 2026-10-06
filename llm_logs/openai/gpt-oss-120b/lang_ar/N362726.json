@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362726",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8305903010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-306f05df-4add-4043-a76f-e64f1516f2a9",
+    "object": "chat.completion",
+    "created": 1790904647,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8305.10.00\", \"reason\": \"The item is a decorative paper clip made of a zinc alloy, classified as a base metal household article under heading 8305.10.00.\"}",
+          "reasoning": "We need HTS for decorative paper clip made of zinc alloy. Likely heading 8305.10.00? 8305 covers \"Furniture fittings, parts thereof\". Actually paper clips are \"Other articles of base metal, plated with gold\"? Could be 8305.10.00 \"Base metal household articles\". But paper clip is \"Other articles of base metal, not elsewhere specified\". Check 8305.10.00 is \"Base metal household articles\". Might be 8305.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017696969,
+      "prompt_tokens": 340,
+      "prompt_time": 0.016797609,
+      "completion_tokens": 166,
+      "completion_time": 0.34716439,
+      "total_tokens": 506,
+      "total_time": 0.363961999,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3x3rf35ee5s9stk3q0jgmns",
+      "seed": 1848103120
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83051000",
+  "predicted_reason": "The item is a decorative paper clip made of a zinc alloy, classified as a base metal household article under heading 8305.10.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

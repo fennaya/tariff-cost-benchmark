@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357713",
+  "rulingDate": "2026-02-09T00:00:00",
+  "true_code": "9401614011",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3142dfa5-63ad-452c-a7b8-2dc20ddfdeae",
+    "object": "chat.completion",
+    "created": 1790726364,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9401.61.0010\", \"reason\": \"Upholstered single seat with a wooden frame and no recline mechanism falls under HTSUS 9401.61.0010\"}",
+          "reasoning": "We need HTS code for upholstered seat, wooden frame, not recliner. Likely 9401.61.00? Actually 9401.61.00 is \"Seats, with wooden frames, upholstered\". Check: 9401.61.00 - Seats, with wooden frames, upholstered, not motorized. So 10-digit: 9401.61.0010? 10-digit includes country? US uses 10-digit: 9401.61.0010 for \"Seats, with wooden frames, upholstered, not motorized\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087588776,
+      "prompt_tokens": 339,
+      "prompt_time": 0.017217467,
+      "completion_tokens": 174,
+      "completion_time": 0.359920654,
+      "total_tokens": 513,
+      "total_time": 0.377138121,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qsqpr1enbaf4pctvvr75yb",
+      "seed": 75511852
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9401610010",
+  "predicted_reason": "Upholstered single seat with a wooden frame and no recline mechanism falls under HTSUS 9401.61.0010",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

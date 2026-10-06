@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359360",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "3004320060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2346c35a-7502-4826-9f8f-6cf7205a1916",
+    "object": "chat.completion",
+    "created": 1790727241,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Classified under medicinal preparations containing hormones or corticosteroids not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS code for hydrocortisone sodium succinate injection. Likely under 3004.90.00? Actually corticosteroids: 3004.90.00 is \"Medicaments ... other\". Hydrocortisone sodium succinate is a hormone, maybe 3004.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.092097554,
+      "prompt_tokens": 203,
+      "prompt_time": 0.055077122,
+      "completion_tokens": 110,
+      "completion_time": 0.231761256,
+      "total_tokens": 313,
+      "total_time": 0.286838378,
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3qtjfm5e4fb40783b0a8skd",
+      "seed": 590260203
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Classified under medicinal preparations containing hormones or corticosteroids not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362507",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-25354ada-f4e1-4930-aa05-0dae54cf6e81",
+    "object": "chat.completion",
+    "created": 1790830516,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.30.00\",\n  \"reason\": \"The equipment is a rotary filter press used to dewater sludge, classifiable as other filtering or purifying machinery for liquids.\"\n}",
+          "reasoning": "We need HTS code for sludge dewatering equipment. Likely 8421? 8421.21? Let's think: \"Centrifuges, filtering or purifying machinery for liquids\" maybe 8421.21 \"Centrifuges, other than those of heading 8422\". Rotary press for dewatering sludge maybe classified under 8421.21 \"Centrifuges, other than those of heading 8422\". But also could be 8421.30 \"Other filtering or purifying machinery\". Actually 8421.30 is \"Other filtering or purifying machinery, for liquids\". The rotary press is a filter press. Filter presses are under 8421.30? Check: HTS 8421.30.00 \"Other filtering or purifying machinery, for liquids\". Yes filter presses. So choose 8421.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207227932,
+      "prompt_tokens": 475,
+      "prompt_time": 0.022073564,
+      "completion_tokens": 241,
+      "completion_time": 0.504748157,
+      "total_tokens": 716,
+      "total_time": 0.526821721,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3tx2584es2b4t82xhqx9wgv",
+      "seed": 1356980327
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84213000",
+  "predicted_reason": "The equipment is a rotary filter press used to dewater sludge, classifiable as other filtering or purifying machinery for liquids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

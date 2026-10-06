@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358273",
+  "rulingDate": "2026-02-13T00:00:00",
+  "true_code": "3822190030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-539eac01-bf45-40b5-8384-d696336eb5b8",
+    "object": "chat.completion",
+    "created": 1790726625,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3002.90.99\",\n  \"reason\": \"ELISA diagnostic kits are classified under 3002.90.99 as other diagnostic or laboratory reagents.\"\n}",
+          "reasoning": "Need HTS for ELISA kits, likely under 3002.90? Actually diagnostic kits: 3002.90.99 (other diagnostic or laboratory reagents). 3002.90.99 is \"Other diagnostic or laboratory reagents, including those for immunoassay\". So provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.052877115,
+      "prompt_tokens": 724,
+      "prompt_time": 0.037930666,
+      "completion_tokens": 116,
+      "completion_time": 0.240030164,
+      "total_tokens": 840,
+      "total_time": 0.27796083,
+      "completion_tokens_details": {
+        "reasoning_tokens": 64
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3qsznsheb1tv0v8zc20w940",
+      "seed": 856641677
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30029099",
+  "predicted_reason": "ELISA diagnostic kits are classified under 3002.90.99 as other diagnostic or laboratory reagents.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

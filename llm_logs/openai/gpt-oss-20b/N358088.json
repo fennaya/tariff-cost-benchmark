@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358088",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "4201006000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-49bc984c-69d2-498e-b48d-3cad06507ced",
+    "object": "chat.completion",
+    "created": 1790607874,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6109.90.90.00\",\"reason\":\"Pet costume made of polyester with foam lining falls under 'Other clothing and accessories for animals'.\"}",
+          "reasoning": "Need HTS code for pet costume made of polyester with foam lining. Likely 6109.90.90? Actually clothing for animals: 6109.90.90 \"Other clothing and accessories for animals, not elsewhere specified or included\". 6109.90.90 is 10-digit? 6109.90.90 is 8 digits. Need 10-digit: 6109.90.90?? Actually 10-digit: 6109.90.90?? Wait 10-digit format: 6109.90.90?? maybe 6109.90.90?? But 10-digit includes 2 decimal places: 6109.90.90?? Actually 10-digit: 6109.90.90??. For example 6109.90.90.00? But standard is 10-digit: 6109.90.90.00. So answer: 6109.90.90.00. Reason: pet costume."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203251634,
+      "prompt_tokens": 197,
+      "prompt_time": 0.011397125,
+      "completion_tokens": 248,
+      "completion_time": 0.282632588,
+      "total_tokens": 445,
+      "total_time": 0.294029713,
+      "completion_tokens_details": {
+        "reasoning_tokens": 203
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5979a0e1b7",
+    "x_groq": {
+      "id": "req_01m3m8qnfceq68yhjmqc7e80he",
+      "seed": 1468383415
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6109909000",
+  "predicted_reason": "Pet costume made of polyester with foam lining falls under 'Other clothing and accessories for animals'.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362456",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "8479899597",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c51be4ca-c29a-4c6b-9ec2-cb661eedee4b",
+    "object": "chat.completion",
+    "created": 1790829541,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7309.00.90\",\n  \"reason\": \"Classified as other steel pressure vessels/tanks (iron or steel) used for water storage and pressure regulation.\"\n}",
+          "reasoning": "We need HTS code for pressure tanks with diaphragm, used in water pumping. Likely 8412? Actually 8412 is \"Air or vacuum pumps, liquid pumps, etc.\" Tanks maybe 8419? 8419.10 is \"Parts\". Pressure vessels: 7309? 7309.00.90 \"Other tanks, casks, etc., of iron or steel\". But with internal diaphragm maybe 7309.00.90. However for pressure vessels for water supply maybe 8419.89? Let's think: HTS 8419.89.90 \"Other parts\". Not.\n\nBetter: 7309.00.90 \"Other tanks, casks, drums, vats and similar containers, of iron or steel\". That seems generic. Use 7309.00.90.\n\nProvide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.170419106,
+      "prompt_tokens": 434,
+      "prompt_time": 0.072951833,
+      "completion_tokens": 223,
+      "completion_time": 0.467568639,
+      "total_tokens": 657,
+      "total_time": 0.540520472,
+      "completion_tokens_details": {
+        "reasoning_tokens": 171
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m3tw4dcse56vagmanwqjyx4a",
+      "seed": 2119825188
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73090090",
+  "predicted_reason": "Classified as other steel pressure vessels/tanks (iron or steel) used for water storage and pressure regulation.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

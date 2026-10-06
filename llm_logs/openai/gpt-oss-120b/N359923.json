@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359923",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "8807300030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-624cca65-870a-4c99-af32-33a085780e3d",
+    "object": "chat.completion",
+    "created": 1790746745,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.40.00\",\n  \"reason\": \"The item is a purely mechanical planetary gear reducer/gearbox used in aircraft, classifiable under HTS Chapter 84 heading 8483 for gear boxes and speed changers.\"\n}",
+          "reasoning": "We need HTS code for mechanical gear reducer, not hydraulic. Likely 8483.40.00? Let's think: 8483 covers transmission shafts, gears, gearboxes. 8483.40 is \"Gear boxes and other speed changers, including torque converters\". 8483.40.00 is for gearboxes. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296767941,
+      "prompt_tokens": 509,
+      "prompt_time": 0.025801094,
+      "completion_tokens": 139,
+      "completion_time": 0.292599915,
+      "total_tokens": 648,
+      "total_time": 0.318401009,
+      "completion_tokens_details": {
+        "reasoning_tokens": 73
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3rd5ns5ex9t58100twa46ay",
+      "seed": 1693086157
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84834000",
+  "predicted_reason": "The item is a purely mechanical planetary gear reducer/gearbox used in aircraft, classifiable under HTS Chapter 84 heading 8483 for gear boxes and speed changers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

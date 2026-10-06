@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358322",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e375d4fc-4a7d-426a-a5b1-872ccc50a8e7",
+    "object": "chat.completion",
+    "created": 1790726662,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.00\", \"reason\": \"Molded silicone plastic items not classified elsewhere fall under 'Other articles of plastics' (HTS 3926.90.00).\"}",
+          "reasoning": "Need HTS for silicone molded stress relief stones. Likely under 3926.90.00? That's \"Other articles of plastics\". But maybe 3924.90.00 \"Other articles of plastics\". Sensory stones maybe \"toys\". Could be 9503.00.00 \"Tricycles, dolls etc\"? Actually 9503 covers toys. But these are not toys, they are \"stress relief devices\". Could be 9025.19.00 \"Instruments and appliances for measuring or detecting...\". No.\n\nProbably 3926.90.00 \"Other articles of plastics\". Use 3926.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04856744,
+      "prompt_tokens": 232,
+      "prompt_time": 0.009396063,
+      "completion_tokens": 192,
+      "completion_time": 0.401026819,
+      "total_tokens": 424,
+      "total_time": 0.410422882,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3qt0t2pe389qg6v80hd5xew",
+      "seed": 1626345475
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39269000",
+  "predicted_reason": "Molded silicone plastic items not classified elsewhere fall under 'Other articles of plastics' (HTS 3926.90.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

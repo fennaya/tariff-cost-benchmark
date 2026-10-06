@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359070",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3bee2b5f-bf50-482b-9d29-23c2b26e9b9e",
+    "object": "chat.completion",
+    "created": 1790616023,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8518.90.90.00\",\"reason\":\"The faceted cup assemblies are components of an electrical headset, fitting the HTSUS heading for other electrical apparatus, including headsets.\"}",
+          "reasoning": "Need HTS code for magnesium ear cup housing for headset. Likely 8504.40.90? Actually 8504 is electrical apparatus for hearing. But ear cups are part of headset. Could be 8518.90.90? Wait 8518 is other electrical apparatus. But ear cups are part of headset, which is 8518.90.90? Actually 8518.90.90 is \"Other\" for electrical apparatus. But maybe 8518.90.90 includes headphones. But ear cups are part of headset. Could be 8518.90.90. But 8518.90.90 is \"Other\" for electrical apparatus. But maybe 8518.90.90 includes \"headsets\". 8518.90.90 is \"Other\". So code 8518.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197572506,
+      "prompt_tokens": 266,
+      "prompt_time": 0.013193533,
+      "completion_tokens": 231,
+      "completion_time": 0.255647547,
+      "total_tokens": 497,
+      "total_time": 0.26884108,
+      "completion_tokens_details": {
+        "reasoning_tokens": 178
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_37c9245f64",
+    "x_groq": {
+      "id": "req_01m3mggcbfec7sds3as99ech8w",
+      "seed": 533559414
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8518909000",
+  "predicted_reason": "The faceted cup assemblies are components of an electrical headset, fitting the HTSUS heading for other electrical apparatus, including headsets.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

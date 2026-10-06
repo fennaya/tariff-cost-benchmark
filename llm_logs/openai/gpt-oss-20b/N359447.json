@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359447",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c68df85e-a4c1-4905-969b-a0d586fbfe95",
+    "object": "chat.completion",
+    "created": 1790632567,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90.00\",\"reason\":\"Riociguat is a medicinal drug, classified under 3004.90.90.00 for other medicinal preparations containing active ingredients not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for pharmaceutical drug. Generic drug: Riociguat. HTS 3004.90.90? Actually 3004.90.90 is \"Other medicinal preparations containing other active ingredients\". For drugs: 3004.90.90.00. So 10-digit: 3004.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295991118,
+      "prompt_tokens": 239,
+      "prompt_time": 0.011929914,
+      "completion_tokens": 134,
+      "completion_time": 0.141153098,
+      "total_tokens": 373,
+      "total_time": 0.153083012,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3n0981tehzrhcyxbe94xhq6",
+      "seed": 215730209
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Riociguat is a medicinal drug, classified under 3004.90.90.00 for other medicinal preparations containing active ingredients not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

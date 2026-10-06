@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359445",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3006305000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0baacddd-f929-4f1b-a98e-a7ba43161055",
+    "object": "chat.completion",
+    "created": 1790727297,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Classified under medicinal preparations containing other active ingredients, specifically injectable diagnostic reagents like fluorescein.\"}",
+          "reasoning": "Need HTS for fluorescein injection, diagnostic. Likely 3004.90.00? Actually fluorescein sodium injection is under 3004.90.00 (Medicaments containing other active ingredients). Could be 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018896442,
+      "prompt_tokens": 198,
+      "prompt_time": 0.008319154,
+      "completion_tokens": 105,
+      "completion_time": 0.216220247,
+      "total_tokens": 303,
+      "total_time": 0.224539401,
+      "completion_tokens_details": {
+        "reasoning_tokens": 58
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3qtm686ehqtsfbe03zj0xs8",
+      "seed": 1145204953
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Classified under medicinal preparations containing other active ingredients, specifically injectable diagnostic reagents like fluorescein.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358167",
+  "rulingDate": "2026-02-09T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-aebc6011-66ed-498c-925a-27b5b8871747",
+    "object": "chat.completion",
+    "created": 1790906672,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6304.99.00\",\n  \"reason\": \"These are non\u2011apparel, decorative textile gift toppers made of felt and ribbon, classified under other made\u2011up textile articles not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for felt gift toppers, textile accessories, not apparel. Likely 6302? 6302.91? 6302.91.00? Let's think: \"Other made-up articles, including dress patterns\" 6302.91.00 is \"Other made-up articles, of textile materials, not elsewhere specified\". Could be 6304? 6304.99? Actually gift toppers are \"decorative articles\" maybe 6304.99.00 \"Other made-up articles, of textile materials, not elsewhere specified\". 6304 is \"Other made-up articles, including dress patterns\". 6304.99 is \"Other\". I'd choose 6304.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018171889,
+      "prompt_tokens": 368,
+      "prompt_time": 0.018888158,
+      "completion_tokens": 210,
+      "completion_time": 0.442856978,
+      "total_tokens": 578,
+      "total_time": 0.461745136,
+      "completion_tokens_details": {
+        "reasoning_tokens": 150
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3x5p8jperbr2zfs8rcwtqrn",
+      "seed": 968589938
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63049900",
+  "predicted_reason": "These are non\u2011apparel, decorative textile gift toppers made of felt and ribbon, classified under other made\u2011up textile articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

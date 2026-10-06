@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362910",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7013998090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-673d0987-3268-4824-a5a8-3703b985b3d2",
+    "object": "chat.completion",
+    "created": 1790842267,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7018.90.90\", \"reason\": \"Decorative glass cylinders with internal LEDs are classified as other glassware not elsewhere specified under heading 7018.\"}",
+          "reasoning": "We need HTS for decorative glass articles with LED but not lighting. Likely 7017.90.90? 7017 covers glassware of a kind used for tableware etc. Decorative glass articles: 7018? Actually 7018 is \"Other glassware\". 7018.90.90 is \"Other\". But decorative glass objects maybe 7017.90.90 is \"Other glassware of a kind used for tableware\". Might be 7018.90.90 for \"Other glassware, not elsewhere specified\". LED internal maybe considered \"Other\". I'd choose 7018.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.337427263,
+      "prompt_tokens": 293,
+      "prompt_time": 0.081072371,
+      "completion_tokens": 179,
+      "completion_time": 0.382691561,
+      "total_tokens": 472,
+      "total_time": 0.463763932,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3v88rfhere998btq91hvfpv",
+      "seed": 747500273
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "70189090",
+  "predicted_reason": "Decorative glass cylinders with internal LEDs are classified as other glassware not elsewhere specified under heading 7018.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

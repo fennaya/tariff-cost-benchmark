@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357819",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "3004200075",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f3f7f49c-40f0-442f-acc9-5f8aa28260a8",
+    "object": "chat.completion",
+    "created": 1790904703,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.90\",\n  \"reason\": \"Doxorubicin hydrochloride injection is classified under Chapter 30 as a pharmaceutical preparation (antineoplastic) not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for doxorubicin hydrochloride injection, 20 mg/10ml etc. Likely under 3004.90? Actually doxorubicin is an antineoplastic drug, chemical. HTS Chapter 30: Pharmaceutical products. Specific code 3004.90.90? Let's check: 3004.90.90 is \"Other pharmaceutical products\". But there is 3004.90.10 for \"antibiotics\"? Not sure. Doxorubicin is antineoplastic, maybe 3004.90.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.297954194,
+      "prompt_tokens": 268,
+      "prompt_time": 0.015260698,
+      "completion_tokens": 176,
+      "completion_time": 0.365196226,
+      "total_tokens": 444,
+      "total_time": 0.380456924,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m3x3t5v2eaf9zsrnszp6bfa0",
+      "seed": 952852000
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Doxorubicin hydrochloride injection is classified under Chapter 30 as a pharmaceutical preparation (antineoplastic) not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

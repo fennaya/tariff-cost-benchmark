@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357387",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7013999090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0b123412-f334-45f4-8914-886de7e6617e",
+    "object": "chat.completion",
+    "created": 1790726159,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7018.90.90\", \"reason\": \"Classified as a decorative glass article (non-tableware) made of molded glass, falling under heading 7018 for other glassware, other: other.\"}",
+          "reasoning": "Need HTS for glass decorative objects, not for automotive parts. Likely 7017.90.90? 7017 covers glassware of a kind used for tableware etc. Decorative glass articles: 7018? Actually 7018 is \"Other glassware, of a kind used for tableware, etc.\" 7017 is \"Tableware, kitchenware, other household articles, of glass\". For decorative objects: 7018.90.90 is \"Other: Other: Other\". Let's pick 7018.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.245907545,
+      "prompt_tokens": 281,
+      "prompt_time": 0.032931655,
+      "completion_tokens": 173,
+      "completion_time": 0.360238056,
+      "total_tokens": 454,
+      "total_time": 0.393169711,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3qshetdecet0rbeh47js73c",
+      "seed": 275946948
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "70189090",
+  "predicted_reason": "Classified as a decorative glass article (non-tableware) made of molded glass, falling under heading 7018 for other glassware, other: other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

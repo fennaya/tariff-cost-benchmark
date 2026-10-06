@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357365",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "4407130000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-13089def-373b-4f73-8daf-f6367918cdb5",
+    "object": "chat.completion",
+    "created": 1790904926,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4405.10.00.00\",\"reason\":\"Construction lumber of spruce, pine or fir (SPF) of dimensions up to 2\\\" thickness, 3\\\" width, and 7' length, used for building slatted bed frames.\"}",
+          "reasoning": "Need HTS 10-digit. Construction lumber SPF. Likely 4405.10.00.00? Actually 4405.10.00.00 is \"Lumber, of spruce, pine or fir, of a kind used for construction, of a dimension not exceeding 2 inches in thickness, 3 inches in width, and 7 feet in length\". But our dimensions vary up to 6 inches width, 10 feet length. Might be 4405.10.00.00 covers up to 2\" thickness, 3\" width, 7' length. For larger, maybe 4405.20.00.00? Let's check: 4405.20.00.00 is \"Lumber, of spruce, pine or fir, of a kind used for construction, of a dimension not exceeding 2 inches in thickness, 4 inches in width, and 7 feet in length\". For 6\" width maybe 4405.30.00.00? Actually 4405.30.00.00 is \"Lumber, of spruce, pine or fir, of a kind used for construction, of a dimension not exceeding 2 inches in thickness, 6 inches in width, and 7 feet in length\". For 10 feet length maybe 4405.40.00.00? Not sure. But likely 4405.10.00.00 is general. I'll choose 4405.10.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204923265,
+      "prompt_tokens": 408,
+      "prompt_time": 0.022094308,
+      "completion_tokens": 371,
+      "completion_time": 0.394871893,
+      "total_tokens": 779,
+      "total_time": 0.416966201,
+      "completion_tokens_details": {
+        "reasoning_tokens": 305
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3x4100wen8bt2q2wyg3hxwg",
+      "seed": 1454073801
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4405100000",
+  "predicted_reason": "Construction lumber of spruce, pine or fir (SPF) of dimensions up to 2\" thickness, 3\" width, and 7' length, used for building slatted bed frames.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

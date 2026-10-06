@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361403",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-cec68878-4d6f-4b7a-b11b-14cc3b26d321",
+    "object": "chat.completion",
+    "created": 1790701535,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6204.90.00.00\",\"reason\":\"Unfinished garment with raw cape, sleeves, and hem, closed by hook and loop fastener, fits the category of other unfinished garments of synthetic fibers.\"}",
+          "reasoning": "We need HTS code. Description: \"deep back opening closed with a single small tab of hook and loop fastener. The attached cape, sleeves and hem bottom are raw and unfinished.\" Sounds like a garment, unfinished, raw. Maybe a jacket? But raw unfinished cape, sleeves, hem bottom raw. Could be a \"coat, jacket, or other garment\" but unfinished raw. Maybe \"unfinished garments\" category: 6204.90. But 10-digit? 6204.90.00.00? Actually 6204.90 is \"Other garments of wool or fine animal hair\". But raw unfinished? Maybe 6204.90.00.00. But hook and loop fastener? Could be \"other garments of synthetic fibers\". 6204.90.00.00 is \"Other garments of synthetic fibers\". But raw unfinished? Might be 6204.90.00.00. Let's output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195641867,
+      "prompt_tokens": 182,
+      "prompt_time": 0.008814266,
+      "completion_tokens": 249,
+      "completion_time": 0.273636777,
+      "total_tokens": 431,
+      "total_time": 0.282451043,
+      "completion_tokens_details": {
+        "reasoning_tokens": 192
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_66891002f6",
+    "x_groq": {
+      "id": "req_01m3q21zdgetvrz7dydfxqp7k7",
+      "seed": 629680720
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204900000",
+  "predicted_reason": "Unfinished garment with raw cape, sleeves, and hem, closed by hook and loop fastener, fits the category of other unfinished garments of synthetic fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

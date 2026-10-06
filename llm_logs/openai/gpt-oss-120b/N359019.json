@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359019",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "6210505555",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e76e5b67-68b7-4258-8bc4-13e8a299fa11",
+    "object": "chat.completion",
+    "created": 1790726995,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6205.30.0010\",\n  \"reason\": \"A unisex fishing vest made of woven nylon with polyurethane coating and polyester mesh knit components classified as a men's or boys' garment of man\u2011made fibers (non\u2011knitted) under heading 6205.30.\"\n}",
+          "reasoning": "We need HTS code for fishing vest, nylon coated, polyester mesh. Likely under 6204.63? Let's think: 6204 = women's or girls' suits etc? Actually 6204 is women's or girls' suits, etc. For men's or boys' garments: 6203. For outerwear? Fishing vest is a garment, maybe 6205? 6205 is \"Men's or boys' garments, other than suits, ensembles, jackets, etc.\" includes \"vests\". 6205.20 is \"Other garments, of cotton\". Need nylon/polyester. 6205.30 is \"Other garments, of man-made fibers\". So 6205.30.00? 10-digit: 6205.30.0010? Let's check: 6205.30.0010 is \"Other garments, of man-made fibers, not knitted or crocheted\". Our vest is woven nylon coated, plus mesh knit polyester. It's a combination, likely not knitted overall. So 6205.30.0010. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.616808803,
+      "prompt_tokens": 294,
+      "prompt_time": 0.016645405,
+      "completion_tokens": 296,
+      "completion_time": 0.611620809,
+      "total_tokens": 590,
+      "total_time": 0.628266214,
+      "completion_tokens_details": {
+        "reasoning_tokens": 221
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3qtay6je2qaqmqgjszcb7af",
+      "seed": 1288426078
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6205300010",
+  "predicted_reason": "A unisex fishing vest made of woven nylon with polyurethane coating and polyester mesh knit components classified as a men's or boys' garment of man\u2011made fibers (non\u2011knitted) under heading 6205.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

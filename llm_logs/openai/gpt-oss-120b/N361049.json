@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361049",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "6110202046",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8cc68b1e-0d67-404c-b827-ce08f6097341",
+    "object": "chat.completion",
+    "created": 1790781565,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.99.90\",\n  \"reason\": \"The description pertains to textile fiber products, which are generally classified under chapter 63; the most specific subheading for miscellaneous textile articles not elsewhere specified is 6302.99.90.\"\n}",
+          "reasoning": "We need to infer HTS code: product description is about labeling requirements, not a product. Likely \"Printed matter\" or \"Other\" but maybe \"Legal documents\"? Actually description is about textile fiber products labeling, not a specific product. Could be \"Textile fiber products, not elsewhere specified\" maybe 6302? But description is not a product. Might be \"Other\" 9801? Probably classification as \"Other\" 9801.00.00? Hmm.\n\nProbably the best is 9801.00.00 - \"Returned goods\". Not.\n\nMaybe 9706? No.\n\nGiven ambiguous, choose most generic: 6302.99.90 (Other made-up articles of textile). But description is about labeling, not product.\n\nI'll answer with 6302.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.01889943,
+      "prompt_tokens": 261,
+      "prompt_time": 0.0129293,
+      "completion_tokens": 234,
+      "completion_time": 0.487581702,
+      "total_tokens": 495,
+      "total_time": 0.500511002,
+      "completion_tokens_details": {
+        "reasoning_tokens": 166
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3sec9qje0v8cpqm1bw38a5q",
+      "seed": 1391219675
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029990",
+  "predicted_reason": "The description pertains to textile fiber products, which are generally classified under chapter 63; the most specific subheading for miscellaneous textile articles not elsewhere specified is 6302.99.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

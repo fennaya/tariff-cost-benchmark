@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362347",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4412523105",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cdcfe64f-f86a-44b5-af21-1e2f6e0305c2",
+    "object": "chat.completion",
+    "created": 1790824602,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.99.00.00\", \"reason\": \"Multilayer wood flooring panels (tongue-and-groove) not classified as parquet fall under heading 4412 for wood floor panels, specifically subheading 4412.99 for other wood flooring\"}",
+          "reasoning": "We need HTS code for multilayer wood flooring, tongue and groove, hardwood veneer over softwood core. Likely heading 4412? 4412.99? Let's think: 4412 is \"Floors, wall and ceiling panels, of wood, not parquet\". 4412.10 is \"Parquet\". 4412.90 is other. Subheading 4412.99.00? Actually 4412.99.00 is \"Other\". So 10-digit: 4412.99.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.304932342,
+      "prompt_tokens": 311,
+      "prompt_time": 0.014210955,
+      "completion_tokens": 186,
+      "completion_time": 0.388886721,
+      "total_tokens": 497,
+      "total_time": 0.403097676,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3tqdpczer38nje15k5tg5qq",
+      "seed": 1229713187
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4412990000",
+  "predicted_reason": "Multilayer wood flooring panels (tongue-and-groove) not classified as parquet fall under heading 4412 for wood floor panels, specifically subheading 4412.99 for other wood flooring",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

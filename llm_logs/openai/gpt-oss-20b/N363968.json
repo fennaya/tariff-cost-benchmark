@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363968",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "4419209000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-71f18305-cdcd-4376-ab61-82ad1d4ea818",
+    "object": "chat.completion",
+    "created": 1790775008,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Wooden cutting board falls under 7308.90.90.00, the HTSUS heading for other articles of wood, including cutting boards.\"}",
+          "reasoning": "Need HTS code for wooden cutting board. Likely 7308.90.90? Actually 7308.90.90 is other articles of wood. Cutting board is 7308.90.90. But 7308.90.90 is \"Other articles of wood\". 7308.90.90 includes \"cutting boards\". So 7308.90.90.00? 10-digit: 7308.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.083984639,
+      "prompt_tokens": 207,
+      "prompt_time": 0.011650412,
+      "completion_tokens": 158,
+      "completion_time": 0.196869733,
+      "total_tokens": 365,
+      "total_time": 0.208520145,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c5a89987dc",
+    "x_groq": {
+      "id": "req_01m3s846qzek9r4c4h1y895xkm",
+      "seed": 1389270531
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Wooden cutting board falls under 7308.90.90.00, the HTSUS heading for other articles of wood, including cutting boards.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

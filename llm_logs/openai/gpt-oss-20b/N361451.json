@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361451",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "8409915085",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-a7fd6b0c-362e-4fba-af29-1d375253d267",
+    "object": "chat.completion",
+    "created": 1790704506,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9900.00.0000\",\"reason\":\"The description does not provide any identifiable product characteristics, so it defaults to the general 'Other' category.\"}",
+          "reasoning": "The description is nonsense. Can't classify. Probably \"Other\" 9900? But HTS codes start with 99.99. Use 9900.00.00? Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04591986,
+      "prompt_tokens": 156,
+      "prompt_time": 0.009158889,
+      "completion_tokens": 86,
+      "completion_time": 0.090122983,
+      "total_tokens": 242,
+      "total_time": 0.099281872,
+      "completion_tokens_details": {
+        "reasoning_tokens": 40
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3q4wntyeansmfvy9t6vz61k",
+      "seed": 1568455156
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9900000000",
+  "predicted_reason": "The description does not provide any identifiable product characteristics, so it defaults to the general 'Other' category.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

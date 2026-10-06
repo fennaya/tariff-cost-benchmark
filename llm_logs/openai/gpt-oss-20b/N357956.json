@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357956",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "8479820040",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-12ab6e6d-9f71-4c86-a014-e86c79199d2b",
+    "object": "chat.completion",
+    "created": 1790607823,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8424.90.90 00\",\"reason\":\"Industrial mixing systems for chemicals are classified under 8424.90.90 00, other machinery for treating materials by mechanical means.\"}",
+          "reasoning": "Need HTS 10-digit. Industrial mixing equipment for chemicals. Likely 8424.90.90? Actually 8424.90.90 is \"Other machinery and apparatus for the treatment of materials by mechanical means\". But specific: 8424.90.90 is \"Other machinery and apparatus for the treatment of materials by mechanical means\". 8424.90.90 includes mixers. 10-digit: 8424.90.90XX. Need 10-digit: 8424.90.90 00? Actually 10-digit: 8424.90.90 00. So \"8424.90.90 00\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.292915053,
+      "prompt_tokens": 625,
+      "prompt_time": 0.040918524,
+      "completion_tokens": 192,
+      "completion_time": 0.223291268,
+      "total_tokens": 817,
+      "total_time": 0.264209792,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3m8p4b4ejz9c5mkr3ppy7nh",
+      "seed": 1186025347
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8424909000",
+  "predicted_reason": "Industrial mixing systems for chemicals are classified under 8424.90.90 00, other machinery for treating materials by mechanical means.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

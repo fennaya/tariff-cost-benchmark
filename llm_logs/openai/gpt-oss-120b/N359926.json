@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359926",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "9209998000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ea79fa2b-cf6d-4217-a049-f588edb9a4ff",
+    "object": "chat.completion",
+    "created": 1790746746,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7115.90.00\", \"reason\": \"Stamped bronze cymbal blanks are classified as other cymbals/gongs of other metal under heading 7115\"}",
+          "reasoning": "We need HTS for cymbal blanks of bronze. Likely heading 7115? Actually musical instruments metal: 7115.21? Let's think: 7115.21.00 - Cymbals, gongs, etc of brass? Check: 7115.21.00 is \"Cymbals, gongs and the like, of brass\". For bronze maybe 7115.20? Actually 7115.20 is \"Cymbals, gongs and the like, of other metal\". Need blanks not finished. Might be 7115.90? Let's guess 7115.90.00 - Other. But blanks are not yet cymbals. Could be under 7115.90.00 \"Other cymbals, gongs\". However blanks maybe classified under 7115.90.00 as \"Other cymbals, gongs and the like, of other metal\". I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048440882,
+      "prompt_tokens": 336,
+      "prompt_time": 0.017532462,
+      "completion_tokens": 244,
+      "completion_time": 0.507839524,
+      "total_tokens": 580,
+      "total_time": 0.525371986,
+      "completion_tokens_details": {
+        "reasoning_tokens": 195
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3rd5pmne95syzb6e9aeg1tt",
+      "seed": 605651651
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "71159000",
+  "predicted_reason": "Stamped bronze cymbal blanks are classified as other cymbals/gongs of other metal under heading 7115",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

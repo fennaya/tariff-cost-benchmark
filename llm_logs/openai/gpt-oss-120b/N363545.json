@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363545",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-991d8736-c346-470e-ae67-318389ef8458",
+    "object": "chat.completion",
+    "created": 1790857020,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7308.90.00\",\n  \"reason\": \"The galvanized steel H\u2011frame sign stake is a metal structure (non\u2011prefabricated) used to support signage, classifiable under heading 7308 for other structures and parts of structures of iron or steel.\"\n}",
+          "reasoning": "We need HTS code for galvanized steel sign frame. Likely under 7308? 7308.90.00? 7308 covers structures and parts of iron or steel, e.g., \"Other structures (excluding prefabricated buildings) and parts of structures, of iron or steel\". Sign frames maybe 7308.90.00 \"Other\". Could be 7315? 7315 is \"Tube or pipe fittings\". Not. 7307 is \"Tube or pipe fittings of iron or steel\". Not.\n\nProbably 7308.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205225553,
+      "prompt_tokens": 283,
+      "prompt_time": 0.02665823,
+      "completion_tokens": 194,
+      "completion_time": 0.405923953,
+      "total_tokens": 477,
+      "total_time": 0.432582183,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3vpb0q4ekab1sy9ne6ekvk4",
+      "seed": 1061487860
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73089000",
+  "predicted_reason": "The galvanized steel H\u2011frame sign stake is a metal structure (non\u2011prefabricated) used to support signage, classifiable under heading 7308 for other structures and parts of structures of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

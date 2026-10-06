@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357329",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-89cb0fd1-7f7a-4ac8-a200-b44d0be0a2d8",
+    "object": "chat.completion",
+    "created": 1790607431,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.20.00.00\",\"reason\":\"Herbal tincture extracts in glycerin-water solution are medicinal preparations containing glycerol.\"}",
+          "reasoning": "Need HTS code for herbal tincture extracts. Likely 3004.10.00.00? Actually 3004 is \"Medicinal or veterinary preparations\". 3004.10 is \"Medicinal preparations containing alcohol\". But glycerin not alcohol. 3004.20 is \"Medicinal preparations containing glycerol\". So 3004.20.00.00. Provide 10-digit: 3004.20.00.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.025129848,
+      "prompt_tokens": 327,
+      "prompt_time": 0.019393259,
+      "completion_tokens": 139,
+      "completion_time": 0.189142855,
+      "total_tokens": 466,
+      "total_time": 0.208536114,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8d13edce1d",
+    "x_groq": {
+      "id": "req_01m3m8a5fte6qvw11y8wqskk6j",
+      "seed": 850469720
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004200000",
+  "predicted_reason": "Herbal tincture extracts in glycerin-water solution are medicinal preparations containing glycerol.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

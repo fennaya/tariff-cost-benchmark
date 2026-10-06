@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361403",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a7fc475c-0e7b-47ae-a35d-3adbd8f68c1e",
+    "object": "chat.completion",
+    "created": 1790907435,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6204.62.0010\",\n  \"reason\": \"The item is a women's outer garment (coat/cape) with raw unfinished edges, classified under women's or girls' coats, not knitted, of man\u2011made fibers.\"\n}",
+          "reasoning": "We need classify. Description French: deep back opening closed by small single flap with buckle and velcro. Cape, sleeves and hem are raw and unfinished. Likely a garment, maybe a coat or jacket, unfinished edges. Could be a \"dress\" or \"outerwear\". Probably a \"coat, overcoat, or jacket, of textile materials\". HTS 6201-6204 for men's/women's garments. Since description generic, maybe women's outerwear? Could be \"women's or girls' coats, capes, cloaks\". HTS 6204.43 for women's or girls' coats, not knitted, of cotton? Not specified material. Could be \"apparel, not knitted, of man-made fibers\". Hard.\n\nProbably classify under 6204.62 (women's or girls' coats, not knitted, of man-made fibers). Use generic.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088369573,
+      "prompt_tokens": 192,
+      "prompt_time": 0.007939207,
+      "completion_tokens": 247,
+      "completion_time": 0.518709212,
+      "total_tokens": 439,
+      "total_time": 0.526648419,
+      "completion_tokens_details": {
+        "reasoning_tokens": 182
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69dbc96c74",
+    "x_groq": {
+      "id": "req_01m3x6dhz3ewfahyt5n3nsw7x9",
+      "seed": 763663483
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204620010",
+  "predicted_reason": "The item is a women's outer garment (coat/cape) with raw unfinished edges, classified under women's or girls' coats, not knitted, of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

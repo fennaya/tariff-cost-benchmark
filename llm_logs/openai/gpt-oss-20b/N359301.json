@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359301",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3004909230",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2ab88d58-769e-4f6e-a764-fcb81150e9ea",
+    "object": "chat.completion",
+    "created": 1790628041,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Ibuprofen tablets are medicinal preparations containing a single active ingredient, classified under 3004.10.00.00.\"}",
+          "reasoning": "Need HTSUS code for ibuprofen tablets. Likely 3004.10.00.00? Actually pharmaceuticals: 3004.10.00.00 is \"Medicinal preparations containing a single active ingredient, other than those listed in 3004.20\". Ibuprofen is a single active ingredient. So 3004.10.00.00. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192064436,
+      "prompt_tokens": 195,
+      "prompt_time": 0.00951496,
+      "completion_tokens": 129,
+      "completion_time": 0.133886981,
+      "total_tokens": 324,
+      "total_time": 0.143401941,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m3mvz41fexmr3xs3dbx2rbc7",
+      "seed": 1326741130
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Ibuprofen tablets are medicinal preparations containing a single active ingredient, classified under 3004.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

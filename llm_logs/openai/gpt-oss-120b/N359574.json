@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359574",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "3303003000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3d7148ab-14c7-478e-bc13-bfeaf6bceeff",
+    "object": "chat.completion",
+    "created": 1790728362,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3303.00.00.00\", \"reason\": \"The product is a perfume (fragrance mist) packaged for retail sale in spray bottles, classifiable under HTS Chapter 33 heading 3303 for perfumes and toilet waters.\"}",
+          "reasoning": "We need HTS for perfume sprays. Likely 3303.00.00? Actually HTS 3303.00.00 is \"Perfumes and toilet waters\". For spray bottles, still perfume. 3303.00.00 is 4 digits. Need 10-digit: 3303.00.00.00? US uses 10-digit: 3303.00.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.40692933,
+      "prompt_tokens": 402,
+      "prompt_time": 0.028208764,
+      "completion_tokens": 155,
+      "completion_time": 0.324695588,
+      "total_tokens": 557,
+      "total_time": 0.352904352,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3qvmnvfe4z82wfapm6h24eb",
+      "seed": 900298561
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3303000000",
+  "predicted_reason": "The product is a perfume (fragrance mist) packaged for retail sale in spray bottles, classifiable under HTS Chapter 33 heading 3303 for perfumes and toilet waters.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

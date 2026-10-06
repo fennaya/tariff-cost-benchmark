@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360608",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "3824999397",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-648dffd1-cba4-4b3f-9acd-c54a9ed460c1",
+    "object": "chat.completion",
+    "created": 1790767296,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8541.10.00\",\n  \"reason\": \"The product is a silicon wafer (with optional metal layers) used for testing and qualification of semiconductor equipment, classifiable as silicon wafers for semiconductor devices.\"\n}",
+          "reasoning": "We need HTS for silicon wafers used for testing semiconductor equipment, likely under 8541.40.00? Actually 8541.40.00 is \"Semiconductor devices, not assembled\". But wafers are \"Silicon wafers, not assembled\" 8541.40.00? Check: HTS 8541.40.00 - \"Semiconductor devices, not assembled, other than those of heading 8540\". Might be 8541.40.00. Another is 8541.10.00 for \"Silicon wafers, for semiconductor devices\". Actually 8541.10.00 is \"Silicon wafers, for semiconductor devices\". Let's recall: 8541.10.00 - \"Silicon wafers, for semiconductor devices\". Yes. So answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.468465203,
+      "prompt_tokens": 406,
+      "prompt_time": 0.070606652,
+      "completion_tokens": 229,
+      "completion_time": 0.486303941,
+      "total_tokens": 635,
+      "total_time": 0.556910593,
+      "completion_tokens_details": {
+        "reasoning_tokens": 168
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3s0rvaae6aaeqf3cqp0djgq",
+      "seed": 133508066
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85411000",
+  "predicted_reason": "The product is a silicon wafer (with optional metal layers) used for testing and qualification of semiconductor equipment, classifiable as silicon wafers for semiconductor devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

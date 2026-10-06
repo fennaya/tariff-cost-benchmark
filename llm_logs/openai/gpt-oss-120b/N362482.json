@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362482",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8543704500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-78e100b0-42bf-4882-bfb6-d92178ef1141",
+    "object": "chat.completion",
+    "created": 1790829543,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9031.80.00\", \"reason\": \"The device is an encoder/sensor used to measure rotational speed, classifiable as an other measuring instrument not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for locomotive axle generator, likely a sensor, encoder. Likely under 9025? 9025.19? Let's think: \"magnetic or optical encoder\" for measuring speed. HTS 9025.19.00 is \"Other instruments and apparatus for measuring or checking the flow, level, pressure, or other variables of liquids or gases\". Not right. Maybe 9026? 9026.80 is \"Other instruments and apparatus for measuring or detecting ionizing radiations\". Not.\n\nEncoders are under 9031? 9031.80 is \"Other measuring or checking instruments, appliances and machines\". Could be 9031.80.00.\n\nBut more specific: 9027 is \"Instruments and apparatus for measuring or detecting sound, light, radiation\". 9027.80 is \"Other\". However encoders are electromechanical devices, maybe under 8542? That's \"Electronic integrated circuits\". Not.\n\nProbably 9025.19.00? Actually 9025 is \"Hydrometers, pycnometers, etc.\" No.\n\nCheck: 9032 is \"Automatic regulating or controlling machines\". 9032.89 is \"Other\". Could be 9032.89.90 \"Other\". Hmm.\n\nBetter: 9025 is not correct. 9031 is \"Measuring or checking instruments, appliances and machines, not elsewhere specified\". So 9031.80.00 \"Other\". Use that.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048330719,
+      "prompt_tokens": 262,
+      "prompt_time": 0.011909525,
+      "completion_tokens": 357,
+      "completion_time": 0.744044535,
+      "total_tokens": 619,
+      "total_time": 0.75595406,
+      "completion_tokens_details": {
+        "reasoning_tokens": 306
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3tw4f00ekgs0151t1p406b3",
+      "seed": 705905933
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90318000",
+  "predicted_reason": "The device is an encoder/sensor used to measure rotational speed, classifiable as an other measuring instrument not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

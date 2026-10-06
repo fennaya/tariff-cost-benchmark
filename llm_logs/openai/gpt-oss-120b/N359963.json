@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359963",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4412319200",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-41de5cff-2f6e-46e7-9d42-a87de660f14c",
+    "object": "chat.completion",
+    "created": 1790747716,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.10.00\", \"reason\": \"The product is a hardwood plywood panel (tropical hardwood veneers) with HDF and melamine overlay, classified under HTS heading 4412.10 for hardwood plywood.\"}",
+          "reasoning": "We need HTS code for plywood with HDF overlay, melamine paper. Likely heading 4412? 4412.99.90? 4412.99.90 is \"Other plywood\". 4412.10 is \"Plywood of hardwood\". Since tropical woods (hardwood). 4412.10.00 is \"Plywood of hardwood\". But with HDF overlay maybe classified under 4412.99.90 \"Other plywood, not elsewhere specified\". Probably 4412.10.00. Choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203891088,
+      "prompt_tokens": 318,
+      "prompt_time": 0.015802683,
+      "completion_tokens": 174,
+      "completion_time": 0.366085006,
+      "total_tokens": 492,
+      "total_time": 0.381887689,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3re39wwenyt07bxcfnmy1hg",
+      "seed": 315228745
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "44121000",
+  "predicted_reason": "The product is a hardwood plywood panel (tropical hardwood veneers) with HDF and melamine overlay, classified under HTS heading 4412.10 for hardwood plywood.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362757",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "8704210100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-09c10fdf-a7c2-4a20-b9ce-477526ebc4f2",
+    "object": "chat.completion",
+    "created": 1790835313,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.92.00.00\", \"reason\": \"Classified as an off\u2011road motor vehicle for transport of goods, falling under heading 8703.92 for other self\u2011propelled wheeled vehicles.\"}",
+          "reasoning": "We need HTS for amphibious all-terrain vehicle. Likely heading 8703 for motor vehicles for the transport of goods, specially for off-road. Amphibious maybe 8703.92? Let's think: 8703.92.00.00 is \"Other vehicles, with only self-propelling wheels, for the transport of goods\". But amphibious maybe 8703.92.90? Actually 8703.92.00.00 is \"Other vehicles, with only self-propelling wheels, for the transport of goods\". For amphibious maybe 8703.92.90? Need 10-digit: 8703.92.00.00 is 10 digits? That's 8? Actually HTSUS 10-digit: 8703.92.00.00 (10). So answer.\n\nReason: amphibious off\u2011road vehicle for transport of goods."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152012189,
+      "prompt_tokens": 325,
+      "prompt_time": 0.015228103,
+      "completion_tokens": 247,
+      "completion_time": 0.523077856,
+      "total_tokens": 572,
+      "total_time": 0.538305959,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m3v1mjj0e3nb7vcgwtt7zw03",
+      "seed": 388200286
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703920000",
+  "predicted_reason": "Classified as an off\u2011road motor vehicle for transport of goods, falling under heading 8703.92 for other self\u2011propelled wheeled vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

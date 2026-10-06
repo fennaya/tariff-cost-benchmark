@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N345977",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "5407532060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-dd12518a-aead-489c-81f2-dc3e0fb22239",
+    "object": "chat.completion",
+    "created": 1790607019,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"5903.30.00\",\n  \"reason\": \"Woven polyester fabric with textured yarns used for upholstery falls under heading 5903 for woven synthetic fabrics, specifically the subheading for impregnated/coated fabrics.\"\n}",
+          "reasoning": "We need HTS for polyester woven fabric for upholstery, textured, not plain/satin/twill. Likely heading 5903? Actually 5903 is woven fabrics of synthetic fibers, impregnated, coated. For upholstery fabrics, maybe 5903.30? Let's think: 5903.30.00 is woven fabrics of synthetic fibers, impregnated, coated, etc. But plain woven polyester fabric for upholstery maybe 5903.30.00. However non-impregnated? Could be 5903.90? Actually 5903 covers woven fabrics of synthetic fibers, impregnated, coated, laminated. If not impregnated, then 5903 not. Maybe 5903.30 is for impregnated. For plain woven polyester fabric, heading 5903? Another heading 5903.90 other. But there is heading 5903.30 for impregnated. For upholstery, often 5903.30.00. I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.209099852,
+      "prompt_tokens": 305,
+      "prompt_time": 0.023167594,
+      "completion_tokens": 263,
+      "completion_time": 0.54911822,
+      "total_tokens": 568,
+      "total_time": 0.572285814,
+      "completion_tokens_details": {
+        "reasoning_tokens": 200
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3m7xjk8ez8tcjetkqtg334g",
+      "seed": 1701678941
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "59033000",
+  "predicted_reason": "Woven polyester fabric with textured yarns used for upholstery falls under heading 5903 for woven synthetic fabrics, specifically the subheading for impregnated/coated fabrics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

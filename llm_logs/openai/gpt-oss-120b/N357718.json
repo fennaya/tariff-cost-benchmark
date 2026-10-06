@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357718",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ac8eb7bc-bc93-47e3-bdd7-f5b22534697d",
+    "object": "chat.completion",
+    "created": 1790726367,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3304.99.0010\", \"reason\": \"Leave\u2011on cosmetic body spray with skin\u2011care actives falls under other beauty or make\u2011up preparations for skin care not elsewhere specified.\"}",
+          "reasoning": "We need HTS for cosmetic spray leave-on, containing acids. Likely 3304.99.00? 3304.99.00 is \"Other beauty or make-up preparations and preparations for the care of the skin (other than medicaments), not elsewhere specified\". For sprays maybe 3304.99.00. 10-digit: 3304.99.0010? Actually 10-digit US: 3304.99.0010 is \"Other\". Let's pick 3304.99.0010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090889758,
+      "prompt_tokens": 309,
+      "prompt_time": 0.012618595,
+      "completion_tokens": 166,
+      "completion_time": 0.342355792,
+      "total_tokens": 475,
+      "total_time": 0.354974387,
+      "completion_tokens_details": {
+        "reasoning_tokens": 110
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69dbc96c74",
+    "x_groq": {
+      "id": "req_01m3qsqsjfeyft4z9fs86rq4pa",
+      "seed": 1799528842
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304990010",
+  "predicted_reason": "Leave\u2011on cosmetic body spray with skin\u2011care actives falls under other beauty or make\u2011up preparations for skin care not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

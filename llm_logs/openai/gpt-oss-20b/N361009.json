@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361009",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8523520010",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-82e349fa-dc08-4ed6-ab5f-95ca36dd5d59",
+    "object": "chat.completion",
+    "created": 1790688932,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8541.40.00.00\",\"reason\":\"RFID card inlay sheets contain integrated circuits with memory, fitting the heading for integrated circuits with microprocessors or memory (8541.40).\"}",
+          "reasoning": "Need HTS 10-digit. RFID card inlay sheets with IC memory. Likely 8541.40.00? Actually 8541.40 is \"Integrated circuits, containing microprocessors, other than those of heading 8542\". But RFID chips are integrated circuits with memory. Could be 8541.40.00.00? 10-digit: 8541.40.00.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.021019597,
+      "prompt_tokens": 256,
+      "prompt_time": 0.014797992,
+      "completion_tokens": 143,
+      "completion_time": 0.160799955,
+      "total_tokens": 399,
+      "total_time": 0.175597947,
+      "completion_tokens_details": {
+        "reasoning_tokens": 88
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_565badff47",
+    "x_groq": {
+      "id": "req_01m3pp1c47e65r9p7qpftcv7ap",
+      "seed": 646823781
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8541400000",
+  "predicted_reason": "RFID card inlay sheets contain integrated circuits with memory, fitting the heading for integrated circuits with microprocessors or memory (8541.40).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

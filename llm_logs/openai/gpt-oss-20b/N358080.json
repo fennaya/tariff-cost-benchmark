@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358080",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "3307102000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e0fd946d-c650-43dd-b631-4b1c98b64aa4",
+    "object": "chat.completion",
+    "created": 1790607864,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3305.90.90.00\",\"reason\":\"Aftershave is classified as a cosmetic or toiletry product, fitting the HTSUS heading 3305.90.90 for other cosmetics and toilet preparations.\"}",
+          "reasoning": "Need HTS code for aftershave. Likely 3305.90.90? Actually cosmetics: 3305.90.90 is \"Other cosmetics and toilet preparations\". Aftershave is cosmetic. 165ml bottle. Alcohol. So 3305.90.90. HTS 10-digit: 3305.90.90.00? Actually 10-digit: 3305.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016082938,
+      "prompt_tokens": 192,
+      "prompt_time": 0.016129732,
+      "completion_tokens": 153,
+      "completion_time": 0.158933479,
+      "total_tokens": 345,
+      "total_time": 0.175063211,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8d13edce1d",
+    "x_groq": {
+      "id": "req_01m3m8qcq3enpbxs0jx8y2knb7",
+      "seed": 9372548
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3305909000",
+  "predicted_reason": "Aftershave is classified as a cosmetic or toiletry product, fitting the HTSUS heading 3305.90.90 for other cosmetics and toilet preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

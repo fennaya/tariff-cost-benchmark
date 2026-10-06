@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362421",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "3004909255",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b0579d0b-c64a-4fea-8ba4-949a36108c73",
+    "object": "chat.completion",
+    "created": 1790827343,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.90\", \"reason\": \"Pantoprazole sodium tablets are classified as a pharmaceutical preparation for human use, falling under heading 3004 (Medicaments) and subheading 3004.90 (Other medicinal preparations)\"}",
+          "reasoning": "Need HTS for pantoprazole sodium tablets. Likely 3004.90? Actually pharmaceuticals under 3004.90. Pantoprazole sodium is a medicinal product, 3004.90.10? Check: 3004.90.90 is other. 3004.90.10 is \"antibiotics\"? Not. I think 3004.90.90 \"Other\". So use 3004.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.022557947,
+      "prompt_tokens": 217,
+      "prompt_time": 0.061227115,
+      "completion_tokens": 162,
+      "completion_time": 0.339987304,
+      "total_tokens": 379,
+      "total_time": 0.401214419,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3tt1asmeqprksmmmj0hy328",
+      "seed": 27310170
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Pantoprazole sodium tablets are classified as a pharmaceutical preparation for human use, falling under heading 3004 (Medicaments) and subheading 3004.90 (Other medicinal preparations)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

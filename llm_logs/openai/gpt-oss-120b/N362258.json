@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362258",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "9029204080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0e88df01-26a2-426a-946d-0c67dec968dd",
+    "object": "chat.completion",
+    "created": 1790822175,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9022.30.00.00\",\n  \"reason\": \"The device is a wearable apparatus that measures physiological parameters (heart rate) and falls under heading 9022.30 for other apparatus for measuring or checking physiological parameters.\"\n}",
+          "reasoning": "Need HTS for wearable heart rate monitor. Likely 9022.55.00? That's for \"Instruments and apparatus for measuring or detecting alpha, beta, gamma radiation\" no. Actually medical devices: 9022.55.00 is \"Other apparatus for measuring or checking the flow, level, pressure, or other variables of liquids or gases\". Not.\n\nHeart rate monitors: 9022.30.00? Let's recall: 9022.30 - \"Other apparatus for measuring or checking physiological parameters\". Yes 9022.30.00 is \"Other apparatus for measuring or checking physiological parameters\". So use that. 10-digit: 9022.30.00.00? Actually HTSUS 10-digit includes 4-2-2-2-? Example: 9022.30.00.00. So provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048286137,
+      "prompt_tokens": 472,
+      "prompt_time": 0.018241795,
+      "completion_tokens": 242,
+      "completion_time": 0.5026452,
+      "total_tokens": 714,
+      "total_time": 0.520886995,
+      "completion_tokens_details": {
+        "reasoning_tokens": 177
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3tn3mnaezhbh0590tat8xxx",
+      "seed": 1415250019
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9022300000",
+  "predicted_reason": "The device is a wearable apparatus that measures physiological parameters (heart rate) and falls under heading 9022.30 for other apparatus for measuring or checking physiological parameters.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

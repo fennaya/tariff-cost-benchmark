@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361321",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-86bb381e-afae-4676-96a3-90cf736c5c08",
+    "object": "chat.completion",
+    "created": 1790789537,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.91.00\",\n  \"reason\": \"The product is an unfinished textile article (sleeves and hem with raw edges) classified under made\u2011up articles of cotton not elsewhere specified.\"\n}",
+          "reasoning": "We need guess. Raw unfinished edges likely textile fabric? Could be \"sleeves and hem bottom\" maybe garment? Hard. Probably \"unfinished textile articles\" like \"fabric, woven, not impregnated, not coated, 100% cotton\". HTS 5208.00.00? That's \"Woven fabrics of cotton, containing 85% or more by weight of cotton\". But raw unfinished edges maybe \"garments, not finished\". Could be \"apparel accessories, other\". Might be \"Other made-up articles, not knitted or crocheted, of cotton, not elsewhere specified\". HTS 6209.20.00 \"Men's or boys' trousers, breeches and shorts, of cotton\". Not.\n\nProbably classification: \"Unfinished textile articles, such as fabric with raw edges\" -> HTS 6302.91.00 \"Other made-up articles, of textile materials, not elsewhere specified\". Actually 6302 covers \"Other made-up articles, including dress patterns\". 6302.91 is \"Of cotton\". So answer.\n\nLet's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.245165681,
+      "prompt_tokens": 162,
+      "prompt_time": 0.007990293,
+      "completion_tokens": 279,
+      "completion_time": 0.588769098,
+      "total_tokens": 441,
+      "total_time": 0.596759391,
+      "completion_tokens_details": {
+        "reasoning_tokens": 220
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3snzkbaer19zazhn95ffk91",
+      "seed": 1150216333
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029100",
+  "predicted_reason": "The product is an unfinished textile article (sleeves and hem with raw edges) classified under made\u2011up articles of cotton not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

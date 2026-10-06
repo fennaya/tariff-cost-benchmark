@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361768",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b4994bb0-2c77-43fc-a556-6c4c4054b34a",
+    "object": "chat.completion",
+    "created": 1790805095,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.00.00\", \"reason\": \"Halloween decorative wall/door ornaments are classified as trinkets and ornaments of other materials under heading 9505\"}",
+          "reasoning": "We need HTS code for decorative wall/door ornaments, Halloween decorations, likely under 9505.00.00? 9505 covers \"Articles and equipment for general physical exercise, gymnastics, etc.\" No. Decorations: 9505 is toys. Maybe 9503? 9503 is \"Trinkets, ornaments, etc., of precious metal\". Not.\n\nPossibly 9505.90? Actually 9505 is \"Articles and equipment for general physical exercise\". Not.\n\nBetter: 9505 is not. 9503 is \"Trinkets, ornaments, etc., of base metal\". Not.\n\nMaybe 9505.90.90? Hmm.\n\nCould be 9505.90.90 \"Other\". But there is also 9505.90.90 for \"Other\". Not confident.\n\nAlternatively, 9505 is not correct. Could be 9505.90.90 \"Other articles for amusement\". Actually 9505 is \"Articles and equipment for general physical exercise\". Wrong.\n\nMaybe 9505 is wrong. Look at 9505? No.\n\nConsider 9505? No.\n\nMaybe 9505 is \"Trinkets, ornaments\". Wait 9505 is \"Trinkets, ornaments, etc., of base metal\"? Actually that's 9505? Let's recall: 9505 is \"Trinkets, ornaments, etc., of base metal\". Not sure.\n\nBetter: 9505 is \"Trinkets, ornaments, etc., of base metal\". So decorative items could be 9505.90.00 \"Other\". So code 9505.90.00. Need 10-digit: 9505.90.00.00.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.19596166,
+      "prompt_tokens": 281,
+      "prompt_time": 0.01313245,
+      "completion_tokens": 403,
+      "completion_time": 0.846287452,
+      "total_tokens": 684,
+      "total_time": 0.859419902,
+      "completion_tokens_details": {
+        "reasoning_tokens": 352
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m3t4tcfreqca4031kpf053fh",
+      "seed": 1278167202
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9505900000",
+  "predicted_reason": "Halloween decorative wall/door ornaments are classified as trinkets and ornaments of other materials under heading 9505",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

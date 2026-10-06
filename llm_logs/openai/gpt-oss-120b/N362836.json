@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362836",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "3926902100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d8baade5-9248-4a4e-a100-44264acfbc85",
+    "object": "chat.completion",
+    "created": 1790838953,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3926.90.9995\",\n  \"reason\": \"The item is a non\u2011medical, molded plastic dispensing cartridge (graduated syringe) classified under 'Other articles of plastics, not elsewhere specified' (heading 3926.90).\"\n}",
+          "reasoning": "We need HTS code for plastic syringe (graduated) not medical. Likely 3926.90.9995? Check: 3926.90 - Other articles of plastics. 3926.90.9995 is \"Other articles of plastics, not elsewhere specified\". But syringes are under 9018? Medical syringes 9018.90.80. But non-medical plastic syringes maybe 3926.90.9995. Could be 3926.90.9995. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.141044358,
+      "prompt_tokens": 329,
+      "prompt_time": 0.017428663,
+      "completion_tokens": 182,
+      "completion_time": 0.38453306,
+      "total_tokens": 511,
+      "total_time": 0.401961723,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_be28f5c9f2",
+    "x_groq": {
+      "id": "req_01m3v53mneef0bevcxwvn2s4q3",
+      "seed": 393210033
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909995",
+  "predicted_reason": "The item is a non\u2011medical, molded plastic dispensing cartridge (graduated syringe) classified under 'Other articles of plastics, not elsewhere specified' (heading 3926.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

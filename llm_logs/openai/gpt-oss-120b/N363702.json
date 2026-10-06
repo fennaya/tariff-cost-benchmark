@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363702",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7310290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d40a98dc-537b-4fc2-80fa-e0536352b002",
+    "object": "chat.completion",
+    "created": 1790860616,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7309.91.00\", \"reason\": \"Classifies a steel, pressurized container without valves used for storing liquid refrigerant as a pressure vessel/fitting.\"}",
+          "reasoning": "We need HTS for refrigerant container, steel pressure vessel, no valves. Likely 7309.00.00? 7309 is \"Tube or pipe fittings (e.g., couplings, elbows)\". Pressure vessels maybe 7301? 7301.00.00 is \"Cast-iron, steel, etc. of iron or steel, other\". But specific: 7309.91? Actually 7309.91 is \"Other\". However pressure vessels for refrigerant maybe 7301.00.90? Could be 7301.00.90 \"Other\". But better: 7309.91.00 \"Other\". Let's pick 7309.91.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151638013,
+      "prompt_tokens": 225,
+      "prompt_time": 0.01198846,
+      "completion_tokens": 196,
+      "completion_time": 0.425306987,
+      "total_tokens": 421,
+      "total_time": 0.437295447,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m3vsrqqpeb0btm8jpgwa0wg2",
+      "seed": 808737150
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73099100",
+  "predicted_reason": "Classifies a steel, pressurized container without valves used for storing liquid refrigerant as a pressure vessel/fitting.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

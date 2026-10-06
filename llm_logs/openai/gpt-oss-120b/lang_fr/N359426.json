@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359426",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909216",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0d047a6f-ef48-4b01-b6bb-cdf2a13899ce",
+    "object": "chat.completion",
+    "created": 1790904643,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Dasatinib tablets are a pharmaceutical preparation for therapeutic use not specifically listed elsewhere, falling under heading 3004.90.00 for other medicinal products.\"\n}",
+          "reasoning": "Need HTS for dasatinib tablets, a pharmaceutical. Likely under 3004.90.00? Actually HTS Chapter 30: pharmaceutical products. Dasatinib is a specific drug, classification 3004.90.00 (Medicaments consisting of mixed or unmixed products for therapeutic use, not elsewhere specified). Could be 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048512654,
+      "prompt_tokens": 242,
+      "prompt_time": 0.011957634,
+      "completion_tokens": 142,
+      "completion_time": 0.295182354,
+      "total_tokens": 384,
+      "total_time": 0.307139988,
+      "completion_tokens_details": {
+        "reasoning_tokens": 81
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3x3rb60ewaryzfm7861gery",
+      "seed": 2110362570
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Dasatinib tablets are a pharmaceutical preparation for therapeutic use not specifically listed elsewhere, falling under heading 3004.90.00 for other medicinal products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

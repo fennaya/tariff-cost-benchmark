@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360453",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004909243",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6e76f9ee-f36d-43e7-94d1-8d0f858f559b",
+    "object": "chat.completion",
+    "created": 1790671328,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Medicinal preparations containing active ingredients of a chemical or biological nature, in solution.\"}",
+          "reasoning": "Need HTSUS code for pharmaceutical preparations. Brivaracetam oral solution. Likely 3004.10.00.00? Actually 3004 is \"Medicinal preparations containing active ingredients of a chemical or biological nature\". For drugs in solution: 3004.10.00.00 is \"Medicinal preparations containing active ingredients of a chemical or biological nature, in solution\". So 10-digit: 3004.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.215676461,
+      "prompt_tokens": 194,
+      "prompt_time": 0.023544963,
+      "completion_tokens": 139,
+      "completion_time": 0.156396672,
+      "total_tokens": 333,
+      "total_time": 0.179941635,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3p58577e899h3fttsaq0fr5",
+      "seed": 1945375879
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Medicinal preparations containing active ingredients of a chemical or biological nature, in solution.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

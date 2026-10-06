@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357694",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-75ab4cc8-6a3f-495a-a95b-48654eb2dcf3",
+    "object": "chat.completion",
+    "created": 1790904830,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7616.10.00\",\n  \"reason\": \"The product is an insulated aluminum power busbar system, classified under busbars, rods and similar conductors of aluminum.\"\n}",
+          "reasoning": "We need HTS code for insulated power busbars? Aluminum hollow tube inside aluminum sheath, resin columns. Likely under \"Busbars, rods, and similar conductors, of aluminum\". HTS 7616.10.00? Let's check: 7616.10.00 - Aluminum alloy busbars, rods, etc. Or 7616.90 for other. Since it's insulated? Might be \"Electrical apparatus for switching or protecting circuits, of aluminum\". But busbars are 7616.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047532917,
+      "prompt_tokens": 378,
+      "prompt_time": 0.015685856,
+      "completion_tokens": 165,
+      "completion_time": 0.344628911,
+      "total_tokens": 543,
+      "total_time": 0.360314767,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3x3y27ne8785c8hrk6qfprq",
+      "seed": 511605436
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76161000",
+  "predicted_reason": "The product is an insulated aluminum power busbar system, classified under busbars, rods and similar conductors of aluminum.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

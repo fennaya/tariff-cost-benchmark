@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358456",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3307900000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-83bda395-2aa9-4538-aa51-564afa2356ad",
+    "object": "chat.completion",
+    "created": 1790608088,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3405.90.90.10\",\"reason\":\"Liquid dog shampoo falls under other soaps and detergents, not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for dog shampoo. Likely 3405.90.90? Actually 3405.90 is \"Other soaps and detergents, not elsewhere specified\". For pet shampoos maybe 3405.90.90. But 3405.90.90 is \"Other soaps and detergents, not elsewhere specified\". 3405.90.90.10? Wait 10-digit: 3405.90.90.10? Actually 3405.90.90 is 8-digit. 10-digit adds 2 more digits: 3405.90.90.10. But need correct. Let's choose 3405.90.90.10. Reason: liquid pet shampoo."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017106714,
+      "prompt_tokens": 324,
+      "prompt_time": 0.02632889,
+      "completion_tokens": 190,
+      "completion_time": 0.217068908,
+      "total_tokens": 514,
+      "total_time": 0.243397798,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_ef00694abe",
+    "x_groq": {
+      "id": "req_01m3m8y7f7e7wb3b0pr66gkc4f",
+      "seed": 341408364
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3405909010",
+  "predicted_reason": "Liquid dog shampoo falls under other soaps and detergents, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

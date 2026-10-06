@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362085",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "8703230190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bca356e4-d46f-4361-b18c-4a3c9f0aee3b",
+    "object": "chat.completion",
+    "created": 1790816049,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.00.00\", \"reason\": \"The item is a used motor car (Volvo 123GT) for transport of persons with a gasoline engine over 1500\u202fcc, classified under heading 8703.23.\"}",
+          "reasoning": "Need to classify a 1967 Volvo 123GT chassis. Likely a motor vehicle, used, maybe \"automobiles, other than those of heading 8703\". HTS 8703.23? Actually 8703.23.00.00 is \"Motor cars and other motor vehicles for the transport of persons, with engine > 1500 cc\". But need specific. Could be \"used motor vehicles\". HTS for used vehicles: 8703.23.00.00 for cars with gasoline engine > 1500 cc. Volvo 123GT likely gasoline, maybe 2.0L? Might be >1500. So code 8703.23.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219872158,
+      "prompt_tokens": 174,
+      "prompt_time": 0.006957612,
+      "completion_tokens": 215,
+      "completion_time": 0.462740884,
+      "total_tokens": 389,
+      "total_time": 0.469698496,
+      "completion_tokens_details": {
+        "reasoning_tokens": 148
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3tf8p04ec0tnjgb9mnmrdzf",
+      "seed": 1263031672
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703230000",
+  "predicted_reason": "The item is a used motor car (Volvo 123GT) for transport of persons with a gasoline engine over 1500\u202fcc, classified under heading 8703.23.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360830",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "8529908700",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2060b4b3-a35f-48f0-a280-da90834fa546",
+    "object": "chat.completion",
+    "created": 1790683940,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9001.10.10.00\",\"reason\":\"Both parts are optical instruments with a display and a CMOS sensor, fitting the 10\u2011digit HTSUS heading for optical instruments (9001) with a display but no video processing.\"}",
+          "reasoning": "Need HTS code for handheld unit with display but no video processing, and imager cable with CMOS sensor. Likely \"optical instruments\" 9001? For video scopes maybe 9001.10.10? But handheld unit with display but no video processing maybe 9001.10.10 for \"optical instruments, not including those of heading 9002\". But video scopes maybe 9001.10.10. However imager cable maybe 9001.10.10 as well? But it's a component part of finished scope. For finished scope maybe 9001.10.10. But need 10-digit. For example 9001.10.10.00? Actually 10-digit: 9001.10.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.152568636,
+      "prompt_tokens": 331,
+      "prompt_time": 0.081699805,
+      "completion_tokens": 226,
+      "completion_time": 0.281785044,
+      "total_tokens": 557,
+      "total_time": 0.363484849,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_99996fee8e",
+    "x_groq": {
+      "id": "req_01m3ph91jsek48zcgg3tjm9wbv",
+      "seed": 1480236115
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9001101000",
+  "predicted_reason": "Both parts are optical instruments with a display and a CMOS sensor, fitting the 10\u2011digit HTSUS heading for optical instruments (9001) with a display but no video processing.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N355898",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "6802930090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-55ff0ac7-a160-49c0-83f1-d745e05056e0",
+    "object": "chat.completion",
+    "created": 1790607128,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.00.00\", \"reason\": \"Granite slabs for countertops, wall cladding, and flooring are classified under heading 6802.20 for cut or roughly trimmed granite.\"}",
+          "reasoning": "We need HTS for granite slabs. Likely 6802.20.00.00? Actually 6802 covers \"Granite, basalt, sandstone, etc., cut, roughly trimmed or simply sawn\". 6802.20 is \"Granite, basalt, sandstone, etc., cut, roughly trimmed or simply sawn, for building\". 6802.20.00.00 is 10-digit. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204615937,
+      "prompt_tokens": 291,
+      "prompt_time": 0.015692926,
+      "completion_tokens": 147,
+      "completion_time": 0.307485892,
+      "total_tokens": 438,
+      "total_time": 0.323178818,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3m80x0de46sxrpvswbajd4j",
+      "seed": 1366119633
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802200000",
+  "predicted_reason": "Granite slabs for countertops, wall cladding, and flooring are classified under heading 6802.20 for cut or roughly trimmed granite.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

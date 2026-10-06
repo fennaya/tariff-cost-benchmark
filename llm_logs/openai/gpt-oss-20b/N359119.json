@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359119",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-92719716-50ad-4f69-beb0-3cc7eba8c227",
+    "object": "chat.completion",
+    "created": 1790619644,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3926.90.90.00\",\"reason\":\"EPDM foam used as acoustic padding in headphones falls under plastic foam articles not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for EPDM foam used in headphones. Likely 3926.90.90? Actually 3926.90.90 is \"Other articles of plastics\". But foam? 3926.90.90 is \"Other articles of plastics, not elsewhere specified\". For foam? 3926.90.90 includes \"Other articles of plastics, not elsewhere specified\". But maybe 3926.90.90. But 3926.90.90 is 4-digit. 10-digit: 3926.90.90.00? Actually 10-digit: 3926.90.90.00. Reason: EPDM foam for headphones."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.160394945,
+      "prompt_tokens": 263,
+      "prompt_time": 0.054095497,
+      "completion_tokens": 184,
+      "completion_time": 0.198080045,
+      "total_tokens": 447,
+      "total_time": 0.252175542,
+      "completion_tokens_details": {
+        "reasoning_tokens": 140
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_92d51d08e5",
+    "x_groq": {
+      "id": "req_01m3mkyw4bechrfm3fys0e961h",
+      "seed": 1266465067
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909000",
+  "predicted_reason": "EPDM foam used as acoustic padding in headphones falls under plastic foam articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

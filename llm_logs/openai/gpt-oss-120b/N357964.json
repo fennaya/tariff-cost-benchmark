@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357964",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-66e925fc-4d40-4511-a336-708d695283be",
+    "object": "chat.completion",
+    "created": 1790726500,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9026.80.10.00\", \"reason\": \"The product is a dynamometer used to test electric motors, classifiable under heading 9026.80 for dynamometers.\"}",
+          "reasoning": "We need HTS for electric motor dynamometer test equipment. Likely under 9026.80? 9026.80.90? Actually 9026.80 is \"Instruments and apparatus for measuring or testing the flow, level, pressure, etc.\" For testing machines for electric motors maybe 9026.80.90 \"Other\". Could be 9026.80.10 \"Dynamometers\". Yes 9026.80.10 is \"Dynamometers\". So use that. 10-digit: 9026.80.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017029429,
+      "prompt_tokens": 1189,
+      "prompt_time": 0.057613794,
+      "completion_tokens": 175,
+      "completion_time": 0.372712309,
+      "total_tokens": 1364,
+      "total_time": 0.430326103,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3qsvw4we0nbtzj1g4sxq2qd",
+      "seed": 79262296
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9026801000",
+  "predicted_reason": "The product is a dynamometer used to test electric motors, classifiable under heading 9026.80 for dynamometers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

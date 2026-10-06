@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360180",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909272",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ce8af027-b305-4684-ae90-03c940e982a8",
+    "object": "chat.completion",
+    "created": 1790756014,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.90\",\n  \"reason\": \"The product is a medicinal ophthalmic solution containing active pharmaceutical ingredients, classified under HTS Chapter 30 (pharmaceutical preparations) and subheading 3004.90.90 for other medicaments.\"\n}",
+          "reasoning": "Need HTS for ophthalmic solutions containing drugs. Likely 3004.90.90? Actually 3004.90.90 is \"Medicaments ... other\". But specific: 3004.90.90 is \"Other medicinal preparations containing no active ingredient\". Wait 3004.90 is \"Medicaments ... other\". For ophthalmic solutions with active ingredients, maybe 3004.90.90 is correct. Could be 3004.90.90 \"Other\". Or 3004.90.10? Let's recall: 3004.90.10 is \"Other medicaments containing hormones\". Not. 3004.90.90 is \"Other\". So answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293612539,
+      "prompt_tokens": 266,
+      "prompt_time": 0.013525369,
+      "completion_tokens": 213,
+      "completion_time": 0.449005016,
+      "total_tokens": 479,
+      "total_time": 0.462530385,
+      "completion_tokens_details": {
+        "reasoning_tokens": 143
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3rp0hp1ezeatrp74xtjbvct",
+      "seed": 515447498
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "The product is a medicinal ophthalmic solution containing active pharmaceutical ingredients, classified under HTS Chapter 30 (pharmaceutical preparations) and subheading 3004.90.90 for other medicaments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

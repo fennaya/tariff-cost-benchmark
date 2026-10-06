@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357468",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d33fffe7-8265-49ac-9929-2e6dfb9cbbb3",
+    "object": "chat.completion",
+    "created": 1790726241,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6104.99.00\",\n  \"reason\": \"The item is a knitted women's costume (pullover overdress, skirt, belt, veil, headpiece) classified under other women's garments not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for costume clothing. Likely 6104.99.00? Adult size costume = women's outerwear? Could be 6104.99.00 \"Other women's or girls' suits, ensembles, jackets, etc., not knitted\"? Actually 6104 is women's or girls' suits, ensembles, jackets, etc., knitted. Costume likely not for everyday wear, could be 9505.90.90 (toys). But clothing: 6104.99.00 \"Other women's or girls' garments, knitted, not elsewhere specified\". Probably 6104.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089118063,
+      "prompt_tokens": 205,
+      "prompt_time": 0.00896752,
+      "completion_tokens": 185,
+      "completion_time": 0.380163586,
+      "total_tokens": 390,
+      "total_time": 0.389131106,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m3qskyhaetyv12zbakygg382",
+      "seed": 1405583797
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61049900",
+  "predicted_reason": "The item is a knitted women's costume (pullover overdress, skirt, belt, veil, headpiece) classified under other women's garments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

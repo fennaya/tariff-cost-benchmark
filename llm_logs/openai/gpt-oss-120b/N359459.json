@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359459",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "8467990190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e05d95c7-1bfc-46ee-bda6-31eeb5eef630",
+    "object": "chat.completion",
+    "created": 1790727311,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8205.90.10\", \"reason\": \"Classified as a part of a hand tool (backing plate adapter for polishing discs) under heading 8205.90 for parts of hand tools.\"}",
+          "reasoning": "We need HTS code. Backing plate adapter for polishing discs, likely \"abrasive articles\" or \"polishing pads\". Could be classified under 8205? 8205.20? That's hand tools, \"hand polishing machines\"? Actually 8205 covers \"hand tools (including glaziers' picks)\". 8205.20 is \"hand polishing machines\". But this is an accessory, not a machine. Could be 8205.30 \"other hand tools\". Or 8205.90 \"parts\". The adapter is a part for a hand-held power tool. Might be 8205.90.10 \"parts of hand tools\". However it's a backing plate for polishing discs, maybe under 8205.30 \"other hand tools\". Let's pick 8205.90.10.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048743688,
+      "prompt_tokens": 365,
+      "prompt_time": 0.054526715,
+      "completion_tokens": 228,
+      "completion_time": 0.478884991,
+      "total_tokens": 593,
+      "total_time": 0.533411706,
+      "completion_tokens_details": {
+        "reasoning_tokens": 170
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3qtmkpke95byds28vccgx3k",
+      "seed": 1590054149
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82059010",
+  "predicted_reason": "Classified as a part of a hand tool (backing plate adapter for polishing discs) under heading 8205.90 for parts of hand tools.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

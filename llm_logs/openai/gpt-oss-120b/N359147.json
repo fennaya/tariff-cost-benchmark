@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359147",
+  "rulingDate": "2026-03-11T00:00:00",
+  "true_code": "8541430010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e501478a-c9e8-45c9-871d-9aa528e46e94",
+    "object": "chat.completion",
+    "created": 1790727122,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8541.40.00\",\n  \"reason\": \"The product is a photovoltaic solar tile (building-integrated PV module) classified under photovoltaic cells, whether or not assembled in panels or modules.\"\n}",
+          "reasoning": "We need HTS code for solar roof tile. Likely under 8541.40.00? That's photovoltaic cells, panels. But roof tile integrated building element maybe 8541.40.90? Actually 8541.40.00 is \"Photovoltaic cells, whether or not assembled in panels or modules\". For building integrated photovoltaics, could be 8541.40.90 \"Other\". So 8541.40.00 is generic. Use 8541.40.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294879167,
+      "prompt_tokens": 284,
+      "prompt_time": 0.013803504,
+      "completion_tokens": 163,
+      "completion_time": 0.341582745,
+      "total_tokens": 447,
+      "total_time": 0.355386249,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3qtetseesm8t8b52grc6q9d",
+      "seed": 1414548226
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85414000",
+  "predicted_reason": "The product is a photovoltaic solar tile (building-integrated PV module) classified under photovoltaic cells, whether or not assembled in panels or modules.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

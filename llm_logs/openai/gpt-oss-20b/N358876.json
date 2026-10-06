@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358876",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "7308909590",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3dcabb75-17d2-45a2-bd03-f8cc26d3e29b",
+    "object": "chat.completion",
+    "created": 1790608708,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.10\",\"reason\":\"Composite cleanroom panels with steel facings and mineral wool core used in construction.\"}",
+          "reasoning": "Need HTS 10-digit. Cleanroom panels with steel facings and mineral wool core. Likely under 7308.90.90? Actually 7308 is \"Other articles of iron or steel\". 7308.90 is \"Other articles of iron or steel\". But panels with mineral wool core maybe 7308.90.90.10? Let's think: 7308.90.90 is \"Other articles of iron or steel\". 7308.90.90.10 is \"Other articles of iron or steel, of a kind used in construction\". But panels are composite. Maybe 7308.90.90.10. Provide 10-digit: 7308.90.90.10. Reason: composite panels with steel facings used in construction."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192464509,
+      "prompt_tokens": 375,
+      "prompt_time": 0.026717145,
+      "completion_tokens": 204,
+      "completion_time": 0.236276046,
+      "total_tokens": 579,
+      "total_time": 0.262993191,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1c0f5282a2",
+    "x_groq": {
+      "id": "req_01m3m9h4pke0aby926qq9b3x9b",
+      "seed": 1064607178
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909010",
+  "predicted_reason": "Composite cleanroom panels with steel facings and mineral wool core used in construction.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

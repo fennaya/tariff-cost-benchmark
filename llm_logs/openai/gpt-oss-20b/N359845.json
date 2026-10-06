@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359845",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-7d570b39-e1b5-4485-a596-c6f21112da18",
+    "object": "chat.completion",
+    "created": 1790650872,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.10\",\"reason\":\"Liquid mineral fertilizers not elsewhere specified\"}",
+          "reasoning": "Need HTS 10-digit. These are liquid fertilizers, non-pesticidal. Likely 1206.90.90? Actually 1206.90.90 is \"Other fertilizers, not elsewhere specified\". For liquid fertilizers: 1206.90.90.10? Let's pick 1206.90.90.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194303334,
+      "prompt_tokens": 1166,
+      "prompt_time": 0.070316432,
+      "completion_tokens": 103,
+      "completion_time": 0.11093015,
+      "total_tokens": 1269,
+      "total_time": 0.181246582,
+      "completion_tokens_details": {
+        "reasoning_tokens": 71
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3nhqw1zet9t052kkm6cdxeq",
+      "seed": 1513342402
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909010",
+  "predicted_reason": "Liquid mineral fertilizers not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

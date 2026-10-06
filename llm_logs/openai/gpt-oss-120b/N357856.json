@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357856",
+  "rulingDate": "2026-02-06T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-03707df6-6e15-4093-b193-163cc9a970ad",
+    "object": "chat.completion",
+    "created": 1790726429,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8432.20.00\",\n  \"reason\": \"Both items are agricultural bale handling machines not classified elsewhere, falling under HTS heading 8432 for other agricultural machinery.\"\n}",
+          "reasoning": "We need HTS code. Likely agricultural machinery, bale handling equipment. Probably under 8432? 8432.20? Let's think: 8432.20.00 - Bale handlers, balers, etc. Actually 8432.20.00 is \"Other agricultural, horticultural, forestry, poultry\u2011keeping or beekeeping machinery, not elsewhere specified\". Check: 8432.20.00 is \"Other agricultural, horticultural, forestry, poultry\u2011keeping or beekeeping machinery, not elsewhere specified\". Could be 8432.20.00. Or 8432.90? 8432.90.00 is \"Other\". But specific: \"Bale handling machinery\" maybe 8432.20.00. I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018962556,
+      "prompt_tokens": 395,
+      "prompt_time": 0.025001236,
+      "completion_tokens": 214,
+      "completion_time": 0.441040377,
+      "total_tokens": 609,
+      "total_time": 0.466041613,
+      "completion_tokens_details": {
+        "reasoning_tokens": 160
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3qsspqpefh8vt8n017crzyq",
+      "seed": 1663210856
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84322000",
+  "predicted_reason": "Both items are agricultural bale handling machines not classified elsewhere, falling under HTS heading 8432 for other agricultural machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

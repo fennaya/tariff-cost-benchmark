@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357307",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "8424899000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fe24c174-1916-4cac-8f4e-b1abc40e1127",
+    "object": "chat.completion",
+    "created": 1790726077,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6914.90.00\", \"reason\": \"Dolomite ceramic soap dispensers are classified as other ceramic articles not elsewhere specified.\"}",
+          "reasoning": "Need HTS for soap dispensers made of ceramic? Likely 3924? Actually ceramic soap dispenser is a \"ceramic articles\" 6914? 6914.90.00 other ceramic articles. But it's a dispenser, maybe classified under \"dispensers for liquids, of plastics\" 3924.90.99. However material is dolomite ceramic (stoneware). So HTS 6914.90.00 \"Other ceramic articles\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293535722,
+      "prompt_tokens": 280,
+      "prompt_time": 0.01298115,
+      "completion_tokens": 141,
+      "completion_time": 0.295105846,
+      "total_tokens": 421,
+      "total_time": 0.308086996,
+      "completion_tokens_details": {
+        "reasoning_tokens": 98
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3qseyh3e3xssdhhe18vexrq",
+      "seed": 488720847
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "69149000",
+  "predicted_reason": "Dolomite ceramic soap dispensers are classified as other ceramic articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

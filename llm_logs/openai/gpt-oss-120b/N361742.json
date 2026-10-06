@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361742",
+  "rulingDate": "2026-06-12T00:00:00",
+  "true_code": "6206403035",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bb40ae46-ee3b-4874-a87b-b3ab63726310",
+    "object": "chat.completion",
+    "created": 1790803991,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6206.30.10\", \"reason\": \"The item is a women's blouse made of mixed knit and woven fabrics containing man\u2011made fibers, classifying it under women's blouses of man\u2011made fibers (HTS 6206.30.10).\"}",
+          "reasoning": "We need HTS for women's blouse made of mixed fibers knit/woven. Likely 6206.30.10? Let's think: 6206 = women's or girls' blouses, shirts and shirt-blouses, knitted or crocheted. 6206.30 = of man-made fibers. 6206.30.10 = of other than cotton? Actually 6206.30.10 is of man-made fibers, not containing cotton? Need check. Since mix includes cotton 57% in some parts, but overall mixed. Could be 6206.30.20? That is of other textile materials? Actually 6206.30.20 is of other textile materials? I'm not sure. Might be 6206.30.30? Let's pick 6206.30.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087443344,
+      "prompt_tokens": 273,
+      "prompt_time": 0.012526182,
+      "completion_tokens": 235,
+      "completion_time": 0.500041047,
+      "total_tokens": 508,
+      "total_time": 0.512567229,
+      "completion_tokens_details": {
+        "reasoning_tokens": 166
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3t3rp5xegqvxpv9sfea2qw4",
+      "seed": 997361887
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62063010",
+  "predicted_reason": "The item is a women's blouse made of mixed knit and woven fabrics containing man\u2011made fibers, classifying it under women's blouses of man\u2011made fibers (HTS 6206.30.10).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

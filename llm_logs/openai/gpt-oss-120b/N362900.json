@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362900",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7013998090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fac19361-a84a-46cc-b186-602990b784f6",
+    "object": "chat.completion",
+    "created": 1790841238,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7017.90.90\", \"reason\": \"The item is a decorative glass article (non\u2011lead, non\u2011tempered) not primarily a lamp, thus classified under other glassware.\"}",
+          "reasoning": "We need HTS for glass decorative article, shaped like tree, with LEDs. Likely under 7017.10.00? 7017 covers glassware of a kind used for tableware etc. Decorative glass articles: 7017.90? Actually 7017.90.90 is other glassware. But LED internal maybe classified under 9405? But it's glass article, not furniture. 9405.20 covers lamps and lighting fixtures, but glass decorative? Could be 9405.20.00 (lamps). However it's a decorative article, not primarily a lamp. Might be 7017.90.90 \"Other glassware\". So choose 7017.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205904188,
+      "prompt_tokens": 279,
+      "prompt_time": 0.013976553,
+      "completion_tokens": 203,
+      "completion_time": 0.420861817,
+      "total_tokens": 482,
+      "total_time": 0.43483837,
+      "completion_tokens_details": {
+        "reasoning_tokens": 147
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3v79cpxebnvhz1n4w4qndy3",
+      "seed": 936474997
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "70179090",
+  "predicted_reason": "The item is a decorative glass article (non\u2011lead, non\u2011tempered) not primarily a lamp, thus classified under other glassware.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

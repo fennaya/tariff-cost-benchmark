@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362232",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8708305090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4a38c7f5-ffe5-444d-9c8b-6bb910bacfd9",
+    "object": "chat.completion",
+    "created": 1790821736,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90.00\", \"reason\": \"Brake pads are classified under heading 8708 as other parts and accessories of motor vehicles, specifically subheading 8708.99.90 for brake linings and pads.\"}",
+          "reasoning": "We need HTS code for brake pads. Likely 8708.99.90? Actually brake pads for motor vehicles: heading 8708.99.90 (Other parts and accessories of motor vehicles). More specific: 8708.99.90 is \"Other parts and accessories of motor vehicles, n.e.s.\" Brake pads are under 8708.99.90. 10-digit: 8708.99.90.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.312894895,
+      "prompt_tokens": 381,
+      "prompt_time": 0.089900415,
+      "completion_tokens": 161,
+      "completion_time": 0.339470967,
+      "total_tokens": 542,
+      "total_time": 0.429371382,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3tmp7fve9s99c87s0hev4cp",
+      "seed": 983235038
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Brake pads are classified under heading 8708 as other parts and accessories of motor vehicles, specifically subheading 8708.99.90 for brake linings and pads.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

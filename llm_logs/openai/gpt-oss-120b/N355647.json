@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N355647",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "7020006000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-975874cb-a852-4b7f-b72e-831e8495a5e2",
+    "object": "chat.completion",
+    "created": 1790607114,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6810.00.90\",\n  \"reason\": \"Classified as artificial stone (composite of glass aggregate and polymer resin) used for countertops, falling under heading 6810 for articles of cement, concrete or artificial stone.\"\n}",
+          "reasoning": "We need HTS for glass aggregate with polymer binder, like engineered stone countertops. Likely heading 6810.00? Actually 6810 covers articles of cement, concrete, etc. Not. Composite of glass and resin maybe under 3926? Plastics articles reinforced with glass? 3926.90.99? But glass aggregate predominant. Could be 6810.00.90? Let's think: \"Glass fiber reinforced plastic\" is 6810? No, 6810 is \"Articles of cement, concrete or artificial stone\". Artificial stone includes composite of cement, plaster, etc. Engineered stone (quartz countertops) is under 6810.00.90. But this is glass aggregate not quartz. Still artificial stone. So HTS 6810.00.90 (Other). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.212131555,
+      "prompt_tokens": 373,
+      "prompt_time": 0.024467294,
+      "completion_tokens": 234,
+      "completion_time": 0.495254758,
+      "total_tokens": 607,
+      "total_time": 0.519722052,
+      "completion_tokens_details": {
+        "reasoning_tokens": 169
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4b2f03d631",
+    "x_groq": {
+      "id": "req_01m3m80f3pezgs45jbqaw0400n",
+      "seed": 298571966
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "68100090",
+  "predicted_reason": "Classified as artificial stone (composite of glass aggregate and polymer resin) used for countertops, falling under heading 6810 for articles of cement, concrete or artificial stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

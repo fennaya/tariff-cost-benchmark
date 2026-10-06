@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356922",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9617001000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-84fff46c-3cb1-4042-8aff-3c15f5336e10",
+    "object": "chat.completion",
+    "created": 1790725912,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7323.93.00.00\",\n  \"reason\": \"The item is a stainless\u2011steel double\u2011walled vacuum insulated tumbler, classified under other articles of stainless steel (HTS 7323.93) as it is not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for stainless steel vacuum insulated tumbler. Likely under 7323.93.00? Let's think: 7323 covers tableware, kitchenware, other articles of iron or steel. 7323.93 is \"Other articles of stainless steel, not elsewhere specified\". But insulated beverage containers maybe 7323.93.00.00. Could also be 7323.93.10? Need 10-digit. US uses 6-digit then 2+2. Likely 7323.93.00.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088610925,
+      "prompt_tokens": 408,
+      "prompt_time": 0.101534415,
+      "completion_tokens": 189,
+      "completion_time": 0.39601008,
+      "total_tokens": 597,
+      "total_time": 0.497544495,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qs9xhyenn83p5ggp7g287x",
+      "seed": 1538704074
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7323930000",
+  "predicted_reason": "The item is a stainless\u2011steel double\u2011walled vacuum insulated tumbler, classified under other articles of stainless steel (HTS 7323.93) as it is not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359553",
+  "rulingDate": "2026-03-24T00:00:00",
+  "true_code": "8419899585",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0da4d718-aaf7-4b1f-9bb7-4a679cb81e6c",
+    "object": "chat.completion",
+    "created": 1790727864,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8419.81.20\",\n  \"reason\": \"Classified as a refrigerating machine used for industrial processes, matching the description of an electric chiller with dual temperature control loops.\"\n}",
+          "reasoning": "We need HTS code. Likely under 8419? Electric chillers. 8419.50? Let's think: 8419.50.00 is \"Air conditioning machines, comprising a motor-driven fan and elements for heating or cooling\". But this is a liquid chiller, not air. Could be 8419.89? Actually 8419.89.90 is \"Other\". However there is 8419.81 for \"Refrigerating machines, of a kind used for the transport of perishable goods\". Not.\n\nMaybe 8419.89.90 \"Other\". Or 8419.50.90 \"Other\". The product is a \"electric chiller\" for industrial process cooling/heating, liquid. Could be under 8419.81.20 \"Refrigerating machines, of a kind used for industrial processes\". Let's check: 8419.81.20 is \"Refrigerating machines, of a kind used for industrial processes\". That seems right. So HTS 8419.81.20. Provide reason.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088878461,
+      "prompt_tokens": 602,
+      "prompt_time": 0.026281955,
+      "completion_tokens": 278,
+      "completion_time": 0.707762624,
+      "total_tokens": 880,
+      "total_time": 0.734044579,
+      "completion_tokens_details": {
+        "reasoning_tokens": 222
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3qv5f2zend8ddppw9rst75m",
+      "seed": 880830323
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84198120",
+  "predicted_reason": "Classified as a refrigerating machine used for industrial processes, matching the description of an electric chiller with dual temperature control loops.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

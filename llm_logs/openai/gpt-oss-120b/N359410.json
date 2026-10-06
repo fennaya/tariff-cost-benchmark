@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359410",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8536908585",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2829c2bb-e672-46a5-a9f3-e93110de4395",
+    "object": "chat.completion",
+    "created": 1790727281,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8542.31.00\",\n  \"reason\": \"The item is a printed circuit board assembly with connectors, classified under printed circuit boards (electronic assemblies) in heading 8542.\"\n}",
+          "reasoning": "We need HTS code for a wired breakout board, PCB with connectors, used in headset. Likely under \"Printed circuit boards\" 8542.31.00? 8542.31.00 is \"Electronic integrated circuits; boards, panels, etc., for electronic assemblies\". Actually 8542.31.00 is \"Electronic integrated circuits; parts thereof\". Wait check: 8542.31 is \"Electronic integrated circuits; parts thereof\". For printed circuit boards: 8542.31? Actually 8542.31 is \"Electronic integrated circuits; parts thereof\". 8542.32 is \"Other\". But there is 8542.31.00? Might be 8542.31.00 for \"Electronic integrated circuits; parts thereof\". For PCBs, the code is 8542.31.00? Another is 8542.31.00 for \"Electronic integrated circuits; parts thereof\". However many classify PCBs under 8542.31.00. So answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204883667,
+      "prompt_tokens": 262,
+      "prompt_time": 0.01074167,
+      "completion_tokens": 265,
+      "completion_time": 0.548356879,
+      "total_tokens": 527,
+      "total_time": 0.559098549,
+      "completion_tokens_details": {
+        "reasoning_tokens": 208
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qtknpeedsbdxs9bj3nag4m",
+      "seed": 1005123951
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85423100",
+  "predicted_reason": "The item is a printed circuit board assembly with connectors, classified under printed circuit boards (electronic assemblies) in heading 8542.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

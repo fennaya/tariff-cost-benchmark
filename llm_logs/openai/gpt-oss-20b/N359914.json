@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359914",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-9bff0c7a-563a-43af-9f2f-276ff15a0a38",
+    "object": "chat.completion",
+    "created": 1790655581,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90.00\",\"reason\":\"Ticagrelor tablets are medicinal preparations not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for pharmaceutical preparations. For tablets of ticagrelor. Likely 3004.90.90? Actually 3004.90.90 is \"Other medicinal preparations, not elsewhere specified\". 3004.90.90 is for \"Other medicinal preparations, not elsewhere specified\". But 3004.90.90 is 10-digit? 3004.90.90 is 8 digits. 10-digit would be 3004.90.90.00? Actually HTSUS 10-digit: 3004.90.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203290631,
+      "prompt_tokens": 210,
+      "prompt_time": 0.010170731,
+      "completion_tokens": 164,
+      "completion_time": 0.175758392,
+      "total_tokens": 374,
+      "total_time": 0.185929123,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3np7k4ae5n9t6j5dfmz3dar",
+      "seed": 748669239
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Ticagrelor tablets are medicinal preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360371",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b295673c-d248-4a81-9e34-5ad6d56cb43f",
+    "object": "chat.completion",
+    "created": 1790904971,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"The product is a medicinal preparation (injectable muscle relaxant) classified under heading 3004 for pharmaceutical preparations not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for a pharmaceutical injection, suxamethonium (suxamethonium chloride) 200 mg/2 ml. Likely under 3004.90? Actually medicinal preparations containing a single active ingredient: 3004.90.00? Let's see: 3004.90.00 is \"Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of mixed or unmixed products for therapeutic or prophylactic uses, not elsewhere specified\". Suxamethonium is a muscle relaxant, a medicinal product. So HTS 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.299237395,
+      "prompt_tokens": 248,
+      "prompt_time": 0.010099727,
+      "completion_tokens": 190,
+      "completion_time": 0.403801699,
+      "total_tokens": 438,
+      "total_time": 0.413901426,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3x42bfqezf9ya2d41z94366",
+      "seed": 168458527
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "The product is a medicinal preparation (injectable muscle relaxant) classified under heading 3004 for pharmaceutical preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

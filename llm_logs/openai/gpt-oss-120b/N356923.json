@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356923",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8544493080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e2ceaee4-75eb-4c49-a388-c7d9a7304a4d",
+    "object": "chat.completion",
+    "created": 1790725914,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.90\", \"reason\": \"Category for insulated copper telecommunications cable (e.g., CAT5e LAN cable) without connectors\"}",
+          "reasoning": "We need HTS code for CAT5e LAN cable, communications cable, not fitted with connectors, PVC jacket, 4-pair, 300V. Likely heading 8544.42.00? Let's recall: 8544.42.00 is \"Insulated (including enamelled) or coated wire, for telecommunications\". Actually 8544.42 is \"Insulated (including enamelled) or coated wire, for telecommunications\". But cables? 8544.49 is \"Other\". However 8544.42.90 maybe. Another: 8544.70 is \"Electrical apparatus for switching or protecting\". Not.\n\nBetter: 8544.42.00 - \"Insulated (including enamelled) or coated wire, for telecommunications\". But cable is multiple conductors. Could be 8544.42.90 \"Other\". Actually 8544.42.90 is \"Other insulated or coated wire for telecommunications\". Might be correct.\n\nAlternatively 8544.49.00 \"Other insulated wire\". Hmm.\n\nI think HTS 8544.42.90.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.42263906,
+      "prompt_tokens": 282,
+      "prompt_time": 0.079612418,
+      "completion_tokens": 273,
+      "completion_time": 0.568223154,
+      "total_tokens": 555,
+      "total_time": 0.647835572,
+      "completion_tokens_details": {
+        "reasoning_tokens": 228
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m3qs9yjzekg8v8mte800c3k8",
+      "seed": 130505468
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444290",
+  "predicted_reason": "Category for insulated copper telecommunications cable (e.g., CAT5e LAN cable) without connectors",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

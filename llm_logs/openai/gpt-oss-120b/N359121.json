@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359121",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a9f6d7a4-c446-4e72-a0cd-651b4e7f46d4",
+    "object": "chat.completion",
+    "created": 1790727100,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9026.80.9090\",\n  \"reason\": \"These are molded ABS\u2011PC components that are parts of an aviation headset, classified under parts of headphones/earphones.\"\n}",
+          "reasoning": "We need HTS for plastic parts for aviation headsets, likely \"Parts of headphones, earphones, etc.\" Heading 9026? Actually 9026.90? Check: 9026.80 for parts of headphones? 9026.80.90? Let's think: 9026.80 \u2013 Parts of headphones, earphones, etc. Subheading 9026.80.90 (other). So 10-digit: 9026.80.9090? Actually 9026.80.9090 is 10-digit. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048768218,
+      "prompt_tokens": 475,
+      "prompt_time": 0.022657432,
+      "completion_tokens": 172,
+      "completion_time": 0.360257626,
+      "total_tokens": 647,
+      "total_time": 0.382915058,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3qte5arez1br35wb8kfvf7q",
+      "seed": 1248012537
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9026809090",
+  "predicted_reason": "These are molded ABS\u2011PC components that are parts of an aviation headset, classified under parts of headphones/earphones.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

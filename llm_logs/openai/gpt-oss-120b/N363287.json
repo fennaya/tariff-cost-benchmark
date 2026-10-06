@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363287",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7607196000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-70096272-d0a0-4819-a0bd-7bcd1146becb",
+    "object": "chat.completion",
+    "created": 1790848992,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7612.99.90\", \"reason\": \"Classified under other articles of aluminum (not elsewhere specified) as a self\u2011wound pressure\u2011sensitive adhesive aluminum foil tape.\"}",
+          "reasoning": "We need HTS code for pressure-sensitive adhesive tape, aluminum foil backing. Likely heading 3919? Actually 3919.10.00 is \"Self-adhesive plates, sheets, film, foil, tape, ...\". For aluminum foil tape with pressure-sensitive adhesive, maybe 3919.90.00 other. Check: 3919.10.00 is \"Self-adhesive plates, sheets, film, foil, tape, ... of plastics\". Aluminum is not plastic. Could be 7612.99.90 \"Other articles of aluminum, not elsewhere specified\". But adhesive tape maybe under 3919.90.00 \"Other self-adhesive products\". However aluminum foil is metal, but coated with adhesive. I think classification under 3919.90.00 (Other self-adhesive products, of plastics). Not correct.\n\nMaybe 7612.99.90 \"Other articles of aluminum, not elsewhere specified\". That includes aluminum foil tape? Likely. So choose 7612.99.90. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.163117712,
+      "prompt_tokens": 287,
+      "prompt_time": 0.08017802,
+      "completion_tokens": 275,
+      "completion_time": 0.582452382,
+      "total_tokens": 562,
+      "total_time": 0.662630402,
+      "completion_tokens_details": {
+        "reasoning_tokens": 221
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3vep0qwe2b9vf9sf3q72h9k",
+      "seed": 74159916
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76129990",
+  "predicted_reason": "Classified under other articles of aluminum (not elsewhere specified) as a self\u2011wound pressure\u2011sensitive adhesive aluminum foil tape.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

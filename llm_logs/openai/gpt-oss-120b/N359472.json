@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359472",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8530900000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-625f1e50-cd15-4feb-bd08-5af771b58dd5",
+    "object": "chat.completion",
+    "created": 1790727318,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8539.90.00\",\n  \"reason\": \"The item is a metal housing component for an LED roadway warning light, classified as a part of electrical signaling apparatus.\"\n}",
+          "reasoning": "We need HTS code for stainless steel housing for LED pedestrian crossing marker. Likely under \"Parts of lamps\" or \"Electrical apparatus\". Could be 8539? Actually housings for signaling devices maybe 8539.30.00 (parts for lamps). But stainless steel housing maybe 8302.10.90 (other bases, frames, etc of metal). However it's part of a signaling device, not a lamp itself. Could be 8539.90.00 (parts of other apparatus). Let's pick 8539.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301340583,
+      "prompt_tokens": 317,
+      "prompt_time": 0.017476379,
+      "completion_tokens": 167,
+      "completion_time": 0.347048671,
+      "total_tokens": 484,
+      "total_time": 0.36452505,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3qtmtsqe3wt0pxehagg75j6",
+      "seed": 1518237151
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85399000",
+  "predicted_reason": "The item is a metal housing component for an LED roadway warning light, classified as a part of electrical signaling apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

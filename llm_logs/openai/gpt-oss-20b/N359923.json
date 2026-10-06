@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359923",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "8807300030",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3c70cf18-ff9b-42e0-89f9-584c5b3838d9",
+    "object": "chat.completion",
+    "created": 1790656200,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8425.90.90.00\",\"reason\":\"It is a purely mechanical rotary gear reducer (epicyclic/planetary gearbox) used in aircraft, fitting the HTSUS heading 8425.90.90 for other mechanical appliances.\"}",
+          "reasoning": "Need HTS code for mechanical gear reducer, no electronics. Likely 8425.90.90? Actually 8425 is \"Other mechanical appliances\". 8425.90 is \"Other\". But gear reducers maybe 8425.90.90. Provide 10-digit: 8425.90.90.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.046831445,
+      "prompt_tokens": 509,
+      "prompt_time": 0.025208581,
+      "completion_tokens": 136,
+      "completion_time": 0.155136246,
+      "total_tokens": 645,
+      "total_time": 0.180344827,
+      "completion_tokens_details": {
+        "reasoning_tokens": 71
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_feb9b278f1",
+    "x_groq": {
+      "id": "req_01m3nptfqneknty7vrytxsnmbk",
+      "seed": 1917175691
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425909000",
+  "predicted_reason": "It is a purely mechanical rotary gear reducer (epicyclic/planetary gearbox) used in aircraft, fitting the HTSUS heading 8425.90.90 for other mechanical appliances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

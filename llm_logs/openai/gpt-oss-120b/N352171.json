@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N352171",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "6802990090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8f396442-e692-422a-854f-294337862bc1",
+    "object": "chat.completion",
+    "created": 1790607040,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.99.0010\", \"reason\": \"Classified as other worked igneous stone used for countertops, backsplashes, and flooring under heading 6802.99.0010.\"}",
+          "reasoning": "We need HTS for natural stone countertop: other igneous stone, cut stone. Likely heading 6802.99.00? 6802 covers worked granite, basalt, other natural stone. 6802.99.00 is \"Other worked stone, not elsewhere specified\". So 10-digit: 6802.99.0010? Actually 10-digit US: 6802.99.0010 is \"Other worked stone, not elsewhere specified, of a kind used for building\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.04693413,
+      "prompt_tokens": 281,
+      "prompt_time": 0.012932895,
+      "completion_tokens": 166,
+      "completion_time": 0.348958427,
+      "total_tokens": 447,
+      "total_time": 0.361891322,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3m7y6tke1t80emfp3tf2gp1",
+      "seed": 1304107382
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802990010",
+  "predicted_reason": "Classified as other worked igneous stone used for countertops, backsplashes, and flooring under heading 6802.99.0010.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

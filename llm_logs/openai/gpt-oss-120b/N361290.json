@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361290",
+  "rulingDate": "2026-05-18T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9e823b82-f441-438c-bf48-86d940d63da1",
+    "object": "chat.completion",
+    "created": 1790787469,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.69.00.00\", \"reason\": \"Classified as a women's dress (apparel) not specified by material, falling under HTS heading 6204 for women's or girls' dresses of other textile materials.\"}",
+          "reasoning": "Need HTS for women's dress, likely 6204.62? 10-digit: 6204.62.00.00? That's 6-2-2-2-2? Actually HTS 10-digit: 6204.62.00.00 is women's or girls' dresses, knitted or crocheted, of cotton? Not specified material. Could be \"Other\" maybe 6204.69.00.00 for other textile materials. Choose generic: 6204.69.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.139935188,
+      "prompt_tokens": 188,
+      "prompt_time": 0.010221602,
+      "completion_tokens": 172,
+      "completion_time": 0.370224749,
+      "total_tokens": 360,
+      "total_time": 0.380446351,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c652c0ffaa",
+    "x_groq": {
+      "id": "req_01m3sm0fveejbbcwx51sv7cz36",
+      "seed": 1048875888
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204690000",
+  "predicted_reason": "Classified as a women's dress (apparel) not specified by material, falling under HTS heading 6204 for women's or girls' dresses of other textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

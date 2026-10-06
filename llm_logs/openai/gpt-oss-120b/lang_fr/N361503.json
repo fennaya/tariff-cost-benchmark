@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361503",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-23af996b-12f1-4fba-815d-f5095f9ca9bb",
+    "object": "chat.completion",
+    "created": 1790910389,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.10.00\", \"reason\": \"Printed bound books (32-page, decorative illustrations) fall under HTSUS heading 4901 for printed books and pamphlets.\"}",
+          "reasoning": "We need HTS code for printed books. Likely 4901.99.00? Let's see: 4901.10 - printed books, brochures, etc. 4901.10.00 is printed books, pamphlets, etc. 4901.99 is other printed matter. Books are 4901.10.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220769303,
+      "prompt_tokens": 260,
+      "prompt_time": 0.010976881,
+      "completion_tokens": 128,
+      "completion_time": 0.263694523,
+      "total_tokens": 388,
+      "total_time": 0.274671404,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3x97q1teztvfszvmxdc16rr",
+      "seed": 1165498871
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49011000",
+  "predicted_reason": "Printed bound books (32-page, decorative illustrations) fall under HTSUS heading 4901 for printed books and pamphlets.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

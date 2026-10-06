@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361915",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1891434c-3772-4c0c-b8a7-ff77702145bd",
+    "object": "chat.completion",
+    "created": 1790811013,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.00\", \"reason\": \"Classified as a toy vehicle (scaled racecar) used for educational purposes, falling under heading 9503 for toys and reduced-size models.\"}",
+          "reasoning": "We need HTS code for toy vehicle with AI components. Likely 9503.00.00? 9503.00.00 is toys; but includes \"toy cars\". However presence of computer board may be \"electronic integrated circuits\" 8542? But it's a toy. Probably 9503.00.00 - \"Other toys; reduced-size models and similar toys\". 9503.00.00 covers \"toy vehicles\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.108304128,
+      "prompt_tokens": 357,
+      "prompt_time": 0.017613885,
+      "completion_tokens": 152,
+      "completion_time": 0.312767703,
+      "total_tokens": 509,
+      "total_time": 0.330381588,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3taf0akey0a358ccyk3m2qq",
+      "seed": 305234811
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95030000",
+  "predicted_reason": "Classified as a toy vehicle (scaled racecar) used for educational purposes, falling under heading 9503 for toys and reduced-size models.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

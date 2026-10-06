@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362754",
+  "rulingDate": "2026-07-06T00:00:00",
+  "true_code": "4823906700",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5da76507-bf2d-4e36-92cf-dfcd798ad3f5",
+    "object": "chat.completion",
+    "created": 1790835055,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3919.90.00\",\n  \"reason\": \"The item is a decorative article made of coated paperboard, classified under HTS chapter 39 as other paperboard articles not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for decorative paperboard house. Likely under 3919? Paperboard articles. 3919.10.00? Let's think: 3919 covers \"Other articles of paper pulp, paper, paperboard, cellulose wadding\". 3919.10 is \"Boxes, cases, bags, etc\". Decorative items maybe 3919.90 \"Other\". Could be 3919.90.00. But maybe 9503 toys? It's a decorative model, not a toy. Likely 3919.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207397333,
+      "prompt_tokens": 270,
+      "prompt_time": 0.014471572,
+      "completion_tokens": 177,
+      "completion_time": 0.371091883,
+      "total_tokens": 447,
+      "total_time": 0.385563455,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3v1cp0aef2b7nnacj14eag6",
+      "seed": 1957416971
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39199000",
+  "predicted_reason": "The item is a decorative article made of coated paperboard, classified under HTS chapter 39 as other paperboard articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9747714a-7c25-4fb5-b04f-e08ac87eda0e",
+    "object": "chat.completion",
+    "created": 1790905552,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.20.00.00\", \"reason\": \"The product is a diagnostic reagent (indocyanine green injection) used for medical imaging, classified under HTS heading 3004.20 for diagnostic or laboratory reagents.\"}",
+          "reasoning": "We need HTS code for indocyanine green injection, a diagnostic reagent. Likely under 3004.90.00? 3004 is medicaments. 3004.90.00 is \"Other medicaments\". 3004.20 is \"Diagnostic and laboratory reagents\". Actually 3004.20 is \"Diagnostic or laboratory reagents\". Let's check: HTSUS 3004.20.00 - \"Diagnostic or laboratory reagents, other than those of heading 3002\". So likely 3004.20.00. Need 10-digit: 3004.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149186188,
+      "prompt_tokens": 243,
+      "prompt_time": 0.010946307,
+      "completion_tokens": 199,
+      "completion_time": 0.419267819,
+      "total_tokens": 442,
+      "total_time": 0.430214126,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m3x4m39he9rrztdbeqh4t686",
+      "seed": 968631122
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004200000",
+  "predicted_reason": "The product is a diagnostic reagent (indocyanine green injection) used for medical imaging, classified under HTS heading 3004.20 for diagnostic or laboratory reagents.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

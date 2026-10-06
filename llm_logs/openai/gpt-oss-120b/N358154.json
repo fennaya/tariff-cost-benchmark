@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358154",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8714100050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-83fd828a-98ed-4685-a878-baa818820186",
+    "object": "chat.completion",
+    "created": 1790726558,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.9000\", \"reason\": \"Steel front brake drum and shoes for a motorcycle are classified as other parts of motor vehicles (brake system components) under heading 8708.99.90.\"}",
+          "reasoning": "Need HTS for brake drum for motorcycle, steel. Likely 8708.99.90? Actually 8708.99.90 is parts of motor vehicles, other. But specific: brake drums of motor vehicles: 8708.99.90. 10-digit: 8708.99.9000. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.212359697,
+      "prompt_tokens": 240,
+      "prompt_time": 0.009046116,
+      "completion_tokens": 132,
+      "completion_time": 0.279248812,
+      "total_tokens": 372,
+      "total_time": 0.288294928,
+      "completion_tokens_details": {
+        "reasoning_tokens": 71
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qsxm7be1286mp36a4kbv47",
+      "seed": 2083547436
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Steel front brake drum and shoes for a motorcycle are classified as other parts of motor vehicles (brake system components) under heading 8708.99.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357463",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-32dc7470-59b2-450b-bd31-57948083f20b",
+    "object": "chat.completion",
+    "created": 1790726226,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.80\", \"reason\": \"The item is an adult costume comprising clothing and accessories intended for amusement or theatrical use, classifiable under heading 9505.90 for other articles for amusement.\"}",
+          "reasoning": "Need to pick HTS code for costume with accessories. Likely 9505.90.80? Actually costumes under 9505.90.80 (other articles for amusement). Could be 9505.90.80 \"Other\" for toys? But clothing accessories maybe 6104? However costume is not for everyday wear, likely 9505.90.80 \"Other articles for amusement\". Use 9505.90.80."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018589079,
+      "prompt_tokens": 197,
+      "prompt_time": 0.007923654,
+      "completion_tokens": 151,
+      "completion_time": 0.316109149,
+      "total_tokens": 348,
+      "total_time": 0.324032803,
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3qskfqteshrz5c8afkfscv3",
+      "seed": 1302907418
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059080",
+  "predicted_reason": "The item is an adult costume comprising clothing and accessories intended for amusement or theatrical use, classifiable under heading 9505.90 for other articles for amusement.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

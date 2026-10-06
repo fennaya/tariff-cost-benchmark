@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357464",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7d2d7840-c516-4603-adb4-0e26702b06bf",
+    "object": "chat.completion",
+    "created": 1790726228,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.90\", \"reason\": \"Adult costume comprising a dress, corset, and hat is classified under heading 9505 for costumes and masquerade apparel.\"}",
+          "reasoning": "Need to pick HTS code for costume (adult size) likely under 9505? Actually costumes are textile apparel: 6104? It's a pullover dress with foam corset and hat, likely \"costumes, masquerade\" 9505.20.00? Check: 9505.90.90 is \"other\". But 9505.90.90 is toys. Wait 9505.90.90 is \"Other\". However costumes for adults maybe 9505.90.90. Actually 9505.90.90 is \"Other\" under \"Articles and equipment for sports, gymnastics, etc.\" Not.\n\nCostumes are under 9505.90.90? Let's recall: 9505.90.90 is \"Other\" for \"Articles and equipment for sports, gymnastics, etc.\" Not.\n\nCostumes are under 9505.90.10? Not.\n\nBetter: 9505.90.90 is \"Other\". But there is heading 9505.90.90 for \"Other\". Might be okay.\n\nAlternatively apparel: 6104.63.00 (women's or girls' dresses, knitted or crocheted, of man-made fibers). But costume includes foam corset and hat, maybe classified under 9505.90.90 \"Costumes, masks, etc.\" Actually 9505.90.90 is \"Other\" under \"Costumes, masks, etc.\" Let's assume 9505.90.90.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205547863,
+      "prompt_tokens": 192,
+      "prompt_time": 0.007663596,
+      "completion_tokens": 359,
+      "completion_time": 0.752194617,
+      "total_tokens": 551,
+      "total_time": 0.759858213,
+      "completion_tokens_details": {
+        "reasoning_tokens": 307
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qskhh3eccvccz1hz9c4tvx",
+      "seed": 1185086116
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059090",
+  "predicted_reason": "Adult costume comprising a dress, corset, and hat is classified under heading 9505 for costumes and masquerade apparel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

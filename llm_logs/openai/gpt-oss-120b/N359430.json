@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359430",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a2357328-9aff-4f5c-9d38-4939ae7130ae",
+    "object": "chat.completion",
+    "created": 1790727295,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Tranexamic acid tablets are classified as medicinal products not elsewhere specified, falling under heading 3004.90.00 for other pharmaceutical preparations.\"}",
+          "reasoning": "Need HTS for tranexamic acid tablets. Likely under 3004.90.00? Actually medicinal products: 3004.90.00 is \"Medicaments ... other\". Tranexamic acid is a pharmaceutical. So 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205249031,
+      "prompt_tokens": 202,
+      "prompt_time": 0.008150768,
+      "completion_tokens": 116,
+      "completion_time": 0.239536332,
+      "total_tokens": 318,
+      "total_time": 0.2476871,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qtm4ane318amwgeaej2rws",
+      "seed": 1810936865
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Tranexamic acid tablets are classified as medicinal products not elsewhere specified, falling under heading 3004.90.00 for other pharmaceutical preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

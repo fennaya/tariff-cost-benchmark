@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357694",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9c5c1705-7bdf-4772-806c-7eb60ac86966",
+    "object": "chat.completion",
+    "created": 1790905631,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8534.00.00\",\n  \"reason\": \"The product is an aluminum bus bar system used for making electrical connections in high\u2011voltage circuits, classified under electrical apparatus for making connections to or in electric circuits.\"\n}",
+          "reasoning": "We need HTS code for insulated bus bar system, aluminum. Likely under 7616.10.00? Actually busbars are \"Electrical apparatus for switching or protecting electrical circuits, or for making connections to or in electric circuits, for a voltage not exceeding 1,000 V: other\". But busbars are 8534? Let's think: 8534.00 covers \"Electrical apparatus for making connections to or in electric circuits (e.g., switches, relays, fuses, circuit breakers, connectors, terminals, etc.)\". Busbars maybe 8534.00. But aluminum busbars maybe 7616.10 (Aluminum structures). However HTS for \"Busbars, rods, and similar\" maybe 7616.10.00 \"Aluminum structures (excluding prefabricated buildings)\". Not specific.\n\nBetter: 8534.00.00 \"Electrical apparatus for making connections to or in electric circuits, for a voltage not exceeding 1,000 V\". But high voltage >1000V maybe 8534.00 still? Actually 8534 covers up to 1,000 V. For >1,000 V maybe 8535? 8535 is \"Electrical apparatus for switching or protecting electrical circuits, for a voltage exceeding 1,000 V\". Busbars are not switching. Might be 8535.10? Let's check: 8535.10 is \"Electrical apparatus for switching or protecting electrical circuits, for a voltage exceeding 1,000 V\". Not busbars.\n\nMaybe 8544? No.\n\nProbably 7616.10.00 \"Aluminum structures (excluding prefabricated buildings)\". But busbars are not structures.\n\nI think HTS 8534.00.00 is best.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206340995,
+      "prompt_tokens": 375,
+      "prompt_time": 0.01516018,
+      "completion_tokens": 428,
+      "completion_time": 0.891811196,
+      "total_tokens": 803,
+      "total_time": 0.906971376,
+      "completion_tokens_details": {
+        "reasoning_tokens": 365
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3x4pfgwechr7x12g7p1ds1m",
+      "seed": 1286746290
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85340000",
+  "predicted_reason": "The product is an aluminum bus bar system used for making electrical connections in high\u2011voltage circuits, classified under electrical apparatus for making connections to or in electric circuits.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

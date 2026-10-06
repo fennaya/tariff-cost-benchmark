@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360739",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "2106909995",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6189d498-c353-40ea-bbb3-68947c5810a7",
+    "object": "chat.completion",
+    "created": 1790772067,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2106.90.99\",\n  \"reason\": \"Frozen meatless protein preparations (mycoprotein) are classified under food preparations not elsewhere specified, subheading 2106.90.99.\"\n}",
+          "reasoning": "We need HTS code for mycoprotein meat analogues, frozen. Likely under 2106.90.99? Actually food preparations of meat substitutes: 2106.90.99 - other food preparations not elsewhere specified. But could be 2008.99.90 for other meat substitutes? 2008 is \"Vegetables, fruit, nuts, etc\". 2008.99.90 is \"Other\". However mycoprotein is a fungus, considered \"Other meat substitutes\" maybe 2103.90.99? 2103 is \"Preparations of meat, fish or crustaceans\". Not. 2106 is \"Food preparations not elsewhere specified\". Likely 2106.90.99.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048994475,
+      "prompt_tokens": 353,
+      "prompt_time": 0.016683152,
+      "completion_tokens": 216,
+      "completion_time": 0.454059131,
+      "total_tokens": 569,
+      "total_time": 0.470742283,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3s5af14e8h9tg9yyqn095cn",
+      "seed": 2060851808
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "21069099",
+  "predicted_reason": "Frozen meatless protein preparations (mycoprotein) are classified under food preparations not elsewhere specified, subheading 2106.90.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

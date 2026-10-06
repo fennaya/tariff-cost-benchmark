@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357399",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "6815994170",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4d1db6eb-e85e-427a-9459-749275d0c2a6",
+    "object": "chat.completion",
+    "created": 1790726165,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.31.0010\", \"reason\": \"Polished plain white marble slab used for building applications falls under HTS chapter 68, heading 6802.31 for marble, travertine, onyx, etc., blocks, slabs and tiles.\"}",
+          "reasoning": "We need to guess classification: likely a slab of stone? Polished plain white surface, dimensions large, thickness 1.2-3 cm. Could be marble slab. HTS for \"marble, travertine, etc., blocks, slabs, tiles\" is 6802.31.00? Actually 6802.31.00 is \"Marble, travertine, onyx, etc., blocks, slabs, tiles, of a kind used for building\". 10-digit: 6802.31.0010? Need 10-digit. Let's pick 6802.31.0010 (marble, polished). Reason sentence.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048470852,
+      "prompt_tokens": 239,
+      "prompt_time": 0.01255433,
+      "completion_tokens": 206,
+      "completion_time": 0.430014991,
+      "total_tokens": 445,
+      "total_time": 0.442569321,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3qshmsse8yb37969rh5bt5g",
+      "seed": 995164251
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6802310010",
+  "predicted_reason": "Polished plain white marble slab used for building applications falls under HTS chapter 68, heading 6802.31 for marble, travertine, onyx, etc., blocks, slabs and tiles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359134",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "9403200086",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e3d0e5b9-b71d-4b4d-8e20-eb80678e0c7e",
+    "object": "chat.completion",
+    "created": 1790727109,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.93.10.00\",\n  \"reason\": \"The tire carousel is a motorized steel rack for storage, handling, loading and unloading of tires, classifiable as a lifting/handling machine of iron or steel not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for tire carousel, a storage rack for tires, metal frames, motorized. Likely under 8425? 8425.93? Let's think: \"Other lifting, handling, loading or unloading machines\" 8425.93? Actually 8425.93 is \"Other lifting, handling, loading or unloading machines, not elsewhere specified\". Could be 8425.93. 8425.93.10? Need 10-digit: 8425.93.10.00? Check: 8425.93.10.00 is \"Other lifting, handling, loading or unloading machines, not elsewhere specified, of iron or steel\". That fits. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088875715,
+      "prompt_tokens": 487,
+      "prompt_time": 0.076047808,
+      "completion_tokens": 214,
+      "completion_time": 0.44132026,
+      "total_tokens": 701,
+      "total_time": 0.517368068,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3qtee1aehsrcjy8xbbw378n",
+      "seed": 1699110985
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425931000",
+  "predicted_reason": "The tire carousel is a motorized steel rack for storage, handling, loading and unloading of tires, classifiable as a lifting/handling machine of iron or steel not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357010",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3004909239",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c1b6ffbf-b609-4119-8a92-12d6ada58d9f",
+    "object": "chat.completion",
+    "created": 1790607216,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.10.00\",\"reason\":\"Pharmaceutical preparations containing other specified drugs (Venlafaxine HCl capsules)\"}",
+          "reasoning": "Need HTSUS code for pharmaceutical preparations of active ingredient. Venlafaxine HCl capsules. Likely 3004.10.10.00? Actually 3004.10.10.00 is \"Pharmaceutical preparations containing other specified drugs\". For generic drugs, 3004.10.10.00. So code 3004.10.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206055007,
+      "prompt_tokens": 234,
+      "prompt_time": 0.011830746,
+      "completion_tokens": 124,
+      "completion_time": 0.149023863,
+      "total_tokens": 358,
+      "total_time": 0.160854609,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3m83k1sekkbk9py3b5a0q1d",
+      "seed": 837081279
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004101000",
+  "predicted_reason": "Pharmaceutical preparations containing other specified drugs (Venlafaxine HCl capsules)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

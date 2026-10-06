@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N352363",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "2916121000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-db234d5d-3477-4072-a800-4695ff37ed9f",
+    "object": "chat.completion",
+    "created": 1790607046,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2915.90.00.00\", \"reason\": \"The product is an acrylic acid ester (2\u2011hydroxy\u20113\u2011phenoxypropyl acrylate), classified under HTS heading 2915 for acrylic esters not elsewhere specified.\"}",
+          "reasoning": "We need HTS for 2-hydroxy-3-phenoxypropyl acrylate, an aromatic ester of acrylic acid. Likely under 2915? Check: 2915.90 - other acrylic esters. 2915.90.00 is \"Acrylic esters, other than those of 2915.11-2915.19\". So code 2915.90.00. 10-digit: 2915.90.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.086761924,
+      "prompt_tokens": 243,
+      "prompt_time": 0.011213129,
+      "completion_tokens": 174,
+      "completion_time": 0.369632948,
+      "total_tokens": 417,
+      "total_time": 0.380846077,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3m7ycrterx9xhd3rvzyh4dn",
+      "seed": 875915458
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2915900000",
+  "predicted_reason": "The product is an acrylic acid ester (2\u2011hydroxy\u20113\u2011phenoxypropyl acrylate), classified under HTS heading 2915 for acrylic esters not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

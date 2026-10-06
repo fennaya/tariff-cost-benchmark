@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360242",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "8483905080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bdc64b5b-69ba-4943-9bb1-e4b97691ed3f",
+    "object": "chat.completion",
+    "created": 1790757374,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.00\", \"reason\": \"Stainless\u2011steel gears and gear assemblies used in a planetary gear set are classified under heading 8483 for gears and gear boxes, specifically subheading 8483.40 for other gears.\"}",
+          "reasoning": "We need HTS for gears, stainless steel, for aircraft? Likely 8483.40.00? Actually 8483.40.00 is \"Gears and gear boxes, other than those of heading 8482\". 8482 is \"Ball or roller bearings\". So gears: 8483.40.00 \"Other gears\". Since stainless steel, still 8483.40.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20285894,
+      "prompt_tokens": 290,
+      "prompt_time": 0.014945789,
+      "completion_tokens": 155,
+      "completion_time": 0.324587601,
+      "total_tokens": 445,
+      "total_time": 0.33953339,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3rqa1k6e40bn7kg8w5x37q4",
+      "seed": 1647312792
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84834000",
+  "predicted_reason": "Stainless\u2011steel gears and gear assemblies used in a planetary gear set are classified under heading 8483 for gears and gear boxes, specifically subheading 8483.40 for other gears.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357552",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "6105100010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1ca4e784-5a6d-4f65-8e30-4be88731ab31",
+    "object": "chat.completion",
+    "created": 1790726271,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6103.49.00\", \"reason\": \"Men's upper-body knitted garment of cotton/polyester blend with zip, classified under 6103.49 (knitted shirts of other textile materials).\"}",
+          "reasoning": "Need HTS for men's upper body garment, knit, cotton/polyester blend, with zip, stand-up collar. Likely 6103.43.00? Let's see: 6103 = men's or boys' knitted or crocheted shirts, T-shirts, sweatshirts, waistcoats. Subheadings: 6103.43 = of cotton; 6103.49 = of other textile materials. Since blend cotton/polyester, not 100% cotton, falls under 6103.49 (other). So code 6103.49.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207269316,
+      "prompt_tokens": 252,
+      "prompt_time": 0.010790124,
+      "completion_tokens": 177,
+      "completion_time": 0.36891745,
+      "total_tokens": 429,
+      "total_time": 0.379707574,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3qsmwbteshskg4108tccrhr",
+      "seed": 717117511
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61034900",
+  "predicted_reason": "Men's upper-body knitted garment of cotton/polyester blend with zip, classified under 6103.49 (knitted shirts of other textile materials).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

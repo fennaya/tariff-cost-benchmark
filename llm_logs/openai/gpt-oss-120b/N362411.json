@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362411",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "9401616011",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0ad40c85-2da5-45bb-9782-4c0811644c8f",
+    "object": "chat.completion",
+    "created": 1790826781,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9401.61.80\",\n  \"reason\": \"The product is an upholstered seat with a wooden frame, classified under HTSUS 9401.61.80 for other seats with wooden frames.\"\n}",
+          "reasoning": "We need HTS code for upholstered furniture, seats with metal frames, memory foam cushions. Likely 9401.61.80? 9401.61 is seats, upholstered, of plastic, etc. Actually 9401.61.80 is \"Other seats, with wooden frames\". Let's think: 9401.61 \u2013 Seats, with wooden frames, upholstered. 9401.61.80 is \"Other\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.416128598,
+      "prompt_tokens": 377,
+      "prompt_time": 0.077842992,
+      "completion_tokens": 152,
+      "completion_time": 0.317370643,
+      "total_tokens": 529,
+      "total_time": 0.395213635,
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3tsg5qqevwaeqwbkt0n4b3r",
+      "seed": 654819340
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94016180",
+  "predicted_reason": "The product is an upholstered seat with a wooden frame, classified under HTSUS 9401.61.80 for other seats with wooden frames.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361037",
+  "rulingDate": "2026-05-18T00:00:00",
+  "true_code": "3004490070",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6ce18dbc-62a6-4658-af23-dabc40e1a0f7",
+    "object": "chat.completion",
+    "created": 1790781067,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The item is informational printed material about FDA regulations, classifiable as other printed matter not elsewhere specified.\"\n}",
+          "reasoning": "We need to classify. The description is about FDA info, not a product. Likely not classifiable, maybe \"miscellaneous printed material\" 4901.99.00? It's a document. Use 4901.99.00 - Other printed matter, including printed advertisements. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 4.511342572,
+      "prompt_tokens": 242,
+      "prompt_time": 0.015201288,
+      "completion_tokens": 112,
+      "completion_time": 0.239297606,
+      "total_tokens": 354,
+      "total_time": 0.254498894,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3sdwztje7hamjzvxw02kf04",
+      "seed": 592555979
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The item is informational printed material about FDA regulations, classifiable as other printed matter not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

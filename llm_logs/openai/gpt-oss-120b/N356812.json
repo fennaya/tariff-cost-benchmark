@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356812",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8516790000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e6e95eae-93ca-4b36-b031-dc402a49ca4d",
+    "object": "chat.completion",
+    "created": 1790607160,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7324.10.00\",\n  \"reason\": \"Classified under stoves, ranges and cookers of iron or steel, which includes electric cooking appliances like a nonstick electric griddle.\"\n}",
+          "reasoning": "Need HTS for electric griddle. Likely 7324.10.00? That's for cooking appliances of iron or steel. But ceramic nonstick maybe 7324.90? Actually electric griddles are \"electric cooking appliances\" 8516? No, 8516 is electric heating elements. Cooking appliances: 8516.79? Wait: 8516.79 is other electric heating appliances. But kitchen appliances: 8516.79.00? Let's think: 8516.79.00 - Other electric heating appliances, not elsewhere specified. Could be. However many tariff schedules put electric skillets under 7324.10 (stoves, ranges). 7324.10.00 is \"Stoves, ranges and cookers, of iron or steel\". Might include electric griddles. I'd answer 7324.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 6.119799866,
+      "prompt_tokens": 211,
+      "prompt_time": 0.009181219,
+      "completion_tokens": 238,
+      "completion_time": 0.507770659,
+      "total_tokens": 449,
+      "total_time": 0.516951878,
+      "completion_tokens_details": {
+        "reasoning_tokens": 180
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3m81pxhe7zvhm6qa52q0t18",
+      "seed": 691269430
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73241000",
+  "predicted_reason": "Classified under stoves, ranges and cookers of iron or steel, which includes electric cooking appliances like a nonstick electric griddle.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362612",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "9603500000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8de597aa-6ee0-40b5-9261-1ede4d645503",
+    "object": "chat.completion",
+    "created": 1790833279,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9603.90.00\", \"reason\": \"Classified as a broom/brush (non\u2011motorized sweeping device) made of steel and polypropylene bristles, falling under heading 9603 for brooms, brushes and mop heads, specifically subheading 9603.90.00 for other materials.\"}",
+          "reasoning": "We need HTS code for industrial push broom. Likely under 9603? Actually brooms are 9603.00.00 (Brooms, brushes, mop heads, etc., of plastics). But steel frame with plastic bristles maybe 9603.90.00 (Other). 9603.90.00 is \"Brooms, brushes, mop heads, etc., of other materials\". So choose 9603.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.13976448,
+      "prompt_tokens": 428,
+      "prompt_time": 0.021240208,
+      "completion_tokens": 176,
+      "completion_time": 0.369110719,
+      "total_tokens": 604,
+      "total_time": 0.390350927,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dd854ee2d7",
+    "x_groq": {
+      "id": "req_01m3tzpg84e2srhpb2djyy1rsa",
+      "seed": 1977753166
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "96039000",
+  "predicted_reason": "Classified as a broom/brush (non\u2011motorized sweeping device) made of steel and polypropylene bristles, falling under heading 9603 for brooms, brushes and mop heads, specifically subheading 9603.90.00 for other materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

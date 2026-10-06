@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359919",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8516790000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-167fe794-2c53-49d1-a35a-d475feecc3a0",
+    "object": "chat.completion",
+    "created": 1790905584,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.62.20.00\",\"reason\":\"Electric skillet for kitchen use falls under heading 8517.62.20, electric cooking appliances for kitchen.\"}",
+          "reasoning": "We need HTS code for electric skillet. Likely 8517.62.10? Actually electric cooking appliances: 8517.62.10 is \"Electric cooking or heating appliances, other than those of heading 8517.62.20\". Wait 8517.62.10 is \"Electric cooking or heating appliances, other than those of heading 8517.62.20\". 8517.62.20 is \"Electric cooking or heating appliances, other than those of heading 8517.62.10, for use in the kitchen\". Hmm. Actually 8517.62.10 is \"Electric cooking or heating appliances, other than those of heading 8517.62.20, for use in the kitchen\". 8517.62.20 is \"Electric cooking or heating appliances, other than those of heading 8517.62.10, for use in the kitchen\". The difference is maybe for use in kitchen vs other. Our product is kitchen. So 8517.62.20. But check: 8517.62.20 is \"Electric cooking or heating appliances, other than those of heading 8517.62.10, for use in the kitchen\". So code 8517.62.20. But 10-digit: 8517.62.20.00? Actually 10-digit: 8517.62.20.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220133671,
+      "prompt_tokens": 265,
+      "prompt_time": 0.013082186,
+      "completion_tokens": 340,
+      "completion_time": 0.374130192,
+      "total_tokens": 605,
+      "total_time": 0.387212378,
+      "completion_tokens_details": {
+        "reasoning_tokens": 292
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_639a5351c8",
+    "x_groq": {
+      "id": "req_01m3x4n21fe4jbhp306dsnr9t3",
+      "seed": 1477503187
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517622000",
+  "predicted_reason": "Electric skillet for kitchen use falls under heading 8517.62.20, electric cooking appliances for kitchen.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

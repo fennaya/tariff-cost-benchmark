@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362750",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8544493080",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-1fa34043-d74c-42a9-bd5b-b1ef016193be",
+    "object": "chat.completion",
+    "created": 1790744950,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8541.30.00\",\"reason\":\"Twisted pair cable, 23-26 AWG, for data transmission, matches the described Cat6 cable.\"}",
+          "reasoning": "Need HTS code for Cat6 cable. Likely 8541.40.00? Actually 8541 is \"Electrical conductors, insulated, non-rotating, for data transmission\". For twisted pair cable: 8541.40.00 is \"Other electrical conductors, insulated, for data transmission, other than those of heading 8541.30\". 8541.30 is for \"Twisted pair cable, 23-26 AWG\". So 8541.30.00? Let's pick 8541.30.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148712325,
+      "prompt_tokens": 302,
+      "prompt_time": 0.023298256,
+      "completion_tokens": 163,
+      "completion_time": 0.170833387,
+      "total_tokens": 465,
+      "total_time": 0.194131643,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e2cb7a84ec",
+    "x_groq": {
+      "id": "req_01m3rbexnpeq5a0jxj8qq1hsx1",
+      "seed": 1590077762
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85413000",
+  "predicted_reason": "Twisted pair cable, 23-26 AWG, for data transmission, matches the described Cat6 cable.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361446",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e7ebfe8a-f34f-42a7-a63f-041326608362",
+    "object": "chat.completion",
+    "created": 1790794759,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The items are printed hardcover books with illustrations, classified under printed books other than those specifically listed, which fall under HTSUS 4901.99.00.\"\n}",
+          "reasoning": "Need HTS for printed books. Likely 4901.99.00? Actually 4901.10.00 = printed books, pamphlets. 4901.99.00 other printed books. Hardcover illustrated books = 4901.10.00? 4901.10 is \"Printed books, brochures, leaflets and similar printed matter, in single sheets, etc.\" Wait check: 4901.10 is \"Printed books, in single sheets, etc.\" 4901.99 is \"Other printed books, brochures, etc.\" So use 4901.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018025839,
+      "prompt_tokens": 314,
+      "prompt_time": 0.014364902,
+      "completion_tokens": 188,
+      "completion_time": 0.399554045,
+      "total_tokens": 502,
+      "total_time": 0.413918947,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3styym7e5mbtwcb9pz03tg0",
+      "seed": 1580119816
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The items are printed hardcover books with illustrations, classified under printed books other than those specifically listed, which fall under HTSUS 4901.99.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

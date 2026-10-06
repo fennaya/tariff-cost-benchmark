@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359262",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "3004909243",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4ce25fd6-281c-45fa-bb52-b1b1c41609ee",
+    "object": "chat.completion",
+    "created": 1790727184,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.90\", \"reason\": \"Carbamazepine extended\u2011release tablets are classified under heading 3004 for medicinal preparations, subheading 90 for other medicinal preparations not elsewhere specified.\"}",
+          "reasoning": "Need HTS for carbamazepine tablets. Likely 3004.90.90? Actually medicinal products: 3004.90.90 is \"Other medicinal preparations containing no active ingredient\". But carbamazepine is active. 3004.90.90 covers \"Other medicinal preparations\". 3004.90.90 is for \"Other medicinal preparations containing no active ingredient\" maybe. Let's check: 3004.90.90 - \"Other medicinal preparations, not elsewhere specified\". For specific active: 3004.90.90 likely. Could be 3004.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296588504,
+      "prompt_tokens": 205,
+      "prompt_time": 0.008678354,
+      "completion_tokens": 188,
+      "completion_time": 0.388601751,
+      "total_tokens": 393,
+      "total_time": 0.397280105,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3qtgqw8e1saptbvw1cb6ces",
+      "seed": 1755472633
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Carbamazepine extended\u2011release tablets are classified under heading 3004 for medicinal preparations, subheading 90 for other medicinal preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

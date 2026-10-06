@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357693",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7228706000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ce952331-2765-4de0-bfb6-185fec90849d",
+    "object": "chat.completion",
+    "created": 1790904768,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7308.90.90\", \"reason\": \"Flat-rolled alloy steel plate formed into a stair\u2011shaped pattern, classified under other structures of iron or steel\"}",
+          "reasoning": "We need HTS code for steel sheet, alloy, dry-formed? Likely 7308? 7308.90.90? 7308.90.90 is \"Other structures (e.g., towers, lattice) of iron or steel\". But sheet steel 0.5mm thick, alloy steel, cut and formed. Could be 7308.90.90? Or 7307? 7307 is \"Tube & pipe\". 7308 is \"Structures\". 7309 is \"Pipe fittings\". For flat-rolled steel products: 7304? Actually 7304 is \"Other tubes\". Flat-rolled steel of alloy: 7308? Wait 7308 is \"Structures\". Flat-rolled steel of alloy: 7308? No, 7308 is \"Structures\". Flat-rolled steel of alloy: 7308? Hmm.\n\nFlat-rolled steel of alloy, not further worked: 7308? Actually 7308 is \"Structures\". Flat-rolled steel of alloy, not further worked: 7308? Let's recall: 7308 is \"Structures (e.g., bridges, towers)\". 7308.90.90 is \"Other\". But product is a plate, not a structure. Could be 7308.90.90 still.\n\nBetter: 7308.90.90 is \"Other structures of iron or steel\". Might not fit.\n\nMaybe 7308.90.90 is okay.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204962383,
+      "prompt_tokens": 247,
+      "prompt_time": 0.011197873,
+      "completion_tokens": 356,
+      "completion_time": 0.746981056,
+      "total_tokens": 603,
+      "total_time": 0.758178929,
+      "completion_tokens_details": {
+        "reasoning_tokens": 306
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3x3w5erexpbxz3jfen74tf0",
+      "seed": 1191070387
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73089090",
+  "predicted_reason": "Flat-rolled alloy steel plate formed into a stair\u2011shaped pattern, classified under other structures of iron or steel",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

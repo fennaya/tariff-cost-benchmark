@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361315",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-005edee2-4001-4ab4-9200-3ad7a74ebce2",
+    "object": "chat.completion",
+    "created": 1790697816,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8207.10.10\",\"reason\":\"The description refers to a sword, which falls under the HTSUS heading for swords, sabres, cutlasses, etc.\"}",
+          "reasoning": "We have product description: \"The sword/shield was notincluded in the sample.\" It's unclear. Likely a sword and shield. Could be weapon. HTSUS for swords: 8207.10.10? Actually 8207 is swords, sabres, cutlasses, etc. 8207.10.10 is swords, sabres, cutlasses, etc. For shields: 8305? Wait shields are 8305.10.10? Let's check: 8305 is \"Other articles of iron or steel, not elsewhere specified or included\". Shields maybe 8305.10.10? But likely 8305.10.10 is \"Other articles of iron or steel, not elsewhere specified or included\". But shields could be 8305.10.10. However, the product is a sword/shield. Maybe it's a weapon set. Could be 8207.10.10 for swords. I'll choose 8207.10.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205460225,
+      "prompt_tokens": 162,
+      "prompt_time": 0.00816923,
+      "completion_tokens": 252,
+      "completion_time": 0.3298121,
+      "total_tokens": 414,
+      "total_time": 0.33798133,
+      "completion_tokens_details": {
+        "reasoning_tokens": 202
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3pygg1me3vbz2ffm9bs2dzz",
+      "seed": 1876909774
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82071010",
+  "predicted_reason": "The description refers to a sword, which falls under the HTSUS heading for swords, sabres, cutlasses, etc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

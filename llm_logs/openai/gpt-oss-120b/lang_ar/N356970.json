@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356970",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "3823192000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-32ae7d4d-64e2-4f98-939b-e00daa5f4993",
+    "object": "chat.completion",
+    "created": 1790904648,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2915.19.00.00\",\n  \"reason\": \"The product is a distilled fatty acid used as an animal feed energy source, classified under Chapter 29 heading 2915 for fatty acids and their salts, specifically 'other fatty acids'.\"\n}",
+          "reasoning": "We need HTS code for distilled fatty acid, likely a fatty acid, maybe \"capric acid\"? Not sure. Could be \"nucleic\"? Actually \"\u0646\u0648\u062a\u0631\u0627\u0643\u0648\u0631 1680\" maybe \"Nutracore\"? Distilled fatty acid, used as energy source for ruminants. Likely under 3824.90? No, that's \"Prepared binders for animal feeding\". Fatty acids are under 3823? Let's think: 3823 is \"Prepared binders for animal feeding\". 3824 is \"Prepared binders for animal feeding\"? Wait: 3823 is \"Prepared binders for animal feeding\". 3824 is \"Prepared binders for animal feeding\"? I'm fuzzy. Actually 3823 is \"Prepared binders for animal feeding\". 3824 is \"Prepared binders for animal feeding\"? Might be 3824. But fatty acids are under 3823? Another chapter: 29 - Animal or vegetable fats and oils. 2915 is \"Fatty acids and their salts\". Yes 2915.00.00 is \"Fatty acids and their salts\". More specific: 2915.11 is \"Stearic acid\". 2915.12 is \"Palmitic acid\". 2915.13 is \"Oleic acid\". 2915.14 is \"Linoleic acid\". 2915.15 is \"Linolenic acid\". 2915.19 is \"Other fatty acids\". So distilled fatty acid, likely \"Other fatty acids\". So code 2915.19.00? That's 8 digits. Need 10-digit: 2915.19.00.00. Provide that. Reason sentence."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048856852,
+      "prompt_tokens": 246,
+      "prompt_time": 0.010631443,
+      "completion_tokens": 420,
+      "completion_time": 0.868997445,
+      "total_tokens": 666,
+      "total_time": 0.879628888,
+      "completion_tokens_details": {
+        "reasoning_tokens": 350
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3x3rfq5e569fbh4srcsw8kq",
+      "seed": 378083653
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2915190000",
+  "predicted_reason": "The product is a distilled fatty acid used as an animal feed energy source, classified under Chapter 29 heading 2915 for fatty acids and their salts, specifically 'other fatty acids'.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

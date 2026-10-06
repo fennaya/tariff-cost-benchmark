@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360003",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8302416080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-126eec23-7815-40aa-b810-4053bd9587bd",
+    "object": "chat.completion",
+    "created": 1790750581,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7615.10.00\", \"reason\": \"Classified as an aluminum structural component (bracket) used in construction, falling under 'Aluminum structures (excluding prefabricated buildings)'\"}",
+          "reasoning": "We need HTS code for metal brackets, aluminum, building hardware. Likely 7615.10.00? 7615 covers aluminum structures. 7615.10 is \"Aluminum structures (excluding prefabricated buildings)\". Brackets maybe 7616? Actually 7616 is \"Other aluminum articles\". 7616.99.90 is \"Other\". But more specific: 7615.10.00 \"Aluminum structures (excluding prefabricated buildings)\". Could be 7615.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203689268,
+      "prompt_tokens": 243,
+      "prompt_time": 0.011099297,
+      "completion_tokens": 169,
+      "completion_time": 0.354380269,
+      "total_tokens": 412,
+      "total_time": 0.365479566,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3rgtrche0jb04cbgkwrn554",
+      "seed": 2075696654
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76151000",
+  "predicted_reason": "Classified as an aluminum structural component (bracket) used in construction, falling under 'Aluminum structures (excluding prefabricated buildings)'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

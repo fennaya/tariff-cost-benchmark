@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363296",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a3886f12-50b6-40f5-830d-01ed2661378c",
+    "object": "chat.completion",
+    "created": 1790849365,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8542.31.00\",\n  \"reason\": \"The item is a printed circuit board assembly containing electronic integrated circuits and a controller for network communication, classifiable under HTS heading 8542.31 for electronic integrated circuits, processors and controllers.\"\n}",
+          "reasoning": "We need HTS code for PCBA network communication board. Likely 8542.31.00? Actually 8542.31.00 is \"Electronic integrated circuits, processors etc\". For printed circuit assemblies, 8542.31.00 is \"Electronic integrated circuits, processors, controllers, etc\". But PCBs with components: 8542.31.00 \"Electronic integrated circuits, processors, controllers, etc, whether or not combined with other components\". Another heading 8542.39.00 \"Other\". Could be 8542.31.00 for \"Electronic integrated circuits, processors, controllers, etc\". I think best is 8542.31.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018680278,
+      "prompt_tokens": 276,
+      "prompt_time": 0.014043257,
+      "completion_tokens": 210,
+      "completion_time": 0.439360826,
+      "total_tokens": 486,
+      "total_time": 0.453404083,
+      "completion_tokens_details": {
+        "reasoning_tokens": 141
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3vf1csbe2a820w2f0mdz97g",
+      "seed": 767774579
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85423100",
+  "predicted_reason": "The item is a printed circuit board assembly containing electronic integrated circuits and a controller for network communication, classifiable under HTS heading 8542.31 for electronic integrated circuits, processors and controllers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359569",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3824994190",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-b3398913-3f2e-4399-92e0-924d4d8ff45f",
+    "object": "chat.completion",
+    "created": 1790905600,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9503.00.10.20\",\"reason\":\"Specialty candles made of beeswax and soybean wax used for hockey equipment, not for lighting.\"}",
+          "reasoning": "We need HTS code for hockey wax candles? They are candles used for hockey sticks and goalie pads. Likely under 9503.00.10? Actually candles: 9503.00.10 is \"Candles and taper candles, of beeswax, of paraffin wax, of other waxes, or of mixtures of waxes, of a kind used for lighting.\" But these are specialty candles for hockey. Still candles. So 9503.00.10.10? Wait 9503.00.10 is for candles of beeswax etc. 9503.00.10.10 is \"Candles and taper candles, of beeswax, of paraffin wax, of other waxes, or of mixtures of waxes, of a kind used for lighting.\" But maybe 9503.00.10.20 for other? Actually 9503.00.10.20 is \"Candles and taper candles, of beeswax, of paraffin wax, of other waxes, or of mixtures of waxes, of a kind used for other purposes.\" But these are used for hockey sticks, not lighting. So 9503.00.10.20. So code 9503.00.10.20. Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087451393,
+      "prompt_tokens": 609,
+      "prompt_time": 0.037004256,
+      "completion_tokens": 305,
+      "completion_time": 0.32548931,
+      "total_tokens": 914,
+      "total_time": 0.362493566,
+      "completion_tokens_details": {
+        "reasoning_tokens": 260
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e99e93f2ac",
+    "x_groq": {
+      "id": "req_01m3x4njekecdsdwfyce2gr31g",
+      "seed": 904848250
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503001020",
+  "predicted_reason": "Specialty candles made of beeswax and soybean wax used for hockey equipment, not for lighting.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

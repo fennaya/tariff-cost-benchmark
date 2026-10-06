@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361063",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8d4d0e9e-96b9-4e52-83ad-3b2d49b349e5",
+    "object": "chat.completion",
+    "created": 1790782022,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The item is a printed legal ruling document, classified under printed matter not elsewhere specified.\"\n}",
+          "reasoning": "We need to classify. Description is about a ruling correction, not a product. Likely \"publications\" maybe? Could be \"Legal documents\". HTS for printed matter: 4901.99.00? That's for other printed books, brochures. Probably classification: 4901.99.00 (Other printed matter, including printed advertisements, etc.). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088411144,
+      "prompt_tokens": 184,
+      "prompt_time": 0.007587981,
+      "completion_tokens": 124,
+      "completion_time": 0.264953926,
+      "total_tokens": 308,
+      "total_time": 0.272541907,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4de1d6a1ee",
+    "x_groq": {
+      "id": "req_01m3set8d4e31b7vkr1635hh65",
+      "seed": 1906506895
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The item is a printed legal ruling document, classified under printed matter not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

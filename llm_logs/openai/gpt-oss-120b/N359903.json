@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359903",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4911100080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8f126624-13ba-4f2a-9d8a-b1495d5bd17d",
+    "object": "chat.completion",
+    "created": 1790744562,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3919.10.0015\", \"reason\": \"Printed PVC board signage falls under printed plastic plates, sheets, film, foil or strip (heading 3919.10) and is not a consumer good.\"}",
+          "reasoning": "We need HTS code for printed PVC signs, not consumer goods. Likely 3919.10.0015? Actually printed PVC boards: Chapter 39 plastics. 3919.10 is \"Other plates, sheets, film, foil and strip, of plastics, printed\". 3919.10.0015 is \"Other printed plates, sheets, film, foil and strip of plastics, other than those of heading 3919.10\". Need specific. Could be 3919.90? Let's pick 3919.10.0015."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.231498383,
+      "prompt_tokens": 275,
+      "prompt_time": 0.032777834,
+      "completion_tokens": 176,
+      "completion_time": 0.365281797,
+      "total_tokens": 451,
+      "total_time": 0.398059631,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3rb31vqew68391w1b2smdyt",
+      "seed": 1106493005
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3919100015",
+  "predicted_reason": "Printed PVC board signage falls under printed plastic plates, sheets, film, foil or strip (heading 3919.10) and is not a consumer good.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

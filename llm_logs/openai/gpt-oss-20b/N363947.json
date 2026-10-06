@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363947",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "4823906700",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6c2e4f18-7684-46a3-b40e-0dd827ea6fc6",
+    "object": "chat.completion",
+    "created": 1790774394,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0000.00.0000\",\"reason\":\"Insufficient product information to determine a specific HTSUS code.\"}",
+          "reasoning": "We need to guess HTS code. The product description is just item numbers. No info. Likely cannot determine. Maybe default to \"unknown\". But must give a code. Could use \"0000.00.0000\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.094982443,
+      "prompt_tokens": 176,
+      "prompt_time": 0.058579482,
+      "completion_tokens": 89,
+      "completion_time": 0.123802004,
+      "total_tokens": 265,
+      "total_time": 0.182381486,
+      "completion_tokens_details": {
+        "reasoning_tokens": 51
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e99e93f2ac",
+    "x_groq": {
+      "id": "req_01m3s7hfp2ey89t5dtfvtkw7kh",
+      "seed": 20968081
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "Insufficient product information to determine a specific HTSUS code.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

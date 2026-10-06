@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359644",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "6406200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-15899105-9687-4365-aecc-ded8672eae57",
+    "object": "chat.completion",
+    "created": 1790730710,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6405.99.00\",\n  \"reason\": \"The kits consist of separate shoe soles and textile uppers intended to be assembled by the consumer, classifying them as other parts of footwear not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for DIY crochet shoe kits. Likely under heading 9503? Actually toys? But shoes kits maybe \"knitted or crocheted footwear\" 6401? But kits not finished shoes. Could be \"Other made-up articles, knitted or crocheted, of cotton\" 6302? However includes soles. Might be classified as \"Footwear, knitted or crocheted, of textile materials\" 6404.10.00? 6404.10.00 is \"Footwear with outer soles of rubber, plastics, etc, uppers of textile\". But kits not completed. Could be \"Knitted or crocheted articles, other than clothing\" 6302.91? 6302.91.00 is \"Other made-up articles, knitted or crocheted, of cotton\". Kits include soles though. Might be \"Shoe parts and accessories\" 6405.99.00? That's \"Other footwear parts\". The kit includes soles and uppers separate. Likely classified under 6405.99.00 \"Other parts of footwear, other than uppers\". But includes uppers too. Could be 6405.10.00 \"Uppers of footwear\". Hmm.\n\nProbably 6405.99.00 as most specific for parts of footwear not elsewhere specified. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206946132,
+      "prompt_tokens": 310,
+      "prompt_time": 0.014727909,
+      "completion_tokens": 332,
+      "completion_time": 0.689032263,
+      "total_tokens": 642,
+      "total_time": 0.703760172,
+      "completion_tokens_details": {
+        "reasoning_tokens": 271
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3qxwanzeq1tttytgw2yes3e",
+      "seed": 1630200574
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "64059900",
+  "predicted_reason": "The kits consist of separate shoe soles and textile uppers intended to be assembled by the consumer, classifying them as other parts of footwear not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

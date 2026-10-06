@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362334",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "3924905650",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5a1daabe-b173-40b7-8d39-82b2c8906ed4",
+    "object": "chat.completion",
+    "created": 1790824202,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.90.9090\", \"reason\": \"The item is a household plastic container made of polypropylene, classified under other plastic articles not elsewhere specified.\"}",
+          "reasoning": "Need HTS for plastic laundry bin. Likely 3924.90.?? for other plastic articles. 3924.90.90? 10-digit: 3924.90.9090? Check: 3924.90.9090 is \"Other articles of plastics, not elsewhere specified\". So use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.051433044,
+      "prompt_tokens": 261,
+      "prompt_time": 0.017028338,
+      "completion_tokens": 117,
+      "completion_time": 0.243526473,
+      "total_tokens": 378,
+      "total_time": 0.260554811,
+      "completion_tokens_details": {
+        "reasoning_tokens": 69
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3tq1g8me1d82cs46fp2vwrb",
+      "seed": 1204159141
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924909090",
+  "predicted_reason": "The item is a household plastic container made of polypropylene, classified under other plastic articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

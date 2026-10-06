@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361287",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "3504001000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3bf0887c-7d20-4c71-9e60-ea41cdfe4b6a",
+    "object": "chat.completion",
+    "created": 1790786903,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2106.10.90.00\",\n  \"reason\": \"Pea protein isolate/powder is classified as a protein concentrate and textured protein preparation under heading 2106.10, subheading 90 for other such products.\"\n}",
+          "reasoning": "We need HTS for pea protein powder. Likely 2106.90.99? Actually food preparations: 2106.90.99 is \"Other food preparations not elsewhere specified\". Pea protein isolate maybe under 2106.10? Let's check: 2106.10 is \"Protein concentrates and textured protein preparations\". 2106.10.90 is \"Other\". So 2106.10.90. That is 6-digit? Need 10-digit: 2106.10.90.00? Usually 10-digit includes chapter 2, heading 4, subheading 6, then 2-digit statistical suffix. So 2106.10.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295291035,
+      "prompt_tokens": 228,
+      "prompt_time": 0.012122796,
+      "completion_tokens": 215,
+      "completion_time": 0.450451715,
+      "total_tokens": 443,
+      "total_time": 0.462574511,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3skf71gef68xhnkmdwjd9tw",
+      "seed": 1022998618
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106109000",
+  "predicted_reason": "Pea protein isolate/powder is classified as a protein concentrate and textured protein preparation under heading 2106.10, subheading 90 for other such products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

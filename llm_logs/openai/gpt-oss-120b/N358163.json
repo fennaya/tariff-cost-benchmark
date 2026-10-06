@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358163",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "6505006090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5bbbbebd-0b24-46d7-a160-14dfa19aa1b5",
+    "object": "chat.completion",
+    "created": 1790726567,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.00\", \"reason\": \"The item is a costume headpiece covering the head and shoulders, made of textile materials, classified under HTSUS 9505.90.00 as other articles for amusement or sports.\"}",
+          "reasoning": "We need HTS code for costume headpiece covering head and shoulders, made of polyester. Likely under 9505.00.00? 9505.90? Actually 9505.90.00 is \"Other articles for amusement or sports\". But costume masks are under 9505.00.00? Let's think: 9505.90.00 \"Other\" includes costume accessories. 9505.00.00 is \"Articles and equipment for general physical exercise, gymnastics, etc.\" Not. 9505.90.00 is \"Other\". So likely 9505.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.093474208,
+      "prompt_tokens": 287,
+      "prompt_time": 0.079843891,
+      "completion_tokens": 195,
+      "completion_time": 0.409454545,
+      "total_tokens": 482,
+      "total_time": 0.489298436,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3qsxwryefgvpdx8kvcbnmsj",
+      "seed": 17468246
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "The item is a costume headpiece covering the head and shoulders, made of textile materials, classified under HTSUS 9505.90.00 as other articles for amusement or sports.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

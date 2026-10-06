@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362909",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-dafd2967-4f99-4a20-a612-1fd66a0f9c04",
+    "object": "chat.completion",
+    "created": 1790842099,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.90.90\", \"reason\": \"Classified as other laminated wood panels not specifically plywood or particle board, falling under heading 4412 for plywood, veneer panels and similar laminated wood.\"}",
+          "reasoning": "We need HTS code for wood panel with MDF faces. Likely classified under 4412? 4412.90.90? 4412 is plywood, but not. Could be 4412.99? Actually 4412 is \"Plywood, veneer panels and similar laminated wood\". This product is not plywood. Could be 4411 \"Particle board and similar board of wood\". MDF is a type of particle board. But core is solid wood. Might be considered \"Wood panels, not otherwise specified\". Possibly 4412.90.90 \"Other\". I'd choose 4412.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.228260455,
+      "prompt_tokens": 349,
+      "prompt_time": 0.121415048,
+      "completion_tokens": 185,
+      "completion_time": 0.393290584,
+      "total_tokens": 534,
+      "total_time": 0.514705632,
+      "completion_tokens_details": {
+        "reasoning_tokens": 128
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3v83n22eacbrg1sxm5800ye",
+      "seed": 1923232372
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "44129090",
+  "predicted_reason": "Classified as other laminated wood panels not specifically plywood or particle board, falling under heading 4412 for plywood, veneer panels and similar laminated wood.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

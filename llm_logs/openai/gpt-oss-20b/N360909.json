@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360909",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "1904900120",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e844d421-162b-45dd-8352-839be05a0a87",
+    "object": "chat.completion",
+    "created": 1790687135,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2106.90.90.00\",\"reason\":\"Frozen ready\u2011to\u2011heat mixed seafood and rice burger falls under 2106.90.90, other fish preparations, as it contains shrimp and clams with rice and cheese.\"}",
+          "reasoning": "Need HTS 10-digit. Frozen ready-to-eat rice burgers with seafood and cheese. Likely 2106.90.90? Actually 2106 is \"Other food preparations of fish, crustaceans, molluscs\". But rice burger is not fish product. Maybe 2106.90.90 is \"Other\". But it's a ready-to-eat mixed dish. Could be 2106.90.90. But 2106 is fish. Maybe 2106.90.90 is \"Other\". But our product contains shrimp and clams but also rice. Might be 2106.90.90. However 2106.90.90 is for other fish preparations. But this is not fish only. Maybe 2106.90.90 is still used for mixed fish products. Alternatively 2106.90.90 is for \"Other\". But maybe 2106.90.90 includes \"Other fish preparations\". But our product is not fish only. Could be 2106.90.90. But maybe 2106.90.90 is for \"Other\". I'll answer 2106.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.292783136,
+      "prompt_tokens": 783,
+      "prompt_time": 0.045256729,
+      "completion_tokens": 301,
+      "completion_time": 0.30729203,
+      "total_tokens": 1084,
+      "total_time": 0.352548759,
+      "completion_tokens_details": {
+        "reasoning_tokens": 238
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0d0da6cfee",
+    "x_groq": {
+      "id": "req_01m3pmagw6evbazfc6ajnkvt64",
+      "seed": 398152243
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909000",
+  "predicted_reason": "Frozen ready\u2011to\u2011heat mixed seafood and rice burger falls under 2106.90.90, other fish preparations, as it contains shrimp and clams with rice and cheese.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

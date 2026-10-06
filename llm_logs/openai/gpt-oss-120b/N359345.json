@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359345",
+  "rulingDate": "2026-03-11T00:00:00",
+  "true_code": "5903202500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cc232608-0cb6-4335-bc01-c6442713ee73",
+    "object": "chat.completion",
+    "created": 1790727234,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"5903.00.0000\",\n  \"reason\": \"The product is a textile fabric coated with polyurethane plastic, which falls under heading 5903 for textile fabrics coated with plastics.\"\n}",
+          "reasoning": "We need HTS for coated fabric upholstery. Likely 5903? Actually coated fabrics: 5903.00.00 for textile fabrics coated with plastics. 5903.00.00 is \"Textile fabrics coated, laminated, or covered with plastics, other than those of heading 5902\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205034034,
+      "prompt_tokens": 354,
+      "prompt_time": 0.01436998,
+      "completion_tokens": 123,
+      "completion_time": 0.25719811,
+      "total_tokens": 477,
+      "total_time": 0.27156809,
+      "completion_tokens_details": {
+        "reasoning_tokens": 67
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3qtj83pejrbvx4tarzqn32h",
+      "seed": 1987598376
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5903000000",
+  "predicted_reason": "The product is a textile fabric coated with polyurethane plastic, which falls under heading 5903 for textile fabrics coated with plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

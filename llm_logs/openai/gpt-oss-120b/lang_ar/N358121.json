@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358121",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "8537109170",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-73600240-2f79-4f36-a6dc-663ebc3d078a",
+    "object": "chat.completion",
+    "created": 1790905005,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8479.89.90\",\n  \"reason\": \"The item is a specialized control unit (joystick) for forklift trucks, classified as a part of a machine not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for forklift control unit, joystick. Likely under \"Electrical machinery and equipment\" 8507? Actually joysticks are \"parts of machines\" maybe 8479. Other: 8479.89.90 \"Parts of machines, n.e.s.\" But specific: \"Control units for forklift trucks\" maybe 8427? 8427 is \"Other weighing or measuring machines\". Not.\n\nProbably 8507.90.90 \"Other parts of electrical machines\". Or 8479.89.90 \"Parts of machines, n.e.s.\" The product is a control unit with PCBA, sensor. Could be \"Other apparatus for control of electric motors\" 8504.40? 8504.40.90 \"Other\". Actually 8504.40 is \"Other electrical machines and apparatus, having individual functions\". Not.\n\nBetter: 8479.89.90 \"Parts of machines, n.e.s.\" Use that.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089498842,
+      "prompt_tokens": 349,
+      "prompt_time": 0.016674507,
+      "completion_tokens": 258,
+      "completion_time": 0.550946316,
+      "total_tokens": 607,
+      "total_time": 0.567620823,
+      "completion_tokens_details": {
+        "reasoning_tokens": 202
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m3x43d6eecq8kbh09741ahy8",
+      "seed": 450203768
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84798990",
+  "predicted_reason": "The item is a specialized control unit (joystick) for forklift trucks, classified as a part of a machine not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

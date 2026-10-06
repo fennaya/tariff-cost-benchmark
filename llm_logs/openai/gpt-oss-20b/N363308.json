@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363308",
+  "rulingDate": "2026-07-30T00:00:00",
+  "true_code": "8706001540",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-9916edf4-00fb-4fa9-b3e1-6f6edcc02871",
+    "object": "chat.completion",
+    "created": 1790760433,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.90.90.10\",\"reason\":\"Motorized chassis for snowmobiles falls under 8708.90.90.10, the heading for other motor vehicles, including snowmobiles.\"}",
+          "reasoning": "Need HTS 10-digit. Motorized chassis for snowmobiles. Likely 8708.90.90? Actually 8708 is motor vehicles. Snowmobiles are 8708.90.90? But motorized chassis not complete vehicle. Could be 8708.90.90 for other motor vehicles. 8708.90.90 is \"Other motor vehicles\". But maybe 8708.90.90 includes snowmobiles. 8708.90.90 is \"Other motor vehicles\". 8708.90.90 includes \"snowmobiles\". So 8708.90.90.10? 10-digit: 8708.90.90.10. Reason: motorized chassis for snowmobiles."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.192257129,
+      "prompt_tokens": 480,
+      "prompt_time": 0.026076233,
+      "completion_tokens": 213,
+      "completion_time": 0.274716995,
+      "total_tokens": 693,
+      "total_time": 0.300793228,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3rt7d72ejtsbbax56yvbcrm",
+      "seed": 1735281348
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708909010",
+  "predicted_reason": "Motorized chassis for snowmobiles falls under 8708.90.90.10, the heading for other motor vehicles, including snowmobiles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

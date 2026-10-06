@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359005",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "6116105520",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-240be4b9-dc7a-4824-8c28-d868c67b16c1",
+    "object": "chat.completion",
+    "created": 1790726986,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6116.10.90\", \"reason\": \"Knitted work glove where textiles exceed 50% of weight and is coated with nitrile rubber, classifying under gloves of textile materials, other\"}",
+          "reasoning": "We need HTS for gloves, textile >50%, nitrile coating. Likely heading 6116.10.00? Actually gloves of textile materials, coated. 6116.10.00 is \"Gloves, mittens and mitts, knitted or crocheted, of textile materials\". Subheading for coated? 6116.10.10 is \"of cotton\". 6116.10.90 other. Since >50% textile, nitrile coating considered. So code 6116.10.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.09540182,
+      "prompt_tokens": 285,
+      "prompt_time": 0.02828824,
+      "completion_tokens": 167,
+      "completion_time": 0.345331117,
+      "total_tokens": 452,
+      "total_time": 0.373619357,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3qtaphbew38dgx3fm80a55p",
+      "seed": 1326378091
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61161090",
+  "predicted_reason": "Knitted work glove where textiles exceed 50% of weight and is coated with nitrile rubber, classifying under gloves of textile materials, other",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

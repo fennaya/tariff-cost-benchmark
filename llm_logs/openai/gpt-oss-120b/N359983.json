@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359983",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "9505101000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-56ef6c12-e3a3-48d0-8215-a0c8ae7a968d",
+    "object": "chat.completion",
+    "created": 1790749253,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.00\",\n  \"reason\": \"Classified as Christmas tree ornaments, a decorative toy not elsewhere specified, under heading 9505.90 for other toys.\"\n}",
+          "reasoning": "We need HTS code for glass mirror ball ornaments. Likely 9505.90.00? Actually ornaments are \"Christmas tree ornaments\" made of glass. HS 9505.90.00 covers \"Other toys, not elsewhere specified\". But ornaments maybe 9505.90.10? Let's think: HS 9505.90.00 is \"Other toys, not elsewhere specified\". However there is heading 9505.90.10 for \"Other toys, not elsewhere specified\". Not sure.\n\nAlternatively heading 3926 for plastic boxes? No.\n\nOr heading 7013 for glassware? 7013.49 for \"Other glassware of a kind used for decorative purposes\". Could be 7013.49.90.\n\nBut ornaments are glass (mirror glass tiles) on foam center. Likely classified under 9505.90.10 \"Other toys, not elsewhere specified\". But Christmas ornaments are often under 9505.90.00.\n\nLet's choose 9505.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204507484,
+      "prompt_tokens": 267,
+      "prompt_time": 0.026979473,
+      "completion_tokens": 264,
+      "completion_time": 0.553330106,
+      "total_tokens": 531,
+      "total_time": 0.580309579,
+      "completion_tokens_details": {
+        "reasoning_tokens": 209
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3rfj78weg1t63b8yqhga7vs",
+      "seed": 380018868
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "Classified as Christmas tree ornaments, a decorative toy not elsewhere specified, under heading 9505.90 for other toys.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

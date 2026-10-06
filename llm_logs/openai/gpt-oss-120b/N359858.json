@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359858",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-797d025d-0449-48c6-bee8-1832e34bab04",
+    "object": "chat.completion",
+    "created": 1790743189,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.20.00\", \"reason\": \"Classified as a nitrogenous fertilizer (mineral foliar fertilizer containing urea and potassium) under heading 3105.20 for other nitrogenous fertilizers.\"}",
+          "reasoning": "We need HTS for fertilizer containing nitrogen and potassium, not pesticide. Likely 3105.20.00? Let's see: 3105 covers mineral or chemical fertilizers, NPK. 3105.20 is \"Other nitrogenous fertilizers\". Actually 3105.20 is \"Other nitrogenous fertilizers\". 3105.90 is \"Other\". But potassium fertilizer is 3105.20? Wait: 3105.20 is \"Other nitrogenous fertilizers\". 3105.90 is \"Other\". For NPK maybe 3105.20? Actually 3105.20 includes \"Other nitrogenous fertilizers\". 3105.90 includes \"Other\". Since it's N and K, could be 3105.20. I think 3105.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300312113,
+      "prompt_tokens": 349,
+      "prompt_time": 0.033693476,
+      "completion_tokens": 222,
+      "completion_time": 0.463576997,
+      "total_tokens": 571,
+      "total_time": 0.497270473,
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3r9s4vcegyvhwvdw9y2qbnz",
+      "seed": 1439189396
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "31052000",
+  "predicted_reason": "Classified as a nitrogenous fertilizer (mineral foliar fertilizer containing urea and potassium) under heading 3105.20 for other nitrogenous fertilizers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

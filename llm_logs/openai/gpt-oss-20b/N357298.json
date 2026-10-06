@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357298",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "7419803000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c5b2821a-2ea8-4caf-9ffb-256bb6a56e7b",
+    "object": "chat.completion",
+    "created": 1790607385,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0000.00.0000\",\"reason\":\"The description does not specify a tangible product, so no applicable HTSUS code can be assigned.\"}",
+          "reasoning": "The description is nonsense. It's a replacement ruling. No product. Can't assign HTS. Probably cannot determine. Maybe return null? But must give code. Maybe 0000.00.0000? But that's not valid. Could say \"0000.00.0000\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.214998768,
+      "prompt_tokens": 176,
+      "prompt_time": 0.039478764,
+      "completion_tokens": 106,
+      "completion_time": 0.143937086,
+      "total_tokens": 282,
+      "total_time": 0.18341585,
+      "completion_tokens_details": {
+        "reasoning_tokens": 61
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m3m88rkbekp831hfyk3455bv",
+      "seed": 1670383367
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The description does not specify a tangible product, so no applicable HTSUS code can be assigned.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

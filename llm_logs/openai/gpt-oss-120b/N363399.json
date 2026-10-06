@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363399",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "8307903000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4b88eb49-34a9-4bb1-9d16-337d0d4fe62d",
+    "object": "chat.completion",
+    "created": 1790852470,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7615.90.00\",\n  \"reason\": \"The item is a flexible corrugated tube (bellows) made of a nickel-based alloy with stainless steel fittings, classifiable under other tube or pipe fittings of nickel.\"\n}",
+          "reasoning": "We need HTS code for bellows of inconel, nickel alloy, stainless steel fittings. Likely under 7308.90.00? 7308 covers tube & pipe fittings of iron/steel. But inconel is nickel alloy, maybe heading 7615? 7615 covers tube & pipe fittings of nickel. Bellows as flexible pipe? Could be 7308.90.00 \"Other tube or pipe fittings, of iron or steel\". But nickel alloy maybe 7615.90.00 \"Other tube or pipe fittings of nickel\". Choose 7615.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048239455,
+      "prompt_tokens": 256,
+      "prompt_time": 0.010372964,
+      "completion_tokens": 188,
+      "completion_time": 0.395990874,
+      "total_tokens": 444,
+      "total_time": 0.406363838,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3vj0522eteary64r406zdct",
+      "seed": 717590041
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76159000",
+  "predicted_reason": "The item is a flexible corrugated tube (bellows) made of a nickel-based alloy with stainless steel fittings, classifiable under other tube or pipe fittings of nickel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

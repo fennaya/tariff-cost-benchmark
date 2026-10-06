@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362770",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8509905500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ca3a870c-8d96-4520-bb09-48b66cba9eac",
+    "object": "chat.completion",
+    "created": 1790835673,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8305.90.90\", \"reason\": \"Classified as a base metal mechanical component (ring) not elsewhere specified, falling under HTS heading 8305 for other fittings of base metal.\"}",
+          "reasoning": "We need HTS code for metal ring component for electric toothbrush. Likely under 8302? 8302.49? Let's think: 8302 - \"Base metal locks, of a kind used for doors, windows, etc.\" Not. 8305 - \"Fittings of base metal\". 8305.10 - \"Fittings of base metal, for furniture\". 8305.20 - \"for other\". Maybe 8305.90 - \"Other\". But ring for toothbrush maybe \"Other articles of base metal, not elsewhere specified\". Could be 8305.90.10? Actually 8305.90.90? Let's choose 8305.90.90 \"Other\". Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204455226,
+      "prompt_tokens": 240,
+      "prompt_time": 0.009720349,
+      "completion_tokens": 206,
+      "completion_time": 0.430008095,
+      "total_tokens": 446,
+      "total_time": 0.439728444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3v1zhp3e0r8rk1gn2xewtyy",
+      "seed": 879795676
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83059090",
+  "predicted_reason": "Classified as a base metal mechanical component (ring) not elsewhere specified, falling under HTS heading 8305 for other fittings of base metal.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357749",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8482910010",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ed8257ed-a831-4dd3-a794-68e507b7ca89",
+    "object": "chat.completion",
+    "created": 1790607723,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7013.10.10\",\"reason\":\"Steel bearing balls are classified under 7013.10.10 \u2013 ball bearings of steel.\"}",
+          "reasoning": "Need HTS code for steel balls. Likely 7013.10.10? Actually 7013 is \"Other bearings, including ball bearings\". 7013.10.10 is \"Ball bearings, of steel\". But these are individual balls, not bearing assemblies. Could be 7013.10.10. But maybe 7013.10.10 is for ball bearings. For steel balls used in bearings: 7013.10.10. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.29312601,
+      "prompt_tokens": 203,
+      "prompt_time": 0.011580831,
+      "completion_tokens": 142,
+      "completion_time": 0.15139195,
+      "total_tokens": 345,
+      "total_time": 0.162972781,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3m8k2n5epvs4878rq1ath3n",
+      "seed": 232717273
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "70131010",
+  "predicted_reason": "Steel bearing balls are classified under 7013.10.10 \u2013 ball bearings of steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

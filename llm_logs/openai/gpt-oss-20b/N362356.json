@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362356",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-84c31b7e-fc5d-495b-892a-19d0555e01a1",
+    "object": "chat.completion",
+    "created": 1790735280,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"0000.00.0000\",\"reason\":\"The description provides no specific product details to determine a valid HTSUS code.\"}",
+          "reasoning": "We need to guess HTS code from vague description. Likely cannot determine. Provide generic? Maybe 0000.00.0000? But need 10-digit. Could say 0000.00.0000. Reason: insufficient info."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194666564,
+      "prompt_tokens": 162,
+      "prompt_time": 0.007921495,
+      "completion_tokens": 93,
+      "completion_time": 0.096530403,
+      "total_tokens": 255,
+      "total_time": 0.104451898,
+      "completion_tokens_details": {
+        "reasoning_tokens": 52
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_66891002f6",
+    "x_groq": {
+      "id": "req_01m3r27t33ept9nm5qsp8wy1s1",
+      "seed": 2097180763
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The description provides no specific product details to determine a valid HTSUS code.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

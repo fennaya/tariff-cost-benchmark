@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360096",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "7604291010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f67cfc0d-ea6d-4e6a-838a-bbf90cfe96dd",
+    "object": "chat.completion",
+    "created": 1790754192,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7615.10.00\",\n  \"reason\": \"These are extruded aluminum construction accessories (profiles) used for flooring and stair applications, classified under aluminum structures and parts of structures.\"\n}",
+          "reasoning": "We need HTS code for aluminum extruded construction accessories, profiles, not structural. Likely heading 7615.10.00? 7615.10 is \"Aluminum structures and parts of structures (for example, bridges, towers, lattice masts, roofs, doors, windows and their frames, shutters, balustrades, pillars and columns), and parts thereof, of aluminum\". But profiles for flooring maybe 7615.10.90? Actually 7615.10.00 is \"Aluminum structures and parts of structures\". Could be 7615.90 other. However there is heading 7615.10.00 for \"Aluminum structures and parts of structures\". Another heading 7615.90 for \"Other\". Also 7616 is \"Aluminum plates, sheets and strip\". Not.\n\nMaybe 7615.10.00 is correct. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048019782,
+      "prompt_tokens": 431,
+      "prompt_time": 0.020861725,
+      "completion_tokens": 239,
+      "completion_time": 0.504624463,
+      "total_tokens": 670,
+      "total_time": 0.525486188,
+      "completion_tokens_details": {
+        "reasoning_tokens": 183
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3rm8y9gefnss2544cbxsvhv",
+      "seed": 1222067609
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76151000",
+  "predicted_reason": "These are extruded aluminum construction accessories (profiles) used for flooring and stair applications, classified under aluminum structures and parts of structures.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

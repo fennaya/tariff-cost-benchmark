@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359705",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-aa4321ab-7a89-40bc-9b2b-efd7f7ea5b78",
+    "object": "chat.completion",
+    "created": 1790641795,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6911.90.90.00\",\"reason\":\"The item is a decorative iron/steel wire structure classified under 6911.90.90.00 for other iron or steel articles not elsewhere specified.\"}",
+          "reasoning": "Need HTS 10-digit. Decorative wire pumpkin likely under 6911.90.90? Actually 6911 is \"Other articles of iron or steel\". 6911.90 is \"Other\". 6911.90.90 is \"Other\". So 6911.90.90.00? 10-digit: 6911.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.196699241,
+      "prompt_tokens": 288,
+      "prompt_time": 0.029851946,
+      "completion_tokens": 139,
+      "completion_time": 0.15704342,
+      "total_tokens": 427,
+      "total_time": 0.186895366,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3n92w8ee8v900p9zndjwdr2",
+      "seed": 2145395670
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6911909000",
+  "predicted_reason": "The item is a decorative iron/steel wire structure classified under 6911.90.90.00 for other iron or steel articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

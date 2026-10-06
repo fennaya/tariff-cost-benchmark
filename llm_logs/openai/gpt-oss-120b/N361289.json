@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361289",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-636e7053-8ec7-467b-8a71-2a51abd1486f",
+    "object": "chat.completion",
+    "created": 1790787239,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6109.90.00\",\n  \"reason\": \"The item is a knitted garment (flat\u2011collar shirt with long sleeves) that does not fit a more specific category, so it falls under 6109.90.00 \u2013 other knitted or crocheted apparel.\"\n}",
+          "reasoning": "We need classify as apparel, likely women's? It's a garment with flat collar, long sleeves, raw edges, tattered. Likely \"garments, knitted or crocheted, women's or girls'\". Could be \"Sweaters, pullovers, ...\". 10-digit code: 6109.10.00? Let's think: 6109 is \"Sweaters, pullovers, ... knitted or crocheted, of cotton\". If material unknown. Could be \"Other apparel, not knitted\"? Could be \"6105\" for men's or boys' shirts? Flat collar suggests shirt. Long sleeves, raw edges. Likely \"6105.10.00\" for men's or boys' shirts, knitted or crocheted, of cotton. But description doesn't specify material. Could be \"6109.90.00\" other knitted garments. I'll choose generic: 6109.90.00 \"Other knitted or crocheted garments, not elsewhere specified\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.436052161,
+      "prompt_tokens": 211,
+      "prompt_time": 0.03948673,
+      "completion_tokens": 271,
+      "completion_time": 0.583233252,
+      "total_tokens": 482,
+      "total_time": 0.622719982,
+      "completion_tokens_details": {
+        "reasoning_tokens": 197
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_60e4b492db",
+    "x_groq": {
+      "id": "req_01m3sksecbe4r9cfzxqg3fx1nj",
+      "seed": 1304487845
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61099000",
+  "predicted_reason": "The item is a knitted garment (flat\u2011collar shirt with long sleeves) that does not fit a more specific category, so it falls under 6109.90.00 \u2013 other knitted or crocheted apparel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

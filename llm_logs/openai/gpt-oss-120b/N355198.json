@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N355198",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "2914799000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-35b0401a-9635-4854-be5c-34fd4b5535fd",
+    "object": "chat.completion",
+    "created": 1790607081,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2905.90.0010\", \"reason\": \"Hexachloroacetone is a halogenated ketone derivative classified under other halogenated hydrocarbon derivatives (heading 2905, subheading 90).\"}",
+          "reasoning": "Need HTS for hexachloroacetone, a halogenated ketone, CAS 116-16-5. Likely under 2905.90.00? 2905 is halogenated derivatives of hydrocarbons. 2905.90.00 is \"Other halogenated derivatives of hydrocarbons\". So 10-digit: 2905.90.0010? Check US: 2905.90.0010 is \"Other halogenated derivatives of hydrocarbons\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.223677138,
+      "prompt_tokens": 262,
+      "prompt_time": 0.012141295,
+      "completion_tokens": 169,
+      "completion_time": 0.355312433,
+      "total_tokens": 431,
+      "total_time": 0.367453728,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3m7zfb7ej5a84h8snq15x8k",
+      "seed": 879039670
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2905900010",
+  "predicted_reason": "Hexachloroacetone is a halogenated ketone derivative classified under other halogenated hydrocarbon derivatives (heading 2905, subheading 90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

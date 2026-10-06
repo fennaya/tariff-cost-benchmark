@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358437",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5c92d926-f2db-4e3b-9ed4-a7ec1ff8bddd",
+    "object": "chat.completion",
+    "created": 1790726717,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.99.90\",\n  \"reason\": \"The item is a mechanical vibration damper for power line conductors, classified under other machines and mechanical appliances not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for vibration damper for power lines, mainly metal. Likely under \"Other parts of machinery\" or \"Vibration dampers\". Search memory: HTS 8421? 8421.99? 8421.99.90? Actually 8421 is \"Centrifuges, including centrifugal dryers; filtering or purifying machinery\". Not.\n\nMaybe 8425? 8425 is \"Other machines and mechanical appliances having individual functions\". 8425.99 is \"Other\". Could be 8425.99.90.\n\nBut more specific: 7308? \"Structures (excluding prefabricated buildings) and parts of structures, of iron or steel\". Not.\n\nCould be 8537? No.\n\nProbably 8425.99.90 \"Other machines and mechanical appliances, not elsewhere specified\". Use that.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197743928,
+      "prompt_tokens": 350,
+      "prompt_time": 0.01713692,
+      "completion_tokens": 235,
+      "completion_time": 0.49118448,
+      "total_tokens": 585,
+      "total_time": 0.5083214,
+      "completion_tokens_details": {
+        "reasoning_tokens": 180
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3qt2ex0epwsn0a9mkbfm9jn",
+      "seed": 1754754999
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84259990",
+  "predicted_reason": "The item is a mechanical vibration damper for power line conductors, classified under other machines and mechanical appliances not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

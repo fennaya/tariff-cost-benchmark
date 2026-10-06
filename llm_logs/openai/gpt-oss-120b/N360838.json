@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360838",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8306300000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e361e1f4-9b13-40d4-b050-f1b001e5dc94",
+    "object": "chat.completion",
+    "created": 1790775023,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8302.41.90\", \"reason\": \"Aluminum picture frame with metal pin clips is classified as a base metal mounting/fitting for artwork display, falling under heading 8302.41 for non\u2011iron/steel mountings.\"}",
+          "reasoning": "Need HTS for picture frames, aluminum, with metal clips. Likely 8302? Actually picture frames are under heading 8302 \"Base metal mountings, fittings and similar articles for furniture, doors, windows, etc.\" But picture frames are 8302.41? Let's check: 8302.41.90 \"Other mountings, fittings and similar articles of base metal, for furniture, doors, windows, etc., other than of iron or steel\". Could be 8302.41.90. Or 8302.42 for iron/steel. Since aluminum is base metal, not iron/steel. So 8302.41.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.22329754,
+      "prompt_tokens": 233,
+      "prompt_time": 0.052726836,
+      "completion_tokens": 206,
+      "completion_time": 0.437193522,
+      "total_tokens": 439,
+      "total_time": 0.489920358,
+      "completion_tokens_details": {
+        "reasoning_tokens": 141
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3s84my8ecdv4yb2d4y3yk83",
+      "seed": 577255538
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83024190",
+  "predicted_reason": "Aluminum picture frame with metal pin clips is classified as a base metal mounting/fitting for artwork display, falling under heading 8302.41 for non\u2011iron/steel mountings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

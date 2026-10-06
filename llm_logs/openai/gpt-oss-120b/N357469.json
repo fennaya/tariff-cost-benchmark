@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357469",
+  "rulingDate": "2026-01-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6eb2d6b9-69d2-4073-9f66-e307e93f4beb",
+    "object": "chat.completion",
+    "created": 1790726244,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6109.90.90\", \"reason\": \"Classified under other knitted or crocheted garments of cotton (or similar fibers) not elsewhere specified, covering adult costume shirts and tops.\"}",
+          "reasoning": "Need HTS for costume clothing, likely 6109.10.00? Adult size costume, pullover top, not for work. Could be \"Garments, knitted or crocheted, of cotton, for men, boys\". But costume maybe not specific fiber. Assume cotton. HTS 6109.10.00 = T-shirts, singlets, tank tops, of cotton. But shirt? Could be 6105.10.00 (men's or boys' shirts of cotton). However costume may be \"Other garments, not elsewhere specified\". Might be 6109.90.90. I'd choose 6109.90.90 (Other knitted apparel). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206737122,
+      "prompt_tokens": 210,
+      "prompt_time": 0.008755462,
+      "completion_tokens": 195,
+      "completion_time": 0.406190472,
+      "total_tokens": 405,
+      "total_time": 0.414945934,
+      "completion_tokens_details": {
+        "reasoning_tokens": 141
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3qsm1e8e6ws35jmtywk03av",
+      "seed": 1430876715
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61099090",
+  "predicted_reason": "Classified under other knitted or crocheted garments of cotton (or similar fibers) not elsewhere specified, covering adult costume shirts and tops.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

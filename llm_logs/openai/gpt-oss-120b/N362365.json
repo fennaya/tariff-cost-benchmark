@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362365",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8708937500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c5be34e2-0f02-4cc4-ae34-bd2b7c3bb736",
+    "object": "chat.completion",
+    "created": 1790825716,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90\", \"reason\": \"Clutch release bearing is a part/accessory of a motor vehicle, classified under heading 8708 as other parts and accessories of motor vehicles.\"}",
+          "reasoning": "We need HTS code for clutch release bearing. Likely under 8708.99.90? Actually bearings for motor vehicles: 8708.99.90 is parts and accessories of motor vehicles, other. But specific: \"Clutch release bearing\" is a part of clutch assembly, classified under 8708.99.90 (Other parts and accessories of motor vehicles). Could also be 8483.40.00 (ball bearings). But automotive specific: 8708.99.90.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.028334845,
+      "prompt_tokens": 232,
+      "prompt_time": 0.021493788,
+      "completion_tokens": 164,
+      "completion_time": 0.345125966,
+      "total_tokens": 396,
+      "total_time": 0.366619754,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3trfp7me8xs0nv6f877fn7h",
+      "seed": 1220496003
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "Clutch release bearing is a part/accessory of a motor vehicle, classified under heading 8708 as other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

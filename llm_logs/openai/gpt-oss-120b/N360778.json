@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360778",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "2933294500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8c2d0f7e-fcb4-449a-9f84-7bf81e3b2b32",
+    "object": "chat.completion",
+    "created": 1790773224,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The item is informational printed material about FDA regulations, which falls under 'Other printed matter' (HTS 4901.99.00).\"\n}",
+          "reasoning": "We need to classify. The description is about FDA info, not a product. Likely not classifiable, maybe \"miscellaneous printed material\" 4901.99.00? It's a document. So HTS 4901.99.00 (Other printed matter, including printed advertisements, etc.). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090461077,
+      "prompt_tokens": 242,
+      "prompt_time": 0.009825768,
+      "completion_tokens": 126,
+      "completion_time": 0.267198433,
+      "total_tokens": 368,
+      "total_time": 0.277024201,
+      "completion_tokens_details": {
+        "reasoning_tokens": 66
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3s6dr8qenpvb62trgz8sact",
+      "seed": 1571461403
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The item is informational printed material about FDA regulations, which falls under 'Other printed matter' (HTS 4901.99.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

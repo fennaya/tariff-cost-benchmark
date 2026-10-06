@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357230",
+  "rulingDate": "2026-01-06T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-833f7f6f-7c91-4c1d-8ef0-3da2b66ca04a",
+    "object": "chat.completion",
+    "created": 1790726000,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.00\", \"reason\": \"Classified as a costume garment for amusement purposes, falling under heading 9505 for articles and equipment for sports, games and amusement.\"}",
+          "reasoning": "Need HTS for women's costume dresses. Likely 9505.90.00? Actually costume apparel under 9505.90.00 (toys). But clothing under 6104? Costume dresses are \"Other garments, knitted or crocheted, women's or girls' dresses\". Probably 6104.63.00 (women's or girls' dresses, knitted, of other textile materials). But costume maybe 9505.90.00 \"Articles for amusement\". I'd choose 9505.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.15033637,
+      "prompt_tokens": 193,
+      "prompt_time": 0.00777589,
+      "completion_tokens": 161,
+      "completion_time": 0.336615176,
+      "total_tokens": 354,
+      "total_time": 0.344391066,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6c36ac20de",
+    "x_groq": {
+      "id": "req_01m3qscksfe6jrkhsaysrk08rc",
+      "seed": 353294931
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "Classified as a costume garment for amusement purposes, falling under heading 9505 for articles and equipment for sports, games and amusement.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361384",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d7d01671-f61a-4fc5-a8dd-c6f399eda829",
+    "object": "chat.completion",
+    "created": 1790700045,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.10.00.00\",\"reason\":\"Generic textile product description suggests cotton yarn, which falls under 4901.10.00.00\"}",
+          "reasoning": "The description is generic, not product. Can't determine. Probably cannot classify. Maybe return null? But must give code. Maybe 4901.10.00.00? But unclear. I'll say 4901.10.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298726599,
+      "prompt_tokens": 267,
+      "prompt_time": 0.018246717,
+      "completion_tokens": 97,
+      "completion_time": 0.105580949,
+      "total_tokens": 364,
+      "total_time": 0.123827666,
+      "completion_tokens_details": {
+        "reasoning_tokens": 51
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_409ec51fe1",
+    "x_groq": {
+      "id": "req_01m3q0mgn7emkb4w1r62gaewa1",
+      "seed": 1464316361
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901100000",
+  "predicted_reason": "Generic textile product description suggests cotton yarn, which falls under 4901.10.00.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360779",
+  "rulingDate": "2026-05-04T00:00:00",
+  "true_code": "8431499020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5e63b4e2-5f64-45ab-9647-fc8c4cd5c84b",
+    "object": "chat.completion",
+    "created": 1790773381,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.90.0010\", \"reason\": \"The device is a hydraulic coupling system for excavator attachments, classified as a part of hydraulic valve/appliance machinery under heading 8483.\"}",
+          "reasoning": "We need HTS code for hydraulic coupler for excavator attachments. Likely under 8425? Actually couplers are \"hydraulic couplings\" maybe 8483? Let's think: 8425 is \"Cranes, mobile lifting frames, etc.\" Not. 8483 is \"Parts of machines of heading 8481, 8482\". 8481 is \"Taps, cocks, valves and similar appliances\". Hydraulic couplings maybe 8483. But coupler system is a \"hydraulic coupling\" maybe 8483.10? Check: 8483.10.00 - \"Parts of machines of heading 8481\". Not sure.\n\nBetter: 8425.99? No.\n\nMaybe 8425.90? Not.\n\nCould be 8425.51 \"Hydraulic jacks\". No.\n\nI think classification: 8483.90.00 \"Other parts\". But need 10-digit: 8483.90.0010? Actually US uses 10-digit: 8483.90.0010.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048428999,
+      "prompt_tokens": 265,
+      "prompt_time": 0.015198602,
+      "completion_tokens": 279,
+      "completion_time": 0.589702639,
+      "total_tokens": 544,
+      "total_time": 0.604901241,
+      "completion_tokens_details": {
+        "reasoning_tokens": 223
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3s6jhs1erdve79bc6eq6nxb",
+      "seed": 672859008
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483900010",
+  "predicted_reason": "The device is a hydraulic coupling system for excavator attachments, classified as a part of hydraulic valve/appliance machinery under heading 8483.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

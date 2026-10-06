@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359058",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "2926904300",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d6343a46-bd7c-4838-92c7-df47f79e6212",
+    "object": "chat.completion",
+    "created": 1790727024,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.90\",\n  \"reason\": \"Classified as a medicinal preparation containing a specific active pharmaceutical ingredient (a calcium\u2011channel blocker) not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical active ingredient. Likely under 3004.90.90? Calcium channel blocker active ingredient. 3004.90.90 is \"Other medicinal preparations containing mixed or unmixed products\". But specific active ingredient maybe 3004.90.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018761495,
+      "prompt_tokens": 200,
+      "prompt_time": 0.008580755,
+      "completion_tokens": 113,
+      "completion_time": 0.234905974,
+      "total_tokens": 313,
+      "total_time": 0.243486729,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3qtbvx6en39k3kxhvnw2rbh",
+      "seed": 369498605
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Classified as a medicinal preparation containing a specific active pharmaceutical ingredient (a calcium\u2011channel blocker) not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

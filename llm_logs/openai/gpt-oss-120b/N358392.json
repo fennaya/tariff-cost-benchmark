@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358392",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "7615109100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-79c4fba1-e6ec-4533-8ee3-5f349e4b2b7f",
+    "object": "chat.completion",
+    "created": 1790726676,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8419.89.90\",\n  \"reason\": \"Classified as other refrigeration equipment not elsewhere specified, as a passive beverage-chilling device made of aluminum and stainless steel.\"\n}",
+          "reasoning": "We need HTS code. Likely \"Other refrigeration equipment\" but it's a passive cooler, not powered. Could be \"Containers for liquids, of plastics\" no. It's a device for chilling, likely classified under \"Other appliances, not elsewhere specified\" maybe 8419.89.90? 8419 is \"Machinery, plant etc for refrigerating, freezing, etc.\" 8419.89.90 is \"Other\". Since it's not a machine? It's a passive device, maybe \"Other\" under 3924? But it's metal. Could be \"Other articles of aluminum, not elsewhere specified\" 7615? 7615.10 is \"Aluminum containers\". Not. Might be \"Other\" 7616? 7616.10 is \"Aluminum structures\". Hmm.\n\nProbably 8419.89.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298199734,
+      "prompt_tokens": 311,
+      "prompt_time": 0.023240898,
+      "completion_tokens": 231,
+      "completion_time": 0.480392529,
+      "total_tokens": 542,
+      "total_time": 0.503633427,
+      "completion_tokens_details": {
+        "reasoning_tokens": 177
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3qt172dedpstqyedhk86s6h",
+      "seed": 1293451862
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84198990",
+  "predicted_reason": "Classified as other refrigeration equipment not elsewhere specified, as a passive beverage-chilling device made of aluminum and stainless steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

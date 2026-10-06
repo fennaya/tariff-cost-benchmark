@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360608",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "3824999397",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-0edff824-1e9f-4ec6-b1c1-927304f4741d",
+    "object": "chat.completion",
+    "created": 1790676745,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8541.40.00.00\",\"reason\":\"Silicon wafers for semiconductor testing and qualification are classified under 8541.40.00.00\"}",
+          "reasoning": "Need HTS code for silicon wafers used for testing semiconductor equipment. Likely 8541.40.00? Actually silicon wafers for semiconductor manufacturing: 8541.40.00 is \"Silicon wafers, not elsewhere specified\". But for test wafers maybe 8541.40.00. Provide 10-digit: 8541.40.00? Need 10 digits: 8541.40.00? That's 8 digits. 10-digit format: 8541.40.00? Actually HTS 10-digit: 8541.40.00? Wait 10-digit includes 2-digit subheading? Example: 8541.40.00.00? Actually 10-digit: 8541.40.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301460359,
+      "prompt_tokens": 406,
+      "prompt_time": 0.019827156,
+      "completion_tokens": 212,
+      "completion_time": 0.295569249,
+      "total_tokens": 618,
+      "total_time": 0.315396405,
+      "completion_tokens_details": {
+        "reasoning_tokens": 165
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a24cebec3a",
+    "x_groq": {
+      "id": "req_01m3pades2esvb1fv9h3g9z3em",
+      "seed": 1259386550
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8541400000",
+  "predicted_reason": "Silicon wafers for semiconductor testing and qualification are classified under 8541.40.00.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

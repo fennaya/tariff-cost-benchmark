@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362389",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "9403100040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ef69ce55-d06c-4dcc-8c56-2f302f187699",
+    "object": "chat.completion",
+    "created": 1790826557,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.0010\",\n  \"reason\": \"The description refers to technical and illustrative literature, which is classified under printed books and other printed matter.\"\n}",
+          "reasoning": "We need to guess code. Description vague: \"In lieu of samples, technical and illustrative literature, a product description, and a manufacturing synopsis were provided for review.\" That's not a product. Likely \"Printed matter\" maybe? Could be \"Technical literature\" = printed books. HTS for books: 4901.99.00? 4901.99.00 is \"Other printed books, brochures, leaflets\". 10-digit: 4901.99.0010? Actually 4901.99.00 is 8-digit. 10-digit add 00. So \"4901.99.0010\". Reason: it's printed technical literature."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.342239689,
+      "prompt_tokens": 174,
+      "prompt_time": 0.151785192,
+      "completion_tokens": 189,
+      "completion_time": 0.392962445,
+      "total_tokens": 363,
+      "total_time": 0.544747637,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3ts9bbrehz9schj7tyb8eb8",
+      "seed": 188684697
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901990010",
+  "predicted_reason": "The description refers to technical and illustrative literature, which is classified under printed books and other printed matter.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

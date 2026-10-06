@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357037",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3004909221",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-17617b66-1fc4-48e9-b02a-9c32a9a0e053",
+    "object": "chat.completion",
+    "created": 1790725925,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.90\", \"reason\": \"Verapamil hydrochloride tablets are classified as a medicinal preparation under Chapter 30, heading 3004 for pharmaceutical products.\"}",
+          "reasoning": "Need HTS for verapamil HCl, a pharmaceutical. Likely under 3004.90.90? Actually HTS Chapter 30: pharmaceutical products. Verapamil HCl is a basic drug, likely 3004.90.90 (Other medicinal preparations containing alkaloids etc). Check: 3004.90.90 is \"Other medicinal preparations containing no active ingredient\". Might be 3004.90.90? Actually 3004.90.90 is \"Other medicinal preparations\". More specific 3004.90.90 covers \"Other\". So answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087301709,
+      "prompt_tokens": 204,
+      "prompt_time": 0.010575354,
+      "completion_tokens": 174,
+      "completion_time": 0.365490473,
+      "total_tokens": 378,
+      "total_time": 0.376065827,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m3qsaa6zepksz4xfmb7n0es4",
+      "seed": 1937890017
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Verapamil hydrochloride tablets are classified as a medicinal preparation under Chapter 30, heading 3004 for pharmaceutical products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

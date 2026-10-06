@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362265",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "8409999190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6a22d974-d923-4216-86f5-320af0d6ccd0",
+    "object": "chat.completion",
+    "created": 1790822383,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4016.99.00.00\", \"reason\": \"Rubber gasket made of FKM (fluoroelastomer) classified under other articles of vulcanized rubber, not elsewhere specified.\"}",
+          "reasoning": "We need HTS for rubber gasket. Likely 4016.99.00? 4016.99.00 is \"Other articles of vulcanized rubber, other than hard rubber\". Gaskets of rubber: 4016.99.00. 10-digit: 4016.99.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306625711,
+      "prompt_tokens": 235,
+      "prompt_time": 0.010138385,
+      "completion_tokens": 128,
+      "completion_time": 0.269094898,
+      "total_tokens": 363,
+      "total_time": 0.279233283,
+      "completion_tokens_details": {
+        "reasoning_tokens": 71
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3tn9z9wej6swd0vbv4tx125",
+      "seed": 105814626
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4016990000",
+  "predicted_reason": "Rubber gasket made of FKM (fluoroelastomer) classified under other articles of vulcanized rubber, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

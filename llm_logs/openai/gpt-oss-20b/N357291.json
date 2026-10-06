@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357291",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "8508110000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2f5c6856-e1df-4572-b924-8d997d4d0bb6",
+    "object": "chat.completion",
+    "created": 1790607380,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9018.90.90.00\",\"reason\":\"It is a medical device for cleaning hearing aids, classified under other medical instruments and apparatus.\"}",
+          "reasoning": "Need HTS code for hearing aid vacuum cleaner. Likely medical devices: \"Hearing aids\" are 9018.90.90? But this is a vacuum cleaner for earwax. Could be \"Other medical instruments and apparatus\" 9018.90.90? Actually 9018.90.90 is \"Other medical instruments and apparatus\". But maybe 9018.90.90 includes hearing aid cleaning devices. So code 9018.90.90.00? 10-digit: 9018.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293471192,
+      "prompt_tokens": 397,
+      "prompt_time": 0.024870833,
+      "completion_tokens": 161,
+      "completion_time": 0.194852705,
+      "total_tokens": 558,
+      "total_time": 0.219723538,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3m88ktte1tah9j78nxycsjz",
+      "seed": 684872068
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018909000",
+  "predicted_reason": "It is a medical device for cleaning hearing aids, classified under other medical instruments and apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

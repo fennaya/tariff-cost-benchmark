@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359981",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7320905060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4630c985-a82d-4544-ba22-a85cd80f8b2e",
+    "object": "chat.completion",
+    "created": 1790748881,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7318.15.9090\", \"reason\": \"Classified as a stainless steel spring (flat spring clip) under heading 7318.15 for other springs of iron or steel.\"}",
+          "reasoning": "We need HTS code for stainless steel spring clip. Likely under 7326.90.?? (Other articles of iron or steel). Spring clips are \"springs, of iron or steel\" 7318? Actually 7318 is \"Threaded rods, bolts, etc.\" 7318.15 is springs. 7318.15.90 is \"Other springs\". But a flat spring clip maybe 7318.15.90. Let's choose 7318.15.90. Need 10-digit: 7318.15.9090? Actually 10-digit US: 7318.15.9090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.0178633,
+      "prompt_tokens": 391,
+      "prompt_time": 0.034489033,
+      "completion_tokens": 191,
+      "completion_time": 0.406429798,
+      "total_tokens": 582,
+      "total_time": 0.440918831,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3rf6vrpexxv5macb9hhryg8",
+      "seed": 1934170942
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318159090",
+  "predicted_reason": "Classified as a stainless steel spring (flat spring clip) under heading 7318.15 for other springs of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

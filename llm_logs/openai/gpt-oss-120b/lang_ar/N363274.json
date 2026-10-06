@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363274",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8533210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-eecc5fa1-2a98-442b-ab79-41f7032790c1",
+    "object": "chat.completion",
+    "created": 1790904951,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8533.40.00\", \"reason\": \"The item is a single, fixed thick\u2011film chip resistor (ceramic substrate, no active semiconductor) classified under HTS heading 8533 for resistors.\"}",
+          "reasoning": "We need HTS code for thick film resistor, single, ceramic substrate. Likely 8533.40.00? Actually 8533.40.00 is resistors, fixed, carbon composition? Let's recall: 8533.40.00 - Resistors, other than heating resistors. 8533.90 is other. For thick film chip resistors: 8533.40.00 covers \"Resistors, other than heating resistors\". Could be 8533.40.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017967367,
+      "prompt_tokens": 390,
+      "prompt_time": 0.018176688,
+      "completion_tokens": 169,
+      "completion_time": 0.357501718,
+      "total_tokens": 559,
+      "total_time": 0.375678406,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3x41r7de2mtm2d285bknzrn",
+      "seed": 1872854539
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85334000",
+  "predicted_reason": "The item is a single, fixed thick\u2011film chip resistor (ceramic substrate, no active semiconductor) classified under HTS heading 8533 for resistors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

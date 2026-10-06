@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359769",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8419899580",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d6422d77-ac0f-4653-9945-2ccfd061e697",
+    "object": "chat.completion",
+    "created": 1790645281,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"The reactor is a specialized chemical processing vessel for polymerizing ethylene, fitting the HTSUS heading 8421.90.90 for other machinery and apparatus for the treatment of materials.\"}",
+          "reasoning": "Need HTS code for polymerization reactor. Likely 8421.90.90? Actually reactors for chemical processes: 8421.90.90 is \"Other machinery and apparatus for the treatment of materials\". But reactors for polymerization maybe 8421.90.90. Need 10-digit: 8421.90.90XX. Let's pick 8421.90.90.00. Reason: reactor for polymerization of ethylene."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.19535154,
+      "prompt_tokens": 309,
+      "prompt_time": 0.017584855,
+      "completion_tokens": 159,
+      "completion_time": 0.166007092,
+      "total_tokens": 468,
+      "total_time": 0.183591947,
+      "completion_tokens_details": {
+        "reasoning_tokens": 95
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m3ncd8gsefm9cwsagmktfng6",
+      "seed": 1435094915
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "The reactor is a specialized chemical processing vessel for polymerizing ethylene, fitting the HTSUS heading 8421.90.90 for other machinery and apparatus for the treatment of materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

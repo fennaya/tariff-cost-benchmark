@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362388",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "6302315020",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-65e316e8-f7f2-4f5f-912f-2255dfa9003e",
+    "object": "chat.completion",
+    "created": 1790736466,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6307.10.10.00\",\"reason\":\"Cotton woven bedding set with lace insert falls under cotton bed linen of a kind used for bedding.\"}",
+          "reasoning": "Need HTS 10-digit. Cotton sheets with lace? It's cotton woven fabric, no printing. It's bedding. Likely 6307.10.10? Wait 6307 is \"Bed linen, table linen, toilet articles and other textile articles\". 6307.10 is \"Bed linen, table linen, toilet articles and other textile articles, of cotton\". 6307.10.10 is \"Bed linen, table linen, toilet articles and other textile articles, of cotton, of a kind used for bedding\". But 6307.10.10 is for \"Bed linen, table linen, toilet articles and other textile articles, of cotton, of a kind used for bedding, of a kind used for bedding, of a kind used for bedding\"? Actually 6307.10.10 is \"Bed linen, table linen, toilet articles and other textile articles, of cotton, of a kind used for bedding\". 6307.10.20 is for \"of cotton, of a kind used for bedding, of a kind used for bedding, of a kind used for bedding\"? I'm not sure. But 6307.10.10 is likely. 10-digit: 6307.10.10.00? Wait 10-digit: 6307.10.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.045985761,
+      "prompt_tokens": 404,
+      "prompt_time": 0.020894581,
+      "completion_tokens": 315,
+      "completion_time": 0.392482713,
+      "total_tokens": 719,
+      "total_time": 0.413377294,
+      "completion_tokens_details": {
+        "reasoning_tokens": 269
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3r3bzymekyb6bvb6dttv5t8",
+      "seed": 750439268
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307101000",
+  "predicted_reason": "Cotton woven bedding set with lace insert falls under cotton bed linen of a kind used for bedding.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

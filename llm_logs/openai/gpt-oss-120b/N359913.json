@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359913",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c5d7d8cf-cee8-484e-b1c3-b665879ccc52",
+    "object": "chat.completion",
+    "created": 1790745329,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Classified under medicinal preparations containing active pharmaceutical ingredients, specifically tablets of a blood pressure drug.\"}",
+          "reasoning": "Need HTS for pharmaceutical product, olmesartan medoxomil tablets. Likely under 3004.90.00? Actually 3004.90.00 is \"Medicaments ... other\". But specific: 3004.90.00 is \"Other medicaments (excluding vaccines)\". Could be 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.305477314,
+      "prompt_tokens": 199,
+      "prompt_time": 0.053525538,
+      "completion_tokens": 121,
+      "completion_time": 0.255570132,
+      "total_tokens": 320,
+      "total_time": 0.30909567,
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3rbtf8jev79daynkak56bnq",
+      "seed": 385658501
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Classified under medicinal preparations containing active pharmaceutical ingredients, specifically tablets of a blood pressure drug.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

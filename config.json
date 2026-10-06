@@ -1,0 +1,30 @@
+{
+  "models": [
+    {
+      "provider": "groq",
+      "model_id": "openai/gpt-oss-20b",
+      "reasoning_effort": "low",
+      "training_cutoff": "2024-06-01",
+      "training_cutoff_source": "https://platform.openai.com/docs/models/gpt-oss-20b"
+    },
+    {
+      "provider": "groq",
+      "model_id": "openai/gpt-oss-120b",
+      "reasoning_effort": "low",
+      "training_cutoff": "2024-06-01",
+      "training_cutoff_source": "https://platform.openai.com/docs/models/gpt-oss-120b"
+    },
+    {
+      "provider": "groq",
+      "model_id": "allam-2-7b",
+      "reasoning_effort": null,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "not stated on console.groq.com or Hugging Face as of 2026-09-30; treated as latest-possible per the build prompt's own fallback rule. Note: reasoning_effort must be null -- this model's API rejects that parameter with a 400 error (unlike the gpt-oss models).",
+      "_replaced_model": "qwen/qwen3.8-27b (see DECISIONS.md 2026-09-30 entry -- swapped out for an unworkably tight free-tier quota)"
+    }
+  ],
+  "ruling_window_start": "2026-01-01",
+  "ruling_window_start_reason": "latest known training cutoff among pinned models is 2024-06-01 (gpt-oss); one model (qwen3.8-27b) has an unknown cutoff, so the build prompt's unknown-cutoff fallback (2026-01-01) is kept as the conservative window start -- see DECISIONS.md",
+  "cbp_user_agent": "tariff-cost-benchmark-research/0.1 (contact: fennaya@users.noreply.github.com)",
+  "rate_limit_seconds": 1.0
+}

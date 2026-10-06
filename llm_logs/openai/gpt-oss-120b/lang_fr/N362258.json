@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362258",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "9029204080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6086be53-7603-4c5a-9b41-f102df1881e7",
+    "object": "chat.completion",
+    "created": 1790905728,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9022.30.0010\",\n  \"reason\": \"Classified under 'Other instruments and apparatus for measuring or checking physiological parameters' as a portable, battery\u2011powered heart\u2011rate monitor worn on the wrist.\"\n}",
+          "reasoning": "We need HTS code for wearable heart rate monitor. Likely 9022.55.00? Actually medical devices: 9022.55.00 is \"Apparatus for measuring or checking blood pressure\". Heart rate monitors maybe 9022.30? Let's think: 9022.30 is \"Other instruments and apparatus for measuring or checking physiological parameters\". Could be 9022.30.00. 10-digit: 9022.30.0010? Need 10-digit. US uses 10-digit: 9022.30.0010 is \"Other instruments and apparatus for measuring or checking physiological parameters, other than those of heading 9022.30\". Not sure. Might be 9022.30.0010. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298197523,
+      "prompt_tokens": 644,
+      "prompt_time": 0.029318377,
+      "completion_tokens": 221,
+      "completion_time": 0.471166363,
+      "total_tokens": 865,
+      "total_time": 0.50048474,
+      "completion_tokens_details": {
+        "reasoning_tokens": 159
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3x4sedte8r86tyj5zt0mtw0",
+      "seed": 857727424
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9022300010",
+  "predicted_reason": "Classified under 'Other instruments and apparatus for measuring or checking physiological parameters' as a portable, battery\u2011powered heart\u2011rate monitor worn on the wrist.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

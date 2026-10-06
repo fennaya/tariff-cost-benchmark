@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359273",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "1905901050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-83ed156d-1dc9-4348-974c-b836a6fc4eb5",
+    "object": "chat.completion",
+    "created": 1790727199,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1905.90.00\", \"reason\": \"Panettone is classified as a sweet bakery product (fruit\u2011filled sponge cake) falling under heading 1905 for bakery goods, specifically subheading 1905.90.00 for other bakery products not elsewhere specified.\"}",
+          "reasoning": "We need HTS for sweet bread, panettone. Likely 1905.90.00? Let's see: 1905.90.00 is \"Other bakery products\". Panettone is a sweet bread, maybe 1905.90.00. 1905.30 is \"Sweet biscuits\". 1905.90 is \"Other\". So code 1905.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204804588,
+      "prompt_tokens": 353,
+      "prompt_time": 0.017092226,
+      "completion_tokens": 160,
+      "completion_time": 0.33572049,
+      "total_tokens": 513,
+      "total_time": 0.352812716,
+      "completion_tokens_details": {
+        "reasoning_tokens": 88
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3qth5spe4d9x3g528m7rd5g",
+      "seed": 905907780
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "19059000",
+  "predicted_reason": "Panettone is classified as a sweet bakery product (fruit\u2011filled sponge cake) falling under heading 1905 for bakery goods, specifically subheading 1905.90.00 for other bakery products not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

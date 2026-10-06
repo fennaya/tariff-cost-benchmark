@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358951",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-77488a1a-94de-433f-ad5b-050dc84c2168",
+    "object": "chat.completion",
+    "created": 1790904711,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.30.00\", \"reason\": \"The product is a non-motorized industrial dump trailer used solely for transporting and unloading bulk goods, classifiable under heading 8716.30 for trailers and semi\u2011trailers for the transport of goods.\"}",
+          "reasoning": "We need HTS code for industrial dump trailer (no engine). Likely heading 8716.30? 8716.30.00 is \"Trailers and semi-trailers for the transport of goods, other than those of heading 8715\". But need subheading for dump trailers? 8716.30.00 covers \"Other trailers and semi-trailers for the transport of goods\". Could be 8716.30.10 for \"with self-propelled\"? Not. Actually 8716.30.00 is correct. Provide code \"8716.30.00\"."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195776987,
+      "prompt_tokens": 656,
+      "prompt_time": 0.03539628,
+      "completion_tokens": 193,
+      "completion_time": 0.404428903,
+      "total_tokens": 849,
+      "total_time": 0.439825183,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3x3tdzxe03abc2w2bwjk3vj",
+      "seed": 391379630
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87163000",
+  "predicted_reason": "The product is a non-motorized industrial dump trailer used solely for transporting and unloading bulk goods, classifiable under heading 8716.30 for trailers and semi\u2011trailers for the transport of goods.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

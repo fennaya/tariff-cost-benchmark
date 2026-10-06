@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ac976cf8-f9bc-4b5e-a656-5cda8fcdbcbb",
+    "object": "chat.completion",
+    "created": 1790905559,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8544.40.00\",\"reason\":\"Electrical wiring, printed circuit boards and connectors assembled for use in aviation headsets fall under electrical apparatus not elsewhere specified.\"}",
+          "reasoning": "We need HTS code. It's a set of electrical wiring, printed circuit board, connectors, used in aviation headsets. Likely 8517.30.00? That's \"Electrical apparatus for switching or protecting electrical circuits\". But it's a set of wires and PCB. Maybe 8544.40.00? That's \"Electrical machines, apparatus, and components\". But it's a set of wires and connectors. Could be 8544.40.00 for \"Electrical machines, apparatus, and components, not elsewhere specified\". But maybe 8544.40.00 is for \"Electrical machines, apparatus, and components, not elsewhere specified\". However, the product is a set of wires and connectors used in headsets. Could be 8544.40.00. Let's pick 8544.40.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.153465324,
+      "prompt_tokens": 351,
+      "prompt_time": 0.034258088,
+      "completion_tokens": 217,
+      "completion_time": 0.225721006,
+      "total_tokens": 568,
+      "total_time": 0.259979094,
+      "completion_tokens_details": {
+        "reasoning_tokens": 170
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_92d51d08e5",
+    "x_groq": {
+      "id": "req_01m3x4m9kmed4smk9a8dvsbawh",
+      "seed": 14729246
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444000",
+  "predicted_reason": "Electrical wiring, printed circuit boards and connectors assembled for use in aviation headsets fall under electrical apparatus not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

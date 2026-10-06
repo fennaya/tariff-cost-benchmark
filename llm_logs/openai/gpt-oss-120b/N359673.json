@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359673",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "1602506000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d74ab5ce-aa17-4512-83c4-e7b637a67da0",
+    "object": "chat.completion",
+    "created": 1790731440,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0202.30.00\", \"reason\": \"The product is trimmed whole-muscle cuts of beef that are marinated and vacuum\u2011tumbled, classifying it as other cuts of bovine meat (with bone) under heading 0202.30\"}",
+          "reasoning": "We need HTS for marinated beef cuts. Likely heading 0202.30.00? 0202 is \"Meat of bovine animals, fresh, chilled or frozen\". Subheading 0202.30 is \"Other cuts with bone in\". But marinated may be considered \"prepared\" under 0202.40? Actually 0202.40 is \"Other cuts, boneless\". Need check. Marinated meat is \"prepared\" maybe 0202.30.90? Let's pick 0202.30.00 for cuts with bone. Reason sentence."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048182768,
+      "prompt_tokens": 501,
+      "prompt_time": 0.023796755,
+      "completion_tokens": 189,
+      "completion_time": 0.393405264,
+      "total_tokens": 690,
+      "total_time": 0.417202019,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3qyjkyteh1tm0xqrd8swcjx",
+      "seed": 134240750
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "02023000",
+  "predicted_reason": "The product is trimmed whole-muscle cuts of beef that are marinated and vacuum\u2011tumbled, classifying it as other cuts of bovine meat (with bone) under heading 0202.30",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

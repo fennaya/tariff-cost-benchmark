@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356914",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "7309000090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d1acc9ab-3e01-462e-9172-c25756a930bf",
+    "object": "chat.completion",
+    "created": 1790725911,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8609.00.0010\",\n  \"reason\": \"Steel ISO shipping containers (unmodified, empty) fall under heading 8609 for containers of iron or steel.\"\n}",
+          "reasoning": "We need HTS for empty steel ISO containers. Likely 8609.00.00? Actually 8609 is \"Containers (including containers for the transport of liquids) and other vessels, of iron or steel\". Subheading 8609.00.00 is \"Containers (including containers for the transport of liquids) and other vessels, of iron or steel, not elsewhere specified\". But there is also 8609.00.00. So 10-digit: 8609.00.0010? Need 10-digit. Usually 8609.00.0010 is \"Containers (including containers for the transport of liquids) and other vessels, of iron or steel, other than those of heading 8609.00.0000\"? Let's check: HTSUS 2024: 8609.00.0010 - \"Containers (including containers for the transport of liquids) and other vessels, of iron or steel, other than those of heading 8609.00.0000\"? Actually heading 8609.00.0000 is the heading. Subheadings: 8609.00.0010 \"Containers (including containers for the transport of liquids) and other vessels, of iron or steel, other than those of heading 8609.00.0000\"? Might be wrong. Simpler: Use 8609.00.0010. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017930813,
+      "prompt_tokens": 347,
+      "prompt_time": 0.01651389,
+      "completion_tokens": 342,
+      "completion_time": 0.716599191,
+      "total_tokens": 689,
+      "total_time": 0.733113081,
+      "completion_tokens_details": {
+        "reasoning_tokens": 288
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3qs9vrseghbzw1sdaknhhmy",
+      "seed": 1049656896
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8609000010",
+  "predicted_reason": "Steel ISO shipping containers (unmodified, empty) fall under heading 8609 for containers of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357577",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "7318160060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-90ea2637-71c2-4609-8d8d-6798c1f92a6f",
+    "object": "chat.completion",
+    "created": 1790726288,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7318.15.00.00\", \"reason\": \"Stainless-steel locknut classified under nuts of iron or steel, not elsewhere specified, under heading 7318.\"}",
+          "reasoning": "Need HTS for locknut stainless steel. Likely 7318.15.00.00? Actually 7318 covers nuts, bolts, etc. 7318.15 is \"Other nuts, of iron or steel, not elsewhere specified\". Stainless steel maybe 7318.15.90? Check: 7318.15.00.00 is \"Other nuts, of iron or steel\". Might be 7318.15.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294714195,
+      "prompt_tokens": 193,
+      "prompt_time": 0.007716373,
+      "completion_tokens": 151,
+      "completion_time": 0.314747639,
+      "total_tokens": 344,
+      "total_time": 0.322464012,
+      "completion_tokens_details": {
+        "reasoning_tokens": 98
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3qsnc79eqzshv5ke81dsang",
+      "seed": 135410052
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318150000",
+  "predicted_reason": "Stainless-steel locknut classified under nuts of iron or steel, not elsewhere specified, under heading 7318.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

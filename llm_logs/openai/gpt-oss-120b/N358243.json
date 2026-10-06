@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358243",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "9401790035",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c254d294-ad63-4126-9a51-6c9cd6f356ec",
+    "object": "chat.completion",
+    "created": 1790726612,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9401.80.20\",\n  \"reason\": \"Classified as a metal frame bench (seat) not upholstered, falling under HTSUS heading 9401.80 for other seats of metal.\"\n}",
+          "reasoning": "We need HTS code for metal frame bench with wood/plank seat, includes planter. Likely classified under \"seating furniture, of wood, metal, etc.\" Look up: HTS 9401.61.00 \u2013 Seats, with metal frames, upholstered? Actually 9401.61 is \"Seats, with metal frames, upholstered\". Not upholstered. 9401.71 is \"Seats, with wooden frames\". 9401.80 is \"Other seats, not upholstered\". 9401.80.10 is \"Other seats, of wood\". 9401.80.20 is \"Other seats, of metal\". Since bench has metal frame and wood seat, maybe 9401.61? But that's upholstered. Not upholstered. Could be 9401.71 (wooden frames) but frame is metal. Could be 9401.80.20 \"Other seats, of metal\". The bench includes wood planks but primary material metal frame. I'd choose 9401.80.20. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213399743,
+      "prompt_tokens": 388,
+      "prompt_time": 0.025399442,
+      "completion_tokens": 272,
+      "completion_time": 0.564318245,
+      "total_tokens": 660,
+      "total_time": 0.589717687,
+      "completion_tokens_details": {
+        "reasoning_tokens": 212
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3qsz8qxectbjq34yk7j1qxp",
+      "seed": 609691931
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94018020",
+  "predicted_reason": "Classified as a metal frame bench (seat) not upholstered, falling under HTSUS heading 9401.80 for other seats of metal.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

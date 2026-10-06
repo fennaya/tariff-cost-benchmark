@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359718",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "9027504060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8ea9831a-68e8-4bf7-9202-8c579990bf14",
+    "object": "chat.completion",
+    "created": 1790732699,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8541.40.00.00\",\n  \"reason\": \"The balanced detector is a photosensitive semiconductor device (photodiode assembly) used to convert light into electrical signals, classifiable under HTS heading 8541.40 for photosensitive semiconductor devices.\"\n}",
+          "reasoning": "We need HTS code for photodetector. Likely 8541.40.00.00 (Photosensitive semiconductor devices). Balanced photodetector is a photodiode assembly. HTS 8541.40.00.00 is \"Photosensitive semiconductor devices, including photovoltaic cells, whether or not assembled in modules or made up into panels; light-emitting diodes\". Actually 8541.40 is \"Photosensitive semiconductor devices, including photovoltaic cells, whether or not assembled in modules or made up into panels; light-emitting diodes\". For photodetectors maybe 8541.40.90.00? Need 10-digit: 8541.40.00.00? That's 8 digits. 10-digit includes further subheadings: 8541.40.00.00 is 8-digit. 10-digit could be 8541.40.00.00? Actually US uses 10-digit: 8541.40.00.00 is 10? Count: 4-2-2-2 = 10. Yes 8541.40.00.00. So answer.\n\nReason: It's a photosensitive semiconductor device (balanced photodetector)."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.0184925,
+      "prompt_tokens": 537,
+      "prompt_time": 0.025229191,
+      "completion_tokens": 325,
+      "completion_time": 0.677201716,
+      "total_tokens": 862,
+      "total_time": 0.702430907,
+      "completion_tokens_details": {
+        "reasoning_tokens": 253
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3qzs1dqeysajfq9c58qd13r",
+      "seed": 532100312
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8541400000",
+  "predicted_reason": "The balanced detector is a photosensitive semiconductor device (photodiode assembly) used to convert light into electrical signals, classifiable under HTS heading 8541.40 for photosensitive semiconductor devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

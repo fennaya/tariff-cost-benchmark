@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358460",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bb019bf0-3dfb-4ac3-a338-7edf2ee01047",
+    "object": "chat.completion",
+    "created": 1790726729,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.99\", \"reason\": \"The item is a portable lockable container made primarily of ABS plastic, which falls under the heading for other plastic articles not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for portable lockable plastic safe box. Likely under 8306? That's for locks, safes. But material plastic maybe 8306.29? Let's check: 8306.29.00 - Other locks, of base metal? Not. For safes: 8306.21.00 - Safes, strongboxes, etc., of metal. Plastic maybe 3926? 3926.90.99 - Other articles of plastics. But specific security container maybe 8306.29.90? Actually 8306.29.00 is \"Other locks, of base metal\". Not container.\n\nMaybe classify as \"Other containers, made of plastics, with lock\"? Could be 3926.90.99 \"Other articles of plastics\". But need most specific. I'd choose 3926.90.99.\n\nProvide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206257606,
+      "prompt_tokens": 269,
+      "prompt_time": 0.013338111,
+      "completion_tokens": 234,
+      "completion_time": 0.484203652,
+      "total_tokens": 503,
+      "total_time": 0.497541763,
+      "completion_tokens_details": {
+        "reasoning_tokens": 180
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qt2ve6erm9heffb7xjf811",
+      "seed": 1878782432
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39269099",
+  "predicted_reason": "The item is a portable lockable container made primarily of ABS plastic, which falls under the heading for other plastic articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

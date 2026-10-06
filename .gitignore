@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+*.key
+data/processed/_dryrun_llm_logs/
+
+# Raw USITC HTS revision dumps (255 MB, 21 files): not tracked. A trimmed, gzip-compressed
+# copy (9 MB; only the fields the analysis reads) is tracked under data/compact/hts_revisions/
+# and the scripts fall back to it automatically. Rebuild the raw files with
+# scripts/fetch_hts.py (see README, "Rebuilding the raw data").
+data/raw/hts_revisions/
+
+# Gemini (v1.1, in progress): no Gemini results in public files until all 200 rulings are
+# done. The subset list (data/gemini_subset.csv) and code stay tracked; per-ruling
+# responses, run logs, and the partial comparison report stay local. Add them back
+# (git add -f) when the run completes and v1.1 is cut.
+llm_logs/gemini-*/
+logs/
+logs_gemini*.txt
+review/gemini_comparison.md
+review/gemini_comparison.json

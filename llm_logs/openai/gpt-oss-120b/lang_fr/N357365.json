@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357365",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "4407130000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-29df4571-8533-46eb-bfc1-6c807db282db",
+    "object": "chat.completion",
+    "created": 1790905610,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4407.20.00.00\",\n  \"reason\": \"Planed softwood lumber (SPF) imported as rough boards for further processing, classified under heading 4407.20 for planed softwood boards\"\n}",
+          "reasoning": "We need HTS for SPF construction lumber, planed, not further processed. Likely heading 4407.20.00.00? Let's recall: 4407 is \"Wood sawn or chipped lengthwise, sliced or peeled, of a thickness exceeding 6 mm\". Subheading 4407.20 is \"Softwood, of a thickness exceeding 6 mm, planed\". Actually 4407.20.00 is \"Softwood, planed\". Need 10-digit: 4407.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293778615,
+      "prompt_tokens": 408,
+      "prompt_time": 0.021775603,
+      "completion_tokens": 179,
+      "completion_time": 0.381492975,
+      "total_tokens": 587,
+      "total_time": 0.403268578,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3x4nv87e89v2686nbjehevq",
+      "seed": 659220758
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4407200000",
+  "predicted_reason": "Planed softwood lumber (SPF) imported as rough boards for further processing, classified under heading 4407.20 for planed softwood boards",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

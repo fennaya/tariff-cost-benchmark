@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361799",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e828ce22-36ac-4b6a-8911-f9f9858313a3",
+    "object": "chat.completion",
+    "created": 1790805983,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.91.9090\", \"reason\": \"Classified as a window screen made of PVC\u2011coated polyester mesh, falling under other window screens of man\u2011made fibers.\"}",
+          "reasoning": "We need HTS for retractable PVC screen, likely under 6302? Actually screens made of PVC/polyester mesh: could be \"Window screens\" 6302.91.90 (other window screens, of man-made fibers). 10-digit: 6302.91.9090? Check: 6302.91.9090 is \"Other window screens, of man-made fibers, not elsewhere specified\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296817468,
+      "prompt_tokens": 724,
+      "prompt_time": 0.035531222,
+      "completion_tokens": 144,
+      "completion_time": 0.298269711,
+      "total_tokens": 868,
+      "total_time": 0.333800933,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3t5nfkpe87rh3mdbpzzp9m1",
+      "seed": 1276338747
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302919090",
+  "predicted_reason": "Classified as a window screen made of PVC\u2011coated polyester mesh, falling under other window screens of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

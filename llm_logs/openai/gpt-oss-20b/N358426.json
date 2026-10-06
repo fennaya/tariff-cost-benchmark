@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358426",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "8422309140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c507c91d-423e-4cba-983d-0011e3931b19",
+    "object": "chat.completion",
+    "created": 1790608052,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8429.90.90.00\",\"reason\":\"Automated liquid dosing system falls under machinery for handling liquids not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for automated liquid dosing system. Likely 8429.90.90? Actually 8429 is \"Other machinery and apparatus, not elsewhere specified\". For liquid handling equipment: 8429.90.90 is \"Other machinery and apparatus, not elsewhere specified\". But maybe 8429.90.90 covers \"Other machinery and apparatus for handling liquids\". Could be 8429.90.90. But 8429.90.90 is 10-digit? Actually 8429.90.90 is 8-digit? Wait HTS 10-digit: 8429.90.90.00. But we need 10-digit. So \"8429.90.90.00\". Reason: automated liquid dosing system."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016581116,
+      "prompt_tokens": 359,
+      "prompt_time": 0.018664706,
+      "completion_tokens": 197,
+      "completion_time": 0.215639737,
+      "total_tokens": 556,
+      "total_time": 0.234304443,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9b8528b477",
+    "x_groq": {
+      "id": "req_01m3m8x4a3e8n8kftjqvqnj83s",
+      "seed": 1994800615
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8429909000",
+  "predicted_reason": "Automated liquid dosing system falls under machinery for handling liquids not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

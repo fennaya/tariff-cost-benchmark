@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362002",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-91d1c2b1-57f7-4330-9ad3-92443fd0c49e",
+    "object": "chat.completion",
+    "created": 1790813644,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3916.10.00\", \"reason\": \"The item is a die\u2011cut open\u2011cell reticulated polyurethane foam pad, classified under cellular polyurethane foam (HTS 3916.10.00).\"}",
+          "reasoning": "We need HTS for polyurethane foam pad used in oil drain container, not a filter, part of container. Likely classified under 3916.90.00? That's \"Other articles of plastics and articles thereof\". But foam pads maybe 3916.90.00. Or 3926.90.00 for other articles of plastics. However polyurethane foam is in 3916.10 (cellular polyurethane). 3916.10.00 is \"Cellular polyurethane foam, not elsewhere specified\". That seems right. So code 3916.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.269170772,
+      "prompt_tokens": 285,
+      "prompt_time": 0.030345507,
+      "completion_tokens": 181,
+      "completion_time": 0.374641833,
+      "total_tokens": 466,
+      "total_time": 0.40498734,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3tcz8pgex0v395bpyqgvpjw",
+      "seed": 1612942778
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39161000",
+  "predicted_reason": "The item is a die\u2011cut open\u2011cell reticulated polyurethane foam pad, classified under cellular polyurethane foam (HTS 3916.10.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

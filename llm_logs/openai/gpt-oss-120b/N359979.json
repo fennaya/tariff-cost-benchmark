@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359979",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "8483908040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f76b89aa-d7e8-4c5e-8020-ac791b0b957c",
+    "object": "chat.completion",
+    "created": 1790748626,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.90.90\", \"reason\": \"The steel pinched bolt yoke is a part for universal joints, classified under other parts for machinery (heading 8483) not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for steel yoke, part of universal joint, likely \"machinery parts, of steel\". Could be 8483.90.90? Let's think: 8483 is \"Parts suitable for use solely or principally with the machines of heading 8481 or 8482\". 8483.10 is \"parts of ball bearings\". 8483.20 is \"parts of other bearings\". 8483.30 is \"parts of gear boxes\". 8483.40 \"parts of other gear\". 8483.50 \"parts of other machinery\". Might be 8483.90 \"Other parts\". So 8483.90.90 is \"Other parts, not elsewhere specified\". That seems plausible.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049091477,
+      "prompt_tokens": 274,
+      "prompt_time": 0.012660775,
+      "completion_tokens": 213,
+      "completion_time": 0.447255514,
+      "total_tokens": 487,
+      "total_time": 0.459916289,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3rez37tebp87s3dsh2w8nac",
+      "seed": 1619054787
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84839090",
+  "predicted_reason": "The steel pinched bolt yoke is a part for universal joints, classified under other parts for machinery (heading 8483) not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

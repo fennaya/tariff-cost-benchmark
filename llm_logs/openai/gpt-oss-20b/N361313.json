@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361313",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-dfc3ed6a-4178-4e78-93e4-77bdd665c859",
+    "object": "chat.completion",
+    "created": 1790697658,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6105.10.10\",\"reason\":\"Raw, unfinished knitted cotton long sleeves and hem bottom are classified under 6105.10.10 \u2013 knitted or crocheted articles of cotton, not finished.\"}",
+          "reasoning": "We need HTS code. Description: \"The longsleeves and hem bottom are raw and unfinished.\" This seems like raw unfinished garment? Maybe \"unfinished knitted or crocheted articles of apparel\" etc. Raw unfinished long sleeves and hem bottom. Could be \"unfinished knitted or crocheted articles of apparel\" 6105.10.10? Actually 6105 is \"Knitted or crocheted apparel of cotton\". But raw unfinished? Maybe 6105.10.10 is \"Knitted or crocheted articles of cotton, not finished\". But we don't know material. Could be generic raw unfinished garment. Maybe 6105.10.10 for cotton. But we don't know. Could be 6105.10.10 for cotton, 6105.10.20 for other fibers. But we need single code. I'd choose 6105.10.10. Reason: raw unfinished knitted cotton apparel."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.174502325,
+      "prompt_tokens": 163,
+      "prompt_time": 0.009229152,
+      "completion_tokens": 243,
+      "completion_time": 0.288298138,
+      "total_tokens": 406,
+      "total_time": 0.29752729,
+      "completion_tokens_details": {
+        "reasoning_tokens": 187
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m3pybnjaes8rfkyvszw4wjqw",
+      "seed": 393215724
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61051010",
+  "predicted_reason": "Raw, unfinished knitted cotton long sleeves and hem bottom are classified under 6105.10.10 \u2013 knitted or crocheted articles of cotton, not finished.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

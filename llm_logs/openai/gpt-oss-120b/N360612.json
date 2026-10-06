@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360612",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "9403200050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a54a0f18-6780-4913-8138-e0a28c62bbdd",
+    "object": "chat.completion",
+    "created": 1790767536,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.20.00\", \"reason\": \"The item is a floor\u2011standing shelving unit primarily of metal (carbon steel rods) classified as other metal furniture under heading 9403.\"}",
+          "reasoning": "We need HTS code for shelving unit made of polypropylene and carbon steel rod, unassembled, floor standing 3-tier. Likely under Chapter 73 (articles of iron or steel) or 39 (plastics). Mixed materials: primarily metal? Shelves are carbon steel rods, supports polypropylene. Could be classified under 7308.94.00? That's \"Other structures (excluding prefabricated buildings) and parts of structures, of iron or steel\". But includes metal shelving? Also 9403.20.00 is \"Other furniture and parts thereof, of metal\". 9403.20.00 covers metal furniture. Since includes plastic parts, still metal furniture. So HTS 9403.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017966708,
+      "prompt_tokens": 306,
+      "prompt_time": 0.015186925,
+      "completion_tokens": 208,
+      "completion_time": 0.434448451,
+      "total_tokens": 514,
+      "total_time": 0.449635376,
+      "completion_tokens_details": {
+        "reasoning_tokens": 153
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3s10688e609n0baa79kywy2",
+      "seed": 1758035885
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94032000",
+  "predicted_reason": "The item is a floor\u2011standing shelving unit primarily of metal (carbon steel rods) classified as other metal furniture under heading 9403.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

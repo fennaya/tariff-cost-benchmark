@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362694",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "3907300000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a35850a5-818c-48f8-a226-914e6b65433c",
+    "object": "chat.completion",
+    "created": 1790833727,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3906.10.00\",\n  \"reason\": \"The primary component is uncured two\u2011component epoxy resin, which is classified under heading 3906.10.00 for epoxy resins.\"\n}",
+          "reasoning": "We need HTS code for epoxy resin kit with molds etc. Likely under 3907.10.00? Actually epoxy resin (polymer) is 3907.10.00 (polyesters, polyurethanes, etc). But kits with molds maybe 3926.90.99 (other articles of plastics). However main component is epoxy resin liquid, classified under 3906.90.99? Epoxy resin (polymerized) is 3906.10? Let's think: HTS 3906.90.99 is \"Other polymerized monomers, other than those of heading 3906.10\". Epoxy resin (uncured) maybe 3906.10.00 \"Epoxy resins\". Yes 3906.10.00 is \"Epoxy resins\". So kit containing epoxy resin likely 3906.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213559373,
+      "prompt_tokens": 249,
+      "prompt_time": 0.042337046,
+      "completion_tokens": 245,
+      "completion_time": 0.511964166,
+      "total_tokens": 494,
+      "total_time": 0.554301212,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3v0458aefgs43hekf6r1fcw",
+      "seed": 1598464708
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39061000",
+  "predicted_reason": "The primary component is uncured two\u2011component epoxy resin, which is classified under heading 3906.10.00 for epoxy resins.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363462",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "4202924500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-041b1f1c-8631-4de1-bb47-2e23d28453b2",
+    "object": "chat.completion",
+    "created": 1790853478,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.90.00\", \"reason\": \"Classified as a plastic tote bag for conveyance/packing of goods, not elsewhere specified, under heading 3923.\"}",
+          "reasoning": "We need HTS for tote bag with plastic, casters, wheels. Likely classified under \"plastic bags\" 3923? But with wheels maybe \"plastic containers\" 3926? It's a tote bag with wheels, used for laundry. Could be \"plastic, non-reinforced, not otherwise specified\" 3926.10.00? Actually 3926.10.00 is \"Other articles of plastics, not elsewhere specified\". But more specific: 3924 is \"Tableware, kitchenware, other household articles\". 3924.90 is \"Other\". However tote bag with wheels maybe \"plastic luggage\" 4202? But outer surface plastic, but it's a bag, not textile. Could be \"plastic bags, of a kind used for laundry\" 3923.99.90? 3923 is \"Articles for the conveyance or packing of goods, of plastics\". 3923.90 is \"Other\". So likely 3923.90.00.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150557212,
+      "prompt_tokens": 250,
+      "prompt_time": 0.009615169,
+      "completion_tokens": 260,
+      "completion_time": 0.55128497,
+      "total_tokens": 510,
+      "total_time": 0.560900139,
+      "completion_tokens_details": {
+        "reasoning_tokens": 208
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m3vjyxtkenas1x5y37a5nf25",
+      "seed": 1160054748
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39239000",
+  "predicted_reason": "Classified as a plastic tote bag for conveyance/packing of goods, not elsewhere specified, under heading 3923.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358156",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "9405504000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f1899363-2082-4a6a-a5bc-7d3700ee4e4e",
+    "object": "chat.completion",
+    "created": 1790726564,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3406.00.00\", \"reason\": \"Classified under candles, tapers and the like, which includes wax candles even when packaged with a metal holder\"}",
+          "reasoning": "Need HTS for candles with holder. Likely 3406.00.00? Actually candles (wax) 3406.00.00 includes \"Candles, tapers, and the like\". But with holder maybe 8306? But product is candle + steel stand, but primary is candle. So 3406.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048392601,
+      "prompt_tokens": 568,
+      "prompt_time": 0.027296239,
+      "completion_tokens": 122,
+      "completion_time": 0.253754676,
+      "total_tokens": 690,
+      "total_time": 0.281050915,
+      "completion_tokens_details": {
+        "reasoning_tokens": 73
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3qsxt32ewt9p2t0441r9837",
+      "seed": 173199238
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "34060000",
+  "predicted_reason": "Classified under candles, tapers and the like, which includes wax candles even when packaged with a metal holder",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

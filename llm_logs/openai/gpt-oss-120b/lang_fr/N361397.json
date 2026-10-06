@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361397",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-acb059ae-1635-42de-ace9-d772ffc5aa3c",
+    "object": "chat.completion",
+    "created": 1790905618,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.62.00.00\", \"reason\": \"The description refers to a women's dress with raw, unfinished edges and long sleeves, classifiable as a non\u2011knitted cotton dress under heading 6204.62.\"}",
+          "reasoning": "We need to classify. Description French: \"Le col pr\u00e9sente un bord brut repli\u00e9 une fois et cousu avec une seule ligne de points droits longs et tr\u00e8s l\u00e2ches. Les manches longues et l'ourlet inf\u00e9rieur de la robe sans forme sont bruts et non finis.\" It's a garment: a dress (robe) with raw edges, long sleeves, raw unfinished hem. Likely women's dress, not knitted? Probably woven cotton? No material given. Could be \"women's or girls' dresses, not knitted, of cotton\". HTS 6204.62? Let's pick 6204.62.00.00 for women's or girls' dresses of cotton, not knitted. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.024224324,
+      "prompt_tokens": 199,
+      "prompt_time": 0.050694289,
+      "completion_tokens": 207,
+      "completion_time": 0.442146818,
+      "total_tokens": 406,
+      "total_time": 0.492841107,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3x4p3sdef0t18wp50pspgdx",
+      "seed": 901503728
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204620000",
+  "predicted_reason": "The description refers to a women's dress with raw, unfinished edges and long sleeves, classifiable as a non\u2011knitted cotton dress under heading 6204.62.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

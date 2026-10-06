@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363046",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4814200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-22fcce35-a951-4007-9a19-e61016efb325",
+    "object": "chat.completion",
+    "created": 1790846414,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3918.90.00\", \"reason\": \"Vinyl wallcoverings on paper backing are classified under heading 3918 as other plastic wallcoverings.\"}",
+          "reasoning": "Need HTS for wallcoverings vinyl on paper backing. Likely 3918.10.00? 3918.10 is \"Floor coverings of plastics\". Wallcoverings maybe 3918.90? Actually 3918.10 is \"Floor coverings\". Wallcoverings are 3918.90 \"Other\". But there is heading 3918.10 for \"Floor coverings\". Wallcoverings under 3918.90? Check: 3918.90.00 \"Other\". So answer 3918.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.140798045,
+      "prompt_tokens": 222,
+      "prompt_time": 0.023022746,
+      "completion_tokens": 163,
+      "completion_time": 0.346521149,
+      "total_tokens": 385,
+      "total_time": 0.369543895,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3vc7bjheh8bshn04t4zwenp",
+      "seed": 1076032986
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39189000",
+  "predicted_reason": "Vinyl wallcoverings on paper backing are classified under heading 3918 as other plastic wallcoverings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

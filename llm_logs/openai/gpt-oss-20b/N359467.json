@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359467",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "7308909590",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2d10965d-d723-48db-b0c9-c8ebbe1a2790",
+    "object": "chat.completion",
+    "created": 1790633560,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Steel panels with zinc coating and polyurethane core used as wall/ceiling components fall under 7308.90.90.00 \u2013 other articles of iron or steel, of a kind used in construction.\"}",
+          "reasoning": "Need HTS code for steel panels with zinc coating and polyurethane core. Likely 7308.90.90? Actually 7308 is \"Other articles of iron or steel\". 7308.90 is \"Other\". But panels with zinc coating maybe 7308.90.90. But 7308.90.90 is \"Other articles of iron or steel, of a kind used in construction\". Might be 7308.90.90. But 7308.90.90 is 10-digit? 7308.90.90.00? Actually 10-digit: 7308.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296196285,
+      "prompt_tokens": 264,
+      "prompt_time": 0.017424595,
+      "completion_tokens": 203,
+      "completion_time": 0.216709178,
+      "total_tokens": 467,
+      "total_time": 0.234133773,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3n17hjce0j89tvjksa7wxfm",
+      "seed": 2043763449
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Steel panels with zinc coating and polyurethane core used as wall/ceiling components fall under 7308.90.90.00 \u2013 other articles of iron or steel, of a kind used in construction.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

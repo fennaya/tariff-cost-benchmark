@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358212",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "3504001000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-00e921c0-b6c6-417c-9d3c-2529ad6b8749",
+    "object": "chat.completion",
+    "created": 1790726593,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3506.91.00\", \"reason\": \"Synthetic lactoferrin is classified as a milk protein isolate, falling under HTS heading 3506.91 for other milk proteins.\"}",
+          "reasoning": "We need HTS code for lactoferrin protein isolate, synthetic, used in cosmetics etc. Likely under 3506.00.00? Actually lactoferrin is a protein from milk, but synthetic bio-equivalent maybe classified as \"Other proteins, not elsewhere specified\". HS 3506.00.00 is \"Other casein, caseinates, whey and whey products; other milk proteins\". Lactoferrin is a milk protein, but synthetic maybe 3506.91? Need 10-digit US: 3506.91.00? Let's check: 3506.91 is \"Other milk proteins\". 3506.91.00 is \"Other milk proteins\". So answer.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204780151,
+      "prompt_tokens": 270,
+      "prompt_time": 0.012886321,
+      "completion_tokens": 206,
+      "completion_time": 0.426682301,
+      "total_tokens": 476,
+      "total_time": 0.439568622,
+      "completion_tokens_details": {
+        "reasoning_tokens": 151
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3qsynvjem3tpk6gcqkr6abt",
+      "seed": 1928050962
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "35069100",
+  "predicted_reason": "Synthetic lactoferrin is classified as a milk protein isolate, falling under HTS heading 3506.91 for other milk proteins.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

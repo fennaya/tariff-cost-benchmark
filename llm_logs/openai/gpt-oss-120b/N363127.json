@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363127",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "1605290500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a529fb17-96e4-42b7-8d69-5ef252a52e0b",
+    "object": "chat.completion",
+    "created": 1790846876,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"1605.30.30.00\",\n  \"reason\": \"Classified under prepared or preserved crustaceans (shrimp) in frozen form, other prepared crustacean products\"\n}",
+          "reasoning": "We need HTS code for frozen shrimp spring rolls. Likely under 16.05? Let's think: 16.05 is \"Prepared or preserved fish, crustaceans, molluscs, etc.\" Subheading 16.05.30 for \"Prepared or preserved crustaceans\". Then further: 16.05.30.30? Actually check: 16.05.30.30 is \"Other prepared or preserved crustaceans\". But spring rolls with rice flour wrapper maybe under 16.05.30.30. Need 10-digit: 1605.30.30.00? That's 10 digits: 1605.30.30.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204009421,
+      "prompt_tokens": 326,
+      "prompt_time": 0.015620719,
+      "completion_tokens": 200,
+      "completion_time": 0.423379515,
+      "total_tokens": 526,
+      "total_time": 0.439000234,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3vcne06e2sbx7w5p3cb8vke",
+      "seed": 2050161577
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1605303000",
+  "predicted_reason": "Classified under prepared or preserved crustaceans (shrimp) in frozen form, other prepared crustacean products",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

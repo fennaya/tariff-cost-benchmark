@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1c855636-af7d-44db-94be-4a2e359a7c55",
+    "object": "chat.completion",
+    "created": 1790907259,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1515.90.0010\", \"reason\": \"Shea butter, partially refined, falls under heading 1515.90 for other vegetable fats and oils not elsewhere specified, specifically subheading 0010 for shea butter (unrefined or partially refined)\"}",
+          "reasoning": "We need HTS for shea butter refined/partially refined. Likely heading 1515.90.00? Actually 1515.90.00 is \"Other vegetable fats and oils and their fractions, not elsewhere specified\". Shea butter is under 1515.90.00. 10-digit: 1515.90.0010? Need check. 1515.90.0010 is \"Shea butter, not refined\". 1515.90.0020 is \"Shea butter, refined\". Partially refined maybe 1515.90.0010. So choose 1515.90.0010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.05278293,
+      "prompt_tokens": 582,
+      "prompt_time": 0.035242738,
+      "completion_tokens": 205,
+      "completion_time": 0.425614184,
+      "total_tokens": 787,
+      "total_time": 0.460856922,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3x686gbefxry0g4d61f4b3x",
+      "seed": 2053494105
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1515900010",
+  "predicted_reason": "Shea butter, partially refined, falls under heading 1515.90 for other vegetable fats and oils not elsewhere specified, specifically subheading 0010 for shea butter (unrefined or partially refined)",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

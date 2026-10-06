@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357323",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1302194140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-4c67c0d4-a654-4200-b49f-c18159b6cb1d",
+    "object": "chat.completion",
+    "created": 1790607408,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2106.90.90.00\",\"reason\":\"Herbal tincture extracts are classified as other food preparations under 2106.90.90.00\"}",
+          "reasoning": "Need HTS code for herbal tincture extracts. Likely 2106.90.90? Actually 2106 is \"Other food preparations\". Herbal tinctures maybe 2106.90.90 \"Other\". But 2106.90.90 is \"Other food preparations\". For herbal extracts maybe 2106.90.90. But 2106.90.90 is 4-digit? Actually 2106.90.90 is 8-digit? Wait HTS 10-digit: 2106.90.90.00? 2106.90.90.00. But 2106.90.90 is 8-digit. Need 10-digit: 2106.90.90.00. Reason: herbal tincture extracts."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204862625,
+      "prompt_tokens": 366,
+      "prompt_time": 0.019175266,
+      "completion_tokens": 206,
+      "completion_time": 0.220314634,
+      "total_tokens": 572,
+      "total_time": 0.2394899,
+      "completion_tokens_details": {
+        "reasoning_tokens": 159
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3m89f0eewj80jz87d02ex4x",
+      "seed": 157453025
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909000",
+  "predicted_reason": "Herbal tincture extracts are classified as other food preparations under 2106.90.90.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

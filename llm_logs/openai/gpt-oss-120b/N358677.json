@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358677",
+  "rulingDate": "2026-03-05T00:00:00",
+  "true_code": "9401790046",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ca74a8e6-5095-49a8-8b61-3f8f136636c0",
+    "object": "chat.completion",
+    "created": 1790726816,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9401.30.0010\",\n  \"reason\": \"The product is an unupholstered metal folding chair with a metal frame and plastic components, classifiable under HTSUS 9401.30.0010 (metal folding chairs, not upholstered).\"\n}",
+          "reasoning": "We need HTS code for metal folding chairs with plastic parts. Likely 9401.80.00? 9401.80.00 is \"Other seats, of wood, metal, or other materials, upholstered\". But unupholstered metal folding chairs maybe 9401.30.00 \"Seats, with metal frames, not upholstered\". Actually 9401.30.00: \"Seats, with metal frames, not upholstered\". Yes. So 10-digit: 9401.30.0010? Need 10-digit US: 9401.30.0010 is \"Metal folding chairs, not upholstered\". Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017688562,
+      "prompt_tokens": 674,
+      "prompt_time": 0.035494484,
+      "completion_tokens": 207,
+      "completion_time": 0.43664115,
+      "total_tokens": 881,
+      "total_time": 0.472135634,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qt5gmqehwsxfb40axsez33",
+      "seed": 301987029
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9401300010",
+  "predicted_reason": "The product is an unupholstered metal folding chair with a metal frame and plastic components, classifiable under HTSUS 9401.30.0010 (metal folding chairs, not upholstered).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

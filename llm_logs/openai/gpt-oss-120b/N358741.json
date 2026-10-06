@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358741",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9473f029-ddfe-4e73-8413-a65914ed251b",
+    "object": "chat.completion",
+    "created": 1790726837,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.00\", \"reason\": \"Adult costume apparel is classified under heading 9505 as a costume or masquerade outfit, falling under subheading 9505.90.00 for other toys and articles.\"}",
+          "reasoning": "Need HTS for costume (costume clothing). Likely 9505.90.00? Actually costumes are under 9505.90.00 (other toys). But adult costume apparel maybe 6109.10.00 (men's or boys' T-shirts) not. Likely 9505.90.00 \"Other toys; other\". But costume is not toy. Could be 6104.63.00 (women's or girls' dresses). However costume is not regular apparel, classified under 9505.90.00 \"Other toys; other\". Many customs classify costumes as 9505.90.00. So answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018077792,
+      "prompt_tokens": 191,
+      "prompt_time": 0.007560282,
+      "completion_tokens": 197,
+      "completion_time": 0.415038215,
+      "total_tokens": 388,
+      "total_time": 0.422598497,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3qt656je06rpawv00ppna4v",
+      "seed": 1526587307
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "Adult costume apparel is classified under heading 9505 as a costume or masquerade outfit, falling under subheading 9505.90.00 for other toys and articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

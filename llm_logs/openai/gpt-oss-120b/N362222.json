@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8c908f31-1090-4895-8a45-bcba6a3f7242",
+    "object": "chat.completion",
+    "created": 1790820332,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1509.00.00.00\", \"reason\": \"Shea butter, a vegetable fat, falls under heading 1509 for other vegetable fats and oils, regardless of refinement level\"}",
+          "reasoning": "We need HTS for refined shea butter. Likely 1509.00.00? Actually HS 1509.00 is \"Butter and other fats and oils of vegetable origin, other than those of heading 1501-1508\". Shea butter is a vegetable fat. Partially refined vs refined still under 1509.00.00. 10-digit US: 1509.00.00.00? US uses 10 digits: 1509.00.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221993353,
+      "prompt_tokens": 477,
+      "prompt_time": 0.018413862,
+      "completion_tokens": 162,
+      "completion_time": 0.339655113,
+      "total_tokens": 639,
+      "total_time": 0.358068975,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3tkbbzbefcbpp84dtbt3a7e",
+      "seed": 395862108
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1509000000",
+  "predicted_reason": "Shea butter, a vegetable fat, falls under heading 1509 for other vegetable fats and oils, regardless of refinement level",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

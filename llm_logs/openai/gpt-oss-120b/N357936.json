@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357936",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "2827410000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9bfd774d-8c32-486c-bbd8-c611737a7c40",
+    "object": "chat.completion",
+    "created": 1790726461,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2602.20.00\", \"reason\": \"Tribasic copper chloride is a copper salt of an inorganic acid, classified under heading 2602 (copper compounds) subheading 2602.20.00 for copper salts of inorganic acids.\"}",
+          "reasoning": "Need HTS for basic copper chloride, tribasic copper chloride, used as feed additive. Likely under 2602.00.00? Let's check: 2602 is copper compounds. 2602.00.00 is copper compounds not elsewhere specified. But there is 2602.20.00 for copper salts of inorganic acids? Actually 2602.20.00 is copper salts of inorganic acids. Tribasic copper chloride is a copper salt. So 2602.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.097193667,
+      "prompt_tokens": 309,
+      "prompt_time": 0.085538345,
+      "completion_tokens": 174,
+      "completion_time": 0.366736609,
+      "total_tokens": 483,
+      "total_time": 0.452274954,
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3qstnefektvfq5jek7p75kg",
+      "seed": 1788986954
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "26022000",
+  "predicted_reason": "Tribasic copper chloride is a copper salt of an inorganic acid, classified under heading 2602 (copper compounds) subheading 2602.20.00 for copper salts of inorganic acids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

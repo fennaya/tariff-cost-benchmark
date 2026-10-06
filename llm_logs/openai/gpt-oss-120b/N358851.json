@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358851",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3490cc28-8824-48be-bd76-d77a3c570c12",
+    "object": "chat.completion",
+    "created": 1790726900,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3926.90.99\",\n  \"reason\": \"Plastic protective accessory for walker wheels classified under other articles of plastics not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for walker wheel cover made of polypropylene, a plastic accessory for medical walkers. Likely under \"plastic parts of furniture\" or \"plastic articles for medical, surgical, dental or veterinary use\". Could be 9021? Actually 9021 is orthopaedic appliances. But accessory maybe 9021.90.90? Let's think: HTS Chapter 90 includes medical, surgical, dental instruments. 9021.90.90 is \"Other orthopaedic appliances\". But wheel cover is not an appliance, it's a protective accessory. Could be under 3926.90.99 \"Other articles of plastics\". More specific: 3926.90.99 \"Other articles of plastics, not elsewhere specified\". That seems plausible.\n\nThus code: 3926.90.99. Reason: plastic protective accessory for walker wheels."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207013531,
+      "prompt_tokens": 290,
+      "prompt_time": 0.01334277,
+      "completion_tokens": 221,
+      "completion_time": 0.460242152,
+      "total_tokens": 511,
+      "total_time": 0.473584922,
+      "completion_tokens_details": {
+        "reasoning_tokens": 175
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3qt81nde2f9nfas4wr2z3q4",
+      "seed": 1293322026
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39269099",
+  "predicted_reason": "Plastic protective accessory for walker wheels classified under other articles of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

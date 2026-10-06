@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359445",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3006305000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-185d1ec3-67d9-46e8-8124-ab1c61e37ac1",
+    "object": "chat.completion",
+    "created": 1790632437,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.99.90\",\"reason\":\"Fluorescein injection is a pharmaceutical diagnostic reagent not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for fluorescein injection. Likely 3004.99.90? Actually pharmaceuticals: 3004.99.90 is \"Other pharmaceutical products, not elsewhere specified\". But fluorescein is a diagnostic reagent, maybe 3004.99.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149477007,
+      "prompt_tokens": 198,
+      "prompt_time": 0.009810342,
+      "completion_tokens": 101,
+      "completion_time": 0.112581045,
+      "total_tokens": 299,
+      "total_time": 0.122391387,
+      "completion_tokens_details": {
+        "reasoning_tokens": 62
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m3n059awexkbhvgmnksxzc6v",
+      "seed": 1177431810
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049990",
+  "predicted_reason": "Fluorescein injection is a pharmaceutical diagnostic reagent not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

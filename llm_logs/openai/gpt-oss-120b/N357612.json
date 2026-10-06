@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357612",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "9018310080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-08a41585-7f89-4985-b16d-305f9888b612",
+    "object": "chat.completion",
+    "created": 1790726301,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9018.10.00\", \"reason\": \"The product is a medical syringe kit (barrel, plunger, stopper, tip) classified under heading 9018.10 for syringes, with or without needles, for medical purposes.\"}",
+          "reasoning": "We need HTS code for unassembled IV flush syringes kits. Likely under 9018.90.00? Actually syringes, medical, 9018.90.00 is \"Other instruments and appliances\". But syringes are 9018.90.00? Check: 9018.90.00 - \"Other instruments and appliances\". More specific: 9018.10.00 is \"Syringes, with or without needles, for medical, surgical, or other purposes\". Actually 9018.10.00 is \"Syringes, with or without needles, for medical, surgical, or other purposes\". That includes assembled syringes. For kits unassembled maybe still same heading. So HTS 9018.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049063426,
+      "prompt_tokens": 257,
+      "prompt_time": 0.010897159,
+      "completion_tokens": 234,
+      "completion_time": 0.485689002,
+      "total_tokens": 491,
+      "total_time": 0.496586161,
+      "completion_tokens_details": {
+        "reasoning_tokens": 167
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3qsnsp2enpvptajadjqfxvd",
+      "seed": 1118716666
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90181000",
+  "predicted_reason": "The product is a medical syringe kit (barrel, plunger, stopper, tip) classified under heading 9018.10 for syringes, with or without needles, for medical purposes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

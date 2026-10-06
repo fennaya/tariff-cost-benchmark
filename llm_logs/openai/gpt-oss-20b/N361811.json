@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361811",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8310000000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-364dc949-ac31-4aca-b2b2-a365911bc194",
+    "object": "chat.completion",
+    "created": 1790715660,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7301.10.00\",\"reason\":\"Sheet metal street number plates with printed numbers fall under 73.10.10.00, \\\"Other plates, signs, and similar articles, of metal, of a kind used for street numbers.\\\"\"}",
+          "reasoning": "Need HTS code for sheet metal street number plates with numbers printed. Likely 73.10.10.00? Actually 73.10 is \"Other plates, signs, and similar articles\". 73.10.10.00 is \"Other plates, signs, and similar articles, of metal, of a kind used for street numbers\". Might be 73.10.10.00. Provide 10-digit: 7301.10.00? Wait 10-digit format: 7301.10.00? Actually 10-digit: 7301.10.00? That's 8 digits. Need 10-digit: 7301.10.00? maybe 7301.10.00? But 10-digit includes 2 decimal places: 7301.10.00? That's 8. Actually 10-digit: 7301.10.00? Wait 10-digit: 7301.10.00? I'm confused. Format: 4 digits + decimal + 2 digits + decimal + 2 digits = 10. So 7301.10.00 is 4+2+2=8? Actually 7301.10.00: 4 digits 7301, decimal, 2 digits 10, decimal, 2 digits 00 => total 4+1+2+1+2=10. So 7301.10.00 is correct. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.22017441,
+      "prompt_tokens": 215,
+      "prompt_time": 0.01052669,
+      "completion_tokens": 364,
+      "completion_time": 0.396539423,
+      "total_tokens": 579,
+      "total_time": 0.407066113,
+      "completion_tokens_details": {
+        "reasoning_tokens": 300
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m3qfh1a0ee984mcwnj02nfk0",
+      "seed": 1240040983
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73011000",
+  "predicted_reason": "Sheet metal street number plates with printed numbers fall under 73.10.10.00, \"Other plates, signs, and similar articles, of metal, of a kind used for street numbers.\"",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359496",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-61c8095b-4492-477e-a867-171af4f8f860",
+    "object": "chat.completion",
+    "created": 1790635018,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7113.90.90\",\"reason\":\"Hand\u2011crafted decorative copper wall plaques fall under 7113.90.90, the heading for other articles of copper not specified elsewhere.\"}",
+          "reasoning": "Need HTS code for decorative copper relief wall plaques. Likely 7113.90.90? Actually 7113 is \"Other articles of copper\". Subheading 7113.90.90 is \"Other articles of copper, of a kind used in the manufacture of articles of other materials\". But decorative plaques are articles of copper. 7113.90.90 is for other articles of copper. 7113.90.90 includes \"Other articles of copper, of a kind used in the manufacture of articles of other materials\". But plaques are decorative, not used in manufacture. Maybe 7113.90.90 covers all other articles of copper. So code 7113.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.067035186,
+      "prompt_tokens": 287,
+      "prompt_time": 0.018158431,
+      "completion_tokens": 201,
+      "completion_time": 0.206417936,
+      "total_tokens": 488,
+      "total_time": 0.224576367,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3n2m1rqezha15154vwgjtfz",
+      "seed": 1003716444
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "71139090",
+  "predicted_reason": "Hand\u2011crafted decorative copper wall plaques fall under 7113.90.90, the heading for other articles of copper not specified elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

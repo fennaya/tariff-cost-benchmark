@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360607",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "5702422080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6aa27f3e-dbd6-4fbf-9fc2-541174b96aa6",
+    "object": "chat.completion",
+    "created": 1790766986,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6304.99.00\", \"reason\": \"Classified as other made\u2011up articles of textile materials (a chenille fabric mat with foam and PVC backing) not specifically covered elsewhere in the schedule.\"}",
+          "reasoning": "We need HTS for a chenille mat with foam and PVC backing. Likely classified under \"Mattresses, cushions, pads, etc., of cellular rubber or plastics\" or \"Other articles of textile, coated, etc.\" Could be 6302? 6302.91? That's \"Other made up articles, of textile materials, not elsewhere specified\". But with foam and PVC backing maybe 6304.92? 6304 is \"Other furnishing articles, of textile materials\". 6304.92 is \"Mattress supports, etc., of cellular rubber or plastics\". Actually 6304.92 is \"Mattress supports, etc., of cellular rubber or plastics\". But this is a mat, not a mattress support. Could be 6304.99 \"Other\". However there is also 9404.90 for \"Other seats, other than those of heading 9402\". Not.\n\nProbably 6304.99. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296009577,
+      "prompt_tokens": 327,
+      "prompt_time": 0.015316343,
+      "completion_tokens": 253,
+      "completion_time": 0.533266147,
+      "total_tokens": 580,
+      "total_time": 0.54858249,
+      "completion_tokens_details": {
+        "reasoning_tokens": 195
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3s0fcx4e76s7e9cj2je9ktp",
+      "seed": 2080163089
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63049900",
+  "predicted_reason": "Classified as other made\u2011up articles of textile materials (a chenille fabric mat with foam and PVC backing) not specifically covered elsewhere in the schedule.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

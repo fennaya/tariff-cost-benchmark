@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-36085931-2d67-4c81-ba2d-90dc594d940d",
+    "object": "chat.completion",
+    "created": 1790904866,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8518.30.00\",\n  \"reason\": \"The item is a complete electronic headset assembly for aviation helmets, classified under headphones and earphones with or without microphone.\"\n}",
+          "reasoning": "We need HTS code for electronic assembly of headphones for aviation helmets. Likely under 8518.30? 8518.30.00 is \"Headphones and earphones, with or without microphone\". But this is a component assembly? Could be 8542.31? That's \"Electronic integrated circuits\". But it's a set of wires, PCB, connectors - a \"headset assembly\". Probably 8518.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.154172183,
+      "prompt_tokens": 351,
+      "prompt_time": 0.094812068,
+      "completion_tokens": 147,
+      "completion_time": 0.309918785,
+      "total_tokens": 498,
+      "total_time": 0.404730853,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m3x3z509ehdvmdwd8zwk0byd",
+      "seed": 1180387177
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85183000",
+  "predicted_reason": "The item is a complete electronic headset assembly for aviation helmets, classified under headphones and earphones with or without microphone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

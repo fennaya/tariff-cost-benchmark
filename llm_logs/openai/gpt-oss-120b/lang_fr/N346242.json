@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N346242",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5208214090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8b0fbdde-8cff-4ab4-8dde-c6e47dc78db7",
+    "object": "chat.completion",
+    "created": 1790905569,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3005.90.90\", \"reason\": \"The product is 100% cotton gauze intended for medical wound covering, classifying it as a medical dressing under heading 3005.90.90.\"}",
+          "reasoning": "We need HTS for gauze, 100% cotton, used for medical gauze. Likely heading 6302.21.00? Actually 6302 is \"Other made up articles, including dressings, of textile materials\". 6302.21 is \"Of cotton\". 6302.21.00 is \"Other made up articles, of cotton, not elsewhere specified\". Medical gauze maybe 3005? But that's surgical dressings of textile. 3005.90 is \"Other\" medical dressings. However HTS for gauze (cotton) used as bandages is 3005.90.90? Let's check: 3005.90.90 is \"Other\" (medical dressings). 3005.90.10 is \"Sutures\". Actually 3005.90.90 is \"Other\". So likely 3005.90.90. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205595294,
+      "prompt_tokens": 516,
+      "prompt_time": 0.021319836,
+      "completion_tokens": 248,
+      "completion_time": 0.520809235,
+      "total_tokens": 764,
+      "total_time": 0.542129071,
+      "completion_tokens_details": {
+        "reasoning_tokens": 189
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3x4mkjwev6vmnqhqk67znx6",
+      "seed": 1775004805
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30059090",
+  "predicted_reason": "The product is 100% cotton gauze intended for medical wound covering, classifying it as a medical dressing under heading 3005.90.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359520",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bc07eb08-f3db-48a8-920e-b838041e777d",
+    "object": "chat.completion",
+    "created": 1790727365,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8481.80.00\",\n  \"reason\": \"Classified as a hydraulic separator, a non\u2011pump hydraulic device used in heating/cooling systems, falling under heading 8481 \u2013 hydraulic turbines, water\u2011wheels and similar machinery, other.\"\n}",
+          "reasoning": "We need HTS code for hydraulic separator, a hydraulic device for heating/cooling systems. Likely under 8481? 8481.80? Let's think: 8481 covers \"Hydraulic turbines, water wheels and similar water-throwing machines; parts\". Not. Maybe 8481.80 \"Other\". Or 8481.90 \"Parts\". Could be 8481.80. Or 8481.30 \"Pumps\". Not a pump. Could be 8481.80 \"Other\". Or 8481.90 \"Parts\". I'd choose 8481.80."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047988494,
+      "prompt_tokens": 416,
+      "prompt_time": 0.020922008,
+      "completion_tokens": 195,
+      "completion_time": 0.407757183,
+      "total_tokens": 611,
+      "total_time": 0.428679191,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3qtp87xe38b4zv7gn68rxgc",
+      "seed": 541960085
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84818000",
+  "predicted_reason": "Classified as a hydraulic separator, a non\u2011pump hydraulic device used in heating/cooling systems, falling under heading 8481 \u2013 hydraulic turbines, water\u2011wheels and similar machinery, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

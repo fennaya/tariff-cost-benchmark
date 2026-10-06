@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357266",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-82ad3b75-cf16-498a-854c-461873ab6a9a",
+    "object": "chat.completion",
+    "created": 1790726035,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0902.30.0010\", \"reason\": \"Classified under green tea (not fermented) in retail packings, which covers tea bags containing green tea and other ingredients\"}",
+          "reasoning": "Need HTS for tea bags, green tea with additives. Likely heading 0902.30.00? 0902 is tea, green tea (not fermented). 0902.30 is \"Other green tea, not fermented\". Tea bags maybe 0902.30.00. 10-digit: 0902.30.0010? Actually 10-digit US: 0902.30.0010 is \"Green tea, not fermented, in immediate packings of a kind used for retail sale\". Check. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205668075,
+      "prompt_tokens": 303,
+      "prompt_time": 0.013906269,
+      "completion_tokens": 165,
+      "completion_time": 0.346278293,
+      "total_tokens": 468,
+      "total_time": 0.360184562,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qsdnmte6tarmdbky0zb1h0",
+      "seed": 2008581968
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0902300010",
+  "predicted_reason": "Classified under green tea (not fermented) in retail packings, which covers tea bags containing green tea and other ingredients",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357857",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "9404401000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6b0128ba-6c37-4b9c-a0cf-6b5e58e9b626",
+    "object": "chat.completion",
+    "created": 1790726434,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.60.90\",\n  \"reason\": \"Classified under heading 6302 for other bedding articles, specifically a quilt made of a cotton/polyester blend not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for quilt, bed covering, cotton/polyester, not knitted. Likely heading 6302.60.90? 6302 covers other bedding, curtains, etc. 6302.60 is \"Other bed linen, table linen, toilet linen and kitchen linen, of cotton, not elsewhere specified\". But quilts are 6302.60.90? Actually 6302.60.90 is \"Other, of other textile materials\". Could be 6302.60.90 for \"Other bed linen, etc., of other textile materials\". However cotton/polyester blend maybe 6302.60.20? Let's check: 6302.60.20 is \"Of cotton\". 6302.60.30 is \"Of man-made fibers\". Since blend, maybe 6302.60.90 \"Other\". So choose 6302.60.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087928819,
+      "prompt_tokens": 381,
+      "prompt_time": 0.029958105,
+      "completion_tokens": 240,
+      "completion_time": 0.503639181,
+      "total_tokens": 621,
+      "total_time": 0.533597286,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4de1d6a1ee",
+    "x_groq": {
+      "id": "req_01m3qsstnjexdsax0ht2qx3cbb",
+      "seed": 527143716
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63026090",
+  "predicted_reason": "Classified under heading 6302 for other bedding articles, specifically a quilt made of a cotton/polyester blend not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362881",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8535908040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d5811dcd-2951-4704-a994-23a13d45f621",
+    "object": "chat.completion",
+    "created": 1790840782,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8536.90.00\",\n  \"reason\": \"Aluminum deadend connectors are non\u2011ferrous conductive fittings for overhead power transmission, classified as other electrical insulators not covered elsewhere.\"\n}",
+          "reasoning": "Need HTS for aluminum deadend connectors for overhead power lines. Likely under 8537? That's electrical apparatus for switching, etc. But deadend connectors are fittings, not switches. Could be 8537.10.00 (boards, panels, etc) no. Maybe 8536? 8536.10 for electrical insulators? Actually deadends are fittings of aluminum alloy, used in power transmission. Could be 8537.20 (other apparatus for switching). Might be 8537.90 (other). However maybe classification under 8537.10 (circuit breakers). Not.\n\nCould be 8536.90 (other). Let's pick 8536.90.00 (Electrical insulators, other than those of heading 8536). Reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206246613,
+      "prompt_tokens": 754,
+      "prompt_time": 0.038865323,
+      "completion_tokens": 217,
+      "completion_time": 0.454374843,
+      "total_tokens": 971,
+      "total_time": 0.493240166,
+      "completion_tokens_details": {
+        "reasoning_tokens": 160
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3v6vewpe3gvwt25z72gsm8w",
+      "seed": 1521955168
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85369000",
+  "predicted_reason": "Aluminum deadend connectors are non\u2011ferrous conductive fittings for overhead power transmission, classified as other electrical insulators not covered elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357290",
+  "rulingDate": "2026-01-07T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-63e6d8c0-d7e9-4525-9026-8a0809a1f8db",
+    "object": "chat.completion",
+    "created": 1790607376,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6301.10.10.10\",\"reason\":\"The item is a theatrical costume for adult use, fitting the HTSUS heading for costumes and other clothing for theatrical or sporting purposes.\"}",
+          "reasoning": "Need HTS code for costume. Likely 63.10.10.10? Actually costumes for theatrical use: 63.10.10.10 is \"Costumes and other clothing for theatrical or sporting purposes\". 10-digit: 6301.10.10.10? Wait 4-digit 6301.10.10.10? Actually 4-digit 6301.10.10.10? Let's recall: 6301.10.10.10 is \"Costumes and other clothing for theatrical or sporting purposes\". So 10-digit: 6301.10.10.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015793678,
+      "prompt_tokens": 199,
+      "prompt_time": 0.009802292,
+      "completion_tokens": 184,
+      "completion_time": 0.246475781,
+      "total_tokens": 383,
+      "total_time": 0.256278073,
+      "completion_tokens_details": {
+        "reasoning_tokens": 131
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8d13edce1d",
+    "x_groq": {
+      "id": "req_01m3m88g3vej08xqq4ke948vx3",
+      "seed": 2071887929
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6301101010",
+  "predicted_reason": "The item is a theatrical costume for adult use, fitting the HTSUS heading for costumes and other clothing for theatrical or sporting purposes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

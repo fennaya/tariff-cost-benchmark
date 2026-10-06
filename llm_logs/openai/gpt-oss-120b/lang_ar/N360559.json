@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360559",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8421210000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6cc9fd1e-616c-4954-8e8f-bb60fd0edd7c",
+    "object": "chat.completion",
+    "created": 1790904967,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.21.0010\",\n  \"reason\": \"The product is an assembled water filtration and purification system for industrial use, classified under machinery for filtering or purifying liquids.\"\n}",
+          "reasoning": "We need HTS code for water treatment system, industrial. Likely 8421.21.00? That's \"Centrifuges, filtering or purifying machinery for liquids\". 8421.21 is \"Filtering or purifying machinery for liquids, not elsewhere specified\". 8421.21.00 is 10-digit? Actually HTS 10-digit: 8421.21.0010? Need check. Could be 8421.21.0010 \"Other filtering or purifying machinery for liquids\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.057529724,
+      "prompt_tokens": 530,
+      "prompt_time": 0.169263797,
+      "completion_tokens": 167,
+      "completion_time": 0.352031898,
+      "total_tokens": 697,
+      "total_time": 0.521295695,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3x427k5edy8c0yg62895c4d",
+      "seed": 1353682770
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421210010",
+  "predicted_reason": "The product is an assembled water filtration and purification system for industrial use, classified under machinery for filtering or purifying liquids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

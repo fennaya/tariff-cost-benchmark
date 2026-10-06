@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358277",
+  "rulingDate": "2026-02-06T00:00:00",
+  "true_code": "8413919010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f41d6471-ae6b-47ba-9914-a71d8c30eee0",
+    "object": "chat.completion",
+    "created": 1790726634,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.10.00\", \"reason\": \"Aluminum casting that is a component of a rotary positive displacement pump for aircraft lubrication, classified as a part of a liquid pump.\"}",
+          "reasoning": "We need HTS code for pump housing casting, aluminum, for aircraft lubrication system. Likely under 8483? Actually pump parts. 8483.90.90? Let's think: 8483 covers \"Parts of pumps\". 8483.10 is \"Parts of pumps for liquids, not elsewhere specified\". 8483.10.00 is \"Parts of pumps for liquids\". But need specific for aircraft? Could be 8483.90.90 \"Other parts\". Since casting of pump housing. Probably 8483.10.00 if it's a part of a liquid pump. Use 8483.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087506752,
+      "prompt_tokens": 256,
+      "prompt_time": 0.010418597,
+      "completion_tokens": 188,
+      "completion_time": 0.389652281,
+      "total_tokens": 444,
+      "total_time": 0.400070878,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qszyshes58knf07jqw9x1z",
+      "seed": 564405130
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84831000",
+  "predicted_reason": "Aluminum casting that is a component of a rotary positive displacement pump for aircraft lubrication, classified as a part of a liquid pump.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

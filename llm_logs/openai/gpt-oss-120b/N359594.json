@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359594",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8703240190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f46a11bd-6a55-4f8d-8d8b-05eebb78e7c9",
+    "object": "chat.completion",
+    "created": 1790729429,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.24.00\", \"reason\": \"The vehicle is a passenger motor car with a spark\u2011ignition gasoline engine exceeding 4000\u202fcc cylinder capacity.\"}",
+          "reasoning": "Need HTS for passenger cars. 1975 Jaguar XKE, V12 gasoline, steel body. HTS 8703.23.00? Let's recall: 8703.23.00 = \"Motor cars and other motor vehicles principally designed for the transport of persons (other than those of heading 8702), with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity exceeding 3000 cc but not exceeding 4000 cc\". Our engine 5344 cc >4000, so next: 8703.24.00 = >4000 cc. Yes. So code 8703.24.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.726777596,
+      "prompt_tokens": 240,
+      "prompt_time": 0.012535746,
+      "completion_tokens": 188,
+      "completion_time": 0.385668385,
+      "total_tokens": 428,
+      "total_time": 0.398204131,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3qwn7ere5evz0gnyt77ec5q",
+      "seed": 373773115
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87032400",
+  "predicted_reason": "The vehicle is a passenger motor car with a spark\u2011ignition gasoline engine exceeding 4000\u202fcc cylinder capacity.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

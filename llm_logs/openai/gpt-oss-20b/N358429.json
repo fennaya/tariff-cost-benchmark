@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358429",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "9503000073",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-dcd8e49e-ce42-4265-955e-e32fcac425a2",
+    "object": "chat.completion",
+    "created": 1790608062,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9503.00.10.00\",\"reason\":\"The kit is a toy comprising stickers and gems, fitting the HTSUS heading 9503 for toys and parts/accessories for toys.\"}",
+          "reasoning": "We need HTS code for toy stickers with gems. Likely 9503.00.10? Actually 9503 is toys. Subheading 9503.00.10 is \"Other toys; parts and accessories for toys\". But stickers? Maybe 9503.00.10 covers \"Other toys; parts and accessories for toys\". The kit is a toy. So 9503.00.10. Provide 10-digit: 9503.00.10.00? Actually 10-digit: 9503.00.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296332828,
+      "prompt_tokens": 353,
+      "prompt_time": 0.019981565,
+      "completion_tokens": 173,
+      "completion_time": 0.189104864,
+      "total_tokens": 526,
+      "total_time": 0.209086429,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a8c584dda7",
+    "x_groq": {
+      "id": "req_01m3m8xd6eenr9xyymdg1ma4as",
+      "seed": 210771193
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503001000",
+  "predicted_reason": "The kit is a toy comprising stickers and gems, fitting the HTSUS heading 9503 for toys and parts/accessories for toys.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360804",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8518302000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-88d95b5f-707e-4387-8617-2ae6d23985a7",
+    "object": "chat.completion",
+    "created": 1790773790,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8518.30.00\", \"reason\": \"The product is a complete headphone/earphone assembly with microphones used for aviation communication, classifiable under headphones and earphones with or without microphone.\"}",
+          "reasoning": "We need HTS code for aviation headset assembly. Likely under 8518.30.00? 8518.30.00 is \"Headphones and earphones, with or without microphone, for telephone, radio, television, sound\u2011recording or reproducing apparatus\". Aviation specific maybe 9018.90? Actually 9018.90 is \"Other instruments and appliances\". But headsets for aviation likely 9018.90.90? Check: 9018.90.90 \"Other\". However 8518.30.00 covers headphones. So choose 8518.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.969738228,
+      "prompt_tokens": 300,
+      "prompt_time": 0.015249812,
+      "completion_tokens": 186,
+      "completion_time": 0.390387299,
+      "total_tokens": 486,
+      "total_time": 0.405637111,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3s6z0pxexrsg0g9n89mmmqa",
+      "seed": 1560942571
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85183000",
+  "predicted_reason": "The product is a complete headphone/earphone assembly with microphones used for aviation communication, classifiable under headphones and earphones with or without microphone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

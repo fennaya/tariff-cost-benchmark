@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357351",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "3924905650",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4610be68-0795-44c5-8030-7bbc45367700",
+    "object": "chat.completion",
+    "created": 1790726134,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.10.00\", \"reason\": \"The item is a synthetic plastic scrub sponge, classified under bath sponges, natural or synthetic (HTS 3924.10.00).\"}",
+          "reasoning": "We need HTS for plastic scrub sponge. Likely 3924.90.00? Actually 3924.90.00 is \"Other articles of plastics\". But specific: 3924.90.00 \"Other articles of plastics, not elsewhere specified\". Scrub sponges maybe 3924.90.00. Could be 3924.10.00 \"Bath sponges, natural or synthetic\"? Let's check: 3924.10 is \"Bath sponges, natural or synthetic\". That seems appropriate. So HTS 3924.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048053492,
+      "prompt_tokens": 367,
+      "prompt_time": 0.017221122,
+      "completion_tokens": 175,
+      "completion_time": 0.365338962,
+      "total_tokens": 542,
+      "total_time": 0.382560084,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3qsgpaqe1tvmjf0r3xak6he",
+      "seed": 691402998
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39241000",
+  "predicted_reason": "The item is a synthetic plastic scrub sponge, classified under bath sponges, natural or synthetic (HTS 3924.10.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

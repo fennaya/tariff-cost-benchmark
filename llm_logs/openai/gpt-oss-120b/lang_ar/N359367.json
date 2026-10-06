@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359367",
+  "rulingDate": "2026-03-16T00:00:00",
+  "true_code": "8544422000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ac1f70f6-0c30-49b7-9877-c3025a482738",
+    "object": "chat.completion",
+    "created": 1790904691,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.42.00\",\n  \"reason\": \"The product is an insulated audio cable with a 5\u2011position connector and stereo plugs, used solely for transmitting sound signals, classifying it under insulated conductors for telecommunication.\"\n}",
+          "reasoning": "We need HTS for audio cable, not power. Likely 8544.42.00? Actually HTS: 8544.42.00 - \"Electrical conductors, insulated, for telecommunication\". Or 8544.49 for other. Audio cables fall under 8544.42.00 \"Other insulated wire, cable, or other conductors, for telecommunication\". Could be 8544.42.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047545505,
+      "prompt_tokens": 300,
+      "prompt_time": 0.052159409,
+      "completion_tokens": 160,
+      "completion_time": 0.337826035,
+      "total_tokens": 460,
+      "total_time": 0.389985444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3x3stjee06srs959tkc4wrq",
+      "seed": 1723442847
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444200",
+  "predicted_reason": "The product is an insulated audio cable with a 5\u2011position connector and stereo plugs, used solely for transmitting sound signals, classifying it under insulated conductors for telecommunication.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

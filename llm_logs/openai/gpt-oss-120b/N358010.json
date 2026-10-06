@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358010",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "3206500000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4683f014-e3bf-45ea-86b5-69946dbf2d24",
+    "object": "chat.completion",
+    "created": 1790726519,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3824.90.90\",\n  \"reason\": \"Quantum dots are classified as chemical preparations of inorganic compounds not elsewhere specified, falling under HTS heading 3824.90 for other chemical products.\"\n}",
+          "reasoning": "Need HTS for quantum dots, likely under \"organic chemicals\" or \"inorganic chemicals\". Likely 2934.99? Actually quantum dots are inorganic compounds, maybe under 3815.99 (chemical preparations). Could be 3824.90 (preparations not elsewhere). I think 3824.90.90? 3824.90 is \"Prepared binders for foundry molds etc\"? Not. 3824 is \"Prepared binders for foundry molds\". Hmm.\n\nMaybe 3824.90 is \"Other chemical products\". Actually 3824 is \"Prepared binders for foundry molds\". Wrong.\n\nCheck 3824? Not.\n\nBetter: 3824.90 is \"Other\". But quantum dots as \"chemical preparations\" maybe 3824.90.90.\n\nI'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206168941,
+      "prompt_tokens": 228,
+      "prompt_time": 0.010404346,
+      "completion_tokens": 229,
+      "completion_time": 0.479635865,
+      "total_tokens": 457,
+      "total_time": 0.490040211,
+      "completion_tokens_details": {
+        "reasoning_tokens": 170
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qswe31e58b4kv5h3ez2eyv",
+      "seed": 882333052
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "38249090",
+  "predicted_reason": "Quantum dots are classified as chemical preparations of inorganic compounds not elsewhere specified, falling under HTS heading 3824.90 for other chemical products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

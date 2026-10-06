@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357608",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8412909005",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-30287a3b-d9dd-4325-bca3-661c60f88ab8",
+    "object": "chat.completion",
+    "created": 1790726298,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7307.29.00\", \"reason\": \"The item is a low\u2011alloy steel hydraulic pipe (seamless tube) used in a crane stabilizer system, classifiable under HTS Chapter 73 heading 7307 for tubes and pipes of iron or steel, other than stainless steel.\"}",
+          "reasoning": "We need HTS code for hydraulic pipe, steel, 12mm OD. Likely under 7307? 7307.29.00? Let's think: 7307 covers tube & pipe, of iron or steel, welded, seamless, etc. For \"hydraulic pipe\" likely \"tubes, pipes and hollow profiles, seamless, of iron or steel\". 7307.29.00 is \"Other\". 7307.21 is \"of stainless steel\". So 7307.29.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.29611682,
+      "prompt_tokens": 405,
+      "prompt_time": 0.027318745,
+      "completion_tokens": 189,
+      "completion_time": 0.399249663,
+      "total_tokens": 594,
+      "total_time": 0.426568408,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3qsnph2e3za7mfvwrbb9dzz",
+      "seed": 455566764
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73072900",
+  "predicted_reason": "The item is a low\u2011alloy steel hydraulic pipe (seamless tube) used in a crane stabilizer system, classifiable under HTS Chapter 73 heading 7307 for tubes and pipes of iron or steel, other than stainless steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357623",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "9503000073",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-0ae55365-70b5-4171-b03a-f82a4c79f1d7",
+    "object": "chat.completion",
+    "created": 1790607634,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4901.10.10.00\",\"reason\":\"These are children's puzzle books, classified as books not elsewhere specified.\"}",
+          "reasoning": "Need HTS 10-digit. Puzzle books likely 4901.10.10? Actually books: 4901.10.10 is \"Books, not elsewhere specified\". But puzzle books are books. 4901.10.10 is \"Books, not elsewhere specified\". 4901.10.10 is 10-digit 4901.10.10? Actually 4901.10.10 is 8-digit? 4901.10.10 is 8-digit? Wait 4901.10.10 is 8-digit? 4901.10.10 is 8-digit? 4901.10.10 is 8-digit? The HTS code format: 4-digit chapter, 2-digit heading, 2-digit subheading, 2-digit subheading? Actually 10-digit: 4+2+2+2. So 4901.10.10 is 8-digit? 4901.10.10 is 8-digit? 4901.10.10 is 8-digit? Actually 4901.10.10 is 8-digit? Wait 4901.10.10 is 8-digit? 4901.10.10 is 8-digit? I'm confused. Let's pick 4901.10.10.00? But need 10-digit: 4901.10.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.22491231,
+      "prompt_tokens": 588,
+      "prompt_time": 0.036608946,
+      "completion_tokens": 329,
+      "completion_time": 0.358240984,
+      "total_tokens": 917,
+      "total_time": 0.39484993,
+      "completion_tokens_details": {
+        "reasoning_tokens": 290
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m3m8gb2yeqqvsscnts2kwsnf",
+      "seed": 961890485
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4901101000",
+  "predicted_reason": "These are children's puzzle books, classified as books not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

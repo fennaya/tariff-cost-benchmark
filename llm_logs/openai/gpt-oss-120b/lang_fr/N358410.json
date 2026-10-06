@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358410",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "2933394100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3c34da17-ce48-4c88-a1d4-fafa9b95120c",
+    "object": "chat.completion",
+    "created": 1790905657,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2933.99.00\",\n  \"reason\": \"Roflumilast is a synthetic heterocyclic pharmaceutical active ingredient, classified under HTS heading 2933 for heterocyclic compounds not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for roflumilast powder, a pharmaceutical active ingredient. Likely under 3004.90.00? Actually HTS Chapter 30: pharmaceutical products. 3004.90.00 is \"Medicaments consisting of mixed or unmixed products for therapeutic or prophylactic uses, put up in measured doses ... other\". But active ingredient alone maybe 2933? Wait roflumilast is a chemical compound, not a medicinal product. Could be under 2933.99.00 \"Other heterocyclic compounds\". But as pharmaceutical ingredient, often classified under 2933.99.00. Let's choose 2933.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.212389358,
+      "prompt_tokens": 210,
+      "prompt_time": 0.051309185,
+      "completion_tokens": 203,
+      "completion_time": 0.423926455,
+      "total_tokens": 413,
+      "total_time": 0.47523564,
+      "completion_tokens_details": {
+        "reasoning_tokens": 141
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3x4q92tew7b73fmxv62edax",
+      "seed": 402236204
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "29339900",
+  "predicted_reason": "Roflumilast is a synthetic heterocyclic pharmaceutical active ingredient, classified under HTS heading 2933 for heterocyclic compounds not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

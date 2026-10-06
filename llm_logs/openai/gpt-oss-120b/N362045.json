@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362045",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8531809051",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fd474e38-3538-473e-8a53-98aab69c90bc",
+    "object": "chat.completion",
+    "created": 1790815031,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9027.80.10.00\",\n  \"reason\": \"The Express system is a walk\u2011through metal detection apparatus for concealed weapons, classified under HTS heading 9027.80 covering metal detectors.\"\n}",
+          "reasoning": "We need HTS code for metal detection equipment. Likely 9027.80.00? Actually 9027.80.00 is \"Other instruments and apparatus for measuring or detecting ionizing radiations\". For metal detectors: 9027.80.00 includes \"Other instruments and apparatus for detecting metal\". Check: 9027.80.00 - \"Other instruments and apparatus for measuring or detecting ionizing radiations, for medical, surgical, dental or veterinary uses\". Hmm not.\n\nMetal detectors: 9027.80.00 maybe \"Other instruments and apparatus for detecting metal\". Actually 9027.80.00 is \"Other instruments and apparatus for measuring or detecting ionizing radiations\". Not.\n\nSearch memory: HTS 9027.80.00 is \"Other instruments and apparatus for measuring or detecting ionizing radiations\". Metal detectors are under 9027.80.00? Not sure. Another heading 9027.80.10? Might be 9027.80.10 \"Metal detectors\". I think 9027.80.10 is \"Metal detectors\". So code 9027.80.10 (10-digit: 9027.80.10.00). Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.305184912,
+      "prompt_tokens": 590,
+      "prompt_time": 0.028488716,
+      "completion_tokens": 313,
+      "completion_time": 0.651427731,
+      "total_tokens": 903,
+      "total_time": 0.679916447,
+      "completion_tokens_details": {
+        "reasoning_tokens": 252
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3te9kh5edzbs1wkrks6sfvh",
+      "seed": 485779473
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9027801000",
+  "predicted_reason": "The Express system is a walk\u2011through metal detection apparatus for concealed weapons, classified under HTS heading 9027.80 covering metal detectors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

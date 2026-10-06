@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362225",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-78e368c8-5c5d-4603-bf91-d29f68f15d6a",
+    "object": "chat.completion",
+    "created": 1790820780,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7612.90.90\",\n  \"reason\": \"Aluminum decorative urns are classified under heading 7612 for articles of aluminum, specifically subheading 7612.90.90 for other aluminum articles not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for decorative urns made of aluminum. Likely under 7115? Actually urns are \"Funeral goods\" 9703? Check: 9703.00.00 is \"Works of art, collectors' pieces\". But urns maybe 9703.00.90? However material aluminum suggests heading 7612 (Aluminum articles). Specific: 7612.90.90 \"Other articles of aluminum\". Could be 7612.90.90. But funeral urns maybe 9703.00.00 \"Works of art, collectors' pieces\". Yet they are functional. I think 7612.90.90 is best. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205675104,
+      "prompt_tokens": 339,
+      "prompt_time": 0.01743976,
+      "completion_tokens": 209,
+      "completion_time": 0.430205367,
+      "total_tokens": 548,
+      "total_time": 0.447645127,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3tks1xnejrarqts19s13x84",
+      "seed": 1351743132
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76129090",
+  "predicted_reason": "Aluminum decorative urns are classified under heading 7612 for articles of aluminum, specifically subheading 7612.90.90 for other aluminum articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

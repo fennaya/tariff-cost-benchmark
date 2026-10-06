@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358797",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8703900100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-974b08d3-6680-42d2-88d5-30af5bccea51",
+    "object": "chat.completion",
+    "created": 1790608257,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8711.90.90.00\",\"reason\":\"It is a fully assembled, battery\u2011electric, low\u2011speed vehicle (\u226425\u202fmph) not intended for public roads, fitting the HTSUS heading 8711.90.90 for other motor vehicles.\"}",
+          "reasoning": "Need HTS 10-digit. Low-speed electric vehicle < 25 mph, not for public roads. Likely 8711.90.90? Actually 8711.90.90 is \"Other motor vehicles\". For electric low-speed vehicles: 8711.90.90. But 10-digit: 8711.90.90.00? Wait 10-digit format: 8711.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298611758,
+      "prompt_tokens": 440,
+      "prompt_time": 0.022800347,
+      "completion_tokens": 164,
+      "completion_time": 0.170400471,
+      "total_tokens": 604,
+      "total_time": 0.193200818,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a12402de73",
+    "x_groq": {
+      "id": "req_01m3m93c7ee83ae29ktks2j9zj",
+      "seed": 1262575953
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8711909000",
+  "predicted_reason": "It is a fully assembled, battery\u2011electric, low\u2011speed vehicle (\u226425\u202fmph) not intended for public roads, fitting the HTSUS heading 8711.90.90 for other motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

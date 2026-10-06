@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357384",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "8707100020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-49391109-29dc-4f64-953b-9228d2f16e66",
+    "object": "chat.completion",
+    "created": 1790726156,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90.00\", \"reason\": \"Classified as parts of motor vehicles (body and chassis assemblies) without powertrain, falling under heading 8708.99\"}",
+          "reasoning": "We need HTS for vehicle chassis body panel assembly without motor. Likely heading 8708? 8708.99 for parts of motor vehicles. 8708.99.90? 10-digit: 8708.99.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294029728,
+      "prompt_tokens": 919,
+      "prompt_time": 0.04061213,
+      "completion_tokens": 111,
+      "completion_time": 0.232081691,
+      "total_tokens": 1030,
+      "total_time": 0.272693821,
+      "completion_tokens_details": {
+        "reasoning_tokens": 57
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3qshbvheccsgvks8ah2fy8c",
+      "seed": 418824875
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Classified as parts of motor vehicles (body and chassis assemblies) without powertrain, falling under heading 8708.99",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

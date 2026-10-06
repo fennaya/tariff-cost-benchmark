@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357315",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "9403910080",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-0c35e5f3-6672-4b2b-89de-c792a026384d",
+    "object": "chat.completion",
+    "created": 1790607407,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9403.10.00.00\",\"reason\":\"MDF cabinet doors are classified as furniture components made of wood or wood-like material.\"}",
+          "reasoning": "Need HTS code for MDF cabinet doors. Likely 9403.10.00.00? Actually 9403 is furniture. But cabinet doors are part of furniture. 9403.10.00.00 is \"Furniture of wood, other than that of 9403.20\". But MDF is not wood? It's fiberboard. Might be 9403.10.00.00 still. Alternatively 9403.10.00.00 covers \"Furniture of wood, other than that of 9403.20\". But MDF is not wood. Maybe 9403.10.00.00 includes \"Furniture of wood, other than that of 9403.20\". But fiberboard? Could be 9403.10.00.00. I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194443064,
+      "prompt_tokens": 384,
+      "prompt_time": 0.021380931,
+      "completion_tokens": 206,
+      "completion_time": 0.220895485,
+      "total_tokens": 590,
+      "total_time": 0.242276416,
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m3m89eaeehy8chn8p9vt6099",
+      "seed": 1365886311
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9403100000",
+  "predicted_reason": "MDF cabinet doors are classified as furniture components made of wood or wood-like material.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

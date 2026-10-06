@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362430",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "2106909997",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a81915a3-bf72-4b0c-a4c7-d4fde8fd9d16",
+    "object": "chat.completion",
+    "created": 1790827677,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.99\", \"reason\": \"Classified as a prepared food product (plant\u2011based yogurt alternative) not elsewhere specified in the HTS, falling under heading 2106.90.99.\"}",
+          "reasoning": "We need HTS for plant-based yogurt alternatives. Likely 0406? Actually dairy alternatives: 2106.90.99? Food preparations. Yogurt analogues maybe 0406.90.99 is \"Other\" dairy substitutes? Check: 0406 is \"Cheese and curd\". Not. 2106 is \"Food preparations not elsewhere specified\". Yogurt alternatives likely 2106.90.99 \"Other food preparations\". So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204883504,
+      "prompt_tokens": 360,
+      "prompt_time": 0.02520143,
+      "completion_tokens": 157,
+      "completion_time": 0.327010439,
+      "total_tokens": 517,
+      "total_time": 0.352211869,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3ttbh00ecjtphpfptj4796s",
+      "seed": 54586846
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "21069099",
+  "predicted_reason": "Classified as a prepared food product (plant\u2011based yogurt alternative) not elsewhere specified in the HTS, falling under heading 2106.90.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

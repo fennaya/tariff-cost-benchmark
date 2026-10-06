@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359110",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1f6aca4f-b97f-40f5-82c0-561e4b04016e",
+    "object": "chat.completion",
+    "created": 1790727073,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.99\", \"reason\": \"Classified under medicaments (HTS 3004) as a pharmaceutical suppository not elsewhere specified.\"}",
+          "reasoning": "Need HTS for suppositories, medicinal, oil. Likely 3004.90.99? 3004 is medicaments. 3004.90.99 is \"Other medicaments\". 3004.90.10 is \"Other\". Actually 3004.90.99 is \"Other\". Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293913194,
+      "prompt_tokens": 244,
+      "prompt_time": 0.010424284,
+      "completion_tokens": 115,
+      "completion_time": 0.247152921,
+      "total_tokens": 359,
+      "total_time": 0.257577205,
+      "completion_tokens_details": {
+        "reasoning_tokens": 67
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3qtdbd5ekmr82f105g6tgn3",
+      "seed": 1743262840
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049099",
+  "predicted_reason": "Classified under medicaments (HTS 3004) as a pharmaceutical suppository not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359575",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-87fa056f-83f1-462e-b1f3-869fedacf52f",
+    "object": "chat.completion",
+    "created": 1790728601,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.30.00.00\",\n  \"reason\": \"Classified as a self\u2011propelled road/earth\u2011moving machine not elsewhere specified, falling under heading 8425 for self\u2011propelled road rollers and other self\u2011propelled earth\u2011moving machinery.\"\n}",
+          "reasoning": "We need HTS code for barrier transfer machine, self-propelled, used for road construction. Likely under 8425? 8425.91? Let's think: 8425 is \"Cranes, mobile lifting frames, ...\". 8425.91 is \"Self-propelled bulldozers, mechanical shovels, excavators, etc.\" Not. Maybe 8425.99 other. Actually barrier transfer machine is a road roller type? Could be 8425.93 \"Other self-propelled road rollers\". But it's not roller. Could be 8425.99 \"Other\". Another heading 8425.30 \"Other\". Let's check: 8425.30 is \"Other\". Might be 8425.30.00? But need 10-digit: 8425.30.00.00. Reason: self-propelled machine for moving barriers, classified under \"Other self-propelled road rollers and other self-propelled earth-moving machinery\". Might be 8425.30.00.00.\n\nI'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.276215824,
+      "prompt_tokens": 392,
+      "prompt_time": 0.027025253,
+      "completion_tokens": 297,
+      "completion_time": 0.613282934,
+      "total_tokens": 689,
+      "total_time": 0.640308187,
+      "completion_tokens_details": {
+        "reasoning_tokens": 223
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3qvvyvcexzb5qk9bnyw11p9",
+      "seed": 1244451636
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425300000",
+  "predicted_reason": "Classified as a self\u2011propelled road/earth\u2011moving machine not elsewhere specified, falling under heading 8425 for self\u2011propelled road rollers and other self\u2011propelled earth\u2011moving machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

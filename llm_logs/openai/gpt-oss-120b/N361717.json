@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361717",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "0603900000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-02536dc7-8680-423a-bcc3-18f895941a08",
+    "object": "chat.completion",
+    "created": 1790803277,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9703.00.0090\",\n  \"reason\": \"The item is a unique, hand\u2011crafted decorative wall art piece made of preserved natural flowers, classified as a work of art/collector's item rather than a commodity.\"\n}",
+          "reasoning": "We need HTS code for decorative art with preserved flowers. Likely under 9703 - Works of art, collectors' pieces. 9703.00.00? 9703.00.00 is \"Original sculptures and statuary, and other works of art, of any material\". Could be 9703.00.0010? But 10-digit: 9703.00.0010? Actually HTS 10-digit: 9703.00.0010 is \"Original works of art, other than paintings, of a kind used for religious purposes\". Not sure. Maybe 9703.00.0090 \"Other\". So choose 9703.00.0090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.168261581,
+      "prompt_tokens": 348,
+      "prompt_time": 0.027515345,
+      "completion_tokens": 214,
+      "completion_time": 0.450203394,
+      "total_tokens": 562,
+      "total_time": 0.477718739,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3t32xdvea5b85gvhgz4srvg",
+      "seed": 702108784
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9703000090",
+  "predicted_reason": "The item is a unique, hand\u2011crafted decorative wall art piece made of preserved natural flowers, classified as a work of art/collector's item rather than a commodity.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

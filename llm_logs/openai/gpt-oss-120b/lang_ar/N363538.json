@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363538",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-aa4a79d3-ffbb-4f82-842f-0df0cf5d8218",
+    "object": "chat.completion",
+    "created": 1790904801,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8507.60.90\",\n  \"reason\": \"The item is a portable lithium\u2011ion accumulator (power bank) used for charging external devices, classified under heading 8507.60 for lithium\u2011ion accumulators, other than those specifically listed elsewhere.\"\n}",
+          "reasoning": "We need HTS for power banks. Likely 8504.40.95? Actually portable power banks are \"Lithium-ion accumulators, other than those of heading 8507\". Check: 8507.60 is \"Lithium-ion accumulators\". But power banks are \"portable electric power banks\" under 8504.40.95? 8504.40 is \"Static converters; power supplies\". Not. I think 8507.60.90 \"Other\". So 8507.60.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089580724,
+      "prompt_tokens": 356,
+      "prompt_time": 0.01808384,
+      "completion_tokens": 184,
+      "completion_time": 0.386747939,
+      "total_tokens": 540,
+      "total_time": 0.404831779,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m3x3x61peahbgq0tsqmjnvf8",
+      "seed": 783023705
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85076090",
+  "predicted_reason": "The item is a portable lithium\u2011ion accumulator (power bank) used for charging external devices, classified under heading 8507.60 for lithium\u2011ion accumulators, other than those specifically listed elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

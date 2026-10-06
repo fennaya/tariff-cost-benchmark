@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360471",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-aa91e399-47d6-4f34-b630-c977409cba8c",
+    "object": "chat.completion",
+    "created": 1790672503,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"4202.90.90.10\",\"reason\":\"Plastic handbags fall under 4202.90.90.10, other articles of plastics, handbags and similar items.\"}",
+          "reasoning": "Need HTS code for plastic handbags. Likely 4202.90.90? Actually 4202.90.90 is \"Other articles of plastics\". For handbags: 4202.90.90.10? Let's pick 4202.90.90.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.044360611,
+      "prompt_tokens": 246,
+      "prompt_time": 0.014401891,
+      "completion_tokens": 109,
+      "completion_time": 0.11757999,
+      "total_tokens": 355,
+      "total_time": 0.131981881,
+      "completion_tokens_details": {
+        "reasoning_tokens": 59
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4315eb300",
+    "x_groq": {
+      "id": "req_01m3p6c04werqb86m9sa96we0n",
+      "seed": 1502818168
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202909010",
+  "predicted_reason": "Plastic handbags fall under 4202.90.90.10, other articles of plastics, handbags and similar items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

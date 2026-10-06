@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357324",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1302194140",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-932ee714-6386-49db-bd94-27e56b935e0d",
+    "object": "chat.completion",
+    "created": 1790726101,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1302.20.00\", \"reason\": \"The product is a liquid botanical extract (tincture) derived from plant material and dissolved in a glycerin\u2011water solvent, classifiable as a vegetable sap or extract under heading 1302.20.\"}",
+          "reasoning": "We need HTS code for herbal tincture extracts in glycerin-water. Likely under 1302? Actually 1302 is \"Vegetable saps and extracts\". 1302.20 is \"Other vegetable saps and extracts\". 1302.20.00? Check: 1302.20.00 - \"Other vegetable saps and extracts\". Could be 1302.20.00. Also could be 1302.30 for \"Malt extracts\". So answer 1302.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293983018,
+      "prompt_tokens": 365,
+      "prompt_time": 0.020963314,
+      "completion_tokens": 182,
+      "completion_time": 0.377915916,
+      "total_tokens": 547,
+      "total_time": 0.39887923,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3qsfp9hexhbejdhzeny8byd",
+      "seed": 1043771793
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "13022000",
+  "predicted_reason": "The product is a liquid botanical extract (tincture) derived from plant material and dissolved in a glycerin\u2011water solvent, classifiable as a vegetable sap or extract under heading 1302.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

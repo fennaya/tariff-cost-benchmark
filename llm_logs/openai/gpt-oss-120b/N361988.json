@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361988",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-06d44b42-0c15-458f-ba92-170632453b6f",
+    "object": "chat.completion",
+    "created": 1790813119,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9019.20.0010\",\n  \"reason\": \"The product is an electric therapeutic heating pad, classified under electrotherapeutic apparatus in heading 9019.\"\n}",
+          "reasoning": "We need HTS code for electric heating pad, wearable. Likely 9019.20.00? Actually 9019 covers \"Therapeutic appliances and equipment\". 9019.20 is \"Electrotherapeutic apparatus\". Heating pad maybe 9019.20.00. 10-digit: 9019.20.0010? Check US: 9019.20.0010 is \"Electrotherapeutic apparatus, other\". Might be 9019.20.0010. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048206251,
+      "prompt_tokens": 430,
+      "prompt_time": 0.018953372,
+      "completion_tokens": 163,
+      "completion_time": 0.341776012,
+      "total_tokens": 593,
+      "total_time": 0.360729384,
+      "completion_tokens_details": {
+        "reasoning_tokens": 110
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3tcf90perzrmtgwgr6djtz1",
+      "seed": 1758880889
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9019200010",
+  "predicted_reason": "The product is an electric therapeutic heating pad, classified under electrotherapeutic apparatus in heading 9019.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359801",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "4820102060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2f22849c-e289-4cb6-9c58-80b732654c10",
+    "object": "chat.completion",
+    "created": 1790738551,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4820.10.0010\",\n  \"reason\": \"All items are paper notebooks/journals with paper covers, classified under HTSUS heading 4820.10 for notebooks, diaries and similar articles of paper.\"\n}",
+          "reasoning": "Need HTS for notebooks paper. Likely 4820.10.00? Actually paper notebooks under 4820.10.00 \"Notebooks, diaries and similar articles, of paper\". 10-digit: 4820.10.0010? Let's check: 4820.10.0010 is \"Notebooks, diaries and similar articles, of paper, with or without covers, of a size not exceeding A4\". Use 4820.10.0010."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295295522,
+      "prompt_tokens": 569,
+      "prompt_time": 0.029591624,
+      "completion_tokens": 165,
+      "completion_time": 0.342619047,
+      "total_tokens": 734,
+      "total_time": 0.372210671,
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3r5bkt7e4c8v2cqgh922wwp",
+      "seed": 834409045
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4820100010",
+  "predicted_reason": "All items are paper notebooks/journals with paper covers, classified under HTSUS heading 4820.10 for notebooks, diaries and similar articles of paper.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

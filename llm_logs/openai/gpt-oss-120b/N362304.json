@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362304",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "2008996500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-034672d8-e9c3-4419-bda5-d241b54a015f",
+    "object": "chat.completion",
+    "created": 1790824018,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1905.90.90\", \"reason\": \"Shelf-stable, ready\u2011to\u2011eat cassava flatbread is a prepared food not elsewhere specified, falling under heading 1905.90 for other prepared foods.\"}",
+          "reasoning": "We need HTS code for cassava flatbread, ready to eat, no additives. Likely under \"Prepared foods made from cereals, flour, starches\" etc. Cassava is a tuber. Could be under 1905.90.90? That's \"Other prepared foods, not elsewhere specified\". But maybe 1905.90.90 is \"Other prepared foods, not elsewhere specified\". Or 1905.90.10 is \"Prepared foods of meat\". Not.\n\nAlternatively under 1905.90.90 \"Other prepared foods\". That seems plausible.\n\nCheck 1905.90.90 description: \"Other prepared foods, not elsewhere specified or included\". Yes.\n\nThus code 1905.90.90. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307306023,
+      "prompt_tokens": 349,
+      "prompt_time": 0.027484254,
+      "completion_tokens": 215,
+      "completion_time": 0.447043483,
+      "total_tokens": 564,
+      "total_time": 0.474527737,
+      "completion_tokens_details": {
+        "reasoning_tokens": 154
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3tpvvaveck8s3wwh851jesg",
+      "seed": 311646142
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "19059090",
+  "predicted_reason": "Shelf-stable, ready\u2011to\u2011eat cassava flatbread is a prepared food not elsewhere specified, falling under heading 1905.90 for other prepared foods.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

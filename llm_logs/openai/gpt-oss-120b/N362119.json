@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362119",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8703210150",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1a64c77f-4d09-4cf9-9766-935bfc0fe183",
+    "object": "chat.completion",
+    "created": 1790817814,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8703.23.90\",\n  \"reason\": \"The vehicle is a spark\u2011ignition off\u2011road utility vehicle with a 999\u202fcc engine, classifying it under HTS heading 8703 for motor vehicles other than cars, subheading 23 for 500\u20111000\u202fcc engines.\"\n}",
+          "reasoning": "We need HTS code for off-road UTV 999cc. Likely 8703.23.00.00? 8703.23 is \"Motor vehicles for the transport of persons, other than motor cars, with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity exceeding 500 cc but not exceeding 1000 cc\". But off-road? Might be 8703.23.90? Actually 8703.23.00 is for \"other vehicles\". Off-road may be 8703.23.90 \"Other\". Could be 8703.23.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20514264,
+      "prompt_tokens": 331,
+      "prompt_time": 0.013716534,
+      "completion_tokens": 212,
+      "completion_time": 0.443087395,
+      "total_tokens": 543,
+      "total_time": 0.456803929,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3tgyhkbe2kskt11kzgmbhxw",
+      "seed": 1912599504
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87032390",
+  "predicted_reason": "The vehicle is a spark\u2011ignition off\u2011road utility vehicle with a 999\u202fcc engine, classifying it under HTS heading 8703 for motor vehicles other than cars, subheading 23 for 500\u20111000\u202fcc engines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

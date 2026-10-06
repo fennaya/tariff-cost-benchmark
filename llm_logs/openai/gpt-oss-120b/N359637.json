@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359637",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8703240190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9670a030-5e38-4afe-8203-60a1336e461c",
+    "object": "chat.completion",
+    "created": 1790730269,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.90.00\", \"reason\": \"Passenger car with spark\u2011ignition gasoline engine over 3000\u202fcc, classified under heading 8703.23 for motor cars designed for transport of persons.\"}",
+          "reasoning": "We need HTS for passenger motor vehicle, gasoline, 4 wheels, 2003 Ferrari. Likely heading 8703.23? Let's see: 8703.23 is \"Motor cars and other motor vehicles principally designed for the transport of persons (other than those of heading 8702), with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity exceeding 3000 cc\". Ferrari 5.7L = 5700 cc, so fits. Subheading 8703.23.90? Actually 8703.23.90 is \"Other\". Full 10-digit: 8703.23.90.00? Need 10 digits: 8703.23.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090223723,
+      "prompt_tokens": 285,
+      "prompt_time": 0.012369186,
+      "completion_tokens": 217,
+      "completion_time": 0.451005118,
+      "total_tokens": 502,
+      "total_time": 0.463374304,
+      "completion_tokens_details": {
+        "reasoning_tokens": 155
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d577f40f11",
+    "x_groq": {
+      "id": "req_01m3qxewf3e3ga6a154f47jp20",
+      "seed": 946998096
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703239000",
+  "predicted_reason": "Passenger car with spark\u2011ignition gasoline engine over 3000\u202fcc, classified under heading 8703.23 for motor cars designed for transport of persons.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

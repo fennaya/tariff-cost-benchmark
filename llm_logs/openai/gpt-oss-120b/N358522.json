@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358522",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "7312107000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b2c6f001-fb5e-4b94-8654-0c9eb983c045",
+    "object": "chat.completion",
+    "created": 1790726752,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7308.90.90\", \"reason\": \"Classified under other structures and parts of iron or steel (including galvanized steel fasteners) not elsewhere specified\"}",
+          "reasoning": "We need HTS code. Likely hardware: galvanized steel cable and bolt, aluminum gusset. Could be \"Fencing, wire, netting\" etc. Cable assembly maybe 7318? 7318.15? That's \"Other threaded articles, of iron or steel\". But includes nuts, bolts. However cable? Might be \"Fencing, gates, etc.\" HTS 7308.90? Actually 7308 covers structures and parts of iron/steel. 7308.90.90 \"Other\". Could be 7308.90.90. Reason: metal structures. I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086674486,
+      "prompt_tokens": 209,
+      "prompt_time": 0.008918186,
+      "completion_tokens": 175,
+      "completion_time": 0.359623014,
+      "total_tokens": 384,
+      "total_time": 0.3685412,
+      "completion_tokens_details": {
+        "reasoning_tokens": 127
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3qt3hfceqkt05eg6adq2peg",
+      "seed": 1550325803
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73089090",
+  "predicted_reason": "Classified under other structures and parts of iron or steel (including galvanized steel fasteners) not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

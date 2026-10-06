@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357243",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "2517490000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-755f12bc-eeb7-4271-8109-68354f95f8af",
+    "object": "chat.completion",
+    "created": 1790905669,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2505.90.00\",\n  \"reason\": \"The product is a crushed, mixed natural igneous rock simulant, classified under other natural stone products.\"\n}",
+          "reasoning": "We need HTS code for natural stone simulant, likely \"Other mineral substances, earths, stone, plaster, cement, asbestos, mica or similar\". Could be 2505? Actually 2505 is \"Granite, sandstone, etc.\" But simulant of regolith is crushed natural igneous rocks mixed. Likely classified under 2505.00.00? Let's check: 2505.00.00 - \"Granite, sandstone, other natural stone, etc., cut, worked, or simply cut\". Might be 2505.90.00 for other. Could be 2505.90.00 \"Other\". Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296966594,
+      "prompt_tokens": 390,
+      "prompt_time": 0.018999842,
+      "completion_tokens": 189,
+      "completion_time": 0.397708517,
+      "total_tokens": 579,
+      "total_time": 0.416708359,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3x4qmpserbsmdv8eqqs1b8g",
+      "seed": 1041396620
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "25059000",
+  "predicted_reason": "The product is a crushed, mixed natural igneous rock simulant, classified under other natural stone products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

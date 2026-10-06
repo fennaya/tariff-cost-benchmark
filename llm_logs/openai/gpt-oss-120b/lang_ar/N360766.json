@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360766",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8706805090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8872247e-b736-4d9b-a001-ef7d13d89b13",
+    "object": "chat.completion",
+    "created": 1790904781,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7309.91.00.00\",\n  \"reason\": \"The product is a steel trailer-mounted tank for storing and dispensing propane (a liquefied petroleum gas), classified under containers for compressed or liquefied gas of iron or steel.\"\n}",
+          "reasoning": "We need HTS for propane tank trailer. Likely 7309.00.00? Actually steel containers for compressed gas: 7309.00.00 is \"Tanks, casks, drums, cans, boxes and similar containers, of iron or steel\". For LPG tanks: 7309.00.00. But 7309.91? Check: 7309.91.00 is \"Other containers for compressed or liquefied gas, of iron or steel\". Might be 7309.91.00. Need 10-digit: 7309.91.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206115459,
+      "prompt_tokens": 675,
+      "prompt_time": 0.039522443,
+      "completion_tokens": 197,
+      "completion_time": 0.410427497,
+      "total_tokens": 872,
+      "total_time": 0.44994994,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3x3wj1je6hr7t7myr4cshh0",
+      "seed": 2044627510
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7309910000",
+  "predicted_reason": "The product is a steel trailer-mounted tank for storing and dispensing propane (a liquefied petroleum gas), classified under containers for compressed or liquefied gas of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

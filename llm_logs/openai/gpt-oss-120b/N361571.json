@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361571",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8486900000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-41f4c59a-1555-41fe-8d76-b48d429a96b8",
+    "object": "chat.completion",
+    "created": 1790799140,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8479.89.90\",\n  \"reason\": \"The DGLM is a specialized membrane assembly used as a replacement part for EUV lithography equipment, classifiable as an accessory part of a machine for semiconductor manufacturing.\"\n}",
+          "reasoning": "We need HTS code. Likely \"membrane assemblies for semiconductor lithography\" maybe under 8544? Actually parts of lithography equipment: 8544.70.00? Let's think: 8544 covers \"Insulated wire, cable, etc.\" No. 8543 is \"Electrical machines and apparatus\". 8542 is \"Electronic integrated circuits\". The DGLM is a membrane assembly, mostly aluminum, used in EUV lithography. Could be classified under 9021? 9021.80 \"Other apparatus for measuring or checking the flow, level, pressure, etc., of liquids or gases\". Not.\n\nMaybe under 9018 \"Instruments and appliances for measuring or detecting radiation\". Not.\n\nCould be \"Other parts of machines for semiconductor manufacturing\" 8479.89.90? 8479 is \"Parts and accessories of machines of heading 84.71 to 84.79\". 8479.89 is \"Other parts\". So likely 8479.89.90.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048300417,
+      "prompt_tokens": 355,
+      "prompt_time": 0.017379807,
+      "completion_tokens": 277,
+      "completion_time": 0.577587179,
+      "total_tokens": 632,
+      "total_time": 0.594966986,
+      "completion_tokens_details": {
+        "reasoning_tokens": 213
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3sz4n0het59k58z11ms7xbs",
+      "seed": 367099997
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84798990",
+  "predicted_reason": "The DGLM is a specialized membrane assembly used as a replacement part for EUV lithography equipment, classifiable as an accessory part of a machine for semiconductor manufacturing.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

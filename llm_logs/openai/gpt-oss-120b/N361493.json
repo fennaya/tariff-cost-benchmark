@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361493",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0f9f37b6-ccd5-46c7-a65e-1e72593c6b87",
+    "object": "chat.completion",
+    "created": 1790796708,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7616.99.90\",\n  \"reason\": \"The spray shield is a non\u2011electrical tool made primarily of aluminum, classifiable under HTS Chapter 76 for articles of aluminum not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for spray shield, likely a painting tool, made of aluminum, a shield. Could be under \"Other hand tools, implements, etc.\" Possibly 8205? 8205.59? Actually 8205 covers hand tools. 8205.59.90 is \"Other hand tools, not elsewhere specified\". But maybe under 8302? 8302.49 for \"Other articles of iron or steel\". Aluminum maybe 7616? 7616.99 for \"Other articles of aluminum\". Likely 7616.99.90. Let's choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.8995669149999999,
+      "prompt_tokens": 223,
+      "prompt_time": 0.04935402,
+      "completion_tokens": 184,
+      "completion_time": 0.391887522,
+      "total_tokens": 407,
+      "total_time": 0.441241542,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3swtcb1e1xvcweqkzyzgmqh",
+      "seed": 1852766909
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76169990",
+  "predicted_reason": "The spray shield is a non\u2011electrical tool made primarily of aluminum, classifiable under HTS Chapter 76 for articles of aluminum not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

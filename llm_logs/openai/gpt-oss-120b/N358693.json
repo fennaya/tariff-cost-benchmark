@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358693",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3ff3df73-463e-4b6e-a52c-dace4a172a52",
+    "object": "chat.completion",
+    "created": 1790726827,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.90\",\n  \"reason\": \"The item is a children's costume accessory (headpiece, wings, boot covers) intended for Halloween, classified under other articles of sporting goods (costumes) in heading 9505.\"\n}",
+          "reasoning": "We need HTS code for children's costume accessories, likely 9505? Actually costumes are under 9505.99? But textile costume parts maybe 9505.90? Let's think: 9505.90.90 is \"Other articles of sporting goods\". Not.\n\nCostume accessories: 9505.90.10? Hmm.\n\nAlternatively under 9505.90.20 \"Other\". Actually 9505.90 is \"Other articles of sporting goods\". Not.\n\nCostumes are under 9505.90? Wait: 9505.90.10 is \"Other\". Might be 9505.90.90.\n\nBut maybe under 9505.90.20 \"Other\". Not sure.\n\nAnother possibility: 9505.90.90 \"Other\". Provide.\n\nLet's answer with 9505.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087197137,
+      "prompt_tokens": 251,
+      "prompt_time": 0.009918847,
+      "completion_tokens": 241,
+      "completion_time": 0.499850047,
+      "total_tokens": 492,
+      "total_time": 0.509768894,
+      "completion_tokens_details": {
+        "reasoning_tokens": 174
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m3qt5tg1e5qa4vzgjke8nt8h",
+      "seed": 1703815766
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059090",
+  "predicted_reason": "The item is a children's costume accessory (headpiece, wings, boot covers) intended for Halloween, classified under other articles of sporting goods (costumes) in heading 9505.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

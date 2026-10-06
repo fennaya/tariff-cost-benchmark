@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359599",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8706000575",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-eb356a40-417b-462e-9535-bc32c170c349",
+    "object": "chat.completion",
+    "created": 1790729430,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8704.21.00.00\", \"reason\": \"The item is a diesel\u2011engine rear chassis of a dumper vehicle, classified as a motor vehicle for the transport of goods, chassis only.\"}",
+          "reasoning": "We need HTS code for dumper chassis without control. Likely under 8704? That's for motor vehicles for goods. But chassis only maybe 8704.21? Actually 8704.21 is \"Motor vehicles for the transport of goods, with diesel engine, chassis only\". Check: 8704.21.00 is \"Motor vehicles for the transport of goods, with diesel engine, chassis only\". So 8704.21.00. 10-digit: 8704.21.00.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087958819,
+      "prompt_tokens": 262,
+      "prompt_time": 0.012660063,
+      "completion_tokens": 169,
+      "completion_time": 0.351930611,
+      "total_tokens": 431,
+      "total_time": 0.364590674,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3qwn8s0e478fyhkn3ybjz0m",
+      "seed": 1950212267
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8704210000",
+  "predicted_reason": "The item is a diesel\u2011engine rear chassis of a dumper vehicle, classified as a motor vehicle for the transport of goods, chassis only.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359001",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8421210000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c9bb46ef-49df-4e6b-afcb-5614c7adb560",
+    "object": "chat.completion",
+    "created": 1790612387,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"The product is an electrochemical water purification system with reactors, heat exchanger, and control equipment, fitting the general category of other machines for treating or cleaning water (HTS 8421.90.90.00).\"}",
+          "reasoning": "Need HTS 10-digit. It's an electrochemical water purification system with reactors, heat exchanger, etc. Likely 8421.90.90? Actually 8421 is \"Other machines and apparatus for treating or cleaning water\". 8421.90 is \"Other\". 8421.90.90 is \"Other\". So 8421.90.90.00? 10-digit: 8421.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087507913,
+      "prompt_tokens": 804,
+      "prompt_time": 0.045081958,
+      "completion_tokens": 167,
+      "completion_time": 0.222358989,
+      "total_tokens": 971,
+      "total_time": 0.267440947,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e99e93f2ac",
+    "x_groq": {
+      "id": "req_01m3md1dk4e0s87k0c8450w2fz",
+      "seed": 1651025371
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "The product is an electrochemical water purification system with reactors, heat exchanger, and control equipment, fitting the general category of other machines for treating or cleaning water (HTS 8421.90.90.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

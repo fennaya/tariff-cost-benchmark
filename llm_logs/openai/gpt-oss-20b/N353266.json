@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N353266",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9617001000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-1d6b4469-fb6c-4920-839e-0d886adcfbe6",
+    "object": "chat.completion",
+    "created": 1790606856,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7323.90.90.00\",\"reason\":\"Vacuum\u2011insulated stainless\u2011steel water bottle falls under metal containers not elsewhere specified.\"}",
+          "reasoning": "Need HTS 10-digit. Vacuum insulated stainless steel water bottle. Likely 3923.90.10? Actually 3923 is plastic containers. Stainless steel is metal. For metal containers: 7323.90.90? Let's think: 7323 is other articles of iron or steel. 7323.90.90 is other articles of iron or steel, not elsewhere specified. But water bottle with plastic parts. Maybe 7323.90.90. But 10-digit: 7323.90.90.00. Reason: metal container."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218686515,
+      "prompt_tokens": 362,
+      "prompt_time": 0.021281745,
+      "completion_tokens": 163,
+      "completion_time": 0.168857077,
+      "total_tokens": 525,
+      "total_time": 0.190138822,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_639a5351c8",
+    "x_groq": {
+      "id": "req_01m3m7rkqmepksd88q6vh1mnm7",
+      "seed": 2103151394
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7323909000",
+  "predicted_reason": "Vacuum\u2011insulated stainless\u2011steel water bottle falls under metal containers not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

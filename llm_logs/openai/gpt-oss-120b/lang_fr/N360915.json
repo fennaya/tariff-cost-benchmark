@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360915",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-232837b9-96c6-417b-a4f5-550a4a349f90",
+    "object": "chat.completion",
+    "created": 1790904646,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9022.19.00\", \"reason\": \"Classified as other apparatus for measuring or checking physiological parameters, such as heart rate and temperature, which fits wearable health monitoring devices.\"}",
+          "reasoning": "We need HTS code for wearable health monitoring device. Likely 9022.12.00? Actually 9022.12.00 is \"Apparatus for measuring or checking blood pressure\". For heart rate monitors maybe 9022.19.00 \"Other apparatus for measuring or checking physiological parameters\". Or 9022.30.00 \"Other instruments and apparatus for measuring or detecting ionizing radiations\". Not. Wearable activity trackers: often classified under 9022.19.00. Let's choose 9022.19.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047738578,
+      "prompt_tokens": 368,
+      "prompt_time": 0.015506234,
+      "completion_tokens": 167,
+      "completion_time": 0.349289555,
+      "total_tokens": 535,
+      "total_time": 0.364795789,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3x3reh5ebqs76rerhant9e9",
+      "seed": 1947874556
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90221900",
+  "predicted_reason": "Classified as other apparatus for measuring or checking physiological parameters, such as heart rate and temperature, which fits wearable health monitoring devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

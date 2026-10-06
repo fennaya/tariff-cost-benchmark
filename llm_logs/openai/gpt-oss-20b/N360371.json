@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360371",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3004909276",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-b993dc6a-2a9d-448f-a7cb-ea277807cda2",
+    "object": "chat.completion",
+    "created": 1790669418,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90.00\",\"reason\":\"Sugammadex is a medicinal preparation not elsewhere specified, classified under 3004.90.90.00\"}",
+          "reasoning": "Need HTS code for pharmaceutical injection. Sugammadex is a drug. Likely 3004.90.90? Actually 3004.90.90 is \"Other medicinal preparations, not elsewhere specified\". 3004.90.90 is for \"Other medicinal preparations, not elsewhere specified\". 3004.90.90 is 10-digit? 3004.90.90 is 8 digits. 10-digit would be 3004.90.90.00? Actually HTSUS 10-digit: 3004.90.90.00. Reason: medicinal preparations, not elsewhere specified."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.211812491,
+      "prompt_tokens": 219,
+      "prompt_time": 0.015995905,
+      "completion_tokens": 176,
+      "completion_time": 0.219448948,
+      "total_tokens": 395,
+      "total_time": 0.235444853,
+      "completion_tokens_details": {
+        "reasoning_tokens": 128
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3p3dvqfek3r2rc2jk29jfw2",
+      "seed": 1086989671
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Sugammadex is a medicinal preparation not elsewhere specified, classified under 3004.90.90.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

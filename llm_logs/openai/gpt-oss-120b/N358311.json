@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358311",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cc288e84-ba6c-4397-83bc-928526e5daba",
+    "object": "chat.completion",
+    "created": 1790726656,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8425.90.90\", \"reason\": \"Classified under machinery for packaging, wrapping and palletizing of goods, which falls under heading 8425 for other packaging machinery.\"}",
+          "reasoning": "We need HTS code for palletizing and wrapping machine. Likely 8425? Actually 8425 is \"Food, beverage, etc. processing machinery\". 8425.90? Let's think: Machinery for packaging, wrapping, etc. HTS 8425.90.90? Check: 8425.90.90 \"Other machinery for packaging, bottling, etc.\" Could be 8425.90.90. Or 8425.30 \"Machinery for packaging, bottling, etc., for liquids\". Not. So 8425.90.90 seems right. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048936637,
+      "prompt_tokens": 296,
+      "prompt_time": 0.011472714,
+      "completion_tokens": 180,
+      "completion_time": 0.372501279,
+      "total_tokens": 476,
+      "total_time": 0.383973993,
+      "completion_tokens_details": {
+        "reasoning_tokens": 127
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3qt0mdyemnagqbf50vtb9ya",
+      "seed": 1662968632
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84259090",
+  "predicted_reason": "Classified under machinery for packaging, wrapping and palletizing of goods, which falls under heading 8425 for other packaging machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

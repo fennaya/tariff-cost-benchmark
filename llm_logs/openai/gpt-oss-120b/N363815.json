@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363815",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "4901990010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-65421de7-59dd-47b7-8bb7-f463c3c7d7fa",
+    "object": "chat.completion",
+    "created": 1790863250,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4901.99.00\",\n  \"reason\": \"The item is a printed textbook, which falls under the category of other printed books in the HTSUS.\"\n}",
+          "reasoning": "Need HTS for printed books. Likely 4901.99.00? Actually printed books: 4901.10.00 (books, printed, in single sheets) vs 4901.99.00 (other printed books). Textbooks are 4901.10.00? Let's check: 4901.10.00 - \"Printed books, brochures, leaflets and similar printed matter, in single sheets, etc.\" 4901.99.00 - \"Other printed books, brochures, etc.\" Textbooks likely 4901.99.00. Use 4901.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.694737857,
+      "prompt_tokens": 213,
+      "prompt_time": 0.012500911,
+      "completion_tokens": 181,
+      "completion_time": 0.385883731,
+      "total_tokens": 394,
+      "total_time": 0.398384642,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3vw92nfe6fa0physxm82x6m",
+      "seed": 1647320490
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49019900",
+  "predicted_reason": "The item is a printed textbook, which falls under the category of other printed books in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361648",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8409915085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f96bd8d9-03c4-455f-b0d0-aad08f943f52",
+    "object": "chat.completion",
+    "created": 1790904997,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.90.90\",\n  \"reason\": \"Timing chain set is a component of the engine's valve train, classified as a part of transmission shafts/gears under heading 8483.\"\n}",
+          "reasoning": "We need HTS code for timing chain set for automotive engine. Likely under 8483? Actually parts of engines: 8483.90.90? Let's think: 8483 covers \"Parts of transmission shafts, gears, etc.\" Timing chain is a \"chain, belt, or rope\" for engine? Could be 8483.90.90 \"Other parts\". Or 8483.30 \"Parts of gear boxes\". Hmm.\n\nBetter: 8483.90.90 is \"Other parts of transmission shafts, gears, etc.\" Timing chain is part of engine drive train. I'd choose 8483.90.90.\n\nProvide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.302662126,
+      "prompt_tokens": 243,
+      "prompt_time": 0.010458085,
+      "completion_tokens": 194,
+      "completion_time": 0.4122059,
+      "total_tokens": 437,
+      "total_time": 0.422663985,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3x4356xe90a300dgvq8daqm",
+      "seed": 1007157302
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84839090",
+  "predicted_reason": "Timing chain set is a component of the engine's valve train, classified as a part of transmission shafts/gears under heading 8483.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

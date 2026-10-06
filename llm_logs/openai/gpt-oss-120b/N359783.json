@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359783",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8716805090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-72844587-5494-4e39-8dc5-81f8298c4e37",
+    "object": "chat.completion",
+    "created": 1790736925,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.30.00.00\", \"reason\": \"The lowbed trailer is a non-motorized road vehicle made primarily of steel, classifying it under HTS heading 8716 for road vehicles other than motor vehicles, subheading 30 for those of iron or steel.\"}",
+          "reasoning": "We need HTS for heavy-duty lowbed trailer, steel, not motorized. Likely under Chapter 87 vehicles? Actually trailers are under 8704? 8704 covers \"Parts and accessories of motor vehicles\". Trailers maybe 8716? 8716 is \"Road vehicles, other than motor vehicles\". 8716.30? Let's recall: 8716.30 - \"Other, of iron or steel\". So 8716.30.00? Full 10-digit: 8716.30.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295177798,
+      "prompt_tokens": 351,
+      "prompt_time": 0.014265647,
+      "completion_tokens": 191,
+      "completion_time": 0.401724024,
+      "total_tokens": 542,
+      "total_time": 0.415989671,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3r3sztne6eb8yce5avk9fj8",
+      "seed": 1799825303
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8716300000",
+  "predicted_reason": "The lowbed trailer is a non-motorized road vehicle made primarily of steel, classifying it under HTS heading 8716 for road vehicles other than motor vehicles, subheading 30 for those of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

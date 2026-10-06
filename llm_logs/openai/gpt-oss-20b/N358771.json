@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358771",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3923900080",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-9b083cc2-9db0-42d2-94fa-111d87532289",
+    "object": "chat.completion",
+    "created": 1790608239,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3923.90.10.00\",\"reason\":\"Plastic lipstick container, not elsewhere specified, fits 3923.90.10.00\"}",
+          "reasoning": "We need HTS code for lipstick container, plastic, empty. Likely 3923.90.10? Actually 3923.90 is other articles of plastic. For containers: 3923.90.10 is \"Other articles of plastics, not elsewhere specified or included\". But lipstick container maybe 3923.90.10. Provide 10-digit: 3923.90.10.00? Actually 10-digit: 3923.90.10.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.085532699,
+      "prompt_tokens": 220,
+      "prompt_time": 0.01266714,
+      "completion_tokens": 147,
+      "completion_time": 0.170853024,
+      "total_tokens": 367,
+      "total_time": 0.183520164,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3m92thref7a4xvp30tyq2td",
+      "seed": 1215262598
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3923901000",
+  "predicted_reason": "Plastic lipstick container, not elsewhere specified, fits 3923.90.10.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

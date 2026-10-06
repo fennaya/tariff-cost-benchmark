@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361397",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5e91e9eb-ff09-406b-89ca-7b8408d2148d",
+    "object": "chat.completion",
+    "created": 1790792282,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.42.00.00\", \"reason\": \"Classified as a women's or girls' woven robe/nightgown with unfinished raw edges.\"}",
+          "reasoning": "We need guess: garment, robe, raw edges, likely \"women's or men's robes, nightgowns\". HTS 6204? 6206? Probably 6206.10.00.00 for women's or girls' nightdresses? 6204.62 for men's? Let's pick 6204.62.00.00? Actually 6204.62 is \"Men's or boys' garments, knitted or crocheted, other\". But robe likely not knitted. Could be 6204.42 for woven. I'll choose 6204.42.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.146171297,
+      "prompt_tokens": 189,
+      "prompt_time": 0.039498372,
+      "completion_tokens": 170,
+      "completion_time": 0.364016883,
+      "total_tokens": 359,
+      "total_time": 0.403515255,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c652c0ffaa",
+    "x_groq": {
+      "id": "req_01m3srkc95ew48qbh5khd0yfm7",
+      "seed": 314239727
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204420000",
+  "predicted_reason": "Classified as a women's or girls' woven robe/nightgown with unfinished raw edges.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

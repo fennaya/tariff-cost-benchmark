@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359212",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "8504409510",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-51fc5c27-7406-4682-8986-4342f35d3fca",
+    "object": "chat.completion",
+    "created": 1790727161,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8504.40.00.00\", \"reason\": \"The item is a static AC\u2011DC power converter (adapter) under 100\u202fW, classified under heading 8504.40 for power supplies for electronic equipment.\"}",
+          "reasoning": "Need HTS for AC adapter, power supply < 100W. Likely 8504.40.00? Actually 8504.40.00 is \"Static converters\". 8504.40.00 covers \"Power supplies for electronic equipment\". 8504.40.00 is 10-digit: 8504.40.00.00? US uses 10 digits: 8504.40.00.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048522618,
+      "prompt_tokens": 257,
+      "prompt_time": 0.012618747,
+      "completion_tokens": 157,
+      "completion_time": 0.32867158,
+      "total_tokens": 414,
+      "total_time": 0.341290327,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3qtg1pae2s84s744x7pjght",
+      "seed": 619322913
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8504400000",
+  "predicted_reason": "The item is a static AC\u2011DC power converter (adapter) under 100\u202fW, classified under heading 8504.40 for power supplies for electronic equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362451",
+  "rulingDate": "2026-07-06T00:00:00",
+  "true_code": "8438800000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b73ef95d-05d9-44a3-8fba-99808794e98a",
+    "object": "chat.completion",
+    "created": 1790828191,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8419.89.90\", \"reason\": \"The system is a complete winemaking fermentation tank with integrated pump and accessories, classified as other machinery for making beverages.\"}",
+          "reasoning": "We need HTS for wine fermentation tank with pump. Likely 8421? 8421.21? That's \"Centrifuges, including centrifugal dryers; filtering or purifying machinery for liquids\". Pump system maybe 8421.21. But it's a tank with pump for winemaking, maybe 8421.99? Actually 8421.21 is \"Centrifuges\". Not. 8421.30 is \"Other filtering or purifying machinery\". Could be 8421.90 \"Other\". However maybe classified under 8424 \"Mechanical appliances for cleaning\". No.\n\nCould be 8422 \"Centrifuges\". Not.\n\nMaybe 8421.99 \"Other parts\". Hmm.\n\nAlternatively 8419 \"Machinery, plant etc for making beverages\". 8419.89? Let's check: 8419.89.90 \"Other machinery for making beverages\". That seems right. So HTS 8419.89.90. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204689965,
+      "prompt_tokens": 458,
+      "prompt_time": 0.021522615,
+      "completion_tokens": 256,
+      "completion_time": 0.530940547,
+      "total_tokens": 714,
+      "total_time": 0.552463162,
+      "completion_tokens_details": {
+        "reasoning_tokens": 206
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3ttv6vkejw9dftky63h8zne",
+      "seed": 1337956463
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84198990",
+  "predicted_reason": "The system is a complete winemaking fermentation tank with integrated pump and accessories, classified as other machinery for making beverages.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

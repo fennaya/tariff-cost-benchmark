@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362124",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e141550f-878c-476c-8028-e817106031a8",
+    "object": "chat.completion",
+    "created": 1790818148,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.60.00.00\", \"reason\": \"Cotton woven textile bags are classified under HTSUS 6302.60.00.00 as other made\u2011up articles of textile materials not elsewhere specified.\"}",
+          "reasoning": "Need HTS for textile bags 100% cotton, not for packaging? Likely 6302.60.00? Actually 6302 covers other made-up articles of textile materials, e.g., bags. 6302.60 is \"Other made up articles, of textile materials, not elsewhere specified\". Could be 6302.60.90? 10-digit: 6302.60.00.00? Check: 6302.60.00 is \"Other made up articles, of textile materials, not elsewhere specified\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090087908,
+      "prompt_tokens": 561,
+      "prompt_time": 0.023095815,
+      "completion_tokens": 177,
+      "completion_time": 0.366846589,
+      "total_tokens": 738,
+      "total_time": 0.389942404,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4de1d6a1ee",
+    "x_groq": {
+      "id": "req_01m3th8qdje9gtzx56d80wznzn",
+      "seed": 1952030424
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6302600000",
+  "predicted_reason": "Cotton woven textile bags are classified under HTSUS 6302.60.00.00 as other made\u2011up articles of textile materials not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

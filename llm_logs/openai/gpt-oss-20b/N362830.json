@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362830",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "8708220000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-f876f875-49ea-4d5e-ae65-ed3fe182b927",
+    "object": "chat.completion",
+    "created": 1790749202,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7013.90.90.10\",\"reason\":\"Sunroof glass assemblies for motor vehicles are classified under 7013.90.90.10, other glass for motor vehicles.\"}",
+          "reasoning": "Need HTS 10-digit. Sunroof glass assemblies for motor vehicles. Likely 7013.90.90? Actually glass for motor vehicles: 7013.90.90 is \"Other glass, not elsewhere specified\". But sunroof assemblies maybe 7013.90.90.10? Let's pick 7013.90.90.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.223978497,
+      "prompt_tokens": 373,
+      "prompt_time": 0.034568618,
+      "completion_tokens": 127,
+      "completion_time": 0.138339265,
+      "total_tokens": 500,
+      "total_time": 0.172907883,
+      "completion_tokens_details": {
+        "reasoning_tokens": 75
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_639a5351c8",
+    "x_groq": {
+      "id": "req_01m3rfgn7kevpsedt89bpkseb8",
+      "seed": 1186144877
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7013909010",
+  "predicted_reason": "Sunroof glass assemblies for motor vehicles are classified under 7013.90.90.10, other glass for motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

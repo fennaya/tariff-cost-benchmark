@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362040",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8530800000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d8bf3e2b-d97a-41f2-81df-c9c4cc6fe2f4",
+    "object": "chat.completion",
+    "created": 1790725690,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8537.90.90\",\"reason\":\"The system is an electronic safety device for vehicles, fitting the HTSUS heading for other electrical apparatus for switching or protecting electrical circuits.\"}",
+          "reasoning": "Need HTS code for collision warning system for vehicles. Likely 8415.90.90? Actually 8415 is \"Other engines, motors, and turbines\". Not. For vehicle safety equipment: 8415.90.90 is \"Other\". But maybe 8415.90.90 for \"Other\". But collision warning system is electronic device. Could be 8537.90.90? 8537 is \"Electrical apparatus for switching or protecting electrical circuits\". Not. Maybe 8537.90.90 for \"Other\". But better: 8537.90.90 for \"Other\". But maybe 8537.90.90 is for \"Other\". But collision warning system is a \"vehicle safety device\" maybe 8537.90.90. Let's answer 8537.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.196978758,
+      "prompt_tokens": 471,
+      "prompt_time": 0.025923477,
+      "completion_tokens": 222,
+      "completion_time": 0.237114515,
+      "total_tokens": 693,
+      "total_time": 0.263037992,
+      "completion_tokens_details": {
+        "reasoning_tokens": 171
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m3qs34fye3n8peq409171f36",
+      "seed": 1576038414
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85379090",
+  "predicted_reason": "The system is an electronic safety device for vehicles, fitting the HTSUS heading for other electrical apparatus for switching or protecting electrical circuits.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

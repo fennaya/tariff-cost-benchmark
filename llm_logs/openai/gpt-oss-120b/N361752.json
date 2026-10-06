@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361752",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "9018498080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f8ecd89f-5e7d-46d9-a867-6e3af42aab4e",
+    "object": "chat.completion",
+    "created": 1790804236,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8465.19.00\",\n  \"reason\": \"The product is a compact milling machine used for dental prosthesis manufacturing, classified as a machine tool for working metal or other materials.\"\n}",
+          "reasoning": "We need HTS for dental milling machine. Likely 8479.89.90? Actually machines for dental prosthesis: 9018? No, 9018 is dental equipment. Milling machines are \"machining centers\" 8465? 8465.99.90 for other machines for working metal. Dental specific maybe 9018.90.90. But it's a machine tool. HTS 8465.19.00 for \"other machine tools for working metal or other materials\". Probably 8465.19.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04747621,
+      "prompt_tokens": 661,
+      "prompt_time": 0.030097352,
+      "completion_tokens": 172,
+      "completion_time": 0.359898002,
+      "total_tokens": 833,
+      "total_time": 0.389995354,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3t405syehwvc4scprmb08y2",
+      "seed": 1976826020
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84651900",
+  "predicted_reason": "The product is a compact milling machine used for dental prosthesis manufacturing, classified as a machine tool for working metal or other materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360191",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e2c3d1cd-3cf9-431f-9ff6-8f9663decc92",
+    "object": "chat.completion",
+    "created": 1790756731,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.00\", \"reason\": \"Plastic bag made primarily of polyethylene (80% by weight) falls under heading 3923.21 for polyethylene bags and sacks.\"}",
+          "reasoning": "We need HTS for plastic bags, multi-layered, OPP, metallized PET, LDPE, 80% polyethylene. Likely heading 3923.21? 3923.21.00 is \"Plastic bags, sacks and similar packing containers, of polymers of ethylene\". Since 80% polyethylene, classification under 3923.21.00. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149348126,
+      "prompt_tokens": 251,
+      "prompt_time": 0.012462793,
+      "completion_tokens": 133,
+      "completion_time": 0.281920389,
+      "total_tokens": 384,
+      "total_time": 0.294383182,
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m3rppdsjefm9p21ykyhv3bnn",
+      "seed": 711774079
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39232100",
+  "predicted_reason": "Plastic bag made primarily of polyethylene (80% by weight) falls under heading 3923.21 for polyethylene bags and sacks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

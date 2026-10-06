@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357772",
+  "rulingDate": "2026-02-02T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-03ff967f-c46c-4363-9545-8414925995f1",
+    "object": "chat.completion",
+    "created": 1790607741,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6211.90.90\",\"reason\":\"All items are costume accessories (suspenders, bowtie, cap, eyeglass frames) made of textile or plastic, classified under 6211.90.90 \u2013 Other articles of apparel and clothing accessories, knitted or crocheted, not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for costume accessories: suspenders, bowtie, cap, eyeglass frames. Likely 6211.90.90? Actually 6211 is \"Other articles of apparel and clothing accessories, knitted or crocheted\". Suspenders are 6211.90.90? But bowtie maybe 6211.90.90. Eyeglass frames 6211.90.90? Might be 6211.90.90 for other. So code 6211.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.29223488,
+      "prompt_tokens": 309,
+      "prompt_time": 0.017727409,
+      "completion_tokens": 185,
+      "completion_time": 0.20037155,
+      "total_tokens": 494,
+      "total_time": 0.218098959,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d6de37e6be",
+    "x_groq": {
+      "id": "req_01m3m8km21e9588v7nsvqyqsqr",
+      "seed": 145146106
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62119090",
+  "predicted_reason": "All items are costume accessories (suspenders, bowtie, cap, eyeglass frames) made of textile or plastic, classified under 6211.90.90 \u2013 Other articles of apparel and clothing accessories, knitted or crocheted, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

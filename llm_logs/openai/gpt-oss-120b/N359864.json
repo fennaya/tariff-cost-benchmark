@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359864",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3502110000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-57bb2a26-988f-4176-959d-8e28d4e2239c",
+    "object": "chat.completion",
+    "created": 1790743765,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.10.90\", \"reason\": \"Classified under protein concentrates and textured protein products, as a spray\u2011dried egg white protein powder with >80% protein\"}",
+          "reasoning": "We need HTS for egg white protein powder, spray-dried, >80% protein. Likely heading 2309.90? Actually egg products: 0404 is \"Eggs, in shell, fresh\". 0405 is \"Eggs, not in shell\". 0406 is \"Egg yolks\". 0407 is \"Egg whites\". 0407.90 is \"Other\". But that's for fresh egg whites. Processed egg white powder likely under 2106.10? 2106.10 is \"Protein concentrates and textured protein products\". Subheading 2106.10.90 \"Other\". Could be 2106.10.90. Let's choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203984236,
+      "prompt_tokens": 345,
+      "prompt_time": 0.01441261,
+      "completion_tokens": 196,
+      "completion_time": 0.4094292,
+      "total_tokens": 541,
+      "total_time": 0.42384181,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3raaqzyedt8axrj9vw84j8m",
+      "seed": 576558882
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "21061090",
+  "predicted_reason": "Classified under protein concentrates and textured protein products, as a spray\u2011dried egg white protein powder with >80% protein",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

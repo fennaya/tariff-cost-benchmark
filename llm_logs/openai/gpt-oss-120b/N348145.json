@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N348145",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "6110303020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-174740fd-9627-4ea6-a07f-0785ee95ab6b",
+    "object": "chat.completion",
+    "created": 1790607024,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6105.99.10\", \"reason\": \"Women's knit sweater made primarily of polyamide (a synthetic fiber) classified under other knitted apparel for women/girls.\"}",
+          "reasoning": "We need HTS for women's knit sweater, 81% polyamide, 19% metallic. Likely under 6105.99.10? 6105.99.10 is \"Other knitted or crocheted apparel and clothing accessories, of other textile materials, women's or girls' sweaters, pullovers, etc.\" Actually 6105.99.10 is for \"Other knitted or crocheted apparel and clothing accessories, of other textile materials, women's or girls' sweaters, pullovers, ...\". So code 6105.99.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.102504437,
+      "prompt_tokens": 221,
+      "prompt_time": 0.011023118,
+      "completion_tokens": 167,
+      "completion_time": 0.361551214,
+      "total_tokens": 388,
+      "total_time": 0.372574332,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3m7xqr2ekxre464t5kq2npx",
+      "seed": 687481685
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61059910",
+  "predicted_reason": "Women's knit sweater made primarily of polyamide (a synthetic fiber) classified under other knitted apparel for women/girls.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

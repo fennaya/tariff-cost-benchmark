@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360004",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "9013101000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9c3f926b-10dc-4c5e-9e30-5756694b21d1",
+    "object": "chat.completion",
+    "created": 1790750808,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9005.19.00.00\",\n  \"reason\": \"The product is a non-weapon optical magnifier scope, classified under HTS heading 9005 for optical instruments, specifically subheading 9005.19 for other optical devices.\"\n}",
+          "reasoning": "We need HTS code for optical magnifier, not weapon. Likely 9005.19.00? 9005 covers spectacles, lenses, telescopes, microscopes, etc. 9005.19 is \"Other\" optical instruments. 9005.19.00 is \"Other\". So 9005.19.00. 10-digit: 9005.19.00.00? Actually HTSUS 10-digit includes 4-2-2-2-? format. For 9005.19.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205115986,
+      "prompt_tokens": 396,
+      "prompt_time": 0.047616743,
+      "completion_tokens": 189,
+      "completion_time": 0.396950484,
+      "total_tokens": 585,
+      "total_time": 0.444567227,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3rh1nqjehq8ssgjxra3d6hb",
+      "seed": 107164967
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9005190000",
+  "predicted_reason": "The product is a non-weapon optical magnifier scope, classified under HTS heading 9005 for optical instruments, specifically subheading 9005.19 for other optical devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

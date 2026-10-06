@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361289",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-48c6c460-216d-4daf-8aca-944176d8ad4e",
+    "object": "chat.completion",
+    "created": 1790695682,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6204.62.90\",\"reason\":\"Generic cotton apparel not knitted or crocheted, matching the described tattered jacket style.\"}",
+          "reasoning": "Need HTS code for garment? Description: two-piece flat collar, long sleeves, raw jagged cut edges, tattered appearance. Likely a garment, maybe a jacket? But no material. Could be \"tattered clothing\" maybe \"garments of cotton\" etc. Without material, choose generic: 6204.62.90? That's \"Other articles of apparel and clothing accessories, of cotton, not knitted or crocheted\". But tattered? Maybe 6204.62.90 is for \"other articles of apparel and clothing accessories, of cotton, not knitted or crocheted\". But tattered appearance maybe \"tattered clothing\" but still cotton. I'll pick 6204.62.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.438358174,
+      "prompt_tokens": 211,
+      "prompt_time": 0.012356089,
+      "completion_tokens": 187,
+      "completion_time": 0.1995113,
+      "total_tokens": 398,
+      "total_time": 0.211867389,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3cdd24b83b",
+    "x_groq": {
+      "id": "req_01m3pwfbmfebd9yy0rg27yfwrb",
+      "seed": 1616268722
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62046290",
+  "predicted_reason": "Generic cotton apparel not knitted or crocheted, matching the described tattered jacket style.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361005",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "8483405010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b5f37d48-e45e-401e-8c5e-7fdf2f845986",
+    "object": "chat.completion",
+    "created": 1790779445,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.00.00\", \"reason\": \"Industrial planetary gear reducer classified under gearboxes and speed changers, other than motor vehicle gearboxes (HTS 8483.40.00.00).\"}",
+          "reasoning": "We need HTS code for planetary gear reducer. Likely under 8483.40.00? Actually 8483.40.00 is \"Gearboxes and other speed changers, other than those of heading 8483.10\". 8483.10 is \"Gearboxes and other speed changers, for motor vehicles\". So planetary reducer for industrial use: 8483.40.00. Need 10-digit: 8483.40.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.379648661,
+      "prompt_tokens": 212,
+      "prompt_time": 0.016327367,
+      "completion_tokens": 164,
+      "completion_time": 0.353473396,
+      "total_tokens": 376,
+      "total_time": 0.369800763,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3scbk17e38skct6h5dbg7wa",
+      "seed": 2129286241
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483400000",
+  "predicted_reason": "Industrial planetary gear reducer classified under gearboxes and speed changers, other than motor vehicle gearboxes (HTS 8483.40.00.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

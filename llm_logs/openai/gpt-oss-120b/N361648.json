@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361648",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8409915085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-63597978-a8a6-4e8d-8639-a4ebae2e9eaa",
+    "object": "chat.completion",
+    "created": 1790800734,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.40.00.00\",\n  \"reason\": \"Timing chain guide assembly is a part of an internal combustion engine, classified under heading 8483 for parts of other engines.\"\n}",
+          "reasoning": "We need HTS code for automotive timing chain guide assembly. Likely under 8483? Actually parts of engines: 8483.90.90? Let's think: 8483.90.90 is \"Other parts and accessories of machines of heading 8481\". But timing chain guide is part of engine. Could be 8483.90.90. Or 8708.99.90 (parts of motor vehicles). But more specific: 8483.90.90 is for parts of engines? Heading 8483 is \"Parts of machines of heading 8481\". Heading 8481 is \"Taps, dies, molds, matrices and other tools\". Not correct.\n\nBetter: 8708.99.90 is \"Parts and accessories of motor vehicles, not elsewhere specified\". That seems plausible.\n\nBut there is also 8483.91 for \"parts of internal combustion engines\". Actually heading 8483 includes \"Parts of engines (including parts of internal combustion engines)\". Let's check: 8483.10 is \"Parts of turbojets\". 8483.20 is \"Parts of other aircraft\". 8483.30 is \"Parts of gas turbines\". 8483.40 is \"Parts of other engines\". Not sure.\n\nActually HTSUS 8483.40.00 is \"Parts of other engines\". Could include timing chain guide. So code 8483.40.00. Need 10 digits: 8483.40.00.00.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300048855,
+      "prompt_tokens": 231,
+      "prompt_time": 0.009162184,
+      "completion_tokens": 368,
+      "completion_time": 0.775444559,
+      "total_tokens": 599,
+      "total_time": 0.784606743,
+      "completion_tokens_details": {
+        "reasoning_tokens": 311
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3t0n96derb9zxbnndewkhmn",
+      "seed": 1258597228
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483400000",
+  "predicted_reason": "Timing chain guide assembly is a part of an internal combustion engine, classified under heading 8483 for parts of other engines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

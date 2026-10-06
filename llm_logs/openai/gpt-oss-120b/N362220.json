@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362220",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "4421999880",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-48546101-da6d-4045-be13-e56ac6d0bcea",
+    "object": "chat.completion",
+    "created": 1790820034,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.90.0010\", \"reason\": \"The kit is a wooden building frame (structural timber) not classified as doors, windows or dimensional lumber, falling under HTS heading 4412 for other wooden joinery and carpentry.\"}",
+          "reasoning": "We need HTS code for wooden building kits. Likely 4412? 4412.20? Actually HTS 4412.90 for other wood building frames? Let's think: 4412 is \"Other builders' joinery and carpentry, of wood\". 4412.10 is \"Doors, windows and their frames and thresholds\". 4412.90 is \"Other\". So structural timber frame kit likely 4412.90. 10-digit: 4412.90.0010? Need 10-digit. Probably 4412.90.0010 for \"Other wooden building frames, kits\". I'll answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.21975632,
+      "prompt_tokens": 265,
+      "prompt_time": 0.011655867,
+      "completion_tokens": 200,
+      "completion_time": 0.416973019,
+      "total_tokens": 465,
+      "total_time": 0.428628886,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3tk29hbex9byqbx4m9z9cj5",
+      "seed": 621862620
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4412900010",
+  "predicted_reason": "The kit is a wooden building frame (structural timber) not classified as doors, windows or dimensional lumber, falling under HTS heading 4412 for other wooden joinery and carpentry.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

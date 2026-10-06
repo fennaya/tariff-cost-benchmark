@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359659",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-86b862da-f58e-4f05-a062-5aa7fef7a4d1",
+    "object": "chat.completion",
+    "created": 1790904743,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8507.60.00\", \"reason\": \"The item is a small rechargeable lithium polymer (Li\u2011ion) battery, which falls under heading 8507.60.00 for lithium ion batteries.\"}",
+          "reasoning": "We need HTS for lithium polymer rechargeable battery, 3.7V, 25 mAh, small. Likely heading 8507.60.00? Actually 8507.60.00 is \"Lithium primary batteries\" maybe. Rechargeable are 8507.60.00? Check: 8507.60.00 - \"Lithium primary batteries\" vs 8507.60.00 includes \"Lithium primary batteries\". For rechargeable lithium batteries: 8507.60.00 also includes \"Lithium ion batteries\". Actually 8507.60.00 is \"Lithium primary batteries\". 8507.60.00 maybe not. 8507.60.00 is \"Lithium primary batteries\". For rechargeable lithium ion: 8507.60.00? Wait 8507.60.00 is \"Lithium primary batteries\". 8507.60.00 includes \"Lithium primary batteries\". For rechargeable: 8507.60.00? Might be 8507.60.00 also covers \"Lithium ion batteries\". Actually 8507.60.00 is \"Lithium primary batteries\". 8507.60.00 is for primary (non-rechargeable). Rechargeable lithium ion batteries are under 8507.60.00? I think 8507.60.00 covers \"Lithium ion batteries\". Let's assume 8507.60.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.303278615,
+      "prompt_tokens": 364,
+      "prompt_time": 0.020401899,
+      "completion_tokens": 356,
+      "completion_time": 0.750187103,
+      "total_tokens": 720,
+      "total_time": 0.770589002,
+      "completion_tokens_details": {
+        "reasoning_tokens": 298
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3x3vcf5ey38wqnw7a4970e0",
+      "seed": 1841190881
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85076000",
+  "predicted_reason": "The item is a small rechargeable lithium polymer (Li\u2011ion) battery, which falls under heading 8507.60.00 for lithium ion batteries.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

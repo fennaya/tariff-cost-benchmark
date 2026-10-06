@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363486",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-aba687da-8387-4018-ba68-39400fc21114",
+    "object": "chat.completion",
+    "created": 1790854943,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6104.63.00\", \"reason\": \"Classified as a women's knitted or crocheted dress (costume) made of man-made fibers, falling under heading 6104.63.00 for women's dresses of that material.\"}",
+          "reasoning": "Need HTS code for costume, women's dress, textile. Likely 6104.99.00? That's women's or girls' dresses, knitted or crocheted. Could be 6204.99.00 for not knitted. Assume not specified material; likely synthetic fiber. Use 6104.63.00 for man-made fibers? But single most applicable: 6104.63.00 (women's dresses, knitted, man-made fibers). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.30743166,
+      "prompt_tokens": 202,
+      "prompt_time": 0.039882897,
+      "completion_tokens": 160,
+      "completion_time": 0.341125149,
+      "total_tokens": 362,
+      "total_time": 0.381008046,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3vmbm1seg0v3fvvpy879806",
+      "seed": 1780365611
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61046300",
+  "predicted_reason": "Classified as a women's knitted or crocheted dress (costume) made of man-made fibers, falling under heading 6104.63.00 for women's dresses of that material.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

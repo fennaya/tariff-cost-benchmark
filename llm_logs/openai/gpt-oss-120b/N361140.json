@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361140",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "8703230190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c3d53887-f21b-47e1-a67f-a59b27ed647d",
+    "object": "chat.completion",
+    "created": 1790783367,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.21.00\", \"reason\": \"Used 3\u2011door off\u2011road passenger vehicle with a gasoline engine falls under HTS heading 8703 for motor cars designed for the transport of persons\"}",
+          "reasoning": "We need HTS for used passenger vehicle 4WD. Likely heading 8704.90.90? 8703 is motor cars, 8704 is motor vehicles for the transport of goods? Actually 8703 is motor cars for passengers. 8704 is motor vehicles for the transport of goods. But a 3-door off-road utility vehicle for transport of persons maybe 8703.21? Let's pick 8703.21.00 (vehicles with diesel? but spark ignition gasoline). 8703.21 is for gasoline? Actually 8703.21 is for gasoline engine. So code: 8703.21.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296592976,
+      "prompt_tokens": 262,
+      "prompt_time": 0.010551559,
+      "completion_tokens": 193,
+      "completion_time": 0.411142241,
+      "total_tokens": 455,
+      "total_time": 0.4216938,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m3sg39ebeb3tc1c8vs0denwn",
+      "seed": 2123210949
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87032100",
+  "predicted_reason": "Used 3\u2011door off\u2011road passenger vehicle with a gasoline engine falls under HTS heading 8703 for motor cars designed for the transport of persons",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

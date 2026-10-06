@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361410",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8207901500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d5eb57e1-d17b-4614-89f0-bf6294caa8b9",
+    "object": "chat.completion",
+    "created": 1790793554,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8205.51.00.00\",\n  \"reason\": \"Classified as a steel drill bit for metal work (electrical conduit), falling under heading 8205.51 for drill bits used on metal.\"\n}",
+          "reasoning": "We need HTS code for a drill bit with deburring file. Likely 8205.59.00? Actually drill bits for metal: 8205.51 (drill bits for metal). 8205.59 other. Since multifunctional bit with file, maybe 8205.99? Check: 8205.99 other hand tools. But drill bits are 8205.51 (for metal) 8205.59 (for other materials). It's steel bit for electrical contractors, likely for metal conduit. So 8205.51.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207505539,
+      "prompt_tokens": 275,
+      "prompt_time": 0.014092179,
+      "completion_tokens": 186,
+      "completion_time": 0.385621161,
+      "total_tokens": 461,
+      "total_time": 0.39971334,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3sst5k8ecx88yggksgbzw9m",
+      "seed": 198012480
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8205510000",
+  "predicted_reason": "Classified as a steel drill bit for metal work (electrical conduit), falling under heading 8205.51 for drill bits used on metal.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

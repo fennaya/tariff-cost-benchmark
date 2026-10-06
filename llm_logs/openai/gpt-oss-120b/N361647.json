@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361647",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8409915085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8e99d4f7-5afd-4bcb-9a02-96fd315d4d36",
+    "object": "chat.completion",
+    "created": 1790800499,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8483.80.10.00\",\n  \"reason\": \"Timing chain guide assemblies are classified as other parts of engines under heading 8483.80.\"\n}",
+          "reasoning": "Need to pick HTS code for timing chain guide assembly, automotive parts. Likely 8483.90.00? Actually parts of engines: 8483.90.00 - Parts of other machines. But automotive engine parts often 8708.99.90? That's for parts of motor vehicles. However specific: \"Timing chain guide\" is a part of engine, classified under 8483.90.00 (parts of other machines). But there is heading 8483 for \"Transmission shafts, cranks, camshafts, bearing housings and parts thereof, for engines\". Let's check: 8483.10 - Crankshafts, 8483.20 - Camshafts, 8483.30 - Connecting rods, 8483.40 - Pistons, 8483.50 - Valves, 8483.60 - Cylinder heads, 8483.70 - Engine blocks, 8483.80 - Parts of engines, other than those specified. Actually 8483.80 is \"Other parts of engines\". Might be 8483.80.10? Need 10-digit: 8483.80.10.00 maybe. Let's choose 8483.80.10.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213420065,
+      "prompt_tokens": 322,
+      "prompt_time": 0.081073403,
+      "completion_tokens": 308,
+      "completion_time": 0.647141083,
+      "total_tokens": 630,
+      "total_time": 0.728214486,
+      "completion_tokens_details": {
+        "reasoning_tokens": 257
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3t0e3xxe3v8yt1k02g8ph1d",
+      "seed": 1279675991
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8483801000",
+  "predicted_reason": "Timing chain guide assemblies are classified as other parts of engines under heading 8483.80.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

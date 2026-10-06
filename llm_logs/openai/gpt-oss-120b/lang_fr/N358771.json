@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358771",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3923900080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7304c7c4-c9a1-46ab-8815-acef01b85319",
+    "object": "chat.completion",
+    "created": 1790905682,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.90.0010\", \"reason\": \"Empty molded plastic lipstick container classified under heading 3924.90 for other plastic containers, specifically code 0010 for containers for cosmetics\"}",
+          "reasoning": "We need HTS for empty lipstick container made of plastic. Likely heading 3924.90.00? Actually plastic containers for cosmetics: 3924.90.00 \"Other articles of plastics\". More specific 3924.90.00 includes \"Other containers for cosmetics, etc.\" Could be 3924.90.00. 10-digit: 3924.90.0010? Need 10-digit US. Check: 3924.90.0010 is \"Other containers, of plastics, for cosmetics, etc.\" I think. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207719771,
+      "prompt_tokens": 243,
+      "prompt_time": 0.009298823,
+      "completion_tokens": 174,
+      "completion_time": 0.366052795,
+      "total_tokens": 417,
+      "total_time": 0.375351618,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3x4r1syepbvk0nc0jrdj3nw",
+      "seed": 1679022655
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924900010",
+  "predicted_reason": "Empty molded plastic lipstick container classified under heading 3924.90 for other plastic containers, specifically code 0010 for containers for cosmetics",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

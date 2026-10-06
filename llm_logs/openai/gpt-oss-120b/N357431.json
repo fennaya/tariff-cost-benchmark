@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357431",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "7306405040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2a34b366-adc3-45fe-a00b-0ad4f82d4c09",
+    "object": "chat.completion",
+    "created": 1790726199,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7304.31.00.00\",\n  \"reason\": \"Welded stainless steel pipe of circular cross\u2011section falls under heading 7304.31 for welded stainless steel tubes and pipes.\"\n}",
+          "reasoning": "Need HTS code for welded stainless steel pipe, circular, wall thickness >=1.65mm, nickel content 0.5-24%. Likely heading 7304? Actually stainless steel pipe under 7304.90? Let's recall: 7304.21 = seamless, 7304.22 = welded? Check: 7304.21 = seamless, 7304.22 = welded, of iron or steel, not alloy? For stainless steel, 7304.31? Wait: 7304.31 = welded tubes, pipes of stainless steel? Actually 7304.31 is \"tubes, pipes and hollow profiles, of stainless steel, welded, of circular cross-section\". Need subheading for wall thickness >= 0.5? Might be 7304.31.10? Let's approximate: 7304.31.00? HTSUS uses 6-digit headings then 2-digit subheadings then 4-digit further. For stainless steel welded pipe, 7304.31.00.00 maybe. Provide as \"7304.31.00.00\"."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.019171078,
+      "prompt_tokens": 229,
+      "prompt_time": 0.008701643,
+      "completion_tokens": 288,
+      "completion_time": 0.597667115,
+      "total_tokens": 517,
+      "total_time": 0.606368758,
+      "completion_tokens_details": {
+        "reasoning_tokens": 229
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3qsjn63ewn8gnqprk0f05xq",
+      "seed": 867402293
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7304310000",
+  "predicted_reason": "Welded stainless steel pipe of circular cross\u2011section falls under heading 7304.31 for welded stainless steel tubes and pipes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

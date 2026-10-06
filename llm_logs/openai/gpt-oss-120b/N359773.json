@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359773",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3918901000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-049f834d-b65f-429e-9543-7c1ec9bbdde0",
+    "object": "chat.completion",
+    "created": 1790735856,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3909.50.00.00\", \"reason\": \"Classified as sheets, rolls or other forms of polyurethane (a plastic) used as flooring, falling under heading 3909.50 for other plastics sheets, films and plates.\"}",
+          "reasoning": "We need HTS code for polyurethane sheet flooring. Likely 3909.10.00.00? That's plastics sheets, films, etc. Polyurethane floor covering maybe 3909.10.00.00 \"Polyethylene? No. Polyurethane sheets under 3909.20? Let's think: 3909.10 is \"Polyethylene\". 3909.20 is \"Polypropylene\". 3909.30 is \"Polyvinyl chloride\". 3909.40 is \"Polystyrene\". 3909.50 is \"Other plastics\". Polyurethane is \"other plastics\". So 3909.50.00.00. That seems right. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089571763,
+      "prompt_tokens": 216,
+      "prompt_time": 0.008676,
+      "completion_tokens": 207,
+      "completion_time": 0.44177623,
+      "total_tokens": 423,
+      "total_time": 0.45045223,
+      "completion_tokens_details": {
+        "reasoning_tokens": 142
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m3r2sca7etksc63rbvqg53ce",
+      "seed": 1887647790
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3909500000",
+  "predicted_reason": "Classified as sheets, rolls or other forms of polyurethane (a plastic) used as flooring, falling under heading 3909.50 for other plastics sheets, films and plates.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

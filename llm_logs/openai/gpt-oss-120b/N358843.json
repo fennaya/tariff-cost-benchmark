@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358843",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "6106202010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-048e095f-0622-49fc-b525-140f40773fb3",
+    "object": "chat.completion",
+    "created": 1790726896,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6206.30.30.00\", \"reason\": \"The item is a women's blouse made of polyester/elastane knit fabric, which falls under heading 6206.30 for women's or girls' blouses, knitted or crocheted, of man-made fibers.\"}",
+          "reasoning": "We need HTS for women's blouse, polyester/elastane knit. Likely heading 6206.30? Let's see: 6206.30.30? Actually 6206.30.30 is women's or girls' blouses, knitted or crocheted, of man-made fibers. 10-digit: 6206.30.30.00? Check: 6206.30.30.00 is \"Women's or girls' blouses, knitted or crocheted, of man-made fibers\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206769879,
+      "prompt_tokens": 300,
+      "prompt_time": 0.012240242,
+      "completion_tokens": 179,
+      "completion_time": 0.372942118,
+      "total_tokens": 479,
+      "total_time": 0.38518236,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qt7ymbefxaw6x15bv0nd92",
+      "seed": 272936627
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6206303000",
+  "predicted_reason": "The item is a women's blouse made of polyester/elastane knit fabric, which falls under heading 6206.30 for women's or girls' blouses, knitted or crocheted, of man-made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358955",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "9023000000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e8e92ee8-a7db-4f3d-b0f9-08c197052807",
+    "object": "chat.completion",
+    "created": 1790726946,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9706.00.00\", \"reason\": \"A custom-made, detailed physical model is classified as a work of art/collector's piece under heading 9706.\"}",
+          "reasoning": "We need HTS code for custom-made topographical model, 3D printed plastic, wooden frame. Likely under heading 9706 (Works of art, collectors' pieces). Or 9703 (Original sculptures). But it's a model, not art? Could be 9706.10.00 (Replicas and reproductions of works of art). However it's a custom-made model, not a replica. Could be 9706.00.00? Actually 9706 covers \"Works of art, collectors' pieces and antiques\". Subheading 9706.00.00 is \"Works of art, collectors' pieces and antiques, not elsewhere specified\". Might be 9706.00.00.\n\nAlternatively could be 6810 (Statuary, etc). But it's plastic and wood, not stone.\n\nProbably 9706.00.00.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.091632995,
+      "prompt_tokens": 285,
+      "prompt_time": 0.012482713,
+      "completion_tokens": 231,
+      "completion_time": 0.476042612,
+      "total_tokens": 516,
+      "total_time": 0.488525325,
+      "completion_tokens_details": {
+        "reasoning_tokens": 180
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m3qt9es0e8msdkrdgny921cd",
+      "seed": 878144449
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "97060000",
+  "predicted_reason": "A custom-made, detailed physical model is classified as a work of art/collector's piece under heading 9706.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

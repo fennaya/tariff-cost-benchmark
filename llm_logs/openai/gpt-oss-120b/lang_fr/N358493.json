@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358493",
+  "rulingDate": "2026-03-05T00:00:00",
+  "true_code": "2106909987",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6374f23c-c0d4-4fb9-88a9-4cb0a9640ddb",
+    "object": "chat.completion",
+    "created": 1790908362,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0902.30.00\", \"reason\": \"Classified as a prepared tea product containing red ginseng roots, which falls under the heading for other non\u2011fermented tea not flavored\"}",
+          "reasoning": "We need HTS code for ginseng tea mix. Likely under 0902? Tea, herbal infusions. 0902.30.00? Let's see: 0902 is Tea (not fermented). 0902.30 is \"Other tea, not flavored\". But this is a mixture with ginseng root, glucose, lactose. Could be \"herbal tea\" 2106? Actually 2106.90 is \"Other food preparations not elsewhere specified\". But tea as beverage maybe 0902.30. However it's a prepared tea product in sachets. Likely 2106.90.99? Let's pick 0902.30.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20552769,
+      "prompt_tokens": 350,
+      "prompt_time": 0.017170593,
+      "completion_tokens": 193,
+      "completion_time": 0.404813864,
+      "total_tokens": 543,
+      "total_time": 0.421984457,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3x79tnteyhbnh4na5rd0qpp",
+      "seed": 841109183
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "09023000",
+  "predicted_reason": "Classified as a prepared tea product containing red ginseng roots, which falls under the heading for other non\u2011fermented tea not flavored",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

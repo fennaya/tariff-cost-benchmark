@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362278",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8708806590",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0625e129-c3ad-47a8-ad36-b7ac230beff1",
+    "object": "chat.completion",
+    "created": 1790823356,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90.00\", \"reason\": \"Ball joints are classified as other parts and accessories of motor vehicles under heading 8708.99.90\"}",
+          "reasoning": "Need HTS for automotive ball joints. Likely heading 8708.99.90? Actually ball joints are parts of suspension, classified under 8708.99.90 (Other parts and accessories of motor vehicles). Check: 8708.99.90 is \"Other parts and accessories of motor vehicles, n.e.s.\" Ball joints maybe 8708.99.90. 10-digit: 8708.99.90.00. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195911767,
+      "prompt_tokens": 588,
+      "prompt_time": 0.028246414,
+      "completion_tokens": 147,
+      "completion_time": 0.317532446,
+      "total_tokens": 735,
+      "total_time": 0.34577886,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3tp7nxpebn997v7sn5t9tg8",
+      "seed": 2072878632
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708999000",
+  "predicted_reason": "Ball joints are classified as other parts and accessories of motor vehicles under heading 8708.99.90",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

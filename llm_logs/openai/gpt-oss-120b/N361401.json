@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361401",
+  "rulingDate": "2026-05-22T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f7dea29a-5644-46e2-8702-3c0e5abe9db3",
+    "object": "chat.completion",
+    "created": 1790792613,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.62.30\", \"reason\": \"The primary item is a pull\u2011on pant, classified under women's or girls' trousers of cotton, knitted or crocheted (HTS 6204.62.30).\"}",
+          "reasoning": "Need to pick HTS code. Pull-on pants likely apparel: women's trousers? Could be 6204.62? 6204.62.30? That's women's or girls' trousers, knitted or crocheted, of cotton? Not enough material. Could be generic \"pants\" = 6203 for men's or boys? Pull-on could be women's? Hard. Scarf rectangular disco-style likely \"scarves\" under 6214.90. That's other made-up? 6214.90.90? Combine? Need single most applicable code for the whole product? Might choose the higher duty item? Probably classify as \"pants\" main. Use 6204.62.30 (women's or girls' trousers, of cotton, knitted). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088161718,
+      "prompt_tokens": 163,
+      "prompt_time": 0.006937247,
+      "completion_tokens": 218,
+      "completion_time": 0.459701767,
+      "total_tokens": 381,
+      "total_time": 0.466639014,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m3srxek9e62bdyn01bfr39er",
+      "seed": 1772626966
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62046230",
+  "predicted_reason": "The primary item is a pull\u2011on pant, classified under women's or girls' trousers of cotton, knitted or crocheted (HTS 6204.62.30).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

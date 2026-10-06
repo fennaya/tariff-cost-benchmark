@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362917",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "8544700000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-101ac893-e6ef-4297-9f4c-bb711f0f24d0",
+    "object": "chat.completion",
+    "created": 1790842477,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.70.00\",\n  \"reason\": \"Cable sets used as components of semiconductor lithography equipment are classified under heading 8544 as parts of electrical apparatus for telecommunications and data processing.\"\n}",
+          "reasoning": "Need HTS for cable sets for lithography equipment. Likely under 8544.42.00? That's \"Electrical machines and apparatus, having individual functions, not elsewhere specified, for telecommunications\". But cables maybe 8544.70? Actually optical fiber cables 8544.70.00. Could be 8544.70.00 \"Other electrical apparatus for switching or protecting\". Hmm. Cable sets as part of lithography system maybe 8544.42.00 \"Printed circuits\". Not.\n\nMaybe classify as \"8544.70.00 - Parts of machines of heading 8544\". But cable set is part of lithography machine, likely heading 8544.70.00 \"Other\". Use 8544.70.00.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.151601823,
+      "prompt_tokens": 359,
+      "prompt_time": 0.016747552,
+      "completion_tokens": 216,
+      "completion_time": 0.457181824,
+      "total_tokens": 575,
+      "total_time": 0.473929376,
+      "completion_tokens_details": {
+        "reasoning_tokens": 158
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1d982b31b2",
+    "x_groq": {
+      "id": "req_01m3v8f5wdenvta92zxhsy8nks",
+      "seed": 1028168263
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85447000",
+  "predicted_reason": "Cable sets used as components of semiconductor lithography equipment are classified under heading 8544 as parts of electrical apparatus for telecommunications and data processing.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

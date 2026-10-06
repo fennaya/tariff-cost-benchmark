@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359366",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7318220000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-b2a5e7ee-213d-4aba-a6a2-72f3f3ad3253",
+    "object": "chat.completion",
+    "created": 1790905540,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90\",\"reason\":\"Flat steel screw falls under 'Other' screws, bolts, etc., in chapter 73.\"}",
+          "reasoning": "Need HTS code for flat steel screw. Likely 7308.90.90? Actually screws, bolts, etc. 7308.90.90 is \"Other\". Flat head screw? 7308.90.90. So code 7308.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194808523,
+      "prompt_tokens": 282,
+      "prompt_time": 0.017165944,
+      "completion_tokens": 103,
+      "completion_time": 0.105626911,
+      "total_tokens": 385,
+      "total_time": 0.122792855,
+      "completion_tokens_details": {
+        "reasoning_tokens": 60
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_24bfb4a850",
+    "x_groq": {
+      "id": "req_01m3x4kqtqe4cr20znx5dryxj1",
+      "seed": 1005525976
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73089090",
+  "predicted_reason": "Flat steel screw falls under 'Other' screws, bolts, etc., in chapter 73.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

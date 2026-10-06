@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361972",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "8467290090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d5e44cf6-3fef-49d5-95f3-95cee79e5b6a",
+    "object": "chat.completion",
+    "created": 1790811715,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8424.99.00\",\n  \"reason\": \"Classified as other garden machinery (walk\u2011behind power head) not elsewhere specified in the HTS.\"\n}",
+          "reasoning": "We need HTS code for walk-behind power head, lithium-ion, 56V, no battery. Likely classified under \"Electric motors and generators\" or \"Power tools\". Could be \"Electric motor for garden equipment\". Possibly 8501.52? 8501.52 is \"Electric motors of an output not exceeding 750 W\". Need power rating unknown. Could be >750W. Another: 8503.90 \"Parts of electric motors\". But it's a motor assembly with chassis, handles, etc. Might be \"Other machines and mechanical appliances having individual functions, not specified elsewhere\" 8479.89? However garden power heads maybe under 8425? Actually \"Power-driven lawn mowers\" etc 8424. But this is just power head, not mower. Could be \"Other garden machinery, not elsewhere specified\" 8424.99? Let's pick 8424.99.00 \"Other garden machinery, not elsewhere specified\". Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221018995,
+      "prompt_tokens": 325,
+      "prompt_time": 0.01709719,
+      "completion_tokens": 252,
+      "completion_time": 0.537861095,
+      "total_tokens": 577,
+      "total_time": 0.554958285,
+      "completion_tokens_details": {
+        "reasoning_tokens": 201
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3tb4d4tewdry8mmjgxt1y09",
+      "seed": 1476483705
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84249900",
+  "predicted_reason": "Classified as other garden machinery (walk\u2011behind power head) not elsewhere specified in the HTS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

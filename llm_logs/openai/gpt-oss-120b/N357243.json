@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357243",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "2517490000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e48faddd-3a5a-497e-8b50-8d014879eb1f",
+    "object": "chat.completion",
+    "created": 1790726013,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2505.00.00\",\n  \"reason\": \"Crushed, milled and sieved igneous rocks (basalt, anorthosite, peridotite) used as a simulant are classified under HTS Chapter 25 heading 2505 for crushed or powdered natural stone and volcanic rocks.\"\n}",
+          "reasoning": "Need HTS for natural stone, crushed, etc. Likely 2505.00.00? 2505 covers \"Granite, basalt, pumice, etc., crushed stone, etc.\" Specifically 2505.00.00 is \"Granite, basalt, pumice, and other volcanic rocks, crushed, powdered or in the form of agglomerates\". Since simulant is crushed igneous rock mixture. So 2505.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205784558,
+      "prompt_tokens": 358,
+      "prompt_time": 0.016744248,
+      "completion_tokens": 181,
+      "completion_time": 0.375530129,
+      "total_tokens": 539,
+      "total_time": 0.392274377,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3qsczm2emaa2kj2n3mwnn5c",
+      "seed": 1331125800
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "25050000",
+  "predicted_reason": "Crushed, milled and sieved igneous rocks (basalt, anorthosite, peridotite) used as a simulant are classified under HTS Chapter 25 heading 2505 for crushed or powdered natural stone and volcanic rocks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

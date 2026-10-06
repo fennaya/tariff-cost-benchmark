@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361405",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9403200050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-47553dd6-2242-4719-81e4-28776e8bbc2f",
+    "object": "chat.completion",
+    "created": 1790793342,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.00\",\n  \"reason\": \"The product is a metal (steel) tool chest/cabinet classified as metal furniture under heading 9403.\"\n}",
+          "reasoning": "We need HTS for steel tool chest. Likely 7324.90.00? Actually steel furniture: 9403.20.00 (metal furniture). Tool chests maybe 7324.90.00 (other articles of iron or steel). But furniture of metal: 9403.20.00 \"Metal furniture\". So choose 9403.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.092441322,
+      "prompt_tokens": 408,
+      "prompt_time": 0.086377334,
+      "completion_tokens": 133,
+      "completion_time": 0.281860861,
+      "total_tokens": 541,
+      "total_time": 0.368238195,
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69dbc96c74",
+    "x_groq": {
+      "id": "req_01m3sskq98ef9vjz113ve9qkmt",
+      "seed": 2090787862
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94032000",
+  "predicted_reason": "The product is a metal (steel) tool chest/cabinet classified as metal furniture under heading 9403.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

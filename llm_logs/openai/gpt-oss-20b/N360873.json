@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360873",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "3004390055",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-b2cb8442-9997-43f4-adc4-eea4c28494aa",
+    "object": "chat.completion",
+    "created": 1790684930,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90 00\",\"reason\":\"Testosterone gel is a hormone preparation, classified under 3004.90.90 for other hormone preparations.\"}",
+          "reasoning": "Need HTS code for testosterone gel. Likely 3004.90.90? Actually 3004 is \"Hormones, other than those of the endocrine system, and their preparations\". Testosterone is hormone. 3004.90.90 is \"Other\". 10-digit: 3004.90.90XX? Need 10-digit: 3004.90.90 00? Actually 10-digit: 3004.90.90 00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150261029,
+      "prompt_tokens": 172,
+      "prompt_time": 0.011717539,
+      "completion_tokens": 148,
+      "completion_time": 0.161422714,
+      "total_tokens": 320,
+      "total_time": 0.173140253,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_976a85d17a",
+    "x_groq": {
+      "id": "req_01m3pj7889e17txc50dz7c0twp",
+      "seed": 1805769671
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909000",
+  "predicted_reason": "Testosterone gel is a hormone preparation, classified under 3004.90.90 for other hormone preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

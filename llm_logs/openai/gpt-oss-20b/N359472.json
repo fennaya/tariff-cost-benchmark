@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359472",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8530900000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-b3e54352-5ec8-4078-80bd-2bc357ff879c",
+    "object": "chat.completion",
+    "created": 1790633729,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8536.90.90.00\",\"reason\":\"It is an electrical traffic signal device with LEDs, fitting the HTS 8536.90.90 category for other electrical apparatus for traffic signals.\"}",
+          "reasoning": "Need HTS code for pedestrian crosswalk marker with LEDs. Likely 8536.90.90? Actually 8536.90.90 is \"Other electrical apparatus for switching, controlling or protecting electrical circuits\". But LED lighting fixtures? 8536.90.90 covers other electrical apparatus. But for traffic signals? 8536.90.90 includes traffic signals. 8536.90.90 is \"Other electrical apparatus for switching, controlling or protecting electrical circuits, including traffic signals\". So use 8536.90.90. Format 10-digit: 8536.90.90? Need 10 digits: 8536.90.90? Actually 10-digit: 8536.90.90? That's 8 digits. Need 10: 8536.90.90? Wait HTS 10-digit: 8536.90.90? maybe 8536.90.90? Actually 10-digit: 8536.90.90? The last two digits are 90? So 8536.90.90? That's 8. But 10-digit includes 2 more digits for US-specific. So 8536.90.90?00? Let's output 8536.90.90?00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149636394,
+      "prompt_tokens": 317,
+      "prompt_time": 0.015402585,
+      "completion_tokens": 319,
+      "completion_time": 0.387595585,
+      "total_tokens": 636,
+      "total_time": 0.40299817,
+      "completion_tokens_details": {
+        "reasoning_tokens": 263
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_2b688e7cc3",
+    "x_groq": {
+      "id": "req_01m3n1cpn6ev3a5078dxxjhf88",
+      "seed": 557464895
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8536909000",
+  "predicted_reason": "It is an electrical traffic signal device with LEDs, fitting the HTS 8536.90.90 category for other electrical apparatus for traffic signals.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

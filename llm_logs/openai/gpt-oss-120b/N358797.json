@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358797",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8703900100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-dca648e7-4c18-4cd0-84d6-05bda87cc79c",
+    "object": "chat.completion",
+    "created": 1790726883,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8703.24.00.00\",\n  \"reason\": \"Classified as a motor vehicle with only an electric motor, speed exceeding 25\u202fkm/h, not intended for public road use.\"\n}",
+          "reasoning": "We need HTS for low speed electric vehicle, not for road. Likely 8703.23.00.00? 8703.23 is \"Motor vehicles with only electric motor for propulsion, other than those of heading 8702, speed not exceeding 25 km/h\". Actually 8703.23.00.00 is \"Motor vehicles with only electric motor for propulsion, other than those of heading 8702, speed not exceeding 25 km/h\". 25 km/h ~15.5 mph, but ours 19 mph >25 km/h? 19 mph =30.6 km/h, exceeds 25. Then maybe 8703.24 \"speed exceeding 25 km/h\". 8703.24.00.00 is \"Motor vehicles with only electric motor for propulsion, other than those of heading 8702, speed exceeding 25 km/h\". But low speed vehicles maybe 8703.90? Actually 8703.90 is \"Other motor vehicles\". But need specific. Likely 8703.24.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.090319824,
+      "prompt_tokens": 440,
+      "prompt_time": 0.020485788,
+      "completion_tokens": 284,
+      "completion_time": 0.592681131,
+      "total_tokens": 724,
+      "total_time": 0.613166919,
+      "completion_tokens_details": {
+        "reasoning_tokens": 225
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3qt7h3jet8a4adkp88b0fnr",
+      "seed": 1586227334
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703240000",
+  "predicted_reason": "Classified as a motor vehicle with only an electric motor, speed exceeding 25\u202fkm/h, not intended for public road use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361298",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5509530030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f630f5f3-601b-41ee-bb55-22cc769a5bc8",
+    "object": "chat.completion",
+    "created": 1790788644,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"5402.93.00\",\n  \"reason\": \"Blended yarn of staple cotton and polyester fibers (\u224852% polyester) classified under heading 5402 for man\u2011made fiber yarns, subheading for blends containing 50% or more polyester.\"\n}",
+          "reasoning": "We need HTS for blended cotton/polyester yarn, not textured. Likely heading 5202? Actually 5202 is cotton yarn; 5402 is man-made fibers yarn; 5407 is synthetic filament yarn; 5408 is other. For blends, classification under 5402? Wait 5402 is \"Man-made filaments; staple fibers\". Yarn of man-made fibers. But blended cotton/polyester yarn is under 5402? Actually 5402 covers \"Man-made filaments; staple fibers; yarn of man-made fibers\". For blends of cotton and synthetic, I think 5402. However 5202 is \"Cotton yarn\". Since >50% polyester, it's primarily synthetic, so classify under 5402. Need specific subheading: 5402.91? Let's check: 5402.91 - \"Yarn of man-made fibers, not put up for retail sale, containing 85% or more of polyester or polyamide\". Not sure. Actually 5402.91 is \"Yarn of man-made fibers, not put up for retail sale, containing 85% or more of polyester or polyamide\". Our blend is 51.7% polyester, so not 85%. Then 5402.92 maybe \"containing 70% or more of polyester\". 5402.93 \"containing 50% or more of polyester\". Need exact. I think 5402.93 is \"Yarn of man-made fibers, not put up for retail sale, containing 50% or more of polyester\". So choose 5402.93. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.225037779,
+      "prompt_tokens": 407,
+      "prompt_time": 0.033689047,
+      "completion_tokens": 404,
+      "completion_time": 0.854878454,
+      "total_tokens": 811,
+      "total_time": 0.888567501,
+      "completion_tokens_details": {
+        "reasoning_tokens": 333
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3sn4am4em49r0fc7zbcqsbg",
+      "seed": 1544915446
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "54029300",
+  "predicted_reason": "Blended yarn of staple cotton and polyester fibers (\u224852% polyester) classified under heading 5402 for man\u2011made fiber yarns, subheading for blends containing 50% or more polyester.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

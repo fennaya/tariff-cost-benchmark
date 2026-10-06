@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361312",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-49cdb980-7cf4-4511-9747-fd5e3ccc33de",
+    "object": "chat.completion",
+    "created": 1790789141,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6203.44.90.00\", \"reason\": \"The product is a vest (waistcoat) with raw armholes and non-functional buttons, classifiable as a men's or boys' waistcoat of man\u2011made fibers.\"}",
+          "reasoning": "Need to guess HTS for a vest, likely apparel. Raw unfinished armholes, vest with non-functional buttons. Likely \"men's or women's vest, knitted or crocheted, not elsewhere specified\". Could be 6204.62? Let's see: 6204 = women's or girls' suits, etc. Actually 6204 is women's or girls' suits, etc. For men's vest: 6203 is men's or boys' suits. Vest is \"vests\" under 6203.44? Check: 6203.42 = men's or boys' waistcoats, knitted or crocheted, of cotton. 6203.44 = of man-made fibers. 6203.49 = of other textile materials. Need 10-digit: e.g., 6203.44.90.00? Let's pick generic: 6203.44.90.00 (men's or boys' waistcoats, of man-made fibers, other). Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.467560297,
+      "prompt_tokens": 170,
+      "prompt_time": 0.008836389,
+      "completion_tokens": 266,
+      "completion_time": 0.569355595,
+      "total_tokens": 436,
+      "total_time": 0.578191984,
+      "completion_tokens_details": {
+        "reasoning_tokens": 202
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3snkgb6e5ct43gjp5e8tmgh",
+      "seed": 594732247
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6203449000",
+  "predicted_reason": "The product is a vest (waistcoat) with raw armholes and non-functional buttons, classifiable as a men's or boys' waistcoat of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

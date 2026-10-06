@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363520",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "4410000060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b9722009-c3dc-4c46-b5f8-8bd82e4e373a",
+    "object": "chat.completion",
+    "created": 1790856030,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.99.90\", \"reason\": \"The drilled particle board block is a wood panel made of agglomerated wood particles, classified under heading 4412 for wood panels and the subheading for other such items.\"}",
+          "reasoning": "We need HTS code for wood particle board block used as pallet component. Likely under 4412? 4412.99.90? Let's think: 4412 is \"Plywood, veneered panels and the like; assembled parquet floors\". Not. Particle board is 4412? Actually particle board is 4412.90? Wait: 4412 covers \"Plywood, veneered panels and the like; assembled parquet floors\". Particle board is 4412? No, particle board is 4412? Might be 4412.90. But pallets are under 4412? Another heading 4412.99 \"Other\". Could be 4412.99.90 \"Other\". Or 4412.99.90 is \"Other\". However pallets themselves are 4412.99.90? Actually pallets are often classified under 4412.99.90 \"Other wood panels\". Another possibility: 4412.99.90 is correct.\n\nThus provide code \"4412.99.90\"."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 4.482878843,
+      "prompt_tokens": 250,
+      "prompt_time": 0.009631284,
+      "completion_tokens": 275,
+      "completion_time": 0.583155412,
+      "total_tokens": 525,
+      "total_time": 0.592786696,
+      "completion_tokens_details": {
+        "reasoning_tokens": 213
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3vncn6aezrava5bpvgne7j3",
+      "seed": 1024835746
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "44129990",
+  "predicted_reason": "The drilled particle board block is a wood panel made of agglomerated wood particles, classified under heading 4412 for wood panels and the subheading for other such items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

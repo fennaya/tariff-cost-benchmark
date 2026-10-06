@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359842",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "8479200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-07ad8ae8-00af-4917-a721-7fc5c93ed1b9",
+    "object": "chat.completion",
+    "created": 1790740544,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8422.31.00\",\n  \"reason\": \"The product is an oilseed expeller (mechanical screw press) used for extracting vegetable oils, classified under HTSUS heading 8422.31 for oilseed processing machines.\"\n}",
+          "reasoning": "Need HTS code for oil expeller machine. Likely 8422.31.00? Check: 8422.31 - Oilseed processing machines. Actually 8422.31.00 is \"Oilseed processing machines, other than those of heading 8422.30\". Wait 8422.30 is \"Machinery for making oil or fat by other processes\". Let's recall: 8422.30.00 = \"Machinery for making oil or fat, other than by pressing\". Pressing is 8422.31? Actually 8422.31 is \"Oilseed processing machines, other than those of heading 8422.30\". Might be 8422.31.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197309416,
+      "prompt_tokens": 224,
+      "prompt_time": 0.009459151,
+      "completion_tokens": 216,
+      "completion_time": 0.45311393,
+      "total_tokens": 440,
+      "total_time": 0.462573081,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m3r78dxvewjtdqztqzxpv4kr",
+      "seed": 800075424
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84223100",
+  "predicted_reason": "The product is an oilseed expeller (mechanical screw press) used for extracting vegetable oils, classified under HTSUS heading 8422.31 for oilseed processing machines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

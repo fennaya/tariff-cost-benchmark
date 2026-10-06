@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359212",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "8504409510",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c70beacb-fdfa-4b03-bd04-d8e000f739bb",
+    "object": "chat.completion",
+    "created": 1790904644,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8504.40.30\", \"reason\": \"It is a static AC\u2011DC power converter (adapter) with output below 50\u202fW, classified under heading 8504.40 for power supplies, subheading for units \u2264100\u202fW.\"}",
+          "reasoning": "We need HTS code for AC adapter transformer <50W. Likely 8504.40.95? Let's think: 8504.40 - Static converters, power supplies. Subheading 8504.40.95 \"Other\". 8504.40.30 is for 100W or less? Actually 8504.40.30 is \"Other, 100 W or less\". Need check. 8504.40.95 is \"Other\". Might be 8504.40.30 for 100W or less. Use 8504.40.30. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048015917,
+      "prompt_tokens": 302,
+      "prompt_time": 0.012459308,
+      "completion_tokens": 194,
+      "completion_time": 0.403823538,
+      "total_tokens": 496,
+      "total_time": 0.416282846,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3x3rctee1js42gpapea7yvn",
+      "seed": 1670375434
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85044030",
+  "predicted_reason": "It is a static AC\u2011DC power converter (adapter) with output below 50\u202fW, classified under heading 8504.40 for power supplies, subheading for units \u2264100\u202fW.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

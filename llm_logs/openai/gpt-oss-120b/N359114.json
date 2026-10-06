@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359114",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "6505004090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-55b0b750-c3de-4a31-bed5-a6ec1f8f5bfe",
+    "object": "chat.completion",
+    "created": 1790727078,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6505.00.10\", \"reason\": \"The sauna hat is a felt head covering made of 100% merino wool, classifiable under heading 6505 for headgear of textile materials, specifically subheading 6505.00.10 for wool.\"}",
+          "reasoning": "We need HTS code for felt hat, wool, head covering. Likely 6205.20.00? 6205 is hats and caps. 6205.20 is of wool. 6205.20.00 is \"Of wool, knitted or crocheted\"? Wait 6205 covers hats and caps, knitted or crocheted. Felt is nonwoven, maybe 6301? 6301 is \"Other made-up articles, including dress patterns\". But hats of felt maybe 6505? 6505 is \"Headgear, other than hats, of textile materials\". Actually 6505.00 covers headgear of textile materials, not knitted. Felt hat maybe 6505.00.10? Let's check: 6505.00.10 is \"Of wool\". So HTS 6505.00.10. That seems right. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018585546,
+      "prompt_tokens": 223,
+      "prompt_time": 0.008489703,
+      "completion_tokens": 253,
+      "completion_time": 0.535781845,
+      "total_tokens": 476,
+      "total_time": 0.544271548,
+      "completion_tokens_details": {
+        "reasoning_tokens": 182
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3qtdgasenwts5tdscxgadbw",
+      "seed": 850912813
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "65050010",
+  "predicted_reason": "The sauna hat is a felt head covering made of 100% merino wool, classifiable under heading 6505 for headgear of textile materials, specifically subheading 6505.00.10 for wool.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

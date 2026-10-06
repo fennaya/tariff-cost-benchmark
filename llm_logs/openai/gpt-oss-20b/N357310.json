@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357310",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d8d10c63-be53-4d9c-bc8e-3b7c1be661f9",
+    "object": "chat.completion",
+    "created": 1790607401,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3304.90.90.00\",\"reason\":\"Both products are cosmetic creams for skin care, fitting the general category of other cosmetics and toilet preparations.\"}",
+          "reasoning": "Need HTS code for cosmetic creams. Likely 3304.90.90? Actually cosmetics: 3304.90.90 is \"Other cosmetics and toilet preparations\". For eye cream maybe 3304.90.90. But 10-digit: 3304.90.90XX? 3304.90.90.00? Use 3304.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203338372,
+      "prompt_tokens": 239,
+      "prompt_time": 0.011595886,
+      "completion_tokens": 130,
+      "completion_time": 0.132435878,
+      "total_tokens": 369,
+      "total_time": 0.144031764,
+      "completion_tokens_details": {
+        "reasoning_tokens": 84
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3m897tceq19b8wqnjzvtyzn",
+      "seed": 558241939
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304909000",
+  "predicted_reason": "Both products are cosmetic creams for skin care, fitting the general category of other cosmetics and toilet preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

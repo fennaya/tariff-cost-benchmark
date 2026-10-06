@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360489",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "3210000000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c8c1afba-27d6-4816-b964-e643235fba30",
+    "object": "chat.completion",
+    "created": 1790672925,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3205.90.90.00\",\"reason\":\"It is a natural mineral-based lime wash paint, classified as other paints, lacquers, varnishes, enamels and similar coatings.\"}",
+          "reasoning": "Need HTS code for lime wash paint, natural mineral-based, no synthetic resins. Likely 3205.90.90? Actually paint and coatings: 3205.90.90 is \"Other paints, lacquers, varnishes, enamels and similar coatings, whether or not containing pigments\". But lime wash is a paint. 3205.90.90 includes \"Other paints, lacquers, varnishes, enamels and similar coatings, whether or not containing pigments\". Might be 3205.90.90. But 3205.90.90 is 10-digit? 3205.90.90 is 8-digit. Need 10-digit: 3205.90.90.00? Actually HTS 10-digit: 3205.90.90.00. So output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.042671982,
+      "prompt_tokens": 349,
+      "prompt_time": 0.026771209,
+      "completion_tokens": 228,
+      "completion_time": 0.283144249,
+      "total_tokens": 577,
+      "total_time": 0.309915458,
+      "completion_tokens_details": {
+        "reasoning_tokens": 174
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3p6rws8e6ns0q7kay583m6j",
+      "seed": 282133559
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3205909000",
+  "predicted_reason": "It is a natural mineral-based lime wash paint, classified as other paints, lacquers, varnishes, enamels and similar coatings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

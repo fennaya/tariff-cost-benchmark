@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N354811",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-bca26148-eab4-4cea-aec3-e4923529547a",
+    "object": "chat.completion",
+    "created": 1790606871,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6801.90.90.00\",\"reason\":\"The product is a natural granite stone used for countertops, fitting the HTSUS heading 6801.90.90 for other natural stone.\"}",
+          "reasoning": "Need HTS code for granite stone used as countertop. Likely 6801.90.90? Actually 6801 is \"Granite, other natural stone\". 6801.90 is \"Other\". 6801.90.90 is \"Other\". So 6801.90.90. Need 10-digit: 6801.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.139859563,
+      "prompt_tokens": 339,
+      "prompt_time": 0.019373722,
+      "completion_tokens": 137,
+      "completion_time": 0.160830109,
+      "total_tokens": 476,
+      "total_time": 0.180203831,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_34cb00738d",
+    "x_groq": {
+      "id": "req_01m3m7s2eyeks9bgmrhs4pb9be",
+      "seed": 1664195018
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6801909000",
+  "predicted_reason": "The product is a natural granite stone used for countertops, fitting the HTSUS heading 6801.90.90 for other natural stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

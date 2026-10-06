@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359024",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "8471609050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4d7cab1b-588d-4bf0-abaf-4ca40109154b",
+    "object": "chat.completion",
+    "created": 1790727005,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8471.80.90\",\n  \"reason\": \"The device is an electronic input device (smart pen) with a PCBA, Bluetooth and memory, used to capture and transmit handwritten data, classifiable under HTSUS 8471.80.90 for other input devices.\"\n}",
+          "reasoning": "We need HTS code for smart pen with ink cartridge, Bluetooth, PCBA. Likely under 9608? Actually pens are 9608. But electronic pens maybe 8471? 8471.80.90 (input devices). However includes ink cartridge, writes on any surface. Likely classified as \"writing implements, other than fountain pens, with a ball point, etc.\" That's 9608.10.00. But electronic component may push to 8471.80.90 \"Other input devices\". Smart pen is an input device. I think 8471.80.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204831106,
+      "prompt_tokens": 304,
+      "prompt_time": 0.019556094,
+      "completion_tokens": 204,
+      "completion_time": 0.424460996,
+      "total_tokens": 508,
+      "total_time": 0.44401709,
+      "completion_tokens_details": {
+        "reasoning_tokens": 128
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3qtb8fweb2svn3aqv9hrnjj",
+      "seed": 1175569064
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84718090",
+  "predicted_reason": "The device is an electronic input device (smart pen) with a PCBA, Bluetooth and memory, used to capture and transmit handwritten data, classifiable under HTSUS 8471.80.90 for other input devices.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

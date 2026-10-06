@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359976",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8525602000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c9b0a786-e573-43a1-b8fa-d1e7d3d0a826",
+    "object": "chat.completion",
+    "created": 1790748173,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8528.72.90.00\",\n  \"reason\": \"The Xumo Stream Box is a digital media receiver that connects to a TV via HDMI and streams internet video without a tuner, classifying it as a reception apparatus for television without a tuner.\"\n}",
+          "reasoning": "Need HTS for digital media receiver, no tuner. Likely 8528.69.00? Actually 8528.69.00 is \"Other monitors, projectors and reception apparatus, not elsewhere specified\". For set-top boxes: 8528.72? Let's recall: 8528.72.00 is \"Reception apparatus for television, whether or not incorporating radio\". But with tuner? There's 8528.72.10 for \"with a tuner\". 8528.72.90 for \"without a tuner\". So likely 8528.72.90. That's 10 digits: 8528.72.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149246486,
+      "prompt_tokens": 227,
+      "prompt_time": 0.011101309,
+      "completion_tokens": 207,
+      "completion_time": 0.438953758,
+      "total_tokens": 434,
+      "total_time": 0.450055067,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0708ac49a5",
+    "x_groq": {
+      "id": "req_01m3reh8egeqfvkxfk7w8tmvf3",
+      "seed": 1626846077
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8528729000",
+  "predicted_reason": "The Xumo Stream Box is a digital media receiver that connects to a TV via HDMI and streams internet video without a tuner, classifying it as a reception apparatus for television without a tuner.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362044",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8541290055",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-81e90231-c6da-4518-a719-0702f5835047",
+    "object": "chat.completion",
+    "created": 1790725691,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8541.30.10\",\"reason\":\"MOSFET transistors are silicon semiconductor devices classified under heading 8541.30.10\"}",
+          "reasoning": "Need HTSUS code for MOSFET transistors. Likely 8541.40.10? Actually 8541.40 is \"Semiconductor devices, not elsewhere specified\". For MOSFETs, 8541.40.10 is \"Transistors, thyristors, diodes, etc.\" Wait check: 8541.40.10 is \"Transistors, thyristors, diodes, etc., other than those of heading 8541.30\". 8541.30 is \"Transistors, thyristors, diodes, etc., of silicon\". 8541.40 is \"Transistors, thyristors, diodes, etc., of other materials\". But MOSFETs are silicon. So 8541.30.10? Actually 8541.30.10 is \"Transistors, thyristors, diodes, etc., of silicon, other than those of heading 8541.20\". 8541.20 is \"Transistors, thyristors, diodes, etc., of silicon, of the type used in electronic circuits\". Hmm. For MOSFETs, likely 8541.30.10. Let's output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213564616,
+      "prompt_tokens": 374,
+      "prompt_time": 0.018809917,
+      "completion_tokens": 293,
+      "completion_time": 0.351032033,
+      "total_tokens": 667,
+      "total_time": 0.36984195,
+      "completion_tokens_details": {
+        "reasoning_tokens": 250
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5979a0e1b7",
+    "x_groq": {
+      "id": "req_01m3qs35rqe7srxny37ah4a5vd",
+      "seed": 1766296327
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85413010",
+  "predicted_reason": "MOSFET transistors are silicon semiconductor devices classified under heading 8541.30.10",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

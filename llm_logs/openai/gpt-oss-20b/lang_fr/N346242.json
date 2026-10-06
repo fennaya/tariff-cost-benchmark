@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N346242",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5208214090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-8ae5e01b-688b-4bb9-a119-838ab05f6d69",
+    "object": "chat.completion",
+    "created": 1790904881,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6307.10.00.00\",\"reason\":\"Cotton gauze, 100% cotton, used for wound dressing.\"}",
+          "reasoning": "We need HTS code for cotton gauze. Likely 6307.10.00.00? Actually cotton gauze is textile articles, 6307.10.00.00 is \"Cotton gauze, other than that of heading 6307.20\". Wait 6307.10 is \"Cotton gauze, other than that of heading 6307.20\". 6307.20 is \"Cotton gauze, of heading 6307.10\". Hmm. Let's pick 6307.10.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150456415,
+      "prompt_tokens": 516,
+      "prompt_time": 0.026736153,
+      "completion_tokens": 157,
+      "completion_time": 0.161821156,
+      "total_tokens": 673,
+      "total_time": 0.188557309,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3826805fb8",
+    "x_groq": {
+      "id": "req_01m3x3zm15e1jv48w6x2nv90z9",
+      "seed": 1409445934
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307100000",
+  "predicted_reason": "Cotton gauze, 100% cotton, used for wound dressing.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

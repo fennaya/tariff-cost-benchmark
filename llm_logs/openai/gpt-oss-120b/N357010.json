@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357010",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3004909239",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c6048494-7e0e-4fd1-b3b2-37ed445ffea7",
+    "object": "chat.completion",
+    "created": 1790725924,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Venlafaxine HCl is a pharmaceutical preparation classified under heading 3004.90.00 for other medicinal preparations not elsewhere specified.\"}",
+          "reasoning": "Need HTS for venlafaxine HCl, pharmaceutical. Likely 3004.90.00? Actually HTS Chapter 30: pharmaceutical products. Venlafaxine HCl is a \"venlafaxine hydrochloride\" under 3004.90.00 \"Other medicinal preparations containing alkaloids, etc.\" Check: 3004.90.00 is \"Other medicinal preparations containing alkaloids, other than those of heading 3004.20\". Venlafaxine is not an alkaloid. Might be 3004.90.00 still. Could be 3004.90.00 \"Other medicinal preparations\". Yes.\n\nThus code 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088437779,
+      "prompt_tokens": 234,
+      "prompt_time": 0.01063187,
+      "completion_tokens": 205,
+      "completion_time": 0.426400157,
+      "total_tokens": 439,
+      "total_time": 0.437032027,
+      "completion_tokens_details": {
+        "reasoning_tokens": 150
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_b9a23305b9",
+    "x_groq": {
+      "id": "req_01m3qsa8nxeb4skf1rczz8ntkx",
+      "seed": 1132739391
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Venlafaxine HCl is a pharmaceutical preparation classified under heading 3004.90.00 for other medicinal preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

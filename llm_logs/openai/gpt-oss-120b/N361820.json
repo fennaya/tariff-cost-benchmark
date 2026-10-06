@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361820",
+  "rulingDate": "2026-06-15T00:00:00",
+  "true_code": "6402993165",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-511d27dc-54cd-4edf-ac5d-a8c20459d3bf",
+    "object": "chat.completion",
+    "created": 1790806967,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6403.99.9090\",\n  \"reason\": \"Women's casual flat shoe with rubber/plastic upper and sole, classified under heading 6403 for footwear with outer soles of rubber/plastic, subheading 99.90 for other such shoes.\"\n}",
+          "reasoning": "We need HTS code for women's casual flat shoes with rubber/plastic uppers, not covering ankle, with eyelets etc. Likely heading 6403.99? Actually 6403.99.90? Let's think: 6403 - Footwear with outer soles of rubber, plastics etc. Subheading 6403.99.90 is \"Other\". For women's shoes, maybe 6403.99.90. So 10-digit: 6403.99.9090? US uses 10 digits: 6403.99.9090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.458516389,
+      "prompt_tokens": 296,
+      "prompt_time": 0.120529257,
+      "completion_tokens": 191,
+      "completion_time": 0.410502845,
+      "total_tokens": 487,
+      "total_time": 0.531032102,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3t6kggxe36sgttf6jnq0b3z",
+      "seed": 1780120113
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6403999090",
+  "predicted_reason": "Women's casual flat shoe with rubber/plastic upper and sole, classified under heading 6403 for footwear with outer soles of rubber/plastic, subheading 99.90 for other such shoes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

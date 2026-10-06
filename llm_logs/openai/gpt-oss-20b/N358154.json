@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358154",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8714100050",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-14e308dc-bf9d-405f-86dd-8304f2c06835",
+    "object": "chat.completion",
+    "created": 1790607896,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.90.90.00\",\"reason\":\"Brake plate for a motorcycle is classified as an accessory part of a motor vehicle.\"}",
+          "reasoning": "Need HTS code for motorcycle brake plate. Likely 8708.90.90? Actually brake parts for motor vehicles: 8708.90.90 is \"Other parts and accessories of motor vehicles\". But brake plates? 8708.90.90 covers other parts. Could be 8708.90.90. But 8708.90.90 is 10-digit? Actually 8708.90.90 is 8-digit. 10-digit would be 8708.90.90.00? But HTSUS 10-digit: 8708.90.90.00. Reason: brake plate for motorcycle. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.137867083,
+      "prompt_tokens": 240,
+      "prompt_time": 0.013584061,
+      "completion_tokens": 180,
+      "completion_time": 0.206731454,
+      "total_tokens": 420,
+      "total_time": 0.220315515,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d6de37e6be",
+    "x_groq": {
+      "id": "req_01m3m8rba9ey7ar44zaxk4pq48",
+      "seed": 717622820
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708909000",
+  "predicted_reason": "Brake plate for a motorcycle is classified as an accessory part of a motor vehicle.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

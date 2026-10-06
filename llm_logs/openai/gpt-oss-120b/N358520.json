@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358520",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "8486900000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9db3da5b-924c-4093-9be1-9c3d04c67d9d",
+    "object": "chat.completion",
+    "created": 1790726749,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8479.89.90\",\n  \"reason\": \"The kit is an unassembled set of structural, mechanical and electrical components that serve as a part of a semiconductor photolithography system, classifying it as a 'Other parts of machines for working of metal, mineral or other materials' under heading 8479.\"\n}",
+          "reasoning": "We need HTS for pre-install kit of semiconductor equipment, likely \"parts of machinery for semiconductor manufacturing\". Could be 8479.89.99? Actually 8479.89.90 is parts of machines for working of metal, etc. For photolithography equipment, HTS 8471.80.90? 8471 is \"Automatic data processing machines\". Not. 8479 is \"Parts of machines\". 8479.89.90 = \"Other parts\". Might be 8479.89.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.222826826,
+      "prompt_tokens": 492,
+      "prompt_time": 0.023163364,
+      "completion_tokens": 196,
+      "completion_time": 0.413068188,
+      "total_tokens": 688,
+      "total_time": 0.436231552,
+      "completion_tokens_details": {
+        "reasoning_tokens": 113
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3qt3ecwe3gshbm6ze3q6ty9",
+      "seed": 665224397
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84798990",
+  "predicted_reason": "The kit is an unassembled set of structural, mechanical and electrical components that serve as a part of a semiconductor photolithography system, classifying it as a 'Other parts of machines for working of metal, mineral or other materials' under heading 8479.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

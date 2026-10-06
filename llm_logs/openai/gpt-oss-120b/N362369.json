@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362369",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "3402505100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-40b8b291-6851-4e67-8271-bab85cfa1b4f",
+    "object": "chat.completion",
+    "created": 1790826108,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3402.20.00\", \"reason\": \"Classified as a cleaning preparation for textile substrates, not elsewhere specified, under heading 3402.20.00.\"}",
+          "reasoning": "We need HTS code for fabric refresher spray, a cleaning preparation for textiles, non-ionic surfactant. Likely under 3808.90.00? 3808.90.00 is \"Other prepared detergents, not elsewhere specified\". Or 3307.49.00 is \"Other perfumery, cosmetic or toilet preparations\". But it's a cleaning preparation for textiles, not a perfume. 3402.20.00 is \"Cleaning preparations for textile, leather, etc.\" Actually 3402.20.00: \"Cleaning preparations for textile, leather, furs, etc., not elsewhere specified\". That seems right. It's a spray, but still cleaning prep. So HTS 3402.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.186775848,
+      "prompt_tokens": 418,
+      "prompt_time": 0.07142443,
+      "completion_tokens": 208,
+      "completion_time": 0.443297616,
+      "total_tokens": 626,
+      "total_time": 0.514722046,
+      "completion_tokens_details": {
+        "reasoning_tokens": 157
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6fb4303df4",
+    "x_groq": {
+      "id": "req_01m3trvn53ewfa5kc0szh12gyw",
+      "seed": 854995388
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "34022000",
+  "predicted_reason": "Classified as a cleaning preparation for textile substrates, not elsewhere specified, under heading 3402.20.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

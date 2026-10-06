@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362917",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "8544700000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1a538b42-727c-49bb-9f80-bb4b223194f3",
+    "object": "chat.completion",
+    "created": 1790908607,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.70.00\",\n  \"reason\": \"Preassembled bundles of optical, electrical and communication cables used in semiconductor lithography equipment are classified under HTSUS 8544.70.00 (other electrical machines and apparatus, n.e.s.).\"\n}",
+          "reasoning": "We need HTS for preassembled cable bundles for semiconductor lithography. Likely under 8544.42.00? That's \"Electrical machines and apparatus, parts for...\". Cables maybe 8544.70? Actually optical fiber cables 8544.70.00 is \"Electrical apparatus for switching or protecting electrical circuits, etc.\" Not. Fiber optic cables are under 8544.70.00? Wait fiber optic cables are 8544.70.00 \"Other electrical machines and apparatus\". Might be 8544.70.00. Or 8544.42.00 \"Electrical apparatus for switching or protecting circuits, for a voltage not exceeding 1,000 V\". Not.\n\nBetter: 8544.70.00 \"Other electrical machines and apparatus, n.e.s.\" Could be.\n\nBut preassembled cable sets maybe 8544.70.00. Provide that.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.156072093,
+      "prompt_tokens": 437,
+      "prompt_time": 0.131630603,
+      "completion_tokens": 255,
+      "completion_time": 0.537775427,
+      "total_tokens": 692,
+      "total_time": 0.66940603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m3x7ha6bekxahwx4ykkzphgm",
+      "seed": 2080592297
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85447000",
+  "predicted_reason": "Preassembled bundles of optical, electrical and communication cables used in semiconductor lithography equipment are classified under HTSUS 8544.70.00 (other electrical machines and apparatus, n.e.s.).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

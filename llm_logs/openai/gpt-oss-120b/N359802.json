@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359802",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3824999397",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9dbbf07e-cd2e-46a0-87fa-7b77fcd91183",
+    "object": "chat.completion",
+    "created": 1790739648,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.0010\", \"reason\": \"The product is a pharmaceutical intermediate (self\u2011emulsifying microemulsion preconcentrate) classified under other medicaments not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for pharmaceutical intermediate, microemulsion preconcentrate, likely 3004.90.00? 3004 is medicaments. 3004.90.00 is \"Other medicaments\". 10-digit: 3004.90.0010? Actually 10-digit US: 3004.90.0010 is \"Other medicaments, not elsewhere specified\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296640714,
+      "prompt_tokens": 486,
+      "prompt_time": 0.027418609,
+      "completion_tokens": 144,
+      "completion_time": 0.305104837,
+      "total_tokens": 630,
+      "total_time": 0.332523446,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3r6d2ymekcsb9ea0k5bv44m",
+      "seed": 340416434
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900010",
+  "predicted_reason": "The product is a pharmaceutical intermediate (self\u2011emulsifying microemulsion preconcentrate) classified under other medicaments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

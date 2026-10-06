@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363923",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fbf1fbfa-efe4-47b2-aa61-6a2d43777ace",
+    "object": "chat.completion",
+    "created": 1790905659,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8543.70.99\", \"reason\": \"Classified as an electronic device with a microphone, audio processing circuitry, and a haptic motor, falling under 'Other electrical machines and apparatus' not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for a tactile audio device, like a haptic wristband with microphone. Likely classified under \"Other sound or audio equipment\" maybe 8518? 8518.30 covers \"Other apparatus for the transmission or reception of voice, images or other data, including apparatus for communication in a wired or wireless network\". But haptic device maybe \"Other parts\" 9021? Actually haptic feedback devices could be \"Other apparatus for measuring or detecting sound, vibration, etc.\" Might be 9025? 9025.19 \"Other instruments, appliances and machines for measuring or detecting sound, light, radiation\". However it's a consumer device, not measuring instrument. Could be \"Other parts of telephone sets\" no.\n\nMaybe classify as \"Other electronic devices, not elsewhere specified\" 8543.70.99 \"Other\". 8543.70.99 covers \"Electrical machines and apparatus, having individual functions, not elsewhere specified\". Could be.\n\nBetter: 8518.30.00 \"Other apparatus for the transmission or reception of voice, images or other data, including apparatus for communication in a wired or wireless network\". Not exactly.\n\nI think 8543.70.99 is safe.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04901638,
+      "prompt_tokens": 266,
+      "prompt_time": 0.011017398,
+      "completion_tokens": 313,
+      "completion_time": 0.646841683,
+      "total_tokens": 579,
+      "total_time": 0.657859081,
+      "completion_tokens_details": {
+        "reasoning_tokens": 253
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3x4qb8be6qtyg2xs2j39rhm",
+      "seed": 1774944685
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85437099",
+  "predicted_reason": "Classified as an electronic device with a microphone, audio processing circuitry, and a haptic motor, falling under 'Other electrical machines and apparatus' not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

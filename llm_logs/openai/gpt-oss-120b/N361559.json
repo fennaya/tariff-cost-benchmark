@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361559",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9011800000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5c0cff8d-74c4-44b9-b794-c1c687886849",
+    "object": "chat.completion",
+    "created": 1790798588,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9011.80.9090\",\n  \"reason\": \"The CV8000 is a high\u2011content imaging system classified as a microscope, falling under heading 9011.80 for other microscopes.\"\n}",
+          "reasoning": "We need HTS for imaging system with lasers, scientific instrument. Likely 9027.80.00? 9027 is \"Instruments and apparatus for measuring or detecting ionizing radiations\". Actually microscopes: 9011.80.90 \"Other microscopes\". High content imaging system is a microscope. So 9011.80.90 (Other microscopes). 10-digit: 9011.80.9090? Check: 9011.80.90 is 8-digit. 10-digit adds 00: 9011.80.9090. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048746298,
+      "prompt_tokens": 580,
+      "prompt_time": 0.029798892,
+      "completion_tokens": 184,
+      "completion_time": 0.385233552,
+      "total_tokens": 764,
+      "total_time": 0.415032444,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3sykt81e1zvaex66tnqt1fe",
+      "seed": 186701902
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9011809090",
+  "predicted_reason": "The CV8000 is a high\u2011content imaging system classified as a microscope, falling under heading 9011.80 for other microscopes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

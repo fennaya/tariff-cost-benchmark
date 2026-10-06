@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357327",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-1174e439-e39b-4197-bb09-2cd022dc9980",
+    "object": "chat.completion",
+    "created": 1790607426,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2106.90.90.00\",\"reason\":\"Herbal tincture extracts are classified under 2106.90.90.00, other preparations of plant material, not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for herbal tincture extracts. Likely 2106.90.90? Actually 2106 is \"Other preparations of plant material\". 2106.90 is \"Other preparations of plant material, not elsewhere specified\". 2106.90.90 maybe \"Other\". 10-digit: 2106.90.90.00? Let's pick 2106.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.292511726,
+      "prompt_tokens": 345,
+      "prompt_time": 0.018791063,
+      "completion_tokens": 141,
+      "completion_time": 0.159517494,
+      "total_tokens": 486,
+      "total_time": 0.178308557,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3m8a0yjejytvzyhkgrst9x4",
+      "seed": 562778574
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2106909000",
+  "predicted_reason": "Herbal tincture extracts are classified under 2106.90.90.00, other preparations of plant material, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

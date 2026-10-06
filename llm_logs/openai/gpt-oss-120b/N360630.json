@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360630",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "3924905650",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5decd404-863c-4d49-a668-f52b9ad2ede2",
+    "object": "chat.completion",
+    "created": 1790768149,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3926.90.99.00\",\n  \"reason\": \"Shoe trees are non\u2011metal, molded plastic articles classified under heading 3926.90 (other articles of plastics) with the most specific subheading 99 for miscellaneous plastic items.\"\n}",
+          "reasoning": "We need HTS for shoe trees, plastic. Likely 3926.90.??. Let's see: 3926.90.99 is \"Other articles of plastics\". But shoe trees maybe 3926.90.90? Actually 3926.90.99 is \"Other\". 3926.90.90 is \"Other\". Need 10-digit: 3926.90.99.90? Check: 3926.90.99 is heading 3926.90.99.00? The 10-digit code: 3926.90.99.00. Probably. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.030545994,
+      "prompt_tokens": 771,
+      "prompt_time": 0.225522681,
+      "completion_tokens": 200,
+      "completion_time": 0.418366302,
+      "total_tokens": 971,
+      "total_time": 0.643888983,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m3s1jwcme0grk5sfw7rv8cmv",
+      "seed": 400096673
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3926909900",
+  "predicted_reason": "Shoe trees are non\u2011metal, molded plastic articles classified under heading 3926.90 (other articles of plastics) with the most specific subheading 99 for miscellaneous plastic items.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

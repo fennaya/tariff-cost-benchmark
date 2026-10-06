@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358769",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-56a1532d-181f-4d4f-a8f6-04ddf7743eba",
+    "object": "chat.completion",
+    "created": 1790726862,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7616.99.90\",\n  \"reason\": \"The item is a primarily aluminum cosmetic container (lipstick cartridge) without the lipstick itself, fitting the description of 'Other articles of aluminum' under heading 7616.\"\n}",
+          "reasoning": "We need HTS for lipstick container, likely made of aluminum/plastic, not containing lipstick. Likely classified under \"Containers for cosmetics\" 7117? Actually 7117 is imitation jewelry. Cosmetic containers: Chapter 71 includes articles of precious metal. Not. Chapter 39 plastics. But aluminum component maybe 7616? 7616.99.90 \"Other articles of aluminum\". Or 3924 for plastic containers. Since majority aluminum 73% maybe classify under 7616.99.90 \"Other articles of aluminum, not elsewhere specified\". Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088388137,
+      "prompt_tokens": 346,
+      "prompt_time": 0.015256379,
+      "completion_tokens": 181,
+      "completion_time": 0.380552353,
+      "total_tokens": 527,
+      "total_time": 0.395808732,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qt6wvceam9vrz9245h1qy8",
+      "seed": 118513822
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76169990",
+  "predicted_reason": "The item is a primarily aluminum cosmetic container (lipstick cartridge) without the lipstick itself, fitting the description of 'Other articles of aluminum' under heading 7616.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

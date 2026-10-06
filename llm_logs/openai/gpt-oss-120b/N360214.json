@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360214",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d3a872d3-45e0-4846-a391-411fa1b5a8ce",
+    "object": "chat.completion",
+    "created": 1790756831,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Bumetanide tablets are a medicinal product for therapeutic use, classified under HTS chapter 30 as a mixed or unmixed pharmaceutical preparation not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical: Bumetanide tablets, 1 mg, 2 mg, loop diuretic. Likely under 3004.90.00? Actually HTS Chapter 30: pharmaceutical products. 3004.90.00 is \"Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of mixed or unmixed products for therapeutic or prophylactic uses, put up in measured doses or in forms or packings for retail sale, not elsewhere specified.\" Specific for diuretics maybe 3004.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218254155,
+      "prompt_tokens": 205,
+      "prompt_time": 0.084110153,
+      "completion_tokens": 186,
+      "completion_time": 0.388220858,
+      "total_tokens": 391,
+      "total_time": 0.472331011,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3rpsfewehcvvfnk5cf2tf3a",
+      "seed": 962500443
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Bumetanide tablets are a medicinal product for therapeutic use, classified under HTS chapter 30 as a mixed or unmixed pharmaceutical preparation not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

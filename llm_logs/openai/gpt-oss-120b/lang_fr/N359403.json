@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359403",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "4412319200",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4145e99b-4556-48c6-af1d-9a4db4b5b489",
+    "object": "chat.completion",
+    "created": 1790905710,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4407.20.00.00\", \"reason\": \"The product is 18\u202fmm thick tropical wood plywood with multiple layers and surface coatings, classifiable under heading 4407 for plywood, specifically subheading 4407.20 for tropical wood\"}",
+          "reasoning": "We need HTS for plywood, 18mm thick, tropical wood, phenolic film, MDO. Likely heading 4412? Actually plywood is under 4407? Let's recall: 4407 is plywood, veneered panels. 4412 is other wood panels. 4407.20? 4407.20.00 is plywood of tropical wood? Check: 4407.20.00 \u2013 Plywood, veneer sheets etc of tropical wood. So code 4407.20.00. 10-digit: 4407.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205557836,
+      "prompt_tokens": 377,
+      "prompt_time": 0.014643764,
+      "completion_tokens": 193,
+      "completion_time": 0.399285477,
+      "total_tokens": 570,
+      "total_time": 0.413929241,
+      "completion_tokens_details": {
+        "reasoning_tokens": 125
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3x4rx4pe9ybnv4yzca4b2tn",
+      "seed": 51877102
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4407200000",
+  "predicted_reason": "The product is 18\u202fmm thick tropical wood plywood with multiple layers and surface coatings, classifiable under heading 4407 for plywood, specifically subheading 4407.20 for tropical wood",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

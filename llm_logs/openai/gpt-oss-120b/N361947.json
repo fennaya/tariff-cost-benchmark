@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361947",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9403910080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f3992336-a20e-4230-9376-c15b5d3e650d",
+    "object": "chat.completion",
+    "created": 1790811494,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.90.00\",\n  \"reason\": \"Classified as a furniture component (tabletop) that is not a complete article, falling under HTSUS heading 9403.90 for other parts of furniture.\"\n}",
+          "reasoning": "We need to find HTS code for a round tabletop made of plywood core with copper clad sheet metal surface. Likely classified under furniture parts of wood, or metal-clad wood. Could be 9403.20.00? 9403.20 is \"Other wooden furniture, other than seats\". But it's a component, not complete. Might be 9403.90.00 \"Parts of furniture\". Actually 9403.90.00 is \"Other furniture parts\". Since it's a tabletop component. So HTS 9403.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205702776,
+      "prompt_tokens": 277,
+      "prompt_time": 0.011625402,
+      "completion_tokens": 183,
+      "completion_time": 0.384008077,
+      "total_tokens": 460,
+      "total_time": 0.395633479,
+      "completion_tokens_details": {
+        "reasoning_tokens": 119
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3taxnx9e4nr94edmdz1820j",
+      "seed": 1124815387
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94039000",
+  "predicted_reason": "Classified as a furniture component (tabletop) that is not a complete article, falling under HTSUS heading 9403.90 for other parts of furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

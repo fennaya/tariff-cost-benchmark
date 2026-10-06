@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363600",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "8479899597",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-61c31f2b-b683-403b-acc9-0346d9962be9",
+    "object": "chat.completion",
+    "created": 1790858922,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7308.94.90\", \"reason\": \"The product is a steel grain storage bin and hopper assembly, classified under other iron or steel structures and parts of structures.\"}",
+          "reasoning": "We need HTS code for grain storage bin with aeration. Likely 8421? Actually grain bins are classified under 8421.99? Let's think: 8421 is \"Centrifuges, including centrifugal dryers; filtering or purifying machinery and apparatus, for liquids or gases\". Not.\n\nMaybe 7308? Steel structures? Grain bins are \"grain bins, silos, hoppers\" under 7308.94? Check: 7308.94 - \"Other structures (excluding prefabricated buildings) and parts of structures, of iron or steel\". But specific: 7308.94.90 \"Other\". Could be 7308.94.90.\n\nBut there is also 7309 for tubes. I think grain bins are under 7308.94.90.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.304545054,
+      "prompt_tokens": 469,
+      "prompt_time": 0.255498614,
+      "completion_tokens": 222,
+      "completion_time": 0.470494846,
+      "total_tokens": 691,
+      "total_time": 0.72599346,
+      "completion_tokens_details": {
+        "reasoning_tokens": 171
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_60e4b492db",
+    "x_groq": {
+      "id": "req_01m3vr5134e6hb1dhr68cjsy2g",
+      "seed": 1179709198
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73089490",
+  "predicted_reason": "The product is a steel grain storage bin and hopper assembly, classified under other iron or steel structures and parts of structures.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

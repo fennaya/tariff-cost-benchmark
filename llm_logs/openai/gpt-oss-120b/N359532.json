@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359532",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7323999080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d008f6b3-9ead-48dd-906d-6ab8752d6962",
+    "object": "chat.completion",
+    "created": 1790727372,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7324.90.90\",\n  \"reason\": \"Classified under 'Other articles of iron or steel' as a household foot\u2011pedal operated trash can primarily constructed of iron sheet metal.\"\n}",
+          "reasoning": "We need HTS code for foot-pedal operated trash can, household, metal and plastic. Likely 3924.90.?? for plastic articles? But metal body maybe 7324? However classification for waste bins of metal/plastic: 7324.10 (tableware) no. Could be 7324.90 other articles of iron or steel. But it's a household waste container, likely 7324.90.90. Or 3924.90.99 for other plastic articles. Since main material is iron sheet metal, but inner bucket plastic. I think HTS 7324.90.90 \"Other articles of iron or steel\". Reason.\n\nLet's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.04818549,
+      "prompt_tokens": 290,
+      "prompt_time": 0.011785316,
+      "completion_tokens": 200,
+      "completion_time": 0.416373315,
+      "total_tokens": 490,
+      "total_time": 0.428158631,
+      "completion_tokens_details": {
+        "reasoning_tokens": 142
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3qtpf4pe8d94ky26mtxwd90",
+      "seed": 2018468154
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73249090",
+  "predicted_reason": "Classified under 'Other articles of iron or steel' as a household foot\u2011pedal operated trash can primarily constructed of iron sheet metal.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

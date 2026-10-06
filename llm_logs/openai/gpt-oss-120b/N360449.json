@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360449",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "7306615000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7551a2cd-2b3c-4f17-b863-66a228a6dc98",
+    "object": "chat.completion",
+    "created": 1790761394,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7304.32.00\",\n  \"reason\": \"Welded, non\u2011alloy steel tubes of rectangular (including square) cross\u2011section, galvanized, used as structural components.\"\n}",
+          "reasoning": "We need HTS code for galvanized welded structural steel tubes, non-alloy, ASTM A500. Likely heading 7304? 7304.30 for tubes, pipes, hollow profiles, welded, of iron or steel, of circular cross-section, etc. For rectangular/square, maybe 7304.31? Actually 7304.31 is \"of circular cross-section, welded, of iron or steel\". 7304.32 is \"of rectangular cross-section, welded\". Need galvanized? Coated steel falls under 7304.90? But galvanised is still steel tube. Likely 7304.31. However rectangular tubes are 7304.32. Since both shapes, maybe general 7304.90 \"Other\". But best single: 7304.31 covers welded steel tubes of circular cross-section. Not correct. Use 7304.32 for rectangular. Since includes square (rectangular). So choose 7304.32. Add coating? There's subheading 7304.32.00 for welded steel tubes, rectangular. So code 7304.32.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.330140823,
+      "prompt_tokens": 294,
+      "prompt_time": 0.084685651,
+      "completion_tokens": 290,
+      "completion_time": 0.608925474,
+      "total_tokens": 584,
+      "total_time": 0.693611125,
+      "completion_tokens_details": {
+        "reasoning_tokens": 233
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3rv4pxbe1fbtjkgkdrvn7bv",
+      "seed": 378950989
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73043200",
+  "predicted_reason": "Welded, non\u2011alloy steel tubes of rectangular (including square) cross\u2011section, galvanized, used as structural components.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

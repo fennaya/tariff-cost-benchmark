@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362044",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8541290055",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e22571c0-32b7-4b16-82ae-7f528bfb1e52",
+    "object": "chat.completion",
+    "created": 1790814666,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8541.40.10\", \"reason\": \"MOSFETs are classified as transistors under heading 8541, specifically subheading 8541.40 for transistors with power handling \u226410\u202fW.\"}",
+          "reasoning": "Need HTS for MOSFETs. Likely 8542.39.00.00? Check: 8542 covers electronic integrated circuits. 8542.31 for semiconductor devices (diodes, transistors). Actually 8542.31 is \"transistors, other than those of heading 8541\". 8541 is \"diodes, transistors, etc\". Wait: 8541 is \"diodes, transistors, and similar semiconductor devices\". 8541.40 is \"transistors, other than those of heading 8541.20\". Need specifics. I think MOSFETs are under 8541.40.10? Let's recall: 8541.40.10 \u2013 \"transistors, other than those of heading 8541.20, having a power handling capacity of not more than 10 W\". Might be. So choose 8541.40.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049078785,
+      "prompt_tokens": 374,
+      "prompt_time": 0.017399237,
+      "completion_tokens": 251,
+      "completion_time": 0.524283027,
+      "total_tokens": 625,
+      "total_time": 0.541682264,
+      "completion_tokens_details": {
+        "reasoning_tokens": 190
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3tdyeqye3792w8sej0y4gtf",
+      "seed": 2144091189
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85414010",
+  "predicted_reason": "MOSFETs are classified as transistors under heading 8541, specifically subheading 8541.40 for transistors with power handling \u226410\u202fW.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358120",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e9a85fb2-d51e-4e14-ba10-ce16f288c421",
+    "object": "chat.completion",
+    "created": 1790726549,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9027.80.90\", \"reason\": \"Classified as a medical device with electronic monitoring functions, falling under 'Other instruments and appliances for measuring or checking medical, surgical, or dental instruments'\"}",
+          "reasoning": "We need HTS code for smart medication vial, electronic device with battery, sensors, not dispensing. Likely under \"medical devices, other\" 9027? 9027.80.00? That's for instruments and appliances for measuring or checking the flow, level, pressure etc. But a smart pill bottle maybe under 9027.80.90 (other). Could be 9027.80.90 \"Other: other\". Or 9027.80.10? Let's pick 9027.80.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.091012974,
+      "prompt_tokens": 304,
+      "prompt_time": 0.076028415,
+      "completion_tokens": 166,
+      "completion_time": 0.346899073,
+      "total_tokens": 470,
+      "total_time": 0.422927488,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d577f40f11",
+    "x_groq": {
+      "id": "req_01m3qsxbj7ett8tarbj7er9jwx",
+      "seed": 1723927421
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90278090",
+  "predicted_reason": "Classified as a medical device with electronic monitoring functions, falling under 'Other instruments and appliances for measuring or checking medical, surgical, or dental instruments'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

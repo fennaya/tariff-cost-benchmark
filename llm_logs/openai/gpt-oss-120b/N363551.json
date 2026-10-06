@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363551",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "9505904000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-521bcf80-123b-4217-8d99-5a547acb1b65",
+    "object": "chat.completion",
+    "created": 1790858006,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9619.00.00\",\n  \"reason\": \"Flat\u2011packed paper caps are articles made of paper pulp/paperboard and are not classified as textile hats, thus fall under heading 9619 for other paper articles.\"\n}",
+          "reasoning": "We need HTS code for paper caps, promotional. Likely heading 6505? That's hats. But paper hats maybe under 6505.00.90? Let's think: 6505.00.90 - Other hats and caps, of other textile materials. Paper is not textile. Could be 9619? 9619.00.00 - Articles of paper pulp, paperboard, etc. But hats? Maybe 9619.00.00 includes \"articles of paper pulp, paperboard, etc., not elsewhere specified\". Could be 9619.00.00. However promotional caps likely classified under 6505.00.90 (other hats, of other textile materials). Paper is not textile, but could be considered \"other materials\". 6505.00.90 covers \"Other hats and caps, of other textile materials\". Paper is not textile. Might be 9619.00.00 \"Other articles of paper\". I'd choose 9619.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.160200273,
+      "prompt_tokens": 291,
+      "prompt_time": 0.064822794,
+      "completion_tokens": 273,
+      "completion_time": 0.576116522,
+      "total_tokens": 564,
+      "total_time": 0.640939316,
+      "completion_tokens_details": {
+        "reasoning_tokens": 209
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3vq92z1e5ttsstcg1e2d85h",
+      "seed": 1022717487
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "96190000",
+  "predicted_reason": "Flat\u2011packed paper caps are articles made of paper pulp/paperboard and are not classified as textile hats, thus fall under heading 9619 for other paper articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

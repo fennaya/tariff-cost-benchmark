@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360833",
+  "rulingDate": "2026-05-18T00:00:00",
+  "true_code": "1106304000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-508f7da8-a5b6-4a62-ad55-0e8454c926b9",
+    "object": "chat.completion",
+    "created": 1790774835,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0804.90.00.00\", \"reason\": \"Freeze\u2011dried avocado powder is classified under avocados (chapter 08), specifically under subheading 0804.90 for other avocados not elsewhere specified, with the full 10\u2011digit code for dried avocado products.\"}",
+          "reasoning": "We need HTS for freeze-dried avocado powder. Likely under 2008. Avocado fresh is 0804. But dried avocado powder maybe 2008.0804.90? Check: 0804 Avocados. Subheading 0804.90 other avocados. For dried: 2008.0804.90? Actually 2008 is chapter for fruit, nuts. 2008.0804.90 is \"Other avocados, fresh or dried\"? Need guess: 2008.0804.90 \"Other avocados, fresh or dried\". But powder maybe 2008.0804.90. Provide code \"0804.90.00\"? 6-digit? Need 10-digit: 0804.90.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205637392,
+      "prompt_tokens": 328,
+      "prompt_time": 0.024638287,
+      "completion_tokens": 240,
+      "completion_time": 0.507700453,
+      "total_tokens": 568,
+      "total_time": 0.53233874,
+      "completion_tokens_details": {
+        "reasoning_tokens": 165
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3s7yxmse8h8kdfhtp6tqc1p",
+      "seed": 2030543383
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0804900000",
+  "predicted_reason": "Freeze\u2011dried avocado powder is classified under avocados (chapter 08), specifically under subheading 0804.90 for other avocados not elsewhere specified, with the full 10\u2011digit code for dried avocado products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

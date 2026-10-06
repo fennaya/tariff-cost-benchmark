@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362258",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "9029204080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b53406c6-4256-4f4b-a1a2-4a2059388e3a",
+    "object": "chat.completion",
+    "created": 1790904915,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9022.30.00\",\n  \"reason\": \"Classified under 'Other apparatus for measuring or checking physiological parameters' as a wearable heart rate monitor device.\"\n}",
+          "reasoning": "We need HTS code for wearable heart rate monitor. Likely 9022.12.00? Actually 9022.12.00 is \"Other apparatus for measuring or checking blood pressure\". Heart rate monitor maybe 9022.30? Let's think: 9022.30 - \"Other apparatus for measuring or checking physiological parameters\". Check: 9022.30.00 is \"Other apparatus for measuring or checking physiological parameters\". That fits. So code 9022.30.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049665707,
+      "prompt_tokens": 639,
+      "prompt_time": 0.02797405,
+      "completion_tokens": 157,
+      "completion_time": 0.330487153,
+      "total_tokens": 796,
+      "total_time": 0.358461203,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3x40n7te27tbxex31f7s4pa",
+      "seed": 1180507482
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90223000",
+  "predicted_reason": "Classified under 'Other apparatus for measuring or checking physiological parameters' as a wearable heart rate monitor device.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357243",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "2517490000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f5eb1f90-3562-4a55-b249-ca1d536dedc5",
+    "object": "chat.completion",
+    "created": 1790904864,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2505.90.00\",\n  \"reason\": \"The product is a powdered natural rock simulant composed of crushed volcanic rocks, classified under mineral powders and granules of stone.\"\n}",
+          "reasoning": "We need HTS for natural rock simulants. Likely under 2505.00.00? 2505.00.00 is \"Granules, chippings and powder of stone, plaster, cement, asbestos, mica or similar materials\". But simulant maybe \"Other mineral substances\". Could be 2505.90.00 \"Other\". So choose 2505.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.208481165,
+      "prompt_tokens": 403,
+      "prompt_time": 0.018729293,
+      "completion_tokens": 138,
+      "completion_time": 0.288337808,
+      "total_tokens": 541,
+      "total_time": 0.307067101,
+      "completion_tokens_details": {
+        "reasoning_tokens": 83
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3x3z3ezese93kw3r3452915",
+      "seed": 439804609
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "25059000",
+  "predicted_reason": "The product is a powdered natural rock simulant composed of crushed volcanic rocks, classified under mineral powders and granules of stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

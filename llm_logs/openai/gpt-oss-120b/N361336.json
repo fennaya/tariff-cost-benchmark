@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361336",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c09e433e-b12a-4255-ab7c-83a2f7072e47",
+    "object": "chat.completion",
+    "created": 1790789981,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.80\",\n  \"reason\": \"The product is a wireless communications accessory for medical ventilators, classified as an other medical instrument or appliance not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for medical device accessory wireless hub. Likely under 9018.90.80 (other instruments & appliances for medical purposes). 9018.90.80 is \"Other instruments and appliances, for measuring, checking, testing ...\". Actually medical devices accessories often 9018.90.80. Could be 9019? 9019 is \"Mech. appliances for therapeutic use\". 9019.20 is \"Respiratory therapy apparatus\". But accessory? Might be 9019.20.00? That's for \"Respiratory therapy apparatus\". The hub is not a therapy apparatus, it's a communications gateway. Likely 9018.90.80.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204517763,
+      "prompt_tokens": 371,
+      "prompt_time": 0.018268783,
+      "completion_tokens": 200,
+      "completion_time": 0.418055855,
+      "total_tokens": 571,
+      "total_time": 0.436324638,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3spd4hjes3rq77mmqw9bmsy",
+      "seed": 1850014849
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189080",
+  "predicted_reason": "The product is a wireless communications accessory for medical ventilators, classified as an other medical instrument or appliance not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

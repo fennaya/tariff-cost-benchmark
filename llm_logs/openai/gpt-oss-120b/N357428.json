@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357428",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "8479909596",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6f5c5f18-7f57-457d-884a-5ab175be5133",
+    "object": "chat.completion",
+    "created": 1790726195,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8425.90.90\", \"reason\": \"Classified as a part/accessory of a tire changing machine, which falls under heading 8425 for pulley, hoist, winch type machines and their parts.\"}",
+          "reasoning": "We need HTS code for pneumatic tire changer helpers (assist arms). Likely classified under \"Parts and accessories of machines for making or repairing tires\". Look up: HTS 4011? Actually tire changer is a machine. Parts of tire making/repairing machines: heading 8425? Let's think. 8425 covers \"Pulley, hoists, winches, and capstans; parts thereof\". Not. 8424 is \"Mechanical appliances for cleaning, polishing, or otherwise finishing surfaces\". Not.\n\nMaybe 8425.90? Not sure. Could be 8425.90.90? Actually 8425 is \"Pulley, hoists, winches, and capstans; parts\". Not.\n\nSearch memory: HTS 8425.90.90 is \"Other\". But tire changer helper is a part of a tire changer machine, which is under heading 8425? Tire changer is a machine for mounting/dismounting tires, maybe under 8425.90.90 \"Other parts\". However there is heading 8425.90.90 \"Other\". Might be correct.\n\nAlternatively heading 8425.90.90 is for \"Other parts of the machines of heading 8425\". So we can use that.\n\nThus code: 8425.90.90. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.097038417,
+      "prompt_tokens": 261,
+      "prompt_time": 0.0186752,
+      "completion_tokens": 336,
+      "completion_time": 0.699059034,
+      "total_tokens": 597,
+      "total_time": 0.717734234,
+      "completion_tokens_details": {
+        "reasoning_tokens": 275
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_267e812a3a",
+    "x_groq": {
+      "id": "req_01m3qsjhzeegp9dnrgwgvstd7w",
+      "seed": 105940205
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84259090",
+  "predicted_reason": "Classified as a part/accessory of a tire changing machine, which falls under heading 8425 for pulley, hoist, winch type machines and their parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361913",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "7610100020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e56a38d0-8907-4f04-bb85-fcd64d4a825e",
+    "object": "chat.completion",
+    "created": 1790810516,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7610.10.00\",\n  \"reason\": \"The product is a composite aluminum building component (door sill) classified under heading 7610 for aluminum structures.\"\n}",
+          "reasoning": "We need HTS code for adjustable aluminum door sill composite. Likely under \"Aluminum structures\" or \"Aluminum building components\". Door sill likely under 7610? 7610.10.00 is \"Aluminum structures (excluding prefabricated buildings)\". But door sill maybe \"Aluminum doors, windows and their frames and parts\". That is 7610.10? Actually 7610.10 is \"Aluminum structures\". 7610.90 other. For doors, windows, frames: 7610.10? Wait 7610.10 is \"Aluminum structures (excluding prefabricated buildings)\". 7610.90 is \"Other\". But there is heading 7610 for \"Aluminum structures\". However doors and windows are under 7610? Actually heading 7610 includes \"Aluminum structures (excluding prefabricated buildings)\". Doors, windows, frames are under 7610? Might be 7610.10. But there is also heading 7610 for \"Aluminum structures\". Another heading 7610.10 is \"Aluminum structures (excluding prefabricated buildings)\". For door sills maybe 7610.10. Could also be 7610.90. Let's pick 7610.10.00.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.140035632,
+      "prompt_tokens": 191,
+      "prompt_time": 0.053237915,
+      "completion_tokens": 319,
+      "completion_time": 0.668252952,
+      "total_tokens": 510,
+      "total_time": 0.721490867,
+      "completion_tokens_details": {
+        "reasoning_tokens": 267
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6fb4303df4",
+    "x_groq": {
+      "id": "req_01m3t9zt52efp808jz9ry3hek6",
+      "seed": 468582810
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76101000",
+  "predicted_reason": "The product is a composite aluminum building component (door sill) classified under heading 7610 for aluminum structures.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

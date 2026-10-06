@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358106",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-389fc5f4-04b3-4bd8-9184-71ba4edd199e",
+    "object": "chat.completion",
+    "created": 1790726544,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8539.90.90\",\n  \"reason\": \"Steel electrical junction box, empty, classified under other electrical apparatus for switching or protecting (not elsewhere specified).\"\n}",
+          "reasoning": "Need HTS for steel electrical conduit/junction box empty. Likely 8537? Actually 8537 is boards, panels. Electrical boxes of steel: 8539? Let's think: 8539.00 covers electrical apparatus for switching or protecting. But junction boxes maybe 8539.90? Or 7308 for structures? I recall HTS 8539.90.90 for other. However \"Electrical conduit, fittings, and accessories\" are under 7308.90? Actually 7308.90.90 is other structures of iron/steel. Better: 8539.00.00 is \"Electrical apparatus for switching or protecting\". Not correct.\n\nSearch memory: \"Electrical conduit, fittings, and accessories of iron or steel\" is 7308.90.90? Might be 7308.90.90 \"Other structures (including prefabricated buildings) of iron or steel\". Not.\n\nMaybe 8539.90.90 \"Other\". I'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087831523,
+      "prompt_tokens": 369,
+      "prompt_time": 0.015024757,
+      "completion_tokens": 257,
+      "completion_time": 0.536882179,
+      "total_tokens": 626,
+      "total_time": 0.551906936,
+      "completion_tokens_details": {
+        "reasoning_tokens": 205
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69dbc96c74",
+    "x_groq": {
+      "id": "req_01m3qsx6hxenvs1s1nrnpbdsx0",
+      "seed": 1398612984
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85399090",
+  "predicted_reason": "Steel electrical junction box, empty, classified under other electrical apparatus for switching or protecting (not elsewhere specified).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

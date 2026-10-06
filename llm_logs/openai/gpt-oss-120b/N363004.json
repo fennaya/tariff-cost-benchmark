@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363004",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-24c68422-0aec-46a9-9f6b-4be418014b0f",
+    "object": "chat.completion",
+    "created": 1790845943,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8302.41.00\", \"reason\": \"The portable reading stand is a metal (stainless steel) mounting/fitting for furniture, classified under base metal mountings and fittings for furniture.\"}",
+          "reasoning": "We need HTS code for portable reading stand made of stainless steel. Likely under \"Tables, desks, chairs, etc.\" maybe \"Other furniture, metal\". Could be 8302? Actually 8302 covers \"Base metal mountings, fittings and similar articles for furniture\". Reading stand maybe \"Other articles of metal, not elsewhere specified\". Could be 8302.41? Let's check: 8302.41.00 - \"Base metal mountings, fittings and similar articles for furniture, of iron or steel\". Might fit. Or 8302.49.00 other. Probably 8302.41.00.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048633376,
+      "prompt_tokens": 308,
+      "prompt_time": 0.013343245,
+      "completion_tokens": 189,
+      "completion_time": 0.391388574,
+      "total_tokens": 497,
+      "total_time": 0.404731819,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3vbrzqcea29ysw25bm3mvdc",
+      "seed": 910764799
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83024100",
+  "predicted_reason": "The portable reading stand is a metal (stainless steel) mounting/fitting for furniture, classified under base metal mountings and fittings for furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

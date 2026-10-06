@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359859",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8704105060",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-1e798302-dd2c-4c1d-afa7-4db1257a70ab",
+    "object": "chat.completion",
+    "created": 1790905622,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8708.01.00.00\",\"reason\":\"Low\u2011speed off\u2011road articulated tow trucks used for construction and mining fit under 8708.01.00.00, other motor vehicles not elsewhere specified.\"}",
+          "reasoning": "Need HTS 10-digit. These are low-speed off-road trailers? They are articulated tow trucks? Likely \"Other vehicles\" 8708? Actually 8708 is \"Other motor vehicles\". But these are trailers? They are self-propelled? They have engine? Not described. They are low-speed off-road vehicles used for construction. Could be \"Other motor vehicles\" 8708.01.00? 8708.01.00 is \"Other motor vehicles, not elsewhere specified\". But 8708.01.00 is 10-digit? Actually 8708.01.00 is 8-digit. 10-digit would be 8708.01.00.00? Wait 10-digit: 8708.01.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087580928,
+      "prompt_tokens": 822,
+      "prompt_time": 0.056207752,
+      "completion_tokens": 222,
+      "completion_time": 0.264227782,
+      "total_tokens": 1044,
+      "total_time": 0.320435534,
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3x4p7c6erx86baeahnvw5vq",
+      "seed": 1588832797
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708010000",
+  "predicted_reason": "Low\u2011speed off\u2011road articulated tow trucks used for construction and mining fit under 8708.01.00.00, other motor vehicles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

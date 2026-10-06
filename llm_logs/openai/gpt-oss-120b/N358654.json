@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358654",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3824994140",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-efadfc6b-f799-442a-a2bd-52885c2e1ca7",
+    "object": "chat.completion",
+    "created": 1790726798,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3824.90.00\", \"reason\": \"Classified as a chemical intermediate (fatty acid ester) not for consumer use, falling under 'Other chemical products and preparations, n.e.s.'\"}",
+          "reasoning": "We need HTS code for chemical intermediate, methyl 12-hydroxystearate etc. Likely under 3824.90? 3824.90.00 is \"Prepared binders for foundry molds or cores; chemical products and preparations of the chemical or allied industries\". Actually methyl 12-hydroxystearate is a fatty acid ester, used as lubricant intermediate. Could be under 3824.90.00 \"Other chemical products and preparations, n.e.s.\" Or maybe 3824.90.00.\n\nLet's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048970939,
+      "prompt_tokens": 222,
+      "prompt_time": 0.009926984,
+      "completion_tokens": 172,
+      "completion_time": 0.354844769,
+      "total_tokens": 394,
+      "total_time": 0.364771753,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3qt4ytfe2hvtjfyqfmyrb7z",
+      "seed": 291250751
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "38249000",
+  "predicted_reason": "Classified as a chemical intermediate (fatty acid ester) not for consumer use, falling under 'Other chemical products and preparations, n.e.s.'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

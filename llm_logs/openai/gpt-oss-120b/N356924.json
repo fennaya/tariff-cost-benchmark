@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356924",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8544493080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-66ec3452-8bcb-4bc6-aec1-b16b79cb87b4",
+    "object": "chat.completion",
+    "created": 1790725915,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.42.00\",\n  \"reason\": \"The product is an insulated twisted-pair LAN cable used for data transmission, which falls under heading 8544 for insulated electric conductors for telecommunication.\"\n}",
+          "reasoning": "Need HTS for Category 8544? Actually LAN cable: 8544.42.00? Let's recall: 8544.42.00 is \"Insulated (including coaxial) electric conductors, for telecommunication\". Wait check: 8544.42.00 - \"Insulated (including coaxial) electric conductors, for telecommunication\". For twisted pair cables: 8544.42.90 maybe. 8544.42.00 is for \"cables for data transmission\". I think 8544.42.00 is correct. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205979184,
+      "prompt_tokens": 275,
+      "prompt_time": 0.012642334,
+      "completion_tokens": 182,
+      "completion_time": 0.374272418,
+      "total_tokens": 457,
+      "total_time": 0.386914752,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3qs9zvae799yxe64wgg449m",
+      "seed": 1651383893
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444200",
+  "predicted_reason": "The product is an insulated twisted-pair LAN cable used for data transmission, which falls under heading 8544 for insulated electric conductors for telecommunication.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359280",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8479899599",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-db21259f-ff85-4d03-a559-dce2a8b21b28",
+    "object": "chat.completion",
+    "created": 1790727203,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8428.90.90\", \"reason\": \"Classified as other lifting, handling, loading or unloading machines not elsewhere specified, covering automated vertical storage systems\"}",
+          "reasoning": "We need HTS code for automated vertical storage systems. Likely 8428? Actually 8428 is \"Other lifting, handling, loading or unloading machines\". But storage towers maybe 8428.90.90? Let's think: 8428.90.90 is \"Other\". Could be 8428.30 for \"Other lifting, handling, loading or unloading machines, self-propelled\". Not sure. Maybe 8428.90.90.\n\nThus output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.158694905,
+      "prompt_tokens": 407,
+      "prompt_time": 0.102575081,
+      "completion_tokens": 147,
+      "completion_time": 0.310189456,
+      "total_tokens": 554,
+      "total_time": 0.412764537,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_60e4b492db",
+    "x_groq": {
+      "id": "req_01m3qth9qme3e9902hpajdg0k7",
+      "seed": 1051086416
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84289090",
+  "predicted_reason": "Classified as other lifting, handling, loading or unloading machines not elsewhere specified, covering automated vertical storage systems",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

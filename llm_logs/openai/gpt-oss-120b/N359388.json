@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359388",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004505020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9f504481-2ecf-4964-bf98-74ae75db6d3a",
+    "object": "chat.completion",
+    "created": 1790727260,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00.00\", \"reason\": \"As a pharmaceutical preparation of ascorbic acid (vitamin C) for injection, it falls under heading 3004 covering medicaments not elsewhere specified.\"}",
+          "reasoning": "Need HTS for ascorbic acid injection, USP, medicinal. Likely 3004.90.00? Actually 3004.90.00 is \"Medicaments containing other than antibiotics, etc.\" Ascorbic acid injection is a medicinal product. Check: 3004.90.00 - \"Medicaments (excluding goods of heading 3002, 3005 or 3006) containing other than antibiotics\". Ascorbic acid is vitamin, so 3004.90.00. 10-digit: 3004.90.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086940577,
+      "prompt_tokens": 232,
+      "prompt_time": 0.009352291,
+      "completion_tokens": 182,
+      "completion_time": 0.383163137,
+      "total_tokens": 414,
+      "total_time": 0.392515428,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3qtk1g5ephrqkjynvd19r58",
+      "seed": 1311868640
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900000",
+  "predicted_reason": "As a pharmaceutical preparation of ascorbic acid (vitamin C) for injection, it falls under heading 3004 covering medicaments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363426",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "9505904000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-86de8f34-d9bb-4e16-9e19-e10e2ef28600",
+    "object": "chat.completion",
+    "created": 1790852773,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4817.00.0000\",\n  \"reason\": \"The item is a paper banner cut to shape (fringe) and glued to string, classified under heading 4817 for paper products cut to shape or size.\"\n}",
+          "reasoning": "We need HTS code for paper fringe banner, party decoration, paper, single use. Likely under heading 4817? 4817.00.00 is \"Other paper, paperboard, cellulose wadding and webs of cellulose fibers, cut to shape or size\". But decorative items maybe 9505? 9505.90.90 is \"Other toys, games and sports equipment\". Not.\n\nMaybe 3919? No.\n\nPaper decorations: 4820? 4820.00.00 is \"Other paper, paperboard, cellulose wadding\". Hmm.\n\nCould be 9503? No.\n\nBetter: 9619? Not.\n\nCheck: HTS 4817.20.00 \"Paper, paperboard, cellulose wadding and webs of cellulose fibers, cut to shape or size, for use in the manufacture of paper goods\". Not.\n\nMaybe 9615? No.\n\nProbably 9505.90.90 is for \"Other articles for amusement, novelty\". But party decorations maybe 9505.90.90.\n\nBut more accurate: 9619.00.00 \"Other articles of plastics\". Not.\n\nI think 4817.00.00 is generic for paper products cut to shape. So choose 4817.00.00.\n\nProvide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.282146074,
+      "prompt_tokens": 259,
+      "prompt_time": 0.018983557,
+      "completion_tokens": 329,
+      "completion_time": 0.844898193,
+      "total_tokens": 588,
+      "total_time": 0.86388175,
+      "completion_tokens_details": {
+        "reasoning_tokens": 265
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3vj9ccgezwaqf7n41qwfs5k",
+      "seed": 47507766
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4817000000",
+  "predicted_reason": "The item is a paper banner cut to shape (fringe) and glued to string, classified under heading 4817 for paper products cut to shape or size.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

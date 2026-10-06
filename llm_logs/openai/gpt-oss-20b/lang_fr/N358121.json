@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358121",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "8537109170",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-f0cebcd3-5a0f-41c2-8b55-817e103ba2b6",
+    "object": "chat.completion",
+    "created": 1790905137,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90.00\",\"reason\":\"It is a control device for forklifts, classified under other machinery for handling goods.\"}",
+          "reasoning": "Need HTS code for multi-axis controller joystick for forklifts. Likely 8421.90.90? Actually 8421 is \"Other machinery and apparatus for handling, lifting, loading, unloading or moving goods\". But joystick controller is part of forklift. Could be 8421.90.90 \"Other\". Or 8421.90.90 includes \"Other\". So 8421.90.90. But 10-digit: 8421.90.90.00. Reason: controller for forklift."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.218946496,
+      "prompt_tokens": 352,
+      "prompt_time": 0.022581122,
+      "completion_tokens": 151,
+      "completion_time": 0.16117239,
+      "total_tokens": 503,
+      "total_time": 0.183753512,
+      "completion_tokens_details": {
+        "reasoning_tokens": 108
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_639a5351c8",
+    "x_groq": {
+      "id": "req_01m3x47e84e7q834n3b7mhbgzv",
+      "seed": 742427596
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8421909000",
+  "predicted_reason": "It is a control device for forklifts, classified under other machinery for handling goods.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

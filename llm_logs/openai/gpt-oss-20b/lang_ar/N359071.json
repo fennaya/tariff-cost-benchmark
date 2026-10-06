@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359071",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ace3cf5e-3957-42dc-89b9-afd8f786ec2a",
+    "object": "chat.completion",
+    "created": 1790904706,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8518.30.10.00\",\"reason\":\"Components of headphones (earcups) made of magnesium for noise cancellation.\"}",
+          "reasoning": "We need HTS code for earcup components of headphones, made of magnesium. Likely 8518.30.10? Actually 8518.30 is \"Headsets, earphones, and other hearing instruments, with or without a microphone, for use in a non-automotive environment\". But components? Maybe 8518.30.10 is \"Headsets, earphones, and other hearing instruments, with or without a microphone, for use in a non-automotive environment, other than those of heading 8518.30.10\". Wait. For parts: 8518.30.10 is \"Headsets, earphones, and other hearing instruments, with or without a microphone, for use in a non-automotive environment, other than those of heading 8518.30.10\". Hmm.\n\nBut these are parts of headphones: earcup components. Could be 8518.30.10? Actually 8518.30.10 is \"Headsets, earphones, and other hearing instruments, with or without a microphone, for use in a non-automotive environment, other than those of heading 8518.30.10\" confusing.\n\nMaybe 8518.30.10 is for \"Headsets, earphones, and other hearing instruments, with or without a microphone, for use in a non-automotive environment, other than those of heading 8518.30.10\" meaning all other. So 8518.30.10 covers all. So use 8518.30.10. But 10-digit: 8518.30.10.00? Actually 10-digit: 8518.30.10.00. Provide.\n\nReason: earcup components of headphones."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.292189868,
+      "prompt_tokens": 472,
+      "prompt_time": 0.024243949,
+      "completion_tokens": 400,
+      "completion_time": 0.531578707,
+      "total_tokens": 872,
+      "total_time": 0.555822656,
+      "completion_tokens_details": {
+        "reasoning_tokens": 360
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e23fc997ca",
+    "x_groq": {
+      "id": "req_01m3x3t8kxe9gv7m7pzm6sbt47",
+      "seed": 419154020
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8518301000",
+  "predicted_reason": "Components of headphones (earcups) made of magnesium for noise cancellation.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

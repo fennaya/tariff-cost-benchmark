@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357276",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1605690000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-471ce045-67f2-4bc3-aac2-88ada3500241",
+    "object": "chat.completion",
+    "created": 1790726040,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"0305.90.00\",\n  \"reason\": \"The product is a frozen, mixed seafood preparation containing various mollusks and crustaceans, classified under heading 0305 for prepared or preserved fish, crustaceans and molluscs, with subheading 90 for other mixtures.\"\n}",
+          "reasoning": "We need HTS for frozen mixed seafood, not further processed. Likely heading 0304? Actually 0304 is fish fillets etc. Mixed seafood likely 0305? 0305 is fish, crustaceans, molluscs, etc, prepared or preserved. 0305.90? Let's think: 0305.90.00 is \"Other\" prepared or preserved fish etc. Since mixture of squid, mussel, shrimp, octopus, clam. So 0305.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086721496,
+      "prompt_tokens": 425,
+      "prompt_time": 0.022898441,
+      "completion_tokens": 189,
+      "completion_time": 0.394217358,
+      "total_tokens": 614,
+      "total_time": 0.417115799,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4de1d6a1ee",
+    "x_groq": {
+      "id": "req_01m3qsdtk3e7ttz4c2t6brptde",
+      "seed": 56133613
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "03059000",
+  "predicted_reason": "The product is a frozen, mixed seafood preparation containing various mollusks and crustaceans, classified under heading 0305 for prepared or preserved fish, crustaceans and molluscs, with subheading 90 for other mixtures.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

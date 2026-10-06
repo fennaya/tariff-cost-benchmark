@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359915",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3004909245",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-51b29e65-bbfa-4267-8389-1a61ba98b965",
+    "object": "chat.completion",
+    "created": 1790745589,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.90\",\n  \"reason\": \"Olanzapine is a medicinal preparation classified under Chapter 30 as a pharmaceutical product not elsewhere specified, falling under heading 3004.90 (other medicinal preparations) and subheading 90 for other specific drugs.\"\n}",
+          "reasoning": "Need HTS for olanzapine, a pharmaceutical. Likely 3004.90.90? Actually HTS Chapter 30: pharmaceutical products. Olanzapine is a psychotropic drug, schedule. Likely 3004.90.90 - \"Other medicinal preparations containing alkaloids, etc.\" Check: 3004.90.90 is \"Other medicinal preparations containing mixed or unmixed products\". Could be 3004.90.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20335595,
+      "prompt_tokens": 211,
+      "prompt_time": 0.008039083,
+      "completion_tokens": 174,
+      "completion_time": 0.359967602,
+      "total_tokens": 385,
+      "total_time": 0.368006685,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3rc2cqpe4fs63merj8gt3qy",
+      "seed": 1614480437
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Olanzapine is a medicinal preparation classified under Chapter 30 as a pharmaceutical product not elsewhere specified, falling under heading 3004.90 (other medicinal preparations) and subheading 90 for other specific drugs.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

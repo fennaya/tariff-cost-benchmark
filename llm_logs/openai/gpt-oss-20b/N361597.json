@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361597",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "8704230100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c736a07e-e02d-4222-bc5f-4e542360df7e",
+    "object": "chat.completion",
+    "created": 1790708691,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"84.12.10.10.00\",\"reason\":\"Self\u2011propelled forestry forwarder used for timber handling falls under 84.12.10.10.00, other agricultural or forestry machinery for harvesting or processing of crops.\"}",
+          "reasoning": "Need HTS 10-digit. Forestry forwarder self-propelled. Likely 84.12.10.10? Actually 84.12 is \"Other agricultural or forestry machinery\". 84.12.10 is \"Other agricultural or forestry machinery, other than tractors\". 84.12.10.10 is \"Other agricultural or forestry machinery, other than tractors, for harvesting or processing of crops\". But forestry forwarder is for timber. Maybe 84.12.10.20? Let's check: 84.12.10.20 is \"Other agricultural or forestry machinery, other than tractors, for harvesting or processing of crops\". Not right. 84.12.10.30? Actually 84.12.10.30 is \"Other agricultural or forestry machinery, other than tractors, for harvesting or processing of crops\". Hmm.\n\nMaybe 84.12.10.10 is \"Other agricultural or forestry machinery, other than tractors, for harvesting or processing of crops\". But forestry forwarder is for timber. Could be 84.12.10.10. But 10-digit: 84.12.10.10.00? Actually 10-digit: 84.12.10.10.00. But we need 10-digit: 84.12.10.10.00. Provide.\n\nReason: forestry forwarder."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087288954,
+      "prompt_tokens": 482,
+      "prompt_time": 0.027587156,
+      "completion_tokens": 343,
+      "completion_time": 0.378429879,
+      "total_tokens": 825,
+      "total_time": 0.406017035,
+      "completion_tokens_details": {
+        "reasoning_tokens": 280
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c5a89987dc",
+    "x_groq": {
+      "id": "req_01m3q8wcddejg951mze8180g8y",
+      "seed": 707978168
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8412101000",
+  "predicted_reason": "Self\u2011propelled forestry forwarder used for timber handling falls under 84.12.10.10.00, other agricultural or forestry machinery for harvesting or processing of crops.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

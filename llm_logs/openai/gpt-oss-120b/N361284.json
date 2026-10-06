@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361284",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8415908045",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-01dbb448-1f35-4173-bc54-1502ccc1f4c9",
+    "object": "chat.completion",
+    "created": 1790786690,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8415.80.90\", \"reason\": \"Bent pipe fittings that interface with vehicle air\u2011conditioning components are classified as parts of air\u2011conditioning machines under heading 8415, subheading 8415.80 (parts of air\u2011conditioning machines) and the most specific code 8415.80.90 for other such parts.\"}",
+          "reasoning": "We need HTS code for air conditioning system fittings, bent pipes for motor vehicle. Likely 8708? Actually vehicle air conditioning ducts etc. HTS 8708.99.90? That's parts of motor vehicles. But \"fittings consist of pipes that are bent to shape to fit within a designated space in a motor vehicle and fittings that interface with the components of an air conditioning system.\" Could be \"air conditioning ducts and fittings\" under 8708.99.90 (Other parts and accessories of motor vehicles). Or maybe 8415.80.90 (Air conditioning machines parts). 8415 covers air conditioning machines; subheading 8415.80 is parts of air conditioning machines. 8415.80.90 is other parts. That seems more specific. So choose 8415.80.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089249955,
+      "prompt_tokens": 185,
+      "prompt_time": 0.007407356,
+      "completion_tokens": 259,
+      "completion_time": 0.563463116,
+      "total_tokens": 444,
+      "total_time": 0.570870472,
+      "completion_tokens_details": {
+        "reasoning_tokens": 174
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3sk8pz3ezd8cj94rg3q64af",
+      "seed": 2093938334
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84158090",
+  "predicted_reason": "Bent pipe fittings that interface with vehicle air\u2011conditioning components are classified as parts of air\u2011conditioning machines under heading 8415, subheading 8415.80 (parts of air\u2011conditioning machines) and the most specific code 8415.80.90 for other such parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

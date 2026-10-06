@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359426",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909216",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5b672b51-dac4-4468-bb73-38c1355b9b47",
+    "object": "chat.completion",
+    "created": 1790632072,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Pharmaceutical preparations containing a single active ingredient (dasatinib) for antineoplastic use.\"}",
+          "reasoning": "Need HTS code for pharmaceutical preparations, active ingredient dasatinib. Likely 3004.10.00.00? Actually 3004.10.00.00 is \"Pharmaceutical preparations containing a single active ingredient, not elsewhere specified\". For antineoplastic drugs. So 3004.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148682289,
+      "prompt_tokens": 221,
+      "prompt_time": 0.010807415,
+      "completion_tokens": 117,
+      "completion_time": 0.13473342,
+      "total_tokens": 338,
+      "total_time": 0.145540835,
+      "completion_tokens_details": {
+        "reasoning_tokens": 72
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m3mzt4tgef2t048xfsynp8af",
+      "seed": 353926674
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Pharmaceutical preparations containing a single active ingredient (dasatinib) for antineoplastic use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

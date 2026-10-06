@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359518",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b07f9782-a812-49ba-b78d-0b13091ffbd6",
+    "object": "chat.completion",
+    "created": 1790904940,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8481.80.00\",\n  \"reason\": \"The product is a hydraulic separator used in hot or chilled water systems, classified under other pumps, compressors, and similar hydraulic equipment.\"\n}",
+          "reasoning": "We need HTS code for hydraulic separator, water heating/cooling system component. Likely under 8481? Actually separators for liquids: 8481.80.00? Let's think: 8481 covers \"Water-jet pumps, air or vacuum pumps, liquid elevators and the like\". 8481.80 is \"Other\". But separators maybe 8481.80.90? Another: 8481.80.00 \"Other\". Could be 8481.80.90 \"Other\". Or 8481.80.10? Check: 8481.80.10 is \"Other, for use in hydraulic systems\". Not sure.\n\nAlternatively 8481.80.00 is generic. Use 8481.80.00. Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205425034,
+      "prompt_tokens": 421,
+      "prompt_time": 0.018937452,
+      "completion_tokens": 215,
+      "completion_time": 0.449337959,
+      "total_tokens": 636,
+      "total_time": 0.468275411,
+      "completion_tokens_details": {
+        "reasoning_tokens": 159
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3x41dbbesys75k6fmtjyb36",
+      "seed": 550913951
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84818000",
+  "predicted_reason": "The product is a hydraulic separator used in hot or chilled water systems, classified under other pumps, compressors, and similar hydraulic equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

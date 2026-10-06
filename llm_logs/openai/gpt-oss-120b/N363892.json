@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363892",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b7b443bb-0f31-4b1b-b1dd-e491fce0e024",
+    "object": "chat.completion",
+    "created": 1790863892,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8425.20.00.00\", \"reason\": \"The product is a manually operated hydraulic jack system used for lifting containers, classifiable under hydraulic jacks (heading 8425, subheading 20).\"}",
+          "reasoning": "We need HTS code. Likely under 8425? Hydraulic jacks manual. 8425.20? Let's think: 8425.20.00.00 is \"Hydraulic jacks\". But this is a container lifting system, not self-propelled. Could be 8425.20.10? Actually 8425.20.00.00 covers \"Hydraulic jacks\". Manual hydraulic jack carrier maybe 8425.20.00.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.197187929,
+      "prompt_tokens": 434,
+      "prompt_time": 0.022352575,
+      "completion_tokens": 163,
+      "completion_time": 0.348178323,
+      "total_tokens": 597,
+      "total_time": 0.370530898,
+      "completion_tokens_details": {
+        "reasoning_tokens": 103
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3vwwqehek7rd4jjc9ztxgte",
+      "seed": 1685043577
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8425200000",
+  "predicted_reason": "The product is a manually operated hydraulic jack system used for lifting containers, classifiable under hydraulic jacks (heading 8425, subheading 20).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363476",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8436800020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4bf103aa-1efe-4811-a0a9-2e4aaa1e8aec",
+    "object": "chat.completion",
+    "created": 1790854759,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.99.90\",\n  \"reason\": \"Diesel-powered, tracked, remote\u2011controlled tool carriers designed for forestry and vegetation control are classified as other agricultural machinery not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for tracked remote-controlled tool carriers for forestry, diesel-powered, not road vehicles. Likely under 8425? 8425.91? Let's think: \"Other agricultural machinery\" 8425.91? Actually 8425.91 is \"Other agricultural machines for planting, transplanting, harvesting, etc.\" Not. Maybe 8425.99 \"Other agricultural machinery\". But forestry machines maybe 8425.93 \"Other agricultural machines for soil preparation\". Hmm.\n\nCould be 8425.99.90? Or 8425.99.99. Let's choose 8425.99.90 \"Other agricultural machinery, not elsewhere specified\". Provide reason.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.19717375,
+      "prompt_tokens": 449,
+      "prompt_time": 0.027764179,
+      "completion_tokens": 199,
+      "completion_time": 0.421944578,
+      "total_tokens": 648,
+      "total_time": 0.449708757,
+      "completion_tokens_details": {
+        "reasoning_tokens": 142
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3vm60ptekfvts1fea312bd0",
+      "seed": 1404700254
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84259990",
+  "predicted_reason": "Diesel-powered, tracked, remote\u2011controlled tool carriers designed for forestry and vegetation control are classified as other agricultural machinery not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

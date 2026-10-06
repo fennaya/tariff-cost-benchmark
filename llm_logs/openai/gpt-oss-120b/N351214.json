@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N351214",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "6101302010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-55106462-cfed-422a-9af5-806999328d73",
+    "object": "chat.completion",
+    "created": 1790607028,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6201.92.90\", \"reason\": \"Men's sleeveless jacket made of polyester (a man\u2011made fiber) classified under outerwear of man\u2011made fibers (HTS 6201.92) with no more specific subheading, thus 6201.92.90.\"}",
+          "reasoning": "We need HTS for men's sleeveless jacket made of polyester, with polyurethane film. Likely under 6201? 6201.92? Let's think: 6201.92.90 is \"Men's or boys' anoraks, windcheaters, etc., of man-made fibers\". Sleeveless jacket maybe \"outerwear\". Could be 6201.92.90. Or 6203 for suits? Actually 6201 is \"Coats, overcoats, capes, cloaks, anoraks (including ski jackets), windcheaters, raincoats, and similar articles, knitted or crocheted\". 6201.92 is \"Of man-made fibers\". Then further digits: 6201.92.90 \"Other\". So answer.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.633354475,
+      "prompt_tokens": 291,
+      "prompt_time": 0.016501319,
+      "completion_tokens": 240,
+      "completion_time": 0.517461921,
+      "total_tokens": 531,
+      "total_time": 0.53396324,
+      "completion_tokens_details": {
+        "reasoning_tokens": 164
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3m7xv27enhakke4gkb0cc79",
+      "seed": 579005115
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62019290",
+  "predicted_reason": "Men's sleeveless jacket made of polyester (a man\u2011made fiber) classified under outerwear of man\u2011made fibers (HTS 6201.92) with no more specific subheading, thus 6201.92.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

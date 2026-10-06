@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361298",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5509530030",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-70099efc-60bc-47dd-9168-0c827007d423",
+    "object": "chat.completion",
+    "created": 1790697013,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"5201.90.90.00\",\"reason\":\"Blended cotton/polyester carded ring-spun yarn\"}",
+          "reasoning": "Need HTS 10-digit. Yarn 50% cotton 50% polyester, carded ring spun yarn. For yarns: 5201.90.90? Actually 5201 is yarns of cotton; 5202 polyester. For blends: 5201.90.90 is \"Other yarns of cotton\". But for blends maybe 5201.90.90? Wait 5201.90.90 is \"Other yarns of cotton\". For polyester yarns 5202.90.90. For blended yarns maybe 5201.90.90? Actually 5201.90.90 is \"Other yarns of cotton\". But for blended cotton/polyester maybe 5201.90.90? Might be 5201.90.90 for \"Other yarns of cotton\" includes blends? But better: 5201.90.90 is \"Other yarns of cotton\". 5202.90.90 is \"Other yarns of polyester\". For blended yarns maybe 5201.90.90? Actually 5201.90.90 includes \"Other yarns of cotton\" not blends. For blends, 5201.90.90? Hmm.\n\nMaybe 5201.90.90 is for \"Other yarns of cotton\" including blends? But 5201.90.90 is \"Other yarns of cotton\". 5201.90.90 includes \"Other yarns of cotton\" not specified. For blended yarns, 5201.90.90? Might be 5201.90.90. But 5201.90.90 is 10-digit? Actually 5201.90.90 is 8-digit. 10-digit would be 5201.90.90.00? But we need 10-digit: 5201.90.90.00. Provide.\n\nReason: blended cotton/polyester carded ring spun yarn."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.140068025,
+      "prompt_tokens": 407,
+      "prompt_time": 0.021058315,
+      "completion_tokens": 437,
+      "completion_time": 0.504516941,
+      "total_tokens": 844,
+      "total_time": 0.525575256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 400
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_99996fee8e",
+    "x_groq": {
+      "id": "req_01m3pxqzbme0yv1s6rnp29n0bj",
+      "seed": 1942184799
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5201909000",
+  "predicted_reason": "Blended cotton/polyester carded ring-spun yarn",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

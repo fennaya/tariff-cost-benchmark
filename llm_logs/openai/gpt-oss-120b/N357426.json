@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357426",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "8544429090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-eede47f5-c980-41ae-ba40-e62e26ba4ff9",
+    "object": "chat.completion",
+    "created": 1790726191,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.49.00\", \"reason\": \"Classified as a cable assembly with multiple insulated conductors and a connector, falling under 'Other electrical connectors' (HTS 8544.49.00).\"}",
+          "reasoning": "We need HTS code for cable assembly with 6 conductors, used in aviation headset, not audio. Likely under 8544.42.00? That's \"Electrical connectors, other than printed circuit boards\". Cable assemblies maybe 8544.49? Actually 8544.42 is \"Connectors for electronic circuits\". Cable assemblies maybe 8544.49 \"Other\". Could be 8544.49.00. Or 8544.50 for \"Other\". Let's pick 8544.49.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089302736,
+      "prompt_tokens": 281,
+      "prompt_time": 0.011596836,
+      "completion_tokens": 169,
+      "completion_time": 0.352125916,
+      "total_tokens": 450,
+      "total_time": 0.363722752,
+      "completion_tokens_details": {
+        "reasoning_tokens": 109
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qsjdwge3397nwj08sgk728",
+      "seed": 1997088200
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444900",
+  "predicted_reason": "Classified as a cable assembly with multiple insulated conductors and a connector, falling under 'Other electrical connectors' (HTS 8544.49.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

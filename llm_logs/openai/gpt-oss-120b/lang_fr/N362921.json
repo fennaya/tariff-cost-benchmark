@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362921",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "7607205000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0308b282-5d10-433d-9b4e-fb8e8c77a3b6",
+    "object": "chat.completion",
+    "created": 1790905535,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3919.90.00\", \"reason\": \"Composite PET/aluminum self\u2011adhesive film used as a passive electronic component falls under self\u2011adhesive plastic films and foils\"}",
+          "reasoning": "We need HTS for PET/aluminum composite film, passive component. Likely under 3919? 3919.10.00? That's \"Self-adhesive plates, sheets, film, foil and the like, of plastics\". But includes aluminum? Could be 3920? Actually composite with metal maybe under 7610? But it's plastic film with metal layer, used in electronics. Likely classified under 3919.90.00 \"Other self-adhesive plates, sheets, film\". Provide code 3919.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088089404,
+      "prompt_tokens": 287,
+      "prompt_time": 0.012050318,
+      "completion_tokens": 172,
+      "completion_time": 0.364960442,
+      "total_tokens": 459,
+      "total_time": 0.37701076,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5e2577217c",
+    "x_groq": {
+      "id": "req_01m3x4kjhmeshbszz5jy3haenk",
+      "seed": 193911094
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39199000",
+  "predicted_reason": "Composite PET/aluminum self\u2011adhesive film used as a passive electronic component falls under self\u2011adhesive plastic films and foils",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

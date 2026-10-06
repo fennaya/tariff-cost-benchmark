@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359366",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7318220000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-cc04dbee-81ca-4fde-b8e0-4ff9c3d76174",
+    "object": "chat.completion",
+    "created": 1790905645,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7318.15.0015\", \"reason\": \"Flat steel washer made of stainless steel (SUS301) classified under heading 7318.15 for washers of iron or steel.\"}",
+          "reasoning": "We need HTS for flat steel washer. Likely heading 7318.15.00? 7318.15.00 is \"Washers of iron or steel\". 10-digit: 7318.15.0010? Let's check: 7318.15.0010 is \"Washers of iron or steel, of a kind used in the automotive industry\". Not sure. General flat washers: 7318.15.0010 maybe. Could be 7318.15.0015? Actually 7318.15.0015 is \"Other\". Let's pick 7318.15.0015. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206366904,
+      "prompt_tokens": 284,
+      "prompt_time": 0.014173033,
+      "completion_tokens": 189,
+      "completion_time": 0.392960934,
+      "total_tokens": 473,
+      "total_time": 0.407133967,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3x4py75egga8mpwbtx24h0g",
+      "seed": 1628273486
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318150015",
+  "predicted_reason": "Flat steel washer made of stainless steel (SUS301) classified under heading 7318.15 for washers of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

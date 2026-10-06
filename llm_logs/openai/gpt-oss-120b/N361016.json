@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-7d3d2916-dec9-4999-8c55-870e89d0e2a2",
+    "object": "chat.completion",
+    "created": 1790780383,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.49.00\",\n  \"reason\": \"Classified as an electrical wiring assembly with connectors and PCB used in aviation headsets, falling under 'Other electrical apparatus for switching or protecting circuits' (HTS 8544.49.00).\"\n}",
+          "reasoning": "We need HTS code for electrical wiring assembly with PCB, used in aviation headsets. Likely under 8544? 8544.42? Let's think: 8544.42.00 - \"Electrical apparatus for switching or protecting electrical circuits, for a voltage not exceeding 1,000 V\". Not. Maybe 8543.70 - \"Electrical machines and apparatus, having individual functions, not specified elsewhere\". Actually 8543.70.90 \"Other\". But wiring harnesses are 8544.42? Or 8544.49? Search memory: HTS 8544.42.00 is \"Connectors for wiring devices\". 8544.60 is \"Other\". Wiring harnesses: 8544.42? Hmm.\n\nCould be 8544.42.00 \"Connectors for wiring devices\". But assembly includes PCB, not just connectors.\n\nMaybe 8544.49.00 \"Other\". Let's pick 8544.49.00.\n\nReason: electrical wiring assembly with PCB for aviation headsets.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.15055968,
+      "prompt_tokens": 295,
+      "prompt_time": 0.020631378,
+      "completion_tokens": 289,
+      "completion_time": 0.610323078,
+      "total_tokens": 584,
+      "total_time": 0.630954456,
+      "completion_tokens_details": {
+        "reasoning_tokens": 218
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0708ac49a5",
+    "x_groq": {
+      "id": "req_01m3sd87wfe8g9v1vp26v5f7z2",
+      "seed": 1854822843
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444900",
+  "predicted_reason": "Classified as an electrical wiring assembly with connectors and PCB used in aviation headsets, falling under 'Other electrical apparatus for switching or protecting circuits' (HTS 8544.49.00).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

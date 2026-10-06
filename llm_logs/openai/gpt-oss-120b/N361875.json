@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361875",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9401999085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-235f1bb9-4ff8-405a-8745-1ba85b5bd827",
+    "object": "chat.completion",
+    "created": 1790808740,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7610.90.00\", \"reason\": \"Aluminum furniture component (chair frame) classified under other parts of furniture of aluminum\"}",
+          "reasoning": "We need HTS code for aluminum chair frame for pontoon boats. Likely under \"Furniture parts of aluminum\" 7610? Check: 7610.10.00 \u2013 Seats, chairs, etc., of aluminum? Actually 7610.10 is \"Seats, chairs, etc., of aluminum\". But this is a frame, not complete chair. Could be 7610.90 \u2013 parts of furniture of aluminum. 7610.90.00 \"Other\". So choose 7610.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.300179679,
+      "prompt_tokens": 274,
+      "prompt_time": 0.066507802,
+      "completion_tokens": 154,
+      "completion_time": 0.322462801,
+      "total_tokens": 428,
+      "total_time": 0.388970603,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3t89kmjehqsyjn5zke4f8hd",
+      "seed": 778697653
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76109000",
+  "predicted_reason": "Aluminum furniture component (chair frame) classified under other parts of furniture of aluminum",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

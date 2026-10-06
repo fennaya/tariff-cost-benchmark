@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357647",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "7304515060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a3e07ce7-0b79-4ef1-87a9-89fdd7c25e66",
+    "object": "chat.completion",
+    "created": 1790726317,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7307.19.00\", \"reason\": \"The item is a seamless cold\u2011rolled steel tube, which falls under heading 7307 for seamless tubes of iron or steel, specifically subheading 7307.19.00 for other seamless steel tubes.\"}",
+          "reasoning": "We need HTS code for steel tube for airbag inflator. Likely under 7307? 7307.10.00? That's \"Tube & pipe, seamless, of iron or steel\". For automotive airbag inflator housing maybe 8708? But it's a component. Likely 8708.99.90? That's \"Parts and accessories of motor vehicles\". However it's a steel tube, not a part of vehicle? Could be classified under 7307.19.00 (Other seamless steel tubes). 7307.19.00 is \"Other seamless tubes, of iron or steel\". So choose that. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206505028,
+      "prompt_tokens": 225,
+      "prompt_time": 0.009596411,
+      "completion_tokens": 202,
+      "completion_time": 0.41977147,
+      "total_tokens": 427,
+      "total_time": 0.429367881,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qsp997ez9rnq64hp7y2b1c",
+      "seed": 2066272302
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73071900",
+  "predicted_reason": "The item is a seamless cold\u2011rolled steel tube, which falls under heading 7307 for seamless tubes of iron or steel, specifically subheading 7307.19.00 for other seamless steel tubes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

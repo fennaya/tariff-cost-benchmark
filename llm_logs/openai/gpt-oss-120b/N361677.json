@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361677",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8418998050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d9587bcc-3e85-40c3-bc2b-833ee0c92ac1",
+    "object": "chat.completion",
+    "created": 1790801952,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7318.15.0010\",\n  \"reason\": \"The item is a steel nut and bolt assembly, classified under other nuts, bolts, screws, and similar fasteners of iron or steel.\"\n}",
+          "reasoning": "We need HTS code for a nut assembly. Likely 7318.15.00? Nuts, bolts, etc. 7318.15.00 is \"Other nuts, bolts, screws, rivets, etc., of iron or steel\". Need 10-digit: 7318.15.0010? Actually 10-digit US: 7318.15.0010 is \"Other nuts, bolts, etc., of iron or steel, not elsewhere specified\". Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089143312,
+      "prompt_tokens": 194,
+      "prompt_time": 0.0074225,
+      "completion_tokens": 161,
+      "completion_time": 0.336278676,
+      "total_tokens": 355,
+      "total_time": 0.343701176,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m3t1tfnqe09s2a4rw3jk8x1j",
+      "seed": 1639733294
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318150010",
+  "predicted_reason": "The item is a steel nut and bolt assembly, classified under other nuts, bolts, screws, and similar fasteners of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

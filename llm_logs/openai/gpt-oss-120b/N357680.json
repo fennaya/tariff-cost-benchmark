@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357680",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "9506995500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6d200e2d-7eef-4185-b1a8-81aa4339a38d",
+    "object": "chat.completion",
+    "created": 1790726332,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3915.90.00\", \"reason\": \"Fiberglass-reinforced polyester resin pool shells are classified as builders' ware of plastics under heading 3915, specifically the subheading for other such articles.\"}",
+          "reasoning": "Need HTS code for fiberglass swimming pool shells. Likely under 3916.10.00? That's \"Baths, shower-baths, sinks, wash-basins, bidets, water closets and similar sanitary fixtures, of plastics\". But pools maybe 3926? Actually fiberglass reinforced polyester resin structures: \"Other articles of plastics and articles of other materials\". Could be 3926.90.99 \"Other\". However pools are \"Swimming pools, of plastics\". Check HTS: 3916.10.00 is for \"Baths, shower-baths, sinks... of plastics\". Not pools. 3916.90.00 other of plastics? 3916.90.00 \"Other\". Might be 3926.90.99 \"Other articles of plastics\". But there is specific heading 3915 for \"Builders' ware of plastics\". 3915.90.00 \"Other\". Pools could be \"Prefabricated buildings\". Actually fiberglass pool shells maybe classified under 3915.90.00 \"Other builders' ware of plastics\". That seems plausible. Let's answer with 3915.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301394689,
+      "prompt_tokens": 394,
+      "prompt_time": 0.018605645,
+      "completion_tokens": 293,
+      "completion_time": 0.608064043,
+      "total_tokens": 687,
+      "total_time": 0.626669688,
+      "completion_tokens_details": {
+        "reasoning_tokens": 234
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3qsppy8ergv0m6twmyamq6b",
+      "seed": 1629201908
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39159000",
+  "predicted_reason": "Fiberglass-reinforced polyester resin pool shells are classified as builders' ware of plastics under heading 3915, specifically the subheading for other such articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

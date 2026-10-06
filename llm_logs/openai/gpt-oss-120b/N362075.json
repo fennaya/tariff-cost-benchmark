@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362075",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4202924500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-592afa9f-f26e-4b28-aa55-e3b4e01d8e50",
+    "object": "chat.completion",
+    "created": 1790815686,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.92.90\", \"reason\": \"Classified as a plastic travel bag/luggage item (suitcase, tote) with wheels under heading 4202.92 for other plastic suitcases and travel bags.\"}",
+          "reasoning": "We need HTS code for plastic tote bag with wheels. Likely 3926.90.9995? Plastic bags, sacks etc. Wheels maybe \"plastic luggage\". Could be 4202.92.90 (suitcases, travel bags, of plastics). HTS 4202.92.90 is \"Other suitcases, vanity cases, briefcases, etc., of plastics\". Tote bag with wheels maybe considered luggage. I'd choose 4202.92.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.150838957,
+      "prompt_tokens": 252,
+      "prompt_time": 0.011582872,
+      "completion_tokens": 162,
+      "completion_time": 0.341224135,
+      "total_tokens": 414,
+      "total_time": 0.352807007,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6c36ac20de",
+    "x_groq": {
+      "id": "req_01m3texk9termted7fmq1avd9t",
+      "seed": 1911512280
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "42029290",
+  "predicted_reason": "Classified as a plastic travel bag/luggage item (suitcase, tote) with wheels under heading 4202.92 for other plastic suitcases and travel bags.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360809",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403200050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3f95031e-18b4-457a-bb49-f2e8a8ce25a0",
+    "object": "chat.completion",
+    "created": 1790774070,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7320.90.90\",\n  \"reason\": \"Steel wall\u2011mounted storage chests and cabinets are classified under other articles of iron or steel, not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for metal storage cabinets, wall-mounted, steel, not furniture? Likely 7308.90.00? 7308 covers structures and parts of building, prefabricated. But cabinets maybe 7320? 7320 is other articles of iron or steel. 7320.90.90 is other. However \"metal cabinets\" often 7320.90.90. Let's choose 7320.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.409192072,
+      "prompt_tokens": 453,
+      "prompt_time": 0.019440273,
+      "completion_tokens": 147,
+      "completion_time": 0.30955853,
+      "total_tokens": 600,
+      "total_time": 0.328998803,
+      "completion_tokens_details": {
+        "reasoning_tokens": 94
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f73454f048",
+    "x_groq": {
+      "id": "req_01m3s77j3he4va59sc07z78whv",
+      "seed": 291139434
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73209090",
+  "predicted_reason": "Steel wall\u2011mounted storage chests and cabinets are classified under other articles of iron or steel, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357129",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-04012588-47db-4e9d-b553-2b1ab7f639aa",
+    "object": "chat.completion",
+    "created": 1790725947,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8302.94.00.00\",\n  \"reason\": \"Classified under heading 8302 for mountaineering, climbing, or caving equipment made of materials other than iron or steel.\"\n}",
+          "reasoning": "We need HTS code for locking carabiners made of aluminum, for climbing. Likely under heading 8302. (Articles of iron or steel) but aluminum is 7615? Actually carabiners are made of metal, often aluminum alloy, classified under 8302.93? Let's check: 8302.93.00 - \"Other mountaineering, climbing, or caving equipment, of iron or steel\". For aluminum maybe 7615.10? 7615.10.00 is \"Aluminium structures and parts of structures\". Not right. I think carabiners are \"mountaineering, climbing, or caving equipment\" under 8302.93.00 (iron or steel). But material is aluminum, but classification often based on use not material. However HTS 8302.93.00 covers \"Other mountaineering, climbing, or caving equipment, of iron or steel\". For other materials, maybe 8302.94.00 \"Other mountaineering, climbing, or caving equipment, of other materials\". Yes 8302.94.00 is \"Other mountaineering, climbing, or caving equipment, of other materials\". So aluminum falls under other materials. So code: 8302.94.00. Need 10-digit: 8302.94.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087710892,
+      "prompt_tokens": 363,
+      "prompt_time": 0.016847699,
+      "completion_tokens": 343,
+      "completion_time": 0.713744659,
+      "total_tokens": 706,
+      "total_time": 0.730592358,
+      "completion_tokens_details": {
+        "reasoning_tokens": 284
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3qsazb5e1wrz3gk602ajd4m",
+      "seed": 1284954873
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8302940000",
+  "predicted_reason": "Classified under heading 8302 for mountaineering, climbing, or caving equipment made of materials other than iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

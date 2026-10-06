@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359080",
+  "rulingDate": "2026-03-09T00:00:00",
+  "true_code": "8518908100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5e2c146a-946e-4241-bbdc-86f65a0eb37d",
+    "object": "chat.completion",
+    "created": 1790727070,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9018.90.90.00\", \"reason\": \"The item is a plastic ear cup assembly, a component of a headset, classified under parts for headphones/earphones (heading 9018, subheading 9018.90.90).\"}",
+          "reasoning": "We need HTS code for plastic ear cup assembly. Likely under 9018? Actually earphones parts. HTS 9018.90.90? Let's think: 9018 covers headphones, earphones, etc. 9018.90 is parts. 9018.90.90 is \"Other\". 9018.90.90 is 4-digit? Full 10-digit: 9018.90.90.00? Actually HTSUS 10-digit: 9018.90.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.095530095,
+      "prompt_tokens": 261,
+      "prompt_time": 0.091337421,
+      "completion_tokens": 183,
+      "completion_time": 0.386253989,
+      "total_tokens": 444,
+      "total_time": 0.47759141,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_420c059a6a",
+    "x_groq": {
+      "id": "req_01m3qtd81qe54se63my1gv2xky",
+      "seed": 382654214
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018909000",
+  "predicted_reason": "The item is a plastic ear cup assembly, a component of a headset, classified under parts for headphones/earphones (heading 9018, subheading 9018.90.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

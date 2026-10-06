@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357381",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "3921135000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-71424960-d678-48ba-bdbf-660949e01441",
+    "object": "chat.completion",
+    "created": 1790607461,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.10\",\"reason\":\"Foamed polyurethane plastic blocks used for manufacturing wheelchairs fall under 3924.10.10, foamed plastic articles of a kind used for packaging, of polyurethane.\"}",
+          "reasoning": "Need HTS code for cellular polyurethane foam blocks. Likely 3924.10.10? Actually 3924 is \"Other articles of plastics\". 3924.10 is \"Foamed plastic articles, of a kind used for packaging\". But blocks for wheelchair manufacturers maybe \"Foamed plastic articles, of a kind used for packaging\" or \"Foamed plastic articles, of a kind used for other purposes\". 3924.10.10 is \"Foamed plastic articles, of a kind used for packaging, of polyurethane\". But if used for wheelchair, maybe 3924.10.20? Let's pick 3924.10.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.084544692,
+      "prompt_tokens": 180,
+      "prompt_time": 0.008962219,
+      "completion_tokens": 192,
+      "completion_time": 0.212263697,
+      "total_tokens": 372,
+      "total_time": 0.221225916,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3m8b2gees9vydg6m25zvvhr",
+      "seed": 1820795686
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39241010",
+  "predicted_reason": "Foamed polyurethane plastic blocks used for manufacturing wheelchairs fall under 3924.10.10, foamed plastic articles of a kind used for packaging, of polyurethane.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

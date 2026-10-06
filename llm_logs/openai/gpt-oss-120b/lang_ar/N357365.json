@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357365",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "4407130000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8044d290-aef9-4be0-935f-6c5b7450ee79",
+    "object": "chat.completion",
+    "created": 1790904796,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4407.20.00\",\n  \"reason\": \"Softwood (SPF) sawn lumber of dimensions exceeding 6\u202fmm thickness, imported for further processing\"\n}",
+          "reasoning": "We need HTS for SPF lumber, dimension 2x3 etc, rough? Likely 4407.00.00? Actually softwood lumber: 4407.00.00 is \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". Not. 4407 is for wood, not sawn? Let's recall: 4407 is \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". For larger: 4407? Wait 4407 is for \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". For larger dimension lumber: 4407? Actually 4407 is for \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". For larger: 4407? No, 4407 is for \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". For larger thickness, it's 4407? I'm mixing. Let's think: 4407 is for \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". 4407.00.00 is for \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". For larger, it's 4407? Actually 4407 is for \"Wood sawn or chipped lengthwise, of a thickness not exceeding 6 mm\". For thicker, it's 4407? Hmm.\n\nMaybe correct code is 4407.20.00? No.\n\nBetter: 4407.20.00 is \"Sawn wood, of a thickness exceeding 6 mm\". Let's check memory: 4407.20.00 is \"Sawn wood, of a thickness exceeding 6 mm\". So likely 4407.20.00.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220534082,
+      "prompt_tokens": 451,
+      "prompt_time": 0.020835232,
+      "completion_tokens": 428,
+      "completion_time": 0.903501963,
+      "total_tokens": 879,
+      "total_time": 0.924337195,
+      "completion_tokens_details": {
+        "reasoning_tokens": 375
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3x3x0fge4ztdbyy2djbrc2r",
+      "seed": 2060100934
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "44072000",
+  "predicted_reason": "Softwood (SPF) sawn lumber of dimensions exceeding 6\u202fmm thickness, imported for further processing",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

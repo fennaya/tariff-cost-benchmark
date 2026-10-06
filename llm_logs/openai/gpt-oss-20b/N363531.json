@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363531",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5902ee11-7f2b-4d8e-9b87-827fd6c34227",
+    "object": "chat.completion",
+    "created": 1790766919,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"61.10.20.20.00\",\"reason\":\"The robe is a non\u2011knitted costume garment, fitting the heading for other articles of apparel and clothing accessories, not knitted or crocheted, specifically costumes.\"}",
+          "reasoning": "Need HTS code for costume robe. Likely 61.10.20.10? Actually clothing. For costumes: 61.10.20.10 is \"Other articles of apparel and clothing accessories, knitted or crocheted\". But robe is not knitted. Maybe 61.10.20.20? Wait 61.10.20.20 is \"Other articles of apparel and clothing accessories, not knitted or crocheted\". For costumes: 61.10.20.20 includes \"costumes, other\". So 61.10.20.20.00? 10-digit: 61.10.20.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295044931,
+      "prompt_tokens": 254,
+      "prompt_time": 0.012342145,
+      "completion_tokens": 197,
+      "completion_time": 0.199980495,
+      "total_tokens": 451,
+      "total_time": 0.21232264,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e23fc997ca",
+    "x_groq": {
+      "id": "req_01m3s0dawdesfv79pvrxg72hs1",
+      "seed": 1596789058
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6110202000",
+  "predicted_reason": "The robe is a non\u2011knitted costume garment, fitting the heading for other articles of apparel and clothing accessories, not knitted or crocheted, specifically costumes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

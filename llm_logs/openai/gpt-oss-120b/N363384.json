@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363384",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "3926209050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-af5e0054-fef1-433c-a6c8-96f809763811",
+    "object": "chat.completion",
+    "created": 1790851409,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6203.42.90.00\",\n  \"reason\": \"Men's jacket made of synthetic (polyurethane) material classified under heading 6203.42 for men's jackets of synthetic fibers.\"\n}",
+          "reasoning": "We need HTS for men's faux leather jacket, outer shell cellular polyurethane plastic, backing polyester. Likely under \"Garments, men's or boys', of synthetic fibers\" etc. HTS Chapter 62. For jackets of synthetic fibers, heading 6203? Actually 6203.42? Let's recall: 6203.42.90 \u2013 Men's or boys' jackets, of synthetic fibers, not knitted. Need 10-digit: 6203.42.90.00? Check: 6203.42.90.00 is \"Men's or boys' jackets, of synthetic fibers, other\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.350170524,
+      "prompt_tokens": 217,
+      "prompt_time": 0.054659876,
+      "completion_tokens": 187,
+      "completion_time": 0.393817708,
+      "total_tokens": 404,
+      "total_time": 0.448477584,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3vgzrfjegc8547c8jc00yg6",
+      "seed": 2124369473
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6203429000",
+  "predicted_reason": "Men's jacket made of synthetic (polyurethane) material classified under heading 6203.42 for men's jackets of synthetic fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

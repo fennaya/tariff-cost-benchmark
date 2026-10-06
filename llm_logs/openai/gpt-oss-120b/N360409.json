@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360409",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8544602000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4dd4318b-8142-4eb5-ac2a-23ba19c0c469",
+    "object": "chat.completion",
+    "created": 1790760337,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.70.00.00\", \"reason\": \"Classified under insulated conductors and assemblies for high\u2011voltage applications, not elsewhere specified, as an aluminum conductor bar with polyamide insulation used in EV battery modules.\"}",
+          "reasoning": "We need HTS code for electric vehicle battery connector assemblies, aluminum conductor bar with polyamide housing. Likely under 8544? 8544.42? Let's think: 8544 covers insulated wire, cable, etc. But assemblies maybe 8544.70? Actually 8544.70 is \"Other insulated wire, cable, or other conductors\". 8544.42 is \"Insulated wire and cable, for a voltage not exceeding 1,000 V\". Here high voltage 24kV, so >1000V. Could be 8544.49 \"Other\". But it's a connector assembly, not just wire. Could be 8544.70. Let's pick 8544.70.00.00? Format 10-digit: 8544.70.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.217773491,
+      "prompt_tokens": 356,
+      "prompt_time": 0.020254183,
+      "completion_tokens": 235,
+      "completion_time": 0.491721339,
+      "total_tokens": 591,
+      "total_time": 0.511975522,
+      "completion_tokens_details": {
+        "reasoning_tokens": 172
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3rt4fq7ekesbyrcbywajhpw",
+      "seed": 1890688115
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8544700000",
+  "predicted_reason": "Classified under insulated conductors and assemblies for high\u2011voltage applications, not elsewhere specified, as an aluminum conductor bar with polyamide insulation used in EV battery modules.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

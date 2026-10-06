@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359403",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "4412319200",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1016777c-2f76-4dd2-9fc7-dd0a4c6b3977",
+    "object": "chat.completion",
+    "created": 1790904896,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4412.90.9090\", \"reason\": \"The product is a multi-layer laminated veneer wood panel (plywood) not specifically covered by other subheadings, thus classified under heading 4412.90.90 for other plywood.\"}",
+          "reasoning": "We need HTS for laminated veneer lumber? 18mm thick, 11 layers, plywood. Likely heading 4412? 4412.90.90? 4412.90.90 is \"Other plywood\". 10-digit: 4412.90.9090? Actually US 10-digit: 4412.90.9090 is \"Other plywood, not elsewhere specified\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204789379,
+      "prompt_tokens": 372,
+      "prompt_time": 0.015428718,
+      "completion_tokens": 153,
+      "completion_time": 0.320101843,
+      "total_tokens": 525,
+      "total_time": 0.335530561,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3x402ese0sa4w6ef184zyfw",
+      "seed": 1924984782
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4412909090",
+  "predicted_reason": "The product is a multi-layer laminated veneer wood panel (plywood) not specifically covered by other subheadings, thus classified under heading 4412.90.90 for other plywood.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

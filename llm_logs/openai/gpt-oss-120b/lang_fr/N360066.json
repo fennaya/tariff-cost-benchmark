@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360066",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "3924905650",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ec5c2cbf-5c49-40fd-b9fd-722329a3ae23",
+    "object": "chat.completion",
+    "created": 1790904640,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9503.00.9090\",\n  \"reason\": \"The item is a cat toy consisting of a plastic launcher and polyester pom-poms, classified under heading 9503 for toys, specifically subheading 9503.00.90 for other toys not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for cat toy with plastic launcher and polyester pom-poms. Likely under heading 9503 - Tricycles, toys etc. 9503.00.90? Let's see: 9503.00.90 is \"Other toys, not elsewhere specified\". 9503.00.10 is dolls, 9503.00.20 etc. For pet toys maybe 9503.00.90. So 10-digit: 9503.00.9090? Actually US uses 10 digits: chapter 95, heading 03, subheading 00, then further. 9503.00.9090 is common for \"Other toys, not elsewhere specified\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048347547,
+      "prompt_tokens": 385,
+      "prompt_time": 0.018015159,
+      "completion_tokens": 224,
+      "completion_time": 0.464610132,
+      "total_tokens": 609,
+      "total_time": 0.482625291,
+      "completion_tokens_details": {
+        "reasoning_tokens": 150
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3x3r8xxebcs067jjz6mrtbp",
+      "seed": 335282535
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503009090",
+  "predicted_reason": "The item is a cat toy consisting of a plastic launcher and polyester pom-poms, classified under heading 9503 for toys, specifically subheading 9503.00.90 for other toys not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

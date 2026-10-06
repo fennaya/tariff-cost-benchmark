@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362773",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "4202122910",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-cd6f4799-a6cc-4858-b430-e2752ef5af5e",
+    "object": "chat.completion",
+    "created": 1790746465,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.10\",\"reason\":\"Molded plastic case used for storage and transport of goods, fitting the definition of a plastic container under heading 3924.10\"}",
+          "reasoning": "We need HTS code for molded plastic case similar to briefcase. Likely 3924.10.10? Actually 3924.10.10 is \"Cases, boxes, crates, drums, and other containers of plastics, of a kind used for the transport or storage of goods, other than those of heading 3924.20\". But briefcase is a case. 3924.10.10 is for cases, boxes, etc. But maybe 3924.10.10 is for cases, boxes, etc. 3924.10.10 is for cases, boxes, crates, drums, and other containers of plastics, of a kind used for the transport or storage of goods, other than those of heading 3924.20. So yes. Provide code 3924.10.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.190213315,
+      "prompt_tokens": 245,
+      "prompt_time": 0.011913818,
+      "completion_tokens": 224,
+      "completion_time": 0.252767049,
+      "total_tokens": 469,
+      "total_time": 0.264680867,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m3rcx4b0efzt1evnhfq8ywn7",
+      "seed": 2141680133
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39241010",
+  "predicted_reason": "Molded plastic case used for storage and transport of goods, fitting the definition of a plastic container under heading 3924.10",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

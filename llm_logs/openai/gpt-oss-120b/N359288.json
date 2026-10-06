@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359288",
+  "rulingDate": "2026-03-13T00:00:00",
+  "true_code": "8536694020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-dc3bbe4a-afc2-40a2-b655-e1b2d2b50474",
+    "object": "chat.completion",
+    "created": 1790727206,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.42.00.00\",\n  \"reason\": \"The 5\u2011pin XLR connector is an insulated electronic circuit connector (voltage \u22641000\u202fV) classified under heading 8544.42.\"\n}",
+          "reasoning": "We need HTS code for XLR connector. Likely 8544.42.00? Let's think: Electrical connectors for audio, 5-pin. HTS Chapter 85. 8544 covers \"Insulated wire connectors, terminals and other fittings\". Subheading 8544.42 \"Connectors for electronic circuits, for a voltage not exceeding 1000 V\". Actually 8544.42.00 is \"Connectors for electronic circuits, for a voltage not exceeding 1000 V\". Could be 8544.42.90? Need 10-digit: 8544.42.00.00? Check US: 8544.42.00.00 is \"Connectors for electronic circuits, for a voltage not exceeding 1000 V\". That seems right.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.225889074,
+      "prompt_tokens": 292,
+      "prompt_time": 0.041356853,
+      "completion_tokens": 230,
+      "completion_time": 0.477495007,
+      "total_tokens": 522,
+      "total_time": 0.51885186,
+      "completion_tokens_details": {
+        "reasoning_tokens": 166
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3qthcpgehb88rpnbvaa2mc6",
+      "seed": 1639196495
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8544420000",
+  "predicted_reason": "The 5\u2011pin XLR connector is an insulated electronic circuit connector (voltage \u22641000\u202fV) classified under heading 8544.42.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

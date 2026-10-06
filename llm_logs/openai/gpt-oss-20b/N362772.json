@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362772",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "1902200040",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-42f2f19c-e122-4d98-944e-9143da8dfe6a",
+    "object": "chat.completion",
+    "created": 1790746148,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1906.90.90\",\"reason\":\"Frozen dumplings with vegetable filling are classified under 1906.90.90, other food preparations of meat, fish, or poultry, which includes non-meat dough products with fillings.\"}",
+          "reasoning": "Need HTS 10-digit. Frozen dumplings. Likely 1906.90.10? Actually 1906 is \"Other food preparations of meat, fish, or poultry\". But dumplings are dough with filling. Could be 1906.90.10 \"Other food preparations of meat, fish, or poultry\". Not. Maybe 1906.90.90? Wait dumplings with vegetables. 1906.90.90 is \"Other food preparations of meat, fish, or poultry\". Not. For dumplings, maybe 1906.90.90? Actually 1906 is meat. For dough products: 1906 is meat. For dough products: 1906.90.90 is other. But dumplings are not meat. Maybe 1906.90.90 is wrong. For dough products: 1906.90.90 is \"Other food preparations of meat, fish, or poultry\". So not. For dough products: 1906.90.90 is wrong. For dough products: 1906.90.90 is meat. For dough: 1906.90.90. For dumplings: 1906.90.90? No. Actually 1906 is meat. For dough: 1906.90.90 is meat. For dough: 1906.90.90. For dumplings: 1906.90.90. I'm stuck. Maybe 1906.90.90 is wrong. For dumplings: 1906.90.90. Wait 1906.90.90 is meat. For dumplings: 1906.90.90. Let's think: 1906.90.90 is meat. For dumplings: 1906.90.90. Actually 1906.90.90 is \"Other food preparations of meat, fish, or poultry\". So not. For dumplings: 1906.90.90. Maybe 1906.90.90. I'm out. Maybe 1906.90.90. Let's guess 1906.90.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.146246878,
+      "prompt_tokens": 731,
+      "prompt_time": 0.038409058,
+      "completion_tokens": 495,
+      "completion_time": 0.551308982,
+      "total_tokens": 1226,
+      "total_time": 0.58971804,
+      "completion_tokens_details": {
+        "reasoning_tokens": 433
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m3rckf50epca2t9dfw21sf01",
+      "seed": 379149263
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "19069090",
+  "predicted_reason": "Frozen dumplings with vegetable filling are classified under 1906.90.90, other food preparations of meat, fish, or poultry, which includes non-meat dough products with fillings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

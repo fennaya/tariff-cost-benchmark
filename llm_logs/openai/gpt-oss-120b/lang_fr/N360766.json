@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360766",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8706805090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-38a3de9d-5372-4c66-987e-11b692d0cfb7",
+    "object": "chat.completion",
+    "created": 1790905595,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7309.00.00\",\n  \"reason\": \"The product is a steel pressure vessel (propane tank trailer) classified under tanks, casks, drums and similar containers of iron or steel.\"\n}",
+          "reasoning": "We need HTS for propane tank trailer. Likely heading 7309? Actually tanks for liquids, steel, pressure vessels: 7309.00.00? 7309.00.00 is \"Tanks, casks, drums, vats and similar containers, of iron or steel\". For portable pressure vessels for liquefied gas: maybe 7309.90.00? Check: 7309.90.00 other. Could be 7309.00.00. Use 7309.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294385119,
+      "prompt_tokens": 693,
+      "prompt_time": 0.033970375,
+      "completion_tokens": 170,
+      "completion_time": 0.358793567,
+      "total_tokens": 863,
+      "total_time": 0.392763942,
+      "completion_tokens_details": {
+        "reasoning_tokens": 111
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3x4ncq6e5bs5v0qx3pcw88k",
+      "seed": 1247588332
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73090000",
+  "predicted_reason": "The product is a steel pressure vessel (propane tank trailer) classified under tanks, casks, drums and similar containers of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

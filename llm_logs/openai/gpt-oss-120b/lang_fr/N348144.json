@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N348144",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "6110909026",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3a3e991c-12d1-4524-9c65-7e0bb4ddf40c",
+    "object": "chat.completion",
+    "created": 1790905545,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6105.20.20\", \"reason\": \"Women's knitted sweater (pull) with a composition that includes cotton, classified under knitted garments of cotton\"}",
+          "reasoning": "We need HTS for women's knitted sweater with mixed fibers. Likely heading 6105.20.00? 6105.20.00 is women's or girls' sweaters, pullovers, knitted, of cotton. But mixed fibers maybe 6105.30 (synthetic). Since 50% cotton, 31% polyester etc. Could be 6105.20.20? Actually 6105.20.20 is of cotton. For mixed, maybe 6105.20.30? Need check. 6105.20.30 is of man-made fibers? Actually 6105.20.30 is of man-made fibers? Let's assume 6105.20.30 for other. But best single: 6105.20.20? Hmm.\n\nGiven composition >50% cotton? It's 50% cotton exactly, rest synthetic. Might be classified under 6105.20.20 \"of cotton\". If exactly 50% maybe still cotton? I'd choose 6105.20.20.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220987381,
+      "prompt_tokens": 314,
+      "prompt_time": 0.016103939,
+      "completion_tokens": 261,
+      "completion_time": 0.550025549,
+      "total_tokens": 575,
+      "total_time": 0.566129488,
+      "completion_tokens_details": {
+        "reasoning_tokens": 215
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3x4kw4me3t8k28ds6shgj58",
+      "seed": 1928498737
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61052020",
+  "predicted_reason": "Women's knitted sweater (pull) with a composition that includes cotton, classified under knitted garments of cotton",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

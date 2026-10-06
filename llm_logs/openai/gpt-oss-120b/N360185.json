@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360185",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "9603908050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e1ee9907-d0d6-43e0-b2ec-952341f45774",
+    "object": "chat.completion",
+    "created": 1790756015,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9603.90.00.00\", \"reason\": \"The item is a brush with metal bristles and a wooden handle, classified under heading 9603 for brooms, brushes, mops and feather dusters, subheading 90 for other such articles.\"}",
+          "reasoning": "We need HTS code for cleaning brush with metal bristles, wooden handle. Likely under 9603.90.00? 9603 is \"Brooms, brushes, mops, and feather dusters\". 9603.90.00 is \"Other\". 9603.90.00 is 10-digit: 9603.90.00.00? Actually HTSUS 10-digit: chapter 96, heading 03, subheading 90, then 00. So \"9603.90.00.00\". Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.201638886,
+      "prompt_tokens": 261,
+      "prompt_time": 0.012927044,
+      "completion_tokens": 189,
+      "completion_time": 0.396143414,
+      "total_tokens": 450,
+      "total_time": 0.409070458,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3rp0jnsey1vabmf5dxm7cez",
+      "seed": 997389043
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9603900000",
+  "predicted_reason": "The item is a brush with metal bristles and a wooden handle, classified under heading 9603 for brooms, brushes, mops and feather dusters, subheading 90 for other such articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

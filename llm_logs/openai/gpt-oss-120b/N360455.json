@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360455",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8708998180",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f10da1ae-8bd7-4dc2-a37c-85258e5ff82e",
+    "object": "chat.completion",
+    "created": 1790762375,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8714.99.90\", \"reason\": \"Classified as other parts and accessories of motor vehicles, specifically hitch\u2011mounted bicycle transport racks.\"}",
+          "reasoning": "Need HTS for bicycle racks, hitch-mounted. Likely heading 8714.99? Actually 8714 is \"Parts and accessories of motor vehicles\". But bicycle racks are \"parts and accessories of motor vehicles\" maybe 8714.99.10? Check: 8714.99.90 is \"Other\". But there is 8714.99.10 \"Other\". Might be 8714.99.90. Let's choose 8714.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047814106,
+      "prompt_tokens": 320,
+      "prompt_time": 0.020926799,
+      "completion_tokens": 146,
+      "completion_time": 0.305633091,
+      "total_tokens": 466,
+      "total_time": 0.32655989,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3rw2p6sezgv1aa86j75pvyy",
+      "seed": 1907030227
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87149990",
+  "predicted_reason": "Classified as other parts and accessories of motor vehicles, specifically hitch\u2011mounted bicycle transport racks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

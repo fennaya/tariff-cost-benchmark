@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363359",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "9018390050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f56a8e45-c03b-4e70-9b39-e5464f4de22e",
+    "object": "chat.completion",
+    "created": 1790850953,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9018.90.00\",\n  \"reason\": \"The product is a medical device (eye injector) used for administering medication, classified under surgical instruments and appliances not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for eye injector, medical device, not containing drug. Likely under 9018.90.00? 9018 is surgical instruments, etc. 9018.90 is \"Other\". 9018.90.00 is \"Other\". So code 9018.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298581406,
+      "prompt_tokens": 352,
+      "prompt_time": 0.089558317,
+      "completion_tokens": 124,
+      "completion_time": 0.260200117,
+      "total_tokens": 476,
+      "total_time": 0.349758434,
+      "completion_tokens_details": {
+        "reasoning_tokens": 69
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3vghv9he8ks154phpj46yq9",
+      "seed": 1496262091
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189000",
+  "predicted_reason": "The product is a medical device (eye injector) used for administering medication, classified under surgical instruments and appliances not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

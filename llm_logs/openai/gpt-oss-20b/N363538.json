@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363538",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-a816ab44-ca15-459f-80b8-669267fcd005",
+    "object": "chat.completion",
+    "created": 1790767083,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"85.09.10.10\",\"reason\":\"The device is a lithium\u2011ion power bank, classified under 85.09.10.10 for other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity.\"}",
+          "reasoning": "Need HTS code for power bank. Likely 85.09.10.10? Actually 85.09.10.10 is \"Other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity, not elsewhere specified or included\". But power banks are \"Other electrical apparatus\" maybe 85.09.10.10. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.191695217,
+      "prompt_tokens": 320,
+      "prompt_time": 0.01943482,
+      "completion_tokens": 141,
+      "completion_time": 0.142601123,
+      "total_tokens": 461,
+      "total_time": 0.162035943,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m3s0jb5cedrtmeysf2pb31hk",
+      "seed": 580988762
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85091010",
+  "predicted_reason": "The device is a lithium\u2011ion power bank, classified under 85.09.10.10 for other electrical apparatus for the reception, transmission, conversion, regulation, or distribution of electricity.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

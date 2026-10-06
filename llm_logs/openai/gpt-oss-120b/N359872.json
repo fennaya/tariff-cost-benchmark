@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359872",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "8421390190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-630d21d5-daf5-417d-8d3a-1bdc63dc64f6",
+    "object": "chat.completion",
+    "created": 1790743992,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9021.80.00\", \"reason\": \"Disposable CO\u2082 absorbent cartridges are classified as parts/accessories of breathing or anesthetic apparatus not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for disposable CO2 absorbent cartridges. Likely 3824.90.00? Actually medical devices, anesthetic equipment parts. CO2 absorbent cartridges are classified under 3824.90.00 \"Chemical preparations n.e.s.\"? Might be 9021.80.00 \"Instruments and appliances for medical, surgical, dental or veterinary uses, not elsewhere specified\". But specific: \"Anesthetic or resuscitation apparatus, other than masks\" 9019? Let's think: HTS 9019.20.00 \"Respirators, gas masks and similar breathing devices\". Not.\n\nCO2 absorbent cartridges are considered \"parts and accessories of breathing apparatus\" maybe 9021.80.00 \"Other\". I think 9021.80.00 is for \"Other breathing apparatus, other than protective\". Actually 9021.80.00: \"Other breathing apparatus and gas masks, not elsewhere specified\". Might fit.\n\nBut disposable CO2 absorbent cartridges are consumables, not apparatus. Could be 3824.90.00 \"Prepared binders etc\". However many customs classify CO2 absorbent as \"Medical gases and related equipment\" 9021.80.00.\n\nI'll choose 9021.80.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.202955915,
+      "prompt_tokens": 325,
+      "prompt_time": 0.016595731,
+      "completion_tokens": 312,
+      "completion_time": 0.65007937,
+      "total_tokens": 637,
+      "total_time": 0.666675101,
+      "completion_tokens_details": {
+        "reasoning_tokens": 263
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3rahng0enst6qn9xq10vw48",
+      "seed": 582065179
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90218000",
+  "predicted_reason": "Disposable CO\u2082 absorbent cartridges are classified as parts/accessories of breathing or anesthetic apparatus not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361503",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "4901990070",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-de45e5b3-4fd1-41fa-abfd-15ea39530d85",
+    "object": "chat.completion",
+    "created": 1790905010,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.10.00\", \"reason\": \"Printed books with paper covers are classified under heading 4901 for printed books, brochures, leaflets and similar printed matter.\"}",
+          "reasoning": "We need HTS for printed books, paper, not periodicals. Likely 4901.99.00? Let's see: 4901.10 - printed books, brochures, etc. 4901.10.00 is printed books, brochures, leaflets, etc. 4901.99 is other printed matter. Books are 4901.10.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204772585,
+      "prompt_tokens": 263,
+      "prompt_time": 0.014467173,
+      "completion_tokens": 134,
+      "completion_time": 0.278636593,
+      "total_tokens": 397,
+      "total_time": 0.293103766,
+      "completion_tokens_details": {
+        "reasoning_tokens": 82
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3x43hgyeq8awv5zj8dz1qwy",
+      "seed": 30320647
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "49011000",
+  "predicted_reason": "Printed books with paper covers are classified under heading 4901 for printed books, brochures, leaflets and similar printed matter.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

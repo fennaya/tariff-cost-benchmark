@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359791",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "4420908000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0c8aebdd-c4d1-4dcf-8847-797432206557",
+    "object": "chat.completion",
+    "created": 1790737842,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4420.00.0000\",\n  \"reason\": \"The item is a decorative wooden (MDF) altar, classified as an 'other article of wood' not specifically covered elsewhere in the schedule.\"\n}",
+          "reasoning": "We need HTS code for decorative altar made of MDF, not furniture, likely \"Articles of wood, wood products\" maybe \"Other articles of wood, wood charcoal\" etc. Could be 4418? That's for \"Other furniture, wooden\". But it's not furniture, it's a decorative object. Could be 3926? That's plastics. MDF is wood. Maybe 4420 \"Other articles of wood\". 4420.00.00? 4420.00.00 is \"Other articles of wood, not elsewhere specified\". Likely 4420.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.403314559,
+      "prompt_tokens": 369,
+      "prompt_time": 0.151339989,
+      "completion_tokens": 183,
+      "completion_time": 0.384649777,
+      "total_tokens": 552,
+      "total_time": 0.535989766,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3r4nzbeenv9hwf1sc7s23g0",
+      "seed": 1730476942
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4420000000",
+  "predicted_reason": "The item is a decorative wooden (MDF) altar, classified as an 'other article of wood' not specifically covered elsewhere in the schedule.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

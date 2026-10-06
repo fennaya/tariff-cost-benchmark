@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357335",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2dec89cc-166b-4e13-8751-cca77a2e3690",
+    "object": "chat.completion",
+    "created": 1790726131,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8537.20.00\", \"reason\": \"The product is an empty steel electrical junction box used for housing electronic components, classifiable under heading 8537 for electrical apparatus cabinets and boxes.\"}",
+          "reasoning": "We need HTS code for empty electrical junction box, steel, for industrial engine. Likely under 8537? Actually junction boxes are under 8537.10 (boards, panels, consoles, etc). But empty metal boxes maybe 8537.10.00? Check: 8537.10.00 - Boards, panels, consoles, desks, cabinets and other bases, equipped with two or more apparatus of heading 8535 or 8536, for electric control or distribution. Empty boxes maybe 8537.20? 8537.20.00 - Other. Actually 8537.20.00 is \"Other\". Let's pick 8537.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.221120135,
+      "prompt_tokens": 370,
+      "prompt_time": 0.109026347,
+      "completion_tokens": 199,
+      "completion_time": 0.409139826,
+      "total_tokens": 569,
+      "total_time": 0.518166173,
+      "completion_tokens_details": {
+        "reasoning_tokens": 143
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qsgk5pecsr2rqammzwp39j",
+      "seed": 1471455774
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85372000",
+  "predicted_reason": "The product is an empty steel electrical junction box used for housing electronic components, classifiable under heading 8537 for electrical apparatus cabinets and boxes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

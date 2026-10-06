@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360151",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8703800020",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-fa8be429-ffd6-4020-9db5-fa1a3856e803",
+    "object": "chat.completion",
+    "created": 1790664866,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8703.90.90.00\",\"reason\":\"Electric three\u2011wheeled motor vehicle with a 7.5 kW motor and lithium battery falls under 8703.90.90.00 \u2013 other motor vehicles, not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for electric three-wheeled motor vehicle. Likely 8703.90.90? Actually 8703.90 is \"Other motor vehicles, not elsewhere specified\". For electric vehicles maybe 8703.90.90. But 8703.90.90 is \"Other motor vehicles, not elsewhere specified\". For electric three-wheeled? 8703.90.90. But maybe 8703.90.90.00? 10-digit: 8703.90.90.00. Reason: electric motor vehicle with 3 wheels."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.194446188,
+      "prompt_tokens": 284,
+      "prompt_time": 0.02535358,
+      "completion_tokens": 187,
+      "completion_time": 0.281024571,
+      "total_tokens": 471,
+      "total_time": 0.306378151,
+      "completion_tokens_details": {
+        "reasoning_tokens": 121
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4f7e7dc26e",
+    "x_groq": {
+      "id": "req_01m3nz2y5refx992cgsf6bpsbh",
+      "seed": 1667852605
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703909000",
+  "predicted_reason": "Electric three\u2011wheeled motor vehicle with a 7.5 kW motor and lithium battery falls under 8703.90.90.00 \u2013 other motor vehicles, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

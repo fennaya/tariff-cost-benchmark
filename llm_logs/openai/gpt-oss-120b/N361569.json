@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361569",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9403896015",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d8e0407e-d6a4-4152-bd67-ce100f51d5d2",
+    "object": "chat.completion",
+    "created": 1790798883,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9401.80.00\",\n  \"reason\": \"The product is primarily metal-frame outdoor seating (sofa and swivel chairs) with a metal-frame patio table, classifiable under heading 9401.80 for other seats with metal frames.\"\n}",
+          "reasoning": "We need HTS code for outdoor furniture with gas fire pit. Likely Chapter 94: Furniture; bedding etc. Patio furniture of metal frames with stone tops: 9401.80.00? 9401.80 is \"Other seats, with metal frames\". But includes tables? Tables are 9403. For sets? Could be 9401.80.90 (other). Actually 9401.80.00 is \"Other seats, with metal frames\". For tables 9403.90.00 other. Since set includes table and chairs, but classification usually by the item. The most specific maybe 9401.80.90 \"Other seats, of metal, not elsewhere specified\". However fire pit table maybe 9401.80.00. I'd answer 9401.80.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.091690151,
+      "prompt_tokens": 545,
+      "prompt_time": 0.169863609,
+      "completion_tokens": 236,
+      "completion_time": 0.496782759,
+      "total_tokens": 781,
+      "total_time": 0.666646368,
+      "completion_tokens_details": {
+        "reasoning_tokens": 168
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3sywtc5emta3897scwh35cw",
+      "seed": 1329195303
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94018000",
+  "predicted_reason": "The product is primarily metal-frame outdoor seating (sofa and swivel chairs) with a metal-frame patio table, classifiable under heading 9401.80 for other seats with metal frames.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

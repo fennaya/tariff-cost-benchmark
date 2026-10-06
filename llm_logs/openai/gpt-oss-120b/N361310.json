@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361310",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-abd1ea06-71b2-4978-a902-915943204936",
+    "object": "chat.completion",
+    "created": 1790788990,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.99.90\", \"reason\": \"Classified as other made-up textile articles with unfinished edges, not specified elsewhere in the schedule\"}",
+          "reasoning": "We need guess. Raw unfinished edges likely textile fabric? Could be \"sleeves and hem bottom\" maybe garment? Hard. Probably \"unfinished textile articles\" like \"fabric, woven, not impregnated, not coated, 100% cotton\". HTS 5208.00.00? That's \"Woven fabrics of cotton, containing 85% or more by weight of cotton, not elsewhere specified\". But need 10-digit: 5208.11.00? Too specific. Might be \"unfinished garments\" classification 6205? Actually \"sleeves and hem bottom have raw, unfinished edges\" suggests \"unfinished garments\" maybe \"knitted or crocheted apparel, not finished\". Could be \"6205.20.00\" for women's or girls' blouses? Hard.\n\nProbably generic: \"Unfinished textile articles\" 6302.99.90? That's \"Other made-up articles, including dress patterns\". Hmm.\n\nI'll answer with 6302.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047967992,
+      "prompt_tokens": 162,
+      "prompt_time": 0.007864004,
+      "completion_tokens": 249,
+      "completion_time": 0.522014803,
+      "total_tokens": 411,
+      "total_time": 0.529878807,
+      "completion_tokens_details": {
+        "reasoning_tokens": 204
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3snexase84t1mqeyyym5w9r",
+      "seed": 1644062370
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029990",
+  "predicted_reason": "Classified as other made-up textile articles with unfinished edges, not specified elsewhere in the schedule",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

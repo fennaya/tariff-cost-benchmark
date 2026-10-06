@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362750",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8544493080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-255093c9-9e25-40e2-9ab8-bfe6a6601d22",
+    "object": "chat.completion",
+    "created": 1790834866,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.49.00\",\n  \"reason\": \"Solid Cat6 copper data cable insulated with PVC/FEP, voltage \u22641000\u202fV, not a fiber optic or connectorized assembly.\"\n}",
+          "reasoning": "We need HTS code for Cat6 cable, insulated copper, data transmission, not terminated. Likely 8544.49.00? Actually HTS: 8544.49.00 is \"Other insulated (including enamelled) wire, cable and other insulated conductors, for a voltage not exceeding 1,000 V\". But for data transmission cables: 8544.49.00 covers \"Other\". There's also 8544.42.00 \"Fiber-optic cables\". For copper data cables: 8544.49.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.208562351,
+      "prompt_tokens": 302,
+      "prompt_time": 0.015972911,
+      "completion_tokens": 176,
+      "completion_time": 0.367430577,
+      "total_tokens": 478,
+      "total_time": 0.383403488,
+      "completion_tokens_details": {
+        "reasoning_tokens": 118
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3v16y5xes7adfr0qwkwjntf",
+      "seed": 16465412
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444900",
+  "predicted_reason": "Solid Cat6 copper data cable insulated with PVC/FEP, voltage \u22641000\u202fV, not a fiber optic or connectorized assembly.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362892",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "8452219000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-aecec257-c2f8-4eef-b689-096ea74c35be",
+    "object": "chat.completion",
+    "created": 1790841038,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8422.30.9090\", \"reason\": \"Industrial, non\u2011household sewing/embroidery machine with automatic CNC functions falls under heading 8422.30 for other sewing machines\"}",
+          "reasoning": "We need HTS for industrial sewing/embroidery machines. Likely heading 8422.30? Actually 8422.30 is \"Other sewing machines, not for household use\". 8422.30.90 maybe. 8422.30.90 is \"Other\". 10-digit: 8422.30.9090? Check: 8422.30.9090 is \"Other sewing machines, not for household use\". Could be 8422.30.9090. Reason: industrial CNC sewing/embroidery machine. So output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086913978,
+      "prompt_tokens": 382,
+      "prompt_time": 0.027682563,
+      "completion_tokens": 172,
+      "completion_time": 0.370549498,
+      "total_tokens": 554,
+      "total_time": 0.398232061,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3v7395berwrnzs34mhwjg95",
+      "seed": 181491486
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8422309090",
+  "predicted_reason": "Industrial, non\u2011household sewing/embroidery machine with automatic CNC functions falls under heading 8422.30 for other sewing machines",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

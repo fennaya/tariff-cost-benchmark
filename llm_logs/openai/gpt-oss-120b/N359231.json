@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359231",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-406feab9-f15d-46c7-8860-79f9a409d2b2",
+    "object": "chat.completion",
+    "created": 1790727171,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00.00\", \"reason\": \"Sildenafil citrate tablets are classified as a medicinal product (pharmaceutical) under heading 3004.90.00.00 for other medicaments.\"}",
+          "reasoning": "Need HTS for pharmaceutical sildenafil citrate tablets. Likely 3004.90.00? Actually 3004.90.00 is \"Medicaments ... other\". But specific: 3004.90.00 is \"Other medicaments (excluding vaccines)\". Could be 3004.90.00.00? HTSUS 10-digit: 3004.90.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204399516,
+      "prompt_tokens": 209,
+      "prompt_time": 0.008429199,
+      "completion_tokens": 146,
+      "completion_time": 0.309585295,
+      "total_tokens": 355,
+      "total_time": 0.318014494,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3qtganfe7hacgn9gfqdr2p3",
+      "seed": 1329493147
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900000",
+  "predicted_reason": "Sildenafil citrate tablets are classified as a medicinal product (pharmaceutical) under heading 3004.90.00.00 for other medicaments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

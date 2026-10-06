@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357206",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "3214100020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f2b4f40c-98c2-4237-96cd-340131a07c44",
+    "object": "chat.completion",
+    "created": 1790725978,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3919.90.00\", \"reason\": \"Silicone-based industrial sealing compounds are classified under HTSUS 3919.90.00 as other polymeric articles not elsewhere specified.\"}",
+          "reasoning": "Need HTS for silicone sealing compounds, industrial. Likely 3917.39.00? That's \"Other polymerized products\". But silicone sealants maybe 3919.90.00 (Other polymeric articles). Actually HTS 3919.90.00: \"Other articles of plastics and articles of other materials\". Better: 3917.39.00 is \"Other polymerized products\". Sealants maybe 3919.90.00. Let's choose 3919.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205978702,
+      "prompt_tokens": 245,
+      "prompt_time": 0.009824227,
+      "completion_tokens": 160,
+      "completion_time": 0.328782738,
+      "total_tokens": 405,
+      "total_time": 0.338606965,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3qsbxwqe4z9ch3dh1d1e3m2",
+      "seed": 718325971
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39199000",
+  "predicted_reason": "Silicone-based industrial sealing compounds are classified under HTSUS 3919.90.00 as other polymeric articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

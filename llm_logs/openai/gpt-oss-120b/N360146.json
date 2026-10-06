@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360146",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "7610100030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1158b0ab-b2fd-49cc-8cce-c743a416d556",
+    "object": "chat.completion",
+    "created": 1790754579,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7610.20.00.00\", \"reason\": \"Aluminum doors, windows and frames are classified under heading 7610.20 in the HTSUS.\"}",
+          "reasoning": "We need HTS code for aluminum shower door. Likely 7610.10.00? Let's think: Chapter 76: Aluminum. Heading 7610: Aluminum structures (excluding doors, windows, frames). Actually 7610.10 is \"Aluminum structures (excluding doors, windows, frames)\". For doors: maybe 7610.90? Check: 7610.90 \"Other\". But there is heading 7610.10 for structures, 7610.90 for other. However doors, windows, frames might be under 7610.10? Actually 7610.10 is \"Aluminum structures (excluding doors, windows, frames)\". So doors are excluded, thus fall under 7610.90 \"Other\". Could also be 7610.20 \"Aluminum doors, windows and frames\". Let's verify: I recall 7610.20 is \"Aluminum doors, windows and frames\". Yes that seems right. So shower door is a door. So HTS 7610.20.00? Need 10-digit: 7610.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018014548,
+      "prompt_tokens": 212,
+      "prompt_time": 0.008995851,
+      "completion_tokens": 285,
+      "completion_time": 0.597366341,
+      "total_tokens": 497,
+      "total_time": 0.606362192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 234
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3rmmrkve9svzncek7dhq5e4",
+      "seed": 1521283151
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7610200000",
+  "predicted_reason": "Aluminum doors, windows and frames are classified under heading 7610.20 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

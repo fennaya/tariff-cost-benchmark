@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359301",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3004909230",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-eedc1983-81a0-4667-875a-8b8d83639102",
+    "object": "chat.completion",
+    "created": 1790727224,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Ibuprofen tablets are classified under HTSUS 3004.90.00 as other medicinal preparations containing ibuprofen.\"}",
+          "reasoning": "Need HTS for ibuprofen tablets. Likely 3004.90.00? Actually medicinal products: 3004.90.00 is \"Medicaments ... other\". Ibuprofen tablets 3004.90.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017952541,
+      "prompt_tokens": 195,
+      "prompt_time": 0.015344087,
+      "completion_tokens": 101,
+      "completion_time": 0.212111361,
+      "total_tokens": 296,
+      "total_time": 0.227455448,
+      "completion_tokens_details": {
+        "reasoning_tokens": 50
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3qthyqnezm8kpe6fk1e6959",
+      "seed": 1329204092
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Ibuprofen tablets are classified under HTSUS 3004.90.00 as other medicinal preparations containing ibuprofen.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

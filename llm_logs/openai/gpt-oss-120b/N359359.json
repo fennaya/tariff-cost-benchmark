@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359359",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "3004390020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ffb70064-2486-4059-995a-3123ce098e96",
+    "object": "chat.completion",
+    "created": 1790727239,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.20.00\", \"reason\": \"Epinephrine injection is a medicament containing a hormone (catecholamine) and is classified under HTSUS 3004.20.00 for medicaments containing hormones.\"}",
+          "reasoning": "Need HTS for epinephrine injection. Likely 3004.20.00? Actually 3004.20.00 is \"Medicaments containing hormones, etc.\" Check: 3004.20.00 - \"Medicaments containing hormones, not elsewhere specified\". Epinephrine is a hormone. So code 3004.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.210050786,
+      "prompt_tokens": 194,
+      "prompt_time": 0.012279002,
+      "completion_tokens": 140,
+      "completion_time": 0.292853661,
+      "total_tokens": 334,
+      "total_time": 0.305132663,
+      "completion_tokens_details": {
+        "reasoning_tokens": 77
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qtjdp1efbarhxbjnmvff5k",
+      "seed": 1996869824
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30042000",
+  "predicted_reason": "Epinephrine injection is a medicament containing a hormone (catecholamine) and is classified under HTSUS 3004.20.00 for medicaments containing hormones.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361194",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "4010125000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-32eeb553-5eaf-4bd3-bab9-021ce933fa67",
+    "object": "chat.completion",
+    "created": 1790785296,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4010.99.90\", \"reason\": \"Rubber conveyor belts with textile reinforcement are classified under heading 4010 as other rubber hoses, tubes and belts, specifically subheading 4010.99.90 for other such products.\"}",
+          "reasoning": "We need HTS code for rubber conveyor belts with textile reinforcement. Likely heading 4010.99? Actually 4010 is rubber hoses and tubes, etc. Conveyor belts: 4010.99.90? Check: 4010.99.90 - Other rubber products. But there is specific: 4010.99.90 \"Other\" includes conveyor belts? Actually 4010.99.90 is \"Other\" under \"Rubber hoses and tubes, and parts thereof\". Might be 4010.99.90.\n\nBetter: 4010.99.90 covers \"Other\". However there is heading 4010.99.90 for \"Other\". I think correct is 4010.99.90.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295627275,
+      "prompt_tokens": 251,
+      "prompt_time": 0.013356439,
+      "completion_tokens": 221,
+      "completion_time": 0.468300057,
+      "total_tokens": 472,
+      "total_time": 0.481656496,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3shy5fbe4jrzm2c55nc5h2y",
+      "seed": 893205519
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "40109990",
+  "predicted_reason": "Rubber conveyor belts with textile reinforcement are classified under heading 4010 as other rubber hoses, tubes and belts, specifically subheading 4010.99.90 for other such products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359032",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-91ef0734-ccbb-4b28-9008-ad28d74101c5",
+    "object": "chat.completion",
+    "created": 1790727011,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.21.00\",\n  \"reason\": \"The product is a vertical pressure filter machine used for solid\u2011liquid separation, which falls under HTS heading 8421 for filtering or purifying machinery for liquids.\"\n}",
+          "reasoning": "We need HTS code for a vertical pressure filter machine. Likely 8421? Actually 8421 is \"Centrifuges, including centrifugal dryers; filtering or purifying machinery and apparatus, for liquids\". Subheading 8421.21? Let's check: 8421.21 - Filtering or purifying machinery for liquids, not elsewhere specified. 8421.21.00? 8421.21.00 is \"Filtering or purifying machinery for liquids\". So 8421.21.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.057418842,
+      "prompt_tokens": 551,
+      "prompt_time": 0.051969098,
+      "completion_tokens": 176,
+      "completion_time": 0.365423589,
+      "total_tokens": 727,
+      "total_time": 0.417392687,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3qtbef6eabtbxt52z0pr52x",
+      "seed": 979910314
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84212100",
+  "predicted_reason": "The product is a vertical pressure filter machine used for solid\u2011liquid separation, which falls under HTS heading 8421 for filtering or purifying machinery for liquids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

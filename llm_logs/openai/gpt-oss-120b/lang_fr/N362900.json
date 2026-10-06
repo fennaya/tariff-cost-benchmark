@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362900",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7013998090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c7b8204d-ee6d-46b2-8c3f-839a0a68480b",
+    "object": "chat.completion",
+    "created": 1790905573,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9405.90.80\", \"reason\": \"Classified as a decorative glass article (ornament) not a lamp, falling under heading 9405 for lamps and lighting fixtures, specifically subheading 9405.90.80 for other ornaments.\"}",
+          "reasoning": "We need HTS for glass decorative article with LED. Likely 9405? 9405.90.80 (other ornaments). But glass decorative items: 7013.49.90 (glassware of other types). LED makes it a \"electrical apparatus\"? Might be 9405.20.00 (other lamps). However it's decorative tree, not a lamp. Likely 9405.90.80 \"Other: Other\". Use 9405.90.80."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048419325,
+      "prompt_tokens": 324,
+      "prompt_time": 0.01322044,
+      "completion_tokens": 170,
+      "completion_time": 0.353359649,
+      "total_tokens": 494,
+      "total_time": 0.366580089,
+      "completion_tokens_details": {
+        "reasoning_tokens": 102
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3x4mr15ez7vd3ka6s0yx56v",
+      "seed": 1753007544
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94059080",
+  "predicted_reason": "Classified as a decorative glass article (ornament) not a lamp, falling under heading 9405 for lamps and lighting fixtures, specifically subheading 9405.90.80 for other ornaments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363701",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9503000090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bcb81bee-1884-49de-907d-c685c845a704",
+    "object": "chat.completion",
+    "created": 1790860417,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9503.00.10.00\",\n  \"reason\": \"The item is a plush teddy bear, classified as a doll under heading 9503 (toys), subheading 9503.00.10 (dolls).\"\n}",
+          "reasoning": "We need HTS for plush toy bear. Likely 9503.00.00.00? Actually 9503.00.00.00 is \"Tricycles, scooters, etc.\" No. Toys: 9503.00.00.00 is \"Other toys\". Plush animals: 9503.00.90? Let's recall: 9503.00.90 is \"Other toys, not elsewhere specified\". But there is 9503.00.10 for dolls? Actually 9503.00.10 is \"Dolls; other\". Wait check: 9503.00.10 is \"Dolls; other\". 9503.00.90 is \"Other toys\". Plush teddy bears likely under 9503.00.10 (dolls). So 9503.00.10.00? HTSUS 10-digit: 9503.00.10.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 2.839949936,
+      "prompt_tokens": 219,
+      "prompt_time": 0.01143086,
+      "completion_tokens": 261,
+      "completion_time": 0.548312218,
+      "total_tokens": 480,
+      "total_time": 0.559743078,
+      "completion_tokens_details": {
+        "reasoning_tokens": 194
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3vsjkb3ejvsgyxr2aq12mfg",
+      "seed": 223775957
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503001000",
+  "predicted_reason": "The item is a plush teddy bear, classified as a doll under heading 9503 (toys), subheading 9503.00.10 (dolls).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

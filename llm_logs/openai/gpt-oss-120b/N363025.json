@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363025",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "4205008000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-164850d1-358f-4289-9582-c9a7596d032b",
+    "object": "chat.completion",
+    "created": 1790846192,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.92.00\", \"reason\": \"Handmade leather notebook cover classified as a leather case/bag for books under heading 4202.92\"}",
+          "reasoning": "We need HTS code for leather notebook cover. Likely under Chapter 42 leather goods. 4202? 4202.92? Let's think: 4202.92.00 \u2013 \"Other bags, with outer surface of leather\". But notebook cover maybe \"cases, bags, etc for books\". Could be 4202.99? Actually 4202.99.00 is \"Other\". But more specific: 4202.92.00 \"Other bags, with outer surface of leather\". A notebook cover is a \"case\". Might be 4202.92.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205394059,
+      "prompt_tokens": 211,
+      "prompt_time": 0.047871688,
+      "completion_tokens": 174,
+      "completion_time": 0.36979063,
+      "total_tokens": 385,
+      "total_time": 0.417662318,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3vc0jbtesabhdvjshhaw9tt",
+      "seed": 2051967977
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "42029200",
+  "predicted_reason": "Handmade leather notebook cover classified as a leather case/bag for books under heading 4202.92",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

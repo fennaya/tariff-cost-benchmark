@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3422b3aa-a3f2-4a8f-b38f-0e07aca38adb",
+    "object": "chat.completion",
+    "created": 1790905085,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1509.10.10.00\",\"reason\":\"Shea butter, refined, is the most specific classification for the imported products.\"}",
+          "reasoning": "Need HTS 10-digit. Shea butter refined or partially refined. HS 1509.10.10? Actually 1509.10.10 is \"Shea butter, refined\". 1509.10.20 is \"Shea butter, partially refined\". So 10-digit: 1509.10.10.00? Wait 10-digit: 1509.10.10.00. For partially refined: 1509.10.20.00. So choose one? They import both. Single most applicable? Probably refined? But both. Maybe choose refined as more common. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.016320173,
+      "prompt_tokens": 582,
+      "prompt_time": 0.032734787,
+      "completion_tokens": 170,
+      "completion_time": 0.178796137,
+      "total_tokens": 752,
+      "total_time": 0.211530924,
+      "completion_tokens_details": {
+        "reasoning_tokens": 128
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9b8528b477",
+    "x_groq": {
+      "id": "req_01m3x45v27ed3rhsw0zqexc1rg",
+      "seed": 1756367336
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1509101000",
+  "predicted_reason": "Shea butter, refined, is the most specific classification for the imported products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

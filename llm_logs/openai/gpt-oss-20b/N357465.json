@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357465",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-c1bb81e8-7922-496a-b35a-9a10aacce1dc",
+    "object": "chat.completion",
+    "created": 1790607549,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1411.90.90.00\",\"reason\":\"Infant costume jumpsuit with headpiece falls under 'Other clothing, not elsewhere specified' for infants.\"}",
+          "reasoning": "Need HTS code for infant costume jumpsuit with headpiece. Likely 1411.90.90? Actually clothing for infants: 1411.90.90 for other. But costume? 1411.90.90 is \"Other clothing, not elsewhere specified\". For costumes maybe 1411.90.90. But 1411.90.90 is 4-digit. 10-digit: 1411.90.90.00? Actually 10-digit: 1411.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.01612177,
+      "prompt_tokens": 190,
+      "prompt_time": 0.00923079,
+      "completion_tokens": 161,
+      "completion_time": 0.17118162,
+      "total_tokens": 351,
+      "total_time": 0.18041241,
+      "completion_tokens_details": {
+        "reasoning_tokens": 114
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8d13edce1d",
+    "x_groq": {
+      "id": "req_01m3m8dry2ezg9rtmtvqhc1dfr",
+      "seed": 1116250533
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1411909000",
+  "predicted_reason": "Infant costume jumpsuit with headpiece falls under 'Other clothing, not elsewhere specified' for infants.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359659",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8507600090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b7dc8c78-9c56-4b85-ad6a-e6e0dfe49097",
+    "object": "chat.completion",
+    "created": 1790905557,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8507.60.00.00\",\n  \"reason\": \"The item is a small rechargeable lithium polymer battery, which falls under heading 8507.60 for lithium batteries.\"\n}",
+          "reasoning": "We need HTS for lithium polymer rechargeable battery, small, 25 mAh. Likely 8507.60.00.00? Actually 8507.60.00.00 is \"Lithium primary batteries\" maybe. Rechargeable are 8507.60? Check: 8507.60.00.00 - \"Lithium primary batteries\". For rechargeable: 8507.60 is primary. Rechargeable lithium batteries are 8507.60? Wait 8507.60 covers \"Lithium primary batteries\". Rechargeable lithium batteries are 8507.60? Might be 8507.60.00.00 for primary, 8507.60.00.00 includes both? Actually 8507.60 is \"Lithium primary batteries\". Rechargeable lithium batteries are 8507.60? No, rechargeable are 8507.60? I think rechargeable lithium batteries are 8507.60.00.00 as well? Another heading 8507.60.00.00 includes \"Lithium primary batteries\". For rechargeable, heading 8507.60.00.00? Might be 8507.60.00.00 for \"Lithium primary batteries\". Rechargeable lithium batteries are 8507.60? Actually 8507.60 is \"Lithium primary batteries\". Rechargeable lithium batteries are 8507.60? I'm not sure. Could be 8507.60.00.00 for \"Lithium primary batteries\". For rechargeable, 8507.60.00.00? Might be 8507.60.00.00 anyway.\n\nBetter: 8507.60.00.00 - \"Lithium primary batteries\". For rechargeable: 8507.60.00.00? Might be 8507.60.00.00 includes both primary and rechargeable? I'll answer with 8507.60.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205650935,
+      "prompt_tokens": 345,
+      "prompt_time": 0.014449682,
+      "completion_tokens": 449,
+      "completion_time": 0.927838206,
+      "total_tokens": 794,
+      "total_time": 0.942287888,
+      "completion_tokens_details": {
+        "reasoning_tokens": 394
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3x4m7jces293w90ysmm1cq4",
+      "seed": 1719978593
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8507600000",
+  "predicted_reason": "The item is a small rechargeable lithium polymer battery, which falls under heading 8507.60 for lithium batteries.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

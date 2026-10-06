@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356971",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "3823192000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-80acf3c4-ab85-4cf6-97d8-1c253f209a58",
+    "object": "chat.completion",
+    "created": 1790725918,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3824.90.00\", \"reason\": \"The product is a prepared animal feed additive consisting of a palm fatty acid distillate, classified under prepared animal feeds (other) in Chapter 38.\"}",
+          "reasoning": "We need HTS code for palm fatty acid distillate, animal feed additive, fats. Likely under 3824.90? Actually fats for animal feed: 3824.90.00 (Prepared animal feeds). But fatty acid distillate maybe under 3824.90.00. Could be 3824.90.00 \"Other\" prepared animal feeds. Or 3824.90.00 is \"Other\". Another possibility 3824.90.00 is correct.\n\nThus output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205917571,
+      "prompt_tokens": 268,
+      "prompt_time": 0.012746249,
+      "completion_tokens": 164,
+      "completion_time": 0.338352644,
+      "total_tokens": 432,
+      "total_time": 0.351098893,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3qsa3aweeg8p5eev57n00s2",
+      "seed": 891291542
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "38249000",
+  "predicted_reason": "The product is a prepared animal feed additive consisting of a palm fatty acid distillate, classified under prepared animal feeds (other) in Chapter 38.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

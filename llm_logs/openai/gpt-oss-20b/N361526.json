@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361526",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8207906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-8bee66f4-ad45-48ec-8498-3bbfc2891325",
+    "object": "chat.completion",
+    "created": 1790706341,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8208.90.90.00\",\"reason\":\"These are specialized mechanical tools for removing vehicle components, classified under other hand tools.\"}",
+          "reasoning": "Need HTS code for tools used to pull U-joints, yokes, king pins, brake anchor pins. Likely \"Other hand tools\" but these are power tools? They are mechanical tools with forcing screw, used with impact driver. They are \"tools for removing or installing parts of vehicles\" maybe \"Other hand tools\" 8208.90.90? But 10-digit: 8208.90.90.00? Actually 8208.90.90 is \"Other hand tools, not elsewhere specified\". But these are not hand tools, they are \"tools for removing or installing parts of vehicles\" maybe 8208.90.90.00. Let's pick 8208.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149631458,
+      "prompt_tokens": 648,
+      "prompt_time": 0.032753977,
+      "completion_tokens": 193,
+      "completion_time": 0.207136004,
+      "total_tokens": 841,
+      "total_time": 0.239889981,
+      "completion_tokens_details": {
+        "reasoning_tokens": 151
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m3q6mmzbekd97stqskx75e6j",
+      "seed": 1542772548
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8208909000",
+  "predicted_reason": "These are specialized mechanical tools for removing vehicle components, classified under other hand tools.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

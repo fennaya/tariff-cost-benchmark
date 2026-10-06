@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361367",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8211930035",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4e03acba-2da6-4327-b4e0-2a76add23253",
+    "object": "chat.completion",
+    "created": 1790790827,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8205.20.00\", \"reason\": \"Manually operated folding utility knife with replaceable blade falls under HTSUS heading 8205 for hand\u2011operated knives, subheading 20 for other than safety knives.\"}",
+          "reasoning": "We need HTS code for folding utility knife. Likely 8205.90.00? Actually knives: 8205.20 (hand-operated knives with cutting blades). Let's check: 8205.20.00 \u2013 \"Hand-operated knives, other than safety knives\". Folding knives maybe 8205.20.00. Or 8205.30 for safety. So answer 8205.20.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049136409,
+      "prompt_tokens": 245,
+      "prompt_time": 0.013595619,
+      "completion_tokens": 154,
+      "completion_time": 0.324680722,
+      "total_tokens": 399,
+      "total_time": 0.338276341,
+      "completion_tokens_details": {
+        "reasoning_tokens": 91
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3sq6zfbe71ry67h3epph3m1",
+      "seed": 1427694910
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82052000",
+  "predicted_reason": "Manually operated folding utility knife with replaceable blade falls under HTSUS heading 8205 for hand\u2011operated knives, subheading 20 for other than safety knives.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

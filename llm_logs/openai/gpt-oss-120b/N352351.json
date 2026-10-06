@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N352351",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3907995050",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-107d6039-e421-4ebb-a947-0890b30cd039",
+    "object": "chat.completion",
+    "created": 1790607045,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3901.10.00\",\n  \"reason\": \"Polybutylene succinate is a polyester polymer classified under heading 3901 (polyesters), and the starch/composite additives do not change its primary classification.\"\n}",
+          "reasoning": "We need HTS for PBS polymer composite. Likely under 3901? Polybutylene succinate is a polyester, HTS 3901.10.00 (Polyesters, other than polyamides, polyacetals, etc). But starch blend maybe 3901.20? Actually 3901.10 is polyesters, not elsewhere specified. PBS is a polyester. So 3901.10.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 3.192249509,
+      "prompt_tokens": 547,
+      "prompt_time": 0.027673877,
+      "completion_tokens": 154,
+      "completion_time": 0.325544248,
+      "total_tokens": 701,
+      "total_time": 0.353218125,
+      "completion_tokens_details": {
+        "reasoning_tokens": 92
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3m7y91fe28vqzz7s9gg7yan",
+      "seed": 186864227
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39011000",
+  "predicted_reason": "Polybutylene succinate is a polyester polymer classified under heading 3901 (polyesters), and the starch/composite additives do not change its primary classification.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359991",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8708936000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1a3a339d-7c41-4842-a751-19532a46631e",
+    "object": "chat.completion",
+    "created": 1790749624,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.20.00\",\n  \"reason\": \"The item is a clutch assembly for automatic transmissions of passenger vehicles, classified under HTSUS heading 8708.99.20 for clutches, including torque converters.\"\n}",
+          "reasoning": "We need HTS code for automatic transmission clutch assembly. Likely 8708.99.90? Actually parts of transmission: 8708.99.90 - parts of other vehicles. But specific: \"Clutches for motor vehicles\" 8708.99.90? Check: 8708.99.90 is \"Other parts and accessories of motor vehicles, n.e.s.\" There is 8708.99.20 for \"Clutches, including torque converters\". Actually 8708.99.20 is \"Clutches, including torque converters\". So use that. 10-digit: 8708.99.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.202938559,
+      "prompt_tokens": 598,
+      "prompt_time": 0.026912685,
+      "completion_tokens": 200,
+      "completion_time": 0.423391334,
+      "total_tokens": 798,
+      "total_time": 0.450304019,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m3rfxhwcej0r4hwkqfy0p4ky",
+      "seed": 778501163
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8708992000",
+  "predicted_reason": "The item is a clutch assembly for automatic transmissions of passenger vehicles, classified under HTSUS heading 8708.99.20 for clutches, including torque converters.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

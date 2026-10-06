@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358088",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "4201006000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5056d061-bb5c-429c-9280-37d854017ce8",
+    "object": "chat.completion",
+    "created": 1790726534,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6307.90.98\", \"reason\": \"Pet costume is a textile article not elsewhere specified, classified under other made\u2011up articles of textile materials.\"}",
+          "reasoning": "Need HTS for pet costume made of polyester. Likely under heading 9505? Actually pet articles: 9505.90.90 (toys etc). But costume for pets maybe 6307.90.98 (other made up articles of textile). 6307.90.98 is \"Other made up articles, of textile materials, not elsewhere specified\". Likely. Provide code 6307.90.98."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294405422,
+      "prompt_tokens": 197,
+      "prompt_time": 0.008394409,
+      "completion_tokens": 138,
+      "completion_time": 0.286430248,
+      "total_tokens": 335,
+      "total_time": 0.294824657,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3qswwzxer389cscpb91ry75",
+      "seed": 845247981
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63079098",
+  "predicted_reason": "Pet costume is a textile article not elsewhere specified, classified under other made\u2011up articles of textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

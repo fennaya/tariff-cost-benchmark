@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N352666",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "6802990090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5f85cf06-4fb6-4c0c-bfcb-7825b44933c1",
+    "object": "chat.completion",
+    "created": 1790904756,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6801.90.90.00\",\"reason\":\"It is a natural stone used for countertops, wall panels, and flooring, fitting the description of \\\"other natural stones\\\" under heading 6801.\"}",
+          "reasoning": "We need HTS code for a stone product: \"Copenhagen stone\" a natural stone used for countertops, wall panels, flooring. Likely 6801.90.90? Actually 6801 is \"Natural stones, other than those of heading 6802\". 6801.90 is \"Other natural stones\". 6801.90.90 is \"Other natural stones, not elsewhere specified\". So 6801.90.90.00? 10-digit: 6801.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.046902819,
+      "prompt_tokens": 325,
+      "prompt_time": 0.031519956,
+      "completion_tokens": 168,
+      "completion_time": 0.183482961,
+      "total_tokens": 493,
+      "total_time": 0.215002917,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4315eb300",
+    "x_groq": {
+      "id": "req_01m3x3vsxbe4vrdf3btyxqe38z",
+      "seed": 82964755
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6801909000",
+  "predicted_reason": "It is a natural stone used for countertops, wall panels, and flooring, fitting the description of \"other natural stones\" under heading 6801.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361448",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8421390115",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9156687c-07a1-42dd-85bb-d78e2984b9f9",
+    "object": "chat.completion",
+    "created": 1790795229,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9019.20.00\",\n  \"reason\": \"Aseptic isolators are classified as other specialized equipment for pharmaceutical processing, falling under heading 9019 (other instruments, appliances and machines) and subheading 20 (other).\"\n}",
+          "reasoning": "We need HTS for aseptic isolators, positive/negative pressure, used in pharma. Likely under 9019.20.00? That's \"Other instruments, appliances and machines for measuring or checking the flow, level, pressure or other variables of liquids or gases\". Not. Maybe 9019.20.00 is \"Other instruments, appliances and machines for measuring, etc.\" Not.\n\nCould be 9019.20.00 \"Other\" but isolators are \"Other\" under 9019.20.00? Actually 9019.20.00 is \"Other\". But there is 9019.20.00 \"Other\". Might be 9019.20.00.\n\nAlternatively 9019.20.00 is for \"Other\". However there is 9019.20.00 \"Other\". Might be 9019.20.00.\n\nLet's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048157235,
+      "prompt_tokens": 883,
+      "prompt_time": 0.040728633,
+      "completion_tokens": 252,
+      "completion_time": 0.531072408,
+      "total_tokens": 1135,
+      "total_time": 0.571801041,
+      "completion_tokens_details": {
+        "reasoning_tokens": 184
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3svd9tve3rs3wv4v4sm5pww",
+      "seed": 1901054038
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90192000",
+  "predicted_reason": "Aseptic isolators are classified as other specialized equipment for pharmaceutical processing, falling under heading 9019 (other instruments, appliances and machines) and subheading 20 (other).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

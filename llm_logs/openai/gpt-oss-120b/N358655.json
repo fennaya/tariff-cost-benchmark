@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358655",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8306290000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5ddae384-22ac-4091-b1f2-5ac3ebf312db",
+    "object": "chat.completion",
+    "created": 1790726802,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8306.29.90\", \"reason\": \"Classified as other iron/steel articles for decorative purposes, not elsewhere specified, under heading 8306.29\"}",
+          "reasoning": "We need classify. Decorative metal frames with LED lights, holiday icons. Likely under heading 9505? Or 3926 plastics? But metal frames with decorations maybe \"Articles of metal, not elsewhere specified, for decorative purposes\" 8306? 8306.29? 8306.29.90 is \"Other articles of iron or steel, other than furniture\". Could be 8306.29.90. Or 9505.99 for holiday decorations? 9505.90 is \"Other toys\". But these are decorative articles, not toys. Likely 8306.29.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017736271,
+      "prompt_tokens": 341,
+      "prompt_time": 0.014175574,
+      "completion_tokens": 180,
+      "completion_time": 0.374505083,
+      "total_tokens": 521,
+      "total_time": 0.388680657,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qt52kxe1es1yj6z8kfpwkn",
+      "seed": 1430459538
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83062990",
+  "predicted_reason": "Classified as other iron/steel articles for decorative purposes, not elsewhere specified, under heading 8306.29",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

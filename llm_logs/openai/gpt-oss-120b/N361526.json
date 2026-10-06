@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361526",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8207906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b1f3eb81-7656-437f-be87-405720cf327c",
+    "object": "chat.completion",
+    "created": 1790797606,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8207.90.90\",\n  \"reason\": \"These are steel hand tools (U\u2011joint puller, yoke puller, king\u2011pin and brake\u2011anchor pin presses) used with impact drivers, classified under other hand tools not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for hand tools, steel, impact driver accessories. Likely 8207.90.90? Actually 8207 is hand tools, \"Other hand tools, not elsewhere specified\". 8207.90.90 is \"Other\". 8205 is \"Hand tools, pliers\". 8206 is \"Wrenches\". These are pulling tools, presses. Could be 8207.90.90. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.072273782,
+      "prompt_tokens": 648,
+      "prompt_time": 0.079637334,
+      "completion_tokens": 164,
+      "completion_time": 0.344572806,
+      "total_tokens": 812,
+      "total_time": 0.42421014,
+      "completion_tokens_details": {
+        "reasoning_tokens": 93
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3sxntmzekyskdj658wt7fx0",
+      "seed": 792354234
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82079090",
+  "predicted_reason": "These are steel hand tools (U\u2011joint puller, yoke puller, king\u2011pin and brake\u2011anchor pin presses) used with impact drivers, classified under other hand tools not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

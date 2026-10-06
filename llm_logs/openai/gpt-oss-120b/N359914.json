@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359914",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-0b5b47db-f97f-497c-b7d3-f2fbef56ea22",
+    "object": "chat.completion",
+    "created": 1790745436,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Ticagrelor tablets are a medicinal product not specifically listed elsewhere, classified under HTS chapter 30 for pharmaceutical preparations.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical tablet, active ingredient ticagrelor. Likely under 3004.90.00? Actually 3004.90.00 is \"Medicaments consisting of mixed or unmixed products for therapeutic or prophylactic uses, not elsewhere specified\". Specific: 3004.90.00. So provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048840609,
+      "prompt_tokens": 210,
+      "prompt_time": 0.11590249,
+      "completion_tokens": 125,
+      "completion_time": 0.264126341,
+      "total_tokens": 335,
+      "total_time": 0.380028831,
+      "completion_tokens_details": {
+        "reasoning_tokens": 69
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3rbxr4de8n8yqybxnm2e0j9",
+      "seed": 2134951676
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Ticagrelor tablets are a medicinal product not specifically listed elsewhere, classified under HTS chapter 30 for pharmaceutical preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

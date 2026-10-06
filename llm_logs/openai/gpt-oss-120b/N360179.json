@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360179",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "9008501000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-edc3e968-278f-4152-b01a-2a4ac2cbc944",
+    "object": "chat.completion",
+    "created": 1790755500,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.9090\", \"reason\": \"Classified as a toy art set for children, falling under other toys not elsewhere specified\"}",
+          "reasoning": "We need HTS code. Likely toys, art sets. Could be 9503? 9503.00.90? But 10-digit: 9503009090? Actually 9503.00.9090 is \"Other toys, not elsewhere specified\". Might be 9503.00.9090. Or 9503.00.9075? Let's pick 9503.00.9090."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.270599048,
+      "prompt_tokens": 249,
+      "prompt_time": 0.07048885,
+      "completion_tokens": 134,
+      "completion_time": 0.281927681,
+      "total_tokens": 383,
+      "total_time": 0.352416531,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3rngvh4e65aw7nbf5zk5zwt",
+      "seed": 1175336870
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9503009090",
+  "predicted_reason": "Classified as a toy art set for children, falling under other toys not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361453",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8422110000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-07a6c6f5-415f-4824-824c-f29ab74bc961",
+    "object": "chat.completion",
+    "created": 1790795790,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8412.21.00.00\", \"reason\": \"Household dishwashers are classified under heading 8412.21.00 for dishwashing machines, regardless of special design features.\"}",
+          "reasoning": "We need HTS code for dishwashers. Likely 8412.21.00? Actually dishwashers under heading 8412.21.00 (Domestic appliances for washing, drying, etc., of laundry; dishwashing machines). Check: 8412.21.00 is \"Dishwashers, household type\". 8412.30 is \"Other washing machines\". So 8412.21.00. 10-digit: 8412.21.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294026016,
+      "prompt_tokens": 351,
+      "prompt_time": 0.019069135,
+      "completion_tokens": 162,
+      "completion_time": 0.344985615,
+      "total_tokens": 513,
+      "total_time": 0.36405475,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m3svydmtet2vcytzhwzq22v8",
+      "seed": 903567210
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8412210000",
+  "predicted_reason": "Household dishwashers are classified under heading 8412.21.00 for dishwashing machines, regardless of special design features.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

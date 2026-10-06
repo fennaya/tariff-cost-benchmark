@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360491",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004390055",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a4d598b0-d8d8-47a5-8dec-d15d517ee05b",
+    "object": "chat.completion",
+    "created": 1790763533,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Glucagon injection is a medicinal preparation (polypeptide hormone) for therapeutic use, classified under HTS heading 3004 for medicaments not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for glucagon injection, a polypeptide hormone, medicinal product. Likely 3002.10.00? Let's check: 3002.10.00 is \"Human blood; animal blood; antisera and other blood fractions; toxins; other preparations of a kind used in therapy, etc.\" Actually 3002.10 is \"Human blood; animal blood; antisera and other blood fractions; toxins; other preparations of a kind used in therapy, etc.\" But hormones are under 3004? 3004 is \"Medicaments (excluding goods of heading 3002, 3005 or 3006) consisting of mixed or unmixed products for therapeutic or prophylactic uses, put up in measured doses or in forms or packings for retail sale.\" Glucagon injection is a medicament, so 3004.20? Let's see: 3004.20 is \"Antibiotics\". 3004.90 is \"Other\". Hormones maybe 3004.90. Actually 3004.90.00 is \"Other\". So likely 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.192212509,
+      "prompt_tokens": 224,
+      "prompt_time": 0.069588843,
+      "completion_tokens": 297,
+      "completion_time": 0.628727698,
+      "total_tokens": 521,
+      "total_time": 0.698316541,
+      "completion_tokens_details": {
+        "reasoning_tokens": 234
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3rx5zege9qr74gv68v1np62",
+      "seed": 1580888106
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Glucagon injection is a medicinal preparation (polypeptide hormone) for therapeutic use, classified under HTS heading 3004 for medicaments not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

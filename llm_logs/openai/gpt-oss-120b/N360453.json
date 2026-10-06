@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360453",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004909243",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-208289b7-d696-4df2-9f9d-ac8a12ba4ded",
+    "object": "chat.completion",
+    "created": 1790761590,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00.00\",\n  \"reason\": \"Classified under Chapter 30 as a pharmaceutical preparation (oral solution) that is not listed elsewhere, specifically other medicaments.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical solution, brivaracetam, 10 mg/mL, anticonvulsant. Likely under 3004.90.00? Actually HTS Chapter 30: pharmaceutical preparations. Anticonvulsants: 3004.90.00 is \"Other medicaments (excluding goods of heading 3002, 3005 or 3006)\". More specific: 3004.90.90? Let's check: 3004.90.00 is \"Other medicaments (excluding goods of heading 3002, 3005 or 3006)\". 3004.90.90 is \"Other\". The 10-digit: 3004.90.00.00? Actually US uses 10 digits: 3004.90.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049176587,
+      "prompt_tokens": 194,
+      "prompt_time": 0.00786093,
+      "completion_tokens": 227,
+      "completion_time": 0.474790552,
+      "total_tokens": 421,
+      "total_time": 0.482651482,
+      "completion_tokens_details": {
+        "reasoning_tokens": 170
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3rvaq3jesqt261ts4vkx61c",
+      "seed": 1154771745
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900000",
+  "predicted_reason": "Classified under Chapter 30 as a pharmaceutical preparation (oral solution) that is not listed elsewhere, specifically other medicaments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

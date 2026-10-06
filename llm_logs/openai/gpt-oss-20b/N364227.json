@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N364227",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "6307101090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-add7c613-527c-4a79-aee0-b0ec015a7c56",
+    "object": "chat.completion",
+    "created": 1790775556,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"5208.90.10.00\",\"reason\":\"Generic cloth with sewn edges, not specified as knitted or crocheted, fits the heading for other fabrics.\"}",
+          "reasoning": "We need to guess classification. Cloth with sewn edges, size 17x11 inches. Likely \"fabric\" maybe \"cloth\" for clothing? Could be \"fabric, not knitted or crocheted\" maybe 5208.10.10? But sewn edges indicates finished cloth? Could be \"fabric, not knitted or crocheted, of cotton\" etc. Without material. Maybe generic \"fabric, not knitted or crocheted, of other materials\" 5208.90.10? But 10-digit: 5208.90.10.00? Actually 10-digit: 5208.90.10.00. Reason: generic cloth."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015993528,
+      "prompt_tokens": 165,
+      "prompt_time": 0.009223728,
+      "completion_tokens": 182,
+      "completion_time": 0.193994678,
+      "total_tokens": 347,
+      "total_time": 0.203218406,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_565badff47",
+    "x_groq": {
+      "id": "req_01m3s8myjgebj8xgjkzzpw0j0e",
+      "seed": 1292336252
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5208901000",
+  "predicted_reason": "Generic cloth with sewn edges, not specified as knitted or crocheted, fits the heading for other fabrics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

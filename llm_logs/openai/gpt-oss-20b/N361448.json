@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361448",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8421390115",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-f3710f77-0052-4324-99b8-4b15a4d6bd51",
+    "object": "chat.completion",
+    "created": 1790704203,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8421.90.90\",\"reason\":\"The device is a sterile isolator used in pharmaceutical manufacturing, classified under other machinery for air treatment.\"}",
+          "reasoning": "Need HTS code for aseptic isolator. Likely 8421.90.90? Actually 8421.90.90 is \"Other machinery and apparatus for the treatment of air\". But isolator is a \"sterile isolator\" used in pharma. Could be 8421.90.90. But maybe 8421.90.90 is for other. Alternatively 8421.90.90 is \"Other machinery and apparatus for the treatment of air\". But isolator is a \"sterile isolator\" maybe 8421.90.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204683099,
+      "prompt_tokens": 883,
+      "prompt_time": 0.061099251,
+      "completion_tokens": 166,
+      "completion_time": 0.183751835,
+      "total_tokens": 1049,
+      "total_time": 0.244851086,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8b41efc9a3",
+    "x_groq": {
+      "id": "req_01m3q4kdf4e5fbr9yekezaavd6",
+      "seed": 911631337
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84219090",
+  "predicted_reason": "The device is a sterile isolator used in pharmaceutical manufacturing, classified under other machinery for air treatment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

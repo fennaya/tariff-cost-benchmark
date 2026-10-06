@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358673",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "9505102500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2ffbed47-7778-422d-945f-b7a75ae0498a",
+    "object": "chat.completion",
+    "created": 1790726806,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.00\", \"reason\": \"Artificial Christmas trees are classified as toys/seasonal decorations not elsewhere specified under heading 9505.90.00.\"}",
+          "reasoning": "We need HTS code for artificial Christmas tree. Likely 9505.90.00? Actually 9505.90.00 is \"Other toys, games and sports equipment\". But artificial Christmas trees are under 9505.90.00? Check: 9505.90.00 \"Other toys, games and sports equipment, not elsewhere specified\". However there is heading 9505.90.00 includes \"Other toys\". But there is also heading 9505.90.00 for \"Other toys\". I think artificial Christmas trees are classified under 9505.90.00. Some sources: HTS 9505.90.00 \"Other toys, games and sports equipment, not elsewhere specified\". Yes.\n\nThus output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.46697313,
+      "prompt_tokens": 266,
+      "prompt_time": 0.059517474,
+      "completion_tokens": 205,
+      "completion_time": 0.423181748,
+      "total_tokens": 471,
+      "total_time": 0.482699222,
+      "completion_tokens_details": {
+        "reasoning_tokens": 154
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3qt56d1ev49k5m6b8evaek2",
+      "seed": 2007627490
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "Artificial Christmas trees are classified as toys/seasonal decorations not elsewhere specified under heading 9505.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

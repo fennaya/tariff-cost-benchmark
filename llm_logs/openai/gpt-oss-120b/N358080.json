@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358080",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "3307102000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c7bc7885-47f1-4416-b12c-94e0176f412f",
+    "object": "chat.completion",
+    "created": 1790726527,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3307.49.00\", \"reason\": \"Aftershave lotion is classified under perfumery preparations not elsewhere specified, heading 3307, subheading 49\"}",
+          "reasoning": "Need HTS for aftershave lotion with alcohol. Likely 3307.49.00? Actually 3307.49.00 is \"Other perfumery preparations, not elsewhere specified\". Aftershave is 3307.49.00. Provide code."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.05751596,
+      "prompt_tokens": 192,
+      "prompt_time": 0.049740979,
+      "completion_tokens": 108,
+      "completion_time": 0.226080936,
+      "total_tokens": 300,
+      "total_time": 0.275821915,
+      "completion_tokens_details": {
+        "reasoning_tokens": 57
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m3qswp78ewevmnsrt5m6jbhe",
+      "seed": 1920943384
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "33074900",
+  "predicted_reason": "Aftershave lotion is classified under perfumery preparations not elsewhere specified, heading 3307, subheading 49",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363690",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3ab324aa-1a19-46f4-bd2e-3a6927ef2bbf",
+    "object": "chat.completion",
+    "created": 1790860197,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.22.00.00\", \"reason\": \"Used passenger car with spark\u2011ignition engine of 2,500\u202fcc falls under heading 8703.22 for motor cars of 1,501\u20112,500\u202fcc.\"}",
+          "reasoning": "We need HTS code for used passenger car, 4-wheeled, gasoline engine, 2.5L. US HTS: Chapter 87. For cars: 8703.21.00? Let's see: 8703.21.00 = \"Motor cars and other motor vehicles for the transport of persons, with spark-ignition internal combustion reciprocating piston engine, of a cylinder capacity not exceeding 1,500 cc\". Not correct. 8703.22 = 1,501-2,500 cc. Actually 8703.22.00 = \"cylinder capacity exceeding 1,500 cc but not exceeding 2,500 cc\". So 2,500 cc fits. It's used, but same heading. So code: 8703.22.00. Need 10-digit: 8703.22.00.00? US uses 10 digits: 8703.22.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.848490696,
+      "prompt_tokens": 257,
+      "prompt_time": 0.010962269,
+      "completion_tokens": 268,
+      "completion_time": 0.569266367,
+      "total_tokens": 525,
+      "total_time": 0.580228636,
+      "completion_tokens_details": {
+        "reasoning_tokens": 200
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dd854ee2d7",
+    "x_groq": {
+      "id": "req_01m3vsbyn6ebv8r7rvvp49g4bz",
+      "seed": 631158143
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703220000",
+  "predicted_reason": "Used passenger car with spark\u2011ignition engine of 2,500\u202fcc falls under heading 8703.22 for motor cars of 1,501\u20112,500\u202fcc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

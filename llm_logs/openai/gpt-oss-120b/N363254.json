@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363254",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "3924905650",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-edd100ac-4f6f-4baa-9e44-1ed40d275b18",
+    "object": "chat.completion",
+    "created": 1790848349,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8205.50.00\", \"reason\": \"Classified as a hand garden tool (rake) with a metal handle and pole, falling under HTSUS heading 8205 for hand tools of base metal for gardening.\"}",
+          "reasoning": "We need HTS code for garden rake, plastic and metal. Likely 8205.59.00? Actually garden tools: 8205.59.00 is \"Hand tools, not elsewhere specified, of base metal, other\". But rakes are under 8205.50? Let's check: 8205.50 is \"Hand tools, of base metal, for gardening\". 8205.50.00? Actually 8205.50.00 is \"Hand tools, of base metal, for gardening\". But includes metal rakes. Since includes plastic parts, still classified under 8205.50.00. So code 8205.50.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047705808,
+      "prompt_tokens": 259,
+      "prompt_time": 0.015462604,
+      "completion_tokens": 207,
+      "completion_time": 0.433231218,
+      "total_tokens": 466,
+      "total_time": 0.448693822,
+      "completion_tokens_details": {
+        "reasoning_tokens": 144
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m3ve2cvmewxbfm2gmjh9cyvr",
+      "seed": 1684250775
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "82055000",
+  "predicted_reason": "Classified as a hand garden tool (rake) with a metal handle and pole, falling under HTSUS heading 8205 for hand tools of base metal for gardening.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

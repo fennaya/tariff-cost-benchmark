@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357819",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "3004200075",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d3d20ccc-936a-48f7-bf69-78cbcb743f3b",
+    "object": "chat.completion",
+    "created": 1790726417,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00.00\",\n  \"reason\": \"Doxorubicin hydrochloride liposome injection is a medicinal preparation containing an antineoplastic agent, classified under heading 3004 for pharmaceutical products.\"\n}",
+          "reasoning": "Need HTS for doxorubicin hydrochloride liposome injection. Likely under 3004.90? Actually doxorubicin is an antineoplastic drug, HS 3004.90.00.00 for \"Other medicinal preparations containing antineoplastic and immunosuppressive agents\". Liposomal form maybe 3004.90.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.293887893,
+      "prompt_tokens": 233,
+      "prompt_time": 0.014432885,
+      "completion_tokens": 142,
+      "completion_time": 0.295068343,
+      "total_tokens": 375,
+      "total_time": 0.309501228,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3qssa5me8drtfvdmr54yet5",
+      "seed": 1491937003
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004900000",
+  "predicted_reason": "Doxorubicin hydrochloride liposome injection is a medicinal preparation containing an antineoplastic agent, classified under heading 3004 for pharmaceutical products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

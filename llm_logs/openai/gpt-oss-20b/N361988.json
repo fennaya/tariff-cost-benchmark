@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361988",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "6307909891",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-cd642178-3d82-43f2-9a7b-f1642a026f09",
+    "object": "chat.completion",
+    "created": 1790723134,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.62.10.00\",\"reason\":\"Electric heating pad for personal use falls under 8517.62.10, electric heating or cooling apparatus other than those for home use.\"}",
+          "reasoning": "Need HTS code for electric heating pad. Likely 8517.62.10? Actually 8517.62 is electric heating or cooling apparatus. For heating pads: 8517.62.10 is \"Electric heating or cooling apparatus, other than that of heading 8517.62.20\". Wait 8517.62.10 is \"Electric heating or cooling apparatus, other than that of heading 8517.62.20\". 8517.62.20 is \"Electric heating or cooling apparatus for use in the home\". But heating pad is wearable. Might be 8517.62.10. So 10-digit: 8517.62.10.00? Actually 10-digit: 8517.62.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294070028,
+      "prompt_tokens": 430,
+      "prompt_time": 0.024196782,
+      "completion_tokens": 216,
+      "completion_time": 0.249579335,
+      "total_tokens": 646,
+      "total_time": 0.273776117,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0d0da6cfee",
+    "x_groq": {
+      "id": "req_01m3qpn4wpe1hb3g8e8r8jed4d",
+      "seed": 1119412845
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8517621000",
+  "predicted_reason": "Electric heating pad for personal use falls under 8517.62.10, electric heating or cooling apparatus other than those for home use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

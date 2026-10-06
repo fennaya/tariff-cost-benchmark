@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361383",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d03b6349-6dbf-4ac5-b66f-1e11a97bf8be",
+    "object": "chat.completion",
+    "created": 1790699897,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8501.90.90.00\",\"reason\":\"The kit contains an electrical ozone generator, which is classified under 8501.90.90 for other electrical apparatus for producing ozone.\"}",
+          "reasoning": "Need HTS code. It's a bag with ozone generator. The main product is ozone generator device. Likely 8501.90.90? Actually ozone generators are electrical apparatus for producing ozone, used for sterilization. HTS 8501.90.90 is \"Other electrical apparatus for producing ozone\". But if it's a kit with bag, maybe 8501.90.90. But 8501.90.90 is for other electrical apparatus for producing ozone. So code 8501.90.90.00? 10-digit: 8501.90.90.00. Reason: electrical ozone generator."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.149999815,
+      "prompt_tokens": 435,
+      "prompt_time": 0.023507958,
+      "completion_tokens": 183,
+      "completion_time": 0.240099933,
+      "total_tokens": 618,
+      "total_time": 0.263607891,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_976a85d17a",
+    "x_groq": {
+      "id": "req_01m3q0g07jex9v7qgp1m95p4pz",
+      "seed": 656730267
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8501909000",
+  "predicted_reason": "The kit contains an electrical ozone generator, which is classified under 8501.90.90 for other electrical apparatus for producing ozone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

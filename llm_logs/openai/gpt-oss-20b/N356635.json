@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356635",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "6802990090",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-de240e6c-dd4c-4996-a7c6-b6403ac41163",
+    "object": "chat.completion",
+    "created": 1790606942,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6801.90.90.00\",\"reason\":\"Gneiss natural stone used for countertops falls under 6801.90.90.00, the HTSUS heading for other natural stone in slabs or blocks.\"}",
+          "reasoning": "Need HTS code for natural stone, specifically gneiss used for countertops. Likely 6801.90.90? Actually 6801 is \"Natural stone, other than marble, granite, or quartzite, in slabs, blocks, or other shapes\". For countertops, 6801.90.90 is \"Other\". But 6801.90.90 is for \"Other natural stone\". 6801.90.90 includes \"Other natural stone, in slabs, blocks, or other shapes\". So 6801.90.90.00? 10-digit: 6801.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.428838425,
+      "prompt_tokens": 321,
+      "prompt_time": 0.018441874,
+      "completion_tokens": 194,
+      "completion_time": 0.227657428,
+      "total_tokens": 515,
+      "total_time": 0.246099302,
+      "completion_tokens_details": {
+        "reasoning_tokens": 134
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3cdd24b83b",
+    "x_groq": {
+      "id": "req_01m3m7v7yrewta266bfvskxkmb",
+      "seed": 1008034386
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6801909000",
+  "predicted_reason": "Gneiss natural stone used for countertops falls under 6801.90.90.00, the HTSUS heading for other natural stone in slabs or blocks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

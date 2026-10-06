@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bf176cfd-fbbc-4475-8fc7-feabd7a7426a",
+    "object": "chat.completion",
+    "created": 1790904957,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"1509.90.0010\",\n  \"reason\": \"Shea butter (VitaBio EcoShea\u2122) is a vegetable fat classified under heading 1509, subheading 1509.90.0010 for refined shea butter, which covers both refined and partially refined forms.\"\n}",
+          "reasoning": "We need HTS for shea butter refined/partially refined. Likely heading 1509.00.00? Actually 1509 is \"Animal or vegetable fats and oils and their fractions, other than those of heading 1501 to 1508\". Shea butter is a vegetable fat. Subheading 1509.90.00 is \"Other\". But refined shea butter maybe 1509.90.00. 10-digit: 1509.90.0010? Need check. 1509.90.0010 is \"Shea butter, refined\". 1509.90.0020 is \"Shea butter, partially refined\"? Not sure. Likely 1509.90.0010 for refined, 1509.90.0020 for partially refined. Provide one code? Single most applicable for both? Could choose 1509.90.0010 as refined; partially refined maybe 1509.90.0020. Choose 1509.90.0010 as generic. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087249657,
+      "prompt_tokens": 622,
+      "prompt_time": 0.02989417,
+      "completion_tokens": 295,
+      "completion_time": 0.636017639,
+      "total_tokens": 917,
+      "total_time": 0.665911809,
+      "completion_tokens_details": {
+        "reasoning_tokens": 216
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_b9a23305b9",
+    "x_groq": {
+      "id": "req_01m3x41y2fecpb7frrhnb9btbj",
+      "seed": 1025139153
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1509900010",
+  "predicted_reason": "Shea butter (VitaBio EcoShea\u2122) is a vegetable fat classified under heading 1509, subheading 1509.90.0010 for refined shea butter, which covers both refined and partially refined forms.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

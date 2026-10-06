@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357470",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-6b3712f5-a4c2-4fa9-92ef-154f65af5abb",
+    "object": "chat.completion",
+    "created": 1790607564,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9701.90.90.00\",\"reason\":\"The item is a theatrical costume for a Samurai Warrior, fitting the HTSUS heading for other articles of apparel and clothing accessories not elsewhere specified.\"}",
+          "reasoning": "Need HTS code for costume. Likely 9701.90.90? Actually costumes for theatrical use: 9701.90.90 is \"Other articles of apparel and clothing accessories, not elsewhere specified or included\". But costume parts? Maybe 9701.90.90. But 9701.90.90 is for \"Other articles of apparel and clothing accessories, not elsewhere specified or included\". For costumes: 9701.90.90. But maybe 9701.90.90.00? 10-digit: 9701.90.90.00. Reason: costume for theatrical use."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087138947,
+      "prompt_tokens": 213,
+      "prompt_time": 0.013054541,
+      "completion_tokens": 184,
+      "completion_time": 0.196598187,
+      "total_tokens": 397,
+      "total_time": 0.209652728,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c5a89987dc",
+    "x_groq": {
+      "id": "req_01m3m8e7rve3frk5vkannnhnyg",
+      "seed": 373200990
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9701909000",
+  "predicted_reason": "The item is a theatrical costume for a Samurai Warrior, fitting the HTSUS heading for other articles of apparel and clothing accessories not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

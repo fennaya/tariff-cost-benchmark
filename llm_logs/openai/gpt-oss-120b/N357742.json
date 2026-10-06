@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357742",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "2921303000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4acbbe29-2833-4b1a-a934-db201e0ab997",
+    "object": "chat.completion",
+    "created": 1790726377,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2925.20.00.00\", \"reason\": \"Cyclohexylamine is classified under heading 2925 for acyclic amines and derivatives, specifically subheading 2925.20 for cyclohexylamine.\"}",
+          "reasoning": "Need HTS for cyclohexylamine, a primary amine, C6H13N. Likely under 2925.20.00? Let's check: 2925 is \"Acyclic amides and derivatives\"? Actually 2925 is \"Acyclic amines and derivatives\". Wait: 2925.20 is \"Cyclohexylamine\". I think HTSUS 2925.20.00 is \"Cyclohexylamine\". So 10-digit: 2925.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.088807693,
+      "prompt_tokens": 248,
+      "prompt_time": 0.010013826,
+      "completion_tokens": 180,
+      "completion_time": 0.378474406,
+      "total_tokens": 428,
+      "total_time": 0.388488232,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a4be3b0989",
+    "x_groq": {
+      "id": "req_01m3qsr34yecgvs4hnsrf550rm",
+      "seed": 2025645476
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2925200000",
+  "predicted_reason": "Cyclohexylamine is classified under heading 2925 for acyclic amines and derivatives, specifically subheading 2925.20 for cyclohexylamine.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

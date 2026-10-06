@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360646",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "7323930060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c0981422-d9b1-4577-b4e1-a98ba39d0ab7",
+    "object": "chat.completion",
+    "created": 1790769314,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"4412.90.00\",\n  \"reason\": \"Classified under 'Other wooden kitchenware, including cutting boards' as the primary material is wood (MDF) with metal facing, falling under heading 4412.90.00.\"\n}",
+          "reasoning": "Need HTS for kitchen cutting board with stainless steel surface and MDF core. Likely heading 4412? But metal? Cutting boards of wood are 4412.09. However stainless steel surface may classify as \"cutting boards of plastics\" 3924? Actually composite of metal and wood maybe \"Other articles of wood\" 4412.90. Probably 4412.90.00. Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296264594,
+      "prompt_tokens": 250,
+      "prompt_time": 0.01125179,
+      "completion_tokens": 153,
+      "completion_time": 0.321733168,
+      "total_tokens": 403,
+      "total_time": 0.332984958,
+      "completion_tokens_details": {
+        "reasoning_tokens": 85
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m3s2pdnrepcbmwy4ma1s6mvm",
+      "seed": 1783389561
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "44129000",
+  "predicted_reason": "Classified under 'Other wooden kitchenware, including cutting boards' as the primary material is wood (MDF) with metal facing, falling under heading 4412.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

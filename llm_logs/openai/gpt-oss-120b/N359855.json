@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359855",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "3105100000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ab326af1-163e-49d9-b47b-ec52f77ae740",
+    "object": "chat.completion",
+    "created": 1790742958,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.99.00\", \"reason\": \"The product is a liquid mineral fertilizer containing nitrogen, phosphorus, and potassium with no pesticidal claims, classifying it as a mixed fertilizer under heading 3105.99.00.\"}",
+          "reasoning": "We need HTS for fertilizer, liquid, nitrogen, phosphate, potassium, not pesticide. Likely 3105.99.00? 3105 covers mineral or chemical fertilizers, NPK. 3105.99.00 is \"Other\" fertilizers. 3105.10 is nitrogenous, 3105.20 phosphate, 3105.30 potash, 3105.90 other. Since mixed NPK, use 3105.99.00? Actually 3105.99.00 is \"Other fertilizer mixtures\". So code: 3105.99.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.202745057,
+      "prompt_tokens": 433,
+      "prompt_time": 0.023361533,
+      "completion_tokens": 191,
+      "completion_time": 0.402150029,
+      "total_tokens": 624,
+      "total_time": 0.425511562,
+      "completion_tokens_details": {
+        "reasoning_tokens": 127
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3r9j428e1zryhn8kk09ry9q",
+      "seed": 2060711542
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "31059900",
+  "predicted_reason": "The product is a liquid mineral fertilizer containing nitrogen, phosphorus, and potassium with no pesticidal claims, classifying it as a mixed fertilizer under heading 3105.99.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

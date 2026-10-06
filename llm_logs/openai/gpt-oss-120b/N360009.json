@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360009",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "5907006000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d4c896b8-8c5f-4de6-b602-b35c55a40c71",
+    "object": "chat.completion",
+    "created": 1790751036,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"5903.00.00.00\", \"reason\": \"The product is a PET knit textile fabric coated with polyurethane and flocked to resemble suede, classifying it as a textile fabric coated with plastics under heading 5903.\"}",
+          "reasoning": "We need HTS for textile fabric coated with PU, flocked leather, imitation suede. Likely heading 5903? 5903.00.00 for textile fabrics coated with plastics. 5903.00.00.00 is \"Textile fabrics coated, impregnated, covered, or laminated with plastics\". So choose that. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203768478,
+      "prompt_tokens": 360,
+      "prompt_time": 0.020060764,
+      "completion_tokens": 136,
+      "completion_time": 0.286239912,
+      "total_tokens": 496,
+      "total_time": 0.306300676,
+      "completion_tokens_details": {
+        "reasoning_tokens": 73
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3rh8mh0ej2sq75yryhc4n4j",
+      "seed": 1068827708
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "5903000000",
+  "predicted_reason": "The product is a PET knit textile fabric coated with polyurethane and flocked to resemble suede, classifying it as a textile fabric coated with plastics under heading 5903.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

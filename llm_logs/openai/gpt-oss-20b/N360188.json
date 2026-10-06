@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360188",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5bffac73-a9d4-4441-b92f-116f403f52ec",
+    "object": "chat.completion",
+    "created": 1790665980,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3924.10.20.00\",\"reason\":\"The product is a plastic bag with an integral closure used for packaging, fitting heading 3924.10.20 of the HTSUS.\"}",
+          "reasoning": "Need HTS 10-digit. Plastic bags for packaging: 3924.10.10.00? Actually 3924.10.10.00 is \"Plastic bags, of a kind used for packaging, other than those of heading 3924.10.20\". 3924.10.20 is for bags with closure? Wait 3924.10.20 is \"Plastic bags, of a kind used for packaging, with a closure\". Our bag has integral extruded closure. So 3924.10.20.00. Provide 10-digit: 3924.10.20.00. Reason sentence."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.015321366,
+      "prompt_tokens": 251,
+      "prompt_time": 0.014557148,
+      "completion_tokens": 187,
+      "completion_time": 0.197374889,
+      "total_tokens": 438,
+      "total_time": 0.211932037,
+      "completion_tokens_details": {
+        "reasoning_tokens": 132
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_565badff47",
+    "x_groq": {
+      "id": "req_01m3p04y8fe0ns365zdmxt1qag",
+      "seed": 1308468060
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3924102000",
+  "predicted_reason": "The product is a plastic bag with an integral closure used for packaging, fitting heading 3924.10.20 of the HTSUS.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

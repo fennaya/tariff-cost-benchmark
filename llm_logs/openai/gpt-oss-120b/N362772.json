@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362772",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "1902200040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ac4d141e-3e17-41a4-9b15-7bbda40aeaae",
+    "object": "chat.completion",
+    "created": 1790836067,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"1902.40.00\",\n  \"reason\": \"Frozen, ready\u2011to\u2011heat Indian\u2011style dumplings (momos) with wheat flour wrappers and vegetable/cheese fillings are classified under heading 1902.40 \u2013 other prepared foods containing vegetables, frozen.\"\n}",
+          "reasoning": "We need HTS for frozen dumplings with wheat wrapper and vegetable/cheese filling. Likely heading 1902.30? Actually 1902.30 is \"Prepared foods obtained by the freezing of ...\". 1902.30.00 is \"Other prepared foods, not elsewhere specified, containing meat, fish, crustaceans, molluscs or other seafood\". Not. 1902.40 is \"Other prepared foods, not elsewhere specified, containing vegetables\". Let's check: 1902.40.00 \"Other prepared foods, not elsewhere specified, containing vegetables\". That seems right. So code 1902.40.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048806804,
+      "prompt_tokens": 731,
+      "prompt_time": 0.035466961,
+      "completion_tokens": 211,
+      "completion_time": 0.436608089,
+      "total_tokens": 942,
+      "total_time": 0.47207505,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3v2bjjsenaar9g8phq78mxa",
+      "seed": 1997883565
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "19024000",
+  "predicted_reason": "Frozen, ready\u2011to\u2011heat Indian\u2011style dumplings (momos) with wheat flour wrappers and vegetable/cheese fillings are classified under heading 1902.40 \u2013 other prepared foods containing vegetables, frozen.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

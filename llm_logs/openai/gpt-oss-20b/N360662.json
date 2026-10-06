@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360662",
+  "rulingDate": "2026-04-27T00:00:00",
+  "true_code": "8516790000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-06676a0d-ad0c-4513-8136-ac0145fe8356",
+    "object": "chat.completion",
+    "created": 1790679264,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8517.30.10\",\"reason\":\"Electric popcorn maker is an electric heating appliance for domestic use.\"}",
+          "reasoning": "Need HTS code for popcorn maker. Likely 8517.30.10? Actually kitchen appliances: 8517.30.10 is \"Electric heating or cooking appliances, other than those of heading 8517.30.20\". Wait 8517.30.10 is \"Electric heating or cooking appliances, other than those of heading 8517.30.20\". But popcorn maker is electric. 8517.30.10 includes \"Electric heating or cooking appliances, other than those of heading 8517.30.20\". 8517.30.20 is \"Electric heating or cooking appliances, other than those of heading 8517.30.10, for domestic use\". Hmm. Actually 8517.30.10 is for \"Electric heating or cooking appliances, other than those of heading 8517.30.20, for domestic use\". Wait confusion. Let's pick 8517.30.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.225424235,
+      "prompt_tokens": 225,
+      "prompt_time": 0.011376208,
+      "completion_tokens": 234,
+      "completion_time": 0.340724726,
+      "total_tokens": 459,
+      "total_time": 0.352100934,
+      "completion_tokens_details": {
+        "reasoning_tokens": 198
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_66f3850a1a",
+    "x_groq": {
+      "id": "req_01m3pctaf6e739e275cy2x13kx",
+      "seed": 1515813065
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85173010",
+  "predicted_reason": "Electric popcorn maker is an electric heating appliance for domestic use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

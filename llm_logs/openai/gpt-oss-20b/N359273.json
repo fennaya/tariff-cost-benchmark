@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359273",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "1905901050",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-3dcc520f-6e8d-4203-8806-f36dd4b3cab0",
+    "object": "chat.completion",
+    "created": 1790626340,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1905.20.00.00\",\"reason\":\"Panettone is a sweet wheat\u2011flour bread with added sugar, fitting HTS 1905.20.00.00\"}",
+          "reasoning": "Need HTS code for panettone sweet bread. Likely 1905.10.00? Actually 1905 is \"Bread, pastry, cakes, biscuits, etc.\" 1905.10 is \"Bread, pastry, cakes, biscuits, etc., of wheat flour, not containing added sugar or honey\". But panettone contains sugar. 1905.20 is \"Bread, pastry, cakes, biscuits, etc., of wheat flour, containing added sugar or honey\". So 1905.20.00? 10-digit: 1905.20.00.00? Actually 10-digit: 1905.20.00.00. Reason: sweet bread with added sugar."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195103719,
+      "prompt_tokens": 353,
+      "prompt_time": 0.028517727,
+      "completion_tokens": 199,
+      "completion_time": 0.222700201,
+      "total_tokens": 552,
+      "total_time": 0.251217928,
+      "completion_tokens_details": {
+        "reasoning_tokens": 146
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_37c9245f64",
+    "x_groq": {
+      "id": "req_01m3mtb6w5ec0tghbayf1cas9b",
+      "seed": 150020133
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1905200000",
+  "predicted_reason": "Panettone is a sweet wheat\u2011flour bread with added sugar, fitting HTS 1905.20.00.00",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null
+}

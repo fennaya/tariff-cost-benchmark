@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361449",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "6114301020",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-dbbaf59e-81c8-41e4-81e6-d6b4e69b7e32",
+    "object": "chat.completion",
+    "created": 1790704404,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9900.00.00\",\"reason\":\"The description refers to customs regulations, not a specific product, so the generic HTS code for other goods is applicable.\"}",
+          "reasoning": "We need HTS code for this description? It's about customs regulations, not a product. Likely no product. Maybe code 9900? But maybe 9900 is \"Other\" for customs. But we need single most applicable 10-digit code. Could be 9900.00.00? Actually HTS 9900.00.00 is \"Other\" for customs. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.362481243,
+      "prompt_tokens": 271,
+      "prompt_time": 0.128009803,
+      "completion_tokens": 131,
+      "completion_time": 0.144048094,
+      "total_tokens": 402,
+      "total_time": 0.272057897,
+      "completion_tokens_details": {
+        "reasoning_tokens": 83
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m3q4sh1xek0s7hf44ppafxvn",
+      "seed": 96577992
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "99000000",
+  "predicted_reason": "The description refers to customs regulations, not a specific product, so the generic HTS code for other goods is applicable.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

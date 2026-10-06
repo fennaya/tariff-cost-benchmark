@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360151",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8703800020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-26da7f66-5fa8-4dc9-a279-a0f183237778",
+    "object": "chat.completion",
+    "created": 1790755048,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8703.90.00\",\n  \"reason\": \"Classified as a motor vehicle (three-wheeled) with electric propulsion, falling under heading 8703 for motor cars and other motor vehicles.\"\n}",
+          "reasoning": "We need HTS for electric three-wheeled vehicle. Likely heading 8703 for motor vehicles, but three-wheeled may be 8702? Actually 8703 is motor cars, 8702 is motorcycles, cycles. Three-wheeled motor vehicles with engine > 50 cc? For electric, maybe 8703.20.00? Let's pick 8703.21.00 for electric vehicles? Actually 8703.21 is \"Motor cars, other than those of heading 8703.10, with electric propulsion\". But three-wheeled? Might be 8703.90.00 \"Other motor vehicles\". Could be 8703.90.00. Let's answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203983607,
+      "prompt_tokens": 284,
+      "prompt_time": 0.015609467,
+      "completion_tokens": 208,
+      "completion_time": 0.437268815,
+      "total_tokens": 492,
+      "total_time": 0.452878282,
+      "completion_tokens_details": {
+        "reasoning_tokens": 148
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3rn32sbe5r9pkj4js1hqt7q",
+      "seed": 1962734730
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87039000",
+  "predicted_reason": "Classified as a motor vehicle (three-wheeled) with electric propulsion, falling under heading 8703 for motor cars and other motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359221",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8704310140",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-207a2629-ba2f-4243-9d1d-a0f804d4f7dc",
+    "object": "chat.completion",
+    "created": 1790727164,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.21.00.00\", \"reason\": \"Classified under motor vehicles for the transport of goods with engine capacity not exceeding 1500\u202fcc\"}",
+          "reasoning": "Need HTS for motor vehicle 1990 Honda Acty, 545 cc, KEI truck. Likely heading 8703 (motor vehicles for the transport of goods). Subheading for vehicles with engine capacity not exceeding 1500 cc. 8703.21? Let's see: 8703.21 - \"Of a kind used for the transport of goods\". Then further digits: 8703.21.00? Actually 10-digit: 8703.21.00.00? Need 10 digits with periods: \"8703.21.00.00\". Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296559876,
+      "prompt_tokens": 224,
+      "prompt_time": 0.009806193,
+      "completion_tokens": 172,
+      "completion_time": 0.35930522,
+      "total_tokens": 396,
+      "total_time": 0.369111413,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3qtg3j4e2ybqjhshvfaz68d",
+      "seed": 1818230938
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8703210000",
+  "predicted_reason": "Classified under motor vehicles for the transport of goods with engine capacity not exceeding 1500\u202fcc",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

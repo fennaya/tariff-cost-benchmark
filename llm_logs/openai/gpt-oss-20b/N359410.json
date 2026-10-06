@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359410",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8536908585",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-2027d5e0-582d-47cb-b0b2-70bbc1fd4f95",
+    "object": "chat.completion",
+    "created": 1790631628,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"8541.40.00.00\",\"reason\":\"Wired breakout board with PCB, insulated conductors, and a connector falls under printed circuit boards other than those of heading 8541.30.\"}",
+          "reasoning": "Need HTS code for wired breakout board with PCB and cables, connector. Likely 8541.40.00? Actually 8541.40 is \"Printed circuit boards, other than those of heading 8541.30\". But includes boards with components? 8541.40.00 is \"Printed circuit boards, other than those of heading 8541.30\". But our board has cables and connector. Could be 8541.40.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.311824952,
+      "prompt_tokens": 262,
+      "prompt_time": 0.045055235,
+      "completion_tokens": 156,
+      "completion_time": 0.160635306,
+      "total_tokens": 418,
+      "total_time": 0.205690541,
+      "completion_tokens_details": {
+        "reasoning_tokens": 100
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a12402de73",
+    "x_groq": {
+      "id": "req_01m3mzck6pecysx1p1ddntcf9p",
+      "seed": 124925155
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8541400000",
+  "predicted_reason": "Wired breakout board with PCB, insulated conductors, and a connector falls under printed circuit boards other than those of heading 8541.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

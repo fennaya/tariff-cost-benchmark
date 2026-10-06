@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361364",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e8d08abc-9698-4568-8c49-4bc3a98ab733",
+    "object": "chat.completion",
+    "created": 1790790642,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.91.00\", \"reason\": \"Printed tissue paper is classified under heading 4811.91 for printed paper and paperboard, including tissue.\"}",
+          "reasoning": "Need HTS for printed tissue paper. Likely heading 4811.90? Tissue paper printed = 4811.91? Check: 4811.10 uncoated paper, 4811.20 coated, 4811.30 tissue paper, etc. Actually 4811.10 uncoated paper, 4811.20 coated, 4811.30 tissue paper, 4811.90 other. Printed tissue likely 4811.91? I think 4811.91 is \"paper, coated, impregnated, etc\"? Not sure. Quick guess: 4811.91? Might be 4811.91. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220099211,
+      "prompt_tokens": 219,
+      "prompt_time": 0.00943919,
+      "completion_tokens": 188,
+      "completion_time": 0.394242548,
+      "total_tokens": 407,
+      "total_time": 0.403681738,
+      "completion_tokens_details": {
+        "reasoning_tokens": 139
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3sq19rfec59kf15w43y76ms",
+      "seed": 541327577
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "48119100",
+  "predicted_reason": "Printed tissue paper is classified under heading 4811.91 for printed paper and paperboard, including tissue.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

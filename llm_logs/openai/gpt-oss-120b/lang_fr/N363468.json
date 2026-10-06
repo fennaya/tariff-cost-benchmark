@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363468",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8543709100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-d52aea83-1053-44d6-9e38-5235c11a6ba2",
+    "object": "chat.completion",
+    "created": 1790905549,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8542.31.00\", \"reason\": \"The device is a digital signal processor (DSP) classified as an electronic integrated circuit under heading 8542.31.00.\"}",
+          "reasoning": "We need HTS code for digital signal processor, not amplifier. Likely under 8517? Actually electronic processors: 8542.31? Let's think: \"Digital signal processors\" are \"Electronic integrated circuits\" under 8542.31.00? 8542.31.00 is \"Electronic integrated circuits: digital signal processors\". Yes. So code 8542.31.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.294129667,
+      "prompt_tokens": 404,
+      "prompt_time": 0.017892063,
+      "completion_tokens": 139,
+      "completion_time": 0.29008604,
+      "total_tokens": 543,
+      "total_time": 0.307978103,
+      "completion_tokens_details": {
+        "reasoning_tokens": 86
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3x4m05qe70rdt9ebb7hy00d",
+      "seed": 51381576
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85423100",
+  "predicted_reason": "The device is a digital signal processor (DSP) classified as an electronic integrated circuit under heading 8542.31.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

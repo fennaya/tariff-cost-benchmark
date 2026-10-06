@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361397",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-aec4a957-0c82-4b95-b373-172cf251f2fb",
+    "object": "chat.completion",
+    "created": 1790904805,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.62.0010\", \"reason\": \"Classified as a women's or girls' dress (robe) of unfinished, raw-hem construction made of man\u2011made fibers\"}",
+          "reasoning": "We need to guess. Arabic description: \"neck edge raw folded once and ... long straight stitches ... long sleeves and bottom edge of the robe ... raw and unfinished\". Likely a garment, maybe a \"robe\" or \"dress\". Could be \"women's or men's robes, unfinished\". Likely textile, not knitted? Probably \"garments, knitted or crocheted, of cotton\". Hard.\n\nMaybe classify as \"6109.10.0010\" for T-shirts? No.\n\nRobes, unfinished, raw edge: could be \"unfinished textile articles, not knitted\". Could be \"fabric, woven, not yet made into garment\". Might be \"fabric, woven, cotton, 50% or more\". HTS 5208? But description mentions sleeves, neckline, so it's a garment.\n\nProbably \"6103.90.00\" for men's or boys' suits? Not.\n\nMaybe \"6104.63.00\" for women's or girls' dresses, knitted? Not.\n\nGiven uncertainty, choose a generic: \"6204.62.0010\" - women's or girls' dresses, of man-made fibers, not knitted. But description raw.\n\nI'll output something."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205921859,
+      "prompt_tokens": 205,
+      "prompt_time": 0.008317449,
+      "completion_tokens": 294,
+      "completion_time": 0.617360492,
+      "total_tokens": 499,
+      "total_time": 0.625677941,
+      "completion_tokens_details": {
+        "reasoning_tokens": 241
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3x3x91hepdscjpgcnrb53d0",
+      "seed": 845245331
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6204620010",
+  "predicted_reason": "Classified as a women's or girls' dress (robe) of unfinished, raw-hem construction made of man\u2011made fibers",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

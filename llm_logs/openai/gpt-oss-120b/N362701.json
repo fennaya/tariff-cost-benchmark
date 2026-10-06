@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362701",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "3213100000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-09682654-be46-4085-b313-a16668293bb1",
+    "object": "chat.completion",
+    "created": 1790834139,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9609.90.00\",\n  \"reason\": \"The kit is a miscellaneous manufactured article not elsewhere specified, classified under heading 9609 for other articles.\"\n}",
+          "reasoning": "We need HTS code for art supplies kit. Likely 9503? Actually kits of art materials: 9503.00.00 is \"Tricycles, scooters, etc.\" No. 9503 is \"Tricycles\". Not.\n\nArt supplies under 9603? 9603 is \"Brooms\". Not.\n\nPainting kits maybe 4911? No.\n\nCheck: 9701 is \"Paintings\". 9703 is \"Original sculptures\". Not.\n\nArt supplies: 9603? Wait 9603 is \"Brooms\". 9604 is \"Mops\". Not.\n\nLook at 9606? No.\n\nMaybe 9609? Not.\n\nBetter: 9603? No.\n\nActually HS Chapter 96 is \"Miscellaneous manufactured articles\". 9603 is \"Brooms\". 9604 \"Mops\". 9605 \"Washing machines\". Not.\n\nArt supplies are under Chapter 96? No, they are under Chapter 96? I think art supplies are under 9603? No.\n\nCheck Chapter 96 includes \"Miscellaneous manufactured articles\". 9603 is \"Brooms\". 9604 \"Mops\". 9605 \"Washing machines\". 9606 \"Floor cleaning machines\". 9607 \"Other cleaning machines\". 9608 \"Floor polishers\". 9609 \"Other\". Not.\n\nMaybe Chapter 96 not.\n\nArt supplies are under Chapter 96? Actually HS 9603 is \"Brooms\". So not.\n\nArt supplies are under Chapter 96? I recall 9603 is brooms. Art supplies are under Chapter 96? Not.\n\nMaybe Chapter 96 includes \"Other\". But there is 9609 \"Other\". Could include kits? But likely not.\n\nBetter: Chapter 96 includes \"Other\". But there is specific heading 9609.90 for \"Other\". Might be.\n\nBut more appropriate is Chapter 96? Hmm.\n\nAlternatively, Chapter 97 is \"Works of art\". Not.\n\nMaybe Chapter 96 is wrong. Actually art supplies are under Chapter 96? I think they are under Chapter 96? Not sure.\n\nCheck Chapter 96 heading 9603? No.\n\nMaybe Chapter 96 heading 9603 is \"Brooms\". So not.\n\nArt supplies are under Chapter 96 heading 9609? Could be \"Other\". But classification would be 9609.90.00? Might be.\n\nBut there is also Chapter 96 heading 9603? No.\n\nBetter: Chapter 96 heading 9609.90.00 \"Other\". But reason: kit of paints.\n\nThus answer: \"9609.90.00\"."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195828204,
+      "prompt_tokens": 240,
+      "prompt_time": 0.011482426,
+      "completion_tokens": 594,
+      "completion_time": 1.244866283,
+      "total_tokens": 834,
+      "total_time": 1.256348709,
+      "completion_tokens_details": {
+        "reasoning_tokens": 543
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_df9620fe21",
+    "x_groq": {
+      "id": "req_01m3v0gptme3ns1yv7jxnggq3k",
+      "seed": 1703427361
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "96099000",
+  "predicted_reason": "The kit is a miscellaneous manufactured article not elsewhere specified, classified under heading 9609 for other articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

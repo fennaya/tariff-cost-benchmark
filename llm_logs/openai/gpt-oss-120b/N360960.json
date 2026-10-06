@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360960",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "8709100060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-473c463a-6365-4af9-b1e1-faa26b4ae38d",
+    "object": "chat.completion",
+    "created": 1790778902,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8425.99.00\",\n  \"reason\": \"Classified as an industrial truck (self\u2011propelled material handling vehicle) not covered by more specific headings such as forklift trucks.\"\n}",
+          "reasoning": "We need HTS code for autonomous industrial vehicle, heavy-load material transporter. Likely under 8425? 8425.89? Actually \"Industrial trucks, self-propelled, not motor vehicles\". HTS 8425.99.00? Let's see: 8425.99.00 - Other industrial trucks, other than those of heading 8425.20 (fork-lift). Could be 8425.99.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.590453979,
+      "prompt_tokens": 374,
+      "prompt_time": 0.017281756,
+      "completion_tokens": 152,
+      "completion_time": 0.322969216,
+      "total_tokens": 526,
+      "total_time": 0.340250972,
+      "completion_tokens_details": {
+        "reasoning_tokens": 96
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3sbv0vfeamtn8jdzmv3chfg",
+      "seed": 1796252743
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84259900",
+  "predicted_reason": "Classified as an industrial truck (self\u2011propelled material handling vehicle) not covered by more specific headings such as forklift trucks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

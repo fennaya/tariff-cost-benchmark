@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360509",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "9401698090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-74a20226-9494-4479-8cde-7b6364bfb177",
+    "object": "chat.completion",
+    "created": 1790764255,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9401.90.90\",\n  \"reason\": \"The product is a portable, non\u2011upholstered seat made of wood, metal and textile, fitting the heading for other seats not upholstered.\"\n}",
+          "reasoning": "We need HTS code for portable beach seat made of wood, metal, textile. Likely classified under \"Seats, whether or not with movable parts, of wood, metal, or other materials\". Look up: HTS 9401.61.00 - Seats, of wood, upholstered? Actually 9401.61 is \"Seats, of wood, upholstered\". Not upholstered. 9401.71 is \"Seats, of metal, upholstered\". 9401.90 is \"Other seats, not upholstered\". 9401.90.90 maybe. So 9401.90.90 is \"Other seats, not upholstered, of other materials\". Probably 9401.90.90. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203252563,
+      "prompt_tokens": 437,
+      "prompt_time": 0.024381491,
+      "completion_tokens": 206,
+      "completion_time": 0.435131078,
+      "total_tokens": 643,
+      "total_time": 0.459512569,
+      "completion_tokens_details": {
+        "reasoning_tokens": 147
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3rxw1x0e7e819s2jw1rpbrq",
+      "seed": 2109427693
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94019090",
+  "predicted_reason": "The product is a portable, non\u2011upholstered seat made of wood, metal and textile, fitting the heading for other seats not upholstered.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

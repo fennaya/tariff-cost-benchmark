@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359501",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-ed644c64-1e11-45c9-a73c-1932b6469caf",
+    "object": "chat.completion",
+    "created": 1790635617,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9031.90.00.00\",\"reason\":\"RFID/NFC test and measurement instruments are classified under 9031.90.00 for other instruments for measuring electrical quantities.\"}",
+          "reasoning": "Need HTS 10-digit. These are test and measurement equipment for RFID/NFC. Likely 9031.90.00? Actually 9031.90.00 is \"Other instruments and apparatus for measuring or checking electrical quantities\". But RFID test equipment maybe 9031.90.00. Could be 9031.90.00. Let's output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148230684,
+      "prompt_tokens": 897,
+      "prompt_time": 0.062894886,
+      "completion_tokens": 128,
+      "completion_time": 0.139793428,
+      "total_tokens": 1025,
+      "total_time": 0.202688314,
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_996f667773",
+    "x_groq": {
+      "id": "req_01m3n36ajpebxbcpw5ck2sdph1",
+      "seed": 416696881
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9031900000",
+  "predicted_reason": "RFID/NFC test and measurement instruments are classified under 9031.90.00 for other instruments for measuring electrical quantities.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

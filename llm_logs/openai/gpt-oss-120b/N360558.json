@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360558",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8903310020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6ef6e674-cbfd-43a6-9f30-280abfd82fb9",
+    "object": "chat.completion",
+    "created": 1790766042,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8903.40.00.00\",\n  \"reason\": \"Classified as a non\u2011motorized kayak (kayak, canoe or similar vessel not propelled by engine) because the motor is not part of the imported product.\"\n}",
+          "reasoning": "Need to pick HTS code. Motorized fishing kayak with motor well but motor optional. Likely classified under 8903.90.00.00? Let's see: 8903 covers boats, canoes, etc. 8903.10 for rowing, 8903.20 for sailing, 8903.30 for motorboats? Actually 8903.30 is \"Motorboats, other than those of heading 8903.10, 8903.20, 8903.40\". Check: 8903.40 is \"Other vessels, including canoes, kayaks, etc., not propelled by engine\". Wait need recall. Actually 8903.40 is \"Other vessels, including canoes, kayaks, etc., not propelled by engine\". 8903.30 is \"Motorboats, other than those of heading 8903.10, 8903.20\". So a kayak with motor well but motor optional maybe considered a non-motorized kayak (8903.40). Since motor not included, classification likely 8903.40.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204945261,
+      "prompt_tokens": 287,
+      "prompt_time": 0.015452494,
+      "completion_tokens": 296,
+      "completion_time": 0.615036638,
+      "total_tokens": 583,
+      "total_time": 0.630489132,
+      "completion_tokens_details": {
+        "reasoning_tokens": 231
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3rzjje8ekysrmn5gpbfgyef",
+      "seed": 995408383
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8903400000",
+  "predicted_reason": "Classified as a non\u2011motorized kayak (kayak, canoe or similar vessel not propelled by engine) because the motor is not part of the imported product.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359569",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3824994190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f96eed53-993c-45ed-b692-e091af59e89a",
+    "object": "chat.completion",
+    "created": 1790905715,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3815.90.00\",\n  \"reason\": \"The product is a prepared wax (beeswax and soy wax blend with oils) used for hockey equipment, classified under prepared waxes not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS for wax for hockey sticks. Likely \"Other waxes, prepared\" 3815.90? Actually 3815.90.00 is \"Other prepared waxes, not elsewhere specified\". So choose 3815.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205881439,
+      "prompt_tokens": 543,
+      "prompt_time": 0.049004601,
+      "completion_tokens": 116,
+      "completion_time": 0.240760339,
+      "total_tokens": 659,
+      "total_time": 0.28976494,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3x4s25teegaekrzdm46xkn0",
+      "seed": 174105877
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "38159000",
+  "predicted_reason": "The product is a prepared wax (beeswax and soy wax blend with oils) used for hockey equipment, classified under prepared waxes not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

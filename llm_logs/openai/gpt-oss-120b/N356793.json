@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356793",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8508110000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b9be3f23-bc8d-4ac0-9dc9-431397c04923",
+    "object": "chat.completion",
+    "created": 1790607151,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8508.10.00.00\",\n  \"reason\": \"The product is an electrically powered domestic robot vacuum cleaner, classified under HTS heading 8508 for vacuum cleaners not used for industrial purposes.\"\n}",
+          "reasoning": "We need HTS code for robot vacuum cleaner. Likely 8508.00.00? Actually 8508 covers vacuum cleaners, not robot. 8508.10.00 is \"Electrically powered vacuum cleaners, not of a kind used for industrial purposes\". 8508.10.00.00? Check: 8508.10.00 is \"Electrically powered vacuum cleaners, not of a kind used for industrial purposes\". So 10-digit: 8508.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048826503,
+      "prompt_tokens": 709,
+      "prompt_time": 0.037396611,
+      "completion_tokens": 172,
+      "completion_time": 0.366629888,
+      "total_tokens": 881,
+      "total_time": 0.404026499,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3m81ky2ewzbtfyk3kpcqfn1",
+      "seed": 1334548
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8508100000",
+  "predicted_reason": "The product is an electrically powered domestic robot vacuum cleaner, classified under HTS heading 8508 for vacuum cleaners not used for industrial purposes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

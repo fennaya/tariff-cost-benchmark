@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363820",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "0604903000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3f964de9-f487-46eb-8e55-8bd074fe9fe6",
+    "object": "chat.completion",
+    "created": 1790904661,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"0602.10.0010\",\n  \"reason\": \"Classified under dried flowers and buds (non-rose) for decorative use.\"\n}",
+          "reasoning": "We need HTS for poppy seed capsules decorative. Likely heading 1211? Actually dried flowers etc: 0602? Let's think: \"Other dried flowers and buds\" under 0602.10? 0602.10.00 is \"Dried flowers and buds, other than rose\". So 0602.10.00. That's 8 digits; need 10-digit: 0602.10.0010? Actually full 10-digit: 0602.10.0010 is \"Other dried flowers and buds\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048282925,
+      "prompt_tokens": 360,
+      "prompt_time": 0.017701985,
+      "completion_tokens": 164,
+      "completion_time": 0.344654342,
+      "total_tokens": 524,
+      "total_time": 0.362356327,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3x3rxjeekd93dtcpw480kwh",
+      "seed": 1919909115
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "0602100010",
+  "predicted_reason": "Classified under dried flowers and buds (non-rose) for decorative use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

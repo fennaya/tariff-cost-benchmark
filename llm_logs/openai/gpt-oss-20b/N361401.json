@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361401",
+  "rulingDate": "2026-05-22T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-74bb9120-a77f-4956-b38e-6acc146f1d89",
+    "object": "chat.completion",
+    "created": 1790701302,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6205.10.10\",\"reason\":\"Pull\u2011on pants are classified under 6205.10.10 (Trousers, cut, of cotton, not knitted or crocheted).\"}",
+          "reasoning": "We need HTS code for pull-on pants and a thin rectangular disco-style scarf. Likely clothing. Pull-on pants: maybe \"pants, pull-on\" could be under 6205.10.10? That's trousers, cut, not knitted. But pull-on pants could be \"pants, pull-on, of cotton\" etc. Scarf: thin rectangular scarf: 6204.52.10? Actually scarves are 6204.52.10 (other articles of apparel). But combined product? Maybe choose code for the most specific: pull-on pants likely 6205.10.10 (Trousers, cut, of cotton). But scarf is separate. Maybe choose code for the entire set? Probably the most applicable is for pull-on pants: 6205.10.10. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219194099,
+      "prompt_tokens": 163,
+      "prompt_time": 0.007962327,
+      "completion_tokens": 221,
+      "completion_time": 0.259171585,
+      "total_tokens": 384,
+      "total_time": 0.267133912,
+      "completion_tokens_details": {
+        "reasoning_tokens": 167
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_1074f9ce08",
+    "x_groq": {
+      "id": "req_01m3q1twhveycbqz6vearwt4ja",
+      "seed": 544317418
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "62051010",
+  "predicted_reason": "Pull\u2011on pants are classified under 6205.10.10 (Trousers, cut, of cotton, not knitted or crocheted).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

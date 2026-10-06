@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361384",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-36f90c2e-ac8c-48a7-ad0c-426184428f74",
+    "object": "chat.completion",
+    "created": 1790792119,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.99.00\", \"reason\": \"The description refers to general textile articles subject to FTC marking rules, which fall under HTSUS heading 6302 for other made\u2011up textile articles not elsewhere specified.\"}",
+          "reasoning": "We need to infer HTS code from description. The description is about FTC marking requirements for textile items, but no product. Likely \"Textile articles, not elsewhere specified\". Could be 6302? But generic. Maybe 6302.99.00? That's \"Other made up articles, of textile materials, not elsewhere specified\". Use 6302.99.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.028496559,
+      "prompt_tokens": 267,
+      "prompt_time": 0.043742911,
+      "completion_tokens": 140,
+      "completion_time": 0.293716163,
+      "total_tokens": 407,
+      "total_time": 0.337459074,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3srecr1e7fa2vfs3vdnj2bf",
+      "seed": 1671368225
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029900",
+  "predicted_reason": "The description refers to general textile articles subject to FTC marking rules, which fall under HTSUS heading 6302 for other made\u2011up textile articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

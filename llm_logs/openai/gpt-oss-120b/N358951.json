@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358951",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ef25118f-e1a6-4445-af79-a3c670eebdac",
+    "object": "chat.completion",
+    "created": 1790726943,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.90.9090\", \"reason\": \"The product is a non-motorized industrial trailer with a detachable tipping cassette, classified under heading 8716 for trailers and semi\u2011trailers, subheading 90 for other types, yielding the 10\u2011digit code 8716.90.9090.\"}",
+          "reasoning": "We need HTS for trailer with tipping cassette, no engine. Likely heading 8716.00.00 for trailers and semi-trailers, other than those for motor vehicles. Subheading 8716.90.90 for other. 10-digit: 8716.90.9090? Check: 8716.90.90 is 8-digit. 10-digit adds .00? Actually HTSUS 10-digit: 8716.90.9090? Might be 8716.90.9090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220309872,
+      "prompt_tokens": 482,
+      "prompt_time": 0.021694468,
+      "completion_tokens": 198,
+      "completion_time": 0.415223738,
+      "total_tokens": 680,
+      "total_time": 0.436918206,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3qt9bnsetytctb4qz1tggtn",
+      "seed": 811551619
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8716909090",
+  "predicted_reason": "The product is a non-motorized industrial trailer with a detachable tipping cassette, classified under heading 8716 for trailers and semi\u2011trailers, subheading 90 for other types, yielding the 10\u2011digit code 8716.90.9090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

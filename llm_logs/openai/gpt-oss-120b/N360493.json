@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360493",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004909225",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-9edcc802-278f-457d-87fb-3feff37fbd4d",
+    "object": "chat.completion",
+    "created": 1790763753,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3004.90.00\",\n  \"reason\": \"Colestipol hydrochloride is a pharmaceutical preparation (bile acid sequestrant) classified under HTSUS heading 3004 for medicinal preparations not elsewhere specified.\"\n}",
+          "reasoning": "Need HTS for pharmaceutical active ingredient. Colestipol is a polymeric resin, not a drug? Likely under 3004.90.00? Actually HTS Chapter 30: pharmaceutical products. Colestipol hydrochloride is a \"bile acid sequestrant\" classified under 3004.90.00 \"Other pharmaceutical preparations\". Might be 3004.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.026029959,
+      "prompt_tokens": 202,
+      "prompt_time": 0.053986544,
+      "completion_tokens": 151,
+      "completion_time": 0.319693782,
+      "total_tokens": 353,
+      "total_time": 0.373680326,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3rxcqnke7aa58q5623zkkv0",
+      "seed": 70701861
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Colestipol hydrochloride is a pharmaceutical preparation (bile acid sequestrant) classified under HTSUS heading 3004 for medicinal preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N348144",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "6110909026",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-dd382450-a30f-4b1d-92c5-7032d4d495cc",
+    "object": "chat.completion",
+    "created": 1790607023,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6105.20.20\",\n  \"reason\": \"Women's knit sweater made primarily of man\u2011made fibers (polyester, polyamide, elastane, metallic yarn) falls under heading 6105.20 for sweaters of man\u2011made fibers.\"\n}",
+          "reasoning": "We need HTS for women's knit sweater with metallic yarn. Likely heading 6105.20.00? 6105.20.00 is women's or girls' sweaters, knitted or crocheted, of cotton. But contains polyester, polyamide, elastane, metallic. Could be 6105.20.10? Actually 6105.20.10 is of cotton. 6105.20.20 is of man-made fibers. Since blend includes cotton 50% and man-made >50? Actually cotton 50, polyester 31, polyamide 12, elastane 6, metallic 1. So man-made >50? 31+12+6+1=50% man-made. Equal. Might be classified under 6105.20.20 (of man-made fibers). Also presence of metallic may shift to 6105.20.30? Not sure. Likely 6105.20.20. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.154944,
+      "prompt_tokens": 272,
+      "prompt_time": 0.040170963,
+      "completion_tokens": 268,
+      "completion_time": 0.571430511,
+      "total_tokens": 540,
+      "total_time": 0.611601474,
+      "completion_tokens_details": {
+        "reasoning_tokens": 199
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0adba2bb92",
+    "x_groq": {
+      "id": "req_01m3m7xpq4ecravb3yekbmt7xy",
+      "seed": 1468499079
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "61052020",
+  "predicted_reason": "Women's knit sweater made primarily of man\u2011made fibers (polyester, polyamide, elastane, metallic yarn) falls under heading 6105.20 for sweaters of man\u2011made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

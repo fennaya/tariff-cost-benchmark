@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357857",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "9404401000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-05624d4b-0662-42c2-a04b-41cf6d55745e",
+    "object": "chat.completion",
+    "created": 1790607769,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"6307.90.90.00\",\"reason\":\"It is a cotton/polyester matelass\u00e9 quilt leaf, classified under other bedding not elsewhere specified.\"}",
+          "reasoning": "Need HTS 10-digit. It's a quilt, textile, not bedding? It's a matelass\u00e9 quilt leaf, a lightweight sleeping layer. Likely 6307.90.90? Let's think: 6307 is \"Other bedding, e.g., mattresses, pillows, etc.\" 6307.90 is \"Other\" for bedding. 6307.90.10 is \"Other bedding, not elsewhere specified\" maybe. But 6307.90.90 is \"Other\". For quilts: 6307.90.90. But 10-digit: 6307.90.90.00? Actually 10-digit: 6307.90.90.00. Provide 10-digit. Reason: It's a quilt made of cotton/polyester. So 6307.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047745682,
+      "prompt_tokens": 381,
+      "prompt_time": 0.021912449,
+      "completion_tokens": 218,
+      "completion_time": 0.242586474,
+      "total_tokens": 599,
+      "total_time": 0.264498923,
+      "completion_tokens_details": {
+        "reasoning_tokens": 171
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e189667b30",
+    "x_groq": {
+      "id": "req_01m3m8mfgaeyb90hyyqst32p8c",
+      "seed": 1487819810
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6307909000",
+  "predicted_reason": "It is a cotton/polyester matelass\u00e9 quilt leaf, classified under other bedding not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

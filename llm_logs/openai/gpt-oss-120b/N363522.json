@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363522",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "3926909989",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3f6993b5-e13e-44de-bd3c-affc3d60d4b6",
+    "object": "chat.completion",
+    "created": 1790856274,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.99.10\", \"reason\": \"Protective cases for electronic devices primarily of plastic composite material, classified under 'Other articles of plastics' (HTS 4202.99.10).\"}",
+          "reasoning": "We need HTS code for protective cases with metal parts. Likely 4202.99.5000? Actually phone cases: 4202.91.00.00 is \"Trunks, suitcases, etc\". For protective cases of hand-held devices: 4202.99.5000 is \"Other articles of leather or composition leather\". Not. Maybe 4202.99.90? Wait: 4202.91 is \"Cases, bags, etc, of plastics\". For \"Other cases, including protective cases for electronic equipment\" 4202.99.90? Let's recall: 4202.91.00 \u2013 \"Cases, bags, etc., of plastics\". 4202.99.00 \u2013 \"Other\". For phone cases likely 4202.99.90 \"Other\". But there is also 4202.99.10 \"Of plastics\". Actually 4202.99.10 is \"Of plastics\". So phone case of plastic composite with metal parts maybe classified under 4202.99.10 (plastic). However metal parts may make it \"of other materials\". But main component is plastic composite. So 4202.99.10.\n\nThus output."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.30191746,
+      "prompt_tokens": 316,
+      "prompt_time": 0.018357937,
+      "completion_tokens": 306,
+      "completion_time": 0.654264041,
+      "total_tokens": 622,
+      "total_time": 0.672621978,
+      "completion_tokens_details": {
+        "reasoning_tokens": 248
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3vnm800ectsjvffy24z8maf",
+      "seed": 1690380786
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "42029910",
+  "predicted_reason": "Protective cases for electronic devices primarily of plastic composite material, classified under 'Other articles of plastics' (HTS 4202.99.10).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

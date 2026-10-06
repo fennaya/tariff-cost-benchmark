@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358796",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-5cea5834-e38e-41bf-a016-86eef2dcdca0",
+    "object": "chat.completion",
+    "created": 1790905689,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8716.30.0010\",\n  \"reason\": \"The product is a non\u2011self\u2011propelled platform trailer used for transporting heavy goods, classifiable under HTSUS heading 8716.30 for other trailers and semi\u2011trailers.\"\n}",
+          "reasoning": "We need HTS code for trailer platform, not self-propelled, chassis steel/aluminum. Likely heading 8716.30 - trailers and semi-trailers, other than those for motor vehicles. 8716.30.00 is \"Trailers and semi-trailers; other\". Check: 8716.30.00 is \"Other trailers and semi-trailers\". So 10-digit: 8716.30.0010? Actually 10-digit US: 8716.30.0010 is \"Other trailers and semi-trailers, of which the chassis is of a kind used for the transport of goods\". Might be 8716.30.0010. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206967527,
+      "prompt_tokens": 356,
+      "prompt_time": 0.013889844,
+      "completion_tokens": 219,
+      "completion_time": 0.458502944,
+      "total_tokens": 575,
+      "total_time": 0.472392788,
+      "completion_tokens_details": {
+        "reasoning_tokens": 149
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3x4r8vver39c8ysj8ecpexd",
+      "seed": 1527290033
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8716300010",
+  "predicted_reason": "The product is a non\u2011self\u2011propelled platform trailer used for transporting heavy goods, classifiable under HTSUS heading 8716.30 for other trailers and semi\u2011trailers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

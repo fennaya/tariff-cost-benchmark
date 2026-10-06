@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357694",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-05d6c758-b92d-4e2b-9581-5c2cfdaaa8f7",
+    "object": "chat.completion",
+    "created": 1790726350,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7604.10.00\", \"reason\": \"The product is a hollow aluminum tube used as an electrical conductor, classifiable as an aluminum tube or pipe under heading 7604.10\"}",
+          "reasoning": "We need HTS code for isolated phase bus, aluminum conductor, not insulated. Likely under Chapter 76 (Aluminum articles). Possibly 7604? 7604.10 covers aluminum tubes, pipes. But busbars maybe 7604.10.90? Actually busbars are \"aluminum alloy, not elsewhere specified\". Could be 7604.10.00? Let's pick 7604.10.00 (Aluminum tubes, pipes). Reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206061415,
+      "prompt_tokens": 322,
+      "prompt_time": 0.012604655,
+      "completion_tokens": 152,
+      "completion_time": 0.315386237,
+      "total_tokens": 474,
+      "total_time": 0.327990892,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3qsq8zgeyftdyz8zj3dmpn5",
+      "seed": 373261674
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "76041000",
+  "predicted_reason": "The product is a hollow aluminum tube used as an electrical conductor, classifiable as an aluminum tube or pipe under heading 7604.10",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

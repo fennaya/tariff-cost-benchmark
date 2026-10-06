@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359108",
+  "rulingDate": "2026-03-19T00:00:00",
+  "true_code": "3923210095",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e8529907-dc15-4036-aa93-6dd4d49c7f2f",
+    "object": "chat.completion",
+    "created": 1790727072,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.00\", \"reason\": \"Classified under plastic bags, sacks and similar packing containers of polymers of ethylene, not elsewhere specified, which covers pet waste bags.\"}",
+          "reasoning": "We need HTS code for plastic bags for pet waste. Likely 3923.21.00? 3923.21.00 is \"Plastic bags, sacks and similar packing containers, of polymers of ethylene, etc., not elsewhere specified\". For waste bags maybe 3923.90.99? But pet waste bags are \"plastic bags for waste\". 3923.21.00 is \"Plastic bags, sacks and similar packing containers, of polymers of ethylene, not elsewhere specified\". Could be 3923.90.99 \"Other\". I think 3923.21.00 is appropriate. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.223777596,
+      "prompt_tokens": 211,
+      "prompt_time": 0.00863056,
+      "completion_tokens": 185,
+      "completion_time": 0.387878479,
+      "total_tokens": 396,
+      "total_time": 0.396509039,
+      "completion_tokens_details": {
+        "reasoning_tokens": 131
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3qtdaj8erk8th3cqe7g182s",
+      "seed": 901170076
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39232100",
+  "predicted_reason": "Classified under plastic bags, sacks and similar packing containers of polymers of ethylene, not elsewhere specified, which covers pet waste bags.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

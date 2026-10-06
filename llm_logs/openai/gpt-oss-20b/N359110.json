@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359110",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3304995000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e716815b-791a-43d8-8d13-9d50c99cd97e",
+    "object": "chat.completion",
+    "created": 1790618378,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.90.90.10\",\"reason\":\"Suppositories for medical use are classified under 3004.90.90.10 in the HTSUS.\"}",
+          "reasoning": "Need HTS code for suppositories. Likely 3004.90.90? Actually 3004 is \"Medicinal and veterinary preparations containing other substances\". 3004.90 is \"Other\". For suppositories: 3004.90.90.10? Let's pick 3004.90.90.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298514336,
+      "prompt_tokens": 244,
+      "prompt_time": 0.012481906,
+      "completion_tokens": 119,
+      "completion_time": 0.128980012,
+      "total_tokens": 363,
+      "total_time": 0.141461918,
+      "completion_tokens_details": {
+        "reasoning_tokens": 69
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_75c733514d",
+    "x_groq": {
+      "id": "req_01m3mjr7y9e2rvjnrmjp03yweh",
+      "seed": 292417381
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004909010",
+  "predicted_reason": "Suppositories for medical use are classified under 3004.90.90.10 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

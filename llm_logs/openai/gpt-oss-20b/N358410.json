@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358410",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "2933394100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-8dd3a63d-ad78-4cc1-8f60-c5f7a3900519",
+    "object": "chat.completion",
+    "created": 1790608045,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3004.10.00.00\",\"reason\":\"Bulk pharmaceutical active ingredient Roflumilast falls under heading 3004.10 of the HTSUS, covering medicinal and pharmaceutical products other than those of heading 3004.20.\"}",
+          "reasoning": "Need HTS code for pharmaceutical bulk drug Roflumilast. Likely 3004.10.00.00? Actually 3004 is \"Medicinal and pharmaceutical products\". For active ingredients: 3004.10.00.00 is \"Medicinal and pharmaceutical products, other than those of heading 3004.20\". But need 10-digit: 3004.10.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.191585922,
+      "prompt_tokens": 195,
+      "prompt_time": 0.010921107,
+      "completion_tokens": 155,
+      "completion_time": 0.167987072,
+      "total_tokens": 350,
+      "total_time": 0.178908179,
+      "completion_tokens_details": {
+        "reasoning_tokens": 90
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c9afb2bdb4",
+    "x_groq": {
+      "id": "req_01m3m8wx7xed8rgm6kmhrfzsp8",
+      "seed": 875281562
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3004100000",
+  "predicted_reason": "Bulk pharmaceutical active ingredient Roflumilast falls under heading 3004.10 of the HTSUS, covering medicinal and pharmaceutical products other than those of heading 3004.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

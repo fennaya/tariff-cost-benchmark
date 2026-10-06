@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357752",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8544429010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-416b34af-5785-4288-b7eb-416b5fef7cf6",
+    "object": "chat.completion",
+    "created": 1790726389,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.00\", \"reason\": \"Classified as an electrical apparatus for switching or protecting circuits (extension cord with integrated Wi\u2011Fi control) under heading 8544.42\"}",
+          "reasoning": "We need HTS code for Wi-Fi controlled extension cord. Likely under \"Electrical apparatus for switching or protecting electrical circuits, or for making connections to or in electrical circuits, for a voltage not exceeding 1000 V\". Extension cords are 8544.42? Actually 8544.42.00 is \"Electrical apparatus for switching or protecting electrical circuits, for a voltage not exceeding 1000 V, other than switches, relays, fuses\". Extension cords with plugs are 8544.42.00. Wi-Fi adds wireless control but still same. So code 8544.42.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.01873544,
+      "prompt_tokens": 263,
+      "prompt_time": 0.010168309,
+      "completion_tokens": 184,
+      "completion_time": 0.38647602,
+      "total_tokens": 447,
+      "total_time": 0.396644329,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_96d96a151c",
+    "x_groq": {
+      "id": "req_01m3qsrfbaesnt0bxa20r8btsc",
+      "seed": 597445755
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444200",
+  "predicted_reason": "Classified as an electrical apparatus for switching or protecting circuits (extension cord with integrated Wi\u2011Fi control) under heading 8544.42",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

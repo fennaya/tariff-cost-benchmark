@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362695",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "4911914040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e476bf09-20e4-41f8-ac53-dcf3cf5b4342",
+    "object": "chat.completion",
+    "created": 1790833927,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9505.90.00\",\n  \"reason\": \"The product is a craft kit containing a printed board, plastic beads, and accessories, classified as a toy/art\u2011craft kit under heading 9505 (other toys).\"\n}",
+          "reasoning": "We need HTS code. 3D glitter diamond painting kit: art craft kit with MDF board, printed image, plastic beads, stylus, wax. Likely under heading 9503? Or 9505? Actually \"Arts, crafts, and sewing needles\" 9503. But kits with beads maybe 9505? 9505 is \"Articles and equipment for general physical exercise, gymnastics, etc.\" No. 9503 includes \"Tricycles, dolls, toys\". Wait check: 9503 is \"Tricycles, scooters, etc.\" Not. 9505 is \"Other toys\". Hmm.\n\nBetter: 9503 is \"Tricycles, scooters, etc.\" Not.\n\nMaybe 9503 is \"Other toys\". Actually 9503 is \"Tricycles, scooters, etc.\" 9505 is \"Other toys\". But craft kits maybe 9503? Actually 9503 is \"Tricycles, scooters, etc.\" So not.\n\nConsider heading 9503? No.\n\nMaybe 9505.01 \"Arts and crafts kits\". Let's think: 9505.99? Actually 9505.90 is \"Other toys\". But there is 9503.00? I'm not sure.\n\nAlternatively, classification under 9503.00? Hmm.\n\nCould be 9503.00.90? Not.\n\nBetter: 9503.00.90 is \"Other toys, not elsewhere specified\". Might fit.\n\nBut there is also heading 9503.00.90? I'm not certain.\n\nAnother possibility: 9503.00.90 is for \"Other toys\". However, there is also heading 9503.00.90 for \"Other toys\". The kit is a craft kit, maybe under 9503.00.90.\n\nI'll answer with 9505.00.90? Actually 9505 is \"Other toys\". 9505.90.00 is \"Other toys, not elsewhere specified\". Use that.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.047940367,
+      "prompt_tokens": 297,
+      "prompt_time": 0.013648304,
+      "completion_tokens": 475,
+      "completion_time": 0.991574093,
+      "total_tokens": 772,
+      "total_time": 1.005222397,
+      "completion_tokens_details": {
+        "reasoning_tokens": 410
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3v0a85be38a9ckr554m47yq",
+      "seed": 231331255
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95059000",
+  "predicted_reason": "The product is a craft kit containing a printed board, plastic beads, and accessories, classified as a toy/art\u2011craft kit under heading 9505 (other toys).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

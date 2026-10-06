@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359267",
+  "rulingDate": "2026-03-13T00:00:00",
+  "true_code": "8486900000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-69785cc7-da0d-434d-b781-b30f45ad6e1d",
+    "object": "chat.completion",
+    "created": 1790727194,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8471.80.90\",\n  \"reason\": \"The module is a specialized part of a semiconductor photolithography scanner, classified as a part of machines for manufacturing semiconductors.\"\n}",
+          "reasoning": "We need HTS code. Likely \"optical lenses and parts thereof\" with electronic components. Could be 9002? That's optical lenses, telescopes. But this is a lens manipulator module for photolithography equipment, likely classified under \"Parts of machines for semiconductor manufacturing\" 8479.89? Actually 8479.89.90 is parts of machines for electronics. But it's a component of photolithography scanner, which is under 8471.80 (machines for semiconductor). The module is a part of such machine, maybe 8471.80.90 (parts of machines for semiconductor). However includes optical lens components maybe 9002.30 (lenses for cameras). I think best is 8471.80.90 \"Parts of machines for manufacturing semiconductors\". So code 8471.80.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.05514298,
+      "prompt_tokens": 442,
+      "prompt_time": 0.082257409,
+      "completion_tokens": 231,
+      "completion_time": 0.481517944,
+      "total_tokens": 673,
+      "total_time": 0.563775353,
+      "completion_tokens_details": {
+        "reasoning_tokens": 175
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m3qth0swe18thx3e22a0ww95",
+      "seed": 47860678
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84718090",
+  "predicted_reason": "The module is a specialized part of a semiconductor photolithography scanner, classified as a part of machines for manufacturing semiconductors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

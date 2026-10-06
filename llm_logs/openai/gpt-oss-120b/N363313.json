@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363313",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8205595560",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-47f1a760-49c4-4c95-adb3-6917f402c965",
+    "object": "chat.completion",
+    "created": 1790849846,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4016.99.00\", \"reason\": \"Classified under other articles of vulcanized rubber, which includes tire repair kits containing rubber plugs and related accessories\"}",
+          "reasoning": "We need HTS for tire repair kit. Likely 4016.99.00? Actually rubber tire repair kits are under 4016.99.00 (Other articles of vulcanized rubber). But includes metal tools? Could be 4016.99.00. Let's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049366839,
+      "prompt_tokens": 323,
+      "prompt_time": 0.019534508,
+      "completion_tokens": 110,
+      "completion_time": 0.236353009,
+      "total_tokens": 433,
+      "total_time": 0.255887517,
+      "completion_tokens_details": {
+        "reasoning_tokens": 61
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3vfg2jfet19ykdez2kb1sff",
+      "seed": 1786269602
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "40169900",
+  "predicted_reason": "Classified under other articles of vulcanized rubber, which includes tire repair kits containing rubber plugs and related accessories",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

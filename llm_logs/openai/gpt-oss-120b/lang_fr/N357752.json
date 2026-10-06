@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357752",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8544429010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-eb7369f1-27df-4953-889c-f5431ed36c48",
+    "object": "chat.completion",
+    "created": 1790905686,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8544.42.90\",\n  \"reason\": \"Wi\u2011Fi controlled power extension cord is an electrical apparatus for switching/controlling electricity, not elsewhere specified, under heading 8544.42\"\n}",
+          "reasoning": "We need HTS code for Wi-Fi controlled power strip extension cord. Likely 8544.42.00? Actually 8544.42.00 is \"Electrical machines and apparatus, having individual functions, not elsewhere specified, for switching, protecting or controlling electricity, for a voltage not exceeding 1000 V\". Could be 8544.42.90. Or 8544.42.00 is for \"switches, relays, etc\". For extension cords with Wi-Fi maybe 8544.42.90 (other). Let's choose 8544.42.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206110376,
+      "prompt_tokens": 291,
+      "prompt_time": 0.012413414,
+      "completion_tokens": 182,
+      "completion_time": 0.374592075,
+      "total_tokens": 473,
+      "total_time": 0.387005489,
+      "completion_tokens_details": {
+        "reasoning_tokens": 122
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3x4r5sbed5rqcqcea1sbr58",
+      "seed": 407093382
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "85444290",
+  "predicted_reason": "Wi\u2011Fi controlled power extension cord is an electrical apparatus for switching/controlling electricity, not elsewhere specified, under heading 8544.42",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

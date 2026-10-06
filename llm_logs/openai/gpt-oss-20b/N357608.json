@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357608",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8412909005",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-805bca69-3c73-4427-99fc-b887190b2ab2",
+    "object": "chat.completion",
+    "created": 1790607617,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7308.90.90.00\",\"reason\":\"Hydraulic steel pipe used as a component of a crane\u2019s stabilizer arm falls under \u2018Other pipes and tubes of iron or steel\u2019.\"}",
+          "reasoning": "Need HTS 10-digit. Hydraulic pipe for crane. Likely 7308.90.90? Actually 7308.90.90 is other pipes and tubes of iron or steel. 7308.90.90 is \"Other pipes and tubes of iron or steel, of a diameter of 12 mm? But 7308.90.90 is \"Other pipes and tubes of iron or steel, of a diameter of 12 mm or more\". But 7308.90.90 is for other. 7308.90.90 is 10-digit? 7308.90.90 is 8-digit. 10-digit would be 7308.90.90.00? Actually 10-digit: 7308.90.90.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.21795782,
+      "prompt_tokens": 405,
+      "prompt_time": 0.030800087,
+      "completion_tokens": 219,
+      "completion_time": 0.246977011,
+      "total_tokens": 624,
+      "total_time": 0.277777098,
+      "completion_tokens_details": {
+        "reasoning_tokens": 165
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_84bb35977d",
+    "x_groq": {
+      "id": "req_01m3m8fvbrex7v4kdrn07fzqpj",
+      "seed": 1044693971
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7308909000",
+  "predicted_reason": "Hydraulic steel pipe used as a component of a crane\u2019s stabilizer arm falls under \u2018Other pipes and tubes of iron or steel\u2019.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

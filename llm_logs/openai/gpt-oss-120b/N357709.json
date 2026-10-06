@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357709",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "8007003200",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4cd17804-3ea4-46d1-8947-89db3347ef99",
+    "object": "chat.completion",
+    "created": 1790726356,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7801.20.00\", \"reason\": \"Classified under lead alloys (tin\u2011lead solder) as per Chapter 78, heading 7801.20 for lead alloys\"}",
+          "reasoning": "Need HTS for solder powder tin-lead. Likely 7407.00.00? Actually 7407 is \"Other articles of iron or steel\"? No. Tin and lead alloys: Chapter 78? 7801 is \"Lead and articles thereof\". 7801.20 is \"Lead alloys\". Tin-lead solder powder maybe 7801.20.00? Check: 7801.20.00 - \"Lead alloys\". Could be 7801.20.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087862709,
+      "prompt_tokens": 256,
+      "prompt_time": 0.009800949,
+      "completion_tokens": 158,
+      "completion_time": 0.329104199,
+      "total_tokens": 414,
+      "total_time": 0.338905148,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_998410db10",
+    "x_groq": {
+      "id": "req_01m3qsqf2cessaz19mh4pxdxp2",
+      "seed": 944016312
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "78012000",
+  "predicted_reason": "Classified under lead alloys (tin\u2011lead solder) as per Chapter 78, heading 7801.20 for lead alloys",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

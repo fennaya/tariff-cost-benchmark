@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357189",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3305900000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-d29ba38d-8fd5-45e8-85af-7c8e4de05369",
+    "object": "chat.completion",
+    "created": 1790607273,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"3304.90.90.00\",\"reason\":\"The products are cosmetic hair care oils and serums, classified under 3304.90.90.00 for other cosmetics and toilet preparations.\"}",
+          "reasoning": "Need HTS code for cosmetic products: hair care products, oils, serums. Likely 3304.90.90? Actually 3304.90 is \"Other cosmetics and toilet preparations\". For hair care, 3304.90.90 is \"Other\". 3304.90.90 includes hair oils, serums. So 3304.90.90.00? 10-digit: 3304.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195189759,
+      "prompt_tokens": 334,
+      "prompt_time": 0.017905627,
+      "completion_tokens": 154,
+      "completion_time": 0.161966958,
+      "total_tokens": 488,
+      "total_time": 0.179872585,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e594c51153",
+    "x_groq": {
+      "id": "req_01m3m85bjherhbbcfa3pf25q8g",
+      "seed": 928546480
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3304909000",
+  "predicted_reason": "The products are cosmetic hair care oils and serums, classified under 3304.90.90.00 for other cosmetics and toilet preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

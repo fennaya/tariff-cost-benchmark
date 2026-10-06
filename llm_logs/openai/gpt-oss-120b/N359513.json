@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359513",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-87594643-9bc6-411a-bb5f-54b0e1a91e7e",
+    "object": "chat.completion",
+    "created": 1790727351,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.30.00\",\n  \"reason\": \"Classified as an air separator device used in fluid systems, falling under the category of air or gas compressors and related equipment.\"\n}",
+          "reasoning": "We need HTS code for air separator for water/glycol systems. Likely under 8421? 8421.29? Actually air separators are \"air pumps, air or gas compressors\" maybe 8421.30? Check: 8421.30 - Air or gas compressors. But separators maybe \"fluid separators\" 8421.21? Let's think: 8421.21 is \"Air or vacuum pumps\". Not. Could be 8421.99 other. Or 8421.30 \"Air or gas compressors\". Not.\n\nMaybe under 8421.30? Hmm.\n\nBetter: 8421.30 is \"Air or gas compressors\". Not separator.\n\nCould be 8421.90 \"Parts\". No.\n\nMaybe 8421.21 \"Air or vacuum pumps\". Not.\n\nMaybe 8421.31 \"Other air compressors\". Not.\n\nAlternatively 8421.30 is for compressors, not separators.\n\nMaybe 8421.30 is wrong. Could be 8421.30? I'm not sure.\n\nAnother heading: 8421.30 \"Air or gas compressors\". Not.\n\nMaybe 8421.90 \"Other\". But need specific.\n\nProbably 8421.30? I'll answer.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.085596776,
+      "prompt_tokens": 488,
+      "prompt_time": 0.020049927,
+      "completion_tokens": 309,
+      "completion_time": 0.643165763,
+      "total_tokens": 797,
+      "total_time": 0.66321569,
+      "completion_tokens_details": {
+        "reasoning_tokens": 254
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_05e76be18c",
+    "x_groq": {
+      "id": "req_01m3qtnt07e6p9qd0e6d283dfh",
+      "seed": 1777121046
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84213000",
+  "predicted_reason": "Classified as an air separator device used in fluid systems, falling under the category of air or gas compressors and related equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

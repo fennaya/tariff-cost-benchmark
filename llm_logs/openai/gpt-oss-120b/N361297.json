@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361297",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9021908100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-14d332f1-1709-4a4f-b12c-4b3d953fd0b9",
+    "object": "chat.completion",
+    "created": 1790788413,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9018.90.90\", \"reason\": \"Classified as a medical device (nerve guide) not elsewhere specified under Chapter 90\"}",
+          "reasoning": "We need HTS for medical device nerve guide made of silk fibroin. Likely under Chapter 90: Medical, surgical, dental instruments. Possibly 9018.90.90? 9018.90 is \"Other instruments and appliances\". 9018.90.90 is \"Other\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220065432,
+      "prompt_tokens": 308,
+      "prompt_time": 0.015599384,
+      "completion_tokens": 110,
+      "completion_time": 0.233886708,
+      "total_tokens": 418,
+      "total_time": 0.249486092,
+      "completion_tokens_details": {
+        "reasoning_tokens": 65
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3smx97jem1ver4tnr0tcmyx",
+      "seed": 1901929879
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90189090",
+  "predicted_reason": "Classified as a medical device (nerve guide) not elsewhere specified under Chapter 90",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

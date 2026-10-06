@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N352071",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "2920905100",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-bbf4f2af-7595-48fa-91e5-4bc6f11ba846",
+    "object": "chat.completion",
+    "created": 1790607037,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"2912.00.00.00\",\n  \"reason\": \"Ethyl methyl carbonate is an ester of carbonic acid, classified under heading 2912 (Esters of carbonic acid) which is the most specific applicable code for the described electrolyte solvent.\"\n}",
+          "reasoning": "We need HTS for each? Single most applicable code for the product description (maybe mixture of chemicals). Likely under 2905? Ethyl methyl carbonate is an ester of carbonic acid, formula C4H8O3? Actually carbonate ester. HTS 2912? Let's think: Carbonate esters (alkyl carbonates) are under heading 2912.00.00 (Esters of carbonic acid). So ethyl methyl carbonate falls under 2912.00.00. Ethylene sulfate (ethylene sulfate) is a sulfate ester, likely under 2922 (Esters of inorganic acids). Ethylene sulfate maybe 2922.49? Prop-1-ene-1,3-sultone also sulfate ester. The most applicable single code maybe 2912.00.00 for carbonate ester. But mixture? Probably classify each separately. But ask single most applicable. Choose 2912.00.00. Provide reason.\n\nHTS format 10 digits: 2912.00.00.00? Actually 10-digit: 2912.00.00.00. So output.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 2.538680432,
+      "prompt_tokens": 477,
+      "prompt_time": 0.024461905,
+      "completion_tokens": 304,
+      "completion_time": 0.650975737,
+      "total_tokens": 781,
+      "total_time": 0.675437642,
+      "completion_tokens_details": {
+        "reasoning_tokens": 233
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3m7y21zevst451g3941rhnv",
+      "seed": 644712885
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2912000000",
+  "predicted_reason": "Ethyl methyl carbonate is an ester of carbonic acid, classified under heading 2912 (Esters of carbonic acid) which is the most specific applicable code for the described electrolyte solvent.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

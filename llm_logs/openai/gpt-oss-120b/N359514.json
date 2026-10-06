@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359514",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-eb93299a-5b7a-42dd-aab0-a26a98b7b22f",
+    "object": "chat.completion",
+    "created": 1790727357,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8421.30.00\",\n  \"reason\": \"The device is a magnetic air and dirt separator used to remove air and ferrous particles from liquids, classifying it as other filtering or purifying machinery under heading 8421.\"\n}",
+          "reasoning": "We need HTS code for magnetic air and dirt separator for hydronic systems. Likely under \"Air and gas separators\" 8421? Actually 8421 is \"Centrifuges, including centrifugal dryers; filtering machinery\". 8421.21? Let's think: 8421.21.00 - \"Centrifuges, including centrifugal dryers, for liquids\". But separators maybe 8421.29? Another: 8421.30 \"Other filtering or purifying machinery\". Magnetic separators are 8421.21? Actually magnetic separators are 8421.21.00 \"Centrifuges, including centrifugal dryers, for liquids\". Not sure.\n\nMaybe 8421.21.00 is for \"Centrifuges, including centrifugal dryers, for liquids\". Magnetic air separator is not centrifuge. Could be 8421.30.00 \"Other filtering or purifying machinery\". I think 8421.30.00.\n\nLet's answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086810339,
+      "prompt_tokens": 494,
+      "prompt_time": 0.023269401,
+      "completion_tokens": 269,
+      "completion_time": 0.562094684,
+      "total_tokens": 763,
+      "total_time": 0.585364085,
+      "completion_tokens_details": {
+        "reasoning_tokens": 203
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d577f40f11",
+    "x_groq": {
+      "id": "req_01m3qtp03me1banxx9cnbyyf0s",
+      "seed": 1915628647
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84213000",
+  "predicted_reason": "The device is a magnetic air and dirt separator used to remove air and ferrous particles from liquids, classifying it as other filtering or purifying machinery under heading 8421.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360489",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "3210000000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-382774dc-f816-4ec1-8f1a-fb73e4046333",
+    "object": "chat.completion",
+    "created": 1790763370,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3215.90.00\", \"reason\": \"The product is a decorative lime\u2011based paint supplied as a powder to be mixed with water, classifiable under HTSUS 3215.90.00 for other paints and varnishes in powder form.\"}",
+          "reasoning": "We need HTS code for lime wash paint powder. Likely under 3206? Actually paints in powder form maybe 3206.00.00 is \"Paints and varnishes (including enamels and lacquers) and preparations for applying them, in the form of liquids or pastes\". Powder maybe 3215? 3215.90.00 \"Other paints, varnishes, etc., in powder form\". Check: 3215.90.00 is \"Other paints, varnishes and similar coatings, not elsewhere specified, in powder form\". So choose that. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295711509,
+      "prompt_tokens": 349,
+      "prompt_time": 0.015218736,
+      "completion_tokens": 193,
+      "completion_time": 0.40325444,
+      "total_tokens": 542,
+      "total_time": 0.418473176,
+      "completion_tokens_details": {
+        "reasoning_tokens": 124
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3rx10z1eqtstpw5jr6n3fj2",
+      "seed": 1487966956
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "32159000",
+  "predicted_reason": "The product is a decorative lime\u2011based paint supplied as a powder to be mixed with water, classifiable under HTSUS 3215.90.00 for other paints and varnishes in powder form.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

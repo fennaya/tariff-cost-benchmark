@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359800",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "3925200010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a00407c3-1e21-4793-961d-a9bfa244b332",
+    "object": "chat.completion",
+    "created": 1790738246,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3916.10.00\",\n  \"reason\": \"The product is a door made of a plastic composite reinforced with basalt fiber, classifiable as builders' joinery and carpentry of plastics.\"\n}",
+          "reasoning": "We need HTS code. Basalt fiber reinforced plastic door similar to fiberglass door. Likely under 3916.10.00? That's \"Builders' joinery and carpentry, of plastics\". Or 3916.90 for other. But doors of plastic: 3916.10.00 \"Builders' joinery and carpentry of plastics\". So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.299315312,
+      "prompt_tokens": 225,
+      "prompt_time": 0.009625276,
+      "completion_tokens": 136,
+      "completion_time": 0.281124913,
+      "total_tokens": 361,
+      "total_time": 0.290750189,
+      "completion_tokens_details": {
+        "reasoning_tokens": 78
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m3r529wdedja9yhp2zsfd7we",
+      "seed": 351727603
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39161000",
+  "predicted_reason": "The product is a door made of a plastic composite reinforced with basalt fiber, classifiable as builders' joinery and carpentry of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

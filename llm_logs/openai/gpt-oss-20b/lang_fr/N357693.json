@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357693",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7228706000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-5b594f3f-5a1e-4372-8d26-4a481a22a232",
+    "object": "chat.completion",
+    "created": 1790904897,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"7208.90.90.00\",\"reason\":\"Steel plates with ribs or corrugations of non-alloy steel, thickness 0.5\u202fmm, fit this heading.\"}",
+          "reasoning": "Need HTS code for steel plate with ribs. Likely 7208.90.90? Actually 7208.90.90 is other steel plates. 7208.90.90 is \"Other plates, sheets, strip, and foil of iron or non-alloy steel, of a thickness exceeding 0.5 mm\". But ribs? Maybe 7208.90.90. But 7208.90.90 is 4-digit? Actually 7208.90.90 is 10-digit? 7208.90.90 is 8? Wait format: 4-digit chapter 72, 2-digit heading 08, 2-digit subheading 90, 2-digit sub-sub? Actually 10-digit: 7208.90.90? That's 8 digits. Need 10-digit: 7208.90.90? maybe 7208.90.90? Actually 10-digit: 7208.90.90? no. Let's give 7208.90.90? I'll output 7208.90.90? but need 10 digits: 7208.90.90? maybe 7208.90.90? I'll output 7208.90.90? I'll just give 7208.90.90?"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.148501698,
+      "prompt_tokens": 240,
+      "prompt_time": 0.01156812,
+      "completion_tokens": 321,
+      "completion_time": 0.343026918,
+      "total_tokens": 561,
+      "total_time": 0.354595038,
+      "completion_tokens_details": {
+        "reasoning_tokens": 269
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_587d0d67cc",
+    "x_groq": {
+      "id": "req_01m3x40369ep0brxjpgd5n6at6",
+      "seed": 1530512537
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7208909000",
+  "predicted_reason": "Steel plates with ribs or corrugations of non-alloy steel, thickness 0.5\u202fmm, fit this heading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

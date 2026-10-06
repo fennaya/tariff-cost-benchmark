@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359742",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8211922000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e9a5c541-48a3-4ef8-8d06-bd1342fd9bc0",
+    "object": "chat.completion",
+    "created": 1790734427,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8211.92.00.00\", \"reason\": \"The product is a forged stainless steel chef's knife with a plastic handle, classifiable as a kitchen knife of stainless steel under heading 8211.92.\"}",
+          "reasoning": "Need HTS for kitchen knives forged steel with plastic handle. Likely heading 8211.92? Actually 8211.92.00.00 = \"Kitchen knives, of stainless steel\". Check: 8211.92.00.00 is \"Kitchen knives, of stainless steel\". So 10-digit: 8211.92.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.050092627,
+      "prompt_tokens": 228,
+      "prompt_time": 0.048644935,
+      "completion_tokens": 140,
+      "completion_time": 0.29624966,
+      "total_tokens": 368,
+      "total_time": 0.344894595,
+      "completion_tokens_details": {
+        "reasoning_tokens": 79
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m3r1ds8aeveagaxq2dvg9fw4",
+      "seed": 925015067
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8211920000",
+  "predicted_reason": "The product is a forged stainless steel chef's knife with a plastic handle, classifiable as a kitchen knife of stainless steel under heading 8211.92.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361397",
+  "rulingDate": "2026-06-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-53f977ea-e33c-4796-a398-cc7ce639676e",
+    "object": "chat.completion",
+    "created": 1790904933,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"61.10.20.00.00\",\"reason\":\"The description refers to an unfinished long\u2011sleeved dress, which falls under the HTSUS heading for unfinished garments of cotton (61.10.20).\"}",
+          "reasoning": "We need HTS code for a garment: \"Le col pr\u00e9sente un bord brut repli\u00e9 une fois et cousu avec une seule ligne de points droits longs et tr\u00e8s l\u00e2ches. Les manches longues et l'ourlet inf\u00e9rieur de la robe sans forme sont bruts et non finis.\" It's a dress, long sleeves, unfinished. Likely \"Unfinished garments\" under 61.10.20? Actually 61.10.20 is \"Unfinished garments of cotton\". But could be other fabric. Without material, assume cotton. So 61.10.20.00? 10-digit: 61.10.20.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.195890462,
+      "prompt_tokens": 199,
+      "prompt_time": 0.009767861,
+      "completion_tokens": 198,
+      "completion_time": 0.205559118,
+      "total_tokens": 397,
+      "total_time": 0.215326979,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a35f7bd1b",
+    "x_groq": {
+      "id": "req_01m3x416gpekbaez6sdn5jz563",
+      "seed": 356018843
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6110200000",
+  "predicted_reason": "The description refers to an unfinished long\u2011sleeved dress, which falls under the HTSUS heading for unfinished garments of cotton (61.10.20).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

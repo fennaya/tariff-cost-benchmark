@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-75d849ed-0be1-4689-86a3-dc2e6b4430ea",
+    "object": "chat.completion",
+    "created": 1790730664,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"1206.90.90.00\",\"reason\":\"Refined shea butter is a vegetable fat not elsewhere specified, classified under 1206.90.90.00 in the HTSUS.\"}",
+          "reasoning": "Need HTS code for refined shea butter. Likely 1206.90.90? Actually 1206 is \"Other vegetable fats and oils\". 1206.90 is \"Other vegetable fats and oils, not elsewhere specified\". For refined shea butter maybe 1206.90.90. So 10-digit: 1206.90.90.00? Actually 10-digit: 1206.90.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.140803109,
+      "prompt_tokens": 477,
+      "prompt_time": 0.154280316,
+      "completion_tokens": 153,
+      "completion_time": 0.178700927,
+      "total_tokens": 630,
+      "total_time": 0.332981243,
+      "completion_tokens_details": {
+        "reasoning_tokens": 97
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c5a89987dc",
+    "x_groq": {
+      "id": "req_01m3qxtxsnedqaynev75c7kpz1",
+      "seed": 1077776282
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "1206909000",
+  "predicted_reason": "Refined shea butter is a vegetable fat not elsewhere specified, classified under 1206.90.90.00 in the HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

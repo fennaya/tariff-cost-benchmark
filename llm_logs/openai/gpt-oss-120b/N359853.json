@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359853",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "3824993990",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-088780a9-3bfd-4350-b210-a8f19aefce9b",
+    "object": "chat.completion",
+    "created": 1790742537,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.99.10\", \"reason\": \"Classified as a mixed mineral fertilizer containing micronutrients, falling under other fertilizers not elsewhere specified\"}",
+          "reasoning": "We need HTS for fertilizer containing micronutrients, likely 3105.99.10? 3105 is mineral or chemical fertilizers, nitrogenous, phosphatic, potassic. Micronutrient fertilizers: 3105.99.10 \"Other fertilizers, mixtures of two or more nutrients\". Actually 3105.99.10 is \"Other fertilizers, not elsewhere specified\". Could be 3105.99.90. Let's pick 3105.99.10."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.159121074,
+      "prompt_tokens": 422,
+      "prompt_time": 0.043343464,
+      "completion_tokens": 144,
+      "completion_time": 0.312270605,
+      "total_tokens": 566,
+      "total_time": 0.355614069,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_0708ac49a5",
+    "x_groq": {
+      "id": "req_01m3r958bhehfrw74wgxrwhwm8",
+      "seed": 888200990
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "31059910",
+  "predicted_reason": "Classified as a mixed mineral fertilizer containing micronutrients, falling under other fertilizers not elsewhere specified",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

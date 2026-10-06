@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359715",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "0511910090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-4423a30a-6030-4f59-bbca-172eb2965024",
+    "object": "chat.completion",
+    "created": 1790732401,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"0307.99.90\",\n  \"reason\": \"Dried crustacean eggs are classified under heading 0307 for crustaceans, with subheading 99.90 covering other forms not otherwise specified.\"\n}",
+          "reasoning": "Need HTS for dried crustacean eggs, not for food, likely under live fish/other? Possibly 0307? That's for fish, crustaceans, molluscs, etc, fresh or chilled. Dried eggs maybe 0307.99? But eggs of crustaceans maybe under 0307.99.10? Check: 0307.99.10 \u2013 \"Other\" \u2013 \"Other\" maybe. Could be 0307.99.90. However 0307 is for fish, crustaceans, molluscs, etc, fresh, chilled, frozen. Dried eggs maybe under 0307.99.90 \"Other\". Another possibility: 0308 for prepared or preserved fish. Not. Could be 0307.99.10 \"Other crustaceans, live, fresh, chilled, frozen\". Not dried. Maybe 0307.99.90 \"Other\". I'll answer with 0307.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048681514,
+      "prompt_tokens": 415,
+      "prompt_time": 0.02098911,
+      "completion_tokens": 263,
+      "completion_time": 0.549189143,
+      "total_tokens": 678,
+      "total_time": 0.570178253,
+      "completion_tokens_details": {
+        "reasoning_tokens": 201
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3qzfxsxefxtekwhb2rccd73",
+      "seed": 205374202
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "03079990",
+  "predicted_reason": "Dried crustacean eggs are classified under heading 0307 for crustaceans, with subheading 99.90 covering other forms not otherwise specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361402",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b080124f-3d13-4b23-9603-686841d0e8f4",
+    "object": "chat.completion",
+    "created": 1790792770,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.10.00\", \"reason\": \"The item is described as a raw, unfinished garment, which falls under HTSUS heading 6302 for unfinished textile articles.\"}",
+          "reasoning": "We need guess: raw unfinished hem likely \"unfinished garments\" maybe \"knitted or crocheted apparel, not finished\"? Could be \"unfinished textile articles\" HTS 6302? Actually raw unfinished garments maybe \"unfinished apparel\" 6201? Hard.\n\nProbably \"Unfinished apparel, not knitted, not assembled\" HTS 6302.10.00? That's \"Other made-up articles, of textile materials, not knitted or crocheted, other\". But raw unfinished maybe \"Unfinished textile articles\" 6302.10.00.\n\nI'll output that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017813318,
+      "prompt_tokens": 162,
+      "prompt_time": 0.00672073,
+      "completion_tokens": 170,
+      "completion_time": 0.352787741,
+      "total_tokens": 332,
+      "total_time": 0.359508471,
+      "completion_tokens_details": {
+        "reasoning_tokens": 117
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_87b3c396db",
+    "x_groq": {
+      "id": "req_01m3ss28w6eb59tnmwrcr587m9",
+      "seed": 1908778897
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63021000",
+  "predicted_reason": "The item is described as a raw, unfinished garment, which falls under HTSUS heading 6302 for unfinished textile articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

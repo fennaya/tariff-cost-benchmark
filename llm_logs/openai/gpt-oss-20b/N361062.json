@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361062",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "6802930010",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-501b13ee-7cf3-4f8f-a469-6ceac189683f",
+    "object": "chat.completion",
+    "created": 1790690653,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9999.99.9999\",\"reason\":\"The description refers to a customs ruling, not a tangible product, so no applicable HTS code exists.\"}",
+          "reasoning": "We need to classify product description: It's a ruling about customs classification, not a product. Likely no HTS code. Maybe \"Other\" or \"Not applicable\". But must give 10-digit code. Could use 9999.99.9999? Not sure. Maybe 9999.99.9999 is for \"Other goods\". But HTS codes start with 99 for miscellaneous. 9999.99.9999 is not standard. The last 4 digits are for subheading. For \"Other goods\" maybe 9999.99.9999. Provide reason: \"Not a tangible product, so no HTS code\". But must give code. Use 9999.99.9999."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.807601849,
+      "prompt_tokens": 184,
+      "prompt_time": 0.010613344,
+      "completion_tokens": 196,
+      "completion_time": 0.251332848,
+      "total_tokens": 380,
+      "total_time": 0.261946192,
+      "completion_tokens_details": {
+        "reasoning_tokens": 150
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3023a70d60",
+    "x_groq": {
+      "id": "req_01m3pqnwhaef48p91de4srvrtv",
+      "seed": 1414155924
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9999999999",
+  "predicted_reason": "The description refers to a customs ruling, not a tangible product, so no applicable HTS code exists.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

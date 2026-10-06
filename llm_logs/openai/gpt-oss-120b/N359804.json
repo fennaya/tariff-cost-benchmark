@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359804",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "8428900390",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8791cf9f-f561-4fb8-b5e3-a6cbfd592359",
+    "object": "chat.completion",
+    "created": 1790739649,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8425.30.90\", \"reason\": \"The device is a powered patient lift used to raise individuals, classifying it as a lift/hoist under heading 8425.30 for lifting machinery.\"}",
+          "reasoning": "We need HTS code for patient lift equipment. Likely 8425.90.90? Let's think: \"Lifts, hoists, winches, and capstans, for raising or lowering loads, not elsewhere specified\". But medical patient lifts are under 9019? Actually 9019.20 is \"Orthopaedic appliances\". 9019.20.90 maybe. But patient lifts are \"medical, surgical, dental, or veterinary furniture\" 9019.20? Check: 9019.20.90 - \"Other\". Could be 9019.20.90. However 8425.90.90 is \"Other\". I think patient lifts are classified under 8425.90.90 \"Other lifting, handling, loading or unloading machinery\". But there is specific: 8425.30 \"Lifts, hoists, winches\". 8425.30.90 \"Other\". Might be 8425.30.90.\n\nLet's answer with 8425.30.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.216028469,
+      "prompt_tokens": 253,
+      "prompt_time": 0.010165494,
+      "completion_tokens": 272,
+      "completion_time": 0.572105857,
+      "total_tokens": 525,
+      "total_time": 0.582271351,
+      "completion_tokens_details": {
+        "reasoning_tokens": 213
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3r6d3tner19shcdqwys1vtm",
+      "seed": 1973079582
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84253090",
+  "predicted_reason": "The device is a powered patient lift used to raise individuals, classifying it as a lift/hoist under heading 8425.30 for lifting machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

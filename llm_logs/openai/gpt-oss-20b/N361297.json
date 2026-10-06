@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361297",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9021908100",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-7b4952af-79a4-4b17-bd83-780bfc93d09e",
+    "object": "chat.completion",
+    "created": 1790696750,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"9018.90.90.00\",\"reason\":\"The product is a medical device (nerve guide) made of silk fibroin, classified under 9018.90.90.00 for other medical or surgical instruments and appliances.\"}",
+          "reasoning": "Need HTS code for nerve guide device made of silk fibroin. Likely medical devices: \"Nerve conduits\" under 9018.90.90? Actually 9018.90.90 is \"Other medical or surgical instruments and appliances\". But specific: 9018.90.90 is \"Other\". 9018.90.90 includes \"Other\" medical instruments. Nerve conduits maybe 9018.90.90. But 9018.90.90 is 10-digit? 9018.90.90.00? Actually 10-digit: 9018.90.90.00. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.086789826,
+      "prompt_tokens": 308,
+      "prompt_time": 0.029984024,
+      "completion_tokens": 198,
+      "completion_time": 0.21395749,
+      "total_tokens": 506,
+      "total_time": 0.243941514,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_80501ff3a1",
+    "x_groq": {
+      "id": "req_01m3pxfyv3e619ma17meqyvwwj",
+      "seed": 2072318935
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9018909000",
+  "predicted_reason": "The product is a medical device (nerve guide) made of silk fibroin, classified under 9018.90.90.00 for other medical or surgical instruments and appliances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

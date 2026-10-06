@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361194",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "4010125000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b2abe254-f444-4ebb-a71f-06537c152e34",
+    "object": "chat.completion",
+    "created": 1790904645,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4010.99.00\", \"reason\": \"Rubber conveyor belts reinforced with textile layers fall under heading 4010 for rubber belts, specifically subheading 4010.99.00 for other rubber belts.\"}",
+          "reasoning": "We need HTS for rubber conveyor belts with textile reinforcement. Likely heading 4010.99? Actually 4010 covers rubber hoses and tubes, belts, etc. 4010.99 is other. 4010.90? Let's check: 4010.90 - other. 4010.10 is tubes, hoses. 4010.90 is other. So code 4010.99? In US HTS 4010.99.00? 4010.99.00 is \"Other\" rubber belts. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.213101605,
+      "prompt_tokens": 304,
+      "prompt_time": 0.043377155,
+      "completion_tokens": 176,
+      "completion_time": 0.364576773,
+      "total_tokens": 480,
+      "total_time": 0.407953928,
+      "completion_tokens_details": {
+        "reasoning_tokens": 116
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3x3rdp8esjvsv7rgqccq8vq",
+      "seed": 639057345
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "40109900",
+  "predicted_reason": "Rubber conveyor belts reinforced with textile layers fall under heading 4010 for rubber belts, specifically subheading 4010.99.00 for other rubber belts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

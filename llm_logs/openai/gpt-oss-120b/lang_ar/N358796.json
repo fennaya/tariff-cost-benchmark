@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358796",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8716390090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fc8d2c58-588a-4009-b885-423b06906197",
+    "object": "chat.completion",
+    "created": 1790904874,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8704.99.90\", \"reason\": \"Flatbed trailer with steel frame and aluminum deck classified under other vehicles not elsewhere specified, heading 8704\"}",
+          "reasoning": "We need HTS for flatbed trailer, steel frame, aluminum deck. Likely under Chapter 87 vehicles. 8704? 8704.99? Actually trailers for goods: 8704.99.90? Let's pick 8704.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048085626,
+      "prompt_tokens": 353,
+      "prompt_time": 0.016712893,
+      "completion_tokens": 105,
+      "completion_time": 0.217004359,
+      "total_tokens": 458,
+      "total_time": 0.233717252,
+      "completion_tokens_details": {
+        "reasoning_tokens": 57
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m3x3zctxebwvpay3rqs6f2e7",
+      "seed": 1056576285
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87049990",
+  "predicted_reason": "Flatbed trailer with steel frame and aluminum deck classified under other vehicles not elsewhere specified, heading 8704",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

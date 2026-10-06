@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361402",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1edc50bd-aa66-4840-b9a8-dd7cd19e1d96",
+    "object": "chat.completion",
+    "created": 1790904879,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"6302.99.90\",\n  \"reason\": \"The description refers to a garment with long sleeves and unfinished lower edges, classifying it as an unfinished or other made\u2011up article of apparel.\"\n}",
+          "reasoning": "We need to interpret Arabic: \"\u0627\u0644\u0623\u0643\u0645\u0627\u0645 \u0627\u0644\u0637\u0648\u064a\u0644\u0629 \u0648\u0627\u0644\u062d\u0648\u0627\u0641 \u0627\u0644\u0633\u0641\u0644\u064a\u0629 \u063a\u064a\u0631 \u0645\u0643\u062a\u0645\u0644\u0629 \u0648\u063a\u064a\u0631 \u0645\u0646\u062a\u0647\u064a\u0629.\" Means \"long sleeves and unfinished lower edges.\" Likely describing clothing, maybe a garment with long sleeves and unfinished bottom hems. Could be a shirt? Probably a garment like a T-shirt? Hard.\n\nProbably \"unfinished garment\" maybe \"knitted or crocheted articles of apparel, other than hosiery\". Long sleeves suggests a shirt or blouse. HTS for women's or men's shirts: 6109.10.00? That's for T-shirts, singlets. Long sleeves maybe 6105.10.00 (men's or boys' shirts). Could be \"uncompleted garments\" maybe \"unfinished apparel\" 6302.99.90? That's \"Other made-up articles, not elsewhere specified\". Might be \"unfinished garments\" 6302.99.90.\n\nI'll choose 6302.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.160449786,
+      "prompt_tokens": 169,
+      "prompt_time": 0.043748027,
+      "completion_tokens": 251,
+      "completion_time": 0.529047512,
+      "total_tokens": 420,
+      "total_time": 0.572795539,
+      "completion_tokens_details": {
+        "reasoning_tokens": 192
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m3x3zhn0efzbaqq0ejn4dz20",
+      "seed": 1009359157
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63029990",
+  "predicted_reason": "The description refers to a garment with long sleeves and unfinished lower edges, classifying it as an unfinished or other made\u2011up article of apparel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

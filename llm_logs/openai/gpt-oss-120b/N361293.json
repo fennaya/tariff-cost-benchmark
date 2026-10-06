@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361293",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "6809900000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fcb80049-5b8f-4868-9901-dc665303a8f0",
+    "object": "chat.completion",
+    "created": 1790787983,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8302.49.00.00\",\n  \"reason\": \"Classified as other furniture fittings (pulls/knobs) made of non\u2011metal materials.\"\n}",
+          "reasoning": "We need HTS code for decorative cabinet hardware made of gypsum/plaster (terrazzo). Likely classified under \"Other furniture hardware\" 8302? Actually 8302.10 - locks etc. 8302.30 - other hardware. But material gypsum maybe 8302.41? Check: 8302.41 - Other furniture fittings of base metal. But these are not metal, they are plaster with metal inserts. Could be 6806? Ceramic goods? Terrazzo is stone-like. Might be under 6806.90 - other articles of stone, plaster, etc. However hardware classification maybe 8302.49 - other furniture fittings of other materials. Let's pick 8302.49.00.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.220365104,
+      "prompt_tokens": 326,
+      "prompt_time": 0.017732047,
+      "completion_tokens": 205,
+      "completion_time": 0.432787965,
+      "total_tokens": 531,
+      "total_time": 0.450520012,
+      "completion_tokens_details": {
+        "reasoning_tokens": 153
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_3166198c1d",
+    "x_groq": {
+      "id": "req_01m3smg5aae6hvmmkn6ygn2bh6",
+      "seed": 548144720
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8302490000",
+  "predicted_reason": "Classified as other furniture fittings (pulls/knobs) made of non\u2011metal materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

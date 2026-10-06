@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362785",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "7018905000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-2f214c1d-356b-45c5-afef-c44ae21a2958",
+    "object": "chat.completion",
+    "created": 1790836870,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.22.00.00\", \"reason\": \"Classified as a handbag/purse made of textile materials (polyester satin) with decorative sequins and beads.\"}",
+          "reasoning": "We need HTS code for a coin purse made of polyester satin with sequins and glass beads. Likely classified under \"handbags, purses, and similar containers, of textile materials\". HTS 4202.21.90? Let's check: 4202.21.90 - Handbags, whether or not with shoulder strap, of textile materials. 4202.21.00 is for \"of leather or composition leather\". Actually 4202.21 is \"of leather or composition leather\". Wait: 4202.21 is leather. For textile: 4202.22? 4202.22.00 - Handbags, etc., of textile materials. Then further subheadings: 4202.22.10? Let's recall: 4202.22.10 - With outer surface of plastic sheeting? Not sure. But generic: 4202.22.00 is \"Handbags, whether or not with shoulder strap, of textile materials\". 10-digit: 4202.22.00.00. So answer.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.057233853,
+      "prompt_tokens": 269,
+      "prompt_time": 0.067879708,
+      "completion_tokens": 275,
+      "completion_time": 0.572500688,
+      "total_tokens": 544,
+      "total_time": 0.640380396,
+      "completion_tokens_details": {
+        "reasoning_tokens": 223
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3v3433aey7r6btrj72ar7p3",
+      "seed": 1783780066
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "4202220000",
+  "predicted_reason": "Classified as a handbag/purse made of textile materials (polyester satin) with decorative sequins and beads.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

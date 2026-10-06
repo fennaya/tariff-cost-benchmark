@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360021",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8708806590",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-8dafdd7e-3e01-4fc5-89dd-202d5e526155",
+    "object": "chat.completion",
+    "created": 1790751310,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.90\", \"reason\": \"Control arm is a part of a motor vehicle suspension system, classified under other parts of motor vehicles not elsewhere specified.\"}",
+          "reasoning": "Need HTS for control arm suspension component. Likely 8708.99.90? Actually parts of suspension: \"Parts of steering wheels, steering columns, and parts of suspension systems of motor vehicles\" 8708.99.90 is \"Other parts of motor vehicles, not elsewhere specified\". More specific: 8708.99.90 is \"Other parts\". Could be 8708.99.90. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.018108684,
+      "prompt_tokens": 526,
+      "prompt_time": 0.028914096,
+      "completion_tokens": 139,
+      "completion_time": 0.293171278,
+      "total_tokens": 665,
+      "total_time": 0.322085374,
+      "completion_tokens_details": {
+        "reasoning_tokens": 89
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3rhh050ecf8pg0v3w4p4fjq",
+      "seed": 392637629
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "Control arm is a part of a motor vehicle suspension system, classified under other parts of motor vehicles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

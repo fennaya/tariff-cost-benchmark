@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N356212",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "3808931500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-16943c28-4fd6-487c-85a5-38b79f8a5850",
+    "object": "chat.completion",
+    "created": 1790607142,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3808.91.00.00\",\n  \"reason\": \"Dicamba-based herbicide formulations are classified under plant protection products containing active ingredients not listed elsewhere, which falls under HTSUS 3808.91.00.00.\"\n}",
+          "reasoning": "Need HTS for herbicide active ingredient dicamba salts. Likely 3808.91.00.00 (Plant protection products containing other active ingredients). Dicamba is a phenoxy herbicide. HTS 3808.91.00.00 is \"Plant protection products containing other than the active ingredients listed in subheading 3808.90\". Actually 3808.91 is \"Plant protection products containing other than the active ingredients listed in subheading 3808.90\". So use that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.750334533,
+      "prompt_tokens": 651,
+      "prompt_time": 0.033523839,
+      "completion_tokens": 172,
+      "completion_time": 0.364524739,
+      "total_tokens": 823,
+      "total_time": 0.398048578,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3m81ahhe3xbj4mk7s8ktcyn",
+      "seed": 1267538158
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3808910000",
+  "predicted_reason": "Dicamba-based herbicide formulations are classified under plant protection products containing active ingredients not listed elsewhere, which falls under HTSUS 3808.91.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361144",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "8486200000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e53a3f6f-04fb-4572-b878-eff764ccd5e4",
+    "object": "chat.completion",
+    "created": 1790783566,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.90\", \"reason\": \"The equipment is a specialized machine for singulating semiconductor wafers, classified under other machines for working of metal or other materials.\"}",
+          "reasoning": "We need HTS code for wafer dicing machine. Likely 8479.89.90? Actually machines for semiconductor wafer dicing: heading 8479.89.90 \"Parts and accessories of machines of heading 8479\"? Wait. Machinery for semiconductor manufacturing: 8471? No. 8471 is automatic data processing machines. 8479 is machines for working metal etc. There is specific: 8479.89.90 \"Other machines, not elsewhere specified\". But there is 8479.89.90 for \"Other machines for working metal or other materials\". Dicing machines are for cutting semiconductor wafers, considered \"machinery for working of metal or other materials\". Could be 8479.89.90.\n\nCheck 8479.89.90 description: \"Other machines, not elsewhere specified, for working of metal or other materials\". That seems plausible.\n\nThus answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.226020406,
+      "prompt_tokens": 256,
+      "prompt_time": 0.064515219,
+      "completion_tokens": 239,
+      "completion_time": 0.5079683,
+      "total_tokens": 495,
+      "total_time": 0.572483519,
+      "completion_tokens_details": {
+        "reasoning_tokens": 187
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3sg9bg5e42bp77p3t4gp4mm",
+      "seed": 1083210438
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84798990",
+  "predicted_reason": "The equipment is a specialized machine for singulating semiconductor wafers, classified under other machines for working of metal or other materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

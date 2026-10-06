@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357372",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "8543709860",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-11e7f4b3-2c6d-4d38-8cbb-304ec5a26b07",
+    "object": "chat.completion",
+    "created": 1790726145,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90\",\n  \"reason\": \"The SCR ECU is a vehicle electronic control unit classified as a part/accessory for motor vehicles not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for electronic control unit for SCR. Likely 8542.31.00? That's for electronic integrated circuits? Actually ECUs are \"electronic integrated circuits\" or \"parts for automatic data processing machines\". Could be 9032.89 for instruments? But it's a vehicle emission control unit, likely under 8708? No, that's parts for motor vehicles. 8708.99.90 maybe. But electronic control unit is \"electronic control unit for motor vehicles\" classified under 8708.99.90 (Other parts and accessories of motor vehicles). However HTS 8708.99.90 is for \"Other parts and accessories of motor vehicles, not elsewhere specified\". Could be 8542.31.00 \"Electronic integrated circuits\". But it's a complete assembly, not just ICs. I think 8708.99.90 is appropriate.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.204487499,
+      "prompt_tokens": 329,
+      "prompt_time": 0.014495326,
+      "completion_tokens": 238,
+      "completion_time": 0.494142493,
+      "total_tokens": 567,
+      "total_time": 0.508637819,
+      "completion_tokens_details": {
+        "reasoning_tokens": 186
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qsh0tnemns91s7w094twfz",
+      "seed": 1186437920
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "The SCR ECU is a vehicle electronic control unit classified as a part/accessory for motor vehicles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

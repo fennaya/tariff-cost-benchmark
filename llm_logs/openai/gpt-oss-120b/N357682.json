@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357682",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "9205904060",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-06ca475b-6c07-4c94-82ab-dbe171535020",
+    "object": "chat.completion",
+    "created": 1790726335,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9202.90.00.00\",\n  \"reason\": \"The item is a non-electric wind instrument (tin whistle) classified under heading 9202.90 for other musical instruments.\"\n}",
+          "reasoning": "We need HTS code for metal wind instrument, fipple flute, tin whistle, made of aluminum. Likely heading 9202.90? Let's recall: 9202 covers \"Musical instruments, other than keyboards, that are not electric\". 9202.90 is \"Other\". Specifically 9202.90.00 is \"Other musical instruments, other than keyboards, not electric\". Might be 9202.90.00. That's 8 digits; need 10-digit: 9202.90.00.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.207199718,
+      "prompt_tokens": 272,
+      "prompt_time": 0.014184979,
+      "completion_tokens": 172,
+      "completion_time": 0.358676513,
+      "total_tokens": 444,
+      "total_time": 0.372861492,
+      "completion_tokens_details": {
+        "reasoning_tokens": 115
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3qspt7seaw9mkn6c3bha059",
+      "seed": 803314600
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "9202900000",
+  "predicted_reason": "The item is a non-electric wind instrument (tin whistle) classified under heading 9202.90 for other musical instruments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359602",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3504001000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3c7b16c5-57ee-4afb-8d81-d9225e69b9a3",
+    "object": "chat.completion",
+    "created": 1790729430,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.99\", \"reason\": \"Pea protein isolate is a vegetable protein isolate not specifically listed elsewhere, classified under other protein isolates (HTS 2106.90.99).\"}",
+          "reasoning": "Need HTS for pea protein isolate. Likely 2106.90.99? Actually protein isolates under 2106.10? Let's recall: 2106.10 - soy protein isolates; 2106.90 - other protein isolates. Pea protein isolate is \"protein isolates, vegetable\" maybe 2106.90.90? Check: 2106.90.99 is \"Other\" . So code 2106.90.99. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049809183,
+      "prompt_tokens": 503,
+      "prompt_time": 0.027816039,
+      "completion_tokens": 156,
+      "completion_time": 0.324045598,
+      "total_tokens": 659,
+      "total_time": 0.351861637,
+      "completion_tokens_details": {
+        "reasoning_tokens": 99
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3qwn9evejsa2mab5a42fa44",
+      "seed": 488206795
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "21069099",
+  "predicted_reason": "Pea protein isolate is a vegetable protein isolate not specifically listed elsewhere, classified under other protein isolates (HTS 2106.90.99).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

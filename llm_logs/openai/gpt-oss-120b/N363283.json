@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N363283",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8501528040",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a13631dd-e15f-4a0b-af45-8c7643e1cf8d",
+    "object": "chat.completion",
+    "created": 1790848754,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8501.52.00.00\",\n  \"reason\": \"The item is a polyphase AC electric motor (no gear) with a power rating of 42.5\u202fkW, which falls under heading 8501 for electric motors, subheading 8501.52 for polyphase motors of 31\u201150\u202fkW.\"\n}",
+          "reasoning": "We need HTS code for electric motor for submersible wastewater pumps, 42.5 kW, AC multi-phase, no gear. Likely heading 8501 (electric motors). Subheading for motors of 31-50 kW? 8501.52? Let's recall: 8501.51 = single-phase, 8501.52 = polyphase. Then further by power: 8501.52.00? Actually 8501.52.00.00 for polyphase motors 31-50 kW. So code: 8501.52.00.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.390283844,
+      "prompt_tokens": 280,
+      "prompt_time": 0.073930917,
+      "completion_tokens": 218,
+      "completion_time": 0.452806349,
+      "total_tokens": 498,
+      "total_time": 0.526737266,
+      "completion_tokens_details": {
+        "reasoning_tokens": 129
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m3veeqg1e4dbnejk3tywpmd9",
+      "seed": 1574752204
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "8501520000",
+  "predicted_reason": "The item is a polyphase AC electric motor (no gear) with a power rating of 42.5\u202fkW, which falls under heading 8501 for electric motors, subheading 8501.52 for polyphase motors of 31\u201150\u202fkW.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

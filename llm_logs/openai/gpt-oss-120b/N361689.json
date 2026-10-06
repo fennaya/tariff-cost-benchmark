@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361689",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8307103000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-ffbd791f-36ec-4d58-83b0-b1c187e486ca",
+    "object": "chat.completion",
+    "created": 1790802149,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7307.29.9090\",\n  \"reason\": \"Flexible corrugated stainless steel tube with PVC outer covering classified as other tube & pipe fittings of iron or steel, not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for flexible stainless steel corrugated tube with PVC covering for gas supply to food service. Likely under 7307? 7307.29? Let's think: 7307 covers tube & pipe fittings of iron or steel. 7307.29.90 is other tube & pipe fittings of iron or steel, not elsewhere specified. But flexible corrugated stainless steel tube with PVC outer may be classified under 7307.29.90. Provide code 7307.29.90. Need 10-digit: 7307.29.9090? Actually 10-digit US: 7307.29.9090. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206330882,
+      "prompt_tokens": 243,
+      "prompt_time": 0.012059561,
+      "completion_tokens": 195,
+      "completion_time": 0.412107772,
+      "total_tokens": 438,
+      "total_time": 0.424167333,
+      "completion_tokens_details": {
+        "reasoning_tokens": 138
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3t20f1pep696e8m7e0z93z8",
+      "seed": 414196685
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7307299090",
+  "predicted_reason": "Flexible corrugated stainless steel tube with PVC outer covering classified as other tube & pipe fittings of iron or steel, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360891",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "8708295160",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b9eea347-de1d-428d-b6d7-e0ac4b33faf6",
+    "object": "chat.completion",
+    "created": 1790776278,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3917.10.00\", \"reason\": \"The item is a polycarbonate sheet panel used as an accessory, classified under plastics sheets, plates and film of polycarbonate.\"}",
+          "reasoning": "We need HTS for polycarbonate sheet panel used as vehicle accessory. Likely under 3917.10.00? That's \"Plastics plates, sheets, film, foil and strip, of polycarbonate\". But as automotive part maybe 8708.99? However it's not a part of vehicle, it's accessory. Likely classified as \"Other articles of plastics\" 3920? Actually 3917.10.00 is for polycarbonate sheets. Since it's a sheet panel. So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206014823,
+      "prompt_tokens": 412,
+      "prompt_time": 0.0201416,
+      "completion_tokens": 157,
+      "completion_time": 0.328427824,
+      "total_tokens": 569,
+      "total_time": 0.348569424,
+      "completion_tokens_details": {
+        "reasoning_tokens": 105
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e1a78f200e",
+    "x_groq": {
+      "id": "req_01m3s9aye6es8s46g61d60nv49",
+      "seed": 988046258
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39171000",
+  "predicted_reason": "The item is a polycarbonate sheet panel used as an accessory, classified under plastics sheets, plates and film of polycarbonate.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

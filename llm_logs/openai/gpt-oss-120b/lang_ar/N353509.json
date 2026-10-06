@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N353509",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "6802990090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-37dae27f-68c1-427e-9b22-b0d9cb16b34b",
+    "object": "chat.completion",
+    "created": 1790904973,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.00\", \"reason\": \"The product is a processed natural stone (granite) used for countertops and work surfaces, classified under worked granite in HTS Chapter 68.\"}",
+          "reasoning": "We need HTS for natural stone, granite etc. Likely 6802.20.00? Actually 6802 covers \"Worked granite, basalt, etc.\" 6802.20 is \"Other worked granite\". So 6802.20.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219507108,
+      "prompt_tokens": 322,
+      "prompt_time": 0.015133238,
+      "completion_tokens": 111,
+      "completion_time": 0.231496366,
+      "total_tokens": 433,
+      "total_time": 0.246629604,
+      "completion_tokens_details": {
+        "reasoning_tokens": 55
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_77b12279f9",
+    "x_groq": {
+      "id": "req_01m3x42dzeersr3zaasfpd9b9p",
+      "seed": 371966805
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "68022000",
+  "predicted_reason": "The product is a processed natural stone (granite) used for countertops and work surfaces, classified under worked granite in HTS Chapter 68.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357473",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "2309909500",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-f6e481c1-f3d3-40cf-a57d-90dd326205c2",
+    "object": "chat.completion",
+    "created": 1790607569,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2309.90.90.00\",\"reason\":\"Poultry nutritional supplements are classified under 23.09.90.90.00, the heading for other food preparations and substances not elsewhere specified, used as poultry feed additives.\"}",
+          "reasoning": "Need HTS code for poultry nutritional supplements, calcium supplement for drinking water. Likely 2309.90.90? Actually 2309 is \"Other food preparations and substances, not elsewhere specified or included\". For poultry supplements maybe 2309.90.90. But 10-digit: 2309.90.90.00? Let's pick 2309.90.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.203562112,
+      "prompt_tokens": 183,
+      "prompt_time": 0.008884988,
+      "completion_tokens": 146,
+      "completion_time": 0.150660366,
+      "total_tokens": 329,
+      "total_time": 0.159545354,
+      "completion_tokens_details": {
+        "reasoning_tokens": 83
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_d23c14756c",
+    "x_groq": {
+      "id": "req_01m3m8ebs0e58vt9z7as9mjxth",
+      "seed": 1536524275
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2309909000",
+  "predicted_reason": "Poultry nutritional supplements are classified under 23.09.90.90.00, the heading for other food preparations and substances not elsewhere specified, used as poultry feed additives.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

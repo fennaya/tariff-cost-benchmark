@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358242",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "7326908688",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3b9d53af-3b60-4d49-a1d3-3449e2e85b22",
+    "object": "chat.completion",
+    "created": 1790726608,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7308.90.00\", \"reason\": \"Steel bollards are classified as other structures of iron or steel, not covered elsewhere, under heading 7308.90.00.\"}",
+          "reasoning": "We need HTS code for steel bollards. Likely under 7308.90.00? 7308 covers structures and parts of iron or steel, e.g., \"Other structures (excluding prefabricated buildings) and parts of structures, of iron or steel\". Bollards are \"traffic control devices\". Could be 8302.41? That's \"Base metal mountings, fittings and similar articles\". But bollards are larger. I think 7308.90.00 \"Other structures (excluding prefabricated buildings) and parts of structures, of iron or steel\". So code 7308.90.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.087426807,
+      "prompt_tokens": 303,
+      "prompt_time": 0.012428706,
+      "completion_tokens": 187,
+      "completion_time": 0.393062109,
+      "total_tokens": 490,
+      "total_time": 0.405490815,
+      "completion_tokens_details": {
+        "reasoning_tokens": 133
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m3qsz4trewwrgc970resj5k4",
+      "seed": 229407759
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "73089000",
+  "predicted_reason": "Steel bollards are classified as other structures of iron or steel, not covered elsewhere, under heading 7308.90.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

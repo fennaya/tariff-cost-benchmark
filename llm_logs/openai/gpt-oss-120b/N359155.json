@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359155",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "7318156010",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-a8366e2e-4af9-466e-911b-654e1180d6ad",
+    "object": "chat.completion",
+    "created": 1790727133,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"7318.15.90.90\",\n  \"reason\": \"Classifies as a stainless steel pan\u2011head screw (iron or steel screw, other) under heading 7318.15 for other screws, bolts and nuts.\"\n}",
+          "reasoning": "We need HTS for stainless steel screws, small, pan head, thread forming. Likely heading 7318.15.90? 7318.15 is \"Screws, bolts, nuts, etc., of iron or steel, not elsewhere specified\". 7318.15.90 is \"Other\". 10-digit: 7318.15.9090? Actually 10-digit format: 7318.15.90.90? Let's check: 7318.15.90 is 8-digit. 10-digit adds further: 7318.15.90.90 maybe. Provide that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.089568626,
+      "prompt_tokens": 295,
+      "prompt_time": 0.011535096,
+      "completion_tokens": 195,
+      "completion_time": 0.410006991,
+      "total_tokens": 490,
+      "total_time": 0.421542087,
+      "completion_tokens_details": {
+        "reasoning_tokens": 130
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_245acb052a",
+    "x_groq": {
+      "id": "req_01m3qtf61ce128a5hfsnmsc73c",
+      "seed": 435324692
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7318159090",
+  "predicted_reason": "Classifies as a stainless steel pan\u2011head screw (iron or steel screw, other) under heading 7318.15 for other screws, bolts and nuts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

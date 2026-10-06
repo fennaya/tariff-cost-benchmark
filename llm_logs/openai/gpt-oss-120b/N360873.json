@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360873",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "3004390055",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-475bba50-9f10-4134-bb35-f036757ff278",
+    "object": "chat.completion",
+    "created": 1790775479,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.00\", \"reason\": \"Testosterone gel is a medicament containing a hormone, classified under HTS chapter 30 for pharmaceutical preparations.\"}",
+          "reasoning": "Need HTS for testosterone gel. Likely under 3004.90.00? Actually testosterone is a hormone, under 2933.39.00 (Other hormones). Gel preparation maybe 3004.90.00 (Medicaments containing hormones). Let's pick 3004.90.00."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.048902058,
+      "prompt_tokens": 172,
+      "prompt_time": 0.007788597,
+      "completion_tokens": 112,
+      "completion_time": 0.234964795,
+      "total_tokens": 284,
+      "total_time": 0.242753392,
+      "completion_tokens_details": {
+        "reasoning_tokens": 63
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m3s8jk0he4srjs0r0sjmcpey",
+      "seed": 390154227
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049000",
+  "predicted_reason": "Testosterone gel is a medicament containing a hormone, classified under HTS chapter 30 for pharmaceutical preparations.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

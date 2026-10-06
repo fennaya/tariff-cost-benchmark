@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357315",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "9403910080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c8b74e47-5020-4e5a-9466-ec6a2fc620fd",
+    "object": "chat.completion",
+    "created": 1790726093,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9403.20.00\",\n  \"reason\": \"The items are pre-finished MDF cabinet door and drawer components, which are classified as parts of wooden furniture.\"\n}",
+          "reasoning": "We need HTS for MDF cabinet doors components. Likely heading 4412? Actually wood panels of MDF: 4412.20.00? Let's think: 4412 is \"Plywood, veneer sheets and boards, and similar laminated wood\". MDF is particle board? Actually MDF is classified under 4412.90? Wait: 4412.90.90 is \"Other\". But doors? Could be 9403.20.00 \"Other wooden furniture, parts\". But components not complete furniture, parts of furniture: 9403.20.00 \"Other wooden furniture, parts\". However MDF panels maybe 4412.90.90. I think parts of furniture made of wood: 9403.20.00. Choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.295408614,
+      "prompt_tokens": 384,
+      "prompt_time": 0.017802825,
+      "completion_tokens": 209,
+      "completion_time": 0.431171918,
+      "total_tokens": 593,
+      "total_time": 0.448974743,
+      "completion_tokens_details": {
+        "reasoning_tokens": 157
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m3qsfe8xehtbq0p06wvme0me",
+      "seed": 1211249477
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "94032000",
+  "predicted_reason": "The items are pre-finished MDF cabinet door and drawer components, which are classified as parts of wooden furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

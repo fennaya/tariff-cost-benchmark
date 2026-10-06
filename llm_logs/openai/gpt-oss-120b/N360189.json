@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360189",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-e642cea5-c9f3-427e-9f5f-af6c51ad389e",
+    "object": "chat.completion",
+    "created": 1790756336,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.0010\", \"reason\": \"The item is a plastic bag made primarily of polyethylene, classified under heading 3923 for plastic articles used for packing, specifically subheading 3923.21 for plastic bags.\"}",
+          "reasoning": "We need HTS code for plastic bag, multi-layer, OPP, metallized PET, LDPE, 80% polyethylene. Likely heading 3923? 3923.21? Let's think: 3923 covers articles for the conveyance or packing of goods, of plastics. 3923.21 is \"Plastic bags\". 3923.21.00 is \"Plastic bags\". So 10-digit: 3923.21.0010? Actually US: 3923.21.0010 is \"Plastic bags, of plastics\". Need 10-digit. Likely 3923.21.0010. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.200971945,
+      "prompt_tokens": 251,
+      "prompt_time": 0.010847489,
+      "completion_tokens": 199,
+      "completion_time": 0.414159346,
+      "total_tokens": 450,
+      "total_time": 0.425006835,
+      "completion_tokens_details": {
+        "reasoning_tokens": 135
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_e5b4e54fbb",
+    "x_groq": {
+      "id": "req_01m3rpacn2egm94vc5vwtc5r7a",
+      "seed": 1043676958
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "3923210010",
+  "predicted_reason": "The item is a plastic bag made primarily of polyethylene, classified under heading 3923 for plastic articles used for packing, specifically subheading 3923.21 for plastic bags.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

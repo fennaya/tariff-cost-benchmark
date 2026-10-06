@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362269",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "3926400090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-3e6cbe1c-1ec1-4eab-a2b4-1752cd1ef9bd",
+    "object": "chat.completion",
+    "created": 1790822837,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.90\", \"reason\": \"Classified as a craft kit containing plastic decorative parts, crystals, and glue, falling under 'Other toys, not elsewhere specified'\"}",
+          "reasoning": "We need HTS code for craft kits with decorative plastic pieces, crystals, glue, etc. Likely \"Arts, crafts and needlework sets\" 9503? Actually HTS 9503.00.10 for toys? But kits are \"craft kits\" under 9503.00.90? Or 9503.00.20? Let's think: 9503.00.10 \u2013 Tricycles etc. No. 9503.00.90 \u2013 Other toys. Not.\n\nMaybe under 9505? No.\n\nCould be 3926.90.99 \u2013 Other articles of plastics. But kits include multiple components, likely classified under 9503.00.90 \"Other toys, not elsewhere specified\". However these are not toys but craft kits. Could be 9503.00.90.\n\nI'll answer that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.304698653,
+      "prompt_tokens": 432,
+      "prompt_time": 0.020160723,
+      "completion_tokens": 227,
+      "completion_time": 0.471408514,
+      "total_tokens": 659,
+      "total_time": 0.491569237,
+      "completion_tokens_details": {
+        "reasoning_tokens": 174
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3tnqszaeh6sr4y3k6ss4jnc",
+      "seed": 632699091
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "95030090",
+  "predicted_reason": "Classified as a craft kit containing plastic decorative parts, crystals, and glue, falling under 'Other toys, not elsewhere specified'",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

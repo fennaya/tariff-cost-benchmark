@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362291",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "6304993500",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1ec6b510-02e1-4ff6-9bff-ac90f7468510",
+    "object": "chat.completion",
+    "created": 1790823579,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.60.90\", \"reason\": \"Classified under heading 6302 for other made\u2011up articles of bedding such as pillow covers, with linen fabric falling under the 'other' subcategory.\"}",
+          "reasoning": "We need HTS code for decorative pillow cover made of linen. Likely heading 6302? 6302.60? Let's see: 6302 covers \"Other bedding, curtains and similar articles, knitted or crocheted\". But linen woven fabric is not knitted. Pillow covers are \"bed linen\" maybe 6302.60.10? Actually 6302.60 is \"Other made up articles of bedding, curtains and similar articles, of other textile materials\". Subheading 6302.60.10 is \"Of cotton\". 6302.60.20 is \"Of man-made fibers\". 6302.60.90 is \"Other\". Linen is a vegetable fiber, not cotton. So likely 6302.60.90. Check 6302.60.90: \"Other\". So answer.\n\nThus JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205372896,
+      "prompt_tokens": 367,
+      "prompt_time": 0.017116043,
+      "completion_tokens": 232,
+      "completion_time": 0.481339322,
+      "total_tokens": 599,
+      "total_time": 0.498455365,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m3tpeerre7frdv39z8yw6646",
+      "seed": 1526440921
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "63026090",
+  "predicted_reason": "Classified under heading 6302 for other made\u2011up articles of bedding such as pillow covers, with linen fabric falling under the 'other' subcategory.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

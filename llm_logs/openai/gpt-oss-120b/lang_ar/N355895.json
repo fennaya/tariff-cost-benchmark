@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N355895",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "6802990090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-40b6e007-4653-431e-a085-da8b74cfe18b",
+    "object": "chat.completion",
+    "created": 1790904935,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.20.00\", \"reason\": \"The product is a worked ornamental volcanic stone slab (cut, polished) used for interior/exterior surfaces, which falls under HTS Chapter 68 heading 6802 for worked ornamental stone.\"}",
+          "reasoning": "We need HTS for natural stone slabs, quartz and albite = feldspar, but it's a volcanic rock, likely \"Other ornamental stone, cut, polished, etc.\" HS 6802.20.00? Let's recall: 6802 covers \"Worked granite, sandstone, limestone, etc.\" 6802.20 is \"Other ornamental stone, worked, not elsewhere specified\". Actually 6802.20.00 is \"Other ornamental stone, worked, not elsewhere specified\". So use that. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.139053895,
+      "prompt_tokens": 378,
+      "prompt_time": 0.018284026,
+      "completion_tokens": 171,
+      "completion_time": 0.358546403,
+      "total_tokens": 549,
+      "total_time": 0.376830429,
+      "completion_tokens_details": {
+        "reasoning_tokens": 106
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4b2f03d631",
+    "x_groq": {
+      "id": "req_01m3x418dpexk8g3dhjgyzs1nf",
+      "seed": 1976013421
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "68022000",
+  "predicted_reason": "The product is a worked ornamental volcanic stone slab (cut, polished) used for interior/exterior surfaces, which falls under HTS Chapter 68 heading 6802 for worked ornamental stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

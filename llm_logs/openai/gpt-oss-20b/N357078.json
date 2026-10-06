@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N357078",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "1212920000",
+  "model": "openai/gpt-oss-20b",
+  "raw_response": {
+    "id": "chatcmpl-e534d012-5013-4661-bb5d-03da8568f850",
+    "object": "chat.completion",
+    "created": 1790607234,
+    "model": "openai/gpt-oss-20b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\":\"2309.10.10.00\",\"reason\":\"Carob cubes are plant\u2011origin animal feed not elsewhere specified, fitting HTS 2309.10.10.00\"}",
+          "reasoning": "Need HTS code for carob cubes animal feed. Carob is from Ceratonia siliqua. In US, animal feed: \"Other feedstuff\" maybe 2309.10.10? Let's recall: 2309 is \"Other foodstuffs for animals, not elsewhere specified or included\". 2309.10 is \"Other foodstuffs for animals, not elsewhere specified or included, of plant origin\". 2309.10.10 is \"Other foodstuffs for animals, not elsewhere specified or included, of plant origin, other than those of the following categories: ...\". Carob is plant origin. So 2309.10.10. But maybe 2309.10.10 is for \"Other foodstuffs for animals, not elsewhere specified or included, of plant origin, other than those of the following categories: ...\". Carob not listed. So 2309.10.10. So HTS code 2309.10.10.00? Actually 10-digit: 2309.10.10.00. Provide."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.296838946,
+      "prompt_tokens": 243,
+      "prompt_time": 0.013685666,
+      "completion_tokens": 273,
+      "completion_time": 0.293171909,
+      "total_tokens": 516,
+      "total_time": 0.306857575,
+      "completion_tokens_details": {
+        "reasoning_tokens": 222
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a12402de73",
+    "x_groq": {
+      "id": "req_01m3m844pgefptg1de82ac6d27",
+      "seed": 1911390468
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "2309101000",
+  "predicted_reason": "Carob cubes are plant\u2011origin animal feed not elsewhere specified, fitting HTS 2309.10.10.00",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

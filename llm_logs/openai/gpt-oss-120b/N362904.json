@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362904",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "3925200020",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-21ebde33-6021-456d-9a92-8bc12d3d9630",
+    "object": "chat.completion",
+    "created": 1790841652,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7610.90.10.00\", \"reason\": \"Classified under heading 7610 for windows and doors of other materials, specifically PVC frames with glass, requiring the most specific subheading for such window units.\"}",
+          "reasoning": "Need HTS for PVC window with glass. Likely 7610? Actually windows of wood, plastic, metal: heading 7610.20 for windows and doors of aluminum? For PVC windows: 7610.10? Check: 7610.10 \u2013 of iron or steel; 7610.90 \u2013 of other materials. But also 3905 for plastic windows? However includes glass unit. Likely 7610.90.10? 10-digit: 7610.90.10.00. So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.330642488,
+      "prompt_tokens": 234,
+      "prompt_time": 0.156315304,
+      "completion_tokens": 173,
+      "completion_time": 0.364504611,
+      "total_tokens": 407,
+      "total_time": 0.520819915,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_6b677c2caf",
+    "x_groq": {
+      "id": "req_01m3v7p0h8e3c9rgqhn32ybpx7",
+      "seed": 1505580195
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "7610901000",
+  "predicted_reason": "Classified under heading 7610 for windows and doors of other materials, specifically PVC frames with glass, requiring the most specific subheading for such window units.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

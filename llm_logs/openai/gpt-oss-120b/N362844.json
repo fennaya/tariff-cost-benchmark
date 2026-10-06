@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N362844",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8516790000",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-dbf86330-2759-4fd4-b37d-24349150bd80",
+    "object": "chat.completion",
+    "created": 1790839591,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8419.89.90\",\n  \"reason\": \"Classified as a residential electric heating appliance (induction heater) not elsewhere specified, falling under heading 8419 for heating appliances.\"\n}",
+          "reasoning": "We need HTS code for residential induction heating appliance for sludge processing. Likely under 8419? 8419.89.90? 8419 covers industrial furnaces etc. But residential heating appliances: 8419.89.90 \"Other heating appliances, not elsewhere specified\". Could be 8419.89.90. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.308132367,
+      "prompt_tokens": 329,
+      "prompt_time": 0.014770313,
+      "completion_tokens": 130,
+      "completion_time": 0.273129903,
+      "total_tokens": 459,
+      "total_time": 0.287900216,
+      "completion_tokens_details": {
+        "reasoning_tokens": 73
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m3v5q45se57b20gkb72srwtw",
+      "seed": 855686135
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84198990",
+  "predicted_reason": "Classified as a residential electric heating appliance (induction heater) not elsewhere specified, falling under heading 8419 for heating appliances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

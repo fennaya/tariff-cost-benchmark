@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359263",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "8431499094",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-c077c487-4779-4ee8-bd38-0a9e8f37340b",
+    "object": "chat.completion",
+    "created": 1790727188,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"8708.99.90\",\n  \"reason\": \"The snowplow blade and push tube are accessories/parts for motor vehicles (ATVs/UTVs) not classified elsewhere, falling under heading 8708.99.90 for other parts and accessories of motor vehicles.\"\n}",
+          "reasoning": "We need HTS code for snowplow blade for ATVs. Likely under 8708? Actually parts for vehicles. Snowplow blade is a \"plow, snow\" for motor vehicles. HTS 8708.99.90? Let's check: 8708.99.90 - Other parts and accessories of motor vehicles, not elsewhere specified. But there is heading 8708.99.90 for \"Other parts and accessories of motor vehicles, n.e.s.\" Snowplow blade maybe under 8708.99.90. Also could be 8708.99.95? Not sure. Provide one code. Use 8708.99.90."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.049034963,
+      "prompt_tokens": 395,
+      "prompt_time": 0.017714836,
+      "completion_tokens": 217,
+      "completion_time": 0.453095249,
+      "total_tokens": 612,
+      "total_time": 0.470810085,
+      "completion_tokens_details": {
+        "reasoning_tokens": 142
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m3qtgvy1efgayan3r4evpkqx",
+      "seed": 1898212728
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "87089990",
+  "predicted_reason": "The snowplow blade and push tube are accessories/parts for motor vehicles (ATVs/UTVs) not classified elsewhere, falling under heading 8708.99.90 for other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

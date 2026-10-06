@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358771",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3923900080",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-b2ff7b4e-65af-44cc-ba32-496c1cac0e0f",
+    "object": "chat.completion",
+    "created": 1790726865,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"3924.90.90\",\n  \"reason\": \"An empty injection\u2011molded plastic lipstick container is classified under heading 3924 (plastic household/toilet articles) and subheading 3924.90.90 for other plastic articles not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for empty plastic lipstick container. Likely 3924.90.??. Check: 3924.90.90 is \"Other articles of plastics\". But specific: 3924.90.90 is \"Other articles of plastics, not elsewhere specified\". Lipstick containers maybe 3924.90.90. Could be 3924.90.10? Actually 3924.90.10 is \"Other articles of plastics, of a kind used for the conveyance or packing of goods\". Not sure. Lipstick container is a cosmetic container, maybe 3304? No that's cosmetics. Empty container is plastic, chapter 39. Heading 3924: \"Tableware, kitchenware, other household articles and toilet articles, of plastics\". Subheading 3924.90 \"Other\". Then further 3924.90.90 \"Other\". So answer.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.017311769,
+      "prompt_tokens": 220,
+      "prompt_time": 0.010118179,
+      "completion_tokens": 260,
+      "completion_time": 0.543653844,
+      "total_tokens": 480,
+      "total_time": 0.553772023,
+      "completion_tokens_details": {
+        "reasoning_tokens": 188
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m3qt6zrxen5vtwnjd0m64gex",
+      "seed": 1487530116
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "39249090",
+  "predicted_reason": "An empty injection\u2011molded plastic lipstick container is classified under heading 3924 (plastic household/toilet articles) and subheading 3924.90.90 for other plastic articles not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

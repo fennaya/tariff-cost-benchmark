@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N361006",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "7616995190",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-fb2c842a-3566-41ed-a0fa-6e2caea61091",
+    "object": "chat.completion",
+    "created": 1790779921,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8302.10.00\", \"reason\": \"The product is a metal stand used to support equipment, classifiable as a base metal mounting or fitting for furniture.\"}",
+          "reasoning": "We need HTS for a computer stand, adjustable, made of metal/plastic. Likely under 8302.10.00? Actually 8302 covers \"Base metal mountings, fittings and similar articles for furniture\". But stands for computers maybe 8473? No, that's parts for machines. Could be 3926 for plastic articles. But likely \"Other furniture, parts thereof\" 9403? 9403.20 is \"Other furniture and parts thereof\". However a stand is not furniture. Could be 7616 for aluminum articles. Hmm.\n\nHTS 8302.10.00 \"Base metal mountings, fittings and similar articles for furniture\". That seems plausible.\n\nLet's answer with that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.122267321,
+      "prompt_tokens": 339,
+      "prompt_time": 0.020017916,
+      "completion_tokens": 197,
+      "completion_time": 0.420253654,
+      "total_tokens": 536,
+      "total_time": 0.44027157,
+      "completion_tokens_details": {
+        "reasoning_tokens": 147
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c800245357",
+    "x_groq": {
+      "id": "req_01m3sct4kserrswpx1fseryy7g",
+      "seed": 938618640
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "83021000",
+  "predicted_reason": "The product is a metal stand used to support equipment, classifiable as a base metal mounting or fitting for furniture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

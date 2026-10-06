@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359426",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909216",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-78db073f-cbd7-44ed-bbaa-9821bb499342",
+    "object": "chat.completion",
+    "created": 1790904643,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.90\", \"reason\": \"Dasatinib tablets are a pharmaceutical preparation classified under Chapter 30, heading 3004 for medicinal preparations, specifically the subheading for other medicinal preparations not elsewhere specified.\"}",
+          "reasoning": "We need HTS code for dasatinib tablets, a tyrosine kinase inhibitor, pharmaceutical. Likely under 3004.90.90? Actually HTS Chapter 30: Pharmaceutical products. Dasatinib is a specific drug, classification likely 3004.90.90 (Other medicinal preparations containing alkaloids, etc). Could be 3004.90.90 \"Other medicinal preparations containing no active ingredient\" but dasatinib is active. Might be 3004.90.90 \"Other medicinal preparations\". So answer."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206300187,
+      "prompt_tokens": 256,
+      "prompt_time": 0.01168981,
+      "completion_tokens": 173,
+      "completion_time": 0.367758352,
+      "total_tokens": 429,
+      "total_time": 0.379448162,
+      "completion_tokens_details": {
+        "reasoning_tokens": 112
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m3x3rbb9ey5r8ardkdm2fvxx",
+      "seed": 1159733784
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "30049090",
+  "predicted_reason": "Dasatinib tablets are a pharmaceutical preparation classified under Chapter 30, heading 3004 for medicinal preparations, specifically the subheading for other medicinal preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

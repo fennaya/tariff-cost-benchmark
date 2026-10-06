@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N359582",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "6203424551",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-6366e36f-6d7c-4381-92f7-fe4b24440afd",
+    "object": "chat.completion",
+    "created": 1790728771,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6203.49.90.00\", \"reason\": \"Men's shorts made of a cotton/nylon blend fall under heading 6203 (men's trousers, shorts) and subheading 49 for other textile materials.\"}",
+          "reasoning": "Need HTS for men's shorts, cotton/nylon, 88/12, above knee. Likely heading 6203.42? Let's see: 6203 = Men's or boys' trousers, shorts, etc. Subheading 6203.42 = of cotton. But it's cotton/nylon blend, not 100% cotton. Could be 6203.49 other textile materials. 6203.49.90? Actually 6203.49 is of other textile materials. Need 10-digit: 6203.42.90.00 is cotton. For blends maybe 6203.49.90.00. So choose that."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.219706631,
+      "prompt_tokens": 235,
+      "prompt_time": 0.011735089,
+      "completion_tokens": 200,
+      "completion_time": 0.410503426,
+      "total_tokens": 435,
+      "total_time": 0.422238515,
+      "completion_tokens_details": {
+        "reasoning_tokens": 137
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_47082602e2",
+    "x_groq": {
+      "id": "req_01m3qw15a0evjvt9s9sbnxxps4",
+      "seed": 1181339303
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "6203499000",
+  "predicted_reason": "Men's shorts made of a cotton/nylon blend fall under heading 6203 (men's trousers, shorts) and subheading 49 for other textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

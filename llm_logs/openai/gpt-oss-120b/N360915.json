@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N360915",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "9031808085",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-f9f508e8-71ef-46bf-89a7-513fb984c613",
+    "object": "chat.completion",
+    "created": 1790778487,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"hts_code\": \"9022.55.00\",\n  \"reason\": \"The device is a wearable electronic apparatus for measuring physiological parameters (heart rate, temperature, motion) and is classified under HTSUS heading 9022 for medical monitoring devices not elsewhere specified.\"\n}",
+          "reasoning": "We need HTS code for wearable health monitoring device. Likely 9022.12.00? Actually 9022.12.00 is \"Other apparatus for measuring or detecting physiological parameters\". But wearable electronic devices often under 9022.55? Let's think: 9022.55.00 is \"Other apparatus for measuring or detecting physiological parameters, not elsewhere specified\". Could be 9022.55.00. Or 8517.62.00 for \"Machines for transmitting digital data\". But primary function health monitoring, classification under 9022.55.00. Provide reason."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.205010053,
+      "prompt_tokens": 308,
+      "prompt_time": 0.01962257,
+      "completion_tokens": 191,
+      "completion_time": 0.397270816,
+      "total_tokens": 499,
+      "total_time": 0.416893386,
+      "completion_tokens_details": {
+        "reasoning_tokens": 123
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m3sbeccwed3aq6rxkq4kk77g",
+      "seed": 1746251077
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "90225500",
+  "predicted_reason": "The device is a wearable electronic apparatus for measuring physiological parameters (heart rate, temperature, motion) and is classified under HTSUS heading 9022 for medical monitoring devices not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}

@@ -1,0 +1,48 @@
+{
+  "rulingNumber": "N358306",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8436800090",
+  "model": "openai/gpt-oss-120b",
+  "raw_response": {
+    "id": "chatcmpl-1d830851-68b2-417a-886c-847335301578",
+    "object": "chat.completion",
+    "created": 1790904790,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8421.99.90\", \"reason\": \"The system is a specialized agricultural machine for feeding and watering cattle, classified under other agricultural machines.\"}",
+          "reasoning": "We need HTS for RFID livestock feeding system. Likely under \"Machinery for milking cows\" etc. Could be \"Other weighing or measuring machines\" 8425? 8425.90.90? Actually 8425.99? Let's think: 8425.99.90 is \"Other weighing or measuring machines\". The system includes RFID, but primary function is feeding and water dispensing. Could be \"Feeding stuff for animals\" 8436? 8436.20.00 \"Feeding stuff for animals\". But it's a machine, not feed. 8436.90.00 \"Other parts\". Might be 8436.99.00 \"Other\". However 8436 is \"Parts and accessories of machines of heading 8435\". Not.\n\nMaybe 8435 \"Farm machinery\". 8435.50 \"Other milking machines\". Not.\n\nCould be 8421 \"Other agricultural, horticultural, forestry, poultry-keeping or bee-keeping machines\". 8421.99.90 \"Other\". That seems plausible: 8421.99.90 \"Other agricultural, horticultural, forestry, poultry-keeping or bee-keeping machines\". Feeding system for cattle fits.\n\nThus choose 8421.99.90.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.206860114,
+      "prompt_tokens": 348,
+      "prompt_time": 0.016081073,
+      "completion_tokens": 309,
+      "completion_time": 0.641598719,
+      "total_tokens": 657,
+      "total_time": 0.657679792,
+      "completion_tokens_details": {
+        "reasoning_tokens": 263
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m3x3wtzwewcs65n1ve7rddwp",
+      "seed": 1755475936
+    },
+    "service_tier": "on_demand"
+  },
+  "predicted_code": "84219990",
+  "predicted_reason": "The system is a specialized agricultural machine for feeding and watering cattle, classified under other agricultural machines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE"
+}
