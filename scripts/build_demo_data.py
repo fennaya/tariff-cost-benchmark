@@ -38,8 +38,13 @@ def main():
                  (json.loads(l) for l in DUTY_PATH.read_text(encoding="utf-8").splitlines())}
 
     per_ruling = {}
-    for model_dir in sorted(LLM_LOGS_DIR.iterdir()):
-        if not model_dir.is_dir() or model_dir.name.startswith("gemini"):
+    # Every folder under llm_logs/ that directly holds .json files is one model (or one
+    # model's translation run). Keyed by its path relative to llm_logs/, e.g.
+    # "openai/gpt-oss-120b" or "allam-2-7b/lang_ar". Gemini stays out until v1.1.
+    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")))
+    for model_dir in model_dirs:
+        model_key = model_dir.relative_to(LLM_LOGS_DIR).as_posix()
+        if model_key.startswith("gemini"):
             continue
         for fp in model_dir.glob("*.json"):
             r = json.loads(fp.read_text(encoding="utf-8"))
@@ -61,7 +66,7 @@ def main():
                 0.0 if base["true_rate_type"] == "free" else None
             )
             rate_diff = (pred_pct - true_pct) if (pred_pct is not None and true_pct is not None) else None
-            row["models"][model_dir.name] = {
+            row["models"][model_key] = {
                 "predicted_code": r.get("predicted_code"),
                 "valid_code": r.get("valid_code"),
                 "rate_diff_pct": rate_diff,

@@ -11,14 +11,14 @@ Running groq/qwen/qwen3.8-27b over 1098 rulings...
   [429] groq/qwen/qwen3.8-27b: sleeping 60s (attempt 7/8)
   [429] groq/qwen/qwen3.8-27b: sleeping 60s (attempt 8/8)
 Traceback (most recent call last):
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_llm_classification.py", line 170, in <module>
+  File "<project>\scripts\run_llm_classification.py", line 170, in <module>
     main()
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_llm_classification.py", line 163, in main
+  File "<project>\scripts\run_llm_classification.py", line 163, in main
     results = [classify_one(provider, m["model_id"], r, out_dir,
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_llm_classification.py", line 88, in classify_one
+  File "<project>\scripts\run_llm_classification.py", line 88, in classify_one
     raw = chat_completion(provider, model_id, messages, temperature=0.0,
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\llm_client.py", line 116, in chat_completion
+  File "<project>\scripts\llm_client.py", line 116, in chat_completion
     raise RuntimeError(f"Exceeded retries calling {provider.name}/{model}")
 RuntimeError: Exceeded retries calling groq/qwen/qwen3.8-27b

@@ -1,36 +1,42 @@
 # Status
 
-**v1.0 is ready to publish now, with the 3 Groq models' results complete and final.**
-Gemini is a 4th model running in the background on its own fixed sample, tracked
-separately and explicitly labeled "in progress, v1.1" everywhere it's mentioned
-(README, findings.md) so nothing in v1.0 depends on it landing.
+**v1.0.0 published 2026-10-06.** DOI [10.5281/zenodo.23197896](https://doi.org/10.5281/zenodo.23197896) (all versions). Repo: github.com/fennaya/tariff-cost-benchmark.
 
-## Round 3 (2026-10-06): invalid-code breakdown, guardrail, dollar figure: DONE
+- **Results:** final for the 3 Groq models (`openai/gpt-oss-20b`, `openai/gpt-oss-120b`, `allam-2-7b`) on 1,098 rulings. See [findings.md](findings.md).
+- **Gemini** (`gemini-3.8-flash`, fixed 200-ruling subset in `data/gemini_subset.csv`) is running once a day through Windows Task Scheduler (`GeminiTariffDailyRun`, 09:00) and will go into **v1.1**. Results stay unpublished until all 200 are done. Its responses and logs are local only (gitignored).
+- **Tracked in git** (same as the README's "What is tracked" section): `data/raw/rulings/` and `data/raw/search_pages/`, `data/processed/`, `data/compact/` (HTS codes and rates, including `hts_older/` and `hts_rates/` parsed from archived release PDFs), `llm_logs/`, `llm_followups/`, `run_logs/`, `review/`, `figures/`, and all scripts. **Not tracked:** `data/raw/hts_revisions/` and `data/raw/hts_older_pdf/`, plus the local-only Gemini files.
+- **Duty rates were re-checked** against each ruling-date release's archived PDF: 0 of 4,060 (code, ruling date) pairs differ from the current schedule. USITC's JSON export only ever returns the current schedule, which is why the PDFs were used (details in findings.md Limitations and DECISIONS.md).
+- **Next:** finish Gemini, revert the Gemini skip in the analysis scripts (`analysis.py`, `scripts/audit_accuracy.py`, `scripts/audit_direction.py`, `scripts/build_stripping_audit.py`, `scripts/build_demo_data.py`), rerun the analysis and Gate B, then cut v1.1.
 
-- Lead finding now: free models mostly return codes that do not exist (88.7% to 98.4% of wrong answers), and most are not near misses (suffix-only is 6.7% to 22.9% of invalid answers). Outdated codes explain 1 invalid answer. A one-turn guardrail fixes 1.5% to 7.2% of invalid answers, none correctly. See findings.md and `review/invalid_breakdown.md`, `review/guardrail.md`, `figures/error_breakdown.png`.
-- **Data problem found and checked:** the Phase 3 "per-revision" HTS files were all the current schedule (the export API ignores `release`). Impact on validity checks: 1 answer. Duty rates not re-checked against ruling-date releases (stated as a limitation). Details in DECISIONS.md.
+## History
+
+Round-by-round notes. Where an older line was superseded, it has been corrected to match the facts above.
+
+### Round 3 (2026-10-06): invalid-code breakdown, guardrail, dollar figure: DONE
+
+- Lead finding now: free models mostly return codes that do not exist (88.7% to 98.4% of wrong answers), and most are not near misses (suffix-only is 6.7% to 22.9% of invalid answers). Outdated codes explain 1 invalid answer. A validity check flags 88.7% to 98.4% of wrong answers; a one-turn retry turned 1.5% to 7.2% of invalid answers into valid codes, none correct. See findings.md and `review/invalid_breakdown.md`, `review/guardrail.md`, `figures/error_breakdown.png`.
+- **Data problem found and checked:** the Phase 3 "per-revision" HTS files were all the current schedule (the export API ignores `release`). Impact on validity checks: 1 answer. Duty rates were then re-checked against each ruling-date release: 0 of 4,060 code-date pairs differ. Details in DECISIONS.md.
 - Final fixes: validity-check framing (detects 88.7% to 98.4% of wrong answers; retry repairs none), underpay n/CI/baseline p reported per model, and MFN rates re-checked against each ruling-date release (0 of 4,060 code-date pairs had a different rate). A markup bug in rate parsing was fixed in the same pass (Gate 3: 1,077/1,098). See DECISIONS.md.
 - Gemini run unchanged (in progress, no results published).
 
-## Task 2 (pre-publish sweep): DONE, all 3 fixes applied (2026-10-05)
+### Task 2 (pre-publish sweep): DONE, all 3 fixes applied (2026-10-05)
 
 Full findings in [review/prepublish_check.md](review/prepublish_check.md); all 3
 proposed fixes are now applied, not just reported:
-- **No API keys or the personal email found anywhere they shouldn't be** — confirmed
-  clean, no fix needed.
+- **No API keys found anywhere they shouldn't be.** The personal email appeared only in
+  this report itself; it was redacted and the git history was replaced with a single clean
+  commit before publishing.
 - **Git identity fix applied:** this repo's local git config now sets `user.name
   "fennaya"` / `user.email "fennaya@users.noreply.github.com"`, so a plain `git commit`
   can no longer silently fall back to the machine's global config.
-- **Repo size fix applied:** `data/raw/hts_revisions/`, `data/raw/rulings/`, and
-  `data/raw/search_pages/` (~272 MB of bulk, mechanically-fetched government data) are
-  now gitignored and untracked (`git rm --cached`) — they stay on disk and are each
-  individually regenerable via the existing fetch scripts, or restorable from this
-  project's Zenodo archive once published. `data/processed/` and `llm_logs/` (the
-  evidence behind every reported number) remain in git.
+- **Repo size fix applied:** `data/raw/hts_revisions/` (255 MB of raw USITC dumps) is
+  gitignored; a trimmed, gzipped copy is tracked under `data/compact/` and the scripts fall
+  back to it. `data/raw/rulings/` and `data/raw/search_pages/` (18 MB) are tracked, as are
+  `data/processed/` and `llm_logs/`, so every reported number reproduces from a fresh clone.
 - **Data license fix applied:** README now has a "Data license" section citing 17
   U.S.C. § 105 and CBP's own public-domain statement for its site content.
 
-## Task 1 (Gemini as a 4th model): IN PROGRESS, correctly diagnosed and now resumable
+### Task 1 (Gemini as a 4th model): IN PROGRESS, correctly diagnosed and now resumable
 
 - **Root cause of the slow rate, found 2026-10-05 by reading the actual 429 error body**
   (not inferring from timing, which is how the earlier "resets at Pacific midnight"
@@ -52,8 +58,8 @@ proposed fixes are now applied, not just reported:
   happened to finish.
 - **Runs independent of any Claude Code session now:** `scripts/run_gemini_daily.bat`
   (tested, confirmed exit 0 on hitting the daily cap, logs to
-  `logs/gemini_daily.log`, gitignored) is the daily job; see the repo root for the one `schtasks`
-  command to register it with Windows Task Scheduler. At 20/day max, 200 rulings is
+  `logs/gemini_daily.log`, gitignored) is the daily job, registered as the Task Scheduler
+  job `GeminiTariffDailyRun` (daily 09:00). At 20/day max, 200 rulings is
   **at least 10 days** even in the best case.
 - **`scripts/analyze_gemini_comparison.py` re-pointed to the fixed 200-ruling subset**
   (was the full 661 pool) — the 3 Groq models are re-reported on exactly the same 200
@@ -65,7 +71,7 @@ proposed fixes are now applied, not just reported:
   scheduled task), final Gate B numbers for Gemini once enough land, and folding Gemini
   into findings.md/README.md as v1.1.
 
-## Summary
+### Summary
 
 - **Round 1 (Phases 0-6):** 1,816 CBP rulings collected, 1,098 usable, 3 free-tier Groq
   models (`openai/gpt-oss-20b`, `openai/gpt-oss-120b`, `allam-2-7b`) run on all of them
@@ -97,31 +103,29 @@ proposed fixes are now applied, not just reported:
   gets its own Arabic-vs-English section.
 - **A Google AI Studio (Gemini) key was checked for and, once provided, verified live**
   (read-only model-list call, no spend) — `gemini-2.5-flash`/`gemini-2.5-pro` are
-  available if a future round wants a stronger-model comparison. Not used this round;
-  logged in BLOCKERS.md as available-but-unused, since adding a 4th model and a
-  different API shape is a real scope expansion that needs an explicit ask.
+  available. Not used in Round 1 or 2; it was later used for the Gemini run (see Task 1
+  above). History of the check is in BLOCKERS.md.
 - `findings.md` and `README.md` are fully rewritten with the audited numbers, correct
   scoping, and language-comparison results. `demo_data.json` and `figures/` regenerated.
 
-## Headline (final)
+### Headline (final)
 
 Three free, open-weight models on Groq's free tier top out at 5.6% accuracy on the
 duty-relevant 8-digit US customs code. When wrong in a way that changes the duty rate,
-all three underpay significantly more often than two chance baselines predict
-(p < 0.001 per model against the harder baseline) — the legally dangerous direction.
-This is a finding about these three free-tier models' capability, not evidence the
-classification task itself is unusually hard: non-fine-tuned frontier models in prior
-work (ATLAS's own baselines) score 7-15x higher.
+all three underpay significantly more often than chance baselines predict
+(p < 0.001 per model, n = 46 / 49 / 116 rate-changing errors) — the legally dangerous
+direction. This is a finding about these three free-tier models, not evidence the
+classification task itself is unusually hard: prior work reports far higher scores under
+different conditions (paid frontier models, fine-tuning, a different benchmark).
 
-## What's NOT done (possible future rounds, not started)
+### What's NOT done (possible future rounds, not started)
 
-- Gemini's run is in progress, not complete — see Task 1 above; tracked for v1.1, not
-  v1.0.
+- Gemini's run is in progress, not complete: see Task 1 above; it goes into v1.1.
 - No larger-sample language comparison to resolve the "not detected at this sample
   size" result.
 - No testing of non-free-tier or fine-tuned models.
 
-## Known operational notes (for anyone resuming or extending this)
+### Known operational notes (for anyone resuming or extending this)
 
 - This machine's `ps aux` shows process names without the `.exe` extension.
 - Groq's rate limits are per-model — run multi-model work as separate processes.
@@ -132,13 +136,7 @@ work (ATLAS's own baselines) score 7-15x higher.
 - `.env` holds GROQ_API_KEY and GOOGLE_API_KEY locally; gitignored, never committed or
   printed (see DECISIONS.md).
 
-## Blockers
+### Blockers
 
 None open. See [BLOCKERS.md](BLOCKERS.md) for the full history (both resolved): the
 original missing LLM key, and the stronger-model-availability check.
-
----
-
-**v1.0 is ready to publish now** (3 Groq models, complete and audited). Gemini
-continues accumulating in the background via the scheduled daily task and will be
-folded in as v1.1 once its 200-ruling run completes — no action needed to wait for it.
