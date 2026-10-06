@@ -9,15 +9,15 @@ Running groq/allam-2-7b (fr) over 93 rulings...
   [429] groq/allam-2-7b: sleeping 6.0s (attempt 7/8)
   [429] groq/allam-2-7b: sleeping 6.0s (attempt 8/8)
 Traceback (most recent call last):
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_llm_translations.py", line 84, in <module>
+  File "<project>\scripts\run_llm_translations.py", line 84, in <module>
     main()
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_llm_translations.py", line 77, in main
+  File "<project>\scripts\run_llm_translations.py", line 77, in main
     results = [classify_one(provider, m["model_id"], r, out_dir,
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_llm_classification.py", line 88, in classify_one
+  File "<project>\scripts\run_llm_classification.py", line 88, in classify_one
     raw = chat_completion(provider, model_id, messages, temperature=0.0,
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\llm_client.py", line 116, in chat_completion
+  File "<project>\scripts\llm_client.py", line 116, in chat_completion
     raise RuntimeError(f"Exceeded retries calling {provider.name}/{model}")
 RuntimeError: Exceeded retries calling groq/allam-2-7b
 93 rows approved for fr

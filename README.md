@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23197896.svg)](https://doi.org/10.5281/zenodo.23197896)
 
+Interactive demo: https://claude.ai/artifact/F7JGzyoPMmeXtaNgDv4R3Z
+
 **v1.0.** The results below are complete and final for the 3 models tested. A 4th model (Gemini, free tier) is in progress. It will be added in **v1.1** when its run finishes. See [STATUS.md](STATUS.md). Nothing here depends on it.
 
 **Lead finding:** Free models mostly return HTS codes that do not exist, and most of those are not near misses. Across 1,098 CBP rulings, 88.7% to 98.4% of wrong answers were invalid codes. "Invalid" means unparseable output, or a code that is not a 10-digit entry in the HTS.
@@ -113,16 +115,20 @@ and nothing is hand-typed. See [STATUS.md](STATUS.md) for what's actually been r
 Everything needed to reproduce every number in `findings.md` is in git:
 `data/raw/rulings/` and `data/raw/search_pages/` (the CBP rulings as fetched, 18 MB),
 `data/processed/` (cleaned descriptions, usable set, duty rates), `data/compact/hts_revisions/`
-(the HTS rate tables, trimmed and gzipped, 9 MB), `llm_logs/` (every model response),
-`review/translation_review_marked.csv`, and all scripts. Run `analysis.py` and the
+(the HTS code and rate tables, trimmed and gzipped, 9 MB), `data/compact/hts_older/` and
+`data/compact/hts_rates/` (HTS codes and MFN rates parsed from the archived release PDFs),
+`llm_logs/` and `llm_followups/` (every model response), `run_logs/` (console logs of the
+runs), `review/translation_review_marked.csv`, and all scripts. Run `analysis.py` and the
 `scripts/audit_*.py` / `analyze_language.py` scripts above directly on a fresh clone.
 
-Only the raw USITC HTS dumps (`data/raw/hts_revisions/`, 255 MB) are gitignored. Note: these 21 files are all copies of the current schedule, because USITC's JSON export ignores the release parameter. Archived releases exist only as PDFs, which `scripts/fetch_older_hts.py` fetches and parses (`data/compact/hts_older/` for codes, `data/compact/hts_rates/` for MFN rates). The scripts layer each ruling-date release's PDF rates onto the JSON. See the Limitations in findings.md. To
-rebuild them from scratch, from a fresh clone:
+Not tracked: `data/raw/hts_revisions/` (255 MB of raw USITC dumps) and
+`data/raw/hts_older_pdf/` (the archived HTS release PDFs, 1.7 GB), plus the local-only Gemini
+files until v1.1. Note: the 21 files in `data/raw/hts_revisions/` are all copies of the current schedule, because USITC's JSON export ignores the release parameter. Archived releases exist only as PDFs, which `scripts/fetch_older_hts.py` fetches and parses. The scripts layer each ruling-date release's PDF rates onto the JSON. See the Limitations in findings.md. To
+rebuild the untracked files from scratch, from a fresh clone:
 
 ```bash
 uv venv --python 3.12.14 .venv
-uv pip install --python .venv requests pandas scipy matplotlib
+uv pip install --python .venv requests pandas scipy matplotlib pymupdf
 .venv/Scripts/python scripts/fetch_hts.py              # re-downloads the 21 USITC revisions
 .venv/Scripts/python scripts/build_compact_hts.py      # optional: regenerates data/compact/
 ```
