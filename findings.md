@@ -197,7 +197,7 @@ All three models have n of at least 30 and underpay significantly more often tha
 | gpt-oss-120b | 0.653 | 0.569, **p < 0.001** | 0.503, **p < 0.001** |
 | gpt-oss-20b | 0.674 | 0.568, **p < 0.001** | 0.490, **p < 0.001** |
 
-The underpay bias is not explained by where true codes sit in the schedule, even accounting for each model's own depth of error. An earlier version of this document said gpt-oss-20b did not beat Baseline 1 (p = 0.742). That figure was stale: `review/audit_direction.md` shows p < 0.001, and the claim is removed here. The rate-changing set is small (46 to 116 answers per model) and comes from the 8% to 14% of wrong answers that can be compared on duty, so this result describes that comparable set, not all errors.
+The underpay bias is not explained by where true codes sit in the schedule, even accounting for each model's own depth of error. An earlier version of this document said gpt-oss-20b did not beat Baseline 1 (p = 0.742). That figure was stale: `review/audit_direction.md` shows p < 0.001, and the claim is removed here. The rate-changing set is small (46 to 116 answers per model) and comes from the 8.5% to 13.6% of wrong answers that can be compared on duty, so this result describes that comparable set, not all errors.
 
 A hypothesized mechanism (models defaulting to cheaper "Other" catch-all subheadings more often than the true codes do) was checked and **ruled out**: predicted codes land in "Other" baskets *less* often than true codes across all 3 models (11-49% vs. 62-63%), which if anything would predict overpaying, not underpaying.
 
