@@ -1,5 +1,7 @@
 # Tariff Cost Benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23197896.svg)](https://doi.org/10.5281/zenodo.23197896)
+
 **v1.0.** The results below are complete and final for the 3 models tested. A 4th model (Gemini, free tier) is in progress. It will be added in **v1.1** when its run finishes. See [STATUS.md](STATUS.md). Nothing here depends on it.
 
 **Lead finding:** Free models mostly return HTS codes that do not exist, and most of those are not near misses. Across 1,098 CBP rulings, 88.7% to 98.4% of wrong answers were invalid codes. "Invalid" means unparseable output, or a code that is not a 10-digit entry in the HTS.
@@ -141,3 +143,7 @@ Protection website is in the public domain and may be reproduced, published or
 otherwise used without the permission of the CBP" (https://www.cbp.gov/site-policy-notices/copyright-notice).
 This project's own code is MIT licensed; its analysis and findings are CC BY 4.0. See
 `CITATION.cff`.
+
+## Cite this work
+
+Emssaad, A. Tariff Cost Benchmark: Duty-at-Stake and Direction Bias in LLM Customs Classification. Zenodo. https://doi.org/10.5281/zenodo.23197896
