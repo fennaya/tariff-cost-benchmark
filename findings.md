@@ -16,7 +16,7 @@ comparison to such a model is made (prior work), that's flagged explicitly.
 
 ## Lead finding
 
-**Free models mostly return HTS codes that do not exist, and most of those are not near misses.** Across 1,098 CBP rulings, 88.7% to 98.4% of wrong answers were invalid codes (see "Invalid codes" below). Classifying each invalid answer against the HTS shows what kind of invalid:
+**The three small free Groq models mostly return HTS codes that do not exist, and most of those are not near misses** (v1.0; the stronger models in the v1.1 section below behave differently). Across 1,098 CBP rulings, 88.7% to 98.4% of these three models' wrong answers were invalid codes (see "Invalid codes" below). Classifying each invalid answer against the HTS shows what kind of invalid:
 
 | Model | Invalid answers | Suffix only wrong | First 6 digits real, first 8 not | Fabricated (no such 6-digit subheading) |
 |---|---|---|---|---|
@@ -287,17 +287,12 @@ English in origin) conducted in that language. This is a data point, not a findi
 | ATLAS, GPT-5-Thinking (general-purpose, not fine-tuned) | not stated | ~25% (back-calculated from the abstract) |
 | ATLAS, Gemini-2.5-Pro-Thinking (general-purpose, not fine-tuned) | not stated | ~12.5% (back-calculated) |
 
-Verified directly from the ATLAS abstract (arXiv 2509.18400, checked live 2026-10-02):
-even their **general-purpose, non-fine-tuned** frontier baselines report far higher
-10-digit scores than this project's models, under different conditions (paid frontier
-models, a different benchmark, different prompting and reasoning settings). This gap is
-attributed to **model capability and configuration**. This project deliberately tests only free, open-weight,
-non-fine-tuned, low-reasoning-effort models, a narrower and weaker slice of what's
-possible than ATLAS's comparison set, **not to the classification task itself being
-harder than ATLAS's framing suggests**; the contamination-control window and
-description-only input are honesty-driven methodology choices in this project, not
-properties of the task, and ATLAS's own general-purpose baselines already show frontier
-models doing meaningfully better at the same kind of task. Tarifflo's paper (arXiv
+Verified directly from the ATLAS abstract (arXiv 2509.18400, checked live 2026-10-02): its general-purpose, non-fine-tuned baselines
+report 10-digit scores of about 25% and 12.5%, higher than the v1.0 models, under different conditions (paid models, a different
+benchmark, different prompting and reasoning settings). This gap is attributed to **model capability and configuration**, **not to the
+classification task itself being harder than ATLAS's framing suggests**: the v1.0 models were free, open-weight, non-fine-tuned and run at
+low reasoning effort, and the stronger v1.1 models score 12.4% to 31.7% at 10 digits, in the range of those baselines. The
+contamination-control window and description-only input are methodology choices in this project, not properties of the task. Tarifflo's paper (arXiv
 2412.14179) benchmarks commercial, purpose-built classification *products* (Zonos,
 Tarifflo, Avalara, WCO BACUDA), not a raw LLM given a generic prompt, so no number from
 it is used here as a comparison point.
@@ -466,7 +461,7 @@ Primary scores (rulings after each model's stated cutoff; the models labelled "c
 
 † contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
-**Stronger models are far more accurate, and still wrong most of the time at the duty-relevant level.** 8-digit accuracy goes from 0.3% to 5.6% (v1.0) to 25.1% (GLM 5.3), 39.3% (DeepSeek V4.1 Flash), 43.4% (Kimi K3), 23.8% (Nemotron 3 Ultra, post-cutoff rulings only) and 49.7% (GPT-6 Sol, post-cutoff rulings only). Even the best result is below 50%, and 10-digit accuracy peaks at 31.7%. The invalid share falls from 87% to 98% (v1.0) to 25% to 33% for four of the five stronger models, but not for GLM 5.3 (67.6%).
+**Stronger models are more accurate, and every model is still wrong about half the time or more at the duty-relevant level.** 8-digit accuracy goes from 0.3% to 5.6% (v1.0) to 25.1% (GLM 5.3), 39.3% (DeepSeek V4.1 Flash), 43.4% (Kimi K3), 23.8% (Nemotron 3 Ultra, post-cutoff rulings only) and 49.7% (GPT-6 Sol, post-cutoff rulings only). The best primary figure (GPT-6 Sol, 167 post-cutoff rulings) is 49.7%, and 10-digit accuracy peaks at 31.7%. On the same 200 rulings (all dates, secondary) the 8-digit ranking is GPT-6 Sol 49.5% (95% CI 42.6% to 56.4%), Kimi K3 37.0% (30.6% to 43.9%), DeepSeek V4.1 Flash 31.0% (25.0% to 37.7%), Nemotron 3 Ultra 29.0% (23.2% to 35.6%), GLM 5.3 21.5% (16.4% to 27.7%), then gpt-oss-120b 7.5%, allam-2-7b 2.0% and gpt-oss-20b 0.5%. GPT-6 Sol is first, but its interval overlaps Kimi K3's slightly (the exploratory paired test gives p = 0.0022), so it is best described as among the most accurate models tested, not clearly the best. The invalid share falls from 87% to 98% (v1.0) to 25% to 33% for four of the five stronger models, but not for GLM 5.3 (67.6%).
 
 On the same 200 rulings, all models compared (all dates, secondary):
 
@@ -553,7 +548,7 @@ Underpay share among rate-changing errors, with Gate B exactly as pre-registered
 
 † contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
-**The underpay lean shrinks and is not universal.** v1.0 models: 65% to 67%. Stronger models: 51% to 60%. Gate B is met for GLM 5.3, Kimi K3 and Nemotron 3 Ultra and is not met for DeepSeek V4.1 Flash and GPT-6 Sol. The intervals for GLM 5.3 and Nemotron 3 Ultra include 50%, and Nemotron's and GPT-6 Sol's n (40 and 41) sit just above the threshold of 30, so a verdict could flip with one case. Median duty at stake per $100,000 for wrong answers is $0 for most strong models because most of their errors stay within a rate class; see the table for the interquartile ranges.
+**The underpay lean shrinks and is not universal.** v1.0 models: 65% to 67%. Stronger models: 51% to 60%. Gate B is met for GLM 5.3, Kimi K3 and Nemotron 3 Ultra and is not met for DeepSeek V4.1 Flash and GPT-6 Sol. The intervals for GLM 5.3 and Nemotron 3 Ultra include 50%, and Nemotron's and GPT-6 Sol's n (40 and 41) sit just above the threshold of 30, so a verdict could flip with one case. Median duty at stake per $100,000 for wrong answers is $0 for most strong models, which means at least half of their comparable wrong answers have no rate difference; see the table for the interquartile ranges. The lean does not beat chance in GPT-6 Sol, the most accurate model on the shared 200 rulings (n = 41 rate-changing errors, so weak evidence), so it may fade as models improve; the lean does beat chance in Kimi K3, the second most accurate.
 
 Holm-corrected sensitivity check of the Gate B p-values (added after the first results were seen; the pre-registered verdicts above are unchanged):
 
