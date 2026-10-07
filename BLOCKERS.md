@@ -59,3 +59,7 @@ specifically to check and stop. Flagged for a future round if wanted.
 **If sign-up were still needed (for reference, not required now):** Google AI Studio
 (aistudio.google.com) — sign in with any Google account, click "Get API key," no card
 required for the free tier (subject to Google's own rate limits, which can change).
+
+## 2026-10-07: GPT-6 Sol requested, but it is a paid model
+
+The user asked mid-run to include "GPT 6 SOL". On OpenRouter it is `openai/gpt-6-sol` (also `gpt-6.1-sol`, `gpt-5.6-sol`), priced at $2 per 1M input and $10 per 1M output tokens, not free. The standing zero-spend rule ("OpenRouter: free variants only; refuse any other ID") overrides other instructions, so it was not called. **Needed to unblock:** an explicit OK to spend, with a cap. Rough size: about 270 input tokens per ruling plus the answer, so 200 rulings cost on the order of $1 and 1,098 rulings on the order of $5 at low reasoning. That is an estimate, not a measurement.
