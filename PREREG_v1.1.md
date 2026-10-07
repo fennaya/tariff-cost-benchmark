@@ -68,6 +68,28 @@ The total number of extra tests run is stated in the write-up. No other tests wi
 - Baseten: free credits only. No payment method is added or requested and the plan is not upgraded. Cost is projected from the pilot's real token use and Baseten's published prices before each full run; any billing, credit, quota, or 402 error stops all Baseten runs at once and the cache is kept.
 - OpenRouter: only `:free` ids with both listed prices "0", checked in code before every run. `GET /api/v1/key` is checked before the first call and after every batch; if `usage` rises above its starting value all OpenRouter calls stop. Pace: one request every 4 seconds; stop cleanly when the daily free-request allowance reaches 0.
 
+## Addendum A: slugs and settings (2026-10-07, before any full run or pilot)
+
+Read from the live APIs, not guessed.
+
+| Model | Provider | Slug | Prices per 1M tokens (in / out) |
+|---|---|---|---|
+| DeepSeek V4.1 Flash | Baseten | `deepseek-ai/DeepSeek-V4.1-Flash` | $0.30 / $1.20 |
+| GLM 5.3 | Baseten | `zai-org/GLM-5.3` | $1.40 / $4.40 |
+| Kimi K3 | Baseten | `moonshotai/Kimi-K3` | $3.00 / $15.00 |
+| Inkling | OpenRouter | `thinkingmachines/inkling:free` | free (prompt and completion "0") |
+
+Baseten prices re-checked at baseten.co/pricing on 2026-10-07 and unchanged. OpenRouter choice: of the 16 free models with both prices "0", the strongest general model from an untested family by the pre-registered ranking is Inkling (Thinking Machines; 975B total, 41B active parameters, general-purpose, created 2026-07-17). The next largest, NVIDIA Nemotron 3 Ultra (550B total, 55B active, created 2026-06-04), is smaller and older. Baseten authentication is `Authorization: Api-Key <key>`.
+
+Reasoning settings accepted (one test call per setting on one ruling; the default for all three at `max_tokens` 2048 was 1,500 to 2,048 reasoning tokens, and GLM 5.3 and Kimi K3 truncated with an empty answer):
+- DeepSeek V4.1 Flash: `reasoning_effort: "none"` (0 reasoning tokens).
+- Kimi K3: `reasoning_effort: "none"` (0 reasoning tokens).
+- GLM 5.3: `thinking: {"type": "disabled"}` (the lowest of four settings tried; it still emitted 112 reasoning tokens on the test ruling, so reasoning cannot be fully turned off for this model).
+- Inkling: tested before its first call and recorded in DECISIONS.md.
+
 ## Deviations
 
-(none yet)
+- **2026-10-07, order of operations.** The one-call-per-model slug and reasoning probes (4 variants for GLM 5.3, 1 to 3 for the others, all on the first usable ruling) were run before Addendum A was committed. No result on any ruling was looked at beyond token counts and whether an answer was produced.
+- **2026-10-07, GPT-6 Sol not run.** The user asked mid-run to include "GPT 6 SOL" among the models. On OpenRouter it is a paid model ($2 in / $10 out per 1M tokens), which the zero-spend rule forbids; it is parked in BLOCKERS.md until explicit permission to spend is given. Nothing was called.
+- **2026-10-07, Gemini 3.8 Flash added.** The user asked to include `gemini-3.8-flash`. It is already running once a day on the 200-ruling sample (free tier, no spend). It enters the analysis only as a model on those 200 rulings, labelled with its n, and the headline tables include it only once all 200 are cached. Its cutoff is March 2026 (published model card). It gets no memorisation probe, to keep its small daily quota for the main run.
+- **2026-10-07, OpenRouter daily allowance.** The pre-registration assumed 50 free requests per day. The live `/key` endpoint reports `free_model_daily_requests.limit` = 1000 (remaining 1000) and `usage` = 0. The pre-registered stop rule ("stop when remaining reaches 0", and "stop if `usage` rises") is unchanged; the full 200 may therefore run on one day.
