@@ -1,6 +1,6 @@
 # v1.1 results (scripts/analyze_v1_1.py)
 
-Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown or after 2026-08-14 the model is labelled "contamination not ruled out" and the primary rows are all its rows. Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. Closed frontier models were not tested. Duty figures are MFN-only lower bounds.
+Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown or after 2026-08-14 the model is labelled "contamination not ruled out" and the primary rows are all its rows. Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. † contamination not ruled out (no stated cutoff); treat this model's accuracy as an upper bound. Closed frontier models were not tested. Duty figures are MFN-only lower bounds.
 
 ## Models and scope
 
@@ -8,10 +8,10 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 |---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | groq | 1098 | 2024-06-01 (https://platform.openai.com/docs/models/gpt-oss-20b) | cutoff 2024-06-01; every ruling is after it | 1098 | low |
 | openai/gpt-oss-120b | groq | 1098 | 2024-06-01 (https://platform.openai.com/docs/models/gpt-oss-120b) | cutoff 2024-06-01; every ruling is after it | 1098 | low |
-| allam-2-7b | groq | 1098 | unknown (not stated on console.groq.com or Hugging Face as of 2026-09-30; treated as latest-possibl) | contamination not ruled out (cutoff unknown) | 1098 | None |
-| deepseek-ai/DeepSeek-V4.1-Flash | baseten | 1098 | unknown (official model card silent as of 2026-10-07 (https://huggingface.co/deepseek-ai/DeepSeek-V) | contamination not ruled out (cutoff unknown) | 1098 | none |
-| zai-org/GLM-5.3 | baseten | 1098 | unknown (official model card silent as of 2026-10-07 (https://huggingface.co/zai-org/GLM-5.3)) | contamination not ruled out (cutoff unknown) | 1098 | thinking disabled (still emits some reasoning tokens) |
-| moonshotai/Kimi-K3 | baseten | 1098 | unknown (official model card silent as of 2026-10-07 (https://huggingface.co/moonshotai/Kimi-K3)) | contamination not ruled out (cutoff unknown) | 1098 | none |
+| allam-2-7b † | groq | 1098 | unknown (not stated on console.groq.com or Hugging Face as of 2026-09-30; treated as latest-possibl) | contamination not ruled out (cutoff unknown) | 1098 | None |
+| deepseek-ai/DeepSeek-V4.1-Flash † | baseten | 1098 | unknown (official model card silent as of 2026-10-07 (https://huggingface.co/deepseek-ai/DeepSeek-V) | contamination not ruled out (cutoff unknown) | 1098 | none |
+| zai-org/GLM-5.3 † | baseten | 1098 | unknown (official model card silent as of 2026-10-07 (https://huggingface.co/zai-org/GLM-5.3)) | contamination not ruled out (cutoff unknown) | 1098 | thinking disabled (still emits some reasoning tokens) |
+| moonshotai/Kimi-K3 † | baseten | 1098 | unknown (official model card silent as of 2026-10-07 (https://huggingface.co/moonshotai/Kimi-K3)) | contamination not ruled out (cutoff unknown) | 1098 | none |
 | nvidia/nemotron-3-ultra-550b-a55b:free | openrouter | 200 | 2026-05-31 (https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 (knowledge cutoff 202) | post-cutoff rulings only (after 2026-05-31) | 105 | none |
 | openai/gpt-6-sol | openrouter | 200 | 2026-04-20 (https://computingforgeeks.com/gpt-6-sol-luna-released-features-benchmarks/ (third-party re) | post-cutoff rulings only (after 2026-04-20) | 167 | none |
 
@@ -21,10 +21,10 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 |---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 1098 | 3.0% (2.1% to 4.2%) | 0.3% (0.1% to 0.8%) | 0.0% (0.0% to 0.3%) | 98.4% (97.4% to 99.0%) | 13.3% (11.4% to 15.4%) | 85.1% (82.8% to 87.0%) |
 | openai/gpt-oss-120b | 1098 | 21.1% (18.8% to 23.6%) | 5.6% (4.3% to 7.1%) | 0.5% (0.3% to 1.2%) | 96.6% (95.4% to 97.5%) | 22.3% (19.9% to 24.9%) | 74.3% (71.7% to 76.8%) |
-| allam-2-7b | 1098 | 4.4% (3.3% to 5.7%) | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) | 6.6% (5.2% to 8.2%) | 80.6% (78.2% to 82.8%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 52.8% (49.9% to 55.8%) | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) | 18.8% (16.6% to 21.2%) | 13.5% (11.6% to 15.6%) |
-| zai-org/GLM-5.3 | 1098 | 45.3% (42.3% to 48.2%) | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) | 28.4% (25.8% to 31.2%) | 39.2% (36.3% to 42.1%) |
-| moonshotai/Kimi-K3 | 1098 | 55.3% (52.3% to 58.2%) | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) | 17.1% (15.0% to 19.5%) | 8.2% (6.7% to 10.0%) |
+| allam-2-7b † | 1098 | 4.4% (3.3% to 5.7%) | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) | 6.6% (5.2% to 8.2%) | 80.6% (78.2% to 82.8%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 52.8% (49.9% to 55.8%) | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) | 18.8% (16.6% to 21.2%) | 13.5% (11.6% to 15.6%) |
+| zai-org/GLM-5.3 † | 1098 | 45.3% (42.3% to 48.2%) | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) | 28.4% (25.8% to 31.2%) | 39.2% (36.3% to 42.1%) |
+| moonshotai/Kimi-K3 † | 1098 | 55.3% (52.3% to 58.2%) | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) | 17.1% (15.0% to 19.5%) | 8.2% (6.7% to 10.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 105 | 36.2% (27.6% to 45.7%) | 23.8% (16.7% to 32.8%) | 14.3% (8.9% to 22.2%) | 33.3% (25.0% to 42.8%) | 19.0% (12.7% to 27.6%) | 14.3% (8.9% to 22.2%) |
 | openai/gpt-6-sol | 167 | 61.7% (54.1% to 68.7%) | 49.7% (42.2% to 57.2%) | 31.7% (25.2% to 39.1%) | 25.7% (19.7% to 32.9%) | 18.6% (13.4% to 25.1%) | 7.2% (4.2% to 12.1%) |
 
@@ -34,10 +34,10 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 |---|---|---|---|---|---|
 | openai/gpt-oss-20b | 1098 | 3.0% (2.1% to 4.2%) | 0.3% (0.1% to 0.8%) | 0.0% (0.0% to 0.3%) | 98.4% (97.4% to 99.0%) |
 | openai/gpt-oss-120b | 1098 | 21.1% (18.8% to 23.6%) | 5.6% (4.3% to 7.1%) | 0.5% (0.3% to 1.2%) | 96.6% (95.4% to 97.5%) |
-| allam-2-7b | 1098 | 4.4% (3.3% to 5.7%) | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 52.8% (49.9% to 55.8%) | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) |
-| zai-org/GLM-5.3 | 1098 | 45.3% (42.3% to 48.2%) | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) |
-| moonshotai/Kimi-K3 | 1098 | 55.3% (52.3% to 58.2%) | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) |
+| allam-2-7b † | 1098 | 4.4% (3.3% to 5.7%) | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 52.8% (49.9% to 55.8%) | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) |
+| zai-org/GLM-5.3 † | 1098 | 45.3% (42.3% to 48.2%) | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) |
+| moonshotai/Kimi-K3 † | 1098 | 55.3% (52.3% to 58.2%) | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 39.5% (33.0% to 46.4%) | 29.0% (23.2% to 35.6%) | 14.0% (9.9% to 19.5%) | 37.5% (31.1% to 44.4%) |
 | openai/gpt-6-sol | 200 | 61.5% (54.6% to 68.0%) | 49.5% (42.6% to 56.4%) | 32.5% (26.4% to 39.3%) | 25.0% (19.5% to 31.4%) |
 
@@ -47,10 +47,10 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 |---|---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 46 | 31 | 67.4% (53.0% to 79.1%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 101 | $0 ($0 to $3,500) |
 | openai/gpt-oss-120b | 49 | 32 | 65.3% (51.3% to 77.1%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 93 | $300 ($0 to $2,500) |
-| allam-2-7b | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 147 | $3,400 ($350 to $6,500) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.9930 | 0.1748 | not distinguishable from chance (Gate B not met) | 657 | $0 ($0 to $2,900) |
-| zai-org/GLM-5.3 | 212 | 118 | 55.7% (48.9% to 62.2%) | 0.8322 | 0.0060 | underpays more than chance (Gate B met) | 483 | $0 ($0 to $2,800) |
-| moonshotai/Kimi-K3 | 311 | 184 | 59.2% (53.6% to 64.5%) | 0.4496 | 0.0040 | underpays more than chance (Gate B met) | 673 | $0 ($0 to $2,800) |
+| allam-2-7b † | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 147 | $3,400 ($350 to $6,500) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.9930 | 0.1748 | not distinguishable from chance (Gate B not met) | 657 | $0 ($0 to $2,900) |
+| zai-org/GLM-5.3 † | 212 | 118 | 55.7% (48.9% to 62.2%) | 0.8322 | 0.0060 | underpays more than chance (Gate B met) | 483 | $0 ($0 to $2,800) |
+| moonshotai/Kimi-K3 † | 311 | 184 | 59.2% (53.6% to 64.5%) | 0.4496 | 0.0040 | underpays more than chance (Gate B met) | 673 | $0 ($0 to $2,800) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 40 | 24 | 60.0% (44.6% to 73.7%) | 0.2987 | 0.0070 | underpays more than chance (Gate B met) | 73 | $1,300 ($0 to $4,400) |
 | openai/gpt-6-sol | 41 | 21 | 51.2% (36.5% to 65.7%) | 0.8252 | 0.1139 | not distinguishable from chance (Gate B not met) | 97 | $0 ($0 to $3,600) |
 
@@ -73,12 +73,44 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 |---|---|---|---|---|---|
 | openai/gpt-oss-20b | 200 | 1.5% (0.5% to 4.3%) | 0.5% (0.1% to 2.8%) | 0.0% (0.0% to 1.9%) | 98.0% (95.0% to 99.2%) |
 | openai/gpt-oss-120b | 200 | 18.0% (13.3% to 23.9%) | 7.5% (4.6% to 12.0%) | 0.5% (0.1% to 2.8%) | 97.5% (94.3% to 98.9%) |
-| allam-2-7b | 200 | 3.5% (1.7% to 7.0%) | 2.0% (0.8% to 5.0%) | 0.5% (0.1% to 2.8%) | 89.5% (84.5% to 93.0%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 200 | 43.0% (36.3% to 49.9%) | 31.0% (25.0% to 37.7%) | 18.0% (13.3% to 23.9%) | 32.5% (26.4% to 39.3%) |
-| zai-org/GLM-5.3 | 200 | 40.5% (33.9% to 47.4%) | 21.5% (16.4% to 27.7%) | 8.0% (5.0% to 12.6%) | 63.0% (56.1% to 69.4%) |
-| moonshotai/Kimi-K3 | 200 | 49.0% (42.2% to 55.9%) | 37.0% (30.6% to 43.9%) | 25.0% (19.5% to 31.4%) | 26.5% (20.9% to 33.0%) |
+| allam-2-7b † | 200 | 3.5% (1.7% to 7.0%) | 2.0% (0.8% to 5.0%) | 0.5% (0.1% to 2.8%) | 89.5% (84.5% to 93.0%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 200 | 43.0% (36.3% to 49.9%) | 31.0% (25.0% to 37.7%) | 18.0% (13.3% to 23.9%) | 32.5% (26.4% to 39.3%) |
+| zai-org/GLM-5.3 † | 200 | 40.5% (33.9% to 47.4%) | 21.5% (16.4% to 27.7%) | 8.0% (5.0% to 12.6%) | 63.0% (56.1% to 69.4%) |
+| moonshotai/Kimi-K3 † | 200 | 49.0% (42.2% to 55.9%) | 37.0% (30.6% to 43.9%) | 25.0% (19.5% to 31.4%) | 26.5% (20.9% to 33.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 39.5% (33.0% to 46.4%) | 29.0% (23.2% to 35.6%) | 14.0% (9.9% to 19.5%) | 37.5% (31.1% to 44.4%) |
 | openai/gpt-6-sol | 200 | 61.5% (54.6% to 68.0%) | 49.5% (42.6% to 56.4%) | 32.5% (26.4% to 39.3%) | 25.0% (19.5% to 31.4%) |
+
+## Same-sample table: all 8 models on the same 200 rulings (data/gemini_subset.csv; all dates, secondary)
+
+The 200 rulings are dated 2026-04 to 2026-08. Models with a cutoff inside that window (Nemotron 3 Ultra, GPT-6 Sol) are scored here on all 200, including rulings before their cutoff. FORMAT / INVENTED is the split of each model's invalid answers on these rulings (groups in review/format_vs_invention.md). Underpay uses the rate-changing errors among these 200 only, so n is small; the share is shown with its Wilson 95% CI and is not a Gate B test.
+
+| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |
+|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 200 | 0.5% (0.1% to 2.8%) | 98.0% (95.0% to 99.2%) | 29 / 167 (15% / 85%) | 70.0% (39.7% to 89.2%), n = 10 |
+| openai/gpt-oss-120b | 200 | 7.5% (4.6% to 12.0%) | 97.5% (94.3% to 98.9%) | 48 / 147 (25% / 75%) | 62.5% (30.6% to 86.3%), n = 8 |
+| allam-2-7b † | 200 | 2.0% (0.8% to 5.0%) | 89.5% (84.5% to 93.0%) | 17 / 162 (9% / 91%) | 56.5% (36.8% to 74.4%), n = 23 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 200 | 31.0% (25.0% to 37.7%) | 32.5% (26.4% to 39.3%) | 34 / 31 (52% / 48%) | 47.7% (36.0% to 59.6%), n = 65 |
+| zai-org/GLM-5.3 † | 200 | 21.5% (16.4% to 27.7%) | 63.0% (56.1% to 69.4%) | 56 / 70 (44% / 56%) | 45.1% (32.3% to 58.6%), n = 51 |
+| moonshotai/Kimi-K3 † | 200 | 37.0% (30.6% to 43.9%) | 26.5% (20.9% to 33.0%) | 33 / 20 (62% / 38%) | 50.0% (37.5% to 62.5%), n = 58 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 29.0% (23.2% to 35.6%) | 37.5% (31.1% to 44.4%) | 50 / 25 (67% / 33%) | 51.5% (39.7% to 63.2%), n = 66 |
+| openai/gpt-6-sol | 200 | 49.5% (42.6% to 56.4%) | 25.0% (19.5% to 31.4%) | 37 / 13 (74% / 26%) | 53.1% (39.4% to 66.3%), n = 49 |
+
+## Sensitivity: Holm correction of the Gate B p-values across all models
+
+Added after the first results were seen, as a sensitivity check; the pre-registered verdicts above are not changed. The p-values are the permutation p-values against Baseline 2 on each model's primary rows (the floor of 1,000 simulations is 1/1001 = 0.000999). Holm step-down adjustment over all models; a model still needs n >= 30 rate-changing errors.
+
+| Model | n | p vs Baseline 2 | Holm-adjusted p | Gate B as pre-registered | Verdict under Holm | Changed? |
+|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 46 | < 0.001 | 0.0080 | met | met | no |
+| openai/gpt-oss-120b | 49 | < 0.001 | 0.0080 | met | met | no |
+| allam-2-7b † | 116 | < 0.001 | 0.0080 | met | met | no |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 324 | 0.1748 | 0.2278 | not met | not met | no |
+| zai-org/GLM-5.3 † | 212 | 0.0060 | 0.0240 | met | met | no |
+| moonshotai/Kimi-K3 † | 311 | 0.0040 | 0.0200 | met | met | no |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 40 | 0.0070 | 0.0240 | met | met | no |
+| openai/gpt-6-sol | 41 | 0.1139 | 0.2278 | not met | not met | no |
+
+Verdicts that change under Holm: none.
 
 ## Contamination check A: memorisation probe (ruling number only, no description)
 
@@ -88,10 +120,10 @@ Question asked: "What 10-digit HTSUS code did CBP assign in ruling <number>? Rep
 |---|---|---|---|---|---|
 | openai/gpt-oss-20b | 0 | not run | not run | not run | |
 | openai/gpt-oss-120b | 0 | not run | not run | not run | |
-| allam-2-7b | 0 | not run | not run | not run | |
-| deepseek-ai/DeepSeek-V4.1-Flash | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 96 |
-| zai-org/GLM-5.3 | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 95 |
-| moonshotai/Kimi-K3 | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0 |
+| allam-2-7b † | 0 | not run | not run | not run | |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 96 |
+| zai-org/GLM-5.3 † | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 95 |
+| moonshotai/Kimi-K3 † | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 25 | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0 |
 | openai/gpt-6-sol | 25 | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0 |
 
@@ -101,10 +133,10 @@ Question asked: "What 10-digit HTSUS code did CBP assign in ruling <number>? Rep
 |---|---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 0/148 (0%) | 0/121 (0%) | 0/168 (0%) | 1/175 (1%) | 2/137 (1%) | 0/121 (0%) | 0/144 (0%) | 0/84 (0%) |
 | openai/gpt-oss-120b | 8/148 (5%) | 3/121 (2%) | 13/168 (8%) | 16/175 (9%) | 5/137 (4%) | 7/121 (6%) | 6/144 (4%) | 3/84 (4%) |
-| allam-2-7b | 6/148 (4%) | 7/121 (6%) | 3/168 (2%) | 3/175 (2%) | 0/137 (0%) | 3/121 (2%) | 4/144 (3%) | 0/84 (0%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 71/148 (48%) | 61/121 (50%) | 59/168 (35%) | 76/175 (43%) | 40/137 (29%) | 45/121 (37%) | 45/144 (31%) | 34/84 (40%) |
-| zai-org/GLM-5.3 | 42/148 (28%) | 46/121 (38%) | 48/168 (29%) | 43/175 (25%) | 25/137 (18%) | 28/121 (23%) | 28/144 (19%) | 16/84 (19%) |
-| moonshotai/Kimi-K3 | 79/148 (53%) | 63/121 (52%) | 75/168 (45%) | 83/175 (47%) | 49/137 (36%) | 39/121 (32%) | 47/144 (33%) | 42/84 (50%) |
+| allam-2-7b † | 6/148 (4%) | 7/121 (6%) | 3/168 (2%) | 3/175 (2%) | 0/137 (0%) | 3/121 (2%) | 4/144 (3%) | 0/84 (0%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 71/148 (48%) | 61/121 (50%) | 59/168 (35%) | 76/175 (43%) | 40/137 (29%) | 45/121 (37%) | 45/144 (31%) | 34/84 (40%) |
+| zai-org/GLM-5.3 † | 42/148 (28%) | 46/121 (38%) | 48/168 (29%) | 43/175 (25%) | 25/137 (18%) | 28/121 (23%) | 28/144 (19%) | 16/84 (19%) |
+| moonshotai/Kimi-K3 † | 79/148 (53%) | 63/121 (52%) | 75/168 (45%) | 83/175 (47%) | 49/137 (36%) | 39/121 (32%) | 47/144 (33%) | 42/84 (50%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 0/0 | 0/0 | 0/0 | 24/45 (53%) | 9/50 (18%) | 11/37 (30%) | 7/40 (18%) | 7/28 (25%) |
 | openai/gpt-6-sol | 0/0 | 0/0 | 0/0 | 25/45 (56%) | 19/50 (38%) | 22/37 (59%) | 18/40 (45%) | 15/28 (54%) |
 
@@ -127,58 +159,58 @@ Exact binomial test on discordant pairs, on the rulings both models ran. b = fir
 |---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | openai/gpt-oss-120b | 1098 | 6 | 15 | 214 | < 0.0001 |
 | openai/gpt-oss-20b | openai/gpt-oss-120b | 1098 | 8 | 1 | 59 | < 0.0001 |
-| openai/gpt-oss-20b | allam-2-7b | 1098 | 6 | 28 | 43 | 0.0959 |
-| openai/gpt-oss-20b | allam-2-7b | 1098 | 8 | 3 | 26 | < 0.0001 |
-| openai/gpt-oss-20b | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 6 | 10 | 557 | < 0.0001 |
-| openai/gpt-oss-20b | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 8 | 1 | 429 | < 0.0001 |
-| openai/gpt-oss-20b | zai-org/GLM-5.3 | 1098 | 6 | 12 | 476 | < 0.0001 |
-| openai/gpt-oss-20b | zai-org/GLM-5.3 | 1098 | 8 | 1 | 274 | < 0.0001 |
-| openai/gpt-oss-20b | moonshotai/Kimi-K3 | 1098 | 6 | 8 | 582 | < 0.0001 |
-| openai/gpt-oss-20b | moonshotai/Kimi-K3 | 1098 | 8 | 1 | 475 | < 0.0001 |
+| openai/gpt-oss-20b | allam-2-7b † | 1098 | 6 | 28 | 43 | 0.0959 |
+| openai/gpt-oss-20b | allam-2-7b † | 1098 | 8 | 3 | 26 | < 0.0001 |
+| openai/gpt-oss-20b | deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 6 | 10 | 557 | < 0.0001 |
+| openai/gpt-oss-20b | deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 8 | 1 | 429 | < 0.0001 |
+| openai/gpt-oss-20b | zai-org/GLM-5.3 † | 1098 | 6 | 12 | 476 | < 0.0001 |
+| openai/gpt-oss-20b | zai-org/GLM-5.3 † | 1098 | 8 | 1 | 274 | < 0.0001 |
+| openai/gpt-oss-20b | moonshotai/Kimi-K3 † | 1098 | 6 | 8 | 582 | < 0.0001 |
+| openai/gpt-oss-20b | moonshotai/Kimi-K3 † | 1098 | 8 | 1 | 475 | < 0.0001 |
 | openai/gpt-oss-20b | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 1 | 77 | < 0.0001 |
 | openai/gpt-oss-20b | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 1 | 58 | < 0.0001 |
 | openai/gpt-oss-20b | openai/gpt-6-sol | 200 | 6 | 2 | 122 | < 0.0001 |
 | openai/gpt-oss-20b | openai/gpt-6-sol | 200 | 8 | 1 | 99 | < 0.0001 |
-| openai/gpt-oss-120b | allam-2-7b | 1098 | 6 | 207 | 23 | < 0.0001 |
-| openai/gpt-oss-120b | allam-2-7b | 1098 | 8 | 60 | 25 | 0.0002 |
-| openai/gpt-oss-120b | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 6 | 44 | 392 | < 0.0001 |
-| openai/gpt-oss-120b | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 8 | 17 | 387 | < 0.0001 |
-| openai/gpt-oss-120b | zai-org/GLM-5.3 | 1098 | 6 | 60 | 325 | < 0.0001 |
-| openai/gpt-oss-120b | zai-org/GLM-5.3 | 1098 | 8 | 17 | 232 | < 0.0001 |
-| openai/gpt-oss-120b | moonshotai/Kimi-K3 | 1098 | 6 | 33 | 408 | < 0.0001 |
-| openai/gpt-oss-120b | moonshotai/Kimi-K3 | 1098 | 8 | 15 | 431 | < 0.0001 |
+| openai/gpt-oss-120b | allam-2-7b † | 1098 | 6 | 207 | 23 | < 0.0001 |
+| openai/gpt-oss-120b | allam-2-7b † | 1098 | 8 | 60 | 25 | 0.0002 |
+| openai/gpt-oss-120b | deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 6 | 44 | 392 | < 0.0001 |
+| openai/gpt-oss-120b | deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 8 | 17 | 387 | < 0.0001 |
+| openai/gpt-oss-120b | zai-org/GLM-5.3 † | 1098 | 6 | 60 | 325 | < 0.0001 |
+| openai/gpt-oss-120b | zai-org/GLM-5.3 † | 1098 | 8 | 17 | 232 | < 0.0001 |
+| openai/gpt-oss-120b | moonshotai/Kimi-K3 † | 1098 | 6 | 33 | 408 | < 0.0001 |
+| openai/gpt-oss-120b | moonshotai/Kimi-K3 † | 1098 | 8 | 15 | 431 | < 0.0001 |
 | openai/gpt-oss-120b | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 7 | 50 | < 0.0001 |
 | openai/gpt-oss-120b | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 2 | 45 | < 0.0001 |
 | openai/gpt-oss-120b | openai/gpt-6-sol | 200 | 6 | 4 | 91 | < 0.0001 |
 | openai/gpt-oss-120b | openai/gpt-6-sol | 200 | 8 | 1 | 85 | < 0.0001 |
-| allam-2-7b | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 6 | 13 | 545 | < 0.0001 |
-| allam-2-7b | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 8 | 5 | 410 | < 0.0001 |
-| allam-2-7b | zai-org/GLM-5.3 | 1098 | 6 | 16 | 465 | < 0.0001 |
-| allam-2-7b | zai-org/GLM-5.3 | 1098 | 8 | 8 | 258 | < 0.0001 |
-| allam-2-7b | moonshotai/Kimi-K3 | 1098 | 6 | 12 | 571 | < 0.0001 |
-| allam-2-7b | moonshotai/Kimi-K3 | 1098 | 8 | 5 | 456 | < 0.0001 |
-| allam-2-7b | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 1 | 73 | < 0.0001 |
-| allam-2-7b | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 2 | 56 | < 0.0001 |
-| allam-2-7b | openai/gpt-6-sol | 200 | 6 | 0 | 116 | < 0.0001 |
-| allam-2-7b | openai/gpt-6-sol | 200 | 8 | 1 | 96 | < 0.0001 |
-| deepseek-ai/DeepSeek-V4.1-Flash | zai-org/GLM-5.3 | 1098 | 6 | 211 | 128 | < 0.0001 |
-| deepseek-ai/DeepSeek-V4.1-Flash | zai-org/GLM-5.3 | 1098 | 8 | 243 | 88 | < 0.0001 |
-| deepseek-ai/DeepSeek-V4.1-Flash | moonshotai/Kimi-K3 | 1098 | 6 | 102 | 129 | 0.0869 |
-| deepseek-ai/DeepSeek-V4.1-Flash | moonshotai/Kimi-K3 | 1098 | 8 | 88 | 134 | 0.0024 |
-| deepseek-ai/DeepSeek-V4.1-Flash | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 24 | 17 | 0.3489 |
-| deepseek-ai/DeepSeek-V4.1-Flash | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 23 | 19 | 0.6440 |
-| deepseek-ai/DeepSeek-V4.1-Flash | openai/gpt-6-sol | 200 | 6 | 13 | 50 | < 0.0001 |
-| deepseek-ai/DeepSeek-V4.1-Flash | openai/gpt-6-sol | 200 | 8 | 13 | 50 | < 0.0001 |
-| zai-org/GLM-5.3 | moonshotai/Kimi-K3 | 1098 | 6 | 100 | 210 | < 0.0001 |
-| zai-org/GLM-5.3 | moonshotai/Kimi-K3 | 1098 | 8 | 57 | 258 | < 0.0001 |
-| zai-org/GLM-5.3 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 24 | 22 | 0.8830 |
-| zai-org/GLM-5.3 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 16 | 31 | 0.0400 |
-| zai-org/GLM-5.3 | openai/gpt-6-sol | 200 | 6 | 17 | 59 | < 0.0001 |
-| zai-org/GLM-5.3 | openai/gpt-6-sol | 200 | 8 | 9 | 65 | < 0.0001 |
-| moonshotai/Kimi-K3 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 36 | 17 | 0.0127 |
-| moonshotai/Kimi-K3 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 33 | 17 | 0.0328 |
-| moonshotai/Kimi-K3 | openai/gpt-6-sol | 200 | 6 | 16 | 41 | 0.0013 |
-| moonshotai/Kimi-K3 | openai/gpt-6-sol | 200 | 8 | 19 | 44 | 0.0022 |
+| allam-2-7b † | deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 6 | 13 | 545 | < 0.0001 |
+| allam-2-7b † | deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 8 | 5 | 410 | < 0.0001 |
+| allam-2-7b † | zai-org/GLM-5.3 † | 1098 | 6 | 16 | 465 | < 0.0001 |
+| allam-2-7b † | zai-org/GLM-5.3 † | 1098 | 8 | 8 | 258 | < 0.0001 |
+| allam-2-7b † | moonshotai/Kimi-K3 † | 1098 | 6 | 12 | 571 | < 0.0001 |
+| allam-2-7b † | moonshotai/Kimi-K3 † | 1098 | 8 | 5 | 456 | < 0.0001 |
+| allam-2-7b † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 1 | 73 | < 0.0001 |
+| allam-2-7b † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 2 | 56 | < 0.0001 |
+| allam-2-7b † | openai/gpt-6-sol | 200 | 6 | 0 | 116 | < 0.0001 |
+| allam-2-7b † | openai/gpt-6-sol | 200 | 8 | 1 | 96 | < 0.0001 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | zai-org/GLM-5.3 † | 1098 | 6 | 211 | 128 | < 0.0001 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | zai-org/GLM-5.3 † | 1098 | 8 | 243 | 88 | < 0.0001 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | moonshotai/Kimi-K3 † | 1098 | 6 | 102 | 129 | 0.0869 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | moonshotai/Kimi-K3 † | 1098 | 8 | 88 | 134 | 0.0024 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 24 | 17 | 0.3489 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 23 | 19 | 0.6440 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | openai/gpt-6-sol | 200 | 6 | 13 | 50 | < 0.0001 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | openai/gpt-6-sol | 200 | 8 | 13 | 50 | < 0.0001 |
+| zai-org/GLM-5.3 † | moonshotai/Kimi-K3 † | 1098 | 6 | 100 | 210 | < 0.0001 |
+| zai-org/GLM-5.3 † | moonshotai/Kimi-K3 † | 1098 | 8 | 57 | 258 | < 0.0001 |
+| zai-org/GLM-5.3 † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 24 | 22 | 0.8830 |
+| zai-org/GLM-5.3 † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 16 | 31 | 0.0400 |
+| zai-org/GLM-5.3 † | openai/gpt-6-sol | 200 | 6 | 17 | 59 | < 0.0001 |
+| zai-org/GLM-5.3 † | openai/gpt-6-sol | 200 | 8 | 9 | 65 | < 0.0001 |
+| moonshotai/Kimi-K3 † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 6 | 36 | 17 | 0.0127 |
+| moonshotai/Kimi-K3 † | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 8 | 33 | 17 | 0.0328 |
+| moonshotai/Kimi-K3 † | openai/gpt-6-sol | 200 | 6 | 16 | 41 | 0.0013 |
+| moonshotai/Kimi-K3 † | openai/gpt-6-sol | 200 | 8 | 19 | 44 | 0.0022 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | openai/gpt-6-sol | 200 | 6 | 14 | 58 | < 0.0001 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | openai/gpt-6-sol | 200 | 8 | 14 | 55 | < 0.0001 |
 
@@ -186,10 +218,10 @@ Exact binomial test on discordant pairs, on the rulings both models ran. b = fir
 |---|---|---|---|---|
 | openai/gpt-oss-20b | 1098 | 20.0% (17.8% to 22.5%) | 1098 | 20.0% (17.8% to 22.5%) |
 | openai/gpt-oss-120b | 1098 | 45.1% (42.2% to 48.0%) | 1092 | 44.8% (41.9% to 47.7%) |
-| allam-2-7b | 1098 | 9.7% (8.1% to 11.6%) | 1079 | 8.2% (6.7% to 9.9%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 67.7% (64.8% to 70.4%) | 823 | 56.9% (53.5% to 60.2%) |
-| zai-org/GLM-5.3 | 1098 | 63.8% (61.0% to 66.6%) | 962 | 58.7% (55.6% to 61.8%) |
-| moonshotai/Kimi-K3 | 1098 | 70.0% (67.3% to 72.7%) | 786 | 58.1% (54.7% to 61.5%) |
+| allam-2-7b † | 1098 | 9.7% (8.1% to 11.6%) | 1079 | 8.2% (6.7% to 9.9%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 67.7% (64.8% to 70.4%) | 823 | 56.9% (53.5% to 60.2%) |
+| zai-org/GLM-5.3 † | 1098 | 63.8% (61.0% to 66.6%) | 962 | 58.7% (55.6% to 61.8%) |
+| moonshotai/Kimi-K3 † | 1098 | 70.0% (67.3% to 72.7%) | 786 | 58.1% (54.7% to 61.5%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 58.5% (51.6% to 65.1%) | 172 | 51.7% (44.3% to 59.1%) |
 | openai/gpt-6-sol | 200 | 73.5% (67.0% to 79.1%) | 135 | 60.7% (52.3% to 68.6%) |
 
@@ -210,10 +242,10 @@ For answers whose first 8 digits exist in the HTS, both the answer and the true 
 |---|---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 164 | 77 | 55 | 71.4% (60.5% to 80.3%) | 0.0140 | underpays more than chance | 46 | +31 |
 | openai/gpt-oss-120b | 281 | 141 | 81 | 57.4% (49.2% to 65.3%) | 0.7962 | not distinguishable from chance | 49 | +92 |
-| allam-2-7b | 205 | 133 | 80 | 60.2% (51.7% to 68.1%) | 0.1219 | not distinguishable from chance | 116 | +17 |
-| deepseek-ai/DeepSeek-V4.1-Flash | 949 | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.8092 | not distinguishable from chance | 324 | +0 |
-| zai-org/GLM-5.3 | 641 | 217 | 121 | 55.8% (49.1% to 62.2%) | 0.7083 | not distinguishable from chance | 212 | +5 |
-| moonshotai/Kimi-K3 | 1008 | 312 | 185 | 59.3% (53.8% to 64.6%) | 0.3377 | not distinguishable from chance | 311 | +1 |
+| allam-2-7b † | 205 | 133 | 80 | 60.2% (51.7% to 68.1%) | 0.1219 | not distinguishable from chance | 116 | +17 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 949 | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.8092 | not distinguishable from chance | 324 | +0 |
+| zai-org/GLM-5.3 † | 641 | 217 | 121 | 55.8% (49.1% to 62.2%) | 0.7083 | not distinguishable from chance | 212 | +5 |
+| moonshotai/Kimi-K3 † | 1008 | 312 | 185 | 59.3% (53.8% to 64.6%) | 0.3377 | not distinguishable from chance | 311 | +1 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 90 | 40 | 24 | 60.0% (44.6% to 73.7%) | 0.5764 | not distinguishable from chance | 40 | +0 |
 | openai/gpt-6-sol | 154 | 41 | 21 | 51.2% (36.5% to 65.7%) | 0.4515 | not distinguishable from chance | 41 | +0 |
 
@@ -227,10 +259,10 @@ See review/biggest_misses.md (10 largest underpayments and overpayments across a
 |---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 1098 | 324 | 202 | 0.3 | {'stop': 1098} | free tier |
 | openai/gpt-oss-120b | 1098 | 324 | 180 | 0.4 | {'stop': 1098} | free tier |
-| allam-2-7b | 1098 | 304 | 78 | 0.1 | {'stop': 1098} | free tier |
-| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 260 | 65 | 1.3 | {'stop': 1098} | $0.16 |
-| zai-org/GLM-5.3 | 1098 | 270 | 180 | 2.8 | {'stop': 1097, 'length': 1} | $1.17 |
-| moonshotai/Kimi-K3 | 1098 | 272 | 65 | 9.0 | {'stop': 1098} | $1.79 |
+| allam-2-7b † | 1098 | 304 | 78 | 0.1 | {'stop': 1098} | free tier |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 260 | 65 | 1.3 | {'stop': 1098} | $0.16 |
+| zai-org/GLM-5.3 † | 1098 | 270 | 180 | 2.8 | {'stop': 1097, 'length': 1} | $1.17 |
+| moonshotai/Kimi-K3 † | 1098 | 272 | 65 | 9.0 | {'stop': 1098} | $1.79 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 281 | 74 | 4.8 | {'stop': 200} | free tier |
 | openai/gpt-6-sol | 200 | 258 | 48 | 2.0 | {'stop': 200} | $0.99 |
 

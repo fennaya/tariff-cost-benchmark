@@ -14,6 +14,13 @@ import matplotlib.pyplot as plt
 ROOT = Path(__file__).resolve().parent.parent
 data = json.loads((ROOT / "review" / "invalid_breakdown.json").read_text(encoding="utf-8"))
 ORDER = list(data)
+from datetime import date
+UNKNOWN = set()
+for _m in json.loads((ROOT / "config.json").read_text(encoding="utf-8"))["models"]:
+    try:
+        date.fromisoformat(_m.get("training_cutoff", "unknown"))
+    except ValueError:
+        UNKNOWN.add(_m["model_id"])
 SERIES = [  # key, label, color (reference categorical slots 1-7, in order)
     ("correct", "Correct", "#2a78d6"),
     ("wrong_valid", "Wrong, valid code", "#eb6834"),
@@ -39,7 +46,7 @@ for i, m in enumerate(ORDER):
                 ax.text(left + v / 2, i, f"{v:.1f}%", ha="center", va="center", fontsize=9, color=INK)
             left += v
 ax.set_yticks(range(len(ORDER)))
-ax.set_yticklabels([f"{m}\n(n = {data[m]['n']:,})" for m in ORDER], fontsize=10, color=INK)
+ax.set_yticklabels([f"{m}{' †' if m in UNKNOWN else ''}\n(n = {data[m]['n']:,})" for m in ORDER], fontsize=9, color=INK)
 ax.invert_yaxis()
 ax.set_xlim(0, 100)
 ax.set_xlabel("Share of all answers (%)", fontsize=10, color=MUTED)
@@ -54,6 +61,7 @@ handles = [Patch(facecolor=c, edgecolor=SURFACE, label=l) for _, l, c in SERIES]
 ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=4, frameon=False, fontsize=9,
           labelcolor=INK, handlelength=1.2, columnspacing=1.4)
 fig.tight_layout()
+fig.text(0.01, 0.005, "† contamination not ruled out (no stated cutoff); treat accuracy as an upper bound.", fontsize=8, color=MUTED)
 out = ROOT / "figures" / "error_breakdown.png"
 out.parent.mkdir(exist_ok=True)
 fig.savefig(out, facecolor=SURFACE)
