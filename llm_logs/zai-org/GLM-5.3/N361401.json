@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361401",
+  "rulingDate": "2026-05-22T00:00:00",
+  "true_code": "9505906000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-097aa35bfa74425a9651584e126fd30c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"6104.63.8011\", \"reason\": \"Pull-on pants of knit synthetic fibers are classified as women's trousers under heading 6104, with the scarf (6214) treated as a separate item; the pants code is given as the primary article.\"}",
+          "role": "assistant",
+          "reasoning_content": "Ambiguous product; likely apparel set? Pull-on pants: 6104.63 if knit synthetic women's... Scarf 6214. Multiple items \u2014 pick pants? \"pull-on pants and a thin rectangular disco-style scarf\" \u2014 perhaps a set? Respond with pants code 6203.43... I'll choose 6104.63.8011? Safer: 6203.42.0520? Give 6104.63.8011 women's knit synthetic trousers."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333664,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 105,
+      "completion_tokens": 177,
+      "total_tokens": 282,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 113,
+        "audio_tokens": 0,
+        "reasoning_tokens": 109,
+        "rejected_prediction_tokens": 212
+      }
+    }
+  },
+  "predicted_code": "6104638011",
+  "predicted_reason": "Pull-on pants of knit synthetic fibers are classified as women's trousers under heading 6104, with the scarf (6214) treated as a separate item; the pants code is given as the primary article.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 105,
+    "completion_tokens": 177,
+    "total_tokens": 282,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 113,
+      "audio_tokens": 0,
+      "reasoning_tokens": 109,
+      "rejected_prediction_tokens": 212
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:41:03.934647+00:00",
+  "latency_s": 2.936,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

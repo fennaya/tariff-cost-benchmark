@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358622",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "6402998031",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-2576c2799e844a899b7115fc45ba6b0f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"6402.99.31\", \"reason\": \"Men's non-athletic closed footwear with rubber/plastics upper and outer sole, valued over $3.00/pair, having a foxing-like band, is classified in HTSUS 6402.99.31.\"}",
+          "role": "assistant",
+          "reasoning_content": "Rubber/plastics upper and sole, foxing-like band, over $3/pair \u2192 6402.99. Men's, not athletic... 6402.99.31? That's footwear with open toes... Actually 6402.99.31: covering the ankle but not over 90% rubber... Let me recall: 6402.99.30 covering ankle or below, over $3, not sports, foxing-like band? 6402.99.31 is \"other, covering the ankle\"? Common ruling: 6402.99.31 for sneakers with foxing-like band over $3. Actually 6402.99.31: \"Other footwear, covering the ankle... over $3/pair\"? I'll go 6402.99.31."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333353,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 260,
+      "completion_tokens": 241,
+      "total_tokens": 501,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 157,
+        "audio_tokens": 0,
+        "reasoning_tokens": 172,
+        "rejected_prediction_tokens": 263
+      }
+    }
+  },
+  "predicted_code": "64029931",
+  "predicted_reason": "Men's non-athletic closed footwear with rubber/plastics upper and outer sole, valued over $3.00/pair, having a foxing-like band, is classified in HTSUS 6402.99.31.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 241,
+    "total_tokens": 501,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 157,
+      "audio_tokens": 0,
+      "reasoning_tokens": 172,
+      "rejected_prediction_tokens": 263
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:52.915065+00:00",
+  "latency_s": 3.691,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

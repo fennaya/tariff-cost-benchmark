@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360725",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "7607205000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-056b8ef20ab94163890d5b0e7dfb2563",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3921.90.4090\", \"reason\": \"The polyethylene core provides the essential character of this composite panel, making it a plastic sheet/plate combined with aluminum foil material, classified in HTSUS subheading 3921.90.4090 (other plates, sheets, film, foil and strip of plastics, other, other).\"}",
+          "role": "assistant",
+          "reasoning_content": "Composite panel of polyethylene with aluminum foil \u2014 likely 3921 (plastic sheet/foil combined with textile or other material)? Aluminum foil laminated plastic \u2014 classified as plastic sheet in 3921.90? Actually composite panels with aluminum faces and PE core are typically classified 7606 (aluminum sheet) if aluminum gives essential character... For signage \"Alupanel\" \u2014 CBEC rulings classify aluminum composite panels under 7606.12 or 3926? Common ruling: aluminum composite panel (aluminum skins, PE core) classified 7606.12. But here aluminum foil 0.15mm both sides, PE 1.7mm core \u2014 plastic predominates by weight? Aluminum density 2.7, thickness 0.3 total \u2192 weight ~0.81 g/cm\u00b2\u00b7... PE 1.7mm\u00d70.92=1.56; Al 0.3\u00d72.7=0.81. Plastic heavier. But essential character for signage panels\u2014aluminum provides surface. Rulings (NY N266344?) classified similar as 3921.90? Hmm. I'll go 3921.12? 3921 covers cellular plastic combined... Actually 3921: plates/sheets of plastics combined with textile or other materials. Aluminum foil laminated to plastic \u2192 3921.90.40? Choose 3921.90.4090? Safer: 3921.90.4090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333592,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 140,
+      "completion_tokens": 401,
+      "total_tokens": 541,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 246,
+        "audio_tokens": 0,
+        "reasoning_tokens": 315,
+        "rejected_prediction_tokens": 534
+      }
+    }
+  },
+  "predicted_code": "3921904090",
+  "predicted_reason": "The polyethylene core provides the essential character of this composite panel, making it a plastic sheet/plate combined with aluminum foil material, classified in HTSUS subheading 3921.90.4090 (other plates, sheets, film, foil and strip of plastics, other, other).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 140,
+    "completion_tokens": 401,
+    "total_tokens": 541,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 246,
+      "audio_tokens": 0,
+      "reasoning_tokens": 315,
+      "rejected_prediction_tokens": 534
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:52.436068+00:00",
+  "latency_s": 4.057,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

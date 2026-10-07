@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363472",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "7613000000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d084675dfb594cdfba4779ca63b96c6d",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7613.00.0030\", \"reason\": \"Composite-overwrapped pressure vessels with an aluminum liner are classified as aluminum containers for compressed gas per CBP rulings, since the aluminum liner provides the essential character.\"}",
+          "role": "assistant",
+          "reasoning_content": "COPV composite cylinders \u2014 likely 7311 (steel? no, aluminum liner) \u2014 composite pressure vessels classified under 7311.00.00? Aluminum liner suggests 7613 (aluminum containers for compressed gas). CBP rulings classify composite cylinders with aluminum liner under 7613.00.0030? Actually 7613.00.0030: containers for compressed air, aluminum. Use 7613.00.0030."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333867,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 169,
+      "completion_tokens": 155,
+      "total_tokens": 324,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 103,
+        "audio_tokens": 0,
+        "reasoning_tokens": 99,
+        "rejected_prediction_tokens": 152
+      }
+    }
+  },
+  "predicted_code": "7613000030",
+  "predicted_reason": "Composite-overwrapped pressure vessels with an aluminum liner are classified as aluminum containers for compressed gas per CBP rulings, since the aluminum liner provides the essential character.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 169,
+    "completion_tokens": 155,
+    "total_tokens": 324,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 103,
+      "audio_tokens": 0,
+      "reasoning_tokens": 99,
+      "rejected_prediction_tokens": 152
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:27.627382+00:00",
+  "latency_s": 2.222,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

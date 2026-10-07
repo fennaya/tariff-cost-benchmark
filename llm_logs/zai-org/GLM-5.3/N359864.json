@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359864",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3502110000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-a366657e55574ad3b0da45f0112d7a1c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3502.10.0000\", \"reason\": \"Spray-dried egg albumen (egg white protein powder) with no other substances added is classified as egg albumin under heading 3502, notwithstanding the enzymatic hydrolysis processing.\"}",
+          "role": "assistant",
+          "reasoning_content": "Egg albumin dried: 3502.10.00? Egg albumin: heading 3502 albuminoidal substances... Dried egg albumen 3502.10.0000? Actually 0408.11 is dried egg albumen... Egg albumin for food use \u2014 NY rulings classify spray-dried egg white powder as 0408.11.0000? 0408.11 = egg yolks... 0408.11 is dried egg yolks. 0408.19 other egg yolks. 0408.91 = other, dried \u2014 egg whites. But enzymatically hydrolyzed protein may fall in 3502.10 (albumins). Hydrolyzed egg white protein \u2014 rulings classify hydrolyzed egg albumen in 3502.10.0000? There's 3504 (peptones). Degree of hydrolysis 7% low; CBP ruling classified hydrolyzed egg white powder in 0408.91? Actually NY N266929? I recall ruling on hydrolyzed egg albumen \u2192 3502.10.0000? Hmm. 3502.10.00 covers egg albumin. Given \"commercially known as egg albumen,\" answer 3502.10.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333507,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 333,
+      "total_tokens": 625,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 218,
+        "audio_tokens": 0,
+        "reasoning_tokens": 273,
+        "rejected_prediction_tokens": 362
+      }
+    }
+  },
+  "predicted_code": "3502100000",
+  "predicted_reason": "Spray-dried egg albumen (egg white protein powder) with no other substances added is classified as egg albumin under heading 3502, notwithstanding the enzymatic hydrolysis processing.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 333,
+    "total_tokens": 625,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 218,
+      "audio_tokens": 0,
+      "reasoning_tokens": 273,
+      "rejected_prediction_tokens": 362
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:27.519913+00:00",
+  "latency_s": 3.677,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

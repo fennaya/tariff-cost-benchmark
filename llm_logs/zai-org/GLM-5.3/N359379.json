@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359379",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "3910000000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d4d4db46e20242a6a8b30083842fdb20",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3910.10.6000\", \"reason\": \"Otoform AK is a silicone (polysiloxane) paste in primary form used to take ear impressions, classifiable as other polysiloxanes in primary forms under heading 3910.\"}",
+          "role": "assistant",
+          "reasoning_content": "Silicone impression paste for ear molds \u2014 likely 3005? No, it's a silicone elastomer paste \u2014 heading 3214? \"Silicone\" as chemical preparation... Similar ruling: Otoform AK classified in 3824.99? There is a ruling on ear impression material \u2014 silicone paste classified under 3910.10? Polysiloxanes in primary forms \u2014 3910.10.50 or 3910.10.60. Paste ready to use... likely 3910.10.60 (other). Actually ruling NY 87100? I'll go 3910.10.6000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333438,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 151,
+      "completion_tokens": 202,
+      "total_tokens": 353,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 126,
+        "audio_tokens": 0,
+        "reasoning_tokens": 137,
+        "rejected_prediction_tokens": 254
+      }
+    }
+  },
+  "predicted_code": "3910106000",
+  "predicted_reason": "Otoform AK is a silicone (polysiloxane) paste in primary form used to take ear impressions, classifiable as other polysiloxanes in primary forms under heading 3910.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 151,
+    "completion_tokens": 202,
+    "total_tokens": 353,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 126,
+      "audio_tokens": 0,
+      "reasoning_tokens": 137,
+      "rejected_prediction_tokens": 254
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:17.911688+00:00",
+  "latency_s": 4.205,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

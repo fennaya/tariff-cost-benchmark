@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363702",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7310290065",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-49d7b81e86cc49e19db72af1d92004be",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8415.90.0090\", \"reason\": \"A steel refrigerant receiver attached to the condenser coil of an HVAC system, with no mechanical components or valves, is a part of an air-conditioning machine of heading 8415, other parts.\"}",
+          "role": "assistant",
+          "reasoning_content": "Receiver/drier \u2014 pressure vessel of steel, not pressurized for storage/transport... It's a part of HVAC system. Likely 8415.90.00 parts of air conditioning equipment? Actually receiver for refrigerant \u2014 HTS 8418.99? Condenser part... It attaches to condenser coil of HVAC system \u2014 parts of air conditioning machines 8415.90.0090? 8415.90 parts. Use 8415.90.0090? Check: 8415.90.0040/0090. I'll answer 8415.90.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333889,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 169,
+      "completion_tokens": 202,
+      "total_tokens": 371,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 135,
+        "audio_tokens": 0,
+        "reasoning_tokens": 136,
+        "rejected_prediction_tokens": 205
+      }
+    }
+  },
+  "predicted_code": "8415900090",
+  "predicted_reason": "A steel refrigerant receiver attached to the condenser coil of an HVAC system, with no mechanical components or valves, is a part of an air-conditioning machine of heading 8415, other parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 169,
+    "completion_tokens": 202,
+    "total_tokens": 371,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 135,
+      "audio_tokens": 0,
+      "reasoning_tokens": 136,
+      "rejected_prediction_tokens": 205
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:49.493240+00:00",
+  "latency_s": 2.264,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

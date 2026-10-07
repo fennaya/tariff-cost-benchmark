@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358010",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "3206500000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-8980d9233e7c4bf9a164e05b32af3e66",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"2842.90.7500\", \"reason\": \"The ZnSe/ZnS quantum dots are inorganic semiconductor compounds (zinc selenide/zinc sulfide) dispersed in solvent, classified as other salts of inorganic acids in heading 2842.\"}",
+          "role": "assistant",
+          "reasoning_content": "Quantum dots dispersed in solvent \u2014 likely 3206.20? Actually CBP ruling: quantum dots classified as chemical mixtures... ZnSe/ZnS \u2014 heading 2842? Zinc selenide is inorganic compound. Ruling NY N266527? Quantum dots in toluene classified 3824.79? I recall CBP classified quantum dots under 2842.90 (other salts of oxyacids/inorganic compounds) \u2014 actually ZnSe is 2842.90.00? Zinc selenide: heading 2842? Selenium compounds... ZnSe is a binary compound of zinc and selenium \u2014 heading 2842 covers metal salts of inorganic acids; selenides classified 2842.90.00. Dispersed in solvent, mixture \u2014 but CBP ruling classified quantum dots ZnSe/ZnS in 2842.90.7500? I'll answer 2842.90.7500."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333300,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 275,
+      "total_tokens": 448,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 182,
+        "audio_tokens": 0,
+        "reasoning_tokens": 205,
+        "rejected_prediction_tokens": 288
+      }
+    }
+  },
+  "predicted_code": "2842907500",
+  "predicted_reason": "The ZnSe/ZnS quantum dots are inorganic semiconductor compounds (zinc selenide/zinc sulfide) dispersed in solvent, classified as other salts of inorganic acids in heading 2842.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 173,
+    "completion_tokens": 275,
+    "total_tokens": 448,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 182,
+      "audio_tokens": 0,
+      "reasoning_tokens": 205,
+      "rejected_prediction_tokens": 288
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:00.005905+00:00",
+  "latency_s": 2.919,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

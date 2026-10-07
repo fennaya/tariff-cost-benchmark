@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362044",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8541290055",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-63370b18192b4848b5268f8fe2e5626c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8541.21.0080\", \"reason\": \"MOSFET transistors with power dissipation not exceeding 1.1 W are discrete semiconductor transistors classified under HTSUS 8541.21.0080 (transistors, other than photosensitive, other).\"}",
+          "role": "assistant",
+          "reasoning_content": "MOSFET transistors: 8541.21.00.00? Discrete transistors: 8541.21 (transistors, dissipation... actually 8541.21 = transistors other than photosensitive). 8541.21.0075? HTS: 8541.21.0080 \"Transistors: Other: Other\"? Actual: 8541.21.0060 MOSFETs? There is 8541.21.0080. CBP rulings classify MOSFETs under 8541.21.0080."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333730,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 211,
+      "total_tokens": 531,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 150,
+        "audio_tokens": 0,
+        "reasoning_tokens": 137,
+        "rejected_prediction_tokens": 160
+      }
+    }
+  },
+  "predicted_code": "8541210080",
+  "predicted_reason": "MOSFET transistors with power dissipation not exceeding 1.1 W are discrete semiconductor transistors classified under HTSUS 8541.21.0080 (transistors, other than photosensitive, other).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 211,
+    "total_tokens": 531,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 150,
+      "audio_tokens": 0,
+      "reasoning_tokens": 137,
+      "rejected_prediction_tokens": 160
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:09.709381+00:00",
+  "latency_s": 2.327,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

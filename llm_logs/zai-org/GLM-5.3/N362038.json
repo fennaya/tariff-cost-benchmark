@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362038",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8537109160",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-4b81a9138b22489ea88c7c31409b9971",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8537.10.0090\", \"reason\": \"The assembly is a control unit consisting of a base panel mounting multiple apparatus of headings 8535/8536 (PLC, modules, relays) for electrical control of the milling machine, and it does not meet the requirements of Note 3 to Chapter 84 to be considered a unit of an automatic data processing machine.\"}",
+          "role": "assistant",
+          "reasoning_content": "This is NY ruling \u2014 classified as automatic data processing machine? Actually similar ruling classified under 8471? It's a subassembly of a milling machine \u2014 likely 8537.10? PLC-based control assembly \u2192 8537.10.0090? Ruling N- something classified F2 Electrical Enclosure Assembly under 8537.10.0090? Actually 8537 boards, panels, consoles with two or more apparatus of 8535/8536 for electric control. Yes."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333727,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 315,
+      "completion_tokens": 200,
+      "total_tokens": 515,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 125,
+        "audio_tokens": 0,
+        "reasoning_tokens": 107,
+        "rejected_prediction_tokens": 255
+      }
+    }
+  },
+  "predicted_code": "8537100090",
+  "predicted_reason": "The assembly is a control unit consisting of a base panel mounting multiple apparatus of headings 8535/8536 (PLC, modules, relays) for electrical control of the milling machine, and it does not meet the requirements of Note 3 to Chapter 84 to be considered a unit of an automatic data processing machine.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 315,
+    "completion_tokens": 200,
+    "total_tokens": 515,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 125,
+      "audio_tokens": 0,
+      "reasoning_tokens": 107,
+      "rejected_prediction_tokens": 255
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:06.987992+00:00",
+  "latency_s": 2.715,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

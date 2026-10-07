@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N356916",
+  "rulingDate": "2026-01-09T00:00:00",
+  "true_code": "3003900190",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-cc2164fe53774d50abf36531eec552e8",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3003.90.9880\", \"reason\": \"Desiccated porcine thyroid mixed with anhydrous dextrose is a mixed medicament for therapeutic use not yet put up in measured doses, classified in the residual provision of heading 3003.\"}",
+          "role": "assistant",
+          "reasoning_content": "Desiccated thyroid \u2014 glandular preparation, heading 3004? It's a medicament put up in bulk? Bulk powder not yet dosed \u2014 3003? Actually desiccated thyroid is often classified 3004.60.00? No, 3004.60 is alkaloids... Glandular preparations: 3001.90? Desiccated thyroid is a medicinal product of heading 3004. But bulk powder mixed with dextrose \u2014 3003.90? Hmm. NY rulings classify desiccated thyroid powder in 3003.90.9880? Actually 3003.90 covers medicaments consisting of two or more constituents mixed for therapeutic use, not put up in measured doses. So 3003.90.9880."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333183,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 176,
+      "completion_tokens": 226,
+      "total_tokens": 402,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 152,
+        "audio_tokens": 0,
+        "reasoning_tokens": 161,
+        "rejected_prediction_tokens": 218
+      }
+    }
+  },
+  "predicted_code": "3003909880",
+  "predicted_reason": "Desiccated porcine thyroid mixed with anhydrous dextrose is a mixed medicament for therapeutic use not yet put up in measured doses, classified in the residual provision of heading 3003.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 176,
+    "completion_tokens": 226,
+    "total_tokens": 402,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 152,
+      "audio_tokens": 0,
+      "reasoning_tokens": 161,
+      "rejected_prediction_tokens": 218
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:03.135854+00:00",
+  "latency_s": 3.713,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

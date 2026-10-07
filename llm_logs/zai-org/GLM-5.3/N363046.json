@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363046",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4814200000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-02ac89d023834069be11e4420592a9c9",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3918.90.2000\", \"reason\": \"Vinyl-faced wallcoverings in rolls exceeding 60 cm wide fall under heading 3918 as wall coverings of plastics other than cellulose derivatives.\"}",
+          "role": "assistant",
+          "reasoning_content": "Wallcoverings of plastics, 137 cm wide \u2014 heading 4814? Vinyl faced with paper backing... 4814 covers wallcoverings in rolls at least 15cm wide but not exceeding 60cm? Actually 4814: wall coverings in rolls of width \u226515 cm but \u226460 cm. 137cm exceeds, so classify as plastics sheeting 3921 or 3918? 3918 floor coverings/wall coverings of plastics. 3918.10 is floor coverings; wall coverings 3918.90. Ruling likely 3921.90? Actually 3918.90 covers wall or ceiling coverings of plastics, in rolls. Textured vinyl on paper backing \u2014 3918.90.10? 3918.90.10 is of cellulose derivatives? 3918.90.20 other. Use 3918.90.2000? Hmm, 3918.90.10 \"of cellulose derivatives\". Vinyl \u2192 3918.90.20."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333843,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 284,
+      "total_tokens": 449,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 184,
+        "audio_tokens": 0,
+        "reasoning_tokens": 230,
+        "rejected_prediction_tokens": 316
+      }
+    }
+  },
+  "predicted_code": "3918902000",
+  "predicted_reason": "Vinyl-faced wallcoverings in rolls exceeding 60 cm wide fall under heading 3918 as wall coverings of plastics other than cellulose derivatives.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 165,
+    "completion_tokens": 284,
+    "total_tokens": 449,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 184,
+      "audio_tokens": 0,
+      "reasoning_tokens": 230,
+      "rejected_prediction_tokens": 316
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:03.644518+00:00",
+  "latency_s": 3.299,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

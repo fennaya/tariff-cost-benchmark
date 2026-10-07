@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359155",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "7318156010",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-afa789af078f44b786bbaffca1422771",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7318.15.8090\", \"reason\": \"A stainless steel, blunt-tip thread-forming screw is not a self-tapping screw of 7318.14 but is classified as an other screw of iron or steel under HTSUS 7318.15.8090.\"}",
+          "role": "assistant",
+          "reasoning_content": "Thread forming screw, stainless steel \u2192 7318.19.00? Thread forming screws of iron or steel: 7318.19.0090? Actually 7318.19 covers other screws/bolts. Thread forming screws... 7318.24? No, that's pins. CBP rulings classify thread-forming screws in 7318.19.0090. Stainless: 7318.19.0090? There's 7318.15 (other screws), 7318.14 self-tapping. Thread forming screws classified under 7318.15? CBP ruling NY N281547 classified thread forming screws in 7318.15.8090? Actually 7318.15 covers \"other screws and bolts.\" Self-tapping screws are 7318.14. Thread-forming screws with blunt tip \u2014 CBP has ruled thread forming screws are not self-tapping (7318.14) but 7318.15. Stainless steel: 7318.15.8090? Subheadings: 7318.15.20 wood screws? No. 7318.15.60... Let me recall: 7318.15.80 \"Other\" \u2014 7318.15.8090. I'll go with 7318.15.8090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333413,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 237,
+      "completion_tokens": 374,
+      "total_tokens": 611,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 252,
+        "audio_tokens": 0,
+        "reasoning_tokens": 301,
+        "rejected_prediction_tokens": 363
+      }
+    }
+  },
+  "predicted_code": "7318158090",
+  "predicted_reason": "A stainless steel, blunt-tip thread-forming screw is not a self-tapping screw of 7318.14 but is classified as an other screw of iron or steel under HTSUS 7318.15.8090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 237,
+    "completion_tokens": 374,
+    "total_tokens": 611,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 252,
+      "audio_tokens": 0,
+      "reasoning_tokens": 301,
+      "rejected_prediction_tokens": 363
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:53.015172+00:00",
+  "latency_s": 4.152,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

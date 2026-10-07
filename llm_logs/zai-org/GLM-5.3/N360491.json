@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360491",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004390055",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-492af667070b468fb9d3ede683080534",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.20.5010\", \"reason\": \"Glucagon is a polypeptide hormone put up in measured-dose injectable vials for therapeutic/diagnostic use, classifiable as a medicament containing hormones but no antibiotics.\"}",
+          "role": "assistant",
+          "reasoning_content": "Glucagon \u2014 polypeptide hormone, not for humans as hormone? It's a medicament. Ruling: glucagon classified 3002.10? Hormones, put up in measured doses \u2014 3002.10.00? Actually 3002 covers hormones put up in measured doses. Glucagon is a polypeptide hormone; prior rulings classify glucagon in 3002.10.00 (hormones put up in measured doses). 10-digit: 3002.10.0090? 3002.10.0060? Subheadings: 3002.10.00 Antisera etc... Actually 3002.10 covers \"Antisera and other blood fractions; vaccines, toxins\" \u2014 hormones moved? Hormones put up in measured doses are 3002.10? No\u20143002.10 is antisera/vaccines. Hormones: 3002.10? Historically 3002.10.60 \"glands and other organs... hormones put up in measured doses\"? Old HTS: 3002.10.00... Current: 3002.10.00 Antisera and other blood fractions; vaccines, toxins... 3002.20 human blood. Hormones are 2937 as chemicals, but medicaments 3003/3004. Glucagon injection \u2014 a medicament containing hormones \u2192 3004.20.50? 3004.20 \"containing hormones... but not containing antibiotics\". Insulin 3004.20.00? Subheading 3004.20.50 \"Other\" \u2014 3004.20.5010? I recall NY ruling for glucagon: 3004.20.5010? Actually 3004.20.5090? Insulin is 3004.20.1000? Let me recall: 3004.20.10 Insulin? No, insulin 3004.20.10? Hmm. 3004.20.50 Other, duty free. 10-digit 3004.20.5010? I'll answer 3004.20.5010? Safer: 3004.20.5090? I think 3004.20.5010 is \"Other\" under hormones... Choose 3004.20.5010."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333572,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 554,
+      "total_tokens": 722,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 370,
+        "audio_tokens": 0,
+        "reasoning_tokens": 492,
+        "rejected_prediction_tokens": 555
+      }
+    }
+  },
+  "predicted_code": "3004205010",
+  "predicted_reason": "Glucagon is a polypeptide hormone put up in measured-dose injectable vials for therapeutic/diagnostic use, classifiable as a medicament containing hormones but no antibiotics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 168,
+    "completion_tokens": 554,
+    "total_tokens": 722,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 370,
+      "audio_tokens": 0,
+      "reasoning_tokens": 492,
+      "rejected_prediction_tokens": 555
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:32.456077+00:00",
+  "latency_s": 6.162,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

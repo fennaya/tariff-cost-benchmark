@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-b1d5eadea8a742f38762e2bc4bce3e16",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8544.42.9090\", \"reason\": \"The item is an electrical wiring assembly of insulated wires fitted with connectors (with attached PCB), which is classified as other electric conductors with connectors under HTSUS 8544.42.9090.\"}",
+          "role": "assistant",
+          "reasoning_content": "Wiring assembly with PCB and connectors \u2014 likely 8544.42.9090? Actually assemblies with PCB... CBP rulings on H-Mod CEP Kit \u2014 likely 8518.30? It routes audio signals... but it's a wiring set. Known ruling: NY N-series classified similar CEP kit under 8544.42.9090? Insulated wire assemblies with connectors: 8544.42.9090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333624,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 163,
+      "total_tokens": 404,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 106,
+        "audio_tokens": 0,
+        "reasoning_tokens": 97,
+        "rejected_prediction_tokens": 174
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "The item is an electrical wiring assembly of insulated wires fitted with connectors (with attached PCB), which is classified as other electric conductors with connectors under HTSUS 8544.42.9090.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 241,
+    "completion_tokens": 163,
+    "total_tokens": 404,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 106,
+      "audio_tokens": 0,
+      "reasoning_tokens": 97,
+      "rejected_prediction_tokens": 174
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:40:23.577137+00:00",
+  "latency_s": 2.95,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

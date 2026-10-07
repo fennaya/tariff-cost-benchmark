@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360897",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8462290050",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-9fe3840707754f27a533ed775b506a85",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8462.91.0000\", \"reason\": \"A stretch-bend-leveling line flattens and straightens metal strip, and lacking CNC it falls under heading 8462 as other machines for bending, folding, straightening, or flattening metal (other, non-numerically controlled).\"}",
+          "role": "assistant",
+          "reasoning_content": "This is a stretch-bend-leveling line for metal strip \u2014 heading 8462? Leveling machines for metal are 8462.9? Actually straightening machines for metal are 8462.91/8462.99... Heading 8462 includes \"machines for working metal: ... bending, folding, straightening, flattening\" \u2014 8462.91 (numerical control?) No, 8462.91 is \"other, straightening machines\"? 8462.31-39 rolls for rolling mills. 8462.91: bending, folding, straightening, flattening machines, other? Subheadings: 8462.21 shear, 8462.31 rolls... 8462.91 = other (bending/folding/straightening/flattening). Non-NC: 8462.91.00. 10-digit: 8462.91.0000? Actual: 8462.91.0000? I believe 8462.91.0000 exists."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333613,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 301,
+      "total_tokens": 549,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 197,
+        "audio_tokens": 0,
+        "reasoning_tokens": 229,
+        "rejected_prediction_tokens": 323
+      }
+    }
+  },
+  "predicted_code": "8462910000",
+  "predicted_reason": "A stretch-bend-leveling line flattens and straightens metal strip, and lacking CNC it falls under heading 8462 as other machines for bending, folding, straightening, or flattening metal (other, non-numerically controlled).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 301,
+    "total_tokens": 549,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 197,
+      "audio_tokens": 0,
+      "reasoning_tokens": 229,
+      "rejected_prediction_tokens": 323
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:40:12.836013+00:00",
+  "latency_s": 3.814,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N356923",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8544493080",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-dbf777ea96974482b6b5664cb3292cff",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8544.49.9090\", \"reason\": \"The CAT5e LAN cable is an insulated copper conductor rated at 300 volts, not fitted with connectors, so it falls under the residual provision for other insulated conductors of heading 8544.\"}",
+          "role": "assistant",
+          "reasoning_content": "8544.42.9090 \u2014 insulated electric conductors with connectors? No connectors, so 8544.42.9090 (other, with fittings? no). 8544.42 covers conductors fitted with connectors; without connectors \u2192 8544.49? Actually 8544.42 = fitted with connectors. Not fitted \u2192 8544.49. Other insulated conductors, \u22641000V: 8544.49.9090? NY rulings on CAT5e cable: 8544.42.9090? Check: NY N010567 CAT5e cable classified 8544.42.9090? Many rulings classify LAN cable without connectors under 8544.49.9090? Actually 8544.42 is \"fitted with connectors\"; without connectors \u2192 8544.49.9090? Hmm, but some rulings put CAT5e under 8544.42.9090 anyway. I recall NY ruling for UTP CAT5e riser cable: 8544.42.9090. Actually 8544.42.9090 is \"other\" within fitted-with-connectors. Safer: 8544.49.9090? Known ruling NY 871756: LAN cable without connectors \u2192 8544.49.9090? I'll go 8544.42.9090... Let me think: heading 8544.42 covers electric conductors, \u22641000V, fitted with connectors. Not fitted \u2192 8544.49. So answer 8544.49.9090? But subheading 8544.49.9090? 8544.49.90 \"other\" \u2014 10-digit 8544.49.9090? There's 8544.49.9000? Statistical suffixes: 8544.49.9090 exists? I believe 8544.49.9090 is valid. Actually many rulings: \"8544.49.9090, Other\". Yes."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333185,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 529,
+      "total_tokens": 755,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 370,
+        "audio_tokens": 0,
+        "reasoning_tokens": 463,
+        "rejected_prediction_tokens": 430
+      }
+    }
+  },
+  "predicted_code": "8544499090",
+  "predicted_reason": "The CAT5e LAN cable is an insulated copper conductor rated at 300 volts, not fitted with connectors, so it falls under the residual provision for other insulated conductors of heading 8544.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 226,
+    "completion_tokens": 529,
+    "total_tokens": 755,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 370,
+      "audio_tokens": 0,
+      "reasoning_tokens": 463,
+      "rejected_prediction_tokens": 430
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:05.351622+00:00",
+  "latency_s": 4.457,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

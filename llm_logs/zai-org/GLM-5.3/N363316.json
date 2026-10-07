@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363316",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8537109170",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-3be2252bd05140318f419dc53cd969a5",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8537.20.0000\", \"reason\": \"The control panel subassembly, consisting of a printed circuit board assembly with push-button switches and connectors mounted on a backplate and bezel, is a panel for electric control under 1000V, classified in subheading 8537.20.0000, HTSUS.\"}",
+          "role": "assistant",
+          "reasoning_content": "Likely 8537.20.0000? It's a control panel subassembly with push-button switches on PCB \u2014 control panel. Could be 8537.10 or 8538.90 (parts of boards/panels). Since it's a subassembly of a control panel, 8538.90.8080? Actually CBP rulings on MCDU control panels: NY ruling classified under 8537.20? The ECA with switches on PCB \u2014 apparatus for switching. As incomplete, 8537.20.0000 (other, under 1000V). I'll go 8537.20.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333854,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 356,
+      "completion_tokens": 221,
+      "total_tokens": 577,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 139,
+        "audio_tokens": 0,
+        "reasoning_tokens": 140,
+        "rejected_prediction_tokens": 266
+      }
+    }
+  },
+  "predicted_code": "8537200000",
+  "predicted_reason": "The control panel subassembly, consisting of a printed circuit board assembly with push-button switches and connectors mounted on a backplate and bezel, is a panel for electric control under 1000V, classified in subheading 8537.20.0000, HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 356,
+    "completion_tokens": 221,
+    "total_tokens": 577,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 139,
+      "audio_tokens": 0,
+      "reasoning_tokens": 140,
+      "rejected_prediction_tokens": 266
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:13.975732+00:00",
+  "latency_s": 5.018,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

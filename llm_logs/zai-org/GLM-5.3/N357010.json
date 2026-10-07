@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357010",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3004909239",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-ecf7c1f45e9b4e9fa9550917bf07214a",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.1050\", \"reason\": \"Venlafaxine HCL extended-release capsules are a non-antibiotic, non-hormonal medicament put up in measured doses for retail sale, classifiable under the 'Other' provision of heading 3004.\"}",
+          "role": "assistant",
+          "reasoning_content": "Venlafaxine HCL \u2014 antidepressant, not antibiotic/hormone/alkaloid. 3004.90 \u2014 other medicaments. 3004.90.10? Actually 3004.90.10 is medicaments containing insulin? No. 3004.90.10: \"other, antibiotics\"? Antibiotics are 3004.20. 3004.90.10 is \"other\" ... Historically 3004.90.10 antidepressants? There was a breakout: 3004.90.10 \"other\" ... I recall 3004.90.10 for products containing ephedrine? No. Common answer: 3004.90.1020? There's 3004.90.10 subheadings: 3004.90.1020 etc. for controlled substances? Venlafaxine not controlled. Use 3004.90.10 \"Other\" \u2014 general rate 0%? Actually 3004.90.10 is \"Other\" with subheadings 3004.90.1020 (containing controlled substances)... I'll answer 3004.90.10.50? Hmm. Safest: 3004.90.10.50? I think 3004.90.10 covers \"Other\" and statistical suffixes: .1020 containing a controlled substance, .1030 other? Not sure. I'll go 3004.90.10.50? Better: 3004.90.10.20? Venlafaxine not controlled, so \"other\" \u2014 3004.90.10.50? I'll answer 3004.90.10.50 with reason."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333194,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 179,
+      "completion_tokens": 424,
+      "total_tokens": 603,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 282,
+        "audio_tokens": 0,
+        "reasoning_tokens": 356,
+        "rejected_prediction_tokens": 433
+      }
+    }
+  },
+  "predicted_code": "3004901050",
+  "predicted_reason": "Venlafaxine HCL extended-release capsules are a non-antibiotic, non-hormonal medicament put up in measured doses for retail sale, classifiable under the 'Other' provision of heading 3004.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 179,
+    "completion_tokens": 424,
+    "total_tokens": 603,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 282,
+      "audio_tokens": 0,
+      "reasoning_tokens": 356,
+      "rejected_prediction_tokens": 433
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:14.315700+00:00",
+  "latency_s": 4.44,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

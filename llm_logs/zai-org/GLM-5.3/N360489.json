@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360489",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "3210000000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-83474df9ca9e4af58ee9447c8191a3fc",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3210.10.0000\", \"reason\": \"A slaked-lime (calcium hydroxide) based mineral coating with no synthetic polymer binders is classified as a stopping/lime-based paint preparation in heading 3210.\"}",
+          "role": "assistant",
+          "reasoning_content": "Lime-based paint, water-based, no synthetic polymers \u2014 3210.10? That's stopping preparations. Actually limewash paint based on calcium hydroxide \u2014 heading 3210 (stopping/mastic preparations). But paint of heading 3209 is based on synthetic polymers; 3210.10.0000 fits lime-based coating."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333571,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 296,
+      "completion_tokens": 137,
+      "total_tokens": 433,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 85,
+        "audio_tokens": 0,
+        "reasoning_tokens": 76,
+        "rejected_prediction_tokens": 175
+      }
+    }
+  },
+  "predicted_code": "3210100000",
+  "predicted_reason": "A slaked-lime (calcium hydroxide) based mineral coating with no synthetic polymer binders is classified as a stopping/lime-based paint preparation in heading 3210.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 296,
+    "completion_tokens": 137,
+    "total_tokens": 433,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 85,
+      "audio_tokens": 0,
+      "reasoning_tokens": 76,
+      "rejected_prediction_tokens": 175
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:31.107973+00:00",
+  "latency_s": 1.797,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

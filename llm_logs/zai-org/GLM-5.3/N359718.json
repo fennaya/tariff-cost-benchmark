@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359718",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "9027504060",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-f4eb2322a7b443dfa11dea2416bec702",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"9031.49.9000\", \"reason\": \"The balanced photodetector is a complete measuring instrument that converts optical signals into electrical outputs for signal analysis, falling under other optical measuring instruments of heading 9031 rather than discrete photodiodes of heading 8541.\"}",
+          "role": "assistant",
+          "reasoning_content": "Photodiodes \u2014 8541.41.0000? Photodiodes fall under photosensitive semiconductor devices 8541.40 or 8541.41? HTSUS 8541.41.0000 is photovoltaic cells... Actually 8541.40 was photosensitive; new 2022: 8541.41 photovoltaic cells, 8541.42 LEDs, 8541.49 other photosensitive semiconductor devices \u2192 8541.42.0000? LEDs 8541.42.0000; other photosensitive 8541.49.0000. But this is a complete instrument with amplifier \u2014 measuring instruments 9027? Photodetector instrument... likely 9031.49.9000 (other measuring instruments). NY rulings on balanced photodetectors classify under 9031.49.9000? There are rulings classifying photodetector modules under 8541.40.00.60 (pre-2022). Given complete device with outputs, 9031.49.9000 seems plausible. I'll go with 9031.49.9000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333479,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 482,
+      "completion_tokens": 321,
+      "total_tokens": 803,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 221,
+        "audio_tokens": 0,
+        "reasoning_tokens": 250,
+        "rejected_prediction_tokens": 284
+      }
+    }
+  },
+  "predicted_code": "9031499000",
+  "predicted_reason": "The balanced photodetector is a complete measuring instrument that converts optical signals into electrical outputs for signal analysis, falling under other optical measuring instruments of heading 9031 rather than discrete photodiodes of heading 8541.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 482,
+    "completion_tokens": 321,
+    "total_tokens": 803,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 221,
+      "audio_tokens": 0,
+      "reasoning_tokens": 250,
+      "rejected_prediction_tokens": 284
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:58.687931+00:00",
+  "latency_s": 3.638,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

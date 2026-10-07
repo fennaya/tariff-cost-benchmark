@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358735",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "9505906000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-3df42b4340b44bb39116a98c4a8e613c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"6201.92.2050\", \"reason\": \"Per CBP practice, adult costumes lacking festive character are classified by their constituent garment (the duster coat of man-made fibers) in heading 6201.\"}",
+          "role": "assistant",
+          "reasoning_content": "Festive/costume: 9505.90.6000? Adult costume not festive \u2014 CBP classifies adult costumes as textiles; but known ruling: Monster Scarecrow costume classified in 6201... Actually flimsy nature \u2192 9505.00? Known ruling classifies adult costumes under heading 6217 or as coats. CBP NY ruling on Monster Scarecrow: classified 6201.92.2050? Duster coat of man-made fiber water resistant? Likely 6210? I'll go with 6201.92.2050? Safer: 6201.92.2060? Choose 6201.92.2050."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333361,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 140,
+      "completion_tokens": 206,
+      "total_tokens": 346,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 119,
+        "audio_tokens": 0,
+        "reasoning_tokens": 146,
+        "rejected_prediction_tokens": 321
+      }
+    }
+  },
+  "predicted_code": "6201922050",
+  "predicted_reason": "Per CBP practice, adult costumes lacking festive character are classified by their constituent garment (the duster coat of man-made fibers) in heading 6201.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 140,
+    "completion_tokens": 206,
+    "total_tokens": 346,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 119,
+      "audio_tokens": 0,
+      "reasoning_tokens": 146,
+      "rejected_prediction_tokens": 321
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:00.751299+00:00",
+  "latency_s": 3.477,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

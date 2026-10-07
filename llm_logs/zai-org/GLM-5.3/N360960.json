@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360960",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "8709100060",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-c47dbd0054bc404c8e26d9caa6b75c02",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8709.19.0000\", \"reason\": \"The P2200 is a self-propelled works truck without lifting equipment that transports materials in facilities but operates without a fixed path, classifying it under HTSUS 8709.19.0000 as an other works truck fitted with lifting/handling equipment subheading for self-propelled works trucks not elsewhere specified.\"}",
+          "role": "assistant",
+          "reasoning_content": "AGV, not fixed path, likely 8709.19.0000? Works trucks, self-propelled, not fitted with lifting. 8709.19.00 \u2014 other. 10-digit: 8709.19.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333618,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 143,
+      "total_tokens": 463,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 94,
+        "audio_tokens": 0,
+        "reasoning_tokens": 55,
+        "rejected_prediction_tokens": 151
+      }
+    }
+  },
+  "predicted_code": "8709190000",
+  "predicted_reason": "The P2200 is a self-propelled works truck without lifting equipment that transports materials in facilities but operates without a fixed path, classifying it under HTSUS 8709.19.0000 as an other works truck fitted with lifting/handling equipment subheading for self-propelled works trucks not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 143,
+    "total_tokens": 463,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 94,
+      "audio_tokens": 0,
+      "reasoning_tokens": 55,
+      "rejected_prediction_tokens": 151
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:40:17.646858+00:00",
+  "latency_s": 4.122,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

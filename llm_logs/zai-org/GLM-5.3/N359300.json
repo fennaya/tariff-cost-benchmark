@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359300",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3004909246",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-39d316280f6641eea085b6e0c7c5673a",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.9200\", \"reason\": \"Clozapine tablets are medicaments (other than antibiotics, hormones, or alkaloids) put up in measured doses for retail sale, classified under HTSUS 3004.90.92.\"}",
+          "role": "assistant",
+          "reasoning_content": "Clozapine is an antipsychotic drug \u2014 not an antibiotic/hormone; classified under 3004.90. In bulk? Tablets, so 3004.90.91? Actually 3004.90.92 for other medicaments put up in measured doses... 3004.90.92 is \"Other\" \u2014 current: 3004.90.92 for other medicaments. Use 3004.90.9200."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333430,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 163,
+      "completion_tokens": 157,
+      "total_tokens": 320,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 101,
+        "audio_tokens": 0,
+        "reasoning_tokens": 95,
+        "rejected_prediction_tokens": 184
+      }
+    }
+  },
+  "predicted_code": "3004909200",
+  "predicted_reason": "Clozapine tablets are medicaments (other than antibiotics, hormones, or alkaloids) put up in measured doses for retail sale, classified under HTSUS 3004.90.92.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 163,
+    "completion_tokens": 157,
+    "total_tokens": 320,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 101,
+      "audio_tokens": 0,
+      "reasoning_tokens": 95,
+      "rejected_prediction_tokens": 184
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:09.782893+00:00",
+  "latency_s": 4.916,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

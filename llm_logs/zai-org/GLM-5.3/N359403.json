@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359403",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "4412319200",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-dca8c36340ef4043ae4517e0ec6c39e1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4412.31.3100\", \"reason\": \"Plywood with at least one outer ply of nonconiferous tropical wood (gmelina), coated/covered so the grain is obscured, falls under HTSUS 4412.31.3100.\"}",
+          "role": "assistant",
+          "reasoning_content": "Plywood, tropical wood face, coated/covered \u2014 4412.31? Face tropical wood, coated. 4412.31 covers plywood with at least one outer ply tropical wood... coated: 4412.31.31? Actually 4412.31 subheadings: 4412.31.31 (other, both sides coated/covered?) Let me recall: 4412.31.31 \"Other, with both outer plies of coniferous...\" no. 4412.31 subheadings: 4412.31.10 (flooring panels?), 4412.31.31 \"Other\", 4412.31.60 \"Other\". Common ruling answer: 4412.31.3100? I'll answer 4412.31.3100."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333442,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 271,
+      "completion_tokens": 245,
+      "total_tokens": 516,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 165,
+        "audio_tokens": 0,
+        "reasoning_tokens": 178,
+        "rejected_prediction_tokens": 240
+      }
+    }
+  },
+  "predicted_code": "4412313100",
+  "predicted_reason": "Plywood with at least one outer ply of nonconiferous tropical wood (gmelina), coated/covered so the grain is obscured, falls under HTSUS 4412.31.3100.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 245,
+    "total_tokens": 516,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 165,
+      "audio_tokens": 0,
+      "reasoning_tokens": 178,
+      "rejected_prediction_tokens": 240
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:22.123451+00:00",
+  "latency_s": 5.344,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

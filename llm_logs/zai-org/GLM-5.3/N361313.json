@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361313",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-7e833668e02545bf95113d13183a517f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"6110.30.1010\", \"reason\": \"The description indicates a knit long-sleeve garment with unfinished edges, most plausibly classified as a pullover of man-made fibers, though the fragmentary description makes classification highly uncertain.\"}",
+          "role": "assistant",
+          "reasoning_content": "Ambiguous fragment\u2014garment with raw edges, likely a knit top? Best guess: 6110.30.1010? Actually unfinished hem suggests not fully manufactured... Choose 6114.30.1000? Provide something plausible."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333653,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 106,
+      "completion_tokens": 111,
+      "total_tokens": 217,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 67,
+        "audio_tokens": 0,
+        "reasoning_tokens": 51,
+        "rejected_prediction_tokens": 148
+      }
+    }
+  },
+  "predicted_code": "6110301010",
+  "predicted_reason": "The description indicates a knit long-sleeve garment with unfinished edges, most plausibly classified as a pullover of man-made fibers, though the fragmentary description makes classification highly uncertain.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 111,
+    "total_tokens": 217,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 67,
+      "audio_tokens": 0,
+      "reasoning_tokens": 51,
+      "rejected_prediction_tokens": 148
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:40:53.106140+00:00",
+  "latency_s": 2.572,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

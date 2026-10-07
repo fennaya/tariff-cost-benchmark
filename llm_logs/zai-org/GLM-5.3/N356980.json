@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N356980",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "6802990090",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-7aadab598bcf4f38b60c9a1e0f1d2e5b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"6802.99.0000\", \"reason\": \"Desert Atlas is an igneous stone containing almost no quartz, so it is not granite, marble, or other specified stone, and as worked (polished/cut) monumental or building stone it falls under the residual 'other stone' provision.\"}",
+          "role": "assistant",
+          "reasoning_content": "Igneous rock, almost no quartz \u2192 not granite; likely gabbro/diabase? Igneous rock with almost no quartz \u2014 classified as \"other stone\" 6802.99? Actually granite requires >20% quartz... Igneous rock with almost no quartz \u2192 6802.99.10? That's \"monumental or building stone... other stone: alabaster...\" Hmm. 6802.99.00 covers other. There's 6802.93 (basalt), 6802.92 (other quartzite?), 6802.91 marble. Igneous with no quartz \u2014 could be basalt? Sage gray with green patches... likely classified 6802.99.00."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333190,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 231,
+      "total_tokens": 493,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 143,
+        "audio_tokens": 0,
+        "reasoning_tokens": 159,
+        "rejected_prediction_tokens": 302
+      }
+    }
+  },
+  "predicted_code": "6802990000",
+  "predicted_reason": "Desert Atlas is an igneous stone containing almost no quartz, so it is not granite, marble, or other specified stone, and as worked (polished/cut) monumental or building stone it falls under the residual 'other stone' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 231,
+    "total_tokens": 493,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 143,
+      "audio_tokens": 0,
+      "reasoning_tokens": 159,
+      "rejected_prediction_tokens": 302
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:09.816367+00:00",
+  "latency_s": 2.879,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

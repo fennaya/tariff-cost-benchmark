@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359648",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "3004909238",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-8368a73bcb20422cb1674c4841954a60",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.9200\", \"reason\": \"Midazolam injection in prefilled auto-injectors is a medicament of a benzodiazepine not specifically enumerated, packaged for retail sale, classified under HTSUS 3004.90.9200 (other medicaments put up in measured doses).\"}",
+          "role": "assistant",
+          "reasoning_content": "Midazolam injection \u2014 HTS 3004.90? Benzodiazepines... midazolam is not listed separately; likely 3004.90.92? Actually midazolam hydrochloride? NY rulings classify midazolam injection under 3004.90.92? There's 3004.90.92 \"Other\" for medicaments. I recall NY N-series: midazolam injection classified 3004.90.92, duty 0%. Use 3004.90.9200? The 10-digit: 3004.90.9200."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333473,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 208,
+      "total_tokens": 411,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 143,
+        "audio_tokens": 0,
+        "reasoning_tokens": 130,
+        "rejected_prediction_tokens": 187
+      }
+    }
+  },
+  "predicted_code": "3004909200",
+  "predicted_reason": "Midazolam injection in prefilled auto-injectors is a medicament of a benzodiazepine not specifically enumerated, packaged for retail sale, classified under HTSUS 3004.90.9200 (other medicaments put up in measured doses).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 203,
+    "completion_tokens": 208,
+    "total_tokens": 411,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 143,
+      "audio_tokens": 0,
+      "reasoning_tokens": 130,
+      "rejected_prediction_tokens": 187
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:53.369371+00:00",
+  "latency_s": 3.089,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

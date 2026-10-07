@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N350377",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "6303922010",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-2ca14fdad8e448d282e146cac49f8499",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3921.90.4090\", \"reason\": \"The CBP lab confirmed the coating/lamination is cellular plastic combined with woven polyester fabric, so the curtains are classified as other plates/sheets/film of cellular plastics combined with textiles under heading 3921 rather than as textile curtains of heading 6303.\"}",
+          "role": "assistant",
+          "reasoning_content": "Cellular plastic coated fabric \u2014 heading 5903? Coated with cellular plastic \u2014 5903.90? Actually cellular plastic coating \u2192 3921? No, textile coated fabric of 5903 excludes cellular plastics... 5903 covers plastic-coated textile but not cellular plastics (Chapter 39). Cellular plastic coated fabric \u2192 3921.90? Heading 3921 \"other plates, sheets... of cellular plastics combined with textile.\" Curtains of that material \u2192 3925? Finished curtains classified by material? Curtains of plastic sheeting combined with textile \u2014 heading 3926? Actually NY rulings classify blackout curtains with cellular plastic coating under 3921.90 as... finished curtains are made-up articles; GRI 1: curtains of textile heading 6303, but if fabric is Chapter 39 product, made-up articles of plastics 3926? CBP rulings classify such curtains under 3921.90.40? Hmm. Known ruling: blackout curtains with foam backing classified 3921.90.40? Actually 3921 is plates/sheets, not made-up. Made-up articles of plastics \u2192 3926.90? There is ruling classifying cellular-plastic-coated fabric curtains in 3926.90.99? I recall NY N-series ruling: blackout curtains, plastic cellular coated, HTS 3921.90.4090? I'll go 3921.90.4090... but made-up curtains... CBP ruling N266627? I think answer 3921.90.4090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333127,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 742,
+      "completion_tokens": 420,
+      "total_tokens": 1162,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 250,
+        "audio_tokens": 0,
+        "reasoning_tokens": 342,
+        "rejected_prediction_tokens": 605
+      }
+    }
+  },
+  "predicted_code": "3921904090",
+  "predicted_reason": "The CBP lab confirmed the coating/lamination is cellular plastic combined with woven polyester fabric, so the curtains are classified as other plates/sheets/film of cellular plastics combined with textiles under heading 3921 rather than as textile curtains of heading 6303.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 742,
+    "completion_tokens": 420,
+    "total_tokens": 1162,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 250,
+      "audio_tokens": 0,
+      "reasoning_tokens": 342,
+      "rejected_prediction_tokens": 605
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:32:07.048959+00:00",
+  "latency_s": 4.549,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

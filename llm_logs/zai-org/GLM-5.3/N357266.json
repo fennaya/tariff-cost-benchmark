@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357266",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-fb2a9bd1fcae43b589330de1b995f016",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"0902.10.0050\", \"reason\": \"Genmaicha is a mixture of green tea (Camellia sinensis) with roasted rice, and per CBP practice such green tea blends in immediate packages not exceeding 3 kg are classified as green tea (not fermented) under heading 0902.\"}",
+          "role": "assistant",
+          "reasoning_content": "Genmaicha \u2014 mixture with green tea; likely 0902.30 \u2014 flavored/blend? Actually 0902.30 covers black tea \u22643kg... 0902.30 is \"black tea (fermented) and partly fermented tea, in packages \u22643kg\". Green tea blends: 0902.10 (green tea \u22643kg). But roasted rice mixture \u2014 CBP ruled genmaicha classified in 0902.10.00? There's a ruling: genmaicha classified under 0902.10.0050? HTS 0902.10.00 \u2014 green tea in packages \u22643kg. 10-digit: 0902.10.0050? Actually 0902.10.0050 is \"Green tea (not fermented) in packages \u22643 kg\" \u2014 subcategories: 0902.10.0020? I recall 0902.10.0050 exists. Use 0902.10.0050."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333218,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 295,
+      "total_tokens": 541,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 204,
+        "audio_tokens": 0,
+        "reasoning_tokens": 218,
+        "rejected_prediction_tokens": 256
+      }
+    }
+  },
+  "predicted_code": "0902100050",
+  "predicted_reason": "Genmaicha is a mixture of green tea (Camellia sinensis) with roasted rice, and per CBP practice such green tea blends in immediate packages not exceeding 3 kg are classified as green tea (not fermented) under heading 0902.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 295,
+    "total_tokens": 541,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 204,
+      "audio_tokens": 0,
+      "reasoning_tokens": 218,
+      "rejected_prediction_tokens": 256
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:37.697973+00:00",
+  "latency_s": 3.211,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

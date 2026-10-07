@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359226",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "4811596000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-4d3cfbe11e414e64b65b6c5fec54da65",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4811.59.2000\", \"reason\": \"The product is bleached paper weighing less than 150 g/m\u00b2, printed on one side and coated/covered with plastic on the other, classifiable as printed paper coated with plastics under heading 4811.\"}",
+          "role": "assistant",
+          "reasoning_content": "Paper coated with plastic, printed \u2014 likely 4811.59 (paper coated with plastics, bleached, printed). 4811.59.2000? Printed coated paper: 4811.59.90? Actually 4811.59 covers paper >150 g/m\u00b2? No\u20144811 is paper, paperboard... coated with plastics, weighing over 150 g/m\u00b2? Chapter 48 note: 4810-4811... 4811 applies regardless? 4811 covers paper coated with plastics, of a weight exceeding 150 g/m\u00b2? No, that's 4810 (coated with kaolin). 4811: \"Paper, paperboard, cellulose wadding and webs of cellulose fibers, coated, impregnated, covered, surface-colored... \" \u2014 no weight limit. Printed: 4811.59? Subheadings: 4811.51/59 bleached, 4811.59 = other (printed). 4811.59.2000? I'll answer 4811.59.2000... safer 4811.59.90? Actual US codes: 4811.59.2000 \"Other, weighing less than 150 g/m\u00b2\"? I recall 4811.59.2000 exists. Use that."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333420,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 284,
+      "completion_tokens": 355,
+      "total_tokens": 639,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 288,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4811592000",
+  "predicted_reason": "The product is bleached paper weighing less than 150 g/m\u00b2, printed on one side and coated/covered with plastic on the other, classifiable as printed paper coated with plastics under heading 4811.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 355,
+    "total_tokens": 639,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 288,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:00.392126+00:00",
+  "latency_s": 4.131,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

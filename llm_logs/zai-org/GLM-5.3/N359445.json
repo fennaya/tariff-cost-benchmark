@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359445",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3006305000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-f6332875c8534230926ad8592b2f537a",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3006.90.0000\", \"reason\": \"Fluorescein injection is an in vivo diagnostic reagent put up in measured doses for medical use, classified as an other pharmaceutical good of heading 3006.\"}",
+          "role": "assistant",
+          "reasoning_content": "Diagnostic reagent \u2014 3822.90.5050? Fluorescein injection as diagnostic reagent in vitro? It's injected into humans \u2014 medicament? Diagnostic agents for administration \u2014 3006.30? Actually fluorescein injection is a diagnostic reagent for in vivo use; classified under 3006.30.00 (opacifying agents)? Fluorescein isn't opacifying. 3006.90? Hmm. Common classification: 3004.90? It's a diagnostic reagent, not therapeutic. HTS 3006.30 covers opacifying preparations for X-ray exams. Fluorescein angiography \u2014 likely 3006.90.00 \"other\" \u2014 3006.90.0000? There's 3006.90.0000? Actually 3006.90.0090? I'll go 3006.90.0000... but 10-digit: 3006.90.0000? I think subheading 3006.90.0000 exists? There's 3006.90.0090? I'll answer 3006.90.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333449,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 141,
+      "completion_tokens": 300,
+      "total_tokens": 441,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 199,
+        "audio_tokens": 0,
+        "reasoning_tokens": 244,
+        "rejected_prediction_tokens": 311
+      }
+    }
+  },
+  "predicted_code": "3006900000",
+  "predicted_reason": "Fluorescein injection is an in vivo diagnostic reagent put up in measured doses for medical use, classified as an other pharmaceutical good of heading 3006.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 141,
+    "completion_tokens": 300,
+    "total_tokens": 441,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 199,
+      "audio_tokens": 0,
+      "reasoning_tokens": 244,
+      "rejected_prediction_tokens": 311
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:28.730074+00:00",
+  "latency_s": 3.795,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

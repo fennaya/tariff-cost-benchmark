@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357365",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "4407130000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-b9804f30a6e941ca86c970b288cc029f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4407.11.0060\", \"reason\": \"Planed (but not further worked) coniferous SPF dimensional lumber is classified as sawn wood of conifers, planed on more than one side, not treated or further processed.\"}",
+          "role": "assistant",
+          "reasoning_content": "SPF lumber, planed, not conifer... spruce/pine/fir are coniferous. Planed wood, not further worked \u2192 4407.11.00 (coniferous, planed? Actually planed thickness... 4407.11.0060?). 4407.11.00 covers coniferous sawn wood planed. 10-digit: 4407.11.0060? Common: 4407.11.0060 \"other, coniferous\". I'll answer 4407.11.0060."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333235,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 287,
+      "completion_tokens": 189,
+      "total_tokens": 476,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 129,
+        "audio_tokens": 0,
+        "reasoning_tokens": 128,
+        "rejected_prediction_tokens": 171
+      }
+    }
+  },
+  "predicted_code": "4407110060",
+  "predicted_reason": "Planed (but not further worked) coniferous SPF dimensional lumber is classified as sawn wood of conifers, planed on more than one side, not treated or further processed.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 287,
+    "completion_tokens": 189,
+    "total_tokens": 476,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 129,
+      "audio_tokens": 0,
+      "reasoning_tokens": 128,
+      "rejected_prediction_tokens": 171
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:55.122842+00:00",
+  "latency_s": 3.953,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

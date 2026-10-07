@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359119",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "8518908100",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-ad6d1af3f29f45628859de6557468bef",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4008.11.00\", \"reason\": \"The item is a shaped piece of cellular (foamed) EPDM synthetic rubber, classifiable as plates, sheets and strip of cellular vulcanized rubber under heading 4008.\"}",
+          "role": "assistant",
+          "reasoning_content": "Foam ear cushion part \u2014 likely 3921.13? EPDM cellular plastic. Shaped piece for headset \u2014 could be 8518.90 as part of microphone/headset? It's a foam piece, not finished part... likely classified as cellular plastic of plastics, 3921.13.10? EPDM is synthetic rubber though \u2014 cellular rubber: 4008.11? EPDM foam = cellular rubber, Chapter 40: 4008.11.00? Actually cellular vulcanized rubber plates/sheets: 4008.11.00. But shaped piece... 4008.19? Non-cellular 4008.19; cellular articles 4008.11.00.10? I'll go 4008.11.00."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333406,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 219,
+      "total_tokens": 425,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 134,
+        "audio_tokens": 0,
+        "reasoning_tokens": 162,
+        "rejected_prediction_tokens": 291
+      }
+    }
+  },
+  "predicted_code": "40081100",
+  "predicted_reason": "The item is a shaped piece of cellular (foamed) EPDM synthetic rubber, classifiable as plates, sheets and strip of cellular vulcanized rubber under heading 4008.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 219,
+    "total_tokens": 425,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 134,
+      "audio_tokens": 0,
+      "reasoning_tokens": 162,
+      "rejected_prediction_tokens": 291
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:46.435083+00:00",
+  "latency_s": 3.912,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

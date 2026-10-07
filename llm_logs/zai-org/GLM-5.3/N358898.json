@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358898",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8544200000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-755115d33121428fb864d7668755b8b4",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8544.30.0000\", \"reason\": \"The merchandise is an insulated coaxial cable assembly (multiple coaxial conductors with Fakra and BNC connectors) used solely for signal transmission, which is classified as insulated coaxial cable under heading 8544, subheading 8544.30.\"}",
+          "role": "assistant",
+          "reasoning_content": "Coaxial cable assembly with connectors \u2014 likely 8544.70 (insulated cable with connectors) \u2014 actually 8544.42? Coaxial cable with connectors: 8544.70.0000? Electrical conductors fitted with connectors fall 8544.30 (coaxial cable and other coaxial conductors) \u2014 but fitted with connectors? 8544.30 covers coaxial cable, insulated, not fitted with connectors; fitted with connectors \u2192 8544.42? Historically rulings: wiring harness with connectors \u2192 8544.30? Coaxial with connectors classified 8544.30.00.00? Actually 8544.30 is \"coaxial cable and other coaxial conductors, insulated\" \u2014 connectors don't exclude. Many CBP rulings classify coaxial cable assemblies in 8544.30.0000. But harness assemblies for vehicles: 8544.30.0090? HTS 8544.30.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333376,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 293,
+      "total_tokens": 522,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 201,
+        "audio_tokens": 0,
+        "reasoning_tokens": 216,
+        "rejected_prediction_tokens": 259
+      }
+    }
+  },
+  "predicted_code": "8544300000",
+  "predicted_reason": "The merchandise is an insulated coaxial cable assembly (multiple coaxial conductors with Fakra and BNC connectors) used solely for signal transmission, which is classified as insulated coaxial cable under heading 8544, subheading 8544.30.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 293,
+    "total_tokens": 522,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 201,
+      "audio_tokens": 0,
+      "reasoning_tokens": 216,
+      "rejected_prediction_tokens": 259
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:16.424238+00:00",
+  "latency_s": 3.152,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357431",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "7306405040",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-4f22cd13e3644f139bc67ac55bb7a14e",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7306.61.0030\", \"reason\": \"Welded circular cross-section stainless steel pipes (over 0.5% nickel) with wall thickness of 1.65 mm or more are classified under HTSUS 7306.61.0030.\"}",
+          "role": "assistant",
+          "reasoning_content": "Welded stainless steel pipe, circular, cold-drawn \u2014 heading 7306. Cold-drawn welded pipe of stainless steel: 7306.61? Actually 7306.61 is \"welded, of circular cross section, of stainless steel\" \u2014 but cold-drawn welded pipes classified in 7306.61.00? There's NY ruling: cold-drawn welded stainless steel pipes \u2192 7306.61.0030? HTS 7306.61.0030: \"Of a wall thickness of 1.65 mm or more\"? Actually subheadings: 7306.61.0030 pipes of stainless steel, welded, circular, other... Known ruling (NY N268547?) classifies such pipes in 7306.61.0030."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333245,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 171,
+      "completion_tokens": 247,
+      "total_tokens": 418,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 166,
+        "audio_tokens": 0,
+        "reasoning_tokens": 177,
+        "rejected_prediction_tokens": 234
+      }
+    }
+  },
+  "predicted_code": "7306610030",
+  "predicted_reason": "Welded circular cross-section stainless steel pipes (over 0.5% nickel) with wall thickness of 1.65 mm or more are classified under HTSUS 7306.61.0030.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 171,
+    "completion_tokens": 247,
+    "total_tokens": 418,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 166,
+      "audio_tokens": 0,
+      "reasoning_tokens": 177,
+      "rejected_prediction_tokens": 234
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:34:05.464810+00:00",
+  "latency_s": 3.105,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360704",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "8479899599",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d0f6a78d8a914662b0dc7b876da6e4b8",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8413.81.9030\", \"reason\": \"The unit's essential function is pneumatic pumping of liquid (used engine oil), and it is not a centrifugal or rotary positive displacement pump, so it falls under other positive displacement pumps for liquids in subheading 8413.81.9030.\"}",
+          "role": "assistant",
+          "reasoning_content": "Used oil extractor \u2014 likely 8428.20? Pneumatic elevators/conveyors? Suction pump for liquids... likely classified as liquid pump 8413.81.9030? Pneumatic pumps for liquids: 8413.81.00. Actually 8413.81 covers other centrifugal/positive displacement... pneumatic elevators/conveyors for liquids 8428.20.00. Oil suction unit \u2014 likely 8413.81.9030? Common classification for oil evacuators: 8428.20.0040? I'll go 8413.81.9030."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333591,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 196,
+      "completion_tokens": 217,
+      "total_tokens": 413,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 140,
+        "audio_tokens": 0,
+        "reasoning_tokens": 140,
+        "rejected_prediction_tokens": 250
+      }
+    }
+  },
+  "predicted_code": "8413819030",
+  "predicted_reason": "The unit's essential function is pneumatic pumping of liquid (used engine oil), and it is not a centrifugal or rotary positive displacement pump, so it falls under other positive displacement pumps for liquids in subheading 8413.81.9030.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 196,
+    "completion_tokens": 217,
+    "total_tokens": 413,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 140,
+      "audio_tokens": 0,
+      "reasoning_tokens": 140,
+      "rejected_prediction_tokens": 250
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:50.834388+00:00",
+  "latency_s": 2.531,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360064",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "7615107125",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d50ced7888f5487d8e94a68fc47ed027",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7612.90.0000\", \"reason\": \"Disposable aluminum foil trays with wall thickness not exceeding 0.2 mm, not rigid rectangular containers, are classified in HTSUS subheading 7612.90.0000.\"}",
+          "role": "assistant",
+          "reasoning_content": "Ruling likely N359813? Aluminum foil trays, thickness 0.05-0.07mm, household/sanitary \u2014 7615.20.0000? Actually foil containers for food: 7612.90? Foil of thickness \u22640.2mm backed... Trays of aluminum foil: 7612.90.0000? HTS 7612 = aluminum casks, drums, cans, boxes etc, of aluminum, of a wall thickness exceeding 0.2mm? No: 7612 covers rigid containers of thickness >0.2mm? Actually 7612: \"Aluminum casks, drums, cans, boxes and similar containers, for any material (other than compressed or liquefied gas), of a wall thickness not exceeding 0.2mm\". Trays of 0.05-0.07mm \u2192 7612.90.0000? 7612.10 rigid, 7612.90 other. Trays are rigid... 7612.10.0000? Ruling likely NY N359813 classifies under 7612.90.0000? Hmm. CBP often classifies foil trays under 7612.90.0000. Actually 7612.10 = rigid rectangular... \"Rigid rectangular containers\" \u2014 trays are open, not containers? CBP rulings classify aluminum foil trays under 7612.90.0000. I'll go with 7612.90.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333536,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 299,
+      "completion_tokens": 387,
+      "total_tokens": 686,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 259,
+        "audio_tokens": 0,
+        "reasoning_tokens": 327,
+        "rejected_prediction_tokens": 386
+      }
+    }
+  },
+  "predicted_code": "7612900000",
+  "predicted_reason": "Disposable aluminum foil trays with wall thickness not exceeding 0.2 mm, not rigid rectangular containers, are classified in HTSUS subheading 7612.90.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 387,
+    "total_tokens": 686,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 259,
+      "audio_tokens": 0,
+      "reasoning_tokens": 327,
+      "rejected_prediction_tokens": 386
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:56.279929+00:00",
+  "latency_s": 3.712,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

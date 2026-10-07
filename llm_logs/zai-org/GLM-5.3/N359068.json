@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359068",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "2517490000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-b8e39810380e4cc2adfd9cf72191e48c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"2515.13.0000\", \"reason\": \"Crude, merely crushed natural basalt that is not further worked is classified as porphyry, basalt, or sandstone, crude or roughly trimmed, in subheading 2515.13.0000.\"}",
+          "role": "assistant",
+          "reasoning_content": "Crushed basalt, not further worked \u2192 2515.11? Basalt is 2515 (marble, travertine, ecaussine... granite)? Actually basalt: heading 2515 covers marble/travertine/ecaussine/granite/porphyry/basalt, crude or roughly trimmed. 2515.11.0000 is marble/travertine/ecaussine; basalt crude \u2192 2515.12.0000? Granite crude is 2515.11? Structure: 2515.11 marble etc; 2515.12 granite; 2515.13 porphyry, basalt, sandstone. So 2515.13.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333395,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 230,
+      "total_tokens": 437,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 162,
+        "audio_tokens": 0,
+        "reasoning_tokens": 163,
+        "rejected_prediction_tokens": 178
+      }
+    }
+  },
+  "predicted_code": "2515130000",
+  "predicted_reason": "Crude, merely crushed natural basalt that is not further worked is classified as porphyry, basalt, or sandstone, crude or roughly trimmed, in subheading 2515.13.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 230,
+    "total_tokens": 437,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 162,
+      "audio_tokens": 0,
+      "reasoning_tokens": 163,
+      "rejected_prediction_tokens": 178
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:35.411432+00:00",
+  "latency_s": 3.118,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

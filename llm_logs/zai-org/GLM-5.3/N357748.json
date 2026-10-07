@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357748",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8543709860",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-35f5251d4034440ca583057e17da52ee",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8708.99.8180\", \"reason\": \"The ECU is a dedicated part of the motor vehicle steering system, and CBP precedent classifies vehicle electronic control modules as other parts of motor vehicles under heading 8708 rather than as general electrical apparatus.\"}",
+          "role": "assistant",
+          "reasoning_content": "ECU for steering wheel \u2014 likely 8708.99 or electrical apparatus 8537.10? CBP rulings classify vehicle ECUs under 8708.99 (parts of vehicles) when integral to vehicle... Actually many ECU rulings: engine control modules classified 8708.99. Steering wheel ECU \u2014 8708.99.8180? 8708.99 sections: 8708.99.31... Current: 8708.99.8180 \"Other\". I'll use 8708.99.8180."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333280,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 192,
+      "total_tokens": 421,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 127,
+        "audio_tokens": 0,
+        "reasoning_tokens": 125,
+        "rejected_prediction_tokens": 203
+      }
+    }
+  },
+  "predicted_code": "8708998180",
+  "predicted_reason": "The ECU is a dedicated part of the motor vehicle steering system, and CBP precedent classifies vehicle electronic control modules as other parts of motor vehicles under heading 8708 rather than as general electrical apparatus.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 192,
+    "total_tokens": 421,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 127,
+      "audio_tokens": 0,
+      "reasoning_tokens": 125,
+      "rejected_prediction_tokens": 203
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:34:40.537465+00:00",
+  "latency_s": 2.286,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

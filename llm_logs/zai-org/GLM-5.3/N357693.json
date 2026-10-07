@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357693",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7228706000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-0e1636a987c141008420ac0df4e984ce",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7225.91.0030\", \"reason\": \"Corrugated flat-rolled alloy steel sheet of width 600 mm or more falls under heading 7225, with the corrugated subheading 7225.91.00.\"}",
+          "role": "assistant",
+          "reasoning_content": "Corrugated sheets of alloy steel, not coated? Alloy steel corrugated sheets \u2014 likely 7225.91 or 7226.91... Corrugated: 7225.91.00? Actually \"flat-rolled... corrugated\" heading 7225/7226. Alloy steel width 680mm >600mm \u2192 7225.91.0030? HTS 7225.91.00 \"of a width of 600 mm or more: corrugated\". 10-digit: 7225.91.0030? I think 7225.91.0030 exists. Use that."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333273,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 176,
+      "completion_tokens": 208,
+      "total_tokens": 384,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 145,
+        "audio_tokens": 0,
+        "reasoning_tokens": 145,
+        "rejected_prediction_tokens": 165
+      }
+    }
+  },
+  "predicted_code": "7225910030",
+  "predicted_reason": "Corrugated flat-rolled alloy steel sheet of width 600 mm or more falls under heading 7225, with the corrugated subheading 7225.91.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 176,
+    "completion_tokens": 208,
+    "total_tokens": 384,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 145,
+      "audio_tokens": 0,
+      "reasoning_tokens": 145,
+      "rejected_prediction_tokens": 165
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:34:33.170455+00:00",
+  "latency_s": 2.252,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}
