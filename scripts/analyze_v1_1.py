@@ -35,6 +35,8 @@ from analyze_invalid_codes import prefixes  # noqa: E402
 LAST_RULING = date(2026, 8, 14)
 usable = {r["rulingNumber"]: r for r in (json.loads(l) for l in M.USABLE_PATH.read_text(encoding="utf-8").splitlines())}
 REPORT = []
+_dq = ROOT / "review" / "description_quality.json"
+FLAGGED = set(json.loads(_dq.read_text(encoding="utf-8"))["flagged"]) if _dq.exists() else set()
 
 
 UNKNOWN_CUTOFF = set()  # filled in main(): models with no stated cutoff
@@ -261,6 +263,41 @@ def main():
         out(f"| {mid} | {g['n']} | {g['p2']} | {adj[mid]:.4f} | {'met' if pre else 'not met'} | {'met' if hol else 'not met'} | {'YES' if pre != hol else 'no'} |")
     out(f"\nVerdicts that change under Holm: {', '.join(changed) if changed else 'none'}.")
 
+    # ---- sensitivity: exclude rulings with inadequate descriptions (found after pre-registration)
+    if FLAGGED:
+        out("NLNL## Sensitivity: excluding rulings with an INADEQUATE description (found after pre-registration)NLNL".replace("NL", chr(10)))
+        out(f"{len(FLAGGED)} usable rulings are flagged by `scripts/audit_description_quality.py` (review/description_quality.md). Each cell is the main result, then the result without the flagged rulings. Primary rows as above; Gate B exactly as pre-registered. The main results and verdicts are not replaced.")
+        out("")
+        out("| Model | n main / excl | 8-digit main / excl | Invalid share main / excl | Underpay share (n) main | Underpay share (n) excl | Gate B main / excl |")
+        out("|---|---|---|---|---|---|---|")
+        sens = {}
+        for m in models:
+            mid = m["model_id"]
+            prim = primary_rows(m, rows_by[mid])
+            px = [r for r in prim if r["rulingNumber"] not in FLAGGED]
+            gm, gx = res[mid]["gate_b"], gate_b(px)
+            inv = lambda rs: sum(1 for r in rs if r.get("tag") == "INVALID_CODE")
+
+            def ushare(g):
+                return f"{g['share']:.1%} (n = {g['n']})" if g["n"] else "n/a"
+
+            def verdict(g):
+                return "met" if g["n"] and g["verdict"].startswith("underpays") else ("not met" if g["n"] >= 30 else f"too few (n = {g['n']})")
+
+            sens[mid] = {"n": (len(prim), len(px)), "acc8": (acc(prim, 8) / len(prim), acc(px, 8) / len(px)),
+                         "invalid": (inv(prim) / len(prim), inv(px) / len(px)), "gate_main": verdict(gm), "gate_excl": verdict(gx),
+                         "under_main": gm.get("share"), "under_excl": gx.get("share"), "p2_excl": gx.get("p2")}
+            out(f"| {mid} | {len(prim)} / {len(px)} | {acc(prim, 8) / len(prim):.1%} / {acc(px, 8) / len(px):.1%} | {inv(prim) / len(prim):.1%} / {inv(px) / len(px):.1%} | {ushare(gm)} | {ushare(gx)} | {verdict(gm)} / {verdict(gx)} (p vs Baseline 2: {gm.get('p2')} / {gx.get('p2')}) |")
+        moved = [mid for mid, v in sens.items() if v["gate_main"] != v["gate_excl"]]
+        out("")
+        out(f"Gate B verdicts that change when flagged rulings are excluded: {', '.join(moved) if moved else 'none'}.")
+        small = [v for k, v in sens.items() if k in ("openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b")]
+        strong = [v for k, v in sens.items() if k not in ("openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b")]
+        rng = lambda vals: f"{min(vals):.1%} to {max(vals):.1%}"
+        out(f"8-digit accuracy, small models: {rng([v['acc8'][0] for v in small])} main, {rng([v['acc8'][1] for v in small])} excluding. Stronger models: {rng([v['acc8'][0] for v in strong])} main, {rng([v['acc8'][1] for v in strong])} excluding.")
+        out(f"Underpay share, small models: {rng([v['under_main'] for v in small])} main, {rng([v['under_excl'] for v in small])} excluding. Stronger models: {rng([v['under_main'] for v in strong])} main, {rng([v['under_excl'] for v in strong])} excluding.")
+        res["_sensitivity_inadequate"] = sens
+
     # ---- contamination checks
     out("\n## Contamination check A: memorisation probe (ruling number only, no description)\n")
     out("Question asked: \"What 10-digit HTSUS code did CBP assign in ruling <number>? Reply with JSON {\"hts_code\": ...}\". Seed 20261007, `data/probe_ids.csv`. Exact hits clearly above zero would suggest memorisation.\n")
@@ -404,10 +441,15 @@ def main():
                 allmiss.append({"model": m["model_id"], "rulingNumber": r["rulingNumber"], "diff_pct": diff, "usd_per_100k": diff * 1000,
                                 "true_code": r["true_code"], "true_rate": t, "pred_code": r["predicted_code"], "pred_rate": p,
                                 "description": usable[r["rulingNumber"]]["cleaned_description"]})
-    under_l = sorted([x for x in allmiss if x["diff_pct"] < 0], key=lambda x: x["diff_pct"])[:10]
-    over_l = sorted([x for x in allmiss if x["diff_pct"] > 0], key=lambda x: -x["diff_pct"])[:10]
+    all_under = sorted([x for x in allmiss if x["diff_pct"] < 0], key=lambda x: x["diff_pct"])
+    all_over = sorted([x for x in allmiss if x["diff_pct"] > 0], key=lambda x: -x["diff_pct"])
+    dropped = [(k, x) for k, lst in (("under", all_under[:10]), ("over", all_over[:10])) for x in lst if x["rulingNumber"] in FLAGGED]
+    under_l = [x for x in all_under if x["rulingNumber"] not in FLAGGED][:10]
+    over_l = [x for x in all_over if x["rulingNumber"] not in FLAGGED][:10]
     bm = ["# Biggest misses (scripts/analyze_v1_1.py; EXPLORATORY)\n",
-          "The 10 largest underpayments and 10 largest overpayments per $100,000 declared across all models, among wrong answers where both codes resolve to an ad valorem or free MFN rate. Dollar gap = rate difference x $1,000 per percentage point (MFN lower bound; Chapter 99 duties excluded).\n"]
+          "The 10 largest underpayments and 10 largest overpayments per $100,000 declared across all models, among wrong answers where both codes resolve to an ad valorem or free MFN rate. Dollar gap = rate difference x $1,000 per percentage point (MFN lower bound; Chapter 99 duties excluded).\n",
+          f"Rows whose ruling has an INADEQUATE description (review/description_quality.md) are dropped and refilled from the next largest. Dropped from the unfiltered top 10 lists: {len(dropped)} row(s)"
+          + (": " + "; ".join(f"{k} {x['rulingNumber']} ({x['model']}, ${abs(x['usd_per_100k']):,.0f})" for k, x in dropped) if dropped else "") + ".\n"]
     for title, lst in (("Largest underpayments (model's rate is lower)", under_l), ("Largest overpayments (model's rate is higher)", over_l)):
         bm.append(f"## {title}\n")
         bm.append("| # | Ruling | Model | Official code (MFN rate) | Model's code (MFN rate) | Gap per $100,000 | Description |")
@@ -418,7 +460,7 @@ def main():
         bm.append("")
     (ROOT / "review" / "biggest_misses.md").write_text("\n".join(bm), encoding="utf-8")
     (ROOT / "review" / "biggest_misses.json").write_text(json.dumps({"under": under_l, "over": over_l}, indent=2), encoding="utf-8")
-    out(f"\n### 4. Biggest misses\n\nSee review/biggest_misses.md (10 largest underpayments and overpayments across all models; the ruling ids are tagged in demo_data.json).")
+    out(f"\n### 4. Biggest misses\n\nSee review/biggest_misses.md (10 largest underpayments and overpayments across all models, after dropping {len(dropped)} row(s) whose ruling has an INADEQUATE description; the ruling ids are tagged in demo_data.json).")
 
     # ---- cost to run (extra 5)
     out("\n### 5. What it costs to run\n")

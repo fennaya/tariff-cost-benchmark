@@ -112,6 +112,27 @@ Added after the first results were seen, as a sensitivity check; the pre-registe
 
 Verdicts that change under Holm: none.
 
+
+## Sensitivity: excluding rulings with an INADEQUATE description (found after pre-registration)
+
+
+40 usable rulings are flagged by `scripts/audit_description_quality.py` (review/description_quality.md). Each cell is the main result, then the result without the flagged rulings. Primary rows as above; Gate B exactly as pre-registered. The main results and verdicts are not replaced.
+
+| Model | n main / excl | 8-digit main / excl | Invalid share main / excl | Underpay share (n) main | Underpay share (n) excl | Gate B main / excl |
+|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 1098 / 1058 | 0.3% / 0.3% | 98.4% / 98.3% | 67.4% (n = 46) | 67.4% (n = 46) | met / met (p vs Baseline 2: < 0.001 / < 0.001) |
+| openai/gpt-oss-120b | 1098 / 1058 | 5.6% / 5.8% | 96.6% / 96.6% | 65.3% (n = 49) | 64.6% (n = 48) | met / met (p vs Baseline 2: < 0.001 / < 0.001) |
+| allam-2-7b † | 1098 / 1058 | 2.4% / 2.5% | 87.2% / 87.1% | 65.5% (n = 116) | 66.7% (n = 111) | met / met (p vs Baseline 2: < 0.001 / < 0.001) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 / 1058 | 39.3% / 40.3% | 32.2% / 31.2% | 54.0% (n = 324) | 56.1% (n = 310) | not met / not met (p vs Baseline 2: 0.1748 / 0.0769) |
+| zai-org/GLM-5.3 † | 1098 / 1058 | 25.1% / 26.0% | 67.6% / 67.0% | 55.7% (n = 212) | 57.1% (n = 205) | met / met (p vs Baseline 2: 0.0060 / 0.0080) |
+| moonshotai/Kimi-K3 † | 1098 / 1058 | 43.4% / 44.6% | 25.3% / 24.6% | 59.2% (n = 311) | 60.9% (n = 294) | met / met (p vs Baseline 2: 0.0040 / 0.0050) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 105 / 102 | 23.8% / 24.5% | 33.3% / 31.4% | 60.0% (n = 40) | 61.5% (n = 39) | met / met (p vs Baseline 2: 0.0070 / 0.0120) |
+| openai/gpt-6-sol | 167 / 152 | 49.7% / 53.3% | 25.7% / 21.7% | 51.2% (n = 41) | 58.3% (n = 36) | not met / not met (p vs Baseline 2: 0.1139 / 0.1199) |
+
+Gate B verdicts that change when flagged rulings are excluded: none.
+8-digit accuracy, small models: 0.3% to 5.6% main, 0.3% to 5.8% excluding. Stronger models: 23.8% to 49.7% main, 24.5% to 53.3% excluding.
+Underpay share, small models: 65.3% to 67.4% main, 64.6% to 67.4% excluding. Stronger models: 51.2% to 60.0% main, 56.1% to 61.5% excluding.
+
 ## Contamination check A: memorisation probe (ruling number only, no description)
 
 Question asked: "What 10-digit HTSUS code did CBP assign in ruling <number>? Reply with JSON {"hts_code": ...}". Seed 20261007, `data/probe_ids.csv`. Exact hits clearly above zero would suggest memorisation.
@@ -251,7 +272,7 @@ For answers whose first 8 digits exist in the HTS, both the answer and the true 
 
 ### 4. Biggest misses
 
-See review/biggest_misses.md (10 largest underpayments and overpayments across all models; the ruling ids are tagged in demo_data.json).
+See review/biggest_misses.md (10 largest underpayments and overpayments across all models, after dropping 5 row(s) whose ruling has an INADEQUATE description; the ruling ids are tagged in demo_data.json).
 
 ### 5. What it costs to run
 
