@@ -17,7 +17,7 @@ Round-by-round notes. Where an older line was superseded, it has been corrected 
 
 ### Round 3 (2026-10-06): invalid-code breakdown, guardrail, dollar figure: DONE
 
-- Lead finding now: free models mostly return codes that do not exist (88.7% to 98.4% of wrong answers), and most are not near misses (suffix-only is 6.7% to 22.9% of invalid answers). Outdated codes explain 1 invalid answer. A validity check flags 88.7% to 98.4% of wrong answers; a one-turn retry turned 1.5% to 7.2% of invalid answers into valid codes, none correct. See findings.md and `review/invalid_breakdown.md`, `review/guardrail.md`, `figures/error_breakdown.png`.
+- Lead finding (v1.0 models; v1.1 stronger models behave differently, see findings.md): free models mostly return codes that do not exist (88.7% to 98.4% of wrong answers), and most are not near misses (suffix-only is 6.7% to 22.9% of invalid answers). Outdated codes explain 1 invalid answer. A validity check flags 88.7% to 98.4% of wrong answers; a one-turn retry turned 1.5% to 7.2% of invalid answers into valid codes, none correct. See findings.md and `review/invalid_breakdown.md`, `review/guardrail.md`, `figures/error_breakdown.png`.
 - **Data problem found and checked:** the Phase 3 "per-revision" HTS files were all the current schedule (the export API ignores `release`). Impact on validity checks: 1 answer. Duty rates were then re-checked against each ruling-date release: 0 of 4,060 code-date pairs differ. Details in DECISIONS.md.
 - Final fixes: validity-check framing (detects 88.7% to 98.4% of wrong answers; retry repairs none), underpay n/CI/baseline p reported per model, and MFN rates re-checked against each ruling-date release (0 of 4,060 code-date pairs had a different rate). A markup bug in rate parsing was fixed in the same pass (Gate 3: 1,077/1,098). See DECISIONS.md.
 - Gemini run unchanged (in progress, no results published).
@@ -116,10 +116,10 @@ proposed fixes are now applied, not just reported:
 Three free, open-weight models on Groq's free tier top out at 5.6% accuracy on the
 duty-relevant 8-digit US customs code. When wrong in a way that changes the duty rate,
 all three underpay significantly more often than chance baselines predict
-(p < 0.001 per model, n = 46 / 49 / 116 rate-changing errors) — the legally dangerous
+(p < 0.001 per model, n = 46 / 49 / 116 rate-changing errors; v1.0 models only, the lean is 51% to 60% in the stronger v1.1 models) — the legally dangerous
 direction. This is a finding about these three free-tier models, not evidence the
-classification task itself is unusually hard: prior work reports far higher scores under
-different conditions (paid frontier models, fine-tuning, a different benchmark).
+classification task itself is unusually hard: prior work reports 10-digit scores of about
+12.5% to 40% under different conditions (ATLAS), and the stronger v1.1 models score 12.4% to 31.7% at 10 digits.
 
 ### What's NOT done (possible future rounds, not started)
 
