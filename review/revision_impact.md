@@ -33,3 +33,8 @@ True codes of the 1098 usable rulings absent from their own ruling-date release 
 - openai/gpt-oss-20b: 0
 - openai/gpt-oss-120b: 1
 - allam-2-7b: 0
+- deepseek-ai/DeepSeek-V4.1-Flash: 17
+- zai-org/GLM-5.3: 15
+- moonshotai/Kimi-K3: 20
+- nvidia/nemotron-3-ultra-550b-a55b:free: 4
+- openai/gpt-6-sol: 5

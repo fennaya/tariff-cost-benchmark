@@ -4,37 +4,38 @@
 
 Interactive demo: https://claude.ai/artifact/F7JGzyoPMmeXtaNgDv4R3Z
 
-**v1.0.** The results below are complete and final for the 3 models tested. A 4th model (Gemini, free tier) is in progress. It will be added in **v1.1** when its run finishes. See [STATUS.md](STATUS.md). Nothing here depends on it.
+**v1.1 (draft, 2026-10-07).** Adds stronger models and answers two follow-up questions: how good are stronger models, and is an invalid code a formatting slip or an invented code. The v1.0 numbers for the three Groq models are unchanged. Gemini 3.8 Flash is still running (one run a day) and is in no table until it reaches 200 rulings. Pre-registration: [PREREG_v1.1.md](PREREG_v1.1.md).
 
-**Lead finding:** Free models mostly return HTS codes that do not exist, and most of those are not near misses. Across 1,098 CBP rulings, 88.7% to 98.4% of wrong answers were invalid codes. "Invalid" means unparseable output, or a code that is not a 10-digit entry in the HTS.
+**Lead finding:** The answer depends on the model. The three small free Groq models mostly return HTS codes that do not exist (87% to 98% of answers, and 77% to 93% of those invalid answers are invented codes). Stronger models mostly return real codes (invalid answers 25% to 33%, except GLM 5.3 at 68%), and most of their invalid answers are a wrong suffix on a real tariff line. But even the best of them gets the duty-relevant 8-digit code right less than half the time.
 
-| Model | Wrong answers | Invalid | Suffix only wrong | First 6 real, first 8 not | Fabricated |
-|---|---|---|---|---|---|
-| gpt-oss-20b | 1,098 | 1,080 (98.4%) | 13.5% of invalid | 39.1% | 47.4% |
-| gpt-oss-120b | 1,092 | 1,061 (97.2%) | 22.9% | 56.1% | 20.8% |
-| allam-2-7b | 1,079 | 957 (88.7%) | 6.7% | 37.5% | 55.0% |
+| Model | Rulings scored | 8-digit accuracy (95% CI) | Invalid share | Format / invented, of invalid (all rulings run) | Underpay share (n) | Gate B |
+|---|---|---|---|---|---|---|
+| gpt-oss-20b | 1,098 | 0.3% (0.1% to 0.8%) | 98.4% | 14% / 86% | 67.4% (n = 46) | met |
+| gpt-oss-120b | 1,098 | 5.6% (4.3% to 7.1%) | 96.6% | 23% / 77% | 65.3% (n = 49) | met |
+| allam-2-7b | 1,098 | 2.4% (1.6% to 3.4%) | 87.2% | 8% / 92% | 65.5% (n = 116) | met |
+| DeepSeek-V4.1-Flash | 1,098 | 39.3% (36.4% to 42.2%) | 32.2% | 58% / 42% | 54.0% (n = 324) | not met |
+| GLM-5.3 | 1,098 | 25.1% (22.7% to 27.8%) | 67.6% | 42% / 58% | 55.7% (n = 212) | met |
+| Kimi-K3 | 1,098 | 43.4% (40.5% to 46.4%) | 25.3% | 68% / 32% | 59.2% (n = 311) | met |
+| nemotron-3-ultra-550b-a55b | 105 | 23.8% (16.7% to 32.8%) | 33.3% | 67% / 33% | 60.0% (n = 40) | met |
+| gpt-6-sol | 167 | 49.7% (42.2% to 57.2%) | 25.7% | 74% / 26% | 51.2% (n = 41) | not met |
 
-**A validity check detects most errors. Asking the model to retry does not repair them.** A check that flags any non-existent code catches 98.4%, 97.2%, and 88.7% of wrong answers (gpt-oss-20b, gpt-oss-120b, allam-2-7b), and flags none of the correct 10-digit answers (0 of 6 and 0 of 19 for the two models that have any). It also flags most answers that are right at the 8-digit duty level but lack a valid suffix (55 of 61 for gpt-oss-120b), so it marks answers for review rather than classifying. When a model was told its code does not exist and asked again, 1.5% to 7.2% of its invalid answers became valid codes, and none became the correct code. Fixing only the 2-digit suffix would rescue 6.7% to 22.9% of invalid answers. Stale training data does not explain it: 1 invalid answer across all three models was a code that existed in a 2022 to 2025 HTS release. Details and the chart are in [findings.md](findings.md).
+Scored on rulings after each model's stated training cutoff where one is stated; DeepSeek V4.1 Flash, GLM 5.3, Kimi K3 and allam-2-7b have no stated cutoff and are labelled "contamination not ruled out". Nemotron 3 Ultra and GPT-6 Sol ran on a fixed 200-ruling sample (105 and 167 rulings after their cutoffs) and are only comparable with other models restricted to the same 200. GPT-6 Sol is a closed OpenAI model run for $0.20 on a paid route; every other model was run free. Closed frontier models were not otherwise tested, and none of these models stands in for GPT, Claude or Gemini. Reasoning was set to the lowest level each model accepts.
 
 ![Error breakdown by model](figures/error_breakdown.png)
 
-**Direction of errors:** Only 8.5% to 13.6% of wrong answers can be compared on duty, because that needs a rate for both the true and the predicted code. In 46 to 116 of those per model, the rate differs, and 65.3% to 67.4% of those rate-changing errors underpaid.
+**Format slip or invented code?** For the three small models, 77% to 93% of invalid answers name a tariff line that does not exist (groups d and e in [findings.md](findings.md)). For DeepSeek V4.1 Flash, Kimi K3, Nemotron 3 Ultra and GPT-6 Sol, 58% to 74% of invalid answers are on a real tariff line with a wrong or missing suffix, but only 34% to 53% of those have the true code's first 8 digits, so a true suffix slip is 23% to 38% of their invalid answers. Stale training data shows up too: 10-digit codes from older HTS releases make up 13% to 42% of the invalid answers of these models (v1.0: 1 answer).
 
-| Model | Rate-changing errors (n) | Underpaid | Underpay share (95% CI) | p vs. matched-depth chance baseline |
-|---|---|---|---|---|
-| gpt-oss-20b | 46 | 31 | 67.4% (53.0% to 79.1%) | < 0.001 |
-| gpt-oss-120b | 49 | 32 | 65.3% (51.3% to 77.1%) | < 0.001 |
-| allam-2-7b | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 |
+**A validity check detects most errors for the small models, but not for the stronger ones.** Flagging any code that does not exist catches 98.4%, 97.2% and 88.7% of wrong answers for gpt-oss-20b, gpt-oss-120b and allam-2-7b, but only 34% to 42% for DeepSeek V4.1 Flash, Kimi K3, Nemotron 3 Ultra and GPT-6 Sol (77% for GLM 5.3), because their wrong answers are mostly valid codes. Asking a v1.0 model to retry after "that code does not exist" turned 1.5% to 7.2% of its invalid answers into valid codes and none into the correct code; the retry test was not repeated for the stronger models.
 
-All three models have at least 30 cases and beat the chance baseline, so the underpay lean is significant for each. The intervals are wide for gpt-oss-20b and gpt-oss-120b. This describes the small comparable set, not all errors. For wrong answers that are valid codes, the median duty at stake is $1,500 / $0 / $4,000 per $100,000 (gpt-oss-20b / gpt-oss-120b / allam-2-7b; n = 15 / 31 / 113). The gpt-oss-20b figure has too few cases to confirm.
+**Direction of errors:** Among rate-changing errors, 65% to 67% underpaid for the three small models, and 51% to 60% for the stronger models. The lean beats the pre-registered chance baseline with at least 30 cases for GLM 5.3, Kimi K3 and Nemotron 3 Ultra, and not for DeepSeek V4.1 Flash or GPT-6 Sol (n = 41); the intervals for GLM 5.3 and Nemotron 3 Ultra include 50%. The underpay lean shrinks with stronger models and is not universal. Only a minority of wrong answers can be compared on duty (it needs a rate for both codes), so this describes that set, not all errors. The median duty at stake is $0 per $100,000 for most stronger models; MFN-only lower bounds.
 
-**Headline:** Three free, open-weight models on Groq's free tier were tested. They are `openai/gpt-oss-20b`, `openai/gpt-oss-120b`, and `allam-2-7b`. None scores above 5.6% on the duty-relevant 8-digit code. Most of their wrong answers are invalid codes, and a validity check catches them, but retrying does not make them right. This is a finding about these three models. It is not a claim that the task is inherently hard. Prior work reports far higher scores under different conditions, such as paid frontier models, fine-tuning, and a different benchmark.
+**Headline:** Small free models fail mostly by inventing codes. Stronger models fail mostly by getting the suffix wrong or naming the wrong real tariff line. In both groups the 8-digit (duty-relevant) accuracy is below 50%. This is a finding about the models listed above at their lowest reasoning level, not a claim that the task is inherently hard. Prior work reports far higher scores under different conditions, such as paid frontier models, fine-tuning, and a different benchmark.
 
-**Key numbers:**
-- **5.6% / 2.4% / 0.3%** is the 8-digit (duty-bearing) accuracy for gpt-oss-120b / allam-2-7b / gpt-oss-20b. The set is 1,098 post-training-cutoff CBP rulings.
+**Key numbers (v1.0, unchanged):**
+- **5.6% / 2.4% / 0.3%** is the 8-digit (duty-bearing) accuracy for gpt-oss-120b / allam-2-7b / gpt-oss-20b on 1,098 post-training-cutoff CBP rulings.
 - **0.5% / 1.7% / 0.0%** is the 10-digit accuracy for the same models.
 
-Both findings survived a hostile Round 2 re-audit. It covered bug hunts, baseline tests, a stripping-quality review, and a comparison with prior work. See [findings.md](findings.md) for the full results, method, and limitations. See [DECISIONS.md](DECISIONS.md) for the audit trail. The ratios above come from `scripts/derive_readme_shares.py`, `scripts/analyze_invalid_codes.py`, `scripts/analyze_validity_check.py`, `scripts/analyze_guardrail.py`, `scripts/analyze_underpay_summary.py`, `scripts/check_revision_impact.py`, and `scripts/check_rate_impact.py` (outputs in `review/`).
+All findings survived a hostile re-audit: Round 2 for v1.0 and [review/v1_1_attack.md](review/v1_1_attack.md) for v1.1, which also lists what the results cannot support. See [findings.md](findings.md) for the full results, method, and limitations, and [DECISIONS.md](DECISIONS.md) for the audit trail. All calls are in `data/exports/api_calls.csv`.
 
 **Question:** When AI models classify imported goods for US customs, how often are they
 wrong, how much duty is at stake per error, and do their errors lean toward underpaying
@@ -103,6 +104,15 @@ uv pip install --python .venv requests pandas scipy matplotlib
 .venv/Scripts/python scripts/check_rate_impact.py       # ruling-date vs current rates, dollar figures re-run
 .venv/Scripts/python scripts/analyze_validity_check.py  # what a validity check flags
 .venv/Scripts/python scripts/analyze_underpay_summary.py  # underpay n, Wilson CI, baseline p
+
+# v1.1 (stronger models; keys in .env: BASETEN_API_KEY, OPENROUTER_API_KEY; models and settings in config.json):
+.venv/Scripts/python scripts/build_probe_ids.py          # Check A sample (seed 20261007)
+.venv/Scripts/python scripts/run_new_models.py --model <model_id> --n 50     # pilot; then without --n for the full run
+.venv/Scripts/python scripts/run_new_models.py --model <model_id> --probe    # Check A, ruling number only
+.venv/Scripts/python scripts/verify_parser.py             # new parser vs every cached v1.0 answer
+.venv/Scripts/python scripts/analyze_format_vs_invention.py
+.venv/Scripts/python scripts/analyze_v1_1.py              # review/v1_1_results.md, biggest_misses.md
+.venv/Scripts/python scripts/export_api_calls.py          # data/exports/api_calls.csv
 ```
 
 All raw data is cached under `data/raw/` (CBP rulings, HTS revisions) and `llm_logs/`
@@ -117,7 +127,7 @@ Everything needed to reproduce every number in `findings.md` is in git:
 `data/processed/` (cleaned descriptions, usable set, duty rates), `data/compact/hts_revisions/`
 (the HTS code and rate tables, trimmed and gzipped, 9 MB), `data/compact/hts_older/` and
 `data/compact/hts_rates/` (HTS codes and MFN rates parsed from the archived release PDFs),
-`llm_logs/` and `llm_followups/` (every model response), `run_logs/` (console logs of the
+`llm_logs/`, `llm_probes/` and `llm_followups/` (every model response), `data/exports/` (one row per model call), `run_logs/` (console logs of the
 runs), `review/translation_review_marked.csv`, and all scripts. Run `analysis.py` and the
 `scripts/audit_*.py` / `analyze_language.py` scripts above directly on a fresh clone.
 

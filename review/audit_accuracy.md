@@ -12,15 +12,15 @@ Old scoring (`analysis.py`): strip to digits only, no padding -- a prediction sh
 New scoring (this check): same digit-only stripping, then zero-pad both codes to 10 digits before comparing prefixes.
 
 
-### allam-2-7b
+### openai/gpt-oss-20b
 
 | Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
 |---|---|---|---|
-| 2 | 0.4153 | 0.4153 | +0.00 |
-| 4 | 0.0974 | 0.0974 | +0.00 |
-| 6 | 0.0437 | 0.0437 | +0.00 |
-| 8 | 0.0237 | 0.0237 | +0.00 |
-| 10 | 0.0173 | 0.0173 | +0.00 |
+| 2 | 0.5574 | 0.5574 | +0.00 |
+| 4 | 0.2004 | 0.2004 | +0.00 |
+| 6 | 0.0301 | 0.0301 | +0.00 |
+| 8 | 0.0027 | 0.0027 | +0.00 |
+| 10 | 0.0000 | 0.0000 | +0.00 |
 
 ### openai/gpt-oss-120b
 
@@ -32,15 +32,65 @@ New scoring (this check): same digit-only stripping, then zero-pad both codes to
 | 8 | 0.0556 | 0.0556 | +0.00 |
 | 10 | 0.0055 | 0.0100 | +0.46 |
 
-### openai/gpt-oss-20b
+### allam-2-7b
 
 | Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
 |---|---|---|---|
-| 2 | 0.5574 | 0.5574 | +0.00 |
-| 4 | 0.2004 | 0.2004 | +0.00 |
-| 6 | 0.0301 | 0.0301 | +0.00 |
-| 8 | 0.0027 | 0.0027 | +0.00 |
-| 10 | 0.0000 | 0.0000 | +0.00 |
+| 2 | 0.4153 | 0.4153 | +0.00 |
+| 4 | 0.0974 | 0.0974 | +0.00 |
+| 6 | 0.0437 | 0.0437 | +0.00 |
+| 8 | 0.0237 | 0.0237 | +0.00 |
+| 10 | 0.0173 | 0.0173 | +0.00 |
+
+### deepseek-ai/DeepSeek-V4.1-Flash
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.7860 | 0.7860 | +0.00 |
+| 4 | 0.6767 | 0.6767 | +0.00 |
+| 6 | 0.5282 | 0.5282 | +0.00 |
+| 8 | 0.3925 | 0.3925 | +0.00 |
+| 10 | 0.2505 | 0.2505 | +0.00 |
+
+### zai-org/GLM-5.3
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.7568 | 0.7568 | +0.00 |
+| 4 | 0.6384 | 0.6384 | +0.00 |
+| 6 | 0.4526 | 0.4526 | +0.00 |
+| 8 | 0.2514 | 0.2514 | +0.00 |
+| 10 | 0.1239 | 0.1239 | +0.00 |
+
+### moonshotai/Kimi-K3
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.8051 | 0.8051 | +0.00 |
+| 4 | 0.7004 | 0.7004 | +0.00 |
+| 6 | 0.5528 | 0.5528 | +0.00 |
+| 8 | 0.4344 | 0.4344 | +0.00 |
+| 10 | 0.2842 | 0.2842 | +0.00 |
+
+### nvidia/nemotron-3-ultra-550b-a55b:free
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.6850 | 0.6850 | +0.00 |
+| 4 | 0.5850 | 0.5850 | +0.00 |
+| 6 | 0.3950 | 0.3950 | +0.00 |
+| 8 | 0.2900 | 0.2900 | +0.00 |
+| 10 | 0.1400 | 0.1400 | +0.00 |
+
+### openai/gpt-6-sol
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.8150 | 0.8150 | +0.00 |
+| 4 | 0.7350 | 0.7350 | +0.00 |
+| 6 | 0.6150 | 0.6150 | +0.00 |
+| 8 | 0.4950 | 0.4950 | +0.00 |
+| 10 | 0.3250 | 0.3250 | +0.00 |
 
 **Verdict:** no digit level moved by more than 1 point. Zero-padding does not change the headline numbers; the old no-padding scoring and this stricter normalization agree, so this is not the source of Headline A's low numbers.
 
@@ -50,23 +100,43 @@ The last 2 digits of a 10-digit HTS code are a US-only statistical suffix, frequ
 
 | Model | 8-digit accuracy | 10-digit accuracy |
 |---|---|---|
-| allam-2-7b | 0.0237 | 0.0173 |
-| openai/gpt-oss-120b | 0.0556 | 0.0055 |
 | openai/gpt-oss-20b | 0.0027 | 0.0000 |
+| openai/gpt-oss-120b | 0.0556 | 0.0055 |
+| allam-2-7b | 0.0237 | 0.0173 |
+| deepseek-ai/DeepSeek-V4.1-Flash | 0.3925 | 0.2505 |
+| zai-org/GLM-5.3 | 0.2514 | 0.1239 |
+| moonshotai/Kimi-K3 | 0.4344 | 0.2842 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 0.2900 | 0.1400 |
+| openai/gpt-6-sol | 0.4950 | 0.3250 |
 
 ## 3. Parse failures vs. invalid-but-parsed vs. valid-but-wrong
 
 | Model | n | (a) unparseable JSON | (b) parsed, INVALID_CODE | (c) valid, wrong | (d) valid, correct | Accuracy incl. (a)+(b) | Accuracy excl. (a)+(b) |
 |---|---|---|---|---|---|---|---|
-| allam-2-7b | 1098 | 8 (0.7%) | 949 (86.4%) | 122 (11.1%) | 19 (1.7%) | 0.0173 | 0.1348 |
-| openai/gpt-oss-120b | 1098 | 1 (0.1%) | 1060 (96.5%) | 31 (2.8%) | 6 (0.5%) | 0.0055 | 0.1622 |
 | openai/gpt-oss-20b | 1098 | 0 (0.0%) | 1080 (98.4%) | 18 (1.6%) | 0 (0.0%) | 0.0000 | 0.0000 |
+| openai/gpt-oss-120b | 1098 | 1 (0.1%) | 1060 (96.5%) | 31 (2.8%) | 6 (0.5%) | 0.0055 | 0.1622 |
+| allam-2-7b | 1098 | 8 (0.7%) | 949 (86.4%) | 122 (11.1%) | 19 (1.7%) | 0.0173 | 0.1348 |
+| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 1 (0.1%) | 353 (32.1%) | 476 (43.4%) | 268 (24.4%) | 0.2441 | 0.3602 |
+| zai-org/GLM-5.3 | 1098 | 27 (2.5%) | 715 (65.1%) | 223 (20.3%) | 133 (12.1%) | 0.1211 | 0.3736 |
+| moonshotai/Kimi-K3 | 1098 | 0 (0.0%) | 278 (25.3%) | 516 (47.0%) | 304 (27.7%) | 0.2769 | 0.3707 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 0 (0.0%) | 75 (37.5%) | 98 (49.0%) | 27 (13.5%) | 0.1350 | 0.2160 |
+| openai/gpt-6-sol | 200 | 0 (0.0%) | 50 (25.0%) | 86 (43.0%) | 64 (32.0%) | 0.3200 | 0.4267 |
 
-allam-2-7b: 87.2% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0173 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.1348, computed here for comparison only.
+openai/gpt-oss-20b: 98.4% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0000 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.0000, computed here for comparison only.
 
 openai/gpt-oss-120b: 96.6% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0055 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.1622, computed here for comparison only.
 
-openai/gpt-oss-20b: 98.4% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0000 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.0000, computed here for comparison only.
+allam-2-7b: 87.2% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0173 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.1348, computed here for comparison only.
+
+deepseek-ai/DeepSeek-V4.1-Flash: 32.2% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.2441 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.3602, computed here for comparison only.
+
+zai-org/GLM-5.3: 67.6% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.1211 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.3736, computed here for comparison only.
+
+moonshotai/Kimi-K3: 25.3% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.2769 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.3707, computed here for comparison only.
+
+nvidia/nemotron-3-ultra-550b-a55b:free: 37.5% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.1350 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.2160, computed here for comparison only.
+
+openai/gpt-6-sol: 25.0% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.3200 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.4267, computed here for comparison only.
 
 ## 4. Ground-truth check: does true_code match the ruling's actual holding?
 
@@ -118,9 +188,14 @@ All "this project" numbers below are for the 3 **free, open-weight models run on
 
 | Source | Ground truth | 6-digit accuracy | 10-digit accuracy | 10-digit, excluding invalid/unparseable codes |
 |---|---|---|---|---|
-| This project: allam-2-7b | CBP CROSS, NY collection, 2026+ | 4.4% | 1.7% | 13.5% |
-| This project: openai/gpt-oss-120b | CBP CROSS, NY collection, 2026+ | 21.1% | 0.5% | 16.2% |
 | This project: openai/gpt-oss-20b | CBP CROSS, NY collection, 2026+ | 3.0% | 0.0% | 0.0% |
+| This project: openai/gpt-oss-120b | CBP CROSS, NY collection, 2026+ | 21.1% | 0.5% | 16.2% |
+| This project: allam-2-7b | CBP CROSS, NY collection, 2026+ | 4.4% | 1.7% | 13.5% |
+| This project: deepseek-ai/DeepSeek-V4.1-Flash | CBP CROSS, NY collection, 2026+ | 52.8% | 25.0% | 36.0% |
+| This project: zai-org/GLM-5.3 | CBP CROSS, NY collection, 2026+ | 45.3% | 12.4% | 37.4% |
+| This project: moonshotai/Kimi-K3 | CBP CROSS, NY collection, 2026+ | 55.3% | 28.4% | 37.1% |
+| This project: nvidia/nemotron-3-ultra-550b-a55b:free | CBP CROSS, NY collection, 2026+ | 39.5% | 14.0% | 21.6% |
+| This project: openai/gpt-6-sol | CBP CROSS, NY collection, 2026+ | 61.5% | 32.5% | 42.7% |
 | ATLAS, fine-tuned Atlas model (LLaMA-3.3-70B) | CROSS (their own benchmark) | 57.5% | 40% | n/a |
 | ATLAS, GPT-5-Thinking (general-purpose, not fine-tuned) | CROSS (their own benchmark) | not stated in abstract | ~25% (back-calculated: abstract states Atlas beats it by 15 points) | n/a |
 | ATLAS, Gemini-2.5-Pro-Thinking (general-purpose, not fine-tuned) | CROSS (their own benchmark) | not stated in abstract | ~12.5% (back-calculated: abstract states Atlas beats it by 27.5 points) | n/a |
