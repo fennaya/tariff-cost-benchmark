@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362451",
+  "rulingDate": "2026-07-06T00:00:00",
+  "true_code": "8438800000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-8244c84402ed4bd7a4ef2d8c028eee70",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7311.00.6090\", \"reason\": \"The imported pump-over system is a functional unit whose essential character is imparted by the large stainless steel fermentation tank (a steel container exceeding 300 liters), with the integrated pump, piping, sparger, and fittings serving that vessel, so it is classified as a stainless steel tank under heading 7311.\"}",
+          "role": "assistant",
+          "reasoning_content": "Complete pump-over system \u2014 functional unit, tank with pump. Likely classified as machinery for winemaking? HTS 8438.60? That's bakery machinery. Wine making machinery: 8479? Actually 8438 covers machinery for food prep; 8438.60 is bakery. Wine-making machinery falls under 8438.80? No\u20148438.80 is other. Historically wine presses 8435.10 (presses for wine/fruit. 8435 covers presses for wine, cider, fruit juices. But this is a fermentation tank with pump \u2014 likely 7310/7311 tanks? CBP rulings classify fermentation tanks as 7311.00.60 (steel tanks >300L). But complete pump-over system functional unit \u2014 ruling may classify under 8438.80? Actually there's 8438.80.00 \"other machinery\". Hmm, wine fermentation tanks classified in 7311 per rulings. With pump integrated, functional unit under GRI 3(b) \u2014 essential character tank \u2192 7311.00.6090? 7311.00.60 tanks >300L, steel, other: 7311.00.6090? Subheadings: 7311.00.60 00? I'll answer 7311.00.6090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333772,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 380,
+      "total_tokens": 787,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 243,
+        "audio_tokens": 0,
+        "reasoning_tokens": 294,
+        "rejected_prediction_tokens": 447
+      }
+    }
+  },
+  "predicted_code": "7311006090",
+  "predicted_reason": "The imported pump-over system is a functional unit whose essential character is imparted by the large stainless steel fermentation tank (a steel container exceeding 300 liters), with the integrated pump, piping, sparger, and fittings serving that vessel, so it is classified as a stainless steel tank under heading 7311.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 380,
+    "total_tokens": 787,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 243,
+      "audio_tokens": 0,
+      "reasoning_tokens": 294,
+      "rejected_prediction_tokens": 447
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:52.037753+00:00",
+  "latency_s": 4.633,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362483",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6406106500",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-0b14137e685745e6ab5604cf43cfb01c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"6406.10.1800\", \"reason\": \"The item is a sewn leather boot upper assembled to a midsole but lacking a sole, classifiable as a footwear upper of leather in subheading 6406.10.1800.\"}",
+          "role": "assistant",
+          "reasoning_content": "Boot upper, leather, above ankle, not protective, value >$3? Likely 6406.10.1800? Boot uppers of leather: 6406.10.1800 (leather uppers, over $3/pair? actually 6406.10.18: of leather). Use 6406.10.1800."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333777,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 140,
+      "total_tokens": 421,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 87,
+        "audio_tokens": 0,
+        "reasoning_tokens": 78,
+        "rejected_prediction_tokens": 178
+      }
+    }
+  },
+  "predicted_code": "6406101800",
+  "predicted_reason": "The item is a sewn leather boot upper assembled to a midsole but lacking a sole, classifiable as a footwear upper of leather in subheading 6406.10.1800.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 140,
+    "total_tokens": 421,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 87,
+      "audio_tokens": 0,
+      "reasoning_tokens": 78,
+      "rejected_prediction_tokens": 178
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:56.676525+00:00",
+  "latency_s": 2.706,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357453",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1602502140",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-fefef00483da40228be95f50bcd64ab6",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"1602.50.0060\", \"reason\": \"The fully cooked, frozen prepared beef with vegetables and seasonings is preserved prepared food of bovine meat, not containing cereals or sausage, classified in HTSUS 1602.50.0060.\"}",
+          "role": "assistant",
+          "reasoning_content": "Prepared beef, cooked, frozen \u2014 1602.50.0060? Prepared meals of bovine meat: 1602.50.0060 \"other\" frozen? HTS 1602.50 covers prepared/preserved meat of bovine animals. 1602.50.0060: Other, other. Actually 1602.50.0060 is \"Other\" (not containing cereals etc.). Use that."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333246,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 159,
+      "total_tokens": 484,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 100,
+        "audio_tokens": 0,
+        "reasoning_tokens": 92,
+        "rejected_prediction_tokens": 200
+      }
+    }
+  },
+  "predicted_code": "1602500060",
+  "predicted_reason": "The fully cooked, frozen prepared beef with vegetables and seasonings is preserved prepared food of bovine meat, not containing cereals or sausage, classified in HTSUS 1602.50.0060.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 325,
+    "completion_tokens": 159,
+    "total_tokens": 484,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 100,
+      "audio_tokens": 0,
+      "reasoning_tokens": 92,
+      "rejected_prediction_tokens": 200
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:34:06.179348+00:00",
+  "latency_s": 3.36,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

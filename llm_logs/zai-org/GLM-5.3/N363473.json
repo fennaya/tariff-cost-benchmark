@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363473",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8436800020",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-2bf738c1b094497ca2ef65a8e07ddff3",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8429.59.0090\", \"reason\": \"A self-propelled, boom-mounted forestry/vegetation control machine is classified in heading 8429 as other self-propelled machinery for earth-moving and similar work, with the specific tools imported separately.\"}",
+          "role": "assistant",
+          "reasoning_content": "Forestry machine, self-propelled \u2014 likely 8432? Actually boom-mounted forestry machines classify under 8429.59? No\u2014vegetation control machines... Similar ruling: Alpha Eagle classified under 8430.69? Actually forestry mulchers self-propelled: heading 8432? There's a known ruling for Alpha Eagle (Cleveland?) classified under 8429.59.00? Hmm. Self-propelled machinery for forestry work falls 8429.59.00.90? Heading 8429: self-propelled bulldozers, graders... 8429.59 \"other\". I'll go 8429.59.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333868,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 279,
+      "completion_tokens": 210,
+      "total_tokens": 489,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 133,
+        "audio_tokens": 0,
+        "reasoning_tokens": 146,
+        "rejected_prediction_tokens": 257
+      }
+    }
+  },
+  "predicted_code": "8429590090",
+  "predicted_reason": "A self-propelled, boom-mounted forestry/vegetation control machine is classified in heading 8429 as other self-propelled machinery for earth-moving and similar work, with the specific tools imported separately.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 279,
+    "completion_tokens": 210,
+    "total_tokens": 489,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 133,
+      "audio_tokens": 0,
+      "reasoning_tokens": 146,
+      "rejected_prediction_tokens": 257
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:27.792925+00:00",
+  "latency_s": 4.393,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

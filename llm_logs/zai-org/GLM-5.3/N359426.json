@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359426",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909216",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-68c175f4b7b644f4b698d99139ce8064",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.99.9200\", \"reason\": \"Dasatinib tablets are antineoplastic medicaments put up in measured doses containing no hormones, antibiotics, or alkaloids, classifiable as other medicaments under subheading 3004.99.92.\"}",
+          "role": "assistant",
+          "reasoning_content": "Dasatinib tablets \u2014 antineoplastic, other antineoplastic drugs: 3004.99? Actually antineoplastic under 3004.92? 3004.92 = \"other\" containing antibiotics? No: 3004.91 containing hormones; 3004.92 containing antibiotics or derivatives; 3004.99 other. Antineoplastic medicaments put up in measured doses \u2192 3004.99. 10-digit: 3004.99.9200? Dasatinib specific? There's 3004.99.92 \"Other, Other\" \u2014 3004.99.9200? Actually 3004.99.92 covers \"Other\" with stat suffixes; 3004.99.9200 seems plausible."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333446,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 230,
+      "total_tokens": 394,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 154,
+        "audio_tokens": 0,
+        "reasoning_tokens": 164,
+        "rejected_prediction_tokens": 221
+      }
+    }
+  },
+  "predicted_code": "3004999200",
+  "predicted_reason": "Dasatinib tablets are antineoplastic medicaments put up in measured doses containing no hormones, antibiotics, or alkaloids, classifiable as other medicaments under subheading 3004.99.92.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 164,
+    "completion_tokens": 230,
+    "total_tokens": 394,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 154,
+      "audio_tokens": 0,
+      "reasoning_tokens": 164,
+      "rejected_prediction_tokens": 221
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:26.446672+00:00",
+  "latency_s": 2.828,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

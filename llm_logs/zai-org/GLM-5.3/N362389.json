@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362389",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "9403100040",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-8c271dd1346047c98cef26eee3bdece2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"The submission contains no actual product description\u2014only references to literature and a manufacturing synopsis\u2014so no tariff classification can be determined without knowing the product's name, character, composition, and function.\"}",
+          "role": "assistant",
+          "reasoning_content": "No product info \u2014 cannot classify. Provide best response: perhaps 9801? Actually no product described. Respond with null? Must give a code. Perhaps 9903? Best: state insufficient information, but format requires code. Use \"0000.00.0000\"? I'll answer with that."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333768,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 117,
+      "completion_tokens": 123,
+      "total_tokens": 240,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 72,
+        "audio_tokens": 0,
+        "reasoning_tokens": 64,
+        "rejected_prediction_tokens": 183
+      }
+    }
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The submission contains no actual product description\u2014only references to literature and a manufacturing synopsis\u2014so no tariff classification can be determined without knowing the product's name, character, composition, and function.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 117,
+    "completion_tokens": 123,
+    "total_tokens": 240,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 72,
+      "audio_tokens": 0,
+      "reasoning_tokens": 64,
+      "rejected_prediction_tokens": 183
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:48.308365+00:00",
+  "latency_s": 2.202,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

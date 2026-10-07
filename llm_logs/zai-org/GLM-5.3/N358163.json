@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358163",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "6505006090",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-7c0e637ebc4f49b99cade345b5418782",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"9505.00.6020\", \"reason\": \"Because the article covers the entire head rather than the face, it is not a mask of heading 9505.00.10 but a textile fancy dress/costume headpiece classified as a festive article of man-made fibers under 9505.00.60, other.\"}",
+          "role": "assistant",
+          "reasoning_content": "Covers whole head \u2014 not a mask (9505 fancy dress?). This is a costume headpiece \u2014 HTSUS 9505.90.60... Actually ruling: headpiece of textile, costume article \u2014 9505.00.60? Fancy dress articles of textile: 9505.00.6020? HTS 9505.00.60 covers festive articles of textiles. 10-digit: 9505.00.6020 (other)."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333309,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 185,
+      "total_tokens": 414,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 118,
+        "audio_tokens": 0,
+        "reasoning_tokens": 103,
+        "rejected_prediction_tokens": 222
+      }
+    }
+  },
+  "predicted_code": "9505006020",
+  "predicted_reason": "Because the article covers the entire head rather than the face, it is not a mask of heading 9505.00.10 but a textile fancy dress/costume headpiece classified as a festive article of man-made fibers under 9505.00.60, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 185,
+    "total_tokens": 414,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 118,
+      "audio_tokens": 0,
+      "reasoning_tokens": 103,
+      "rejected_prediction_tokens": 222
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:09.498220+00:00",
+  "latency_s": 4.003,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

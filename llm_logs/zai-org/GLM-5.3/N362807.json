@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362807",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "7216910010",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-927a31e04bbe402fa8fc2963404917fb",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7308.90.0090\", \"reason\": \"Zinc-coated steel posts/profiles drilled with holes are worked beyond simple rolling and are structures/articles of iron/steel, classifiable in HTSUS 7308.90.0090 (other structures and parts thereof).\"}",
+          "role": "assistant",
+          "reasoning_content": "Sigma-shaped zinc-coated nonalloy steel posts \u2014 likely 7216.61? Actually drilled holes \u2014 could be 7308.90. Cold-rolled nonalloy steel coated with zinc: 7212? Posts of iron/steel: 7216.61 (sections not further worked than hot-rolled). Cold-rolled zinc coated: 7212.30? But drilled holes = further worked, 7308.90.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333810,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 170,
+      "completion_tokens": 172,
+      "total_tokens": 342,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 114,
+        "audio_tokens": 0,
+        "reasoning_tokens": 101,
+        "rejected_prediction_tokens": 176
+      }
+    }
+  },
+  "predicted_code": "7308900090",
+  "predicted_reason": "Zinc-coated steel posts/profiles drilled with holes are worked beyond simple rolling and are structures/articles of iron/steel, classifiable in HTSUS 7308.90.0090 (other structures and parts thereof).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 170,
+    "completion_tokens": 172,
+    "total_tokens": 342,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 114,
+      "audio_tokens": 0,
+      "reasoning_tokens": 101,
+      "rejected_prediction_tokens": 176
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:43:30.508957+00:00",
+  "latency_s": 2.467,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

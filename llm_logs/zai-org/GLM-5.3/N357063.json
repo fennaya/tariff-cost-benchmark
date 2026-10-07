@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357063",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3926909989",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-a4356b3733464234847d8e52c9243745",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3926.90.9980\", \"reason\": \"The PCB CLAW is a holding fixture made primarily of PETG plastic, and as a plastic article of heading 3926 not specified elsewhere, it is classified in subheading 3926.90.9980.\"}",
+          "role": "assistant",
+          "reasoning_content": "Tool of plastics, hand tool? Likely 8205.59.5560? It's a holding tool made of plastic \u2014 heading 8205 hand tools... but plastic. Could be 3926.90? CBP rulings on PCB holders: plastic fixture \u2192 8479.89 or 3926.90.99? Similar ruling: \"PCB CLAW\" NY ruling N313563? Actually there is ruling classifying as 8205.59.5560? Hand tools of base metal. Plastic tool \u2192 3926.90.9980? I'll go 3926.90.99. Use 3926.90.9980."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333199,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 287,
+      "completion_tokens": 223,
+      "total_tokens": 510,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 138,
+        "audio_tokens": 0,
+        "reasoning_tokens": 151,
+        "rejected_prediction_tokens": 287
+      }
+    }
+  },
+  "predicted_code": "3926909980",
+  "predicted_reason": "The PCB CLAW is a holding fixture made primarily of PETG plastic, and as a plastic article of heading 3926 not specified elsewhere, it is classified in subheading 3926.90.9980.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 287,
+    "completion_tokens": 223,
+    "total_tokens": 510,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 138,
+      "audio_tokens": 0,
+      "reasoning_tokens": 151,
+      "rejected_prediction_tokens": 287
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:18.703916+00:00",
+  "latency_s": 2.629,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

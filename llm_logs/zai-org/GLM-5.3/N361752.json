@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361752",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "9018498080",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-047c187be245428380f667fbbd04efd9",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8458.10.0080\", \"reason\": \"The dental milling machine removes material with rotating milling cutters under numerical control, and its subassemblies (XYZ mech, covers, manifold) lack independent function and are classified with the complete machine under HTSUS 8458.10.\"}",
+          "role": "assistant",
+          "reasoning_content": "Dental milling machine \u2014 likely 8486? No, dental CAD/CAM milling machines classified under 9018? Actually dental milling machines have been classified under 8456 (machine tools working by laser/other) \u2014 CBP rulings classify dental milling machines under 8456.50? Dental CAD/CAM milling machines: HTS 8456.50.00? Milling machines cutting by ultrasonic/electro-discharge? 8456 covers machine tools working by removing material by laser, ultrasonic, electro-discharge etc. Dental mills use milling cutters \u2192 8457? No, 8457 is machining centers. Dental milling machine rulings: NY N266566 classified dental milling machine under 8456.99? Actually CBP ruling classified Fastmill-type under 8456.50.0090? Hmm. 8456.50: \"other\" \u2014 waterjet? 8456 subheadings: 8456.11 laser; 8456.12 spark erosion; 8456.13 ultrasonic; 8456.19 other; 8456.30 dry etching; 8456.40 plasma; 8456.50 water-jet; 8456.99 other. Dental mills use rotating tools \u2192 8456.99? No\u2014rotating cutting is 8457/8458/8459. Milling machines = 8458. Dental milling machine \u2192 8458.10? Vertical? 8458.11. CBP ruling on dental milling machine (e.g., Sirona MC XL) classified 8458.10.00? I recall ruling classifying dental CAD/CAM under 8458.10.0030? 8458.10: numerically controlled. 8458.10.00 with stat suffixes. Choose 8458.10.0080? Stat suffixes for 8458.10.00: 0030? I'll answer 8458.10.0080... safer: 8458.10.0000? Actually 8458.10.00 has stat categories: 0020? I'll go 8458.10.0080."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333696,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 600,
+      "completion_tokens": 567,
+      "total_tokens": 1167,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 375,
+        "audio_tokens": 0,
+        "reasoning_tokens": 493,
+        "rejected_prediction_tokens": 585
+      }
+    }
+  },
+  "predicted_code": "8458100080",
+  "predicted_reason": "The dental milling machine removes material with rotating milling cutters under numerical control, and its subassemblies (XYZ mech, covers, manifold) lack independent function and are classified with the complete machine under HTSUS 8458.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 600,
+    "completion_tokens": 567,
+    "total_tokens": 1167,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 375,
+      "audio_tokens": 0,
+      "reasoning_tokens": 493,
+      "rejected_prediction_tokens": 585
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:41:34.875971+00:00",
+  "latency_s": 7.196,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

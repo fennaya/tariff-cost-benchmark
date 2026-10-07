@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359858",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3105100000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-68309490363c4066ad025b157c8c6c09",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3105.90.0090\", \"reason\": \"A liquid mineral foliar fertilizer containing both nitrogen (urea) and potassium (potassium hydroxide) in one-liter containers is classified in heading 3105 as a fertilizer not elsewhere specified, within the residual subheading 3105.90.0090.\"}",
+          "role": "assistant",
+          "reasoning_content": "Fertilizer NPK, liquid, nitrogen and potassium \u2014 heading 3105. Likely 3105.60.0000? That's PK fertilizers. Actually 3105.60 is \"fertilizers containing nitrogen and phosphorus/potash\"? 3105.60: PK fertilizers (no nitrogen). Contains nitrogen 3% \u2014 3105.90.00? 3105.90 covers other fertilizers. CBP rulings on similar foliar fertilizer: 3105.60.0000? Since nitrogen present, 3105.90.0090? 10-digit: 3105.90.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333506,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 212,
+      "total_tokens": 504,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 136,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105900090",
+  "predicted_reason": "A liquid mineral foliar fertilizer containing both nitrogen (urea) and potassium (potassium hydroxide) in one-liter containers is classified in heading 3105 as a fertilizer not elsewhere specified, within the residual subheading 3105.90.0090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 212,
+    "total_tokens": 504,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 136,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:26.507127+00:00",
+  "latency_s": 2.643,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

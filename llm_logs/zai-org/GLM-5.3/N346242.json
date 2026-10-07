@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N346242",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5208214090",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d65277012d7744139cf8144f184190e2",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"5208.21.6060\", \"reason\": \"Bleached plain-weave 100% cotton gauze fabric under 100 g/m2 with metric yarn number 56 falls in HTSUS 5208.21.6060.\"}",
+          "role": "assistant",
+          "reasoning_content": "Cotton gauze, bleached, plain weave, <100 g/m2, metric yarn 56 \u2192 5208.21.60? 5208.21 is bleached plain weave, \u226585% cotton, \u2264100 g/m2. Yarn count: metric 56 \u2192 cotton count ~33? Chapter 52 subheadings by yarn number: 5208.21.60 covers... metric 43.25-72 (cotton count 27-42?). Actually 5208.21.60: \"numbered not less than 43.25 but not more than 72 in the metric system\" \u2014 yes."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333124,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 197,
+      "total_tokens": 593,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 128,
+        "audio_tokens": 0,
+        "reasoning_tokens": 135,
+        "rejected_prediction_tokens": 212
+      }
+    }
+  },
+  "predicted_code": "5208216060",
+  "predicted_reason": "Bleached plain-weave 100% cotton gauze fabric under 100 g/m2 with metric yarn number 56 falls in HTSUS 5208.21.6060.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 197,
+    "total_tokens": 593,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 128,
+      "audio_tokens": 0,
+      "reasoning_tokens": 135,
+      "rejected_prediction_tokens": 212
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:32:03.978307+00:00",
+  "latency_s": 2.627,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361890",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "4202919090",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-5b46699270f54dbfba48ef679ab55318",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4202.12.2030\", \"reason\": \"Document cases of heading 4202 with an outer surface of plastic sheeting (which prevails over leather trim) are classified as similar containers to briefcases under subheading 4202.12.2030.\"}",
+          "role": "assistant",
+          "reasoning_content": "Document cases with outer surface of plastic sheeting or leather \u2014 heading 4202, \"briefcases... document cases\". If plastic sheeting outer: 4202.12.2030? Actually document cases of plastics: 4202.12.2030? Leather document cases: 4202.11.0000? Hmm. Mixed materials \u2014 plastic sheeting governs if leather trim... The ruling likely classifies under 4202.12.2030 (other, with outer surface of sheeting of plastics). Actually \"attache cases, briefcases and similar containers\" \u2014 document cases fall there. 4202.12.2030? The subheading 4202.12.2030: \"Other: with outer surface of sheeting of plastics\" \u2014 yes."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333713,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 267,
+      "completion_tokens": 225,
+      "total_tokens": 492,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 141,
+        "audio_tokens": 0,
+        "reasoning_tokens": 161,
+        "rejected_prediction_tokens": 274
+      }
+    }
+  },
+  "predicted_code": "4202122030",
+  "predicted_reason": "Document cases of heading 4202 with an outer surface of plastic sheeting (which prevails over leather trim) are classified as similar containers to briefcases under subheading 4202.12.2030.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 267,
+    "completion_tokens": 225,
+    "total_tokens": 492,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 141,
+      "audio_tokens": 0,
+      "reasoning_tokens": 161,
+      "rejected_prediction_tokens": 274
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:41:52.742857+00:00",
+  "latency_s": 2.754,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

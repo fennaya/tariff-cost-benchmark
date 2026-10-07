@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-e9687e7d5ce445578a6e2c99df5015cb",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3822.90.0000\", \"reason\": \"Indocyanine Green Injection is a diagnostic reagent used for medical imaging, classified under HTSUS 3822.90.0000 as other diagnostic reagents.\"}",
+          "role": "assistant",
+          "reasoning_content": "Diagnostic reagent \u2014 3822.90.0000? In vitro diagnostic reagents 3822.20/3822.90. Indocyanine green injection is a diagnostic agent, not in vitro. Could be 3006.30? That's opacifying preparations for X-ray. Diagnostic reagents for administration \u2014 3006.00? Actually 3006.92? Blood grouping reagents 3006.92? No. Likely 3822.90.0000 (other diagnostic reagents)."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333215,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 157,
+      "completion_tokens": 170,
+      "total_tokens": 327,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 113,
+        "audio_tokens": 0,
+        "reasoning_tokens": 110,
+        "rejected_prediction_tokens": 167
+      }
+    }
+  },
+  "predicted_code": "3822900000",
+  "predicted_reason": "Indocyanine Green Injection is a diagnostic reagent used for medical imaging, classified under HTSUS 3822.90.0000 as other diagnostic reagents.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 157,
+    "completion_tokens": 170,
+    "total_tokens": 327,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 113,
+      "audio_tokens": 0,
+      "reasoning_tokens": 110,
+      "rejected_prediction_tokens": 167
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:34.761021+00:00",
+  "latency_s": 2.358,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

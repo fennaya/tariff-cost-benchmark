@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360217",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-5189341770284572ad4f1642febe809c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.59.5090\", \"reason\": \"Bumetanide tablets are medicaments containing other organic compounds (a loop diuretic, not an antibiotic, hormone, or alkaloid), classified under HTSUS 3004.59.5090 as other medicaments for therapeutic or prophylactic use, packaged for retail sale.\"}",
+          "role": "assistant",
+          "reasoning_content": "Bumetanide \u2014 sulfonamide-based? It's a loop diuretic, not sulfonamide antibiotic. HTS 3004.90 for medicaments... Bumetanide under 2935? Actually ruling: bumetanide tablets classified 3004.59? It's a medicament containing organic compounds, not antibiotics/hormones/alkaloids \u2192 3004.59.50? 3004.59.5090? Likely 3004.59.5090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333552,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 175,
+      "completion_tokens": 193,
+      "total_tokens": 368,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 127,
+        "audio_tokens": 0,
+        "reasoning_tokens": 109,
+        "rejected_prediction_tokens": 203
+      }
+    }
+  },
+  "predicted_code": "3004595090",
+  "predicted_reason": "Bumetanide tablets are medicaments containing other organic compounds (a loop diuretic, not an antibiotic, hormone, or alkaloid), classified under HTSUS 3004.59.5090 as other medicaments for therapeutic or prophylactic use, packaged for retail sale.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 175,
+    "completion_tokens": 193,
+    "total_tokens": 368,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 127,
+      "audio_tokens": 0,
+      "reasoning_tokens": 109,
+      "rejected_prediction_tokens": 203
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:11.751871+00:00",
+  "latency_s": 2.716,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

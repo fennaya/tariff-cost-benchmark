@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362119",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8703210150",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-596506816eff44bd819a6b1fe5d1e996",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8703.21.0090\", \"reason\": \"A four-passenger side-by-side UTV with a 999cc spark-ignition engine is classified as an off-road passenger motor vehicle with reciprocating piston engine of cylinder capacity not exceeding 1,000cc.\"}",
+          "role": "assistant",
+          "reasoning_content": "UTV, off-road, spark-ignition, 999cc. HTS 8703.21? No\u2014off-road vehicles not for on-road... UTVs classified 8701.90? Actually side-by-side UTVs are classified under 8701.90.10? Common ruling: UTVs classified in 8701.90.10 (vehicles for transport of goods?) No\u2014passenger transport off-road buggies go 8703.21.0090? Many CBP rulings classify UTVs under 8703.21.0090? Actually rulings classify ATVs under 8711, but UTVs (side-by-side) under 8703.21.0090? There's NY ruling classifying Polaris RZR under 8703.21.0090? Hmm, some classify under 8701.90.10 as \"other tractors\"? CBP NY N266342 classified UTV under 8703.21.0090? I'll go with 8703.21.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333738,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 280,
+      "completion_tokens": 308,
+      "total_tokens": 588,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 207,
+        "audio_tokens": 0,
+        "reasoning_tokens": 240,
+        "rejected_prediction_tokens": 303
+      }
+    }
+  },
+  "predicted_code": "8703210090",
+  "predicted_reason": "A four-passenger side-by-side UTV with a 999cc spark-ignition engine is classified as an off-road passenger motor vehicle with reciprocating piston engine of cylinder capacity not exceeding 1,000cc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 280,
+    "completion_tokens": 308,
+    "total_tokens": 588,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 207,
+      "audio_tokens": 0,
+      "reasoning_tokens": 240,
+      "rejected_prediction_tokens": 303
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:17.682655+00:00",
+  "latency_s": 3.385,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

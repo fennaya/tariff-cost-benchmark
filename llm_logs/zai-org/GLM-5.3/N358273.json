@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358273",
+  "rulingDate": "2026-02-13T00:00:00",
+  "true_code": "3822190030",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-ec87ceffc09d4652b6da334697981253",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3822.10.0000\", \"reason\": \"The ELISA kits are diagnostic laboratory reagents containing antigens (glucagon and insulin calibrators), classifiable in subheading 3822.10 per CBP practice for immunoassay kits with antigens.\"}",
+          "role": "assistant",
+          "reasoning_content": "ELISA kits containing antigens \u2192 3822.90.0000? Reagents containing antigens classified 3822.10? Actually 3822.10 covers diagnostics reagents \"containing antigens or antibodies\" \u2014 but that's for use in ELISA... 3822.10.0000? Wait, 3822.10 is \"containing antigens or antibodies\" \u2014 but historically ELISA kits with antigens classified in 3822.10.0000? CBP rulings: kits containing antigens \u2192 3822.10.0000? Actually 3822.10 covers diagnostic reagents for Aids etc. Hmm, 3822.10.0000: \"Diagnostic or laboratory reagents... containing antigens or antibodies\". Yes."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333319,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 689,
+      "completion_tokens": 238,
+      "total_tokens": 927,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 157,
+        "audio_tokens": 0,
+        "reasoning_tokens": 169,
+        "rejected_prediction_tokens": 248
+      }
+    }
+  },
+  "predicted_code": "3822100000",
+  "predicted_reason": "The ELISA kits are diagnostic laboratory reagents containing antigens (glucagon and insulin calibrators), classifiable in subheading 3822.10 per CBP practice for immunoassay kits with antigens.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 689,
+    "completion_tokens": 238,
+    "total_tokens": 927,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 157,
+      "audio_tokens": 0,
+      "reasoning_tokens": 169,
+      "rejected_prediction_tokens": 248
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:18.850924+00:00",
+  "latency_s": 3.0,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

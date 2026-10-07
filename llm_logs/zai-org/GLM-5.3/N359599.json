@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359599",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8706000575",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-9ad97c0f32df49aa9b66bc4bd3c73b95",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8701.20.00.00\", \"reason\": \"A chassis fitted with an engine for a dumper (motor vehicle of heading 8704) is classified in heading 8701 as a chassis with engine, notwithstanding the absence of cab and control elements.\"}",
+          "role": "assistant",
+          "reasoning_content": "Ruling: dumper chassis partial rear module \u2014 likely 8701.20? Articulated dumper chassis with engine \u2014 8701.20.00? Actually chassis with engine classified 8701.20.00.00? HTS 8701.20.00 \"Chassis fitted with engines, for the motor vehicles of headings 8702, 8703, 8704...\" Hmm, dumpers are 8704. Chassis with engine for 8704 \u2192 8701.20.00.00? Actually 8701.20 covers chassis with engines for headings 8702-8704. 10-digit: 8701.20.00.00? There may be statistical suffix 8701.20.00.00. Use that."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333468,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 242,
+      "total_tokens": 447,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 170,
+        "audio_tokens": 0,
+        "reasoning_tokens": 176,
+        "rejected_prediction_tokens": 190
+      }
+    }
+  },
+  "predicted_code": "8701200000",
+  "predicted_reason": "A chassis fitted with an engine for a dumper (motor vehicle of heading 8704) is classified in heading 8701 as a chassis with engine, notwithstanding the absence of cab and control elements.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 205,
+    "completion_tokens": 242,
+    "total_tokens": 447,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 170,
+      "audio_tokens": 0,
+      "reasoning_tokens": 176,
+      "rejected_prediction_tokens": 190
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:48.642074+00:00",
+  "latency_s": 4.009,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

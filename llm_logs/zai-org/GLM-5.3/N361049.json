@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361049",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "6110202046",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-b6b5f8d402214fcd9467b8518168a05f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"The provided text is generic regulatory boilerplate from a CBP ruling rather than an actual product description, so no valid HTSUS classification can be determined.\"}",
+          "role": "assistant",
+          "reasoning_content": "The description is boilerplate text, not a product. No classifiable product\u2014respond with best guess? Must give a code. It's generic textile language; perhaps 9903? Best: state insufficient info but must output JSON. I'll give a note."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333627,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 106,
+      "total_tokens": 312,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 67,
+        "audio_tokens": 0,
+        "reasoning_tokens": 54,
+        "rejected_prediction_tokens": 133
+      }
+    }
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The provided text is generic regulatory boilerplate from a CBP ruling rather than an actual product description, so no valid HTSUS classification can be determined.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 106,
+    "total_tokens": 312,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 67,
+      "audio_tokens": 0,
+      "reasoning_tokens": 54,
+      "rejected_prediction_tokens": 133
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:40:27.013971+00:00",
+  "latency_s": 3.974,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

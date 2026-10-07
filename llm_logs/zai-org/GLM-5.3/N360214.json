@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360214",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-1abd727fa3dc4f779b8a16a8818703e7",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.0090\", \"reason\": \"Bumetanide tablets are a dosed medicament containing no enumerated active ingredient, classifiable under heading 3004 in the 'other' subheading for medicaments put up in measured doses.\"}",
+          "role": "assistant",
+          "reasoning_content": "Bumetanide \u2014 heading 3004. Loop diuretic, other medicaments. 3004.90 is \"other\" \u2014 but 3004.59? Prostaglandins etc. Bumetanide likely 3004.90.00xx... Actually 3004.90.0090? There are specific subheadings: 3004.90.01? Common answer: 3004.90.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333551,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 150,
+      "completion_tokens": 160,
+      "total_tokens": 310,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 106,
+        "audio_tokens": 0,
+        "reasoning_tokens": 96,
+        "rejected_prediction_tokens": 169
+      }
+    }
+  },
+  "predicted_code": "3004900090",
+  "predicted_reason": "Bumetanide tablets are a dosed medicament containing no enumerated active ingredient, classifiable under heading 3004 in the 'other' subheading for medicaments put up in measured doses.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 150,
+    "completion_tokens": 160,
+    "total_tokens": 310,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 106,
+      "audio_tokens": 0,
+      "reasoning_tokens": 96,
+      "rejected_prediction_tokens": 169
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:10.744298+00:00",
+  "latency_s": 1.921,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

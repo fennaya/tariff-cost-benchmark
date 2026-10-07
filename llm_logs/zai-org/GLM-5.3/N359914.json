@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359914",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909225",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-647e286d6cee475d9de7fd946439e3d7",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.0090\", \"reason\": \"Ticagrelor tablets are a medicament (P2Y12 platelet inhibitor) put up in measured doses, containing no antibiotics, hormones, or alkaloids, classifiable under the residual provision of heading 3004.\"}",
+          "role": "assistant",
+          "reasoning_content": "Ticagrelor \u2014 cardiovascular drug, not antibiotic. Heading 3004. Likely 3004.90.00 or newer 3004.99? Post-2022 HTS: 3004.99.0090? Actually 3004.90 was reorganized; ticagrelor may have specific statistical suffix. Safest: 3004.90.0090? Current HTS 3004.90.0090? I'll answer 3004.90.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333514,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 157,
+      "completion_tokens": 178,
+      "total_tokens": 335,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 117,
+        "audio_tokens": 0,
+        "reasoning_tokens": 107,
+        "rejected_prediction_tokens": 183
+      }
+    }
+  },
+  "predicted_code": "3004900090",
+  "predicted_reason": "Ticagrelor tablets are a medicament (P2Y12 platelet inhibitor) put up in measured doses, containing no antibiotics, hormones, or alkaloids, classifiable under the residual provision of heading 3004.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 157,
+    "completion_tokens": 178,
+    "total_tokens": 335,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 117,
+      "audio_tokens": 0,
+      "reasoning_tokens": 107,
+      "rejected_prediction_tokens": 183
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:33.918528+00:00",
+  "latency_s": 2.277,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

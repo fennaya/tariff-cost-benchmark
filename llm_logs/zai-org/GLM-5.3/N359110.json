@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359110",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3304995000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-4659464684f34b00be8ad20ba8e69e3f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3307.90.0000\", \"reason\": \"These suppositories contain only emollient oils and excipients with no therapeutically active medicament, so they are classified as personal hygiene/toilet preparations under heading 3307 rather than as medicaments of heading 3004.\"}",
+          "role": "assistant",
+          "reasoning_content": "Suppositories for vaginal/rectal use \u2014 likely classified as medicaments? They provide moisture/comfort, not therapeutic drug \u2014 could be 3004? Ingredients are oils, no active medicament. Possibly 3307.90? Actually suppositories for personal care... HTS 3004 is medicaments with therapeutic/prophylactic use. Sea buckthorn oil moisturizing suppositories \u2014 likely 3304? No. Vaginal moisturizing suppositories often classified 3004? But no active pharmaceutical. Could be 3307.90.00? Hmm. There is heading 3307: personal toilet preparations... 3307.90.00 \"other\". I'll go with 3307.90.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333403,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 189,
+      "completion_tokens": 218,
+      "total_tokens": 407,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 151,
+        "rejected_prediction_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3307900000",
+  "predicted_reason": "These suppositories contain only emollient oils and excipients with no therapeutically active medicament, so they are classified as personal hygiene/toilet preparations under heading 3307 rather than as medicaments of heading 3004.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 218,
+    "total_tokens": 407,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 0,
+      "audio_tokens": 0,
+      "reasoning_tokens": 151,
+      "rejected_prediction_tokens": 0
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:42.817301+00:00",
+  "latency_s": 2.609,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

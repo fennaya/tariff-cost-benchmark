@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362937",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004200085",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-384f268c9e8041269e2995d393d76968",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"2941.90.5000\", \"reason\": \"Fosfomycin tromethamine is a synthetic antibiotic not enumerated elsewhere in heading 2941, classifiable as other antibiotics.\"}",
+          "role": "assistant",
+          "reasoning_content": "Fosfomycin \u2014 antibiotic, not a derivative listed? Heading 2941: antibiotics. 2941.90? Fosfomycin is a phosphonic acid antibiotic. 2941.90.50? Actually fosfomycin tromethamine \u2014 2941.90.5000? There's 2941.90.50 \"Other\" antibiotics. Use 2941.90.5000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333833,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 159,
+      "completion_tokens": 144,
+      "total_tokens": 303,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 98,
+        "audio_tokens": 0,
+        "reasoning_tokens": 94,
+        "rejected_prediction_tokens": 137
+      }
+    }
+  },
+  "predicted_code": "2941905000",
+  "predicted_reason": "Fosfomycin tromethamine is a synthetic antibiotic not enumerated elsewhere in heading 2941, classifiable as other antibiotics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 159,
+    "completion_tokens": 144,
+    "total_tokens": 303,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 98,
+      "audio_tokens": 0,
+      "reasoning_tokens": 94,
+      "rejected_prediction_tokens": 137
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:43:53.308715+00:00",
+  "latency_s": 3.507,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

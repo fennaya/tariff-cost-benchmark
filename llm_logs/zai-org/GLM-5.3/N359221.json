@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359221",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8704310140",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-1fbe27764cf241c6b2ce83d95519670f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8704.21.0030\", \"reason\": \"A kei pickup truck with a spark-ignition engine under 1,000 cc, used for goods transport, is classified as a motor car-type goods vehicle with a spark-ignition engine not exceeding 1,000 cc.\"}",
+          "role": "assistant",
+          "reasoning_content": "Kei truck, spark-ignition engine, 545cc \u2014 8704.21.0030? HTS 8704.21.00 motor car-type vehicles for transport of goods, spark-ignition. Subcategories: 8704.21.0030? Actually 8704.21.0030 is \"with engines exceeding 1000cc but not exceeding 1500cc\"? Kei trucks under 1000cc: 8704.21.0060? Let me recall: 8704.21.0030 \"With engines exceeding 1,000 cc but not exceeding 1,500 cc\"? Hmm. Known ruling: kei trucks classified 8704.21.0060? Actually NY rulings classify Honda Acty under 8704.21.0060? I recall 8704.21.0030 for \u22641000cc. Common answer: 8704.21.0030."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333419,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 286,
+      "total_tokens": 454,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 200,
+        "audio_tokens": 0,
+        "reasoning_tokens": 214,
+        "rejected_prediction_tokens": 235
+      }
+    }
+  },
+  "predicted_code": "8704210030",
+  "predicted_reason": "A kei pickup truck with a spark-ignition engine under 1,000 cc, used for goods transport, is classified as a motor car-type goods vehicle with a spark-ignition engine not exceeding 1,000 cc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 168,
+    "completion_tokens": 286,
+    "total_tokens": 454,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 200,
+      "audio_tokens": 0,
+      "reasoning_tokens": 214,
+      "rejected_prediction_tokens": 235
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:59.048588+00:00",
+  "latency_s": 3.658,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

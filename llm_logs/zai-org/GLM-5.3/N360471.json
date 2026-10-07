@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360471",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3926909989",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-f77ae0b905864c2db8bbe4716b0bc046",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4202.22.9000\", \"reason\": \"An injection-molded plastic handbag's outer surface is not plastic sheeting, so it falls under the 'other' provision for handbags in heading 4202.\"}",
+          "role": "assistant",
+          "reasoning_content": "Plastic handbag, outer surface plastic sheeting \u2014 4202.22.1500? Handbags with outer surface of plastic sheeting: 4202.22.1500 (of sheeting of plastics). Injection molded \u2014 \"of other plastics\" is 4202.22.3100? Actually 4202.22.15: of sheeting of plastics; 4202.22.31: of other plastics? No\u20144202.22.4500? Let me recall: 4202.22.1500 handbags with outer surface of sheeting of plastic; 4202.22.3100? The subheadings: 4202.22.15 of sheeting of plastics, 4202.22.31 of other plastics? Actually 4202.22.4500 is vegetable fibers? I think molded plastic \u2192 4202.22.3100? Hmm, 4202.22.3100 doesn't ring right. Known: 4202.22.1500 (sheeting of plastic), 4202.22.3100? I recall 4202.22.8060? No. CBP rulings on injection molded plastic handbags cite 4202.22.4500? That's \"of other materials.\" I believe molded plastic is \"other materials\" \u2192 4202.22.8060? Actually 4202.22.8060 is handbags of man-made fibers? No, 4202.22.8060... The breakdown: 4202.22.1500 sheeting of plastic; 4202.22.3100? Hmm. 4202.22.4500 of natural fibers? 4202.22.8060 of other textile materials? 4202.22.9000 other. Molded plastic not sheeting \u2192 4202.22.9000? CBP ruling NY N266747? I'll go with 4202.22.9000? Actually I recall rulings classifying molded plastic handbags under 4202.22.9000 \"other.\" Yes, e.g., NY I89684? I'll answer 4202.22.9000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333570,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 190,
+      "completion_tokens": 521,
+      "total_tokens": 711,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 364,
+        "audio_tokens": 0,
+        "reasoning_tokens": 463,
+        "rejected_prediction_tokens": 421
+      }
+    }
+  },
+  "predicted_code": "4202229000",
+  "predicted_reason": "An injection-molded plastic handbag's outer surface is not plastic sheeting, so it falls under the 'other' provision for handbags in heading 4202.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 521,
+    "total_tokens": 711,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 364,
+      "audio_tokens": 0,
+      "reasoning_tokens": 463,
+      "rejected_prediction_tokens": 421
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:30.280528+00:00",
+  "latency_s": 4.988,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358783",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "9030333800",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-5a6de6d600dc47048450e74f33d9c7ba",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"9030.39.0000\", \"reason\": \"The AC emulator measures voltage and current without a recording device or internal memory, classifying it as an other instrument for measuring or checking voltage and current under HTSUS 9030.39.\"}",
+          "role": "assistant",
+          "reasoning_content": "This is a measuring instrument \u2014 voltage/current measuring without recording. Likely 9030.33 or 9030.39? It measures voltage and current \u2014 multimeters for voltage/current without recording: 9030.31/33/39. Without recording device: 9030.39.0000? Actually 9030.31 = recording, 9030.33 = multimeters, 9030.39 = other, without recording. CBP ruling likely 9030.39.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333366,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 526,
+      "completion_tokens": 174,
+      "total_tokens": 700,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 122,
+        "audio_tokens": 0,
+        "reasoning_tokens": 111,
+        "rejected_prediction_tokens": 143
+      }
+    }
+  },
+  "predicted_code": "9030390000",
+  "predicted_reason": "The AC emulator measures voltage and current without a recording device or internal memory, classifying it as an other instrument for measuring or checking voltage and current under HTSUS 9030.39.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 526,
+    "completion_tokens": 174,
+    "total_tokens": 700,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 122,
+      "audio_tokens": 0,
+      "reasoning_tokens": 111,
+      "rejected_prediction_tokens": 143
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:06.550472+00:00",
+  "latency_s": 2.384,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

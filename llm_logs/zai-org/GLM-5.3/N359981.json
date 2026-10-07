@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359981",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7320905060",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-a6c71f5066254ba084d95edd3a661c19",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7320.90.1000\", \"reason\": \"The item is a flat spring made of stainless steel sheet, functioning as a spring to secure accessories, which is classified as other springs (leaf springs and other flat springs) of iron or steel.\"}",
+          "role": "assistant",
+          "reasoning_content": "Flat spring of stainless steel \u2014 classified as spring of base metal? HTS 7320.20.0000 (helical springs) no; flat springs 7320.20? Actually 7320.20 is helical springs; flat springs 7320.90.10? 7320.90.10 \"leaf springs and other flat springs\"? 7320.90.1000? I recall 7320.90.10 flat springs, of iron/steel. Use 7320.90.1000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333526,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 333,
+      "completion_tokens": 179,
+      "total_tokens": 512,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 127,
+        "audio_tokens": 0,
+        "reasoning_tokens": 118,
+        "rejected_prediction_tokens": 133
+      }
+    }
+  },
+  "predicted_code": "7320901000",
+  "predicted_reason": "The item is a flat spring made of stainless steel sheet, functioning as a spring to secure accessories, which is classified as other springs (leaf springs and other flat springs) of iron or steel.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 179,
+    "total_tokens": 512,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 127,
+      "audio_tokens": 0,
+      "reasoning_tokens": 118,
+      "rejected_prediction_tokens": 133
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:46.391092+00:00",
+  "latency_s": 2.61,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

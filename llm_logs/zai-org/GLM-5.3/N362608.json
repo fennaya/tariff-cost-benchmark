@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362608",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "7307290090",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-595c1ead19c840719cf1ca445a41e49c",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7307.29.1000\", \"reason\": \"Stainless steel PEX pipe fittings that are not threaded elbows, tees, or couplings (barbed fittings, with threaded adapters) are classified as other tube or pipe fittings of stainless steel under subheading 7307.29.\"}",
+          "role": "assistant",
+          "reasoning_content": "Stainless steel tube/pipe fittings \u2014 7307.21 or 7307.29? Threaded vs other. Barb fittings, not threaded (mostly) \u2014 but adapters have threads. Ruling likely 7307.29.10? Actually 7307.29.1000? HTS: 7307.21.0000 threaded; 7307.29 other, stainless: 7307.29.1000? There's 7307.29.10 flanges... 7307.29.1000. Use 7307.29.1000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333792,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 422,
+      "completion_tokens": 203,
+      "total_tokens": 625,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 134,
+        "audio_tokens": 0,
+        "reasoning_tokens": 132,
+        "rejected_prediction_tokens": 211
+      }
+    }
+  },
+  "predicted_code": "7307291000",
+  "predicted_reason": "Stainless steel PEX pipe fittings that are not threaded elbows, tees, or couplings (barbed fittings, with threaded adapters) are classified as other tube or pipe fittings of stainless steel under subheading 7307.29.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 203,
+    "total_tokens": 625,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 134,
+      "audio_tokens": 0,
+      "reasoning_tokens": 132,
+      "rejected_prediction_tokens": 211
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:43:11.725483+00:00",
+  "latency_s": 2.352,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

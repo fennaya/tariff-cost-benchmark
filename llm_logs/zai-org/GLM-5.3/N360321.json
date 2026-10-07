@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360321",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8708947550",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-7bf59eb3fe654d038be7d2a0b82fc7d3",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8708.99.8100\", \"reason\": \"Tie rod assemblies are steering linkage parts not within the specific steering box/column subheading, so they fall under other parts of motor vehicles of heading 8708, subheading 8708.99.\"}",
+          "role": "assistant",
+          "reasoning_content": "Tie rod assembly for steering \u2014 8708.94? Steering boxes? Tie rods: 8708.94 (steering wheels, steering columns... actually 8708.94 is steering wheels/columns and boxes). Tie rods classified under 8708.99? Common ruling: tie rod ends 8708.99. But steering system parts... 8708.94 covers steering wheels, steering columns and steering boxes. Tie rod assembly often 8708.99.94? I'll go 8708.99.8100? Motor vehicle parts other: 8708.99.81 \"other\". Use 8708.99.8100."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333558,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 547,
+      "completion_tokens": 215,
+      "total_tokens": 762,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 144,
+        "audio_tokens": 0,
+        "reasoning_tokens": 148,
+        "rejected_prediction_tokens": 206
+      }
+    }
+  },
+  "predicted_code": "8708998100",
+  "predicted_reason": "Tie rod assemblies are steering linkage parts not within the specific steering box/column subheading, so they fall under other parts of motor vehicles of heading 8708, subheading 8708.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 547,
+    "completion_tokens": 215,
+    "total_tokens": 762,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 144,
+      "audio_tokens": 0,
+      "reasoning_tokens": 148,
+      "rejected_prediction_tokens": 206
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:18.262158+00:00",
+  "latency_s": 2.372,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

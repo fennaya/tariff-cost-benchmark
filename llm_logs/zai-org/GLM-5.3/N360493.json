@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N360493",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004909225",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-0d66c0c9fa1a4f608dabfdd4d7314bff",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.9950\", \"reason\": \"Colestipol hydrochloride tablets are a packaged medicament in measured doses not containing insulin, antibiotics, or other enumerated products, classifiable under other medicaments in subheading 3004.90.99.\"}",
+          "role": "assistant",
+          "reasoning_content": "Colestipol HCl tablets \u2014 medicament, measured dose. 3004.90.99xx? Colestipol not insulin/antibiotic/etc. 3004.90.9950? General \"other\" \u2014 3004.90.9950 (medicaments, other, other). Actually post-2022 structure: 3004.90.99 with statistical suffixes; 3004.90.9950 \"Other\" seems plausible."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333573,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 146,
+      "completion_tokens": 168,
+      "total_tokens": 314,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 115,
+        "audio_tokens": 0,
+        "reasoning_tokens": 102,
+        "rejected_prediction_tokens": 155
+      }
+    }
+  },
+  "predicted_code": "3004909950",
+  "predicted_reason": "Colestipol hydrochloride tablets are a packaged medicament in measured doses not containing insulin, antibiotics, or other enumerated products, classifiable under other medicaments in subheading 3004.90.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 146,
+    "completion_tokens": 168,
+    "total_tokens": 314,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 115,
+      "audio_tokens": 0,
+      "reasoning_tokens": 102,
+      "rejected_prediction_tokens": 155
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:39:32.915479+00:00",
+  "latency_s": 2.277,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

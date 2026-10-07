@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358480",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "0307520000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-b313604944c040b3b5127082e262024d",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"0307.51.0000\", \"reason\": \"Whole frozen octopus that has merely been defrosted, cleaned, treated, salted, and refrozen remains unprepared frozen octopus of Chapter 3 rather than a prepared product of Chapter 16.\"}",
+          "role": "assistant",
+          "reasoning_content": "Frozen octopus, cleaned, salted \u2014 likely 1605.55.0000? Octopus prepared/preserved. If just frozen cleaned octopus: 0307.51? Octopus frozen is 0307.51.00... but processing with salt and cooking? Not cooked. Salted could push to 1605? Cleaning and salting\u2014likely remains 0307.51.0000? Actually HTSUS 0307.51.00 frozen octopus. But salt addition... prepared octopus 1605.55.0000. Given salt and processing aids, likely 1605.55.0000? Salted fish goes to 1605 only if prepared. Cleaning + salt \u2014 CBP rulings: cleaned, frozen octopus remains 0307.51.0000. I'll go 0307.51.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333341,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 249,
+      "total_tokens": 460,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 155,
+        "audio_tokens": 0,
+        "reasoning_tokens": 185,
+        "rejected_prediction_tokens": 320
+      }
+    }
+  },
+  "predicted_code": "0307510000",
+  "predicted_reason": "Whole frozen octopus that has merely been defrosted, cleaned, treated, salted, and refrozen remains unprepared frozen octopus of Chapter 3 rather than a prepared product of Chapter 16.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 249,
+    "total_tokens": 460,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 155,
+      "audio_tokens": 0,
+      "reasoning_tokens": 185,
+      "rejected_prediction_tokens": 320
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:41.600969+00:00",
+  "latency_s": 3.114,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

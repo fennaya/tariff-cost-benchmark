@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358451",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "4819400040",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-6049e2a927774e3f93b2dc69b6d71aa4",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4819.40.0000\", \"reason\": \"The washable kraft paper retail shopping bag, whose base width is under 40 cm, is classified as other packing containers of paper/paperboard in subheading 4819.40.\"}",
+          "role": "assistant",
+          "reasoning_content": "Kraft paper shopping bag with textile handles \u2014 likely 4819.30.0000? Sacks and bags of paper with outer dimension of one side exceeding 40cm? Actually 4819.30: sacks and bags having a base of width \u226540cm... 4819.30.00 covers \"Other sacks and bags, having a base of a width of 40 cm or more\". Base 25.5x16 \u2014 less than 40cm. So 4819.40.00 other wrapping paper. Hmm, retail shopping bags classified 4819.40.00."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333337,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 239,
+      "completion_tokens": 189,
+      "total_tokens": 428,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 129,
+        "audio_tokens": 0,
+        "reasoning_tokens": 127,
+        "rejected_prediction_tokens": 171
+      }
+    }
+  },
+  "predicted_code": "4819400000",
+  "predicted_reason": "The washable kraft paper retail shopping bag, whose base width is under 40 cm, is classified as other packing containers of paper/paperboard in subheading 4819.40.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 239,
+    "completion_tokens": 189,
+    "total_tokens": 428,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 129,
+      "audio_tokens": 0,
+      "reasoning_tokens": 127,
+      "rejected_prediction_tokens": 171
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:37.471580+00:00",
+  "latency_s": 2.897,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

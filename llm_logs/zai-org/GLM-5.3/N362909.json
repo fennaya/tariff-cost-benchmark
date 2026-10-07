@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362909",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "4421999880",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-61411f03ac4048c8b03c25fc40fbc764",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"4411.19.5600\", \"reason\": \"The panel is a fiberboard-based product (MDF-surfaced wood panel exceeding 5 mm in thickness, not plywood or laminated wood), classified as other fiberboard of wood in heading 4411.\"}",
+          "role": "assistant",
+          "reasoning_content": "This is a known ruling \u2014 multilayer wood panel with MDF surface, classified under 4411? Actually MDF panels are 4411.11 or 4411.19. But core is edge-glued lumber surfaced with MDF \u2014 ruling classified under 4411.19? Hmm. Known ruling NY N... classified under 4411.19.5600? Actually 4411.11 is up to 5mm; 4411.19 other. Thickness 18mm \u2192 4411.19.5600? 4411.19.56 uncoated? Coated with paper... 4411.19.56 \"other\". I'll answer 4411.19.5600."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333827,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 231,
+      "total_tokens": 529,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 64
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 153,
+        "audio_tokens": 0,
+        "reasoning_tokens": 161,
+        "rejected_prediction_tokens": 242
+      }
+    }
+  },
+  "predicted_code": "4411195600",
+  "predicted_reason": "The panel is a fiberboard-based product (MDF-surfaced wood panel exceeding 5 mm in thickness, not plywood or laminated wood), classified as other fiberboard of wood in heading 4411.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 298,
+    "completion_tokens": 231,
+    "total_tokens": 529,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 64
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 153,
+      "audio_tokens": 0,
+      "reasoning_tokens": 161,
+      "rejected_prediction_tokens": 242
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:43:47.219784+00:00",
+  "latency_s": 2.993,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362921",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "7607205000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-34854684b71f4e64a342ef73e1cf8ea3",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7607.20.0000\", \"reason\": \"The product is aluminum foil (under 0.2 mm thick) laminated/backed with plastic (PET) film, which is specifically provided for as aluminum foil backed with plastics in heading 7607.\"}",
+          "role": "assistant",
+          "reasoning_content": "PET/aluminum composite film \u2014 likely 7607.20 (aluminum foil backed with plastic) \u2014 but aluminum is thicker component? PET 12 micron vs aluminum 6.35. Composite goods... aluminum foil laminated with plastic: 7607.20.00? Actually 7607.20.00 aluminum foil backed with paper/textiles/plastics. 10-digit: 7607.20.0000? There's 7607.20.0090? HTS: 7607.20.00 \"Aluminum foil backed...\" with suffixes 7607.20.0000? I recall 7607.20.0090? Use 7607.20.0000? Actually current: 7607.20.0090? I'll answer 7607.20.0000... safer: 7607.20.0090? Hmm. Rulings on PET/alu laminates cite 7607.20.00. I'll go 7607.20.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333830,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 296,
+      "total_tokens": 502,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 208,
+        "audio_tokens": 0,
+        "reasoning_tokens": 230,
+        "rejected_prediction_tokens": 237
+      }
+    }
+  },
+  "predicted_code": "7607200000",
+  "predicted_reason": "The product is aluminum foil (under 0.2 mm thick) laminated/backed with plastic (PET) film, which is specifically provided for as aluminum foil backed with plastics in heading 7607.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 296,
+    "total_tokens": 502,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 208,
+      "audio_tokens": 0,
+      "reasoning_tokens": 230,
+      "rejected_prediction_tokens": 237
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:43:49.657449+00:00",
+  "latency_s": 4.083,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357260",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3004390050",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-896eeb5b363140a2b2b93ccd9ff14889",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.0090\", \"reason\": \"Synthetic salmon calcitonin is a polypeptide hormone medicament put up in measured-dose vials for therapeutic use, falling under other medicaments of heading 3004 not containing antibiotics, insulin, or alkaloids.\"}",
+          "role": "assistant",
+          "reasoning_content": "Calcitonin hormone \u2014 3002.10? Hormones, polypeptide hormones: 3002.10.00... but synthetic calcitonin could be 2937 (peptide hormones). Medicament in measured doses \u2192 3004. Calcitonin salmon injection: 3002.10? Actually calcitonin is a polypeptide hormone; HTS 2937.99? Chapter 30 note: medicaments. Known: salmon calcitonin classified 3002.10.00? 3002 covers hormones derived from glands... synthetic calcitonin in dosage form \u2192 3004.90? Peptide hormones put up in dosage forms are 3004.90.00. Likely 3004.90.0090? Actually 3004.90.0090 \"Other\" \u2014 medicaments of antibiotics etc. Insulin is 3004.31? No, 3004.31 is insulin in dosage. Other hormones \u2192 3004.90.0090? There's 3004.90.0090 \"Other\". I'll answer 3004.90.0090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333215,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 155,
+      "completion_tokens": 308,
+      "total_tokens": 463,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 203,
+        "audio_tokens": 0,
+        "reasoning_tokens": 238,
+        "rejected_prediction_tokens": 327
+      }
+    }
+  },
+  "predicted_code": "3004900090",
+  "predicted_reason": "Synthetic salmon calcitonin is a polypeptide hormone medicament put up in measured-dose vials for therapeutic use, falling under other medicaments of heading 3004 not containing antibiotics, insulin, or alkaloids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 155,
+    "completion_tokens": 308,
+    "total_tokens": 463,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 203,
+      "audio_tokens": 0,
+      "reasoning_tokens": 238,
+      "rejected_prediction_tokens": 327
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:35.376746+00:00",
+  "latency_s": 3.445,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

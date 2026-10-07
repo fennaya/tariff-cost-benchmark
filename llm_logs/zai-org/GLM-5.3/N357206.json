@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357206",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "3214100020",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-52ace6544fb44dedbd9f64f1f596e6b1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3214.90.0000\", \"reason\": \"Silicone-based industrial gasket-forming sealants are non-refractory mastics and sealants not based on glaziers' putty, painters' fillings, or non-refractory surfacing preparations, classifiable in subheading 3214.90.0000.\"}",
+          "role": "assistant",
+          "reasoning_content": "Silicone sealants \u2014 RTV gasket makers. Likely 3214.10.0000 (glaziers' putty, mastics... sealants). Non-refractory mastics/ sealants: 3214.90.0000? 3214.10 includes glaziers' putty, painters' fillings \u2014 sealants for industrial use fall in 3214.90.0000. Actually silicone sealants classified 3214.90.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333206,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 190,
+      "completion_tokens": 187,
+      "total_tokens": 377,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 125,
+        "audio_tokens": 0,
+        "reasoning_tokens": 106,
+        "rejected_prediction_tokens": 185
+      }
+    }
+  },
+  "predicted_code": "3214900000",
+  "predicted_reason": "Silicone-based industrial gasket-forming sealants are non-refractory mastics and sealants not based on glaziers' putty, painters' fillings, or non-refractory surfacing preparations, classifiable in subheading 3214.90.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 187,
+    "total_tokens": 377,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 125,
+      "audio_tokens": 0,
+      "reasoning_tokens": 106,
+      "rejected_prediction_tokens": 185
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:26.299386+00:00",
+  "latency_s": 2.082,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

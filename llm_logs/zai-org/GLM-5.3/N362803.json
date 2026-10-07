@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362803",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "5903202500",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d01e5abfe847479bbdaec8fa8cbd22c7",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"5903.10.3500\", \"reason\": \"The fabric is a woven man-made fiber textile laminated with polyurethane plastic (under 60% by weight), so it is classified in HTSUS heading 5903, specifically subheading 5903.10.3500 for fabrics over 150 g/m2 with a polyurethane coating/lamination.\"}",
+          "role": "assistant",
+          "reasoning_content": "This is a known CBP ruling (NY N268347?) \u2014 laminated fabric of heading 5903, coated/laminated with PU, plastic not over 60%, visible surface woven textile. 5903.20.2500? For PU plastic coating: 5903.10 \u2014 polyurethane. Subheadings: 5903.10.25 (of man-made fibers, not over 70 g/m2... ) Actually 5903.10.25: with plastic over 70 g/m2? 5903.10.2500 covers fabrics weighing more than 70 g/m2 but not more than 150 g/m2? 155 g/m2 \u2192 5903.10.3500? Let me recall: 5903.10.2500: over 70 g/m2 but not over 150 g/m2; 5903.10.3500: over 150 g/m2 but not more than 200 g/m2? Hmm. Actually 5903.10.2525/2530... The ruling likely cites 5903.10.3500 (over 150 g/m2, man-made fiber, PU). I'll answer 5903.10.3500."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333809,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 363,
+      "total_tokens": 573,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 238,
+        "audio_tokens": 0,
+        "reasoning_tokens": 273,
+        "rejected_prediction_tokens": 387
+      }
+    }
+  },
+  "predicted_code": "5903103500",
+  "predicted_reason": "The fabric is a woven man-made fiber textile laminated with polyurethane plastic (under 60% by weight), so it is classified in HTSUS heading 5903, specifically subheading 5903.10.3500 for fabrics over 150 g/m2 with a polyurethane coating/lamination.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 363,
+    "total_tokens": 573,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 238,
+      "audio_tokens": 0,
+      "reasoning_tokens": 273,
+      "rejected_prediction_tokens": 387
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:43:28.712781+00:00",
+  "latency_s": 4.256,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

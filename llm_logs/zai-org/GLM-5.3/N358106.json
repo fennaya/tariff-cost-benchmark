@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358106",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "7326908688",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-a45e9e4497674fa3b8e45c769e7a6fba",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7326.90.8680\", \"reason\": \"An empty steel electrical junction box imported without any electrical components is considered an article of iron or steel, classified in HTSUS heading 7326 rather than as an electrical apparatus part.\"}",
+          "role": "assistant",
+          "reasoning_content": "Steel junction box \u2014 7326.90? Boxes of iron/steel not of cast/forged... Actually electrical conduit boxes of steel classified 8536.90? Empty junction boxes for electrical apparatus \u2014 NY rulings classify steel electrical junction boxes in 7326.90.86 (articles of iron/steel). Some rulings put in 8537? No, empty box = 7326.90.86."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333305,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 312,
+      "completion_tokens": 151,
+      "total_tokens": 463,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 92,
+        "audio_tokens": 0,
+        "reasoning_tokens": 90,
+        "rejected_prediction_tokens": 203
+      }
+    }
+  },
+  "predicted_code": "7326908680",
+  "predicted_reason": "An empty steel electrical junction box imported without any electrical components is considered an article of iron or steel, classified in HTSUS heading 7326 rather than as an electrical apparatus part.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 151,
+    "total_tokens": 463,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 92,
+      "audio_tokens": 0,
+      "reasoning_tokens": 90,
+      "rejected_prediction_tokens": 203
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:05.212112+00:00",
+  "latency_s": 2.406,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

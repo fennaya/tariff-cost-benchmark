@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359991",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8708936000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-cb4958873a09445f9f03dc32b8061208",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8708.93.6000\", \"reason\": \"The article is a clutch for the automatic transmission of a passenger vehicle, and HTSUS 8708.93 covers clutches and parts thereof for motor vehicles of heading 8703, with subheading 8708.93.6000 applicable to passenger vehicle clutch parts.\"}",
+          "role": "assistant",
+          "reasoning_content": "This is a one-way clutch \u2014 likely classified as transmission parts 8708.99 or 8483? CBP rulings on one-way clutches for transmissions: often 8483.90 (transmission shafts, gears etc.)? Actually clutch parts for vehicles: 8708.93 is clutches for motor vehicles. But one-way sprag clutch... CBP ruling classified transmission clutch plates under 8708.93. Use 8708.93.6000? Passenger vehicle parts 8708.93.6000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333529,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 547,
+      "completion_tokens": 198,
+      "total_tokens": 745,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 126,
+        "audio_tokens": 0,
+        "reasoning_tokens": 117,
+        "rejected_prediction_tokens": 234
+      }
+    }
+  },
+  "predicted_code": "8708936000",
+  "predicted_reason": "The article is a clutch for the automatic transmission of a passenger vehicle, and HTSUS 8708.93 covers clutches and parts thereof for motor vehicles of heading 8703, with subheading 8708.93.6000 applicable to passenger vehicle clutch parts.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 547,
+    "completion_tokens": 198,
+    "total_tokens": 745,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 126,
+      "audio_tokens": 0,
+      "reasoning_tokens": 117,
+      "rejected_prediction_tokens": 234
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:49.008189+00:00",
+  "latency_s": 2.888,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

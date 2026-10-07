@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363283",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8501528040",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-acd809a3bd7e4e6db9965aa2a7688762",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8501.52.4040\", \"reason\": \"A multi-phase AC motor of 42.5 kW output, imported separately without the pump, is classified as a submersible AC motor under subheading 8501.52.40.\"}",
+          "role": "assistant",
+          "reasoning_content": "8501.52 or submersible motor 8501.53? Multi-phase AC, 42.5 kW. Submersible motors for pumps: 8501.52.40? Actually HTSUS 8501.52 covers AC motors, multi-phase, exceeding 750W. Submersible provision: 8501.52.40? There's subheading 8501.52.40 \"Of an output not exceeding 75 kW\"? Let me recall: 8501.52.00? Statistical suffixes: 8501.52.40 submersible motors? I believe 8501.52.40 is \"Submersible motors\" \u2014 yes, CBP rulings classify submersible pump motors under 8501.52.40."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333850,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 223,
+      "completion_tokens": 221,
+      "total_tokens": 444,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 154,
+        "audio_tokens": 0,
+        "reasoning_tokens": 160,
+        "rejected_prediction_tokens": 181
+      }
+    }
+  },
+  "predicted_code": "8501524040",
+  "predicted_reason": "A multi-phase AC motor of 42.5 kW output, imported separately without the pump, is classified as a submersible AC motor under subheading 8501.52.40.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 223,
+    "completion_tokens": 221,
+    "total_tokens": 444,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 154,
+      "audio_tokens": 0,
+      "reasoning_tokens": 160,
+      "rejected_prediction_tokens": 181
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:10.663952+00:00",
+  "latency_s": 3.304,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

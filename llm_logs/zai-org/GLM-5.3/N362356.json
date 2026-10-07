@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N362356",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "4421999880",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-c935d57b089e409eb600700a93f72edd",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"The product description contains no actual product information, so no HTSUS classification can be determined.\"}",
+          "role": "assistant",
+          "reasoning_content": "No product info \u2014 cannot classify. But must respond with JSON. Best: state insufficient information."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333763,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 104,
+      "completion_tokens": 59,
+      "total_tokens": 163,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 41,
+        "audio_tokens": 0,
+        "reasoning_tokens": 19,
+        "rejected_prediction_tokens": 49
+      }
+    }
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The product description contains no actual product information, so no HTSUS classification can be determined.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 104,
+    "completion_tokens": 59,
+    "total_tokens": 163,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 41,
+      "audio_tokens": 0,
+      "reasoning_tokens": 19,
+      "rejected_prediction_tokens": 49
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:42:43.599409+00:00",
+  "latency_s": 1.705,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

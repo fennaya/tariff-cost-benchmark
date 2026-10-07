@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359756",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8507908000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d9742ab7ce0140d6a1f9e4a20d4f9d85",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7326.90.8680\", \"reason\": \"The item is a fabricated steel sheet metal weldment enclosure, not a dedicated battery part, so it is classified as other articles of iron or steel under heading 7326.\"}",
+          "role": "assistant",
+          "reasoning_content": "Steel weldment structural enclosure for battery pack \u2014 likely classified as steel structure/other articles of iron or steel 7326.90, or as part of battery? It's a steel weldment, not identified as part of a battery (batteries parts heading 8507.90? parts of accumulators). Enclosure for battery pack \u2014 could be 8507.90.8090? Parts of lead-acid/lithium storage batteries. But it's a steel weldment structural enclosure; CBP rulings often classify steel enclosures as 7326.90.86 as steel articles, or 7308 structures. Bent enclosure weldment \u2014 fabricated steel structure. I'd go 7326.90.8680 (other articles of iron or steel, other). Actually 7326.90.86 covers other. 10-digit: 7326.90.8680."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333485,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 250,
+      "total_tokens": 495,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 157,
+        "audio_tokens": 0,
+        "reasoning_tokens": 191,
+        "rejected_prediction_tokens": 313
+      }
+    }
+  },
+  "predicted_code": "7326908680",
+  "predicted_reason": "The item is a fabricated steel sheet metal weldment enclosure, not a dedicated battery part, so it is classified as other articles of iron or steel under heading 7326.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 250,
+    "total_tokens": 495,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 157,
+      "audio_tokens": 0,
+      "reasoning_tokens": 191,
+      "rejected_prediction_tokens": 313
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:38:05.614077+00:00",
+  "latency_s": 2.572,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

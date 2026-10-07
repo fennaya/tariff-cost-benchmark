@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357694",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8543709860",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-3d5d92e104dc49478dfd2ce35d67e49d",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7614.90.1000\", \"reason\": \"The bare, uninsulated aluminum conductor tube is classified as aluminum wire, cable and the like, not electrically insulated, under heading 7614.\"}",
+          "role": "assistant",
+          "reasoning_content": "Bare aluminum conductor \u2014 insulated wire? Not insulated. Likely 8544.42? No, uninsulated aluminum bus bar \u2014 7614.90 (aluminum stranded wire, cables etc. not insulated) or 8544.42.90? Bare aluminum conductor tubes \u2014 heading 7614: aluminum wire, cables, rope and the like, not insulated. 7614.90.1000? Aluminum stranded wire/cable not electrically insulated. Actually 7614.10 is stranded. 7614.90.10: aluminum wire, cables... not insulated, other? I'll go 7614.90.1000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333274,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 266,
+      "completion_tokens": 194,
+      "total_tokens": 460,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 125,
+        "audio_tokens": 0,
+        "reasoning_tokens": 139,
+        "rejected_prediction_tokens": 225
+      }
+    }
+  },
+  "predicted_code": "7614901000",
+  "predicted_reason": "The bare, uninsulated aluminum conductor tube is classified as aluminum wire, cable and the like, not electrically insulated, under heading 7614.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 266,
+    "completion_tokens": 194,
+    "total_tokens": 460,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 125,
+      "audio_tokens": 0,
+      "reasoning_tokens": 139,
+      "rejected_prediction_tokens": 225
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:34:34.425802+00:00",
+  "latency_s": 3.886,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N361444",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8536908585",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-d535031839af472d92bed0438cacb7db",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"7413.00.5090\", \"reason\": \"The uninsulated copper busbar conductor, lacking external electrical insulation, is classified as an article of copper (stranded wire, cables and similar articles of copper) rather than as insulated electrical conductor of heading 8544.\"}",
+          "role": "assistant",
+          "reasoning_content": "Copper busbar, uninsulated \u2014 8544.42? Insulated wire? Not insulated. Base metal conductor: 8544.42.90? Actually uninsulated busbar of copper classified in 7413.00 (stranded wire, cables etc. of copper) \u2014 busbars are often 7413.00.5090? Liquid-cooled busbar ruling likely 7413.00.5090."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333669,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 163,
+      "total_tokens": 422,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 107,
+        "audio_tokens": 0,
+        "reasoning_tokens": 93,
+        "rejected_prediction_tokens": 178
+      }
+    }
+  },
+  "predicted_code": "7413005090",
+  "predicted_reason": "The uninsulated copper busbar conductor, lacking external electrical insulation, is classified as an article of copper (stranded wire, cables and similar articles of copper) rather than as insulated electrical conductor of heading 8544.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 163,
+    "total_tokens": 422,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 107,
+      "audio_tokens": 0,
+      "reasoning_tokens": 93,
+      "rejected_prediction_tokens": 178
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:41:09.392410+00:00",
+  "latency_s": 2.069,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

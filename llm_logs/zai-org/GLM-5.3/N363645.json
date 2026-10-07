@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N363645",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "8703220110",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-0706af0074594960856aaa32ed69430f",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8703.22.0000\", \"reason\": \"A spark-ignition off-road side-by-side vehicle principally designed for transporting persons with an engine displacement of 1,001 cc (exceeding 1,000 cc but not exceeding 1,500 cc) is classified in heading 8703, subheading 8703.22.\"}",
+          "role": "assistant",
+          "reasoning_content": "8703.10? No \u2014 off-road SSV classified 8703.24? Spark-ignition, 1001cc \u2192 8703.23 (1500-3000)? Actually 8703.22 is >1000-1500 cc. So 8703.22.00... 10-digit: 8703.22.0000? There's 8703.22.0000? Likely 8703.22.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333887,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 190,
+      "total_tokens": 437,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 135,
+        "audio_tokens": 0,
+        "reasoning_tokens": 106,
+        "rejected_prediction_tokens": 135
+      }
+    }
+  },
+  "predicted_code": "8703220000",
+  "predicted_reason": "A spark-ignition off-road side-by-side vehicle principally designed for transporting persons with an engine displacement of 1,001 cc (exceeding 1,000 cc but not exceeding 1,500 cc) is classified in heading 8703, subheading 8703.22.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 247,
+    "completion_tokens": 190,
+    "total_tokens": 437,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 135,
+      "audio_tokens": 0,
+      "reasoning_tokens": 106,
+      "rejected_prediction_tokens": 135
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:44:47.099995+00:00",
+  "latency_s": 2.385,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

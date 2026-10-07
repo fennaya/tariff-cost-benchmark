@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357024",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "3824994190",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-5d1aae1013b34684968b26a43d932070",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3402.11.5000\", \"reason\": \"The product is a mixture of anionic organic surface-active agents (sodium stearate and sodium stearoyl lactylates) used as an emulsifier, not put up for retail sale, classifiable in subheading 3402.11.50.\"}",
+          "role": "assistant",
+          "reasoning_content": "Sodium stearoyl lactylate \u2014 likely 2917 or 3402? Actually CBP ruling: emulsifier sodium stearoyl lactylate classified in 2918? Sodium stearate is soap 3402? Ruling classifies Finamul 6016 under 3402.11? Actually known NY ruling: classified in 2915/2918? Sodium stearoyl lactylate is a lactylate \u2014 ester of lactic acid, heading 2918 (carboxylic acid esters). Sodium stearate is soap. Mixture \u2014 organic surface-active agents, 3402.11.50? CBP ruling N? I recall ruling classifying Finamul 6016 in 3402.11.50? Hmm. Sodium stearoyl lactylate is a surfactant; mixture of sodium stearate (soap) and lactylates \u2192 3402.11.50 (organic surface-active agents, anionic, not for retail). I'll go with 3402.11.5000? Actually 3402.11.50 exists."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333195,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 196,
+      "completion_tokens": 319,
+      "total_tokens": 515,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 216,
+        "audio_tokens": 0,
+        "reasoning_tokens": 242,
+        "rejected_prediction_tokens": 304
+      }
+    }
+  },
+  "predicted_code": "3402115000",
+  "predicted_reason": "The product is a mixture of anionic organic surface-active agents (sodium stearate and sodium stearoyl lactylates) used as an emulsifier, not put up for retail sale, classifiable in subheading 3402.11.50.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 196,
+    "completion_tokens": 319,
+    "total_tokens": 515,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 216,
+      "audio_tokens": 0,
+      "reasoning_tokens": 242,
+      "rejected_prediction_tokens": 304
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:14.727250+00:00",
+  "latency_s": 4.162,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

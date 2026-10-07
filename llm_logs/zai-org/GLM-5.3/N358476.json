@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358476",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "8412298045",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-f70ec2ff06d64f3f8a90449d3cc5aa69",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8412.21.0000\", \"reason\": \"The hydraulic cylinder is a linear-acting hydraulic power unit classified in heading 8412, and as the primary article it takes the code for hydraulic cylinders (the electric actuator would fall under a different heading, e.g., 8501).\"}",
+          "role": "assistant",
+          "reasoning_content": "Hydraulic cylinder for agricultural machinery \u2014 parts of agricultural machinery? Cylinder is a hydraulic cylinder, classifiable as 8412.21 if hydraulic power unit... but used on seeder. CBP rulings: hydraulic cylinders for agricultural equipment classified in 8432.90 (parts of ag machinery) if dedicated? Actually hydraulic cylinders are generally 8412.21.00 (linear acting hydraulic cylinders). But if integral/dedicated part of ag machine, 8432.90.00. Many rulings classify replacement hydraulic cylinders for ag equipment under 8412.21.20? HTS 8412.21.00: \"Linear acting hydraulic power units\". 10-digit: 8412.21.0000? Actually 8412.21.00.00. Actuator electric \u2014 8501? Electric actuator likely 8501.20? Linear actuators 8501.20.00. Hmm, single code required. Choose 8412.21.0000? Format XXXX.XX.XXXX \u2192 8412.21.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333340,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 302,
+      "total_tokens": 660,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 189,
+        "audio_tokens": 0,
+        "reasoning_tokens": 230,
+        "rejected_prediction_tokens": 376
+      }
+    }
+  },
+  "predicted_code": "8412210000",
+  "predicted_reason": "The hydraulic cylinder is a linear-acting hydraulic power unit classified in heading 8412, and as the primary article it takes the code for hydraulic cylinders (the electric actuator would fall under a different heading, e.g., 8501).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 302,
+    "total_tokens": 660,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 189,
+      "audio_tokens": 0,
+      "reasoning_tokens": 230,
+      "rejected_prediction_tokens": 376
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:40.377023+00:00",
+  "latency_s": 3.59,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359430",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-301dd8b9a99046efaab0b33bdbae7826",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3004.90.9290\", \"reason\": \"Tranexamic acid tablets are a medicament (not an antibiotic, hormone, or alkaloid) put up in measured doses for therapeutic use, classifiable under heading 3004 in the residual 'other' subheading.\"}",
+          "role": "assistant",
+          "reasoning_content": "Tranexamic acid \u2014 antibiotic? No, antifibrinolytic. 2933.69? It's a medicament in tablet form \u2192 3004.90? Tranexamic acid: heading 3004 as medicament put up in measured doses. 3004.90.1060? Actually 3004.90 sections... 3004.90.92? For \"other\" medicaments. Common code: 3004.90.1060? I'll go 3004.90.1060? Hmm. 3004.90.92 \"Other\" \u2014 3004.90.9290? I'll answer 3004.90.9290."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333448,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 147,
+      "completion_tokens": 217,
+      "total_tokens": 364,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 150,
+        "audio_tokens": 0,
+        "reasoning_tokens": 149,
+        "rejected_prediction_tokens": 190
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Tranexamic acid tablets are a medicament (not an antibiotic, hormone, or alkaloid) put up in measured doses for therapeutic use, classifiable under heading 3004 in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 147,
+    "completion_tokens": 217,
+    "total_tokens": 364,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 150,
+      "audio_tokens": 0,
+      "reasoning_tokens": 149,
+      "rejected_prediction_tokens": 190
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:37:27.476233+00:00",
+  "latency_s": 2.866,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

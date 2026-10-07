@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N359063",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3304995000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-48204b7006bf4800bb5aeab37c8f29d4",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3304.99.5000\", \"reason\": \"An oil-based leave-on body serum is a skin-care preparation not elsewhere specified or included, classified in subheading 3304.99.50.\"}",
+          "role": "assistant",
+          "reasoning_content": "Body serum \u2014 skin care preparation, 3304.99.50 or 3304.99.10? Beauty/skin care preparations, other: 3304.99.5000 (other). Actually 3304.99.50 covers \"Other\" skin care. Use 3304.99.5000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333394,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 118,
+      "total_tokens": 338,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 83,
+        "audio_tokens": 0,
+        "reasoning_tokens": 67,
+        "rejected_prediction_tokens": 97
+      }
+    }
+  },
+  "predicted_code": "3304995000",
+  "predicted_reason": "An oil-based leave-on body serum is a skin-care preparation not elsewhere specified or included, classified in subheading 3304.99.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 220,
+    "completion_tokens": 118,
+    "total_tokens": 338,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 83,
+      "audio_tokens": 0,
+      "reasoning_tokens": 67,
+      "rejected_prediction_tokens": 97
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:36:34.546828+00:00",
+  "latency_s": 2.163,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

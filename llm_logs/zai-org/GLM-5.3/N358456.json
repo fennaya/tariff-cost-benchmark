@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N358456",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3307900000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-fd4ce667626e42f9b78930b91adafe9a",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"3307.90.0000\", \"reason\": \"Dog shampoos are neither human hair preparations (3305) nor soap/detergent surface-active preparations (3401/3402), so per CBP practice they fall in heading 3307 as other cosmetic/toiletry preparations.\"}",
+          "role": "assistant",
+          "reasoning_content": "Pet shampoo \u2014 3307.90? Actually animal grooming shampoo: 3305? No, 3305 is human hair. Pet shampoos classified in 3307.90.00? There is 3307.90.0010? Common ruling: 3307.90.00. 10-digit: 3307.90.0000? HTS 3307.90.0090? Subheading 3307.90.00 \"Other\" \u2014 statistical suffix 3307.90.0000? Actually 3307.90.0090? I recall 3307.90.0090? CBP rulings classify pet shampoo under 3307.90.00. Use 3307.90.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333339,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 270,
+      "completion_tokens": 229,
+      "total_tokens": 499,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 152,
+        "audio_tokens": 0,
+        "reasoning_tokens": 160,
+        "rejected_prediction_tokens": 238
+      }
+    }
+  },
+  "predicted_code": "3307900000",
+  "predicted_reason": "Dog shampoos are neither human hair preparations (3305) nor soap/detergent surface-active preparations (3401/3402), so per CBP practice they fall in heading 3307 as other cosmetic/toiletry preparations.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 229,
+    "total_tokens": 499,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 152,
+      "audio_tokens": 0,
+      "reasoning_tokens": 160,
+      "rejected_prediction_tokens": 238
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:35:38.759796+00:00",
+  "latency_s": 2.835,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}

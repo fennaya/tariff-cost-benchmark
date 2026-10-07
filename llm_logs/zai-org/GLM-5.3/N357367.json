@@ -1,0 +1,71 @@
+{
+  "rulingNumber": "N357367",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "8517790000",
+  "model": "zai-org/GLM-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "chatcmpl-1fb2c17fc8344b6ea2bf2f2ce02ad85a",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "content": "{\"hts_code\": \"8517.70.0000\", \"reason\": \"The assembly is a subassembly of a cellular smartphone (a data transmission/reception apparatus of heading 8517.62), and as an unfinished part lacking the main PCBA it is classified as a part under 8517.70.0000.\"}",
+          "role": "assistant",
+          "reasoning_content": "Smartphone parts \u2014 subassembly of cellular phone. Likely 8517.70.0000? Parts of telephones... 8517.70.00 covers parts of 8517.62 (machines for reception/transmission of data). Smartphone parts classified 8517.70.0000. But battery included... assembly is a phone subassembly; 8517.70.0000."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "created": 1791333236,
+    "model": "zai-org/GLM-5.3",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 162,
+      "total_tokens": 394,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 104,
+        "audio_tokens": 0,
+        "reasoning_tokens": 87,
+        "rejected_prediction_tokens": 186
+      }
+    }
+  },
+  "predicted_code": "8517700000",
+  "predicted_reason": "The assembly is a subassembly of a cellular smartphone (a data transmission/reception apparatus of heading 8517.62), and as an unfinished part lacking the main PCBA it is classified as a part under 8517.70.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 162,
+    "total_tokens": 394,
+    "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "accepted_prediction_tokens": 104,
+      "audio_tokens": 0,
+      "reasoning_tokens": 87,
+      "rejected_prediction_tokens": 186
+    }
+  },
+  "provider_served": null,
+  "requested_at": "2026-10-07T00:33:55.820415+00:00",
+  "latency_s": 2.223,
+  "request_params": {
+    "model": "zai-org/GLM-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "thinking": {
+      "type": "disabled"
+    }
+  }
+}
