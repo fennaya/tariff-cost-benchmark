@@ -50,14 +50,31 @@ def build_messages(description: str):
     return [{"role": "user", "content": PROMPT_TEMPLATE.format(description=description)}]
 
 
+THINK_RE = re.compile(r"<think>.*?</think>", re.DOTALL)
+_DECODER = json.JSONDecoder()
+
+
 def parse_prediction(content: str):
-    m = JSON_BLOCK_RE.search(content or "")
-    if not m:
+    """Strip <think>...</think> blocks, then take the LAST JSON object that contains
+    "hts_code". v1.1 change (PREREG_v1.1.md section 5): v1.0 took everything from the first
+    "{" to the last "}", which breaks if a reasoning model writes braces before its answer.
+    scripts/verify_parser.py checks that every cached v1.0 answer parses identically."""
+    text = THINK_RE.sub("", content or "")
+    if "{" not in text:
         return None, None, "no_json_found"
-    try:
-        obj = json.loads(m.group(0))
-    except json.JSONDecodeError as e:
-        return None, None, f"json_decode_error:{e}"
+    objs, decode_error = [], None
+    for m in re.finditer(r"\{", text):
+        try:
+            obj, _ = _DECODER.raw_decode(text[m.start():])
+        except json.JSONDecodeError as e:
+            decode_error = decode_error or e
+            continue
+        if isinstance(obj, dict):
+            objs.append(obj)
+    if not objs:
+        return None, None, f"json_decode_error:{decode_error}"
+    with_code = [o for o in objs if "hts_code" in o]
+    obj = with_code[-1] if with_code else objs[-1]
     code = obj.get("hts_code")
     reason = obj.get("reason")
     if not code:

@@ -10,9 +10,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import digit_match, rate_pct_for, load_model_results  # noqa: E402
 res = json.loads((ROOT / "data" / "processed" / "analysis_results.json").read_text(encoding="utf-8"))
-ORDER = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+ORDER = M.model_ids()
 
 lines = [
     "# Derived shares behind the README framing (from analysis_results.json)\n",
@@ -31,7 +33,7 @@ lines += ["", "## Overlap: usable-rate wrong answers that are also tagged INVALI
           "Only 10-digit answers get a rate (analysis.rate_pct_for). A 10-digit answer that is not in the HTS is tagged invalid but can still resolve to a rate through its 8-, 6- or 4-digit prefix, so the two groups overlap.", "",
           "| Model | wrong with usable rate | of which tagged invalid | of which valid 10-digit code |", "|---|---|---|---|"]
 for m in ORDER:
-    rows = load_model_results(ROOT / "llm_logs" / m)
+    rows = load_model_results(M.path_for(m))
     wrong = [r for r in rows if not digit_match(r["true_code"], r.get("predicted_code"), 10)]
     usable = [r for r in wrong if rate_pct_for(r["true_code"], r["rulingDate"]) is not None
               and rate_pct_for(r.get("predicted_code"), r["rulingDate"]) is not None]

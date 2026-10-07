@@ -18,10 +18,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import load_model_results  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision  # noqa: E402
 
-MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+MODELS = M.model_ids()
 D = ROOT / "data" / "compact" / "hts_older"
 
 
@@ -49,7 +51,7 @@ def main():
             true_missing += 1
     for m in MODELS:
         n_flip = n_inv_now = 0
-        for r in load_model_results(ROOT / "llm_logs" / m):
+        for r in load_model_results(M.path_for(m)):
             p = r.get("predicted_code")
             if not p or len(p) != 10:
                 continue

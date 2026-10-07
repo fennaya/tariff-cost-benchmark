@@ -5,14 +5,18 @@
       "model_id": "openai/gpt-oss-20b",
       "reasoning_effort": "low",
       "training_cutoff": "2024-06-01",
-      "training_cutoff_source": "https://platform.openai.com/docs/models/gpt-oss-20b"
+      "training_cutoff_source": "https://platform.openai.com/docs/models/gpt-oss-20b",
+      "cohort": "v1.0",
+      "sample": "all"
     },
     {
       "provider": "groq",
       "model_id": "openai/gpt-oss-120b",
       "reasoning_effort": "low",
       "training_cutoff": "2024-06-01",
-      "training_cutoff_source": "https://platform.openai.com/docs/models/gpt-oss-120b"
+      "training_cutoff_source": "https://platform.openai.com/docs/models/gpt-oss-120b",
+      "cohort": "v1.0",
+      "sample": "all"
     },
     {
       "provider": "groq",
@@ -20,7 +24,101 @@
       "reasoning_effort": null,
       "training_cutoff": "unknown",
       "training_cutoff_source": "not stated on console.groq.com or Hugging Face as of 2026-09-30; treated as latest-possible per the build prompt's own fallback rule. Note: reasoning_effort must be null -- this model's API rejects that parameter with a 400 error (unlike the gpt-oss models).",
-      "_replaced_model": "qwen/qwen3.8-27b (see DECISIONS.md 2026-09-30 entry -- swapped out for an unworkably tight free-tier quota)"
+      "_replaced_model": "qwen/qwen3.8-27b (see DECISIONS.md 2026-09-30 entry -- swapped out for an unworkably tight free-tier quota)",
+      "cohort": "v1.0",
+      "sample": "all"
+    },
+    {
+      "provider": "baseten",
+      "model_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "cohort": "v1.1",
+      "sample": "all",
+      "reasoning_effort": "none",
+      "extra_params": {
+        "reasoning_effort": "none"
+      },
+      "price_in_per_1m": 0.3,
+      "price_out_per_1m": 1.2,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "official model card silent as of 2026-10-07 (https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash); third-party aggregators list May 2025 (e.g. https://www.gradually.ai/en/ai-models/deepseek-deepseek-v4.1-flash/), not vendor-stated"
+    },
+    {
+      "provider": "baseten",
+      "model_id": "zai-org/GLM-5.3",
+      "cohort": "v1.1",
+      "sample": "all",
+      "reasoning_effort": "thinking disabled (still emits some reasoning tokens)",
+      "extra_params": {
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "price_in_per_1m": 1.4,
+      "price_out_per_1m": 4.4,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "official model card silent as of 2026-10-07 (https://huggingface.co/zai-org/GLM-5.3)"
+    },
+    {
+      "provider": "baseten",
+      "model_id": "moonshotai/Kimi-K3",
+      "cohort": "v1.1",
+      "sample": "all",
+      "reasoning_effort": "none",
+      "extra_params": {
+        "reasoning_effort": "none"
+      },
+      "price_in_per_1m": 3.0,
+      "price_out_per_1m": 15.0,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "official model card silent as of 2026-10-07 (https://huggingface.co/moonshotai/Kimi-K3)"
+    },
+    {
+      "provider": "openrouter",
+      "model_id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "cohort": "v1.1",
+      "sample": "subset200",
+      "reasoning_effort": "none",
+      "extra_params": {
+        "reasoning": {
+          "effort": "none"
+        }
+      },
+      "price_in_per_1m": 0.0,
+      "price_out_per_1m": 0.0,
+      "training_cutoff": "2026-05-31",
+      "training_cutoff_source": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16 (knowledge cutoff 2026-05, post-training data May 2026; pre-training data September 2025; the later date is used, as the conservative choice)"
+    },
+    {
+      "provider": "gemini",
+      "model_id": "gemini-3.8-flash",
+      "cohort": "v1.1",
+      "sample": "subset200",
+      "reasoning_effort": "thinkingLevel=low (API minimum)",
+      "extra_params": {},
+      "price_in_per_1m": 0.0,
+      "price_out_per_1m": 0.0,
+      "training_cutoff": "2026-03-01",
+      "training_cutoff_source": "https://deepmind.google/models/model-cards/gemini-3-8-flash/ (\"March 2026\")",
+      "run_by": "scripts/run_gemini_daily.bat (Task Scheduler), not run_new_models.py"
+    },
+    {
+      "provider": "openrouter",
+      "model_id": "openai/gpt-6-sol",
+      "cohort": "v1.1",
+      "sample": "subset200",
+      "paid": true,
+      "max_spend_usd": 2.0,
+      "reasoning_effort": "none",
+      "extra_params": {
+        "reasoning": {
+          "effort": "none"
+        }
+      },
+      "price_in_per_1m": 2.0,
+      "price_out_per_1m": 10.0,
+      "training_cutoff": "2026-04-20",
+      "training_cutoff_source": "https://computingforgeeks.com/gpt-6-sol-luna-released-features-benchmarks/ (third-party report: knowledge cutoff April 20, 2026; not checked against an OpenAI page)",
+      "note": "Paid model, added on the user's mid-run request with a hard spend cap; see DECISIONS.md"
     }
   ],
   "ruling_window_start": "2026-01-01",

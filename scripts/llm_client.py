@@ -43,7 +43,12 @@ PROVIDERS = [
     ("CEREBRAS_API_KEY", "cerebras", "https://api.cerebras.ai/v1", "/models", "/chat/completions"),
     ("TOGETHER_API_KEY", "together", "https://api.together.xyz/v1", "/models", "/chat/completions"),
     ("OPENROUTER_API_KEY", "openrouter", "https://openrouter.ai/api/v1", "/models", "/chat/completions"),
+    ("BASETEN_API_KEY", "baseten", "https://inference.baseten.co/v1", "/models", "/chat/completions"),
 ]
+
+# Baseten's OpenAI-compatible endpoint authenticates with "Api-Key <key>" (verified
+# 2026-10-07); every other provider here uses "Bearer <key>".
+AUTH_SCHEME = {"baseten": "Api-Key"}
 
 
 @dataclass
@@ -53,6 +58,10 @@ class Provider:
     api_key: str
     models_path: str
     chat_path: str
+
+    @property
+    def auth_header(self):
+        return {"Authorization": f"{AUTH_SCHEME.get(self.name, 'Bearer')} {self.api_key}"}
 
 
 def available_providers():
@@ -68,7 +77,7 @@ def available_providers():
 def list_models(provider: Provider):
     r = requests.get(
         provider.base_url + provider.models_path,
-        headers={"Authorization": f"Bearer {provider.api_key}"},
+        headers=provider.auth_header,
         timeout=30,
     )
     r.raise_for_status()
@@ -87,7 +96,7 @@ def chat_completion(provider: Provider, model: str, messages, temperature=0.0,
         try:
             resp = requests.post(
                 provider.base_url + provider.chat_path,
-                headers={"Authorization": f"Bearer {provider.api_key}", "Content-Type": "application/json"},
+                headers={**provider.auth_header, "Content-Type": "application/json"},
                 json=body,
                 timeout=timeout,
             )

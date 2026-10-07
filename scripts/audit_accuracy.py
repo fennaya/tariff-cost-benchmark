@@ -23,6 +23,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision  # noqa: E402
 from datetime import datetime  # noqa: E402
 
@@ -34,12 +36,7 @@ DIGIT_LEVELS = [2, 4, 6, 8, 10]
 
 
 def load_model_results():
-    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")) and "lang_" not in p.name and not p.name.startswith("gemini"))
-    out = {}
-    for d in model_dirs:
-        model_id = d.relative_to(LLM_LOGS_DIR).as_posix()
-        out[model_id] = [json.loads(fp.read_text(encoding="utf-8")) for fp in sorted(d.glob("*.json"))]
-    return out
+    return M.results_by_model()
 
 
 # ---------- Check 1: format mismatch (zero-padding) ----------

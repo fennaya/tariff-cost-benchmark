@@ -22,6 +22,8 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision, classify_rate, resolve_rate  # noqa: E402
 from run_gemini_classification import SUBSET_PATH, MODEL_ID as GEMINI_MODEL_ID  # noqa: E402
 from audit_direction import (  # noqa: E402
@@ -33,7 +35,7 @@ LLM_LOGS_DIR = ROOT / "llm_logs"
 USABLE_PATH = ROOT / "data" / "processed" / "usable_rulings.jsonl"
 REVIEW_DIR = ROOT / "review"
 DIGIT_LEVELS = [8, 6, 10]  # 8-digit headline first, per the project's own convention
-GROQ_MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+GROQ_MODELS = [m["model_id"] for m in M.load() if m["provider"] == "groq"]
 
 
 def digit_match(true_code, pred_code, level):
@@ -43,7 +45,7 @@ def digit_match(true_code, pred_code, level):
 
 
 def load_model_rows(model_id, subset_ids):
-    d = LLM_LOGS_DIR / model_id
+    d = M.path_for(model_id)
     if not d.exists():
         return []
     rows = [json.loads(fp.read_text(encoding="utf-8")) for fp in d.glob("*.json")]

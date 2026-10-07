@@ -12,9 +12,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import digit_match  # noqa: E402
 
-MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+MODELS = [m for m in M.model_ids() if (ROOT / "llm_followups" / M.dir_name(M.by_id(m))).exists()]
 
 
 def main():
@@ -28,13 +30,13 @@ def main():
         before, after = [], []
         n_inv = fixed = fixed_correct = still = n_http_err = 0
         for rn in ids:
-            first = json.loads((ROOT / "llm_logs" / m / f"{rn}.json").read_text(encoding="utf-8"))
+            first = json.loads((M.path_for(m) / f"{rn}.json").read_text(encoding="utf-8"))
             before.append(first)
             if first["tag"] != "INVALID_CODE":
                 after.append(first)
                 continue
             n_inv += 1
-            fu = json.loads((ROOT / "llm_followups" / m / f"{rn}.json").read_text(encoding="utf-8"))
+            fu = json.loads((ROOT / "llm_followups" / M.dir_name(M.by_id(m)) / f"{rn}.json").read_text(encoding="utf-8"))
             after.append(fu)
             if fu["valid_code"]:
                 fixed += 1

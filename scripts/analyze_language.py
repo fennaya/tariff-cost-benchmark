@@ -30,6 +30,8 @@ from scipy import stats
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision, classify_rate, resolve_rate  # noqa: E402
 
 LLM_LOGS_DIR = ROOT / "llm_logs"
@@ -46,7 +48,7 @@ def load_marks():
 
 
 def load_lang_results(model_id, lang=None):
-    d = LLM_LOGS_DIR / model_id if lang is None else LLM_LOGS_DIR / model_id / f"lang_{lang}"
+    d = M.path_for(model_id) if lang is None else M.path_for(model_id) / f"lang_{lang}"
     if not d.exists():
         return {}
     return {json.loads(fp.read_text(encoding="utf-8"))["rulingNumber"]: json.loads(fp.read_text(encoding="utf-8"))
@@ -181,7 +183,7 @@ def main():
     ar_ok = [rn for rn, m in marks.items() if m.get("ar_ok") == "OK"]
     print(f"3-way (both OK): {len(both_ok)}; FR-OK: {len(fr_ok)}; AR-OK: {len(ar_ok)}")
 
-    models = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+    models = [m for m in M.model_ids() if (M.path_for(m) / "lang_fr").exists()]
     all_out = {"n_both_ok": len(both_ok), "n_fr_ok": len(fr_ok), "n_ar_ok": len(ar_ok), "models": {}}
 
     lines = [

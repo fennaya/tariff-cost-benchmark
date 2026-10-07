@@ -28,10 +28,12 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import digit_match, rate_pct_for, load_model_results, wilson_ci  # noqa: E402
 from parse_duty_rates import classify_rate, revision_for_date, resolve_rate, load_revision, read_revision_rows  # noqa: E402
 
-MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+MODELS = M.model_ids()
 RATES_DIR = ROOT / "data" / "compact" / "hts_rates"
 CURRENT = "2026HTSRev20"
 _cache = {}
@@ -74,7 +76,7 @@ def main():
     pairs = {}
     per_model = {}
     for m in MODELS:
-        rows = load_model_results(ROOT / "llm_logs" / m)
+        rows = load_model_results(M.path_for(m))
         wrong = [r for r in rows if not digit_match(r["true_code"], r.get("predicted_code"), 10)]
         per_model[m] = wrong
         for r in wrong:

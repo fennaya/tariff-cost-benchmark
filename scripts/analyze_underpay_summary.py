@@ -15,12 +15,14 @@ from scipy import stats
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import load_model_results, wilson_ci  # noqa: E402
 from audit_direction import (  # noqa: E402
     SEED, build_wrong_cases, observed_underpay_share, run_baseline, permutation_test, format_p,
 )
 
-MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+MODELS = M.model_ids()
 MIN_N = 30
 
 
@@ -31,7 +33,7 @@ def main():
          "| Model | n rate-changing errors | underpaid | underpay share (Wilson 95% CI) | binomial p vs 50% | p vs Baseline 1 (heading) | p vs Baseline 2 (matched depth) | wording |",
          "|---|---|---|---|---|---|---|---|"]
     for m in MODELS:
-        rows = load_model_results(ROOT / "llm_logs" / m)
+        rows = load_model_results(M.path_for(m))
         cases = build_wrong_cases(rows)
         observed, n, _ = observed_underpay_share(cases)
         under = round(observed * n)

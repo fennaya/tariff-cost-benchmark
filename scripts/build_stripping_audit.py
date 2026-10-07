@@ -6,6 +6,8 @@ alone?") is made by hand for each of the 20 sampled cases and written into the
 generated file afterward, per the build prompt's instruction to judge each one.
 """
 import json
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 import random
 from pathlib import Path
 
@@ -17,12 +19,7 @@ REVIEW_DIR = ROOT / "review"
 
 
 def load_model_results():
-    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")) and "lang_" not in p.name and not p.name.startswith("gemini"))
-    out = {}
-    for d in model_dirs:
-        model_id = d.relative_to(LLM_LOGS_DIR).as_posix()
-        out[model_id] = [json.loads(fp.read_text(encoding="utf-8")) for fp in sorted(d.glob("*.json"))]
-    return out
+    return M.results_by_model()
 
 
 def main():

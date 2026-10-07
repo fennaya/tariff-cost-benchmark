@@ -29,11 +29,13 @@ import numpy as np
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import digit_match, rate_pct_for, load_model_results  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision  # noqa: E402
 from datetime import datetime  # noqa: E402
 
-MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+MODELS = M.model_ids()
 OLDER_DIR = ROOT / "data" / "compact" / "hts_older"
 CLASSES = ["correct", "wrong_valid", "suffix_only", "six_eight", "fabricated", "outdated", "no_usable_code"]
 
@@ -83,7 +85,7 @@ def main():
     print(f"older (2022-2025) 10-digit codes indexed: {len(older)}")
     res = {}
     for m in MODELS:
-        rows = load_model_results(ROOT / "llm_logs" / m)
+        rows = load_model_results(M.path_for(m))
         n = len(rows)
         cls = Counter()
         crosstab = Counter()

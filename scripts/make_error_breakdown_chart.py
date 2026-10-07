@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parent.parent
 data = json.loads((ROOT / "review" / "invalid_breakdown.json").read_text(encoding="utf-8"))
-ORDER = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+ORDER = list(data)
 SERIES = [  # key, label, color (reference categorical slots 1-7, in order)
     ("correct", "Correct", "#2a78d6"),
     ("wrong_valid", "Wrong, valid code", "#eb6834"),
@@ -25,7 +25,7 @@ SERIES = [  # key, label, color (reference categorical slots 1-7, in order)
 ]
 SURFACE, INK, MUTED = "#fcfcfb", "#0b0b0b", "#52514e"
 
-fig, ax = plt.subplots(figsize=(11, 4.2), dpi=200, facecolor=SURFACE)
+fig, ax = plt.subplots(figsize=(11, 1.9 + 0.72 * len(ORDER)), dpi=200, facecolor=SURFACE)
 ax.set_facecolor(SURFACE)
 for i, m in enumerate(ORDER):
     n = data[m]["n"]
@@ -48,7 +48,7 @@ ax.tick_params(axis="y", length=0)
 for s in ("top", "right", "left"):
     ax.spines[s].set_visible(False)
 ax.spines["bottom"].set_color("#d9d8d2")
-ax.set_title("What the three free models returned, by error type", loc="left", fontsize=12, color=INK, pad=14)
+ax.set_title("What each model returned, by error type", loc="left", fontsize=12, color=INK, pad=14)
 from matplotlib.patches import Patch
 handles = [Patch(facecolor=c, edgecolor=SURFACE, label=l) for _, l, c in SERIES]
 ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=4, frameon=False, fontsize=9,
