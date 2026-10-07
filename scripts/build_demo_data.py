@@ -9,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision, classify_rate, resolve_rate  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -38,14 +39,14 @@ def main():
                  (json.loads(l) for l in DUTY_PATH.read_text(encoding="utf-8").splitlines())}
 
     per_ruling = {}
-    # Every folder under llm_logs/ that directly holds .json files is one model (or one
-    # model's translation run). Keyed by its path relative to llm_logs/, e.g.
-    # "openai/gpt-oss-120b" or "allam-2-7b/lang_ar". Gemini stays out until v1.1.
-    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")))
-    for model_dir in model_dirs:
-        model_key = model_dir.relative_to(LLM_LOGS_DIR).as_posix()
-        if model_key.startswith("gemini"):
-            continue
+    # Models come from config.json (complete runs only, so a partial or unpublished run such
+    # as an unfinished Gemini cache never reaches the demo). Keyed by model_id, or
+    # "<model_id>/lang_ar" for a translation run.
+    pairs = []
+    for m in M.analysis_models():
+        pairs.append((m["model_id"], M.model_dir(m)))
+        pairs += [(f"{m['model_id']}/{d.name}", d) for d in sorted(M.model_dir(m).glob("lang_*")) if d.is_dir()]
+    for model_key, model_dir in pairs:
         for fp in model_dir.glob("*.json"):
             r = json.loads(fp.read_text(encoding="utf-8"))
             rn = r["rulingNumber"]
@@ -73,6 +74,17 @@ def main():
             }
 
     out = list(per_ruling.values())
+    bm_path = ROOT / "review" / "biggest_misses.json"
+    if bm_path.exists():  # tag the 10 largest under- and over-payments (review/biggest_misses.md)
+        bm = json.loads(bm_path.read_text(encoding="utf-8"))
+        tags = {}
+        for kind in ("under", "over"):
+            for x in bm[kind]:
+                tags.setdefault(x["rulingNumber"], []).append(
+                    {"direction": kind, "model": x["model"], "usd_per_100k": round(abs(x["usd_per_100k"]))})
+        for r in out:
+            if r["id"] in tags:
+                r["biggest_miss"] = tags[r["id"]]
     OUT_PATH.write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"Wrote {OUT_PATH} ({len(out)} rulings)")
 

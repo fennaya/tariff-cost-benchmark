@@ -22,6 +22,8 @@ import numpy as np
 from scipy import stats
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts"))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from parse_duty_rates import revision_for_date, load_revision, classify_rate, resolve_rate  # noqa: E402
 from datetime import datetime  # noqa: E402
 
@@ -264,10 +266,7 @@ def main():
     # results -- found 2026-10-01 when only allam-2-7b, the one un-nested model, showed
     # up in a 3-model run).
     all_metrics = {}
-    model_dirs = sorted(p for p in LLM_LOGS_DIR.rglob("*") if p.is_dir() and any(p.glob("*.json")) and "lang_" not in p.name and not p.name.startswith("gemini"))
-    for model_dir in model_dirs:
-        model_id = model_dir.relative_to(LLM_LOGS_DIR).as_posix()
-        rows = load_model_results(model_dir)
+    for model_id, rows in M.results_by_model().items():
         if not rows:
             continue
         all_metrics[model_id] = analyze_model(model_id, rows)

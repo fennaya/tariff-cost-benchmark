@@ -14,9 +14,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent / "scripts" if (Path(__file__).resolve().parent / "scripts").exists() else Path(__file__).resolve().parent))
+import models_config as M  # noqa: E402
 from analysis import digit_match, load_model_results, wilson_ci  # noqa: E402
 
-MODELS = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b"]
+MODELS = M.model_ids()
 
 
 def main():
@@ -25,7 +27,7 @@ def main():
          "| Model | wrong answers | wrong and flagged (detection rate, Wilson 95% CI) | wrong but not flagged (valid wrong code) | correct answers (10-digit) | correct and flagged (false-flag rate) | 8-digit-correct answers | 8-digit-correct and flagged |",
          "|---|---|---|---|---|---|---|---|"]
     for m in MODELS:
-        rows = load_model_results(ROOT / "llm_logs" / m)
+        rows = load_model_results(M.path_for(m))
         flagged = lambda r: r.get("tag") == "INVALID_CODE"
         wrong = [r for r in rows if not digit_match(r["true_code"], r.get("predicted_code"), 10)]
         right = [r for r in rows if digit_match(r["true_code"], r.get("predicted_code"), 10)]
