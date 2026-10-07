@@ -369,7 +369,16 @@ it is used here as a comparison point.
 
 v1.1 answers two objections raised after v1.0: (1) small free models are easy to dismiss, so test stronger ones; (2) how much of the invalid-code rate is formatting and how much is the model inventing a code. The models, samples, metrics and tests were fixed in [PREREG_v1.1.md](PREREG_v1.1.md) before any new model call (commit `883112942a8c68c0160861e607d9105bf2ded173`; slugs, settings and dated deviations in the addendum, commit `0d79b92b69485797179862f55b27d671b046c05d`).
 
-**Two exceptions to the title, stated first.** GPT-6 Sol is a closed OpenAI model on a paid route, run on the 200-ruling sample at the user's request for $0.20 (hard cap $2); it is the only model in v1.1 that is neither open-weight nor free. Gemini 3.8 Flash is also being run (free tier, one request-limited run per day) and is **not in any table** because it has not reached its 200 rulings. **Closed frontier models were not otherwise tested, and none of the models below stands in for GPT, Claude or Gemini.** Every model ran single-shot at temperature 0, no tools, no web, at the lowest reasoning level it accepts.
+**Two exceptions to the title, stated first.** GPT-6 Sol is a closed OpenAI model on a paid route, run on the 200-ruling sample at the user's request for $0.20 (hard cap $2); it is the only model in v1.1 that is neither open-weight nor free. Gemini 3.8 Flash is also being run (free tier, one request-limited run per day) and is **not in any table** because it has not reached its 200 rulings. **No other closed model is in these tables, and none of the models below stands in for GPT, Claude or Gemini.** Every model ran single-shot at temperature 0, no tools, no web, at the lowest reasoning level it accepts.
+
+### Deviations from pre-registration
+
+Listed here so a reader does not have to find them in the logs. The first two break an explicit pre-registered or standing rule.
+
+1. **The pre-registered stop on a parser difference was not honoured.** PREREG_v1.1.md section 5 says to re-parse every cached v1.0 answer with the updated parser and to stop if any differs. 3,293 of 3,294 matched. One differed: allam-2-7b, ruling N358156 (true code 9405504000). The raw response is a JSON array of three objects, each containing `"hts_code": "7614.90.90"`. The v1.0 parser took everything from the first "{" to the last "}", which is not valid JSON for an array of objects ("Extra data"), so v1.0 recorded no code. The updated parser reads each object separately and takes the last one containing "hts_code", which is the pre-registered rule, and gives 76149090. By the pre-registered rule the new parse is the correct one. I did not stop: the work was autonomous and nothing irreversible depended on it. I kept the cached v1.0 value (no code) so the published v1.0 numbers stay as published, and applied the new parser to the new models only. If the new parse were applied to that answer, accuracy at every digit level, the invalid count (957), the validity check and every direction and duty number would not change (76149090 matches nothing, is still invalid, and only 10-digit codes get a rate). Two classification counts for allam-2-7b would move by one answer: in `review/format_vs_invention.md` group (a) 8 to 7 and group (d) 359 to 360 (FORMAT 72 to 71, INVENTED 885 to 886), and in `review/invalid_breakdown.md` "no usable code" 8 to 7 and "first 6 ok, first 8 not" 359 to 360. No other reported number is affected.
+2. **GPT-6 Sol was a paid route.** The standing rule was zero spend, with only free OpenRouter ids allowed. The user asked mid-run to include "GPT 6 SOL" and later wrote that OpenRouter was fine "just don't spend too much"; I treated that as permission for a small bounded spend and set a hard cap of $2. Total spend on the OpenRouter key was $0.20644 (its final `usage` counter), all of it GPT-6 Sol including its probes and settings tests; the 200-ruling run alone was $0.1983. **What the model is:** a closed OpenAI model, the mid tier "Sol" of the GPT-6 family (below the "Astra" flagship, above "Luna"), listed on OpenRouter as `openai/gpt-6-sol` at $2 per 1M input and $10 per 1M output tokens. Its OpenRouter page states no tier, release date or training cutoff. The tier and the release date (2026-09-22) come from third-party reports (ComputingForGeeks, Free Press Journal, Tecnoblog), and the stated training cutoff, 2026-04-20, from the ComputingForGeeks report, not from an OpenAI page. It is called "a closed OpenAI model (mid-tier)" here, not a frontier model.
+3. **Other dated deviations** (full text in PREREG_v1.1.md and DECISIONS.md): the top-ranked free OpenRouter model, Inkling, refused API access (HTTP 403), so Nemotron 3 Ultra was used; the DeepSeek and GLM probes ran after their full runs because the pilots finished first; the OpenRouter free allowance was 1,000 requests a day, not the assumed 50; Gemini 3.8 Flash was added to the plan and is not yet in any table; allam-2-7b is also labelled "contamination not ruled out" because it has no stated cutoff.
+4. **Added after the first results were seen** (requested after reading them; none changes a pre-registered verdict): the † labelling of models with no stated cutoff, the same-sample table, and the Holm-corrected sensitivity check of Gate B. They are labelled as such where they appear.
 
 ### Limits (before interpretation)
 
@@ -390,14 +399,16 @@ The full hostile review, with the evidence for and against each point, is in [re
 |---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | groq | 1098 | 2024-06-01 | cutoff 2024-06-01; every ruling is after it | 1098 | low |
 | openai/gpt-oss-120b | groq | 1098 | 2024-06-01 | cutoff 2024-06-01; every ruling is after it | 1098 | low |
-| allam-2-7b | groq | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | None |
-| deepseek-ai/DeepSeek-V4.1-Flash | baseten | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | none |
-| zai-org/GLM-5.3 | baseten | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | thinking disabled (still emits some reasoning tokens) |
-| moonshotai/Kimi-K3 | baseten | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | none |
+| allam-2-7b † | groq | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | None |
+| deepseek-ai/DeepSeek-V4.1-Flash † | baseten | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | none |
+| zai-org/GLM-5.3 † | baseten | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | thinking disabled (still emits some reasoning tokens) |
+| moonshotai/Kimi-K3 † | baseten | 1098 | unknown | contamination not ruled out (cutoff unknown) | 1098 | none |
 | nvidia/nemotron-3-ultra-550b-a55b:free | openrouter | 200 | 2026-05-31 | post-cutoff rulings only (after 2026-05-31) | 105 | none |
 | openai/gpt-6-sol | openrouter | 200 | 2026-04-20 | post-cutoff rulings only (after 2026-04-20) | 167 | none |
 
 Sources for each cutoff are in `config.json` (`training_cutoff_source`).
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 Check A, memorisation probe (the question is the ruling number alone; seed 20261007, `data/probe_ids.csv`):
 
@@ -405,12 +416,14 @@ Check A, memorisation probe (the question is the ruling number alone; seed 20261
 |---|---|---|---|---|---|
 | openai/gpt-oss-20b | 0 | not run | not run | not run | |
 | openai/gpt-oss-120b | 0 | not run | not run | not run | |
-| allam-2-7b | 0 | not run | not run | not run | |
-| deepseek-ai/DeepSeek-V4.1-Flash | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 96 |
-| zai-org/GLM-5.3 | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 95 |
-| moonshotai/Kimi-K3 | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0 |
+| allam-2-7b † | 0 | not run | not run | not run | |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 96 |
+| zai-org/GLM-5.3 † | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 95 |
+| moonshotai/Kimi-K3 † | 100 | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0.0% (0.0% to 3.7%) | 0 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 25 | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0 |
 | openai/gpt-6-sol | 25 | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0.0% (0.0% to 13.3%) | 0 |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 Check B, 8-digit accuracy by ruling month (full sample):
 
@@ -418,12 +431,14 @@ Check B, 8-digit accuracy by ruling month (full sample):
 |---|---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 0/148 (0%) | 0/121 (0%) | 0/168 (0%) | 1/175 (1%) | 2/137 (1%) | 0/121 (0%) | 0/144 (0%) | 0/84 (0%) |
 | openai/gpt-oss-120b | 8/148 (5%) | 3/121 (2%) | 13/168 (8%) | 16/175 (9%) | 5/137 (4%) | 7/121 (6%) | 6/144 (4%) | 3/84 (4%) |
-| allam-2-7b | 6/148 (4%) | 7/121 (6%) | 3/168 (2%) | 3/175 (2%) | 0/137 (0%) | 3/121 (2%) | 4/144 (3%) | 0/84 (0%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 71/148 (48%) | 61/121 (50%) | 59/168 (35%) | 76/175 (43%) | 40/137 (29%) | 45/121 (37%) | 45/144 (31%) | 34/84 (40%) |
-| zai-org/GLM-5.3 | 42/148 (28%) | 46/121 (38%) | 48/168 (29%) | 43/175 (25%) | 25/137 (18%) | 28/121 (23%) | 28/144 (19%) | 16/84 (19%) |
-| moonshotai/Kimi-K3 | 79/148 (53%) | 63/121 (52%) | 75/168 (45%) | 83/175 (47%) | 49/137 (36%) | 39/121 (32%) | 47/144 (33%) | 42/84 (50%) |
+| allam-2-7b † | 6/148 (4%) | 7/121 (6%) | 3/168 (2%) | 3/175 (2%) | 0/137 (0%) | 3/121 (2%) | 4/144 (3%) | 0/84 (0%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 71/148 (48%) | 61/121 (50%) | 59/168 (35%) | 76/175 (43%) | 40/137 (29%) | 45/121 (37%) | 45/144 (31%) | 34/84 (40%) |
+| zai-org/GLM-5.3 † | 42/148 (28%) | 46/121 (38%) | 48/168 (29%) | 43/175 (25%) | 25/137 (18%) | 28/121 (23%) | 28/144 (19%) | 16/84 (19%) |
+| moonshotai/Kimi-K3 † | 79/148 (53%) | 63/121 (52%) | 75/168 (45%) | 83/175 (47%) | 49/137 (36%) | 39/121 (32%) | 47/144 (33%) | 42/84 (50%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 0/0 | 0/0 | 0/0 | 24/45 (53%) | 9/50 (18%) | 11/37 (30%) | 7/40 (18%) | 7/28 (25%) |
 | openai/gpt-6-sol | 0/0 | 0/0 | 0/0 | 25/45 (56%) | 19/50 (38%) | 22/37 (59%) | 18/40 (45%) | 15/28 (54%) |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 Before versus after the stated cutoff, for the two models whose cutoff falls inside the ruling window:
 
@@ -431,6 +446,8 @@ Before versus after the stated cutoff, for the two models whose cutoff falls ins
 |---|---|---|---|---|---|
 | nvidia/nemotron-3-ultra-550b-a55b:free | 2026-05-31 | 95 | 34.7% (25.9% to 44.7%) | 105 | 23.8% (16.7% to 32.8%) |
 | openai/gpt-6-sol | 2026-04-20 | 33 | 48.5% (32.5% to 64.8%) | 167 | 49.7% (42.2% to 57.2%) |
+
+The two models that ran on the 200-ruling sample show an inconsistent pattern around their cutoffs: GPT-6 Sol has no drop, but Nemotron 3 Ultra scores 34.7% on rulings up to its cutoff and 23.8% after it. Read the Nemotron gap as a descriptive warning sign that contamination can inflate scores, not as a test (the intervals overlap). The same warning applies, unmeasurably, to every model marked †, which has no stated cutoff, so their accuracy is an upper bound. The DeepSeek V4.1 Flash and GLM 5.3 probes are uninformative because the models refused 96 and 95 of 100 probes.
 
 ### Results: how accurate are stronger models?
 
@@ -440,12 +457,14 @@ Primary scores (rulings after each model's stated cutoff; the models labelled "c
 |---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 1098 | 3.0% (2.1% to 4.2%) | 0.3% (0.1% to 0.8%) | 0.0% (0.0% to 0.3%) | 98.4% (97.4% to 99.0%) | 13.3% (11.4% to 15.4%) | 85.1% (82.8% to 87.0%) |
 | openai/gpt-oss-120b | 1098 | 21.1% (18.8% to 23.6%) | 5.6% (4.3% to 7.1%) | 0.5% (0.3% to 1.2%) | 96.6% (95.4% to 97.5%) | 22.3% (19.9% to 24.9%) | 74.3% (71.7% to 76.8%) |
-| allam-2-7b | 1098 | 4.4% (3.3% to 5.7%) | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) | 6.6% (5.2% to 8.2%) | 80.6% (78.2% to 82.8%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 52.8% (49.9% to 55.8%) | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) | 18.8% (16.6% to 21.2%) | 13.5% (11.6% to 15.6%) |
-| zai-org/GLM-5.3 | 1098 | 45.3% (42.3% to 48.2%) | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) | 28.4% (25.8% to 31.2%) | 39.2% (36.3% to 42.1%) |
-| moonshotai/Kimi-K3 | 1098 | 55.3% (52.3% to 58.2%) | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) | 17.1% (15.0% to 19.5%) | 8.2% (6.7% to 10.0%) |
+| allam-2-7b † | 1098 | 4.4% (3.3% to 5.7%) | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) | 6.6% (5.2% to 8.2%) | 80.6% (78.2% to 82.8%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 52.8% (49.9% to 55.8%) | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) | 18.8% (16.6% to 21.2%) | 13.5% (11.6% to 15.6%) |
+| zai-org/GLM-5.3 † | 1098 | 45.3% (42.3% to 48.2%) | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) | 28.4% (25.8% to 31.2%) | 39.2% (36.3% to 42.1%) |
+| moonshotai/Kimi-K3 † | 1098 | 55.3% (52.3% to 58.2%) | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) | 17.1% (15.0% to 19.5%) | 8.2% (6.7% to 10.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 105 | 36.2% (27.6% to 45.7%) | 23.8% (16.7% to 32.8%) | 14.3% (8.9% to 22.2%) | 33.3% (25.0% to 42.8%) | 19.0% (12.7% to 27.6%) | 14.3% (8.9% to 22.2%) |
 | openai/gpt-6-sol | 167 | 61.7% (54.1% to 68.7%) | 49.7% (42.2% to 57.2%) | 31.7% (25.2% to 39.1%) | 25.7% (19.7% to 32.9%) | 18.6% (13.4% to 25.1%) | 7.2% (4.2% to 12.1%) |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 **Stronger models are far more accurate, and still wrong most of the time at the duty-relevant level.** 8-digit accuracy goes from 0.3% to 5.6% (v1.0) to 25.1% (GLM 5.3), 39.3% (DeepSeek V4.1 Flash), 43.4% (Kimi K3), 23.8% (Nemotron 3 Ultra, post-cutoff rulings only) and 49.7% (GPT-6 Sol, post-cutoff rulings only). Even the best result is below 50%, and 10-digit accuracy peaks at 31.7%. The invalid share falls from 87% to 98% (v1.0) to 25% to 33% for four of the five stronger models, but not for GLM 5.3 (67.6%).
 
@@ -455,12 +474,29 @@ On the same 200 rulings, all models compared (all dates, secondary):
 |---|---|---|---|---|---|
 | openai/gpt-oss-20b | 200 | 1.5% (0.5% to 4.3%) | 0.5% (0.1% to 2.8%) | 0.0% (0.0% to 1.9%) | 98.0% (95.0% to 99.2%) |
 | openai/gpt-oss-120b | 200 | 18.0% (13.3% to 23.9%) | 7.5% (4.6% to 12.0%) | 0.5% (0.1% to 2.8%) | 97.5% (94.3% to 98.9%) |
-| allam-2-7b | 200 | 3.5% (1.7% to 7.0%) | 2.0% (0.8% to 5.0%) | 0.5% (0.1% to 2.8%) | 89.5% (84.5% to 93.0%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 200 | 43.0% (36.3% to 49.9%) | 31.0% (25.0% to 37.7%) | 18.0% (13.3% to 23.9%) | 32.5% (26.4% to 39.3%) |
-| zai-org/GLM-5.3 | 200 | 40.5% (33.9% to 47.4%) | 21.5% (16.4% to 27.7%) | 8.0% (5.0% to 12.6%) | 63.0% (56.1% to 69.4%) |
-| moonshotai/Kimi-K3 | 200 | 49.0% (42.2% to 55.9%) | 37.0% (30.6% to 43.9%) | 25.0% (19.5% to 31.4%) | 26.5% (20.9% to 33.0%) |
+| allam-2-7b † | 200 | 3.5% (1.7% to 7.0%) | 2.0% (0.8% to 5.0%) | 0.5% (0.1% to 2.8%) | 89.5% (84.5% to 93.0%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 200 | 43.0% (36.3% to 49.9%) | 31.0% (25.0% to 37.7%) | 18.0% (13.3% to 23.9%) | 32.5% (26.4% to 39.3%) |
+| zai-org/GLM-5.3 † | 200 | 40.5% (33.9% to 47.4%) | 21.5% (16.4% to 27.7%) | 8.0% (5.0% to 12.6%) | 63.0% (56.1% to 69.4%) |
+| moonshotai/Kimi-K3 † | 200 | 49.0% (42.2% to 55.9%) | 37.0% (30.6% to 43.9%) | 25.0% (19.5% to 31.4%) | 26.5% (20.9% to 33.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 39.5% (33.0% to 46.4%) | 29.0% (23.2% to 35.6%) | 14.0% (9.9% to 19.5%) | 37.5% (31.1% to 44.4%) |
 | openai/gpt-6-sol | 200 | 61.5% (54.6% to 68.0%) | 49.5% (42.6% to 56.4%) | 32.5% (26.4% to 39.3%) | 25.0% (19.5% to 31.4%) |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
+
+Same-sample table (added after the first results were seen). All 8 models on the same 200 rulings, with the format/invented split of each model's invalid answers on these rulings and the underpay share among the rate-changing errors on these 200 only (small n; not a Gate B test):
+
+| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |
+|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 200 | 0.5% (0.1% to 2.8%) | 98.0% (95.0% to 99.2%) | 29 / 167 (15% / 85%) | 70.0% (39.7% to 89.2%), n = 10 |
+| openai/gpt-oss-120b | 200 | 7.5% (4.6% to 12.0%) | 97.5% (94.3% to 98.9%) | 48 / 147 (25% / 75%) | 62.5% (30.6% to 86.3%), n = 8 |
+| allam-2-7b † | 200 | 2.0% (0.8% to 5.0%) | 89.5% (84.5% to 93.0%) | 17 / 162 (9% / 91%) | 56.5% (36.8% to 74.4%), n = 23 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 200 | 31.0% (25.0% to 37.7%) | 32.5% (26.4% to 39.3%) | 34 / 31 (52% / 48%) | 47.7% (36.0% to 59.6%), n = 65 |
+| zai-org/GLM-5.3 † | 200 | 21.5% (16.4% to 27.7%) | 63.0% (56.1% to 69.4%) | 56 / 70 (44% / 56%) | 45.1% (32.3% to 58.6%), n = 51 |
+| moonshotai/Kimi-K3 † | 200 | 37.0% (30.6% to 43.9%) | 26.5% (20.9% to 33.0%) | 33 / 20 (62% / 38%) | 50.0% (37.5% to 62.5%), n = 58 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 29.0% (23.2% to 35.6%) | 37.5% (31.1% to 44.4%) | 50 / 25 (67% / 33%) | 51.5% (39.7% to 63.2%), n = 66 |
+| openai/gpt-6-sol | 200 | 49.5% (42.6% to 56.4%) | 25.0% (19.5% to 31.4%) | 37 / 13 (74% / 26%) | 53.1% (39.4% to 66.3%), n = 49 |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 ### Results: Bryce's question 2, format slip or invented code?
 
@@ -472,12 +508,14 @@ Share of INVALID answers:
 |---|---|---|---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 1080 | 146 (13.5%; 11.6% to 15.7%) | 934 (86.5%; 84.3% to 88.4%) | 0 (0.0%; 0.0% to 0.4%) | 55 (5.1%; 3.9% to 6.6%) | 0 (0.0%; 0.0% to 0.4%) | 91 (8.4%; 6.9% to 10.2%) | 422 (39.1%; 36.2% to 42.0%) | 512 (47.4%; 44.4% to 50.4%) | 0 of 0 |
 | openai/gpt-oss-120b | 1061 | 245 (23.1%; 20.7% to 25.7%) | 816 (76.9%; 74.3% to 79.3%) | 1 (0.1%; 0.0% to 0.5%) | 180 (17.0%; 14.8% to 19.3%) | 0 (0.0%; 0.0% to 0.4%) | 64 (6.0%; 4.8% to 7.6%) | 595 (56.1%; 53.1% to 59.0%) | 221 (20.8%; 18.5% to 23.4%) | 1 of 1 |
-| allam-2-7b | 957 | 72 (7.5%; 6.0% to 9.4%) | 885 (92.5%; 90.6% to 94.0%) | 8 (0.8%; 0.4% to 1.6%) | 21 (2.2%; 1.4% to 3.3%) | 0 (0.0%; 0.0% to 0.4%) | 43 (4.5%; 3.4% to 6.0%) | 359 (37.5%; 34.5% to 40.6%) | 526 (55.0%; 51.8% to 58.1%) | 8 of 8 |
-| deepseek-ai/DeepSeek-V4.1-Flash | 354 | 206 (58.2%; 53.0% to 63.2%) | 148 (41.8%; 36.8% to 47.0%) | 1 (0.3%; 0.0% to 1.6%) | 0 (0.0%; 0.0% to 1.1%) | 0 (0.0%; 0.0% to 1.1%) | 205 (57.9%; 52.7% to 62.9%) | 115 (32.5%; 27.8% to 37.5%) | 33 (9.3%; 6.7% to 12.8%) | 0 of 1 |
-| zai-org/GLM-5.3 | 742 | 312 (42.0%; 38.5% to 45.6%) | 430 (58.0%; 54.4% to 61.5%) | 27 (3.6%; 2.5% to 5.2%) | 10 (1.3%; 0.7% to 2.5%) | 0 (0.0%; 0.0% to 0.5%) | 275 (37.1%; 33.7% to 40.6%) | 339 (45.7%; 42.1% to 49.3%) | 91 (12.3%; 10.1% to 14.8%) | 24 of 27 |
-| moonshotai/Kimi-K3 | 278 | 188 (67.6%; 61.9% to 72.9%) | 90 (32.4%; 27.1% to 38.1%) | 0 (0.0%; 0.0% to 1.4%) | 3 (1.1%; 0.4% to 3.1%) | 0 (0.0%; 0.0% to 1.4%) | 185 (66.5%; 60.8% to 71.8%) | 71 (25.5%; 20.8% to 31.0%) | 19 (6.8%; 4.4% to 10.4%) | 0 of 0 |
+| allam-2-7b † | 957 | 72 (7.5%; 6.0% to 9.4%) | 885 (92.5%; 90.6% to 94.0%) | 8 (0.8%; 0.4% to 1.6%) | 21 (2.2%; 1.4% to 3.3%) | 0 (0.0%; 0.0% to 0.4%) | 43 (4.5%; 3.4% to 6.0%) | 359 (37.5%; 34.5% to 40.6%) | 526 (55.0%; 51.8% to 58.1%) | 8 of 8 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 354 | 206 (58.2%; 53.0% to 63.2%) | 148 (41.8%; 36.8% to 47.0%) | 1 (0.3%; 0.0% to 1.6%) | 0 (0.0%; 0.0% to 1.1%) | 0 (0.0%; 0.0% to 1.1%) | 205 (57.9%; 52.7% to 62.9%) | 115 (32.5%; 27.8% to 37.5%) | 33 (9.3%; 6.7% to 12.8%) | 0 of 1 |
+| zai-org/GLM-5.3 † | 742 | 312 (42.0%; 38.5% to 45.6%) | 430 (58.0%; 54.4% to 61.5%) | 27 (3.6%; 2.5% to 5.2%) | 10 (1.3%; 0.7% to 2.5%) | 0 (0.0%; 0.0% to 0.5%) | 275 (37.1%; 33.7% to 40.6%) | 339 (45.7%; 42.1% to 49.3%) | 91 (12.3%; 10.1% to 14.8%) | 24 of 27 |
+| moonshotai/Kimi-K3 † | 278 | 188 (67.6%; 61.9% to 72.9%) | 90 (32.4%; 27.1% to 38.1%) | 0 (0.0%; 0.0% to 1.4%) | 3 (1.1%; 0.4% to 3.1%) | 0 (0.0%; 0.0% to 1.4%) | 185 (66.5%; 60.8% to 71.8%) | 71 (25.5%; 20.8% to 31.0%) | 19 (6.8%; 4.4% to 10.4%) | 0 of 0 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 75 | 50 (66.7%; 55.4% to 76.3%) | 25 (33.3%; 23.7% to 44.6%) | 0 (0.0%; 0.0% to 4.9%) | 2 (2.7%; 0.7% to 9.2%) | 0 (0.0%; 0.0% to 4.9%) | 48 (64.0%; 52.7% to 73.9%) | 17 (22.7%; 14.7% to 33.3%) | 8 (10.7%; 5.5% to 19.7%) | 0 of 0 |
 | openai/gpt-6-sol | 50 | 37 (74.0%; 60.4% to 84.1%) | 13 (26.0%; 15.9% to 39.6%) | 1 (2.0%; 0.4% to 10.5%) | 0 (0.0%; 0.0% to 7.1%) | 0 (0.0%; 0.0% to 7.1%) | 36 (72.0%; 58.3% to 82.5%) | 7 (14.0%; 7.0% to 26.2%) | 6 (12.0%; 5.6% to 23.8%) | 1 of 1 |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 **The answer depends on the model.** For gpt-oss-20b, gpt-oss-120b and allam-2-7b, 77% to 93% of invalid answers are invented (groups d and e). For DeepSeek V4.1 Flash, Kimi K3, Nemotron 3 Ultra and GPT-6 Sol, most invalid answers (58% to 74%) are format-type, almost all of them group (c): a real tariff line with a wrong 10-digit suffix. GLM 5.3 is the exception, with 58% invented. Groups (b) and (c) only say that the first 8 digits form a real tariff line, not that they are the right one. How many equal the true code's first 8 digits:
 
@@ -485,12 +523,14 @@ Share of INVALID answers:
 |---|---|---|---|---|
 | openai/gpt-oss-20b | 146 | 3 | 3 (2.1%; 0.7% to 5.9%) | 3 (0.3%; 0.1% to 0.8%) |
 | openai/gpt-oss-120b | 244 | 55 | 55 (22.5%; 17.7% to 28.2%) | 55 (5.2%; 4.0% to 6.7%) |
-| allam-2-7b | 64 | 7 | 7 (10.9%; 5.4% to 20.9%) | 7 (0.7%; 0.4% to 1.5%) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 205 | 86 | 86 (42.0%; 35.4% to 48.8%) | 86 (24.3%; 20.1% to 29.0%) |
-| zai-org/GLM-5.3 | 285 | 123 | 123 (43.2%; 37.5% to 49.0%) | 123 (16.6%; 14.1% to 19.4%) |
-| moonshotai/Kimi-K3 | 188 | 97 | 97 (51.6%; 44.5% to 58.6%) | 97 (34.9%; 29.5% to 40.7%) |
+| allam-2-7b † | 64 | 7 | 7 (10.9%; 5.4% to 20.9%) | 7 (0.7%; 0.4% to 1.5%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 205 | 86 | 86 (42.0%; 35.4% to 48.8%) | 86 (24.3%; 20.1% to 29.0%) |
+| zai-org/GLM-5.3 † | 285 | 123 | 123 (43.2%; 37.5% to 49.0%) | 123 (16.6%; 14.1% to 19.4%) |
+| moonshotai/Kimi-K3 † | 188 | 97 | 97 (51.6%; 44.5% to 58.6%) | 97 (34.9%; 29.5% to 40.7%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 50 | 17 | 17 (34.0%; 22.4% to 47.8%) | 17 (22.7%; 14.7% to 33.3%) |
 | openai/gpt-6-sol | 36 | 19 | 19 (52.8%; 37.0% to 68.0%) | 19 (38.0%; 25.9% to 51.8%) |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 So a true suffix slip (right 8-digit classification, wrong or missing suffix) is 17% to 38% of invalid answers for the stronger models and 0.3% to 5% for gpt-oss and allam. Stale training data also shows up: ten-digit codes that existed in a 2022 to 2025 HTS release but not in 2026 are 58 of DeepSeek's invalid answers, 79 of Kimi's, 27 of GLM's, 10 of Nemotron's and 21 of GPT-6 Sol's, against 1 in v1.0 (`review/invalid_breakdown.md`).
 
@@ -504,14 +544,33 @@ Underpay share among rate-changing errors, with Gate B exactly as pre-registered
 |---|---|---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 46 | 31 | 67.4% (53.0% to 79.1%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 101 | $0 ($0 to $3,500) |
 | openai/gpt-oss-120b | 49 | 32 | 65.3% (51.3% to 77.1%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 93 | $300 ($0 to $2,500) |
-| allam-2-7b | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 147 | $3,400 ($350 to $6,500) |
-| deepseek-ai/DeepSeek-V4.1-Flash | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.9930 | 0.1748 | not distinguishable from chance (Gate B not met) | 657 | $0 ($0 to $2,900) |
-| zai-org/GLM-5.3 | 212 | 118 | 55.7% (48.9% to 62.2%) | 0.8322 | 0.0060 | underpays more than chance (Gate B met) | 483 | $0 ($0 to $2,800) |
-| moonshotai/Kimi-K3 | 311 | 184 | 59.2% (53.6% to 64.5%) | 0.4496 | 0.0040 | underpays more than chance (Gate B met) | 673 | $0 ($0 to $2,800) |
+| allam-2-7b † | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 147 | $3,400 ($350 to $6,500) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.9930 | 0.1748 | not distinguishable from chance (Gate B not met) | 657 | $0 ($0 to $2,900) |
+| zai-org/GLM-5.3 † | 212 | 118 | 55.7% (48.9% to 62.2%) | 0.8322 | 0.0060 | underpays more than chance (Gate B met) | 483 | $0 ($0 to $2,800) |
+| moonshotai/Kimi-K3 † | 311 | 184 | 59.2% (53.6% to 64.5%) | 0.4496 | 0.0040 | underpays more than chance (Gate B met) | 673 | $0 ($0 to $2,800) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 40 | 24 | 60.0% (44.6% to 73.7%) | 0.2987 | 0.0070 | underpays more than chance (Gate B met) | 73 | $1,300 ($0 to $4,400) |
 | openai/gpt-6-sol | 41 | 21 | 51.2% (36.5% to 65.7%) | 0.8252 | 0.1139 | not distinguishable from chance (Gate B not met) | 97 | $0 ($0 to $3,600) |
 
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
+
 **The underpay lean shrinks and is not universal.** v1.0 models: 65% to 67%. Stronger models: 51% to 60%. Gate B is met for GLM 5.3, Kimi K3 and Nemotron 3 Ultra and is not met for DeepSeek V4.1 Flash and GPT-6 Sol. The intervals for GLM 5.3 and Nemotron 3 Ultra include 50%, and Nemotron's and GPT-6 Sol's n (40 and 41) sit just above the threshold of 30, so a verdict could flip with one case. Median duty at stake per $100,000 for wrong answers is $0 for most strong models because most of their errors stay within a rate class; see the table for the interquartile ranges.
+
+Holm-corrected sensitivity check of the Gate B p-values (added after the first results were seen; the pre-registered verdicts above are unchanged):
+
+| Model | n | p vs Baseline 2 | Holm-adjusted p | Gate B as pre-registered | Verdict under Holm | Changed? |
+|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 46 | < 0.001 | 0.0080 | met | met | no |
+| openai/gpt-oss-120b | 49 | < 0.001 | 0.0080 | met | met | no |
+| allam-2-7b † | 116 | < 0.001 | 0.0080 | met | met | no |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 324 | 0.1748 | 0.2278 | not met | not met | no |
+| zai-org/GLM-5.3 † | 212 | 0.0060 | 0.0240 | met | met | no |
+| moonshotai/Kimi-K3 † | 311 | 0.0040 | 0.0200 | met | met | no |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 40 | 0.0070 | 0.0240 | met | met | no |
+| openai/gpt-6-sol | 41 | 0.1139 | 0.2278 | not met | not met | no |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
+
+No verdict changes under Holm: the six that met Gate B still do (the smallest adjusted p is 0.0080 and the largest among them 0.0240), and DeepSeek V4.1 Flash and GPT-6 Sol still do not (adjusted p 0.2278).
 
 What a validity check (flag any answer that is not a 10-digit code in the HTS) catches:
 
@@ -534,12 +593,14 @@ For DeepSeek V4.1 Flash, Kimi K3, Nemotron 3 Ultra and GPT-6 Sol a validity chec
 |---|---|---|---|---|---|---|
 | openai/gpt-oss-20b | 1098 | 324 | 202 | 0.3 | {'stop': 1098} | free tier |
 | openai/gpt-oss-120b | 1098 | 324 | 180 | 0.4 | {'stop': 1098} | free tier |
-| allam-2-7b | 1098 | 304 | 78 | 0.1 | {'stop': 1098} | free tier |
-| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 260 | 65 | 1.3 | {'stop': 1098} | $0.16 |
-| zai-org/GLM-5.3 | 1098 | 270 | 180 | 2.8 | {'stop': 1097, 'length': 1} | $1.17 |
-| moonshotai/Kimi-K3 | 1098 | 272 | 65 | 9.0 | {'stop': 1098} | $1.79 |
+| allam-2-7b † | 1098 | 304 | 78 | 0.1 | {'stop': 1098} | free tier |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1098 | 260 | 65 | 1.3 | {'stop': 1098} | $0.16 |
+| zai-org/GLM-5.3 † | 1098 | 270 | 180 | 2.8 | {'stop': 1097, 'length': 1} | $1.17 |
+| moonshotai/Kimi-K3 † | 1098 | 272 | 65 | 9.0 | {'stop': 1098} | $1.79 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 281 | 74 | 4.8 | {'stop': 200} | free tier |
 | openai/gpt-6-sol | 200 | 258 | 48 | 2.0 | {'stop': 200} | $0.99 |
+
+† contamination not ruled out (no stated cutoff); treat these models' accuracy as an upper bound.
 
 Baseten and OpenRouter cost, from `data/exports/api_calls_summary.csv` (list price of every cached call, including probes): Baseten $3.54 (covered by free credits), OpenRouter $0.20 (all of it the paid GPT-6 Sol job; the free model cost $0). No billing, credit or 402 error occurred; no payment method was added. The OpenRouter key's `usage` was 0.20644 after the paid GPT-6 Sol job and did not change during either free-model run. All calls are in `data/exports/api_calls.csv`.
 

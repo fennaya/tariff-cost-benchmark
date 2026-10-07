@@ -37,8 +37,23 @@ usable = {r["rulingNumber"]: r for r in (json.loads(l) for l in M.USABLE_PATH.re
 REPORT = []
 
 
+UNKNOWN_CUTOFF = set()  # filled in main(): models with no stated cutoff
+DAGGER_NOTE = "† contamination not ruled out (no stated cutoff); treat this model's accuracy as an upper bound."
+
+
+def mark(line):
+    """Append a dagger to the model ids in the first two cells of a table row."""
+    if not line.startswith("|"):
+        return line
+    cells = line.split("|")
+    for i in (1, 2):
+        if i < len(cells) - 1 and cells[i].strip() in UNKNOWN_CUTOFF:
+            cells[i] = " " + cells[i].strip() + " † "
+    return "|".join(cells)
+
+
 def out(line=""):
-    REPORT.append(line)
+    REPORT.append(mark(line))
 
 
 def ci(k, n, digits=1):
@@ -105,12 +120,13 @@ def gate_b(rows):
         verdict = f"same direction, too few cases to confirm (n = {n})" if observed > 0.5 else f"not above 50%, too few cases (n = {n})"
     else:
         verdict = "underpays more than chance (Gate B met)" if passed else "not distinguishable from chance (Gate B not met)"
-    return {"n": n, "under": under, "share": observed, "p1": format_p(p1, f1), "p2": format_p(p2, f2), "verdict": verdict}
+    return {"n": n, "under": under, "share": observed, "p1": format_p(p1, f1), "p2": format_p(p2, f2), "p2_num": p2, "verdict": verdict}
 
 
 def main():
     models = M.analysis_models()
     ids = [m["model_id"] for m in models]
+    UNKNOWN_CUTOFF.update(m["model_id"] for m in models if cutoff_info(m)[0] is None)
     rows_by = {m["model_id"]: M.results_by_model(include_partial=None)[m["model_id"]] for m in models} if False else M.results_by_model()
     assert list(rows_by) == ids
     published = json.loads((ROOT / "data" / "processed" / "analysis_results.json").read_text(encoding="utf-8"))
@@ -120,6 +136,7 @@ def main():
     out("Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown "
         "or after 2026-08-14 the model is labelled \"contamination not ruled out\" and the primary rows are all its rows. "
         "Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. "
+        + DAGGER_NOTE + " "
         "Closed frontier models were not tested. Duty figures are MFN-only lower bounds.\n")
 
     out("## Models and scope\n")
@@ -199,6 +216,50 @@ def main():
             n = len(rows)
             inv = sum(1 for r in rows if r.get("tag") == "INVALID_CODE")
             out(f"| {m['model_id']} | {n} | {ci(acc(rows, 6), n)} | {ci(acc(rows, 8), n)} | {ci(acc(rows, 10), n)} | {ci(inv, n)} |")
+
+    # ---- same-sample table (all models on the same 200 rulings)
+    if ids200:
+        out(f"\n## Same-sample table: all {len(models)} models on the same {len(s200)} rulings (data/gemini_subset.csv; all dates, secondary)\n")
+        out("The 200 rulings are dated 2026-04 to 2026-08. Models with a cutoff inside that window (Nemotron 3 Ultra, GPT-6 Sol) are scored here on all 200, including rulings before their cutoff. FORMAT / INVENTED is the split of each model's invalid answers on these rulings (groups in review/format_vs_invention.md). Underpay uses the rate-changing errors among these 200 only, so n is small; the share is shown with its Wilson 95% CI and is not a Gate B test.\n")
+        out("| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |")
+        out("|---|---|---|---|---|---|")
+        for m in models:
+            rows = [r for r in rows_by[m["model_id"]] if r["rulingNumber"] in s200]
+            n = len(rows)
+            inv = [r for r in rows if r.get("tag") == "INVALID_CODE"]
+            gc = Counter(group_of(r) for r in inv)
+            fmt = gc["a"] + gc["b8"] + gc["b9"] + gc["c"]
+            invd = gc["d"] + gc["e"]
+            g = gate_b(rows)
+            if g["n"]:
+                lo, hi = wilson_ci(g["under"], g["n"])
+                und = f"{g['share']:.1%} ({max(0, lo):.1%} to {hi:.1%}), n = {g['n']}"
+            else:
+                und = "n = 0"
+            split = f"{fmt} / {invd}" + (f" ({fmt / len(inv):.0%} / {invd / len(inv):.0%})" if inv else "")
+            out(f"| {m['model_id']} | {n} | {ci(acc(rows, 8), n)} | {ci(len(inv), n)} | {split} | {und} |")
+
+    # ---- Holm sensitivity for Gate B (added after the first results were seen; not pre-registered)
+    out("\n## Sensitivity: Holm correction of the Gate B p-values across all models\n")
+    out("Added after the first results were seen, as a sensitivity check; the pre-registered verdicts above are not changed. The p-values are the permutation p-values against Baseline 2 on each model's primary rows (the floor of 1,000 simulations is 1/1001 = 0.000999). Holm step-down adjustment over all models; a model still needs n >= 30 rate-changing errors.\n")
+    items = [(m["model_id"], res[m["model_id"]]["gate_b"]) for m in models if res[m["model_id"]]["gate_b"]["n"]]
+    mm = len(items)
+    order = sorted(range(mm), key=lambda i: items[i][1]["p2_num"])
+    adj, running = {}, 0.0
+    for rank, i in enumerate(order):
+        running = max(running, min(1.0, (mm - rank) * items[i][1]["p2_num"]))
+        adj[items[i][0]] = running
+    out("| Model | n | p vs Baseline 2 | Holm-adjusted p | Gate B as pre-registered | Verdict under Holm | Changed? |")
+    out("|---|---|---|---|---|---|---|")
+    changed = []
+    for mid, g in items:
+        pre = g["verdict"].startswith("underpays")
+        hol = adj[mid] < 0.05 and g["n"] >= 30
+        if pre != hol:
+            changed.append(mid)
+        res[mid]["holm_p"] = adj[mid]
+        out(f"| {mid} | {g['n']} | {g['p2']} | {adj[mid]:.4f} | {'met' if pre else 'not met'} | {'met' if hol else 'not met'} | {'YES' if pre != hol else 'no'} |")
+    out(f"\nVerdicts that change under Holm: {', '.join(changed) if changed else 'none'}.")
 
     # ---- contamination checks
     out("\n## Contamination check A: memorisation probe (ruling number only, no description)\n")
