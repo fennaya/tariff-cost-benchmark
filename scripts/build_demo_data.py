@@ -85,6 +85,12 @@ def main():
         for r in out:
             if r["id"] in tags:
                 r["biggest_miss"] = tags[r["id"]]
+    dq_path = ROOT / "review" / "description_quality.json"
+    if dq_path.exists():  # rulings whose cleaned description is not a product description
+        flagged = json.loads(dq_path.read_text(encoding="utf-8"))["flagged"]
+        for r in out:
+            if r["id"] in flagged:
+                r["inadequate_description"] = True
     OUT_PATH.write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"Wrote {OUT_PATH} ({len(out)} rulings)")
 
