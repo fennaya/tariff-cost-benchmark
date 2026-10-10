@@ -43,8 +43,17 @@ def main():
     lat = sum(r.get("latency_s", 0) for r in rows) / n
     print(f"  avg input tokens {tin:.0f}, avg output tokens {tout:.0f} (reasoning {rtok:.0f}), avg latency {lat:.1f}s")
     full = M.expected_n(m)
-    cost = full * (tin * m["price_in_per_1m"] + tout * m["price_out_per_1m"]) / 1e6
-    print(f"  projected list-price cost for the full {full} rulings: ${cost:.2f}")
+    costs = [(r.get("usage") or {}).get("cost") for r in rows]
+    costs = [c for c in costs if c is not None]
+    if costs:
+        avg = sum(costs) / len(costs)
+        done = M.cached_n(m)
+        print(f"  actual cost of these {len(costs)} calls: ${sum(costs):.4f} (avg ${avg:.5f} per call, from each response's usage.cost)")
+        print(f"  projected cost to finish this model: {full - done} more rulings x avg = ${(full - done) * avg:.2f}; full {full}-ruling run would be ${full * avg:.2f}")
+    else:
+        cost = full * (tin * m["price_in_per_1m"] + tout * m["price_out_per_1m"]) / 1e6
+        print(f"  projected list-price cost for the full {full} rulings: ${cost:.2f}")
+    print(f"  returned model ids: {sorted({r['raw_response'].get('model') for r in rows})}; providers: {sorted({str(r.get('provider_served')) for r in rows})}")
 
 
 if __name__ == "__main__":

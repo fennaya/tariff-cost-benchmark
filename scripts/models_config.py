@@ -54,7 +54,7 @@ def cached_n(model):
     return len(list(d.glob("*.json"))) if d.exists() else 0
 
 
-def analysis_models(cohort=None, include_partial=None):
+def analysis_models(cohort=None, include_partial=None, include_replication=False):
     """Models to analyse. A model whose cache is smaller than its sample is skipped (and
     named on stderr) unless include_partial / TARIFF_INCLUDE_PARTIAL=1, so incomplete
     runs never reach a published table by accident."""
@@ -63,6 +63,8 @@ def analysis_models(cohort=None, include_partial=None):
         include_partial = os.environ.get("TARIFF_INCLUDE_PARTIAL") == "1"
     out = []
     for m in load():
+        if m.get("role") == "replication" and not include_replication:
+            continue
         if cohort and m.get("cohort", "v1.0") != cohort:
             continue
         have, need = cached_n(m), expected_n(m)
@@ -92,3 +94,8 @@ def load_results(model_id):
 def results_by_model(include_partial=None):
     return {m["model_id"]: [json.loads(fp.read_text(encoding="utf-8")) for fp in sorted(model_dir(m).glob("*.json"))]
             for m in analysis_models(include_partial=include_partial)}
+
+
+def replication_models():
+    """Provider-replication runs (PREREG_v1.2.md part C): never in a main table."""
+    return [m for m in load() if m.get("role") == "replication"]
