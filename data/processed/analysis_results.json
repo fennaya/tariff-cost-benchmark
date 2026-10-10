@@ -526,77 +526,302 @@
   },
   "openai/gpt-6-sol": {
     "model": "openai/gpt-6-sol",
-    "n": 200,
+    "n": 1098,
     "accuracy_by_digit_level": {
       "2": {
-        "accuracy": 0.815,
+        "accuracy": 0.843351548269581,
         "wilson_95ci": [
-          0.7554281794988184,
-          0.8626988367726394
+          0.8206593960360963,
+          0.8636494919202125
         ],
-        "n": 200
+        "n": 1098
       },
       "4": {
-        "accuracy": 0.735,
+        "accuracy": 0.7650273224043715,
         "wilson_95ci": [
-          0.6698229773344889,
-          0.7913193998839003
+          0.7390514784498802,
+          0.7891551167630796
         ],
-        "n": 200
+        "n": 1098
       },
       "6": {
-        "accuracy": 0.615,
+        "accuracy": 0.6703096539162113,
         "wilson_95ci": [
-          0.5459973878179245,
-          0.6796680308208617
+          0.6419515675070967,
+          0.6974801620627435
         ],
-        "n": 200
+        "n": 1098
       },
       "8": {
-        "accuracy": 0.495,
+        "accuracy": 0.5437158469945356,
         "wilson_95ci": [
-          0.4264572195415849,
-          0.5637312405175984
+          0.5141526866574413,
+          0.572974174408614
         ],
-        "n": 200
+        "n": 1098
       },
       "10": {
-        "accuracy": 0.325,
+        "accuracy": 0.37522768670309653,
         "wilson_95ci": [
-          0.2639146705018622,
-          0.3926814315695502
+          0.3470700140936057,
+          0.40425540328036164
         ],
-        "n": 200
+        "n": 1098
       }
     },
-    "n_wrong": 135,
-    "n_invalid_code": 50,
-    "n_wrong_with_usable_rates": 117,
-    "share_wrong_zero_rate_diff": 0.5811965811965812,
+    "n_wrong": 686,
+    "n_invalid_code": 248,
+    "n_wrong_with_usable_rates": 593,
+    "share_wrong_zero_rate_diff": 0.5682967959527825,
     "direction_test": {
-      "n_nonzero_diff": 49,
-      "underpay_count": 26,
-      "underpay_share": 0.5306122448979592,
-      "binomial_p_value_vs_50pct": 0.7754496546815659
+      "n_nonzero_diff": 256,
+      "underpay_count": 145,
+      "underpay_share": 0.56640625,
+      "binomial_p_value_vs_50pct": 0.03895183416231431
     },
     "duty_at_stake_per_100k": {
       "median": 0.0,
       "iqr": [
         0.0,
-        3300.0
+        2600.0000000000005
       ],
       "bootstrap_95ci_of_median": [
         0.0,
-        399.99999999999994
+        0.0
       ],
-      "n": 117
+      "n": 593
     },
     "error_depth_distribution": {
-      "2": 37,
-      "4": 16,
-      "6": 24,
-      "8": 24,
-      "10": 34
+      "2": 172,
+      "4": 86,
+      "6": 104,
+      "8": 139,
+      "10": 185
+    }
+  },
+  "anthropic/claude-haiku-5.5": {
+    "model": "anthropic/claude-haiku-5.5",
+    "n": 1098,
+    "accuracy_by_digit_level": {
+      "2": {
+        "accuracy": 0.680327868852459,
+        "wilson_95ci": [
+          0.6521555207275144,
+          0.7072427811699634
+        ],
+        "n": 1098
+      },
+      "4": {
+        "accuracy": 0.5355191256830601,
+        "wilson_95ci": [
+          0.5059462067725858,
+          0.564844367843584
+        ],
+        "n": 1098
+      },
+      "6": {
+        "accuracy": 0.3251366120218579,
+        "wilson_95ci": [
+          0.2980805030491627,
+          0.3534120526866163
+        ],
+        "n": 1098
+      },
+      "8": {
+        "accuracy": 0.18123861566484517,
+        "wilson_95ci": [
+          0.15957708661153902,
+          0.2051228847818083
+        ],
+        "n": 1098
+      },
+      "10": {
+        "accuracy": 0.07923497267759563,
+        "wilson_95ci": [
+          0.06468580473973547,
+          0.09671815749948295
+        ],
+        "n": 1098
+      }
+    },
+    "n_wrong": 1011,
+    "n_invalid_code": 699,
+    "n_wrong_with_usable_rates": 613,
+    "share_wrong_zero_rate_diff": 0.5415986949429038,
+    "direction_test": {
+      "n_nonzero_diff": 281,
+      "underpay_count": 149,
+      "underpay_share": 0.5302491103202847,
+      "binomial_p_value_vs_50pct": 0.3398541655784542
+    },
+    "duty_at_stake_per_100k": {
+      "median": 0.0,
+      "iqr": [
+        0.0,
+        2900.0
+      ],
+      "bootstrap_95ci_of_median": [
+        0.0,
+        0.0
+      ],
+      "n": 613
+    },
+    "error_depth_distribution": {
+      "2": 351,
+      "4": 159,
+      "6": 231,
+      "8": 158,
+      "10": 112
+    }
+  },
+  "anthropic/claude-sonnet-5.5": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "n": 1098,
+    "accuracy_by_digit_level": {
+      "2": {
+        "accuracy": 0.8032786885245902,
+        "wilson_95ci": [
+          0.7787252123972392,
+          0.8257173862485189
+        ],
+        "n": 1098
+      },
+      "4": {
+        "accuracy": 0.7067395264116576,
+        "wilson_95ci": [
+          0.6791275957260545,
+          0.7329098513988317
+        ],
+        "n": 1098
+      },
+      "6": {
+        "accuracy": 0.6165755919854281,
+        "wilson_95ci": [
+          0.5874565132743359,
+          0.6448817829018115
+        ],
+        "n": 1098
+      },
+      "8": {
+        "accuracy": 0.44899817850637525,
+        "wilson_95ci": [
+          0.41980604443330005,
+          0.4785459509896356
+        ],
+        "n": 1098
+      },
+      "10": {
+        "accuracy": 0.2522768670309654,
+        "wilson_95ci": [
+          0.2274808487084172,
+          0.27880027191726986
+        ],
+        "n": 1098
+      }
+    },
+    "n_wrong": 821,
+    "n_invalid_code": 438,
+    "n_wrong_with_usable_rates": 632,
+    "share_wrong_zero_rate_diff": 0.5822784810126582,
+    "direction_test": {
+      "n_nonzero_diff": 264,
+      "underpay_count": 142,
+      "underpay_share": 0.5378787878787878,
+      "binomial_p_value_vs_50pct": 0.24220092080554595
+    },
+    "duty_at_stake_per_100k": {
+      "median": 0.0,
+      "iqr": [
+        0.0,
+        2900.0
+      ],
+      "bootstrap_95ci_of_median": [
+        0.0,
+        0.0
+      ],
+      "n": 632
+    },
+    "error_depth_distribution": {
+      "2": 216,
+      "4": 106,
+      "6": 99,
+      "8": 184,
+      "10": 216
+    }
+  },
+  "anthropic/claude-opus-5.5": {
+    "model": "anthropic/claude-opus-5.5",
+    "n": 1098,
+    "accuracy_by_digit_level": {
+      "2": {
+        "accuracy": 0.8333333333333334,
+        "wilson_95ci": [
+          0.8101350408351724,
+          0.8542072747934988
+        ],
+        "n": 1098
+      },
+      "4": {
+        "accuracy": 0.7486338797814208,
+        "wilson_95ci": [
+          0.7221379223899272,
+          0.773396099923262
+        ],
+        "n": 1098
+      },
+      "6": {
+        "accuracy": 0.692167577413479,
+        "wilson_95ci": [
+          0.6642335237542533,
+          0.7187616363486145
+        ],
+        "n": 1098
+      },
+      "8": {
+        "accuracy": 0.5537340619307832,
+        "wilson_95ci": [
+          0.524193694414938,
+          0.5828997389787548
+        ],
+        "n": 1098
+      },
+      "10": {
+        "accuracy": 0.3533697632058288,
+        "wilson_95ci": [
+          0.3256510237401544,
+          0.38211096310078535
+        ],
+        "n": 1098
+      }
+    },
+    "n_wrong": 710,
+    "n_invalid_code": 305,
+    "n_wrong_with_usable_rates": 617,
+    "share_wrong_zero_rate_diff": 0.5656401944894651,
+    "direction_test": {
+      "n_nonzero_diff": 268,
+      "underpay_count": 124,
+      "underpay_share": 0.4626865671641791,
+      "binomial_p_value_vs_50pct": 0.24575030146283064
+    },
+    "duty_at_stake_per_100k": {
+      "median": 0.0,
+      "iqr": [
+        0.0,
+        2700.0000000000005
+      ],
+      "bootstrap_95ci_of_median": [
+        0.0,
+        0.0
+      ],
+      "n": 617
+    },
+    "error_depth_distribution": {
+      "2": 183,
+      "4": 93,
+      "6": 62,
+      "8": 152,
+      "10": 220
     }
   }
 }

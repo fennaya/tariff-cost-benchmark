@@ -1,12 +1,12 @@
 # MFN rates at the ruling-date release vs the current schedule (scripts/check_rate_impact.py)
 
-Distinct (code, ruling date) pairs used by the cost analysis (true and predicted codes of wrong answers, all 3 models): **6,265**; of these, 2,788 resolve to an ad valorem or free rate on the current JSON.
+Distinct (code, ruling date) pairs used by the cost analysis (true and predicted codes of wrong answers, all 3 models): **8,150**; of these, 4,042 resolve to an ad valorem or free rate on the current JSON.
 
 | Comparison | Pairs that differ |
 |---|---|
-| parser check: 2026HTSRev20 PDF vs current JSON | 71 |
+| parser check: 2026HTSRev20 PDF vs current JSON | 146 |
 | time effect: ruling-date release vs 2026HTSRev20 (same parser) | 0 |
-| combined: ruling-date release vs current JSON | 71 |
+| combined: ruling-date release vs current JSON | 146 |
 
 ## Direction and dollar figures re-run with ruling-date rates
 
@@ -33,9 +33,18 @@ Distinct (code, ruling date) pairs used by the cost analysis (true and predicted
 | nvidia/nemotron-3-ultra-550b-a55b:free | original Phase 3 (JSON only, markup unparsed) | 134 | 66 | 34 | 51.5% (39.7% to 63.2%) | $0 | $0 to $3,975 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | JSON only, markup stripped | 136 | 66 | 34 | 51.5% (39.7% to 63.2%) | $0 | $0 to $3,925 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | ruling-date release rates (final) | 138 | 66 | 34 | 51.5% (39.7% to 63.2%) | $0 | $0 to $3,775 |
-| openai/gpt-6-sol | original Phase 3 (JSON only, markup unparsed) | 111 | 48 | 25 | 52.1% (38.3% to 65.5%) | $0 | $0 to $3,300 |
-| openai/gpt-6-sol | JSON only, markup stripped | 114 | 48 | 25 | 52.1% (38.3% to 65.5%) | $0 | $0 to $3,275 |
-| openai/gpt-6-sol | ruling-date release rates (final) | 117 | 49 | 26 | 53.1% (39.4% to 66.3%) | $0 | $0 to $3,300 |
+| openai/gpt-6-sol | original Phase 3 (JSON only, markup unparsed) | 581 | 249 | 140 | 56.2% (50.0% to 62.2%) | $0 | $0 to $2,600 |
+| openai/gpt-6-sol | JSON only, markup stripped | 585 | 250 | 140 | 56.0% (49.8% to 62.0%) | $0 | $0 to $2,600 |
+| openai/gpt-6-sol | ruling-date release rates (final) | 593 | 256 | 145 | 56.6% (50.5% to 62.6%) | $0 | $0 to $2,600 |
+| anthropic/claude-haiku-5.5 | original Phase 3 (JSON only, markup unparsed) | 567 | 268 | 141 | 52.6% (46.6% to 58.5%) | $0 | $0 to $3,000 |
+| anthropic/claude-haiku-5.5 | JSON only, markup stripped | 578 | 269 | 142 | 52.8% (46.8% to 58.7%) | $0 | $0 to $2,900 |
+| anthropic/claude-haiku-5.5 | ruling-date release rates (final) | 613 | 281 | 149 | 53.0% (47.2% to 58.8%) | $0 | $0 to $2,900 |
+| anthropic/claude-sonnet-5.5 | original Phase 3 (JSON only, markup unparsed) | 598 | 255 | 135 | 52.9% (46.8% to 59.0%) | $0 | $0 to $2,900 |
+| anthropic/claude-sonnet-5.5 | JSON only, markup stripped | 607 | 256 | 135 | 52.7% (46.6% to 58.8%) | $0 | $0 to $2,900 |
+| anthropic/claude-sonnet-5.5 | ruling-date release rates (final) | 632 | 264 | 142 | 53.8% (47.8% to 59.7%) | $0 | $0 to $2,900 |
+| anthropic/claude-opus-5.5 | original Phase 3 (JSON only, markup unparsed) | 589 | 258 | 116 | 45.0% (39.0% to 51.1%) | $0 | $0 to $2,700 |
+| anthropic/claude-opus-5.5 | JSON only, markup stripped | 595 | 259 | 116 | 44.8% (38.9% to 50.9%) | $0 | $0 to $2,700 |
+| anthropic/claude-opus-5.5 | ruling-date release rates (final) | 617 | 268 | 124 | 46.3% (40.4% to 52.2%) | $0 | $0 to $2,700 |
 
 ## Parser accuracy and markup (6/8-digit rows of the current release)
 

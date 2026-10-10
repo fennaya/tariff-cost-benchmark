@@ -86,11 +86,41 @@ New scoring (this check): same digit-only stripping, then zero-pad both codes to
 
 | Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
 |---|---|---|---|
-| 2 | 0.8150 | 0.8150 | +0.00 |
-| 4 | 0.7350 | 0.7350 | +0.00 |
-| 6 | 0.6150 | 0.6150 | +0.00 |
-| 8 | 0.4950 | 0.4950 | +0.00 |
-| 10 | 0.3250 | 0.3250 | +0.00 |
+| 2 | 0.8434 | 0.8434 | +0.00 |
+| 4 | 0.7650 | 0.7650 | +0.00 |
+| 6 | 0.6703 | 0.6703 | +0.00 |
+| 8 | 0.5437 | 0.5437 | +0.00 |
+| 10 | 0.3752 | 0.3752 | +0.00 |
+
+### anthropic/claude-haiku-5.5
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.6803 | 0.6803 | +0.00 |
+| 4 | 0.5355 | 0.5355 | +0.00 |
+| 6 | 0.3251 | 0.3251 | +0.00 |
+| 8 | 0.1812 | 0.1812 | +0.00 |
+| 10 | 0.0792 | 0.0792 | +0.00 |
+
+### anthropic/claude-sonnet-5.5
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.8033 | 0.8033 | +0.00 |
+| 4 | 0.7067 | 0.7067 | +0.00 |
+| 6 | 0.6166 | 0.6166 | +0.00 |
+| 8 | 0.4490 | 0.4490 | +0.00 |
+| 10 | 0.2523 | 0.2523 | +0.00 |
+
+### anthropic/claude-opus-5.5
+
+| Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
+|---|---|---|---|
+| 2 | 0.8333 | 0.8333 | +0.00 |
+| 4 | 0.7486 | 0.7486 | +0.00 |
+| 6 | 0.6922 | 0.6922 | +0.00 |
+| 8 | 0.5537 | 0.5537 | +0.00 |
+| 10 | 0.3534 | 0.3534 | +0.00 |
 
 **Verdict:** no digit level moved by more than 1 point. Zero-padding does not change the headline numbers; the old no-padding scoring and this stricter normalization agree, so this is not the source of Headline A's low numbers.
 
@@ -107,7 +137,10 @@ The last 2 digits of a 10-digit HTS code are a US-only statistical suffix, frequ
 | zai-org/GLM-5.3 | 0.2514 | 0.1239 |
 | moonshotai/Kimi-K3 | 0.4344 | 0.2842 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 0.2900 | 0.1400 |
-| openai/gpt-6-sol | 0.4950 | 0.3250 |
+| openai/gpt-6-sol | 0.5437 | 0.3752 |
+| anthropic/claude-haiku-5.5 | 0.1812 | 0.0792 |
+| anthropic/claude-sonnet-5.5 | 0.4490 | 0.2523 |
+| anthropic/claude-opus-5.5 | 0.5537 | 0.3534 |
 
 ## 3. Parse failures vs. invalid-but-parsed vs. valid-but-wrong
 
@@ -120,7 +153,10 @@ The last 2 digits of a 10-digit HTS code are a US-only statistical suffix, frequ
 | zai-org/GLM-5.3 | 1098 | 27 (2.5%) | 715 (65.1%) | 223 (20.3%) | 133 (12.1%) | 0.1211 | 0.3736 |
 | moonshotai/Kimi-K3 | 1098 | 0 (0.0%) | 278 (25.3%) | 516 (47.0%) | 304 (27.7%) | 0.2769 | 0.3707 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 0 (0.0%) | 75 (37.5%) | 98 (49.0%) | 27 (13.5%) | 0.1350 | 0.2160 |
-| openai/gpt-6-sol | 200 | 0 (0.0%) | 50 (25.0%) | 86 (43.0%) | 64 (32.0%) | 0.3200 | 0.4267 |
+| openai/gpt-6-sol | 1098 | 0 (0.0%) | 248 (22.6%) | 447 (40.7%) | 403 (36.7%) | 0.3670 | 0.4741 |
+| anthropic/claude-haiku-5.5 | 1098 | 14 (1.3%) | 685 (62.4%) | 314 (28.6%) | 85 (7.7%) | 0.0774 | 0.2130 |
+| anthropic/claude-sonnet-5.5 | 1098 | 0 (0.0%) | 438 (39.9%) | 390 (35.5%) | 270 (24.6%) | 0.2459 | 0.4091 |
+| anthropic/claude-opus-5.5 | 1098 | 0 (0.0%) | 305 (27.8%) | 418 (38.1%) | 375 (34.2%) | 0.3415 | 0.4729 |
 
 openai/gpt-oss-20b: 98.4% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0000 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.0000, computed here for comparison only.
 
@@ -136,7 +172,13 @@ moonshotai/Kimi-K3: 25.3% of responses are unparseable or an invalid code (>5%).
 
 nvidia/nemotron-3-ultra-550b-a55b:free: 37.5% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.1350 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.2160, computed here for comparison only.
 
-openai/gpt-6-sol: 25.0% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.3200 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.4267, computed here for comparison only.
+openai/gpt-6-sol: 22.6% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.3670 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.4741, computed here for comparison only.
+
+anthropic/claude-haiku-5.5: 63.7% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.0774 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.2130, computed here for comparison only.
+
+anthropic/claude-sonnet-5.5: 39.9% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.2459 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.4091, computed here for comparison only.
+
+anthropic/claude-opus-5.5: 27.8% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.3415 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.4729, computed here for comparison only.
 
 ## 4. Ground-truth check: does true_code match the ruling's actual holding?
 
@@ -195,7 +237,10 @@ All "this project" numbers below are for the 3 **free, open-weight models run on
 | This project: zai-org/GLM-5.3 | CBP CROSS, NY collection, 2026+ | 45.3% | 12.4% | 37.4% |
 | This project: moonshotai/Kimi-K3 | CBP CROSS, NY collection, 2026+ | 55.3% | 28.4% | 37.1% |
 | This project: nvidia/nemotron-3-ultra-550b-a55b:free | CBP CROSS, NY collection, 2026+ | 39.5% | 14.0% | 21.6% |
-| This project: openai/gpt-6-sol | CBP CROSS, NY collection, 2026+ | 61.5% | 32.5% | 42.7% |
+| This project: openai/gpt-6-sol | CBP CROSS, NY collection, 2026+ | 67.0% | 37.5% | 47.4% |
+| This project: anthropic/claude-haiku-5.5 | CBP CROSS, NY collection, 2026+ | 32.5% | 7.9% | 21.3% |
+| This project: anthropic/claude-sonnet-5.5 | CBP CROSS, NY collection, 2026+ | 61.7% | 25.2% | 40.9% |
+| This project: anthropic/claude-opus-5.5 | CBP CROSS, NY collection, 2026+ | 69.2% | 35.3% | 47.3% |
 | ATLAS, fine-tuned Atlas model (LLaMA-3.3-70B) | CROSS (their own benchmark) | 57.5% | 40% | n/a |
 | ATLAS, GPT-5-Thinking (general-purpose, not fine-tuned) | CROSS (their own benchmark) | not stated in abstract | ~25% (back-calculated: abstract states Atlas beats it by 15 points) | n/a |
 | ATLAS, Gemini-2.5-Pro-Thinking (general-purpose, not fine-tuned) | CROSS (their own benchmark) | not stated in abstract | ~12.5% (back-calculated: abstract states Atlas beats it by 27.5 points) | n/a |

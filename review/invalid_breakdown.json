@@ -216,33 +216,124 @@
     }
   },
   "openai/gpt-6-sol": {
-    "n": 200,
+    "n": 1098,
     "classes": {
-      "correct": 65,
-      "wrong_valid": 86,
-      "suffix_only": 14,
-      "six_eight": 7,
-      "fabricated": 6,
-      "outdated": 21,
+      "correct": 412,
+      "wrong_valid": 447,
+      "suffix_only": 76,
+      "six_eight": 54,
+      "fabricated": 20,
+      "outdated": 88,
       "no_usable_code": 1
     },
-    "n_invalid": 49,
-    "n_wrong_valid": 86,
+    "n_invalid": 239,
+    "n_wrong_valid": 447,
     "suffix_only_split": {
-      "10_digits_wrong_suffix_or_other": 14
+      "10_digits_wrong_suffix_or_other": 76
     },
     "crosstab_abc_by_outdated": {
-      "fabricated|outdated=False": 6,
-      "six_eight|outdated=False": 7,
-      "suffix_only|outdated=False": 14,
-      "suffix_only|outdated=True": 21
+      "fabricated|outdated=False": 20,
+      "six_eight|outdated=False": 54,
+      "suffix_only|outdated=False": 76,
+      "suffix_only|outdated=True": 88
     },
     "dollar_valid_wrong": {
-      "n": 83,
+      "n": 432,
       "median": 0.0,
       "q1": 0.0,
-      "q3": 3800.0,
-      "n_zero": 43
+      "q3": 2799.9999999999995,
+      "n_zero": 228
+    }
+  },
+  "anthropic/claude-haiku-5.5": {
+    "n": 1098,
+    "classes": {
+      "correct": 87,
+      "wrong_valid": 314,
+      "suffix_only": 273,
+      "six_eight": 287,
+      "fabricated": 69,
+      "outdated": 45,
+      "no_usable_code": 23
+    },
+    "n_invalid": 697,
+    "n_wrong_valid": 314,
+    "suffix_only_split": {
+      "10_digits_wrong_suffix_or_other": 273
+    },
+    "crosstab_abc_by_outdated": {
+      "fabricated|outdated=False": 69,
+      "six_eight|outdated=False": 287,
+      "suffix_only|outdated=False": 273,
+      "suffix_only|outdated=True": 45
+    },
+    "dollar_valid_wrong": {
+      "n": 304,
+      "median": 450.0,
+      "q1": 0.0,
+      "q3": 3025.0,
+      "n_zero": 147
+    }
+  },
+  "anthropic/claude-sonnet-5.5": {
+    "n": 1098,
+    "classes": {
+      "correct": 277,
+      "wrong_valid": 390,
+      "suffix_only": 191,
+      "six_eight": 140,
+      "fabricated": 27,
+      "outdated": 73,
+      "no_usable_code": 0
+    },
+    "n_invalid": 431,
+    "n_wrong_valid": 390,
+    "suffix_only_split": {
+      "10_digits_wrong_suffix_or_other": 189,
+      "8_digits_no_suffix": 2
+    },
+    "crosstab_abc_by_outdated": {
+      "fabricated|outdated=False": 27,
+      "six_eight|outdated=False": 140,
+      "suffix_only|outdated=False": 191,
+      "suffix_only|outdated=True": 73
+    },
+    "dollar_valid_wrong": {
+      "n": 380,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 3500.0000000000005,
+      "n_zero": 201
+    }
+  },
+  "anthropic/claude-opus-5.5": {
+    "n": 1098,
+    "classes": {
+      "correct": 388,
+      "wrong_valid": 418,
+      "suffix_only": 123,
+      "six_eight": 73,
+      "fabricated": 3,
+      "outdated": 93,
+      "no_usable_code": 0
+    },
+    "n_invalid": 292,
+    "n_wrong_valid": 418,
+    "suffix_only_split": {
+      "10_digits_wrong_suffix_or_other": 123
+    },
+    "crosstab_abc_by_outdated": {
+      "fabricated|outdated=False": 3,
+      "six_eight|outdated=False": 73,
+      "suffix_only|outdated=False": 123,
+      "suffix_only|outdated=True": 93
+    },
+    "dollar_valid_wrong": {
+      "n": 407,
+      "median": 100.00000000000009,
+      "q1": 0.0,
+      "q3": 3450.0000000000005,
+      "n_zero": 202
     }
   }
 }

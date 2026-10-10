@@ -13,7 +13,10 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | zai-org/GLM-5.3 | 1098 | 136 (12.4%) | 223 (20.3%) | 255 (23.2%) | 339 (30.9%) | 91 (8.3%) | 27 (2.5%) | 27 (2.5%) |
 | moonshotai/Kimi-K3 | 1098 | 312 (28.4%) | 516 (47.0%) | 102 (9.3%) | 70 (6.4%) | 19 (1.7%) | 79 (7.2%) | 0 (0.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 28 (14.0%) | 98 (49.0%) | 39 (19.5%) | 17 (8.5%) | 8 (4.0%) | 10 (5.0%) | 0 (0.0%) |
-| openai/gpt-6-sol | 200 | 65 (32.5%) | 86 (43.0%) | 14 (7.0%) | 7 (3.5%) | 6 (3.0%) | 21 (10.5%) | 1 (0.5%) |
+| openai/gpt-6-sol | 1098 | 412 (37.5%) | 447 (40.7%) | 76 (6.9%) | 54 (4.9%) | 20 (1.8%) | 88 (8.0%) | 1 (0.1%) |
+| anthropic/claude-haiku-5.5 | 1098 | 87 (7.9%) | 314 (28.6%) | 273 (24.9%) | 287 (26.1%) | 69 (6.3%) | 45 (4.1%) | 23 (2.1%) |
+| anthropic/claude-sonnet-5.5 | 1098 | 277 (25.2%) | 390 (35.5%) | 191 (17.4%) | 140 (12.8%) | 27 (2.5%) | 73 (6.6%) | 0 (0.0%) |
+| anthropic/claude-opus-5.5 | 1098 | 388 (35.3%) | 418 (38.1%) | 123 (11.2%) | 73 (6.6%) | 3 (0.3%) | 93 (8.5%) | 0 (0.0%) |
 
 ## Share of INVALID answers
 
@@ -26,7 +29,10 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | zai-org/GLM-5.3 | 739 | 255 (34.5%) | 339 (45.9%) | 91 (12.3%) | 27 (3.7%) | 27 (3.7%) |
 | moonshotai/Kimi-K3 | 270 | 102 (37.8%) | 70 (25.9%) | 19 (7.0%) | 79 (29.3%) | 0 (0.0%) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 74 | 39 (52.7%) | 17 (23.0%) | 8 (10.8%) | 10 (13.5%) | 0 (0.0%) |
-| openai/gpt-6-sol | 49 | 14 (28.6%) | 7 (14.3%) | 6 (12.2%) | 21 (42.9%) | 1 (2.0%) |
+| openai/gpt-6-sol | 239 | 76 (31.8%) | 54 (22.6%) | 20 (8.4%) | 88 (36.8%) | 1 (0.4%) |
+| anthropic/claude-haiku-5.5 | 697 | 273 (39.2%) | 287 (41.2%) | 69 (9.9%) | 45 (6.5%) | 23 (3.3%) |
+| anthropic/claude-sonnet-5.5 | 431 | 191 (44.3%) | 140 (32.5%) | 27 (6.3%) | 73 (16.9%) | 0 (0.0%) |
+| anthropic/claude-opus-5.5 | 292 | 123 (42.1%) | 73 (25.0%) | 3 (1.0%) | 93 (31.8%) | 0 (0.0%) |
 
 ## Suffix-only invalid answers: left the suffix off vs wrote a wrong suffix
 
@@ -39,7 +45,10 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | zai-org/GLM-5.3 | 255 | 10 | 245 |
 | moonshotai/Kimi-K3 | 102 | 3 | 99 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 39 | 2 | 37 |
-| openai/gpt-6-sol | 14 | 0 | 14 |
+| openai/gpt-6-sol | 76 | 0 | 76 |
+| anthropic/claude-haiku-5.5 | 273 | 0 | 273 |
+| anthropic/claude-sonnet-5.5 | 191 | 2 | 189 |
+| anthropic/claude-opus-5.5 | 123 | 0 | 123 |
 
 ## Non-exclusive crosstab: a/b/c class by outdated flag (invalid answers with >=6 digits)
 
@@ -73,10 +82,22 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | nvidia/nemotron-3-ultra-550b-a55b:free | six_eight|outdated=False | 17 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | suffix_only|outdated=False | 39 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | suffix_only|outdated=True | 10 |
-| openai/gpt-6-sol | fabricated|outdated=False | 6 |
-| openai/gpt-6-sol | six_eight|outdated=False | 7 |
-| openai/gpt-6-sol | suffix_only|outdated=False | 14 |
-| openai/gpt-6-sol | suffix_only|outdated=True | 21 |
+| openai/gpt-6-sol | fabricated|outdated=False | 20 |
+| openai/gpt-6-sol | six_eight|outdated=False | 54 |
+| openai/gpt-6-sol | suffix_only|outdated=False | 76 |
+| openai/gpt-6-sol | suffix_only|outdated=True | 88 |
+| anthropic/claude-haiku-5.5 | fabricated|outdated=False | 69 |
+| anthropic/claude-haiku-5.5 | six_eight|outdated=False | 287 |
+| anthropic/claude-haiku-5.5 | suffix_only|outdated=False | 273 |
+| anthropic/claude-haiku-5.5 | suffix_only|outdated=True | 45 |
+| anthropic/claude-sonnet-5.5 | fabricated|outdated=False | 27 |
+| anthropic/claude-sonnet-5.5 | six_eight|outdated=False | 140 |
+| anthropic/claude-sonnet-5.5 | suffix_only|outdated=False | 191 |
+| anthropic/claude-sonnet-5.5 | suffix_only|outdated=True | 73 |
+| anthropic/claude-opus-5.5 | fabricated|outdated=False | 3 |
+| anthropic/claude-opus-5.5 | six_eight|outdated=False | 73 |
+| anthropic/claude-opus-5.5 | suffix_only|outdated=False | 123 |
+| anthropic/claude-opus-5.5 | suffix_only|outdated=True | 93 |
 
 ## Duty at stake per $100,000 declared, valid wrong codes (both rates resolve)
 
@@ -89,4 +110,7 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | zai-org/GLM-5.3 | 223 | 214 | $1,500 | $0 to $3,700 | 88 |
 | moonshotai/Kimi-K3 | 516 | 497 | $100 | $0 to $2,900 | 245 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 98 | 92 | $1,250 | $0 to $5,000 | 43 |
-| openai/gpt-6-sol | 86 | 83 | $0 | $0 to $3,800 | 43 |
+| openai/gpt-6-sol | 447 | 432 | $0 | $0 to $2,800 | 228 |
+| anthropic/claude-haiku-5.5 | 314 | 304 | $450 | $0 to $3,025 | 147 |
+| anthropic/claude-sonnet-5.5 | 390 | 380 | $0 | $0 to $3,500 | 201 |
+| anthropic/claude-opus-5.5 | 418 | 407 | $100 | $0 to $3,450 | 202 |

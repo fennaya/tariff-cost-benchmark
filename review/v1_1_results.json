@@ -33,7 +33,7 @@
       "c8": 3,
       "c8_flagged": 3
     },
-    "holm_p": 0.007992007992007992
+    "holm_p": 0.010989010989010988
   },
   "openai/gpt-oss-120b": {
     "n_primary": 1098,
@@ -69,7 +69,7 @@
       "c8": 61,
       "c8_flagged": 55
     },
-    "holm_p": 0.007992007992007992
+    "holm_p": 0.010989010989010988
   },
   "allam-2-7b": {
     "n_primary": 1098,
@@ -105,7 +105,7 @@
       "c8": 26,
       "c8_flagged": 7
     },
-    "holm_p": 0.007992007992007992
+    "holm_p": 0.010989010989010988
   },
   "deepseek-ai/DeepSeek-V4.1-Flash": {
     "n_primary": 1098,
@@ -141,7 +141,7 @@
       "c8": 431,
       "c8_flagged": 87
     },
-    "holm_p": 0.22777222777222778,
+    "holm_p": 0.34965034965034963,
     "probe": {
       "n": 100,
       "h10": 0,
@@ -183,7 +183,7 @@
       "c8": 276,
       "c8_flagged": 123
     },
-    "holm_p": 0.023976023976023976,
+    "holm_p": 0.04195804195804196,
     "probe": {
       "n": 100,
       "h10": 0,
@@ -225,7 +225,7 @@
       "c8": 477,
       "c8_flagged": 97
     },
-    "holm_p": 0.01998001998001998,
+    "holm_p": 0.03196803196803197,
     "probe": {
       "n": 100,
       "h10": 0,
@@ -267,7 +267,7 @@
       "c8": 25,
       "c8_flagged": 3
     },
-    "holm_p": 0.023976023976023976,
+    "holm_p": 0.04195804195804196,
     "probe": {
       "n": 25,
       "h10": 0,
@@ -276,46 +276,154 @@
     }
   },
   "openai/gpt-6-sol": {
-    "n_primary": 167,
+    "n_primary": 538,
     "acc": {
-      "6": 103,
-      "8": 83,
-      "10": 53
+      "6": 331,
+      "8": 267,
+      "10": 175
     },
-    "invalid": 43,
-    "format": 31,
-    "invented": 12,
-    "n_full": 200,
+    "invalid": 134,
+    "format": 87,
+    "invented": 47,
+    "n_full": 1098,
     "acc_full": {
-      "6": 123,
-      "8": 99,
-      "10": 65
+      "6": 736,
+      "8": 597,
+      "10": 412
     },
     "gate_b": {
-      "n": 41,
-      "under": 21,
-      "share": 0.5121951219512195,
-      "p1": "0.8252",
-      "p2": "0.1139",
-      "p2_num": 0.11388611388611389,
+      "n": 138,
+      "under": 72,
+      "share": 0.5217391304347826,
+      "p1": "0.9940",
+      "p2": "0.0919",
+      "p2_num": 0.0919080919080919,
       "verdict": "not distinguishable from chance (Gate B not met)"
     },
-    "duty_n": 97,
+    "duty_n": 306,
     "validity": {
-      "wrong": 114,
-      "wrong_flagged": 43,
-      "correct": 53,
-      "correct_flagged": 0,
-      "c8": 83,
-      "c8_flagged": 16
+      "wrong": 363,
+      "wrong_flagged": 131,
+      "correct": 175,
+      "correct_flagged": 3,
+      "c8": 267,
+      "c8_flagged": 46
     },
-    "holm_p": 0.22777222777222778,
+    "holm_p": 0.2757242757242757,
     "probe": {
       "n": 25,
       "h10": 0,
       "h8": 0,
       "h6": 0
     }
+  },
+  "anthropic/claude-haiku-5.5": {
+    "n_primary": 228,
+    "acc": {
+      "6": 74,
+      "8": 40,
+      "10": 19
+    },
+    "invalid": 151,
+    "format": 75,
+    "invented": 76,
+    "n_full": 1098,
+    "acc_full": {
+      "6": 357,
+      "8": 199,
+      "10": 87
+    },
+    "gate_b": {
+      "n": 65,
+      "under": 37,
+      "share": 0.5692307692307692,
+      "p1": "0.5524",
+      "p2": "0.0210",
+      "p2_num": 0.02097902097902098,
+      "verdict": "underpays more than chance (Gate B met)"
+    },
+    "duty_n": 124,
+    "validity": {
+      "wrong": 209,
+      "wrong_flagged": 151,
+      "correct": 19,
+      "correct_flagged": 0,
+      "c8": 40,
+      "c8_flagged": 16
+    },
+    "holm_p": 0.1048951048951049
+  },
+  "anthropic/claude-sonnet-5.5": {
+    "n_primary": 228,
+    "acc": {
+      "6": 139,
+      "8": 92,
+      "10": 58
+    },
+    "invalid": 89,
+    "format": 47,
+    "invented": 42,
+    "n_full": 1098,
+    "acc_full": {
+      "6": 677,
+      "8": 493,
+      "10": 277
+    },
+    "gate_b": {
+      "n": 49,
+      "under": 28,
+      "share": 0.5714285714285714,
+      "p1": "0.8172",
+      "p2": "0.0589",
+      "p2_num": 0.058941058941058944,
+      "verdict": "not distinguishable from chance (Gate B not met)"
+    },
+    "duty_n": 122,
+    "validity": {
+      "wrong": 170,
+      "wrong_flagged": 89,
+      "correct": 58,
+      "correct_flagged": 0,
+      "c8": 92,
+      "c8_flagged": 20
+    },
+    "holm_p": 0.23576423576423577
+  },
+  "anthropic/claude-opus-5.5": {
+    "n_primary": 228,
+    "acc": {
+      "6": 156,
+      "8": 122,
+      "10": 75
+    },
+    "invalid": 63,
+    "format": 43,
+    "invented": 20,
+    "n_full": 1098,
+    "acc_full": {
+      "6": 760,
+      "8": 608,
+      "10": 388
+    },
+    "gate_b": {
+      "n": 51,
+      "under": 23,
+      "share": 0.45098039215686275,
+      "p1": "1.0000",
+      "p2": "0.5864",
+      "p2_num": 0.5864135864135864,
+      "verdict": "not distinguishable from chance (Gate B not met)"
+    },
+    "duty_n": 128,
+    "validity": {
+      "wrong": 153,
+      "wrong_flagged": 63,
+      "correct": 75,
+      "correct_flagged": 0,
+      "c8": 122,
+      "c8_flagged": 27
+    },
+    "holm_p": 0.5864135864135864
   },
   "_sensitivity_inadequate": {
     "openai/gpt-oss-20b": {
@@ -453,22 +561,79 @@
     },
     "openai/gpt-6-sol": {
       "n": [
-        167,
-        152
+        538,
+        500
       ],
       "acc8": [
-        0.49700598802395207,
-        0.5328947368421053
+        0.4962825278810409,
+        0.522
       ],
       "invalid": [
-        0.25748502994011974,
-        0.21710526315789475
+        0.24907063197026022,
+        0.224
       ],
       "gate_main": "not met",
       "gate_excl": "not met",
-      "under_main": 0.5121951219512195,
-      "under_excl": 0.5833333333333334,
-      "p2_excl": "0.1199"
+      "under_main": 0.5217391304347826,
+      "under_excl": 0.5433070866141733,
+      "p2_excl": "0.1449"
+    },
+    "anthropic/claude-haiku-5.5": {
+      "n": [
+        228,
+        221
+      ],
+      "acc8": [
+        0.17543859649122806,
+        0.18099547511312217
+      ],
+      "invalid": [
+        0.6622807017543859,
+        0.6561085972850679
+      ],
+      "gate_main": "met",
+      "gate_excl": "met",
+      "under_main": 0.5692307692307692,
+      "under_excl": 0.578125,
+      "p2_excl": "0.0190"
+    },
+    "anthropic/claude-sonnet-5.5": {
+      "n": [
+        228,
+        221
+      ],
+      "acc8": [
+        0.40350877192982454,
+        0.4072398190045249
+      ],
+      "invalid": [
+        0.39035087719298245,
+        0.38009049773755654
+      ],
+      "gate_main": "not met",
+      "gate_excl": "not met",
+      "under_main": 0.5714285714285714,
+      "under_excl": 0.5714285714285714,
+      "p2_excl": "0.1219"
+    },
+    "anthropic/claude-opus-5.5": {
+      "n": [
+        228,
+        221
+      ],
+      "acc8": [
+        0.5350877192982456,
+        0.5475113122171946
+      ],
+      "invalid": [
+        0.27631578947368424,
+        0.27149321266968324
+      ],
+      "gate_main": "not met",
+      "gate_excl": "not met",
+      "under_main": 0.45098039215686275,
+      "under_excl": 0.46938775510204084,
+      "p2_excl": "0.5914"
     }
   }
 }

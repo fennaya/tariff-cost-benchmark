@@ -9,7 +9,10 @@
 | zai-org/GLM-5.3 | 1098 | 962 | 742/1098 = 67.6% | 742/962 = 77.1% | 483 | 483/962 = 50.2% | 212 | 118/212 = 55.7% |
 | moonshotai/Kimi-K3 | 1098 | 786 | 278/1098 = 25.3% | 278/786 = 35.4% | 673 | 673/786 = 85.6% | 311 | 184/311 = 59.2% |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 172 | 75/200 = 37.5% | 75/172 = 43.6% | 138 | 138/172 = 80.2% | 66 | 34/66 = 51.5% |
-| openai/gpt-6-sol | 200 | 135 | 50/200 = 25.0% | 50/135 = 37.0% | 117 | 117/135 = 86.7% | 49 | 26/49 = 53.1% |
+| openai/gpt-6-sol | 1098 | 686 | 248/1098 = 22.6% | 248/686 = 36.2% | 593 | 593/686 = 86.4% | 256 | 145/256 = 56.6% |
+| anthropic/claude-haiku-5.5 | 1098 | 1011 | 699/1098 = 63.7% | 699/1011 = 69.1% | 613 | 613/1011 = 60.6% | 281 | 149/281 = 53.0% |
+| anthropic/claude-sonnet-5.5 | 1098 | 821 | 438/1098 = 39.9% | 438/821 = 53.3% | 632 | 632/821 = 77.0% | 264 | 142/264 = 53.8% |
+| anthropic/claude-opus-5.5 | 1098 | 710 | 305/1098 = 27.8% | 305/710 = 43.0% | 617 | 617/710 = 86.9% | 268 | 124/268 = 46.3% |
 
 ## Overlap: usable-rate wrong answers that are also tagged INVALID_CODE
 
@@ -24,4 +27,7 @@ Only 10-digit answers get a rate (analysis.rate_pct_for). A 10-digit answer that
 | zai-org/GLM-5.3 | 483 | 269 | 214 |
 | moonshotai/Kimi-K3 | 673 | 176 | 497 |
 | nvidia/nemotron-3-ultra-550b-a55b:free | 138 | 46 | 92 |
-| openai/gpt-6-sol | 117 | 34 | 83 |
+| openai/gpt-6-sol | 593 | 161 | 432 |
+| anthropic/claude-haiku-5.5 | 613 | 309 | 304 |
+| anthropic/claude-sonnet-5.5 | 632 | 252 | 380 |
+| anthropic/claude-opus-5.5 | 617 | 210 | 407 |
