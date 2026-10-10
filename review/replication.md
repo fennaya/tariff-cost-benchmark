@@ -1,0 +1,15 @@
+# Provider replication (scripts/analyze_replication.py)
+
+Primary = the v1.1 Baseten run; replication = the same model through OpenRouter with Baseten excluded. Same 1,098 rulings, same prompt, temperature 0. Difference = OpenRouter minus Baseten, 95% CI from a paired bootstrap (10,000 resamples, seed 20261010). The GLM runs also differ in reasoning setting (Baseten: thinking disabled; OpenRouter: low effort, because it cannot be turned off there), and OpenRouter routes each call to one of several providers.
+
+| Model | rulings both | identical code | identical first 8 digits (both >= 8 digits) | 8-digit accuracy Baseten | 8-digit accuracy OpenRouter | difference (95% CI) | invalid share Baseten / OpenRouter | answers with a different valid/invalid tag |
+|---|---|---|---|---|---|---|---|---|
+| moonshotai/Kimi-K3 | 1098 | 936 (85.2%) | 997 of 1098 (90.8%) | 477 (43.4%) | 463 (42.2%) | -1.3 points (-2.4 to -0.2) | 25.3% / 24.9% | 65 |
+| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 884 (80.5%) | 928 of 1089 (85.2%) | 431 (39.3%) | 424 (38.6%) | -0.6 points (-2.1 to +0.8) | 32.2% / 31.3% | 84 |
+| zai-org/GLM-5.3 | 1098 | 252 (23.0%) | 417 of 1029 (40.5%) | 276 (25.1%) | 249 (22.7%) | -2.5 points (-4.8 to -0.1) | 67.6% / 68.5% | 314 |
+
+## Serving providers recorded in the OpenRouter responses
+
+- moonshotai/Kimi-K3: Wafer 194, InferenceNet 191, Sail Research 144, Morph 113, Parasail 56, Makora 49, DigitalOcean 38, AkashML 37, Phala 35, Together 33, Relace 30, Chutes 29, Decart 28, DeepInfra 27, Amazon Bedrock 26, Moonshot AI 25, Fireworks 23, Alibaba 20
+- deepseek-ai/DeepSeek-V4.1-Flash: Relace 246, Morph 129, OpenInference 109, Decart 96, Wafer 95, Sail Research 82, InferenceNet 62, Ionstream 39, DeepInfra 34, DekaLLM 26, StreamLake 24, DigitalOcean 21, GMICloud 20, CoreWeave 16, Novita 13, AtlasCloud 10, Phala 10, Baidu 9, Crusoe 8, SiliconFlow 7, Alibaba 7, Modal 7, Makora 6, Together 6, Fireworks 6, Venice 6, Parasail 4
+- zai-org/GLM-5.3: Wafer 249, Sail Research 178, InferenceNet 136, Reka 104, Makora 101, AkashML 64, DeepInfra 42, Morph 34, Inceptron 25, Novita 17, Decart 16, Friendli 12, DigitalOcean 12, Phala 12, Mistral 9, Io Net 9, Fireworks 9, Cloudflare 8, GMICloud 8, Baidu 7, Nebius 6, SiliconFlow 6, Modal 5, Z.AI 4, Together 4, Crusoe 4, PrimeIntellect 4, AtlasCloud 4, Alibaba 4, Parasail 4, Venice 1
