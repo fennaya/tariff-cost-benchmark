@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359648",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "3004909238",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595888-0cEodXWG5L3VkRSmov0P",
+    "object": "chat.completion",
+    "created": 1791595888,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Midazolam is a benzodiazepine, an organic compound with a fused heterocyclic structure. Put up in measured doses for retail sale as a medicament, it would fall in heading 3004. The question is which 3004 subheading applies.\n\nThe candidates in 3004.90 are \"Other.\" Midazolam isn't an antibiotic, hormone, alkaloid, or vitamin, so it goes to 3004.90.92 (\"Other\"), which is the general residual for medicaments. I recall a CBP ruling on ZEPIZURE (NY N3xxxxx) that classified it in 3004.90.9290, so that is the likely answer. The 3004.90.92 subheading in the HTSUS is \"Other: Other: Other,\" and the 10-digit statistical suffix 3004.90.9290 is \"Other.\" There is also 3004.90.9210 for \"Antidiabetic\", but that doesn't fit. Midazolam has a possible 3004.90.91 listing for \"Drugs for the central nervous system\", but I'm not sure that is the right fit. The suffixes in 3004.90.92 are 10 (Antidepressants?), 15, 20, 30, 40, 50, 60, 70, 80, 90, but I can't confirm them. I'll go with the residual 3004.90.9290.\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Midazolam (a benzodiazepine) in measured-dose prefilled auto-injectors is a medicament of heading 3004, falling in the residual 'other' subheading 3004.90.92.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 304,
+      "completion_tokens": 513,
+      "total_tokens": 817,
+      "cost": 0.005738,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005738,
+        "upstream_inference_prompt_cost": 0.000608,
+        "upstream_inference_completions_cost": 0.00513
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Midazolam (a benzodiazepine) in measured-dose prefilled auto-injectors is a medicament of heading 3004, falling in the residual 'other' subheading 3004.90.92.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 513,
+    "total_tokens": 817,
+    "cost": 0.005738,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005738,
+      "upstream_inference_prompt_cost": 0.000608,
+      "upstream_inference_completions_cost": 0.00513
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:29.004925+00:00",
+  "latency_s": 5.325,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

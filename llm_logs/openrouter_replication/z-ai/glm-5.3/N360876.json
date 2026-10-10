@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360876",
+  "rulingDate": "2026-04-27T00:00:00",
+  "true_code": "8423810040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600126-7HET2CWtqeDAWj53LWjI",
+    "object": "chat.completion",
+    "created": 1791600126,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8423.81.0000\", \"reason\": \"The Bluetooth coffee scale is an electronic weighing instrument with a maximum capacity of 2 kg, classifiable as weighing machinery with capacity not exceeding 30 kg.\"}",
+          "refusal": null,
+          "reasoning": "Coffee scale \u2014 likely 8423.81 (weighing machinery, other). 8423.81.0000? Electronic weighing scales... 8423.82 is for constant weight sensors; 8423.81.0000 \"Weighing machinery having a maximum weighing capacity not exceeding 30 kg\" \u2014 yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Coffee scale \u2014 likely 8423.81 (weighing machinery, other). 8423.81.0000? Electronic weighing scales... 8423.82 is for constant weight sensors; 8423.81.0000 \"Weighing machinery having a maximum weighing capacity not exceeding 30 kg\" \u2014 yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 335,
+      "completion_tokens": 124,
+      "total_tokens": 459,
+      "cost": 0.0005724,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005724,
+        "upstream_inference_prompt_cost": 2.68e-05,
+        "upstream_inference_completions_cost": 0.0005456
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 72,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8423810000",
+  "predicted_reason": "The Bluetooth coffee scale is an electronic weighing instrument with a maximum capacity of 2 kg, classifiable as weighing machinery with capacity not exceeding 30 kg.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 124,
+    "total_tokens": 459,
+    "cost": 0.0005724,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005724,
+      "upstream_inference_prompt_cost": 2.68e-05,
+      "upstream_inference_completions_cost": 0.0005456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 72,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:42:06.993014+00:00",
+  "latency_s": 1.612,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360776",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "9801001053",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600119-pDKu9Fbl3iJHk5yqAvvJ",
+    "object": "chat.completion",
+    "created": 1791600119,
+    "model": "z-ai/glm-5.3",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9801.00.10\", \"reason\": \"As U.S.-manufactured goods returned after foreign testing without advancement in value or improvement in condition, the Tac-Mesh radio unit qualifies as American Goods Returned under subheading 9801.00.10, subject to the documentary requirements of 19 C.F.R. \u00a7 10.1.\"}",
+          "refusal": null,
+          "reasoning": "9802? American goods returned is 9801.00.10. But classification of the radio itself: 8517.62.0050? MANET radio \u2014 other apparatus for transmission/reception of voice \u2014 8525.20? Actually 8517.62 covers communication apparatus. 10-digit: 8517.62.0090? For radio transceivers, 8517.62.0050 \"other\". I'll answer 9801.00.10? The question asks most applicable HTSUS code for the product; given American goods returned, 9801.00.10.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "9802? American goods returned is 9801.00.10. But classification of the radio itself: 8517.62.0050? MANET radio \u2014 other apparatus for transmission/reception of voice \u2014 8525.20? Actually 8517.62 covers communication apparatus. 10-digit: 8517.62.0090? For radio transceivers, 8517.62.0050 \"other\". I'll answer 9801.00.10? The question asks most applicable HTSUS code for the product; given American goods returned, 9801.00.10.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 299,
+      "completion_tokens": 221,
+      "total_tokens": 520,
+      "cost": 0.00207111,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00207111,
+        "upstream_inference_prompt_cost": 0.00061251,
+        "upstream_inference_completions_cost": 0.0014586
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 139,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "98010010",
+  "predicted_reason": "As U.S.-manufactured goods returned after foreign testing without advancement in value or improvement in condition, the Tac-Mesh radio unit qualifies as American Goods Returned under subheading 9801.00.10, subject to the documentary requirements of 19 C.F.R. \u00a7 10.1.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 221,
+    "total_tokens": 520,
+    "cost": 0.00207111,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00207111,
+      "upstream_inference_prompt_cost": 0.00061251,
+      "upstream_inference_completions_cost": 0.0014586
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Fireworks",
+  "requested_at": "2026-10-10T02:41:59.722466+00:00",
+  "latency_s": 1.527,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362044",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8541290055",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596407-LKIJK3Rsrc3RsRFg5rn7",
+    "object": "chat.completion",
+    "created": 1791596407,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "HTSUS 8541.21 covers transistors (other than photosensitive) with a dissipation rate of less than 1 W. 8541.29 covers those with a dissipation rate of 1 W or more. The maximum dissipation here is 1.1 W, so this falls under 8541.29.\n\nSubheading 8541.29.00 has statistical suffixes. I recall 8541.29.0095 as \"Other\" for 8541.29.00, and I believe 8541.29.0080 and 8541.29.0075 do not exist. In the current schedule, 8541.29.00 is \"Other\" with a single statistical suffix of 95. I'm answering from memory of that structure rather than a check.\n\nThis looks like a CBP ruling, which probably classified the item under 8541.29.0095. The ruling would have treated the 1.1 W maximum as the controlling dissipation figure, and the 1 MHz operating frequency is irrelevant because it does not change the subheading.\n\n```json\n{\"hts_code\": \"8541.29.0095\", \"reason\": \"The dual N/P-channel MOSFET is a transistor (not photosensitive) with a maximum power dissipation of 1.1 W, which is 1 W or more, so it falls under subheading 8541.29.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 482,
+      "completion_tokens": 408,
+      "total_tokens": 890,
+      "cost": 0.005044,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005044,
+        "upstream_inference_prompt_cost": 0.000964,
+        "upstream_inference_completions_cost": 0.00408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8541290095",
+  "predicted_reason": "The dual N/P-channel MOSFET is a transistor (not photosensitive) with a maximum power dissipation of 1.1 W, which is 1 W or more, so it falls under subheading 8541.29.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 482,
+    "completion_tokens": 408,
+    "total_tokens": 890,
+    "cost": 0.005044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005044,
+      "upstream_inference_prompt_cost": 0.000964,
+      "upstream_inference_completions_cost": 0.00408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:08.084744+00:00",
+  "latency_s": 4.426,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

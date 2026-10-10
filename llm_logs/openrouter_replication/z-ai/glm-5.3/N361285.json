@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361285",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8431499020",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600159-GNyoJEmbFRivBbt8PfPg",
+    "object": "chat.completion",
+    "created": 1791600159,
+    "model": "z-ai/glm-5.3",
+    "provider": "SiliconFlow",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8462.31.0030\", \"reason\": \"Hydraulic excavator shear attachments with scissor-like cutting jaws function as metal-cutting shears, classified as hydraulic shearing machines under heading 8462.\"}",
+          "refusal": null,
+          "reasoning": "Excavator shear attachment \u2014 hydraulic shears for metal cutting. Likely 8428? Actually hydraulic shears attachments classified under 8462? Metal shears cutting machines: 8462.31 or 8462.39? Portable hydraulic attachments... often classified 8431 as parts of excavators? Common ruling: excavator shear attachments classified under 8428.90? Hmm. Many CBP rulings classify hydraulic breaker/shear attachments under 8431.49 (parts of excavating machinery). But shears for cutting metal are machines of 8462.39.00? There are rulings classifying LaBounty shears under 8462.31.00 (hydraulic shears). I'll go 8462.31.0030? 8462.31.00 covers shears. 10-digit: 8462.31.0030? Actual subheadings: 8462.31.00 Shears... statistical: 8462.31.0030? I recall 8462.31.0030 \"Shears, hydraulic\". Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Excavator shear attachment \u2014 hydraulic shears for metal cutting. Likely 8428? Actually hydraulic shears attachments classified under 8462? Metal shears cutting machines: 8462.31 or 8462.39? Portable hydraulic attachments... often classified 8431 as parts of excavators? Common ruling: excavator shear attachments classified under 8428.90? Hmm. Many CBP rulings classify hydraulic breaker/shear attachments under 8431.49 (parts of excavating machinery). But shears for cutting metal are machines of 8462.39.00? There are rulings classifying LaBounty shears under 8462.31.00 (hydraulic shears). I'll go 8462.31.0030? 8462.31.00 covers shears. 10-digit: 8462.31.0030? Actual subheadings: 8462.31.00 Shears... statistical: 8462.31.0030? I recall 8462.31.0030 \"Shears, hydraulic\". Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 154,
+      "completion_tokens": 298,
+      "total_tokens": 452,
+      "cost": 0.00122144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00122144,
+        "upstream_inference_prompt_cost": 0.00017248,
+        "upstream_inference_completions_cost": 0.00104896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 243,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8462310030",
+  "predicted_reason": "Hydraulic excavator shear attachments with scissor-like cutting jaws function as metal-cutting shears, classified as hydraulic shearing machines under heading 8462.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 154,
+    "completion_tokens": 298,
+    "total_tokens": 452,
+    "cost": 0.00122144,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00122144,
+      "upstream_inference_prompt_cost": 0.00017248,
+      "upstream_inference_completions_cost": 0.00104896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 243,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "SiliconFlow",
+  "requested_at": "2026-10-10T02:42:39.990476+00:00",
+  "latency_s": 4.005,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

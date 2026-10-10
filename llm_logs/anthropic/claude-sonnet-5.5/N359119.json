@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359119",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "8518908100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595754-ZCdWOVU10fa1YMGWXxgT",
+    "object": "chat.completion",
+    "created": 1791595754,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a shaped EPDM foam piece made for installation in a headset ear cup. There are two candidate classifications:\n\n- **Parts of headphones, heading 8518:** 8518.90 covers parts of headphones and earphones. Under the Section XVI note 1(l) exclusion and the Note 2 parts rules, parts of general use or articles of plastics/rubber (Chapter 39/40) are excluded unless they are specifically parts. Here, the foam is dedicated to the headset, so it is a part under Note 2(b), but only if it is not excluded as an article of Section VII. Section XVI Note 1(f) excludes parts of general use (Section XV) and 1(l) excludes certain goods, but Note 1 does not exclude Chapter 40 rubber articles generally (only vulcanized rubber items of 4016 in some cases). Note 1(a) to Section XVI excludes transmission/conveyor belts of plastics or rubber (Chapter 39/40), not this item.\n- **Cellular rubber articles, 4016.99:** EPDM foam is cellular vulcanized rubber, which would fall under 4016.10 (cellular rubber articles). Under Note 2 to Section XVI, the part would go to 8518.90 if it is a part suitable for use solely with headphones.\n\nCBP rulings on headset ear cushions generally classify them as parts of headphones in 8518.90. The relevant subheading is 8518.90.80, with statistical suffix 8518.90.8000 or similar. Using the 2022+ structure, 8518.90.80 has statistical suffix 8518.90.8040 or 8518.90.8090. I will go with 8518.90.8090 as the \"other\" provision.\n\n{\"hts_code\": \"8518.90.8090\", \"reason\": \"A shaped EPDM foam insert made solely for the ear cup of an aviation headset is a part of headphones, so it is classified in heading 8518 as other parts (8518.90).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 647,
+      "total_tokens": 971,
+      "cost": 0.007118,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007118,
+        "upstream_inference_prompt_cost": 0.000648,
+        "upstream_inference_completions_cost": 0.00647
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8518908090",
+  "predicted_reason": "A shaped EPDM foam insert made solely for the ear cup of an aviation headset is a part of headphones, so it is classified in heading 8518 as other parts (8518.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 647,
+    "total_tokens": 971,
+    "cost": 0.007118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007118,
+      "upstream_inference_prompt_cost": 0.000648,
+      "upstream_inference_completions_cost": 0.00647
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:14.530962+00:00",
+  "latency_s": 6.617,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

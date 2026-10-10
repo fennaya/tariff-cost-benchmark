@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362757",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "8704210100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596543-FYNwBbYSWxozUsB0BhZY",
+    "object": "chat.completion",
+    "created": 1791596543,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on the SHERP N1200. The vehicle is a diesel-powered, 2-passenger vehicle designed for transporting goods, so it falls under heading 8704 (motor vehicles for the transport of goods). Within 8704, diesel vehicles (compression-ignition) are classified at 8704.21 or 8704.31 (GVW not exceeding 5 metric tons).\n\nThe choice between the two subheadings depends on the vehicle's design. 8704.21 covers vehicles with a GVW not exceeding 5 metric tons, and 8704.31 covers other vehicles with a spark-ignition engine. Because this engine is diesel, 8704.21 is the correct subheading.\n\nHeading 8704 does not cover \"special purpose\" motor vehicles, which fall under 8705. The ruling reasoning stresses that the vehicle's principal function is transporting goods, so 8704 applies rather than 8705.\n\nThe statistical suffix for 8704.21 is as follows:\n- 8704.21.01 covers vehicles that are \"Other\" than those in the earlier tariff lines (which cover the Chapter 87 subheading note for chassis/cab and the like).\n- 8704.21.40 covers vehicles with a GVW not exceeding 5 metric tons that are not specially designed (e.g., \"Other\").\n- 8704.21.80 covers \"Other\" vehicles in the remaining category.\n\nThe current 8704.21 structure is: 8704.21.01 (Nonconforming or otherwise unspecified), 8704.21.20 (Cab chassis), 8704.21.40 (Other, including a body), and 8704.21.80 (Other). I selected 8704.21.8000 as the best fit for a complete vehicle with a non-specialized body.\n\n{\"hts_code\": \"8704.21.8000\", \"reason\": \"A diesel-powered amphibious vehicle principally designed to transport goods with a GVW not exceeding 5 metric tons is classified in heading 8704 as a motor vehicle for the transport of goods, subheading 8704.21.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 687,
+      "total_tokens": 1116,
+      "cost": 0.007728,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007728,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00687
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8704218000",
+  "predicted_reason": "A diesel-powered amphibious vehicle principally designed to transport goods with a GVW not exceeding 5 metric tons is classified in heading 8704 as a motor vehicle for the transport of goods, subheading 8704.21.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 687,
+    "total_tokens": 1116,
+    "cost": 0.007728,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007728,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00687
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:23.850791+00:00",
+  "latency_s": 6.312,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

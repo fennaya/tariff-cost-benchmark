@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360308",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "9406900130",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600065-T0zRZAaloAgKI3RGanpv",
+    "object": "chat.completion",
+    "created": 1791600065,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.20.0080\", \"reason\": \"Portable steel storage units with doors are other metal furniture of heading 9403, flat-packing not affecting classification.\"}",
+          "refusal": null,
+          "reasoning": "Portable steel storage units, flat-packed \u2014 likely 9403? Steel cabinets \u2014 9403.20.0080? Actually metal furniture 9403.20. But storage units/cabinets of steel: 9403.20.0081? Common ruling: portable steel storage units classified 9403.20.0080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Portable steel storage units, flat-packed \u2014 likely 9403? Steel cabinets \u2014 9403.20.0080? Actually metal furniture 9403.20. But storage units/cabinets of steel: 9403.20.0081? Common ruling: portable steel storage units classified 9403.20.0080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 145,
+      "completion_tokens": 124,
+      "total_tokens": 269,
+      "cost": 0.0005411,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005411,
+        "upstream_inference_prompt_cost": 2.03e-05,
+        "upstream_inference_completions_cost": 0.0005208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 78,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200080",
+  "predicted_reason": "Portable steel storage units with doors are other metal furniture of heading 9403, flat-packing not affecting classification.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 145,
+    "completion_tokens": 124,
+    "total_tokens": 269,
+    "cost": 0.0005411,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005411,
+      "upstream_inference_prompt_cost": 2.03e-05,
+      "upstream_inference_completions_cost": 0.0005208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 78,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:41:05.968510+00:00",
+  "latency_s": 5.443,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

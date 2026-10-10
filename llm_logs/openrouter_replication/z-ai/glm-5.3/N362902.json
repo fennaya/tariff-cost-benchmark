@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362902",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "4202329300",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600367-2Wc985K2KdAG5Nlub1Bu",
+    "object": "chat.completion",
+    "created": 1791600367,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.32.2000\", \"reason\": \"Novelty wallets with an outer surface of man-made textile material, of a kind normally carried in the pocket or handbag, are classified in HTSUS subheading 4202.32.2000.\"}",
+          "refusal": null,
+          "reasoning": "Wallets of textile outer surface: 4202.32.2000? Heading 4202, articles normally carried in pocket/handbag \u2014 wallets of textile materials of man-made fibers: 4202.32.2000 (of man-made fibers). Actually 4202.32.40 was textile? Subheading 4202.32: articles of a kind normally carried in pocket or handbag. 4202.32.20: of man-made fibers? Historically 4202.32.40 (textile, other). Current: 4202.32.2000, duty 20%? I'll answer 4202.32.2000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Wallets of textile outer surface: 4202.32.2000? Heading 4202, articles normally carried in pocket/handbag \u2014 wallets of textile materials of man-made fibers: 4202.32.2000 (of man-made fibers). Actually 4202.32.40 was textile? Subheading 4202.32: articles of a kind normally carried in pocket or handbag. 4202.32.20: of man-made fibers? Historically 4202.32.40 (textile, other). Current: 4202.32.2000, duty 20%? I'll answer 4202.32.2000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 219,
+      "completion_tokens": 204,
+      "total_tokens": 423,
+      "cost": 0.00088746,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00088746,
+        "upstream_inference_prompt_cost": 3.066e-05,
+        "upstream_inference_completions_cost": 0.0008568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 141,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202322000",
+  "predicted_reason": "Novelty wallets with an outer surface of man-made textile material, of a kind normally carried in the pocket or handbag, are classified in HTSUS subheading 4202.32.2000.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 219,
+    "completion_tokens": 204,
+    "total_tokens": 423,
+    "cost": 0.00088746,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00088746,
+      "upstream_inference_prompt_cost": 3.066e-05,
+      "upstream_inference_completions_cost": 0.0008568
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 141,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:46:08.016806+00:00",
+  "latency_s": 5.925,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

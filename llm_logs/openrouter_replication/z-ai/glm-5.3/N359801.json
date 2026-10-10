@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359801",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "4820102060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599970-n8HfAedNZrgfubab7QOF",
+    "object": "chat.completion",
+    "created": 1791599970,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4820.10.2000\", \"reason\": \"The merchandise consists of bound notebooks (both hardbound paperboard and softbound covers) with lined, blank, and dot-grid pages, classified as notebooks bound in heading 4820.\"}",
+          "refusal": null,
+          "reasoning": "Notebooks: 4820.10.20 or 4820.10.40? Hardbound notebooks with paperboard covers \u2014 4820.10.20 (bound notebooks, hardback). Actually 4820.10.20: \"Diaries, notebooks and address books, bound\". 4820.10.40 softback. Mixed set \u2014 hardbound primary. Use 4820.10.2000? Check digit suffix: 4820.10.20 00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Notebooks: 4820.10.20 or 4820.10.40? Hardbound notebooks with paperboard covers \u2014 4820.10.20 (bound notebooks, hardback). Actually 4820.10.20: \"Diaries, notebooks and address books, bound\". 4820.10.40 softback. Mixed set \u2014 hardbound primary. Use 4820.10.2000? Check digit suffix: 4820.10.20 00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 549,
+      "completion_tokens": 169,
+      "total_tokens": 718,
+      "cost": 0.00090453,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00090453,
+        "upstream_inference_prompt_cost": 9.333e-05,
+        "upstream_inference_completions_cost": 0.0008112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 114,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4820102000",
+  "predicted_reason": "The merchandise consists of bound notebooks (both hardbound paperboard and softbound covers) with lined, blank, and dot-grid pages, classified as notebooks bound in heading 4820.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 549,
+    "completion_tokens": 169,
+    "total_tokens": 718,
+    "cost": 0.00090453,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00090453,
+      "upstream_inference_prompt_cost": 9.333e-05,
+      "upstream_inference_completions_cost": 0.0008112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 114,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:39:30.734634+00:00",
+  "latency_s": 2.023,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

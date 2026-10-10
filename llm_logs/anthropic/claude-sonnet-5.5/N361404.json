@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361404",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596275-9LU7XBIsz5OsRqPnXoc8",
+    "object": "chat.completion",
+    "created": 1791596275,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description is of a robe with a deep back opening closed by a hook and loop tab. That sounds like a hospital gown or examination gown, or possibly a bathrobe. It does not say what the robe is made of or who it is for, so the classification is a best guess.\n\nA robe with a back opening could be a patient gown, which would be classified under 6211.43 (women's other garments of man-made fibers) or 6210. Bathrobes fall under 6208.91 (women's) or 6207.91 (men's). The deep back opening and the weak construction suggest a disposable or hospital-type gown, but the phrase \"robe\" points to a bathrobe or dressing gown. I'm choosing women's bathrobes of cotton: 6208.91.3010 is \"women's or girls' bathrobes, dressing gowns... of cotton\", or at least that is how I recall it. Alternatively, 6208.92.0010 covers man-made fibers. A knit-versus-woven question also arises, since the 6108 headings cover knit nightwear. I'm going with woven cotton 6208.91.\n\n{\"hts_code\": \"6208.91.3010\", \"reason\": \"Best-fit guess is a woven women's robe (bathrobe/dressing gown type) of cotton under heading 6208, since the description gives no fabric, knit/woven or gender details.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 431,
+      "total_tokens": 619,
+      "cost": 0.004686,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004686,
+        "upstream_inference_prompt_cost": 0.000376,
+        "upstream_inference_completions_cost": 0.00431
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6208913010",
+  "predicted_reason": "Best-fit guess is a woven women's robe (bathrobe/dressing gown type) of cotton under heading 6208, since the description gives no fabric, knit/woven or gender details.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 431,
+    "total_tokens": 619,
+    "cost": 0.004686,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004686,
+      "upstream_inference_prompt_cost": 0.000376,
+      "upstream_inference_completions_cost": 0.00431
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:55.849227+00:00",
+  "latency_s": 4.923,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

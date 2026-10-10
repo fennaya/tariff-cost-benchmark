@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358476",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "8412298045",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595616-4IHZ5JLPee1XymGqm7DZ",
+    "object": "chat.completion",
+    "created": 1791595616,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling covering two articles: a hydraulic cylinder and an electric actuator for agricultural seeders. I need a single code, so I'm choosing the hydraulic cylinder as the first article.\n\nHydraulic cylinders fall under 8412.21 (hydraulic power engines and motors, linear acting (cylinders)). The statistical suffix is 8412.21.0075, \"Other\" (the 8412.21.0015 suffix is for hydraulic cylinders for aircraft or similar). Part 8412.21.00 is a single subheading with suffixes: 8412.21.0015 is for aircraft use, and 8412.21.0045 covers... The suffix list I recall is 8412.21.00: 15 (hydraulic fluid power cylinders for civil aircraft), 45 (other hydraulic fluid power cylinders), 60 (other), 75 (other). I'm not certain of the exact structure. I believe the current HTS has 8412.21.0015 (Hydraulic fluid power cylinders and actuators of civil aircraft?), 8412.21.0045, 8412.21.0060, and 8412.21.0075. I'll go with 8412.21.0075 as the general \"Other\".\n\nThe electric actuator would likely fall under 8501 or 8505.20, so it would be classified differently, but I'm answering for the first article.\n\n{\"hts_code\": \"8412.21.0075\", \"reason\": \"The hydraulic cylinder is a linear-acting hydraulic fluid power engine (cylinder) of heading 8412, subheading 8412.21, in the residual 'other' provision; the electric actuator would be classified separately.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 600,
+      "completion_tokens": 547,
+      "total_tokens": 1147,
+      "cost": 0.00667,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00667,
+        "upstream_inference_prompt_cost": 0.0012,
+        "upstream_inference_completions_cost": 0.00547
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8412210075",
+  "predicted_reason": "The hydraulic cylinder is a linear-acting hydraulic fluid power engine (cylinder) of heading 8412, subheading 8412.21, in the residual 'other' provision; the electric actuator would be classified separately.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 600,
+    "completion_tokens": 547,
+    "total_tokens": 1147,
+    "cost": 0.00667,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00667,
+      "upstream_inference_prompt_cost": 0.0012,
+      "upstream_inference_completions_cost": 0.00547
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:57.195402+00:00",
+  "latency_s": 5.502,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

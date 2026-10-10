@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359718",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "9027504060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595897-il0ZA9mDf2PmjU4LWRyM",
+    "object": "chat.completion",
+    "created": 1791595897,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a balanced photodetector with two photodiodes, a differential amplifier, and a demodulation mixer. It is likely classified in heading 8541 as a photosensitive semiconductor device, or in 9030 as an instrument for measuring or checking electrical quantities. It could also fall under 9013 or 9027.\n\nRelevant CBP rulings on balanced detectors, such as Thorlabs PDB series, have gone to 9030.40 or 9030.82. I recall one ruling placing a balanced photodetector in 8541.49.7000 (photosensitive semiconductor devices). Thorlabs balanced amplified photodetectors have been classified in 8541.49.9500 (other photosensitive semiconductor devices, other). A module with amplifier, mixer and housing is more than a bare photodiode, but the Note 9(b) to Chapter 85 treatment of photodiodes assembled with other components keeps it in 8541 where it is still essentially a photosensitive device.\n\nThe more specific choice is the 8541.49 subheading, \"Photosensitive semiconductor devices: other: other\". Under the 2022 schedule, 8541.49.10 covers photovoltaic and photodiodes, 8541.49.70 covers other photosensitive devices, and 8541.49.95 covers the rest. Since photodiodes are specifically 8541.49.10 (\"Photodiodes\"), 8541.49.10 may apply, with the statistical suffix 8541.49.1000 as a possible code. I'll go with 8541.49.9500 following the recalled ruling on the Thorlabs detectors.\n\n```json\n{\"hts_code\": \"8541.49.9500\", \"reason\": \"The balanced photodetector is a photosensitive semiconductor device (two photodiodes with integrated amplifier), so it is classified in heading 8541 as an other photosensitive semiconductor device.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 780,
+      "completion_tokens": 620,
+      "total_tokens": 1400,
+      "cost": 0.00776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00776,
+        "upstream_inference_prompt_cost": 0.00156,
+        "upstream_inference_completions_cost": 0.0062
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8541499500",
+  "predicted_reason": "The balanced photodetector is a photosensitive semiconductor device (two photodiodes with integrated amplifier), so it is classified in heading 8541 as an other photosensitive semiconductor device.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 780,
+    "completion_tokens": 620,
+    "total_tokens": 1400,
+    "cost": 0.00776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00776,
+      "upstream_inference_prompt_cost": 0.00156,
+      "upstream_inference_completions_cost": 0.0062
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:37.915685+00:00",
+  "latency_s": 6.013,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

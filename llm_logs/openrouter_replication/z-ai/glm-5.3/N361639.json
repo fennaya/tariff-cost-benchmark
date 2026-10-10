@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361639",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "3004909216",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600215-IdJX2ZjJpuB96EMHKx3V",
+    "object": "chat.completion",
+    "created": 1791600215,
+    "model": "z-ai/glm-5.3",
+    "provider": "Io Net",
+    "system_fingerprint": "vllm-0.28.0-tp4-ep-9600fb5f",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"The provided text contains only CBP ruling boilerplate and no actual product description, so no HTSUS classification can be determined.\"}",
+          "refusal": null,
+          "reasoning": "No product description\u2014just ruling boilerplate. Cannot classify.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "No product description\u2014just ruling boilerplate. Cannot classify.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 59,
+      "total_tokens": 413,
+      "cost": 0.0004661,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004661,
+        "upstream_inference_prompt_cost": 0.0002655,
+        "upstream_inference_completions_cost": 0.0002006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 12,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The provided text contains only CBP ruling boilerplate and no actual product description, so no HTSUS classification can be determined.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 59,
+    "total_tokens": 413,
+    "cost": 0.0004661,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004661,
+      "upstream_inference_prompt_cost": 0.0002655,
+      "upstream_inference_completions_cost": 0.0002006
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 12,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Io Net",
+  "requested_at": "2026-10-10T02:43:35.599822+00:00",
+  "latency_s": 1.589,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

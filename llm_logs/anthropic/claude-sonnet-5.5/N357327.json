@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357327",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595384-JRJgc6US7gSk36tFL54A",
+    "object": "chat.completion",
+    "created": 1791595384,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP/Commerce scope or EAPA case on herbal tinctures. Heading 1302 covers vegetable saps and extracts, and 1302.19 covers \"Other\" extracts. Licorice extract is in 1302.12, but the mixture here includes several botanicals and is dissolved in glycerin, so 1302.19 is the better fit.\n\nThe 1302.19 subheadings run as follows: 1302.19.05 (containing alcohol), 1302.19.10 (ginseng), 1302.19.15 (medicinal, other), 1302.19.20 (flavoring), and 1302.19.91 (other). The stats suffixes under 1302.19.91 are 1302.19.9100 and so on.\n\nThe 1302.19.15 line reads \"Of plants used primarily in pharmacy... other\" and carries statistical suffixes. I recall 1302.19.4000 as \"Other\" under a \"Medicinal\" heading, and I believe the structure is:\n- 1302.19.05: Mixtures of vegetable extracts, containing alcohol\n- 1302.19.10: Of ginseng\n- 1302.19.15 / 1302.19.20 / 1302.19.30 / 1302.19.40 / 1302.19.91: Other (various)\n\nI am not certain of the exact suffix, so I chose 1302.19.4000 as a medicinal-use \"Other\" line. The plants (licorice, sarsaparilla, Stephania) are used medicinally, so a medicinal \"Other\" line is reasonable.\n\n{\"hts_code\": \"1302.19.4000\", \"reason\": \"Liquid herbal tinctures made by macerating medicinal botanicals in glycerin and water are vegetable extracts of heading 1302, falling under the 'other' extracts of subheading 1302.19, which I assigned to the medicinal-use line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 464,
+      "completion_tokens": 610,
+      "total_tokens": 1074,
+      "cost": 0.007028,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007028,
+        "upstream_inference_prompt_cost": 0.000928,
+        "upstream_inference_completions_cost": 0.0061
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302194000",
+  "predicted_reason": "Liquid herbal tinctures made by macerating medicinal botanicals in glycerin and water are vegetable extracts of heading 1302, falling under the 'other' extracts of subheading 1302.19, which I assigned to the medicinal-use line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 464,
+    "completion_tokens": 610,
+    "total_tokens": 1074,
+    "cost": 0.007028,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007028,
+      "upstream_inference_prompt_cost": 0.000928,
+      "upstream_inference_completions_cost": 0.0061
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:04.944765+00:00",
+  "latency_s": 6.499,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

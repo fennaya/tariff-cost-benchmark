@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360909",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "1904900120",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600132-NYqzul7l0Xkdkf8krTvk",
+    "object": "chat.completion",
+    "created": 1791600132,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1904.10.0095\", \"reason\": \"The product is a prepared ready-to-heat rice-based meal in which the cooked, steamed, and roasted rice patty is the essential character component, classifiable as a prepared food obtained from rice in HTSUS heading 1904, specifically the frozen prepared rice provision at 1904.10.0095.\"}",
+          "refusal": null,
+          "reasoning": "Rice-based prepared meal \u2014 likely 1904.10 (prepared foods of rice). Frozen prepared rice burger \u2014 1904.10.0095? Actually 1904.10.00 (prepared foods obtained by swelling/roasting cereals) \u2014 rice patty steamed/roasted. CBP rulings classify rice burgers under 1904.10.0095? There's 1904.10.0050/0095. Use 1904.10.0095.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Rice-based prepared meal \u2014 likely 1904.10 (prepared foods of rice). Frozen prepared rice burger \u2014 1904.10.0095? Actually 1904.10.00 (prepared foods obtained by swelling/roasting cereals) \u2014 rice patty steamed/roasted. CBP rulings classify rice burgers under 1904.10.0095? There's 1904.10.0050/0095. Use 1904.10.0095.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 736,
+      "completion_tokens": 195,
+      "total_tokens": 931,
+      "cost": 0.00092204,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00092204,
+        "upstream_inference_prompt_cost": 0.00010304,
+        "upstream_inference_completions_cost": 0.000819
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 108,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1904100095",
+  "predicted_reason": "The product is a prepared ready-to-heat rice-based meal in which the cooked, steamed, and roasted rice patty is the essential character component, classifiable as a prepared food obtained from rice in HTSUS heading 1904, specifically the frozen prepared rice provision at 1904.10.0095.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 736,
+    "completion_tokens": 195,
+    "total_tokens": 931,
+    "cost": 0.00092204,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00092204,
+      "upstream_inference_prompt_cost": 0.00010304,
+      "upstream_inference_completions_cost": 0.000819
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 108,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:42:12.759264+00:00",
+  "latency_s": 3.787,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N352363",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "2916121000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594021-96IUvJa93F5bAHe9xRgz",
+    "object": "chat.completion",
+    "created": 1791594021,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2916.15.20\", \"reason\": \"2-hydroxy-3-phenoxypropyl acrylate is an ester of acrylic acid, classified as an unsaturated acrylate ester in HTSUS 2916.15.\"}",
+          "refusal": null,
+          "reasoning": "Aromatic ester of acrylic acid \u2014 acrylate esters: 2916.15? 2916.15 covers esters of acrylic acid... Actually 2916.15 is acrylates/methacrylates, but aromatic? 2916.15.20? Acrylates: 2916.15.20? Let me recall: 2916.15.20 methyl acrylate... Esters of acrylic acid: 2916.15.20 \"other\"? Common ruling: 2-hydroxy-3-phenoxypropyl acrylate classified 2916.15.20? Actually 2916.15.20 is \"Methyl acrylate\"? Subheadings: 2916.15.10 methyl acrylate? Hmm. Rulings cite 2916.15.20 for other acrylates? I'll answer 2916.15.20.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Aromatic ester of acrylic acid \u2014 acrylate esters: 2916.15? 2916.15 covers esters of acrylic acid... Actually 2916.15 is acrylates/methacrylates, but aromatic? 2916.15.20? Acrylates: 2916.15.20? Let me recall: 2916.15.20 methyl acrylate... Esters of acrylic acid: 2916.15.20 \"other\"? Common ruling: 2-hydroxy-3-phenoxypropyl acrylate classified 2916.15.20? Actually 2916.15.20 is \"Methyl acrylate\"? Subheadings: 2916.15.10 methyl acrylate? Hmm. Rulings cite 2916.15.20 for other acrylates? I'll answer 2916.15.20.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 264,
+      "total_tokens": 476,
+      "cost": 0.001592268,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001592268,
+        "upstream_inference_prompt_cost": 8.268e-06,
+        "upstream_inference_completions_cost": 0.001584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 222,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "29161520",
+  "predicted_reason": "2-hydroxy-3-phenoxypropyl acrylate is an ester of acrylic acid, classified as an unsaturated acrylate ester in HTSUS 2916.15.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 264,
+    "total_tokens": 476,
+    "cost": 0.001592268,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001592268,
+      "upstream_inference_prompt_cost": 8.268e-06,
+      "upstream_inference_completions_cost": 0.001584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 222,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T01:00:21.526680+00:00",
+  "latency_s": 2.959,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

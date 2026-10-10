@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358743",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599812-mmJpOX69JGZklF0XPPYJ",
+    "object": "chat.completion",
+    "created": 1791599812,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.43.0060\", \"reason\": \"Per CBP practice, a child's padded, durable Halloween costume (bodysuit, hood, wings, mask) is not a flimsy festive article of heading 9505 but rather wearing apparel, classified as an other garment of man-made fibers in heading 6211.\"}",
+          "refusal": null,
+          "reasoning": "Festive costume classification \u2014 children's costume, not festive article; classified as apparel. Ghastly Gargoyle costume \u2014 textile suit. Likely 6211.43.0060? Actually CBP rulings on costumes: if not festive (Halloween costumes are not \"festive articles\"), classify as wearing apparel. Bodysuit of man-made fibers: 6211.43.0091? Chapter 62, other garments, man-made fibers: 6211.43.0060 (other). Hmm. Known ruling: gargoyle costume classified 9505? No\u2014Halloween costumes for children classified as apparel unless flimsy. Padded bodysuit \u2192 6211.43.0060? The specific HTS: 6211.43.0060 \"Of man-made fibers, Other\". Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Festive costume classification \u2014 children's costume, not festive article; classified as apparel. Ghastly Gargoyle costume \u2014 textile suit. Likely 6211.43.0060? Actually CBP rulings on costumes: if not festive (Halloween costumes are not \"festive articles\"), classify as wearing apparel. Bodysuit of man-made fibers: 6211.43.0091? Chapter 62, other garments, man-made fibers: 6211.43.0060 (other). Hmm. Known ruling: gargoyle costume classified 9505? No\u2014Halloween costumes for children classified as apparel unless flimsy. Padded bodysuit \u2192 6211.43.0060? The specific HTS: 6211.43.0060 \"Of man-made fibers, Other\". Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 138,
+      "completion_tokens": 266,
+      "total_tokens": 404,
+      "cost": 0.000932,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000932,
+        "upstream_inference_prompt_cost": 2.76e-05,
+        "upstream_inference_completions_cost": 0.0009044
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 184,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211430060",
+  "predicted_reason": "Per CBP practice, a child's padded, durable Halloween costume (bodysuit, hood, wings, mask) is not a flimsy festive article of heading 9505 but rather wearing apparel, classified as an other garment of man-made fibers in heading 6211.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 138,
+    "completion_tokens": 266,
+    "total_tokens": 404,
+    "cost": 0.000932,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000932,
+      "upstream_inference_prompt_cost": 2.76e-05,
+      "upstream_inference_completions_cost": 0.0009044
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 184,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:36:53.034319+00:00",
+  "latency_s": 2.431,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358093",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "6802930090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599722-HAOFc1sOIpCn15RtDk6C",
+    "object": "chat.completion",
+    "created": 1791599722,
+    "model": "z-ai/glm-5.3",
+    "provider": "AtlasCloud",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0090\", \"reason\": \"Polished and beveled granite slabs, simply cut to rectangular shape for countertops, are classified as worked monumental or building stone of granite other than setts, curbstones and flagstones.\"}",
+          "refusal": null,
+          "reasoning": "Granite, merely cut/sawn, polished \u2014 6802.93.0090? Granite HTS: 6802.93.00 \u2014 monumental/building stone. Subheadings: 6802.93.1000 marble? Actually 6802.93 covers granite. 6802.93.0090 other. Use 6802.93.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Granite, merely cut/sawn, polished \u2014 6802.93.0090? Granite HTS: 6802.93.00 \u2014 monumental/building stone. Subheadings: 6802.93.1000 marble? Actually 6802.93 covers granite. 6802.93.0090 other. Use 6802.93.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 150,
+      "total_tokens": 402,
+      "cost": 0.0010128,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010128,
+        "upstream_inference_prompt_cost": 0.0003528,
+        "upstream_inference_completions_cost": 0.00066
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 88,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930090",
+  "predicted_reason": "Polished and beveled granite slabs, simply cut to rectangular shape for countertops, are classified as worked monumental or building stone of granite other than setts, curbstones and flagstones.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 150,
+    "total_tokens": 402,
+    "cost": 0.0010128,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010128,
+      "upstream_inference_prompt_cost": 0.0003528,
+      "upstream_inference_completions_cost": 0.00066
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 88,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AtlasCloud",
+  "requested_at": "2026-10-10T02:35:22.527689+00:00",
+  "latency_s": 2.857,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

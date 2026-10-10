@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361352",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8302500000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596254-VpbxEUMiYdvweVVTVujM",
+    "object": "chat.completion",
+    "created": 1791596254,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on steel racks for shipping containers. The likely classification is 9403.20.0090, \"Other metal furniture: Other.\" Alternatively, 7326.90 for other articles of iron or steel, or 9403.90 for parts. Shelving units are generally furniture under 9403.20. However, racks affixed to walls are covered by the 9403 definition of furniture, which includes articles designed to be fixed to the wall and used to hold objects, so shelving and racks fit that heading.\n\nSubheading choice: 9403.20.0050 covers \"Other metal furniture: Other: Household\"? The actual subdivisions are 9403.20.0010 (luggage racks, barber chairs...), 9403.20.0020 (Other: Tables?), 9403.20.0050 (Shelving units?), 9403.20.0080 (Other: Other), and 9403.20.0090 (Other). I recall 9403.20.0050 as \"Other: Other: Household\" and 9403.20.0090 as \"Other: Other.\" Because the racks are for storage in sea containers (not household), 9403.20.0090 fits the best.\n\nThe three items are unassembled but classified as complete under GRI 2(a). The mezzanine kit lacks decking, but it is still a rack.\n\n```json\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"Unassembled wall-mounted steel storage racks and shelving kits are classified as other metal furniture (non-household) under heading 9403 per GRI 1 and 2(a).\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 851,
+      "completion_tokens": 506,
+      "total_tokens": 1357,
+      "cost": 0.006762,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006762,
+        "upstream_inference_prompt_cost": 0.001702,
+        "upstream_inference_completions_cost": 0.00506
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "Unassembled wall-mounted steel storage racks and shelving kits are classified as other metal furniture (non-household) under heading 9403 per GRI 1 and 2(a).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 851,
+    "completion_tokens": 506,
+    "total_tokens": 1357,
+    "cost": 0.006762,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006762,
+      "upstream_inference_prompt_cost": 0.001702,
+      "upstream_inference_completions_cost": 0.00506
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:34.471875+00:00",
+  "latency_s": 6.055,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359553",
+  "rulingDate": "2026-03-24T00:00:00",
+  "true_code": "8419899585",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595868-Y3MiEVJpEucZTollWlCX",
+    "object": "chat.completion",
+    "created": 1791595868,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-type question. Candidates: 8419.50 (heat exchange units), 8418.69 (refrigerating equipment), 8419.89, and 9032.89 (temperature control instruments).\n\nThe unit is a thermoelectric temperature control unit that both heats and cools, with a plate heat exchanger and an immersion heater. Heading 8418 covers refrigerating equipment, including heat pumps. The thermoelectric Peltier module is a form of refrigeration, but heading 8418.69 covers \"other refrigerating or freezing equipment.\" Heading 8419.50 covers heat exchange units, but the Peltier module does not fit well there, and the machine as a whole is not simply a heat exchanger.\n\nHeading 8419.89 covers machinery for treatment of materials by a process involving a temperature change, such as heating or cooling. But this is a chiller that circulates coolant to other equipment, not a machine that processes materials itself.\n\nI recall CBP rulings on semiconductor chillers, such as the Unisem or SMC thermo-chillers, which were classified in 8419.50 or 8418.69. For a thermoelectric dual-channel unit, I think the ruling went to 8418.69.0120, \"Other refrigerating or freezing equipment; heat pumps: Other: Other: Refrigerating equipment,\" or possibly 8418.69.0100. The HTS has 8418.69.01 for \"Liquid chillers\" or similar, but I am not certain of the exact subdivision. I believe 8418.69.0120 is \"Other refrigerating or freezing equipment: Other: Industrial refrigeration/Other\".\n\nI'll go with 8418.69.0120.\n\n{\"hts_code\": \"8418.69.0120\", \"reason\": \"A thermoelectric (Peltier) and heat-exchanger based chiller/temperature control unit that circulates coolant to cool or heat process equipment is other refrigerating equipment of heading 8418, subheading 8418.69.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 891,
+      "completion_tokens": 656,
+      "total_tokens": 1547,
+      "cost": 0.008342,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008342,
+        "upstream_inference_prompt_cost": 0.001782,
+        "upstream_inference_completions_cost": 0.00656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8418690120",
+  "predicted_reason": "A thermoelectric (Peltier) and heat-exchanger based chiller/temperature control unit that circulates coolant to cool or heat process equipment is other refrigerating equipment of heading 8418, subheading 8418.69.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 891,
+    "completion_tokens": 656,
+    "total_tokens": 1547,
+    "cost": 0.008342,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008342,
+      "upstream_inference_prompt_cost": 0.001782,
+      "upstream_inference_completions_cost": 0.00656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:08.907532+00:00",
+  "latency_s": 5.954,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

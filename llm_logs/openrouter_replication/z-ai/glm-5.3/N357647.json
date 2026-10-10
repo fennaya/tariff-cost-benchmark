@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357647",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "7304515060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599674-Yiguyx96fk1wxc9pQqKp",
+    "object": "chat.completion",
+    "created": 1791599674,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7306.30.5030\", \"reason\": \"A seamless cold-worked steel tube of circular cross section (not drill casing) used as an airbag inflator bottle is classified as an other seamless tube of iron or steel in HTSUS 7306.30.\"}",
+          "refusal": null,
+          "reasoning": "Seamless cold-rolled steel tube \u2014 likely 7306.30 or drill casing? Airbag inflator tube \u2014 seamless steel tube of circular cross section, other: 7306.30.50? Actually seamless tubes of iron/steel other than drill casing: 7306.30.00. 10-digit: 7306.30.5030? Subheadings: 7306.30.50 other, cold-drawn... 7306.30.5030? I recall 7306.30.5030 \"other, having a wall thickness...\" Not sure. Common ruling answer: 7306.30.5030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Seamless cold-rolled steel tube \u2014 likely 7306.30 or drill casing? Airbag inflator tube \u2014 seamless steel tube of circular cross section, other: 7306.30.50? Actually seamless tubes of iron/steel other than drill casing: 7306.30.00. 10-digit: 7306.30.5030? Subheadings: 7306.30.50 other, cold-drawn... 7306.30.5030? I recall 7306.30.5030 \"other, having a wall thickness...\" Not sure. Common ruling answer: 7306.30.5030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 192,
+      "completion_tokens": 217,
+      "total_tokens": 409,
+      "cost": 0.001049024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001049024,
+        "upstream_inference_prompt_cost": 7.424e-06,
+        "upstream_inference_completions_cost": 0.0010416
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7306305030",
+  "predicted_reason": "A seamless cold-worked steel tube of circular cross section (not drill casing) used as an airbag inflator bottle is classified as an other seamless tube of iron or steel in HTSUS 7306.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 217,
+    "total_tokens": 409,
+    "cost": 0.001049024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001049024,
+      "upstream_inference_prompt_cost": 7.424e-06,
+      "upstream_inference_completions_cost": 0.0010416
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:34.699416+00:00",
+  "latency_s": 1.781,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

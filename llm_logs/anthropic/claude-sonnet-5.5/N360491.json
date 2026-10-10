@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360491",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004390055",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596098-zQxcMKhRHClzMMB93mSw",
+    "object": "chat.completion",
+    "created": 1791596098,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Glucagon is a polypeptide hormone, and in medicaments of heading 3004 it is classified as a hormone-containing product put up in measured doses or retail packings. Glucagon itself falls in heading 2937 (hormones, polypeptide hormones). Glucagon in bulk would be 2937.90.0000 (or 2937.29 for other). Here it is a finished injection in vials, so it goes to 3004.\n\nWithin 3004, the subheading is 3004.90 or 3004.39. Heading 3004.32 covers corticosteroid hormones. 3004.39 covers \"other\" hormones and steroids used primarily as hormones. In the HTSUS, 3004.39.00 is split into statistical suffixes: 3004.39.0010 for polypeptide hormones? Checking: 3004.39.00 has \"Other\" with suffixes 10 (Containing ... ) and 50 (Other). Rulings on glucagon kits (e.g., NY N0xxxx) classify glucagon for injection in 3004.39.0050, and the HTS 3004.39.0050 is \"Other\". Hormones ruling for glucagon: 3004.39.0050 seems right.\n\n```json\n{\"hts_code\": \"3004.39.0050\", \"reason\": \"Glucagon injection in measured-dose vials is a medicament containing a polypeptide hormone, classified in heading 3004 under the hormone subheading 3004.39 (other).\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 270,
+      "completion_tokens": 476,
+      "total_tokens": 746,
+      "cost": 0.0053,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0053,
+        "upstream_inference_prompt_cost": 0.00054,
+        "upstream_inference_completions_cost": 0.00476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004390050",
+  "predicted_reason": "Glucagon injection in measured-dose vials is a medicament containing a polypeptide hormone, classified in heading 3004 under the hormone subheading 3004.39 (other).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 476,
+    "total_tokens": 746,
+    "cost": 0.0053,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0053,
+      "upstream_inference_prompt_cost": 0.00054,
+      "upstream_inference_completions_cost": 0.00476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:58.327513+00:00",
+  "latency_s": 4.765,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

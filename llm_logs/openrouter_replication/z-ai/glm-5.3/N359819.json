@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359819",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "7018905000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599975-DZC3Q96iUJ4zVfpDJxNB",
+    "object": "chat.completion",
+    "created": 1791599975,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6702.90.6500\", \"reason\": \"The decorative artificial corn pieces with natural leaf attachments are regarded as artificial foliage/ornamental articles of other materials under heading 6702.\"}",
+          "refusal": null,
+          "reasoning": "Artificial decorative article \u2014 likely 6702.90 (artificial flowers/plants?) Corn with leaves... CBP ruling: artificial corn with natural leaves \u2014 classified 6702.90.00? Actually 6702.10/90 covers artificial flowers, foliage. Decorative corn could be 0602? No. Likely 6702.90.6500? HTS 6702.90.60? Current: 6702.90.6500? I recall 6702.90.6500 \"of other materials\". Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Artificial decorative article \u2014 likely 6702.90 (artificial flowers/plants?) Corn with leaves... CBP ruling: artificial corn with natural leaves \u2014 classified 6702.90.00? Actually 6702.10/90 covers artificial flowers, foliage. Decorative corn could be 0602? No. Likely 6702.90.6500? HTS 6702.90.60? Current: 6702.90.6500? I recall 6702.90.6500 \"of other materials\". Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 162,
+      "completion_tokens": 173,
+      "total_tokens": 335,
+      "cost": 0.0004778,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004778,
+        "upstream_inference_prompt_cost": 9.72e-05,
+        "upstream_inference_completions_cost": 0.0003806
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 123,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6702906500",
+  "predicted_reason": "The decorative artificial corn pieces with natural leaf attachments are regarded as artificial foliage/ornamental articles of other materials under heading 6702.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 173,
+    "total_tokens": 335,
+    "cost": 0.0004778,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004778,
+      "upstream_inference_prompt_cost": 9.72e-05,
+      "upstream_inference_completions_cost": 0.0003806
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 123,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:39:34.606055+00:00",
+  "latency_s": 3.015,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

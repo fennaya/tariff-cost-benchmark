@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363399",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "8307903000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600409-hgcM7HbwxLX0jwuPhL4y",
+    "object": "chat.completion",
+    "created": 1791600409,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7507.00.5000\", \"reason\": \"The inconel (nickel alloy) corrugated tube gives the bellows its essential character, making it an other article of nickel alloy under heading 7507.\"}",
+          "refusal": null,
+          "reasoning": "Bellows of nickel alloy \u2014 likely 7507.00.5000? Nickel alloy articles: 7507.00.50 (other articles of nickel alloy). Actually 7507.00.5000 other articles of nickel alloys.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Bellows of nickel alloy \u2014 likely 7507.00.5000? Nickel alloy articles: 7507.00.50 (other articles of nickel alloy). Actually 7507.00.5000 other articles of nickel alloys.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 201,
+      "completion_tokens": 104,
+      "total_tokens": 305,
+      "cost": 0.00046494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00046494,
+        "upstream_inference_prompt_cost": 2.814e-05,
+        "upstream_inference_completions_cost": 0.0004368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 50,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7507005000",
+  "predicted_reason": "The inconel (nickel alloy) corrugated tube gives the bellows its essential character, making it an other article of nickel alloy under heading 7507.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 201,
+    "completion_tokens": 104,
+    "total_tokens": 305,
+    "cost": 0.00046494,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00046494,
+      "upstream_inference_prompt_cost": 2.814e-05,
+      "upstream_inference_completions_cost": 0.0004368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:46:49.280960+00:00",
+  "latency_s": 2.335,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

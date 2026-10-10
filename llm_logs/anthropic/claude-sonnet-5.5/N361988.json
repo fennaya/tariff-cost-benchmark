@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361988",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "6307909891",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596396-I9NHPtjLWweOCdtNm8tD",
+    "object": "chat.completion",
+    "created": 1791596396,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an electric heating pad worn over the shoulders. The main candidates are heading 6307 (other made up textile articles) and heading 9404 (electrically heated blankets, 6360 style), and 8516.90 (parts).\n\nElectric heating pads of textile material are classified in 6360? Not exactly. HTSUS 6360 doesn't exist, so the real options are 8516.80 (electric heating resistors) and 9404.90 (articles of bedding), plus 6307.90.\n\nElectric blankets fall under 6301.10.00 (electric blankets). Heating pads are generally classified in 6307.90 in some CBP rulings, but I recall that rulings on electric heating pads (such as Sunbeam) were classified in 8516.80.80 as electrothermic appliances. Heating pads of textile with heating wire are typically 6307.90.9889 under a Note 1 to Section XI exclusion? Note 1(t) of Section XI excludes articles of Chapter 85, so textile articles with heating elements go to 8516. This wearable heating wrap would therefore be classified under 8516.79 or 8516.80, with 8516.79.00 covering other electrothermic appliances.\n\nHeading 8516 covers electric space heating and electrothermic appliances of a kind used for domestic purposes. Subheading 8516.79 is \"Other electrothermic appliances,\" with statistical suffix 8516.79.0070 for other. Heating pads were historically classified in 8516.79.0070 (other). I'll go with that.\n\n{\"hts_code\": \"8516.79.0070\", \"reason\": \"The wearable electric heating pad is an electrothermic appliance of a kind used for domestic purposes, which falls under heading 8516 as other electrothermic appliances; Section XI Note 1 excludes it from the textile chapters.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 594,
+      "completion_tokens": 599,
+      "total_tokens": 1193,
+      "cost": 0.007178,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007178,
+        "upstream_inference_prompt_cost": 0.001188,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8516790070",
+  "predicted_reason": "The wearable electric heating pad is an electrothermic appliance of a kind used for domestic purposes, which falls under heading 8516 as other electrothermic appliances; Section XI Note 1 excludes it from the textile chapters.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 594,
+    "completion_tokens": 599,
+    "total_tokens": 1193,
+    "cost": 0.007178,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007178,
+      "upstream_inference_prompt_cost": 0.001188,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:56.644675+00:00",
+  "latency_s": 6.288,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

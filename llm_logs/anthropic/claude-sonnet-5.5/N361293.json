@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361293",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "6809900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596240-zaCUFvbjfMhv8uZeq2DM",
+    "object": "chat.completion",
+    "created": 1791596240,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on terrazzo cabinet pulls made of plaster. The candidates are 8302.10 to 8302.42 (base metal mountings and fittings for furniture) and 6809.90 (articles of plaster). Because the pulls are made of plaster with only threaded metal inserts, they are not base metal fittings, so Chapter 83 does not fit. Heading 6809 covers articles of plaster or compositions based on plaster, and 6809.90.00 is \"other articles\" with the statistical suffix 6809.90.0010 or 6809.90.0000.\n\nThe HTSUS lists 6809.90.00 as \"Other articles\" with a 00 suffix, so the full code would be 6809.90.0000. I recall that the ruling classified them in 6809.90.0000, so I am going with that.\n\n{\"hts_code\": \"6809.90.0000\", \"reason\": \"The pulls and knobs are articles made of plaster (gypsum plaster with plaster chips) with only small metal inserts for mounting, so they fall in heading 6809 as other articles of plaster rather than base metal furniture fittings of heading 8302.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 467,
+      "completion_tokens": 373,
+      "total_tokens": 840,
+      "cost": 0.004664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004664,
+        "upstream_inference_prompt_cost": 0.000934,
+        "upstream_inference_completions_cost": 0.00373
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6809900000",
+  "predicted_reason": "The pulls and knobs are articles made of plaster (gypsum plaster with plaster chips) with only small metal inserts for mounting, so they fall in heading 6809 as other articles of plaster rather than base metal furniture fittings of heading 8302.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 467,
+    "completion_tokens": 373,
+    "total_tokens": 840,
+    "cost": 0.004664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004664,
+      "upstream_inference_prompt_cost": 0.000934,
+      "upstream_inference_completions_cost": 0.00373
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:21.045568+00:00",
+  "latency_s": 3.747,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

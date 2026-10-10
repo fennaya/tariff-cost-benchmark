@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363296",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "8517620090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600400-yZTtND5kMcTccbVhYQNO",
+    "object": "chat.completion",
+    "created": 1791600400,
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8517.62.0090\", \"reason\": \"The Logic Board PCBA's principal function is the reception, conversion, and transmission of data over WiFi/Ethernet networks, making it classifiable as other apparatus for the transmission of data under heading 8517.62.\"}",
+          "refusal": null,
+          "reasoning": "This is a PCBA that is a network communication subsystem. Under HTSUS, PCB assemblies are typically classified under 8517 (communication apparatus) if they have communication function, or 8537 (boards, panels, consoles with two or more apparatus of 8535/8536 for electric control), or 8471 if it's an ADP machine part.\n\nCBP rulings: PCBAs with network communication function \u2014 e.g., NY rulings classify wireless communication modules under 8517.62.00 (e.g., 8517.62.0090 for other). WiFi module PCBAs classified 8517.62.00. Recent: 8517.62.0050? Let me recall: 8517.62.00 covers \"Machines for the reception, conversion and transmission or regeneration of voice, images or other data\". Statistical suffixes: 8517.62.0010 (routers), 0020 (gateways), 0030 (LAN), 0040? ... 8517.62.0090 other. Actually 8517.62.0050 is \"other\" for... Let me think: 8517.62.0090 \"Other\" \u2014 machines for reception/conversion/transmission of data. There's also 8517.62.0050? I believe suffixes: 0010 routers, 0020 gateways, 0030 local area network apparatus (LAN), 0040? Hmm. There's 8517.62.0050 \"Other \u2014 other\"? Actually 8517.62.0090 is \"Other\". Safe answer: 8517.62.0090.\n\nReason: PCBA's principal function is data transmission over network (WiFi/Ethernet), classified as apparatus for reception/conversion/transmission of data.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a PCBA that is a network communication subsystem. Under HTSUS, PCB assemblies are typically classified under 8517 (communication apparatus) if they have communication function, or 8537 (boards, panels, consoles with two or more apparatus of 8535/8536 for electric control), or 8471 if it's an ADP machine part.\n\nCBP rulings: PCBAs with network communication function \u2014 e.g., NY rulings classify wireless communication modules under 8517.62.00 (e.g., 8517.62.0090 for other). WiFi module PCBAs classified 8517.62.00. Recent: 8517.62.0050? Let me recall: 8517.62.00 covers \"Machines for the reception, conversion and transmission or regeneration of voice, images or other data\". Statistical suffixes: 8517.62.0010 (routers), 0020 (gateways), 0030 (LAN), 0040? ... 8517.62.0090 other. Actually 8517.62.0050 is \"other\" for... Let me think: 8517.62.0090 \"Other\" \u2014 machines for reception/conversion/transmission of data. There's also 8517.62.0050? I believe suffixes: 0010 routers, 0020 gateways, 0030 local area network apparatus (LAN), 0040? Hmm. There's 8517.62.0050 \"Other \u2014 other\"? Actually 8517.62.0090 is \"Other\". Safe answer: 8517.62.0090.\n\nReason: PCBA's principal function is data transmission over network (WiFi/Ethernet), classified as apparatus for reception/conversion/transmission of data.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 214,
+      "completion_tokens": 473,
+      "total_tokens": 687,
+      "cost": 0.002922102,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002922102,
+        "upstream_inference_prompt_cost": 8.4102e-05,
+        "upstream_inference_completions_cost": 0.002838
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 404,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517620090",
+  "predicted_reason": "The Logic Board PCBA's principal function is the reception, conversion, and transmission of data over WiFi/Ethernet networks, making it classifiable as other apparatus for the transmission of data under heading 8517.62.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 473,
+    "total_tokens": 687,
+    "cost": 0.002922102,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002922102,
+      "upstream_inference_prompt_cost": 8.4102e-05,
+      "upstream_inference_completions_cost": 0.002838
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 404,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T02:46:40.626220+00:00",
+  "latency_s": 4.293,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

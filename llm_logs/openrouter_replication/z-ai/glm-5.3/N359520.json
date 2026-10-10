@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359520",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599928-35aOdAajrDcSq1owekSp",
+    "object": "chat.completion",
+    "created": 1791599928,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8413.91.0590\", \"reason\": \"The hydro separator functions as a component of hydraulic pumping circuits, and CBP has classified such hydraulic separators as other parts of centrifugal pumps under HTSUS 8413.91.0590.\"}",
+          "refusal": null,
+          "reasoning": "Hydraulic separator \u2014 likely 8413.91 parts of pumps? It's a separator/valve assembly... Similar NY rulings classify hydraulic separators under 8413.91.0590 (parts of pumps) or 8481. Actually Caleffi hydro separator rulings: NY N-series classified as 8413.91.0590? I recall ruling classifying hydraulic separator as part of centrifugal pumps 8413.91.0590. Go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hydraulic separator \u2014 likely 8413.91 parts of pumps? It's a separator/valve assembly... Similar NY rulings classify hydraulic separators under 8413.91.0590 (parts of pumps) or 8481. Actually Caleffi hydro separator rulings: NY N-series classified as 8413.91.0590? I recall ruling classifying hydraulic separator as part of centrifugal pumps 8413.91.0590. Go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 362,
+      "completion_tokens": 169,
+      "total_tokens": 531,
+      "cost": 0.00079236,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00079236,
+        "upstream_inference_prompt_cost": 4.876e-05,
+        "upstream_inference_completions_cost": 0.0007436
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 104,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8413910590",
+  "predicted_reason": "The hydro separator functions as a component of hydraulic pumping circuits, and CBP has classified such hydraulic separators as other parts of centrifugal pumps under HTSUS 8413.91.0590.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 169,
+    "total_tokens": 531,
+    "cost": 0.00079236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00079236,
+      "upstream_inference_prompt_cost": 4.876e-05,
+      "upstream_inference_completions_cost": 0.0007436
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 104,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:38:49.061584+00:00",
+  "latency_s": 3.589,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

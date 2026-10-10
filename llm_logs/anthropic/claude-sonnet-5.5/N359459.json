@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359459",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "8467990190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595844-4qSbfsrZ5faWqggWx3nd",
+    "object": "chat.completion",
+    "created": 1791595844,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on backing plate adapters. The components are imported unassembled, and the finished adapter would be a part of a backing pad for a hand-held power tool. Under GRI 2(a), unassembled articles are classified as the assembled article. The completed adapter is a tool holder or a part of a tool.\n\nThe likely candidates are:\n- 8466.20 covers work holders. Its parts and accessories for machine tools fall under 8466.20, but for hand-held tools the heading is 8467.\n- 8467.92 covers parts of pneumatic tools.\n- 8467.99 covers parts of other tools. Under 8467.99.00, the full code is 8467.99.0195 or similar.\n- 8466.10 covers tool holders and self-opening dieheads. Its subheading 8466.10.01 covers tool holders for the tools of heading 8467, and the statistical suffix is 8466.10.0140 or 8466.10.0160.\n\nA backing pad holding abrasive discs on a hand-held power tool is a tool holder for the tools of 8467, rather than a part of the tool itself. In HTSUS, 8466.10.01 covers \"Tool holders and self-opening dieheads\", with 8466.10.0105 for those for machine tools of 8456 and 8466.10.0125 for those for 8457-8465. The remaining subheadings include 8466.10.0145 or 8466.10.0160 for those for tools of 8467. I recall 8466.10.0150 as well, though I am less certain of it. I'll go with 8466.10.0160, which I believe is the \"other\" category.\n\n```json\n{\"hts_code\": \"8466.10.0160\", \"reason\": \"Under GRI 2(a) the unassembled shaft and plate are classified as the finished backing plate adapter, a tool holder for hand-held power tools, which falls under heading 8466 as a tool holder.\"}\n```\n\nCorrection: here is the same answer with only the JSON object, as requested.\n\n{\"hts_code\": \"8466.10.0160\", \"reason\": \"Under GRI 2(a) the unassembled shaft and plate are classified as the finished backing plate adapter, a tool holder for hand-held power tools, which falls under heading 8466 as a tool holder.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 470,
+      "completion_tokens": 734,
+      "total_tokens": 1204,
+      "cost": 0.00828,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00828,
+        "upstream_inference_prompt_cost": 0.00094,
+        "upstream_inference_completions_cost": 0.00734
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8466100160",
+  "predicted_reason": "Under GRI 2(a) the unassembled shaft and plate are classified as the finished backing plate adapter, a tool holder for hand-held power tools, which falls under heading 8466 as a tool holder.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 470,
+    "completion_tokens": 734,
+    "total_tokens": 1204,
+    "cost": 0.00828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00828,
+      "upstream_inference_prompt_cost": 0.00094,
+      "upstream_inference_completions_cost": 0.00734
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:44.387263+00:00",
+  "latency_s": 12.139,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

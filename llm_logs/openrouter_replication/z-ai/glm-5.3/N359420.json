@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359420",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "3824999397",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599907-ZJFu9VflMGNLjAgOT853",
+    "object": "chat.completion",
+    "created": 1791599907,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2921.19.5000\", \"reason\": \"These acyclic tertiary alkylamines (mixtures of C8\u2013C10 N-alkyl-N-methylamines) are oxygen-free acyclic monoamines not specified in the more specific subheadings, classified under HTSUS 2921.19.5000.\"}",
+          "refusal": null,
+          "reasoning": "Tertiary amines \u2014 2921.11? Acyclic monoamines: 2921.11.0000? Methylamine etc. Tertiary acyclic amines: 2921.19.5000? Actually 2921.11 covers methylamine, trimethylamine... 2921.11.0000 \"methylamine, trimethylamine and dodecylamine\"? Dodecylamine is 2921.11.0000? NY ruling: N,N-dimethyloctylamine classified 2921.19.5000? There's NY N246864? Tertiary alkyl amines like N,N-dimethyldodecylamine \u2192 2921.19.5000? Actually 2921.19.5000 is \"other\". I'll answer 2921.19.5000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Tertiary amines \u2014 2921.11? Acyclic monoamines: 2921.11.0000? Methylamine etc. Tertiary acyclic amines: 2921.19.5000? Actually 2921.11 covers methylamine, trimethylamine... 2921.11.0000 \"methylamine, trimethylamine and dodecylamine\"? Dodecylamine is 2921.11.0000? NY ruling: N,N-dimethyloctylamine classified 2921.19.5000? There's NY N246864? Tertiary alkyl amines like N,N-dimethyldodecylamine \u2192 2921.19.5000? Actually 2921.19.5000 is \"other\". I'll answer 2921.19.5000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 275,
+      "total_tokens": 482,
+      "cost": 0.00122656,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00122656,
+        "upstream_inference_prompt_cost": 1.656e-05,
+        "upstream_inference_completions_cost": 0.00121
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 197,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2921195000",
+  "predicted_reason": "These acyclic tertiary alkylamines (mixtures of C8\u2013C10 N-alkyl-N-methylamines) are oxygen-free acyclic monoamines not specified in the more specific subheadings, classified under HTSUS 2921.19.5000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 207,
+    "completion_tokens": 275,
+    "total_tokens": 482,
+    "cost": 0.00122656,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00122656,
+      "upstream_inference_prompt_cost": 1.656e-05,
+      "upstream_inference_completions_cost": 0.00121
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 197,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:38:27.880069+00:00",
+  "latency_s": 2.398,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

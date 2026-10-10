@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357938",
+  "rulingDate": "2026-02-09T00:00:00",
+  "true_code": "7311000090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595520-OTc6y2HoAGq6WH6oF0rn",
+    "object": "chat.completion",
+    "created": 1791595520,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Steel storage tanks for gases, capacity over 300 L, fall under heading 7309 or 7311. Heading 7311 covers containers for compressed or liquefied gas, of iron or steel. Propane storage vessels hold liquefied gas under pressure, so 7311 applies. Heading 7309 excludes containers for compressed or liquefied gas, which supports 7311.\n\nWithin 7311, subheading 7311.00.00 is split into 7311.00.00 with statistical suffixes. The 2023 HTS has 7311.00.00 with these breakouts:\n- 7311.00.00.30: Seamless\n- 7311.00.00.60: Other (older versions had 7311.00.00.60: Of a capacity of 1,000 L or more)\n- 7311.00.00.90: Other\n\nMore recent HTS versions list 7311.00.00 as \"Containers for compressed or liquefied gas, of iron or steel,\" with 7311.00.00.30 for \"Seamless: Of a capacity less than 1000 L\", 7311.00.00.60 \"Other: Of a capacity of less than 1000 L,\" 7311.00.00.90 \"Other\". Here the vessels are welded and far larger than 1,000 L, so the \"Other\" category applies, which is 7311.00.00.90.\n\nSome versions of 7311.00.00 show these breakouts:\n- 7311.00.00.15 / .30 / .45 / .60 / .75 / .90\n- 7311.00.00.60 is \"Other: Welded...\"\n\nI could not verify the exact suffix, so I am choosing 7311.00.00.90 as the best fit for the residual \"Other\" category.\n\n{\"hts_code\": \"7311.00.0090\", \"reason\": \"Welded steel cylindrical vessels for storing propane and other liquefied or compressed gases, far over 1,000 L, are containers for compressed or liquefied gas of iron or steel under heading 7311, in the residual 'other' statistical suffix (suffix not verified).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 436,
+      "completion_tokens": 655,
+      "total_tokens": 1091,
+      "cost": 0.007422,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007422,
+        "upstream_inference_prompt_cost": 0.000872,
+        "upstream_inference_completions_cost": 0.00655
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7311000090",
+  "predicted_reason": "Welded steel cylindrical vessels for storing propane and other liquefied or compressed gases, far over 1,000 L, are containers for compressed or liquefied gas of iron or steel under heading 7311, in the residual 'other' statistical suffix (suffix not verified).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 436,
+    "completion_tokens": 655,
+    "total_tokens": 1091,
+    "cost": 0.007422,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007422,
+      "upstream_inference_prompt_cost": 0.000872,
+      "upstream_inference_completions_cost": 0.00655
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:20.128280+00:00",
+  "latency_s": 6.453,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

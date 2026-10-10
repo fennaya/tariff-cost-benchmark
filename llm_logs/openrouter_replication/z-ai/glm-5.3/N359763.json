@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359763",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8525893000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599959-5Hvp9NHC83itLcXC4gBa",
+    "object": "chat.completion",
+    "created": 1791599959,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8525.89.0300\", \"reason\": \"The dual-channel camera module captures and transmits video images to a gateway but cannot record, classifying it as a television camera under heading 8525, specifically the \"other\" subheading 8525.89.0300.\"}",
+          "refusal": null,
+          "reasoning": "Camera module, not recording \u2014 likely 8525.89 (television cameras)? Dual-channel camera transmitting to gateway; cannot record. Likely 8525.89.0300? Digital cameras... 8525.89.0450? HTSUS 8525.89.03: television cameras... Actually 8525.89.0300 covers digital cameras of a kind used for television? Post-2017: 8525.81 (digital cameras, video camcorders), 8525.89 others. Camera transmitting video, not recording \u2014 8525.89.0300.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Camera module, not recording \u2014 likely 8525.89 (television cameras)? Dual-channel camera transmitting to gateway; cannot record. Likely 8525.89.0300? Digital cameras... 8525.89.0450? HTSUS 8525.89.03: television cameras... Actually 8525.89.0300 covers digital cameras of a kind used for television? Post-2017: 8525.81 (digital cameras, video camcorders), 8525.89 others. Camera transmitting video, not recording \u2014 8525.89.0300.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 182,
+      "completion_tokens": 209,
+      "total_tokens": 391,
+      "cost": 0.00090328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00090328,
+        "upstream_inference_prompt_cost": 2.548e-05,
+        "upstream_inference_completions_cost": 0.0008778
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Expecting ',' delimiter: line 1 column 216 (char 215)",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 182,
+    "completion_tokens": 209,
+    "total_tokens": 391,
+    "cost": 0.00090328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00090328,
+      "upstream_inference_prompt_cost": 2.548e-05,
+      "upstream_inference_completions_cost": 0.0008778
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 137,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:39:19.529836+00:00",
+  "latency_s": 3.919,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

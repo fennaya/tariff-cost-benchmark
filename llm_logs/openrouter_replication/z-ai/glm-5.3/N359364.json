@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359364",
+  "rulingDate": "2026-03-13T00:00:00",
+  "true_code": "8704600000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599897-tCiwDhaxEyueVizw6j6Q",
+    "object": "chat.completion",
+    "created": 1791599897,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.90.0100\", \"reason\": \"The electric-motor replica VW van, as a self-propelled motor vehicle, is classified in heading 8703 under the subheading for other vehicles equipped only with electric motors.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling N296475? Electric food cart vehicle \u2014 classified as special purpose vehicle of heading 8716? Actually likely 8703? It's a replica VW van with electric motor, 4KW, mobile food cart. Ruling: classified under 8716.90.0000? Hmm. There's a ruling classifying electric food cart vehicle under 8703.90.0100? Actually 4KW electric motor, speed 5-10 mph \u2014 likely subheading 8703 (motor cars) \u2014 but as a vehicle for transport of persons? Food cart... Ruling N-XXXX classified under 8716.90.00 \"trailers and semi-trailers; other vehicles, not mechanically propelled\". But it is mechanically propelled. There's ruling HQ H236565? I recall a ruling classifying a replica VW bus food cart under 8703.90.01? Electric vehicles subheading 8703.90.0100 \"other\" vehicles with only electric motor. Actually 8703.90.01 is \"other\" \u2014 passenger motor cars. Given it transports persons? It's a food cart. Could be 8716.20 (caravans)? No.\n\nI think the actual ruling (NY N314919?) classified it in 8703.90.0100. I'll go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling N296475? Electric food cart vehicle \u2014 classified as special purpose vehicle of heading 8716? Actually likely 8703? It's a replica VW van with electric motor, 4KW, mobile food cart. Ruling: classified under 8716.90.0000? Hmm. There's a ruling classifying electric food cart vehicle under 8703.90.0100? Actually 4KW electric motor, speed 5-10 mph \u2014 likely subheading 8703 (motor cars) \u2014 but as a vehicle for transport of persons? Food cart... Ruling N-XXXX classified under 8716.90.00 \"trailers and semi-trailers; other vehicles, not mechanically propelled\". But it is mechanically propelled. There's ruling HQ H236565? I recall a ruling classifying a replica VW bus food cart under 8703.90.01? Electric vehicles subheading 8703.90.0100 \"other\" vehicles with only electric motor. Actually 8703.90.01 is \"other\" \u2014 passenger motor cars. Given it transports persons? It's a food cart. Could be 8716.20 (caravans)? No.\n\nI think the actual ruling (NY N314919?) classified it in 8703.90.0100. I'll go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 312,
+      "completion_tokens": 354,
+      "total_tokens": 666,
+      "cost": 0.001711304,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001711304,
+        "upstream_inference_prompt_cost": 1.2104e-05,
+        "upstream_inference_completions_cost": 0.0016992
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 296,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703900100",
+  "predicted_reason": "The electric-motor replica VW van, as a self-propelled motor vehicle, is classified in heading 8703 under the subheading for other vehicles equipped only with electric motors.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 354,
+    "total_tokens": 666,
+    "cost": 0.001711304,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001711304,
+      "upstream_inference_prompt_cost": 1.2104e-05,
+      "upstream_inference_completions_cost": 0.0016992
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 296,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:38:17.669850+00:00",
+  "latency_s": 1.92,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

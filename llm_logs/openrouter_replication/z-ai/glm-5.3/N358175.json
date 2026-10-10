@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358175",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599729-lC3yLBjyPZfYxEhT2au3",
+    "object": "chat.completion",
+    "created": 1791599729,
+    "model": "z-ai/glm-5.3",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.6020\", \"reason\": \"The item is a textile Halloween costume headpiece, classified as a festive article costume in heading 9505.\"}",
+          "refusal": null,
+          "reasoning": "Costume headwear \u2014 9505.90.6000? Halloween costumes: heading 9505. Flat goods vs headwear. 9505.90.6000 \"other\" Halloween articles? Actual: 9505.90.60 covers festive articles... Halloween costumes classified 9505.90.6020? Common ruling: costumes of textile 9505.90.6020 (costumes). Headwear costumes: 9505.90.6020 covers costumes? Stat suffixes: 9505.90.6020 \u2014 costumes. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Costume headwear \u2014 9505.90.6000? Halloween costumes: heading 9505. Flat goods vs headwear. 9505.90.6000 \"other\" Halloween articles? Actual: 9505.90.60 covers festive articles... Halloween costumes classified 9505.90.6020? Common ruling: costumes of textile 9505.90.6020 (costumes). Headwear costumes: 9505.90.6020 covers costumes? Stat suffixes: 9505.90.6020 \u2014 costumes. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 174,
+      "completion_tokens": 176,
+      "total_tokens": 350,
+      "cost": 0.0006617,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006617,
+        "upstream_inference_prompt_cost": 0.00015834,
+        "upstream_inference_completions_cost": 0.00050336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 118,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505906020",
+  "predicted_reason": "The item is a textile Halloween costume headpiece, classified as a festive article costume in heading 9505.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 176,
+    "total_tokens": 350,
+    "cost": 0.0006617,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006617,
+      "upstream_inference_prompt_cost": 0.00015834,
+      "upstream_inference_completions_cost": 0.00050336
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DigitalOcean",
+  "requested_at": "2026-10-10T02:35:29.378080+00:00",
+  "latency_s": 3.743,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

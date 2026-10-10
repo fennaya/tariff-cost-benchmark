@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359753",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "9406900130",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595913-XrXRikgV5yyHfephHSPv",
+    "object": "chat.completion",
+    "created": 1791595913,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on prefabricated buildings of cold-formed steel. Heading 9406 covers prefabricated buildings, and subheading 9406.90 covers \"other\" prefabricated buildings. After the 2022 HTS revision, 9406.10 covers wood, 9406.20 covers modular buildings of steel, and 9406.90 covers other.\n\nThe ruling states that the units are not modular, so 9406.20 is excluded. Therefore 9406.90 applies. Within 9406.90, the 2022 structure is 9406.90.00 with statistical suffixes: 9406.90.0030 (of iron or steel) and 9406.90.0090 (other). I believe the 9406.90.00 breakout is: 9406.90.0010 for greenhouses, 9406.90.0020 for ... I'm not certain. Before 2022, the structure was 9406.00.80 with 9406.00.8030 for \"other.\" Since the 2022 revision, 9406.90.00 has been split into 9406.90.0030 (other prefabricated buildings, of steel) and 9406.90.0090 (other). The steel one is the best fit for this product.\n\nExact suffixes could differ, but I'll go with 9406.90.0030 for iron or steel, though I can't confirm it.\n\n{\"hts_code\": \"9406.90.0030\", \"reason\": \"Non-modular prefabricated residential building structure of cold-formed steel, entered as components ready to assemble, is classified in heading 9406 as other prefabricated buildings of iron or steel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 573,
+      "completion_tokens": 508,
+      "total_tokens": 1081,
+      "cost": 0.006226,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006226,
+        "upstream_inference_prompt_cost": 0.001146,
+        "upstream_inference_completions_cost": 0.00508
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9406900030",
+  "predicted_reason": "Non-modular prefabricated residential building structure of cold-formed steel, entered as components ready to assemble, is classified in heading 9406 as other prefabricated buildings of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 573,
+    "completion_tokens": 508,
+    "total_tokens": 1081,
+    "cost": 0.006226,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006226,
+      "upstream_inference_prompt_cost": 0.001146,
+      "upstream_inference_completions_cost": 0.00508
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:54.197102+00:00",
+  "latency_s": 5.116,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

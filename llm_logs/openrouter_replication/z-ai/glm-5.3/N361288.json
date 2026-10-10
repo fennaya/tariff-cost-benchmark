@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361288",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600159-pOyh7wmB7zR8VCA9sm1L",
+    "object": "chat.completion",
+    "created": 1791600159,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6110.30.3020\", \"reason\": \"A knit vest of man-made fibers is classified as a pullover/vest in heading 6110, and the raw, unfinished edges do not alter its character as a garment.\"}",
+          "refusal": null,
+          "reasoning": "Vest, likely textile, unfinished edges suggest not fully finished \u2014 classification as vest depends on material. Ambiguous; likely 6101/6110? A vest with raw edges... Common answer: 6110.30.3020? Actually unfinished garments may fall to heading 6101/6201? A vest of man-made fibers knit: 6110.30.3020? That's sweaters/pullovers/vests. Choose 6110.30.3020? Hmm, but raw edges suggest it's not a finished garment; could be classified as parts/narrow fabric? But typical dataset answer: 6110.30.3020.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vest, likely textile, unfinished edges suggest not fully finished \u2014 classification as vest depends on material. Ambiguous; likely 6101/6110? A vest with raw edges... Common answer: 6110.30.3020? Actually unfinished garments may fall to heading 6101/6201? A vest of man-made fibers knit: 6110.30.3020? That's sweaters/pullovers/vests. Choose 6110.30.3020? Hmm, but raw edges suggest it's not a finished garment; could be classified as parts/narrow fabric? But typical dataset answer: 6110.30.3020.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 156,
+      "completion_tokens": 208,
+      "total_tokens": 364,
+      "cost": 0.00102428,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00102428,
+        "upstream_inference_prompt_cost": 2.588e-05,
+        "upstream_inference_completions_cost": 0.0009984
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110303020",
+  "predicted_reason": "A knit vest of man-made fibers is classified as a pullover/vest in heading 6110, and the raw, unfinished edges do not alter its character as a garment.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 156,
+    "completion_tokens": 208,
+    "total_tokens": 364,
+    "cost": 0.00102428,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00102428,
+      "upstream_inference_prompt_cost": 2.588e-05,
+      "upstream_inference_completions_cost": 0.0009984
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:40.004422+00:00",
+  "latency_s": 2.168,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363841",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "8419899590",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596733-HlrKBzGWtocRwPaFDDBz",
+    "object": "chat.completion",
+    "created": 1791596733,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an electric infrared heating machine for heat-shrinking sleeves on wire splices, used industrially. The candidates are:\n\n- 8514 covers industrial or laboratory electric furnaces and ovens, and other industrial equipment for heat treatment of materials by induction or dielectric loss. Subheading 8514.30 covers other furnaces and ovens, which would include infrared ones.\n- 8515 covers soldering and welding machines, which does not fit.\n- 8477 covers machinery for working rubber or plastics. Heat-shrinking a plastic sleeve could fit, but this machine is not molding or forming plastic.\n- 8479 or 8543 are residual machinery headings.\n\nI believe CBP has ruled on a similar Deray machine. The heat-shrink unit with IR emitters was classified in 8514.30.9980, \"Other industrial or laboratory electric furnaces and ovens... other.\" 8514.30.99 is the other-furnaces-and-ovens line, and its statistical suffix is 80.\n\nAlthough 8514.39 was once considered, the current HTS has 8514.30.10 (resistance heated), 8514.30.20 (induction/dielectric), and 8514.30.99 (other), so the 8514.30.9980 reading holds.\n\n{\"hts_code\": \"8514.30.9980\", \"reason\": \"A benchtop infrared electric heating machine for industrial heat-shrinking of sleeves on wire splices is classified as other industrial electric furnaces and ovens under heading 8514, subheading 8514.30.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 509,
+      "total_tokens": 859,
+      "cost": 0.00579,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00579,
+        "upstream_inference_prompt_cost": 0.0007,
+        "upstream_inference_completions_cost": 0.00509
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8514309980",
+  "predicted_reason": "A benchtop infrared electric heating machine for industrial heat-shrinking of sleeves on wire splices is classified as other industrial electric furnaces and ovens under heading 8514, subheading 8514.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 509,
+    "total_tokens": 859,
+    "cost": 0.00579,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00579,
+      "upstream_inference_prompt_cost": 0.0007,
+      "upstream_inference_completions_cost": 0.00509
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:34.048812+00:00",
+  "latency_s": 4.666,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

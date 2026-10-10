@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360082",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8471410150",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596030-PAZeV863Vp0kKAjEly2P",
+    "object": "chat.completion",
+    "created": 1791596030,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on tablet consoles for exercise equipment. The likely options are 8517.62.0090 (other apparatus for transmission or reception of data), 8471.30.0100 (portable automatic data processing machines), or 9506.91.0030 (parts and accessories of exercise equipment).\n\nTablet consoles designed to be incorporated into exercise equipment and not detached are fully functioning Android tablets. However, they are described as \"specifically designed for incorporation into exercise equipment,\" which points to classification as parts of exercise equipment under 9506.91. Note 1(m) to Chapter 90 and Section XVI notes exclude articles of Chapter 95 from Chapter 84 and 85. Section XVI Note 1(p) excludes articles of Chapter 95. So the tablets, being parts or accessories of exercise equipment, would fall under 9506.91.0030 (\"Articles and equipment for general physical exercise... other: Other\").\n\nSince the console is used to control the equipment and is not intended to be detached, I believe CBP classified it in 9506.91.0030. Subheading 9506.91.00 has statistical suffixes: 9506.91.0010 is for exercise cycles, and 9506.91.0020 is for treadmills, and 9506.91.0030 is for other. I'll go with 9506.91.0030.\n\n```json\n{\"hts_code\": \"9506.91.0030\", \"reason\": \"The consoles are designed to be permanently incorporated into and control exercise equipment, so they are classified as parts and accessories of general physical exercise equipment in heading 9506, which Section XVI excludes from Chapters 84/85.\"}\n```\n\nHere is the response in the required format:\n\n{\"hts_code\": \"9506.91.0030\", \"reason\": \"The consoles are designed to be permanently incorporated into and control exercise equipment, so they are classified as parts and accessories of general physical exercise equipment in heading 9506, which Section XVI excludes from Chapters 84/85.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 477,
+      "completion_tokens": 656,
+      "total_tokens": 1133,
+      "cost": 0.007514,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007514,
+        "upstream_inference_prompt_cost": 0.000954,
+        "upstream_inference_completions_cost": 0.00656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506910030",
+  "predicted_reason": "The consoles are designed to be permanently incorporated into and control exercise equipment, so they are classified as parts and accessories of general physical exercise equipment in heading 9506, which Section XVI excludes from Chapters 84/85.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 656,
+    "total_tokens": 1133,
+    "cost": 0.007514,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007514,
+      "upstream_inference_prompt_cost": 0.000954,
+      "upstream_inference_completions_cost": 0.00656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:50.303126+00:00",
+  "latency_s": 5.681,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362750",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8544493080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596542-XuHPUDk8Sz2H8My52dVH",
+    "object": "chat.completion",
+    "created": 1791596542,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a Cat6 ethernet cable, a data cable of insulated copper conductors, imported on reels without connectors, and rated at 48 volts (under 80 V). That points to heading 8544, insulated wire and cable.\n\nThe relevant subheadings are:\n- 8544.42: other electric conductors for a voltage not exceeding 1,000 V, fitted with connectors. This does not apply because the cable has no connectors.\n- 8544.49: other electric conductors, not fitted with connectors. Within it, 8544.49.10 covers conductors of a voltage not exceeding 80 V, and 8544.49.20 covers conductors of a voltage over 80 V but not over 1,000 V.\n\nThe 8544.49.10 line is the match. I recall this reasoning from CBP rulings on Cat6 and Cat5e bulk cable. The 8544.49.10 line has been the \"Of a voltage not exceeding 80 V\" line, with statistical suffixes 8544.49.1000 or similar. As I remember the structure:\n- 8544.49.10: Of a voltage not exceeding 80 V, covering insulated wire \"Not exceeding 80 V.\"\n- 8544.49.20: Of a voltage exceeding 80 V but not exceeding 1,000 V, with suffixes such as 8544.49.2000.\n- 8544.49.30: Other.\n\nI did not verify the exact current subheading structure beyond memory, so 8544.49.1000 is my best answer, but it should be checked against the current HTSUS.\n\n```json\n{\"hts_code\": \"8544.49.1000\", \"reason\": \"Unterminated Cat6 insulated copper data cable on reels, rated 48 V (not exceeding 80 V), is classified as an other electric conductor without connectors under heading 8544.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 591,
+      "total_tokens": 968,
+      "cost": 0.006664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006664,
+        "upstream_inference_prompt_cost": 0.000754,
+        "upstream_inference_completions_cost": 0.00591
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544491000",
+  "predicted_reason": "Unterminated Cat6 insulated copper data cable on reels, rated 48 V (not exceeding 80 V), is classified as an other electric conductor without connectors under heading 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 591,
+    "total_tokens": 968,
+    "cost": 0.006664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006664,
+      "upstream_inference_prompt_cost": 0.000754,
+      "upstream_inference_completions_cost": 0.00591
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:22.814429+00:00",
+  "latency_s": 7.166,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362523",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8503003500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596519-94q4RkOo6eHYjNFtRvgk",
+    "object": "chat.completion",
+    "created": 1791596519,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a rotor core with embedded permanent magnets, designed for an electric power steering motor. It is a part of an electric motor, so it falls under heading 8503, \"Parts suitable for use solely or principally with the machines of heading 8501 or 8502.\"\n\nWithin 8503.00, the HTSUS subheadings are:\n- 8503.00.45: Parts of motors of 8501 of an output not exceeding 18.65 W\n- 8503.00.55: Other, of motors of subheading 8501.10 (output \u2264 37.5 W)\n- 8503.00.65: Other parts of motors, other than 8501.10\n- 8503.00.95: Other\n\nI recall CBP rulings on rotor cores for EPS motors, such as laminated rotor cores with magnets, classified in 8503.00.95. The 8503.00.95 provision is \"Other,\" with the statistical suffix 8503.00.9530 or 9570. The \"Other\" subheading's suffixes are 8503.00.9520 (parts of generators), 8503.00.9540 (parts of motors, other), and 8503.00.9560 (other). I'm not fully certain of the exact suffix, so I am choosing the most likely one. Since the rotor is a part of a motor, I'll go with 8503.00.9540.\n\n{\"hts_code\": \"8503.00.9540\", \"reason\": \"A magnet-embedded laminated rotor core for an electric power steering motor is a part suitable for use solely or principally with electric motors of heading 8501, so it falls under heading 8503 as an 'Other' part.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 256,
+      "completion_tokens": 512,
+      "total_tokens": 768,
+      "cost": 0.005632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005632,
+        "upstream_inference_prompt_cost": 0.000512,
+        "upstream_inference_completions_cost": 0.00512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8503009540",
+  "predicted_reason": "A magnet-embedded laminated rotor core for an electric power steering motor is a part suitable for use solely or principally with electric motors of heading 8501, so it falls under heading 8503 as an 'Other' part.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 512,
+    "total_tokens": 768,
+    "cost": 0.005632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005632,
+      "upstream_inference_prompt_cost": 0.000512,
+      "upstream_inference_completions_cost": 0.00512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:00.002914+00:00",
+  "latency_s": 4.836,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

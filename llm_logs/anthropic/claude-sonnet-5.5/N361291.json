@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361291",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "8716310000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596240-oZ3k2tUSMA7E33NwFsgR",
+    "object": "chat.completion",
+    "created": 1791596240,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a tanker trailer designed to be towed, so heading 8716 is the likely fit. Within 8716, subheading 8716.31 covers tanker trailers and semi-trailers, and 8716.31.00 splits into statistical suffixes.\n\nI recall CBP rulings on propane tanker trailers, though I am not certain of the exact ruling number. The ruling likely classified them in 8716.31.0050, \"Tanker trailers and tanker semitrailers: Other.\" The alternative, 8716.31.0010, is for agricultural trailers, and I believe the 8716.31 split is 0010 for \"Trailers... for agricultural use\" and 0050 for \"Other.\"\n\nThe alternative considered was heading 8609 (containers) or 7311 (compressed gas containers). But the trailer is a vehicle with a tow bar, wheels, and a coupler, so 8716 governs.\n\nOn the statistical suffix, I recall 8716.31.0000 being divided into 0010 \"Tanker trailers and tanker semitrailers\" with a further breakdown. The 2022 HTSUS has 8716.31.00: 8716.31.0010 for \"Trailers and semitrailers of the type used for agricultural purposes\" and 8716.31.0050 for \"Other.\" I'll go with 8716.31.0050.\n\n```json\n{\"hts_code\": \"8716.31.0050\", \"reason\": \"A wheeled propane tank towed by a motor vehicle via a ball coupler and A-frame tow bar is a tanker trailer of heading 8716, falling under subheading 8716.31 for tanker trailers and semitrailers.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 866,
+      "completion_tokens": 533,
+      "total_tokens": 1399,
+      "cost": 0.007062,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007062,
+        "upstream_inference_prompt_cost": 0.001732,
+        "upstream_inference_completions_cost": 0.00533
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716310050",
+  "predicted_reason": "A wheeled propane tank towed by a motor vehicle via a ball coupler and A-frame tow bar is a tanker trailer of heading 8716, falling under subheading 8716.31 for tanker trailers and semitrailers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 866,
+    "completion_tokens": 533,
+    "total_tokens": 1399,
+    "cost": 0.007062,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007062,
+      "upstream_inference_prompt_cost": 0.001732,
+      "upstream_inference_completions_cost": 0.00533
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:20.452361+00:00",
+  "latency_s": 5.588,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

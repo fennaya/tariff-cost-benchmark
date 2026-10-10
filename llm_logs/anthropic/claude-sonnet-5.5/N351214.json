@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N351214",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "6101302010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593767-FViqEXyNJzxezXWE4Zhv",
+    "object": "chat.completion",
+    "created": 1791593767,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a men's sleeveless jacket, which is a vest-type garment. Because it has oversized armholes and no sleeves, it likely falls under heading 6201 (men's anoraks, windbreakers and similar articles, woven outer layer) rather than 6101 or 6102 (knit).\n\nClassification is by the fabric's essential character. For a bonded fabric with a woven outer layer, a PU film middle layer and a knit pile inner layer, the outer woven polyester layer likely gives the essential character. That points to chapter 62.\n\nWithin chapter 62, the candidates for men's sleeveless garments are:\n- 6201.93: men's anoraks, windbreakers and similar articles of man-made fibers.\n- 6211.33: other men's garments of man-made fibers.\n- 6201.93.3000: men's vests and similar articles.\n\nVests, such as sleeveless jackets, are generally classified in 6201.93 if they are padded or not. The vest subheading is 6201.93.3511 for water-resistant vests, with 6201.93.3521 as the other men's anorak-type subheading. I'm recalling these numbers from memory and am not certain of them.\n\nIn the 6201.93 subheadings, I recall:\n- 6201.93.1000: containing 15% or more by weight of down.\n- 6201.93.2000: other, with water-resistant.\n- 6201.93.3000: other, 6201.93.3511 for other garments.\n- 6201.93.3521 for other.\n\nI'll go with 6201.93.3511 (other, men's, of man-made fibers).\n\n```json\n{\"hts_code\": \"6201.93.3511\", \"reason\": \"Men's sleeveless jacket (vest-type windbreaker) of man-made fibers with a woven polyester outer layer, classified in heading 6201 as other men's anoraks, windbreakers and similar articles.\"}\n```\n\nActually, here is the corrected output in the required format:\n\n{\"hts_code\": \"6201.93.3511\", \"reason\": \"Men's sleeveless jacket (vest-type windbreaker) of man-made fibers with a woven polyester outer layer, classified in heading 6201 as other men's anoraks, windbreakers and similar articles.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 390,
+      "completion_tokens": 722,
+      "total_tokens": 1112,
+      "cost": 0.008,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008,
+        "upstream_inference_prompt_cost": 0.00078,
+        "upstream_inference_completions_cost": 0.00722
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6201933511",
+  "predicted_reason": "Men's sleeveless jacket (vest-type windbreaker) of man-made fibers with a woven polyester outer layer, classified in heading 6201 as other men's anoraks, windbreakers and similar articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 722,
+    "total_tokens": 1112,
+    "cost": 0.008,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008,
+      "upstream_inference_prompt_cost": 0.00078,
+      "upstream_inference_completions_cost": 0.00722
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:07.658565+00:00",
+  "latency_s": 7.729,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

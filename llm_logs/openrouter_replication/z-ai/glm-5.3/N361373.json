@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361373",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8419899585",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600175-dHK8WlR0seAQM2NzY6PY",
+    "object": "chat.completion",
+    "created": 1791600175,
+    "model": "z-ai/glm-5.3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8419.89.9500\", \"reason\": \"The unit is machinery using the Peltier effect to heat or cool process coolant, and is not a refrigerating equipment of heading 8418, so it is classified in HTSUS 8419.89 as other machinery for the treatment of materials by a temperature change process.\"}",
+          "refusal": null,
+          "reasoning": "Thermoelectric temperature control unit \u2014 likely 8419.89 (other machinery for temperature control). Peltier chiller \u2014 8419.89.9500? Actually 8419.89.95 \"other\". 10-digit: 8419.89.9500? There's 8419.89.9550? Common ruling: 8419.89.9500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Thermoelectric temperature control unit \u2014 likely 8419.89 (other machinery for temperature control). Peltier chiller \u2014 8419.89.9500? Actually 8419.89.95 \"other\". 10-digit: 8419.89.9500? There's 8419.89.9550? Common ruling: 8419.89.9500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 175,
+      "total_tokens": 495,
+      "cost": 0.000609,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000609,
+        "upstream_inference_prompt_cost": 0.000224,
+        "upstream_inference_completions_cost": 0.000385
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 93,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8419899500",
+  "predicted_reason": "The unit is machinery using the Peltier effect to heat or cool process coolant, and is not a refrigerating equipment of heading 8418, so it is classified in HTSUS 8419.89 as other machinery for the treatment of materials by a temperature change process.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 175,
+    "total_tokens": 495,
+    "cost": 0.000609,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000609,
+      "upstream_inference_prompt_cost": 0.000224,
+      "upstream_inference_completions_cost": 0.000385
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 93,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Novita",
+  "requested_at": "2026-10-10T02:42:55.479281+00:00",
+  "latency_s": 3.092,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

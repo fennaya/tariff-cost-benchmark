@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359845",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "3105100000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599978-MQhhUCNBgxWtfVKJ0maa",
+    "object": "chat.completion",
+    "created": 1791599978,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.60.0000\", \"reason\": \"These are liquid mixed mineral/organomineral fertilizers containing nitrogen, phosphorus, and potassium (e.g., Mega with N, P, and K), which are classified in subheading 3105.60 as fertilizers containing the three nutrients nitrogen, phosphorus, and potassium.\"}",
+          "refusal": null,
+          "reasoning": "Liquid mixed fertilizers: 3105.60.00? Mixed fertilizers containing N, P, K. Mega has N, P, K \u2014 3105.60.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Liquid mixed fertilizers: 3105.60.00? Mixed fertilizers containing N, P, K. Mega has N, P, K \u2014 3105.60.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1114,
+      "completion_tokens": 119,
+      "total_tokens": 1233,
+      "cost": 0.00061272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00061272,
+        "upstream_inference_prompt_cost": 8.912e-05,
+        "upstream_inference_completions_cost": 0.0005236
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 41,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105600000",
+  "predicted_reason": "These are liquid mixed mineral/organomineral fertilizers containing nitrogen, phosphorus, and potassium (e.g., Mega with N, P, and K), which are classified in subheading 3105.60 as fertilizers containing the three nutrients nitrogen, phosphorus, and potassium.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1114,
+    "completion_tokens": 119,
+    "total_tokens": 1233,
+    "cost": 0.00061272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00061272,
+      "upstream_inference_prompt_cost": 8.912e-05,
+      "upstream_inference_completions_cost": 0.0005236
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:39:37.899793+00:00",
+  "latency_s": 2.883,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

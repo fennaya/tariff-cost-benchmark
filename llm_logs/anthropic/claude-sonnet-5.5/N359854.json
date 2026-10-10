@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359854",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3105100000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595957-AL1IsPK6s8dVnJGk21jC",
+    "object": "chat.completion",
+    "created": 1791595957,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Herbitec is a mineral foliar fertilizer containing nitrogen and potassium (urea and potassium hydroxide), so it falls in Chapter 31. Fertilizers put up in packages weighing 10 kg or less fall in heading 3105, and one-liter containers are within that limit. Heading 3105 covers mineral or chemical fertilizers containing two or three of the fertilizing elements nitrogen, phosphorus and potassium. Herbitec contains two (N and K), so 3105.90 (\"other\") applies. Within that, 3105.90.00 has a statistical suffix of 3105.90.0010 for fertilizers in tablets or similar forms or packages \u226410 kg... Instead, I recall that 3105.90.0050 is \"Other\". Herbitec is a liquid and is not a mixture covered by the more specific subheadings, so the \"other\" line is the best fit.\n\nThe 3105.90 subheadings are:\n- 3105.90.0010: Mineral or chemical fertilizers containing nitrogen, etc.\n- 3105.90.0020: Other, in packages or forms covered by the heading.\n- 3105.90.0050: Other.\n\nI am not fully certain of these suffixes, so I chose the \"other\" line as the best fit.\n\n{\"hts_code\": \"3105.90.0050\", \"reason\": \"Liquid mineral foliar fertilizer containing two fertilizing elements (nitrogen and potassium) is classified in heading 3105 as an 'other' fertilizer, in subheading 3105.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 484,
+      "completion_tokens": 507,
+      "total_tokens": 991,
+      "cost": 0.006038,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006038,
+        "upstream_inference_prompt_cost": 0.000968,
+        "upstream_inference_completions_cost": 0.00507
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105900050",
+  "predicted_reason": "Liquid mineral foliar fertilizer containing two fertilizing elements (nitrogen and potassium) is classified in heading 3105 as an 'other' fertilizer, in subheading 3105.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 484,
+    "completion_tokens": 507,
+    "total_tokens": 991,
+    "cost": 0.006038,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006038,
+      "upstream_inference_prompt_cost": 0.000968,
+      "upstream_inference_completions_cost": 0.00507
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:38.029288+00:00",
+  "latency_s": 4.952,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

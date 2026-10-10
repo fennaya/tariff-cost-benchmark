@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360359",
+  "rulingDate": "2026-04-22T00:00:00",
+  "true_code": "6210102000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600070-4zbf8bT0Qp0O0OY5MXHR",
+    "object": "chat.completion",
+    "created": 1791600070,
+    "model": "z-ai/glm-5.3",
+    "provider": "Decart",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6208.92.0030\", \"reason\": \"The disposable women's brief is considered wearing apparel of man-made fibers (polypropylene nonwoven), classified as women's underpants/briefs under heading 6208, as it is not a stand-alone absorbent sanitary or incontinence article.\"}",
+          "refusal": null,
+          "reasoning": "Disposable underwear of nonwoven textile \u2014 classified as apparel of nonwovens, 6208.92.0030? Women's briefs of man-made fibers 6208.92.0030. But nonwoven disposable... likely 6208.92.0030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Disposable underwear of nonwoven textile \u2014 classified as apparel of nonwovens, 6208.92.0030? Women's briefs of man-made fibers 6208.92.0030. But nonwoven disposable... likely 6208.92.0030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 218,
+      "completion_tokens": 141,
+      "total_tokens": 359,
+      "cost": 0.0005569689,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005569689,
+        "upstream_inference_prompt_cost": 0.0001836432,
+        "upstream_inference_completions_cost": 0.0003733257
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 65,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6208920030",
+  "predicted_reason": "The disposable women's brief is considered wearing apparel of man-made fibers (polypropylene nonwoven), classified as women's underpants/briefs under heading 6208, as it is not a stand-alone absorbent sanitary or incontinence article.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 218,
+    "completion_tokens": 141,
+    "total_tokens": 359,
+    "cost": 0.0005569689,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005569689,
+      "upstream_inference_prompt_cost": 0.0001836432,
+      "upstream_inference_completions_cost": 0.0003733257
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Decart",
+  "requested_at": "2026-10-10T02:41:10.998773+00:00",
+  "latency_s": 2.167,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359944",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "7318290000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600009-JLIFuDxFyj0oETP28leh",
+    "object": "chat.completion",
+    "created": 1791600009,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7317.00.1500\", \"reason\": \"A headless, unthreaded steel pin used as a hinge fastening is classified as a pin of iron or steel in heading 7317.\"}",
+          "refusal": null,
+          "reasoning": "Headless unthreaded pin \u2014 HTS 7317.00 pins? Actually heading 7317 covers nails, tacks, pins... \"pins\" of iron/steel not threaded. 7317.00.1500? Let me recall: 7317.00.05 nails/tacks; 7317.00.15 \"pins and cleats\"? Actual subheadings: 7317.00.05 nails and tacks; 7317.00.15 staples; 7317.00.20 pins? I think 7317.00.1500 covers \"pins and staples\"? Known NY ruling: door hinge pin classified 7317.00.1500? Actually 7317.00.15 is \"staples\". Hmm. HTS 7317.00: 05 nails, tacks, pins (drawing?), ... I recall 7317.00.1500 \"pins and staples of iron or steel\". I'll answer 7317.00.1500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Headless unthreaded pin \u2014 HTS 7317.00 pins? Actually heading 7317 covers nails, tacks, pins... \"pins\" of iron/steel not threaded. 7317.00.1500? Let me recall: 7317.00.05 nails/tacks; 7317.00.15 \"pins and cleats\"? Actual subheadings: 7317.00.05 nails and tacks; 7317.00.15 staples; 7317.00.20 pins? I think 7317.00.1500 covers \"pins and staples\"? Known NY ruling: door hinge pin classified 7317.00.1500? Actually 7317.00.15 is \"staples\". Hmm. HTS 7317.00: 05 nails, tacks, pins (drawing?), ... I recall 7317.00.1500 \"pins and staples of iron or steel\". I'll answer 7317.00.1500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 278,
+      "total_tokens": 486,
+      "cost": 0.001342512,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001342512,
+        "upstream_inference_prompt_cost": 8.112e-06,
+        "upstream_inference_completions_cost": 0.0013344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 226,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7317001500",
+  "predicted_reason": "A headless, unthreaded steel pin used as a hinge fastening is classified as a pin of iron or steel in heading 7317.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 208,
+    "completion_tokens": 278,
+    "total_tokens": 486,
+    "cost": 0.001342512,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001342512,
+      "upstream_inference_prompt_cost": 8.112e-06,
+      "upstream_inference_completions_cost": 0.0013344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 226,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:09.626181+00:00",
+  "latency_s": 1.549,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

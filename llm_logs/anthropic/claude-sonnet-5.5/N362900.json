@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362900",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7013998090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596582-fyorB1UMzF0pwjIJbMGk",
+    "object": "chat.completion",
+    "created": 1791596582,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a glass Christmas-tree-shaped decorative article with LEDs. The classification question is whether it falls under 9505 (festive articles) or 7020 (other glass articles).\n\nCBP rulings on lit glass trees, such as those from Costco or Target, have generally used 9505.10.25 for glass Christmas decorations. An evergreen tree-shaped article is likely a Christmas tree, but the description says only \"evergreen tree-shaped decorative article\" and never mentions Christmas. A similar ruling on a glass tree with LEDs may have gone to 7013.99 (other glassware, decorative). Heading 7013 covers glassware for table, kitchen, toilet, office, indoor decoration or similar purposes. Borosilicate glass is mentioned, and the statement that the glass is not lead crystal or glass-ceramic points to the 7013 subheadings.\n\nWithin 7013, the candidates are 7013.99 (other glassware) and 7013.91 (lead crystal). Since the article is not lead crystal, it falls under 7013.99. The $5.00 unit value matters because 7013.99 breaks out by value: 7013.99.10 covers items valued up to $0.30, 7013.99.20 up to $3, 7013.99.50 over $3 but not over $5, and 7013.99.60 over $5. The unit value is exactly $5.00, so it is \"not over $5.\" That points to the \"other\" category in the 7013.99 group with the 7013.99.50 value break. The statement that the glass is not \"pressed and toughened\" is relevant to 7013.99.50 versus the 7013.99.40 and 7013.99.45 tiers.\n\nThe 7013.99 structure is:\n- 7013.99.10: Glassware of a kind used for table, kitchen, etc.\n- 7013.99.15: Other glassware valued up to $0.30\n- 7013.99.20: Other glassware valued over $0.30 but not over $3\n- 7013.99.25: Other glassware valued over $3 but not over $5\n- 7013.99.50: Other glassware valued over $5\n\nFrom memory, the 7013.99 subheadings are 7013.99.20 (not over $0.30), 7013.99.30 (over $0.30 but not over $3), 7013.99.40 (over $3 but not over $5), 7013.99.50 (over $5), and 7013.99.60 (other). I recall that 7013.99.50 is the \"valued over $5\" category in the \"other\" group. At exactly $5, I believe the classification would be 7013.99.40, which I take to be \"valued over $3 but not over $5.\"\n\nI'm not fully certain of these subheading numbers, but I'll go with 7013.99.40.\n\n{\"hts_code\": \"7013.99.4000\", \"reason\": \"A non-Christmas-specific decorative glass tree of non-lead-crystal glass for indoor decoration falls in heading 7013, in the 'other glassware' subheading for articles valued over $3 but not over $5 each.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 333,
+      "completion_tokens": 981,
+      "total_tokens": 1314,
+      "cost": 0.010476,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010476,
+        "upstream_inference_prompt_cost": 0.000666,
+        "upstream_inference_completions_cost": 0.00981
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7013994000",
+  "predicted_reason": "A non-Christmas-specific decorative glass tree of non-lead-crystal glass for indoor decoration falls in heading 7013, in the 'other glassware' subheading for articles valued over $3 but not over $5 each.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 981,
+    "total_tokens": 1314,
+    "cost": 0.010476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010476,
+      "upstream_inference_prompt_cost": 0.000666,
+      "upstream_inference_completions_cost": 0.00981
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:02.983685+00:00",
+  "latency_s": 8.464,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

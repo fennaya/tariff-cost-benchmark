@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360214",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596052-7P3LX7PkbYcNXunVbLhJ",
+    "object": "chat.completion",
+    "created": 1791596052,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Bumetanide tablets are a medicament put up in measured doses for retail sale, so they fall in heading 3004. Bumetanide is 3-(butylamino)-4-phenoxy-5-sulfamoylbenzoic acid, which is not an antibiotic, hormone, or alkaloid. That puts it in the \"other\" subheading, 3004.90.\n\nUnder 3004.90, the HTSUS statistical suffixes include 3004.90.9250 for \"Other: Other: Other: Diuretics\"? I'm not certain of that. I recall 3004.90.92 as \"Other\" and 3004.90.91 as \"Other\" under the lower-level breakouts, with 3004.90.9290 or similar further down. I could not pin the exact suffix from memory.\n\nMy best recollection is that the 3004.90.92 group covers other medicaments, with 3004.90.9210 and 3004.90.9215 existing for certain items. Statistical suffixes for cardiovascular and diuretic drugs are not something I can verify. I will go with the generic 3004.90.9290 \"Other\".\n\n```json\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Bumetanide tablets are a non-antibiotic, non-hormone medicament in measured doses for retail sale, so they fall in heading 3004 under the residual 'other' subheading.\"}\n```\n\nOnly the JSON object was requested, so here it is without the commentary:\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Bumetanide tablets are a non-antibiotic, non-hormone medicament in measured doses for retail sale, so they fall in heading 3004 under the residual 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 551,
+      "total_tokens": 781,
+      "cost": 0.00597,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00597,
+        "upstream_inference_prompt_cost": 0.00046,
+        "upstream_inference_completions_cost": 0.00551
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Bumetanide tablets are a non-antibiotic, non-hormone medicament in measured doses for retail sale, so they fall in heading 3004 under the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 230,
+    "completion_tokens": 551,
+    "total_tokens": 781,
+    "cost": 0.00597,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00597,
+      "upstream_inference_prompt_cost": 0.00046,
+      "upstream_inference_completions_cost": 0.00551
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:13.066526+00:00",
+  "latency_s": 5.1,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360963",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "7505221000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596184-VmRAv9XoEXKiK88XWAPn",
+    "object": "chat.completion",
+    "created": 1791596184,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Nitinol wire and strip are alloys of nickel and titanium. The first question is which chapter covers them.\n\nChapter 75 (nickel) covers nickel alloys, where nickel predominates by weight. Nitinol is roughly 55% nickel by weight and about 45% titanium. Titanium (Chapter 81) is not governed by the same weight rule, but by Section XV Note 5, an alloy is classified by the metal that predominates by weight. Nickel at about 55% wins, so Chapter 75 applies.\n\nWithin Chapter 75, heading 7505 covers nickel bars, rods, profiles and wire, and 7506 covers plates, sheets, strip and foil.\n\nFor wire, 7505.22 covers wire of nickel alloys. The statistical suffix I recall is 7505.22.0000, which I am treating as the correct 10-digit form (7505.22.0000).\n\nFor strip, the flat-wire product falls under 7506.20 (nickel alloy plates, sheets, strip and foil), with 7506.20.0000 as the statistical code.\n\nThe description covers both wire and strip, but I must give a single code. Wire is the primary product named, so I choose 7505.22.0000.\n\n{\"hts_code\": \"7505.22.0000\", \"reason\": \"Nitinol is about 55% nickel by weight, so under Section XV Note 5 it is a nickel alloy, and the wire falls under heading 7505 as nickel alloy wire (strip would go to 7506.20).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 492,
+      "total_tokens": 713,
+      "cost": 0.005362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005362,
+        "upstream_inference_prompt_cost": 0.000442,
+        "upstream_inference_completions_cost": 0.00492
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7505220000",
+  "predicted_reason": "Nitinol is about 55% nickel by weight, so under Section XV Note 5 it is a nickel alloy, and the wire falls under heading 7505 as nickel alloy wire (strip would go to 7506.20).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 492,
+    "total_tokens": 713,
+    "cost": 0.005362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005362,
+      "upstream_inference_prompt_cost": 0.000442,
+      "upstream_inference_completions_cost": 0.00492
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:25.006597+00:00",
+  "latency_s": 4.825,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361835",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8479896500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600241-kE1tziAF4JLj50baWmoR",
+    "object": "chat.completion",
+    "created": 1791600241,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8432.31.0000\", \"reason\": \"A hand-held seed/fertilizer spreader is a seeding/fertilizing distributor of heading 8432, and the electric motor drive does not alter this classification.\"}",
+          "refusal": null,
+          "reasoning": "Hand-held seed spreader, battery-powered, imported without battery. Likely 8432 machinery? Seeders/spreaders... Hand tools HTS 8205? Actually hand-operated spreaders classify 8432.31? Broadcast spreaders for agriculture: 8432.31 seeders/fertilizer distributors. Portable hand-held electric \u2014 likely 8432.31.00.00? But hand tools... CBP rulings classify hand-held spreaders under 8205.59? There are rulings: hand-held spreader classified 8432.31.00. I'll go 8432.31.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hand-held seed spreader, battery-powered, imported without battery. Likely 8432 machinery? Seeders/spreaders... Hand tools HTS 8205? Actually hand-operated spreaders classify 8432.31? Broadcast spreaders for agriculture: 8432.31 seeders/fertilizer distributors. Portable hand-held electric \u2014 likely 8432.31.00.00? But hand tools... CBP rulings classify hand-held spreaders under 8205.59? There are rulings: hand-held spreader classified 8432.31.00. I'll go 8432.31.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 201,
+      "completion_tokens": 192,
+      "total_tokens": 393,
+      "cost": 0.00095513,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00095513,
+        "upstream_inference_prompt_cost": 3.353e-05,
+        "upstream_inference_completions_cost": 0.0009216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 142,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8432310000",
+  "predicted_reason": "A hand-held seed/fertilizer spreader is a seeding/fertilizing distributor of heading 8432, and the electric motor drive does not alter this classification.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 201,
+    "completion_tokens": 192,
+    "total_tokens": 393,
+    "cost": 0.00095513,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00095513,
+      "upstream_inference_prompt_cost": 3.353e-05,
+      "upstream_inference_completions_cost": 0.0009216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 142,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:44:01.637741+00:00",
+  "latency_s": 2.262,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

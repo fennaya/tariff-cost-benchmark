@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359074",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "8518908100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595735-0d2jJz3FqfXLOWOdn49t",
+    "object": "chat.completion",
+    "created": 1791595735,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on ear cups for aviation headsets. Parts of headphones fall under 8518.90 (parts of microphones, loudspeakers, headphones, earphones). The 8518.90.80 subheading covers \"Parts: Other\" and has a statistical suffix of 8518.90.8040 for other parts of the headphones, though I am recalling this from memory and have not verified it.\n\nThe 8518.90 breakdown is: 8518.90.20 for parts of loudspeakers, and 8518.90.40 for parts of microphones (older structure). Since 2022, 8518.90.80 is \"Other,\" with statistical suffixes 8518.90.8010 (Parts of microphones), 8518.90.8020 (Ear cushions?), etc. I'm not sure of those suffixes, so I'm choosing the generic one: 8518.90.8000, which is not valid as a 10-digit code in some editions. The best-supported choice is 8518.90.8080 (\"Other\").\n\n```json\n{\"hts_code\": \"8518.90.8080\", \"reason\": \"The ear cup housings are dedicated parts of headphones/headsets, classified as parts of headphones and earphones under heading 8518, subheading 8518.90 (Other parts).\"}\n```\n\nCorrected to the required output format:\n\n{\"hts_code\": \"8518.90.8080\", \"reason\": \"The ear cup housings are principally used as parts of headphones/headsets and so classify as other parts of headphones and earphones under heading 8518.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 494,
+      "total_tokens": 843,
+      "cost": 0.005638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005638,
+        "upstream_inference_prompt_cost": 0.000698,
+        "upstream_inference_completions_cost": 0.00494
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8518908080",
+  "predicted_reason": "The ear cup housings are principally used as parts of headphones/headsets and so classify as other parts of headphones and earphones under heading 8518.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 494,
+    "total_tokens": 843,
+    "cost": 0.005638,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005638,
+      "upstream_inference_prompt_cost": 0.000698,
+      "upstream_inference_completions_cost": 0.00494
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:55.852863+00:00",
+  "latency_s": 4.953,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

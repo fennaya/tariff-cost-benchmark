@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362164",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "7616995190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596433-EhfTKP4yemyyAfBezyVk",
+    "object": "chat.completion",
+    "created": 1791596433,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a demo insulin pump housing. The item is a non-functional aluminum housing used for demonstration. Options: 9023.00.00 (instruments, apparatus and models designed for demonstration purposes, unsuitable for other uses) or 9817.00.50 or 8543 parts, or 7616.99.\n\nHeading 9023 covers \"Instruments, apparatus and models, designed for demonstrational purposes (for example, in education or exhibitions), unsuitable for other uses; parts and accessories thereof.\" Since the piece is a part of a demonstration model, it would fall under 9023.00.00. The HTSUS subdivision is 9023.00.00.00 (the statistical suffix is 00).\n\nI recall that CBP ruling N-series classified a demo insulin pump housing under 9023.00.0000, so I'll go with that.\n\n{\"hts_code\": \"9023.00.0000\", \"reason\": \"A non-functional aluminum housing that is a part of a model built to demonstrate an insulin pump control panel and is unsuitable for other uses is classified as a part of a demonstrational model in heading 9023.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 375,
+      "total_tokens": 724,
+      "cost": 0.004448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004448,
+        "upstream_inference_prompt_cost": 0.000698,
+        "upstream_inference_completions_cost": 0.00375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9023000000",
+  "predicted_reason": "A non-functional aluminum housing that is a part of a model built to demonstrate an insulin pump control panel and is unsuitable for other uses is classified as a part of a demonstrational model in heading 9023.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 375,
+    "total_tokens": 724,
+    "cost": 0.004448,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004448,
+      "upstream_inference_prompt_cost": 0.000698,
+      "upstream_inference_completions_cost": 0.00375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:33.660703+00:00",
+  "latency_s": 4.174,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

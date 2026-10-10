@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N356879",
+  "rulingDate": "2026-01-09T00:00:00",
+  "true_code": "0904227600",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599556-7wzomcXs1H78ypLeQd4R",
+    "object": "chat.completion",
+    "created": 1791599556,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0904.21.0000\", \"reason\": \"Pure ground dried red chili peppers (Capsicum) with no additives are classified as dried fruits of the genus Capsicum, crushed or ground, under heading 0904.\"}",
+          "refusal": null,
+          "reasoning": "Chili powder crushed or ground: 0904.21.00? Dried chili peppers ground: 0904.21.0000? Actually 0904.21 is pepper of genus Piper... no, 0904.20 dried, crushed or ground. 0904.21 is fruits of genus Capsicum. HTS 0904.21.0000? Structure: 0904.21.00 dried capsicums. 10-digit: 0904.21.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Chili powder crushed or ground: 0904.21.00? Dried chili peppers ground: 0904.21.0000? Actually 0904.21 is pepper of genus Piper... no, 0904.20 dried, crushed or ground. 0904.21 is fruits of genus Capsicum. HTS 0904.21.0000? Structure: 0904.21.00 dried capsicums. 10-digit: 0904.21.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 196,
+      "completion_tokens": 170,
+      "total_tokens": 366,
+      "cost": 0.0006172,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006172,
+        "upstream_inference_prompt_cost": 3.92e-05,
+        "upstream_inference_completions_cost": 0.000578
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 114,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0904210000",
+  "predicted_reason": "Pure ground dried red chili peppers (Capsicum) with no additives are classified as dried fruits of the genus Capsicum, crushed or ground, under heading 0904.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 196,
+    "completion_tokens": 170,
+    "total_tokens": 366,
+    "cost": 0.0006172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006172,
+      "upstream_inference_prompt_cost": 3.92e-05,
+      "upstream_inference_completions_cost": 0.000578
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 114,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:32:37.046284+00:00",
+  "latency_s": 3.885,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

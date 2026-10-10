@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357207",
+  "rulingDate": "2026-01-06T00:00:00",
+  "true_code": "3403990000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599581-baKbjZwGvR4TwgIK7tdz",
+    "object": "chat.completion",
+    "created": 1791599581,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2710.99.5010\", \"reason\": \"Lithium-based industrial lubricating grease derived from petroleum is classified as a lubricating preparation under heading 2710, specifically the subheading for lubricating greases.\"}",
+          "refusal": null,
+          "reasoning": "Lithium-based industrial grease \u2192 2710.19.99? Lubricating preparations with petroleum oil... Grease based on petroleum: 2710.99? Actually lubricating grease of petroleum \u2192 2710.99.50? HTSUS 2710.99.5010? Lubricating oils containing petroleum oil... grease: 2710.99.5010? I recall 2710.99.50 \"Lubricating oils and other preparations\". Grease likely 2710.99.5010? There's 2710.99.5020? I'll answer 2710.99.5010.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Lithium-based industrial grease \u2192 2710.19.99? Lubricating preparations with petroleum oil... Grease based on petroleum: 2710.99? Actually lubricating grease of petroleum \u2192 2710.99.50? HTSUS 2710.99.5010? Lubricating oils containing petroleum oil... grease: 2710.99.5010? I recall 2710.99.50 \"Lubricating oils and other preparations\". Grease likely 2710.99.5010? There's 2710.99.5020? I'll answer 2710.99.5010.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 178,
+      "completion_tokens": 207,
+      "total_tokens": 385,
+      "cost": 0.00092504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00092504,
+        "upstream_inference_prompt_cost": 1.424e-05,
+        "upstream_inference_completions_cost": 0.0009108
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 150,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2710995010",
+  "predicted_reason": "Lithium-based industrial lubricating grease derived from petroleum is classified as a lubricating preparation under heading 2710, specifically the subheading for lubricating greases.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 207,
+    "total_tokens": 385,
+    "cost": 0.00092504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00092504,
+      "upstream_inference_prompt_cost": 1.424e-05,
+      "upstream_inference_completions_cost": 0.0009108
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 150,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:33:02.102345+00:00",
+  "latency_s": 3.096,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

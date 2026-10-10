@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363464",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "2106909992",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596666-VSUv67tHK2w6y55AiNUT",
+    "object": "chat.completion",
+    "created": 1791596666,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Smoked, seasoned, cooked quail eggs are most likely classified in heading 0408 (birds' eggs, not in shell, cooked by steaming or boiling) or 0407 (birds' eggs in shell, preserved or cooked). Because the eggs are in shell, cooked, and smoked, heading 0407 applies. If they were peeled, they would fall in 0408 instead. A CBP ruling on smoked quail eggs probably placed them in 0407 or in 1602 (prepared meats). I recall that peeled, cooked, seasoned quail eggs were classified in 2106 or 0408. The product here is described as cooked, smoked, and seasoned with starch syrup, sugar, salt, and caramel color, which points to a prepared egg product, and such preparations with added ingredients are commonly put in 2106.90. However, heading 0408 covers eggs \"otherwise preserved, whether or not containing added sugar or sweetening matter.\" Seasoned, smoked eggs fit that wording. Peeled quail eggs, which is how these are typically sold (in packs), would therefore go in 0408.99.\n\nWithin 0408.99, the HTSUS has subheadings 0408.91 (dried) and 0408.99 (other). 0408.99 breaks out into 0408.99.01 (egg albumin) and 0408.99.80 (other, with quota-related breakouts). I will use 0408.99.0000 style structure, which I believe is 0408.99.00 with the statistical suffix 00 under the current schedule. The code 0408.99.0000 therefore seems a reasonable answer.\n\n{\"hts_code\": \"0408.99.0000\", \"reason\": \"Cooked, smoked, seasoned (peeled) quail eggs with added sugar are birds' eggs not in shell, otherwise preserved, which falls under heading 0408, other (0408.99).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 305,
+      "completion_tokens": 618,
+      "total_tokens": 923,
+      "cost": 0.00679,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00679,
+        "upstream_inference_prompt_cost": 0.00061,
+        "upstream_inference_completions_cost": 0.00618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0408990000",
+  "predicted_reason": "Cooked, smoked, seasoned (peeled) quail eggs with added sugar are birds' eggs not in shell, otherwise preserved, which falls under heading 0408, other (0408.99).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 305,
+    "completion_tokens": 618,
+    "total_tokens": 923,
+    "cost": 0.00679,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00679,
+      "upstream_inference_prompt_cost": 0.00061,
+      "upstream_inference_completions_cost": 0.00618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:26.466010+00:00",
+  "latency_s": 6.279,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

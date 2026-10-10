@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363014",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "7308909590",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596616-QGjmaUvkVbk972VX9OGi",
+    "object": "chat.completion",
+    "created": 1791596616,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like prefabricated building kits of steel, which falls under 9406.90 (HTSUS 2022+: 9406.90.00 \"Prefabricated buildings: Other\"). Heading 9406 covers prefabricated buildings, whether or not assembled, including unassembled sets of parts. The 9406 breakdown is 9406.10 (wooden), 9406.20 (modules of iron or steel), 9406.90 (other). The 9406.90 level then splits into 9406.90.0030 (greenhouses) and 9406.90.0080 (other). Since 2022, 9406.90.00 has statistical suffixes of 9406.90.0010 (agricultural/horticultural), 9406.90.0020 (other, structures of iron or steel), and 9406.90.0030 (other, other).\n\nUnder the description \"structural steel framing designed to form the skeleton of a building... shipped together unassembled, ready for assembly into a finished structure,\" 9406.90 applies. Exact suffix: 9406.90.0080 was used in older schedules, while 9406.90.0090 is also possible. I'll go with the current 9406.90.0080 for other.\n\nAlternative: 7308.90 for structural parts. However, the kit of complete building parts goes to 9406 under GRI 2(a) and Note 1(e) to Section XV, as 9406 is excluded from chapter 73 coverage.\n\n{\"hts_code\": \"9406.90.0080\", \"reason\": \"Unassembled steel framing components shipped together as a complete set for assembly into a building are classified as prefabricated buildings in heading 9406 (other), not as structural parts of iron or steel in 7308.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 297,
+      "completion_tokens": 546,
+      "total_tokens": 843,
+      "cost": 0.006054,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006054,
+        "upstream_inference_prompt_cost": 0.000594,
+        "upstream_inference_completions_cost": 0.00546
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9406900080",
+  "predicted_reason": "Unassembled steel framing components shipped together as a complete set for assembly into a building are classified as prefabricated buildings in heading 9406 (other), not as structural parts of iron or steel in 7308.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 297,
+    "completion_tokens": 546,
+    "total_tokens": 843,
+    "cost": 0.006054,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006054,
+      "upstream_inference_prompt_cost": 0.000594,
+      "upstream_inference_completions_cost": 0.00546
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:36.550948+00:00",
+  "latency_s": 5.72,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

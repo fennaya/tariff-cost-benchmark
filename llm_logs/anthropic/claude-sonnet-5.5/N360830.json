@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360830",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "8529908700",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596159-3uREwjw0yXNF6A96qoOq",
+    "object": "chat.completion",
+    "created": 1791596159,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on a video inspection scope (borescope). The complete scope would most likely fall in 8525.80 (video camera recorders and digital cameras) or in 9013/9031. The handheld unit displays still images but cannot process or convert video, and the imager cable holds a CMOS sensor.\n\nThe ruling probably classified the complete scope in 9013.80 or 9031.49, or in 8525.80.4000 or 8525.80.30. Borescopes are often classified in 9031.49.90 as optical measuring or checking instruments, but a video inspection scope with a camera head could instead be 8525.89 or 8525.80. Since 2022, 8525.89 has replaced 8525.80 for television cameras and digital cameras, though in the 2022 HTS version the 8525.80 subheadings became 8525.81 to 8525.89.\n\nCBP has ruled that video borescopes are classified in 8525.80.40 as \"other video camera recorders\" or 8525.80.30 as \"television cameras\". The current subheading 8525.89.40 is \"other\" cameras. The parts would go in 8529.90, with the handheld unit and imager cable as parts of the camera in 8529.90.9700 or similar.\n\nThe question asks for a single code, and the item described is the complete scope. In the ruling the complete scope was probably 8525.89.4000 (Other television cameras, digital cameras, and video camera recorders). However, the \"Part 1/Part 2\" structure suggests the ruling classified the parts in 8529.90.9900 and the complete scope in 8525.89.4000. Since the complete scope is the main item, I'll go with 8525.89.4000.\n\n{\"hts_code\": \"8525.89.4000\", \"reason\": \"The complete BK3000-55A video inspection scope (handheld unit plus imager cable with CMOS sensor) is classified as a digital/television camera of heading 8525, with the separately imported parts falling under 8529.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 643,
+      "total_tokens": 1044,
+      "cost": 0.007232,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007232,
+        "upstream_inference_prompt_cost": 0.000802,
+        "upstream_inference_completions_cost": 0.00643
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8525894000",
+  "predicted_reason": "The complete BK3000-55A video inspection scope (handheld unit plus imager cable with CMOS sensor) is classified as a digital/television camera of heading 8525, with the separately imported parts falling under 8529.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 643,
+    "total_tokens": 1044,
+    "cost": 0.007232,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007232,
+      "upstream_inference_prompt_cost": 0.000802,
+      "upstream_inference_completions_cost": 0.00643
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:59.865308+00:00",
+  "latency_s": 6.033,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

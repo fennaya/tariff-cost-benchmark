@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361981",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "6307909891",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596391-A7eHvUigaX5KMszBDFDu",
+    "object": "chat.completion",
+    "created": 1791596391,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on decorative boot-shaped pillows. Cushions of textile materials fall under heading 9404.90, which covers articles of bedding and similar furnishings fitted with springs or stuffed. Subheading 9404.90.85 covers \"other\" items, and 9404.90.8522 is the subheading for other cushions of man-made fibers. I'm not certain of the statistical suffixes, but 9404.90.8580 is a plausible statistical-suffix alternative.\n\nThe known HTS structure under 9404.90 is:\n- 9404.90.10: of cotton... (actually 9404.90.10 is \"Pillows, cushions and similar furnishings: containing feathers or down\")\n- 9404.90.20: Other, of cotton\n- 9404.90.85: Other (not of cotton)\n- 9404.90.95: Other\n\nI believe the 9404.90.85 line carries 9404.90.8505 for \"Pillows, cushions, similar furnishings: other: other: other\" and 9404.90.8580 under it. The actual 2022-era ruling for boot pillows likely used 9404.90.8580, but if I recall correctly, 9404.90.85 has the following breakdown: 9404.90.8505 covers \"Other: Pillows, cushions...\" and 9404.90.8580 covers \"Other\". I'll go with 9404.90.8580.\n\n{\"hts_code\": \"9404.90.8580\", \"reason\": \"A polyester-filled, textile-covered decorative boot-shaped pillow is a stuffed cushion-type furnishing of man-made fibers, classified in heading 9404 as other articles of bedding and similar furnishings, not of cotton.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 584,
+      "completion_tokens": 554,
+      "total_tokens": 1138,
+      "cost": 0.006708,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006708,
+        "upstream_inference_prompt_cost": 0.001168,
+        "upstream_inference_completions_cost": 0.00554
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9404908580",
+  "predicted_reason": "A polyester-filled, textile-covered decorative boot-shaped pillow is a stuffed cushion-type furnishing of man-made fibers, classified in heading 9404 as other articles of bedding and similar furnishings, not of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 584,
+    "completion_tokens": 554,
+    "total_tokens": 1138,
+    "cost": 0.006708,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006708,
+      "upstream_inference_prompt_cost": 0.001168,
+      "upstream_inference_completions_cost": 0.00554
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:52.062342+00:00",
+  "latency_s": 5.725,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

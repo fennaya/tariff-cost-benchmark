@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356924",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8544493080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595289-JfsKHVTtv8IL9njuugZm",
+    "object": "chat.completion",
+    "created": 1791595289,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an unconnectorized Cat6 cable of four twisted pairs, rated at 300 V, so it falls under heading 8544 (insulated wire and cable). Within that heading, 8544.42 covers conductors fitted with connectors, and 8544.49 covers those without. Because this cable has no connectors and is rated at or below 1,000 V, the right subheading is 8544.49.\n\nThe 8544.49 subheadings split by voltage, with 8544.49.30 for conductors of 80 V to 1,000 V. A cable rated below 80 V would go to 8544.49.10 instead. At 300 V this cable is not below 80 V, so it belongs under 8544.49.30. The 10-digit statistical suffix for that line is 8544.49.3000.\n\nI am recalling the exact tariff text from memory. As I remember it, 8544.49.10 is \"Of a voltage not exceeding 80 V\" with 8544.49.20 for \"Of a voltage exceeding 80 V but not exceeding 1,000 V: Of copper: Other.\" My memory is that the tariff line for this range is 8544.49.30 (\"Other: Of a voltage exceeding 80 V but not exceeding 1,000 V, Of copper\"), and I recall CBP rulings on Cat5 and Cat6 cable classifying these as 8544.49.3000. I'm going with that.\n\n{\"hts_code\": \"8544.49.3000\", \"reason\": \"Unconnectorized copper data cable with PVC jacket, rated at 300 V (above 80 V and not over 1,000 V), is classified in heading 8544 as other insulated electric conductors under subheading 8544.49.30.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 348,
+      "completion_tokens": 550,
+      "total_tokens": 898,
+      "cost": 0.006196,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006196,
+        "upstream_inference_prompt_cost": 0.000696,
+        "upstream_inference_completions_cost": 0.0055
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544493000",
+  "predicted_reason": "Unconnectorized copper data cable with PVC jacket, rated at 300 V (above 80 V and not over 1,000 V), is classified in heading 8544 as other insulated electric conductors under subheading 8544.49.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 348,
+    "completion_tokens": 550,
+    "total_tokens": 898,
+    "cost": 0.006196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006196,
+      "upstream_inference_prompt_cost": 0.000696,
+      "upstream_inference_completions_cost": 0.0055
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:29.694808+00:00",
+  "latency_s": 4.902,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362909",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "4421999880",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596589-0Gn9Spraub54izovthS3",
+    "object": "chat.completion",
+    "created": 1791596589,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a panel with an edge-glued lumber core faced with MDF. Since it is not plywood, the likely classification is heading 4412 or 4418, or possibly 4421 or 4407.\n\nHeading 4412 covers plywood, veneered panels and similar laminated wood. The description says the panel is not plywood, so 4412 is excluded.\n\nHeading 4418 covers builders' joinery and carpentry of wood. 4418.99 includes other items, and 4418.74 and 4418.75 cover assembled flooring panels and multilayer panels. The panel is not flooring and is not described as one.\n\nHeading 4421 covers other articles of wood.\n\nThe panel is 18 mm thick with an edge-glued core. This resembles blockboard or \"lumber core\" panels. Blockboard, laminboard and battenboard fall under 4412 in the HTS, specifically 4412.94 (blockboard, laminboard and battenboard) with the subheading 4412.94.xx. Since the ruling says it is not considered plywood or similar laminated wood, the classification is probably 4421.99.9880 or 4421.99.97.\n\nAlternatively, it could be treated as wood continuously shaped, or as a \"wood panel\" under 4418.99. Another option is that the lumber core with fiberboard surfaces is classified by the core material, which would make it 4407 sawn wood. Edge-glued lumber panels (4407) are not covered with MDF, and the MDF is a surface covering, so this does not fit well.\n\nI think the best answer is 4421.99.9880 (other articles of wood, other). Subheading 4421.99.97 is the current \"Other\" line under 4421.99. The HTS lists 4421.99.9880 as \"Other\" and 4421.99.9780 under the previous structure. Following the 2022 revision, 4421.99.98 is \"Other\" and 4421.99.97 is \"Other: Other\" under the \"Other\" subheading. I'll go with 4421.99.9880.\n\n{\"hts_code\": \"4421.99.9880\", \"reason\": \"An edge-glued lumber core faced with MDF and printed paper is not plywood or similar laminated wood under 4412, so it falls under 4421 as an other article of wood.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 446,
+      "completion_tokens": 736,
+      "total_tokens": 1182,
+      "cost": 0.008252,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008252,
+        "upstream_inference_prompt_cost": 0.000892,
+        "upstream_inference_completions_cost": 0.00736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4421999880",
+  "predicted_reason": "An edge-glued lumber core faced with MDF and printed paper is not plywood or similar laminated wood under 4412, so it falls under 4421 as an other article of wood.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 736,
+    "total_tokens": 1182,
+    "cost": 0.008252,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008252,
+      "upstream_inference_prompt_cost": 0.000892,
+      "upstream_inference_completions_cost": 0.00736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:09.499180+00:00",
+  "latency_s": 7.151,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

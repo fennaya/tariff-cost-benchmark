@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361710",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "3926209050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600223-mHo2rXzP9mEid7YDFa3r",
+    "object": "chat.completion",
+    "created": 1791600223,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.8180\", \"reason\": \"A replacement boot band used to secure a vehicle's CV/constant velocity boot is a part of the transmission/drive axle of a motor vehicle, classifiable as other parts and accessories of motor vehicles.\"}",
+          "refusal": null,
+          "reasoning": "Silicone band, flat continuous loop \u2014 likely other articles of vulcanized rubber/silicone: 4016.99.60 or 3910 articles of silicones? Silicone rubber is vulcanized rubber \u2192 4016.99.6080? Boot band for automotive CV boot? \"Replacement boot band\" \u2014 likely automotive part 8708.99? Boot band secures CV joint boot \u2014 part of vehicle. Style #60002... CBP ruling: boot band classified 8708.99.8180? Actually CV boot clamps \u2014 heading 8708 parts of motor vehicles. I'll go 8708.99.8180.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Silicone band, flat continuous loop \u2014 likely other articles of vulcanized rubber/silicone: 4016.99.60 or 3910 articles of silicones? Silicone rubber is vulcanized rubber \u2192 4016.99.6080? Boot band for automotive CV boot? \"Replacement boot band\" \u2014 likely automotive part 8708.99? Boot band secures CV joint boot \u2014 part of vehicle. Style #60002... CBP ruling: boot band classified 8708.99.8180? Actually CV boot clamps \u2014 heading 8708 parts of motor vehicles. I'll go 8708.99.8180.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 132,
+      "completion_tokens": 208,
+      "total_tokens": 340,
+      "cost": 0.0007336,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007336,
+        "upstream_inference_prompt_cost": 2.64e-05,
+        "upstream_inference_completions_cost": 0.0007072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 146,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708998180",
+  "predicted_reason": "A replacement boot band used to secure a vehicle's CV/constant velocity boot is a part of the transmission/drive axle of a motor vehicle, classifiable as other parts and accessories of motor vehicles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 132,
+    "completion_tokens": 208,
+    "total_tokens": 340,
+    "cost": 0.0007336,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007336,
+      "upstream_inference_prompt_cost": 2.64e-05,
+      "upstream_inference_completions_cost": 0.0007072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 146,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:43:43.528304+00:00",
+  "latency_s": 4.262,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

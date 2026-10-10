@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360189",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600053-LYBX4YqIF8GXTODtEwJS",
+    "object": "chat.completion",
+    "created": 1791600053,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.21.0095\", \"reason\": \"The bag is a plastic sack/bag for the conveyance or packing of goods, and polyethylene (a polymer of ethylene) predominates by weight (80%), so it is classified in heading 3923, subheading 3923.21.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling style \u2014 likely 3923.21 for plastic bags... but \"sacks and bags of polyethylene\" \u2014 3923.21.0095? Actually 3923.21.00 covers sacks/bags of polymers of ethylene. 10-digit: 3923.21.0000? HTSUS 3923.21.0095? Current: 3923.21.0095? I recall 3923.21.0095 exists? There's 3923.21.0095 \"of polyethylene\"? Actually subheadings: 3923.21.00 Sacks and bags (cones) of polymers of ethylene \u2014 statistical suffixes 3923.21.0095? I think 3923.21.0095 is correct (other).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling style \u2014 likely 3923.21 for plastic bags... but \"sacks and bags of polyethylene\" \u2014 3923.21.0095? Actually 3923.21.00 covers sacks/bags of polymers of ethylene. 10-digit: 3923.21.0000? HTSUS 3923.21.0095? Current: 3923.21.0095? I recall 3923.21.0095 exists? There's 3923.21.0095 \"of polyethylene\"? Actually subheadings: 3923.21.00 Sacks and bags (cones) of polymers of ethylene \u2014 statistical suffixes 3923.21.0095? I think 3923.21.0095 is correct (other).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 267,
+      "total_tokens": 465,
+      "cost": 0.00114912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00114912,
+        "upstream_inference_prompt_cost": 2.772e-05,
+        "upstream_inference_completions_cost": 0.0011214
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 191,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3923210095",
+  "predicted_reason": "The bag is a plastic sack/bag for the conveyance or packing of goods, and polyethylene (a polymer of ethylene) predominates by weight (80%), so it is classified in heading 3923, subheading 3923.21.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 267,
+    "total_tokens": 465,
+    "cost": 0.00114912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00114912,
+      "upstream_inference_prompt_cost": 2.772e-05,
+      "upstream_inference_completions_cost": 0.0011214
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 191,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:40:54.055798+00:00",
+  "latency_s": 4.61,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

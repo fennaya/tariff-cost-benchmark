@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361285",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8431499020",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596234-pTvvq7a8L1dcZ0S57ijr",
+    "object": "chat.completion",
+    "created": 1791596234,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Hydraulic shears for excavators are interchangeable tools for working machines. These are not hand tools. Likely options:\n\n- 8466.20 covers work holders.\n- 8466.30 covers dividing heads.\n- 8466.93 covers parts and accessories for machines of 8456-8465.\n- 8466.94 covers parts for machines of heading 8462 or 8463 (metal shearing machines are 8462).\n- 8431.49 covers parts for machinery of 8426-8430, which includes excavators under 8429. Attachments suited for excavators, such as buckets, blades and shears, are classified in 8431.49.\n\nExcavator attachments such as hydraulic shears (demolition shears) are commonly classified in 8431.49.9015 or similar. Within 8431.49, the statistical suffixes are:\n- 8431.49.10: parts of machinery of 8426.\n- 8431.49.30: of machinery of 8429 and 8430 (? ).\n- 8431.49.90: other.\n\nIn the HTSUS, 8431.49.90 breaks down as 8431.49.9010 (Of machinery of 8426, 8429...) Actual suffixes are uncertain. I recall 8431.49.9080 as \"Other\". I'll go with 8431.49.9080 (Other).\n\nAlternatively, hydraulic shears could be 8467 tools, but those are hand-held, so 8431.49 is the best fit.\n\n{\"hts_code\": \"8431.49.9080\", \"reason\": \"Hydraulic shear attachments for excavators are identifiable parts/attachments of excavating machinery (heading 8429) and so fall in 8431.49, other parts of machinery of headings 8425-8430.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 558,
+      "total_tokens": 805,
+      "cost": 0.006074,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006074,
+        "upstream_inference_prompt_cost": 0.000494,
+        "upstream_inference_completions_cost": 0.00558
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8431499080",
+  "predicted_reason": "Hydraulic shear attachments for excavators are identifiable parts/attachments of excavating machinery (heading 8429) and so fall in 8431.49, other parts of machinery of headings 8425-8430.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 247,
+    "completion_tokens": 558,
+    "total_tokens": 805,
+    "cost": 0.006074,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006074,
+      "upstream_inference_prompt_cost": 0.000494,
+      "upstream_inference_completions_cost": 0.00558
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:14.299180+00:00",
+  "latency_s": 5.662,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

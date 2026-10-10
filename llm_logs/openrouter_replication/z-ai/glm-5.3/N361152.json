@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361152",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "2106909995",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600150-mZa2vRyE52HqQp2bm0Nv",
+    "object": "chat.completion",
+    "created": 1791600150,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.9999\", \"reason\": \"Frozen meat-free fillets made from mycoprotein are prepared foods not elsewhere specified, classifiable as other food preparations of heading 2106.\"}",
+          "refusal": null,
+          "reasoning": "Frozen prepared meat-free products, mycoprotein \u2014 likely 2106.90.99 other food preparations? Quorn fillets classified in past as 2106.90.99? Actually frozen prepared meals... likely 2106.90.9998? Use 2106.90.9999? Common ruling: Quorn products classified under 2106.90.99. Choose 2106.90.9998? Safer 2106.90.9999.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Frozen prepared meat-free products, mycoprotein \u2014 likely 2106.90.99 other food preparations? Quorn fillets classified in past as 2106.90.99? Actually frozen prepared meals... likely 2106.90.9998? Use 2106.90.9999? Common ruling: Quorn products classified under 2106.90.99. Choose 2106.90.9998? Safer 2106.90.9999.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 177,
+      "completion_tokens": 150,
+      "total_tokens": 327,
+      "cost": 0.0004362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004362,
+        "upstream_inference_prompt_cost": 0.0001062,
+        "upstream_inference_completions_cost": 0.00033
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 100,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909999",
+  "predicted_reason": "Frozen meat-free fillets made from mycoprotein are prepared foods not elsewhere specified, classifiable as other food preparations of heading 2106.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 150,
+    "total_tokens": 327,
+    "cost": 0.0004362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004362,
+      "upstream_inference_prompt_cost": 0.0001062,
+      "upstream_inference_completions_cost": 0.00033
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 100,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:42:30.459011+00:00",
+  "latency_s": 1.246,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

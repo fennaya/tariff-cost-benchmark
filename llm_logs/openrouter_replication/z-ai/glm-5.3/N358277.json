@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358277",
+  "rulingDate": "2026-02-06T00:00:00",
+  "true_code": "8413919010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599745-mVBawpPon98ZAtPedhzV",
+    "object": "chat.completion",
+    "created": 1791599745,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8413.91.0000\", \"reason\": \"The aluminum pump housing casting is a dedicated part of a rotary positive displacement pump, classified as other parts of pumps in HTSUS 8413.91.0000.\"}",
+          "refusal": null,
+          "reasoning": "Pump housing casting, aluminum, unfinished casting \u2014 likely classified as part of pump under 8413.91.0000? Parts of pumps: 8413.91.0000. But it's a casting not yet machined? It's a pump housing casting \u2014 aluminum casting. Could be 7616.99? As a part of pump, HTS 8413.91.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Pump housing casting, aluminum, unfinished casting \u2014 likely classified as part of pump under 8413.91.0000? Parts of pumps: 8413.91.0000. But it's a casting not yet machined? It's a pump housing casting \u2014 aluminum casting. Could be 7616.99? As a part of pump, HTS 8413.91.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 224,
+      "completion_tokens": 146,
+      "total_tokens": 370,
+      "cost": 0.00073888,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00073888,
+        "upstream_inference_prompt_cost": 3.808e-05,
+        "upstream_inference_completions_cost": 0.0007008
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 97,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8413910000",
+  "predicted_reason": "The aluminum pump housing casting is a dedicated part of a rotary positive displacement pump, classified as other parts of pumps in HTSUS 8413.91.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 224,
+    "completion_tokens": 146,
+    "total_tokens": 370,
+    "cost": 0.00073888,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00073888,
+      "upstream_inference_prompt_cost": 3.808e-05,
+      "upstream_inference_completions_cost": 0.0007008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:35:46.156760+00:00",
+  "latency_s": 2.037,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N361363",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599197-tWxNiA9Ax8bSeyCu7wEz",
+    "object": "chat.completion",
+    "created": 1791599197,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4818.10.0000\", \"reason\": \"Printed tissue paper in sheets weighing 22 gsm is classified as toilet paper under HTSUS heading 4818, specifically subheading 4818.10.0000.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 153,
+      "completion_tokens": 56,
+      "total_tokens": 209,
+      "cost": 5.906e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.906e-05,
+        "upstream_inference_prompt_cost": 3.06e-06,
+        "upstream_inference_completions_cost": 5.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4818100000",
+  "predicted_reason": "Printed tissue paper in sheets weighing 22 gsm is classified as toilet paper under HTSUS heading 4818, specifically subheading 4818.10.0000.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 153,
+    "completion_tokens": 56,
+    "total_tokens": 209,
+    "cost": 5.906e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 5.906e-05,
+      "upstream_inference_prompt_cost": 3.06e-06,
+      "upstream_inference_completions_cost": 5.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T02:26:37.295833+00:00",
+  "latency_s": 5.936,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355317",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594037-6UeNpsGonTRQbTvZ9VAa",
+    "object": "chat.completion",
+    "created": 1791594037,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0000\", \"reason\": \"Surface-worked igneous stone other than marble or granite, classified as other monumental or building stone.\"}",
+          "refusal": null,
+          "reasoning": "Blue Bahia is actually a quartzite? Lab says \"other igneous stone\" \u2014 worked granite? Igneous other than granite \u2192 6802.93.00? 6802.93 covers \"other\" stone... 6802.93.00 is other stone (slate?). Subheadings: 6802.91 marble, 6802.92 granite, 6802.93 other. So 6802.93.0000? Actually 6802.93.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Blue Bahia is actually a quartzite? Lab says \"other igneous stone\" \u2014 worked granite? Igneous other than granite \u2192 6802.93.00? 6802.93 covers \"other\" stone... 6802.93.00 is other stone (slate?). Subheadings: 6802.91 marble, 6802.92 granite, 6802.93 other. So 6802.93.0000? Actually 6802.93.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 155,
+      "total_tokens": 360,
+      "cost": 0.000568,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000568,
+        "upstream_inference_prompt_cost": 4.1e-05,
+        "upstream_inference_completions_cost": 0.000527
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 114,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930000",
+  "predicted_reason": "Surface-worked igneous stone other than marble or granite, classified as other monumental or building stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 205,
+    "completion_tokens": 155,
+    "total_tokens": 360,
+    "cost": 0.000568,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000568,
+      "upstream_inference_prompt_cost": 4.1e-05,
+      "upstream_inference_completions_cost": 0.000527
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 114,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:38.239374+00:00",
+  "latency_s": 1.6,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

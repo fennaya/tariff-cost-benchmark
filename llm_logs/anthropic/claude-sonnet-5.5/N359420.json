@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359420",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "3824999397",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595833-LonNYFcCgq5clviWNqhY",
+    "object": "chat.completion",
+    "created": 1791595833,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a mixture of tertiary acyclic monoamines (N-methyl-dioctyl, N-methyl-decyl-octyl, N-methyldidecyl amines). Acyclic monoamines and their derivatives fall under HTSUS 2921.19. Because it is a mixture of defined amines, I considered whether heading 3824 applies instead, but mixtures of chemically defined compounds are generally classified under 3824 unless they are isomer mixtures. Here the components are different compounds, not isomers, so a mixture would normally go to 3824.99. However, CBP rulings on similar products, such as N,N-dimethyl alkylamines, have gone to 2921.19.\n\nThe \"Dialkylmethylamine\" product is a commercial mix of three amines, and CBP has ruled on such mixtures. Chapter 29 Note 1(a) allows products of Chapter 29 containing impurities, but a deliberate mixture of different compounds is excluded. So 3824.99 is the stronger fit. The 3824.99 subheading's statistical suffixes include 3824.99.9295 (\"Other\" within the chemicals and chemical preparations group). I will use 3824.99.9295, though I am not fully certain of the suffix.\n\n{\"hts_code\": \"3824.99.9295\", \"reason\": \"A deliberate mixture of three different tertiary alkylamines is not a single chemically defined compound, so it falls under Chapter 29 Note 1 exclusion and is classified as a chemical preparation not elsewhere specified in heading 3824.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 310,
+      "completion_tokens": 510,
+      "total_tokens": 820,
+      "cost": 0.00572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00572,
+        "upstream_inference_prompt_cost": 0.00062,
+        "upstream_inference_completions_cost": 0.0051
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3824999295",
+  "predicted_reason": "A deliberate mixture of three different tertiary alkylamines is not a single chemically defined compound, so it falls under Chapter 29 Note 1 exclusion and is classified as a chemical preparation not elsewhere specified in heading 3824.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 510,
+    "total_tokens": 820,
+    "cost": 0.00572,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00572,
+      "upstream_inference_prompt_cost": 0.00062,
+      "upstream_inference_completions_cost": 0.0051
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:33.776415+00:00",
+  "latency_s": 5.291,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

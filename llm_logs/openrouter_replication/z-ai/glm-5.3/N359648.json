@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359648",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "3004909238",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599944-KHiCfABiihUIRJISYcZV",
+    "object": "chat.completion",
+    "created": 1791599944,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.0090\", \"reason\": \"Midazolam injection is a medicament for therapeutic use containing a non-antibiotic, non-hormonal synthetic drug, classified as other medicaments put up in measured doses under subheading 3004.90.\"}",
+          "refusal": null,
+          "reasoning": "Midazolam injection \u2014 HTS 3004.90.00? Midazolam is not antibiotic/hormone/alkaloid; other medicaments: 3004.90.0090? Actually 3004.90 has subdivisions: 3004.90.0010... 3004.90.0090 \"Other\". Midazolam likely 3004.90.0090? There's 3004.90.0092? Common ruling: midazolam injection classified 3004.90.0090? Actually 3004.90.0090 is \"Other\" \u2014 but there are specific like 3004.90.0010 (cisplatin?). I'll answer 3004.90.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Midazolam injection \u2014 HTS 3004.90.00? Midazolam is not antibiotic/hormone/alkaloid; other medicaments: 3004.90.0090? Actually 3004.90 has subdivisions: 3004.90.0010... 3004.90.0090 \"Other\". Midazolam likely 3004.90.0090? There's 3004.90.0092? Common ruling: midazolam injection classified 3004.90.0090? Actually 3004.90.0090 is \"Other\" \u2014 but there are specific like 3004.90.0010 (cisplatin?). I'll answer 3004.90.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 235,
+      "total_tokens": 437,
+      "cost": 0.000701125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000701125,
+        "upstream_inference_prompt_cost": 0.000113625,
+        "upstream_inference_completions_cost": 0.0005875
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 167,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004900090",
+  "predicted_reason": "Midazolam injection is a medicament for therapeutic use containing a non-antibiotic, non-hormonal synthetic drug, classified as other medicaments put up in measured doses under subheading 3004.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 235,
+    "total_tokens": 437,
+    "cost": 0.000701125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000701125,
+      "upstream_inference_prompt_cost": 0.000113625,
+      "upstream_inference_completions_cost": 0.0005875
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:39:04.782887+00:00",
+  "latency_s": 2.39,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

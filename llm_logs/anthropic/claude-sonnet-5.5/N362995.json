@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362995",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "8531200040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596610-x2ffFnQ825F7gs32TmAr",
+    "object": "chat.completion",
+    "created": 1791596610,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an LED status light assembly designed for use in a dental milling machine. The main candidates are:\n\n- 8513 or 9405 (lighting)\n- 8531.20 (indicator panels incorporating LEDs)\n- 8543 (electrical machines with individual functions)\n- 8466.93 or 8466.94 (parts of machine tools)\n- 8487 or 8548\n\nHeading 8531 covers electric sound or visual signaling apparatus, and 8531.20 covers indicator panels incorporating LEDs. The 8531.20.00 subheading is a close fit for a status indicator bar made of LEDs on a PCB. Alternatively, 8531.90 covers parts of such apparatus, but this item is a complete assembly that signals status, so 8531.20 fits better.\n\nThe HTSUS statistical suffix for 8531.20 is 8531.20.0040, \"Indicator panels incorporating LCDs or LEDs: Other\". The 8531.20.00 line splits into 8531.20.0020 for flat panel displays and 8531.20.0040 for other. I am choosing 8531.20.0040.\n\nI recall a CBP ruling on this fastmill.io F2 LED assembly that classified it in 8531.20.0040. That recollection supports the choice.\n\n```json\n{\"hts_code\": \"8531.20.0040\", \"reason\": \"The LED status bar assembly is a visual signaling indicator incorporating LEDs that displays machine status, so it falls in heading 8531 as an LED indicator panel, not a flat panel display.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 439,
+      "completion_tokens": 509,
+      "total_tokens": 948,
+      "cost": 0.005968,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005968,
+        "upstream_inference_prompt_cost": 0.000878,
+        "upstream_inference_completions_cost": 0.00509
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8531200040",
+  "predicted_reason": "The LED status bar assembly is a visual signaling indicator incorporating LEDs that displays machine status, so it falls in heading 8531 as an LED indicator panel, not a flat panel display.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 439,
+    "completion_tokens": 509,
+    "total_tokens": 948,
+    "cost": 0.005968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005968,
+      "upstream_inference_prompt_cost": 0.000878,
+      "upstream_inference_completions_cost": 0.00509
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:30.908713+00:00",
+  "latency_s": 5.354,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

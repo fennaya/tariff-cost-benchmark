@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361982",
+  "rulingDate": "2026-06-15T00:00:00",
+  "true_code": "8716400000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600264-k23d26a67PVes6WLw6Cq",
+    "object": "chat.completion",
+    "created": 1791600264,
+    "model": "z-ai/glm-5.3",
+    "provider": "Decart",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.39.0090\", \"reason\": \"These unfinished trailer chassis, designed to carry specialized oil well service equipment rather than to transport goods, are classified as other trailers and semi-trailers under heading 8716, with GRI 2(a) applied since they have the essential character of finished trailers.\"}",
+          "refusal": null,
+          "reasoning": "This is a known NY ruling \u2014 oil well servicing trailers classified under 8431? Actually unfinished trailers for oil well equipment: classified 8701? Known ruling N312675? Coil tubing trailers classified under 8428? I recall ruling classifying such trailers under 8701.90? Hmm. Unfinished trailers designed for oil well services \u2014 heading 8701 (tractors) no. Likely 8716? Trailers... but specially designed for oil well services \u2192 heading 8431? Actually oil field machinery heading 8430? The trailer fitted with coil tubing unit \u2014 GRI 2(a) unfinished. I think ruling classified under 8701.90.00? Hmm.\n\nThere is ruling NY N276647? Kinetic... I believe answer is 8701.90.50? Let me think: heading 8716 covers trailers; but non-mechanical trailers for special purposes other than transport \u2192 8716.39? Oil well service trailers have been classified in 8716.39.0090? Actually 8716.39 \"Other trailers... tankers\"? Subheadings: 8716.20 self-loading, 8716.31 tankers, 8716.39 other. Unfinished chassis for oil well equipment \u2014 likely 8716.39.0090. But GRI 2(a) unfinished with essential character... The ruling (HQ H266675?) I think classified as 8701? I'll go with 8716.39.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a known NY ruling \u2014 oil well servicing trailers classified under 8431? Actually unfinished trailers for oil well equipment: classified 8701? Known ruling N312675? Coil tubing trailers classified under 8428? I recall ruling classifying such trailers under 8701.90? Hmm. Unfinished trailers designed for oil well services \u2014 heading 8701 (tractors) no. Likely 8716? Trailers... but specially designed for oil well services \u2192 heading 8431? Actually oil field machinery heading 8430? The trailer fitted with coil tubing unit \u2014 GRI 2(a) unfinished. I think ruling classified under 8701.90.00? Hmm.\n\nThere is ruling NY N276647? Kinetic... I believe answer is 8701.90.50? Let me think: heading 8716 covers trailers; but non-mechanical trailers for special purposes other than transport \u2192 8716.39? Oil well service trailers have been classified in 8716.39.0090? Actually 8716.39 \"Other trailers... tankers\"? Subheadings: 8716.20 self-loading, 8716.31 tankers, 8716.39 other. Unfinished chassis for oil well equipment \u2014 likely 8716.39.0090. But GRI 2(a) unfinished with essential character... The ruling (HQ H266675?) I think classified as 8701? I'll go with 8716.39.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 571,
+      "completion_tokens": 416,
+      "total_tokens": 987,
+      "cost": 0.0015824536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015824536,
+        "upstream_inference_prompt_cost": 0.0004810104,
+        "upstream_inference_completions_cost": 0.0011014432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 339,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716390090",
+  "predicted_reason": "These unfinished trailer chassis, designed to carry specialized oil well service equipment rather than to transport goods, are classified as other trailers and semi-trailers under heading 8716, with GRI 2(a) applied since they have the essential character of finished trailers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 571,
+    "completion_tokens": 416,
+    "total_tokens": 987,
+    "cost": 0.0015824536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015824536,
+      "upstream_inference_prompt_cost": 0.0004810104,
+      "upstream_inference_completions_cost": 0.0011014432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 339,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Decart",
+  "requested_at": "2026-10-10T02:44:24.758406+00:00",
+  "latency_s": 4.005,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356922",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9617001000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595288-qWoiSwSNKAG98q5WnSQO",
+    "object": "chat.completion",
+    "created": 1791595288,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a vacuum-insulated stainless-steel tumbler. Vacuum flasks and other vacuum vessels fall in heading 9617, which covers vacuum flasks and other vacuum vessels, complete with cases, and parts thereof other than glass inners. The tumbler is a double-walled vacuum insulated vessel with a lid, so it fits 9617.00.\n\nThe 9617 subheadings are:\n- 9617.00.10: vacuum flasks and other vacuum vessels, complete with cases, and parts thereof other than glass inners; vacuum flasks and vessels with glass inners\n- 9617.00.20: other, with glass inners\n- 9617.00.30: other, parts\n- 9617.00.40: other\n\nThe 9617.00.10 line is \"Vacuum flasks and other vacuum vessels, complete with cases; parts thereof (except glass inners): Vacuum flasks and other vacuum vessels, complete with cases,\" which does not fit here because there is no protective outer casing. The remaining line, 9617.00.30 or 9617.00.40, is the likely fit. I recall 9617.00.30 as \"Other vacuum flasks and other vacuum vessels, 1 liter or less\" and 9617.00.40 as \"Other,\" but I am not certain of the exact wording.\n\nI believe CBP rulings on vacuum-insulated stainless tumblers classify them under 9617.00.30. That line is \"Vacuum flasks and other vacuum vessels, complete with cases; parts thereof (except glass inners): Other: Vacuum flasks and other vacuum vessels, having a capacity not exceeding 0.75 liter,\" and the 28 oz tumbler is about 0.83 liter, so it would exceed 0.75 liter. I am therefore treating it as 9617.00.40 based on that capacity.\n\n{\"hts_code\": \"9617.00.4000\", \"reason\": \"A double-walled vacuum-insulated stainless-steel tumbler with a lid is a vacuum vessel of heading 9617, and at 28 oz (about 0.83 L) it exceeds the 0.75 liter limit of the lower-capacity subheading, so it falls in the residual 'other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 578,
+      "completion_tokens": 728,
+      "total_tokens": 1306,
+      "cost": 0.008436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008436,
+        "upstream_inference_prompt_cost": 0.001156,
+        "upstream_inference_completions_cost": 0.00728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9617004000",
+  "predicted_reason": "A double-walled vacuum-insulated stainless-steel tumbler with a lid is a vacuum vessel of heading 9617, and at 28 oz (about 0.83 L) it exceeds the 0.75 liter limit of the lower-capacity subheading, so it falls in the residual 'other' provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 578,
+    "completion_tokens": 728,
+    "total_tokens": 1306,
+    "cost": 0.008436,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008436,
+      "upstream_inference_prompt_cost": 0.001156,
+      "upstream_inference_completions_cost": 0.00728
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:28.914072+00:00",
+  "latency_s": 5.781,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358741",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599811-SNbBNdEC3emJfBqwIxlR",
+    "object": "chat.completion",
+    "created": 1791599811,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.6020\", \"reason\": \"Adult fancy dress costumes are classified as festive articles in heading 9505, with textile costumes of man-made fibers falling under subheading 9505.90.60.\"}",
+          "refusal": null,
+          "reasoning": "Fancy dress costumes of textile: 9505.90 \u2014 costumes classified in 9505.90.60? Textile costumes: 9505.90.6020? Actually festive costumes: 9505.90.60 covers other. 10-digit: 9505.90.6020? There is 9505.90.6000? HTS 9505.90.60 \"Other\" \u2014 statistical suffixes: 9505.90.6020? I recall costumes of man-made fibers 9505.90.6020.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fancy dress costumes of textile: 9505.90 \u2014 costumes classified in 9505.90.60? Textile costumes: 9505.90.6020? Actually festive costumes: 9505.90.60 covers other. 10-digit: 9505.90.6020? There is 9505.90.6000? HTS 9505.90.60 \"Other\" \u2014 statistical suffixes: 9505.90.6020? I recall costumes of man-made fibers 9505.90.6020.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 133,
+      "completion_tokens": 189,
+      "total_tokens": 322,
+      "cost": 0.0006692,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006692,
+        "upstream_inference_prompt_cost": 2.66e-05,
+        "upstream_inference_completions_cost": 0.0006426
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 131,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505906020",
+  "predicted_reason": "Adult fancy dress costumes are classified as festive articles in heading 9505, with textile costumes of man-made fibers falling under subheading 9505.90.60.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 133,
+    "completion_tokens": 189,
+    "total_tokens": 322,
+    "cost": 0.0006692,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006692,
+      "upstream_inference_prompt_cost": 2.66e-05,
+      "upstream_inference_completions_cost": 0.0006426
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 131,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:36:51.578068+00:00",
+  "latency_s": 2.049,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

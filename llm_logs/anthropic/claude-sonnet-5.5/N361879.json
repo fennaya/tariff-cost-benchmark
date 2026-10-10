@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361879",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "4803004000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596371-JvM4J3Hc6CyiBbsCXQyw",
+    "object": "chat.completion",
+    "created": 1791596371,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is uncoated absorbent paper in rolls, which points to heading 4803 (toilet or facial tissue stock, towel or napkin stock and similar paper of a kind used for household or sanitary purposes, cellulose wadding and webs of cellulose fibers, in rolls or sheets). The alternative is 4818, but that covers finished articles, so it does not fit.\n\nWithin 4803.00, the subheadings are:\n- 4803.00.20: cellulose wadding\n- 4803.00.40: other, of weight not over 36 g/m\u00b2 ... (I'm recalling the structure from memory)\n- 4803.00.00 has statistical suffixes\n\nIn the HTSUS, 4803.00.20 covers \"Creped paper, in rolls\", and 4803.00.40 covers \"Other: Cellulose wadding...\" (not certain of those details). The one I'm fairly confident of is that 4803.00.40 is \"Other\" and splits into 4803.00.4000 and similar.\n\nThe 13 g/m\u00b2 paper is thin and lightweight, with no mention of creping. Rulings on similar tissue-type jumbo rolls for pads often fall under 4803.00.4000, so I'll use that. I believe the HTSUS breaks down as:\n- 4803.00.20: Cellulose wadding\n- 4803.00.30: Facial tissue stock\n- 4803.00.40: Other\n\nSince this paper is not creped, the \"other\" 4803.00.40 subheading with a 10-digit suffix is a reasonable fit. I recall suffixes like 4803.00.4000 and 4803.00.4010 for uncreped paper. I'll go with 4803.00.4000.\n\n{\"hts_code\": \"4803.00.4000\", \"reason\": \"Uncoated, lightweight (13 g/m\u00b2) virgin-pulp absorbent tissue-type paper in jumbo rolls for sanitary use falls in heading 4803 as other paper stock of a kind used for household or sanitary purposes.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 652,
+      "total_tokens": 1069,
+      "cost": 0.007354,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007354,
+        "upstream_inference_prompt_cost": 0.000834,
+        "upstream_inference_completions_cost": 0.00652
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4803004000",
+  "predicted_reason": "Uncoated, lightweight (13 g/m\u00b2) virgin-pulp absorbent tissue-type paper in jumbo rolls for sanitary use falls in heading 4803 as other paper stock of a kind used for household or sanitary purposes.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 652,
+    "total_tokens": 1069,
+    "cost": 0.007354,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007354,
+      "upstream_inference_prompt_cost": 0.000834,
+      "upstream_inference_completions_cost": 0.00652
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:31.353097+00:00",
+  "latency_s": 6.109,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361235",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "7326908688",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600156-gqeiCFoEocpA6vW3UnIy",
+    "object": "chat.completion",
+    "created": 1791600156,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8431.39.0080\", \"reason\": \"As a stainless steel receptacle installed on and dedicated to conveyor machinery, it is classifiable as a part of the lifting, handling or loading machinery of heading 8428.\"}",
+          "refusal": null,
+          "reasoning": "Steel receptacle for conveyor machines \u2014 likely part of machinery? It's a box collecting rejects, installed on conveyor machines \u2014 could be classified as parts of machinery. But \"receptacle\" rectangular stainless steel container \u2014 could be 7310.10.30 containers of iron/steel for compressed gas? No. Likely 8431.39.00 parts of lifting/handling machinery (conveyor parts). Actually conveyor parts: 8431.39.0050? HTS 8431.39.00 covers parts of machines of 8428 (conveyors). 10-digit: 8431.39.0080? There are specific subheadings: 8431.39.00 Parts... Actually 8431.39.0050? Let me recall: 8431.31.00 parts of elevators; 8431.39.0050? I think 8431.39.0080? Common answer: 8431.39.0060? Not sure. Safer: 8431.39.0080? Hmm.\n\nAlternatively classify as steel tank/receptacle 7309.00.0030 (tanks, casks... over 300L) \u2014 small box likely not. Could be article of steel 7326.90. But as part of conveyor machine, 8431.39.00. I'll answer 8431.39.0080? Actually I recall 8431.39.0050 is \"parts of machinery of heading 8428\"? The statistical suffixes: 8431.39.0030? I'll go with 8431.39.00. Provide 10-digit: 8431.39.0080. Hmm risk. Many rulings use 8431.39.0060? I'll use 8431.39.0080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Steel receptacle for conveyor machines \u2014 likely part of machinery? It's a box collecting rejects, installed on conveyor machines \u2014 could be classified as parts of machinery. But \"receptacle\" rectangular stainless steel container \u2014 could be 7310.10.30 containers of iron/steel for compressed gas? No. Likely 8431.39.00 parts of lifting/handling machinery (conveyor parts). Actually conveyor parts: 8431.39.0050? HTS 8431.39.00 covers parts of machines of 8428 (conveyors). 10-digit: 8431.39.0080? There are specific subheadings: 8431.39.00 Parts... Actually 8431.39.0050? Let me recall: 8431.31.00 parts of elevators; 8431.39.0050? I think 8431.39.0080? Common answer: 8431.39.0060? Not sure. Safer: 8431.39.0080? Hmm.\n\nAlternatively classify as steel tank/receptacle 7309.00.0030 (tanks, casks... over 300L) \u2014 small box likely not. Could be article of steel 7326.90. But as part of conveyor machine, 8431.39.00. I'll answer 8431.39.0080? Actually I recall 8431.39.0050 is \"parts of machinery of heading 8428\"? The statistical suffixes: 8431.39.0030? I'll go with 8431.39.00. Provide 10-digit: 8431.39.0080. Hmm risk. Many rulings use 8431.39.0060? I'll use 8431.39.0080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 173,
+      "completion_tokens": 480,
+      "total_tokens": 653,
+      "cost": 0.002310683,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002310683,
+        "upstream_inference_prompt_cost": 6.683e-06,
+        "upstream_inference_completions_cost": 0.002304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 426,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8431390080",
+  "predicted_reason": "As a stainless steel receptacle installed on and dedicated to conveyor machinery, it is classifiable as a part of the lifting, handling or loading machinery of heading 8428.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 173,
+    "completion_tokens": 480,
+    "total_tokens": 653,
+    "cost": 0.002310683,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002310683,
+      "upstream_inference_prompt_cost": 6.683e-06,
+      "upstream_inference_completions_cost": 0.002304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 426,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:36.963750+00:00",
+  "latency_s": 3.812,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

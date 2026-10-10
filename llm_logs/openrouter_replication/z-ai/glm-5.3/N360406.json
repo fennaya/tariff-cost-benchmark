@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360406",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8481809045",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600073-P8b3AIROpTuXfPdoFf1G",
+    "object": "chat.completion",
+    "created": 1791600073,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8481.21.2000\", \"reason\": \"The assembly is a thermostatic valve (wax-element temperature-actuated valve regulating engine coolant flow), classified as a thermostatic valve of heading 8481 rather than as an automotive part.\"}",
+          "refusal": null,
+          "reasoning": "Thermostat valve for vehicle engine \u2014 likely 8481.21.2000? Thermostats for engines are classified 8481.21 (thermostatic valves). Actually automotive thermostats: 8481.21.20, duty 2.5%. 10-digit: 8481.21.2000? HTSUS 8481.21.20 \"Thermostatic valves\" \u2014 10 digits 8481.21.2000? There's 8481.21.2000? I believe 8481.21.20 exists with suffix 00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Thermostat valve for vehicle engine \u2014 likely 8481.21.2000? Thermostats for engines are classified 8481.21 (thermostatic valves). Actually automotive thermostats: 8481.21.20, duty 2.5%. 10-digit: 8481.21.2000? HTSUS 8481.21.20 \"Thermostatic valves\" \u2014 10 digits 8481.21.2000? There's 8481.21.2000? I believe 8481.21.20 exists with suffix 00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 238,
+      "completion_tokens": 197,
+      "total_tokens": 435,
+      "cost": 0.00098606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00098606,
+        "upstream_inference_prompt_cost": 4.046e-05,
+        "upstream_inference_completions_cost": 0.0009456
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8481212000",
+  "predicted_reason": "The assembly is a thermostatic valve (wax-element temperature-actuated valve regulating engine coolant flow), classified as a thermostatic valve of heading 8481 rather than as an automotive part.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 238,
+    "completion_tokens": 197,
+    "total_tokens": 435,
+    "cost": 0.00098606,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00098606,
+      "upstream_inference_prompt_cost": 4.046e-05,
+      "upstream_inference_completions_cost": 0.0009456
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 137,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:41:13.596771+00:00",
+  "latency_s": 1.59,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

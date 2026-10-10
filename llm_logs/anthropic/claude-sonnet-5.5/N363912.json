@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363912",
+  "rulingDate": "2026-08-10T00:00:00",
+  "true_code": "8544429090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596744-8OogkZEWnGyDtTNsKjJU",
+    "object": "chat.completion",
+    "created": 1791596744,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on battery cables and jumpers for trucks and trailers. Insulated electrical conductors fitted with connectors for voltages not exceeding 1,000 V fall under 8544.42 (with connectors) or 8544.49 (without connectors). Cables for vehicles that are not ignition wiring sets would normally go under 8544.42.90 or 8544.42.20. Ignition wiring sets and other wiring sets of a kind used in vehicles are in 8544.30, but battery cables are not wiring sets of that type, since a wiring harness is a set of multiple wires. Single battery cables with connectors, for 1,000 V or less, are classified in 8544.42.90.\n\nFor 8544.42, the subheadings are:\n- 8544.42.20: of a kind used for telecommunications\n- 8544.42.90: other, with a statistical suffix. I believe the 10-digit code is 8544.42.9090.\n\nCurrent HTS has 8544.42.10 (Of a kind used for telecommunication, fitted with connectors), 8544.42.20 (Coaxial cable), and 8544.42.90 (Other), with 8544.42.9090 as \"Other\".\n\n{\"hts_code\": \"8544.42.9090\", \"reason\": \"Battery and ground jumper cables are insulated electrical conductors of 1,000 V or less fitted with connectors, and they are not ignition wiring sets or harnesses, so they fall under the residual 'other' provision of 8544.42.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 493,
+      "total_tokens": 709,
+      "cost": 0.005362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005362,
+        "upstream_inference_prompt_cost": 0.000432,
+        "upstream_inference_completions_cost": 0.00493
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "Battery and ground jumper cables are insulated electrical conductors of 1,000 V or less fitted with connectors, and they are not ignition wiring sets or harnesses, so they fall under the residual 'other' provision of 8544.42.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 493,
+    "total_tokens": 709,
+    "cost": 0.005362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005362,
+      "upstream_inference_prompt_cost": 0.000432,
+      "upstream_inference_completions_cost": 0.00493
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:44.449251+00:00",
+  "latency_s": 4.697,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

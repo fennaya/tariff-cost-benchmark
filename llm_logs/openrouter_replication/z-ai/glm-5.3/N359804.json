@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359804",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "8428900390",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599972-QvWJCznOynq5MJCn8Zni",
+    "object": "chat.completion",
+    "created": 1791599972,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8428.90.0000\", \"reason\": \"A powered floor-to-standing lift for persons is lifting/handling machinery not elsewhere specified, classified under HTSUS 8428.90 as other lifting machinery.\"}",
+          "refusal": null,
+          "reasoning": "Lifting equipment for persons \u2014 mechanical hoists/lifts for disabled persons: 8428.90? Actually 8428.20 lifts for materials; person lifts... 8428.90.01? There's 8428.90 for other lifting machinery. But specific: 8471? No. Patient lifts classified 8428.90.00? Check: HTS 8428.90.00 \"other machinery for lifting...\" 10-digit 8428.90.0000? There's 8428.90.0080? I recall 8428.90.0000. Use 8428.90.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Lifting equipment for persons \u2014 mechanical hoists/lifts for disabled persons: 8428.90? Actually 8428.20 lifts for materials; person lifts... 8428.90.01? There's 8428.90 for other lifting machinery. But specific: 8471? No. Patient lifts classified 8428.90.00? Check: HTS 8428.90.00 \"other machinery for lifting...\" 10-digit 8428.90.0000? There's 8428.90.0080? I recall 8428.90.0000. Use 8428.90.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 221,
+      "completion_tokens": 204,
+      "total_tokens": 425,
+      "cost": 0.00101613,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00101613,
+        "upstream_inference_prompt_cost": 3.693e-05,
+        "upstream_inference_completions_cost": 0.0009792
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 149,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8428900000",
+  "predicted_reason": "A powered floor-to-standing lift for persons is lifting/handling machinery not elsewhere specified, classified under HTSUS 8428.90 as other lifting machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 221,
+    "completion_tokens": 204,
+    "total_tokens": 425,
+    "cost": 0.00101613,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00101613,
+      "upstream_inference_prompt_cost": 3.693e-05,
+      "upstream_inference_completions_cost": 0.0009792
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 149,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:39:32.278881+00:00",
+  "latency_s": 1.786,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

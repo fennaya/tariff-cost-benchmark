@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360709",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "9406900130",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596136-jJVP1KPZLH7FOc1JcmTK",
+    "object": "chat.completion",
+    "created": 1791596136,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a prefabricated residential building of steel framing, which falls under heading 9406 (prefabricated buildings). Subheading 9406.90 covers \"other\" prefabricated buildings, and since 2022 HTSUS has used 9406.90.00 with statistical suffixes, which splits as follows.\n\nHTSUS 9406 structure: 9406.10.00 is wood (9406.10.0000), and 9406.90 covers other. As I recall, 9406.90.00 is divided into 9406.90.0030 (of iron or steel) and 9406.90.0050 (of other materials). Older versions had 9406.00.80 \"Other\" with statistical suffixes 9406.00.8030 (Greenhouses), and 9406.00.8060 (other). The 2022 revision introduced 9406.10.00 (wood), 9406.20.00 (modular building units, of steel), 9406.90.00 (other), and 9406.20 specifically covers modular building units of steel, which are designed to be joined with other units.\n\nThe product here is not designed to be assembled with additional units, so it isn't a \"modular building unit\" in that sense. That leaves 9406.90, with a suffix for steel. I recall CBP rulings classifying such units in 9406.90.0030 (prefabricated buildings of iron or steel), though my recollection of the exact suffix is uncertain. 9406.90.0030 seems the better fit.\n\n```json\n{\"hts_code\": \"9406.90.0030\", \"reason\": \"A self-contained prefabricated residential building with a steel frame that is not designed to be joined with other units is classified in heading 9406 as an 'other' prefabricated building, rather than as a modular building unit.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 302,
+      "completion_tokens": 554,
+      "total_tokens": 856,
+      "cost": 0.006144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006144,
+        "upstream_inference_prompt_cost": 0.000604,
+        "upstream_inference_completions_cost": 0.00554
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9406900030",
+  "predicted_reason": "A self-contained prefabricated residential building with a steel frame that is not designed to be joined with other units is classified in heading 9406 as an 'other' prefabricated building, rather than as a modular building unit.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 302,
+    "completion_tokens": 554,
+    "total_tokens": 856,
+    "cost": 0.006144,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006144,
+      "upstream_inference_prompt_cost": 0.000604,
+      "upstream_inference_completions_cost": 0.00554
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:37.050039+00:00",
+  "latency_s": 5.288,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

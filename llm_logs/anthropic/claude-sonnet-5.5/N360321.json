@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360321",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8708947550",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596066-YQq8E0xGV7UVgi2HGrcs",
+    "object": "chat.completion",
+    "created": 1791596066,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Tie rod assemblies for steering systems fall under heading 8708.94 (steering wheels, steering columns and steering boxes; parts thereof) in HTSUS. The relevant subheading is 8708.94.30 for \"Parts\" of steering components, with statistical suffixes under 8708.94.30 (formerly 8708.94.50/8708.94.75). Specifically, 8708.94.75 is \"Other\" within the steering parts, and 8708.94.7500 is the commonly used code for tie rod ends and assemblies.\n\nThe structure of 8708.94 is: 8708.94.10 for steering wheels, columns and boxes, and 8708.94.30 for parts of those. In the current schedule, 8708.94.30 is \"Steering wheels, steering columns and steering boxes: Other: Parts\" with a 10-digit suffix of 8708.94.3000 or similar, and 8708.94.75 is \"Other.\" Tie rod ends are often classified in CBP rulings under 8708.94.7500 or 8708.94.7000. I'll go with 8708.94.7500.\n\n{\"hts_code\": \"8708.94.7500\", \"reason\": \"The assembled automotive tie rod assembly is a steering system part of motor vehicles, classified in heading 8708 under subheading 8708.94 as steering parts, in the 'other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 897,
+      "completion_tokens": 443,
+      "total_tokens": 1340,
+      "cost": 0.006224,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006224,
+        "upstream_inference_prompt_cost": 0.001794,
+        "upstream_inference_completions_cost": 0.00443
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708947500",
+  "predicted_reason": "The assembled automotive tie rod assembly is a steering system part of motor vehicles, classified in heading 8708 under subheading 8708.94 as steering parts, in the 'other' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 897,
+    "completion_tokens": 443,
+    "total_tokens": 1340,
+    "cost": 0.006224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006224,
+      "upstream_inference_prompt_cost": 0.001794,
+      "upstream_inference_completions_cost": 0.00443
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:26.535797+00:00",
+  "latency_s": 4.677,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359019",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "6210505555",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595715-LlorhiD7xPm7wHRgqGh0",
+    "object": "chat.completion",
+    "created": 1791595715,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-type item: a fishing vest of nylon woven fabric with a polyurethane coating plus polyester mesh knit. A vest like this would normally fall under heading 6201 or 6211 (men's) or 6202 (women's), but a unisex garment is classified as men's. Because the outer shell is woven nylon with a visible coating on the inner surface, the fabric would be treated as coated or laminated under heading 5903 or 5907, which would point to 6210. The fabric is coated and visible, though, so Chapter 59 may apply.\n\nHeading 6210 covers garments made up of fabrics of heading 5602, 5603, 5903, 5906 or 5907. The Note 3 to Chapter 59 definition of coated fabrics requires that the coating be visible to the naked eye, and here it is. But the fabric must also be 5903 (impregnated, coated, covered or laminated with plastics), which is the case with polyurethane. So the likely heading is 6210.\n\nWithin 6210, subheading 6210.40 covers other men's garments and 6210.50 covers other women's garments. However, 6210.40 is only for garments that are not the 6201 type. Garments under 6201 that are made of 5903 fabric go to 6210. Subheading 6210.40.50 is \"other men's or boys' garments,\" and the statistical suffix 6210.40.5000 is not a vest-specific provision.\n\nThe alternative is that the vest falls under 6211 as a fishing vest, but since the coated fabric is the key, 6210 is preferred.\n\nFor the 6210.40 breakdown, 6210.40.10 covers disposable garments and 6210.40.20 covers fire-resistant garments. I recall 6210.40.30 as \"Other: Men's or boys' garments, of man-made fibers... \" but I am not certain. I will go with 6210.40.5000, which is \"Other men's or boys' garments.\"\n\n```json\n{\"hts_code\": \"6210.40.5000\", \"reason\": \"A unisex fishing vest with outer shell of visibly polyurethane-coated nylon woven fabric (heading 5903) is classified as other men's garments of heading 6210.\"}\n```\n\n{\"hts_code\": \"6210.40.5000\", \"reason\": \"A unisex fishing vest with outer shell of visibly polyurethane-coated nylon woven fabric (heading 5903) is classified as other men's garments of heading 6210.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 793,
+      "total_tokens": 1170,
+      "cost": 0.008684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008684,
+        "upstream_inference_prompt_cost": 0.000754,
+        "upstream_inference_completions_cost": 0.00793
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6210405000",
+  "predicted_reason": "A unisex fishing vest with outer shell of visibly polyurethane-coated nylon woven fabric (heading 5903) is classified as other men's garments of heading 6210.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 377,
+    "completion_tokens": 793,
+    "total_tokens": 1170,
+    "cost": 0.008684,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008684,
+      "upstream_inference_prompt_cost": 0.000754,
+      "upstream_inference_completions_cost": 0.00793
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:35.387888+00:00",
+  "latency_s": 7.737,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

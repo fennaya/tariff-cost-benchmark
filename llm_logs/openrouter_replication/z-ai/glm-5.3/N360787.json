@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360787",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "8701915000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600120-kvrN91m6zhiLJtVh9iE1",
+    "object": "chat.completion",
+    "created": 1791600120,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8701.30.0000\", \"reason\": \"The autonomous robotic tractor is a self-propelled tractor not of the pedestrian-controlled type, classified as other tractors in heading 8701.\"}",
+          "refusal": null,
+          "reasoning": "Robotic tractor \u2014 likely 8701.30 used for golf? Autonomous mobile robot \u2014 likely 8428.90 or 8701.90? CBP ruling on Pik'r \u2014 classified 8701.30.00? Actually likely 8701.30.0000 (pedestrian-controlled tractors, other than pedestrian-controlled). Hmm. CBP NY ruling classified it in 8428.90? I recall ruling NY N313459 classified autonomous golf ball robot in 8701.30.00. Go with 8701.30.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Robotic tractor \u2014 likely 8701.30 used for golf? Autonomous mobile robot \u2014 likely 8428.90 or 8701.90? CBP ruling on Pik'r \u2014 classified 8701.30.00? Actually likely 8701.30.0000 (pedestrian-controlled tractors, other than pedestrian-controlled). Hmm. CBP NY ruling classified it in 8428.90? I recall ruling NY N313459 classified autonomous golf ball robot in 8701.30.00. Go with 8701.30.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 183,
+      "completion_tokens": 178,
+      "total_tokens": 361,
+      "cost": 0.00079784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00079784,
+        "upstream_inference_prompt_cost": 1.464e-05,
+        "upstream_inference_completions_cost": 0.0007832
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 128,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8701300000",
+  "predicted_reason": "The autonomous robotic tractor is a self-propelled tractor not of the pedestrian-controlled type, classified as other tractors in heading 8701.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 183,
+    "completion_tokens": 178,
+    "total_tokens": 361,
+    "cost": 0.00079784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00079784,
+      "upstream_inference_prompt_cost": 1.464e-05,
+      "upstream_inference_completions_cost": 0.0007832
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 128,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:42:01.254171+00:00",
+  "latency_s": 2.32,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

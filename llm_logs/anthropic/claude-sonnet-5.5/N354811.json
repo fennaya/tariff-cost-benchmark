@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N354811",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "6802930010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593796-bki56rqcRGdNbXAPnTNy",
+    "object": "chat.completion",
+    "created": 1791593796,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is granite, simply cut or sawn into slabs with a polished top. That points to heading 6802, worked monumental or building stone, rather than 2516, which covers granite merely cut into rectangular blocks or slabs. Heading 2516 does not cover granite that has been polished, and a polished surface means it is classified in 6802.\n\nSubheading 6802.93 covers granite, other than tiles, cubes and similar articles. It is divided by the polished surface and by thickness:\n- 6802.93.00 is the subheading for worked granite.\n- The 10-digit statistical suffixes under 6802.93.00 include 6802.93.0010 (Polished, slabs, 10 cm or more thick? uncertain) and others.\n\nI believe the tariff structure is:\n- 6802.93.00: Granite\n  - 6802.93.0010: Over 10 cm thick? (uncertain)\n  - 6802.93.0020 and 6802.93.0030: Other (uncertain)\n  - 6802.93.0090: Other\n\nSince the slab is 0.75 or 1.5 inches thick, I would choose the \"Other\" statistical suffix. I recall the suffixes as 6802.93.0010 (Slabs, 1 cm or more but ...), 6802.93.0020, 6802.93.0030 and 6802.93.0090, but I am not certain of their wording. I am choosing 6802.93.0090.\n\n```json\n{\"hts_code\": \"6802.93.0090\", \"reason\": \"Granite slabs with a polished top that are otherwise simply sawn are worked stone of heading 6802, not heading 2516, and fall under subheading 6802.93 for granite; the 0090 statistical suffix is my best recollection and is unverified.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 570,
+      "total_tokens": 1007,
+      "cost": 0.006574,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006574,
+        "upstream_inference_prompt_cost": 0.000874,
+        "upstream_inference_completions_cost": 0.0057
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930090",
+  "predicted_reason": "Granite slabs with a polished top that are otherwise simply sawn are worked stone of heading 6802, not heading 2516, and fall under subheading 6802.93 for granite; the 0090 statistical suffix is my best recollection and is unverified.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 570,
+    "total_tokens": 1007,
+    "cost": 0.006574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006574,
+      "upstream_inference_prompt_cost": 0.000874,
+      "upstream_inference_completions_cost": 0.0057
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:36.802685+00:00",
+  "latency_s": 6.733,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

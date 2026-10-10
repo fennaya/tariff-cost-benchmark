@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357265",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595353-SE9v2B5iKQtiB5nlQmCB",
+    "object": "chat.completion",
+    "created": 1791595353,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to match a CBP ruling on genmaicha, a mixture of green tea and roasted rice. Under HTSUS 0902, green tea is 0902.10 (in immediate packings of \u22643 kg) or 0902.20 (other). Mixtures of tea with other substances are classified by Note 3 to Chapter 9, where a mixture of tea with other substances that is not tea is treated as tea only if it retains the character of tea. Here, 60% roasted rice and 40% matcha mean the mixture is not tea by character. Matcha is the tea component, but rice is the majority, so the product likely falls under 2106.90, food preparations not elsewhere specified.\n\nChapter 9 Note 2 says that mixtures of products of headings 0901, 0902, 0903, 0904 to 0910 are classified in the heading of the component that predominates, and that mixtures of different tea types fall under 0902. Chapter 9 Note 1(b) states that the addition of other substances to products of 0904 to 0910 does not affect classification as long as the mixtures retain the essential character of the spice. The rule for tea mixtures is less clear. Roasted brown rice is a cereal, and under 1904.90 roasted cereal products are \"prepared foods obtained by swelling or roasting of cereals\". Roasted rice would fall under 1904.90, and the mixture with matcha is likely 2106.90.\n\nI recall CBP ruling N-series that classified genmaicha in 2106.90.9998 (other food preparations, not elsewhere specified). Genmaicha is often said to be 50% tea, though in this case the tea is 40%. I'll go with 2106.90.9998.\n\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"A 60% roasted rice and 40% matcha mixture does not retain the essential character of tea under Chapter 9 notes, so it is classified as a food preparation not elsewhere specified.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 635,
+      "total_tokens": 989,
+      "cost": 0.007058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007058,
+        "upstream_inference_prompt_cost": 0.000708,
+        "upstream_inference_completions_cost": 0.00635
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "A 60% roasted rice and 40% matcha mixture does not retain the essential character of tea under Chapter 9 notes, so it is classified as a food preparation not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 635,
+    "total_tokens": 989,
+    "cost": 0.007058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007058,
+      "upstream_inference_prompt_cost": 0.000708,
+      "upstream_inference_completions_cost": 0.00635
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:33.882588+00:00",
+  "latency_s": 6.328,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

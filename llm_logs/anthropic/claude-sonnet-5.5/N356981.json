@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356981",
+  "rulingDate": "2026-07-02T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595297-h0mjUss273l0aTduOpHy",
+    "object": "chat.completion",
+    "created": 1791595297,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on slabs of a non-calcareous metamorphic rock, which is likely a quartzite. The relevant headings are 6802 (worked monumental or building stone) and 2516 (granite, porphyry, basalt, sandstone and other monumental or building stone, merely cut into blocks or slabs of rectangular shape).\n\nHeading 6802 covers stone that has been further worked than simply cut. Polishing one surface takes the slab beyond \"merely cut\", so it falls under 6802 rather than 2516. The 6802.91 subheading covers marble, travertine and alabaster, and 6802.92 covers other calcareous stone. The 6802.93 subheading covers granite, and 6802.99 covers other stone.\n\nThe stone here is non-calcareous, so 6802.92 is out. It is also not granite, so 6802.93 is out, which leaves 6802.99. Within 6802.99, the 0090 statistical suffix covers other stone, and 6802.99.0060 covers other stone with a 6802.99.00 base.\n\nChecking the HTS structure: 6802.99.00 has the 10-digit statistical suffixes 6802.99.0010 (slabs, other) and 6802.99.0090 (other). I recall 6802.99.0090 being used for such rulings, and I am not fully certain of the suffixes, but 0090 is the most likely choice.\n\n```json\n{\"hts_code\": \"6802.99.0090\", \"reason\": \"A non-calcareous metamorphic stone slab with a polished top face is worked beyond simple cutting, so it falls under heading 6802 as other worked monumental or building stone, not under 2516.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 548,
+      "total_tokens": 963,
+      "cost": 0.00631,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00631,
+        "upstream_inference_prompt_cost": 0.00083,
+        "upstream_inference_completions_cost": 0.00548
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990090",
+  "predicted_reason": "A non-calcareous metamorphic stone slab with a polished top face is worked beyond simple cutting, so it falls under heading 6802 as other worked monumental or building stone, not under 2516.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 415,
+    "completion_tokens": 548,
+    "total_tokens": 963,
+    "cost": 0.00631,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00631,
+      "upstream_inference_prompt_cost": 0.00083,
+      "upstream_inference_completions_cost": 0.00548
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:38.254133+00:00",
+  "latency_s": 5.484,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

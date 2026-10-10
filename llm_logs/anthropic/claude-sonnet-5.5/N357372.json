@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357372",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "8543709860",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595398-uDBhBWcU2vYjhkxohuSt",
+    "object": "chat.completion",
+    "created": 1791595398,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an electronic control unit for a vehicle's SCR/DEF system. Candidate headings:\n\n- **8537.10** covers boards and panels for electric control of voltage up to 1,000 V. CBP has classified ECUs there, for example for DEF tank systems.\n- **8708.99** covers parts of motor vehicles. Section XVII excludes goods of Section XVI, which includes chapter 85, so this heading is unlikely.\n- **9032.89** covers automatic regulating or controlling instruments. It is possible, but the unit also processes and sends signals to other control units.\n\nCBP rulings on similar SCR ECUs and DEF controllers have mostly gone to 8537.10. Within that heading, the 8537.10.91 subheading (\"Other\") breaks out to 8537.10.9170, \"Other\" for voltage not exceeding 1,000 V. I recall 8537.10.9170 as the usual statistical suffix for these rulings.\n\n{\"hts_code\": \"8537.10.9170\", \"reason\": \"A programmable electronic control unit that governs the vehicle's SCR/DEF emissions system at 1,000 V or less falls under heading 8537 (control apparatus), and Section XVII excludes it from vehicle parts.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 409,
+      "total_tokens": 863,
+      "cost": 0.004998,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004998,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00409
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8537109170",
+  "predicted_reason": "A programmable electronic control unit that governs the vehicle's SCR/DEF emissions system at 1,000 V or less falls under heading 8537 (control apparatus), and Section XVII excludes it from vehicle parts.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 409,
+    "total_tokens": 863,
+    "cost": 0.004998,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004998,
+      "upstream_inference_prompt_cost": 0.000908,
+      "upstream_inference_completions_cost": 0.00409
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:18.371119+00:00",
+  "latency_s": 5.235,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

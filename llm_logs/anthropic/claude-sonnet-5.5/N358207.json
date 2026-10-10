@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358207",
+  "rulingDate": "2026-02-25T00:00:00",
+  "true_code": "9503000090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595561-zW93Zq55ZMTaH6t3yACu",
+    "object": "chat.completion",
+    "created": 1791595561,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be from a CBP ruling on Bug-A-Salt, which classified the items as toy guns. The likely heading is 9503.00, toys. Within it, subheading 9503.00.00 has the statistical suffixes 9503.00.0073 (\"Other toys; ... Other\") and 9503.00.0071 (Toys... for ages?). The older structure (before 2022) was 9503.00.00 with suffixes: 9503.00.0073 \"Other toys and models, not elsewhere specified.\" Under the 2022 revision, the new 9503.00.00 breakdown has 9503.00.0073 for \"Other\".\n\nAlternatively, the rulings might have treated the items as spring-powered air guns under 9304.00.. But the description says they \"do not provide the power or function of common air guns,\" which points to a toy. The CO2 cartridge on the SHRED-ER might have raised the air gun question, but the stated conclusion is toy. I settled on 9503.00.0073 for \"other toys\".\n\n{\"hts_code\": \"9503.00.0073\", \"reason\": \"The plastic Bug-A-Salt salt-blasting guns are toy guns that lack the power or function of true air guns (heading 9304), so they are classified as other toys in heading 9503.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 498,
+      "completion_tokens": 411,
+      "total_tokens": 909,
+      "cost": 0.005106,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005106,
+        "upstream_inference_prompt_cost": 0.000996,
+        "upstream_inference_completions_cost": 0.00411
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "The plastic Bug-A-Salt salt-blasting guns are toy guns that lack the power or function of true air guns (heading 9304), so they are classified as other toys in heading 9503.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 498,
+    "completion_tokens": 411,
+    "total_tokens": 909,
+    "cost": 0.005106,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005106,
+      "upstream_inference_prompt_cost": 0.000996,
+      "upstream_inference_completions_cost": 0.00411
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:01.937167+00:00",
+  "latency_s": 4.885,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362785",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "7018905000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600350-Q1KOQNWutnHKVRBEL14w",
+    "object": "chat.completion",
+    "created": 1791600350,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.32.1000\", \"reason\": \"The coin purse's outer surface is predominantly covered in plastic sequins and glass beads, constituting an outer surface of plastic sheeting per CBP practice for beaded purses.\"}",
+          "refusal": null,
+          "reasoning": "Coin purse of textile outer surface \u2014 heading 4202.32.1000? Coin purses 4202.32: of textile materials of man-made fibers: 4202.32.1000? Actually 4202.32.40 is textile... 4202.32.1000 is outer surface of plastic sheeting. Textile: 4202.32.4000 (of man-made fibers). But surface covered with beads/sequins \u2014 still textile? Outer surface is plastic sequins/beads \u2014 could be considered plastic sheeting? CBP rulings: coin purses with beaded surface classified 4202.32.1000 (plastic sheeting) when outer surface predominantly beads. Yes, rulings classify beaded coin purses under 4202.32.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Coin purse of textile outer surface \u2014 heading 4202.32.1000? Coin purses 4202.32: of textile materials of man-made fibers: 4202.32.1000? Actually 4202.32.40 is textile... 4202.32.1000 is outer surface of plastic sheeting. Textile: 4202.32.4000 (of man-made fibers). But surface covered with beads/sequins \u2014 still textile? Outer surface is plastic sequins/beads \u2014 could be considered plastic sheeting? CBP rulings: coin purses with beaded surface classified 4202.32.1000 (plastic sheeting) when outer surface predominantly beads. Yes, rulings classify beaded coin purses under 4202.32.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 223,
+      "total_tokens": 439,
+      "cost": 0.00100952,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00100952,
+        "upstream_inference_prompt_cost": 2.832e-05,
+        "upstream_inference_completions_cost": 0.0009812
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 166,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202321000",
+  "predicted_reason": "The coin purse's outer surface is predominantly covered in plastic sequins and glass beads, constituting an outer surface of plastic sheeting per CBP practice for beaded purses.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 223,
+    "total_tokens": 439,
+    "cost": 0.00100952,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00100952,
+      "upstream_inference_prompt_cost": 2.832e-05,
+      "upstream_inference_completions_cost": 0.0009812
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 166,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:45:51.295357+00:00",
+  "latency_s": 1.612,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

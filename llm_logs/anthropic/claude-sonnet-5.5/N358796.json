@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358796",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8716390090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595672-X1F3B7SoPH0luydbfUvM",
+    "object": "chat.completion",
+    "created": 1791595672,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a flatbed trailer, not self-propelled, used for hauling freight. That places it in heading 8716, trailers and semi-trailers. Within 8716.39, \"other trailers and semi-trailers for the transport of goods\" covers it, and the 8716.39.00 subheading has statistical suffixes.\n\nThe suffixes under 8716.39.00 are:\n- 8716.39.0030: Dump trailers\n- 8716.39.0040: Trailers for agricultural use\n- 8716.39.0090: Other (older versions had separate lines for flatbed and van trailers)\n\nOlder HTS versions listed 8716.39.0010 for \"Logging trailers\" and 8716.39.0050 for \"Other: Of iron or steel\". The current structure is:\n- 8716.39.00: Other\n- 8716.39.0010 Trailers for the transport of goods, of a type designed for carrying logs\n- 8716.39.0030 Other, Dump trailers\n- 8716.39.0040 Other, Flatbed or low-bed trailers\n- 8716.39.0050 Other, Tanker\n- 8716.39.0090 Other\n\nA CBP ruling on a similar combo flatbed trailer is likely to have classified it under 8716.39.0090. However, I believe the \"flatbed\" line may sit within 8716.39.00 as 8716.39.0040. I am not certain of this, but the product is plainly a flatbed trailer, so I will choose 8716.39.0040.\n\n{\"hts_code\": \"8716.39.0040\", \"reason\": \"A non-self-propelled flatbed trailer for transporting goods falls under heading 8716, subheading 8716.39 (other trailers for the transport of goods), in the flatbed/low-bed statistical line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 575,
+      "total_tokens": 955,
+      "cost": 0.00651,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00651,
+        "upstream_inference_prompt_cost": 0.00076,
+        "upstream_inference_completions_cost": 0.00575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716390040",
+  "predicted_reason": "A non-self-propelled flatbed trailer for transporting goods falls under heading 8716, subheading 8716.39 (other trailers for the transport of goods), in the flatbed/low-bed statistical line.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 575,
+    "total_tokens": 955,
+    "cost": 0.00651,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00651,
+      "upstream_inference_prompt_cost": 0.00076,
+      "upstream_inference_completions_cost": 0.00575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:53.201926+00:00",
+  "latency_s": 5.72,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

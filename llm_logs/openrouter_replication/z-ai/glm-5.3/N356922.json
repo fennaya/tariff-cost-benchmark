@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N356922",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9617001000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599558-udqGLccjbT10v6fbg8EO",
+    "object": "chat.completion",
+    "created": 1791599558,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7323.93.6480\", \"reason\": \"A double-walled vacuum-insulated stainless-steel tumbler is classified as a table or kitchen article of stainless steel, specifically other vacuum vessels, per HTSUS 7323.93.6480.\"}",
+          "refusal": null,
+          "reasoning": "Vacuum flask HTS 7323.93.00... Vacuum vessels: 7323.93.6480? Actually vacuum flasks of steel: 7323.93.6480? HTSUS 7323.93.6480 is other table/kitchen articles of stainless steel. Vacuum flasks classified under 7323.93.6480. Yes, NY rulings classify vacuum insulated tumblers under 7323.93.6480.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vacuum flask HTS 7323.93.00... Vacuum vessels: 7323.93.6480? Actually vacuum flasks of steel: 7323.93.6480? HTSUS 7323.93.6480 is other table/kitchen articles of stainless steel. Vacuum flasks classified under 7323.93.6480. Yes, NY rulings classify vacuum insulated tumblers under 7323.93.6480.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 174,
+      "total_tokens": 532,
+      "cost": 0.00081572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00081572,
+        "upstream_inference_prompt_cost": 5.012e-05,
+        "upstream_inference_completions_cost": 0.0007656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 106,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7323936480",
+  "predicted_reason": "A double-walled vacuum-insulated stainless-steel tumbler is classified as a table or kitchen article of stainless steel, specifically other vacuum vessels, per HTSUS 7323.93.6480.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 174,
+    "total_tokens": 532,
+    "cost": 0.00081572,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00081572,
+      "upstream_inference_prompt_cost": 5.012e-05,
+      "upstream_inference_completions_cost": 0.0007656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 106,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:32:38.503198+00:00",
+  "latency_s": 1.802,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

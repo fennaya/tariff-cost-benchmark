@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361420",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "6702901000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596281-OvePLDqEX7kmb6Q5E77S",
+    "object": "chat.completion",
+    "created": 1791596281,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on feather-covered artificial Christmas trees and wreaths. Artificial Christmas trees are classified in 9505.10 (festive articles). Christmas trees made of other materials fall under 9505.10.25, and wreaths are likely 9505.10.25 or 9505.10.50. In the HTSUS, 9505.10.25 is \"Artificial Christmas trees,\" and 9505.10.15 covers glass articles. 9505.10.35 covers other Christmas ornaments. 9505.10.40 covers \"Christmas stockings,\" and 9505.10.50 covers \"other\" Christmas articles. 9505.10.25 is \"Other: Artificial Christmas trees\" and 9505.10.30 is \"Other: Nativity scenes\".\n\nAlternatively, items made of feathers could go to 6701, but heading 9505 for festive articles takes precedence only if they are Christmas articles. The description says \"white feathers\" and doesn't mention Christmas, though an artificial tree and wreath are implied. A feather-covered tree might otherwise be 6701 (articles of feathers). Heading 6701 covers skins and parts of birds with feathers, and articles thereof. Since the description does not say Christmas, the rulings may have held that feather-covered trees are 6701.00.3000 (\"Other\"). Hmm, but heading 6702 covers artificial flowers, foliage, and fruit and parts, including artificial trees? Artificial trees fall under 6702 only if not Christmas trees. Christmas-use items would go to 9505. I think the ruling classified them as festive articles under 9505.10.25 for the tree and wreath alike. I'll go with 9505.10.25.00.\n\n{\"hts_code\": \"9505.10.2500\", \"reason\": \"The feather-covered artificial tree and wreath are Christmas decorations, classified as festive articles of heading 9505 (other Christmas articles, not of glass), which takes precedence over feather articles of heading 6701.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 661,
+      "total_tokens": 863,
+      "cost": 0.007014,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007014,
+        "upstream_inference_prompt_cost": 0.000404,
+        "upstream_inference_completions_cost": 0.00661
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505102500",
+  "predicted_reason": "The feather-covered artificial tree and wreath are Christmas decorations, classified as festive articles of heading 9505 (other Christmas articles, not of glass), which takes precedence over feather articles of heading 6701.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 661,
+    "total_tokens": 863,
+    "cost": 0.007014,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007014,
+      "upstream_inference_prompt_cost": 0.000404,
+      "upstream_inference_completions_cost": 0.00661
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:01.410926+00:00",
+  "latency_s": 5.73,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

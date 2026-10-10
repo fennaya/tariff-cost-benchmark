@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357468",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595431-7Gtr4X2MiwQivNmC1Zqy",
+    "object": "chat.completion",
+    "created": 1791595431,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a costume. Costumes of textile materials are classified in heading 9505 (festive articles) only if they are not wearing apparel. Under Note 1(e) to Chapter 95... actually, Chapter 95 excludes \"sports clothing or fancy dress of textile materials, of chapters 61 or 62.\" Carnival costumes made of ordinary woven fabric are classified in 6211 or 6204, depending on the construction.\n\nAn adult costume consisting of an overdress, a skirt, a belt, a veil and a headpiece would be treated as a woman's ensemble or dress. A set under 6204.11-6204.19 covers \"ensembles,\" but an ensemble requires the pieces to be of the same fabric and to be suit-like. Overdress plus skirt would be an ensemble of a dress and skirt? Ensembles in 6204.1x are made up of a suit-like set of coat/jacket and skirt, etc. CBP has frequently classified such costumes as dresses in 6204.43 (synthetic fibers) or 6204.49. The headpiece and veil would be separate items, but classified together as a set under GRI 3(b), with the overdress giving the essential character.\n\nChoose 6204.43.4040: women's dresses of synthetic fibers, other, other. The most likely fabric is polyester. The 10-digit code for 6204.43.40 is \"Other: Other\" with 6204.43.4040 for women's dresses of synthetic fibers, not knit. I'll go with 6204.43.4040.\n\n{\"hts_code\": \"6204.43.4040\", \"reason\": \"The costume is a women's textile fancy-dress set whose essential character comes from the woven synthetic overdress, so it is classified as wearing apparel (a dress) in Chapter 62 rather than as a festive article in heading 9505.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 218,
+      "completion_tokens": 605,
+      "total_tokens": 823,
+      "cost": 0.006486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006486,
+        "upstream_inference_prompt_cost": 0.000436,
+        "upstream_inference_completions_cost": 0.00605
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6204434040",
+  "predicted_reason": "The costume is a women's textile fancy-dress set whose essential character comes from the woven synthetic overdress, so it is classified as wearing apparel (a dress) in Chapter 62 rather than as a festive article in heading 9505.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 218,
+    "completion_tokens": 605,
+    "total_tokens": 823,
+    "cost": 0.006486,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006486,
+      "upstream_inference_prompt_cost": 0.000436,
+      "upstream_inference_completions_cost": 0.00605
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:51.532222+00:00",
+  "latency_s": 6.017,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

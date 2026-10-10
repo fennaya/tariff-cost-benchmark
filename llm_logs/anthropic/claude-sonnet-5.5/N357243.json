@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357243",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "2517490000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595346-JxYUNAOEFCHBYteWwqwZ",
+    "object": "chat.completion",
+    "created": 1791595346,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be based on a CBP ruling on lunar regolith simulants. I recall the ruling classified them in heading 2530, \"Mineral substances not elsewhere specified,\" at 2530.90.8050 (other, other). The alternative is heading 2516 (granite, basalt, crushed), but a mixture of different rocks, including anorthosite and peridotite, is not covered by 2516's specific stone types. Heading 2517 covers pebbles, gravel, and crushed stone, but it is for concrete aggregate, road metalling, and similar uses, which doesn't fit simulants. Heading 2530 is therefore the better fit.\n\nThe ruling's classification of 2530.90.8050 is from memory and I am not fully certain of it. The 2530.90 subheadings are 2530.90.10 (Epsom salts?), 2530.90.20 (zirconium ores), and 2530.90.80 (other), with statistical suffix 50 \"Other.\" I'm going with 2530.90.8050.\n\n{\"hts_code\": \"2530.90.8050\", \"reason\": \"The simulants are blended crushed and milled mixtures of several igneous rocks (anorthosite, basalt, peridotite) that fit no specific stone heading, so they fall in the residual heading for mineral substances not elsewhere specified, 2530.90.80.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 445,
+      "completion_tokens": 437,
+      "total_tokens": 882,
+      "cost": 0.00526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00526,
+        "upstream_inference_prompt_cost": 0.00089,
+        "upstream_inference_completions_cost": 0.00437
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2530908050",
+  "predicted_reason": "The simulants are blended crushed and milled mixtures of several igneous rocks (anorthosite, basalt, peridotite) that fit no specific stone heading, so they fall in the residual heading for mineral substances not elsewhere specified, 2530.90.80.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 445,
+    "completion_tokens": 437,
+    "total_tokens": 882,
+    "cost": 0.00526,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00526,
+      "upstream_inference_prompt_cost": 0.00089,
+      "upstream_inference_completions_cost": 0.00437
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:26.315010+00:00",
+  "latency_s": 5.029,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

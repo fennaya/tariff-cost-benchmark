@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360003",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8302416080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596013-DSrHGybzxDIde3YTNwXE",
+    "object": "chat.completion",
+    "created": 1791596013,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an aluminum handrail fitting that connects a railing to a post or wall. Candidate headings are 7610 (aluminum structures and parts of structures) and 7616 (other articles of aluminum).\n\nI recall CBP rulings on aluminum railing brackets and fittings that fall under 7610.90.00 as parts of structures. Heading 7610 covers \"structures and parts of structures (e.g., bridges, towers, doors, windows, balustrades, pillars and columns)\". Balustrades and handrails are covered by this heading, so a railing bracket fits as a part of a structure.\n\nThe statistical suffix for 7610.90.0080 is \"Other\" (parts of structures). The 7610.90.00 subheading is \"Other\", with 7610.90.0080 as the stat suffix. I believe 7610.90.0040 is for \"Other: Structures...\" and 0080 for \"Other.\" I am not fully certain of this breakdown. Under 7610.90, the suffixes are 0040 for \"Other structures and parts\" and 0080 for \"Other\", so I'll go with 7610.90.0080.\n\n```json\n{\"hts_code\": \"7610.90.0080\", \"reason\": \"A powder-coated aluminum handrail elbow bracket is a part of a balustrade/railing structure, classified in heading 7610 as other aluminum structures and parts of structures.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 295,
+      "completion_tokens": 445,
+      "total_tokens": 740,
+      "cost": 0.00504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00504,
+        "upstream_inference_prompt_cost": 0.00059,
+        "upstream_inference_completions_cost": 0.00445
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7610900080",
+  "predicted_reason": "A powder-coated aluminum handrail elbow bracket is a part of a balustrade/railing structure, classified in heading 7610 as other aluminum structures and parts of structures.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 295,
+    "completion_tokens": 445,
+    "total_tokens": 740,
+    "cost": 0.00504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00504,
+      "upstream_inference_prompt_cost": 0.00059,
+      "upstream_inference_completions_cost": 0.00445
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:33.671124+00:00",
+  "latency_s": 4.17,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

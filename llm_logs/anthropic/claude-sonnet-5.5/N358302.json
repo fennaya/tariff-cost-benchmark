@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358302",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8481200050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595577-P0l6Cd0J9E9ifYiqIyjh",
+    "object": "chat.completion",
+    "created": 1791595577,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on the OFP Boyles 15 Console Assembly, a control console for a drill rig. The likely candidates are:\n\n- 8431.43 covers parts suitable for use solely or principally with boring or sinking machinery of 8430.41 or 8430.49. Within it, 8431.43.80 is \"Other\" and 8431.43.8090 is likely the statistical suffix.\n- 8537.10 covers control panels for voltage up to 1,000 V. This is electrical, and the console here is hydraulic, so it does not fit.\n- 8481.80 covers valve manifolds.\n\nThe console is hydraulic with gauges, levers, and a valve bank, and is built for drilling. I recall CBP ruling N-series classifying such an item in 8431.43.8090 as parts of drilling machinery. One alternative is 8413 for hydraulic parts, but 8431 fits better for a part dedicated to drilling machinery.\n\nWithin 8431.43, the subheadings are 8431.43.20 (parts of offshore drilling or production platforms), 8431.43.40 (parts of boring or sinking machinery of 8430.41, 8430.49 \u2014 including drill bits) and 8431.43.80 (other). I'll go with 8431.43.8000.\n\n```json\n{\"hts_code\": \"8431.43.8000\", \"reason\": \"The hydraulic control console with valve bank is identifiable as a part solely or principally used with boring/drilling machinery of heading 8430, so it falls in 8431.43 as an other part.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 509,
+      "total_tokens": 809,
+      "cost": 0.00569,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00569,
+        "upstream_inference_prompt_cost": 0.0006,
+        "upstream_inference_completions_cost": 0.00509
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8431438000",
+  "predicted_reason": "The hydraulic control console with valve bank is identifiable as a part solely or principally used with boring/drilling machinery of heading 8430, so it falls in 8431.43 as an other part.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 300,
+    "completion_tokens": 509,
+    "total_tokens": 809,
+    "cost": 0.00569,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00569,
+      "upstream_inference_prompt_cost": 0.0006,
+      "upstream_inference_completions_cost": 0.00509
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:18.092516+00:00",
+  "latency_s": 6.391,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

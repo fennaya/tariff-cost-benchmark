@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360180",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909272",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600050-91yVh3FvCwj3gbgK3yJL",
+    "object": "chat.completion",
+    "created": 1791600050,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.0090\", \"reason\": \"This combination ophthalmic medicament (brimonidine tartrate/timolol maleate) in measured-dose drop form contains active ingredients not specifically enumerated elsewhere, so it is classified as other medicaments put up in measured doses under subheading 3004.90.\"}",
+          "refusal": null,
+          "reasoning": "Combination ophthalmic drug, dosage form. Timolol + brimonidine combo \u2014 HTS 3004.90? Ophthalmic preparations... likely 3004.99? Actually ophthalmic drugs often classified 3004.90.00... Combination, not listed elsewhere: 3004.90.0005? Common answer: 3004.90.0090? For ophthalmic preparations, CBP rulings classify timolol maleate ophthalmic under 3004.90.0090? There's 3004.90.0060 \"other\"? I'll go 3004.90.0090? Hmm. Actually 3004.90.0005 is \"other\" medicaments... Let me recall: 3004.90.0090 \"Other\" \u2014 I'll answer 3004.90.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Combination ophthalmic drug, dosage form. Timolol + brimonidine combo \u2014 HTS 3004.90? Ophthalmic preparations... likely 3004.99? Actually ophthalmic drugs often classified 3004.90.00... Combination, not listed elsewhere: 3004.90.0005? Common answer: 3004.90.0090? For ophthalmic preparations, CBP rulings classify timolol maleate ophthalmic under 3004.90.0090? There's 3004.90.0060 \"other\"? I'll go 3004.90.0090? Hmm. Actually 3004.90.0005 is \"other\" medicaments... Let me recall: 3004.90.0090 \"Other\" \u2014 I'll answer 3004.90.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 236,
+      "completion_tokens": 265,
+      "total_tokens": 501,
+      "cost": 0.00131148,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00131148,
+        "upstream_inference_prompt_cost": 3.948e-05,
+        "upstream_inference_completions_cost": 0.001272
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 188,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004900090",
+  "predicted_reason": "This combination ophthalmic medicament (brimonidine tartrate/timolol maleate) in measured-dose drop form contains active ingredients not specifically enumerated elsewhere, so it is classified as other medicaments put up in measured doses under subheading 3004.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 236,
+    "completion_tokens": 265,
+    "total_tokens": 501,
+    "cost": 0.00131148,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00131148,
+      "upstream_inference_prompt_cost": 3.948e-05,
+      "upstream_inference_completions_cost": 0.001272
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 188,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:51.014453+00:00",
+  "latency_s": 2.777,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

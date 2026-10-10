@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359074",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "8518908100",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599852-js2Cs3QttB27pFQcvXpI",
+    "object": "chat.completion",
+    "created": 1791599852,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8518.30.2000\", \"reason\": \"The plastic ear cup assemblies are identifiable parts of an aviation headset (headphones/earphones), classifiable as parts under heading 8518.30.\"}",
+          "refusal": null,
+          "reasoning": "Ear cups of plastic \u2014 parts of headset? Likely classified as parts of headphones 8518.30.20? Actual CBP ruling: 8518.30.2000? Headphones/earphones parts: 8518.30.20? HTS 8518.30.2000 covers parts of headphones. Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ear cups of plastic \u2014 parts of headset? Likely classified as parts of headphones 8518.30.20? Actual CBP ruling: 8518.30.2000? Headphones/earphones parts: 8518.30.20? HTS 8518.30.2000 covers parts of headphones. Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 127,
+      "total_tokens": 353,
+      "cost": 0.00058852,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00058852,
+        "upstream_inference_prompt_cost": 2.972e-05,
+        "upstream_inference_completions_cost": 0.0005588
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 73,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8518302000",
+  "predicted_reason": "The plastic ear cup assemblies are identifiable parts of an aviation headset (headphones/earphones), classifiable as parts under heading 8518.30.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 226,
+    "completion_tokens": 127,
+    "total_tokens": 353,
+    "cost": 0.00058852,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00058852,
+      "upstream_inference_prompt_cost": 2.972e-05,
+      "upstream_inference_completions_cost": 0.0005588
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 73,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:37:32.828211+00:00",
+  "latency_s": 2.162,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360185",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "9603908050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600051-A0UvDOZ4IkUaK15qjvXC",
+    "object": "chat.completion",
+    "created": 1791600051,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9603.90.0050\", \"reason\": \"A broiler/grill cleaning brush with metal bristles and scraper is classified as an other brush (toilet/applied with base not elsewhere specified) under heading 9603, per CBP rulings on similar grill cleaning brushes.\"}",
+          "refusal": null,
+          "reasoning": "Brush \u2014 likely 9603.90 brush? Grill cleaning brush \u2014 HTS 9603.90.0050? Actually NY rulings classify grill brushes under 9603.90.0050 (other brushes). 10-digit: 9603.90.0050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Brush \u2014 likely 9603.90 brush? Grill cleaning brush \u2014 HTS 9603.90.0050? Actually NY rulings classify grill brushes under 9603.90.0050 (other brushes). 10-digit: 9603.90.0050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 204,
+      "completion_tokens": 134,
+      "total_tokens": 338,
+      "cost": 0.00060592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00060592,
+        "upstream_inference_prompt_cost": 1.632e-05,
+        "upstream_inference_completions_cost": 0.0005896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 65,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9603900050",
+  "predicted_reason": "A broiler/grill cleaning brush with metal bristles and scraper is classified as an other brush (toilet/applied with base not elsewhere specified) under heading 9603, per CBP rulings on similar grill cleaning brushes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 204,
+    "completion_tokens": 134,
+    "total_tokens": 338,
+    "cost": 0.00060592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00060592,
+      "upstream_inference_prompt_cost": 1.632e-05,
+      "upstream_inference_completions_cost": 0.0005896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:40:51.315575+00:00",
+  "latency_s": 1.212,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358622",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "6402998031",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595634-QmG2ULKIYAVFCsf1QFTP",
+    "object": "chat.completion",
+    "created": 1791595634,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on men's sneakers with rubber/plastic uppers and outer soles. The sole overlaps the upper by more than \u00bc inch, which makes it a foxing-like band. That points to heading 6402, with 6404 excluded because the upper is not textile.\n\nSubheading 6402.99 covers other footwear with outer soles and uppers of rubber or plastics. A foxing or foxing-like band takes the footwear out of the \"not covering the ankle\" tariff line that applies to footwear without one. For 6402.99, the tariff reads:\n- 6402.99.18: footwear with a foxing or foxing-like band, valued over $6.50/pair... hmm, I need to recall this more precisely.\n- 6402.99.20 covers footwear with open toes or open heels. \n- 6402.99.31 covers footwear with uppers of which over 90% of the external surface area is rubber or plastics, designed to be worn over other footwear.\n- 6402.99.33 covers footwear with a foxing-like band, \"Other: Footwear with a foxing or foxing-like band applied or molded at the sole and overlapping the upper: Other: Valued over $3/pair but not over $6.50/pair\" -- the 6402.99.18 line is for the \"protective\" type, not this one.\n\nThe relevant lines are 6402.99.2x/3x. The 6402.99.30 line covers \"Other: Footwear with open toes or open heels; footwear of the slip-on type...\" and the following 6402.99.31 covers \"Other: Footwear with a foxing-like band: For men: Valued over $6.50 but not over $12/pair\". Here the F.O.B. price is $10.03 and the footwear is for men, so it fits the men's line in the middle range.\n\nFrom the tariff structure I recall that 6402.99.33 is \"Other: Valued over $3 but not over $6.50: For men\", 6402.99.31 is \"Other: Valued over $6.50 but not over $12: Men's\", and 6402.99.3 appears in the 6402.99.30\u2013.50 range. I'm not fully certain of the exact numbering, but I'll go with 6402.99.3170, which I believe is men's footwear with a foxing-like band in this range. I couldn't verify it against the schedule.\n\n{\"hts_code\": \"6402.99.3170\", \"reason\": \"Men's footwear with rubber/plastic uppers and outer soles and a foxing-like band, valued at $10.03/pair (over $6.50 but not over $12), falls under 6402.99.31; this code is from memory and was not checked against the schedule.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 848,
+      "total_tokens": 1244,
+      "cost": 0.009272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009272,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.00848
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6402993170",
+  "predicted_reason": "Men's footwear with rubber/plastic uppers and outer soles and a foxing-like band, valued at $10.03/pair (over $6.50 but not over $12), falls under 6402.99.31; this code is from memory and was not checked against the schedule.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 848,
+    "total_tokens": 1244,
+    "cost": 0.009272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009272,
+      "upstream_inference_prompt_cost": 0.000792,
+      "upstream_inference_completions_cost": 0.00848
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:14.826872+00:00",
+  "latency_s": 8.679,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363534",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600434-hCtumkFlubK3KEw5HRK9",
+    "object": "chat.completion",
+    "created": 1791600434,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.43.0060\", \"reason\": \"Adult-size costumes are considered wearing apparel rather than festive articles of Chapter 95, and this two-piece pullover dress and hooded cape costume set of man-made fiber is classified as other women's garments. \"}",
+          "refusal": null,
+          "reasoning": "Costume, adult, not festive \u2014 classified as garments? Ruling style: adult costumes not of Chapter 95 classified in 6211 or as dress 6204. Pullover dress of knit? Likely man-made fiber dress 6204.43.3500? Cape... Prior CBP rulings classify adult costumes as wearing apparel, e.g., 6211.43.0060 if not water resistant... Choose 6211.43.0060? Actually dresses go 6204.43.3510 women's man-made fiber dresses. But costume set (dress+cape) \u2014 ensembles? Not an ensemble. I'll go 6211.43.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Costume, adult, not festive \u2014 classified as garments? Ruling style: adult costumes not of Chapter 95 classified in 6211 or as dress 6204. Pullover dress of knit? Likely man-made fiber dress 6204.43.3500? Cape... Prior CBP rulings classify adult costumes as wearing apparel, e.g., 6211.43.0060 if not water resistant... Choose 6211.43.0060? Actually dresses go 6204.43.3510 women's man-made fiber dresses. But costume set (dress+cape) \u2014 ensembles? Not an ensemble. I'll go 6211.43.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 140,
+      "completion_tokens": 215,
+      "total_tokens": 355,
+      "cost": 0.0009726,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009726,
+        "upstream_inference_prompt_cost": 2.66e-05,
+        "upstream_inference_completions_cost": 0.000946
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 123,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211430060",
+  "predicted_reason": "Adult-size costumes are considered wearing apparel rather than festive articles of Chapter 95, and this two-piece pullover dress and hooded cape costume set of man-made fiber is classified as other women's garments. ",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 140,
+    "completion_tokens": 215,
+    "total_tokens": 355,
+    "cost": 0.0009726,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009726,
+      "upstream_inference_prompt_cost": 2.66e-05,
+      "upstream_inference_completions_cost": 0.000946
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 123,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:47:14.348467+00:00",
+  "latency_s": 2.667,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363799",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9403100040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596725-pTa5IckNmNx6bOR6fTFf",
+    "object": "chat.completion",
+    "created": 1791596725,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an empty steel rack cabinet for server equipment. The likely candidates are 9403.20 (other metal furniture) and 8473.30 (parts of computers), or 7326/8538 (parts of switchgear). CBP rulings on empty server racks and enclosures usually put them in 9403.20.0080 (other metal furniture, other). Some rulings classify empty 19-inch rack cabinets in 9403.20.0090 or 9403.20.0050.\n\nThe 9403.20.00 subheadings are: 9403.20.0010 (luggage racks, hotel), 9403.20.0020 (such as baker's racks), 9403.20.0030 (shelving units), 9403.20.0050 (other, of a kind used in households), 9403.20.0080 (other, other), 9403.20.0090 (other). The Dell MGX rack ruling, as I recall, is NY N3xxxxx and classifies in 9403.20.0090. I believe 9403.20.0090 is \"Other: Other\" and 9403.20.0080 is \"Other: Furniture designed for non-household use\". So I'll go with 9403.20.0090.\n\nReasoning on chapter 94: the cabinets are floor-standing metal storage furniture, and Chapter 94 covers them.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"Empty floor-standing steel equipment storage cabinet/rack is classified as other metal furniture under heading 9403, subheading 9403.20.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 556,
+      "completion_tokens": 488,
+      "total_tokens": 1044,
+      "cost": 0.005992,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005992,
+        "upstream_inference_prompt_cost": 0.001112,
+        "upstream_inference_completions_cost": 0.00488
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "Empty floor-standing steel equipment storage cabinet/rack is classified as other metal furniture under heading 9403, subheading 9403.20.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 488,
+    "total_tokens": 1044,
+    "cost": 0.005992,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005992,
+      "upstream_inference_prompt_cost": 0.001112,
+      "upstream_inference_completions_cost": 0.00488
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:25.974213+00:00",
+  "latency_s": 4.697,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

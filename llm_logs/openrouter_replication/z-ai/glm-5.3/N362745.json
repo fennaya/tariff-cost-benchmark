@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362745",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "4901990060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600344-3PmrlpLg6IwPE5ESyIFW",
+    "object": "chat.completion",
+    "created": 1791600344,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.99.0050\", \"reason\": \"Adult coloring books are printed reading books of heading 4901, classified as other printed books under the residual subheading 4901.99.0050.\"}",
+          "refusal": null,
+          "reasoning": "Coloring books: 4901.99.0050? Coloring books classified in 4901.99. Other printed books... Coloring books: 4901.99.0050 \"Other books\". Actually NY rulings classify coloring books under 4901.99.0050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Coloring books: 4901.99.0050? Coloring books classified in 4901.99. Other printed books... Coloring books: 4901.99.0050 \"Other books\". Actually NY rulings classify coloring books under 4901.99.0050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 152,
+      "completion_tokens": 123,
+      "total_tokens": 275,
+      "cost": 0.000393,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000393,
+        "upstream_inference_prompt_cost": 8.55e-05,
+        "upstream_inference_completions_cost": 0.0003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 65,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4901990050",
+  "predicted_reason": "Adult coloring books are printed reading books of heading 4901, classified as other printed books under the residual subheading 4901.99.0050.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 152,
+    "completion_tokens": 123,
+    "total_tokens": 275,
+    "cost": 0.000393,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000393,
+      "upstream_inference_prompt_cost": 8.55e-05,
+      "upstream_inference_completions_cost": 0.0003075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:45:44.700333+00:00",
+  "latency_s": 1.36,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

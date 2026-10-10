@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357612",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "9018310080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595457-SRSSSp2jsUgLeeE4alYH",
+    "object": "chat.completion",
+    "created": 1791595457,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Syringes fall under HTSUS 9018.31 (\"Syringes, with or without needles\"). Subheading 9018.31.00 covers them, with the 10-digit statistical suffixes 9018.31.0040 for \"Other\" syringes and 9018.31.0020 for prefilled ones, though I am recalling these from memory.\n\nUnassembled syringes imported as complete kits are classified as the assembled article under GRI 2(a), since the kit has the essential character of the finished syringe. Plastic syringes of this type would sit in 9018.31.00.\n\nMy recollection of the 9018.31 statistical suffixes is: 9018.31.0000 \"Syringes, with or without needles,\" with 9018.31.0020 for hypodermic syringes and 9018.31.0040 for others. This is uncertain. Because the syringes are imported unfilled and filled only after importation, I would use the general syringe line. I am choosing 9018.31.0040 as the best fit.\n\n{\"hts_code\": \"9018.31.0040\", \"reason\": \"Under GRI 2(a), complete unassembled kits of syringe components (barrel, plunger, stopper, tip cap) are classified as the assembled syringe, which falls in heading 9018 as syringes of subheading 9018.31; the 10-digit statistical suffix is from memory and may need checking.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 438,
+      "total_tokens": 730,
+      "cost": 0.004964,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004964,
+        "upstream_inference_prompt_cost": 0.000584,
+        "upstream_inference_completions_cost": 0.00438
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9018310040",
+  "predicted_reason": "Under GRI 2(a), complete unassembled kits of syringe components (barrel, plunger, stopper, tip cap) are classified as the assembled syringe, which falls in heading 9018 as syringes of subheading 9018.31; the 10-digit statistical suffix is from memory and may need checking.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 438,
+    "total_tokens": 730,
+    "cost": 0.004964,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004964,
+      "upstream_inference_prompt_cost": 0.000584,
+      "upstream_inference_completions_cost": 0.00438
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:18.011323+00:00",
+  "latency_s": 4.311,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

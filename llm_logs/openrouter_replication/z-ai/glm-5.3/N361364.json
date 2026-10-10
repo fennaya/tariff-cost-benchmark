@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361364",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600174-KPBpO5rEHr6WZLrLK6Op",
+    "object": "chat.completion",
+    "created": 1791600174,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.90.9090\", \"reason\": \"Printed tissue paper in sheets weighing 17 gsm, printed in one color, falls under other printed paper/paperboard in sheets not over 10 cm... actually sheets exceeding 10 cm, classified in HTSUS 4811.90.9090 as other printed paper.\"}",
+          "refusal": null,
+          "reasoning": "Printed tissue paper, 17 gsm, sheets \u2014 likely 4811.90.9090? Actually printed paper 4811.90 covers printing paper over 10cm... 4811.90.9090 \"other\". Use 4811.90.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Printed tissue paper, 17 gsm, sheets \u2014 likely 4811.90.9090? Actually printed paper 4811.90 covers printing paper over 10cm... 4811.90.9090 \"other\". Use 4811.90.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 186,
+      "completion_tokens": 149,
+      "total_tokens": 335,
+      "cost": 0.00072239,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00072239,
+        "upstream_inference_prompt_cost": 7.19e-06,
+        "upstream_inference_completions_cost": 0.0007152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 81,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4811909090",
+  "predicted_reason": "Printed tissue paper in sheets weighing 17 gsm, printed in one color, falls under other printed paper/paperboard in sheets not over 10 cm... actually sheets exceeding 10 cm, classified in HTSUS 4811.90.9090 as other printed paper.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 149,
+    "total_tokens": 335,
+    "cost": 0.00072239,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00072239,
+      "upstream_inference_prompt_cost": 7.19e-06,
+      "upstream_inference_completions_cost": 0.0007152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 81,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:54.711128+00:00",
+  "latency_s": 2.657,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

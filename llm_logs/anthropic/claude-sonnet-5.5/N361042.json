@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361042",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9013809100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596198-aQzULQJInIyi4JxKOZ2A",
+    "object": "chat.completion",
+    "created": 1791596198,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a passive DWDM optical multiplexer/demultiplexer in a rack tray. The candidate headings are 9001 (optical elements), 8517.62 (machines for reception/conversion/transmission of data) and 8517.70 (parts of such apparatus).\n\nI recall CBP rulings on passive optical MUX/DMUX modules that classified them as parts of telecom apparatus under 8517.70. A passive device with no active function is not itself a machine under 8517.62, so a parts provision fits better. 8517.70.00 is the parts provision, and the 10-digit statistical number 8517.70.0090 (other parts) seems right. The alternative, 8517.70.0030 (antennas), does not apply. I believe the 8517.70.00 subdivisions are 8517.70.0030 (antennas and antenna reflectors), 8517.70.0060 (of telephone sets, etc.) and 8517.70.0090 (other), so I'm using 8517.70.0090.\n\n{\"hts_code\": \"8517.70.0090\", \"reason\": \"A passive DWDM optical MUX/DMUX rack module used solely in telecommunications networks is classified as a part of telecom transmission apparatus under heading 8517, subheading 8517.70, in the 'other' parts provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 477,
+      "completion_tokens": 422,
+      "total_tokens": 899,
+      "cost": 0.005174,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005174,
+        "upstream_inference_prompt_cost": 0.000954,
+        "upstream_inference_completions_cost": 0.00422
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517700090",
+  "predicted_reason": "A passive DWDM optical MUX/DMUX rack module used solely in telecommunications networks is classified as a part of telecom transmission apparatus under heading 8517, subheading 8517.70, in the 'other' parts provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 477,
+    "completion_tokens": 422,
+    "total_tokens": 899,
+    "cost": 0.005174,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005174,
+      "upstream_inference_prompt_cost": 0.000954,
+      "upstream_inference_completions_cost": 0.00422
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:38.705248+00:00",
+  "latency_s": 4.237,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

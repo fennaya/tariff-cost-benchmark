@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N359979",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "8483908040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600017-HNplTHluNuCWU7omBV4c",
+    "object": "chat.completion",
+    "created": 1791600017,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.90.5000\", \"reason\": \"The pinched bolt yoke is a part of a universal joint (a transmission shaft/coupling component) of steel, classifiable as other parts of transmission shafts and couplings.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 60,
+      "total_tokens": 277,
+      "cost": 0.00028238,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028238,
+        "upstream_inference_prompt_cost": 3.038e-05,
+        "upstream_inference_completions_cost": 0.000252
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483905000",
+  "predicted_reason": "The pinched bolt yoke is a part of a universal joint (a transmission shaft/coupling component) of steel, classifiable as other parts of transmission shafts and couplings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 60,
+    "total_tokens": 277,
+    "cost": 0.00028238,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00028238,
+      "upstream_inference_prompt_cost": 3.038e-05,
+      "upstream_inference_completions_cost": 0.000252
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:40:18.129029+00:00",
+  "latency_s": 5.516,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

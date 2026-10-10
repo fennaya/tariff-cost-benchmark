@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357276",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1605690000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595355-BOlesIMp4kK19zfrs7jv",
+    "object": "chat.completion",
+    "created": 1791595355,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on frozen seafood mixtures. Mixtures of seafood are classified under the component that predominates by weight, or under a \"other\" provision in 1605. For the squid-dominant mix, heading 0307 covers molluscs, including squid, and subheading 0307.43 covers frozen cuttle fish and squid. The ruling probably classified the mix under 0307.43 or 1605.5x.\n\nBy weight, squid is 55% in the first product and 40% in the second. In the second, the mussels, clams and octopus combine to 40%, shrimp is 20%, and squid is 40%, so squid is still the largest single component. Because the products are mixtures, GRI 3(b) or 3(c) applies. The products are cooked and prepared, but heading 1605 covers prepared or preserved crustaceans and molluscs. Heading 0307 includes molluscs \"cooked or not, smoked,\" so cooked mussels would fit there. Shrimp, however, would fall under 0306. A mix of shrimp and molluscs is probably classified under 1605.\n\nI recall CBP ruling NY N-series on seafood medley: \"classified in 1605.59.0590, other molluscs, other.\" Another option is 1605.40 for other crustaceans. Because the products contain both crustaceans and molluscs, and molluscs predominate, 1605.5 (molluscs) seems right. Under 1605.55 octopus is split out, and 1605.54 covers cuttle fish and squid. Mussels fall under 1605.59.\n\nSquid is the largest component, so I'll choose 1605.54 for squid. The 1605.54 statistical suffix is 1605.54.7000 (\"Other\"), but the 10-digit code is uncertain. The ruling likely said that the mixture is classified in 1605.54.7000 as \"Other: cuttle fish and squid.\"\n\nI'll go with 1605.54.7000.\n\n{\"hts_code\": \"1605.54.7000\", \"reason\": \"The cooked/prepared seafood mixture of molluscs and shrimp is classified under heading 1605 (prepared molluscs), with squid as the predominant component by weight, which places it in the cuttle fish and squid subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 622,
+      "completion_tokens": 723,
+      "total_tokens": 1345,
+      "cost": 0.008474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008474,
+        "upstream_inference_prompt_cost": 0.001244,
+        "upstream_inference_completions_cost": 0.00723
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1605547000",
+  "predicted_reason": "The cooked/prepared seafood mixture of molluscs and shrimp is classified under heading 1605 (prepared molluscs), with squid as the predominant component by weight, which places it in the cuttle fish and squid subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 622,
+    "completion_tokens": 723,
+    "total_tokens": 1345,
+    "cost": 0.008474,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008474,
+      "upstream_inference_prompt_cost": 0.001244,
+      "upstream_inference_completions_cost": 0.00723
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:35.529200+00:00",
+  "latency_s": 7.669,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

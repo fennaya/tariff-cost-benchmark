@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361009",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8523520010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596191-FBF87c2hCgmpEaa3zOdC",
+    "object": "chat.completion",
+    "created": 1791596191,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This matches the CBP ruling on RFID inlay sheets. Smart cards are classified in 8523.52 (\"smart cards\" under semiconductor media). Unfinished inlay sheets that contain integrated circuits would, under GRI 2(a), go in the same heading as the finished article. 8523.52.0000 is the smart card subheading, and the 10-digit statistical suffix is 8523.52.0000. Some rulings place RFID inlays in 8523.52.0000, while others place them in 8543.90. I'm going with 8523.52.0000 because the description says the sheets constitute \"semiconductor media.\"\n\n{\"hts_code\": \"8523.52.0000\", \"reason\": \"Unfinished smart card inlay sheets with unrecorded integrated circuits are classified as semiconductor media (smart cards) in heading 8523 under GRI 2(a), in subheading 8523.52.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 321,
+      "completion_tokens": 294,
+      "total_tokens": 615,
+      "cost": 0.003582,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003582,
+        "upstream_inference_prompt_cost": 0.000642,
+        "upstream_inference_completions_cost": 0.00294
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8523520000",
+  "predicted_reason": "Unfinished smart card inlay sheets with unrecorded integrated circuits are classified as semiconductor media (smart cards) in heading 8523 under GRI 2(a), in subheading 8523.52.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 294,
+    "total_tokens": 615,
+    "cost": 0.003582,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003582,
+      "upstream_inference_prompt_cost": 0.000642,
+      "upstream_inference_completions_cost": 0.00294
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:31.347498+00:00",
+  "latency_s": 3.236,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362456",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "8479899597",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596499-Be5Zi5bjc92edZQi1P99",
+    "object": "chat.completion",
+    "created": 1791596499,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on pressure tanks for water pumping systems. Candidate headings are 7311 (containers for compressed or liquefied gas, of iron or steel), 7309 (reservoirs, tanks, vats over 300 L), and 8413.91 (parts of pumps).\n\nPressure tanks with a diaphragm are often classified in 8413.91.9095 as parts of pumps. Several CBP rulings, for example on well-pump diaphragm tanks, hold that they are parts of pumps because they are dedicated to water pump systems. However, other rulings classify them in 7311.00.00 as containers for compressed gas. For instance, NY N0xx rulings on \"Amtrol well-x-trol\" tanks put them in 7311.00.0060, a tank holding compressed air.\n\nThe description lists capacities from 4.8 to 85.9 gallons. The 85.9-gallon maximum is about 325 L, so the larger tanks exceed 300 L and would be heading 7309, but the smaller ones would not. The tanks are pre-charged with air and function as pressure vessels. The more recent rulings, including one for Pentair/Wayne \"PWN\" tanks, probably relate to the Section 232 steel derivatives. Under 7311.00.00, the subheadings are 7311.00.00 with statistical suffixes: 7311.00.0030 is seamless, over 1,000 L; 7311.00.0060 is welded, under 1,000 L, less than 6,000 cc... I recall 7311.00.30 as the welded group, which would take 7311.00.3000 or similar. I believe the current structure is 7311.00.30 \"Other, welded: of a capacity of less than 1,000 L\" and 7311.00.60 \"Other: 7311.00.6000\".\n\nI'll go with 7311.00.6000, since the tank is a container for compressed air, though the 8413.91 parts-of-pumps heading is a plausible alternative.\n\n{\"hts_code\": \"7311.00.6000\", \"reason\": \"Steel pressure tanks pre-charged with compressed air are containers for compressed gas of iron or steel under heading 7311, rather than pump parts.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 596,
+      "completion_tokens": 717,
+      "total_tokens": 1313,
+      "cost": 0.008362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008362,
+        "upstream_inference_prompt_cost": 0.001192,
+        "upstream_inference_completions_cost": 0.00717
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7311006000",
+  "predicted_reason": "Steel pressure tanks pre-charged with compressed air are containers for compressed gas of iron or steel under heading 7311, rather than pump parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 596,
+    "completion_tokens": 717,
+    "total_tokens": 1313,
+    "cost": 0.008362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008362,
+      "upstream_inference_prompt_cost": 0.001192,
+      "upstream_inference_completions_cost": 0.00717
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:39.482915+00:00",
+  "latency_s": 7.244,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

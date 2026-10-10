@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361569",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9403896015",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596309-3vJajdVr9RgVnSYnzoo5",
+    "object": "chat.completion",
+    "created": 1791596309,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a five-piece patio set sold as a retail set. Under GRI 3(b), the essential character of the set determines classification. The set contains the sofa, two swivel armchairs, a fire pit table, and an accent table. The seating pieces likely give the set its essential character, so the seating's classification governs.\n\nCandidate headings for the seating:\n- 9401.79: other seats with metal frames, not upholstered. Swivel chairs fall under 9401.30 (swivel seats with height adjustment), but these are not height adjustable.\n- 9401.71 covers upholstered seats with metal frames, other than swivel seats with height adjustment. Here the cushions are removable and textile covered, so the chairs would likely be treated as upholstered, which points to 9401.71.00.\n- 9401.79 would apply if the seats were not upholstered.\n\nIs a set of furniture \"put up in sets for retail sale\"? GRI 3(b) applies to sets of different items. The fire pit table is a gas-burning table, and the heater/burner element could be classified separately, but the set is still treated as a whole. The seating (sofa plus two chairs) likely predominates, which gives 9401.71.0031, \"Other seats, with metal frames, upholstered, for indoor use.\" Seats for outdoor use are not in a separate subheading, so the choice is between 9401.79.0050 and 9401.71.00.\n\nThe cushions are removable, and CBP has treated cushioned patio seating as upholstered in some rulings, but others classify it as not upholstered under 9401.79. I will go with 9401.79.0050, since the frames are aluminum and the cushions are just loose.\n\nOn balance, I choose 9401.79.0050.\n\n{\"hts_code\": \"9401.79.0050\", \"reason\": \"The 5-piece patio set is classified under GRI 3(b) by the essential character of its aluminum-framed seating (sofa and swivel chairs with removable cushions), which falls under other seats with metal frames, not upholstered, in 9401.79.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 731,
+      "completion_tokens": 669,
+      "total_tokens": 1400,
+      "cost": 0.008152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008152,
+        "upstream_inference_prompt_cost": 0.001462,
+        "upstream_inference_completions_cost": 0.00669
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401790050",
+  "predicted_reason": "The 5-piece patio set is classified under GRI 3(b) by the essential character of its aluminum-framed seating (sofa and swivel chairs with removable cushions), which falls under other seats with metal frames, not upholstered, in 9401.79.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 731,
+    "completion_tokens": 669,
+    "total_tokens": 1400,
+    "cost": 0.008152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008152,
+      "upstream_inference_prompt_cost": 0.001462,
+      "upstream_inference_completions_cost": 0.00669
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:28.587359+00:00",
+  "latency_s": 7.687,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

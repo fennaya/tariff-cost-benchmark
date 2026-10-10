@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360612",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "9403200050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596116-Z7qVjIs4cbnYO426EXj8",
+    "object": "chat.completion",
+    "created": 1791596116,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a floor-standing 3-tier shelving unit made of polypropylene side supports and carbon steel rod shelves. The question is whether it classifies as furniture or as an article of plastics or of steel.\n\nFurniture under heading 9403 covers other furniture and parts. Shelving units are generally classified there, and the plastic-and-metal composition leads to either 9403.20 (metal furniture) or 9403.70 (plastic furniture), depending on which material gives the essential character. For a shelving unit, the steel shelves are the main functional component. The shelves hold the items, and the plastic sides are only connectors. I conclude the essential character is metal, so 9403.20.\n\nWithin 9403.20, subheading 9403.20.00 has statistical suffixes. The 9403.20.0010 and .0018 numbers I recall are for other metal furniture, and I'm fairly sure they sit under 9403.20.00 with an \"Other\" grouping, so 9403.20.0090 is a possible fit. In older schedules, 9403.20.0010 is \"Luggage racks, hotel...\", 9403.20.0020 is \"Other: Household type..\", and 9403.20.0030 is \"Other\". Newer versions have 9403.20.0010 for \"Of a kind used in offices\", then 9403.20.0018 for \"Other\" and 9403.20.0020 for \"Other\". Since I can't resolve this precisely, I'll choose 9403.20.0090.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"A floor-standing shelving unit with carbon steel rod shelves and polypropylene supports is classified as other metal furniture in heading 9403, since the steel shelves give it its essential character.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 558,
+      "total_tokens": 959,
+      "cost": 0.006382,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006382,
+        "upstream_inference_prompt_cost": 0.000802,
+        "upstream_inference_completions_cost": 0.00558
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "A floor-standing shelving unit with carbon steel rod shelves and polypropylene supports is classified as other metal furniture in heading 9403, since the steel shelves give it its essential character.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 401,
+    "completion_tokens": 558,
+    "total_tokens": 959,
+    "cost": 0.006382,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006382,
+      "upstream_inference_prompt_cost": 0.000802,
+      "upstream_inference_completions_cost": 0.00558
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:16.969097+00:00",
+  "latency_s": 5.277,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

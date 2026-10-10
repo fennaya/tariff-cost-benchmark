@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363845",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3907290000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596738-ORC4ANOApPg6ymgWYHDI",
+    "object": "chat.completion",
+    "created": 1791596738,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a hydrogel polymer of PEG, trimethylene carbonate, and acrylate. The candidate headings are:\n\n- 3906: acrylic polymers in primary forms.\n- 3907: polyethers in primary forms. Polyethylene glycol is a polyether, and the product is 98.3% PEG.\n- 3907.29: other polyethers. After the 2022 changes, 3907.2 includes 3907.21 (bis(polyoxyethylene) methylphosphonate), 3907.29 (other polyether alcohols), and 3907.20 (other polyethers) in the prior schedule.\n\nThe polymer is a copolymer of PEG, trimethylene carbonate (a polycarbonate unit), and acrylate. Under Chapter 39 Note 4, copolymers are classified with the comonomer unit that predominates by weight, and PEG predominates. That puts it in 3907, \"Polyethers... in primary forms.\"\n\nFor the subheading, I recall 3907.29.5000 in older schedules as \"Other\" polyethers, with 3907.20.00 as \"Other polyethers\" before 2022. The current schedule has 3907.29.10 (polyethylene glycol) and 3907.29.50 or similar. I'll go with 3907.29.5000, an \"other\" polyether.\n\n{\"hts_code\": \"3907.29.5000\", \"reason\": \"The PEG-dominant copolymer (98.3% PEG) in powder (primary) form is classified by predominant weight (Chapter 39 Note 4) as an other polyether in heading 3907.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 524,
+      "total_tokens": 782,
+      "cost": 0.005756,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005756,
+        "upstream_inference_prompt_cost": 0.000516,
+        "upstream_inference_completions_cost": 0.00524
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3907295000",
+  "predicted_reason": "The PEG-dominant copolymer (98.3% PEG) in powder (primary) form is classified by predominant weight (Chapter 39 Note 4) as an other polyether in heading 3907.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 524,
+    "total_tokens": 782,
+    "cost": 0.005756,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005756,
+      "upstream_inference_prompt_cost": 0.000516,
+      "upstream_inference_completions_cost": 0.00524
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:38.984758+00:00",
+  "latency_s": 5.183,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

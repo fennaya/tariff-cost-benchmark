@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361444",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8536908585",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596285-oHsB2qgTKSNlrbZS065B",
+    "object": "chat.completion",
+    "created": 1791596285,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a liquid-cooled busbar. Busbars for electrical apparatus fall under heading 8538 (parts for switchboards and similar apparatus of heading 8535/8537) or 8544 (insulated conductors). Because the busbar is not externally insulated, it is not an insulated conductor of 8544, so 8538 is more likely. The remaining question is the subheading. 8538.90 covers other parts, and 8538.90.81 is \"Other\" under \"Other\".\n\nI recall that for similar busbars (Rittal and others), CBP chose 8538.90.8160. Based on that memory, the code is 8538.90.8180, though I am not certain of the final digits. The 2023+ HTS lists 8538.90.20 for printed circuit assemblies and 8538.90.40 for others, with 8538.90.81 as other: 8538.90.8160 \"Other: Other parts suitable for use solely or principally with apparatus of 8535, 8536 or 8537 ... other.\" The statistical suffixes I recall are 8538.90.8110 (parts for 8537 apparatus) and 8538.90.8160. I'll go with 8538.90.8180.\n\n{\"hts_code\": \"8538.90.8180\", \"reason\": \"The non-externally-insulated liquid-cooled copper busbar assembly is a part suitable for use with switchgear/power distribution apparatus of heading 8537, so it falls in heading 8538 as an 'other' part rather than an insulated conductor of heading 8544.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 423,
+      "completion_tokens": 502,
+      "total_tokens": 925,
+      "cost": 0.005866,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005866,
+        "upstream_inference_prompt_cost": 0.000846,
+        "upstream_inference_completions_cost": 0.00502
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8538908180",
+  "predicted_reason": "The non-externally-insulated liquid-cooled copper busbar assembly is a part suitable for use with switchgear/power distribution apparatus of heading 8537, so it falls in heading 8538 as an 'other' part rather than an insulated conductor of heading 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 502,
+    "total_tokens": 925,
+    "cost": 0.005866,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005866,
+      "upstream_inference_prompt_cost": 0.000846,
+      "upstream_inference_completions_cost": 0.00502
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:05.981554+00:00",
+  "latency_s": 5.147,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

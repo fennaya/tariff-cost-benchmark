@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355239",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594037-EF0xycxiuz80763Ph60c",
+    "object": "chat.completion",
+    "created": 1791594037,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.99.0090\", \"reason\": \"Andino White is an other igneous rock (not marble, granite, or other specifically named stone) that is simply cut and polished into slabs for further fabrication into countertops, classifiable as other monumental or building stone.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling style \u2014 granite? Igneous rock predominantly quartz and plagioclase \u2014 could be granite slab. Polished slabs for countertops: 6802.93.0091? Granite 6802.93.0091 (merely cut). Actually 6802.93 covers granite, porphyry, basalt, sandstone... other monumental/building stone. Igneous rock other than granite \u2192 6802.99.0090? \"Other\" monumental stone: 6802.99.00. But 10-digit: 6802.99.0090? There's 6802.99.0000? Subheadings: 6802.91 marble, 6802.93 granite etc, 6802.99 other. 10-digit likely 6802.99.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling style \u2014 granite? Igneous rock predominantly quartz and plagioclase \u2014 could be granite slab. Polished slabs for countertops: 6802.93.0091? Granite 6802.93.0091 (merely cut). Actually 6802.93 covers granite, porphyry, basalt, sandstone... other monumental/building stone. Igneous rock other than granite \u2192 6802.99.0090? \"Other\" monumental stone: 6802.99.00. But 10-digit: 6802.99.0090? There's 6802.99.0000? Subheadings: 6802.91 marble, 6802.93 granite etc, 6802.99 other. 10-digit likely 6802.99.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 265,
+      "completion_tokens": 259,
+      "total_tokens": 524,
+      "cost": 0.0011249,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011249,
+        "upstream_inference_prompt_cost": 3.71e-05,
+        "upstream_inference_completions_cost": 0.0010878
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 192,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990090",
+  "predicted_reason": "Andino White is an other igneous rock (not marble, granite, or other specifically named stone) that is simply cut and polished into slabs for further fabrication into countertops, classifiable as other monumental or building stone.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 265,
+    "completion_tokens": 259,
+    "total_tokens": 524,
+    "cost": 0.0011249,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011249,
+      "upstream_inference_prompt_cost": 3.71e-05,
+      "upstream_inference_completions_cost": 0.0010878
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T01:00:37.986190+00:00",
+  "latency_s": 8.267,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

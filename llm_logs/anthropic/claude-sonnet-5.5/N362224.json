@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362224",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "8422309191",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596445-iDSV2niOTFEF3NpM6pHS",
+    "object": "chat.completion",
+    "created": 1791596445,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This machine fills trays with soil substrate and paper liners. Candidate headings are 8433 (agricultural harvesting machinery), 8436 (other agricultural/horticultural machinery), and 8422 (filling machinery). Heading 8436.80 covers other agricultural, horticultural, or forestry machinery, and I believe CBP has classified Ellepot machines there, though I am working from memory and have not checked a ruling.\n\nHeading 8422.30 covers machinery for filling, closing, or packaging containers. Here the cells are filled with soil to produce paper pots for plant growing, which is a horticultural purpose. Heading 8436 has a subheading 8436.80 for \"other machinery\", with 8436.80.01 (stat suffix 0100 or similar) for the other machinery. I recall the 8436.80 breakdown as 8436.80.00 with 8436.80.0010 for poultry-keeping machinery and 8436.80.0090 for other. The HTSUS lists 8436.80.00 with statistical suffixes 10 (Poultry...?) and 90, so I am settling on 8436.80.0090.\n\n```json\n{\"hts_code\": \"8436.80.0090\", \"reason\": \"Industrial greenhouse tray-filling line that meters soil substrate into paper-lined cells is horticultural machinery not elsewhere specified, classified in heading 8436 as other agricultural/horticultural machinery.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 551,
+      "completion_tokens": 472,
+      "total_tokens": 1023,
+      "cost": 0.005822,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005822,
+        "upstream_inference_prompt_cost": 0.001102,
+        "upstream_inference_completions_cost": 0.00472
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8436800090",
+  "predicted_reason": "Industrial greenhouse tray-filling line that meters soil substrate into paper-lined cells is horticultural machinery not elsewhere specified, classified in heading 8436 as other agricultural/horticultural machinery.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 551,
+    "completion_tokens": 472,
+    "total_tokens": 1023,
+    "cost": 0.005822,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005822,
+      "upstream_inference_prompt_cost": 0.001102,
+      "upstream_inference_completions_cost": 0.00472
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:45.319075+00:00",
+  "latency_s": 4.975,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

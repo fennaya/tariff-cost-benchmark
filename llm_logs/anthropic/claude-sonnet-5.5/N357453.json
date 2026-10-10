@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357453",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1602502140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595415-mEVR7vDEbZzhUPfcwlls",
+    "object": "chat.completion",
+    "created": 1791595415,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a cooked, prepared beef product, so it belongs in heading 1602 (prepared or preserved meat), not in Chapter 2. Within 1602, subheading 1602.50 covers bovine meat. The product is cooked, so the \"cured or pickled\" and \"corned beef in airtight containers\" lines do not apply. That leaves 1602.50.80 (\"Other\"), and the 10-digit statistical suffix is 1602.50.8000 for non-canned, non-cured bovine. I recall the CBP ruling on this type of product placing it in 1602.50.6000 or 1602.50.8000, but I could not confirm which.\n\nThe structure of 1602.50 is:\n- 1602.50.10: Corned beef in airtight containers\n- 1602.50.21 and 1602.50.29: Other, cured or pickled\n- 1602.50.40: Other, in airtight containers (the \"other\" line under \"Other\")\n- 1602.50.60: Other (the \"other\" line under \"Other\")\n- 1602.50.80: Other\n\nThere is an alternative reading with a 1602.50.4000 line for \"Other: Other: Canned\" and then 1602.50.6000 and 1602.50.8000. Under that reading, 1602.50.60 would cover \"Other: Other: Other\" \u2014 and I believe the 1602.50.80 line is the one used for the 10-digit code in the vacuum-pouch cooked beef rulings. A sous vide pouch is not a can, so I am going with 1602.50.8000.\n\n{\"hts_code\": \"1602.50.8000\", \"reason\": \"Fully cooked, seasoned sous vide beef in vacuum pouches with onions and mushrooms is prepared bovine meat of heading 1602, not cured, corned, or canned, so it falls in the residual subheading 1602.50.80.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 529,
+      "completion_tokens": 594,
+      "total_tokens": 1123,
+      "cost": 0.006998,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006998,
+        "upstream_inference_prompt_cost": 0.001058,
+        "upstream_inference_completions_cost": 0.00594
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1602508000",
+  "predicted_reason": "Fully cooked, seasoned sous vide beef in vacuum pouches with onions and mushrooms is prepared bovine meat of heading 1602, not cured, corned, or canned, so it falls in the residual subheading 1602.50.80.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 529,
+    "completion_tokens": 594,
+    "total_tokens": 1123,
+    "cost": 0.006998,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006998,
+      "upstream_inference_prompt_cost": 0.001058,
+      "upstream_inference_completions_cost": 0.00594
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:35.555013+00:00",
+  "latency_s": 5.666,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

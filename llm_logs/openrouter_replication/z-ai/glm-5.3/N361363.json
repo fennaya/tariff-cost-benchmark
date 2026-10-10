@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361363",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600173-JwKDyxCKESRQ2pqa4GiB",
+    "object": "chat.completion",
+    "created": 1791600173,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.90.8000\", \"reason\": \"Printed tissue paper (a product of heading 4803) weighing 22 gsm in sheets is classified in heading 4811 as other printed paper, specifically the residual subheading 4811.90.8000.\"}",
+          "refusal": null,
+          "reasoning": "Tissue paper printed, 22 gsm, sheets. Likely 4808.40? Tissue paper is 4803 if for household/sanitary. Printed tissue paper: 4811? Actually printed paper in strips/sheets >36cm... 4811.90? Printed tissue paper weighing <30 gsm: heading 4803 covers tissue paper and similar. Printed paper of heading 4803 falls in 4811? No\u20144811 covers paper of headings 4803, 4805, 4806, 4809-4810 printed. So 4811.90? Actually 4811.90.80? Printed tissue paper: 4811.90.80... I recall CBP ruling: printed tissue paper 22 gsm classified 4811.90.8000? Subheading 4811.90.80 \"Other\" \u2014 10-digit 4811.90.8000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Tissue paper printed, 22 gsm, sheets. Likely 4808.40? Tissue paper is 4803 if for household/sanitary. Printed tissue paper: 4811? Actually printed paper in strips/sheets >36cm... 4811.90? Printed tissue paper weighing <30 gsm: heading 4803 covers tissue paper and similar. Printed paper of heading 4803 falls in 4811? No\u20144811 covers paper of headings 4803, 4805, 4806, 4809-4810 printed. So 4811.90? Actually 4811.90.80? Printed tissue paper: 4811.90.80... I recall CBP ruling: printed tissue paper 22 gsm classified 4811.90.8000? Subheading 4811.90.80 \"Other\" \u2014 10-digit 4811.90.8000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 161,
+      "completion_tokens": 275,
+      "total_tokens": 436,
+      "cost": 0.0009672,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009672,
+        "upstream_inference_prompt_cost": 3.22e-05,
+        "upstream_inference_completions_cost": 0.000935
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 206,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4811908000",
+  "predicted_reason": "Printed tissue paper (a product of heading 4803) weighing 22 gsm in sheets is classified in heading 4811 as other printed paper, specifically the residual subheading 4811.90.8000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 161,
+    "completion_tokens": 275,
+    "total_tokens": 436,
+    "cost": 0.0009672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009672,
+      "upstream_inference_prompt_cost": 3.22e-05,
+      "upstream_inference_completions_cost": 0.000935
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 206,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:42:53.381644+00:00",
+  "latency_s": 2.563,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

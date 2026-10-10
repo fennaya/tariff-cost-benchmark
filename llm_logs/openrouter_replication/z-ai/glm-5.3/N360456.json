@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360456",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8307103000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600081-knNE275Y4gR8DUmw4gkj",
+    "object": "chat.completion",
+    "created": 1791600081,
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8307.11.0000\", \"reason\": \"The corrugated stainless steel tube with exterior braid and welded end collars constitutes flexible tubing of stainless steel with fittings, which is classified in heading 8307, specifically the stainless steel subheading.\"}",
+          "refusal": null,
+          "reasoning": "Flexible stainless steel corrugated tube with braid, with welded end fittings (collars). This is like a flexible metal conduit/tube of stainless steel. HTS 7306.90 covers other tubes and pipes of iron or steel. Flexible metal hose of steel... Actually flexible corrugated metal tubing is classified in 7306.90. With fittings? If it's a flexible hose with fittings, could be 8307.11/8307.19 (flexible tubing of iron/steel)? 8307 covers flexible tubing of base metal, with or without fittings. Yes \u2014 flexible metal hose is classified in heading 8307. Stainless steel: 8307.11.00.00 \"Flexible tubing of iron or steel, of stainless steel\". That's the correct classification for braided flexible metal hose with fittings.\n\n8307.11.0000 \u2014 check digit format: 8307.11.0000. The 10-digit: 8307.11.0000. Duty free.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Flexible stainless steel corrugated tube with braid, with welded end fittings (collars). This is like a flexible metal conduit/tube of stainless steel. HTS 7306.90 covers other tubes and pipes of iron or steel. Flexible metal hose of steel... Actually flexible corrugated metal tubing is classified in 7306.90. With fittings? If it's a flexible hose with fittings, could be 8307.11/8307.19 (flexible tubing of iron/steel)? 8307 covers flexible tubing of base metal, with or without fittings. Yes \u2014 flexible metal hose is classified in heading 8307. Stainless steel: 8307.11.00.00 \"Flexible tubing of iron or steel, of stainless steel\". That's the correct classification for braided flexible metal hose with fittings.\n\n8307.11.0000 \u2014 check digit format: 8307.11.0000. The 10-digit: 8307.11.0000. Duty free.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 282,
+      "total_tokens": 512,
+      "cost": 0.00178239,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00178239,
+        "upstream_inference_prompt_cost": 9.039e-05,
+        "upstream_inference_completions_cost": 0.001692
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 220,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8307110000",
+  "predicted_reason": "The corrugated stainless steel tube with exterior braid and welded end collars constitutes flexible tubing of stainless steel with fittings, which is classified in heading 8307, specifically the stainless steel subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 230,
+    "completion_tokens": 282,
+    "total_tokens": 512,
+    "cost": 0.00178239,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00178239,
+      "upstream_inference_prompt_cost": 9.039e-05,
+      "upstream_inference_completions_cost": 0.001692
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 220,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T02:41:22.087766+00:00",
+  "latency_s": 2.732,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

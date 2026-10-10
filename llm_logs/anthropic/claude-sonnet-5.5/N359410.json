@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359410",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8536908585",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595829-vRInnuYDc2dFP6Q0NrOi",
+    "object": "chat.completion",
+    "created": 1791595829,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling, likely about a wired breakout board for an aviation headset. The board is a PCB with cables and a connector, serving as a connection point between cables. The candidate headings are 8544 (insulated wire/cables with connectors) and 8536 (connectors/apparatus for connecting electrical circuits), as well as 8538 (parts) and 8517 (headset parts).\n\nThe PCB with wires and a Molex connector is a connection point, so heading 8536 is plausible: 8536.90 \"Other apparatus for making connections to or in electrical circuits, for a voltage not exceeding 1,000 V.\" Subheading 8536.90.40 covers \"Connectors: other\", and 8536.90.85 covers \"Other\". The board is a junction/connection device, so 8536.90.8585 is a possibility.\n\nAlternatively, as a part of headsets under 8518.90 (parts of headphones), a board dedicated to a headset would be classified there under Section XVI Note 2(b), a part suitable for use solely with 8518 goods. But 8536 is an article that is itself in a heading, and Note 2(a) says parts that are goods of headings 8501, 8502, 8503, 8504, 8511, 8512, 8513, 8516 ... are classified in their own headings. Parts that are goods of Chapter 85 headings go in their own heading, so a connector device would go in 8536. I think the ruling classified it under 8536.90.4000 (connectors for a voltage not exceeding 1,000 V, other). A wired breakout board is an assembly with a connector, and 8536.90.40 \"Connectors\" may fit with the Molex connector. I'll go with 8536.90.4000.\n\n{\"hts_code\": \"8536.90.4000\", \"reason\": \"The wired breakout board is a PCB-based connection assembly with a Molex connector that provides a connection point between cables for circuits under 1,000 V, classified as other connectors in heading 8536.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 641,
+      "total_tokens": 963,
+      "cost": 0.007054,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007054,
+        "upstream_inference_prompt_cost": 0.000644,
+        "upstream_inference_completions_cost": 0.00641
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8536904000",
+  "predicted_reason": "The wired breakout board is a PCB-based connection assembly with a Molex connector that provides a connection point between cables for circuits under 1,000 V, classified as other connectors in heading 8536.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 641,
+    "total_tokens": 963,
+    "cost": 0.007054,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007054,
+      "upstream_inference_prompt_cost": 0.000644,
+      "upstream_inference_completions_cost": 0.00641
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:30.035262+00:00",
+  "latency_s": 6.397,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

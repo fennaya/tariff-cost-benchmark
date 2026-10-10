@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357423",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "8544429090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595410-zZvKhPC7kMWr0slonUGz",
+    "object": "chat.completion",
+    "created": 1791595410,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an insulated wire assembly with connectors on both ends, meant for an aviation headset. It is a cable set with connectors, so heading 8544 applies. Because it is a component for a headset rather than a vehicle wiring harness, the likely candidates are 8544.42 (other electric conductors fitted with connectors, for voltage not exceeding 1,000 V) and 8544.49.\n\nSubheading 8544.42 covers conductors fitted with connectors, and its 8544.42.90 line is \"Other\", but the exact 10-digit statistical suffix is uncertain. The 8544.42 lines are:\n- 8544.42.20: Of a kind used for telecommunications, for a voltage not exceeding 80 V\n- 8544.42.90: Other\n- 8544.42.9090: Other\n\nThe cable carries audio and power signals at low voltage, so it could arguably fall under the telecommunications line, but it is not clearly a telecommunications cable. CBP rulings on similar headset cables have used 8544.42.9090.\n\n{\"hts_code\": \"8544.42.9090\", \"reason\": \"Insulated multi-conductor cable fitted with a 3.5mm stereo jack and multi-pin connector, carrying audio and power at under 1,000 V, falls under other electric conductors fitted with connectors in heading 8544.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 436,
+      "total_tokens": 777,
+      "cost": 0.005042,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005042,
+        "upstream_inference_prompt_cost": 0.000682,
+        "upstream_inference_completions_cost": 0.00436
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "Insulated multi-conductor cable fitted with a 3.5mm stereo jack and multi-pin connector, carrying audio and power at under 1,000 V, falls under other electric conductors fitted with connectors in heading 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 436,
+    "total_tokens": 777,
+    "cost": 0.005042,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005042,
+      "upstream_inference_prompt_cost": 0.000682,
+      "upstream_inference_completions_cost": 0.00436
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:30.563066+00:00",
+  "latency_s": 4.184,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

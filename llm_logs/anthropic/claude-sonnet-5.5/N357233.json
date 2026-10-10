@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357233",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595341-0FmsbgBYMF2pI0orvSCx",
+    "object": "chat.completion",
+    "created": 1791595341,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on an infant monkey costume. Costumes of textile materials are generally classified in 9505.90 as festive articles, but CBP has often treated infant-size costumes differently. Wearing apparel for babies falls under 6111 (knitted) or 6209 (woven). Carnival costumes are excluded from Chapter 61/62 by Note 1(e) to Chapter 95... actually, Chapter 95 excludes none of these, while Chapter 61/62 notes exclude \"articles of chapter 95\" in the sense that Note 1(e) to Section XI excludes Chapter 95 articles, which implies that costumes of festive nature go to 9505. However, CBP typically holds that if the garment is not clearly a festive article, and is of ordinary apparel construction, it goes to Chapter 61 or 62. A monkey jumpsuit with hood, booties and tail is probably a set of knitted fleece or plush. A jumpsuit for infants might be classified in 6111.30 (synthetic fibers) as babies' garments, or 6111.20 (cotton). A set of garments for retail sale would be classified under 6111.30.5040 or similar. I think CBP ruled it was a \"costume\" under 9505.90.6000, and I will go with that, since the description says \"costume\" with a detachable tail and a hood headpiece, which are not ordinary apparel.\n\n```json\n{\"hts_code\": \"9505.90.6000\", \"reason\": \"The infant monkey costume (jumpsuit, hood, booties, detachable tail) is a festive article/costume classified in heading 9505 as other festive, carnival or entertainment articles.\"}\n```\n\nOutput only the JSON:\n\n{\"hts_code\": \"9505.90.6000\", \"reason\": \"The infant monkey costume (jumpsuit, hood, booties, detachable tail) is a festive costume classified in heading 9505 as other festive, carnival or entertainment articles.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 214,
+      "completion_tokens": 637,
+      "total_tokens": 851,
+      "cost": 0.006798,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006798,
+        "upstream_inference_prompt_cost": 0.000428,
+        "upstream_inference_completions_cost": 0.00637
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505906000",
+  "predicted_reason": "The infant monkey costume (jumpsuit, hood, booties, detachable tail) is a festive costume classified in heading 9505 as other festive, carnival or entertainment articles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 637,
+    "total_tokens": 851,
+    "cost": 0.006798,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006798,
+      "upstream_inference_prompt_cost": 0.000428,
+      "upstream_inference_completions_cost": 0.00637
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:21.430071+00:00",
+  "latency_s": 6.453,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

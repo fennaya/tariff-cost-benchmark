@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360598",
+  "rulingDate": "2026-05-04T00:00:00",
+  "true_code": "9018194000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596112-3MCcLabmL3qM6nGOwA0v",
+    "object": "chat.completion",
+    "created": 1791596112,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a part of a flexible bronchoscope, an endoscope, so it falls under heading 9018. Endoscopes are classified in 9018.90 (other instruments and appliances), while parts and accessories of endoscopes are in 9018.90.75 or 9018.90.80. There is also the earlier subheading 9018.90.60 for electro-diagnostic apparatus, but that is not a good fit here.\n\nParts of endoscopes could also be classified under 9018.90.8000 (other). Endoscopes themselves are under 9018.90.7580? Actually, 9018.90.75 is \"Other: Endoscopes, ... and parts\" \u2013 I believe 9018.90.7500 is for \"Ophthalmic instruments\", and 9018.90.80 is \"Other.\" Customs rulings for bronchoscope parts commonly use 9018.90.8000. Since the shaft is a specific component of an endoscope, 9018.90.80 is the best choice. I settle on 9018.90.8000.\n\n{\"hts_code\": \"9018.90.8000\", \"reason\": \"The braided insertion shaft is a part of a flexible bronchoscope/endoscope, an medical instrument of heading 9018, and falls in the residual 'other instruments and appliances' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 499,
+      "completion_tokens": 414,
+      "total_tokens": 913,
+      "cost": 0.005138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005138,
+        "upstream_inference_prompt_cost": 0.000998,
+        "upstream_inference_completions_cost": 0.00414
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9018908000",
+  "predicted_reason": "The braided insertion shaft is a part of a flexible bronchoscope/endoscope, an medical instrument of heading 9018, and falls in the residual 'other instruments and appliances' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 499,
+    "completion_tokens": 414,
+    "total_tokens": 913,
+    "cost": 0.005138,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005138,
+      "upstream_inference_prompt_cost": 0.000998,
+      "upstream_inference_completions_cost": 0.00414
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:12.374393+00:00",
+  "latency_s": 4.306,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

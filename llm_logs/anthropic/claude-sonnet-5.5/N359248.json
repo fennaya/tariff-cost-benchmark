@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359248",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8421210000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595788-FMOQA4oRcE4RDq83yko6",
+    "object": "chat.completion",
+    "created": 1791595788,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-type item: a robotic pool skimmer that is solar-powered and collects debris from the water surface. The candidate headings are:\n\n- 8479.89: machines with individual functions (the pool cleaner robot).\n- 8543.70: electrical machines with individual functions.\n- 3824 or 8421.21: filtering machinery for water.\n\nAutomatic pool cleaners (robotic, which move along the pool bottom) are typically classified in 8479.89.94 (other machines and mechanical appliances having individual functions). Some CBP rulings place pool cleaners in 8421.21 (filtering or purifying machinery for water), but robotic pool cleaners with their own filter basket have often been put in 8479.89.9499. I recall a ruling on a solar-powered pool skimmer robot that classified it in 8479.89.9599, a different subheading. The 8479.89.94 line covers \"other\" machines, and 8479.89.95 is the other category. In the HTSUS, 8479.89.94 is \"Other: Other machinery: Other\" and 8479.89.97 is \"Other.\" I believe the current schedule has 8479.89.9599 for \"Other,\" so I will use 8479.89.9599.\n\nThe chlorine tablet box is incidental, and the set is classified by its principal function of skimming.\n\n{\"hts_code\": \"8479.89.9599\", \"reason\": \"A solar/battery-powered robotic pool skimmer is a machine with an individual function not specified elsewhere, so it falls in heading 8479 as an 'other' machine under subheading 8479.89.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 538,
+      "completion_tokens": 516,
+      "total_tokens": 1054,
+      "cost": 0.006236,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006236,
+        "upstream_inference_prompt_cost": 0.001076,
+        "upstream_inference_completions_cost": 0.00516
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479899599",
+  "predicted_reason": "A solar/battery-powered robotic pool skimmer is a machine with an individual function not specified elsewhere, so it falls in heading 8479 as an 'other' machine under subheading 8479.89.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 538,
+    "completion_tokens": 516,
+    "total_tokens": 1054,
+    "cost": 0.006236,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006236,
+      "upstream_inference_prompt_cost": 0.001076,
+      "upstream_inference_completions_cost": 0.00516
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:48.746139+00:00",
+  "latency_s": 5.53,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

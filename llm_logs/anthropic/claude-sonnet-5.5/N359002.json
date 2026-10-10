@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359002",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "7323997000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595708-7lkbWvuyPNbjrmiYiNEP",
+    "object": "chat.completion",
+    "created": 1791595708,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on carbon steel pan sets with detachable aluminum handles. Cooking ware of iron or steel falls under 7323, and the pans are of carbon steel, not enameled and not cast. Heading 7323.94 covers enameled articles and 7323.93 covers stainless steel, so neither applies. The remaining subheading is 7323.99 (\"other\"), which would be used for table, kitchen or other household articles of iron or steel other than cast iron, stainless, or enameled. The 7323.91 and 7323.92 subheadings cover cast iron. Under 7323.99, the 10-digit statistical suffixes are 7323.99.9060 (other, other) and 7323.99.9030 (other, not coated or plated with precious metal). The 7323.99.30 line covers \"other: other: cooking ware\" but may not apply if that line is restricted to a particular type.\n\nCandidates in the 7323.99 area are:\n- 7323.99.30: Other, not coated or plated with precious metal, cooking ware (or similar)\n- 7323.99.50: Other, other, of iron or steel other than cast iron, not coated or plated, other\n- 7323.99.90: Other\n\nThe HTS structure is:\n- 7323.99: Other\n- 7323.99.10: Cooking and kitchen ware, porcelain-enameled\n- 7323.99.30: Other: Cooking ware... (not certain)\n- 7323.99.50: Other: Other, cooking and kitchen ware\n- 7323.99.90: Other\n\nMy best recollection is that 7323.99.90 is \"Other\" and 7323.99.50 is \"Cooking or kitchen ware, other.\" Carbon steel pans seasoned and uncoated would fall under 7323.99.9060 or 7323.99.9080. I'll go with the \"other\" line: 7323.99.9060 (other, other).\n\nThe set rule applies as well. The pan gives the set its essential character, and the handle is a detachable accessory. So the classification is under 7323.\n\n{\"hts_code\": \"7323.99.9060\", \"reason\": \"Carbon steel cooking pans sold in sets with detachable aluminum handles are classified by the essential character of the steel pan as other steel kitchen/cooking ware, not cast iron, stainless, or enameled, under heading 7323.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 590,
+      "completion_tokens": 760,
+      "total_tokens": 1350,
+      "cost": 0.00878,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00878,
+        "upstream_inference_prompt_cost": 0.00118,
+        "upstream_inference_completions_cost": 0.0076
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7323999060",
+  "predicted_reason": "Carbon steel cooking pans sold in sets with detachable aluminum handles are classified by the essential character of the steel pan as other steel kitchen/cooking ware, not cast iron, stainless, or enameled, under heading 7323.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 590,
+    "completion_tokens": 760,
+    "total_tokens": 1350,
+    "cost": 0.00878,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00878,
+      "upstream_inference_prompt_cost": 0.00118,
+      "upstream_inference_completions_cost": 0.0076
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:28.614021+00:00",
+  "latency_s": 6.487,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

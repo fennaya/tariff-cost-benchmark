@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362365",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8708937500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600305-D1nhaXamON4mfhuFW6qn",
+    "object": "chat.completion",
+    "created": 1791600305,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8482.10.5000\", \"reason\": \"A clutch release bearing is a radial/thrust ball bearing of a kind used in automotive clutch assemblies, classified as an other ball bearing under HTSUS 8482.10.50.\"}",
+          "refusal": null,
+          "reasoning": "Clutch release bearing \u2014 8482.99 (other ball/roller bearing parts)? Actually clutch release bearings classified as ball bearings 8482.10? Rulings: clutch release bearings classified under 8482.10.10? They are thrust ball bearings... CBP rulings classify clutch release bearings in 8482.10.10 (ball bearings). Use 8482.10.10.50? HTS 8482.10.10 covers ball bearings with outer diameter \u226430mm... Actually 8482.10.10: \"Ball bearings with outer diameter not exceeding 30 mm\". Clutch release bearings larger. 8482.10.50: other ball bearings. Rulings (e.g., NY 865546) classify clutch release bearing in 8482.10.50. Use 8482.10.5000? Format: 8482.10.50.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Clutch release bearing \u2014 8482.99 (other ball/roller bearing parts)? Actually clutch release bearings classified as ball bearings 8482.10? Rulings: clutch release bearings classified under 8482.10.10? They are thrust ball bearings... CBP rulings classify clutch release bearings in 8482.10.10 (ball bearings). Use 8482.10.10.50? HTS 8482.10.10 covers ball bearings with outer diameter \u226430mm... Actually 8482.10.10: \"Ball bearings with outer diameter not exceeding 30 mm\". Clutch release bearings larger. 8482.10.50: other ball bearings. Rulings (e.g., NY 865546) classify clutch release bearing in 8482.10.50. Use 8482.10.5000? Format: 8482.10.50.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 174,
+      "completion_tokens": 260,
+      "total_tokens": 434,
+      "cost": 0.00116836,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00116836,
+        "upstream_inference_prompt_cost": 2.436e-05,
+        "upstream_inference_completions_cost": 0.001144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 163,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8482105000",
+  "predicted_reason": "A clutch release bearing is a radial/thrust ball bearing of a kind used in automotive clutch assemblies, classified as an other ball bearing under HTSUS 8482.10.50.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 260,
+    "total_tokens": 434,
+    "cost": 0.00116836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00116836,
+      "upstream_inference_prompt_cost": 2.436e-05,
+      "upstream_inference_completions_cost": 0.001144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 163,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:45:05.827159+00:00",
+  "latency_s": 1.29,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

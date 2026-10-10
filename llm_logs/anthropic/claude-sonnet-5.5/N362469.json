@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362469",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "7615107180",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596500-HBcMdrnjotlFDIQ5WDkx",
+    "object": "chat.completion",
+    "created": 1791596500,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling about aluminum cups with polypropylene coating. The candidates are 7615.10 (table, kitchen or other household articles of aluminum) and 3924 (plastic tableware, kitchenware). The aluminum is the essential character, so 7615.10.\n\nSubheading 7615.10 splits into 7615.10.10 (cooking and kitchen ware, enameled or glazed), 7615.10.20 (cooking and kitchen ware, other), 7615.10.30 (table/kitchen/household articles, other, cast), 7615.10.50 (other, of stamped aluminum). 7615.10.71 covers other cooking/kitchen ware, 7615.10.91 covers other.\n\nThe current HTS layout is:\n- 7615.10.10 Cooking and kitchen ware, enameled or glazed\n- 7615.10.20 Cooking and kitchen ware, other, not enameled or glazed (cast, nonstick?) \n- 7615.10.30 Other: Cooking and kitchen ware of cast aluminum, \n- 7615.10.50 Other: Table, kitchen...\n- 7615.10.71 Other: Cooking and kitchen ware: stamped, lithographed, or similarly processed\n- 7615.10.91 Other\n\nCups are drawn and formed from sheet, and are plausibly classified as 7615.10.71 (other, cooking ware and kitchen ware).\n\nDisposable-type cups for food service would be kitchenware or tableware, so I'll go with 7615.10.7130.\n\n{\"hts_code\": \"7615.10.7130\", \"reason\": \"Aluminum is the essential character of these polypropylene-coated drawn aluminum cups, which are table/kitchen articles of aluminum under heading 7615, subheading 7615.10, other cooking/kitchen ware.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 315,
+      "completion_tokens": 608,
+      "total_tokens": 923,
+      "cost": 0.00671,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00671,
+        "upstream_inference_prompt_cost": 0.00063,
+        "upstream_inference_completions_cost": 0.00608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615107130",
+  "predicted_reason": "Aluminum is the essential character of these polypropylene-coated drawn aluminum cups, which are table/kitchen articles of aluminum under heading 7615, subheading 7615.10, other cooking/kitchen ware.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 315,
+    "completion_tokens": 608,
+    "total_tokens": 923,
+    "cost": 0.00671,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00671,
+      "upstream_inference_prompt_cost": 0.00063,
+      "upstream_inference_completions_cost": 0.00608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:40.417887+00:00",
+  "latency_s": 5.608,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

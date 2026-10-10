@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361174",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "2939790000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600151-Yn4g9T54AeSF0MjhzrbR",
+    "object": "chat.completion",
+    "created": 1791600151,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2942.00.0000\", \"reason\": \"A bulk crystalline organic powder with no more specific description is most commonly classified as an other organic compound in heading 2942.\"}",
+          "refusal": null,
+          "reasoning": "Vague chemical powder \u2014 likely an organic chemical. Common classification: 2942.00.0000? Or 3824? Yellow crystalline powder bulk \u2014 could be caffeine? Ambiguous. Best guess: 2933.99? I'll pick 2942.00.0000? Actually generic organic chemical unknown \u2192 3824.99.9297? Hmm. Choose 2934.99? I'll go with 2942.00.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vague chemical powder \u2014 likely an organic chemical. Common classification: 2942.00.0000? Or 3824? Yellow crystalline powder bulk \u2014 could be caffeine? Ambiguous. Best guess: 2933.99? I'll pick 2942.00.0000? Actually generic organic chemical unknown \u2192 3824.99.9297? Hmm. Choose 2934.99? I'll go with 2942.00.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 111,
+      "completion_tokens": 155,
+      "total_tokens": 266,
+      "cost": 0.0005492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005492,
+        "upstream_inference_prompt_cost": 2.22e-05,
+        "upstream_inference_completions_cost": 0.000527
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 107,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2942000000",
+  "predicted_reason": "A bulk crystalline organic powder with no more specific description is most commonly classified as an other organic compound in heading 2942.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 111,
+    "completion_tokens": 155,
+    "total_tokens": 266,
+    "cost": 0.0005492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005492,
+      "upstream_inference_prompt_cost": 2.22e-05,
+      "upstream_inference_completions_cost": 0.000527
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 107,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:42:31.993372+00:00",
+  "latency_s": 2.901,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

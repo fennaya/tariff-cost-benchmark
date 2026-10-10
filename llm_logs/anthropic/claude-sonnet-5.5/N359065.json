@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359065",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "8703330185",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595728-EIkmAXlNJyi6tdZr1CXb",
+    "object": "chat.completion",
+    "created": 1791595728,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "A 1984 Toyota Land Cruiser BJ42 is a diesel-powered passenger vehicle, and the BJ42 has a 3.4L diesel engine (3B), which is over 2,500 cc. Heading 8703 covers motor cars principally designed for passenger transport. Diesel (compression-ignition) vehicles fall under 8703.31 to 8703.33.\n\n- 8703.31: cylinder capacity not over 1,500 cc\n- 8703.32: over 1,500 cc but not over 2,500 cc\n- 8703.33: over 2,500 cc\n\nSo the subheading is 8703.33. The statistical suffixes under 8703.33 are:\n- 8703.33.01 for new vehicles (8703.33.0100?)\n- 8703.33.0160 and similar for used vehicles\n\nIn the HTSUS, 8703.32.01 and 8703.33.01 are the 8-digit tariff lines, with statistical suffixes 8703.33.0130 and 8703.33.0160. I recall 8703.33.0130 as \"Other: Station wagons\" or \"Other: Other,\" but I'm not certain. The 8703.33.01 line covers \"Other\" vehicles, and the 10-digit statistical suffixes distinguish new from used, and for some, the type. For 8703.33.0190 I don't remember the exact label.\n\nFor the 8703.32.01 line, I recall the pattern being 8703.32.0130 \"Sport utility vehicles\", 8703.32.0160 \"Other\", and 8703.32.0190, which is \"Used\". Applying the same pattern to the 8703.33.01 line, the 10-digit codes would be 8703.33.0130, 8703.33.0160, and 8703.33.0190, with the last being the used-vehicle line. Since this vehicle is from 1984, it is a used vehicle, so 8703.33.0190 is the better choice.\n\n{\"hts_code\": \"8703.33.0190\", \"reason\": \"A used 1984 diesel-powered passenger vehicle (Land Cruiser BJ42, 3.4L engine, over 2,500 cc) is classified in heading 8703, subheading 8703.33 for compression-ignition engines over 2,500 cc.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 734,
+      "total_tokens": 961,
+      "cost": 0.007794,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007794,
+        "upstream_inference_prompt_cost": 0.000454,
+        "upstream_inference_completions_cost": 0.00734
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703330190",
+  "predicted_reason": "A used 1984 diesel-powered passenger vehicle (Land Cruiser BJ42, 3.4L engine, over 2,500 cc) is classified in heading 8703, subheading 8703.33 for compression-ignition engines over 2,500 cc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 227,
+    "completion_tokens": 734,
+    "total_tokens": 961,
+    "cost": 0.007794,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007794,
+      "upstream_inference_prompt_cost": 0.000454,
+      "upstream_inference_completions_cost": 0.00734
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:49.099762+00:00",
+  "latency_s": 6.476,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

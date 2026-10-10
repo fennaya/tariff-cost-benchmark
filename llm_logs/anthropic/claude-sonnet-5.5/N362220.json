@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362220",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "4421999880",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596442-xvD1pm3cVMVIwGGNxllO",
+    "object": "chat.completion",
+    "created": 1791596442,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a timber frame kit of Douglas fir members that are prefabricated with mortise and tenon joinery. These are structural wood members for a gazebo, so the likely heading is 4418 (builders' joinery and carpentry of wood).\n\nHeading 4418 covers \"Builders' joinery and carpentry of wood, including cellular wood panels, assembled flooring panels, shingles and shakes\". 4418.90 and 4418.99 cover other items, but 4418.50 is shingles and shakes. 4418.60 is posts and beams. 4418.70 is assembled parquet panels. 4418.73 and 4418.74 cover assembled flooring panels. 4418.81 to 4418.89 cover engineered structural timber (glulam, CLT, I-beams). 4418.91 to 4418.99 cover other.\n\nThe kit contains posts, trusses and roof members, so it is a set of posts and beams. Even so, a kit with trusses and other members is not simply 4418.60. The members are put up together as a set, and the essential character is Douglas fir, a coniferous wood. Prefabricated buildings fall under 9406, which covers prefabricated buildings of wood (9406.10). Since 2022, 9406.10.00 has been subdivided: 9406.10.0000 is the older form, and the current form is 9406.10.00 with 10-digit statistical suffixes. A gazebo without walls could still be a prefabricated structure, but the classification question is whether it is a \"building\". CBP rulings on timber frame kits, such as pergolas and gazebos, have classified them under 9406.10.0000 as prefabricated buildings. However, the note to Chapter 94 excludes things that are only unassembled wood members, and timber frame kits with the full set of members for a structure are generally classified as prefabricated buildings.\n\nI'll go with 9406.10.0000, prefabricated buildings of wood.\n\n{\"hts_code\": \"9406.10.0000\", \"reason\": \"A complete timber frame kit with all prefabricated wood members, hardware and plans for assembling a permanent gazebo is a prefabricated wooden building of heading 9406, not separate joinery of heading 4418.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 716,
+      "total_tokens": 1036,
+      "cost": 0.0078,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0078,
+        "upstream_inference_prompt_cost": 0.00064,
+        "upstream_inference_completions_cost": 0.00716
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9406100000",
+  "predicted_reason": "A complete timber frame kit with all prefabricated wood members, hardware and plans for assembling a permanent gazebo is a prefabricated wooden building of heading 9406, not separate joinery of heading 4418.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 716,
+    "total_tokens": 1036,
+    "cost": 0.0078,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0078,
+      "upstream_inference_prompt_cost": 0.00064,
+      "upstream_inference_completions_cost": 0.00716
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:42.635059+00:00",
+  "latency_s": 7.327,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

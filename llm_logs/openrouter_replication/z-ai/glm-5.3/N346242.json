@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N346242",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5208214090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594009-xuMWp4jLdhuJx2SKclOl",
+    "object": "chat.completion",
+    "created": 1791594009,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"5208.13.9090\", \"reason\": \"Bleached plain-weave fabric of 100% cotton weighing under 200 g/m2, not of poplin/broadcloth or other named weaves, is classified in HTSUS subheading 5208.13.90 (other), with 10-digit statistical suffix 9090.\"}",
+          "refusal": null,
+          "reasoning": "Cotton woven fabric, bleached, plain weave, gauze \u2014 Chapter 52, bleached woven cotton fabrics, plain weave, under 200 g/m2. Gauze weave? It's plain weave. 5208.13 \u2014 plain weave, bleached, \u226585% cotton, under 200 g/m2. Metric yarn number 56 (metric = cotton count? \"56 in the metric system\" \u2014 fine). 5208.13.6090? Actually 5208.13 categories: 5208.13.20 (poplin/broadcloth?), 5208.13.40 (printcloth?), 5208.13.60 (cretonne etc?), 5208.13.90 other. Gauze would be \"other\" \u2192 5208.13.9090? Check: 5208.13.90 \"Other\" with suffixes 90/95... 5208.13.9090 likely. Common ruling answer: 5208.13.90. 10-digit: 5208.13.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Cotton woven fabric, bleached, plain weave, gauze \u2014 Chapter 52, bleached woven cotton fabrics, plain weave, under 200 g/m2. Gauze weave? It's plain weave. 5208.13 \u2014 plain weave, bleached, \u226585% cotton, under 200 g/m2. Metric yarn number 56 (metric = cotton count? \"56 in the metric system\" \u2014 fine). 5208.13.6090? Actually 5208.13 categories: 5208.13.20 (poplin/broadcloth?), 5208.13.40 (printcloth?), 5208.13.60 (cretonne etc?), 5208.13.90 other. Gauze would be \"other\" \u2192 5208.13.9090? Check: 5208.13.90 \"Other\" with suffixes 90/95... 5208.13.9090 likely. Common ruling answer: 5208.13.90. 10-digit: 5208.13.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 420,
+      "completion_tokens": 315,
+      "total_tokens": 735,
+      "cost": 0.0019614,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0019614,
+        "upstream_inference_prompt_cost": 7.14e-05,
+        "upstream_inference_completions_cost": 0.00189
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 252,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5208139090",
+  "predicted_reason": "Bleached plain-weave fabric of 100% cotton weighing under 200 g/m2, not of poplin/broadcloth or other named weaves, is classified in HTSUS subheading 5208.13.90 (other), with 10-digit statistical suffix 9090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 315,
+    "total_tokens": 735,
+    "cost": 0.0019614,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0019614,
+      "upstream_inference_prompt_cost": 7.14e-05,
+      "upstream_inference_completions_cost": 0.00189
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 252,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T01:00:09.759632+00:00",
+  "latency_s": 7.806,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

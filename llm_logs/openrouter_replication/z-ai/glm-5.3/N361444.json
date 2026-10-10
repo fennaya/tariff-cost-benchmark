@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361444",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8536908585",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600190-6oVoXBZ2kTsftwWqVo0w",
+    "object": "chat.completion",
+    "created": 1791600190,
+    "model": "z-ai/glm-5.3",
+    "provider": "Friendli",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.9090\", \"reason\": \"The liquid-cooled busbar is an insulated electrical conductor assembly (copper conductors with insulating separator and connectors), classifiable as other electric conductors fitted with connectors under heading 8544.\"}",
+          "refusal": null,
+          "reasoning": "Copper busbar, insulated? Not externally insulated \u2014 copper bars not insulated \u2192 7407? But it's a busbar assembly with cooling tubes... Likely 8538.90? Actually liquid-cooled busbar ruling: insulated busbar \u2192 8545? Busbars are electrodes? HTS 8545 covers electrodes. Busbars insulated classified 8544.42? Not insulated \u2192 heading 7407 copper bars. But composite article with steel cage... likely 8537? Ruling: liquid-cooled busbar classified 8538.90? Hmm. Given \"insulation only between load and return sides, not externally insulated\" \u2014 CBP ruling classified as 8544.42? Actually there's a ruling on liquid-cooled busbar LCBB-200kW \u2014 likely NY ruling classifying in 8538.90.30? I'll go with 8544.42.9099? Choose 8538.90.70? I'll answer 8544.42.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Copper busbar, insulated? Not externally insulated \u2014 copper bars not insulated \u2192 7407? But it's a busbar assembly with cooling tubes... Likely 8538.90? Actually liquid-cooled busbar ruling: insulated busbar \u2192 8545? Busbars are electrodes? HTS 8545 covers electrodes. Busbars insulated classified 8544.42? Not insulated \u2192 heading 7407 copper bars. But composite article with steel cage... likely 8537? Ruling: liquid-cooled busbar classified 8538.90? Hmm. Given \"insulation only between load and return sides, not externally insulated\" \u2014 CBP ruling classified as 8544.42? Actually there's a ruling on liquid-cooled busbar LCBB-200kW \u2014 likely NY ruling classifying in 8538.90.30? I'll go with 8544.42.9099? Choose 8538.90.70? I'll answer 8544.42.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 288,
+      "total_tokens": 546,
+      "cost": 0.00146556,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00146556,
+        "upstream_inference_prompt_cost": 0.00032508,
+        "upstream_inference_completions_cost": 0.00114048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 192,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "The liquid-cooled busbar is an insulated electrical conductor assembly (copper conductors with insulating separator and connectors), classifiable as other electric conductors fitted with connectors under heading 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 288,
+    "total_tokens": 546,
+    "cost": 0.00146556,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00146556,
+      "upstream_inference_prompt_cost": 0.00032508,
+      "upstream_inference_completions_cost": 0.00114048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Friendli",
+  "requested_at": "2026-10-10T02:43:11.141153+00:00",
+  "latency_s": 1.897,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362449",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "1905909030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596493-ZKvtjjnrBFeQgqhEkKnF",
+    "object": "chat.completion",
+    "created": 1791596493,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling about Cheezels, an extruded corn/rice flour snack with cheese seasoning. The likely classification is heading 1905.90 (other bakers' wares) or 2106.90 (food preparations not elsewhere specified). Expanded extruded snacks made from corn flour are often classified in 1904.10 (prepared foods obtained by swelling or roasting of cereals). Extruded, expanded puffed products fall under 1904.10, and CBP rulings on extruded cheese puffs (Cheetos) have placed them in 1904.10.\n\nWithin 1904.10, subheading 1904.10.10 covers \"Prepared foods obtained by the swelling or roasting of cereals or cereal products: Corn-based\" (1904.10.1000?). The structure is 1904.10.10 \"Containing over 5.5% butterfat...\"? Probably: 1904.10.20 is \"Dried bulgur\"? Not certain. The actual tariff has 1904.10.20 for \"Described in additional U.S. note 1 to chapter 4 / over 65% sugar...\" and 1904.10.4000 \"Other\" or 1904.10.60/1904.10.90. I recall 1904.10.2200/2400 for dairy-containing items, 1904.10.4400 for those with sugar, and 1904.10.60 and 1904.10.90 for other. The product contains milk solids and cheese powder, and the dairy-based classification applies if it contains over 5.5% butterfat that is not for retail sale. Without the percentages, the likely answer is the general \"Other\" 1904.10.9000.\n\nSubheading 1904.10.90 has statistical suffixes of its own, such as 1904.10.9000, which is the general \"Other\" category.\n\n```json\n{\"hts_code\": \"1904.10.9000\", \"reason\": \"Ready-to-eat extruded, expanded corn and rice flour snack rings are prepared foods obtained by the swelling of cereals, classified in heading 1904 under the 'other' subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 551,
+      "completion_tokens": 666,
+      "total_tokens": 1217,
+      "cost": 0.007762,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007762,
+        "upstream_inference_prompt_cost": 0.001102,
+        "upstream_inference_completions_cost": 0.00666
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1904109000",
+  "predicted_reason": "Ready-to-eat extruded, expanded corn and rice flour snack rings are prepared foods obtained by the swelling of cereals, classified in heading 1904 under the 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 551,
+    "completion_tokens": 666,
+    "total_tokens": 1217,
+    "cost": 0.007762,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007762,
+      "upstream_inference_prompt_cost": 0.001102,
+      "upstream_inference_completions_cost": 0.00666
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:33.870568+00:00",
+  "latency_s": 6.281,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

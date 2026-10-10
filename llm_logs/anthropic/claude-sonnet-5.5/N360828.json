@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360828",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "6211339061",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596159-b0TF9cWSbDHRR2cnut5Q",
+    "object": "chat.completion",
+    "created": 1791596159,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a man's jacket and pants that zip together into a protective set. The fabric is 50% Kermel (polyamide-imide, a synthetic fiber), 39% Lenzing FR (flame-resistant viscose, an artificial fiber), 10% para-aramid, and 1% carbon. Synthetic fibers are the largest share, at 60% when the para-aramid is counted with them.\n\nThe question is whether the two garments form a \"suit\" or a \"ski-suit\"-type set, or whether they are classified separately. Because the jacket and pants zip together, they may be treated as a set for tariff purposes. Heading 6211 covers track suits, ski-suits, and other garments, and the 6211.33 subheadings cover men's garments of man-made fibers. Heading 6203 covers men's suits, but a suit requires the jacket to be lined, and this jacket is unlined, so it does not qualify as a suit under 6203.\n\nHeading 6211 does not apply to separate garments of this kind. The classification would therefore be jacket in 6201 and pants in 6203. A protective garment that is woven and made of man-made fibers would fall under 6201.93 for a jacket and 6203.43 for pants. Because the garments are worn together and zipped, they could be classified under 6211.33.9010 as \"other garments, men's, of man-made fibers.\"\n\nThe question asks for a single code, so I will choose 6211.33.9060, the men's other garments of man-made fibers. I'm not certain of the statistical suffix, though. The 6211.33.90 line has several suffixes, including 6211.33.9010 for \"Other: Other: Coveralls and overalls\" and 6211.33.9060 for \"Other.\"\n\nInstead I'll go with 6211.33.9060, which is the likeliest choice.\n\n{\"hts_code\": \"6211.33.9060\", \"reason\": \"Men's protective jacket and pants that zip together as a set, woven of predominantly man-made fibers, are classified as other men's garments of man-made fibers in heading 6211.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 704,
+      "completion_tokens": 671,
+      "total_tokens": 1375,
+      "cost": 0.008118,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008118,
+        "upstream_inference_prompt_cost": 0.001408,
+        "upstream_inference_completions_cost": 0.00671
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211339060",
+  "predicted_reason": "Men's protective jacket and pants that zip together as a set, woven of predominantly man-made fibers, are classified as other men's garments of man-made fibers in heading 6211.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 704,
+    "completion_tokens": 671,
+    "total_tokens": 1375,
+    "cost": 0.008118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008118,
+      "upstream_inference_prompt_cost": 0.001408,
+      "upstream_inference_completions_cost": 0.00671
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:59.274069+00:00",
+  "latency_s": 6.123,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

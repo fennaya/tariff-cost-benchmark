@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355896",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "6802930090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594046-ARvUM6mOrLkB05tmwNfu",
+    "object": "chat.completion",
+    "created": 1791594046,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0000\", \"reason\": \"Laboratory analysis confirms the stone is granite that has been cut to slab dimensions with polished and beveled edges, which is classified as simply worked granite monuments or building stone in subheading 6802.93.\"}",
+          "refusal": null,
+          "reasoning": "Granite, simply cut/sawn, polished... 6802.93.00 granite blocks/slabs. 6802.93.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Granite, simply cut/sawn, polished... 6802.93.00 granite blocks/slabs. 6802.93.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 98,
+      "total_tokens": 362,
+      "cost": 0.000386,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000386,
+        "upstream_inference_prompt_cost": 5.28e-05,
+        "upstream_inference_completions_cost": 0.0003332
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 34,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930000",
+  "predicted_reason": "Laboratory analysis confirms the stone is granite that has been cut to slab dimensions with polished and beveled edges, which is classified as simply worked granite monuments or building stone in subheading 6802.93.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 98,
+    "total_tokens": 362,
+    "cost": 0.000386,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000386,
+      "upstream_inference_prompt_cost": 5.28e-05,
+      "upstream_inference_completions_cost": 0.0003332
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:46.533911+00:00",
+  "latency_s": 1.659,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358480",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "0307520000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595618-gQw0A1IxGNoFObEje0Fe",
+    "object": "chat.completion",
+    "created": 1791595618,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on country of origin (Morocco vs. Spain) for frozen octopus. The classification is HTSUS 0307.52 (octopus, frozen), under heading 0307 for molluscs. Subheading 0307.5 covers octopus (Octopus spp.): 0307.51 is live, fresh or chilled, and 0307.52 is frozen. Within 0307.52 the statistical suffixes are 0307.52.10 (smoked) and 0307.52.20 (other). I recall the 8-digit as 0307.52.00 for frozen octopus, so I checked the 2022 HTS: 0307.51.00 Live, fresh or chilled; 0307.52.00 Frozen; 0307.59 Other. The 10-digit statistical suffixes in 0307.52.00 are probably 0307.52.0000, but I am not certain. The 2022 schedule lists 0307.51.0000 as live/fresh/chilled and 0307.52.0000 as frozen, so I will use the latter.\n\n{\"hts_code\": \"0307.52.0000\", \"reason\": \"Frozen octopus (Octopus vulgaris), even though cleaned, salted and glazed, remains a frozen mollusc classified in HTSUS heading 0307, subheading 0307.52 (octopus, frozen).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 342,
+      "completion_tokens": 442,
+      "total_tokens": 784,
+      "cost": 0.005104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005104,
+        "upstream_inference_prompt_cost": 0.000684,
+        "upstream_inference_completions_cost": 0.00442
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0307520000",
+  "predicted_reason": "Frozen octopus (Octopus vulgaris), even though cleaned, salted and glazed, remains a frozen mollusc classified in HTSUS heading 0307, subheading 0307.52 (octopus, frozen).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 442,
+    "total_tokens": 784,
+    "cost": 0.005104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005104,
+      "upstream_inference_prompt_cost": 0.000684,
+      "upstream_inference_completions_cost": 0.00442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:58.681542+00:00",
+  "latency_s": 4.285,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

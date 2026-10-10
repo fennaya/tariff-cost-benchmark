@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359456",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "7323997000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599913-mMPIz94XgadPL8O855tr",
+    "object": "chat.completion",
+    "created": 1791599913,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7323.93.0080\", \"reason\": \"Carbon steel cooking pans are table or kitchen articles of iron or steel other than stainless steel, classified in subheading 7323.93.00.\"}",
+          "refusal": null,
+          "reasoning": "Carbon steel pans, not coated? Likely 7323.93.00 \u2014 steel pans. Carbon steel cooking pan: 7323.93.0080? Table/kitchen articles of iron/stainless... 7323.93 is other (non-stainless). 7323.93.0080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Carbon steel pans, not coated? Likely 7323.93.00 \u2014 steel pans. Carbon steel cooking pan: 7323.93.0080? Table/kitchen articles of iron/stainless... 7323.93 is other (non-stainless). 7323.93.0080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 262,
+      "completion_tokens": 123,
+      "total_tokens": 385,
+      "cost": 0.00055328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00055328,
+        "upstream_inference_prompt_cost": 3.668e-05,
+        "upstream_inference_completions_cost": 0.0005166
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 70,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7323930080",
+  "predicted_reason": "Carbon steel cooking pans are table or kitchen articles of iron or steel other than stainless steel, classified in subheading 7323.93.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 262,
+    "completion_tokens": 123,
+    "total_tokens": 385,
+    "cost": 0.00055328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00055328,
+      "upstream_inference_prompt_cost": 3.668e-05,
+      "upstream_inference_completions_cost": 0.0005166
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 70,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:38:34.034658+00:00",
+  "latency_s": 4.493,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

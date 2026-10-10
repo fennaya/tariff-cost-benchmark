@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363892",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8428900390",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596743-mbVDeg0xAXJjDFZwPXuZ",
+    "object": "chat.completion",
+    "created": 1791596743,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on container jack carriers. The candidates are 8425.42 (hydraulic jacks and hoists, other than built-in jacking systems), 8425.41 (built-in jacking systems), and 8428 or 8716.\n\nHeading 8425 covers pulley tackle and hoists, winches and capstans, and jacks. Subheading 8425.42 covers other jacks and hoists, hydraulic. The statistical suffixes for 8425.42 are 8425.42.00 with 30 (Jacks) and 60 (Hoists), so the 10-digit code is 8425.42.0000 or similar.\n\nUnder the current HTSUS, 8425.42.00 has the statistical suffixes 8425.42.0000. That is plausible, since the 8425.42 line is a single line with no further breakdown.\n\nAn alternative is 8716.80 (other vehicles, not mechanically propelled), but the jacks lift the container, which is their principal function. The system is essentially a set of hydraulic jacks on wheels, so 8425.42 fits best.\n\n{\"hts_code\": \"8425.42.0000\", \"reason\": \"The system is a set of manually operated hydraulic jacks (corner lifting units with hand pumps) that lift containers, so it falls under heading 8425 as jacks and hoists, hydraulic, other than built-in jacking systems.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 597,
+      "completion_tokens": 450,
+      "total_tokens": 1047,
+      "cost": 0.005694,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005694,
+        "upstream_inference_prompt_cost": 0.001194,
+        "upstream_inference_completions_cost": 0.0045
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8425420000",
+  "predicted_reason": "The system is a set of manually operated hydraulic jacks (corner lifting units with hand pumps) that lift containers, so it falls under heading 8425 as jacks and hoists, hydraulic, other than built-in jacking systems.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 597,
+    "completion_tokens": 450,
+    "total_tokens": 1047,
+    "cost": 0.005694,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005694,
+      "upstream_inference_prompt_cost": 0.001194,
+      "upstream_inference_completions_cost": 0.0045
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:44.169374+00:00",
+  "latency_s": 4.49,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

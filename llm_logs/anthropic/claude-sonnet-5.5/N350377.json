@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N350377",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "6303922010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593762-MnRBitndu8stJF9hXDID",
+    "object": "chat.completion",
+    "created": 1791593762,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on blackout curtains made of polyester woven fabric with a cellular plastic coating or lamination. The question is whether they fall in heading 6303 (curtains) or 3921 (cellular plastic combined with textile).\n\nUnder Chapter 39 Note and Chapter 59 Note 2(a)(?), fabric coated or laminated with cellular plastic falls in heading 5903 only if it is not described by the exclusions, and 5903 excludes products where the plastic is cellular, which go to 3921 (Note 2(a)(4) to Chapter 59, with the exception of felts). Even so, the made-up curtains are classified by the textile fabric's treatment. Note 1 to Section XI excludes textile fabrics of 5903, but it does not exclude those of 3921. Chapter 39 Note 2(p) excludes Section XI goods (textiles), so the plastic-coated fabric is the question. Cellular plastic combined with textile where the textile is only for reinforcement goes to 3921, while a textile fabric coated with cellular plastic that is not mere reinforcement stays in textile heading 5903 or 5907.\n\nChapter 59 Note 2(b) covers fabrics impregnated, coated or covered with plastics, and 5903 covers those laminated with plastics, other than those of heading 5902. Note 2(a)(4) excludes from 5903 \"plates, sheets or strip of cellular plastics, combined with textile fabric, where the textile fabric is present merely for reinforcement purposes.\" Here the textile is the face fabric of a curtain, and it is more than reinforcement. The coated fabric therefore stays in 5903, and the made-up curtain goes to 6303.\n\nHeading 6303 covers curtains and interior blinds. Subheading 6303.12 covers those of synthetic fibers, and 6303.12.0010 is the statistical suffix for those of \"Other\" kinds, a category that includes this one. The ruling likely classifies the curtains in 6303.92.2030, \"Other: of synthetic fibers: Other: Curtains.\" Chapter 59 Note 1 defines \"textile fabrics\" for the purposes of 5903, and Chapter 63 covers made-ups of any textile fabric, including coated ones. Subheading 6303.12 is for knitted or crocheted goods, while 6303.92 is for others of synthetic fibers, which fits woven polyester. 6303.92.20 is the \"Other\" category, and 6303.92.2030 is the curtains line.\n\n```json\n{\"hts_code\": \"6303.92.2030\", \"reason\": \"Woven polyester curtains coated or laminated with cellular plastic are made-up textile curtains of synthetic fibers, not knitted, so they fall in heading 6303 as 6303.92.2030.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1243,
+      "completion_tokens": 929,
+      "total_tokens": 2172,
+      "cost": 0.011776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011776,
+        "upstream_inference_prompt_cost": 0.002486,
+        "upstream_inference_completions_cost": 0.00929
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6303922030",
+  "predicted_reason": "Woven polyester curtains coated or laminated with cellular plastic are made-up textile curtains of synthetic fibers, not knitted, so they fall in heading 6303 as 6303.92.2030.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1243,
+    "completion_tokens": 929,
+    "total_tokens": 2172,
+    "cost": 0.011776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011776,
+      "upstream_inference_prompt_cost": 0.002486,
+      "upstream_inference_completions_cost": 0.00929
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:02.980264+00:00",
+  "latency_s": 8.95,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

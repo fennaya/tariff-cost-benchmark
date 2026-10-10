@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357858",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "9404401000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599698-qsF94iD3scnlr3H0naXN",
+    "object": "chat.completion",
+    "created": 1791599698,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6304.19.15.00\", \"reason\": \"A matelass\u00e9 bed covering of 100% cotton without quilting, stitching, or filling is classified as a bedspread of cotton in heading 6304.\"}",
+          "refusal": null,
+          "reasoning": "Matelass\u00e9 quilt, cotton, not quilted \u2014 classified as bedspread? Matelass\u00e9 bedspreads: 6304.19.0000? Actually cotton bedspreads 6304.19.15? Bedspreads of cotton: 6304.19.15... Quilted textiles are 5811; matelass\u00e9 is not quilted, so 6304.19.0000? HTS 6304.19.9080? Bedspreads cotton other: 6304.19.15.00? Let me recall: 6304.19.15 bedspreads, cotton, other... Actually 6304.19.15.00 \"bedspreads\". I'll go 6304.19.15.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Matelass\u00e9 quilt, cotton, not quilted \u2014 classified as bedspread? Matelass\u00e9 bedspreads: 6304.19.0000? Actually cotton bedspreads 6304.19.15? Bedspreads of cotton: 6304.19.15... Quilted textiles are 5811; matelass\u00e9 is not quilted, so 6304.19.0000? HTS 6304.19.9080? Bedspreads cotton other: 6304.19.15.00? Let me recall: 6304.19.15 bedspreads, cotton, other... Actually 6304.19.15.00 \"bedspreads\". I'll go 6304.19.15.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 308,
+      "completion_tokens": 232,
+      "total_tokens": 540,
+      "cost": 0.00107932,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00107932,
+        "upstream_inference_prompt_cost": 5.852e-05,
+        "upstream_inference_completions_cost": 0.0010208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 107,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6304191500",
+  "predicted_reason": "A matelass\u00e9 bed covering of 100% cotton without quilting, stitching, or filling is classified as a bedspread of cotton in heading 6304.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 308,
+    "completion_tokens": 232,
+    "total_tokens": 540,
+    "cost": 0.00107932,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00107932,
+      "upstream_inference_prompt_cost": 5.852e-05,
+      "upstream_inference_completions_cost": 0.0010208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 107,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:34:58.859542+00:00",
+  "latency_s": 2.619,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

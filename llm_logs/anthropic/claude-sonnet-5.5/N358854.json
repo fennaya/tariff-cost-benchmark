@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358854",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "6406200000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595684-SVAG2Q0d8TTGCGwOvNLY",
+    "object": "chat.completion",
+    "created": 1791595684,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling about a DIY crochet shoe kit. I can't recall the ruling's actual text, so this classification rests on reasoning rather than a recalled outcome.\n\nThe kit has cotton yarn for crocheting an upper, plus soles and other components. It would likely be treated as unfinished footwear under GRI 2(a), classified as the complete article if it has the essential character of footwear. Unfinished footwear with the essential character of finished footwear goes in 6404 when the upper is textile and the outer sole is rubber or plastics, or in 6405 for other materials.\n\nThe kit's upper is not yet made, and the cotton yarn is not formed into an upper. Because the upper must be crocheted, the kit may instead be classified as a set under GRI 3(b), or as yarn. Retail-packaged kits would be set classification, with the essential character probably from the yarn, which would put it in 5205 or 5206 (cotton yarn put up for retail sale is 5207).\n\nI think the ruling probably classified it as unfinished footwear, though. Components like a sole with a pre-made insole or foxing would count as an unfinished shoe. Footwear with a textile upper and a rubber/plastic outer sole falls under 6404.19.90 for the general case, so I'll pick 6404.19.9060 for non-athletic textile footwear with a rubber or plastic sole, other than those for men's or women's.\n\nI'm uncertain about the final digits, so I'm giving the best-guess code.\n\n{\"hts_code\": \"6404.19.9060\", \"reason\": \"The kit is treated as unfinished footwear with the essential character of finished footwear (textile upper with rubber/plastic outer sole) under GRI 2(a), so it falls in heading 6404.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 577,
+      "total_tokens": 835,
+      "cost": 0.006286,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006286,
+        "upstream_inference_prompt_cost": 0.000516,
+        "upstream_inference_completions_cost": 0.00577
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6404199060",
+  "predicted_reason": "The kit is treated as unfinished footwear with the essential character of finished footwear (textile upper with rubber/plastic outer sole) under GRI 2(a), so it falls in heading 6404.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 577,
+    "total_tokens": 835,
+    "cost": 0.006286,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006286,
+      "upstream_inference_prompt_cost": 0.000516,
+      "upstream_inference_completions_cost": 0.00577
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:05.189894+00:00",
+  "latency_s": 6.46,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

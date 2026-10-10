@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359807",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8471500150",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595941-TwMzkuubbg4vVgVODBx5",
+    "object": "chat.completion",
+    "created": 1791595941,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Gaming desktop PCs are classified as automatic data processing machines in heading 8471. They are presented as a complete system in a single housing, which falls under subheading 8471.30 only if the unit is portable and weighs no more than 10 kg. A desktop is not portable, so it goes to 8471.49 or 8471.50. Heading 8471.50 covers processing units other than those of 8471.41 or 8471.49. A gaming PC with only a processing unit and no keyboard or monitor would go there.\n\nThe description says only that the PC is a traditional desktop and mentions no monitor or peripherals in the shipment. So 8471.50 is the best fit. The 10-digit statistical suffix under 8471.50 is 8471.50.0150 for processing units for digital processing machines, \"other\" (the 8471.50.0150 line is \"Other\" under \"Digital processing units...\"). I recall 8471.50.01 as \"Digital processing units other than those of subheadings 8471.41 and 8471.49, whether or not entered with the rest of a system,\" with the 10-digit codes 8471.50.0150 (\"Other\") and 8471.50.0140 (\"For automatic data processing machines of subheading 8471.30\"). CBP rulings on gaming PCs generally cite 8471.50.0150.\n\n{\"hts_code\": \"8471.50.0150\", \"reason\": \"Desktop gaming PCs are non-portable digital processing units of heading 8471, which falls under 8471.50 (other digital processing units), with 0150 as the statistical suffix for 'other'.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 617,
+      "completion_tokens": 508,
+      "total_tokens": 1125,
+      "cost": 0.006314,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006314,
+        "upstream_inference_prompt_cost": 0.001234,
+        "upstream_inference_completions_cost": 0.00508
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471500150",
+  "predicted_reason": "Desktop gaming PCs are non-portable digital processing units of heading 8471, which falls under 8471.50 (other digital processing units), with 0150 as the statistical suffix for 'other'.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 617,
+    "completion_tokens": 508,
+    "total_tokens": 1125,
+    "cost": 0.006314,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006314,
+      "upstream_inference_prompt_cost": 0.001234,
+      "upstream_inference_completions_cost": 0.00508
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:22.123167+00:00",
+  "latency_s": 5.643,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359903",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4911100080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595968-qIRiKYnzHfROkBcjYYSX",
+    "object": "chat.completion",
+    "created": 1791595968,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on printed PVC display signs. Printed advertising material falls in heading 4911: \"Other printed matter, including printed pictures and photographs.\" Subheading 4911.99 covers other printed matter, and 4911.10 covers trade advertising material, commercial catalogs and the like.\n\nHeading 4911.10 would be the first choice for trade advertising material, but signs printed on PVC boards could instead go to 3919 or 3920, or to 3926 as other articles of plastics. Heading 3926.90 covers other articles of plastic. However, Chapter 49 note 1 and the printed-matter rule (Chapter 39 note) matter here. Heading 4911 covers printed matter in which the printing is not merely incidental to the primary use, and for plastic goods Note 2(l) to Chapter 39 excludes Chapter 49 goods. The relevant question is whether the printing is incidental or primary. The printing here is the essential feature, so Chapter 49 applies even though the base is plastic.\n\nI recall that CBP rulings on printed PVC signs classify them under 4911.99.80, \"Other printed matter: Other: Other.\" But 4911.10 is for trade advertising material, and the 4911.10.00 subheadings include 4911.10.00 with statistical suffixes: 4911.10.0000 is \"Trade advertisements, commercial catalogs and the like,\" and the 4911.10.80 line covers \"Other\". Signs with a company logo and slogan are advertising material that directs customers to products, so 4911.10.80 seems to fit. I'll go with 4911.10.8000.\n\n```json\n{\"hts_code\": \"4911.10.8000\", \"reason\": \"Printed PVC store display signs bearing logos and slogans are trade advertising material of heading 4911, where the printing is the essential feature, so they fall under 4911.10 as other trade advertising material.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 333,
+      "completion_tokens": 623,
+      "total_tokens": 956,
+      "cost": 0.006896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006896,
+        "upstream_inference_prompt_cost": 0.000666,
+        "upstream_inference_completions_cost": 0.00623
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4911108000",
+  "predicted_reason": "Printed PVC store display signs bearing logos and slogans are trade advertising material of heading 4911, where the printing is the essential feature, so they fall under 4911.10 as other trade advertising material.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 623,
+    "total_tokens": 956,
+    "cost": 0.006896,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006896,
+      "upstream_inference_prompt_cost": 0.000666,
+      "upstream_inference_completions_cost": 0.00623
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:48.714662+00:00",
+  "latency_s": 6.62,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

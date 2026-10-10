@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361336",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8517620090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600171-laxF98fs7NcqWdYwEJdn",
+    "object": "chat.completion",
+    "created": 1791600171,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9019.90.0000\", \"reason\": \"The OmniHub is a dedicated accessory specifically designed for use solely with Philips Respironics ventilators (machines of heading 9019), so it is classified as a part/accessory under subheading 9019.90.\"}",
+          "refusal": null,
+          "reasoning": "Accessory for ventilators \u2014 likely classified as parts/accessories of breathing appliances, 9019.20.00? Ventilator parts: 9019.20.0000 covers ozone therapy... Actually HTS 9019.20.00 is ozone/oxygen therapy apparatus; ventilators are 9019.20.00? Ventilators classified 9019.20.0080? Parts under 9019.90.0000. But a wireless gateway could be 8517.62 (communication apparatus). Dedicated accessory to ventilator \u2192 9019.90.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Accessory for ventilators \u2014 likely classified as parts/accessories of breathing appliances, 9019.20.00? Ventilator parts: 9019.20.0000 covers ozone therapy... Actually HTS 9019.20.00 is ozone/oxygen therapy apparatus; ventilators are 9019.20.00? Ventilators classified 9019.20.0080? Parts under 9019.90.0000. But a wireless gateway could be 8517.62 (communication apparatus). Dedicated accessory to ventilator \u2192 9019.90.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 321,
+      "completion_tokens": 201,
+      "total_tokens": 522,
+      "cost": 0.00088914,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00088914,
+        "upstream_inference_prompt_cost": 4.494e-05,
+        "upstream_inference_completions_cost": 0.0008442
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9019900000",
+  "predicted_reason": "The OmniHub is a dedicated accessory specifically designed for use solely with Philips Respironics ventilators (machines of heading 9019), so it is classified as a part/accessory under subheading 9019.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 201,
+    "total_tokens": 522,
+    "cost": 0.00088914,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00088914,
+      "upstream_inference_prompt_cost": 4.494e-05,
+      "upstream_inference_completions_cost": 0.0008442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 132,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:42:51.351742+00:00",
+  "latency_s": 3.861,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

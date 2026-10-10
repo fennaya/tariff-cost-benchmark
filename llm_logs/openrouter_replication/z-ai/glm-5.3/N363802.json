@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363802",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9403100040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600449-IbsGpBMFtS0kddBolR3J",
+    "object": "chat.completion",
+    "created": 1791600449,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8473.30.5000\", \"reason\": \"Empty steel server racks/cabinets designed exclusively to house ADP machine equipment have been classified by CBP as parts and accessories of automatic data processing machines under heading 8473.\"}",
+          "refusal": null,
+          "reasoning": "Server rack/cabinet, steel, empty \u2014 likely 8473.30? Actually racks for automatic data processing machines: 8471.50 \"processing units other than those of 8471.41/49... \" no. Cabinets for servers classified under 8517? CBP has ruled server racks under 8473.30.50.00 (parts of ADP machines). Yes, NY rulings classify empty server racks in 8473.30.50.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Server rack/cabinet, steel, empty \u2014 likely 8473.30? Actually racks for automatic data processing machines: 8471.50 \"processing units other than those of 8471.41/49... \" no. Cabinets for servers classified under 8517? CBP has ruled server racks under 8473.30.50.00 (parts of ADP machines). Yes, NY rulings classify empty server racks in 8473.30.50.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 311,
+      "completion_tokens": 163,
+      "total_tokens": 474,
+      "cost": 0.00074208,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00074208,
+        "upstream_inference_prompt_cost": 2.488e-05,
+        "upstream_inference_completions_cost": 0.0007172
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 105,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8473305000",
+  "predicted_reason": "Empty steel server racks/cabinets designed exclusively to house ADP machine equipment have been classified by CBP as parts and accessories of automatic data processing machines under heading 8473.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 311,
+    "completion_tokens": 163,
+    "total_tokens": 474,
+    "cost": 0.00074208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00074208,
+      "upstream_inference_prompt_cost": 2.488e-05,
+      "upstream_inference_completions_cost": 0.0007172
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 105,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:47:29.687558+00:00",
+  "latency_s": 2.202,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

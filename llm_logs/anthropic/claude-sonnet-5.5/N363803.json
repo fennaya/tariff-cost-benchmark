@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363803",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8543704500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596728-hOdoesngLLxFBG3c50aC",
+    "object": "chat.completion",
+    "created": 1791596728,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a crankshaft position sensor. I recall such sensors being classified in 9031.80, as measuring or checking instruments, and Section XVII Note 2 excludes Chapter 90 goods from Section XVII. Alternatively, 8543.70 or 9026 (instruments for measuring flow, level, pressure or other variables of liquids or gases) could apply, but those don't fit. 8708.99 is also excluded because Chapter 90 articles fall outside Section XVII.\n\nThe ruling I have in mind (NY N298 or similar) put a crankshaft position sensor under 9031.80.8085, \"Other instruments, appliances and machines: Other: Other.\" I believe the 9031.80 subheading was split into 9031.80.80 for other and 9031.80.8085 for other still. The statistical suffix for others is 9031.80.8085, and I am fairly confident that is right.\n\nAnother possibility is 8543.70.9960 for a sensor that functions as a transducer, but the ruling on the magneto-resistive crankshaft sensor went to 9031.80.8085.\n\n{\"hts_code\": \"9031.80.8085\", \"reason\": \"The crankshaft position sensor is a transducer-type measuring/checking device for engine speed and position, so it falls under Chapter 90 heading 9031 as an other measuring or checking instrument (subheading 9031.80, other), outside Section XVII per its Note 2.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 381,
+      "completion_tokens": 476,
+      "total_tokens": 857,
+      "cost": 0.005522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005522,
+        "upstream_inference_prompt_cost": 0.000762,
+        "upstream_inference_completions_cost": 0.00476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9031808085",
+  "predicted_reason": "The crankshaft position sensor is a transducer-type measuring/checking device for engine speed and position, so it falls under Chapter 90 heading 9031 as an other measuring or checking instrument (subheading 9031.80, other), outside Section XVII per its Note 2.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 381,
+    "completion_tokens": 476,
+    "total_tokens": 857,
+    "cost": 0.005522,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005522,
+      "upstream_inference_prompt_cost": 0.000762,
+      "upstream_inference_completions_cost": 0.00476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:28.565808+00:00",
+  "latency_s": 5.212,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359164",
+  "rulingDate": "2026-03-11T00:00:00",
+  "true_code": "4420190000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599871-szGf3XcRW6PPEJKhZd18",
+    "object": "chat.completion",
+    "created": 1791599871,
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4420.10.0000\", \"reason\": \"The personalized, hand-painted wooden plaque functions as a decorative wood ornament, classified in subheading 4420.10.0000 as ornaments of wood.\"}",
+          "refusal": null,
+          "reasoning": "Decorative wooden plaque \u2014 likely 4420.10 or 4421? Personalized decorative plaque of wood: 4420.10.0000? Actually 4420.10 covers statuettes and ornaments of wood. Guest book plaque \u2014 NY rulings classify such wedding plaques in 4420.10.0000? 4420.10.80? HTS 4420.10.0000 \"ornaments, wooden\". Use 4420.10.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Decorative wooden plaque \u2014 likely 4420.10 or 4421? Personalized decorative plaque of wood: 4420.10.0000? Actually 4420.10 covers statuettes and ornaments of wood. Guest book plaque \u2014 NY rulings classify such wedding plaques in 4420.10.0000? 4420.10.80? HTS 4420.10.0000 \"ornaments, wooden\". Use 4420.10.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 260,
+      "completion_tokens": 165,
+      "total_tokens": 425,
+      "cost": 0.00109,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00109,
+        "upstream_inference_prompt_cost": 0.000364,
+        "upstream_inference_completions_cost": 0.000726
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 79,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4420100000",
+  "predicted_reason": "The personalized, hand-painted wooden plaque functions as a decorative wood ornament, classified in subheading 4420.10.0000 as ornaments of wood.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 165,
+    "total_tokens": 425,
+    "cost": 0.00109,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00109,
+      "upstream_inference_prompt_cost": 0.000364,
+      "upstream_inference_completions_cost": 0.000726
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Mistral",
+  "requested_at": "2026-10-10T02:37:52.127456+00:00",
+  "latency_s": 0.94,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

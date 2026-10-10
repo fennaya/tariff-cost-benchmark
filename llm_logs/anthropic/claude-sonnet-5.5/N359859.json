@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359859",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8704105060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595961-sskynoqKPsLT4IAQnKbY",
+    "object": "chat.completion",
+    "created": 1791595961,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on off-highway dumpers. Heading 8704 covers dumpers for off-highway use, specifically 8704.10. Note 8704.10 covers \"Dumpers designed for off-highway use\". The dumpers here are articulated, with a payload of 3.5 to 6 tonnes, so they are likely classified in 8704.10.\n\nSubheadings: 8704.10.10 is for those with compression-ignition engines (diesel), 8704.10.50 is \"Other\" (spark-ignition). The model names \"AHG\" suggest a diesel engine (Hatz/Perkins), but the description doesn't state the engine type. 8704.10.10 is \"Dumpers, having a rigid body, designed for off-highway use, with compression-ignition engine\"? Actually, the HTSUS lists 8704.10.10 as \"Dumpers, g.v.w. not exceeding 45 tonnes\", 8704.10.20 as \"g.v.w. exceeding 45 tonnes\", and 8704.10.50 as \"Other\". The real statistical suffixes are 8704.10.1000 for dumpers with a gross vehicle weight (g.v.w.) rating of 45 tonnes or less, and 8704.10.5000 for others.\n\nThe older structure was 8704.10.10 \"Having a rigid body, designed for off-highway use\" and 8704.10.50 \"Other\". I believe the current version is 8704.10.10 \"Dumpers, having an electric motor for propulsion\" and 8704.10.50 \"Other\". A bit uncertain, but the current text is 8704.10.10 for electric motors and 8704.10.50 for others. These dumpers have diesel engines, so they fall under 8704.10.50, with the statistical suffix 8704.10.5000.\n\n{\"hts_code\": \"8704.10.5000\", \"reason\": \"Articulated motorized dumpers designed for off-highway use (rough terrain, low speed, no suspension, earth-moving tires) are classified in heading 8704, subheading 8704.10 for off-highway dumpers, in the 'Other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 936,
+      "completion_tokens": 690,
+      "total_tokens": 1626,
+      "cost": 0.008772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008772,
+        "upstream_inference_prompt_cost": 0.001872,
+        "upstream_inference_completions_cost": 0.0069
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8704105000",
+  "predicted_reason": "Articulated motorized dumpers designed for off-highway use (rough terrain, low speed, no suspension, earth-moving tires) are classified in heading 8704, subheading 8704.10 for off-highway dumpers, in the 'Other' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 936,
+    "completion_tokens": 690,
+    "total_tokens": 1626,
+    "cost": 0.008772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008772,
+      "upstream_inference_prompt_cost": 0.001872,
+      "upstream_inference_completions_cost": 0.0069
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:42.193844+00:00",
+  "latency_s": 6.237,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

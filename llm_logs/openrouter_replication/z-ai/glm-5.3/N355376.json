@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355376",
+  "rulingDate": "2026-05-22T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594039-XV8npqsGCIe147qV1r0v",
+    "object": "chat.completion",
+    "created": 1791594039,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.99.0000\", \"reason\": \"Gneiss is a stone other than marble, travertine, alabaster, or granite, and the simply cut/sawn and honed slabs for countertops are classified as other worked monumental or building stone.\"}",
+          "refusal": null,
+          "reasoning": "Gneiss, simply cut/sawn, worked stone \u2014 6802.93.00? Gneiss is not marble/travertine/alabaster; worked granite... 6802.93.0090? Actually 6802.93 covers granite; gneiss falls under 6802.99. 6802.99.0000? There's 6802.99.00... likely 6802.99.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Gneiss, simply cut/sawn, worked stone \u2014 6802.93.00? Gneiss is not marble/travertine/alabaster; worked granite... 6802.93.0090? Actually 6802.93 covers granite; gneiss falls under 6802.99. 6802.99.0000? There's 6802.99.00... likely 6802.99.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 169,
+      "total_tokens": 428,
+      "cost": 0.0006264,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006264,
+        "upstream_inference_prompt_cost": 5.18e-05,
+        "upstream_inference_completions_cost": 0.0005746
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 104,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990000",
+  "predicted_reason": "Gneiss is a stone other than marble, travertine, alabaster, or granite, and the simply cut/sawn and honed slabs for countertops are classified as other worked monumental or building stone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 169,
+    "total_tokens": 428,
+    "cost": 0.0006264,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006264,
+      "upstream_inference_prompt_cost": 5.18e-05,
+      "upstream_inference_completions_cost": 0.0005746
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 104,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:40.102653+00:00",
+  "latency_s": 2.127,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

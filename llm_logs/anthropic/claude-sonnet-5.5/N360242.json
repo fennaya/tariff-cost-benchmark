@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360242",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "8483905080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596056-PZ0Xlbq0AlcG0G841Fnq",
+    "object": "chat.completion",
+    "created": 1791596056,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on aircraft planetary gear parts. The candidates are heading 8412 (parts of engines), heading 8483 (gears and gearing, parts), and heading 8487.\n\nThe output carrier assembly of three gears on a shaft is a planetary gear set component. Heading 8483.40 covers gears and gearing, and 8483.40.50 covers \"Other gears and gearing\" with 8483.40.51 and 8483.40.90 below it. Within 8483.40, 8483.40.10 covers gears and gearing of a kind used in Boeing's aircraft... in fact the current HTS has 8483.40.10 for \"Ball or roller screws\", 8483.40.30 for \"Torque converters\", and 8483.40.50 for \"Other gear boxes\"... I believe 8483.40.51 is \"Other gearing: Gears and gearing\", while 8483.40.90 is \"Other\". So the assembly probably falls in 8483.40.5010 or 8483.40.5090.\n\nThe planet gear itself is a toothed wheel, which falls under 8483.90 (parts) \u2014 specifically 8483.90.30 (\"Toothed wheels, chain sprockets and other transmission elements presented separately; parts\") or 8483.90.20 for parts of articles of 8483.10.\n\nTwo items are described but only a single code is asked for. The primary item is the assembly, which is a gear set, so 8483.40.5010 (\"Gears and gearing\") is the best choice. That code's classification covers the assembly, and the gear is separate.\n\nGiven the format, I'll answer with 8483.40.5010.\n\n{\"hts_code\": \"8483.40.5010\", \"reason\": \"The planetary output carrier assembly of meshing gears on a shaft is gearing for a fuel control system, classified as other gears and gearing under heading 8483.40.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 603,
+      "total_tokens": 955,
+      "cost": 0.006734,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006734,
+        "upstream_inference_prompt_cost": 0.000704,
+        "upstream_inference_completions_cost": 0.00603
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483405010",
+  "predicted_reason": "The planetary output carrier assembly of meshing gears on a shaft is gearing for a fuel control system, classified as other gears and gearing under heading 8483.40.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 603,
+    "total_tokens": 955,
+    "cost": 0.006734,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006734,
+      "upstream_inference_prompt_cost": 0.000704,
+      "upstream_inference_completions_cost": 0.00603
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:17.245487+00:00",
+  "latency_s": 6.113,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

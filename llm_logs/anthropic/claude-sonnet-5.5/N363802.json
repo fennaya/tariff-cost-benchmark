@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363802",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9403100040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596728-Lhpr9SF5U2jksB7mljv0",
+    "object": "chat.completion",
+    "created": 1791596728,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on empty steel server rack cabinets. Candidates are 9403.20.0090 (other metal furniture), 7326.90.8688 (other articles of iron or steel), and 8538.10 (boards, panels, consoles, cabinets and other bases for electrical apparatus, unequipped). Heading 8538.10 covers enclosures for electrical switching apparatus, but the cabinet is designed to hold servers, circuit breakers, power supplies and similar items, which points to a general-purpose rack.\n\nCBP has ruled on server racks and enclosures many times. Empty server racks have often gone to 9403.20.0090, while in some rulings, data-center racks with busbars and grounding hardware for electrical apparatus have gone to 8538.10.00. This one is 48V battery-backed 30KW power with a busbar, which suggests a power rack, but the description says it holds computer servers, breakers and other equipment, so it is a multi-use cabinet. The ORV3 rack is the Open Rack V3, and I recall a ruling classifying it in 8538.10.0080 as empty cabinets for electrical apparatus, since the busbar and grounding are electrical features. I'm going with 8538.10.0080.\n\n{\"hts_code\": \"8538.10.0080\", \"reason\": \"Empty, unequipped floor-standing steel cabinet with busbar and grounding hardware, designed to house circuit breakers, power supplies and switching devices, is classified as a cabinet or base for electrical apparatus of heading 8538.10 (other than for 8537 apparatus).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 479,
+      "completion_tokens": 527,
+      "total_tokens": 1006,
+      "cost": 0.006228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006228,
+        "upstream_inference_prompt_cost": 0.000958,
+        "upstream_inference_completions_cost": 0.00527
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8538100080",
+  "predicted_reason": "Empty, unequipped floor-standing steel cabinet with busbar and grounding hardware, designed to house circuit breakers, power supplies and switching devices, is classified as a cabinet or base for electrical apparatus of heading 8538.10 (other than for 8537 apparatus).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 479,
+    "completion_tokens": 527,
+    "total_tokens": 1006,
+    "cost": 0.006228,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006228,
+      "upstream_inference_prompt_cost": 0.000958,
+      "upstream_inference_completions_cost": 0.00527
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:28.301733+00:00",
+  "latency_s": 5.181,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

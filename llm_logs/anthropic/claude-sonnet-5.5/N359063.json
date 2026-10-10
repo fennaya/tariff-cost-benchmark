@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359063",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3304995000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595727-AbQq6YU1L1tdHlZdvE29",
+    "object": "chat.completion",
+    "created": 1791595727,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a leave-on body serum, an oil-based skin-care preparation, so it falls in heading 3304 (beauty or make-up preparations and skin-care preparations). The remaining question is the subheading, and I'm working from memory of the schedule rather than a checked ruling.\n\nWithin 3304.99, the \"other\" lines include 3304.99.50 (other, including skin-care preparations). The statistical suffix for \"other\" under 3304.99.50 is 3304.99.5000. Since the product is not a medicament and not specifically a cream, lotion, or other listed item, the general skin-care line applies.\n\nThe 3304.99 subheading covers \"Other,\" and it splits into 3304.99.10 (lotions for babies), 3304.99.20 (anti-acne), 3304.99.30 (other, of Lotions...), 3304.99.50 (other), and 3304.99.60 (other). I believe 3304.99.50 reads \"Other: Other\" and is correct, with the 10-digit code 3304.99.5000.\n\nI recall that CBP rulings on similar oil-based body serums (including ones made in Thailand) classify them under 3304.99.5000.\n\n```json\n{\"hts_code\": \"3304.99.5000\", \"reason\": \"A leave-on oil-based body serum is a skin-care preparation of heading 3304, falling in the residual 'other' subheading 3304.99.50 for retail skin-care preparations.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 360,
+      "completion_tokens": 465,
+      "total_tokens": 825,
+      "cost": 0.00537,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00537,
+        "upstream_inference_prompt_cost": 0.00072,
+        "upstream_inference_completions_cost": 0.00465
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3304995000",
+  "predicted_reason": "A leave-on oil-based body serum is a skin-care preparation of heading 3304, falling in the residual 'other' subheading 3304.99.50 for retail skin-care preparations.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 465,
+    "total_tokens": 825,
+    "cost": 0.00537,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00537,
+      "upstream_inference_prompt_cost": 0.00072,
+      "upstream_inference_completions_cost": 0.00465
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:47.929316+00:00",
+  "latency_s": 4.275,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

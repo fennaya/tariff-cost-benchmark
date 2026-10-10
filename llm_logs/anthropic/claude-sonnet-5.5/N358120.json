@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358120",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "9031808085",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595548-QtgBpFhd60yF7AAsY1jz",
+    "object": "chat.completion",
+    "created": 1791595548,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a smart medication vial. The candidate headings are 9031 (measuring or checking instruments), 8543 (electrical machines with individual functions), and 3923 (plastic containers).\n\nThe device uses a load cell to detect weight changes, logs access events, and sends reminders over wireless communication. Its principal function is monitoring and reminding, and the container only holds the medication. I believe CBP classified a similar item under 8543.70.9960, \"Other electrical machines and apparatus having individual functions, not specified elsewhere: Other: Other.\" The alternative is 9031.80.8085, but a weight sensor that only logs access events is not really a measuring instrument. Heading 9031 covers measuring or checking instruments not specified elsewhere, and this device does detect weight change, but it uses that only to infer that a dose was removed. Under that view, the electrical reminder and monitoring device with wireless communication falls under 8543.70.\n\nWithin 8543.70, the subheadings are 8543.70.45 (remote control apparatus), 8543.70.60 (other, including electronic devices for specific uses) and 8543.70.99. The current numbering is 8543.70.99 with statistical suffixes, so I will use 8543.70.9960.\n\n```json\n{\"hts_code\": \"8543.70.9960\", \"reason\": \"The smart vial is a battery-powered electronic device with sensors and wireless modules that provides reminder and access-logging functions, so it is an electrical apparatus with an individual function not specified elsewhere in heading 8543, not a measuring instrument or a mere plastic container.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 530,
+      "total_tokens": 932,
+      "cost": 0.006104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006104,
+        "upstream_inference_prompt_cost": 0.000804,
+        "upstream_inference_completions_cost": 0.0053
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "The smart vial is a battery-powered electronic device with sensors and wireless modules that provides reminder and access-logging functions, so it is an electrical apparatus with an individual function not specified elsewhere in heading 8543, not a measuring instrument or a mere plastic container.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 530,
+    "total_tokens": 932,
+    "cost": 0.006104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006104,
+      "upstream_inference_prompt_cost": 0.000804,
+      "upstream_inference_completions_cost": 0.0053
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:48.686172+00:00",
+  "latency_s": 5.949,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358460",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599772-w6aflphNum5EkOHQ0Xvx",
+    "object": "chat.completion",
+    "created": 1791599772,
+    "model": "z-ai/glm-5.3",
+    "provider": "Parasail",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9990\", \"reason\": \"A portable lockable security container of molded ABS plastic is an other article of plastics, not a metal safe of heading 8303 nor a household article of 3924.\"}",
+          "refusal": null,
+          "reasoning": "Portable lockable safe of plastic \u2014 likely 4202? No, that's travel goods. A lockable security container of plastic \u2014 3926? Safes of base metal are 8303. Plastic safe... 8303 covers safes of base metal. Plastic ones fall to 3926.90 or 3924? Household article 3924? Not household. 3926.90.99 likely. Actually NY rulings classify plastic lock boxes in 3926.90.99.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Portable lockable safe of plastic \u2014 likely 4202? No, that's travel goods. A lockable security container of plastic \u2014 3926? Safes of base metal are 8303. Plastic safe... 8303 covers safes of base metal. Plastic ones fall to 3926.90 or 3924? Household article 3924? Not household. 3926.90.99 likely. Actually NY rulings classify plastic lock boxes in 3926.90.99.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 169,
+      "total_tokens": 381,
+      "cost": 0.0010404,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010404,
+        "upstream_inference_prompt_cost": 0.0002968,
+        "upstream_inference_completions_cost": 0.0007436
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 92,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "A portable lockable security container of molded ABS plastic is an other article of plastics, not a metal safe of heading 8303 nor a household article of 3924.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 169,
+    "total_tokens": 381,
+    "cost": 0.0010404,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010404,
+      "upstream_inference_prompt_cost": 0.0002968,
+      "upstream_inference_completions_cost": 0.0007436
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 92,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Parasail",
+  "requested_at": "2026-10-10T02:36:13.160762+00:00",
+  "latency_s": 1.778,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357856",
+  "rulingDate": "2026-02-06T00:00:00",
+  "true_code": "8428900390",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595506-i63H7bye7RvPNdTqMxSh",
+    "object": "chat.completion",
+    "created": 1791595506,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling covering two items. The bale handler is an attachment for a loader and would fall under 8436.80 or 8432/8433, or possibly 8427 or 8431. The bale feeder, a trailed machine that unrolls bales, would be 8436.80 (other agricultural machinery) or 8436.99 for parts.\n\nThe task asks for a single code, and both items are agricultural machinery. 8436.80.00 covers other agricultural, horticultural, forestry, poultry-keeping or beekeeping machinery. Its statistical suffixes are 8436.80.0090 (other) and 8436.80.0010 (poultry-keeping machinery). A bale handler attachment that grips bales could be classified as an 8436 machine or as a part of one, but it is also arguably a lift attachment under 8427.90 or 8431.20, which are parts of lift trucks. A hydraulic attachment for a tractor or loader that grips bales is often treated as 8701.95 parts or 8708, or under 8436.80. Since the feeder is clearly 8436.80 and the two are likely grouped as such, I'll go with 8436.80.0090.\n\n```json\n{\"hts_code\": \"8436.80.0090\", \"reason\": \"Both the tractor-towed bale feeder and the hydraulic bale handler are agricultural machinery for handling and feeding bales, not elsewhere specified, which falls under heading 8436 as other agricultural machinery.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 519,
+      "completion_tokens": 483,
+      "total_tokens": 1002,
+      "cost": 0.005868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005868,
+        "upstream_inference_prompt_cost": 0.001038,
+        "upstream_inference_completions_cost": 0.00483
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8436800090",
+  "predicted_reason": "Both the tractor-towed bale feeder and the hydraulic bale handler are agricultural machinery for handling and feeding bales, not elsewhere specified, which falls under heading 8436 as other agricultural machinery.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 519,
+    "completion_tokens": 483,
+    "total_tokens": 1002,
+    "cost": 0.005868,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005868,
+      "upstream_inference_prompt_cost": 0.001038,
+      "upstream_inference_completions_cost": 0.00483
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:06.365623+00:00",
+  "latency_s": 4.596,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

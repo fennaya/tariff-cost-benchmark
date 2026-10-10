@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362853",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8302500000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596575-mQdbUmD5RelepBJw9js0",
+    "object": "chat.completion",
+    "created": 1791596575,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on iron holders for rope fences. The likely candidates are 7326.90.86 (other articles of iron or steel, other), 8302.41 (base metal mountings, fittings for buildings), and 7317 or 7318.\n\nHeading 8302 covers base metal mountings, fittings and similar articles suitable for buildings, and 8302.41.60 covers \"other, suitable for buildings\" in other base metal. A bracket that supports a rope fence could fit there, but a fence is not exactly a building. The note to 8302.41 says \"suitable for buildings\" includes fences, and the Harmonized System explanatory notes cover mountings used on fences. Brackets for fences would then be classified in 8302.41.\n\nSubheading 8302.41.60 is \"Other\" (other than hinges, other mountings). The 8302.41.30 provision is for \"Other: Of iron or steel, of aluminum, or of zinc\"? In the HTSUS the 8302.41 tariff lines are:\n- 8302.41.30: Of iron or steel, of aluminum, or of zinc: Base metal mountings, fittings... Actually 8302.41.30 is \"Hinges\"? No, hinges are 8302.10.\n- 8302.41.30 is \"Of iron or steel, of aluminum, or of zinc\" under \"Other mountings, fittings and similar articles suitable for buildings.\"\n- 8302.41.60 is \"Other.\"\n\nI recall that 8302.41.60 reads \"Other\" with the stat suffix 8302.41.6015 (Of iron or steel...). In that scheme, 8302.41.30 covers \"Door closers\"? I think 8302.41.30 is \"Of iron or steel, aluminum or zinc... Other\" and 8302.41.60 is \"Other\", with the suffixes 8302.41.6015 \"Of iron or steel, aluminum or zinc, Other\" and 8302.41.6045 / 6050 / 6080. I'll go with 8302.41.6080.\n\n{\"hts_code\": \"8302.41.6080\", \"reason\": \"Iron/steel mounting brackets with rings for supporting rope on fences are base metal mountings and fittings suitable for buildings (fences) under heading 8302.41, 'other'.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 444,
+      "completion_tokens": 741,
+      "total_tokens": 1185,
+      "cost": 0.008298,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008298,
+        "upstream_inference_prompt_cost": 0.000888,
+        "upstream_inference_completions_cost": 0.00741
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8302416080",
+  "predicted_reason": "Iron/steel mounting brackets with rings for supporting rope on fences are base metal mountings and fittings suitable for buildings (fences) under heading 8302.41, 'other'.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 444,
+    "completion_tokens": 741,
+    "total_tokens": 1185,
+    "cost": 0.008298,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008298,
+      "upstream_inference_prompt_cost": 0.000888,
+      "upstream_inference_completions_cost": 0.00741
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:55.268909+00:00",
+  "latency_s": 6.77,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

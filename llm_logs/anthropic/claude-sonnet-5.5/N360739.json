@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360739",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "2106909995",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596144-L0RVLNI4iraNvb0U1CkD",
+    "object": "chat.completion",
+    "created": 1791596144,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on Quorn mycoprotein products. Mycoprotein is fungal biomass from Fusarium venenatum. I recall the ruling classifying it in 2106.90, food preparations not elsewhere specified. The likely subheading is 2106.90.9998, other food preparations not elsewhere specified or included, though I am not certain.\n\nOther headings are less plausible. Heading 2004 (frozen vegetables) does not fit, because mycoprotein is not a vegetable in the sense of Chapter 7. Heading 2008 (fruit, nuts and other edible parts of plants) also does not fit. Heading 2106 is the usual home for meat substitutes such as textured protein, and I believe CBP has ruled that way for Quorn.\n\nFor the statistical suffix, 2106.90.9998 is the \"other\" provision. I considered 2106.90.66 (sweetened, other), but the products are not sweetened syrups. Dairy-related provisions (2106.90.28 and 2106.90.34) are unlikely, and the egg white content is minor. The \"other\" provision remains the best fit, and the products fall under the general 2106.90.9998.\n\n```json\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"Frozen mycoprotein-based meat-free pieces and grounds are edible food preparations not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 485,
+      "completion_tokens": 475,
+      "total_tokens": 960,
+      "cost": 0.00572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00572,
+        "upstream_inference_prompt_cost": 0.00097,
+        "upstream_inference_completions_cost": 0.00475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "Frozen mycoprotein-based meat-free pieces and grounds are edible food preparations not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 485,
+    "completion_tokens": 475,
+    "total_tokens": 960,
+    "cost": 0.00572,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00572,
+      "upstream_inference_prompt_cost": 0.00097,
+      "upstream_inference_completions_cost": 0.00475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:45.256430+00:00",
+  "latency_s": 4.881,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

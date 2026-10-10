@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359241",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "2106909980",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595785-nZQl7MHmEHUoZdXc1C34",
+    "object": "chat.completion",
+    "created": 1791595785,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on coconut cream and coconut milk. Candidate provisions are 2106.90 (food preparations not elsewhere specified), 2008.19 (prepared nuts), and 0801.19 (fresh coconut).\n\nI recall a ruling holding that coconut milk and cream with stabilizers are classified in 2106.90. Related rulings on coconut milk classify it under 2106.90.99 or under 2008.99 (fruit and other edible parts of plants, prepared or preserved). The main alternative is 2008.19 for coconut, but that covers whole nuts and pieces rather than a liquid extract.\n\nFor the coconut milk and cream, the usual subheadings are:\n- 2008.99.9190 or similar, if treated as prepared or preserved coconut.\n- 2106.90.9998 (other food preparations, not elsewhere specified).\n- 2106.90.6600 for products containing butterfat, which does not apply here.\n\nBecause the products contain added stabilizers and water, I believe CBP placed them in 2106.90. The 2106.90 subheadings split by sugar and dairy content, and these products have none of either, so they fall in the residual 2106.90.99 group. Within that group, the 2106.90.9998 statistical suffix is the \"other\" line.\n\nThe ruling likely read: \"The applicable subheading for the coconut cream and coconut milk will be 2106.90.9998, HTSUS, which provides for food preparations not elsewhere specified or included: other: other: other: other.\" I'll go with that.\n\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"Coconut cream and milk made from extracted coconut liquid with water and stabilizers (gums, emulsifiers) are food preparations not elsewhere specified or included, falling in the residual 2106.90 provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 851,
+      "completion_tokens": 599,
+      "total_tokens": 1450,
+      "cost": 0.007692,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007692,
+        "upstream_inference_prompt_cost": 0.001702,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "Coconut cream and milk made from extracted coconut liquid with water and stabilizers (gums, emulsifiers) are food preparations not elsewhere specified or included, falling in the residual 2106.90 provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 851,
+    "completion_tokens": 599,
+    "total_tokens": 1450,
+    "cost": 0.007692,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007692,
+      "upstream_inference_prompt_cost": 0.001702,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:46.079294+00:00",
+  "latency_s": 5.929,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

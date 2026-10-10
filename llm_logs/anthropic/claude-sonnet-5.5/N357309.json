@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357309",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "3304995000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595373-VyD6xZLKPUidXaa0DhqF",
+    "object": "chat.completion",
+    "created": 1791595373,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The products are facial skincare preparations (toner, peel ampoules, serums) put up for retail sale. They fall in heading 3304, which covers beauty or make-up preparations and skin-care preparations. Subheading 3304.99 covers the other preparations, and the 10-digit statistical suffix 3304.99.5000 covers \"Other: Other\" in the HTSUS, which includes non-medicament skincare preparations.\n\nSubheading 3304.99.50 covers \"Other\" beauty or skin-care preparations, so the toner, ampoules, and serums all classify there. The 3304.99.50 line carries statistical suffix 00 (3304.99.5000).\n\n{\"hts_code\": \"3304.99.5000\", \"reason\": \"Facial toners, peel ampoules and serums put up for retail sale are skin-care preparations of heading 3304, falling under the residual subheading for other beauty or skin-care preparations (3304.99.50).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 640,
+      "completion_tokens": 309,
+      "total_tokens": 949,
+      "cost": 0.00437,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00437,
+        "upstream_inference_prompt_cost": 0.00128,
+        "upstream_inference_completions_cost": 0.00309
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3304995000",
+  "predicted_reason": "Facial toners, peel ampoules and serums put up for retail sale are skin-care preparations of heading 3304, falling under the residual subheading for other beauty or skin-care preparations (3304.99.50).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 640,
+    "completion_tokens": 309,
+    "total_tokens": 949,
+    "cost": 0.00437,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00437,
+      "upstream_inference_prompt_cost": 0.00128,
+      "upstream_inference_completions_cost": 0.00309
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:53.344653+00:00",
+  "latency_s": 3.843,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

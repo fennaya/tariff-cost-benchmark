@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362111",
+  "rulingDate": "2026-06-10T00:00:00",
+  "true_code": "3921904090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596424-fbkuGIAJ4iJcrd1thd9Z",
+    "object": "chat.completion",
+    "created": 1791596424,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a glass-fiber prepreg impregnated with phenolic resin, imported in rolls. The candidate headings are:\n\n- **3920 / 3921:** plates, sheets, film, foil and strip of plastics. Heading 3921 covers other plates, sheets, film and strip, including reinforced or laminated ones.\n- **7019:** glass fibers and articles thereof. Heading 7019 covers glass fiber webs, mats, mattresses and boards, and woven fabrics. Prepregs of glass fabric impregnated with resin have been classified in 7019 in some rulings, but the Section XVI/XV notes and the heading text matter here.\n- **3907 / 3909:** primary-form phenolic resins. Not applicable because the product is a finished film or sheet form.\n\nNote 10 to Chapter 39 says \"plates, sheets, film, foil and strip\" applies only to such forms (including those with cut-to-shape) of a uniform thickness, whether or not printed. Chapter 39 Note 2 excludes goods of Section XI (textiles). Glass fiber is in Section XIII, so that exclusion does not apply.\n\nCBP rulings on phenolic glass prepreg for aircraft interiors have generally put it in 3921.90, as other plates, sheets, film and strip of plastics, combined with glass fiber. The 3921.90 subheadings are:\n\n- 3921.90.11: cellular, other.\n- 3921.90.19 and following: non-cellular, with 3921.90.40 for reinforced, laminated, or combined with other materials.\n- 3921.90.4000 and 3921.90.5000 are the usual non-cellular lines, and 3921.90.55 is for other.\n\nThe best fit is 3921.90.4000, which is the line for \"Other, combined with textile materials...\" In the HTS the 3921.90.19 and 3921.90.25 lines cover textile-combined goods, but glass fibers are textile materials under Section XI only partly. I will go with 3921.90.4000 (reinforced or laminated other).\n\n```json\n{\"hts_code\": \"3921.90.4000\", \"reason\": \"B-staged phenolic resin film fully impregnated with continuous glass fiber is a reinforced non-cellular plastic sheet/film of heading 3921, falling in the other (3921.90) subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 769,
+      "total_tokens": 1095,
+      "cost": 0.008342,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008342,
+        "upstream_inference_prompt_cost": 0.000652,
+        "upstream_inference_completions_cost": 0.00769
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3921904000",
+  "predicted_reason": "B-staged phenolic resin film fully impregnated with continuous glass fiber is a reinforced non-cellular plastic sheet/film of heading 3921, falling in the other (3921.90) subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 769,
+    "total_tokens": 1095,
+    "cost": 0.008342,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008342,
+      "upstream_inference_prompt_cost": 0.000652,
+      "upstream_inference_completions_cost": 0.00769
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:25.024317+00:00",
+  "latency_s": 8.363,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

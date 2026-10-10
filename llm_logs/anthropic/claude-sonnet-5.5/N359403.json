@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359403",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "4412319200",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595827-bTBb88C4dnnM54tpbB0Y",
+    "object": "chat.completion",
+    "created": 1791595827,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is plywood under heading 4412. Both outer surfaces are covered with phenolic film and resin-impregnated paper, and the coverings obscure the grain. Every ply is 6 mm or less, so the plywood falls under 4412.3 or 4412.9 rather than the other 4412.1 or 4412.2 subheadings.\n\nSubheading 4412.3 requires at least one outer ply of nonconiferous wood. Gmelina is nonconiferous, so that applies. The sub-subheadings split on whether the plywood has a tropical wood ply.\n\n4412.31 covers plywood with at least one outer ply of tropical wood listed in the subheading note. Gmelina is not on that list, and the list covers things like meranti, okoume, and sapelli. So 4412.31 does not apply.\n\n4412.33 covers plywood with at least one outer ply of certain nonconiferous woods: alder, ash, beech, birch, cherry, chestnut, elm, eucalyptus, hickory, horse chestnut, lime, maple, oak, plane tree, poplar, aspen, robinia, tulipwood, or walnut. Gmelina is not on that list, so 4412.33 does not apply.\n\n4412.34 covers other nonconiferous outer plies not listed elsewhere. Gmelina falls here.\n\nThe 4412.34 subheading is \"Other, with at least one outer ply of nonconiferous wood not specified under subheading 4412.33\". Its statistical breakdown under 4412.34 is:\n\n- 4412.34.30: with a face ply of tropical wood\n- 4412.34.31 and 4412.34.32: with a face ply of other specified wood\n- 4412.34.5x: others\n\nI recall that the 4412.34.56 and 4412.34.60 subheadings cover plywood with an outer ply of nonconiferous wood. The older structure had 4412.94 and 4412.99 for blockboard and other plywood.\n\nI'm not certain of the exact 10-digit statistical suffix. The plywood has a covering that obscures the grain, which points to the \"Other\" provisions rather than the ones for a visible face grain. My best estimate is 4412.34.9000, though I am not confident in it.\n\n{\"hts_code\": \"4412.34.9000\", \"reason\": \"Plywood of sheets each \u22646mm with an outer ply of nonconiferous wood (gmelina) not specified in 4412.33, with grain-obscuring coverings, falls in the 'other' provision of 4412.34.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 823,
+      "total_tokens": 1228,
+      "cost": 0.00904,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00904,
+        "upstream_inference_prompt_cost": 0.00081,
+        "upstream_inference_completions_cost": 0.00823
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4412349000",
+  "predicted_reason": "Plywood of sheets each \u22646mm with an outer ply of nonconiferous wood (gmelina) not specified in 4412.33, with grain-obscuring coverings, falls in the 'other' provision of 4412.34.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 405,
+    "completion_tokens": 823,
+    "total_tokens": 1228,
+    "cost": 0.00904,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00904,
+      "upstream_inference_prompt_cost": 0.00081,
+      "upstream_inference_completions_cost": 0.00823
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:27.981783+00:00",
+  "latency_s": 7.357,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

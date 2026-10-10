@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357694",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8543709860",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595475-P4dtdKiVyCW4Zx6X2EWm",
+    "object": "chat.completion",
+    "created": 1791595475,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on isolated phase bus ducts. I recall they were classified in 8544.60 (other electric conductors, for a voltage exceeding 1,000 V), though the conductor is bare. Heading 8544 covers insulated wire, cable, and other insulated electric conductors. Bare aluminum with an air gap is not insulated in the usual sense, so 8544 may not fit.\n\nThe alternative is heading 8535 (apparatus for switching or protecting electrical circuits, or for making connections, for a voltage exceeding 1,000 V). Busbars and bus ducts are often classified there, and 8535.90 covers other apparatus. Heading 8538 covers parts, but that is not the likely fit here.\n\nAnother option is 8544.60.2000 or 8544.60.4000. Since the conductor is not insulated, I believe the ruling classified it under 8535.90.8040 or 8535.90.80. I recall that NY rulings on busway or bus duct systems place them in 8537, but that heading is for boards and panels with apparatus. For connections at over 1,000 V, 8535.90.80 is the best fit. The statistical suffix is 8535.90.8080, as I recall.\n\nFor 8535.90.80 the options are 8535.90.8001 (other, for a voltage exceeding 1,000 V), 8535.90.8040 (electrical connectors) and 8535.90.8080. I will choose 8535.90.8040.\n\n```json\n{\"hts_code\": \"8535.90.8040\", \"reason\": \"Uninsulated aluminum isolated phase bus ducts that connect high-voltage (over 1,000 V) power equipment are classified as apparatus for making connections to electrical circuits in heading 8535, not as insulated conductors in 8544.\"}\n```\n\n{\"hts_code\": \"8535.90.8040\", \"reason\": \"Uninsulated aluminum isolated phase bus ducts that connect high-voltage (over 1,000 V) power equipment are classified as apparatus for making connections to electrical circuits in heading 8535, not as insulated conductors in 8544.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 411,
+      "completion_tokens": 688,
+      "total_tokens": 1099,
+      "cost": 0.007702,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007702,
+        "upstream_inference_prompt_cost": 0.000822,
+        "upstream_inference_completions_cost": 0.00688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8535908040",
+  "predicted_reason": "Uninsulated aluminum isolated phase bus ducts that connect high-voltage (over 1,000 V) power equipment are classified as apparatus for making connections to electrical circuits in heading 8535, not as insulated conductors in 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 411,
+    "completion_tokens": 688,
+    "total_tokens": 1099,
+    "cost": 0.007702,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007702,
+      "upstream_inference_prompt_cost": 0.000822,
+      "upstream_inference_completions_cost": 0.00688
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:35.693608+00:00",
+  "latency_s": 6.016,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362347",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4412523105",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596468-eKQ2XI9hqEWeG5Kl6Buz",
+    "object": "chat.completion",
+    "created": 1791596468,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is multilayer wood flooring with a nonconiferous face layer, so it falls under heading 4412 (plywood and similar laminated wood) or 4418 (assembled flooring panels). Flooring panels of multilayer construction belong in 4418.74 (assembled flooring panels, for mosaic floors) or 4418.73 (assembled flooring panels of bamboo), or 4418.75 (other, multilayer).\n\nHeading 4418.75 covers other assembled flooring panels of multilayer construction. Subheading 4418.75.70 is the \"Other\" line, with the 4418.75.40 line reserved for panels with a face ply of nonconiferous wood.\n\nI recall the following structure from the 2022 HTSUS:\n- 4418.74: for mosaic floors\n- 4418.75: other, multilayer\n  - 4418.75.30: with face ply of coniferous wood\n  - 4418.75.40: other, with face ply of nonconiferous wood\n  - 4418.75.70: other\n- 4418.79: other\n\nPrior to 2022, the lines were 4418.72 (other, multilayer) with 4418.72.20 and 4418.72.90 beneath it. The current reading seems right.\n\nCustoms rulings on similar products (a 3-layer engineered floor with oak face) classify them in 4418.75.40, with sub-lines for the 10-digit statistical suffix. The statistical suffixes under 4418.75.40 are 4418.75.4010 (for the nonconiferous face ply panels with a face ply of 6 mm or less?) and 4418.75.4020 and so on. I'm not certain of the suffixes, so I'll go with 4418.75.4040 or 4418.75.4000.\n\nThe most commonly cited 10-digit code is 4418.75.4000, which I believe is \"Other, with face ply of nonconiferous wood,\" with no further subdivision.\n\n{\"hts_code\": \"4418.75.4000\", \"reason\": \"Assembled multilayer (three-ply) tongue-and-groove wood flooring panels with a nonconiferous wood face ply are classified in subheading 4418.75.40 as other multilayer assembled flooring panels.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 716,
+      "total_tokens": 1095,
+      "cost": 0.007918,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007918,
+        "upstream_inference_prompt_cost": 0.000758,
+        "upstream_inference_completions_cost": 0.00716
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4418754000",
+  "predicted_reason": "Assembled multilayer (three-ply) tongue-and-groove wood flooring panels with a nonconiferous wood face ply are classified in subheading 4418.75.40 as other multilayer assembled flooring panels.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 716,
+    "total_tokens": 1095,
+    "cost": 0.007918,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007918,
+      "upstream_inference_prompt_cost": 0.000758,
+      "upstream_inference_completions_cost": 0.00716
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:09.022513+00:00",
+  "latency_s": 6.606,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359801",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "4820102060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595936-1BQx9oxuwTYWXKz8H0Nt",
+    "object": "chat.completion",
+    "created": 1791595936,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The notebooks fall under HTSUS 4820.10, which covers registers, account books, notebooks, memorandum pads and similar articles. Subheading 4820.10.20 covers diaries, notebooks and address books that are bound, with a 4820.10.2020 and 4820.10.2060 type breakdown. I am recalling the statistical suffixes from memory, so they are the least certain part.\n\nThe 4820.10.20 breakdown, as I recall it:\n- 4820.10.20: Diaries, notebooks and address books, bound; memorandum, letter and telegram pads, and similar articles.\n- 4820.10.2010: Memorandum pads, letter pads and similar articles.\n- 4820.10.2020: Diaries and address books.\n- 4820.10.2030: Bound notebooks, with the statistical suffix 4820.10.2040 for other notebooks.\n- 4820.10.2060: Other.\n\nThe lined and dot-grid notebooks are bound, so they are \"notebooks\" and fit best under 4820.10.2040. This is the \"Other\" notebook line, which I recall covering notebooks other than the specific ones listed. The set of three softbound notebooks is a set of identical articles, so it also falls here. I'm choosing 4820.10.2040 as the most applicable code.\n\n{\"hts_code\": \"4820.10.2040\", \"reason\": \"Bound paper notebooks (hardbound and softbound journals and pocket books) are classified in heading 4820 as notebooks, under subheading 4820.10.20 for bound notebooks, with 4820.10.2040 as the statistical line for other notebooks.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 807,
+      "completion_tokens": 533,
+      "total_tokens": 1340,
+      "cost": 0.006944,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006944,
+        "upstream_inference_prompt_cost": 0.001614,
+        "upstream_inference_completions_cost": 0.00533
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4820102040",
+  "predicted_reason": "Bound paper notebooks (hardbound and softbound journals and pocket books) are classified in heading 4820 as notebooks, under subheading 4820.10.20 for bound notebooks, with 4820.10.2040 as the statistical line for other notebooks.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 807,
+    "completion_tokens": 533,
+    "total_tokens": 1340,
+    "cost": 0.006944,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006944,
+      "upstream_inference_prompt_cost": 0.001614,
+      "upstream_inference_completions_cost": 0.00533
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:16.321647+00:00",
+  "latency_s": 6.312,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359977",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "8517620090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595997-8hJUHy0TOPvti43hNyEo",
+    "object": "chat.completion",
+    "created": 1791595997,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on the Genetec Synergis Cloud Link. The likely classification is 8517.62.0090, which covers other machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus. The device is described as neither routing nor switching, which rules out the 8517.62.0010 subheading for switching and routing apparatus. The text also says it performs a data transmission/reception function, which points to the \"other\" category. In the 2022 HTSUS, 8517.62.00 breaks down as follows:\n- 8517.62.0010: Switching and routing apparatus\n- 8517.62.0020: Optical regenerators\n- 8517.62.0030: Base stations (in 2022: 8517.61)\n- 8517.62.0050: Other apparatus for transmission or reception of voice, images or other data in a wired or wireless network (a \"gateway\" falls here)\n- 8517.62.0090: Other\n\nI believe 8517.62.0090 is the older \"other\" number and 8517.62.0050 is the one that fits a gateway. The 8517.62.0050 description is \"Machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus: Other: Other\". I am fairly confident that 8517.62.0090 is the current one, and that 8517.62.0050 covers the \"Other\" apparatus for transmission or reception of data in a wired or wireless network. I will go with 8517.62.0090.\n\n{\"hts_code\": \"8517.62.0090\", \"reason\": \"The gateway is a machine for transmitting and receiving data over a network that is not a switching or routing apparatus, so it falls under the residual 'other' provision of heading 8517.62.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 398,
+      "completion_tokens": 573,
+      "total_tokens": 971,
+      "cost": 0.006526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006526,
+        "upstream_inference_prompt_cost": 0.000796,
+        "upstream_inference_completions_cost": 0.00573
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517620090",
+  "predicted_reason": "The gateway is a machine for transmitting and receiving data over a network that is not a switching or routing apparatus, so it falls under the residual 'other' provision of heading 8517.62.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 573,
+    "total_tokens": 971,
+    "cost": 0.006526,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006526,
+      "upstream_inference_prompt_cost": 0.000796,
+      "upstream_inference_completions_cost": 0.00573
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:17.749789+00:00",
+  "latency_s": 5.475,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

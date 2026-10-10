@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361940",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "4202920807",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596385-F8jg2RaDXglBhkHM6fWI",
+    "object": "chat.completion",
+    "created": 1791596385,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Insulated food or beverage bags with an outer surface of plastic sheeting (textile outer surfaces are classified elsewhere) fall under HTSUS 4202.92. Subheading 4202.92.0 covers \"other\" containers with an outer surface of sheeting of plastics or textile materials, and insulated food or beverage bags are provided for at 4202.92.04 (statistical suffix 4202.92.0408 is not certain).\n\nThe 4202.92 breakdown, as I recall it:\n- 4202.92.02: Insulated food or beverage bags: with outer surface of sheeting of plastic\n- 4202.92.04: Camera cases...\n- 4202.92.08: Other ... \n\nI believe the structure is:\n- 4202.92.04: Insulated food or beverage bags (heading text \"Insulated food or beverage bags\")\n- 4202.92.0410: Of man-made fiber? That does not fit with a plastic outer surface.\n\nSince the item has a plastic outer surface, the most likely classification is 4202.92.0450, a plastics-sheeting insulated bag, and CBP rulings for cooler bags with plastic outer surfaces have used 4202.92.0405 (\"Insulated food or beverage bags: With outer surface of sheeting of plastic\"). I'm going with 4202.92.0405 because it is the number I recall from those rulings.\n\n{\"hts_code\": \"4202.92.0405\", \"reason\": \"Insulated food or beverage bags with an outer surface of plastic sheeting are classified in heading 4202, subheading 4202.92.04, under GRI 1 and GRI 6.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 239,
+      "completion_tokens": 533,
+      "total_tokens": 772,
+      "cost": 0.005808,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005808,
+        "upstream_inference_prompt_cost": 0.000478,
+        "upstream_inference_completions_cost": 0.00533
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202920405",
+  "predicted_reason": "Insulated food or beverage bags with an outer surface of plastic sheeting are classified in heading 4202, subheading 4202.92.04, under GRI 1 and GRI 6.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 239,
+    "completion_tokens": 533,
+    "total_tokens": 772,
+    "cost": 0.005808,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005808,
+      "upstream_inference_prompt_cost": 0.000478,
+      "upstream_inference_completions_cost": 0.00533
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:46.005701+00:00",
+  "latency_s": 5.456,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

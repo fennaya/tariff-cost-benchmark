@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363491",
+  "rulingDate": "2026-08-12T00:00:00",
+  "true_code": "7317005560",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596679-X9Y4GxMlamV5OcAONJ7J",
+    "object": "chat.completion",
+    "created": 1791596679,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Stainless steel nails of heading 7318 (screws, bolts, nuts... ) are not the right fit, since nails of iron or steel are classified in 7317. Heading 7317.00: nails, tacks, drawing pins, corrugating nails, staples, of iron or steel, whether or not with heads of other material, but excluding those with heads of copper.\n\nSubheadings under 7317.00:\n- 7317.00.20 \u2013 Of one-piece construction, not collated... Actually, the structure is: 7317.00.10 is \"Handmade nails\" (not applicable), 7317.00.20 is \"Staples in strips\", 7317.00.30 is \"Thumb tacks\", and 7317.00.40 is \"Nails, tacks, ... other: wire nails\"? I recall that 7317.00.55 is \"Other nails, of one-piece construction, ... not threaded\", with 7317.00.5503 etc. for specific sizes, and 7317.00.65 is \"Other: Other\" with statistical suffixes.\n\nSpecifically:\n- 7317.00.55: Other: Nails, tacks, drawing pins... of one-piece construction, round wire, not collated: 7317.00.5502 \u2013 Roofing nails; 503 \u2013 Nails, 5018 \u2013 Nails with a diameter 3.4 mm...? I recall 7317.00.5503 \"Nails, of one-piece construction, round wire, not collated: Other nails, ... 7317.00.5505 \u2013 Hardened nails; 7317.00.5507 \u2013 Other nails: Of a length less than 3.8 cm? 7317.00.5508 \u2013 Roofing nails; 7317.00.5511 \u2013 Nails with a head diameter \u2265..., 7317.00.5518 \u2013 Other, 7317.00.5519 \u2013 Other...\n\nStainless steel ring shank nails are probably 7317.00.5503 (\"Having a shank with annular rings, other\") or 7317.00.5560 for other. I recall 7317.00.5503 is \"Nails: Having a shank diameter 3.4 mm or more...\" and 7317.00.5707 is the bulk \"Other: Of stainless steel\"? I'll go with 7317.00.5502? I'm not certain; choose 7317.00.5503.\n\n{\"hts_code\": \"7317.00.5503\", \"reason\": \"One-piece, non-collated round-wire steel nail with ringed shank falls under heading 7317 as other nails of iron or steel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 796,
+      "total_tokens": 1077,
+      "cost": 0.008522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008522,
+        "upstream_inference_prompt_cost": 0.000562,
+        "upstream_inference_completions_cost": 0.00796
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7317005503",
+  "predicted_reason": "One-piece, non-collated round-wire steel nail with ringed shank falls under heading 7317 as other nails of iron or steel.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 796,
+    "total_tokens": 1077,
+    "cost": 0.008522,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008522,
+      "upstream_inference_prompt_cost": 0.000562,
+      "upstream_inference_completions_cost": 0.00796
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:39.941519+00:00",
+  "latency_s": 8.122,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

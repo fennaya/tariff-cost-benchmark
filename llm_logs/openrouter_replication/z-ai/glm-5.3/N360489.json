@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360489",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "3210000000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600085-x7IEqe0Be8wpdIzaHeG6",
+    "object": "chat.completion",
+    "created": 1791600085,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3210.10.0000\", \"reason\": \"A lime-based (distemper-type) paint with no synthetic resin or acrylic binder is classified as a distemper in HTSUS subheading 3210.10.00.00.\"}",
+          "refusal": null,
+          "reasoning": "Lime-based paint: 3206.41? Actually pigments\u2014distemper paints based on lime... HTSUS 3210.10? Distemper, calcimine... Heading 3210: paints based on graphite, carbon... Actually 3210.10 \"paints based on... lime\"? Heading 3210 covers paints based on water-insoluble... no. 3210: \"Paints based on metallic flakes/powders\"? Let me recall: 3208, 3209, 3210 (paints based on... ), 3212 pigments. Distemper paints: 3213? Actually heading 3210: \"Paints and varnishes based on... \" Hmm. 3210.10 is \"Paints based on... \" I recall lime paints classified in 3210.10.00: \"Paints based on... \" Actually 3210 covers \"Other paints and varnishes... based on... \" No\u2014heading 3210: \"Paints and varnishes based on synthetic polymers...\" no that's 3208. Heading 3210: \"Other paints and varnishes; solutions as defined in note 4 to this chapter\" \u2014 no, that's 3210? Let me recall headings: 3208 (synthetic polymers, nonaqueous), 3209 (synthetic polymers, aqueous), 3210 (other paints/varnishes incl. distempers), 3212 (pigments incl. dispersions), 3213 (artists' paints), 3214 (putty, mastics, fillers). Distemper/lime paints \u2192 3210.10.00.00? Subheadings: 3210.10 \"distempers\" and 3210.90 other. So 3210.10.00.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Lime-based paint: 3206.41? Actually pigments\u2014distemper paints based on lime... HTSUS 3210.10? Distemper, calcimine... Heading 3210: paints based on graphite, carbon... Actually 3210.10 \"paints based on... lime\"? Heading 3210 covers paints based on water-insoluble... no. 3210: \"Paints based on metallic flakes/powders\"? Let me recall: 3208, 3209, 3210 (paints based on... ), 3212 pigments. Distemper paints: 3213? Actually heading 3210: \"Paints and varnishes based on... \" Hmm. 3210.10 is \"Paints based on... \" I recall lime paints classified in 3210.10.00: \"Paints based on... \" Actually 3210 covers \"Other paints and varnishes... based on... \" No\u2014heading 3210: \"Paints and varnishes based on synthetic polymers...\" no that's 3208. Heading 3210: \"Other paints and varnishes; solutions as defined in note 4 to this chapter\" \u2014 no, that's 3210? Let me recall headings: 3208 (synthetic polymers, nonaqueous), 3209 (synthetic polymers, aqueous), 3210 (other paints/varnishes incl. distempers), 3212 (pigments incl. dispersions), 3213 (artists' paints), 3214 (putty, mastics, fillers). Distemper/lime paints \u2192 3210.10.00.00? Subheadings: 3210.10 \"distempers\" and 3210.90 other. So 3210.10.00.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 476,
+      "total_tokens": 796,
+      "cost": 0.00229728,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00229728,
+        "upstream_inference_prompt_cost": 1.248e-05,
+        "upstream_inference_completions_cost": 0.0022848
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 430,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3210100000",
+  "predicted_reason": "A lime-based (distemper-type) paint with no synthetic resin or acrylic binder is classified as a distemper in HTSUS subheading 3210.10.00.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 476,
+    "total_tokens": 796,
+    "cost": 0.00229728,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00229728,
+      "upstream_inference_prompt_cost": 1.248e-05,
+      "upstream_inference_completions_cost": 0.0022848
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 430,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:41:25.559941+00:00",
+  "latency_s": 3.131,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

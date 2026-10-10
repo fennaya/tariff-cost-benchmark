@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N352071",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "2920905100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593771-mVAlfJYfwldjWpOi0C5N",
+    "object": "chat.completion",
+    "created": 1791593771,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description covers three compounds, but the request is for a single code, and the lab review referred only items one and two. The first item, ethyl methyl carbonate, is the most prominent, so I classify it.\n\nEthyl methyl carbonate is an ester of carbonic acid. Esters of carbonic acid fall in HTSUS 2920 (esters of other inorganic acids of nonmetals and their salts). Heading 2920 covers esters of non-metal inorganic acids, and carbonic acid esters are in 2920.90. Dimethyl carbonate and diethyl carbonate are also classified there, in 2920.90.\n\nEthylene sulfate would be in 2920.90 as well. Dialkyl sulfates are in 2920.90, and cyclic sulfate esters likewise.\n\nThe 2920.90 subheadings are:\n- 2920.90.10: Acyclic... (I recall this as \"Dimethyl sulfate\"-type entries)\n- 2920.90.51: Other, \"Other\"\n- 2920.90.5100: Other (I think this is the general catch-all, with 2920.90.10 covering the specified entries)\n\nI'm choosing 2920.90.5100 as the best estimate, since it is the \"other\" provision under 2920.90 where these electrolyte compounds are generally placed. I haven't confirmed that specific 10-digit number against the schedule.\n\n{\"hts_code\": \"2920.90.5100\", \"reason\": \"Ethyl methyl carbonate is an ester of carbonic acid (a non-metal inorganic acid), so it falls in heading 2920 under the 'other' subheading 2920.90, with the statistical suffix chosen as a best estimate.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 631,
+      "completion_tokens": 551,
+      "total_tokens": 1182,
+      "cost": 0.006772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006772,
+        "upstream_inference_prompt_cost": 0.001262,
+        "upstream_inference_completions_cost": 0.00551
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2920905100",
+  "predicted_reason": "Ethyl methyl carbonate is an ester of carbonic acid (a non-metal inorganic acid), so it falls in heading 2920 under the 'other' subheading 2920.90, with the statistical suffix chosen as a best estimate.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 631,
+    "completion_tokens": 551,
+    "total_tokens": 1182,
+    "cost": 0.006772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006772,
+      "upstream_inference_prompt_cost": 0.001262,
+      "upstream_inference_completions_cost": 0.00551
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:12.193909+00:00",
+  "latency_s": 5.816,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

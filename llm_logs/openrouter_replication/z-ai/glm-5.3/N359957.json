@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359957",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600009-ehZe6jMQcX9k7nhqA4wP",
+    "object": "chat.completion",
+    "created": 1791600009,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.10.4000\", \"reason\": \"A bladeless plastic display unit of a kitchen mandoline is a household/kitchen article of plastics, classifiable in HTSUS 3924.10.4000.\"}",
+          "refusal": null,
+          "reasoning": "Display unit of mandoline, plastic, no blades \u2014 likely household article of plastics, HTS 3924.10.4000 (tableware/kitchenware).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Display unit of mandoline, plastic, no blades \u2014 likely household article of plastics, HTS 3924.10.4000 (tableware/kitchenware).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 154,
+      "completion_tokens": 93,
+      "total_tokens": 247,
+      "cost": 0.000452342,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000452342,
+        "upstream_inference_prompt_cost": 5.942e-06,
+        "upstream_inference_completions_cost": 0.0004464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 36,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3924104000",
+  "predicted_reason": "A bladeless plastic display unit of a kitchen mandoline is a household/kitchen article of plastics, classifiable in HTSUS 3924.10.4000.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 154,
+    "completion_tokens": 93,
+    "total_tokens": 247,
+    "cost": 0.000452342,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000452342,
+      "upstream_inference_prompt_cost": 5.942e-06,
+      "upstream_inference_completions_cost": 0.0004464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 36,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:09.829160+00:00",
+  "latency_s": 0.926,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

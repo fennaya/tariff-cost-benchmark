@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361875",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9401999085",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596369-Nxns4ezriJkDiYPyShWg",
+    "object": "chat.completion",
+    "created": 1791596369,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on an aluminum pontoon chair frame for boats. Candidate headings are 9401.90 (parts of seats), 8907, 8905, and 8903.99 (parts of boats go to 8907 or are classified as parts of vessels under 8906...). Heading 9401 covers seats, including those used on vessels, and its parts fall under 9401.90. Seats for watercraft go to 9401.10 (seats of a kind used for aircraft) or 9401.20 (motor vehicles), with other seats in 9401.71 to 9401.79 (metal frames), and 9401.80 for others. Parts of seats are in 9401.90. Within 9401.90, subheading 9401.99 covers other parts, and 9401.99.90 is the \"other\" line. An aluminum frame as a seat part would fall under 9401.99.9081 (other, other parts, of seats), with the aluminum frame being a metal part.\n\nThe 9401.99 subheading includes 9401.99.10 (of wood), 9401.99.20 (of cast iron), 9401.99.40 (of bamboo/rattan), 9401.99.90 (other). The statistical suffix for 9401.99.90 is 81 (other).\n\nChecking the exclusions in Section XVII (note 2 to chapter 89 does not exclude seats). Chapter 94 does not exclude boat seats, since 9401 expressly includes \"seats for vessels\" in 9401.90 as parts. Even so, the frame is a part of a seat, so I'll go with 9401.99.9081.\n\n```json\n{\"hts_code\": \"9401.99.9081\", \"reason\": \"The aluminum pontoon chair frame is a metal part of a seat, so it falls under heading 9401 as other parts of seats (9401.99.90).\"}\n```\n\nOutput as plain JSON:\n\n{\"hts_code\": \"9401.99.9081\", \"reason\": \"The aluminum pontoon chair frame is a metal part of a seat, so it falls under heading 9401 as other parts of seats (9401.99.90).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 338,
+      "completion_tokens": 677,
+      "total_tokens": 1015,
+      "cost": 0.007446,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007446,
+        "upstream_inference_prompt_cost": 0.000676,
+        "upstream_inference_completions_cost": 0.00677
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401999081",
+  "predicted_reason": "The aluminum pontoon chair frame is a metal part of a seat, so it falls under heading 9401 as other parts of seats (9401.99.90).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 338,
+    "completion_tokens": 677,
+    "total_tokens": 1015,
+    "cost": 0.007446,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007446,
+      "upstream_inference_prompt_cost": 0.000676,
+      "upstream_inference_completions_cost": 0.00677
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:30.175090+00:00",
+  "latency_s": 6.144,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359582",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "6203424551",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595873-dx2PNkKMZLKEYcQVSnCN",
+    "object": "chat.completion",
+    "created": 1791595873,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Men's shorts of cotton, woven, fall under HTSUS 6203.42 (men's trousers, bib and brace overalls, breeches and shorts, of cotton). The statistical suffix for men's cotton shorts, other, is 6203.42.4011 for \"Trousers, breeches and shorts: Other: Other: Other: Men's: Shorts\" (cotton, other than certain subcategories). I recall the breakdown as follows:\n- 6203.42.40 covers \"Other\" cotton trousers, breeches and shorts.\n- 6203.42.4011 is \"Trousers and breeches: Men's\".\n- 6203.42.4016 is \"Shorts\"... \n\nI am not certain of these suffixes. In the HTSUS, 6203.42.40 has these statistical suffixes: 6203.42.4005 (Boys' ... ), 6203.42.4011 (Men's: Trousers and breeches, Cargo pants? ), 6203.42.4016 (Men's: Shorts), 6203.42.4026 (other). Customs rulings on men's cotton woven shorts commonly cite 6203.42.4016 and give a duty rate of 16.6%. I'll use that.\n\n{\"hts_code\": \"6203.42.4016\", \"reason\": \"Men's woven shorts of 88% cotton/12% nylon are classified as men's cotton shorts (not of denim or other special fabrics) under heading 6203, subheading 6203.42.40.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 277,
+      "completion_tokens": 482,
+      "total_tokens": 759,
+      "cost": 0.005374,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005374,
+        "upstream_inference_prompt_cost": 0.000554,
+        "upstream_inference_completions_cost": 0.00482
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6203424016",
+  "predicted_reason": "Men's woven shorts of 88% cotton/12% nylon are classified as men's cotton shorts (not of denim or other special fabrics) under heading 6203, subheading 6203.42.40.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 277,
+    "completion_tokens": 482,
+    "total_tokens": 759,
+    "cost": 0.005374,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005374,
+      "upstream_inference_prompt_cost": 0.000554,
+      "upstream_inference_completions_cost": 0.00482
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:14.002789+00:00",
+  "latency_s": 4.72,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

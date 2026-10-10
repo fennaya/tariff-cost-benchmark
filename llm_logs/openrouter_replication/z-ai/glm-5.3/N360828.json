@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360828",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "6211339061",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600121-y4ZZDYJSwEze85GKOd5m",
+    "object": "chat.completion",
+    "created": 1791600121,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.43.0060\", \"reason\": \"The jacket and pants zip together to form a single protective garment set designed for hazardous-duty protection, so it is classified as a protective garment of other man-made fibers under heading 6211, specifically other protective garments.\"}",
+          "refusal": null,
+          "reasoning": "Fire-resistant protective suit, woven synthetic (aramid/Kermel), men's. Likely 6211.43.0060? Protective garments of man-made fibers, other \u2014 6211.43.0060 (other). Actually CBP classified similar as 6211.43.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fire-resistant protective suit, woven synthetic (aramid/Kermel), men's. Likely 6211.43.0060? Protective garments of man-made fibers, other \u2014 6211.43.0060 (other). Actually CBP classified similar as 6211.43.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 443,
+      "completion_tokens": 135,
+      "total_tokens": 578,
+      "cost": 0.00065602,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00065602,
+        "upstream_inference_prompt_cost": 6.202e-05,
+        "upstream_inference_completions_cost": 0.000594
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 54,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211430060",
+  "predicted_reason": "The jacket and pants zip together to form a single protective garment set designed for hazardous-duty protection, so it is classified as a protective garment of other man-made fibers under heading 6211, specifically other protective garments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 443,
+    "completion_tokens": 135,
+    "total_tokens": 578,
+    "cost": 0.00065602,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00065602,
+      "upstream_inference_prompt_cost": 6.202e-05,
+      "upstream_inference_completions_cost": 0.000594
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:42:01.891160+00:00",
+  "latency_s": 1.254,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362825",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "8716905060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596566-Lmub1dj1Y5k7krguoR6g",
+    "object": "chat.completion",
+    "created": 1791596566,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a wheel with a polyurethane tread on a steel core and ball bearings, used on industrial dollies. The likely heading is 8716.90 (parts of trailers and non-mechanically propelled vehicles), or 8716.80 for hand-propelled vehicles, but classification as a part of a dolly is questionable. Dollies, meaning hand trucks, fall under 8716.80, so parts go under 8716.90. The 8716.90.50 subheading covers other parts, and its statistical suffix is 8716.90.5060 for \"Other\".\n\nAlternatively, casters under 8302.20 are excluded because this is a wheel without a mounting. Section XVII Note 2 excludes parts of general use, but a wheel with bearings is not a Section XV general-purpose part. Note that Chapter 87 covers parts of 8716, and wheels for hand trucks are often classified in 8716.90.50.\n\nStatistical suffixes for 8716.90.50 are 8716.90.5010 for \"Wheels, tires, and parts thereof\"? In the HTS, 8716.90.50 has 8716.90.5010 for Axles, 5020 for Wheels, 5030 for Tires? I recall 8716.90.5060 as \"Other\". I'll go with 8716.90.5060, with some uncertainty.\n\n{\"hts_code\": \"8716.90.5060\", \"reason\": \"A dedicated polyurethane-tread steel-core wheel assembly with bearings for industrial dollies (hand-propelled vehicles of 8716.80) is a part of non-mechanically propelled vehicles under heading 8716, subheading 8716.90.50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 317,
+      "completion_tokens": 542,
+      "total_tokens": 859,
+      "cost": 0.006054,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006054,
+        "upstream_inference_prompt_cost": 0.000634,
+        "upstream_inference_completions_cost": 0.00542
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716905060",
+  "predicted_reason": "A dedicated polyurethane-tread steel-core wheel assembly with bearings for industrial dollies (hand-propelled vehicles of 8716.80) is a part of non-mechanically propelled vehicles under heading 8716, subheading 8716.90.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 317,
+    "completion_tokens": 542,
+    "total_tokens": 859,
+    "cost": 0.006054,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006054,
+      "upstream_inference_prompt_cost": 0.000634,
+      "upstream_inference_completions_cost": 0.00542
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:46.491175+00:00",
+  "latency_s": 5.489,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

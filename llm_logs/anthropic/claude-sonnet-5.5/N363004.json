@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363004",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596614-EUQJ7zGtkR48Ql4n8Pjq",
+    "object": "chat.completion",
+    "created": 1791596614,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a portable folding book stand of stainless steel. The likely classification is heading 8302 (base metal mountings, fittings) or 7323/7326 (articles of iron or steel). Stainless steel articles would fall under 7323 (table, kitchen, household articles) or 7326 (other articles of iron or steel). A reading stand is a household article, but 7323 covers articles of the kind used for table, kitchen or other household purposes. Another option is 8304 (desk equipment such as paper knives, bookends), whose 8304.00.50 covers \"other\" office equipment, and that heading includes \"similar office desk equipment\" of base metal. A book stand is akin to desk equipment, but this is portable and attached to a book cover.\n\nI recall a CBP ruling on a \"Book Lever\" or \"Book Mate\" stand, which I believe went to 8304.00.5000, but I'm not certain. Heading 8304 covers filing cabinets, card index cabinets, paper trays, paper rests, pen trays, office-stamp stands and similar office or desk equipment, of base metal, other than office furniture of heading 9403. The stand is a \"paper rest\" type, so 8304 is plausible. The 10-digit code is 8304.00.9000 (other) or 8304.00.5000. Current HTSUS: 8304.00.10 is \"Of aluminum\", 8304.00.50 \"Other\" (stat suffixes 8304.00.5000 or 8304.00.9000?). I believe the current structure is 8304.00.10 (Of aluminum), 8304.00.50 (Other), with 8304.00.9000 used in older versions. I'll go with 8304.00.5000.\n\n{\"hts_code\": \"8304.00.5000\", \"reason\": \"A folding stainless steel book/reading stand is base-metal desk equipment similar to paper rests and bookends, classified in heading 8304 as other (not aluminum).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 362,
+      "completion_tokens": 636,
+      "total_tokens": 998,
+      "cost": 0.007084,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007084,
+        "upstream_inference_prompt_cost": 0.000724,
+        "upstream_inference_completions_cost": 0.00636
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8304005000",
+  "predicted_reason": "A folding stainless steel book/reading stand is base-metal desk equipment similar to paper rests and bookends, classified in heading 8304 as other (not aluminum).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 362,
+    "completion_tokens": 636,
+    "total_tokens": 998,
+    "cost": 0.007084,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007084,
+      "upstream_inference_prompt_cost": 0.000724,
+      "upstream_inference_completions_cost": 0.00636
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:34.997169+00:00",
+  "latency_s": 6.067,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358423",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "8407344400",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595598-US0WNUmqURmbwuvuPe1V",
+    "object": "chat.completion",
+    "created": 1791595598,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a spark-ignition reciprocating piston engine for vehicles, so it falls in heading 8407. Subheading 8407.34 covers engines over 1,000 cc. The BMW S65B40A is a 4.0-liter engine for the BMW M3, a passenger car, and the vehicle engine subheadings sit under 8407.34.\n\nThe subheading 8407.34 breaks down as follows:\n- 8407.34.10: for vehicles of chapter 87 (the 10-digit statistical lines under it are not separate here, since the 8-digit line is 8407.34.10 for new engines or similar).\n- The 8407.34 lines in the HTSUS are:\n  - 8407.34.05: Engines for vehicles of chapter 87 \u2013 ... actually 8407.34.05 is \"Other: Not exceeding 1,000 cc\"? No.\n\nI recall the actual structure: 8407.34.10 covers engines for vehicles of heading 8701 (tractors), 8407.34.20 and 8407.34.30 are other lines, and 8407.34.40 covers other 8407.34 engines. Under 8407.34.45, \"Other: Not exceeding 1,000 cc\" does not apply, so I'll go with the lines below.\n\n8407.34.80 is the used, remanufactured, or rebuilt line I believe, and 8407.34.91 and 8407.34.99 are the other lines. The description doesn't say whether the engine is used. For a new engine over 1,000 cc, the likely answer is 8407.34.4 (cylinder capacity over 2,000 cc, ... ) I'll commit to 8407.34.4: \"Other, 2,000 cc or more\" is probably the correct line.\n\nI'm fairly sure the structure is 8407.34.2800 (new engines of 1,000\u20132,000 cc), 8407.34.3000, and 8407.34.4400 for engines over 2,000 cc? Ultimately, the answer I settle on is 8407.34.4540, which I recall as the 10-digit line for new engines for vehicles of chapter 87 with a cylinder capacity over 2,000 cc but not exceeding 3,000 cc. This engine is 4,000 cc, so that line doesn't fit either.\n\nI'll go with 8407.34.4580, the line for other engines over 2,000 cc.\n\n{\"hts_code\": \"8407.34.4580\", \"reason\": \"A spark-ignition reciprocating piston engine over 1,000 cc (4.0L V8) for a passenger car is classified in heading 8407, subheading 8407.34, in the line for other engines over 2,000 cc.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 862,
+      "total_tokens": 1109,
+      "cost": 0.009114,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009114,
+        "upstream_inference_prompt_cost": 0.000494,
+        "upstream_inference_completions_cost": 0.00862
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8407344580",
+  "predicted_reason": "A spark-ignition reciprocating piston engine over 1,000 cc (4.0L V8) for a passenger car is classified in heading 8407, subheading 8407.34, in the line for other engines over 2,000 cc.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 247,
+    "completion_tokens": 862,
+    "total_tokens": 1109,
+    "cost": 0.009114,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009114,
+      "upstream_inference_prompt_cost": 0.000494,
+      "upstream_inference_completions_cost": 0.00862
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:38.665463+00:00",
+  "latency_s": 7.855,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

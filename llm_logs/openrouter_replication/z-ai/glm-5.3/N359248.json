@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359248",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8421210000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599880-vNbbj8ffGTLBxKNIZ8oB",
+    "object": "chat.completion",
+    "created": 1791599880,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8424.89.9090\", \"reason\": \"A robotic pool skimmer that mechanically collects floating debris via a roller brush and filter basket is a mechanical appliance for dispersing/spraying or similar cleaning functions, other, classified in HTSUS 8424.89.9090.\"}",
+          "refusal": null,
+          "reasoning": "Robotic pool cleaner \u2014 likely 8479.50.0090 (industrial robots? no). Pool cleaning robots classified 8424.89? Actually NY rulings classify robotic pool cleaners under 8508 (vacuum cleaners?) \u2014 some under 8424.89.9090? Robotic pool cleaners: NY N281584 classified under 8424.89.9090? Actually robotic pool cleaners have been classified in 8508.11 (vacuum cleaners). Solar pool skimmer \u2014 surface skimmer, not vacuum. Rulings on pool skimmers: 8424.89.9090? Hmm. There's ruling on \"solar-powered pool skimmer\" classified 8424.89.9090? I recall robotic pool cleaners classified 8508.11.0090. But skimmer uses roller brush and filter basket, mechanical appliance. I'll go 8424.89.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Robotic pool cleaner \u2014 likely 8479.50.0090 (industrial robots? no). Pool cleaning robots classified 8424.89? Actually NY rulings classify robotic pool cleaners under 8508 (vacuum cleaners?) \u2014 some under 8424.89.9090? Robotic pool cleaners: NY N281584 classified under 8424.89.9090? Actually robotic pool cleaners have been classified in 8508.11 (vacuum cleaners). Solar pool skimmer \u2014 surface skimmer, not vacuum. Rulings on pool skimmers: 8424.89.9090? Hmm. There's ruling on \"solar-powered pool skimmer\" classified 8424.89.9090? I recall robotic pool cleaners classified 8508.11.0090. But skimmer uses roller brush and filter basket, mechanical appliance. I'll go 8424.89.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 331,
+      "completion_tokens": 278,
+      "total_tokens": 609,
+      "cost": 0.0010114,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010114,
+        "upstream_inference_prompt_cost": 6.62e-05,
+        "upstream_inference_completions_cost": 0.0009452
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 206,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8424899090",
+  "predicted_reason": "A robotic pool skimmer that mechanically collects floating debris via a roller brush and filter basket is a mechanical appliance for dispersing/spraying or similar cleaning functions, other, classified in HTSUS 8424.89.9090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 331,
+    "completion_tokens": 278,
+    "total_tokens": 609,
+    "cost": 0.0010114,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010114,
+      "upstream_inference_prompt_cost": 6.62e-05,
+      "upstream_inference_completions_cost": 0.0009452
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 206,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:38:00.782030+00:00",
+  "latency_s": 2.563,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360704",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "8479899599",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596135-qr4Nt0OFp1JQUyBNcDTF",
+    "object": "chat.completion",
+    "created": 1791596135,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a mobile waste-oil extractor/drainer for garages. It consists of a tank, a pneumatic suction pump, and hoses. Its function is pumping liquids (oil), so heading 8413 is the likely home.\n\nHeading 8413 covers pumps for liquids. Subheading 8413.20 covers hand pumps, and 8413.70 covers other centrifugal pumps. Subheading 8413.81 covers other pumps, and 8413.91 covers parts of pumps.\n\nAn air-operated diaphragm pump is not a reciprocating positive displacement pump of 8413.50 in a clear sense, though it could be classed there. Air-operated 1:1 oil suction pumps are typically piston or diaphragm types. 8413.50 covers \"other reciprocating positive displacement pumps,\" and 8413.60 covers \"other rotary positive displacement pumps.\" Since the PM2 1:1 is a piston-type pneumatic pump, 8413.50 seems plausible. However, the tank unit as a whole might fall under 8413.81 as \"other pumps.\" The tank plus pump is a pumping unit, and the pump is the essential part. Because the pump type is uncertain, 8413.81.0000 is the safer choice.\n\nFor 8413.81, the 10-digit statistical suffix is 8413.81.0090 (other). 8413.81.0010 is for pumps with a flow rate of certain types, so I'll use 0090.\n\n```json\n{\"hts_code\": \"8413.81.0090\", \"reason\": \"A mobile pneumatic oil-suction extraction unit with a tank is essentially a pumping apparatus for liquids, classified as other pumps for liquids under heading 8413, subheading 8413.81.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 312,
+      "completion_tokens": 570,
+      "total_tokens": 882,
+      "cost": 0.006324,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006324,
+        "upstream_inference_prompt_cost": 0.000624,
+        "upstream_inference_completions_cost": 0.0057
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8413810090",
+  "predicted_reason": "A mobile pneumatic oil-suction extraction unit with a tank is essentially a pumping apparatus for liquids, classified as other pumps for liquids under heading 8413, subheading 8413.81.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 570,
+    "total_tokens": 882,
+    "cost": 0.006324,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006324,
+      "upstream_inference_prompt_cost": 0.000624,
+      "upstream_inference_completions_cost": 0.0057
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:35.717546+00:00",
+  "latency_s": 5.549,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

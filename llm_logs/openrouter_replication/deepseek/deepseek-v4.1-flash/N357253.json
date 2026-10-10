@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598644-Vhe27wFRiJV7Jv5uZ4xm",
+    "object": "chat.completion",
+    "created": 1791598644,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3822.19.0090\", \"reason\": \"Indocyanine Green Injection is a diagnostic reagent used for in vivo visualization and testing, classifiable as a diagnostic or laboratory reagent under HTSUS heading 3822, specifically the residual subheading for other diagnostic reagents.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 138,
+      "completion_tokens": 64,
+      "total_tokens": 202,
+      "cost": 6.676e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.676e-05,
+        "upstream_inference_prompt_cost": 2.76e-06,
+        "upstream_inference_completions_cost": 6.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3822190090",
+  "predicted_reason": "Indocyanine Green Injection is a diagnostic reagent used for in vivo visualization and testing, classifiable as a diagnostic or laboratory reagent under HTSUS heading 3822, specifically the residual subheading for other diagnostic reagents.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 138,
+    "completion_tokens": 64,
+    "total_tokens": 202,
+    "cost": 6.676e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.676e-05,
+      "upstream_inference_prompt_cost": 2.76e-06,
+      "upstream_inference_completions_cost": 6.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T02:17:25.078855+00:00",
+  "latency_s": 4.501,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

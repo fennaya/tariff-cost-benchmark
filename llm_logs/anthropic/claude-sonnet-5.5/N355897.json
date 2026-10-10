@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355897",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593818-o89KQt4hDhpIsimdC4oO",
+    "object": "chat.completion",
+    "created": 1791593818,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on \"Bahamas White\" stone, which the lab found to be metamorphic. Possibly it is a quartzite, or a marble. Marble is metamorphic, but the ruling says \"metamorphic stone\" and \"ivory with gray and black streaks\". If it were marble, the lab would likely say marble. I recall that Bahamas White is actually a dolomitic marble, or perhaps a granite-like gneiss. CBP often rules that stones commercially called \"granite\" are classified under 6802.93 if the stone is not truly marble.\n\nHeading 6802 covers worked monumental or building stone. Subheading 6802.91 covers marble, travertine and alabaster; 6802.92 covers other calcareous stone; 6802.93 covers granite; 6802.99 covers other stone. A metamorphic stone that is not marble (e.g., quartzite) would go to 6802.99. Where the lab says merely \"metamorphic,\" quartzite is likely, so 6802.99.00 applies. The statistical suffix is 6802.99.0040 for other stone, or perhaps 6802.99.0060 for other. The 6802.99.00 subheadings are: 6802.99.0010 for slabs (cut to size/shape?), 6802.99.0090 for other. I'll go with 6802.99.0090.\n\nSince the stone is polished, it is worked beyond simple cutting, which puts it in 6802 rather than 2515/2516. The slabs measure 3 m by 2 m, are polished and beveled, and are intended for further cutting. I'll stay with 6802.99.0090.\n\n```json\n{\"hts_code\": \"6802.99.0090\", \"reason\": \"Polished, beveled slabs of metamorphic stone (not marble or granite) for countertops and cladding are worked building stone of heading 6802, falling in the 'other stone' subheading.\"}\n```\n\n{\"hts_code\": \"6802.99.0090\", \"reason\": \"Polished, beveled slabs of metamorphic stone (not marble or granite) for countertops and cladding are worked building stone of heading 6802, falling in the 'other stone' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 703,
+      "total_tokens": 1075,
+      "cost": 0.007774,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007774,
+        "upstream_inference_prompt_cost": 0.000744,
+        "upstream_inference_completions_cost": 0.00703
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990090",
+  "predicted_reason": "Polished, beveled slabs of metamorphic stone (not marble or granite) for countertops and cladding are worked building stone of heading 6802, falling in the 'other stone' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 703,
+    "total_tokens": 1075,
+    "cost": 0.007774,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007774,
+      "upstream_inference_prompt_cost": 0.000744,
+      "upstream_inference_completions_cost": 0.00703
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:59.141579+00:00",
+  "latency_s": 6.704,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361315",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600168-ZMjGixKOgLAOMV41N4bg",
+    "object": "chat.completion",
+    "created": 1791600168,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0000.00.0000\", \"reason\": \"The description provides no product details (only notes a sample omission), so no valid HTSUS classification can be determined.\"}",
+          "refusal": null,
+          "reasoning": "Product description is essentially empty/uninformative \u2014 no product details. Best response: cannot classify; but must give a code? Could use 9903? Safer to state insufficient information. But format requires a code. Perhaps use \"0000.00.0000\"? Better to give a placeholder with reason that description is insufficient.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Product description is essentially empty/uninformative \u2014 no product details. Best response: cannot classify; but must give a code? Could use 9903? Safer to state insufficient information. But format requires a code. Perhaps use \"0000.00.0000\"? Better to give a placeholder with reason that description is insufficient.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 128,
+      "completion_tokens": 113,
+      "total_tokens": 241,
+      "cost": 0.000547328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000547328,
+        "upstream_inference_prompt_cost": 4.928e-06,
+        "upstream_inference_completions_cost": 0.0005424
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 70,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0000000000",
+  "predicted_reason": "The description provides no product details (only notes a sample omission), so no valid HTSUS classification can be determined.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 128,
+    "completion_tokens": 113,
+    "total_tokens": 241,
+    "cost": 0.000547328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000547328,
+      "upstream_inference_prompt_cost": 4.928e-06,
+      "upstream_inference_completions_cost": 0.0005424
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 70,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:49.108592+00:00",
+  "latency_s": 1.862,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

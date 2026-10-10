@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355895",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594045-7Pusf41IUx5YEOWhMzPa",
+    "object": "chat.completion",
+    "created": 1791594045,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0090\", \"reason\": \"White Delicatus is an igneous rock (quartz and albite granite) that is polished and beveled, i.e., merely cut/sawn and surface-worked granite, classifiable as other granite under subheading 6802.93.0090.\"}",
+          "refusal": null,
+          "reasoning": "This is granite-like igneous rock \u2014 actually quartz and albite... likely classified as granite 6802.93.00? Igneous rock with quartz and albite \u2014 could be granite. Ruling likely 6802.93.0090 (granite, simply cut/sawn?). Polished \u2192 worked: 6802.93.0090? Granite monumental etc. Polished granite slabs: 6802.93.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is granite-like igneous rock \u2014 actually quartz and albite... likely classified as granite 6802.93.00? Igneous rock with quartz and albite \u2014 could be granite. Ruling likely 6802.93.0090 (granite, simply cut/sawn?). Polished \u2192 worked: 6802.93.0090? Granite monumental etc. Polished granite slabs: 6802.93.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 179,
+      "total_tokens": 437,
+      "cost": 0.0006602,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006602,
+        "upstream_inference_prompt_cost": 5.16e-05,
+        "upstream_inference_completions_cost": 0.0006086
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 101,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930090",
+  "predicted_reason": "White Delicatus is an igneous rock (quartz and albite granite) that is polished and beveled, i.e., merely cut/sawn and surface-worked granite, classifiable as other granite under subheading 6802.93.0090.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 179,
+    "total_tokens": 437,
+    "cost": 0.0006602,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006602,
+      "upstream_inference_prompt_cost": 5.16e-05,
+      "upstream_inference_completions_cost": 0.0006086
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 101,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:46.037024+00:00",
+  "latency_s": 3.157,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

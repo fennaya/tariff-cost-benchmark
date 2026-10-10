@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357767",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "9401616011",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595495-ZMPiNVbGrK35Shwl7GvS",
+    "object": "chat.completion",
+    "created": 1791595495,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an upholstered sofa with a wooden frame, and it does not convert to a bed or recline. That places it in heading 9401, seats.\n\nWithin 9401, the options are:\n- 9401.61: other seats, with wooden frames, upholstered.\n- 9401.40: seats convertible into beds. This does not apply.\n- 9401.52 and 9401.59: seats of bamboo or rattan. These do not apply.\n\nThe 9401.61 subheadings are:\n- 9401.61.20: seats of the kind used for aircraft. Not applicable.\n- 9401.61.40: motor vehicle seats. Not applicable.\n- 9401.61.60: other, upholstered, with wooden frame, stuffed or cushioned. In current HTSUS the 9401.61 breakdown is 9401.61.20 (certain motor vehicle seats), 9401.61.40 (other, \"Other: Stuffed or cushioned\"), and 9401.61.60 (other).\n\nIn the current schedule, 9401.61.40 covers \"Other: Stuffed or cushioned\" and 9401.61.60 covers \"Other.\" Seats of this kind have previously been classified in 9401.61.4011 (stuffed or cushioned, \"Other\"). A 10-digit code of 9401.61.4011 is therefore the likely statistical suffix.\n\nFollowing CBP rulings on sofas of this kind, I'll go with 9401.61.4011.\n\n{\"hts_code\": \"9401.61.4011\", \"reason\": \"Non-convertible, non-reclining upholstered sofa with a wooden frame is a seat of heading 9401, falling under subheading 9401.61 as an upholstered wooden-framed seat, stuffed or cushioned, in the 9401.61.40 provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 634,
+      "completion_tokens": 578,
+      "total_tokens": 1212,
+      "cost": 0.007048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007048,
+        "upstream_inference_prompt_cost": 0.001268,
+        "upstream_inference_completions_cost": 0.00578
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401614011",
+  "predicted_reason": "Non-convertible, non-reclining upholstered sofa with a wooden frame is a seat of heading 9401, falling under subheading 9401.61 as an upholstered wooden-framed seat, stuffed or cushioned, in the 9401.61.40 provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 634,
+    "completion_tokens": 578,
+    "total_tokens": 1212,
+    "cost": 0.007048,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007048,
+      "upstream_inference_prompt_cost": 0.001268,
+      "upstream_inference_completions_cost": 0.00578
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:55.302615+00:00",
+  "latency_s": 5.077,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359301",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3004909230",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599891-T0uPrLufVTFwLSG2y2Gx",
+    "object": "chat.completion",
+    "created": 1791599891,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2916.19.5050\", \"reason\": \"Ibuprofen is 2-(4-isobutylphenyl)propionic acid, an aromatic carboxylic acid with its own provision under HTSUS 2916.19.50, and tablets in bulk dosage form remain classified by the active pharmaceutical ingredient.\"}",
+          "refusal": null,
+          "reasoning": "Ibuprofen is a carboxylic acid derivative... HTS 2933.39? Ibuprofen is actually classified under 2916.19? Ibuprofen: 2-(4-isobutylphenyl)propionic acid \u2014 aromatic carboxylic acid. HTSUS 2916.19.5050? Ibuprofen specifically: 2916.19.5000? Actually there's a specific provision: 2916.19.50 \"Ibuprofen\" \u2014 I recall 2916.19.5050. Yes, ibuprofen has its own statistical suffix. Use 2916.19.5050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ibuprofen is a carboxylic acid derivative... HTS 2933.39? Ibuprofen is actually classified under 2916.19? Ibuprofen: 2-(4-isobutylphenyl)propionic acid \u2014 aromatic carboxylic acid. HTSUS 2916.19.5050? Ibuprofen specifically: 2916.19.5000? Actually there's a specific provision: 2916.19.50 \"Ibuprofen\" \u2014 I recall 2916.19.5050. Yes, ibuprofen has its own statistical suffix. Use 2916.19.5050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 138,
+      "completion_tokens": 230,
+      "total_tokens": 368,
+      "cost": 0.00102304,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00102304,
+        "upstream_inference_prompt_cost": 1.104e-05,
+        "upstream_inference_completions_cost": 0.001012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 150,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2916195050",
+  "predicted_reason": "Ibuprofen is 2-(4-isobutylphenyl)propionic acid, an aromatic carboxylic acid with its own provision under HTSUS 2916.19.50, and tablets in bulk dosage form remain classified by the active pharmaceutical ingredient.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 138,
+    "completion_tokens": 230,
+    "total_tokens": 368,
+    "cost": 0.00102304,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00102304,
+      "upstream_inference_prompt_cost": 1.104e-05,
+      "upstream_inference_completions_cost": 0.001012
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 150,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:38:11.471966+00:00",
+  "latency_s": 2.396,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

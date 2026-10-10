@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N348642",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "5208212090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594012-WrXHNoBRAbgYC7LDb6Ro",
+    "object": "chat.completion",
+    "created": 1791594012,
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3005.90.6000\", \"reason\": \"The merchandise is medical gauze for wound coverage and absorption, consisting of multiple folded plies of bleached cotton woven fabric not put up for retail sale, which is classified in heading 3005 as wadding, gauze, and similar articles of textile materials for medical purposes, specifically the subheading for other articles of cotton.\"}",
+          "refusal": null,
+          "reasoning": "Medical gauze, cotton, not put up for retail sale? These are surgical/medical gauze. HTSUS 3005.90 covers wadding, gauze... Actually 3005.10 is adhesive dressings; 3005.90 other. Medical gauze of cotton \u2014 3005.90.60.00? Let me recall: 3005.90.60 \"Other, of cotton\" \u2014 historically 3005.90.60.00. There was a change: 3005.90.60 (cotton). Yes, NY rulings classify cotton medical gauze under 3005.90.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Medical gauze, cotton, not put up for retail sale? These are surgical/medical gauze. HTSUS 3005.90 covers wadding, gauze... Actually 3005.10 is adhesive dressings; 3005.90 other. Medical gauze of cotton \u2014 3005.90.60.00? Let me recall: 3005.90.60 \"Other, of cotton\" \u2014 historically 3005.90.60.00. There was a change: 3005.90.60 (cotton). Yes, NY rulings classify cotton medical gauze under 3005.90.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1016,
+      "completion_tokens": 228,
+      "total_tokens": 1244,
+      "cost": 0.001767288,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001767288,
+        "upstream_inference_prompt_cost": 0.000399288,
+        "upstream_inference_completions_cost": 0.001368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 141,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3005906000",
+  "predicted_reason": "The merchandise is medical gauze for wound coverage and absorption, consisting of multiple folded plies of bleached cotton woven fabric not put up for retail sale, which is classified in heading 3005 as wadding, gauze, and similar articles of textile materials for medical purposes, specifically the subheading for other articles of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1016,
+    "completion_tokens": 228,
+    "total_tokens": 1244,
+    "cost": 0.001767288,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001767288,
+      "upstream_inference_prompt_cost": 0.000399288,
+      "upstream_inference_completions_cost": 0.001368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 141,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T01:00:12.430883+00:00",
+  "latency_s": 5.934,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

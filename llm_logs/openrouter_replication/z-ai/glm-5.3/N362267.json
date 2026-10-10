@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N362267",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "9506390060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600294-LEqHTjsBNlaQpFtJmdOC",
+    "object": "chat.completion",
+    "created": 1791600294,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9506.31.0000\", \"reason\": \"Golf club heads are classified as parts of golf clubs under HTSUS 9506.31.0000, which covers golf clubs and other golf equipment, as club heads are specifically provided for as parts thereof.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 67,
+      "total_tokens": 393,
+      "cost": 0.00035674,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00035674,
+        "upstream_inference_prompt_cost": 6.194e-05,
+        "upstream_inference_completions_cost": 0.0002948
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506310000",
+  "predicted_reason": "Golf club heads are classified as parts of golf clubs under HTSUS 9506.31.0000, which covers golf clubs and other golf equipment, as club heads are specifically provided for as parts thereof.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 67,
+    "total_tokens": 393,
+    "cost": 0.00035674,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00035674,
+      "upstream_inference_prompt_cost": 6.194e-05,
+      "upstream_inference_completions_cost": 0.0002948
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:44:54.421542+00:00",
+  "latency_s": 2.179,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361914",
+  "rulingDate": "2026-06-24T00:00:00",
+  "true_code": "7113195091",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600256-DbBPwM12Oopr4bHfkTou",
+    "object": "chat.completion",
+    "created": 1791600256,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7113.19.5000\", \"reason\": \"Lapel pins made of 10K gold set with gemstones are articles of jewelry of precious metal, classified in HTSUS heading 7113 as other jewelry of gold.\"}",
+          "refusal": null,
+          "reasoning": "Lapel pins of precious metal \u2014 7117.19 would be imitation jewelry; but 10K gold pins with stones \u2014 jewelry articles of precious metal: heading 7113. But lapel pins... CBP rulings classify gold lapel pins as 7113.19? Actually 7117 covers imitation jewelry. Gold pins are jewelry of precious metal: 7113.19.7500? Common: 7113.19.5000 (other). 10-digit: 7113.19.7500? Let me recall: 7113.19.29? US subdivisions: 7113.19.05 gold... 7113.19.7500 \"Other necklaces...\"? I think 7113.19.7500 is \"Other\" of other precious metal? Actually 7113.19.5000 = other, of gold? Hmm. 7113.19.29 covers necklaces etc. 7113.19.5000 \"Other\" \u2014 I'll answer 7113.19.5000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Lapel pins of precious metal \u2014 7117.19 would be imitation jewelry; but 10K gold pins with stones \u2014 jewelry articles of precious metal: heading 7113. But lapel pins... CBP rulings classify gold lapel pins as 7113.19? Actually 7117 covers imitation jewelry. Gold pins are jewelry of precious metal: 7113.19.7500? Common: 7113.19.5000 (other). 10-digit: 7113.19.7500? Let me recall: 7113.19.29? US subdivisions: 7113.19.05 gold... 7113.19.7500 \"Other necklaces...\"? I think 7113.19.7500 is \"Other\" of other precious metal? Actually 7113.19.5000 = other, of gold? Hmm. 7113.19.29 covers necklaces etc. 7113.19.5000 \"Other\" \u2014 I'll answer 7113.19.5000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 292,
+      "total_tokens": 645,
+      "cost": 0.001415303,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001415303,
+        "upstream_inference_prompt_cost": 1.3703e-05,
+        "upstream_inference_completions_cost": 0.0014016
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 244,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7113195000",
+  "predicted_reason": "Lapel pins made of 10K gold set with gemstones are articles of jewelry of precious metal, classified in HTSUS heading 7113 as other jewelry of gold.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 292,
+    "total_tokens": 645,
+    "cost": 0.001415303,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001415303,
+      "upstream_inference_prompt_cost": 1.3703e-05,
+      "upstream_inference_completions_cost": 0.0014016
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 244,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:44:17.169483+00:00",
+  "latency_s": 1.988,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

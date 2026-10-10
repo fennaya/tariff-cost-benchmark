@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358476",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "8412298045",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599773-37N3jQDUGdNVv7xKwQL5",
+    "object": "chat.completion",
+    "created": 1791599773,
+    "model": "z-ai/glm-5.3",
+    "provider": "Decart",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8432.90.0000\", \"reason\": \"The hydraulic cylinder and actuator are dedicated parts of an agricultural seeder/planter (machinery of heading 8432), and per HTSUS Section II Note 3/GRI they are classified as parts of agricultural machinery rather than as general hydraulic cylinders or actuators.\"}",
+          "refusal": null,
+          "reasoning": "Hydraulic cylinder for agricultural machinery: 8432.90 parts of agricultural machinery? Cylinders could be 8412.21. But NY rulings classify such cylinders as parts of seeder under 8432.90. Likely 8432.90.0000? 10-digit: 8432.90.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hydraulic cylinder for agricultural machinery: 8432.90 parts of agricultural machinery? Cylinders could be 8412.21. But NY rulings classify such cylinders as parts of seeder under 8432.90. Likely 8432.90.0000? 10-digit: 8432.90.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 153,
+      "total_tokens": 510,
+      "cost": 0.0007058349,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007058349,
+        "upstream_inference_prompt_cost": 0.0003007368,
+        "upstream_inference_completions_cost": 0.0004050981
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 74,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8432900000",
+  "predicted_reason": "The hydraulic cylinder and actuator are dedicated parts of an agricultural seeder/planter (machinery of heading 8432), and per HTSUS Section II Note 3/GRI they are classified as parts of agricultural machinery rather than as general hydraulic cylinders or actuators.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 153,
+    "total_tokens": 510,
+    "cost": 0.0007058349,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007058349,
+      "upstream_inference_prompt_cost": 0.0003007368,
+      "upstream_inference_completions_cost": 0.0004050981
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Decart",
+  "requested_at": "2026-10-10T02:36:13.780197+00:00",
+  "latency_s": 1.601,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

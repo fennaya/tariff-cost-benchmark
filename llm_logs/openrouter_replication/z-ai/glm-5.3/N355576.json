@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355576",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594040-yL0fY0NhQZPwZC6hMz1D",
+    "object": "chat.completion",
+    "created": 1791594040,
+    "model": "z-ai/glm-5.3",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0060\", \"reason\": \"Desert Atlas is an igneous stone containing almost no quartz, so it does not qualify as granite, and as merely cut/sawn monumental or building stone it falls under the 'other stone' provision of subheading 6802.93.00.\"}",
+          "refusal": null,
+          "reasoning": "Igneous stone with almost no quartz \u2192 not granite (granite requires quartz). Likely classified as \"other stone\" \u2014 actually onyx/marble? Ivory-colored... Igneous with no quartz \u2014 could be nepheline syenite... Similar to NY ruling: classified under 6802.93? HTS 6802.93.00 is \"other\" stone (slate excluded). Actually 6802.93.0060? Subheadings: 6802.91 marble/travertine/ alabaster; 6802.92 other calcareous; 6802.93 other stone. Use 6802.93.0000? Stat suffixes: 6802.93.0000... I think 6802.93.0000? Historical suffix 6802.93.0060 \"other\". I'll give 6802.93.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Igneous stone with almost no quartz \u2192 not granite (granite requires quartz). Likely classified as \"other stone\" \u2014 actually onyx/marble? Ivory-colored... Igneous with no quartz \u2014 could be nepheline syenite... Similar to NY ruling: classified under 6802.93? HTS 6802.93.00 is \"other\" stone (slate excluded). Actually 6802.93.0060? Subheadings: 6802.91 marble/travertine/ alabaster; 6802.92 other calcareous; 6802.93 other stone. Use 6802.93.0000? Stat suffixes: 6802.93.0000... I think 6802.93.0000? Historical suffix 6802.93.0060 \"other\". I'll give 6802.93.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 277,
+      "total_tokens": 518,
+      "cost": 0.0015562,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015562,
+        "upstream_inference_prompt_cost": 0.0003374,
+        "upstream_inference_completions_cost": 0.0012188
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 202,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930060",
+  "predicted_reason": "Desert Atlas is an igneous stone containing almost no quartz, so it does not qualify as granite, and as merely cut/sawn monumental or building stone it falls under the 'other stone' provision of subheading 6802.93.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 241,
+    "completion_tokens": 277,
+    "total_tokens": 518,
+    "cost": 0.0015562,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015562,
+      "upstream_inference_prompt_cost": 0.0003374,
+      "upstream_inference_completions_cost": 0.0012188
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 202,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Z.AI",
+  "requested_at": "2026-10-10T01:00:40.516552+00:00",
+  "latency_s": 6.317,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

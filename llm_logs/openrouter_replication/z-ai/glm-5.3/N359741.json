@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359741",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8424899000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599955-m6fQBCqtaSiiYbOGqIDa",
+    "object": "chat.completion",
+    "created": 1791599955,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.90.4000\", \"reason\": \"Plastic soap dispensers for toilet/hygiene use are classified as other household and toilet articles of plastics under heading 3924, per CBP practice for plastic soap dispensers.\"}",
+          "refusal": null,
+          "reasoning": "Plastic soap dispenser \u2014 likely 3924.90.40 or 8479? Soap dispensers of plastics for household/toilet: 3924.90.40? Actually 3924.90 covers toilet/kinchen articles of plastics. CBP rulings classify plastic soap dispensers under 3924.90.40? There's 3924.90.40 \"other\" \u2014 3924.90.4000? I'll go with 3924.90.4000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Plastic soap dispenser \u2014 likely 3924.90.40 or 8479? Soap dispensers of plastics for household/toilet: 3924.90.40? Actually 3924.90 covers toilet/kinchen articles of plastics. CBP rulings classify plastic soap dispensers under 3924.90.40? There's 3924.90.40 \"other\" \u2014 3924.90.4000? I'll go with 3924.90.4000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 171,
+      "total_tokens": 423,
+      "cost": 0.00056925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00056925,
+        "upstream_inference_prompt_cost": 0.00014175,
+        "upstream_inference_completions_cost": 0.0004275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 111,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3924904000",
+  "predicted_reason": "Plastic soap dispensers for toilet/hygiene use are classified as other household and toilet articles of plastics under heading 3924, per CBP practice for plastic soap dispensers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 171,
+    "total_tokens": 423,
+    "cost": 0.00056925,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00056925,
+      "upstream_inference_prompt_cost": 0.00014175,
+      "upstream_inference_completions_cost": 0.0004275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 111,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:39:15.677860+00:00",
+  "latency_s": 1.55,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

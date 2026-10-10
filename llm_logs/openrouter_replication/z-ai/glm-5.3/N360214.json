@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360214",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "3004909263",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600056-oxJvRlOnQcBk0UJyBjty",
+    "object": "chat.completion",
+    "created": 1791600056,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.9290\", \"reason\": \"Bumetanide tablets are a dosage-form medicament containing no antibiotics, hormones, or alkaloids, classifiable as other medicaments put up in measured doses under subheading 3004.90.\"}",
+          "refusal": null,
+          "reasoning": "Bumetanide is a medicament, dosage form tablets \u2014 HTS 3004.90.00? Antibiotics 3004.20; hormones 3004.32... Other medicaments: 3004.90.92? Actually 3004.90.92 for other, duty 0? 3004.90.92 \"Other\" \u2014 I recall 3004.90.92.10? Common code: 3004.90.9290? For packaged medicaments NESOI: 3004.90.92 (statistical 90). Use 3004.90.9290? I think 3004.90.9290 exists. Safer: 3004.90.9290.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Bumetanide is a medicament, dosage form tablets \u2014 HTS 3004.90.00? Antibiotics 3004.20; hormones 3004.32... Other medicaments: 3004.90.92? Actually 3004.90.92 for other, duty 0? 3004.90.92 \"Other\" \u2014 I recall 3004.90.92.10? Common code: 3004.90.9290? For packaged medicaments NESOI: 3004.90.92 (statistical 90). Use 3004.90.9290? I think 3004.90.9290 exists. Safer: 3004.90.9290.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 174,
+      "completion_tokens": 223,
+      "total_tokens": 397,
+      "cost": 0.00109998,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00109998,
+        "upstream_inference_prompt_cost": 2.958e-05,
+        "upstream_inference_completions_cost": 0.0010704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 166,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Bumetanide tablets are a dosage-form medicament containing no antibiotics, hormones, or alkaloids, classifiable as other medicaments put up in measured doses under subheading 3004.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 223,
+    "total_tokens": 397,
+    "cost": 0.00109998,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00109998,
+      "upstream_inference_prompt_cost": 2.958e-05,
+      "upstream_inference_completions_cost": 0.0010704
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 166,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:56.507498+00:00",
+  "latency_s": 1.855,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

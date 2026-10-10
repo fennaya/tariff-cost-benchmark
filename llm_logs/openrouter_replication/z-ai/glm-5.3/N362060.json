@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362060",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "8306290000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600271-mAj4mlVLd7S6zoGgjkmK",
+    "object": "chat.completion",
+    "created": 1791600271,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.10.5000\", \"reason\": \"The LED bow is a Christmas/festive decorative article whose lights merely enhance its decorative effect, so it is classified as a festive article of heading 9505 rather than as electric lighting equipment.\"}",
+          "refusal": null,
+          "reasoning": "Ruling: LED bow decoration \u2014 classified as festive article 9505.10 or as electric decorative article? Similar CBP rulings classify LED holiday decorations under 9505.10.50 (other Christmas articles). 9505.10.5000? Christmas ornaments of plastics/textiles... \"Other\" = 9505.10.5000? Actually 9505.10.50 is \"other\" \u2014 9505.10.5000? Subheading 9505.10.5000 \"Other\" \u2014 yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ruling: LED bow decoration \u2014 classified as festive article 9505.10 or as electric decorative article? Similar CBP rulings classify LED holiday decorations under 9505.10.50 (other Christmas articles). 9505.10.5000? Christmas ornaments of plastics/textiles... \"Other\" = 9505.10.5000? Actually 9505.10.50 is \"other\" \u2014 9505.10.5000? Subheading 9505.10.5000 \"Other\" \u2014 yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 179,
+      "total_tokens": 468,
+      "cost": 0.00081072,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00081072,
+        "upstream_inference_prompt_cost": 2.312e-05,
+        "upstream_inference_completions_cost": 0.0007876
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 118,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505105000",
+  "predicted_reason": "The LED bow is a Christmas/festive decorative article whose lights merely enhance its decorative effect, so it is classified as a festive article of heading 9505 rather than as electric lighting equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 179,
+    "total_tokens": 468,
+    "cost": 0.00081072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00081072,
+      "upstream_inference_prompt_cost": 2.312e-05,
+      "upstream_inference_completions_cost": 0.0007876
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:44:31.374596+00:00",
+  "latency_s": 2.366,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

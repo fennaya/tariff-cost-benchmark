@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359430",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599910-Rl6nFZYWKfKP8cnVsjTz",
+    "object": "chat.completion",
+    "created": 1791599910,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.9290\", \"reason\": \"Imported as 650 mg tablets, tranexamic acid is a medicament in measured dosage form, classifiable as an other medicament not containing antibiotics, hormones, or alkaloids.\"}",
+          "refusal": null,
+          "reasoning": "Tranexamic acid is a carboxylic acid derivative? It's a lysine derivative \u2014 amino acid. HTSUS: 2922.49.40? Amino acids and esters: other \u2014 2922.49.4000? Actually 2922.49.40 is \"Other\" \u2014 amino acids, other than those containing more than one kind of function. Tranexamic acid: trans-4-aminomethylcyclohexanecarboxylic acid \u2014 aminocyclohexane carboxylic acid, not amino acid with aliphatic amino group? It's cyclic. 2922.49 covers amino acids with oxygen function, other. Tranexamic acid classified 2922.49.4000? Commonly cited as 2922.49.40. But tablets = medicament? If imported in tablet form, it's a prepared dosage \u2192 3004.90? Tranexamic acid tablets: 3004.90.92? Actually 3004.90.92 \"Other\" medicaments... 3004.90.9290? Hmm. 3004.90.92 is \"Other: Other\" \u2014 3004.90.9290? The subheading 3004.90.92 covers medicaments not containing antibiotics etc. Tablets are dosage form \u2192 3004.90.9290? I recall 3004.90.9290 \"Other\". I'll answer 3004.90.9290.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Tranexamic acid is a carboxylic acid derivative? It's a lysine derivative \u2014 amino acid. HTSUS: 2922.49.40? Amino acids and esters: other \u2014 2922.49.4000? Actually 2922.49.40 is \"Other\" \u2014 amino acids, other than those containing more than one kind of function. Tranexamic acid: trans-4-aminomethylcyclohexanecarboxylic acid \u2014 aminocyclohexane carboxylic acid, not amino acid with aliphatic amino group? It's cyclic. 2922.49 covers amino acids with oxygen function, other. Tranexamic acid classified 2922.49.4000? Commonly cited as 2922.49.40. But tablets = medicament? If imported in tablet form, it's a prepared dosage \u2192 3004.90? Tranexamic acid tablets: 3004.90.92? Actually 3004.90.92 \"Other\" medicaments... 3004.90.9290? Hmm. 3004.90.92 is \"Other: Other\" \u2014 3004.90.9290? The subheading 3004.90.92 covers medicaments not containing antibiotics etc. Tablets are dosage form \u2192 3004.90.9290? I recall 3004.90.9290 \"Other\". I'll answer 3004.90.9290.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 171,
+      "completion_tokens": 386,
+      "total_tokens": 557,
+      "cost": 0.001859405,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001859405,
+        "upstream_inference_prompt_cost": 6.605e-06,
+        "upstream_inference_completions_cost": 0.0018528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 332,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Imported as 650 mg tablets, tranexamic acid is a medicament in measured dosage form, classifiable as an other medicament not containing antibiotics, hormones, or alkaloids.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 171,
+    "completion_tokens": 386,
+    "total_tokens": 557,
+    "cost": 0.001859405,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001859405,
+      "upstream_inference_prompt_cost": 6.605e-06,
+      "upstream_inference_completions_cost": 0.0018528
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 332,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:38:30.542609+00:00",
+  "latency_s": 3.229,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

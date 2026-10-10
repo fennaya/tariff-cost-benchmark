@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360085",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8483905080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600039-TGMxSMTv3p9b72r1vwbV",
+    "object": "chat.completion",
+    "created": 1791600039,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.90.3000\", \"reason\": \"A worm wheel is a toothed gear that transmits rotary motion/torque, classifiable as gearing in HTSUS 8483.90.30.\"}",
+          "refusal": null,
+          "reasoning": "Worm wheel for steering \u2014 gear of steel? Likely 8483.90.30? Gears and gearing: 8483.90.30 \"gears and gearing\". Actually 8483.90.30 covers toothed wheels? 8483.90.30: Gears and gearing. Use 8483.90.3000? Format 10 digits: 8483.90.3000? HTS 8483.90.30 is 8-digit; statistical suffix 00 \u2192 8483.90.3000? Actually 8483.90.30 has suffixes 10/50? I recall 8483.90.3000 exists. Go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Worm wheel for steering \u2014 gear of steel? Likely 8483.90.30? Gears and gearing: 8483.90.30 \"gears and gearing\". Actually 8483.90.30 covers toothed wheels? 8483.90.30: Gears and gearing. Use 8483.90.3000? Format 10 digits: 8483.90.3000? HTS 8483.90.30 is 8-digit; statistical suffix 00 \u2192 8483.90.3000? Actually 8483.90.30 has suffixes 10/50? I recall 8483.90.3000 exists. Go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 194,
+      "completion_tokens": 212,
+      "total_tokens": 406,
+      "cost": 0.0007596,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007596,
+        "upstream_inference_prompt_cost": 3.88e-05,
+        "upstream_inference_completions_cost": 0.0007208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 158,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483903000",
+  "predicted_reason": "A worm wheel is a toothed gear that transmits rotary motion/torque, classifiable as gearing in HTSUS 8483.90.30.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 194,
+    "completion_tokens": 212,
+    "total_tokens": 406,
+    "cost": 0.0007596,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007596,
+      "upstream_inference_prompt_cost": 3.88e-05,
+      "upstream_inference_completions_cost": 0.0007208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 158,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:40:39.398587+00:00",
+  "latency_s": 1.816,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

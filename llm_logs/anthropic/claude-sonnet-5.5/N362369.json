@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362369",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "3402505100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596480-ZBE4euQxBgRmSzsG3910",
+    "object": "chat.completion",
+    "created": 1791596480,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a fabric refresher spray described as a surface-active washing preparation. The candidates are:\n\n- 3402.20 covers surface-active preparations and washing preparations put up for retail sale.\n- 3402.20.51 covers retail-sale preparations that are not organic surface-active agents of the 3402.20 type, but it is not clearly applicable here.\n- 3307.90 covers room deodorizers (3307.49 for \"other\" room-perfuming preparations), but the description stresses washing and surfactant action rather than perfuming.\n- 3402.50 (formerly the \"other\" category) covers preparations not put up for retail sale. This product is retail-packed, so it does not apply.\n\nThe HTSUS structure under 3402.20 is:\n- 3402.20.11: surface-active preparations, anionic, put up for retail sale (the description's nonionic surfactant does not fit here).\n- 3402.20.51: other, put up for retail sale.\n\nThe 3402.20 subheading split is 3402.20.11 (organic surface-active agents, with 3402.20.11 being \"Surface-active preparations: Anionic, cationic, or nonionic\"?). I recall 3402.20.11 as \"Surface-active preparations: Put up for retail sale: Organic surface-active preparations... Anionic\" and 3402.20.51 as \"Other\". The product is a retail-packed nonionic washing preparation, and I am fairly confident it falls under 3402.20.51.\n\n```json\n{\"hts_code\": \"3402.20.5100\", \"reason\": \"Retail-packaged surface-active washing preparation based on a nonionic surfactant (Laureth-3) for textile cleaning is classified in heading 3402 as other surface-active/washing preparations put up for retail sale.\"}\n```\n\nCorrected to respond with only the JSON:\n\n{\"hts_code\": \"3402.20.5100\", \"reason\": \"Retail-packaged surface-active washing preparation based on a nonionic surfactant (Laureth-3) for textile cleaning is classified in heading 3402 as other surface-active/washing preparations put up for retail sale.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 625,
+      "completion_tokens": 695,
+      "total_tokens": 1320,
+      "cost": 0.0082,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0082,
+        "upstream_inference_prompt_cost": 0.00125,
+        "upstream_inference_completions_cost": 0.00695
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3402205100",
+  "predicted_reason": "Retail-packaged surface-active washing preparation based on a nonionic surfactant (Laureth-3) for textile cleaning is classified in heading 3402 as other surface-active/washing preparations put up for retail sale.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 625,
+    "completion_tokens": 695,
+    "total_tokens": 1320,
+    "cost": 0.0082,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0082,
+      "upstream_inference_prompt_cost": 0.00125,
+      "upstream_inference_completions_cost": 0.00695
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:20.955031+00:00",
+  "latency_s": 6.92,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

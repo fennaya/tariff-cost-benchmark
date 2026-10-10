@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363652",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9503000090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596714-Wvdc5AWlrfsVVssnZbto",
+    "object": "chat.completion",
+    "created": 1791596714,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on doll/minifigure clothing made of laser-cut materials (perhaps leather or fabric). Doll clothing and accessories are classified in heading 9503 as parts and accessories of dolls. Specifically, 9503.00.00 covers \"Tricycles, scooters, pedal cars and similar wheeled toys; dolls' carriages; dolls; other toys; reduced-size models; puzzles; parts and accessories thereof.\"\n\nUnder the current HTSUS, the relevant subheadings are:\n- 9503.00.00 with statistical suffixes\n- 9503.00.0070 is \"Other toys; \u2026 : Other\"\n- 9503.00.0073 is \"Toy figures of plastics: Other\"\n- 9503.00.0080 is \"Other: Stuffed toys\"\n- 9503.00.0090 is \"Other\"\n\nDolls' clothing and accessories would fall under the \"parts and accessories\" provision. In the older HTSUS, 9503.70 was toys in sets, and 9503.90 was other. Current (2022+) structure: 9503.00.00 with suffixes: 9503.00.0073 for \"Parts and accessories of dolls... \" Actually I recall 9503.00.0071 \"Dolls representing only human beings and parts and accessories thereof: Other\"... The doll clothing is typically 9503.00.0071 or 9503.00.0073. A minifigure is a toy figure, not necessarily a doll representing a human being. The \"Toys representing animals or non-human creatures\" are 9503.00.0041... Minifigures represent humans, so the \"Dolls... parts and accessories\" line applies: 9503.00.0071 is \"Other\" within the dolls category (with 9503.00.0070 or 0071 covering the \"Parts and accessories\"). I'll choose 9503.00.0071.\n\n```json\n{\"hts_code\": \"9503.00.0071\", \"reason\": \"Laser-cut minifigure clothing and accessories (baldric, tabard, hood, cloak, loincloth) are accessories of toy figures representing humans, classified in heading 9503 as parts and accessories of dolls.\"}\n```\n\n{\"hts_code\": \"9503.00.0071\", \"reason\": \"Laser-cut minifigure clothing and accessories (baldric, tabard, hood, cloak, loincloth) are accessories of toy figures representing humans, classified in heading 9503 as parts and accessories of dolls.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 382,
+      "completion_tokens": 805,
+      "total_tokens": 1187,
+      "cost": 0.008814,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008814,
+        "upstream_inference_prompt_cost": 0.000764,
+        "upstream_inference_completions_cost": 0.00805
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000071",
+  "predicted_reason": "Laser-cut minifigure clothing and accessories (baldric, tabard, hood, cloak, loincloth) are accessories of toy figures representing humans, classified in heading 9503 as parts and accessories of dolls.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 382,
+    "completion_tokens": 805,
+    "total_tokens": 1187,
+    "cost": 0.008814,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008814,
+      "upstream_inference_prompt_cost": 0.000764,
+      "upstream_inference_completions_cost": 0.00805
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:14.333759+00:00",
+  "latency_s": 7.155,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

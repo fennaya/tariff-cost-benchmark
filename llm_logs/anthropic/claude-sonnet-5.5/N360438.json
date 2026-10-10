@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360438",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "9403200050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596080-HQKKqsDGJeqLWu004gP1",
+    "object": "chat.completion",
+    "created": 1791596080,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on an umbrella stand made of sheet metal. Furniture of metal falls under 9403. Heading 9403.20 covers other metal furniture, and 9403.20.00 breaks down into statistical suffixes. 9403.20.0050 is \"Other\" metal furniture, and 9403.20.0020 is for \"Luggage racks, hotel,\" etc.\n\nFor an umbrella stand, rulings (e.g., NY N0xxxx) have classified it under 9403.20.0050 or 9403.20.0090. The current HTSUS has 9403.20.00 with statistical suffixes: 9403.20.0010 (Tables), 9403.20.0020 (Chairs?), and 9403.20.0030... I'm not certain of these. I recall 9403.20.0011 (Of tubular construction, Other... ), 9403.20.0018 (Other), 9403.20.0050 (Other). Based on those, I'll choose 9403.20.0090 as the \"Other\" line, though I recall the 9403.20.00 line also has 9403.20.0050 \"Other: Other.\" I'm going with 9403.20.0090.\n\nDutiable status: 9403.20.00 is free. I'll go with the \"Other\" statistical suffix.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"A floor-standing sheet metal umbrella stand is furniture of metal not elsewhere specified, classified in heading 9403 as other metal furniture (subheading 9403.20).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 339,
+      "completion_tokens": 499,
+      "total_tokens": 838,
+      "cost": 0.005668,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005668,
+        "upstream_inference_prompt_cost": 0.000678,
+        "upstream_inference_completions_cost": 0.00499
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "A floor-standing sheet metal umbrella stand is furniture of metal not elsewhere specified, classified in heading 9403 as other metal furniture (subheading 9403.20).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 499,
+    "total_tokens": 838,
+    "cost": 0.005668,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005668,
+      "upstream_inference_prompt_cost": 0.000678,
+      "upstream_inference_completions_cost": 0.00499
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:40.321704+00:00",
+  "latency_s": 5.095,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

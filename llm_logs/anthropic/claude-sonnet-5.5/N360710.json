@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360710",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403200078",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596136-jzknlLH2PAXvgVPoBmgV",
+    "object": "chat.completion",
+    "created": 1791596136,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on steel storage lockers. Galvanized steel lockers would fall under heading 9403 (other furniture) or 7326 (other articles of iron or steel). Heading 9403.20 covers other metal furniture, but a ruling on tool or equipment storage lockers could go either way.\n\nThe lockers are floor standing, have shelves, and are used for storing equipment. Metal furniture in 9403 is generally for offices, workshops, and similar settings. Lockers and cabinets with shelves are commonly classified as 9403.20.0080 (\"other metal furniture\"), and the Skid Locker is similar. I recall a ruling, possibly NY N2xxxx, that classified \"Standard Locker\" and \"Skid Locker\" in 9403.20.0020 (metal furniture, other, \"Other: Cabinets\"?). Within 9403.20.00 the statistical suffixes are: 9403.20.0010 Tables; 0015 Other, Household-type? 9403.20.0020 Other: Furniture designed for use in non-domestic... Actually, the suffixes I remember: 9403.20.0011 (luggage racks, bed ...?), 9403.20.0018 (other, household), 9403.20.0020 (other, other: Other?), and 9403.20.0025 (Cabinets?). I'm not sure about those. I'll go with 9403.20.0050 for other metal furniture, though I can't confirm the suffix.\n\nAlternatively 7326.90.8688 is possible, but the shelves and furniture-like use make 9403 the better fit. The unassembled shipment is classified as assembled under GRI 2(a).\n\nI'll answer 9403.20.0090, which I believe is the \"Other\" statistical suffix for other metal furniture, and I'm uncertain about it.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"Unassembled freestanding galvanized steel storage lockers with shelves are classified as assembled other metal furniture under GRI 1 and 2(a) in heading 9403.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 788,
+      "completion_tokens": 675,
+      "total_tokens": 1463,
+      "cost": 0.008326,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008326,
+        "upstream_inference_prompt_cost": 0.001576,
+        "upstream_inference_completions_cost": 0.00675
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "Unassembled freestanding galvanized steel storage lockers with shelves are classified as assembled other metal furniture under GRI 1 and 2(a) in heading 9403.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 788,
+    "completion_tokens": 675,
+    "total_tokens": 1463,
+    "cost": 0.008326,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008326,
+      "upstream_inference_prompt_cost": 0.001576,
+      "upstream_inference_completions_cost": 0.00675
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:37.089040+00:00",
+  "latency_s": 6.711,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

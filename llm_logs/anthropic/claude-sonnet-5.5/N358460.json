@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358460",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595616-gumoqQJ1YGrNwk2PZYW8",
+    "object": "chat.completion",
+    "created": 1791595616,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Classification candidates: a plastic box with a combination lock and cable. HTS 8303 covers armored or reinforced safes, strong-boxes and doors, and safe deposit lockers, of base metal. A plastic safe is not base metal, so 8303 does not apply. 3923 covers plastic articles for the conveyance or packing of goods, including boxes, and 3923.90 covers \"other\". 4202 covers cases and containers, but that heading is for specific types of cases and does not fit a plastic safe box. 9403 is furniture and does not fit either. Lockable plastic boxes could also be 3926.90.99, other articles of plastics.\n\nThe article is a container for safeguarding valuables rather than for the conveyance or packing of goods. CBP rulings on plastic lock boxes, for example medication lock boxes, have gone to 3923.10.90 (boxes, cases, crates and similar articles) or 3926.90.99. For a beach safe, I think 3923.10.90 is the most likely: \"Boxes, cases, crates and similar articles: Other\". The 3923.10 subheading is 3923.10.90 in the current schedule, with 3923.10.00 for the 10-digit root. The statistical suffix is 3923.10.9000.\n\n{\"hts_code\": \"3923.10.9000\", \"reason\": \"A rigid molded ABS plastic lockable box with a lid is a plastic box or case for holding goods, so it falls under heading 3923 (3923.10.90), not 8303, which covers base-metal safes.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 501,
+      "total_tokens": 826,
+      "cost": 0.00566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00566,
+        "upstream_inference_prompt_cost": 0.00065,
+        "upstream_inference_completions_cost": 0.00501
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3923109000",
+  "predicted_reason": "A rigid molded ABS plastic lockable box with a lid is a plastic box or case for holding goods, so it falls under heading 3923 (3923.10.90), not 8303, which covers base-metal safes.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 325,
+    "completion_tokens": 501,
+    "total_tokens": 826,
+    "cost": 0.00566,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00566,
+      "upstream_inference_prompt_cost": 0.00065,
+      "upstream_inference_completions_cost": 0.00501
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:56.617960+00:00",
+  "latency_s": 5.513,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

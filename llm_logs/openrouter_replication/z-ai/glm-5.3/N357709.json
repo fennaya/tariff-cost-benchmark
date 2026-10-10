@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357709",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "8007003200",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599680-dIoileSXozwKfidmPlVS",
+    "object": "chat.completion",
+    "created": 1791599680,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8007.90.6500\", \"reason\": \"Tin-lead solder powder with tin predominating is a tin alloy article, and HTSUS subheading 8007.90.65 specifically covers solder of tin.\"}",
+          "refusal": null,
+          "reasoning": "Tin-lead solder powder \u2014 lead content 37%, tin base? Classification: solder powder Sn63Pb37 classified under 8005? Actually tin alloys: HTS 8003? Solder of tin alloys \u2014 8003.00? Tin alloy solder: heading 8003 \"Tin bars, rods...\" no. Solder in 8007? Tin unwrought 8001; solder typically 8007.90? Actually solder paste/powder: NY ruling classifies Sn63Pb37 solder powder under 8005? Let me recall: heading 8005 is tin plates. Solder classified in 8007.90.00? There's ruling on tin-lead solder powder classified 8007.90.0000? Hmm, lead solder with tin predominating is tin alloy \u2192 8007.90.65? I recall HTS 8007.90.65 \"Solder (including solder wire and solder pipe)\". Yes, statistical suffix 65 for solder. So 8007.90.6500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Tin-lead solder powder \u2014 lead content 37%, tin base? Classification: solder powder Sn63Pb37 classified under 8005? Actually tin alloys: HTS 8003? Solder of tin alloys \u2014 8003.00? Tin alloy solder: heading 8003 \"Tin bars, rods...\" no. Solder in 8007? Tin unwrought 8001; solder typically 8007.90? Actually solder paste/powder: NY ruling classifies Sn63Pb37 solder powder under 8005? Let me recall: heading 8005 is tin plates. Solder classified in 8007.90.00? There's ruling on tin-lead solder powder classified 8007.90.0000? Hmm, lead solder with tin predominating is tin alloy \u2192 8007.90.65? I recall HTS 8007.90.65 \"Solder (including solder wire and solder pipe)\". Yes, statistical suffix 65 for solder. So 8007.90.6500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 223,
+      "completion_tokens": 274,
+      "total_tokens": 497,
+      "cost": 0.001323833,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001323833,
+        "upstream_inference_prompt_cost": 8.633e-06,
+        "upstream_inference_completions_cost": 0.0013152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 229,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8007906500",
+  "predicted_reason": "Tin-lead solder powder with tin predominating is a tin alloy article, and HTSUS subheading 8007.90.65 specifically covers solder of tin.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 223,
+    "completion_tokens": 274,
+    "total_tokens": 497,
+    "cost": 0.001323833,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001323833,
+      "upstream_inference_prompt_cost": 8.633e-06,
+      "upstream_inference_completions_cost": 0.0013152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 229,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:40.807610+00:00",
+  "latency_s": 2.084,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

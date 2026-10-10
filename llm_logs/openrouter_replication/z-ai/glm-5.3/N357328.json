@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357328",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599620-9cNz3s8rNkVqr10aEmKh",
+    "object": "chat.completion",
+    "created": 1791599620,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1302.19.9190\", \"reason\": \"The glycerin-water liquid extracts of plant botanicals, containing no residual plant particles, are vegetable extracts not elsewhere specified, classified in heading 1302 as other vegetable extracts.\"}",
+          "refusal": null,
+          "reasoning": "Glycerite herbal extracts \u2014 likely 1302.19 or food preparation 2106? CBP has ruled herbal glycerites as 1302.19.9190? Actually 1302.19.9190 \"Other, Other\" \u2014 vegetable extracts. Use 1302.19.9190.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Glycerite herbal extracts \u2014 likely 1302.19 or food preparation 2106? CBP has ruled herbal glycerites as 1302.19.9190? Actually 1302.19.9190 \"Other, Other\" \u2014 vegetable extracts. Use 1302.19.9190.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 297,
+      "completion_tokens": 126,
+      "total_tokens": 423,
+      "cost": 0.00057816,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00057816,
+        "upstream_inference_prompt_cost": 2.376e-05,
+        "upstream_inference_completions_cost": 0.0005544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302199190",
+  "predicted_reason": "The glycerin-water liquid extracts of plant botanicals, containing no residual plant particles, are vegetable extracts not elsewhere specified, classified in heading 1302 as other vegetable extracts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 297,
+    "completion_tokens": 126,
+    "total_tokens": 423,
+    "cost": 0.00057816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00057816,
+      "upstream_inference_prompt_cost": 2.376e-05,
+      "upstream_inference_completions_cost": 0.0005544
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:33:40.985916+00:00",
+  "latency_s": 1.984,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

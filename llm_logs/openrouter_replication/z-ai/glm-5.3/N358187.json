@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358187",
+  "rulingDate": "2026-02-25T00:00:00",
+  "true_code": "3004909225",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599733-7zahoeWK12xFmbnRcjcU",
+    "object": "chat.completion",
+    "created": 1791599733,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.9190\", \"reason\": \"Sacubitril/valsartan tablets are dosed cardiovascular medicaments not enumerated elsewhere, classifiable under HTSUS 3004.90.9190 (other medicaments for therapeutic or prophylactic uses, put up in measured doses).\"}",
+          "refusal": null,
+          "reasoning": "Enteralin \u2014 sacubitril/valsartan. HTS 3004.90.91... Medicaments, other, measured doses. Likely 3004.90.9190? Actually cardiovascular drugs: 3004.90.9140? There's 3004.90.91 \"Other\" \u2014 3004.90.9190. But there are specific: 3004.90.9120? Hmm. Common answer: 3004.90.9190.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Enteralin \u2014 sacubitril/valsartan. HTS 3004.90.91... Medicaments, other, measured doses. Likely 3004.90.9190? Actually cardiovascular drugs: 3004.90.9140? There's 3004.90.91 \"Other\" \u2014 3004.90.9190. But there are specific: 3004.90.9120? Hmm. Common answer: 3004.90.9190.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 183,
+      "total_tokens": 395,
+      "cost": 0.00057675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00057675,
+        "upstream_inference_prompt_cost": 0.00011925,
+        "upstream_inference_completions_cost": 0.0004575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 109,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909190",
+  "predicted_reason": "Sacubitril/valsartan tablets are dosed cardiovascular medicaments not enumerated elsewhere, classifiable under HTSUS 3004.90.9190 (other medicaments for therapeutic or prophylactic uses, put up in measured doses).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 183,
+    "total_tokens": 395,
+    "cost": 0.00057675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00057675,
+      "upstream_inference_prompt_cost": 0.00011925,
+      "upstream_inference_completions_cost": 0.0004575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 109,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:35:33.582101+00:00",
+  "latency_s": 1.816,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

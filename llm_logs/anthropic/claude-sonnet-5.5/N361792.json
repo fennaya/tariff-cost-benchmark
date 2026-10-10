@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361792",
+  "rulingDate": "2026-06-04T00:00:00",
+  "true_code": "6116107520",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596346-RN0Y3l7zWQlReMYCEpup",
+    "object": "chat.completion",
+    "created": 1791596346,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on gloves made of polyester knit fabric with a TPU membrane between layers. The glove is a knit glove, and the question is whether it is impregnated, coated, or covered with plastics (heading 6116) or is simply a knit glove of another type.\n\nHeading 6116 covers knit gloves impregnated, coated, or covered with plastics. A membrane laminated between fabric layers is a laminated fabric, which would put the glove in the 6116.93 range (synthetic fibers). But if the fabric is laminated with a membrane sandwiched in between, the outer surface is still plain textile, so it would not count as coated. The glove would then fall under 6116.93.88 (other, of synthetic fibers) or 6116.99.\n\nFourchettes imply a cut-and-sewn construction, but the fabric is knit, so the glove is still classified in chapter 61. The fabric is a laminate, and under Chapter 59 Note 1 and Chapter 56 a laminated knit fabric could be 5903. Heading 6116 covers gloves \"impregnated, coated or covered with plastics\", and I recall rulings classifying such waterproof-membrane gloves in 6116.10. The Pro version has coated plastic overlays and silicone grip designs. The first style has no coating on the exterior, so it is likely 6116.93.88.\n\nI recall the combined ruling classifying both gloves in 6116.93.88.\n\nSubheading 6116.93.88 is \"Other: Of synthetic fibers: Other\", and I believe the statistical suffix is 6116.93.8800.\n\n{\"hts_code\": \"6116.93.8800\", \"reason\": \"Knit gloves of synthetic fiber (polyester) with a laminated TPU membrane between layers, not coated or covered on the outer surface, fall in the 6116.93 'other, of synthetic fibers' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 620,
+      "total_tokens": 1072,
+      "cost": 0.007104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007104,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.0062
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6116938800",
+  "predicted_reason": "Knit gloves of synthetic fiber (polyester) with a laminated TPU membrane between layers, not coated or covered on the outer surface, fall in the 6116.93 'other, of synthetic fibers' provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 620,
+    "total_tokens": 1072,
+    "cost": 0.007104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007104,
+      "upstream_inference_prompt_cost": 0.000904,
+      "upstream_inference_completions_cost": 0.0062
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:07.262105+00:00",
+  "latency_s": 5.952,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

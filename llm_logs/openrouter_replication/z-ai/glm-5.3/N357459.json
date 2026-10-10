@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357459",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599650-M3dmH5AwmtarVSfttakm",
+    "object": "chat.completion",
+    "created": 1791599650,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.43.0060\", \"reason\": \"The flimsy construction and loose, exposed stitching indicate a fancy dress costume of man-made fibers, classified in HTSUS 6211.43.0060.\"",
+          "refusal": null,
+          "reasoning": "Fancy dress costume of man-made fibers: 6211.43.0060? Costumes classified as fancy dress in 6211.43. NY ruling \u2014 flimsy construction \u2192 6211.43.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fancy dress costume of man-made fibers: 6211.43.0060? Costumes classified as fancy dress in 6211.43. NY ruling \u2014 flimsy construction \u2192 6211.43.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 111,
+      "total_tokens": 356,
+      "cost": 0.0003912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003912,
+        "upstream_inference_prompt_cost": 0.000147,
+        "upstream_inference_completions_cost": 0.0002442
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Expecting ',' delimiter: line 1 column 179 (char 178)",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 111,
+    "total_tokens": 356,
+    "cost": 0.0003912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003912,
+      "upstream_inference_prompt_cost": 0.000147,
+      "upstream_inference_completions_cost": 0.0002442
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:34:10.807845+00:00",
+  "latency_s": 0.96,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

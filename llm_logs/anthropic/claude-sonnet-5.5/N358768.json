@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358768",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595663-3NdqQpzxkoSsgpseZzWs",
+    "object": "chat.completion",
+    "created": 1791595663,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on framed Halloween wall art. The candidate classifications are:\n\n- 9705 (collections/collectors' pieces) does not apply.\n- 4911.91 (other printed pictures, designs and photographs) covers printed pictures. Framed printed pictures are generally 4911.91 unless the frame gives the item its essential character. Note 3 to chapter 49 and the chapter 49 notes come into play here.\n- 9505.90.60 covers festive articles, including Halloween items. However, the Halloween decoration must be a festive article. Framed wall art with a Halloween theme has been ruled to be 9505.90.6000 in some rulings. Others hold that flat printed pictures are excluded from chapter 95 because they are classified in 4911 (Explanatory Notes say 9505 excludes printed matter). The more common outcome for framed Halloween printed art is 4911.91.\n\nChapter 95 does not exclude printed matter by its notes. However, CBP rulings on \"Halloween framed wall art\" (e.g., N-series rulings) put framed printed Halloween signs in 9505.90.6000 as festive articles. I recall rulings on wood-framed \"Trick or Treat\" signs classified under 9505. For a framed image under glass, I believe CBP often uses 4911.91.40 or 4911.91.2040. Because the item is a framed print and its essential character comes from the printed image, I choose 4911.91.\n\nSubheading choices under 4911.91 are:\n- 4911.91.20: photographs, pictures, and designs, lithographs\n- 4911.91.30: printed over 1 year (\"Other: Printed not over 20 years\")\n- 4911.91.40: other, with statistical suffix 4911.91.4080 (\"Other\")\n\nSince this is a decorative print, 4911.91.40.80 applies.\n\n```json\n{\"hts_code\": \"4911.91.4080\", \"reason\": \"The framed printed Halloween guest-check image is a decorative printed picture whose essential character comes from the print, so it is classified in heading 4911 as an other printed picture.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 691,
+      "total_tokens": 946,
+      "cost": 0.00742,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00742,
+        "upstream_inference_prompt_cost": 0.00051,
+        "upstream_inference_completions_cost": 0.00691
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4911914080",
+  "predicted_reason": "The framed printed Halloween guest-check image is a decorative printed picture whose essential character comes from the print, so it is classified in heading 4911 as an other printed picture.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 691,
+    "total_tokens": 946,
+    "cost": 0.00742,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00742,
+      "upstream_inference_prompt_cost": 0.00051,
+      "upstream_inference_completions_cost": 0.00691
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:43.512980+00:00",
+  "latency_s": 7.106,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359763",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8525893000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595918-15bnThz3dhmajykF44Uq",
+    "object": "chat.completion",
+    "created": 1791595918,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a camera that captures video and transmits it to a gateway and cannot record, so it is not a video camera recorder under 8525.80.30 (television cameras, digital cameras and video camera recorders). Television cameras are classified in 8525.80. The relevant CBP ruling concerns Lytx cameras, which I recall as classified in 8525.89 after the 2022 HTS revision (8525.89.xx for other television cameras). Before 2022, 8525.80.40 covered other television cameras.\n\nIn the current HTSUS, 8525.81 covers high-speed cameras, 8525.82 covers other radiation-hardened cameras, 8525.83 covers night vision cameras, and 8525.89 covers other cameras. Under 8525.89, the statistical suffixes are 8525.89.1000 for other television cameras... I believe 8525.89.10 is \"Television cameras\" and 8525.89.20 is \"Digital cameras\", with 8525.89.40 for \"Other.\" Since this unit is a camera that transmits video but cannot record, it is not a digital camera or video camera recorder. The best fit is 8525.89.4000 or the television cameras line, and I'll choose 8525.89.4000.\n\n{\"hts_code\": \"8525.89.4000\", \"reason\": \"A windshield-mount camera that captures video and transmits it to a gateway but cannot record is an 'other' television camera of heading 8525, not a recording camera, so it falls under subheading 8525.89.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 299,
+      "completion_tokens": 484,
+      "total_tokens": 783,
+      "cost": 0.005438,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005438,
+        "upstream_inference_prompt_cost": 0.000598,
+        "upstream_inference_completions_cost": 0.00484
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8525894000",
+  "predicted_reason": "A windshield-mount camera that captures video and transmits it to a gateway but cannot record is an 'other' television camera of heading 8525, not a recording camera, so it falls under subheading 8525.89.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 484,
+    "total_tokens": 783,
+    "cost": 0.005438,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005438,
+      "upstream_inference_prompt_cost": 0.000598,
+      "upstream_inference_completions_cost": 0.00484
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:59.058817+00:00",
+  "latency_s": 5.015,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

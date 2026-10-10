@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363965",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "4602900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596750-mITt0As42mBHN9JsAYKc",
+    "object": "chat.completion",
+    "created": 1791596750,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a woven polypropylene sack used for packing goods. Sacks and bags of man-made textile materials fall in heading 6305. Strip of polypropylene (width over 5mm) is not \"strip and the like\" of heading 5404 (which requires width \u22645 mm), so the fabric is not a woven fabric of textile strip; it is classified under 5407 only if the strip is \u22645 mm. With 5.68 mm, the material is plaiting material of Chapter 46, which is not a textile. So the bag would fall under heading 4602 (basketwork), or perhaps 3923 (plastic articles for conveyance or packing of goods). CBP rulings on woven polypropylene bags with strips wider than 5 mm have classified them in 6305.33.0020 if the strips are \u22645 mm. For wider strips, rulings generally apply 4602.19.2900 or 3923.21. I recall that the laminated woven polypropylene bag with strips over 5 mm is classified in 4602.19.2900 (\"Basketwork, wickerwork and other articles, made directly to shape from plaiting materials... Other: Other\"). Some rulings have also used 3923.29.0000. Strips of plastic wider than 5 mm woven are plaiting materials under Note 2 to Chapter 46, so I'd go with 4602.\n\nThe code is 4602.19.2900 or the more specific subheading. Within 4602.19, the statistical suffix options are 4602.19.05 for gift items, 4602.19.2500 for Bags... I believe the 4602.19.2900 (\"Other\") fits.\n\n{\"hts_code\": \"4602.19.2900\", \"reason\": \"Because the woven polypropylene strips are wider than 5 mm, they are plaiting materials of Chapter 46 rather than textile strip, so the bag is an article made of plaiting materials classified in heading 4602.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 325,
+      "completion_tokens": 618,
+      "total_tokens": 943,
+      "cost": 0.00683,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00683,
+        "upstream_inference_prompt_cost": 0.00065,
+        "upstream_inference_completions_cost": 0.00618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4602192900",
+  "predicted_reason": "Because the woven polypropylene strips are wider than 5 mm, they are plaiting materials of Chapter 46 rather than textile strip, so the bag is an article made of plaiting materials classified in heading 4602.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 325,
+    "completion_tokens": 618,
+    "total_tokens": 943,
+    "cost": 0.00683,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00683,
+      "upstream_inference_prompt_cost": 0.00065,
+      "upstream_inference_completions_cost": 0.00618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:50.479982+00:00",
+  "latency_s": 6.416,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

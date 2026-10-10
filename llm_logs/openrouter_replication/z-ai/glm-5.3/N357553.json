@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357553",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "6211421075",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599663-OIX1C40vTzqRmODiPtI5",
+    "object": "chat.completion",
+    "created": 1791599663,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6204.32.0010\", \"reason\": \"A woman's woven cotton jacket (98% cotton, 2% elastane) is classified as a women's jacket/blazer of cotton under heading 6204, subheading 6204.32, other.\"}",
+          "refusal": null,
+          "reasoning": "Women's cotton jacket, not knit \u2014 6204.32? Actually jackets of cotton woven: 6204.33 is synthetic; cotton is 6204.32? 6204.32 is ensembles? Let me recall: 6204.31 wool, 6204.32 cotton, 6204.33 synthetic \u2014 these are for \"jackets and blazers\". Yes, 6204.32.0010? Women's jackets/blazers of cotton, duty rate 16.5%? Subheading 6204.32.0000? There's 6204.32.0010 \"Other\". Use 6204.32.0010.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Women's cotton jacket, not knit \u2014 6204.32? Actually jackets of cotton woven: 6204.33 is synthetic; cotton is 6204.32? 6204.32 is ensembles? Let me recall: 6204.31 wool, 6204.32 cotton, 6204.33 synthetic \u2014 these are for \"jackets and blazers\". Yes, 6204.32.0010? Women's jackets/blazers of cotton, duty rate 16.5%? Subheading 6204.32.0000? There's 6204.32.0010 \"Other\". Use 6204.32.0010.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 170,
+      "completion_tokens": 220,
+      "total_tokens": 390,
+      "cost": 0.0009918,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009918,
+        "upstream_inference_prompt_cost": 2.38e-05,
+        "upstream_inference_completions_cost": 0.000968
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 98,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6204320010",
+  "predicted_reason": "A woman's woven cotton jacket (98% cotton, 2% elastane) is classified as a women's jacket/blazer of cotton under heading 6204, subheading 6204.32, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 170,
+    "completion_tokens": 220,
+    "total_tokens": 390,
+    "cost": 0.0009918,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009918,
+      "upstream_inference_prompt_cost": 2.38e-05,
+      "upstream_inference_completions_cost": 0.000968
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 98,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:34:24.166818+00:00",
+  "latency_s": 5.187,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361396",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "6405209015",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596267-zBOtliZLz28tVR2Kquhj",
+    "object": "chat.completion",
+    "created": 1791596267,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a slipper with a textile upper and a rubber/plastic outer sole that has embedded textile threads. The outer sole is 1.5 mm thick with textile threads visible on most of the ground-contacting surface. Under Chapter 64 Note 4(a), the outer sole material is the one that gives the most ground contact. Additional U.S. Note 5 to Chapter 64 says that textile materials do not count as outer sole material when they are only for added grip and are not visible. Here the textile is visible on most of the surface, so the textile is probably the constituent material of the outer sole. That would place the slipper in 6405 (other footwear), not 6404 or 6402.\n\nWithin 6405, the upper is textile, so 6405.20 (with soles of rubber/plastics/leather/composition leather and uppers of textile materials) does not fit. 6405.20 covers \"with uppers of textile materials.\" Subheading 6405.20.90 covers other, and 6405.20.30 covers footwear with uppers of wool felt. With a textile outer sole and textile upper, the slipper falls under 6405.20.\n\nFor 6405.20.90, the 10-digit codes are 6405.20.9030 (house slippers, women's), 6405.20.9060 (other, men's), and 6405.20.9090 (other). The 6405.20.90 subheading breaks out as: 6405.20.9030 \"Slippers and other footwear, house footwear\"? I believe 6405.20.9030 is \"Valued over $...?\" I am not certain, so the most likely choice is a house-slipper statistical suffix. I recall 6405.20.9060 as \"Footwear with open toe or open heel; Slippers...\" and 6405.20.9090 as \"Other.\" I will go with 6405.20.9060.\n\n```json\n{\"hts_code\": \"6405.20.9060\", \"reason\": \"Because the textile threads embedded in the outer sole are visible over most of the ground-contact surface, the outer sole is treated as textile, so the slipper with a textile upper falls in 6405.20 (other footwear, uppers of textile materials), in the house slipper statistical suffix.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 283,
+      "completion_tokens": 709,
+      "total_tokens": 992,
+      "cost": 0.007656,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007656,
+        "upstream_inference_prompt_cost": 0.000566,
+        "upstream_inference_completions_cost": 0.00709
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6405209060",
+  "predicted_reason": "Because the textile threads embedded in the outer sole are visible over most of the ground-contact surface, the outer sole is treated as textile, so the slipper with a textile upper falls in 6405.20 (other footwear, uppers of textile materials), in the house slipper statistical suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 709,
+    "total_tokens": 992,
+    "cost": 0.007656,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007656,
+      "upstream_inference_prompt_cost": 0.000566,
+      "upstream_inference_completions_cost": 0.00709
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:47.288195+00:00",
+  "latency_s": 7.34,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

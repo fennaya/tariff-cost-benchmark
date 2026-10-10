@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359729",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8544493080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599950-ud0o74eKOqhDJftarGFT",
+    "object": "chat.completion",
+    "created": 1791599950,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.9090\", \"reason\": \"An unterminated insulated copper data cable rated 250V with PVC sheath is classified as other electric conductors for voltage not exceeding 1,000 V.\"}",
+          "refusal": null,
+          "reasoning": "8544.42.9090? Data cable, insulated copper conductors, not fitted with connectors, with outer PVC sheath \u2014 other electric conductors, with fittings? No connectors \u2192 8544.42.9090 (other conductors, electric, for voltage \u22641000V, other). Actually 8544.42 covers conductors fitted with connectors? No\u20148544.42 is \"with fittings\"? 8544.42.9090: other electric conductors for a voltage not exceeding 1,000 V, other. Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "8544.42.9090? Data cable, insulated copper conductors, not fitted with connectors, with outer PVC sheath \u2014 other electric conductors, with fittings? No connectors \u2192 8544.42.9090 (other conductors, electric, for voltage \u22641000V, other). Actually 8544.42 covers conductors fitted with connectors? No\u20148544.42 is \"with fittings\"? 8544.42.9090: other electric conductors for a voltage not exceeding 1,000 V, other. Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 177,
+      "total_tokens": 393,
+      "cost": 0.000858024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000858024,
+        "upstream_inference_prompt_cost": 8.424e-06,
+        "upstream_inference_completions_cost": 0.0008496
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 123,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "An unterminated insulated copper data cable rated 250V with PVC sheath is classified as other electric conductors for voltage not exceeding 1,000 V.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 177,
+    "total_tokens": 393,
+    "cost": 0.000858024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000858024,
+      "upstream_inference_prompt_cost": 8.424e-06,
+      "upstream_inference_completions_cost": 0.0008496
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 123,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:39:11.205722+00:00",
+  "latency_s": 1.379,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

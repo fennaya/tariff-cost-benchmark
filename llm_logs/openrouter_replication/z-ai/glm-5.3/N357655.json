@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357655",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8544700000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599675-nuw0I3gblSFnW1UtfXFx",
+    "object": "chat.completion",
+    "created": 1791599675,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.70.0000\", \"reason\": \"These are unconnectorized optical fiber cables for data transmission, classified as insulated optical fiber cables under heading 8544.\"}",
+          "refusal": null,
+          "reasoning": "Optical fiber cables, 8544.70.0000... 10-digit: 8544.70.0000? Actually HTSUS 8544.70.00.00 \u2192 \"8544.70.0000\". Insulated cable with optical fibers.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Optical fiber cables, 8544.70.0000... 10-digit: 8544.70.0000? Actually HTSUS 8544.70.00.00 \u2192 \"8544.70.0000\". Insulated cable with optical fibers.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 502,
+      "completion_tokens": 108,
+      "total_tokens": 610,
+      "cost": 0.000537978,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000537978,
+        "upstream_inference_prompt_cost": 1.9578e-05,
+        "upstream_inference_completions_cost": 0.0005184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 64,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544700000",
+  "predicted_reason": "These are unconnectorized optical fiber cables for data transmission, classified as insulated optical fiber cables under heading 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 502,
+    "completion_tokens": 108,
+    "total_tokens": 610,
+    "cost": 0.000537978,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000537978,
+      "upstream_inference_prompt_cost": 1.9578e-05,
+      "upstream_inference_completions_cost": 0.0005184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:35.548469+00:00",
+  "latency_s": 1.57,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

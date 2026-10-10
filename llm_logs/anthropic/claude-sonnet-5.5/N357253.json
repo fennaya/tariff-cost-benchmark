@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357253",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3006305000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595348-bDrCNLtySPcITeCUBLLR",
+    "object": "chat.completion",
+    "created": 1791595348,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Indocyanine green is a diagnostic agent for patient use, so it would fall under heading 3006 (pharmaceutical goods) or 3822 (diagnostic reagents). Heading 3006.30 covers opacifying preparations for X-ray examinations and diagnostic reagents designed to be administered to the patient. Indocyanine green is an organic compound, but once put up in vials as an injection for diagnostic use it is a medicament or diagnostic reagent. Heading 3006.30.00 is the better fit, since it covers diagnostic reagents administered to patients.\n\nThe HTSUS subheading is 3006.30.10 for \"Opacifying preparations for X-ray examinations; diagnostic reagents designed to be administered to the patient: Opacifying preparations for X-ray examinations,\" and 3006.30.50 for \"Other.\" The 10-digit code is 3006.30.5000. Many other contrast agents, such as those for MRI, are classified at 3006.30.5000.\n\nSome rulings classify ICG in 3004 as a medicament, but because this product is explicitly a diagnostic reagent for patient administration, 3006.30 is the better choice.\n\n{\"hts_code\": \"3006.30.5000\", \"reason\": \"Indocyanine green injection is a diagnostic reagent designed to be administered to the patient, falling under HTSUS 3006.30 (other than X-ray opacifying preparations).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 466,
+      "total_tokens": 717,
+      "cost": 0.005162,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005162,
+        "upstream_inference_prompt_cost": 0.000502,
+        "upstream_inference_completions_cost": 0.00466
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3006305000",
+  "predicted_reason": "Indocyanine green injection is a diagnostic reagent designed to be administered to the patient, falling under HTSUS 3006.30 (other than X-ray opacifying preparations).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 251,
+    "completion_tokens": 466,
+    "total_tokens": 717,
+    "cost": 0.005162,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005162,
+      "upstream_inference_prompt_cost": 0.000502,
+      "upstream_inference_completions_cost": 0.00466
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:28.918546+00:00",
+  "latency_s": 4.697,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

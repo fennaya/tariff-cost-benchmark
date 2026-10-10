@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358308",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "6217109530",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599748-DwwaFCJEgQ0FOYFxsak9",
+    "object": "chat.completion",
+    "created": 1791599748,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6217.10.8030\", \"reason\": \"A fashion belt of sewn textile (polyester webbing over polyurethane) construction is classified as an accessory of man-made fibers in heading 6217.\"}",
+          "refusal": null,
+          "reasoning": "Belt of textile material \u2014 heading 6217? Fashion belt of textile webbing with plastic layer. Classic ruling: belts of textile material classified 6217.10.8030? Actually 6217.10.8030 is \"of man-made fibers\" accessories. Belts of textile: 6217.10.8030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Belt of textile material \u2014 heading 6217? Fashion belt of textile webbing with plastic layer. Classic ruling: belts of textile material classified 6217.10.8030? Actually 6217.10.8030 is \"of man-made fibers\" accessories. Belts of textile: 6217.10.8030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 134,
+      "total_tokens": 340,
+      "cost": 0.000651234,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000651234,
+        "upstream_inference_prompt_cost": 8.034e-06,
+        "upstream_inference_completions_cost": 0.0006432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 86,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6217108030",
+  "predicted_reason": "A fashion belt of sewn textile (polyester webbing over polyurethane) construction is classified as an accessory of man-made fibers in heading 6217.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 134,
+    "total_tokens": 340,
+    "cost": 0.000651234,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000651234,
+      "upstream_inference_prompt_cost": 8.034e-06,
+      "upstream_inference_completions_cost": 0.0006432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 86,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:35:48.817276+00:00",
+  "latency_s": 1.567,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

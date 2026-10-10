@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360246",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3004200083",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596058-OcP4z984aPBbKgrl7Xd6",
+    "object": "chat.completion",
+    "created": 1791596058,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Doxorubicin is an anthracycline antibiotic, and the relevant heading is 3004 (medicaments in measured doses or retail packings). Subheading 3004.20 covers medicaments containing other antibiotics. Within that, the 10-digit statistical lines are as follows:\n- 3004.20.00 has the 10-digit lines 3004.20.0010 through 3004.20.0090.\n- 3004.20.0060 covers \"Other: Other\" in the older schedule.\n- Some versions list 3004.20.0050 for products containing antibiotics of the anthracycline type.\n\nI am not certain which of these applies. My recollection of the current HTSUS is that 3004.20.00 splits into 3004.20.0010 (put up for retail sale), 3004.20.0020, 3004.20.0030, 3004.20.0040, 3004.20.0050, 3004.20.0060, 3004.20.0070, 3004.20.0080, and 3004.20.0090. In practice, doxorubicin liposome is commonly classified under 3004.20.0090 (\"Other\"), though I have not confirmed that line against the schedule.\n\nAnother possibility is 3004.90.9244 for antineoplastic agents, but because the description stresses the antibiotic nature of the product, I chose 3004.20.\n\n{\"hts_code\": \"3004.20.0090\", \"reason\": \"Doxorubicin, an anthracycline antibiotic, is put up in measured-dose vials as a medicament containing antibiotics, so it falls under heading 3004, subheading 3004.20, in the residual 'Other' statistical line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 277,
+      "completion_tokens": 528,
+      "total_tokens": 805,
+      "cost": 0.005834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005834,
+        "upstream_inference_prompt_cost": 0.000554,
+        "upstream_inference_completions_cost": 0.00528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004200090",
+  "predicted_reason": "Doxorubicin, an anthracycline antibiotic, is put up in measured-dose vials as a medicament containing antibiotics, so it falls under heading 3004, subheading 3004.20, in the residual 'Other' statistical line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 277,
+    "completion_tokens": 528,
+    "total_tokens": 805,
+    "cost": 0.005834,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005834,
+      "upstream_inference_prompt_cost": 0.000554,
+      "upstream_inference_completions_cost": 0.00528
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:17.840564+00:00",
+  "latency_s": 6.293,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

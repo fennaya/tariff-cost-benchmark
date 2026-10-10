@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361493",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "7616995190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596295-uJRWOhh5JiltLrHKX7ab",
+    "object": "chat.completion",
+    "created": 1791596295,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a paint shield, a spray shield made of aluminum with a handle. The candidates are 8205.59 (other hand tools), 9603.40 (paint pads/rollers, paint brushes), and 7616.99 (other aluminum articles).\n\nI recall a ruling on a \"Spray Shield\" (GS9858) from Wooster Brush or similar. Painter's hand tools like a masking shield could fall under 8205.59.80 (hand tools not elsewhere specified). Another possibility is 9603.90 (hand-operated mechanical floor sweepers, mops, other brooms/brushes), but a shield doesn't fit there. I believe 9603.40.40 (paint pads and rollers) is not right, and 8205.59.55 (other hand tools of a kind used by painters) is the better fit.\n\nThe 8205.59 subheadings are: 8205.59.10 (Tools for masons, molders, cement workers, plasterers, painters), 8205.59.25 (Other tools of a kind used in woodworking), 8205.59.30 (Other tools used by plumbers), 8205.59.55 (Other: Other), and 8205.59.60. The exact codes are uncertain, but 8205.59.55 is the \"other\" category, and I am fairly confident it is the right fit for a painter's shield.\n\nSince the first line is \"tools for masons, molders, cement workers, plasterers, painters\" under 8205.59.10, which is what I recall, that heading specifically names painters, so a painter's tool could go there. Still, I'm not sure of the subheading numbers. I'll go with 8205.59.5510 (a statistical suffix for \"other\" hand tools), though the statistical suffix may differ.\n\n```json\n{\"hts_code\": \"8205.59.5550\", \"reason\": \"A hand-held aluminum spray shield with a pivoting handle used by painters is a hand tool not elsewhere specified, classified in heading 8205 as an other hand tool.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 260,
+      "completion_tokens": 652,
+      "total_tokens": 912,
+      "cost": 0.00704,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00704,
+        "upstream_inference_prompt_cost": 0.00052,
+        "upstream_inference_completions_cost": 0.00652
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8205595550",
+  "predicted_reason": "A hand-held aluminum spray shield with a pivoting handle used by painters is a hand tool not elsewhere specified, classified in heading 8205 as an other hand tool.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 260,
+    "completion_tokens": 652,
+    "total_tokens": 912,
+    "cost": 0.00704,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00704,
+      "upstream_inference_prompt_cost": 0.00052,
+      "upstream_inference_completions_cost": 0.00652
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:15.499128+00:00",
+  "latency_s": 7.436,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

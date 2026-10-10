@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359397",
+  "rulingDate": "2026-03-24T00:00:00",
+  "true_code": "9504904000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599904-WQTzhV5IY8usMAp1pokS",
+    "object": "chat.completion",
+    "created": 1791599904,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9504.90.0090\", \"reason\": \"A non-coin-operated free-standing skee-ball-style arcade game for indoor amusement falls under the catch-all provision for other games in subheading 9504.90.\"}",
+          "refusal": null,
+          "reasoning": "Likely 9504.40 or arcade game \u2014 this is a skee-ball style game; NY rulings classify such free-standing arcade-style games under 9504.40? Actually skee-ball machines classified 9504.40 (other games operated by coins... no). Non-coin-operated free-standing game \u2014 likely 9504.40.00? There's ruling classifying \"Speedball\" game \u2014 I recall NY N-series classifying under 9504.40.0090? 9504.40 covers table games. Hmm, arcade game 9504.40? 9504.40 is \"other games operated by coins, tokens...\" no, that's 9504.30? 9504.30 = other games operated by coins/tokens; 9504.40 = table games? Actually 9504.40 = \"Other games operated by coins...\" Let me recall: 9504.30 pinball; 9504.40 other coin-operated games; 9504.90 other. Non-coin-operated skee-ball \u2192 9504.90.9090? There's a ruling classifying skee-ball style home game under 9504.90.0090? I'll go 9504.90.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely 9504.40 or arcade game \u2014 this is a skee-ball style game; NY rulings classify such free-standing arcade-style games under 9504.40? Actually skee-ball machines classified 9504.40 (other games operated by coins... no). Non-coin-operated free-standing game \u2014 likely 9504.40.00? There's ruling classifying \"Speedball\" game \u2014 I recall NY N-series classifying under 9504.40.0090? 9504.40 covers table games. Hmm, arcade game 9504.40? 9504.40 is \"other games operated by coins, tokens...\" no, that's 9504.30? 9504.30 = other games operated by coins/tokens; 9504.40 = table games? Actually 9504.40 = \"Other games operated by coins...\" Let me recall: 9504.30 pinball; 9504.40 other coin-operated games; 9504.90 other. Non-coin-operated skee-ball \u2192 9504.90.9090? There's a ruling classifying skee-ball style home game under 9504.90.0090? I'll go 9504.90.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 296,
+      "completion_tokens": 346,
+      "total_tokens": 642,
+      "cost": 0.00154608,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00154608,
+        "upstream_inference_prompt_cost": 2.368e-05,
+        "upstream_inference_completions_cost": 0.0015224
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 288,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9504900090",
+  "predicted_reason": "A non-coin-operated free-standing skee-ball-style arcade game for indoor amusement falls under the catch-all provision for other games in subheading 9504.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 296,
+    "completion_tokens": 346,
+    "total_tokens": 642,
+    "cost": 0.00154608,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00154608,
+      "upstream_inference_prompt_cost": 2.368e-05,
+      "upstream_inference_completions_cost": 0.0015224
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 288,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:38:24.482351+00:00",
+  "latency_s": 4.327,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

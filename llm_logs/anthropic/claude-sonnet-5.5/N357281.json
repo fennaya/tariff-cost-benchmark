@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357281",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "9506996080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595360-vlWQQZ2n6WFvuDCyBSAr",
+    "object": "chat.completion",
+    "created": 1791595360,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on climbing cams (spring-loaded camming devices). I recall similar rulings placing climbing protection under 6506.. no. The likely candidates are 9506.91.00 (articles for general physical exercise, gymnastics, athletics) or 7616.99 (other articles of aluminum). Climbing equipment such as carabiners is classified in 9506.99.xx or 8308. Climbing cams were ruled under 9506.99.2580 (other sports equipment, other).\n\nHTS 9506.99: \"Other: Other: Other\" has 9506.99.60 (other) in the current schedule. The current structure is 9506.99.05 (Basketball, etc.), 9506.99.15 (Baseball), 9506.99.20 (Rackets...), 9506.99.25 (Fishing...), 9506.99.55 (Other: Other), 9506.99.60 (Other). The subheading 9506.91 covers \"Articles and equipment for general physical exercise, gymnastics, athletics\" and climbing equipment is not included there. Therefore 9506.99.6080 would be the statistical suffix for \"Other\". CBP often uses 9506.99.6080 for sports equipment other. I'll go with that.\n\n{\"hts_code\": \"9506.99.6080\", \"reason\": \"Aluminum spring-loaded climbing cams are specialized recreational climbing equipment, classified as other sports equipment under heading 9506 (subheading 9506.99) rather than as aluminum articles.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 671,
+      "completion_tokens": 497,
+      "total_tokens": 1168,
+      "cost": 0.006312,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006312,
+        "upstream_inference_prompt_cost": 0.001342,
+        "upstream_inference_completions_cost": 0.00497
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506996080",
+  "predicted_reason": "Aluminum spring-loaded climbing cams are specialized recreational climbing equipment, classified as other sports equipment under heading 9506 (subheading 9506.99) rather than as aluminum articles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 671,
+    "completion_tokens": 497,
+    "total_tokens": 1168,
+    "cost": 0.006312,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006312,
+      "upstream_inference_prompt_cost": 0.001342,
+      "upstream_inference_completions_cost": 0.00497
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:40.487559+00:00",
+  "latency_s": 5.312,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

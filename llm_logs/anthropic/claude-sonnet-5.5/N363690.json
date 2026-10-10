@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363690",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596715-MtQLzoRXq1Wj0oeDuuk5",
+    "object": "chat.completion",
+    "created": 1791596715,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Classification of a passenger sedan with a spark-ignition engine of 2,500 cc falls in heading 8703. Subheading 8703.23 covers engines of more than 1,500 cc but not more than 3,000 cc. The statistical suffix for new versus used matters: 8703.23.01 is the 8-digit line covering vehicles of that displacement, and its statistical suffixes are 8703.23.0160 for new and 8703.23.0190 for other, which includes used vehicles.\n\nI recall that the HTSUS 8703.23.01 has the suffixes 8703.23.0110 (Electric?). Actually, the older structure is 8703.23.01 with 8703.23.0160 for \"Other\" and 8703.23.0190 for \"Other\". The current structure of 8703.23.01 is: 10 \u2013 Passenger vehicles (new), 50 \u2013 used?, and so on. I am not certain of this. CBP rulings on used Nissan Skylines from Japan cite 8703.23.0190, so I'll use that.\n\n```json\n{\"hts_code\": \"8703.23.0190\", \"reason\": \"A used passenger sedan with a 2,500cc spark-ignition piston engine is classified in heading 8703, subheading 8703.23 (engine over 1,500cc but not over 3,000cc), under the 8703.23.01 line.\"}\n```\n\nFinal answer as required:\n\n{\"hts_code\": \"8703.23.0190\", \"reason\": \"A used passenger sedan with a 2,500cc spark-ignition piston engine falls under heading 8703, subheading 8703.23 (over 1,500cc but not over 3,000cc), in the 8703.23.01 line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 546,
+      "total_tokens": 872,
+      "cost": 0.006112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006112,
+        "upstream_inference_prompt_cost": 0.000652,
+        "upstream_inference_completions_cost": 0.00546
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230190",
+  "predicted_reason": "A used passenger sedan with a 2,500cc spark-ignition piston engine falls under heading 8703, subheading 8703.23 (over 1,500cc but not over 3,000cc), in the 8703.23.01 line.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 546,
+    "total_tokens": 872,
+    "cost": 0.006112,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006112,
+      "upstream_inference_prompt_cost": 0.000652,
+      "upstream_inference_completions_cost": 0.00546
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:15.645575+00:00",
+  "latency_s": 5.12,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

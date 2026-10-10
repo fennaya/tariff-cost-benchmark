@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363253",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600396-6b3MnMlell0irI0SAzqx",
+    "object": "chat.completion",
+    "created": 1791600396,
+    "model": "z-ai/glm-5.3",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3924.10.4000\", \"reason\": \"The ABS plastic clamp is a reusable feeding accessory used at mealtimes, classifiable as other tableware/kitchenware of plastics in subheading 3924.10.\"}",
+          "refusal": null,
+          "reasoning": "Tableware of plastics for household use: 3924.10.4000? Feeding accessory for babies \u2014 other household articles of plastics: 3924.90.10? Actually 3924.10 tableware, kitchenware... 3924.10.40 other. But it's a clamp, not tableware. Could be 3926.90.99 other articles of plastics. It's a feeding accessory \u2014 likely 3924.10.4000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Tableware of plastics for household use: 3924.10.4000? Feeding accessory for babies \u2014 other household articles of plastics: 3924.90.10? Actually 3924.10 tableware, kitchenware... 3924.10.40 other. But it's a clamp, not tableware. Could be 3926.90.99 other articles of plastics. It's a feeding accessory \u2014 likely 3924.10.4000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 162,
+      "total_tokens": 412,
+      "cost": 0.00105254,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 9,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00105254,
+        "upstream_inference_prompt_cost": 0.00033974,
+        "upstream_inference_completions_cost": 0.0007128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 104,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3924104000",
+  "predicted_reason": "The ABS plastic clamp is a reusable feeding accessory used at mealtimes, classifiable as other tableware/kitchenware of plastics in subheading 3924.10.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 250,
+    "completion_tokens": 162,
+    "total_tokens": 412,
+    "cost": 0.00105254,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 9,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00105254,
+      "upstream_inference_prompt_cost": 0.00033974,
+      "upstream_inference_completions_cost": 0.0007128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 104,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Fireworks",
+  "requested_at": "2026-10-10T02:46:36.783948+00:00",
+  "latency_s": 3.347,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

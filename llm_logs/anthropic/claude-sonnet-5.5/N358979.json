@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358979",
+  "rulingDate": "2026-03-16T00:00:00",
+  "true_code": "7615109100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595702-yqukR5OVqGX0vBuLf2gg",
+    "object": "chat.completion",
+    "created": 1791595702,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Lawn sprinklers fall under HTSUS 8424.82 (agricultural or horticultural sprinklers). The subheading 8424.82.00 covers \"Agricultural or horticultural\" mechanical appliances for projecting, dispersing or spraying liquids. The statistical suffixes are 8424.82.0010 for \"Sprinklers\" (the Orbit-type lawn sprinklers) and 8424.82.0090 for \"Other\". My recollection of the schedule is: 8424.82.00 \u2192 8424.82.0010 \"Drip irrigation systems\"? I am unsure. In the current schedule, 8424.82.01 is \"Sprinklers\" under the 2022 revision, while the older structure was 8424.82.00 with suffixes 10 (Sprinklers) and 90 (Other). In the current HTSUS I recall 8424.82.2000 for \"Sprinklers\" and 8424.82.2500 for \"Other\"? That does not seem right either. I believe the current structure is 8424.82.00 with 8424.82.0010 for \"Sprinklers\" and 8424.82.0090 for \"Other\", so I'm going with 8424.82.0010.\n\nCBP rulings on Orbit sprinklers have classified them in 8424.82.0090 or 8424.82.2000, and I recall the \"Other\" breakdown as 8424.82.2000 \"Sprinklers\"... Of these, 8424.82.2000 is what I remember best from the rulings for garden sprinklers, so I'll use it.\n\n{\"hts_code\": \"8424.82.2000\", \"reason\": \"Both are water-pressure-driven garden/lawn sprinklers, which are horticultural mechanical sprinkling appliances classified in heading 8424, subheading 8424.82 (agricultural or horticultural), other sprinklers.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 893,
+      "completion_tokens": 599,
+      "total_tokens": 1492,
+      "cost": 0.007776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007776,
+        "upstream_inference_prompt_cost": 0.001786,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8424822000",
+  "predicted_reason": "Both are water-pressure-driven garden/lawn sprinklers, which are horticultural mechanical sprinkling appliances classified in heading 8424, subheading 8424.82 (agricultural or horticultural), other sprinklers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 893,
+    "completion_tokens": 599,
+    "total_tokens": 1492,
+    "cost": 0.007776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007776,
+      "upstream_inference_prompt_cost": 0.001786,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:22.676270+00:00",
+  "latency_s": 5.268,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

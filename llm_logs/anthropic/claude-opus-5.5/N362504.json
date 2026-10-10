@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362504",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "2309100090",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598293-rnRkWeMxOG06jSmCLzm9",
+    "object": "chat.completion",
+    "created": 1791598293,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Dog or cat food put up for retail sale falls under subheading 2309.10. The products are not in airtight containers, so the statistical suffix is 2309.10.0090 (other) rather than 0010 (airtight containers).\n\nThree products are described, but only one code can be returned. Each would fall under 2309.10.0090 regardless, so that code covers all three.\n\n{\"hts_code\": \"2309.10.0090\", \"reason\": \"The chicken-based treats are dog or cat food put up for retail sale in non-airtight containers, so they fall under heading 2309.10 with the 'other' suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 538,
+      "completion_tokens": 194,
+      "total_tokens": 732,
+      "cost": 0.006032,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006032,
+        "upstream_inference_prompt_cost": 0.002152,
+        "upstream_inference_completions_cost": 0.00388
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2309100090",
+  "predicted_reason": "The chicken-based treats are dog or cat food put up for retail sale in non-airtight containers, so they fall under heading 2309.10 with the 'other' suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 538,
+    "completion_tokens": 194,
+    "total_tokens": 732,
+    "cost": 0.006032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006032,
+      "upstream_inference_prompt_cost": 0.002152,
+      "upstream_inference_completions_cost": 0.00388
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T02:11:33.392494+00:00",
+  "latency_s": 3.765,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363354",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8528520000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596646-bZWHUz4Y5HmAqIZUppyD",
+    "object": "chat.completion",
+    "created": 1791596646,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on the Shiftall MeganeX VR headset. Since it is a monitor with no ADP functions of its own, it is likely classified in heading 8528 as a monitor, specifically 8528.52 (monitors capable of directly connecting to and designed for use with an ADP machine of heading 8471). These are micro-OLED displays, not CRT.\n\nSubheading 8528.52.00 covers \"Other monitors, capable of directly connecting to and designed for use with an automatic data processing machine of heading 8471\". The statistical suffix is 8528.52.0000 on the HTSUS. Under 8528.52.00, the 10-digit codes are 8528.52.0000 (older) and, after 2012, 8528.52.0000 with no further breakdown.\n\nAlternatively, CBP could have classified it under 8528.59 (other monitors), but the description stresses direct connection to an ADP machine, which points to 8528.52.\n\nCBP has also ruled that some VR headsets belong in 8528.52.0000, which is consistent with this choice.\n\n{\"hts_code\": \"8528.52.0000\", \"reason\": \"A battery-less VR head-mounted display that works only when connected to a PC and displays the ADP signals it receives is a monitor capable of directly connecting to and designed for use with an ADP machine of heading 8471, so it falls in 8528.52.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 327,
+      "completion_tokens": 453,
+      "total_tokens": 780,
+      "cost": 0.005184,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005184,
+        "upstream_inference_prompt_cost": 0.000654,
+        "upstream_inference_completions_cost": 0.00453
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8528520000",
+  "predicted_reason": "A battery-less VR head-mounted display that works only when connected to a PC and displays the ADP signals it receives is a monitor capable of directly connecting to and designed for use with an ADP machine of heading 8471, so it falls in 8528.52.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 327,
+    "completion_tokens": 453,
+    "total_tokens": 780,
+    "cost": 0.005184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005184,
+      "upstream_inference_prompt_cost": 0.000654,
+      "upstream_inference_completions_cost": 0.00453
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:07.228553+00:00",
+  "latency_s": 4.382,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

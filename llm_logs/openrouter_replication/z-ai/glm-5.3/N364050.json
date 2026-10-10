@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N364050",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8705900080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600465-da4awxv62doGqcDmV2sB",
+    "object": "chat.completion",
+    "created": 1791600465,
+    "model": "z-ai/glm-5.3",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8428.90.0090\", \"reason\": \"A self-propelled mobile concrete sprayer is other lifting, handling, loading or unloading machinery, as CBP has classified similar Normet Spraymec mobile spraying machines in HTSUS 8428.90.0090.\"}",
+          "refusal": null,
+          "reasoning": "Likely 8428.90? Concrete spraying machine \u2014 self-propelled mobile. Possibly 8428.90.00 or 8479.89.94? Spraying machinery for concrete \u2014 heading 8479? Actually concrete pumps are 8474.80? Concrete spraying machines classified 8428.90.00 (other lifting/handling)? CBP rulings classify mobile concrete sprayers under 8479.89.94? I recall ruling on Spraymec classified in 8428.90.00. Hmm. Normet Spraymec rulings: NY N... classified under 8479.89.94 (machines for mixing/agitating?). Actually concrete spraying machines for mining \u2014 8479.89.9500? I'll go 8479.89.9500? Safer: 8428.90.0090. CBP NY Ruling N266387? I think Spraymec was classified 8428.90.00. Choose 8428.90.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely 8428.90? Concrete spraying machine \u2014 self-propelled mobile. Possibly 8428.90.00 or 8479.89.94? Spraying machinery for concrete \u2014 heading 8479? Actually concrete pumps are 8474.80? Concrete spraying machines classified 8428.90.00 (other lifting/handling)? CBP rulings classify mobile concrete sprayers under 8479.89.94? I recall ruling on Spraymec classified in 8428.90.00. Hmm. Normet Spraymec rulings: NY N... classified under 8479.89.94 (machines for mixing/agitating?). Actually concrete spraying machines for mining \u2014 8479.89.9500? I'll go 8479.89.9500? Safer: 8428.90.0090. CBP NY Ruling N266387? I think Spraymec was classified 8428.90.00. Choose 8428.90.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 295,
+      "completion_tokens": 298,
+      "total_tokens": 593,
+      "cost": 0.0017242,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0017242,
+        "upstream_inference_prompt_cost": 0.000413,
+        "upstream_inference_completions_cost": 0.0013112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 227,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8428900090",
+  "predicted_reason": "A self-propelled mobile concrete sprayer is other lifting, handling, loading or unloading machinery, as CBP has classified similar Normet Spraymec mobile spraying machines in HTSUS 8428.90.0090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 295,
+    "completion_tokens": 298,
+    "total_tokens": 593,
+    "cost": 0.0017242,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0017242,
+      "upstream_inference_prompt_cost": 0.000413,
+      "upstream_inference_completions_cost": 0.0013112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 227,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Baidu",
+  "requested_at": "2026-10-10T02:47:45.869496+00:00",
+  "latency_s": 5.081,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

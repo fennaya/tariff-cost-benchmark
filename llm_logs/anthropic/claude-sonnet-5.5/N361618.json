@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361618",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "6204522030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596315-hVyZzr9VmKCe2JFt3lXm",
+    "object": "chat.completion",
+    "created": 1791596315,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "A skort of 100% cotton woven fabric, for women, is classified as a skirt in heading 6204.52 (women's skirts, of cotton). CBP rulings generally classify skorts as skirts under 6204.52.2010 (women's skirts, cotton, other). The statistical suffix for 6204.52.2010 is skirts, \"Women's\" (6204.52.20 covers \"Skirts and divided skirts\", and 10 is the statistical suffix for \"Skirts\"?). I recall 6204.52.2010 as \"Skirts: Women's\" and 6204.52.2020 as \"Divided skirts\". Hmm, actually the structure is 6204.52.20 \"Other\" (wait, with 6204.52.10 being \"Containing 36% or more by weight of flax\"?). Checking: 6204.52.10 is \"Of cotton... Girls'\"? The structure is 6204.52.10 Skirts and divided skirts: Of cotton, 6204.52.2000 \"Women's\" and 6204.52.3000 \"Girls'\"? Settling on the commonly cited code: 6204.52.2010 does not exist, but 6204.52.2000 does not carry 10 digits. In recent rulings for skorts: \"6204.52.3000, HTSUS, which provides for Women's or girls' suits, ensembles, ... skirts and divided skirts: Of cotton: Other: Skirts and divided skirts: Other: Women's\". The 6204.52.30 is the one used, with the statistical suffix 10 for skirts, 20 for divided skirts. A skort is a skirt with attached shorts, so it is treated as a skirt: 6204.52.3010.\n\n{\"hts_code\": \"6204.52.3010\", \"reason\": \"A women's skort of 100% cotton woven fabric, with a skirt permanently attached to an under short, is classified as a women's cotton skirt in heading 6204, subheading 6204.52.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 276,
+      "completion_tokens": 633,
+      "total_tokens": 909,
+      "cost": 0.006882,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006882,
+        "upstream_inference_prompt_cost": 0.000552,
+        "upstream_inference_completions_cost": 0.00633
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6204523010",
+  "predicted_reason": "A women's skort of 100% cotton woven fabric, with a skirt permanently attached to an under short, is classified as a women's cotton skirt in heading 6204, subheading 6204.52.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 276,
+    "completion_tokens": 633,
+    "total_tokens": 909,
+    "cost": 0.006882,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006882,
+      "upstream_inference_prompt_cost": 0.000552,
+      "upstream_inference_completions_cost": 0.00633
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:35.612458+00:00",
+  "latency_s": 6.199,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

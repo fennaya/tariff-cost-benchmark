@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359912",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909236",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599992-CNzYat8Q8vwCEIZPQ5zt",
+    "object": "chat.completion",
+    "created": 1791599992,
+    "model": "z-ai/glm-5.3",
+    "provider": "Venice",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "length",
+        "native_finish_reason": "length",
+        "message": {
+          "role": "assistant",
+          "content": null,
+          "refusal": null,
+          "reasoning": "The product is Diclofenac Sodium Gel 1%, a topical NSAID for treatment of osteoarthritis and rheumatoid arthritis pain.\n\nHTSUS classification for pharmaceutical products: Chapter 29 (organic chemicals) or Chapter 30 (pharmaceutical products).\n\nDiclofenac sodium is an anti-inflammatory drug. In HTSUS, headings:\n- 2937: hormones\n- 2941: antibiotics\n- 3003: Medicaments (not put up in measured doses or in forms/packings for retail)\n- 3004: Medicaments (put up in measured doses or in forms or packings for retail)\n\nDiclofenac gel 1% in 100 gram tubes is a retail-packaged medicament, so heading 3004.\n\nWithin 3004, subheadings:\n- 3004.32: containing other antibiotics\n- 3004.39: other (containing hormones or other products of 2937)\n- 3004.40: containing alkaloids or derivatives thereof\n- 3004.50: containing other products of heading 2942 (e.g., sulfonamides? Actually 2942 is other organic compounds - sulfonamides were moved)\n- 3004.90: other\n\nWait, let me recall the current HTSUS structure for 3004:\n- 3004.10 - containing penicillins or streptomycins... Actually the structure changed.\n\nCurrent (2022+) HTSUS 3004:\n- 3004.10.00: Containing penicillins or streptomycins or their derivatives\n- 3004.20: Containing hormones or other products of heading 2937 but not containing antibiotics\n- 3004.30: Containing antibiotics, other\n- 3004.40: Containing alkaloids or derivatives thereof, but not containing hormones, other products of heading 2937 or antibiotics\n- 3004.50: Containing other products of heading 2942 (e.g., sulfonamides, quinoline antibacterials)\n- 3004.60: Containing vitamins or other products of heading 2936\n- 3004.90: Other\n\nDiclofenac sodium is a phenylacetic acid derivative (2-[(2,6-dichlorophenyl)amino]benzeneacetic acid monosodium salt). It's not an alkaloid, not a hormone, not an antibiotic, not a vitamin, not a 2942 product. So it falls under 3004.90.\n\n3004.90 structure:\n- 3004.90.10: Other: Other: Containing insulin... no wait.\n\nLet me recall: 3004.90.10 - Containing insulin? No, that's not right.\n\nActually 3004.90 subdivisions:\n- 3004.90.10: Other: Containing insulin (I don't think so)\n\nLet me think. The 3004.90 subheadings in HTSUS:\n- 3004.90.10: Other: Other: Containing corticosteroids... no.\n\nHmm. Let me recall more carefully. HTSUS 3004.90:\n\n3004.90.01 - ?\n3004.90.10 - ?\n3004.90.20 - ?\n3004.90.30 - ?\n3004.90.50 - ?\n3004.90.60 - ?\n3004.90.91 - ?\n3004.90.92 - ?\n\nI remember there are statistical breakouts for:\n- 3004.90.10: Containing ephedrine or its salts\n- 3004.90.20: Containing pseudoephedrine or its salts\n- 3004.90.30: Containing opium or its derivatives? Actually that might be under alkaloids.\n\nActually, the anti-inflammatory drugs: There's a specific provision for \"Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\" \u2014 I believe 3004.90.50 or similar.\n\nLet me recall the actual HTSUS 3004.90 structure (as of recent years):\n\n3004.90.10 - Other: Other: Containing insulin... no.\n\nHmm, I recall:\n- 3004.90.10: Containing ephedrine or its salts\n- 3004.90.20: Containing pseudoephedrine or its salts\n- 3004.90.30: Containing opium or extracts of opium? Hmm.\n\nActually I think the structure is:\n\n3004.90.10 - Other: Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium... \n\nHmm, but opium derivatives are alkaloids, so they'd be in 3004.40.\n\nLet me think about known classifications. Ibuprofen tablets: 3004.90.50.10? Actually I recall ibuprofen is classified under 3004.90.50 \"Other: Other: Other: Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\" \u2014 hmm.\n\nActually, I recall the statistical suffixes:\n- 3004.90.50: Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\n- 3004.90.60: Containing acetaminophen? No...\n\nHmm, let me think about known rulings. CBP rulings on diclofenac sodium gel (Voltaren gel). There's a ruling NY N... for diclofenac sodium gel. I believe Voltaren Emulgel was classified under 3004.90.50 or 3004.90.60.\n\nActually, I recall the HTSUS 3004.90 statistical breakouts:\n\n3004.90.10 - Other: Other: Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium... no wait.\n\nLet me look at this from memory of the HTSUS text:\n\n3004.90.00 in HS is just \"Other\". The US adds statistical breakouts:\n\nFrom the HTSUS (2020-ish):\n3004.90.10 Other: Other: Containing insulin... no, insulin is 3004.90.10? Hmm, actually insulin is a hormone (2937), so it'd be 3004.20.\n\nOK here's what I remember more concretely:\n\n3004.90.10 - Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium? No...\n\nHmm, actually I think:\n3004.90.30 - Containing ergot or its salts? Ergot is an alkaloid though.\n\nLet me try different approach. Known HTS codes for common drugs:\n- Ibuprofen tablets: 3004.90.50.10? Hmm, I've seen \"3004.90.50\" for ibuprofen? Actually I recall ibuprofen in bulk (not dosage form) is 2918.99 or 2933.99? Ibuprofen is 2916.39 (aromatic carboxylic acids)? Ibuprofen is 2-(4-isobutylphenyl)propionic acid \u2014 classified under 2916.39. In dosage form: 3004.90.\n\n- Acetaminophen: 2924.29? No, acetaminophen is an amide \u2014 2924.29. In dosage form: 3004.90.60? Hmm, I recall \"3004.90.60\" might be \"Containing acetaminophen\"? Not sure.\n\nActually, I now recall the structure:\n\n3004.90.10 - Other: Other: Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium... \n\nI keep going in circles. Let me recall from CBP rulings:\n\nRuling NY 810163? Ruling on Voltaren gel... \n\nI recall a ruling: \"Voltaren Gel (diclofenac sodium topical gel, 1%)\" classified in subheading 3004.90.50, HTSUS? Hmm.\n\nActually, I found in memory: HTSUS 3004.90.50: \"Other: Other: Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\". Hmm, but diclofenac is an NSAID with antipyretic properties. Ibuprofen, naproxen, diclofenac \u2014 all NSAIDs with antipyretic properties.\n\nWait, but I also recall 3004.90.60: \"Other: Containing acetaminophen\"? Hmm no.\n\nLet me try to reconstruct the full 3004.90 from the HTSUS (2017+):\n\n3004.90.10 Other: Other: Containing ephedrine or its salts\n3004.90.20 Containing pseudoephedrine or its salts\n3004.90.30 Containing opium or extracts of opium... \n\nHmm, no. I think 3004.90.30 might be \"Containing ergot or its salts or derivatives\"? But ergot is alkaloid...\n\nAlternative recollection: The statistical breakouts under ",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "The product is Diclofenac Sodium Gel 1%, a topical NSAID for treatment of osteoarthritis and rheumatoid arthritis pain.\n\nHTSUS classification for pharmaceutical products: Chapter 29 (organic chemicals) or Chapter 30 (pharmaceutical products).\n\nDiclofenac sodium is an anti-inflammatory drug. In HTSUS, headings:\n- 2937: hormones\n- 2941: antibiotics\n- 3003: Medicaments (not put up in measured doses or in forms/packings for retail)\n- 3004: Medicaments (put up in measured doses or in forms or packings for retail)\n\nDiclofenac gel 1% in 100 gram tubes is a retail-packaged medicament, so heading 3004.\n\nWithin 3004, subheadings:\n- 3004.32: containing other antibiotics\n- 3004.39: other (containing hormones or other products of 2937)\n- 3004.40: containing alkaloids or derivatives thereof\n- 3004.50: containing other products of heading 2942 (e.g., sulfonamides? Actually 2942 is other organic compounds - sulfonamides were moved)\n- 3004.90: other\n\nWait, let me recall the current HTSUS structure for 3004:\n- 3004.10 - containing penicillins or streptomycins... Actually the structure changed.\n\nCurrent (2022+) HTSUS 3004:\n- 3004.10.00: Containing penicillins or streptomycins or their derivatives\n- 3004.20: Containing hormones or other products of heading 2937 but not containing antibiotics\n- 3004.30: Containing antibiotics, other\n- 3004.40: Containing alkaloids or derivatives thereof, but not containing hormones, other products of heading 2937 or antibiotics\n- 3004.50: Containing other products of heading 2942 (e.g., sulfonamides, quinoline antibacterials)\n- 3004.60: Containing vitamins or other products of heading 2936\n- 3004.90: Other\n\nDiclofenac sodium is a phenylacetic acid derivative (2-[(2,6-dichlorophenyl)amino]benzeneacetic acid monosodium salt). It's not an alkaloid, not a hormone, not an antibiotic, not a vitamin, not a 2942 product. So it falls under 3004.90.\n\n3004.90 structure:\n- 3004.90.10: Other: Other: Containing insulin... no wait.\n\nLet me recall: 3004.90.10 - Containing insulin? No, that's not right.\n\nActually 3004.90 subdivisions:\n- 3004.90.10: Other: Containing insulin (I don't think so)\n\nLet me think. The 3004.90 subheadings in HTSUS:\n- 3004.90.10: Other: Other: Containing corticosteroids... no.\n\nHmm. Let me recall more carefully. HTSUS 3004.90:\n\n3004.90.01 - ?\n3004.90.10 - ?\n3004.90.20 - ?\n3004.90.30 - ?\n3004.90.50 - ?\n3004.90.60 - ?\n3004.90.91 - ?\n3004.90.92 - ?\n\nI remember there are statistical breakouts for:\n- 3004.90.10: Containing ephedrine or its salts\n- 3004.90.20: Containing pseudoephedrine or its salts\n- 3004.90.30: Containing opium or its derivatives? Actually that might be under alkaloids.\n\nActually, the anti-inflammatory drugs: There's a specific provision for \"Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\" \u2014 I believe 3004.90.50 or similar.\n\nLet me recall the actual HTSUS 3004.90 structure (as of recent years):\n\n3004.90.10 - Other: Other: Containing insulin... no.\n\nHmm, I recall:\n- 3004.90.10: Containing ephedrine or its salts\n- 3004.90.20: Containing pseudoephedrine or its salts\n- 3004.90.30: Containing opium or extracts of opium? Hmm.\n\nActually I think the structure is:\n\n3004.90.10 - Other: Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium... \n\nHmm, but opium derivatives are alkaloids, so they'd be in 3004.40.\n\nLet me think about known classifications. Ibuprofen tablets: 3004.90.50.10? Actually I recall ibuprofen is classified under 3004.90.50 \"Other: Other: Other: Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\" \u2014 hmm.\n\nActually, I recall the statistical suffixes:\n- 3004.90.50: Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\n- 3004.90.60: Containing acetaminophen? No...\n\nHmm, let me think about known rulings. CBP rulings on diclofenac sodium gel (Voltaren gel). There's a ruling NY N... for diclofenac sodium gel. I believe Voltaren Emulgel was classified under 3004.90.50 or 3004.90.60.\n\nActually, I recall the HTSUS 3004.90 statistical breakouts:\n\n3004.90.10 - Other: Other: Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium... no wait.\n\nLet me look at this from memory of the HTSUS text:\n\n3004.90.00 in HS is just \"Other\". The US adds statistical breakouts:\n\nFrom the HTSUS (2020-ish):\n3004.90.10 Other: Other: Containing insulin... no, insulin is 3004.90.10? Hmm, actually insulin is a hormone (2937), so it'd be 3004.20.\n\nOK here's what I remember more concretely:\n\n3004.90.10 - Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium? No...\n\nHmm, actually I think:\n3004.90.30 - Containing ergot or its salts? Ergot is an alkaloid though.\n\nLet me try different approach. Known HTS codes for common drugs:\n- Ibuprofen tablets: 3004.90.50.10? Hmm, I've seen \"3004.90.50\" for ibuprofen? Actually I recall ibuprofen in bulk (not dosage form) is 2918.99 or 2933.99? Ibuprofen is 2916.39 (aromatic carboxylic acids)? Ibuprofen is 2-(4-isobutylphenyl)propionic acid \u2014 classified under 2916.39. In dosage form: 3004.90.\n\n- Acetaminophen: 2924.29? No, acetaminophen is an amide \u2014 2924.29. In dosage form: 3004.90.60? Hmm, I recall \"3004.90.60\" might be \"Containing acetaminophen\"? Not sure.\n\nActually, I now recall the structure:\n\n3004.90.10 - Other: Other: Containing ephedrine or its salts\n3004.90.20 - Containing pseudoephedrine or its salts\n3004.90.30 - Containing opium or extracts of opium... \n\nI keep going in circles. Let me recall from CBP rulings:\n\nRuling NY 810163? Ruling on Voltaren gel... \n\nI recall a ruling: \"Voltaren Gel (diclofenac sodium topical gel, 1%)\" classified in subheading 3004.90.50, HTSUS? Hmm.\n\nActually, I found in memory: HTSUS 3004.90.50: \"Other: Other: Containing anti-inflammatory medicaments with fever reducing (antipyretic) properties\". Hmm, but diclofenac is an NSAID with antipyretic properties. Ibuprofen, naproxen, diclofenac \u2014 all NSAIDs with antipyretic properties.\n\nWait, but I also recall 3004.90.60: \"Other: Containing acetaminophen\"? Hmm no.\n\nLet me try to reconstruct the full 3004.90 from the HTSUS (2017+):\n\n3004.90.10 Other: Other: Containing ephedrine or its salts\n3004.90.20 Containing pseudoephedrine or its salts\n3004.90.30 Containing opium or extracts of opium... \n\nHmm, no. I think 3004.90.30 might be \"Containing ergot or its salts or derivatives\"? But ergot is alkaloid...\n\nAlternative recollection: The statistical breakouts under ",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 143,
+      "completion_tokens": 2048,
+      "total_tokens": 2191,
+      "cost": 0.0092,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 10,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0092,
+        "upstream_inference_prompt_cost": 0.0001888,
+        "upstream_inference_completions_cost": 0.0090112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1701,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "truncated",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "length",
+  "usage": {
+    "prompt_tokens": 143,
+    "completion_tokens": 2048,
+    "total_tokens": 2191,
+    "cost": 0.0092,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 10,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0092,
+      "upstream_inference_prompt_cost": 0.0001888,
+      "upstream_inference_completions_cost": 0.0090112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1701,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Venice",
+  "requested_at": "2026-10-10T02:39:53.230439+00:00",
+  "latency_s": 36.113,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

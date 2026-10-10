@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N356876",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "7103102000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594054-3pdKGDmaEQDsXD1MGBDx",
+    "object": "chat.completion",
+    "created": 1791594054,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7103.10.1000\", \"reason\": \"Unworked amethyst (semi-precious stone), merely cleaned after mining, is classified as precious/semi-precious stones unworked or simply sawn under heading 7103.\"}",
+          "refusal": null,
+          "reasoning": "Amethyst, unworked: 7103.10.5000? Semi-precious stones unworked: 7103.10.10 (unworked or simply sawn). Amethyst is semi-precious. 7103.10.1000, duty free.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Amethyst, unworked: 7103.10.5000? Semi-precious stones unworked: 7103.10.10 (unworked or simply sawn). Amethyst is semi-precious. 7103.10.1000, duty free.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 160,
+      "completion_tokens": 122,
+      "total_tokens": 282,
+      "cost": 0.0005496,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005496,
+        "upstream_inference_prompt_cost": 1.28e-05,
+        "upstream_inference_completions_cost": 0.0005368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 62,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7103101000",
+  "predicted_reason": "Unworked amethyst (semi-precious stone), merely cleaned after mining, is classified as precious/semi-precious stones unworked or simply sawn under heading 7103.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 160,
+    "completion_tokens": 122,
+    "total_tokens": 282,
+    "cost": 0.0005496,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005496,
+      "upstream_inference_prompt_cost": 1.28e-05,
+      "upstream_inference_completions_cost": 0.0005368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 62,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T01:00:55.192335+00:00",
+  "latency_s": 1.148,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

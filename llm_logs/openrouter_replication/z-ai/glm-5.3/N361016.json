@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361016",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8517620090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600139-4z0x3NCi7GZsJ7FWzmUs",
+    "object": "chat.completion",
+    "created": 1791600139,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.30.0000\", \"reason\": \"The H-Mod CEP Kit is a wiring set with connectors used in aviation helmets/headsets, which falls under HTSUS 8544.30 as wiring sets of a kind used in aircraft.\"}",
+          "refusal": null,
+          "reasoning": "Wiring assembly with PCB and connectors \u2014 likely 8544.30 (ignition wiring sets?) or 8544.42? Sets of wires with connectors for vehicles 8544.30; aviation headsets... likely 8518.30? But it's a wiring assembly \u2014 CBP rulings classify such harness assemblies under 8544.42? Actually 8544.30 covers \"ignition wiring sets and wiring sets of a kind used in vehicles, aircraft...\" \u2014 aircraft wiring sets \u2192 8544.30. 10-digit: 8544.30.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Wiring assembly with PCB and connectors \u2014 likely 8544.30 (ignition wiring sets?) or 8544.42? Sets of wires with connectors for vehicles 8544.30; aviation headsets... likely 8518.30? But it's a wiring assembly \u2014 CBP rulings classify such harness assemblies under 8544.42? Actually 8544.30 covers \"ignition wiring sets and wiring sets of a kind used in vehicles, aircraft...\" \u2014 aircraft wiring sets \u2192 8544.30. 10-digit: 8544.30.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 192,
+      "total_tokens": 432,
+      "cost": 0.0008784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008784,
+        "upstream_inference_prompt_cost": 3.36e-05,
+        "upstream_inference_completions_cost": 0.0008448
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 111,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544300000",
+  "predicted_reason": "The H-Mod CEP Kit is a wiring set with connectors used in aviation helmets/headsets, which falls under HTSUS 8544.30 as wiring sets of a kind used in aircraft.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 192,
+    "total_tokens": 432,
+    "cost": 0.0008784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008784,
+      "upstream_inference_prompt_cost": 3.36e-05,
+      "upstream_inference_completions_cost": 0.0008448
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 111,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:42:19.395255+00:00",
+  "latency_s": 2.04,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

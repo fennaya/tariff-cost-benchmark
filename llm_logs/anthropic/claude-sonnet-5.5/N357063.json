@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357063",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595312-UrgkZJlEz1TBrDK8dBlh",
+    "object": "chat.completion",
+    "created": 1791595312,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a \"PCB CLAW\" 3D-printed holder. The candidate headings are:\n\n- 8466.30: parts and accessories for machine tools, including work holders. The soldering context argues against machine tools.\n- 3926.90: other articles of plastics.\n- 8515.90: parts of soldering machines.\n- 8205.70: vises and clamps, hand tools.\n\nA PCB holder with adjustable clamping arms is a hand-operated clamp, so heading 8205.70 fits. The plastic body with metal fasteners is still a clamp, and Chapter 82 covers hand tools of base metal. Heading 8205 requires hand tools, and the note to Chapter 82 covers tools with base-metal working parts. A plastic clamp would not clearly qualify, so 8205 is doubtful.\n\nAnother option is 8466.20, work holders for machine tools. Those are for machine tools, which this is not.\n\nThe tool is a holder used in assembly, and its plastic is the main material. I think CBP likely ruled it under 3926.90.99 as other articles of plastics. The 3926.90 subheading is 3926.90.9990 (other), and the reason would be that the plastic clamp is not specifically provided for elsewhere. I'll go with that.\n\n{\"hts_code\": \"3926.90.9990\", \"reason\": \"The 3D-printed PETG PCB holding clamp is an other article of plastics, not specifically provided for elsewhere, and its plastic body gives it essential character over the minor metal fasteners.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 506,
+      "total_tokens": 960,
+      "cost": 0.005968,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005968,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00506
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "The 3D-printed PETG PCB holding clamp is an other article of plastics, not specifically provided for elsewhere, and its plastic body gives it essential character over the minor metal fasteners.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 506,
+    "total_tokens": 960,
+    "cost": 0.005968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005968,
+      "upstream_inference_prompt_cost": 0.000908,
+      "upstream_inference_completions_cost": 0.00506
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:53.043447+00:00",
+  "latency_s": 5.277,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

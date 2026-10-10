@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360725",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "7607205000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596141-Ea3f2cOBjAkXG4YtRsHg",
+    "object": "chat.completion",
+    "created": 1791596141,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like an aluminum composite material (ACM) panel, which is a polyethylene core with aluminum skins. Several headings are possible:\n- 3921.90 (other plates, sheets, film of plastics, combined with other materials)\n- 7606 (aluminum plates, sheets, strip over 0.2 mm thick)\n- 7607 (aluminum foil of thickness not over 0.2 mm, backed)\n\nThe aluminum is only 0.15 mm per side, but the composite is 1.7 mm thick and the core is plastic. Aluminum foil backed with plastic falls under 7607, but that heading covers foil with a total thickness (excluding backing) not over 0.2 mm. Here the foil is 0.15 mm per side, and the backing is the polyethylene. Heading 7607.19 or 7607.20 might therefore apply, but the panel is essentially a plastic-cored composite, and the essential character is arguably the polyethylene core by volume (1.4 mm of 1.7 mm).\n\nThe product is also similar to the subject of the antidumping case on aluminum foil, but that is not relevant here. A better analogue is the CBP rulings on ACM panels, which classify them in 3921.90. The relevant subheading is 3921.90.1100 (cellular) or 3921.90.19 (other, non-cellular, combined with other materials). Further down, 3921.90.4000 is \"other\", and 3921.90.1900 is for other plates, sheets, film, and strip of plastics, reinforced, laminated, supported, or similarly combined with other materials, non-cellular. I'll go with 3921.90.1900 since the panel is laminated and non-cellular. (Statistical suffix is uncertain; 3921.90.1900 is a valid 10-digit code.)\n\n```json\n{\"hts_code\": \"3921.90.1900\", \"reason\": \"Non-cellular polyethylene-core panel laminated with thin aluminum foil skins is classified as other plastic plates/sheets combined with other materials, since the plastic core gives the essential character.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 214,
+      "completion_tokens": 677,
+      "total_tokens": 891,
+      "cost": 0.007198,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007198,
+        "upstream_inference_prompt_cost": 0.000428,
+        "upstream_inference_completions_cost": 0.00677
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3921901900",
+  "predicted_reason": "Non-cellular polyethylene-core panel laminated with thin aluminum foil skins is classified as other plastic plates/sheets combined with other materials, since the plastic core gives the essential character.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 677,
+    "total_tokens": 891,
+    "cost": 0.007198,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007198,
+      "upstream_inference_prompt_cost": 0.000428,
+      "upstream_inference_completions_cost": 0.00677
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:41.545627+00:00",
+  "latency_s": 6.405,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

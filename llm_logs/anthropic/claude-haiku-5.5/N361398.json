@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361398",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-haiku-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595086-VecZPx5mvi3dHf8lZdZr",
+    "object": "chat.completion",
+    "created": 1791595086,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description is too vague to determine a specific HTSUS code: it refers to a \"neck\" with \"capping\" and a \"deep back opening\" with \"raw, unfinished edges,\" but does not identify the product, its material, or its function, all of which are needed for classification. Providing a 10-digit code under these conditions would be a guess presented as a determination, which could lead to misclassification and duty errors.\n\n{\"hts_code\": \"UNABLE_TO_DETERMINE\", \"reason\": \"The description lacks the product identity, material, and function needed to classify it, so no reliable 10-digit HTSUS code can be assigned without additional information.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 201,
+      "total_tokens": 368,
+      "cost": 0.0001172,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001172,
+        "upstream_inference_prompt_cost": 1.67e-05,
+        "upstream_inference_completions_cost": 0.0001005
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "",
+  "predicted_reason": "The description lacks the product identity, material, and function needed to classify it, so no reliable 10-digit HTSUS code can be assigned without additional information.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 167,
+    "completion_tokens": 201,
+    "total_tokens": 368,
+    "cost": 0.0001172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001172,
+      "upstream_inference_prompt_cost": 1.67e-05,
+      "upstream_inference_completions_cost": 0.0001005
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:18:06.578284+00:00",
+  "latency_s": 2.09,
+  "request_params": {
+    "model": "anthropic/claude-haiku-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    }
+  }
+}

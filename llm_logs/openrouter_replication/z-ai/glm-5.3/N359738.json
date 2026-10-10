@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359738",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615105040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599954-DvE2j5zsWNquzM2cmuIW",
+    "object": "chat.completion",
+    "created": 1791599954,
+    "model": "z-ai/glm-5.3",
+    "provider": "Fireworks",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7615.10.7020\", \"reason\": \"A cast aluminum household cooking skillet without nonstick or anodized finish is classified as other household/cookware articles of aluminum under heading 7615.\"}",
+          "refusal": null,
+          "reasoning": "Cast aluminum cookware, not nonstick: 7615.10.70 (household articles of aluminum, not nonstick, not anodized?). 7615.10.7020? HTSUS 7615.10.7020: cookware nonstick? Actually 7615.10.70 subheadings: 7615.10.7020 nonstick... Let me recall: 7615.10.30 anodized; 7615.10.70 other. 10-digit: 7615.10.7020? I think 7615.10.7020 is \"other\" cookware. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Cast aluminum cookware, not nonstick: 7615.10.70 (household articles of aluminum, not nonstick, not anodized?). 7615.10.7020? HTSUS 7615.10.7020: cookware nonstick? Actually 7615.10.70 subheadings: 7615.10.7020 nonstick... Let me recall: 7615.10.30 anodized; 7615.10.70 other. 10-digit: 7615.10.7020? I think 7615.10.7020 is \"other\" cookware. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 207,
+      "total_tokens": 436,
+      "cost": 0.00182658,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 12,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00182658,
+        "upstream_inference_prompt_cost": 0.00046038,
+        "upstream_inference_completions_cost": 0.0013662
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 139,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615107020",
+  "predicted_reason": "A cast aluminum household cooking skillet without nonstick or anodized finish is classified as other household/cookware articles of aluminum under heading 7615.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 207,
+    "total_tokens": 436,
+    "cost": 0.00182658,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 12,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00182658,
+      "upstream_inference_prompt_cost": 0.00046038,
+      "upstream_inference_completions_cost": 0.0013662
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Fireworks",
+  "requested_at": "2026-10-10T02:39:14.462783+00:00",
+  "latency_s": 2.58,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

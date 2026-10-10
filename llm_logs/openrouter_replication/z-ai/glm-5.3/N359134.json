@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359134",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "9403200086",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599865-AY0bmCif40DA94MDrLmC",
+    "object": "chat.completion",
+    "created": 1791599865,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8428.90.0000\", \"reason\": \"A powered motorized carousel for lifting, handling, and loading/unloading tires is other material handling machinery of heading 8428, not a simple rack or storage unit.\"}",
+          "refusal": null,
+          "reasoning": "Machinery for handling/loading \u2014 mechanical handling equipment, other, HTSUS 8428.90. This is a powered carousel for handling tires. 8428.90.0000? Check: 8428.90.00 \"other lifting/handling machinery\" \u2014 10-digit 8428.90.0000? Actually 8428.90 has 8428.90.0000. Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Machinery for handling/loading \u2014 mechanical handling equipment, other, HTSUS 8428.90. This is a powered carousel for handling tires. 8428.90.0000? Check: 8428.90.00 \"other lifting/handling machinery\" \u2014 10-digit 8428.90.0000? Actually 8428.90 has 8428.90.0000. Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 457,
+      "completion_tokens": 150,
+      "total_tokens": 607,
+      "cost": 0.00079769,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00079769,
+        "upstream_inference_prompt_cost": 7.769e-05,
+        "upstream_inference_completions_cost": 0.00072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 97,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8428900000",
+  "predicted_reason": "A powered motorized carousel for lifting, handling, and loading/unloading tires is other material handling machinery of heading 8428, not a simple rack or storage unit.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 457,
+    "completion_tokens": 150,
+    "total_tokens": 607,
+    "cost": 0.00079769,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00079769,
+      "upstream_inference_prompt_cost": 7.769e-05,
+      "upstream_inference_completions_cost": 0.00072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 97,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:37:45.547697+00:00",
+  "latency_s": 2.017,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

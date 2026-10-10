@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N352634",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "2920902000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593784-L5nqib0bPDfCzDwj8ium",
+    "object": "chat.completion",
+    "created": 1791593784,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Hexaphenoxycyclotriphosphazene is a heterocyclic compound with nitrogen and phosphorus heteroatoms. Chapter 29 covers organic compounds, and heterocyclic compounds with nitrogen heteroatom(s) only fall under 2933. Here the ring has both N and P, so it is not nitrogen-only. Subheading 2931 (other organo-inorganic compounds) covers organo-phosphorus compounds, and 2931.90 is \"other\". Because the compound has a P\u2013N ring with phenoxy groups (P\u2013O\u2013C bonds), it is not a direct carbon-to-inorganic-element compound. Heading 2931 covers only compounds in which an inorganic element is directly bonded to carbon, and here the phosphorus is bonded to carbon only through oxygen. Heading 2920 covers esters of other inorganic acids (not hydrogen halides), but phosphoric esters fall under 2919, and phosphazene is not an ester of phosphoric acid. Heading 2933 requires nitrogen-only heteroatoms, and 2934 covers other heterocyclic compounds. With phosphorus as a ring heteroatom, 2934.99 (other heterocyclic compounds) is plausible. I recall CBP rulings classifying this product in 2934.99.9050 (other nucleic acids and other heterocyclic compounds). I'll go with that.\n\n{\"hts_code\": \"2934.99.9050\", \"reason\": \"Hexaphenoxycyclotriphosphazene is a heterocyclic compound whose ring contains nitrogen and phosphorus heteroatoms, so it falls in the 'other heterocyclic compounds' provision of heading 2934 rather than the nitrogen-only heading 2933.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 295,
+      "completion_tokens": 586,
+      "total_tokens": 881,
+      "cost": 0.00645,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00645,
+        "upstream_inference_prompt_cost": 0.00059,
+        "upstream_inference_completions_cost": 0.00586
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2934999050",
+  "predicted_reason": "Hexaphenoxycyclotriphosphazene is a heterocyclic compound whose ring contains nitrogen and phosphorus heteroatoms, so it falls in the 'other heterocyclic compounds' provision of heading 2934 rather than the nitrogen-only heading 2933.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 295,
+    "completion_tokens": 586,
+    "total_tokens": 881,
+    "cost": 0.00645,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00645,
+      "upstream_inference_prompt_cost": 0.00059,
+      "upstream_inference_completions_cost": 0.00586
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:24.409409+00:00",
+  "latency_s": 5.209,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

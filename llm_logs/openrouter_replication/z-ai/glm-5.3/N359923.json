@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359923",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "8807300030",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600004-RLfT49hf5Qd340j9q0lM",
+    "object": "chat.completion",
+    "created": 1791600004,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.9000\", \"reason\": \"The purely mechanical epicyclic/planetary gear reducer that transmits torque to aircraft flaps is classified as a gear box and similar torque-changing machinery under HTSUS 8483.40.9000.\"}",
+          "refusal": null,
+          "reasoning": "This is a known NY ruling: rotary geared actuator for aircraft flaps \u2014 classified as gear box 8483.40.00? Actually epicyclic gear reducer \u2014 HTS 8483.40.9000? Gear boxes and torque converters: 8483.40.00. 10-digit: 8483.40.9000 (other). Ruling NY N... classified under 8483.40.9000? Actually 8483.40.0030? Subheadings: 8483.40.0000? Gear boxes: 8483.40.0000? HTS 8483.40.00 with stat suffixes: 8483.40.0030? I recall 8483.40.9000 exists. Use 8483.40.9000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a known NY ruling: rotary geared actuator for aircraft flaps \u2014 classified as gear box 8483.40.00? Actually epicyclic gear reducer \u2014 HTS 8483.40.9000? Gear boxes and torque converters: 8483.40.00. 10-digit: 8483.40.9000 (other). Ruling NY N... classified under 8483.40.9000? Actually 8483.40.0030? Subheadings: 8483.40.0000? Gear boxes: 8483.40.0000? HTS 8483.40.00 with stat suffixes: 8483.40.0030? I recall 8483.40.9000 exists. Use 8483.40.9000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 253,
+      "total_tokens": 743,
+      "cost": 0.0012977,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012977,
+        "upstream_inference_prompt_cost": 8.33e-05,
+        "upstream_inference_completions_cost": 0.0012144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 196,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483409000",
+  "predicted_reason": "The purely mechanical epicyclic/planetary gear reducer that transmits torque to aircraft flaps is classified as a gear box and similar torque-changing machinery under HTSUS 8483.40.9000.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 490,
+    "completion_tokens": 253,
+    "total_tokens": 743,
+    "cost": 0.0012977,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012977,
+      "upstream_inference_prompt_cost": 8.33e-05,
+      "upstream_inference_completions_cost": 0.0012144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 196,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:03.718854+00:00",
+  "latency_s": 3.103,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

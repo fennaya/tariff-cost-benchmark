@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N345977",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "5407532060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594009-VZranZgLasFm5fi4Qd0B",
+    "object": "chat.completion",
+    "created": 1791594009,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"5407.74.6060\", \"reason\": \"Woven fabric wholly of synthetic filament (textured polyester), yarns of different colors, weighing over 170 g/m2, classified in heading 5407 subheading for yarns of different colors.\"}",
+          "refusal": null,
+          "reasoning": "Polyester woven upholstery fabric, >532 g/m2, not plain/satin/twill, yarns of different colors \u2192 5407.74.xx? Upholstery heading? Chapter 58? Actually heading 5407 woven fabrics of synthetic filament yarn. Different colors, printed? yarns of different colors \u2192 5407.74? Subheadings: 5407.71 unbleached, .72 bleached, .73 dyed, .74 yarns of different colors, .75 printed. Weight >170 g/m2 \u2192 5407.74.60? Historically 5407.74.6060? Let me recall: 5407.74.60 \"Of yarns of different colors\" weight >170 g/m2. Statistical suffix... 5407.74.6060? Common NY rulings cite 5407.74.6060? Actually I recall 5407.74.6090? Hmm. Many rulings: \"5407.74.6060, HTSUS\". I'll go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Polyester woven upholstery fabric, >532 g/m2, not plain/satin/twill, yarns of different colors \u2192 5407.74.xx? Upholstery heading? Chapter 58? Actually heading 5407 woven fabrics of synthetic filament yarn. Different colors, printed? yarns of different colors \u2192 5407.74? Subheadings: 5407.71 unbleached, .72 bleached, .73 dyed, .74 yarns of different colors, .75 printed. Weight >170 g/m2 \u2192 5407.74.60? Historically 5407.74.6060? Let me recall: 5407.74.60 \"Of yarns of different colors\" weight >170 g/m2. Statistical suffix... 5407.74.6060? Common NY rulings cite 5407.74.6060? Actually I recall 5407.74.6090? Hmm. Many rulings: \"5407.74.6060, HTSUS\". I'll go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 300,
+      "total_tokens": 548,
+      "cost": 0.00136712,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00136712,
+        "upstream_inference_prompt_cost": 4.712e-05,
+        "upstream_inference_completions_cost": 0.00132
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 170,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5407746060",
+  "predicted_reason": "Woven fabric wholly of synthetic filament (textured polyester), yarns of different colors, weighing over 170 g/m2, classified in heading 5407 subheading for yarns of different colors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 300,
+    "total_tokens": 548,
+    "cost": 0.00136712,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00136712,
+      "upstream_inference_prompt_cost": 4.712e-05,
+      "upstream_inference_completions_cost": 0.00132
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T01:00:09.757308+00:00",
+  "latency_s": 4.459,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

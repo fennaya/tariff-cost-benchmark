@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359740",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615103025",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595908-HGtgPqRjgkaxlr57oIHC",
+    "object": "chat.completion",
+    "created": 1791595908,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an aluminum bowl used in food service to hold and serve food, so it falls under heading 7615, which covers aluminum table, kitchen or other household articles. Subheading 7615.10 covers table, kitchen or other household articles and parts thereof, and 7615.19 covers the others.\n\nWithin 7615.10, the 10-digit statistical lines are:\n- 7615.10.20 for cooking and kitchen ware, enameled: 7615.10.2015 is cooking ware and 7615.10.2025 is other.\n- 7615.10.30 for cooking and kitchen ware, not enameled.\n- 7615.10.50 for table ware, with 7615.10.5010 for other.\n- 7615.10.71 for other: 7615.10.7130 for other cooking and kitchen ware, and 7615.10.7180 for other.\n\nI recall the older structure as 7615.10.10 for cooking and heating apparatus, 7615.10.20 for cooking ware, enameled or porcelain-coated, 7615.10.30 for other cooking ware, 7615.10.50 for table, kitchen and other household articles, and 7615.10.71 for other, so I'm not fully certain of the current numbering.\n\nThe bowl has an enamel interior, and kitchenware that is enameled falls under 7615.10.20. The 7615.10.2015 statistical line is for cooking ware, and 7615.10.2025 is for kitchen ware, so I choose the latter.\n\n```json\n{\"hts_code\": \"7615.10.2025\", \"reason\": \"Enamel-lined aluminum salad bar bowl is an aluminum table/kitchen article of heading 7615, classified as enameled kitchenware (not cooking ware) under subheading 7615.10.20.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 284,
+      "completion_tokens": 577,
+      "total_tokens": 861,
+      "cost": 0.006338,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006338,
+        "upstream_inference_prompt_cost": 0.000568,
+        "upstream_inference_completions_cost": 0.00577
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615102025",
+  "predicted_reason": "Enamel-lined aluminum salad bar bowl is an aluminum table/kitchen article of heading 7615, classified as enameled kitchenware (not cooking ware) under subheading 7615.10.20.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 577,
+    "total_tokens": 861,
+    "cost": 0.006338,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006338,
+      "upstream_inference_prompt_cost": 0.000568,
+      "upstream_inference_completions_cost": 0.00577
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:48.605654+00:00",
+  "latency_s": 5.483,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

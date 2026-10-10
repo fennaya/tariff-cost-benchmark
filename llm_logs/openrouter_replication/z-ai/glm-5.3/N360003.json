@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360003",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "8302416080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600025-MOkD48xbMfJs9nGqxKM0",
+    "object": "chat.completion",
+    "created": 1791600025,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7616.99.5190\", \"reason\": \"The aluminum hollow elbow bracket connects a hand railing to a post or wall but is not a structure or part thereof, so it is classified as other articles of aluminum.\"",
+          "refusal": null,
+          "reasoning": "Aluminum bracket for railings \u2014 other aluminum articles? Likely 7616.99.01 or aluminum structural mountings/fittings 7610.90.00? Brackets of aluminum \u2014 8302.42? No, aluminum. Mountings/fittings 7610.90.0090? Actually 7610 covers aluminum structures and parts thereof; brackets for railings could be 7610.90.00. But \"other articles of aluminum\" 7616.99.51. Ruling style: elbow fitting connecting railing to post \u2014 likely 7610.90.0090? Hmm. Similar rulings classify aluminum railing fittings under 7616.99.51. I'll go 7616.99.5190? Actually 7616.99.51 is \"other, of aluminum, not alloyed\"? 7616.99.51: Other articles of aluminum: other: 7616.99.5190? Post-2022: 7616.99.51 covers other articles of aluminum. Use 7616.99.5190.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Aluminum bracket for railings \u2014 other aluminum articles? Likely 7616.99.01 or aluminum structural mountings/fittings 7610.90.00? Brackets of aluminum \u2014 8302.42? No, aluminum. Mountings/fittings 7610.90.0090? Actually 7610 covers aluminum structures and parts thereof; brackets for railings could be 7610.90.00. But \"other articles of aluminum\" 7616.99.51. Ruling style: elbow fitting connecting railing to post \u2014 likely 7610.90.0090? Hmm. Similar rulings classify aluminum railing fittings under 7616.99.51. I'll go 7616.99.5190? Actually 7616.99.51 is \"other, of aluminum, not alloyed\"? 7616.99.51: Other articles of aluminum: other: 7616.99.5190? Post-2022: 7616.99.51 covers other articles of aluminum. Use 7616.99.5190.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 298,
+      "total_tokens": 507,
+      "cost": 0.001438551,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001438551,
+        "upstream_inference_prompt_cost": 8.151e-06,
+        "upstream_inference_completions_cost": 0.0014304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 246,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Expecting ',' delimiter: line 1 column 208 (char 207)",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 298,
+    "total_tokens": 507,
+    "cost": 0.001438551,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001438551,
+      "upstream_inference_prompt_cost": 8.151e-06,
+      "upstream_inference_completions_cost": 0.0014304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 246,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:25.512058+00:00",
+  "latency_s": 2.258,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

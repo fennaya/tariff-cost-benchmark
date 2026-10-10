@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359731",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615107130",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595901-aHPAOhCjXkNDj5wwau6m",
+    "object": "chat.completion",
+    "created": 1791595901,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This aluminum sheet pan is a bakeware item, which would be classified as a table, kitchen or other household article of aluminum in heading 7615. Subheading 7615.10 covers table, kitchen or other household articles and parts thereof, of aluminum. The 7615.10.20 line covers cooking and kitchen ware, \"Cooking and kitchen ware: Other\"? The structure is:\n\n- 7615.10.10: Cooking and kitchen ware, enameled or glazed (the line is \"Cooking and kitchen ware: Enameled or glazed\"?).\n- 7615.10.20: Cooking and kitchen ware not enameled/glazed? I recall 7615.10.2000 \"Cooking and kitchen ware\" and 7615.10.30 \"Table, kitchen..., Other\", then 7615.10.5000 \"Other\", 7615.10.7100 \"Cooking and kitchen ware: Other\" and 7615.10.9100 \"Other\".\n\nThe current structure, as I recall it:\n- 7615.10.10 Cooking and kitchen ware: Enameled or glazed? Not sure.\n- 7615.10.20 Cooking and kitchen ware: Other? Uncertain.\n- 7615.10.30 Table, kitchen or other household articles, cast, not polished/etc.\n- 7615.10.50 Other, cast.\n- 7615.10.71 Other: Cooking and kitchen ware, stamped, lacquered, painted...\n- 7615.10.91 Other.\n\nThe 7615.10.71 line is \"Other: Cooking ware of aluminum / Other: Cooking and kitchen ware\". The CBP rulings on aluminum sheet pans, such as the one for baking sheets, use 7615.10.7130 or 7615.10.7155. I believe the final line is 7615.10.7130 \"Other: Cooking and kitchen ware: Other: Cooking ware\"? Rulings on aluminum baking pans have often cited 7615.10.7125 or 7615.10.7130. I'll go with 7615.10.7130.\n\n```json\n{\"hts_code\": \"7615.10.7130\", \"reason\": \"A flat aluminum sheet pan for baking is a kitchen/cooking article of aluminum, classified in heading 7615 as cooking and kitchen ware.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 309,
+      "completion_tokens": 761,
+      "total_tokens": 1070,
+      "cost": 0.008228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008228,
+        "upstream_inference_prompt_cost": 0.000618,
+        "upstream_inference_completions_cost": 0.00761
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615107130",
+  "predicted_reason": "A flat aluminum sheet pan for baking is a kitchen/cooking article of aluminum, classified in heading 7615 as cooking and kitchen ware.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 761,
+    "total_tokens": 1070,
+    "cost": 0.008228,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008228,
+      "upstream_inference_prompt_cost": 0.000618,
+      "upstream_inference_completions_cost": 0.00761
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:41.997419+00:00",
+  "latency_s": 6.764,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

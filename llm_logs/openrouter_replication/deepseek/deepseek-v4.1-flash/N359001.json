@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N359001",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8421210000",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598857-5UTz2D2zgsavtTkpdeSn",
+    "object": "chat.completion",
+    "created": 1791598857,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "InferenceNet",
+    "system_fingerprint": "inference.net",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8543.70.9960\", \"reason\": \"The Electrochemical Water Purification System is a complete electro-mechanical apparatus with an individual electrical function not specified elsewhere, classified as other machines and apparatus having individual functions under subheading 8543.70.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 744,
+      "completion_tokens": 61,
+      "total_tokens": 805,
+      "cost": 8.868e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.868e-05,
+        "upstream_inference_prompt_cost": 5.208e-05,
+        "upstream_inference_completions_cost": 3.66e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "The Electrochemical Water Purification System is a complete electro-mechanical apparatus with an individual electrical function not specified elsewhere, classified as other machines and apparatus having individual functions under subheading 8543.70.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 744,
+    "completion_tokens": 61,
+    "total_tokens": 805,
+    "cost": 8.868e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.868e-05,
+      "upstream_inference_prompt_cost": 5.208e-05,
+      "upstream_inference_completions_cost": 3.66e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:20:58.230117+00:00",
+  "latency_s": 0.649,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

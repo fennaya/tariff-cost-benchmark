@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359501",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "9031808085",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595857-kvH3o802TKch3w4rjAjW",
+    "object": "chat.completion",
+    "created": 1791595857,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on RFID test and measurement instruments. The likely classification is heading 9030, which covers instruments for measuring or checking electrical quantities, including those for measuring or detecting ionizing radiations.\n\nWithin 9030, the relevant subheadings are:\n- 9030.40: other instruments and apparatus specially designed for telecommunications (e.g., cross-talk meters, gain measuring instruments, distortion factor meters, psophometers).\n- 9030.20: oscilloscopes and oscillographs.\n- 9030.32 and 9030.33: multimeters and other instruments for measuring voltage, current, resistance or power, with or without a recording device.\n- 9030.39: other instruments, with a recording device.\n- 9030.89: other instruments without a recording device.\n- 9030.84: other, with a recording device.\n\nThese devices generate RF test signals and analyze tag responses, including spectrum analysis. Spectrum analyzers fall under 9030.89, with statistical suffixes such as 9030.89.0000 or 9030.89.9500. They are not specially designed for telecommunications in the 9030.40 sense, since they are RFID test devices. The CBP ruling probably classified them in 9030.89.9500 or 9030.40.0000.\n\nI'll choose 9030.89.9500 (HTS 9030.89.95 is \"Other\"). That is a best-supported guess rather than a confirmed ruling.\n\n{\"hts_code\": \"9030.89.9500\", \"reason\": \"The RFID/NFC test and measurement instruments generate RF signals and analyze signal and spectrum parameters, so they are instruments for measuring electrical quantities in heading 9030, falling under the residual 'other instruments and apparatus' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1426,
+      "completion_tokens": 579,
+      "total_tokens": 2005,
+      "cost": 0.008642,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008642,
+        "upstream_inference_prompt_cost": 0.002852,
+        "upstream_inference_completions_cost": 0.00579
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9030899500",
+  "predicted_reason": "The RFID/NFC test and measurement instruments generate RF signals and analyze signal and spectrum parameters, so they are instruments for measuring electrical quantities in heading 9030, falling under the residual 'other instruments and apparatus' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1426,
+    "completion_tokens": 579,
+    "total_tokens": 2005,
+    "cost": 0.008642,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008642,
+      "upstream_inference_prompt_cost": 0.002852,
+      "upstream_inference_completions_cost": 0.00579
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:57.770081+00:00",
+  "latency_s": 5.2,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

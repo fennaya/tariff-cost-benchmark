@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358788",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "6405909060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599818-rlwwJN7ctu3yarokgjx6",
+    "object": "chat.completion",
+    "created": 1791599818,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6401.92.30\", \"reason\": \"The boot is waterproof with an upper predominantly of rubber/plastics and covers the ankle but not the knee; the leather flocking is merely a surface coating that does not change the rubber/plastics character of the outer sole.\"}",
+          "refusal": null,
+          "reasoning": "Waterproof boot, upper rubber/plastic, outer sole leather flocking visible \u2014 external surface of outer sole is leather? Classification: footwear by outer sole material and upper material. Waterproof with rubber/plastics upper: 6401.92 \u2014 covering the ankle, outer sole rubber/plastics... but sole is leather flocking obscuring rubber. If sole external surface is leather, then 6403? Actually NY rulings on flocked soles: leather flocking on rubber sole \u2014 the sole is still rubber/plastics? There's a ruling: leather flocking doesn't change sole composition? Actually visible leather makes it leather sole? Similar ruling (HQ 966691?) treated flocked rubber sole as rubber/plastics because flocking is a coating. Hmm. Common answer: 6401.92.30 (waterproof, upper rubber/plastics, ankle height, not 37.5% rubber/plastics by weight...). 6401.92.30: covering the ankle but not the knee, other. Rate 37.5%? Actually 6401.92.30 is \"other\" 37.5%? 6401.92.30 duty 37.5%. I'll go with 6401.92.30.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Waterproof boot, upper rubber/plastic, outer sole leather flocking visible \u2014 external surface of outer sole is leather? Classification: footwear by outer sole material and upper material. Waterproof with rubber/plastics upper: 6401.92 \u2014 covering the ankle, outer sole rubber/plastics... but sole is leather flocking obscuring rubber. If sole external surface is leather, then 6403? Actually NY rulings on flocked soles: leather flocking on rubber sole \u2014 the sole is still rubber/plastics? There's a ruling: leather flocking doesn't change sole composition? Actually visible leather makes it leather sole? Similar ruling (HQ 966691?) treated flocked rubber sole as rubber/plastics because flocking is a coating. Hmm. Common answer: 6401.92.30 (waterproof, upper rubber/plastics, ankle height, not 37.5% rubber/plastics by weight...). 6401.92.30: covering the ankle but not the knee, other. Rate 37.5%? Actually 6401.92.30 is \"other\" 37.5%? 6401.92.30 duty 37.5%. I'll go with 6401.92.30.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 213,
+      "completion_tokens": 329,
+      "total_tokens": 542,
+      "cost": 0.00148807,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00148807,
+        "upstream_inference_prompt_cost": 4.047e-05,
+        "upstream_inference_completions_cost": 0.0014476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 249,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "64019230",
+  "predicted_reason": "The boot is waterproof with an upper predominantly of rubber/plastics and covers the ankle but not the knee; the leather flocking is merely a surface coating that does not change the rubber/plastics character of the outer sole.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 213,
+    "completion_tokens": 329,
+    "total_tokens": 542,
+    "cost": 0.00148807,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00148807,
+      "upstream_inference_prompt_cost": 4.047e-05,
+      "upstream_inference_completions_cost": 0.0014476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 249,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:36:59.157963+00:00",
+  "latency_s": 3.353,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

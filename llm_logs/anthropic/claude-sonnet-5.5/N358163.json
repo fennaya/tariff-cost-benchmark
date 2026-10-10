@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358163",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "6505006090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595554-giZimS85zOwHalEWaPnY",
+    "object": "chat.completion",
+    "created": 1791595554,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a costume headpiece. Festive articles fall in heading 9505, and the question is whether the headpiece is a festive article or wearing apparel or a headgear item. Headwear of textile materials is in 6505, but CBP generally treats novelty costume headpieces as festive articles under 9505.90.60 (other festive, carnival or other entertainment articles).\n\nMasks would also fall under 9505.90.40 (masks), but the ruling notes the item is not a mask because it covers the entire head, so it is not classified there. The rest of the description supports a headpiece, a costume accessory, classified in 9505.90.6000.\n\n{\"hts_code\": \"9505.90.6000\", \"reason\": \"The full-head goldfish headpiece is not a mask (it covers the entire head down to the shoulders) but is a novelty costume article, classified as a festive, carnival or other entertainment article of heading 9505.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 361,
+      "completion_tokens": 305,
+      "total_tokens": 666,
+      "cost": 0.003772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003772,
+        "upstream_inference_prompt_cost": 0.000722,
+        "upstream_inference_completions_cost": 0.00305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505906000",
+  "predicted_reason": "The full-head goldfish headpiece is not a mask (it covers the entire head down to the shoulders) but is a novelty costume article, classified as a festive, carnival or other entertainment article of heading 9505.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 361,
+    "completion_tokens": 305,
+    "total_tokens": 666,
+    "cost": 0.003772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003772,
+      "upstream_inference_prompt_cost": 0.000722,
+      "upstream_inference_completions_cost": 0.00305
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:55.204037+00:00",
+  "latency_s": 3.929,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

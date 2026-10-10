@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362083",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "3105590000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596414-AflLgVJxA7C7ZiDAav52",
+    "object": "chat.completion",
+    "created": 1791596414,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a liquid seed treatment fertilizer containing nitrogen, phosphate, micronutrients, and a seaweed extract. It is a mixed fertilizer, so it falls in Chapter 31.\n\nHeading 3105 covers mineral or chemical fertilizers containing two or three of the fertilizing elements nitrogen, phosphorus, and potassium. This product contains nitrogen and phosphate, so 3105.20 (nitrogen, phosphorus, and potassium) does not fit because there is no potassium. 3105.30 (diammonium phosphate), 3105.40 (ammonium dihydrogenorthophosphate, MAP, and mixtures with DAP) and 3105.51 (nitrates and phosphates) do not clearly fit either. 3105.59 covers other fertilizers containing nitrogen and phosphorus. Within that, the statistical suffix is likely 3105.59.0000.\n\nSome alternatives were considered. 3105.60 covers fertilizers containing phosphorus and potassium, which does not apply. 3105.90 covers other fertilizers, which could be used for micronutrient-based products. Since the product contains both nitrogen and phosphate, 3105.59 is the better fit.\n\n{\"hts_code\": \"3105.59.0000\", \"reason\": \"A mixed fertilizer containing nitrogen and phosphate (plus micronutrients and seaweed extract) without potassium is classified in HTSUS 3105.59 as other mineral or chemical fertilizers containing nitrogen and phosphorus.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 585,
+      "completion_tokens": 515,
+      "total_tokens": 1100,
+      "cost": 0.00632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00632,
+        "upstream_inference_prompt_cost": 0.00117,
+        "upstream_inference_completions_cost": 0.00515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105590000",
+  "predicted_reason": "A mixed fertilizer containing nitrogen and phosphate (plus micronutrients and seaweed extract) without potassium is classified in HTSUS 3105.59 as other mineral or chemical fertilizers containing nitrogen and phosphorus.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 585,
+    "completion_tokens": 515,
+    "total_tokens": 1100,
+    "cost": 0.00632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00632,
+      "upstream_inference_prompt_cost": 0.00117,
+      "upstream_inference_completions_cost": 0.00515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:14.971150+00:00",
+  "latency_s": 4.774,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

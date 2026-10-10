@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359476",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3004909267",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595851-osz4pff64tripgkseSJV",
+    "object": "chat.completion",
+    "created": 1791595851,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Tolvaptan is a benzazepine derivative, so the question is whether the tablets fall under heading 3004 (medicaments in measured doses) and which subheading applies.\n\nTolvaptan is 7-chloro-5-hydroxy-1-[2-methyl-4-(o-toluoylamino)benzoyl]-2,3,4,5-tetrahydro-1H-1-benzazepine. The bulk active ingredient would be classified in 2933.39 or 2933.79, and CBP rulings have placed tolvaptan bulk in 2933.39.9290 or similar. Finished tablets in measured doses go to heading 3004.\n\nWithin heading 3004, the likely subheading is 3004.90 (other medicaments). The 10-digit statistical suffix for 3004.90.92 is \"Other\" at 3004.90.9290, and I recall 3004.90.9250 may be used for some products, but I am not certain of that.\n\nI recall a CBP ruling on Jynarque/Samsca tolvaptan tablets classified in 3004.90.9290. I am going from memory here and have not confirmed it.\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Tolvaptan tablets are medicaments put up in measured doses for retail sale, falling under heading 3004 and, as an item not elsewhere specified, in the residual subheading 3004.90.92.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 457,
+      "total_tokens": 777,
+      "cost": 0.00521,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00521,
+        "upstream_inference_prompt_cost": 0.00064,
+        "upstream_inference_completions_cost": 0.00457
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Tolvaptan tablets are medicaments put up in measured doses for retail sale, falling under heading 3004 and, as an item not elsewhere specified, in the residual subheading 3004.90.92.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 457,
+    "total_tokens": 777,
+    "cost": 0.00521,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00521,
+      "upstream_inference_prompt_cost": 0.00064,
+      "upstream_inference_completions_cost": 0.00457
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:50.248792+00:00",
+  "latency_s": 6.077,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

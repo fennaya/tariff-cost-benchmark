@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359963",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4412319200",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595993-stcBrJjwuUsSyvBC83A7",
+    "object": "chat.completion",
+    "created": 1791595993,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is plywood under heading 4412. The panel has seven veneers plus HDF and melamine paper overlays on both faces. The key question is whether the overlay changes the classification.\n\nHeading 4412 covers plywood, veneered panels and similar laminated wood. Note 1 to subheading 4412 sets out the plywood subheadings. Subheading 4412.10 covers bamboo. Subheading 4412.3x covers plywood with at least one outer ply of non-coniferous wood. Subheading 4412.9x covers other plywood.\n\nBecause the face is covered by an HDF sheet and melamine paper, the outer ply is arguably not visible. The HDF is fiberboard, not a wood ply. Even so, the panel is still plywood with every ply of wood \u22646mm, and the outer plies of the wood core are tropical non-coniferous woods.\n\nThe real choice is between 4412.33 (outer ply of non-coniferous wood of the species listed, such as alder, ash, birch, cherry and so on) and 4412.34 (other non-coniferous, not listed), and 4412.31 (at least one outer ply of tropical wood). Subheading 4412.31 covers plywood with at least one outer ply of tropical wood listed in the subheading note, including jabon? Not sure. The listed species include padauk, and the subheading note names \"Padauk\" among tropical woods. Gmelina and jabon are probably not listed, but padauk is, and the face ply is random. The ruling probably held that the panel falls under 4412.99 (other) because the outer ply could not be identified. In a ruling like this, with the face ply not identifiable, the likely result is the \"other\" provision with the face of HDF. Under 4412.99, the statistical suffixes include 4412.99.31 for plywood with a face ply of non-coniferous wood and 4412.99.51 for others. Because the outer surface is HDF/melamine, I'd go with 4412.99.5710 or similar. HTS 4412.99.5710 is \"Other: Other: Other: Other: Plywood, other, with at least one outer ply of nonconiferous wood: Other\"? I'm not certain, so I'll go with 4412.99.5115.\n\n{\"hts_code\": \"4412.99.5115\", \"reason\": \"Seven-ply tropical-hardwood plywood overlaid with HDF and melamine paper, so no identifiable outer wood ply, falls in the 'other plywood' provision of heading 4412.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 385,
+      "completion_tokens": 809,
+      "total_tokens": 1194,
+      "cost": 0.00886,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00886,
+        "upstream_inference_prompt_cost": 0.00077,
+        "upstream_inference_completions_cost": 0.00809
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4412995115",
+  "predicted_reason": "Seven-ply tropical-hardwood plywood overlaid with HDF and melamine paper, so no identifiable outer wood ply, falls in the 'other plywood' provision of heading 4412.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 385,
+    "completion_tokens": 809,
+    "total_tokens": 1194,
+    "cost": 0.00886,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00886,
+      "upstream_inference_prompt_cost": 0.00077,
+      "upstream_inference_completions_cost": 0.00809
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:13.441270+00:00",
+  "latency_s": 7.606,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

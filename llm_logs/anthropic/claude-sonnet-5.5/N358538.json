@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358538",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "5609003000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595624-MiCqhRc6VyRrDRKwBFKe",
+    "object": "chat.completion",
+    "created": 1791595624,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a hangtag fastener (a loop-lock fastener made of braided polyester monofilament with plastic pieces). The likely classification is 5609.00, articles of yarn, n.e.s.\n\nAlternatives considered:\n- 3926.90 (other articles of plastics) was rejected because the textile string gives the article its essential character.\n- 5609.00.30 covers articles of man-made fibers yarn, strip or the like of heading 5404 or 5405, twine, cordage, rope or cables.\n- Monofilament of 5404 qualifies, but the fastener has a plastic locking piece.\n- The 5609 subheadings are 5609.00.1000 (of cotton), 5609.00.2000 (of fibers of 5404/5405?), 5609.00.3000 (of other man-made fibers), and 5609.00.4000 (other).\n\nI recall the HTSUS 5609.00 breakdown as: 5609.00.10 of cotton; 5609.00.20 of man-made fibers, 5609.00.30? I am not certain. Another version I recall is 5609.00.20 \"Of man-made fibers\"? and 5609.00.30 \"Of other fibers\"? Of these, 5609.00.3000 is \"Other: Of yarn, strip or the like of heading 5404 or 5405, twine, cordage, rope or cables\". 5609.00.4000 is \"Other\".\n\nSince the item is made of polyester monofilament, I choose 5609.00.4000 as a safer pick. The specific item is an article of monofilament yarn, not twine, cordage or rope. The braided yarn is arguably cordage-like, but it is a fastener. I'll go with 5609.00.4000.\n\n{\"hts_code\": \"5609.00.4000\", \"reason\": \"The braided polyester monofilament fastener with molded plastic pin and lock is an article of yarn not elsewhere specified, classified in heading 5609 as an other article.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 644,
+      "total_tokens": 1014,
+      "cost": 0.00718,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00718,
+        "upstream_inference_prompt_cost": 0.00074,
+        "upstream_inference_completions_cost": 0.00644
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5609004000",
+  "predicted_reason": "The braided polyester monofilament fastener with molded plastic pin and lock is an article of yarn not elsewhere specified, classified in heading 5609 as an other article.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 644,
+    "total_tokens": 1014,
+    "cost": 0.00718,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00718,
+      "upstream_inference_prompt_cost": 0.00074,
+      "upstream_inference_completions_cost": 0.00644
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:05.169154+00:00",
+  "latency_s": 6.335,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

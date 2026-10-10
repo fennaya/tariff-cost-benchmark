@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361031",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9401616011",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596196-FpP4UhH3MwZ8g0HJJuCS",
+    "object": "chat.completion",
+    "created": 1791596196,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an upholstered sofa with a wooden frame, so it falls in heading 9401. Heading 9401.61 covers upholstered seats with a wooden frame. The 9401.61 subheadings are:\n\n- 9401.61.20: Seats of a kind used for aircraft... (not applicable)\n- 9401.61.30: Motor vehicle seats (not applicable)\n- 9401.61.40: Convertible into beds, other than by tilting or by recline (not applicable here)\n- 9401.61.60: Other, with wooden frame, upholstered, other (the residual)\n\nThe older schedule had 9401.61.40 for \"Other: Stuffed or upholstered, with wooden frame... Other: Other\" and 9401.61.60 for \"Other\", so I am working from memory here. Under the current schedule, 9401.61.40 is \"Other seats, with wooden frames, upholstered: Other: Other,\" and 9401.61.60 is \"Other.\" My recollection is that 9401.61.40 is \"Other: Convertible into beds, other than by tilting or by recline\" and 9401.61.60 is \"Other.\"\n\nThe current schedule reads 9401.61.20 (Seats of a kind used for aircraft; actually 9401.10 and 9401.20 cover that), 9401.61.30 (Of a kind used for dwellings: Not convertible into beds... possibly), 9401.61.40 (Other: Convertible into beds), 9401.61.60 (Other). The 9401.61.40 and 9401.61.60 split is the one I'm fairly sure of. Since this sofa does not convert into a bed, 9401.61.60 fits.\n\n```json\n{\"hts_code\": \"9401.61.6011\", \"reason\": \"Upholstered sofa with a wooden frame that is not convertible into a bed falls under heading 9401, subheading 9401.61.60, with the statistical suffix 11 for other upholstered seats with wood frames.\"}\n```\n\nCorrection: I should provide only the JSON.\n\n{\"hts_code\": \"9401.61.6011\", \"reason\": \"Upholstered sofa with a wooden frame, not convertible into a bed, is classified as other upholstered wood-framed seating in heading 9401.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 501,
+      "completion_tokens": 722,
+      "total_tokens": 1223,
+      "cost": 0.008222,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008222,
+        "upstream_inference_prompt_cost": 0.001002,
+        "upstream_inference_completions_cost": 0.00722
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401616011",
+  "predicted_reason": "Upholstered sofa with a wooden frame, not convertible into a bed, is classified as other upholstered wood-framed seating in heading 9401.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 501,
+    "completion_tokens": 722,
+    "total_tokens": 1223,
+    "cost": 0.008222,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008222,
+      "upstream_inference_prompt_cost": 0.001002,
+      "upstream_inference_completions_cost": 0.00722
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:36.741221+00:00",
+  "latency_s": 6.234,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

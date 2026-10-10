@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358306",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8436800090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595580-uRyvik7NqFNIczHsE6Po",
+    "object": "chat.completion",
+    "created": 1791595580,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to match a CBP ruling on the RIC (Roughage Intake Control) system, which I recall being classified in heading 8436 as other agricultural machinery. The system is an animal feeding apparatus, and 8436.21 covers poultry-keeping machinery, so it doesn't fit. The relevant subheadings are:\n\n- 8436.80: other machinery\n- 8436.80.00: other machinery (the HTS has 8436.80.0100 for pneumatic or mechanical feeding equipment, and 8436.80.0090 for other)\n\nWithin 8436.80, the statistical suffixes are 8436.80.0010 (Other: Forestry machinery) and 8436.80.0090 (Other). I believe the 8436.80.00 subheading is split into 8436.80.0010 for forestry and 8436.80.0090 for other, so the answer is 8436.80.0090.\n\nThe alternative is heading 9031 for measuring instruments. However, the system's primary function is feeding and watering cattle, with the weighing and recording being integrated, so 8436 is the better fit.\n\n{\"hts_code\": \"8436.80.0090\", \"reason\": \"The system is a complete cattle feeding and watering apparatus with integrated RFID and weighing, so it is classified as other agricultural animal-husbandry machinery under heading 8436, subheading 8436.80.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 353,
+      "completion_tokens": 446,
+      "total_tokens": 799,
+      "cost": 0.005166,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005166,
+        "upstream_inference_prompt_cost": 0.000706,
+        "upstream_inference_completions_cost": 0.00446
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8436800090",
+  "predicted_reason": "The system is a complete cattle feeding and watering apparatus with integrated RFID and weighing, so it is classified as other agricultural animal-husbandry machinery under heading 8436, subheading 8436.80.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 446,
+    "total_tokens": 799,
+    "cost": 0.005166,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005166,
+      "upstream_inference_prompt_cost": 0.000706,
+      "upstream_inference_completions_cost": 0.00446
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:20.922782+00:00",
+  "latency_s": 4.996,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

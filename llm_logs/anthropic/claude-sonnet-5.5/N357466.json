@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357466",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595429-B65NiLgFaWLOHZfj0XIG",
+    "object": "chat.completion",
+    "created": 1791595429,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a costume. Festive articles (Chapter 95) versus wearing apparel: since 2000s, CBP has classified costumes made of ordinary textile as festive articles under 9505.90 only if not wearing apparel. Costumes of adult size that are of a substantial nature are classified as wearing apparel, while flimsy novelty costumes are classified under 9505.\n\nThe Spartan Queen costume is a halter-style dress and arm band. Rulings on such costumes: \"Note 1(e) to Chapter 95 excludes fancy dress of textiles, chapters 61 and 62.\" Dress of adult size, made of knit polyester, would be 6104.43.2020 (women's dresses, knit, synthetic fibers). If woven, it would be 6204.43.4040 (women's dresses, woven, synthetic fibers, other).\n\nThe material is not given. The halter-style dress is probably a woven polyester or a knit fabric. For Spartan costumes, I believe rulings were like \"NY N0xxxx: The applicable subheading for the Spartan Queen costume will be 6204.43.4040, HTSUS, which provides for women's dresses, of synthetic fibers, other.\" I'll go with woven.\n\n{\"hts_code\": \"6204.43.4040\", \"reason\": \"The adult-size halter-style dress (with arm band accessory) is classified as women's wearing apparel, specifically a dress of synthetic fibers, rather than a festive article, because Chapter 95 Note 1(e) excludes textile fancy dress of Chapters 61 and 62.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 190,
+      "completion_tokens": 525,
+      "total_tokens": 715,
+      "cost": 0.00563,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00563,
+        "upstream_inference_prompt_cost": 0.00038,
+        "upstream_inference_completions_cost": 0.00525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6204434040",
+  "predicted_reason": "The adult-size halter-style dress (with arm band accessory) is classified as women's wearing apparel, specifically a dress of synthetic fibers, rather than a festive article, because Chapter 95 Note 1(e) excludes textile fancy dress of Chapters 61 and 62.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 525,
+    "total_tokens": 715,
+    "cost": 0.00563,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00563,
+      "upstream_inference_prompt_cost": 0.00038,
+      "upstream_inference_completions_cost": 0.00525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:49.381645+00:00",
+  "latency_s": 5.785,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

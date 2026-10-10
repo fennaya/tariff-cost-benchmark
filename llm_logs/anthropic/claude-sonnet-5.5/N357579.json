@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357579",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "4602198000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595453-o3SjvHCkzjTyiUXVEqQn",
+    "object": "chat.completion",
+    "created": 1791595453,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a St. Brigid's cross made of rushes. The likely classification is a plaited article of vegetable plaiting materials, heading 4602, or alternatively a religious article under 4420 or 6913.\n\nHeading 4602 covers basketwork, wickerwork and other articles made directly to shape from plaiting materials. Rush is a vegetable plaiting material, so articles woven from it fall here. Subheading 4602.19 covers other vegetable-material articles, and the statistical suffix for other products is 4602.19.6000 (earlier 4602.19.60). The cross is a woven rush article, not a wood article, so 4420 does not apply.\n\nThe HTS under 4602.19 is split as follows:\n- 4602.19.05 \u2013 Mats and matting\n- 4602.19.10 \u2013 Articles of the type used for... (other)\n- 4602.19.20 \u2013 Bags\n- 4602.19.30 \u2013 Other\n- 4602.19.35 \u2013 ...\n- 4602.19.60 \u2013 Other\n\nI am not certain of the exact suffix, so 4602.19.6000 is my best guess. Because the item is a decorative wall hanging, I considered the possibility that it falls under 4602.19.9000 in the 2022 revision. The older number 4602.19.60 had the further breakdown 4602.19.6000 (Other), which I am going with.\n\n```json\n{\"hts_code\": \"4602.19.6000\", \"reason\": \"A hand-woven decorative cross made directly to shape from rushes (vegetable plaiting material) is an article of plaiting materials classified in heading 4602, in the residual 'other' subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 539,
+      "total_tokens": 865,
+      "cost": 0.006042,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006042,
+        "upstream_inference_prompt_cost": 0.000652,
+        "upstream_inference_completions_cost": 0.00539
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4602196000",
+  "predicted_reason": "A hand-woven decorative cross made directly to shape from rushes (vegetable plaiting material) is an article of plaiting materials classified in heading 4602, in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 539,
+    "total_tokens": 865,
+    "cost": 0.006042,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006042,
+      "upstream_inference_prompt_cost": 0.000652,
+      "upstream_inference_completions_cost": 0.00539
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:13.282491+00:00",
+  "latency_s": 5.872,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

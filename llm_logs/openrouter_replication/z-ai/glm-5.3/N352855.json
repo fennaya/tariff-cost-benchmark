@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N352855",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594028-ORGM9IgTV2Qg3GmNJpEA",
+    "object": "chat.completion",
+    "created": 1791594028,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0060\", \"reason\": \"Surface-worked igneous building stone (Black Biotite Norite) for countertops falls under worked monumental or building stone, other, in subheading 6802.93.00.\"}",
+          "refusal": null,
+          "reasoning": "6802.93? Igneous stone worked... \"other stone\" \u2014 6802.93.00? Actually 6802.93 covers other monumental/building stone worked. Igneous... likely 6802.93.0060? Common ruling: 6802.93.00, specific 10-digit: 6802.93.0060 \"Other\".",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "6802.93? Igneous stone worked... \"other stone\" \u2014 6802.93.00? Actually 6802.93 covers other monumental/building stone worked. Igneous... likely 6802.93.0060? Common ruling: 6802.93.00, specific 10-digit: 6802.93.0060 \"Other\".",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 225,
+      "completion_tokens": 149,
+      "total_tokens": 374,
+      "cost": 0.0005516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005516,
+        "upstream_inference_prompt_cost": 4.5e-05,
+        "upstream_inference_completions_cost": 0.0005066
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 88,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930060",
+  "predicted_reason": "Surface-worked igneous building stone (Black Biotite Norite) for countertops falls under worked monumental or building stone, other, in subheading 6802.93.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 225,
+    "completion_tokens": 149,
+    "total_tokens": 374,
+    "cost": 0.0005516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005516,
+      "upstream_inference_prompt_cost": 4.5e-05,
+      "upstream_inference_completions_cost": 0.0005066
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 88,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:28.792527+00:00",
+  "latency_s": 3.701,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

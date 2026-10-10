@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361321",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791597965-BgSWp2FcQ5P6JpspKMX4",
+    "object": "chat.completion",
+    "created": 1791597965,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description is very sparse: it says only that the sleeves and bottom hem have raw, unfinished edges. That points to an upper-body garment with sleeves, likely a knit T-shirt- or sweatshirt-type top, but fiber content, knit versus woven, and gender are not stated.\n\nGiven those gaps, the most common case for such a garment is a cotton knit T-shirt-type top. That falls under heading 6109 (T-shirts, singlets, tank tops and similar garments, knitted or crocheted), subheading 6109.10.00 for cotton. Within it, the statistical suffix 0012 covers men's or boys' all-white T-shirts with short hems. Because the hem here is unfinished, a women's or girls' line is more fitting: 6109.10.0040, women's or girls' T-shirts, other.\n\n{\"hts_code\": \"6109.10.0040\", \"reason\": \"Assuming a women's cotton knit T-shirt-type top (fiber, knit construction and gender are not stated), a garment with raw-edged sleeves and hem falls under heading 6109 as a cotton T-shirt, women's or girls'.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 372,
+      "total_tokens": 536,
+      "cost": 0.008096,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008096,
+        "upstream_inference_prompt_cost": 0.000656,
+        "upstream_inference_completions_cost": 0.00744
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6109100040",
+  "predicted_reason": "Assuming a women's cotton knit T-shirt-type top (fiber, knit construction and gender are not stated), a garment with raw-edged sleeves and hem falls under heading 6109 as a cotton T-shirt, women's or girls'.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 164,
+    "completion_tokens": 372,
+    "total_tokens": 536,
+    "cost": 0.008096,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008096,
+      "upstream_inference_prompt_cost": 0.000656,
+      "upstream_inference_completions_cost": 0.00744
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T02:06:05.442310+00:00",
+  "latency_s": 5.269,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

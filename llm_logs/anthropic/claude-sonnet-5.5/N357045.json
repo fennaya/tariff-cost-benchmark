@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357045",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "8708925000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595309-3j7bjPBwSqbakD4FZtPv",
+    "object": "chat.completion",
+    "created": 1791595309,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on pipe assemblies for catalytic converter systems. The candidate headings are 8421.99 (parts of catalytic converters, which are filtering or purifying machinery), 8708.92 (mufflers and exhaust pipes for vehicles), and 7307 (stainless tube fittings).\n\nHeading 8708.92 covers \"silencers (mufflers) and exhaust pipes; parts thereof\", and CBP typically classifies exhaust pipes and their parts there. Note 3 to Section XVII and the parts rules matter here. Catalytic converters themselves fall under 8421.39, and their parts under 8421.99. These assemblies, however, are pipes that carry exhaust gas to the converters, so they are exhaust pipes. The Y-pipe is therefore likely classified under 8708.92.\n\nThe current HTS number is 8708.92.5000, \"Other\" (not 8708.92.1000, which is for the Free-rate category). The heading's subheadings are 8708.92.10 (mufflers and exhaust pipes for tractors) and 8708.92.50 (other). The most applicable code is 8708.92.5000.\n\n{\"hts_code\": \"8708.92.5000\", \"reason\": \"Stainless-steel pipe assemblies that direct exhaust gas to the catalytic converters in motor vehicles are exhaust pipes and parts thereof, classified in heading 8708.92 (other).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 474,
+      "total_tokens": 1088,
+      "cost": 0.005968,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005968,
+        "upstream_inference_prompt_cost": 0.001228,
+        "upstream_inference_completions_cost": 0.00474
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708925000",
+  "predicted_reason": "Stainless-steel pipe assemblies that direct exhaust gas to the catalytic converters in motor vehicles are exhaust pipes and parts thereof, classified in heading 8708.92 (other).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 614,
+    "completion_tokens": 474,
+    "total_tokens": 1088,
+    "cost": 0.005968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005968,
+      "upstream_inference_prompt_cost": 0.001228,
+      "upstream_inference_completions_cost": 0.00474
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:49.780702+00:00",
+  "latency_s": 4.885,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

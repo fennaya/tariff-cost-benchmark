@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362777",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "9615196000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596550-mHYFcKrOR1dhlGi555gH",
+    "object": "chat.completion",
+    "created": 1791596550,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on headbands imported and sold together as a set. Headbands fall under heading 9615 (combs, hair-slides, hairpins and similar articles). Hair bands and similar articles of base metal go under 9615.19, and \"other\" falls under 9615.90.\n\nHeadbands made of textile-covered metal are often classified in 9615.90.60 (other: of base metal) or 9615.11 (of hard rubber or plastics). Many CBP rulings on fabric-covered headbands use 9615.90.6000 for other hair accessories of base metal, with the HTS 9615.90.60 text \"Other: Of base metal, whether or not plated with precious metal\". There is also 9615.19.60 for \"Combs, hair-slides and the like: Other: Of base metal\", but headbands are not combs or slides.\n\nHeadbands are classified in 9615.90 as \"hairpins, curling pins, curling grips, hair-curlers and the like... other.\" The two headbands sold together would be a set, but they are not put up for retail sale as a set in the sense of GRI 3(b), since each has the same heading anyway, so both classify under 9615. The essential character is the metal frame covered in fabric, so the correct code is 9615.90.6000.\n\n{\"hts_code\": \"9615.90.6000\", \"reason\": \"Fabric-covered metal-frame decorative headbands are hair-grips/similar hair accessories of heading 9615, and as articles of base metal they fall under subheading 9615.90.60.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 293,
+      "completion_tokens": 493,
+      "total_tokens": 786,
+      "cost": 0.005516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005516,
+        "upstream_inference_prompt_cost": 0.000586,
+        "upstream_inference_completions_cost": 0.00493
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9615906000",
+  "predicted_reason": "Fabric-covered metal-frame decorative headbands are hair-grips/similar hair accessories of heading 9615, and as articles of base metal they fall under subheading 9615.90.60.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 493,
+    "total_tokens": 786,
+    "cost": 0.005516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005516,
+      "upstream_inference_prompt_cost": 0.000586,
+      "upstream_inference_completions_cost": 0.00493
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:30.421008+00:00",
+  "latency_s": 5.807,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

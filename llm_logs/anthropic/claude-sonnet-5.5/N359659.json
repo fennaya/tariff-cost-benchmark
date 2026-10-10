@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359659",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8507600090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595888-zNXb3hh3rovhLTSWupRx",
+    "object": "chat.completion",
+    "created": 1791595888,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Lithium polymer rechargeable batteries are classified under HTSUS 8507.60 as lithium-ion accumulators. The statistical suffixes for 8507.60.00 are:\n- 8507.60.0010: cells and batteries of a kind used for the electric motor to propel vehicles of 8703 (the \"Lithium-ion batteries\" subheading, which also has a vehicle sub-breakout)\n- 8507.60.0020: other\n\nExact suffixes under 8507.60.00 are 10 (used as the primary source of power for electric vehicles of 8703), 20 (other), and possibly a newer revision with other breakouts. A small pouch cell for a transmitter falls under \"other,\" so 8507.60.0020 fits.\n\n{\"hts_code\": \"8507.60.0020\", \"reason\": \"A rechargeable lithium polymer pouch cell is a lithium-ion accumulator of heading 8507, subheading 8507.60, and it is not a type used to propel vehicles, so it goes in the 'other' statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 388,
+      "completion_tokens": 344,
+      "total_tokens": 732,
+      "cost": 0.004216,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004216,
+        "upstream_inference_prompt_cost": 0.000776,
+        "upstream_inference_completions_cost": 0.00344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8507600020",
+  "predicted_reason": "A rechargeable lithium polymer pouch cell is a lithium-ion accumulator of heading 8507, subheading 8507.60, and it is not a type used to propel vehicles, so it goes in the 'other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 344,
+    "total_tokens": 732,
+    "cost": 0.004216,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004216,
+      "upstream_inference_prompt_cost": 0.000776,
+      "upstream_inference_completions_cost": 0.00344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:29.223554+00:00",
+  "latency_s": 3.537,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

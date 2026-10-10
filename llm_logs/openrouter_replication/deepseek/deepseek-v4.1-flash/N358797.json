@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N358797",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8703900100",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598842-FNnFPPhsYHFzx2Ix3pXk",
+    "object": "chat.completion",
+    "created": 1791598842,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.90.0100\", \"reason\": \"The E3-S is a battery-electric, permanently enclosed four-wheeled vehicle for transporting a person, with a 3 kW motor and 19 mph top speed, classifiable as an other electric vehicle for the transport of persons under HTSUS 8703.90.0100.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 78,
+      "total_tokens": 453,
+      "cost": 8.55e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.55e-05,
+        "upstream_inference_prompt_cost": 7.5e-06,
+        "upstream_inference_completions_cost": 7.8e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703900100",
+  "predicted_reason": "The E3-S is a battery-electric, permanently enclosed four-wheeled vehicle for transporting a person, with a 3 kW motor and 19 mph top speed, classifiable as an other electric vehicle for the transport of persons under HTSUS 8703.90.0100.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 78,
+    "total_tokens": 453,
+    "cost": 8.55e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.55e-05,
+      "upstream_inference_prompt_cost": 7.5e-06,
+      "upstream_inference_completions_cost": 7.8e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T02:20:42.677083+00:00",
+  "latency_s": 5.489,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

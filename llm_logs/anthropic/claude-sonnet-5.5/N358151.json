@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358151",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "9403608093",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595550-PFdcWijN82nBOgdE4jUB",
+    "object": "chat.completion",
+    "created": 1791595550,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a camper conversion kit made of plywood that functions as a bed platform with storage drawers. The likely classification is furniture of wood, either as a bed (9403.50.9080, wooden furniture of a kind used in the bedroom) or as other wooden furniture (9403.60.8081).\n\nA bedframe with a mattress would be a bed, and the kit is essentially a platform bed. Because it carries a mattress, heading 9404 could be considered, but the mattress is only a component of the kit, and the essential character comes from the plywood platform with its storage drawers. That points to 9403.\n\nBedroom furniture is covered by 9403.50.90 (wooden furniture of a kind used in the bedroom, other than beds in 9403.50.10 area). I recall the 9403.50 split as 9403.50.9041 for beds (other than bunk beds) and 9403.50.9045 for other bedroom furniture, with 9403.50.9080 as the older \"other.\" I believe the current statistical suffixes are 9403.50.9040 (bed, other) and 9403.50.9080 (other). I'm choosing 9403.50.9080 as the best fit.\n\nThe alternative is that the ruling treated it as \"other wooden furniture\" under 9403.60.80, since it is not used in a bedroom but in a vehicle. The item is a bed platform, though, so I'm going with 9403.50.9080 over 9403.60.8081.\n\n{\"hts_code\": \"9403.50.9080\", \"reason\": \"The plywood bed platform with slide-out storage drawers is essentially wooden bed-type furniture of a kind used in the bedroom, so it is classified in heading 9403 as other wooden bedroom furniture, with the foam mattress as a component.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 373,
+      "completion_tokens": 578,
+      "total_tokens": 951,
+      "cost": 0.006526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006526,
+        "upstream_inference_prompt_cost": 0.000746,
+        "upstream_inference_completions_cost": 0.00578
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403509080",
+  "predicted_reason": "The plywood bed platform with slide-out storage drawers is essentially wooden bed-type furniture of a kind used in the bedroom, so it is classified in heading 9403 as other wooden bedroom furniture, with the foam mattress as a component.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 373,
+    "completion_tokens": 578,
+    "total_tokens": 951,
+    "cost": 0.006526,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006526,
+      "upstream_inference_prompt_cost": 0.000746,
+      "upstream_inference_completions_cost": 0.00578
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:50.662777+00:00",
+  "latency_s": 7.311,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

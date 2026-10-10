@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361771",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "8302416080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600232-Y91zMhkKeSQzInAk3lEB",
+    "object": "chat.completion",
+    "created": 1791600232,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7326.90.4560\", \"reason\": \"Welded, cut, and drilled steel awning mounting brackets are finished articles of steel not more specifically covered elsewhere, classifiable as other articles of iron or steel in subheading 7326.90.4560.\"}",
+          "refusal": null,
+          "reasoning": "Steel brackets for awnings \u2014 building hardware of steel, HTS 7326.90. Likely 7326.90.4560 (other articles of iron or steel). This is a known ruling (NY N-series) classifying awning brackets in 7326.90.4560.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Steel brackets for awnings \u2014 building hardware of steel, HTS 7326.90. Likely 7326.90.4560 (other articles of iron or steel). This is a known ruling (NY N-series) classifying awning brackets in 7326.90.4560.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 136,
+      "total_tokens": 384,
+      "cost": 0.000662408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000662408,
+        "upstream_inference_prompt_cost": 9.608e-06,
+        "upstream_inference_completions_cost": 0.0006528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 67,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7326904560",
+  "predicted_reason": "Welded, cut, and drilled steel awning mounting brackets are finished articles of steel not more specifically covered elsewhere, classifiable as other articles of iron or steel in subheading 7326.90.4560.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 136,
+    "total_tokens": 384,
+    "cost": 0.000662408,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000662408,
+      "upstream_inference_prompt_cost": 9.608e-06,
+      "upstream_inference_completions_cost": 0.0006528
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 67,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:43:53.162386+00:00",
+  "latency_s": 0.919,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

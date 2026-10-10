@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362842",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8428900390",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596571-rVFrguAu5EhvGwSYNsOY",
+    "object": "chat.completion",
+    "created": 1791596571,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a functional unit (GRI 3(b), Note 4 to Section XVI) made up of machines that work together to produce lumber bundles. The essential character comes from the Package Maker, which stacks and bundles the lumber, so the unit is classified by its principal function.\n\nCandidate headings:\n- 8479.89: machines with individual functions not specified elsewhere. This is the likely home for a lumber stacking and bundling machine.\n- 8428: conveyors and other handling machinery. It covers the conveyors, but the system's overall function is forming bundles, not just moving goods.\n- 8422.40: packing or wrapping machinery. This covers the strapping machine, but strapping is only a part of the system.\n- 8465: wood-working machines. The system does not cut or shape wood, so this does not fit.\n\nI settled on 8479.89 because the system as a whole is a stacking and bundling line. The residual subheading 8479.89.94 is typically used, and the 8479.89.9599 \"other\" number is the one I have seen for such machinery in CBP rulings. The stacking machine is a machine with an individual function, so the closest number is 8479.89.9599.\n\n{\"hts_code\": \"8479.89.9599\", \"reason\": \"The modular system is a functional unit whose principal function is automated stacking and bundling of lumber, so it is classified as a machine with individual function not elsewhere specified in heading 8479 (GRI 1, Section XVI Note 4).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1220,
+      "completion_tokens": 475,
+      "total_tokens": 1695,
+      "cost": 0.00719,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00719,
+        "upstream_inference_prompt_cost": 0.00244,
+        "upstream_inference_completions_cost": 0.00475
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479899599",
+  "predicted_reason": "The modular system is a functional unit whose principal function is automated stacking and bundling of lumber, so it is classified as a machine with individual function not elsewhere specified in heading 8479 (GRI 1, Section XVI Note 4).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1220,
+    "completion_tokens": 475,
+    "total_tokens": 1695,
+    "cost": 0.00719,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00719,
+      "upstream_inference_prompt_cost": 0.00244,
+      "upstream_inference_completions_cost": 0.00475
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:52.257081+00:00",
+  "latency_s": 5.93,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

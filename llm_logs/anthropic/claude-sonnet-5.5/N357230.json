@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357230",
+  "rulingDate": "2026-01-06T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595340-t69r9mnkFG2KUETW8BXY",
+    "object": "chat.completion",
+    "created": 1791595340,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling about a costume. Adult-size costumes made of textile materials are classified in heading 9505 only if they are festive articles. However, Note 1(e) to Chapter 95 excludes fancy dress of textiles in Chapter 61 or 62. CBP generally classifies adult costumes that are apparel in Chapters 61 or 62, so a costume of a dress, tube top and waist tie would be classified as a women's dress.\n\nThe item is a long sleeveless pullover dress, likely knit polyester. The set consists of a dress, a tube top and a waist tie. Presumably the dress is the principal item, so the set would be classified as a dress, as a GRI 3(b) set or as a dress by essential character. Because it is probably knit, the likely heading is 6104.43 (women's dresses of synthetic fibers, knit): 6104.43.2020 for dresses of synthetic fibers, other, women's. The statistical suffix for 6104.43.2020 is \"Women's\" ... I recall 6104.43.2020 as \"Other: Women's\" and 6104.43.3000 as \"Other\". The tariff hierarchy at 6104.43 is: 6104.43.20 \"Other\" with 6104.43.2010 and 6104.43.2020 (the 2020 being \"Women's\" for polyester, 2030 for girls, etc.). I'll go with 6104.43.2020.\n\n{\"hts_code\": \"6104.43.2020\", \"reason\": \"An adult textile costume is excluded from heading 9505 by Note 1(e) to Chapter 95 and is classified as wearing apparel, with the sleeveless knit synthetic-fiber dress giving the set its essential character as a women's dress.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 565,
+      "total_tokens": 770,
+      "cost": 0.00606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00606,
+        "upstream_inference_prompt_cost": 0.00041,
+        "upstream_inference_completions_cost": 0.00565
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6104432020",
+  "predicted_reason": "An adult textile costume is excluded from heading 9505 by Note 1(e) to Chapter 95 and is classified as wearing apparel, with the sleeveless knit synthetic-fiber dress giving the set its essential character as a women's dress.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 205,
+    "completion_tokens": 565,
+    "total_tokens": 770,
+    "cost": 0.00606,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00606,
+      "upstream_inference_prompt_cost": 0.00041,
+      "upstream_inference_completions_cost": 0.00565
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:20.377008+00:00",
+  "latency_s": 5.667,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361432",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8541430010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596282-xc3MYbAH8qOkaKQ5gDhV",
+    "object": "chat.completion",
+    "created": 1791596283,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a solar-powered trailer. The options are:\n- 8501.31 or 8501.61 (generators),\n- 8541.43 (photovoltaic modules assembled into panels),\n- 8716.39 (other trailers),\n- 8716.80, or 8716.90 (parts).\n\nThe trailer is a wheeled, towed vehicle with a steel enclosure and two solar panels, but no batteries or inverters. It is not functional as a generator without those components. Under GRI 1, heading 8716 covers trailers and semi-trailers, and the solar panels are incidental to the trailer. Subheading 8716.39 covers \"other trailers and semi-trailers for the transport of goods\", and 8716.40 covers other trailers. The trailer is not clearly designed to carry goods, so it fits better under 8716.40 (\"Other trailers and semi-trailers\"), with statistical suffix 8716.40.0000. Since it is a mobile platform carrying solar panels, 8716.40.0000 seems most plausible.\n\nAnother possibility is that the panels are classified separately as 8541.43 and the trailer as 8716.90 parts. However, the item is described as a single trailer with integrated panels, so I will go with 8716.40.0000.\n\n{\"hts_code\": \"8716.40.0000\", \"reason\": \"The towed, non-self-propelled two-wheeled trailer with integrated solar panels but no power-conversion or storage components is classified as an other trailer of heading 8716 under GRI 1.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 501,
+      "total_tokens": 920,
+      "cost": 0.005848,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005848,
+        "upstream_inference_prompt_cost": 0.000838,
+        "upstream_inference_completions_cost": 0.00501
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716400000",
+  "predicted_reason": "The towed, non-self-propelled two-wheeled trailer with integrated solar panels but no power-conversion or storage components is classified as an other trailer of heading 8716 under GRI 1.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 419,
+    "completion_tokens": 501,
+    "total_tokens": 920,
+    "cost": 0.005848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005848,
+      "upstream_inference_prompt_cost": 0.000838,
+      "upstream_inference_completions_cost": 0.00501
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:03.274352+00:00",
+  "latency_s": 4.913,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

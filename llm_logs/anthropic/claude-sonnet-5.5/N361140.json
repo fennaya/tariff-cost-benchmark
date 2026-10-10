@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361140",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "8703230190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596209-jHgnVS3xQGkFSrnVecE6",
+    "object": "chat.completion",
+    "created": 1791596209,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Classification starts at heading 8703, which covers motor cars principally designed for transporting persons. The engine is a 1.7-liter spark-ignition engine, or 1,700 cc.\n\nThe 8703.23 subheadings cover spark-ignition engines of more than 1,500 cc but not more than 3,000 cc. The statistical suffix for new versus used depends on the subheading. Subheading 8703.23.01 covers vehicles of that engine size, and its 10-digit statistical lines are:\n- 8703.23.0110: new, 1,500\u20132,500 cc\n- 8703.23.0150: used\n\nThe common structure is 8703.23.01 with the statistical suffixes 10, 50 and 90. I recall 8703.23.0110 as new, 8703.23.0150 as used, and 8703.23.0190 as other, but I'm not certain of those suffixes. I'll go with 8703.23.0190, which I believe is the current line for \"other\".\n\nThe 8703.23 line covers vehicles over 1,500 cc up to 2,500 cc, and the used vehicle falls under the \"Other\" statistical line within it. I'm not fully sure of the suffix, but I'll go with 8703.23.0190.\n\n{\"hts_code\": \"8703.23.0190\", \"reason\": \"A used passenger motor vehicle with a 1.7-liter (1,700 cc) spark-ignition engine falls under heading 8703, subheading 8703.23 (over 1,500 cc but not over 3,000 cc), and I am going with the 'other' statistical line, though I am not fully certain of that suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 523,
+      "total_tokens": 829,
+      "cost": 0.005842,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005842,
+        "upstream_inference_prompt_cost": 0.000612,
+        "upstream_inference_completions_cost": 0.00523
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230190",
+  "predicted_reason": "A used passenger motor vehicle with a 1.7-liter (1,700 cc) spark-ignition engine falls under heading 8703, subheading 8703.23 (over 1,500 cc but not over 3,000 cc), and I am going with the 'other' statistical line, though I am not fully certain of that suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 306,
+    "completion_tokens": 523,
+    "total_tokens": 829,
+    "cost": 0.005842,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005842,
+      "upstream_inference_prompt_cost": 0.000612,
+      "upstream_inference_completions_cost": 0.00523
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:49.710171+00:00",
+  "latency_s": 4.747,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

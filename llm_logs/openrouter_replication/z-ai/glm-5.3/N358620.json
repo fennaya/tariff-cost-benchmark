@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358620",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "6802930090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599785-EbdPEZxegS1Zrp8JcIkl",
+    "object": "chat.completion",
+    "created": 1791599785,
+    "model": "z-ai/glm-5.3",
+    "provider": "SiliconFlow",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0090\", \"reason\": \"Polished and beveled granite slabs, simply cut to rectangular shape for countertops, are classified as worked granite other than setts/kerbs under heading 6802, subheading 6802.93.00.\"}",
+          "refusal": null,
+          "reasoning": "Granite, merely cut, polished \u2014 6802.93.0090? Granite HTS: 6802.93.0090 (other). Actually 6802.93.0090 is \"Other\" granite articles. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Granite, merely cut, polished \u2014 6802.93.0090? Granite HTS: 6802.93.0090 (other). Actually 6802.93.0090 is \"Other\" granite articles. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 282,
+      "completion_tokens": 126,
+      "total_tokens": 408,
+      "cost": 0.00075936,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075936,
+        "upstream_inference_prompt_cost": 0.00031584,
+        "upstream_inference_completions_cost": 0.00044352
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 57,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930090",
+  "predicted_reason": "Polished and beveled granite slabs, simply cut to rectangular shape for countertops, are classified as worked granite other than setts/kerbs under heading 6802, subheading 6802.93.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 282,
+    "completion_tokens": 126,
+    "total_tokens": 408,
+    "cost": 0.00075936,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00075936,
+      "upstream_inference_prompt_cost": 0.00031584,
+      "upstream_inference_completions_cost": 0.00044352
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "SiliconFlow",
+  "requested_at": "2026-10-10T02:36:25.259848+00:00",
+  "latency_s": 2.727,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

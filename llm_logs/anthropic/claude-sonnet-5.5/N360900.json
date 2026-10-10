@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360900",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9405994090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596178-Y9D3GhsPgRRPxeOFAytu",
+    "object": "chat.completion",
+    "created": 1791596178,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Lampshades are classified in heading 9405.99 as parts of lamps. Heading 9405 covers lamps and lighting fittings and parts thereof, and subheading 9405.99 covers \"Parts: Other\". The old 9405.99.40 line covered \"Other: Other\" and, I believe, was split in recent years. I recall 9405.99.4020 as \"Other\" (glass shades were in 9405.91). In the current schedule, 9405.92 covers plastics and 9405.99 covers other. The 9405.99.20 line covers \"Of base metal\" ... I'm not certain of this. The textile shade is not glass, plastic or metal, and CBP rulings on fabric lampshades typically use 9405.99.4070 (\"Other\"). I'm not confident of that line either.\n\nAnother candidate is 9405.99.4090, but I settle on 9405.99.4070 as the most likely.\n\n{\"hts_code\": \"9405.99.4070\", \"reason\": \"A silk-covered steel wire frame lampshade is a part of a lamp or lighting fitting of heading 9405, falling under the residual 'Parts: Other' provision of subheading 9405.99.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 239,
+      "completion_tokens": 380,
+      "total_tokens": 619,
+      "cost": 0.004278,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004278,
+        "upstream_inference_prompt_cost": 0.000478,
+        "upstream_inference_completions_cost": 0.0038
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9405994070",
+  "predicted_reason": "A silk-covered steel wire frame lampshade is a part of a lamp or lighting fitting of heading 9405, falling under the residual 'Parts: Other' provision of subheading 9405.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 239,
+    "completion_tokens": 380,
+    "total_tokens": 619,
+    "cost": 0.004278,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004278,
+      "upstream_inference_prompt_cost": 0.000478,
+      "upstream_inference_completions_cost": 0.0038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:18.672896+00:00",
+  "latency_s": 4.223,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361526",
+  "rulingDate": "2026-06-02T00:00:00",
+  "true_code": "8207906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596301-PFuFMnRbQzacpMAbonpp",
+    "object": "chat.completion",
+    "created": 1791596301,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "These are hand-operated pullers and presses (used with an impact driver) for vehicle repair. Candidates are 8467 (tools for working in the hand, with self-contained motor) and 8205 (hand tools not elsewhere specified). The tools have no motor of their own and are driven by an external impact driver, so heading 8467 does not apply.\n\nHeading 8205 covers hand tools, not elsewhere specified. Puller sets are commonly classified in 8205.59 (\"other hand tools\"). Subheading 8205.59.55 is \"Other: Other: Other\" (other hand tools of base metal). Alternatively, 8203 covers pliers, pincers, and tweezers, which does not fit. Gear pullers are often placed in 8466.20 or 8466.10 as work or tool holders, but CBP rulings on pullers generally say 8205.59.55. So 8205.59.55 is likely, with a 10-digit statistical suffix of 8205.59.5580 for other hand tools.\n\nHydraulic presses would go under 8479, but these are screw-driven by hand tools, so 8205 fits better.\n\n```json\n{\"hts_code\": \"8205.59.5580\", \"reason\": \"Steel screw-type pullers and presses powered by an external impact driver are non-motorized hand tools not elsewhere specified, so they fall under 8205.59 (other hand tools).\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 953,
+      "completion_tokens": 453,
+      "total_tokens": 1406,
+      "cost": 0.006436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006436,
+        "upstream_inference_prompt_cost": 0.001906,
+        "upstream_inference_completions_cost": 0.00453
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8205595580",
+  "predicted_reason": "Steel screw-type pullers and presses powered by an external impact driver are non-motorized hand tools not elsewhere specified, so they fall under 8205.59 (other hand tools).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 953,
+    "completion_tokens": 453,
+    "total_tokens": 1406,
+    "cost": 0.006436,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006436,
+      "upstream_inference_prompt_cost": 0.001906,
+      "upstream_inference_completions_cost": 0.00453
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:21.678853+00:00",
+  "latency_s": 4.809,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

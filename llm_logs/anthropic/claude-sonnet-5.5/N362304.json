@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362304",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "2008996500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596466-SkYrDNTyztHOwLdQNVM5",
+    "object": "chat.completion",
+    "created": 1791596466,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a baked flatbread made entirely of cassava, so the question is whether it falls under heading 1905 (bread and bakery products) or 1903 / 0714 (cassava products).\n\nHeading 1903 covers tapioca and tapioca substitutes prepared from starch in the form of flakes, grains, or pearls. That does not fit a flatbread made from grated whole root.\n\nHeading 0714 covers fresh or dried manioc roots, whether or not sliced or pelletized. A grated, pressed, formed, and baked flatbread goes beyond that.\n\nHeading 1905 covers bread, pastry, cakes, biscuits, and similar baked products. I recall CBP rulings classifying cassava flatbreads and tortillas in 1905.90, so I will use that.\n\nWithin 1905.90, the candidates are:\n- 1905.90.10: bread, pastry, cakes, biscuits and similar baked products, and puddings, whether or not containing chocolate, fruit, nuts or confectionery.\n- 1905.90.90: other.\n\nUnder 1905.90.10, \"bread\" is a covered product. That covers a flatbread, and 1905.90.1010 is \"Bread, pastry, cakes, biscuits and similar baked products, and puddings, whether or not containing chocolate, fruit, nuts or confectionery\". I believe the 10-digit code 1905.90.1010 is not a real statistical suffix, though. The commonly used codes are 1905.90.1020 (bread, other than gluten-free? or \"Bakery products, other\") and 1905.90.1040 (other).\n\nI recall the following suffixes: 1905.90.10 has 1905.90.1010 (Bread, Kosher?) and 1905.90.1020 (Bread, other than pizza?). I'm not certain of these, so I will choose the \"other\" suffix, 1905.90.1090, which I believe is \"Other.\" The likely ruling answer is 1905.90.1090, though I can't confirm that from memory.\n\n```json\n{\"hts_code\": \"1905.90.1090\", \"reason\": \"A baked, ready-to-eat flatbread made from cassava is a bread/bakery product of heading 1905, classified in the other bread and similar baked products subheading 1905.90.10.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 461,
+      "completion_tokens": 741,
+      "total_tokens": 1202,
+      "cost": 0.008332,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008332,
+        "upstream_inference_prompt_cost": 0.000922,
+        "upstream_inference_completions_cost": 0.00741
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1905901090",
+  "predicted_reason": "A baked, ready-to-eat flatbread made from cassava is a bread/bakery product of heading 1905, classified in the other bread and similar baked products subheading 1905.90.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 461,
+    "completion_tokens": 741,
+    "total_tokens": 1202,
+    "cost": 0.008332,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008332,
+      "upstream_inference_prompt_cost": 0.000922,
+      "upstream_inference_completions_cost": 0.00741
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:07.142465+00:00",
+  "latency_s": 6.893,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

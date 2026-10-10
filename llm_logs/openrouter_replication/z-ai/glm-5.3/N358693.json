@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358693",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599804-UoksLuPoWyiHlL1nzl3q",
+    "object": "chat.completion",
+    "created": 1791599804,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.6000\", \"reason\": \"Flimsy Halloween costume items classified as festive articles of Chapter 95 per Note 1(f) to Section XI and flimsy/non-durable costume guidelines.\"}",
+          "refusal": null,
+          "reasoning": "Flimsy costume, festive article \u2014 9505.90.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Flimsy costume, festive article \u2014 9505.90.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 73,
+      "total_tokens": 271,
+      "cost": 0.0002794,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002794,
+        "upstream_inference_prompt_cost": 0.0001188,
+        "upstream_inference_completions_cost": 0.0001606
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 18,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505906000",
+  "predicted_reason": "Flimsy Halloween costume items classified as festive articles of Chapter 95 per Note 1(f) to Section XI and flimsy/non-durable costume guidelines.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 73,
+    "total_tokens": 271,
+    "cost": 0.0002794,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002794,
+      "upstream_inference_prompt_cost": 0.0001188,
+      "upstream_inference_completions_cost": 0.0001606
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:36:44.742185+00:00",
+  "latency_s": 1.074,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

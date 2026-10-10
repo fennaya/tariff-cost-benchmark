@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359673",
+  "rulingDate": "2026-04-08T00:00:00",
+  "true_code": "1602506000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595890-XQtw2pBQUMCL7ROZr7M8",
+    "object": "chat.completion",
+    "created": 1791595890,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on marinated beef cuts. The question is whether they stay in chapter 2 (fresh, chilled, or frozen meat) or move to heading 1602 (prepared or preserved meat).\n\nHeading 0201 covers fresh or chilled bovine meat and 0202 covers frozen. Marination with brine and spices could still be classed in chapter 2, since injecting a salt solution is a form of preservation allowed under 0210 only if the meat is salted, in brine, dried, or smoked. The products here contain garlic powder and pepper, with vinegar and phosphates added. Chapter 2 meat that is merely seasoned generally goes to 1602 when the processing goes beyond simple preservation. In several CBP rulings, beef that was vacuum tumbled with a marinade including spices was classified in 1602.50, as other prepared or preserved bovine meat.\n\nUnder 1602.50, the 10-digit subheading depends on the packaging. The 1602.50.10 subheading covers corned beef in airtight containers, and 1602.50.20 covers other beef in airtight containers. 1602.50.40 covers other beef, which is the item that is not cured or pickled. Within 1602.50.40, the statistical suffix 1602.50.4000 covers beef that is not in airtight containers. Vacuum packaging in plastic is not usually treated as an airtight container for this purpose, since the airtight containers are cans or jars (hermetically sealed). Therefore I settle on 1602.50.40, with a TRQ possibility in 1602.50.2040. The ruling likely used 1602.50.6000 or 1602.50.4000. I'll choose 1602.50.6000.\n\n{\"hts_code\": \"1602.50.6000\", \"reason\": \"Whole-muscle beef cuts vacuum-tumbled with a seasoned vinegar/phosphate/salt/spice marinade are prepared or preserved bovine meat of heading 1602, not in airtight containers and not cured or corned.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 789,
+      "completion_tokens": 666,
+      "total_tokens": 1455,
+      "cost": 0.008238,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008238,
+        "upstream_inference_prompt_cost": 0.001578,
+        "upstream_inference_completions_cost": 0.00666
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1602506000",
+  "predicted_reason": "Whole-muscle beef cuts vacuum-tumbled with a seasoned vinegar/phosphate/salt/spice marinade are prepared or preserved bovine meat of heading 1602, not in airtight containers and not cured or corned.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 789,
+    "completion_tokens": 666,
+    "total_tokens": 1455,
+    "cost": 0.008238,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008238,
+      "upstream_inference_prompt_cost": 0.001578,
+      "upstream_inference_completions_cost": 0.00666
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:30.432118+00:00",
+  "latency_s": 7.0,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

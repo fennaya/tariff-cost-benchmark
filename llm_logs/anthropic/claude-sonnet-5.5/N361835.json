@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361835",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8479896500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596359-N1tEAUXgvCje5eFGrOsG",
+    "object": "chat.completion",
+    "created": 1791596359,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Handheld battery-powered seed spreader: candidates are 8424.81 (agricultural or horticultural mechanical appliances for projecting, dispersing or spraying liquids or powders) and 8467 (hand-held tools with self-contained electric motor).\n\nHeading 8424.81 covers \"Agricultural or horticultural\" appliances, but it is limited to liquids or powders. Granular spreaders are generally classified under 8432.40 (manure or fertilizer distributors) or 8432.80 (other agricultural, horticultural or forestry machinery for soil preparation or cultivation; lawn or sports-ground rollers). Seeders fall under 8432.30 (seeders, planters and transplanters), and fertilizer distributors under 8432.40. A hand-held spreader for seeds and fertilizer is most likely classified under 8432.40, with 8432.40.00 as the subheading for manure spreaders and fertilizer distributors. The HTS statistical suffix is 8432.40.0080 for other, with 8432.40.0040 being for fertilizer distributors. I'm not certain of the exact suffix; the HTS has 8432.40.00 with suffixes 20 (Manure spreaders) and 60 (Fertilizer distributors), with 8432.40.0000 as the base. I'll go with 8432.40.0000 as the best answer.\n\nHeading 8467 is for tools for working in the hand, but it covers tools that work on materials, and the spreader is a more specific agricultural machine under Chapter 84 heading 8432. Note 8432 is the better fit.\n\n{\"hts_code\": \"8432.40.0000\", \"reason\": \"A hand-held motorized spreader that broadcasts granular seed and fertilizer is an agricultural/horticultural fertilizer distributor and seeder, classified in heading 8432 (subheading 8432.40, manure spreaders and fertilizer distributors).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 276,
+      "completion_tokens": 633,
+      "total_tokens": 909,
+      "cost": 0.006882,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006882,
+        "upstream_inference_prompt_cost": 0.000552,
+        "upstream_inference_completions_cost": 0.00633
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8432400000",
+  "predicted_reason": "A hand-held motorized spreader that broadcasts granular seed and fertilizer is an agricultural/horticultural fertilizer distributor and seeder, classified in heading 8432 (subheading 8432.40, manure spreaders and fertilizer distributors).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 276,
+    "completion_tokens": 633,
+    "total_tokens": 909,
+    "cost": 0.006882,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006882,
+      "upstream_inference_prompt_cost": 0.000552,
+      "upstream_inference_completions_cost": 0.00633
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:19.443379+00:00",
+  "latency_s": 6.153,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

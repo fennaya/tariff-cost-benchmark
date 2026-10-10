@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361972",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "8467290090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596390-GvNeAE8uh2u1CPuyUJkL",
+    "object": "chat.completion",
+    "created": 1791596390,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is the EGO Power+ Multi-Head System power head, and CBP has issued rulings on it. The classification question is whether it falls under 8701 (tractors), 8433 (other agricultural or horticultural machinery), 8467 (hand-held tools with self-contained motor), or 8432 (soil preparation machinery).\n\nWalk-behind power heads that accept attachments are best compared to pedestrian-controlled tractors. Heading 8701 covers tractors, and 8701.10 covers pedestrian-controlled tractors. A pedestrian-controlled tractor is a wheeled unit that is walked behind and used to drive implements. In the 8701 explanatory notes, a tractor is a motor vehicle built mainly for hauling or pushing other machines, and a walk-behind power unit with a PTO that drives attachments fits that description.\n\nIn this case the power head delivers rotary force to attachments such as a tiller or cultivator. The 8701.10 subheading is \"Pedestrian controlled tractors\", and the 10-digit codes under it are 8701.10.0000 (the HTSUS has only 8701.10.00 with statistical suffixes). The 2022 HTSUS lists 8701.10.00 with a 10-digit breakdown: 8701.10.0000 for the base, covering pedestrian-controlled tractors. The duty rate is 2.5%.\n\nThe alternative is 8432.80 or 8433.60, but with the wheeled chassis, handles and drive function, 8701.10 is the better fit. I think CBP ruled this way for the EGO power head.\n\n```json\n{\"hts_code\": \"8701.10.0000\", \"reason\": \"A battery-powered, wheeled walk-behind power head that drives interchangeable horticultural attachments is a pedestrian-controlled tractor of heading 8701, subheading 8701.10.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 611,
+      "total_tokens": 1027,
+      "cost": 0.006942,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006942,
+        "upstream_inference_prompt_cost": 0.000832,
+        "upstream_inference_completions_cost": 0.00611
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8701100000",
+  "predicted_reason": "A battery-powered, wheeled walk-behind power head that drives interchangeable horticultural attachments is a pedestrian-controlled tractor of heading 8701, subheading 8701.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 416,
+    "completion_tokens": 611,
+    "total_tokens": 1027,
+    "cost": 0.006942,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006942,
+      "upstream_inference_prompt_cost": 0.000832,
+      "upstream_inference_completions_cost": 0.00611
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:50.440688+00:00",
+  "latency_s": 5.926,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361071",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8543901200",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596202-TuPnHFh4WXGUJt6NFlRq",
+    "object": "chat.completion",
+    "created": 1791596202,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on planetary tool carrier gearboxes for PVD machines. PVD machines fall under heading 8543.70 (electrical machines with individual functions) or 8479.89. Parts of PVD apparatus for coating semiconductors would be 8486, but these are for general tools, so I don't think 8486 applies. Machines for vacuum deposition on non-semiconductor materials fall in 8451/8479 or 8515, and PVD apparatus for general use is typically 8543.70.\n\nThe gearbox is a part specifically designed for a PVD machine. If the machine is classified in 8543, the part goes in 8543.90. Section XVI Note 2(b) assigns parts suitable for use solely or principally with a particular machine to that machine's heading. But gearboxes might be excluded from that rule, since 8483 covers gearing and gear boxes. Note 2(a) says parts that are goods of headings 8401 to 8485 are classified in their own headings. Heading 8483 covers transmission shafts, gearing, and gear boxes, so the gearbox would go to 8483.40 (gears and gearing, gear boxes and other speed changers).\n\nHowever, the item holds the workpiece and rotates it, so it is really a workholder, not just a gearbox. I recall the ruling as classifying it under 8543.90.8885 as parts of PVD machines. The reasoning would be that this is a tool carrier fixture and not a gearbox in the 8483 sense. I'll go with 8543.90.8885.\n\n{\"hts_code\": \"8543.90.8885\", \"reason\": \"The tool carriers are parts solely or principally used with PVD (vacuum deposition) machines of heading 8543.70, so they classify as parts of electrical machines with individual functions under 8543.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 331,
+      "completion_tokens": 589,
+      "total_tokens": 920,
+      "cost": 0.006552,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006552,
+        "upstream_inference_prompt_cost": 0.000662,
+        "upstream_inference_completions_cost": 0.00589
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543908885",
+  "predicted_reason": "The tool carriers are parts solely or principally used with PVD (vacuum deposition) machines of heading 8543.70, so they classify as parts of electrical machines with individual functions under 8543.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 331,
+    "completion_tokens": 589,
+    "total_tokens": 920,
+    "cost": 0.006552,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006552,
+      "upstream_inference_prompt_cost": 0.000662,
+      "upstream_inference_completions_cost": 0.00589
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:43.262378+00:00",
+  "latency_s": 6.162,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

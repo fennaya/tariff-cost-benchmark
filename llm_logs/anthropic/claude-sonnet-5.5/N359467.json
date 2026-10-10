@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359467",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "7308909590",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595844-txaFAK4CvReNnKiObiu8",
+    "object": "chat.completion",
+    "created": 1791595844,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a sandwich panel with steel facings and a polyurethane foam core, used as wall and ceiling components. The likely candidates are:\n\n- 7308.90 (structures and parts of structures, of iron or steel: panels). CBP has ruled on steel sandwich panels with foam cores. For example, insulated panels used for cold storage were classified in 7308.90.</br>\n- 9406.90 (prefabricated buildings). This applies only if the panels are imported as a complete building, so it does not fit here.\n- 3925.90 (builders' ware of plastics) is unlikely because the steel facings give the panel its essential character.\n\nWithin 7308.90, the subheadings are:\n\n- 7308.90.30 is for \"Panels... \" hmm. The 7308.90 subheadings are 7308.90.30 (clad or fabricated panels?), 7308.90.60 (Other, of iron or steel; Panels? ), 7308.90.95 (Other).\n- The actual HTS lists 7308.90.30 as \"Roof/ceiling/wall\"? From memory: 7308.90.30 is \"Other: Plates, rods, angles, shapes, sections, tubes and the like, prepared for structural use\", 7308.90.60 is \"Other: Roof/cladding\"? I'm not certain.\n- Prior CBP rulings on similar sandwich panels used 7308.90.9590. These include NY N-series rulings on insulated steel panels with a polyurethane core, and the recent AD/CVD case on steel panels. The 7308.90.9590 code is the one I recall for them.\n\nI'll go with 7308.90.9590.\n\n{\"hts_code\": \"7308.90.9590\", \"reason\": \"Galvanized steel-faced polyurethane-core tongue-and-groove wall/ceiling panels are structural parts of iron or steel, classified in the residual 'other' provision of heading 7308.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 620,
+      "total_tokens": 942,
+      "cost": 0.006844,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006844,
+        "upstream_inference_prompt_cost": 0.000644,
+        "upstream_inference_completions_cost": 0.0062
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7308909590",
+  "predicted_reason": "Galvanized steel-faced polyurethane-core tongue-and-groove wall/ceiling panels are structural parts of iron or steel, classified in the residual 'other' provision of heading 7308.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 620,
+    "total_tokens": 942,
+    "cost": 0.006844,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006844,
+      "upstream_inference_prompt_cost": 0.000644,
+      "upstream_inference_completions_cost": 0.0062
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:44.829473+00:00",
+  "latency_s": 6.834,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

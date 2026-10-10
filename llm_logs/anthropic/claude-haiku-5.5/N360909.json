@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360909",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "1904900120",
+  "model": "anthropic/claude-haiku-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595045-Ua4owD0p53Di6ryU7dTF",
+    "object": "chat.completion",
+    "created": 1791595045,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1602.32.6000\", \"reason\": \"The product is a prepared meal containing shrimp, clams and cheese with rice, not a standalone seafood product, so it falls under Chapter 16 prepared seafood under heading 1604 or 1602, and since it is a composite meal containing rice and cheese as major components, the most applicable code is the prepared meals of shellfish provision under 1602.32.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1206,
+      "completion_tokens": 138,
+      "total_tokens": 1344,
+      "cost": 0.0001896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001896,
+        "upstream_inference_prompt_cost": 0.0001206,
+        "upstream_inference_completions_cost": 6.9e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1602326000",
+  "predicted_reason": "The product is a prepared meal containing shrimp, clams and cheese with rice, not a standalone seafood product, so it falls under Chapter 16 prepared seafood under heading 1604 or 1602, and since it is a composite meal containing rice and cheese as major components, the most applicable code is the prepared meals of shellfish provision under 1602.32.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1206,
+    "completion_tokens": 138,
+    "total_tokens": 1344,
+    "cost": 0.0001896,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0001896,
+      "upstream_inference_prompt_cost": 0.0001206,
+      "upstream_inference_completions_cost": 6.9e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:17:25.554538+00:00",
+  "latency_s": 1.86,
+  "request_params": {
+    "model": "anthropic/claude-haiku-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    }
+  }
+}

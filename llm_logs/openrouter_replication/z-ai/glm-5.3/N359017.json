@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359017",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "7326908688",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599839-VkjHBD71q62LFbEMlPc3",
+    "object": "chat.completion",
+    "created": 1791599839,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.90.9496\", \"reason\": \"As a multi-purpose positioning/alignment guide used across different machine types (metal detectors, weigh stations, x-ray units), it is a part of machines of heading 8479, other than for machines of 8479.89, classified under other parts.\"}",
+          "refusal": null,
+          "reasoning": "Likely 8479.90.9496 or parts of machines... Work guide for metal detectors/x-ray units \u2014 parts of machines of 8479? X-ray units 9022, weigh stations 8423, metal detectors 8543... composite machines; NY rulings classify such work guides under 8479.90.94. Use 8479.90.9496.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely 8479.90.9496 or parts of machines... Work guide for metal detectors/x-ray units \u2014 parts of machines of 8479? X-ray units 9022, weigh stations 8423, metal detectors 8543... composite machines; NY rulings classify such work guides under 8479.90.94. Use 8479.90.9496.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 165,
+      "total_tokens": 515,
+      "cost": 0.000631,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000631,
+        "upstream_inference_prompt_cost": 7e-05,
+        "upstream_inference_completions_cost": 0.000561
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 89,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479909496",
+  "predicted_reason": "As a multi-purpose positioning/alignment guide used across different machine types (metal detectors, weigh stations, x-ray units), it is a part of machines of heading 8479, other than for machines of 8479.89, classified under other parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 165,
+    "total_tokens": 515,
+    "cost": 0.000631,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000631,
+      "upstream_inference_prompt_cost": 7e-05,
+      "upstream_inference_completions_cost": 0.000561
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:37:19.538190+00:00",
+  "latency_s": 1.892,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

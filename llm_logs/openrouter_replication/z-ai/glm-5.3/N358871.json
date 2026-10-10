@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358871",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "4819504040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599824-aNO3TDGKxkfGjdYYtMRo",
+    "object": "chat.completion",
+    "created": 1791599824,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4819.50.4040\", \"reason\": \"A rigid paperboard box with hinged lid is classified as a rigid box of paperboard under heading 4819, subheading 4819.50.4040.\"}",
+          "refusal": null,
+          "reasoning": "Rigid paperboard box \u2014 likely 4819.50.4040 or similar. Rigid boxes: 4819.50.40 \"of paperboard\" \u2014 4819.50.4040? Actual: 4819.50.4040? HTS 4819.50.4040 exists? Rigid boxes subheading 4819.50.40, statistical 4040? I recall NY rulings cite 4819.50.4040 for rigid paperboard boxes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Rigid paperboard box \u2014 likely 4819.50.4040 or similar. Rigid boxes: 4819.50.40 \"of paperboard\" \u2014 4819.50.4040? Actual: 4819.50.4040? HTS 4819.50.4040 exists? Rigid boxes subheading 4819.50.40, statistical 4040? I recall NY rulings cite 4819.50.4040 for rigid paperboard boxes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 199,
+      "completion_tokens": 178,
+      "total_tokens": 377,
+      "cost": 0.000645,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000645,
+        "upstream_inference_prompt_cost": 3.98e-05,
+        "upstream_inference_completions_cost": 0.0006052
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 118,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4819504040",
+  "predicted_reason": "A rigid paperboard box with hinged lid is classified as a rigid box of paperboard under heading 4819, subheading 4819.50.4040.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 199,
+    "completion_tokens": 178,
+    "total_tokens": 377,
+    "cost": 0.000645,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000645,
+      "upstream_inference_prompt_cost": 3.98e-05,
+      "upstream_inference_completions_cost": 0.0006052
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:37:05.056942+00:00",
+  "latency_s": 1.381,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

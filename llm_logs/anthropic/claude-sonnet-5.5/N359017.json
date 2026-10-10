@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359017",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595713-lFrlmuvllOX60vHrFAqJ",
+    "object": "chat.completion",
+    "created": 1791595713,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a part for metal detectors, weigh stations, and x-ray units. Because it is a component of several different machines, the classification depends on which heading covers parts of those machines.\n\nRelevant headings:\n- Metal detectors fall under 9031.80 (measuring or checking instruments), and their parts under 9031.90.\n- X-ray apparatus falls under 9022, and its parts under 9022.90.\n- Weighing machines fall under 8423, and their parts under 8423.90.\n\nSection XVI Note 2 and Section XVII/Chapter 90 notes direct that parts suitable for use with several machines are classified by their principal use. Here the item is a guide that keeps objects aligned for measuring, examination, or testing, and it is used in all three machine types. Chapter 90 is likely, since it covers both metal detectors and x-ray units.\n\nI recall a CBP ruling on a work guide for such machines (NY N-series) that classified it in 9031.90, parts of measuring or checking instruments. Within 9031.90, the 10-digit statistical subheadings are 9031.90.9195 (\"Other\") and 9031.90.5400. Of these, 9031.90.9195 is the most likely fit.\n\n```json\n{\"hts_code\": \"9031.90.9195\", \"reason\": \"A stainless steel work guide that keeps measured or inspected objects aligned is a part of metal detectors and similar checking instruments, so it falls under parts of measuring or checking instruments of heading 9031, in the 'Other' subheading.\"}\n```\n\n{\"hts_code\": \"9031.90.9195\", \"reason\": \"A stainless steel work guide that keeps measured or inspected objects aligned is a part of metal detectors and similar checking instruments, so it falls under parts of measuring or checking instruments of heading 9031, in the 'Other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 497,
+      "completion_tokens": 598,
+      "total_tokens": 1095,
+      "cost": 0.006974,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006974,
+        "upstream_inference_prompt_cost": 0.000994,
+        "upstream_inference_completions_cost": 0.00598
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9031909195",
+  "predicted_reason": "A stainless steel work guide that keeps measured or inspected objects aligned is a part of metal detectors and similar checking instruments, so it falls under parts of measuring or checking instruments of heading 9031, in the 'Other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 497,
+    "completion_tokens": 598,
+    "total_tokens": 1095,
+    "cost": 0.006974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006974,
+      "upstream_inference_prompt_cost": 0.000994,
+      "upstream_inference_completions_cost": 0.00598
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:33.869954+00:00",
+  "latency_s": 5.15,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

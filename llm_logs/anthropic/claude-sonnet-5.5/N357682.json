@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357682",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "9205904060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595469-0TbanOfZVgjUS0EWNkCw",
+    "object": "chat.completion",
+    "created": 1791595469,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Irish whistle/tin whistle classification: HTSUS 9205.90 covers other wind musical instruments. 9205.90.20 is flageolets, recorders, and similar instruments (pitch pipes, etc.). Specifically, 9205.90.20 covers \"Flutes, piccolos, fifes, ... \"? Recall the structure: 9205.10 brass-wind instruments (military bugles etc.); 9205.90 other: 9205.90.10 Woodwind: Clarinets, flutes... Actually: 9205.90.10 \"Pipe organs; keyboard instruments...\"; 9205.90.20 \"Accordions and similar instruments\"; 9205.90.40 \"Harmonicas\"; 9205.90.60 \"Other\" ... I recall 9205.90.6000 as \"Other\" wind instruments, with parts in 9209. CBP rulings on tin whistles classify them in 9205.90.6000 (other). I'll go with that.\n\n{\"hts_code\": \"9205.90.6000\", \"reason\": \"A tin/Irish whistle is a fipple-flute wind musical instrument of heading 9205 that is not a brass-wind instrument, accordion, or harmonica, so it falls in the residual 'other' wind instruments subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 339,
+      "completion_tokens": 418,
+      "total_tokens": 757,
+      "cost": 0.004858,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004858,
+        "upstream_inference_prompt_cost": 0.000678,
+        "upstream_inference_completions_cost": 0.00418
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9205906000",
+  "predicted_reason": "A tin/Irish whistle is a fipple-flute wind musical instrument of heading 9205 that is not a brass-wind instrument, accordion, or harmonica, so it falls in the residual 'other' wind instruments subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 418,
+    "total_tokens": 757,
+    "cost": 0.004858,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004858,
+      "upstream_inference_prompt_cost": 0.000678,
+      "upstream_inference_completions_cost": 0.00418
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:30.048926+00:00",
+  "latency_s": 4.456,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363385",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "4201006000",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598460-rI81DiHMXZHZUc03p1RR",
+    "object": "chat.completion",
+    "created": 1791598460,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Dog apparel is classified as \"other made up articles\" in heading 6307, under subheading 6307.90 (Other). The statistical suffix 6307.90.9891 covers other articles of cotton, which fits Item 1, a predominately cotton knit dog sweater. Items 2 and 3 have various fiber contents, so their suffix could differ, but the code below is the best fit for the cotton sweater.\n\n{\"hts_code\": \"6307.90.9891\", \"reason\": \"Knit dog sweaters and hoodies are not wearing apparel for persons, so they fall under 6307.90 as other made up textile articles, and the cotton sweater takes statistical suffix 9891.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 222,
+      "total_tokens": 512,
+      "cost": 0.0056,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0056,
+        "upstream_inference_prompt_cost": 0.00116,
+        "upstream_inference_completions_cost": 0.00444
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6307909891",
+  "predicted_reason": "Knit dog sweaters and hoodies are not wearing apparel for persons, so they fall under 6307.90 as other made up textile articles, and the cotton sweater takes statistical suffix 9891.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 222,
+    "total_tokens": 512,
+    "cost": 0.0056,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0056,
+      "upstream_inference_prompt_cost": 0.00116,
+      "upstream_inference_completions_cost": 0.00444
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T02:14:20.603951+00:00",
+  "latency_s": 4.038,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

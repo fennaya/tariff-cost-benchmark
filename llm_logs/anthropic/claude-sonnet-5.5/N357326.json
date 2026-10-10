@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357326",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1302194140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595382-oclbfWV7IalwFxVAQXMZ",
+    "object": "chat.completion",
+    "created": 1791595382,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "HTSUS heading 1302 covers vegetable saps and extracts, including \"other\" extracts under 1302.19. This product is a glycerin-water liquid extract of botanicals, so 1302.19 is the natural fit.\n\nSubheading 1302.19 splits into 1302.19.05 (medicinal use, for the Pharmaceutical Appendix), 1302.19.15 (containing mixtures of vegetable extracts) and 1302.19.40 (other). Under 1302.19.91 and similar lines, the 10-digit statistical suffix varies by item. I recall these lines as:\n- 1302.19.05: Medicinal use, 00.\n- 1302.19.15: Other, 00 (?).\n- 1302.19.40: Other, 00 (?).\n- 1302.19.91: Other, 00.\n\nThe AD/CVD case on herbal tincture extracts is a recent one. The tinctures are intended as herbal supplements, so a medicinal-use line is plausible. However, the glycerin-water solvent mixture suggests the subheading \"other\" may be more appropriate.\n\nI settled on 1302.19.9190 as my best guess for \"other\" vegetable extracts, though I'm not certain of the exact suffix.\n\n{\"hts_code\": \"1302.19.9190\", \"reason\": \"Liquid botanical extracts of hawthorn, houttuynia, isatis and Japanese knotweed in a glycerin-water solvent are vegetable extracts of heading 1302, falling in the residual 'other' subheading of 1302.19; the 10-digit suffix is my best estimate and not confirmed.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 530,
+      "total_tokens": 984,
+      "cost": 0.006208,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006208,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.0053
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302199190",
+  "predicted_reason": "Liquid botanical extracts of hawthorn, houttuynia, isatis and Japanese knotweed in a glycerin-water solvent are vegetable extracts of heading 1302, falling in the residual 'other' subheading of 1302.19; the 10-digit suffix is my best estimate and not confirmed.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 530,
+    "total_tokens": 984,
+    "cost": 0.006208,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006208,
+      "upstream_inference_prompt_cost": 0.000908,
+      "upstream_inference_completions_cost": 0.0053
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:02.769478+00:00",
+  "latency_s": 5.248,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

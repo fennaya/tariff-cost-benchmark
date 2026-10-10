@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356916",
+  "rulingDate": "2026-01-09T00:00:00",
+  "true_code": "3003900190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595284-DWpqcGJFoItiUwY2DUL2",
+    "object": "chat.completion",
+    "created": 1791595284,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a bulk (not retail-packaged) medicament made from porcine thyroid gland with dextrose. It is a mixture of therapeutic use, so it falls in heading 3004 only if put up in measured doses or retail packings. Bulk mixed medicaments go to heading 3003.\n\nHeading 3003 covers medicaments of two or more constituents mixed together for therapeutic or prophylactic uses, not in measured doses or retail packings. Within it, subheading 3003.39 covers other hormone-containing medicaments, while 3003.90 covers all others. Thyroid gland extract is an organotherapeutic gland product, and thyroid hormones are classified in 2937. Desiccated thyroid is a glandular product of heading 3001, which covers dried glands and other organs for organotherapeutic uses. Mixed with dextrose, though, it becomes a heading 3003 medicament.\n\nThe relevant 3003 subheadings are:\n- 3003.10 for penicillins\n- 3003.20 for other antibiotics\n- 3003.3x for hormones or steroids\n- 3003.41 and 3003.4x for alkaloids\n- 3003.90 for other\n\nDesiccated thyroid contains the hormones T3 and T4, so it falls under 3003.39 (\"Other\", containing hormones but not antibiotics). The US statistical suffix for 3003.39 is 3003.39.0000, and I believe this is the correct code. CBP rulings on thyroid powder have used 3003.39.0000.\n\n{\"hts_code\": \"3003.39.0000\", \"reason\": \"Bulk mixture of desiccated porcine thyroid (hormone-containing) with dextrose, not in measured doses or retail packings, is a medicament of heading 3003 containing hormones, classified in subheading 3003.39.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 266,
+      "completion_tokens": 596,
+      "total_tokens": 862,
+      "cost": 0.006492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006492,
+        "upstream_inference_prompt_cost": 0.000532,
+        "upstream_inference_completions_cost": 0.00596
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3003390000",
+  "predicted_reason": "Bulk mixture of desiccated porcine thyroid (hormone-containing) with dextrose, not in measured doses or retail packings, is a medicament of heading 3003 containing hormones, classified in subheading 3003.39.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 266,
+    "completion_tokens": 596,
+    "total_tokens": 862,
+    "cost": 0.006492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006492,
+      "upstream_inference_prompt_cost": 0.000532,
+      "upstream_inference_completions_cost": 0.00596
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:24.283048+00:00",
+  "latency_s": 5.942,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

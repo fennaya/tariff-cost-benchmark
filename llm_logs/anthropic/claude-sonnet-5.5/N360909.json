@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360909",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "1904900120",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596178-PsSiswwZ5QMtqTaYNUVq",
+    "object": "chat.completion",
+    "created": 1791596178,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a prepared frozen food made of rice, shrimp, clams, and cheese. The likely candidates are heading 1904 (prepared foods from cereals), heading 1602 (prepared meat, fish, or crustaceans), and heading 2106.\n\nHeading 1904.90 covers \"Prepared foods obtained by the swelling or roasting of cereals... other: rice\". Subheading 1904.90.01 is the HTS subheading for rice-based prepared foods, which are \"Other\" in 1904.90.\n\nThe product is rice-dominated, at 25% rice against about 12% seafood. It has a rice patty formed, roasted, and filled, which makes the rice the essential character. Heading 1904 includes \"prepared foods obtained by swelling or roasting cereals,\" and the rice patty is cooked and roasted. CBP has ruled on similar rice burger products, and I recall classification in 1904.90.\n\nThe 1904.90 subheadings are:\n- 1904.90.10: Prepared foods of rice, in packages... \n- 1904.90.2000 and 1904.90.4000 are the dairy-related lines, \n- 1904.90.70 and 1904.90.80 are other.\n\nSpecifically, 1904.90.10 covers \"Other: Rice\" and is further broken into 1904.90.1000 and 1904.90.4000. I'm going with 1904.90.1000 as the likely rice line, with some uncertainty.\n\n```json\n{\"hts_code\": \"1904.90.1000\", \"reason\": \"Frozen ready-to-heat rice burger whose essential character comes from the cooked, formed and roasted rice patty is classified as a prepared food of cooked rice in heading 1904, subheading 1904.90, other prepared rice.\"}\n```\n\nFinal answer:\n\n{\"hts_code\": \"1904.90.1000\", \"reason\": \"Frozen ready-to-heat rice burger whose essential character comes from the cooked, formed and roasted rice patty is classified as a prepared rice food under heading 1904, subheading 1904.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1208,
+      "completion_tokens": 668,
+      "total_tokens": 1876,
+      "cost": 0.009096,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009096,
+        "upstream_inference_prompt_cost": 0.002416,
+        "upstream_inference_completions_cost": 0.00668
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1904901000",
+  "predicted_reason": "Frozen ready-to-heat rice burger whose essential character comes from the cooked, formed and roasted rice patty is classified as a prepared rice food under heading 1904, subheading 1904.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1208,
+    "completion_tokens": 668,
+    "total_tokens": 1876,
+    "cost": 0.009096,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009096,
+      "upstream_inference_prompt_cost": 0.002416,
+      "upstream_inference_completions_cost": 0.00668
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:19.214071+00:00",
+  "latency_s": 6.414,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

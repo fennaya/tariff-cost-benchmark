@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357752",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8544429010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599690-TT2bEuZ2UXhI90HTLcbe",
+    "object": "chat.completion",
+    "created": 1791599690,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8537.10.9060\", \"reason\": \"The Wi-Fi module with switch that remotely controls the flow of electricity functions as an electrical control apparatus rated under 1,000 volts, classifying the smart extension cord under heading 8537.\"}",
+          "refusal": null,
+          "reasoning": "Wi-Fi controlled extension cord \u2014 likely classified as electrical apparatus with individual control? CBP rulings classify smart extension cords under 8537.10 if it's a control apparatus? Actually a relay/switch controlled cord \u2014 ruling classified similar smart power strip under 8536.50 or 8537.10. Wi-Fi module controlling power = apparatus for switching, 8537.10.90 (8537.10.9090? post-HTS 2022: 8537.10.9060?). 8537.10.90 was split: 8537.10.9060? Common code: 8537.10.9090 pre-2022; now 8537.10.9060? I'll answer 8537.10.9060? Safer: 8537.10.9090? Actually 2022 HTS: 8537.10.0060? Heading 8537.10.0060 exists? I recall 8537.10.9060 \"for voltage not exceeding 1000V\". Use 8537.10.9060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Wi-Fi controlled extension cord \u2014 likely classified as electrical apparatus with individual control? CBP rulings classify smart extension cords under 8537.10 if it's a control apparatus? Actually a relay/switch controlled cord \u2014 ruling classified similar smart power strip under 8536.50 or 8537.10. Wi-Fi module controlling power = apparatus for switching, 8537.10.90 (8537.10.9090? post-HTS 2022: 8537.10.9060?). 8537.10.90 was split: 8537.10.9060? Common code: 8537.10.9090 pre-2022; now 8537.10.9060? I'll answer 8537.10.9060? Safer: 8537.10.9090? Actually 2022 HTS: 8537.10.0060? Heading 8537.10.0060 exists? I recall 8537.10.9060 \"for voltage not exceeding 1000V\". Use 8537.10.9060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 320,
+      "total_tokens": 550,
+      "cost": 0.00154497,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00154497,
+        "upstream_inference_prompt_cost": 8.97e-06,
+        "upstream_inference_completions_cost": 0.001536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 259,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8537109060",
+  "predicted_reason": "The Wi-Fi module with switch that remotely controls the flow of electricity functions as an electrical control apparatus rated under 1,000 volts, classifying the smart extension cord under heading 8537.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 230,
+    "completion_tokens": 320,
+    "total_tokens": 550,
+    "cost": 0.00154497,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00154497,
+      "upstream_inference_prompt_cost": 8.97e-06,
+      "upstream_inference_completions_cost": 0.001536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 259,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:50.998223+00:00",
+  "latency_s": 3.519,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

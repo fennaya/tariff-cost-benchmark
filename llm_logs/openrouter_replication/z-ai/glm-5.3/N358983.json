@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358983",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8543901200",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599835-d88fUbYVYnwJHBudVrb4",
+    "object": "chat.completion",
+    "created": 1791599835,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.90.9490\", \"reason\": \"The cages are parts of PVD coating machines, which are machinery of heading 8479, and parts thereof are classified in subheading 8479.90.94.\"}",
+          "refusal": null,
+          "reasoning": "PVD machine parts \u2014 machinery for semiconductor/semiconductor equipment? PVD machines for coating. Parts of machines of 8486? Likely 8486.90.0000 (parts of machines of heading 8486). But PVD coating machines could be 8479.89.94... If used in semiconductor manufacturing, 8486.90.0000. Ruling likely 8479.90.94? Actual CBP ruling on cages for PVD machines (Kolzer?) \u2014 I recall ruling NY N... classified under 8479.90.94 parts of machines of 8479. PVD machines general coating \u2192 8479.89, parts 8479.90.9490? HTS 8479.90.94 covers parts. Use 8479.90.9490.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "PVD machine parts \u2014 machinery for semiconductor/semiconductor equipment? PVD machines for coating. Parts of machines of 8486? Likely 8486.90.0000 (parts of machines of heading 8486). But PVD coating machines could be 8479.89.94... If used in semiconductor manufacturing, 8486.90.0000. Ruling likely 8479.90.94? Actual CBP ruling on cages for PVD machines (Kolzer?) \u2014 I recall ruling NY N... classified under 8479.90.94 parts of machines of 8479. PVD machines general coating \u2192 8479.89, parts 8479.90.9490? HTS 8479.90.94 covers parts. Use 8479.90.9490.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 256,
+      "completion_tokens": 244,
+      "total_tokens": 500,
+      "cost": 0.00112224,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00112224,
+        "upstream_inference_prompt_cost": 4.864e-05,
+        "upstream_inference_completions_cost": 0.0010736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 141,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479909490",
+  "predicted_reason": "The cages are parts of PVD coating machines, which are machinery of heading 8479, and parts thereof are classified in subheading 8479.90.94.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 244,
+    "total_tokens": 500,
+    "cost": 0.00112224,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00112224,
+      "upstream_inference_prompt_cost": 4.864e-05,
+      "upstream_inference_completions_cost": 0.0010736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 141,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:37:15.994609+00:00",
+  "latency_s": 2.62,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

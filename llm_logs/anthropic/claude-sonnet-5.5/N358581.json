@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358581",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "8703900100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595628-wcmXoEdqhEcD2Lt0R8W0",
+    "object": "chat.completion",
+    "created": 1791595628,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on a go-kart kit without an engine or tires. Go-karts fall under heading 9503 (toys) or 8703 (motor vehicles). Since the kit is a racing go-kart, 8703.10 covers \"vehicles specially designed for travelling on snow; golf carts and similar vehicles.\" CBP typically classifies go-karts in 8703.10.50 (other) or 8703.10.10 (snowmobiles). For unfinished vehicles, GRI 2(a) treats a kit as the complete vehicle, and a missing engine still leaves the essential character of a vehicle. Heading 8703 covers vehicles that are \"principally designed for the transport of persons,\" and a go-kart is a \"similar vehicle\" under 8703.10. The 8703.10.50 subheading is the usual place for go-karts, but the current HTS has 8703.10.30 for \"Golf carts and similar vehicles\" and 8703.10.60 for \"Other.\"\n\nCurrent HTSUS structure under 8703.10:\n- 8703.10.10: Snowmobiles\n- 8703.10.20: Golf carts (older)\n- 8703.10.30: Golf carts and similar vehicles? \n- 8703.10.50: Other\n\nI recall the 8703.10.5000 line as the one that covers \"Other\" in the 8703.10 group, which is where go-karts are placed. The ruling would likely classify the kit there by GRI 2(a), with a duty of 2.5%.\n\n```json\n{\"hts_code\": \"8703.10.5000\", \"reason\": \"The disassembled go-kart kit, lacking engine and tires, is classified as an incomplete motor vehicle of the 8703.10 'similar vehicles' type under GRI 2(a), in the 'other' subheading.\"}\n```\n\n{\"hts_code\": \"8703.10.5000\", \"reason\": \"The disassembled go-kart kit, lacking engine and tires, is classified as an incomplete motor vehicle of the 8703.10 'similar vehicles' type under GRI 2(a), in the 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 683,
+      "total_tokens": 1218,
+      "cost": 0.0079,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0079,
+        "upstream_inference_prompt_cost": 0.00107,
+        "upstream_inference_completions_cost": 0.00683
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703105000",
+  "predicted_reason": "The disassembled go-kart kit, lacking engine and tires, is classified as an incomplete motor vehicle of the 8703.10 'similar vehicles' type under GRI 2(a), in the 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 535,
+    "completion_tokens": 683,
+    "total_tokens": 1218,
+    "cost": 0.0079,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0079,
+      "upstream_inference_prompt_cost": 0.00107,
+      "upstream_inference_completions_cost": 0.00683
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:08.772760+00:00",
+  "latency_s": 5.785,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

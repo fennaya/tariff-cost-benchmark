@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357419",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "8544429090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595407-En1hKYBTEteetXnnn9Wg",
+    "object": "chat.completion",
+    "created": 1791595407,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on cables for an aviation headset. The cables are insulated copper conductors fitted with connectors, which points to heading 8544, insulated wire, cable and other insulated electric conductors fitted with connectors.\n\nThe likely subheading is 8544.42, for other electric conductors of a voltage not exceeding 1,000 V, fitted with connectors. Within it, 8544.42.90 covers those not of a kind used for telecommunications, and 8544.42.20 covers coaxial cable. The 8544.42.90 line then breaks down further:\n- 8544.42.9090 is the other, \"Other\" statistical suffix.\n- 8544.42.9010 is for goods of a kind used for telecommunications.\n\nI recall that 8544.42.20 is \"Of a kind used for telecommunications\" and 8544.42.90 is \"Other\". The tariff structure is 8544.42.10 for coaxial cable and other coaxial electric conductors, 8544.42.20 for the telecom type, and 8544.42.90 for other. The 8544.42.90 line carries a 2.6% duty, with suffix 8544.42.9090.\n\nThe second and third cables have one unterminated end, which could point to 8544.49 (not fitted with connectors). However, they are terminated with a PICO connector at one end, so they are still \"fitted with connectors\" and remain in 8544.42. Because the cables are for headsets and carry audio and power signals, the telecommunications category is arguable. I conclude they are not telecom cables and go with 8544.42.9090.\n\n```json\n{\"hts_code\": \"8544.42.9090\", \"reason\": \"Insulated copper conductors for under 1,000 V fitted with PICO connectors are classified in heading 8544 as other electric conductors fitted with connectors, not of a telecommunications or coaxial kind.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 650,
+      "completion_tokens": 606,
+      "total_tokens": 1256,
+      "cost": 0.00736,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00736,
+        "upstream_inference_prompt_cost": 0.0013,
+        "upstream_inference_completions_cost": 0.00606
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "Insulated copper conductors for under 1,000 V fitted with PICO connectors are classified in heading 8544 as other electric conductors fitted with connectors, not of a telecommunications or coaxial kind.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 606,
+    "total_tokens": 1256,
+    "cost": 0.00736,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00736,
+      "upstream_inference_prompt_cost": 0.0013,
+      "upstream_inference_completions_cost": 0.00606
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:28.087044+00:00",
+  "latency_s": 5.948,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

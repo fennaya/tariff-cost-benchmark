@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357431",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "7306405040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595414-pdd849cPLCdEeXl4h4i6",
+    "object": "chat.completion",
+    "created": 1791595414,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Welded stainless steel pipes, circular cross-section, fall under heading 7306. Subheading 7306.40 covers \"other, welded, of circular cross section, of stainless steel.\"\n\nUnder 7306.40:\n- 7306.40.10 is \"Of an outside diameter not exceeding 9.5 mm\" ... actually, the structure is 7306.40.10 for the pipe-and-tube category \"Not containing by weight 0.5% or more of nickel\"? I need to recall this more carefully.\n\nHTSUS 7306.40:\n- 7306.40.10: Welded, of circular cross section, of stainless steel, \"Containing by weight less than 0.5% nickel\"? I believe the actual structure is:\n  - 7306.40.10 \u2013 Containing by weight less than 0.5 percent of nickel (older: \"Not cold-drawn or cold-rolled\")\n  - 7306.40.50 \u2013 Other, with 7306.40.5005, 5040, 5060, 5075, 5085, 5090 and similar\n  - 7306.40.20 \u2013 Containing 24% or more nickel\n  - 7306.40.30 \u2013 Other\n  - 7306.40.50 \u2013 Other: 7306.40.5042, 5044, 5062, 5064 (cold-drawn/cold-rolled)\n\nI recall that 7306.40.50 is \"Other\" with statistical suffixes. Under 7306.40.50: 7306.40.5005 (Containing less than 0.5% nickel...?), 7306.40.5015, 5040 (Other, nickel 0.5%+ but less than 24%?), 5042 (Not cold-drawn, outside diameter less than 19mm), 5044, 5062 (Other: outside diameter under 19 mm, wall thickness 1.65 mm or more), 5064 (other), 5075, 5085.\n\nIn the CBP rulings for these goods, the cold-drawn polished pipes with nickel between 0.5% and 24% and wall thickness at least 1.65 mm were classified in 7306.40.5064 (outside diameter exceeding 19 mm, wall thickness 1.65 mm or more). That one is the best-known classification, although the diameter isn't stated.\n\n{\"hts_code\": \"7306.40.5064\", \"reason\": \"Welded, circular cross-section stainless steel pipes (cold-drawn, polished, wall thickness of 1.65 mm or more, nickel 0.5% to under 24%) fall under heading 7306, subheading 7306.40.50, and this statistical suffix is the best fit; the outside diameter was not given, so it is assumed to exceed 19 mm.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 860,
+      "total_tokens": 1114,
+      "cost": 0.009108,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009108,
+        "upstream_inference_prompt_cost": 0.000508,
+        "upstream_inference_completions_cost": 0.0086
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7306405064",
+  "predicted_reason": "Welded, circular cross-section stainless steel pipes (cold-drawn, polished, wall thickness of 1.65 mm or more, nickel 0.5% to under 24%) fall under heading 7306, subheading 7306.40.50, and this statistical suffix is the best fit; the outside diameter was not given, so it is assumed to exceed 19 mm.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 254,
+    "completion_tokens": 860,
+    "total_tokens": 1114,
+    "cost": 0.009108,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009108,
+      "upstream_inference_prompt_cost": 0.000508,
+      "upstream_inference_completions_cost": 0.0086
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:35.026170+00:00",
+  "latency_s": 7.078,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359479",
+  "rulingDate": "2026-03-24T00:00:00",
+  "true_code": "8526925000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599919-pHRGg8KJ9QeuoIjxtiGJ",
+    "object": "chat.completion",
+    "created": 1791599919,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8526.92.0000\", \"reason\": \"The one-way RF remote control key fobs impart the essential character of the set and are classified as radio remote control apparatus receiving apparatus.\"}",
+          "refusal": null,
+          "reasoning": "Ruling: remote controls 8526.92.00? Actually keyless entry remotes classified 8526.92.0000? Known NY ruling: 8526.92.00... radio remote control apparatus. Use 8526.92.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ruling: remote controls 8526.92.00? Actually keyless entry remotes classified 8526.92.0000? Known NY ruling: 8526.92.00... radio remote control apparatus. Use 8526.92.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 244,
+      "completion_tokens": 109,
+      "total_tokens": 353,
+      "cost": 0.00049196,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00049196,
+        "upstream_inference_prompt_cost": 3.416e-05,
+        "upstream_inference_completions_cost": 0.0004578
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 61,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8526920000",
+  "predicted_reason": "The one-way RF remote control key fobs impart the essential character of the set and are classified as radio remote control apparatus receiving apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 244,
+    "completion_tokens": 109,
+    "total_tokens": 353,
+    "cost": 0.00049196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00049196,
+      "upstream_inference_prompt_cost": 3.416e-05,
+      "upstream_inference_completions_cost": 0.0004578
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 61,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:38:39.840667+00:00",
+  "latency_s": 2.587,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

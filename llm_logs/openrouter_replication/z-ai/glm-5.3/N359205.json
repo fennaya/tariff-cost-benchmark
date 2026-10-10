@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359205",
+  "rulingDate": "2026-03-09T00:00:00",
+  "true_code": "8479899599",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599875-UAmhThIjds0yAwtwetAp",
+    "object": "chat.completion",
+    "created": 1791599875,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8424.89.0090\", \"reason\": \"The coating/casting machine applies liquid coating materials onto a moving web and is classified as other spraying, dispersing, or coating mechanical appliances under heading 8424.\"}",
+          "refusal": null,
+          "reasoning": "Coating machine for coating web materials \u2014 likely 8421? No, coating machinery: 8424? Coating machines for plastics/web \u2014 heading 8424 spray? Actually coating machines classifiable 8424.89 for coating machinery? CBP often classifies coating machines under 8424.89 (mechanical appliances for projecting/spraying). But casting/coating machine for membranes \u2014 NY rulings classify coating machines under 8424.89.90. Alternatively 8479.89. Given proprietary membranes via coating, CBP ruling (e.g., N306341) classified coating machine under 8424.89.90? Hmm. I'll go 8424.89.90.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Coating machine for coating web materials \u2014 likely 8421? No, coating machinery: 8424? Coating machines for plastics/web \u2014 heading 8424 spray? Actually coating machines classifiable 8424.89 for coating machinery? CBP often classifies coating machines under 8424.89 (mechanical appliances for projecting/spraying). But casting/coating machine for membranes \u2014 NY rulings classify coating machines under 8424.89.90. Alternatively 8479.89. Given proprietary membranes via coating, CBP ruling (e.g., N306341) classified coating machine under 8424.89.90? Hmm. I'll go 8424.89.90.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 233,
+      "completion_tokens": 211,
+      "total_tokens": 444,
+      "cost": 0.0006585625,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006585625,
+        "upstream_inference_prompt_cost": 0.0001310625,
+        "upstream_inference_completions_cost": 0.0005275
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 154,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8424890090",
+  "predicted_reason": "The coating/casting machine applies liquid coating materials onto a moving web and is classified as other spraying, dispersing, or coating mechanical appliances under heading 8424.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 211,
+    "total_tokens": 444,
+    "cost": 0.0006585625,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006585625,
+      "upstream_inference_prompt_cost": 0.0001310625,
+      "upstream_inference_completions_cost": 0.0005275
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 154,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:37:55.676243+00:00",
+  "latency_s": 2.394,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357574",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "8544493080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599665-93fgXgnn0EEbBCyyGjrs",
+    "object": "chat.completion",
+    "created": 1791599665,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.49.9090\", \"reason\": \"Unconnectorized insulated copper LAN cable rated 300 V is classified as other insulated electric conductors not exceeding 1,000 V under heading 8544.49.\"}",
+          "refusal": null,
+          "reasoning": "8544.42.9090? Insulated electric conductors with connectors... no connectors, 300V: 8544.42.9090 (other electric conductors, \u22641000V, with fittings? no). 8544.42 is fitted with fittings; not fitted \u2192 8544.49 \u2014 other. 8544.49.9090? Actually cables 8544.42.9090 requires connectors. Not fitted \u2192 8544.49.9090? Heading 8544.49: other conductors, electric, \u22641000V. Subcategories: 8544.49.9090? There's 8544.49.9080? Common ruling: 8544.42.9090 for LAN cables with connectors. Without connectors, rulings cite 8544.49.9090? Actually many rulings classify CAT5e cable without connectors under 8544.42.9090? No\u20148544.42 covers \"fitted with connectors.\" Rulings NY N... classify unconnectorized cable 8544.49.9090? I recall 8544.49.9080? Let me think: 8544.49.10 telephone... 8544.49.20? Statistical: 8544.49.9090 \"Other\". I'll answer 8544.49.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "8544.42.9090? Insulated electric conductors with connectors... no connectors, 300V: 8544.42.9090 (other electric conductors, \u22641000V, with fittings? no). 8544.42 is fitted with fittings; not fitted \u2192 8544.49 \u2014 other. 8544.49.9090? Actually cables 8544.42.9090 requires connectors. Not fitted \u2192 8544.49.9090? Heading 8544.49: other conductors, electric, \u22641000V. Subcategories: 8544.49.9090? There's 8544.49.9080? Common ruling: 8544.42.9090 for LAN cables with connectors. Without connectors, rulings cite 8544.49.9090? Actually many rulings classify CAT5e cable without connectors under 8544.42.9090? No\u20148544.42 covers \"fitted with connectors.\" Rulings NY N... classify unconnectorized cable 8544.49.9090? I recall 8544.49.9080? Let me think: 8544.49.10 telephone... 8544.49.20? Statistical: 8544.49.9090 \"Other\". I'll answer 8544.49.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 224,
+      "completion_tokens": 375,
+      "total_tokens": 599,
+      "cost": 0.0010635,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010635,
+        "upstream_inference_prompt_cost": 0.000126,
+        "upstream_inference_completions_cost": 0.0009375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 317,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544499090",
+  "predicted_reason": "Unconnectorized insulated copper LAN cable rated 300 V is classified as other insulated electric conductors not exceeding 1,000 V under heading 8544.49.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 224,
+    "completion_tokens": 375,
+    "total_tokens": 599,
+    "cost": 0.0010635,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010635,
+      "upstream_inference_prompt_cost": 0.000126,
+      "upstream_inference_completions_cost": 0.0009375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 317,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:34:26.140674+00:00",
+  "latency_s": 3.098,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

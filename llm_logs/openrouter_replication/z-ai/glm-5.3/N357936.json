@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357936",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "2827410000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599704-wAcSYaXbDhJoe2jLEJ7X",
+    "object": "chat.completion",
+    "created": 1791599704,
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2827.41.0000\", \"reason\": \"Tribasic copper chloride is an inorganic copper chloride salt classified under HTSUS subheading 2827.41.0000, which covers copper chlorides and chloride oxides.\"}",
+          "refusal": null,
+          "reasoning": "Copper chloride \u2014 HTS 2827.41.0000? Tribasic copper chloride classified under 2827.41.00 (copper chloride). Actually 2827.41.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Copper chloride \u2014 HTS 2827.41.0000? Tribasic copper chloride classified under 2827.41.00 (copper chloride). Actually 2827.41.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 107,
+      "total_tokens": 360,
+      "cost": 0.000825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000825,
+        "upstream_inference_prompt_cost": 0.0003542,
+        "upstream_inference_completions_cost": 0.0004708
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 34,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2827410000",
+  "predicted_reason": "Tribasic copper chloride is an inorganic copper chloride salt classified under HTSUS subheading 2827.41.0000, which covers copper chlorides and chloride oxides.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 107,
+    "total_tokens": 360,
+    "cost": 0.000825,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000825,
+      "upstream_inference_prompt_cost": 0.0003542,
+      "upstream_inference_completions_cost": 0.0004708
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 34,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Mistral",
+  "requested_at": "2026-10-10T02:35:04.880581+00:00",
+  "latency_s": 0.762,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

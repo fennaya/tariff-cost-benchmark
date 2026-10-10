@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360742",
+  "rulingDate": "2026-04-24T00:00:00",
+  "true_code": "6104432010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596147-Uu2QWglEwWxE9sxdk0KJ",
+    "object": "chat.completion",
+    "created": 1791596147,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-type description: women's knit dresses of synthetic fibers, which fall under 6104.43 (women's dresses, knitted or crocheted, of synthetic fibers). The subheading is 6104.43.20 for \"Other\" dresses, and the statistical suffix is 6104.43.2020 for women's, not in the specific subcategories.\n\nHTSUS 6104.43.20: Dresses, of synthetic fibers: Other. Suffixes: 6104.43.2010 is \"Girls'\"? In the schedule, 6104.43.20 has statistical suffixes 10 for \"Women's\" and 20 for \"Girls'\". Checking my memory: 6104.43.2010 is \"Women's\" and 6104.43.2020 is \"Girls'\". In the schedule, \"Dresses: Of synthetic fibers: 6104.43.10 Of polyester (tariff-split?)...\" Actually 6104.41 is of wool, 6104.42 cotton, 6104.43 synthetic fibers, 6104.44 artificial fibers. Under 6104.43: 6104.43.10 is \"Containing 70 percent or more by weight of silk or silk waste\"? No, that's 6104.43.10 for \"Girls' ... \". The structure is 6104.43.20 \"Other\", with 2006 for Women's and 2011 for Girls'. I recall 6104.43.2020 as Women's and 6104.43.2030 as Girls'. I'll go with 6104.43.2020.\n\n{\"hts_code\": \"6104.43.2020\", \"reason\": \"Women's knitted dresses of 95% polyester/5% spandex (synthetic fibers) are classified in heading 6104, subheading 6104.43 for dresses of synthetic fibers, in the women's statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 593,
+      "total_tokens": 879,
+      "cost": 0.006502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006502,
+        "upstream_inference_prompt_cost": 0.000572,
+        "upstream_inference_completions_cost": 0.00593
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6104432020",
+  "predicted_reason": "Women's knitted dresses of 95% polyester/5% spandex (synthetic fibers) are classified in heading 6104, subheading 6104.43 for dresses of synthetic fibers, in the women's statistical suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 593,
+    "total_tokens": 879,
+    "cost": 0.006502,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006502,
+      "upstream_inference_prompt_cost": 0.000572,
+      "upstream_inference_completions_cost": 0.00593
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:48.223427+00:00",
+  "latency_s": 5.856,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

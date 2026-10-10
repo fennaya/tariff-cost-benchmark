@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361234",
+  "rulingDate": "2026-06-04T00:00:00",
+  "true_code": "6402999005",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596225-Pgc6PlrjTeQJad2VdUle",
+    "object": "chat.completion",
+    "created": 1791596225,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on NUSHU smart shoes. The footwear has an upper of rubber/plastics with a rubber/plastics outer sole, and it has the construction features of athletic footwear. Heading 6402 covers footwear with outer soles and uppers of rubber or plastics, and 6402.99 covers other footwear. The candidate subheading is 6402.99.\n\nWithin 6402.99, the 6402.99.18 through 6402.99.33 range covers footwear with open toes or heels, and 6402.99.31 covers footwear that is not sports footwear. Next, 6402.99.4000 onward applies to footwear with uppers that have a foxing-like band.\n\nThe statistical suffixes under 6402.99.90 are for other footwear, in particular \"Other: for men / for women\". If the shoes were athletic footwear, I'd expect a category like 6402.99.9065 or 6402.99.9070. The unit is more likely to contain an electronic element, but it is a shoe with embedded sensors, so footwear classification still applies.\n\nThe ruling probably chose 6402.99.9090 or a similar code. Under 6402.99.90, the sub-breakdown is: 6402.99.9005 for footwear with a protective metal toe cap, and 6402.99.9010 onward for men's, youths', boys', women's and misses' footwear. Because the product is meant for people with walking difficulties, probably unisex or covering several sizes, I'll go with a general code.\n\nHowever, the sole-with-sensors could mean heading 6402.99.90 isn't right if the footwear is \"athletic\" under the Additional U.S. Note. The \"athletic\" note matters for 6402.99.31 or similar codes. The tariff is, I think, 6402.99.3165 for \"other: other: for men/women\" and 6402.99.9... Since the shoes have athletic construction, I'd go with 6402.99.3170 or 6402.99.3165. I'll pick 6402.99.3170 as the best fit for a unisex or women's athletic shoe.\n\n```json\n{\"hts_code\": \"6402.99.3170\", \"reason\": \"Footwear with rubber/plastics upper and outer sole, having athletic shoe construction features, is classified in heading 6402, subheading 6402.99, with sensors being incidental to the footwear.\"}\n```\n\n{\"hts_code\": \"6402.99.3170\", \"reason\": \"Footwear with rubber/plastics upper and outer sole, having athletic shoe construction features, is classified in heading 6402, subheading 6402.99, with sensors being incidental to the footwear.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 436,
+      "completion_tokens": 849,
+      "total_tokens": 1285,
+      "cost": 0.009362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009362,
+        "upstream_inference_prompt_cost": 0.000872,
+        "upstream_inference_completions_cost": 0.00849
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6402993170",
+  "predicted_reason": "Footwear with rubber/plastics upper and outer sole, having athletic shoe construction features, is classified in heading 6402, subheading 6402.99, with sensors being incidental to the footwear.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 436,
+    "completion_tokens": 849,
+    "total_tokens": 1285,
+    "cost": 0.009362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009362,
+      "upstream_inference_prompt_cost": 0.000872,
+      "upstream_inference_completions_cost": 0.00849
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:06.056696+00:00",
+  "latency_s": 7.764,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357857",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "9404401000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595506-M7Xg0sgZY5MjoNW6f31l",
+    "object": "chat.completion",
+    "created": 1791595506,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a matelass\u00e9 bed covering. Matelass\u00e9 is a double-woven fabric, not quilted, so heading 9404 (quilts as bedding articles with stuffing) is a poor fit, and the item is better treated as a bedspread under 6304.\n\nHeading 6304 covers other furnishing articles, including bedspreads. Subheading 6304.19 covers other bedspreads, and 6304.19.15 is cotton, not napped. For a woven bedspread of mixed cotton and polyester, 6304.19.30 covers \"Other: of cotton,\" while 6304.19.38 covers other, of man-made fibers. The fabric is 70% cotton, so cotton predominates by weight in the face fabric. However, the polyester stuffer yarns could shift the overall weight. The two faces are cotton-dominant, and the stuffer is a 100% polyester layer of unknown weight, so cotton may or may not predominate overall.\n\nThe 6304.19 breakdown is:\n- 6304.19.15: Of cotton, not napped. \n- 6304.19.20: Other, of cotton.\n- 6304.19.30: Other, of cotton.\n- 6304.19.38: Other, of man-made fibers.\n\nI recall that 6304.19.30 is \"Other: Of cotton\" and that 6304.19.15 is \"Bedspreads: Of cotton: Not napped, not tufted.\" I believe the ruling classified this in 6304.19.3000 or 6304.19.3800. The stuffer yarns are polyester and add bulk, so polyester may predominate, which would point to 6304.19.38. Matelass\u00e9 rulings of this type often land in 6304.19.38, but I can't confirm that. I'll go with 6304.19.3000 because the face fabric is mostly cotton.\n\n```json\n{\"hts_code\": \"6304.19.3000\", \"reason\": \"A woven matelass\u00e9 bed covering (not quilted) is classified as a bedspread in heading 6304, and the cotton-predominant fabric places it in the 'other, of cotton' subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 494,
+      "completion_tokens": 684,
+      "total_tokens": 1178,
+      "cost": 0.007828,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007828,
+        "upstream_inference_prompt_cost": 0.000988,
+        "upstream_inference_completions_cost": 0.00684
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6304193000",
+  "predicted_reason": "A woven matelass\u00e9 bed covering (not quilted) is classified as a bedspread in heading 6304, and the cotton-predominant fabric places it in the 'other, of cotton' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 494,
+    "completion_tokens": 684,
+    "total_tokens": 1178,
+    "cost": 0.007828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007828,
+      "upstream_inference_prompt_cost": 0.000988,
+      "upstream_inference_completions_cost": 0.00684
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:06.978318+00:00",
+  "latency_s": 6.862,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

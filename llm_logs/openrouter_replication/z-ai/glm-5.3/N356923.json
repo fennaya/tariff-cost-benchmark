@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N356923",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "8544493080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599559-oEwNPbiNXzYOqINGwhd3",
+    "object": "chat.completion",
+    "created": 1791599559,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.42.9090\", \"reason\": \"Insulated 24 AWG copper conductor cable rated at 300 volts, not fitted with connectors, classified as other insulated electric conductors for voltage not exceeding 1,000 V.\"}",
+          "refusal": null,
+          "reasoning": "LAN cable, CAT5e, insulated copper wire with connectors? Not fitted with connectors \u2014 so classify as insulated wire under 8544.42 (other, with connectors? no). 8544.42.9090? For electric conductors, insulated, not fitted with connectors, copper. Heading 8544.42: \"Other electric conductors, for a voltage not exceeding 1,000 V, fitted with connectors\" \u2014 no, 8544.42 is fitted with connectors? Actually 8544.42: other, fitted with connectors? Subheadings: 8544.41 fitted with connectors, 8544.42 other. So 8544.42.9090? Common ruling: LAN cable CAT5e \u2192 8544.42.9090? Actually many NY rulings classify CAT5e cable as 8544.49 (other conductors, other)? 8544.42 is \"other electric conductors... for voltage \u22641000V, with connectors\"? Let me recall: 8544.41 = fitted with connectors; 8544.42 = other. Then 8544.42.90 \"other\". Statistical: 8544.42.9090? There's 8544.42.9060? I'll answer 8544.42.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "LAN cable, CAT5e, insulated copper wire with connectors? Not fitted with connectors \u2014 so classify as insulated wire under 8544.42 (other, with connectors? no). 8544.42.9090? For electric conductors, insulated, not fitted with connectors, copper. Heading 8544.42: \"Other electric conductors, for a voltage not exceeding 1,000 V, fitted with connectors\" \u2014 no, 8544.42 is fitted with connectors? Actually 8544.42: other, fitted with connectors? Subheadings: 8544.41 fitted with connectors, 8544.42 other. So 8544.42.9090? Common ruling: LAN cable CAT5e \u2192 8544.42.9090? Actually many NY rulings classify CAT5e cable as 8544.49 (other conductors, other)? 8544.42 is \"other electric conductors... for voltage \u22641000V, with connectors\"? Let me recall: 8544.41 = fitted with connectors; 8544.42 = other. Then 8544.42.90 \"other\". Statistical: 8544.42.9090? There's 8544.42.9060? I'll answer 8544.42.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 356,
+      "total_tokens": 606,
+      "cost": 0.00171855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00171855,
+        "upstream_inference_prompt_cost": 9.75e-06,
+        "upstream_inference_completions_cost": 0.0017088
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 302,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "Insulated 24 AWG copper conductor cable rated at 300 volts, not fitted with connectors, classified as other insulated electric conductors for voltage not exceeding 1,000 V.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 250,
+    "completion_tokens": 356,
+    "total_tokens": 606,
+    "cost": 0.00171855,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00171855,
+      "upstream_inference_prompt_cost": 9.75e-06,
+      "upstream_inference_completions_cost": 0.0017088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 302,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:32:39.413665+00:00",
+  "latency_s": 2.517,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

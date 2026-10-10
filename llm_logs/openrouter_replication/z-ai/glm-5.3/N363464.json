@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363464",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "2106909992",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600415-4jxEscYZD0NfCgBfyIFV",
+    "object": "chat.completion",
+    "created": 1791600415,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0408.99.9000\", \"reason\": \"Smoked, seasoned, ready-to-eat quail eggs are prepared egg products not elsewhere specified or included, classified in subheading 0408.99 as other eggs, other than in shell, other.\"}",
+          "refusal": null,
+          "reasoning": "Smoked quail eggs \u2014 prepared eggs, HTS 0408.99? Eggs not in shell, cooked... 0408.99.9000? Actually prepared eggs could be 1608? No, chapter 16 is for prepared meat/fish. Eggs prepared \u2014 heading 0408 covers egg products (dried, cooked?). 0408.99.9000 \"Other, other\". There's NY ruling on smoked quail eggs \u2192 0408.99.9000? I recall ruling citing 0408.99.9000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Smoked quail eggs \u2014 prepared eggs, HTS 0408.99? Eggs not in shell, cooked... 0408.99.9000? Actually prepared eggs could be 1608? No, chapter 16 is for prepared meat/fish. Eggs prepared \u2014 heading 0408 covers egg products (dried, cooked?). 0408.99.9000 \"Other, other\". There's NY ruling on smoked quail eggs \u2192 0408.99.9000? I recall ruling citing 0408.99.9000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 186,
+      "total_tokens": 374,
+      "cost": 0.000522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000522,
+        "upstream_inference_prompt_cost": 0.0001128,
+        "upstream_inference_completions_cost": 0.0004092
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 121,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0408999000",
+  "predicted_reason": "Smoked, seasoned, ready-to-eat quail eggs are prepared egg products not elsewhere specified or included, classified in subheading 0408.99 as other eggs, other than in shell, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 186,
+    "total_tokens": 374,
+    "cost": 0.000522,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000522,
+      "upstream_inference_prompt_cost": 0.0001128,
+      "upstream_inference_completions_cost": 0.0004092
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 121,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:46:55.928759+00:00",
+  "latency_s": 1.259,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

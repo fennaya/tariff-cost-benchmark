@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360838",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "8306300000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596162-kH0xLhTJI4oEjxGvHaQN",
+    "object": "chat.completion",
+    "created": 1791596162,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on aluminum canvas frames with pin clips. Picture frames fall under heading 4414 (wooden frames), 7020 (glass), or 8310, and aluminum frames generally go to 7616. Pin clips of stainless steel are part of the system.\n\nCandidates: 7616.99.5190 (other articles of aluminum), or 9706 (no). Aluminum picture frames are classified in 7616.99, and I recall the specific number 7616.99.5190 as \"Other: Other: Other\", which is the likely answer. The system is a set, with the aluminum frame giving the essential character. Because the stainless pins are only clips, the set is classified by the aluminum frame.\n\nSubheading check: 7616.99.51 covers \"Other: Other: Other: Other\" within 7616.99.5 (cast, forged...). In the 2022 HTS, 7616.99.51 is \"Other\" and 7616.99.5190 is the statistical suffix for other. I'll go with that.\n\n{\"hts_code\": \"7616.99.5190\", \"reason\": \"The set's essential character comes from the aluminum frame, with stainless pin clips as incidental fasteners, so it is classified as an other article of aluminum under heading 7616.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 407,
+      "total_tokens": 688,
+      "cost": 0.004632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004632,
+        "upstream_inference_prompt_cost": 0.000562,
+        "upstream_inference_completions_cost": 0.00407
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7616995190",
+  "predicted_reason": "The set's essential character comes from the aluminum frame, with stainless pin clips as incidental fasteners, so it is classified as an other article of aluminum under heading 7616.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 281,
+    "completion_tokens": 407,
+    "total_tokens": 688,
+    "cost": 0.004632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004632,
+      "upstream_inference_prompt_cost": 0.000562,
+      "upstream_inference_completions_cost": 0.00407
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:03.174983+00:00",
+  "latency_s": 4.783,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

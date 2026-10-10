@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363025",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "4205008000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600389-iKObsNZBbBiJE4wTO3Ez",
+    "object": "chat.completion",
+    "created": 1791600389,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.31.6000\", \"reason\": \"A refillable leather notebook cover is a container of the kind classifiable in heading 4202, and being an outer surface of bovine leather and handheld, it falls in the 'other' subcategory of 4202.31.\"}",
+          "refusal": null,
+          "reasoning": "Leather notebook cover \u2014 4202? Covers for notebooks... likely 4202.31? Actually 4202 covers trunks, suitcases... \"similar containers\" \u2014 leather covers for notebooks classified 4202.31.00? There's specific: 4202.31.6000? Common ruling: refillable leather notebook covers classified in 4202.31, \"other\" \u2014 4202.31.60? Actually 4202.31.6000 \"other\" of leather. Hmm, 4202.31.60 is \"other\" \u2014 10-digit: 4202.31.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Leather notebook cover \u2014 4202? Covers for notebooks... likely 4202.31? Actually 4202 covers trunks, suitcases... \"similar containers\" \u2014 leather covers for notebooks classified 4202.31.00? There's specific: 4202.31.6000? Common ruling: refillable leather notebook covers classified in 4202.31, \"other\" \u2014 4202.31.60? Actually 4202.31.6000 \"other\" of leather. Hmm, 4202.31.60 is \"other\" \u2014 10-digit: 4202.31.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 152,
+      "completion_tokens": 201,
+      "total_tokens": 353,
+      "cost": 0.0005334,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005334,
+        "upstream_inference_prompt_cost": 9.12e-05,
+        "upstream_inference_completions_cost": 0.0004422
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202316000",
+  "predicted_reason": "A refillable leather notebook cover is a container of the kind classifiable in heading 4202, and being an outer surface of bovine leather and handheld, it falls in the 'other' subcategory of 4202.31.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 152,
+    "completion_tokens": 201,
+    "total_tokens": 353,
+    "cost": 0.0005334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005334,
+      "upstream_inference_prompt_cost": 9.12e-05,
+      "upstream_inference_completions_cost": 0.0004422
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 132,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:46:30.028181+00:00",
+  "latency_s": 1.669,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

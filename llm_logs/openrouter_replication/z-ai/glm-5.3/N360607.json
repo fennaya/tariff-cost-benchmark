@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360607",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "5702422080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600096-bvFYzDiDKuliR57q4j3E",
+    "object": "chat.completion",
+    "created": 1791600096,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.59.15\", \"reason\": \"The chenille mat, a made-up textile article of man-made fiber used as a bath/toilet mat, is classified as other toilet and kitchen linen of man-made fibers.\"}",
+          "refusal": null,
+          "reasoning": "Chenille mat \u2014 likely bathroom mat? Not stated. Chenille fabric laminated to foam \u2014 likely a floor mat of textile, chapter 63? Chenille mats often classified 6307.90? Actually chenille bath mats of pile fabric 6302.59? Surface is woven chenille (not pile woven?). Chenille fabric is a fabric, mat of textile material \u2014 6304? Not bed/linen/kitchen. Could be 3924? Textile floor mat 5705? Chenille mats classified as made up textile article 6307.90.98; but known ruling: chenille mats classified in 6302.59.15? Chenille bath mats \u2014 6302.59.15 (terry? no). NY rulings classify chenille bath mats under 6302.59.15? Actually 6302.59.15 is other toilet linen and kitchen linen of man-made fibers. Chenille bath mats classified 6302.59.15? Hmm. There's ruling N312847? Chenille mat laminated to foam \u2014 likely a \"rug\"? 5705.00? Given foam backing, not floor covering textile since surface is chenille fabric... I'll go 6302.59.15? Actually 6302.59.20? Codes: 6302.59.15 \"Other, of man-made fibers\"? 6302.59.10 of cotton... I'll answer 6302.59.15.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Chenille mat \u2014 likely bathroom mat? Not stated. Chenille fabric laminated to foam \u2014 likely a floor mat of textile, chapter 63? Chenille mats often classified 6307.90? Actually chenille bath mats of pile fabric 6302.59? Surface is woven chenille (not pile woven?). Chenille fabric is a fabric, mat of textile material \u2014 6304? Not bed/linen/kitchen. Could be 3924? Textile floor mat 5705? Chenille mats classified as made up textile article 6307.90.98; but known ruling: chenille mats classified in 6302.59.15? Chenille bath mats \u2014 6302.59.15 (terry? no). NY rulings classify chenille bath mats under 6302.59.15? Actually 6302.59.15 is other toilet linen and kitchen linen of man-made fibers. Chenille bath mats classified 6302.59.15? Hmm. There's ruling N312847? Chenille mat laminated to foam \u2014 likely a \"rug\"? 5705.00? Given foam backing, not floor covering textile since surface is chenille fabric... I'll go 6302.59.15? Actually 6302.59.20? Codes: 6302.59.15 \"Other, of man-made fibers\"? 6302.59.10 of cotton... I'll answer 6302.59.15.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 282,
+      "completion_tokens": 386,
+      "total_tokens": 668,
+      "cost": 0.0013688,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013688,
+        "upstream_inference_prompt_cost": 5.64e-05,
+        "upstream_inference_completions_cost": 0.0013124
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 330,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "63025915",
+  "predicted_reason": "The chenille mat, a made-up textile article of man-made fiber used as a bath/toilet mat, is classified as other toilet and kitchen linen of man-made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 282,
+    "completion_tokens": 386,
+    "total_tokens": 668,
+    "cost": 0.0013688,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013688,
+      "upstream_inference_prompt_cost": 5.64e-05,
+      "upstream_inference_completions_cost": 0.0013124
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 330,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:41:37.076373+00:00",
+  "latency_s": 2.661,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

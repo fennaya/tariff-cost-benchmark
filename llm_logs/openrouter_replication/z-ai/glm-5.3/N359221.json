@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359221",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8704310140",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599877-r9qG6LwUKZoi76wCzntG",
+    "object": "chat.completion",
+    "created": 1791599877,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8704.21.0090\", \"reason\": \"A kei pickup truck with a 545cc spark-ignition engine is a goods vehicle under heading 8704, with g.v.w. not exceeding 5 metric tons and spark-ignition engine, falling in the 'Other' subheading.\"}",
+          "refusal": null,
+          "reasoning": "Kei truck, spark-ignition engine, 545cc, new/used? 1990 used truck. Heading 8704 trucks. 8704.21 small, under 5 tons, spark ignition. Used vehicle \u2014 8704.21.0090? Subcategories: 8704.21.0000? Actually 8704.21 has breakdowns: 8704.21.0100 (new), 8704.21.0500 (used)? For 8703 there are new/used. For 8704.21: 8704.21.0090? I recall 8704.21.0090 \"Other\". Use 8704.21.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Kei truck, spark-ignition engine, 545cc, new/used? 1990 used truck. Heading 8704 trucks. 8704.21 small, under 5 tons, spark ignition. Used vehicle \u2014 8704.21.0090? Subcategories: 8704.21.0000? Actually 8704.21 has breakdowns: 8704.21.0100 (new), 8704.21.0500 (used)? For 8703 there are new/used. For 8704.21: 8704.21.0090? I recall 8704.21.0090 \"Other\". Use 8704.21.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 245,
+      "total_tokens": 412,
+      "cost": 0.00109136,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00109136,
+        "upstream_inference_prompt_cost": 1.336e-05,
+        "upstream_inference_completions_cost": 0.001078
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 169,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8704210090",
+  "predicted_reason": "A kei pickup truck with a 545cc spark-ignition engine is a goods vehicle under heading 8704, with g.v.w. not exceeding 5 metric tons and spark-ignition engine, falling in the 'Other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 167,
+    "completion_tokens": 245,
+    "total_tokens": 412,
+    "cost": 0.00109136,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00109136,
+      "upstream_inference_prompt_cost": 1.336e-05,
+      "upstream_inference_completions_cost": 0.001078
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 169,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:37:57.760462+00:00",
+  "latency_s": 3.373,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

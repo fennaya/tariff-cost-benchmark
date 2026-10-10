@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360409",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8544602000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600073-J7Loh5wEpNqd2slVb7jI",
+    "object": "chat.completion",
+    "created": 1791600073,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8544.60.0000\", \"reason\": \"These are insulated aluminum conductor bar assemblies for high-voltage (>1000V) EV battery connections, classified as other electric conductors exceeding 1,000 volts.\"}",
+          "refusal": null,
+          "reasoning": "Busbar of aluminum, insulated \u2014 8544.42.9090? Insulated conductors over 1000V: 8544.60.00. Busbars are 8544.30? Actually 8544.30 is stranded wire; insulated rigid busbars fall 8544.42 (with fittings) or 8544.60 (over 1000V). High-voltage EV \u2014 8544.60.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Busbar of aluminum, insulated \u2014 8544.42.9090? Insulated conductors over 1000V: 8544.60.00. Busbars are 8544.30? Actually 8544.30 is stranded wire; insulated rigid busbars fall 8544.42 (with fittings) or 8544.60 (over 1000V). High-voltage EV \u2014 8544.60.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 303,
+      "completion_tokens": 157,
+      "total_tokens": 460,
+      "cost": 0.00070182,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00070182,
+        "upstream_inference_prompt_cost": 4.242e-05,
+        "upstream_inference_completions_cost": 0.0006594
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 103,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544600000",
+  "predicted_reason": "These are insulated aluminum conductor bar assemblies for high-voltage (>1000V) EV battery connections, classified as other electric conductors exceeding 1,000 volts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 303,
+    "completion_tokens": 157,
+    "total_tokens": 460,
+    "cost": 0.00070182,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00070182,
+      "upstream_inference_prompt_cost": 4.242e-05,
+      "upstream_inference_completions_cost": 0.0006594
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:41:14.199695+00:00",
+  "latency_s": 3.027,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

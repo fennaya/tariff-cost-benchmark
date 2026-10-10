@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359846",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "3105100000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595948-e8znxDsaEKRyq1kOw1HX",
+    "object": "chat.completion",
+    "created": 1791595948,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a mineral or chemical fertilizer containing nitrogen and phosphorus, so it falls in Chapter 31. Heading 3105 covers mixed fertilizers with two or three of the fertilizing elements nitrogen, phosphorus and potassium.\n\nThe product is a liquid sold in 1-liter containers. Packages of 10 kg or less would go in 3105.10 (tablets or similar forms, or packages of gross weight not exceeding 10 kg). At 1.22 g/mL, one liter weighs about 1.22 kg, so a package of this size is well under 10 kg.\n\nWithin 3105.10, subheading 3105.10.00 is split into statistical suffixes. I recall 3105.10.0000 as the general \"in tablets or similar forms or in packages of gross weight not exceeding 10 kg\" line. The 3105.10.00 split I remember is 3105.10.0010 for \"Containing nitrogen, phosphorus and potassium\" or similar, but I am not certain of it. The other candidate is 3105.20 (containing nitrogen, phosphorus and potassium), which does not apply because there is no potassium. The 3105.10 line is the best fit, and I'll use the general 10-digit number.\n\n```json\n{\"hts_code\": \"3105.10.0000\", \"reason\": \"A mixed N-P fertilizer (urea and phosphoric acid) imported in 1-liter containers, well under 10 kg gross weight, is classified in heading 3105 under subheading 3105.10 for packages not exceeding 10 kg.\"}\n```\n\n{\"hts_code\": \"3105.10.0000\", \"reason\": \"A mixed N-P fertilizer (urea and phosphoric acid) imported in 1-liter containers, well under 10 kg gross weight, is classified in heading 3105 under subheading 3105.10 for packages not exceeding 10 kg.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 551,
+      "completion_tokens": 618,
+      "total_tokens": 1169,
+      "cost": 0.007282,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007282,
+        "upstream_inference_prompt_cost": 0.001102,
+        "upstream_inference_completions_cost": 0.00618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105100000",
+  "predicted_reason": "A mixed N-P fertilizer (urea and phosphoric acid) imported in 1-liter containers, well under 10 kg gross weight, is classified in heading 3105 under subheading 3105.10 for packages not exceeding 10 kg.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 551,
+    "completion_tokens": 618,
+    "total_tokens": 1169,
+    "cost": 0.007282,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007282,
+      "upstream_inference_prompt_cost": 0.001102,
+      "upstream_inference_completions_cost": 0.00618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:28.710694+00:00",
+  "latency_s": 5.351,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

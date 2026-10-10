@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358677",
+  "rulingDate": "2026-03-05T00:00:00",
+  "true_code": "9401790046",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595648-jTPFQkJ7flNqBRAnf50z",
+    "object": "chat.completion",
+    "created": 1791595648,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a folding chair with a metal frame and no upholstery. The main candidates are in heading 9401. Subheading 9401.71 covers upholstered seats with metal frames and 9401.79 covers other seats with metal frames. Subheading 9401.79.00 has statistical suffixes: 9401.79.0010 is for stacking chairs, and 9401.79.0050 is for other chairs.\n\nThe chair is unupholstered, so it falls under 9401.79. The remaining question is whether it is a \"stacking\" chair, and it is a folding chair, so the statistical suffix for \"other\" applies.\n\nI recall that since 2022 the HTS under 9401.79.00 has these statistical suffixes: 9401.79.0011 for \"Stacking chairs\" and 9401.79.0051 for \"Other\". I'm not certain of that, but I'm going with the \"Other\" suffix. The other 10-digit codes in the 9401.7x range that I considered, such as 9401.71.0010 and 9401.79.0050, are less likely to fit.\n\nFor comparison, 9401.79.0050 was the older \"Other\" suffix, and I believe the current suffix is 9401.79.0051, so I'll use that.\n\n```json\n{\"hts_code\": \"9401.79.0051\", \"reason\": \"Unupholstered folding seats with a metal (steel tube) frame and no armrests are classified as other seats with metal frames under heading 9401, subheading 9401.79, in the 'other' statistical suffix.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 973,
+      "completion_tokens": 488,
+      "total_tokens": 1461,
+      "cost": 0.006826,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006826,
+        "upstream_inference_prompt_cost": 0.001946,
+        "upstream_inference_completions_cost": 0.00488
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401790051",
+  "predicted_reason": "Unupholstered folding seats with a metal (steel tube) frame and no armrests are classified as other seats with metal frames under heading 9401, subheading 9401.79, in the 'other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 973,
+    "completion_tokens": 488,
+    "total_tokens": 1461,
+    "cost": 0.006826,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006826,
+      "upstream_inference_prompt_cost": 0.001946,
+      "upstream_inference_completions_cost": 0.00488
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:28.238503+00:00",
+  "latency_s": 5.229,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360021",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8708806590",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600029-4XOrAbEHCX75kZd6Bcex",
+    "object": "chat.completion",
+    "created": 1791600029,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.8100\", \"reason\": \"A suspension control arm for a passenger vehicle is classified per CBP rulings as an other part of a motor vehicle under HTSUS 8708.99.8100.\"}",
+          "refusal": null,
+          "reasoning": "Control arm for passenger vehicle suspension \u2014 HTS 8708.70.00? No, control arms classified under 8708.99 (other parts). Actually control arms often 8708.99.8100? For passenger cars, 8708.99.8100? HTSUS 8708.99.8100 \"Other, including suspension control arms\"? I recall 8708.99.8100 covers parts of suspension systems... There is 8708.99.8100: \"Other: Other: Other\"? Suspension control arms are classified in 8708.99.8100 per rulings. Yes, CBP rulings classify control arms under 8708.99.8100.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Control arm for passenger vehicle suspension \u2014 HTS 8708.70.00? No, control arms classified under 8708.99 (other parts). Actually control arms often 8708.99.8100? For passenger cars, 8708.99.8100? HTSUS 8708.99.8100 \"Other, including suspension control arms\"? I recall 8708.99.8100 covers parts of suspension systems... There is 8708.99.8100: \"Other: Other: Other\"? Suspension control arms are classified in 8708.99.8100 per rulings. Yes, CBP rulings classify control arms under 8708.99.8100.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 469,
+      "completion_tokens": 222,
+      "total_tokens": 691,
+      "cost": 0.00104054,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00104054,
+        "upstream_inference_prompt_cost": 6.374e-05,
+        "upstream_inference_completions_cost": 0.0009768
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 162,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708998100",
+  "predicted_reason": "A suspension control arm for a passenger vehicle is classified per CBP rulings as an other part of a motor vehicle under HTSUS 8708.99.8100.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 469,
+    "completion_tokens": 222,
+    "total_tokens": 691,
+    "cost": 0.00104054,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00104054,
+      "upstream_inference_prompt_cost": 6.374e-05,
+      "upstream_inference_completions_cost": 0.0009768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 162,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:40:29.448604+00:00",
+  "latency_s": 51.673,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

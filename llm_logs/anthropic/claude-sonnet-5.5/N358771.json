@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358771",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3923900080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595667-qCb9x2MP5PgtEZRNMW4j",
+    "object": "chat.completion",
+    "created": 1791595667,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "I classify an empty plastic lipstick container with a twist-up mechanism as a plastic article in heading 3923, \"Articles for the conveyance or packing of goods, of plastics; stoppers, lids, caps and other closures, of plastics.\" Other candidates were heading 9616 (scent sprayers, powder puffs) and heading 3926 (other articles of plastics). I rejected 3926 because the container is a packing article. I did not choose 9616 because it does not cover lipstick holders.\n\nThe mechanism is the main question. Heading 9603 covers brushes, and 9613 covers lighters, so neither applies. Lipstick holders do appear in CBP rulings, which have classified empty lipstick tubes or cases in 3923.90.00 as \"other\" plastic containers for the conveyance or packing of goods. The 10-digit statistical suffix for that subheading is 3923.90.0080 (Other). The 3923.90.00 subheading is \"Other\" and its statistical suffixes are 0080 for other and 0040 for pharmaceutical-related items.\n\nI am going from recalled rulings and have not checked the current schedule, so the suffix should be verified.\n\n{\"hts_code\": \"3923.90.0080\", \"reason\": \"An empty injection-molded plastic lipstick container with a twist-up mechanism is an article for the conveyance or packing of goods of plastics, classified in heading 3923 under the residual 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 471,
+      "total_tokens": 718,
+      "cost": 0.005204,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005204,
+        "upstream_inference_prompt_cost": 0.000494,
+        "upstream_inference_completions_cost": 0.00471
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3923900080",
+  "predicted_reason": "An empty injection-molded plastic lipstick container with a twist-up mechanism is an article for the conveyance or packing of goods of plastics, classified in heading 3923 under the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 247,
+    "completion_tokens": 471,
+    "total_tokens": 718,
+    "cost": 0.005204,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005204,
+      "upstream_inference_prompt_cost": 0.000494,
+      "upstream_inference_completions_cost": 0.00471
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:48.115405+00:00",
+  "latency_s": 4.821,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

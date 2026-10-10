@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359076",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "3926904590",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599854-lLDTsBBiaZJa8kg186xW",
+    "object": "chat.completion",
+    "created": 1791599854,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9990\", \"reason\": \"A polyurethane plastic foam gasket is an article of plastics not elsewhere specified or included, classified under heading 3926 as other articles of plastics.\"}",
+          "refusal": null,
+          "reasoning": "Foam polyurethane gasket \u2014 likely 3919? No, gaskets of plastics: 3926.90? Gaskets of vulcanized rubber 4016.93, but plastic foam \u2014 heading 3926 other articles of plastics? NY rulings classify plastic foam gaskets under 3926.90.99? Actually 3926.90.45? Common: 3926.90.9980? Gaskets specifically: 3926.90.45 covers... I recall NY N rulings classifying polyurethane foam gaskets in 3926.90.99. Use 3926.90.9980? HTS 3926.90.99 is \"Other, Other\" \u2014 10-digit 3926.90.9980? Actually 3926.90.99 subdivides: 9910, 9920... 9990? I'll go 3926.90.9980? Safer: 3926.90.9990? Hmm. 3926.90.99 subheadings include 9910 (pins), 9920 (drill bits?), ... 9990 other. I'll answer 3926.90.9990.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Foam polyurethane gasket \u2014 likely 3919? No, gaskets of plastics: 3926.90? Gaskets of vulcanized rubber 4016.93, but plastic foam \u2014 heading 3926 other articles of plastics? NY rulings classify plastic foam gaskets under 3926.90.99? Actually 3926.90.45? Common: 3926.90.9980? Gaskets specifically: 3926.90.45 covers... I recall NY N rulings classifying polyurethane foam gaskets in 3926.90.99. Use 3926.90.9980? HTS 3926.90.99 is \"Other, Other\" \u2014 10-digit 3926.90.9980? Actually 3926.90.99 subdivides: 9910, 9920... 9990? I'll go 3926.90.9980? Safer: 3926.90.9990? Hmm. 3926.90.99 subheadings include 9910 (pins), 9920 (drill bits?), ... 9990 other. I'll answer 3926.90.9990.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 191,
+      "completion_tokens": 332,
+      "total_tokens": 523,
+      "cost": 0.00147608,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00147608,
+        "upstream_inference_prompt_cost": 1.528e-05,
+        "upstream_inference_completions_cost": 0.0014608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 279,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "A polyurethane plastic foam gasket is an article of plastics not elsewhere specified or included, classified under heading 3926 as other articles of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 191,
+    "completion_tokens": 332,
+    "total_tokens": 523,
+    "cost": 0.00147608,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00147608,
+      "upstream_inference_prompt_cost": 1.528e-05,
+      "upstream_inference_completions_cost": 0.0014608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 279,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:37:34.878019+00:00",
+  "latency_s": 3.868,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

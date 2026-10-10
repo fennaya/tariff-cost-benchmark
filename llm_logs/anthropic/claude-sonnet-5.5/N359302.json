@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359302",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "3004909246",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595806-hpEemCIoFWaCcwEHSwXO",
+    "object": "chat.completion",
+    "created": 1791595806,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Doxepin tablets in measured doses for retail sale are medicaments of heading 3004. Doxepin is a tricyclic antidepressant, so subheading 3004.90 (other medicaments) applies. The 3004.90 statistical suffixes include 3004.90.9250 for \"Other: antidepressants\" (hence the need to choose carefully).\n\nThe 3004.90.92 breakout covers \"Other\" medicaments, and I recall 3004.90.9260 as \"Other: Psychotherapeutic agents\" and 3004.90.9250 as \"Other: Antidepressants/ antipsychotics\". I am not fully certain, but I recall 3004.90.9244 (Other: Other: Antidepressants...) and 3004.90.9247 (Other). Another recollection is that 3004.90.92 has: 10 Antiarrhythmics, 15 Anticonvulsants?, 20 Antihistamines, 25 Antidiabetics?, 30 ... 40, 45, 50 psychotherapeutics?, 60, 71, 75, 92. I believe 3004.90.9225 is \"Antidepressants\". I can't pin it down, so I'll go with the \"Other\" catch-all that I'm most confident exists, 3004.90.9244, hmm, or the more generic 3004.90.9290. Since the description names its antidepressant use, I'll select the code for psychotherapeutic agents.\n\n```json\n{\"hts_code\": \"3004.90.9260\", \"reason\": \"Doxepin tablets are measured-dose medicaments of heading 3004, classified in the other medicaments subheading 3004.90 as a psychotherapeutic (antidepressant) agent.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 214,
+      "completion_tokens": 555,
+      "total_tokens": 769,
+      "cost": 0.005978,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005978,
+        "upstream_inference_prompt_cost": 0.000428,
+        "upstream_inference_completions_cost": 0.00555
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909260",
+  "predicted_reason": "Doxepin tablets are measured-dose medicaments of heading 3004, classified in the other medicaments subheading 3004.90 as a psychotherapeutic (antidepressant) agent.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 555,
+    "total_tokens": 769,
+    "cost": 0.005978,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005978,
+      "upstream_inference_prompt_cost": 0.000428,
+      "upstream_inference_completions_cost": 0.00555
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:06.850302+00:00",
+  "latency_s": 5.621,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358590",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595628-yU1TsSDHHvNnYBLTbEqm",
+    "object": "chat.completion",
+    "created": 1791595628,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a fireworks mortar rack, meaning HDPE tubes held in a steel frame. Fireworks themselves fall under 3604.10, but the mortar tubes and racks are not pyrotechnic articles. They are articles of plastic or of steel. This looks like a CBP ruling on fireworks mortar racks, possibly classified in 3926.90 as other articles of plastics, or in 7326 or 8479.\n\nThe essential character comes from the 36 plastic tubes, which do the launching, with the steel frame holding them. A composite good under GRI 3(b) would be classified by the component giving essential character. If the tubes provide it, 3926.90.99 applies. If the product were treated as a machine, it would go to 8479.89, but it has no moving parts or mechanical function, so that heading seems unlikely.\n\nPlastic tubes, pipes and hoses fall under 3917, but these are fitted with plugs and mounted in a rack, so they are not simply tubes. 3926.90.99 (HTS 3926.90.9990 or 3926.90.9985) is the likely home.\n\nI'll go with 3926.90.9990, other articles of plastics.\n\n{\"hts_code\": \"3926.90.9990\", \"reason\": \"The mortar rack is a composite article of HDPE tubes and a steel frame with no mechanical function, and the plastic tubes give it essential character under GRI 3(b), so it falls under other articles of plastics.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 295,
+      "completion_tokens": 471,
+      "total_tokens": 766,
+      "cost": 0.0053,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0053,
+        "upstream_inference_prompt_cost": 0.00059,
+        "upstream_inference_completions_cost": 0.00471
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "The mortar rack is a composite article of HDPE tubes and a steel frame with no mechanical function, and the plastic tubes give it essential character under GRI 3(b), so it falls under other articles of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 295,
+    "completion_tokens": 471,
+    "total_tokens": 766,
+    "cost": 0.0053,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0053,
+      "upstream_inference_prompt_cost": 0.00059,
+      "upstream_inference_completions_cost": 0.00471
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:09.023337+00:00",
+  "latency_s": 5.388,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

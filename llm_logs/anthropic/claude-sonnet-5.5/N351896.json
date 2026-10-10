@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N351896",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "2924297100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593771-pDTrCX1aC9CZ7mxAUmvs",
+    "object": "chat.completion",
+    "created": 1791593771,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Z-Lys(Z)-OH is lysine with both amino groups protected by benzyloxycarbonyl groups. Lysine is an amino acid with two amino groups and one carboxyl group, and it falls in heading 2922 (amino-compounds with oxygen function), subheading 2922.41 (lysine and its esters; salts thereof). A derivative such as N,N'-dicarbamate is not lysine itself, though. Its carbamate groups are esters of carbamic acid, so it could fall in heading 2924 (carboxyamide-function compounds; amide function compounds of carbonic acid).\n\nCBZ-protected amino acids have been classified by CBP in 2924.29 for the other cyclic amides, including cyclic ureines, and their derivatives. Carbamates of aromatic type fall in 2924.29.\n\nThe statistical suffix is the remaining question. 2924.29.71 covers \"other\" cyclic amides, and 2924.29.77 is a different \"other\" line. For pharmaceutical use, 2924.29.46 lists \"Other: Drugs...\" and 2924.29.47 covers other acyclic items. The benzyl carbamate groups are carbocyclic, which would make the compound a cyclic amide in 2924.29.\n\nI recall the following structure for 2924.29: .10 (Acetaminophen-type derivative), .18 (Ethyl/\u2026), .23 (Aromatic... ), .25 (Lidocaine?), .46 (Aromatic drug?), .62 (Pesticides), .71 (Other: Drugs), .77 (Other: Other), .95 (Other). I am not certain, but I believe 2924.29.71 is \"Other: Other cyclic amides... Drugs\" and 2924.29.77 is \"Other\". Since this is an API intermediate that is not itself a drug, I will choose 2924.29.9700, the \"Other\" line.\n\n```json\n{\"hts_code\": \"2924.29.9700\", \"reason\": \"Z-Lys(Z)-OH is a lysine derivative with two benzyloxycarbonyl (carbamate) groups, so it falls in heading 2924 as a cyclic carbamate/amide-function compound, in the residual 'other' subheading.\"}\n```\n\n{\"hts_code\": \"2924.29.9700\", \"reason\": \"Z-Lys(Z)-OH is a lysine derivative with two benzyloxycarbonyl (carbamate) groups, so it falls in heading 2924 as a cyclic carbamate/amide-function compound, in the residual 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 319,
+      "completion_tokens": 842,
+      "total_tokens": 1161,
+      "cost": 0.009058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009058,
+        "upstream_inference_prompt_cost": 0.000638,
+        "upstream_inference_completions_cost": 0.00842
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2924299700",
+  "predicted_reason": "Z-Lys(Z)-OH is a lysine derivative with two benzyloxycarbonyl (carbamate) groups, so it falls in heading 2924 as a cyclic carbamate/amide-function compound, in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 319,
+    "completion_tokens": 842,
+    "total_tokens": 1161,
+    "cost": 0.009058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009058,
+      "upstream_inference_prompt_cost": 0.000638,
+      "upstream_inference_completions_cost": 0.00842
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:11.649324+00:00",
+  "latency_s": 7.235,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363820",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "0604903000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600452-7PtPeh54wPvgmswITeh0",
+    "object": "chat.completion",
+    "created": 1791600452,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0603.90.0000\", \"reason\": \"Dried poppy seed capsules imported solely for ornamental/decorative use are classified as dried cut flowers and flower buds of a kind suitable for ornamental purposes under heading 0603.\"}",
+          "refusal": null,
+          "reasoning": "Dried poppy capsules \u2014 likely 1211.90 or 0602? Decorative dried plants: 0602.90 for fresh? Dried plants for ornament fall under 0602.99? Actually heading 0603 covers cut flowers and foliage, fresh or dried, for ornamental purposes. Poppy heads dried for decoration \u2014 0603.90.00? 0603.90.0000? HTS 0603.19/0603.90. Dried: 0603.90.00.00? Actually 0603.90.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Dried poppy capsules \u2014 likely 1211.90 or 0602? Decorative dried plants: 0602.90 for fresh? Dried plants for ornament fall under 0602.99? Actually heading 0603 covers cut flowers and foliage, fresh or dried, for ornamental purposes. Poppy heads dried for decoration \u2014 0603.90.00? 0603.90.0000? HTS 0603.19/0603.90. Dried: 0603.90.00.00? Actually 0603.90.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 194,
+      "total_tokens": 426,
+      "cost": 0.00089768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00089768,
+        "upstream_inference_prompt_cost": 4.408e-05,
+        "upstream_inference_completions_cost": 0.0008536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 91,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0603900000",
+  "predicted_reason": "Dried poppy seed capsules imported solely for ornamental/decorative use are classified as dried cut flowers and flower buds of a kind suitable for ornamental purposes under heading 0603.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 194,
+    "total_tokens": 426,
+    "cost": 0.00089768,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00089768,
+      "upstream_inference_prompt_cost": 4.408e-05,
+      "upstream_inference_completions_cost": 0.0008536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 91,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:47:32.356254+00:00",
+  "latency_s": 2.854,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

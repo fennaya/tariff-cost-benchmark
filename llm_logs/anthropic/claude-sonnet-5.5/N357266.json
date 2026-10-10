@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357266",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595354-11GqmilurvidB5nTX57E",
+    "object": "chat.completion",
+    "created": 1791595354,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a mixture of roasted brown rice (60%) and green tea (40%). HTSUS 0902 covers tea, and mixtures of tea with other substances are classified under 2101.20 (extracts, essences and concentrates of tea, and preparations with a basis of these extracts or with a basis of tea). Per the Chapter 9 note 2, mixtures of tea with other substances go to 0902 only if the tea gives the essential character. Rice is the majority component at 60%, but a CBP ruling on genmaicha found that the tea provides the essential character, which supports 0902. The product is in tea bags of 2g each, so it is in immediate packings of 3 kg or less. Green tea in packings of 3 kg or less is 0902.10. Under the rule for mixtures, the HTS 0902.10 subheading covers green tea in packages not exceeding 3 kg. The statistical suffixes are 0902.10.10 for tea bags/\"flavored\" and 0902.10.80 for other, which I recall as: 0902.10.10 \"Flavored\" and 0902.10.80 \"Other\". Some other rulings I recall classify genmaicha under 0902.10.8000, and I will go with that.\n\n{\"hts_code\": \"0902.10.8000\", \"reason\": \"Genmaicha in tea bags of 3 kg or less is classified as green tea under heading 0902 because the tea gives the mixture its essential character, which places it in the 'other' subheading 0902.10.80.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 387,
+      "completion_tokens": 485,
+      "total_tokens": 872,
+      "cost": 0.005624,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005624,
+        "upstream_inference_prompt_cost": 0.000774,
+        "upstream_inference_completions_cost": 0.00485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0902108000",
+  "predicted_reason": "Genmaicha in tea bags of 3 kg or less is classified as green tea under heading 0902 because the tea gives the mixture its essential character, which places it in the 'other' subheading 0902.10.80.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 387,
+    "completion_tokens": 485,
+    "total_tokens": 872,
+    "cost": 0.005624,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005624,
+      "upstream_inference_prompt_cost": 0.000774,
+      "upstream_inference_completions_cost": 0.00485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:34.612825+00:00",
+  "latency_s": 5.206,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

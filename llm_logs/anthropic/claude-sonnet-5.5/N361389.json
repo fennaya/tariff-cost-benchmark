@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361389",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596266-huVrqfMGODfXZCgxsr4C",
+    "object": "chat.completion",
+    "created": 1791596266,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description doesn't give the fiber content, whether the garment is knit or woven, or the intended wearer. It is a floor-length robe with long sleeves and a collar, which suggests a woven robe or kaftan-type garment. The likely headings are 6211 (other garments, woven), 6208 (women's nightwear, woven), or 6207 (men's nightwear, woven).\n\nI'm assuming a women's or general robe of cotton, since cotton is the most common fiber and the description says nothing else. The candidate is 6208.91 (women's bathrobes, dressing gowns and similar articles of man-made fibers). Cotton is 6208.91? Checking the subheadings: 6208.11 is slips of man-made fibers, 6208.19 is slips of other textile materials, 6208.21 is nightdresses and pajamas of cotton, 6208.22 is of man-made fibers, 6208.29 is of other textile materials, 6208.91 is other, of cotton, 6208.92 is other, of man-made fibers, and 6208.99 is other, of other textile materials. So women's cotton robes fall under 6208.91. Under 6208.91.30, the 10-digit codes are 6208.91.3010 for bathrobes, dressing gowns and similar articles, and 6208.91.3020 for other. I'm not certain of these statistical suffixes.\n\nI'll go with the women's cotton robe at 6208.91.3010.\n\n{\"hts_code\": \"6208.91.3010\", \"reason\": \"A floor-length woven robe with collar and long sleeves is best classified as a women's cotton bathrobe/dressing gown under heading 6208, assuming woven cotton construction since fiber content is not stated.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 195,
+      "completion_tokens": 560,
+      "total_tokens": 755,
+      "cost": 0.00599,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00599,
+        "upstream_inference_prompt_cost": 0.00039,
+        "upstream_inference_completions_cost": 0.0056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6208913010",
+  "predicted_reason": "A floor-length woven robe with collar and long sleeves is best classified as a women's cotton bathrobe/dressing gown under heading 6208, assuming woven cotton construction since fiber content is not stated.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 195,
+    "completion_tokens": 560,
+    "total_tokens": 755,
+    "cost": 0.00599,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00599,
+      "upstream_inference_prompt_cost": 0.00039,
+      "upstream_inference_completions_cost": 0.0056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:46.850387+00:00",
+  "latency_s": 5.171,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

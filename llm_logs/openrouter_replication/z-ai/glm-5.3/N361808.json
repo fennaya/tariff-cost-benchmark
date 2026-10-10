@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361808",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8479899599",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600234-WbAmUGyj3CSeYLW7Hg7a",
+    "object": "chat.completion",
+    "created": 1791600234,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.9590\", \"reason\": \"A magnetic separation system for sorting recyclable materials is a mechanical machine without a more specific heading, classifiable as other machinery in HTSUS 8479.89.9590.\"}",
+          "refusal": null,
+          "reasoning": "Magnetic separator machine \u2014 likely 8479.89.95? Sorting machinery for recycling could be 8479.89.94 \"machinery for sorting...\" Actually 8428 sorting machinery? Magnetic separators classified 8479.89.95? HTSUS 8479.89.95 covers \"other\" machinery. There's 8479.89.94 for mixing/kneading? Common ruling: magnetic separators \u2192 8479.89.9590? Actually 8479.89.95 was deleted; current 8479.89.95 \"Other\" exists. Use 8479.89.9590? Stat suffix 90. I'll answer 8479.89.9590.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Magnetic separator machine \u2014 likely 8479.89.95? Sorting machinery for recycling could be 8479.89.94 \"machinery for sorting...\" Actually 8428 sorting machinery? Magnetic separators classified 8479.89.95? HTSUS 8479.89.95 covers \"other\" machinery. There's 8479.89.94 for mixing/kneading? Common ruling: magnetic separators \u2192 8479.89.9590? Actually 8479.89.95 was deleted; current 8479.89.95 \"Other\" exists. Use 8479.89.9590? Stat suffix 90. I'll answer 8479.89.9590.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 282,
+      "completion_tokens": 224,
+      "total_tokens": 506,
+      "cost": 0.00112314,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00112314,
+        "upstream_inference_prompt_cost": 4.794e-05,
+        "upstream_inference_completions_cost": 0.0010752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 170,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479899590",
+  "predicted_reason": "A magnetic separation system for sorting recyclable materials is a mechanical machine without a more specific heading, classifiable as other machinery in HTSUS 8479.89.9590.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 282,
+    "completion_tokens": 224,
+    "total_tokens": 506,
+    "cost": 0.00112314,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00112314,
+      "upstream_inference_prompt_cost": 4.794e-05,
+      "upstream_inference_completions_cost": 0.0010752
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:43:54.645476+00:00",
+  "latency_s": 2.408,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

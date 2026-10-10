@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358432",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "9503000073",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599766-ocAHvVuVZqsH6mO1399I",
+    "object": "chat.completion",
+    "created": 1791599766,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.0073\", \"reason\": \"The cross-stitch craft kit is principally designed for the amusement of children and put up as a set, classifying it as an other toy in Chapter 95.\"}",
+          "refusal": null,
+          "reasoning": "NY N-case: cross-stitch craft kit toy \u2192 9503.00.0073? Toys put up in sets... likely 9503.00.0073 (other toys, put up in sets). Actually HTS 9503.00.00 has subheadings: 9503.00.0025, .0045, .0060, .0073, .0095. Children's craft kit as toy \u2192 9503.00.0073.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "NY N-case: cross-stitch craft kit toy \u2192 9503.00.0073? Toys put up in sets... likely 9503.00.0073 (other toys, put up in sets). Actually HTS 9503.00.00 has subheadings: 9503.00.0025, .0045, .0060, .0073, .0095. Children's craft kit as toy \u2192 9503.00.0073.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 163,
+      "total_tokens": 452,
+      "cost": 0.00074032,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00074032,
+        "upstream_inference_prompt_cost": 2.312e-05,
+        "upstream_inference_completions_cost": 0.0007172
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 109,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "The cross-stitch craft kit is principally designed for the amusement of children and put up as a set, classifying it as an other toy in Chapter 95.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 163,
+    "total_tokens": 452,
+    "cost": 0.00074032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00074032,
+      "upstream_inference_prompt_cost": 2.312e-05,
+      "upstream_inference_completions_cost": 0.0007172
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 109,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:36:07.207186+00:00",
+  "latency_s": 1.929,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363316",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8537109170",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596641-aYFan21WLUkHl9zIEmb5",
+    "object": "chat.completion",
+    "created": 1791596641,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a control panel subassembly for an aircraft cockpit MCDU, which is a flight management display and control unit. The likely candidates are heading 8537 (control panels), heading 8526 (radio navigational aid apparatus), and heading 8803 (parts of aircraft). Heading 8803 would be excluded for parts covered by other headings in the section, and under Note 2 to Section XVII, parts that are goods of headings 8501, 8502, or 8535-8537 are excluded. This panel is not a complete 8537 apparatus by itself, because it lacks the LCD.\n\nHeading 8537 covers boards, panels, consoles, and other bases equipped with two or more apparatus of 8535 or 8536 for electric control, for a voltage not exceeding 1,000 V. The panel has multiple push-button switches, which fall under 8536.50, and this is the best fit. It is a control panel with switches, and the subassembly is a part of an MCDU. An alternative is 8537.10.9170, \"other\" control panels for a voltage not exceeding 1,000 V, though that may not be used for the finished MCDU.\n\nThe part could instead be classed as a part of the MCDU, which would be a navigation or flight management unit under 8526.91 (radio navigational aid apparatus). Parts of such apparatus would go to 8529.90. However, 8537 is more specific for a panel with switches. CBP rulings on similar MCDU control panel subassemblies have used 8537.10.9170.\n\nThe 8537.10.91 subheading covers \"Other,\" and 8537.10.9170 is \"Other\" within it.\n\n```json\n{\"hts_code\": \"8537.10.9170\", \"reason\": \"The MCDU control panel subassembly is a panel equipped with multiple push-button switches for electric control at no more than 1,000 V, so it is classified in heading 8537 as other control panels.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 533,
+      "completion_tokens": 613,
+      "total_tokens": 1146,
+      "cost": 0.007196,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007196,
+        "upstream_inference_prompt_cost": 0.001066,
+        "upstream_inference_completions_cost": 0.00613
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8537109170",
+  "predicted_reason": "The MCDU control panel subassembly is a panel equipped with multiple push-button switches for electric control at no more than 1,000 V, so it is classified in heading 8537 as other control panels.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 533,
+    "completion_tokens": 613,
+    "total_tokens": 1146,
+    "cost": 0.007196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007196,
+      "upstream_inference_prompt_cost": 0.001066,
+      "upstream_inference_completions_cost": 0.00613
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:01.956110+00:00",
+  "latency_s": 6.176,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

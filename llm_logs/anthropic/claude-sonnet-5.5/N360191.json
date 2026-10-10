@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360191",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596052-csP3usalUvWqDrnAtNbW",
+    "object": "chat.completion",
+    "created": 1791596052,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a plastic bag of laminated sheet, with polyethylene at 80% by weight, so it falls under heading 3923 (articles for the conveyance or packing of goods). Subheading 3923.21 covers sacks and bags (including cones) of polymers of ethylene. Within it, 3923.21.00 is split into statistical suffixes: 3923.21.0085 is \"Other\" and 3923.21.0095 is also \"Other.\" I recall 3923.21.00 as \"Of polymers of ethylene: Sacks and bags (including cones): Other,\" with suffixes 3923.21.0080 (retail packaging) and 3923.21.0085 (other). I'm not certain of that split.\n\nBecause the bag is a gusseted bag with an integral extruded closure (zipper-type), the question is whether the closure points elsewhere. Heading 3923.21 covers bags with closures, so it stays there. The bag is described as \"supplementary packaging,\" which fits the 3923.21.0085 \"Other\" suffix. I'm choosing 3923.21.0085 on that basis.\n\n{\"hts_code\": \"3923.21.0085\", \"reason\": \"A laminated plastic bag with an integral closure that is 80% polyethylene by weight is classified as a sack or bag of polymers of ethylene for packing goods under heading 3923, subheading 3923.21.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 313,
+      "completion_tokens": 443,
+      "total_tokens": 756,
+      "cost": 0.005056,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005056,
+        "upstream_inference_prompt_cost": 0.000626,
+        "upstream_inference_completions_cost": 0.00443
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3923210085",
+  "predicted_reason": "A laminated plastic bag with an integral closure that is 80% polyethylene by weight is classified as a sack or bag of polymers of ethylene for packing goods under heading 3923, subheading 3923.21.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 443,
+    "total_tokens": 756,
+    "cost": 0.005056,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005056,
+      "upstream_inference_prompt_cost": 0.000626,
+      "upstream_inference_completions_cost": 0.00443
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:12.603254+00:00",
+  "latency_s": 4.378,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

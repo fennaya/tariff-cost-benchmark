@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359901",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "4817204000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595967-QkIfOHRdKDdO2zCMYcy5",
+    "object": "chat.completion",
+    "created": 1791595967,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a set of 12 flat note cards with envelopes, printed lithographically with Christmas designs. The relevant heading is 4909 (printed or illustrated postcards; printed cards bearing personal greetings, messages or announcements, with or without envelopes). Heading 4817 covers boxed stationery assortments, but these are greeting-style cards with a holiday design, so 4909 fits better.\n\nWithin 4909, subheading 4909.00.40 covers \"Other\" cards. In the HTSUS, 4909.00.20 is for postcards and 4909.00.40 is for other cards, including Christmas cards. Because this is a holiday card with a Santa design, the Christmas cards line is the one that applies. I recall 4909.00.25 being \"Christmas cards\" and 4909.00.40 being \"Other\", but I am not certain of those numbers.\n\nOn that recollection, the current structure is 4909.00.10 (Christmas cards) with 4909.00.15 and 4909.00.25 beneath it, but I can't confirm the 10-digit breakdown. I'm going with 4909.00.2500 (\"Other\" under 4909.00.20, which is the non-postcard cards line), and I'm moderately unsure of it.\n\nSince the cards are described as note cards with a holiday design and are blank on the back for a message, I will classify them as Christmas greeting cards.\n\n```json\n{\"hts_code\": \"4909.00.4000\", \"reason\": \"Flat printed note cards with envelopes bearing Christmas designs (Santa, bow) are classified as printed greeting cards of heading 4909, in the 'other' cards subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 410,
+      "completion_tokens": 534,
+      "total_tokens": 944,
+      "cost": 0.00616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00616,
+        "upstream_inference_prompt_cost": 0.00082,
+        "upstream_inference_completions_cost": 0.00534
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4909004000",
+  "predicted_reason": "Flat printed note cards with envelopes bearing Christmas designs (Santa, bow) are classified as printed greeting cards of heading 4909, in the 'other' cards subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 410,
+    "completion_tokens": 534,
+    "total_tokens": 944,
+    "cost": 0.00616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00616,
+      "upstream_inference_prompt_cost": 0.00082,
+      "upstream_inference_completions_cost": 0.00534
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:47.891130+00:00",
+  "latency_s": 5.047,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

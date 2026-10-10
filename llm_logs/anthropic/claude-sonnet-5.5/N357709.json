@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357709",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "8007003200",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595479-01oxUY6dJGyA1kjM1mLf",
+    "object": "chat.completion",
+    "created": 1791595479,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Tin-lead solder powder falls in Chapter 80 or Chapter 78, or possibly heading 8003 or 8007. A better fit may be heading 7806 or 8007, but the decisive question is how a tin-lead alloy is classified.\n\nChapter 80 covers tin. Heading 8001 is unwrought tin, 8003 is tin bars, rods, profiles and wire, 8007 is other articles of tin. Powders of tin appear in 8005 (tin foil, powders and flakes): 8005.10 is foil and 8005.20 is tin powders and flakes. Under Chapter 80 Note, \"tin alloys\" classify as tin if tin predominates by weight. Sn63Pb37 is 63% tin, so tin predominates and the alloy is classified as tin. Under Section XV Note 5, an alloy of base metals is classified as the metal that predominates by weight. Tin at 63% predominates, so heading 8005 applies: 8005.00.00 is the heading, with the powder subheading 8005.00.0000 in the HTSUS. HTSUS 8005 has \"Tin foil... tin powders and flakes\", and the HTSUS code is 8005.00.0000.\n\nHowever, Chapter 80 solder is separately addressed in 8003.00.00 (tin bars, rods, profiles and wire), which includes solder wire but not powder. Powder goes to 8005. Note also that heading 8101-8113 doesn't apply, and 3810 (soldering fluxes and preparations) doesn't apply since the powder is pure alloy with no flux.\n\n{\"hts_code\": \"8005.00.0000\", \"reason\": \"Under Section XV Note 5 the Sn63Pb37 alloy is classified as tin because tin predominates by weight (63%), and tin powders fall in heading 8005.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 312,
+      "completion_tokens": 603,
+      "total_tokens": 915,
+      "cost": 0.006654,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006654,
+        "upstream_inference_prompt_cost": 0.000624,
+        "upstream_inference_completions_cost": 0.00603
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8005000000",
+  "predicted_reason": "Under Section XV Note 5 the Sn63Pb37 alloy is classified as tin because tin predominates by weight (63%), and tin powders fall in heading 8005.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 603,
+    "total_tokens": 915,
+    "cost": 0.006654,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006654,
+      "upstream_inference_prompt_cost": 0.000624,
+      "upstream_inference_completions_cost": 0.00603
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:39.992695+00:00",
+  "latency_s": 6.263,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

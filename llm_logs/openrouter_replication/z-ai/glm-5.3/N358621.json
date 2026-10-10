@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358621",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "8903120060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599787-J2ENO5qn3htQHETf61Ue",
+    "object": "chat.completion",
+    "created": 1791599787,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8903.10.0000\", \"reason\": \"The inflatable PVC kayak/paddle board is an inflatable vessel for pleasure, classifiable in HTSUS subheading 8903.10.0000.\"}",
+          "refusal": null,
+          "reasoning": "Inflatable watercraft, PVC \u2014 likely 8903.99 or 8903.91? Kayaks are vessels of heading 8903 (yachts/other vessels for pleasure). Inflatable kayaks often classified 8903.99.0090? Actually inflatable boats are 8903.99.00... CBP rulings classify inflatable kayaks under 8903.99.0090? Heading 8903: 8903.91 (inflatable vessels?) No\u20148903.91 is sailboards? Structure: 8903.10 inflatable, 8903.91 sailboards/windsurfing? Let me recall: 8903.10.00 vessels inflatable; 8903.92 sailboards; 8903.99 other. Yes, 8903.10.00.00 inflatable vessels.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Inflatable watercraft, PVC \u2014 likely 8903.99 or 8903.91? Kayaks are vessels of heading 8903 (yachts/other vessels for pleasure). Inflatable kayaks often classified 8903.99.0090? Actually inflatable boats are 8903.99.00... CBP rulings classify inflatable kayaks under 8903.99.0090? Heading 8903: 8903.91 (inflatable vessels?) No\u20148903.91 is sailboards? Structure: 8903.10 inflatable, 8903.91 sailboards/windsurfing? Let me recall: 8903.10.00 vessels inflatable; 8903.92 sailboards; 8903.99 other. Yes, 8903.10.00.00 inflatable vessels.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 284,
+      "completion_tokens": 245,
+      "total_tokens": 529,
+      "cost": 0.001187076,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001187076,
+        "upstream_inference_prompt_cost": 1.1076e-05,
+        "upstream_inference_completions_cost": 0.001176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 204,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8903100000",
+  "predicted_reason": "The inflatable PVC kayak/paddle board is an inflatable vessel for pleasure, classifiable in HTSUS subheading 8903.10.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 245,
+    "total_tokens": 529,
+    "cost": 0.001187076,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001187076,
+      "upstream_inference_prompt_cost": 1.1076e-05,
+      "upstream_inference_completions_cost": 0.001176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 204,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:36:28.264267+00:00",
+  "latency_s": 1.805,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

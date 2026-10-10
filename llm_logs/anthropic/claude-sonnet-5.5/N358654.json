@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358654",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3824994140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595642-YTIWfF7gffMUYnLNtdhI",
+    "object": "chat.completion",
+    "created": 1791595642,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on methyl 12-hydroxystearate mixed with stearic and palmitic acid esters. Such a product is likely a mixture of esters of fatty acids. Candidate headings:\n\n- 2918.19 covers alcohol-function carboxylic acids, but the item is an ester, not an acid.\n- 3824.99 covers chemical preparations not elsewhere specified, which is where a mixture would fall.\n- 3823 covers industrial monocarboxylic fatty acids and acid oils.\n- 1518 covers inedible mixtures of animal or vegetable fats and oils, but these are not fats or oils in the glyceride sense.\n\nMethyl 12-hydroxystearate itself is classified in 2918.19. Because this product is a mixture of methyl esters, it would be in 3824.99 as a chemical product or preparation. The 3824.99 statistical suffixes include 3824.99.9290 (other), 3824.99.9380, and 3824.99.9690, among others. Note that 3824.99.28 was \"Other: Other: Other\" in an older schedule. The current schedule has 3824.99.92 (\"Other\"), and a mixture used as a chemical intermediate for lubricants would likely land there.\n\nMixtures of fatty acid esters are also sometimes classified under 3824.99.9290 in CBP rulings. I'll go with that.\n\n{\"hts_code\": \"3824.99.9290\", \"reason\": \"A mixture of fatty acid esters (methyl 12-hydroxystearate, stearic and palmitic acid esters) used as a chemical intermediate is a chemical preparation not elsewhere specified, which falls under heading 3824.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 243,
+      "completion_tokens": 557,
+      "total_tokens": 800,
+      "cost": 0.006056,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006056,
+        "upstream_inference_prompt_cost": 0.000486,
+        "upstream_inference_completions_cost": 0.00557
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3824999290",
+  "predicted_reason": "A mixture of fatty acid esters (methyl 12-hydroxystearate, stearic and palmitic acid esters) used as a chemical intermediate is a chemical preparation not elsewhere specified, which falls under heading 3824.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 243,
+    "completion_tokens": 557,
+    "total_tokens": 800,
+    "cost": 0.006056,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006056,
+      "upstream_inference_prompt_cost": 0.000486,
+      "upstream_inference_completions_cost": 0.00557
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:22.327085+00:00",
+  "latency_s": 5.632,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

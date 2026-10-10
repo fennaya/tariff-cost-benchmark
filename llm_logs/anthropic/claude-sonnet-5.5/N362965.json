@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362965",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "4602198000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596602-QVCi37vPfYx22Xk7qXmx",
+    "object": "chat.completion",
+    "created": 1791596602,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a decorative hedgehog figure made of Styrofoam and covered with natural materials. Such items are typically classified as festive/other decorative articles or as artificial/other articles of plant materials.\n\nCandidates:\n- 4421.99 (other articles of wood) or 4602 (basketwork) are possible.\n- 9505.90 (festive articles) applies only if the item is for a festive occasion, and this hedgehog is not.\n- 6702 (artificial flowers, foliage) is not a good fit.\n- 4421.99.97 and 4602.19 are less likely.\n- 9989 is not applicable.\n- 4420.19 (statuettes and other ornaments of wood) is also possible.\n\nThe essential character is hard to pin down. The sisal covers 40% of the figure and the remainder is a mix of materials. Sisal is a vegetable material of heading 5303 or 1404, and a figure made of mixed natural vegetable materials could fall under 1404. In practice, a \"decorative hedgehog\" ruling classified such items in 4420.10 for wooden statuettes or in 4602. I recall rulings that classified figures covered with natural materials as \"Other: Of vegetable materials\" under 4602.19.\n\nI'm going with 4602.19.2900, which covers other basketwork, wickerwork and other articles made directly to shape from plaiting materials. That is a less certain fit for a Styrofoam form covered with materials.\n\nAn alternative is 9505.90.6000, but that heading requires festive use. The better-supported choice is 4420.19, which would be \"statuettes and other ornaments of wood,\" but the figure is not primarily wood. The sisal is the largest single component at 40%, which points toward a vegetable-material classification, but the Styrofoam form and plastic twigs complicate this.\n\nI'll go with the \"other\" basket-type heading:\n\n{\"hts_code\": \"4602.19.2900\", \"reason\": \"The Styrofoam form is covered mainly with natural vegetable materials (sisal, cones, leaves, wood chips), so it is classified as an other article of vegetable plaiting materials, though this is a low-confidence call.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 343,
+      "completion_tokens": 709,
+      "total_tokens": 1052,
+      "cost": 0.007776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007776,
+        "upstream_inference_prompt_cost": 0.000686,
+        "upstream_inference_completions_cost": 0.00709
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4602192900",
+  "predicted_reason": "The Styrofoam form is covered mainly with natural vegetable materials (sisal, cones, leaves, wood chips), so it is classified as an other article of vegetable plaiting materials, though this is a low-confidence call.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 343,
+    "completion_tokens": 709,
+    "total_tokens": 1052,
+    "cost": 0.007776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007776,
+      "upstream_inference_prompt_cost": 0.000686,
+      "upstream_inference_completions_cost": 0.00709
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:23.056774+00:00",
+  "latency_s": 7.575,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

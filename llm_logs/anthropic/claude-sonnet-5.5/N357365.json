@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357365",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "4407130000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595394-UhHyHmE6BgqUnXIh7Q4S",
+    "object": "chat.completion",
+    "created": 1791595394,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "SPF dimensional lumber that is planed, with eased edges, is classified in heading 4407 (wood sawn or chipped lengthwise, thicker than 6 mm). The relevant subheading is 4407.1x for coniferous wood. Spruce-pine-fir falls under 4407.11 (pine) or 4407.12 (fir and spruce). SPF is a mixed-species group, so it is usually classified under 4407.12 (fir/spruce), which has been used for SPF in prior rulings.\n\nPlaned wood is in 4407.12.00 and is not \"continuously shaped,\" so heading 4409 does not apply. The statistical suffix needs checking. The 4407.12 line in the HTSUS reads:\n- 4407.12.00 \u2013 Of fir (Abies spp.) and spruce (Picea spp.)\n- 4407.12.0001 \u2013 Of fir and spruce, in 2023 the suffixes were 4407.12.0001 (Fir), with the Canadian softwood lumber duties applying.\n\nFor the HTSUS, I recall the following:\n- 4407.11.00: Of pine\n- 4407.12.00: Of fir and spruce\n- 4407.13.00: Of SPF (spruce, pine, fir)\n- 4407.19.00: Other\n\nThe 2022 HTSUS revision added 4407.13 for \"of SPF\" (spruce, pine, fir), which was formerly part of 4407.12/4407.11. So SPF falls in 4407.13. The statistical suffixes under 4407.13 are:\n- 4407.13.0000 is the whole code; in the 2022 revision it was broken into 4407.13.0010, .0020, and so on.\n\nUnder the 2022 HTSUS, the subheading 4407.13 applies to \"Of S-P-F (spruce, pine, fir)\", and I think the suffix is 4407.13.0000 or 4407.13.0100. I'll go with 4407.13.0000 as the best guess; the statistical suffix is uncertain.\n\n{\"hts_code\": \"4407.13.0000\", \"reason\": \"Planed SPF (spruce-pine-fir) coniferous lumber over 6 mm thick, not continuously shaped and not yet cut into box spring parts, is classified in heading 4407, subheading 4407.13 for SPF.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 430,
+      "completion_tokens": 760,
+      "total_tokens": 1190,
+      "cost": 0.00846,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00846,
+        "upstream_inference_prompt_cost": 0.00086,
+        "upstream_inference_completions_cost": 0.0076
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4407130000",
+  "predicted_reason": "Planed SPF (spruce-pine-fir) coniferous lumber over 6 mm thick, not continuously shaped and not yet cut into box spring parts, is classified in heading 4407, subheading 4407.13 for SPF.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 760,
+    "total_tokens": 1190,
+    "cost": 0.00846,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00846,
+      "upstream_inference_prompt_cost": 0.00086,
+      "upstream_inference_completions_cost": 0.0076
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:14.522311+00:00",
+  "latency_s": 6.571,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

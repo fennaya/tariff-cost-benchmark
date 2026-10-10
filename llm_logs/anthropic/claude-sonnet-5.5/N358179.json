@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358179",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "8423100010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595557-tZMtAOyhACQMz28UXmzT",
+    "object": "chat.completion",
+    "created": 1791595557,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on the Withings Body Pro 2. A scale with BIA, ECG-like heart rate, and PWV that is marketed for home use could fall under several headings.\n\nThe candidates are:\n- 8423.10 (personal weighing machines, including baby scales; household scales). Subheading 8423.10.00 is \"Personal weighing machines, including baby scales; household scales,\" with the 10-digit statistical code 8423.10.0000.\n- 9018 (medical instruments). The device is not intended for clinical or professional use, which weighs against this.\n\nI recall that Withings Body Scan and similar products were classified under 9018.19.9560 as other electrodiagnostic apparatus. The description here stresses home use rather than clinical use, which points toward 8423.10.0000 instead. However, the multifunction features (ESC for neuropathy, PWV) are monitoring functions that fit electrodiagnostic apparatus. Under GRI 3(b) the principal function would be decided. Since the device is marketed for RPM and the detection of diabetic neuropathy, 9018.19.9560 is plausible. But the \"home health monitoring rather than clinical or professional medical settings\" language strongly suggests the ruling excluded heading 9018 and went with 8423.10.0000 for a personal weighing machine.\n\nI'll go with 8423.10.0000.\n\n{\"hts_code\": \"8423.10.0000\", \"reason\": \"The device is a personal weighing scale marketed for home use rather than clinical settings, so it is classified as a personal weighing machine in heading 8423 rather than as a medical instrument in heading 9018.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 639,
+      "completion_tokens": 534,
+      "total_tokens": 1173,
+      "cost": 0.006618,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006618,
+        "upstream_inference_prompt_cost": 0.001278,
+        "upstream_inference_completions_cost": 0.00534
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8423100000",
+  "predicted_reason": "The device is a personal weighing scale marketed for home use rather than clinical settings, so it is classified as a personal weighing machine in heading 8423 rather than as a medical instrument in heading 9018.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 639,
+    "completion_tokens": 534,
+    "total_tokens": 1173,
+    "cost": 0.006618,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006618,
+      "upstream_inference_prompt_cost": 0.001278,
+      "upstream_inference_completions_cost": 0.00534
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:58.251079+00:00",
+  "latency_s": 4.785,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

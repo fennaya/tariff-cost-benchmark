@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360725",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "7607205000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600113-Yrc9x9PADqCwCxKin0sd",
+    "object": "chat.completion",
+    "created": 1791600113,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9988\", \"reason\": \"The polyethylene composite panel with thin aluminum foil facings, used for signage and not decorated or embossed, is considered a plastic article of heading 3926 as the plastic core provides the essential character.\"}",
+          "refusal": null,
+          "reasoning": "Composite panel of polyethylene with aluminum foil facing \u2014 likely 3921 or 3926? Aluminum foil both sides \u2014 could be 7616? Signage panels like Dibond classify under 3921.90? Actually composite panels with plastic core and aluminum faces: often classified 3926.90 or 7606? GRI 3(b)? Common ruling: ACP panels classified in 3921.11? Polyethylene is cellular? Not stated. Perhaps 3926.90.99. I'll go 3921.90.50? Hmm. Choose 3926.90.99.88? Format 10 digits: 3926.90.9988? Actually 3926.90.99 is 8-digit; 10-digit 3926.90.9988? There's 3926.90.9980? I'll answer 3926.90.9988.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Composite panel of polyethylene with aluminum foil facing \u2014 likely 3921 or 3926? Aluminum foil both sides \u2014 could be 7616? Signage panels like Dibond classify under 3921.90? Actually composite panels with plastic core and aluminum faces: often classified 3926.90 or 7606? GRI 3(b)? Common ruling: ACP panels classified in 3921.11? Polyethylene is cellular? Not stated. Perhaps 3926.90.99. I'll go 3921.90.50? Hmm. Choose 3926.90.99.88? Format 10 digits: 3926.90.9988? Actually 3926.90.99 is 8-digit; 10-digit 3926.90.9988? There's 3926.90.9980? I'll answer 3926.90.9988.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 139,
+      "completion_tokens": 274,
+      "total_tokens": 413,
+      "cost": 0.00121672,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00121672,
+        "upstream_inference_prompt_cost": 1.112e-05,
+        "upstream_inference_completions_cost": 0.0012056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 210,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909988",
+  "predicted_reason": "The polyethylene composite panel with thin aluminum foil facings, used for signage and not decorated or embossed, is considered a plastic article of heading 3926 as the plastic core provides the essential character.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 139,
+    "completion_tokens": 274,
+    "total_tokens": 413,
+    "cost": 0.00121672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00121672,
+      "upstream_inference_prompt_cost": 1.112e-05,
+      "upstream_inference_completions_cost": 0.0012056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 210,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:41:53.751149+00:00",
+  "latency_s": 2.794,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358898",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8544200000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595691-yB8tgEfJeLhuLPv7af0h",
+    "object": "chat.completion",
+    "created": 1791595691,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-like scenario. A harness of coaxial cables with connectors on both ends is classified under 8544.42 (other electric conductors, for a voltage not exceeding 1,000 V, fitted with connectors). Coaxial cables fall under 8544.20, which covers coaxial cable and other coaxial electric conductors. Within 8544.20, the subheading for coaxial cable fitted with connectors is 8544.20.0000, and the statistical suffixes distinguish the types.\n\nHTSUS 8544.20 is divided into 8544.20.20 (Not fitted with connectors... actually \"Of a kind used for telecommunications\") and 8544.20.40 (Other), though I recall the structure is:\n- 8544.20.00 Coaxial cable and other coaxial electric conductors\n- 8544.20.0010 Insulated, fitted with connectors... \n\nSince I can't verify the exact suffix, I'm going with 8544.20.0000, which I believe is the base 10-digit number for this subheading.\n\nHowever, vehicle wiring harnesses fall under 8544.30 (ignition wiring sets and other wiring sets of a kind used in vehicles). The harness is for installation in vehicles, but it is a video signal harness, and the coaxial specificity may still favor 8544.20 under GRI 3(a), since the heading text of 8544.30 is for wiring sets \"of a kind used in vehicles.\" Rulings on camera harnesses for vehicles have generally gone to 8544.30.00 where they are specifically for vehicles. Here the harness is for commercial vehicle recording systems, which fits 8544.30. The statistical suffix for 8544.30.00 is 8544.30.0000.\n\nThe more specific provision is debatable, but I'll go with 8544.42, since the harness has connectors and the cables are coaxial. 8544.42 carries a general provision for conductors fitted with connectors, and 8544.30 is the vehicle-specific wiring set.\n\nI choose 8544.30.0000.\n\n{\"hts_code\": \"8544.30.0000\", \"reason\": \"A passive cable harness of insulated conductors with connectors, designed for installation in vehicle camera and recording systems, is a wiring set of a kind used in vehicles under heading 8544.30.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 754,
+      "total_tokens": 1130,
+      "cost": 0.008292,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008292,
+        "upstream_inference_prompt_cost": 0.000752,
+        "upstream_inference_completions_cost": 0.00754
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544300000",
+  "predicted_reason": "A passive cable harness of insulated conductors with connectors, designed for installation in vehicle camera and recording systems, is a wiring set of a kind used in vehicles under heading 8544.30.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 754,
+    "total_tokens": 1130,
+    "cost": 0.008292,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008292,
+      "upstream_inference_prompt_cost": 0.000752,
+      "upstream_inference_completions_cost": 0.00754
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:12.193053+00:00",
+  "latency_s": 6.935,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

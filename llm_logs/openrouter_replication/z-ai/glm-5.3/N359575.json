@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359575",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "8428900390",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599936-MqFcTixWijedO6OFtq5J",
+    "object": "chat.completion",
+    "created": 1791599936,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8429.59.8090\", \"reason\": \"A self-propelled barrier transfer machine used in controlled work zones to reposition concrete roadway barriers is other self-propelled machinery for construction or maintenance of roads, not elsewhere specified.\"}",
+          "refusal": null,
+          "reasoning": "Machinery for construction/maintenance of roads \u2014 8429.59? Barrier transfer machine \u2014 likely 8429.59.8090 (other self-propelled machinery, not elsewhere specified, for construction). Actually 8429.59.80 \"other\" \u2014 8429.59.8090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Machinery for construction/maintenance of roads \u2014 8429.59? Barrier transfer machine \u2014 likely 8429.59.8090 (other self-propelled machinery, not elsewhere specified, for construction). Actually 8429.59.80 \"other\" \u2014 8429.59.8090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 333,
+      "completion_tokens": 127,
+      "total_tokens": 460,
+      "cost": 0.0004792,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004792,
+        "upstream_inference_prompt_cost": 0.0001998,
+        "upstream_inference_completions_cost": 0.0002794
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8429598090",
+  "predicted_reason": "A self-propelled barrier transfer machine used in controlled work zones to reposition concrete roadway barriers is other self-propelled machinery for construction or maintenance of roads, not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 127,
+    "total_tokens": 460,
+    "cost": 0.0004792,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004792,
+      "upstream_inference_prompt_cost": 0.0001998,
+      "upstream_inference_completions_cost": 0.0002794
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:38:57.024439+00:00",
+  "latency_s": 2.788,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

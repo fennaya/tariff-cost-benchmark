@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359912",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909236",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595972-9Dile2jyBXLXnSjWIgcV",
+    "object": "chat.completion",
+    "created": 1791595972,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Diclofenac sodium gel, put up in 100 g retail packaging, is a medicament of heading 3004. Diclofenac is not an antibiotic, hormone, or alkaloid, so it falls under the \"Other\" provisions of 3004.90. Those provisions are subdivided into 3004.90.92 and 3004.90.91, with 3004.90.92 being \"Other\" within a group of 3004.90.9x. I believe the 10-digit code is 3004.90.9255, since the 3004.90.92 subheadings cover \"Other\", and the statistical suffixes include 3004.90.9215 (anesthetics), 3004.90.9230 (anti-inflammatory?), and so on. I'm not certain of the exact suffix, but I recall that 3004.90.92 carries these statistical suffixes:\n- 10 Antineoplastic...\n- 15 Anti-asthmatic...\n- 20 Anti-diabetic...\n- 25 Analgesics/antipyretics?\n- 60 Other\n\nThe best-supported choice is 3004.90.9255? I cannot verify it. Given the uncertainty, the NSAID/analgesic suffix is the more plausible one, and I will go with 3004.90.9250? I'll commit to 3004.90.9265 (the \"Other\" suffix)? I will choose 3004.90.9290, the generic residual.\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Diclofenac sodium gel in measured retail packaging is a medicament of heading 3004, falling in the residual 'Other' subheading 3004.90.92 because it is not an antibiotic, hormone, or alkaloid product.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 235,
+      "completion_tokens": 548,
+      "total_tokens": 783,
+      "cost": 0.00595,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00595,
+        "upstream_inference_prompt_cost": 0.00047,
+        "upstream_inference_completions_cost": 0.00548
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Diclofenac sodium gel in measured retail packaging is a medicament of heading 3004, falling in the residual 'Other' subheading 3004.90.92 because it is not an antibiotic, hormone, or alkaloid product.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 235,
+    "completion_tokens": 548,
+    "total_tokens": 783,
+    "cost": 0.00595,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00595,
+      "upstream_inference_prompt_cost": 0.00047,
+      "upstream_inference_completions_cost": 0.00548
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:53.210671+00:00",
+  "latency_s": 4.914,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

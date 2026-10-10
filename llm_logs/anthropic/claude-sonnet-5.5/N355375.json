@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355375",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593809-5X3TeKgEfTE3MvivGqbi",
+    "object": "chat.completion",
+    "created": 1791593809,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on slabs of \"Silver Grey\" stone, which the lab found to be a metamorphic stone other than marble or granite (possibly gneiss or quartzite). The relevant heading is 6802, which covers worked monumental or building stone, as opposed to 2515 (marble, travertine) or 2516 (granite, porphyry, basalt, sandstone, and other monumental or building stone), which cover stone that is merely cut into blocks or slabs.\n\nHeading 2516 includes \"other monumental or building stone, merely cut by sawing or otherwise into blocks or slabs of rectangular shape.\" Since the sides were simply sawn and the stone is a metamorphic type that is not marble, it would fall under 2516.90 (other monumental or building stone). The stone would be cut to size after import, so it is not yet worked beyond sawing. The surface may be polished, but the description does not say so. The description stresses that the sides are simply cut or sawn, so I'll go with 2516.90.\n\nThe statistical suffix for 2516.90 is 2516.90.0000 (the general \"other monumental or building stone\" line). The 2516.90.00 subheading has 10-digit 2516.90.0000.\n\n{\"hts_code\": \"2516.90.0000\", \"reason\": \"Silver Grey is an other metamorphic monumental or building stone merely cut or sawn into rectangular slabs, so it falls under heading 2516 and subheading 2516.90 rather than the worked-stone headings of Chapter 68.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 409,
+      "completion_tokens": 501,
+      "total_tokens": 910,
+      "cost": 0.005828,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005828,
+        "upstream_inference_prompt_cost": 0.000818,
+        "upstream_inference_completions_cost": 0.00501
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2516900000",
+  "predicted_reason": "Silver Grey is an other metamorphic monumental or building stone merely cut or sawn into rectangular slabs, so it falls under heading 2516 and subheading 2516.90 rather than the worked-stone headings of Chapter 68.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 409,
+    "completion_tokens": 501,
+    "total_tokens": 910,
+    "cost": 0.005828,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005828,
+      "upstream_inference_prompt_cost": 0.000818,
+      "upstream_inference_completions_cost": 0.00501
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:50.034833+00:00",
+  "latency_s": 5.347,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356914",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "7309000090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595284-y2N8bgLzSkAgMZjghgi0",
+    "object": "chat.completion",
+    "created": 1791595284,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Shipping containers fall under heading 8609 (containers specially designed and equipped for carriage by one or more modes of transport). Within 8609.00, the HTSUS has 8609.00.00 with statistical suffixes: 8609.00.0030 for \"Of steel\" is not right, so I recall the actual structure: 8609.00.00 splits into 8609.00.0030 (Cargo containers... \"Containers, of... \" ) and 8609.00.0090 (Other).\n\nI believe the statistical suffixes are: 8609.00.0030 \"Containers, of a kind designed for carriage by ... : Of steel\"? In practice, CBP rulings for ISO shipping containers commonly cite 8609.00.0090 as the statistical reporting number for \"Other\". Since the description says unmodified ISO shipping containers, steel, the common ruling classification is 8609.00.0090.\n\n```json\n{\"hts_code\": \"8609.00.0090\", \"reason\": \"Unmodified steel ISO intermodal shipping containers are specially designed for carriage by one or more modes of transport and are classified in heading 8609, in the other statistical subcategory.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 376,
+      "total_tokens": 805,
+      "cost": 0.004618,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004618,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00376
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8609000090",
+  "predicted_reason": "Unmodified steel ISO intermodal shipping containers are specially designed for carriage by one or more modes of transport and are classified in heading 8609, in the other statistical subcategory.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 376,
+    "total_tokens": 805,
+    "cost": 0.004618,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004618,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00376
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:24.273174+00:00",
+  "latency_s": 4.124,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

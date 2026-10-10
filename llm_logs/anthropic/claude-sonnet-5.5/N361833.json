@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361833",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "7308909590",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596357-37b9gaed1IeIeShlEKTJ",
+    "object": "chat.completion",
+    "created": 1791596357,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from an AD/CVD scope or CBP ruling on \"steel liquid containment barriers.\" The likely classification is 7308.90 (structures of iron or steel and parts, other), so the question is which 10-digit statistical suffix applies.\n\nOther candidates are 8479.89 (machines with individual functions) and 8481 (valves). A flap that closes automatically on liquid is not really a valve, since it does not control flow in a pipe. It is a structure installed in a door opening, which fits 7308.90. The 7308.90 subheadings are 7308.90.30 (clad/coated?), 7308.90.60 (other, 7308.90.6000), and 7308.90.95 (other: 7308.90.9590). Most \"other\" structures fall under 7308.90.9590.\n\nThe scope language \"installed flush with the floor in front of or within an opening\" resembles door/gate structures. Doors, windows and their frames and thresholds are 7308.30.50 (other). That heading covers \"doors, windows and their frames and thresholds for doors.\" A flood barrier could be classed there, but since this one is described as a containment barrier with a floor housing, I'll go with 7308.90.9590.\n\n```json\n{\"hts_code\": \"7308.90.9590\", \"reason\": \"The steel spill barriers are fabricated steel structures with a flap, side posts and floor housing, installed in openings and operated without power, so they fall under other structures and parts of iron or steel in heading 7308.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 471,
+      "completion_tokens": 481,
+      "total_tokens": 952,
+      "cost": 0.005752,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005752,
+        "upstream_inference_prompt_cost": 0.000942,
+        "upstream_inference_completions_cost": 0.00481
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7308909590",
+  "predicted_reason": "The steel spill barriers are fabricated steel structures with a flap, side posts and floor housing, installed in openings and operated without power, so they fall under other structures and parts of iron or steel in heading 7308.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 471,
+    "completion_tokens": 481,
+    "total_tokens": 952,
+    "cost": 0.005752,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005752,
+      "upstream_inference_prompt_cost": 0.000942,
+      "upstream_inference_completions_cost": 0.00481
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:17.845035+00:00",
+  "latency_s": 5.788,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

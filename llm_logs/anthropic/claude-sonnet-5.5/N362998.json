@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362998",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "3004909273",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596610-KbY6S9c99PSA8kDYHvhm",
+    "object": "chat.completion",
+    "created": 1791596610,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Steritalc is sterile talc powder (magnesium silicate) in vials, intended for therapeutic use. Therapeutic goods put up in measured doses or in forms for retail sale fall under heading 3004. Talc itself is classified in 2526, but a medicament with a therapeutic use, put up in measured doses, belongs in 3004.\n\nSubheading 3004.90 covers other medicaments. In the HTSUS, 3004.90.92 is \"Other\" and 3004.90.9290 is another \"Other.\" There are several statistical suffixes under 3004.90.92, and I'm not certain of them, so I'll take 3004.90.9290.\n\nSteritalc has no antibiotic, hormone, or alkaloid content, so the residual \"other\" line is the best fit.\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Sterile talc powder in vials put up in measured doses for therapeutic intrapleural use is a medicament of heading 3004, falling in the residual 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 332,
+      "total_tokens": 562,
+      "cost": 0.00378,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00378,
+        "upstream_inference_prompt_cost": 0.00046,
+        "upstream_inference_completions_cost": 0.00332
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Sterile talc powder in vials put up in measured doses for therapeutic intrapleural use is a medicament of heading 3004, falling in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 230,
+    "completion_tokens": 332,
+    "total_tokens": 562,
+    "cost": 0.00378,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00378,
+      "upstream_inference_prompt_cost": 0.00046,
+      "upstream_inference_completions_cost": 0.00332
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:31.012502+00:00",
+  "latency_s": 3.7,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359659",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "8507600090",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791597506-kcUKcvwPvWfbDbouK8Ke",
+    "object": "chat.completion",
+    "created": 1791597506,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Lithium-ion polymer rechargeable cells fall under heading 8507.60. The 8507.60.00 subheadings split as follows:\n- 8507.60.0010: battery packs for vehicles.\n- 8507.60.0020: other.\n\nThis single pouch cell is not a vehicle pack, so it falls under \"other.\"\n\n{\"hts_code\": \"8507.60.0020\", \"reason\": \"The item is a rechargeable lithium-ion polymer storage battery (accumulator) not designed for vehicle propulsion, so it is classified under subheading 8507.60, other.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 388,
+      "completion_tokens": 189,
+      "total_tokens": 577,
+      "cost": 0.005332,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005332,
+        "upstream_inference_prompt_cost": 0.001552,
+        "upstream_inference_completions_cost": 0.00378
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8507600020",
+  "predicted_reason": "The item is a rechargeable lithium-ion polymer storage battery (accumulator) not designed for vehicle propulsion, so it is classified under subheading 8507.60, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 189,
+    "total_tokens": 577,
+    "cost": 0.005332,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005332,
+      "upstream_inference_prompt_cost": 0.001552,
+      "upstream_inference_completions_cost": 0.00378
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:58:27.020719+00:00",
+  "latency_s": 3.576,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

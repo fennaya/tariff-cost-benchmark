@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358311",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8428900390",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595584-N6egFhG8nKIV2DFgjpTz",
+    "object": "chat.completion",
+    "created": 1791595584,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a palletizing and wrapping machine. Candidate headings are 8428 (handling machinery) and 8422 (packing or wrapping machinery). Palletizers are generally classified in 8428.90. A combined palletizer and stretch wrapper is a combination machine, and its principal function decides the heading. Wrapping a load falls under 8422.40, \"other packing or wrapping machinery.\" Palletizing is the main function, and the wrapping is the finishing step.\n\nThe Volmstack ruling is likely NY N-series. I recall that palletizers fall under 8428.90.0290 (\"Other machinery: Other\") or 8428.90.0390 for 2015+. The current HTS has 8428.90.03 for \"Other\" with statistical suffixes 8428.90.0300? Checking: 8428.90.02 is \"Industrial robots\", 8428.90.03 is \"Other\" (8428.90.0390?), and 8428.90.09 is \"Parts\". I believe the number 8428.90.0290 was used for \"Other machinery... Other\" and was later revised, so I'll go with 8428.90.0290.\n\nAlternatively, 8422.40.9000 applies if the machine is judged to be principally a wrapper. Because the manipulator and stacking chamber are the core of the machine, I favor 8428.\n\n{\"hts_code\": \"8428.90.0290\", \"reason\": \"The combined palletizing and stretch-wrapping line is principally a material handling machine, since the stacking manipulator performs the main function, so it falls under heading 8428 as other lifting/handling machinery.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 380,
+      "completion_tokens": 526,
+      "total_tokens": 906,
+      "cost": 0.00602,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00602,
+        "upstream_inference_prompt_cost": 0.00076,
+        "upstream_inference_completions_cost": 0.00526
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8428900290",
+  "predicted_reason": "The combined palletizing and stretch-wrapping line is principally a material handling machine, since the stacking manipulator performs the main function, so it falls under heading 8428 as other lifting/handling machinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 380,
+    "completion_tokens": 526,
+    "total_tokens": 906,
+    "cost": 0.00602,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00602,
+      "upstream_inference_prompt_cost": 0.00076,
+      "upstream_inference_completions_cost": 0.00526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:24.773746+00:00",
+  "latency_s": 6.024,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

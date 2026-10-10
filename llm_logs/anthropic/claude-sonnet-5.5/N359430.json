@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359430",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909276",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595836-BujQPEXmQEhuNCuPbJ6y",
+    "object": "chat.completion",
+    "created": 1791595836,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Tranexamic acid tablets in measured doses for retail sale are medicaments of heading 3004. Tranexamic acid is trans-4-(aminomethyl)cyclohexanecarboxylic acid, an amino acid derivative. Its bulk form falls in 2922.49, but tablets go in 3004.\n\nWithin 3004, the subheading options are:\n- 3004.90: other medicaments.\n- 3004.90.92 (other) and 3004.90.91 (other, other) are the likely statistical suffixes.\n- Earlier subheadings cover antibiotics (3004.10 to 3004.20), hormones (3004.31 to 3004.39), alkaloids (3004.40) and vitamins (3004.50). Tranexamic acid fits none of these.\n\nThe 3004.90 breakdown is:\n- 3004.90.10: certain specified items.\n- 3004.90.20 through 3004.90.60: specific categories, such as 3004.90.92 for \"Other.\"\n- 3004.90.91 is a 10-digit code (3004.90.9170, etc.).\n\nSince I recall CBP rulings for tranexamic acid tablets classifying them in 3004.90.9265, I'll use that as the best match. I'm not certain of that suffix. An alternative is 3004.90.9290, but 3004.90.9265 is the one I recall for a hemostatic or other tablet.\n\n{\"hts_code\": \"3004.90.9265\", \"reason\": \"Tranexamic acid tablets are medicaments put up in measured doses for retail sale, so they fall under heading 3004 and the residual 'other' subheading 3004.90; I am not fully certain of the 10-digit statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 558,
+      "total_tokens": 789,
+      "cost": 0.006042,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006042,
+        "upstream_inference_prompt_cost": 0.000462,
+        "upstream_inference_completions_cost": 0.00558
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909265",
+  "predicted_reason": "Tranexamic acid tablets are medicaments put up in measured doses for retail sale, so they fall under heading 3004 and the residual 'other' subheading 3004.90; I am not fully certain of the 10-digit statistical suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 231,
+    "completion_tokens": 558,
+    "total_tokens": 789,
+    "cost": 0.006042,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006042,
+      "upstream_inference_prompt_cost": 0.000462,
+      "upstream_inference_completions_cost": 0.00558
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:36.714355+00:00",
+  "latency_s": 5.534,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

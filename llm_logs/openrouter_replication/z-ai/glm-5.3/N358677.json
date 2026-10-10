@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358677",
+  "rulingDate": "2026-03-05T00:00:00",
+  "true_code": "9401790046",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599801-Cuik4IwjDK3Th78oQfeL",
+    "object": "chat.completion",
+    "created": 1791599801,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9401.79.6015\", \"reason\": \"Unupholstered metal folding chairs with HDPE seat/backrests are classified as other seats of metal under heading 9401, specifically subheading 9401.79.6015.\"}",
+          "refusal": null,
+          "reasoning": "Folding metal chairs, not upholstered, seats of metal frame with HDPE \u2014 likely 9401.79.00? Folding chairs: 9401.71/72 are upholstered. Non-upholstered metal folding chairs: 9401.79.6015? Actually 9401.79 covers other seats; folding chairs of metal... 9401.79.00 subdivided: 9401.79.60 \"other, of metal\"? Historically 9401.79.6015 folding chairs? Common ruling: metal folding chairs classified 9401.79.6015? Actually 9401.79.60 \"Other seats: Of metal\" \u2014 9401.79.6015? Let me recall: 9401.79.6015 \"Other seats, of metal, other\" \u2014 I think 9401.79.6015 is correct for non-upholstered metal folding chairs.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Folding metal chairs, not upholstered, seats of metal frame with HDPE \u2014 likely 9401.79.00? Folding chairs: 9401.71/72 are upholstered. Non-upholstered metal folding chairs: 9401.79.6015? Actually 9401.79 covers other seats; folding chairs of metal... 9401.79.00 subdivided: 9401.79.60 \"other, of metal\"? Historically 9401.79.6015 folding chairs? Common ruling: metal folding chairs classified 9401.79.6015? Actually 9401.79.60 \"Other seats: Of metal\" \u2014 9401.79.6015? Let me recall: 9401.79.6015 \"Other seats, of metal, other\" \u2014 I think 9401.79.6015 is correct for non-upholstered metal folding chairs.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 651,
+      "completion_tokens": 275,
+      "total_tokens": 926,
+      "cost": 0.001345325,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001345325,
+        "upstream_inference_prompt_cost": 2.5325e-05,
+        "upstream_inference_completions_cost": 0.00132
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 225,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401796015",
+  "predicted_reason": "Unupholstered metal folding chairs with HDPE seat/backrests are classified as other seats of metal under heading 9401, specifically subheading 9401.79.6015.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 275,
+    "total_tokens": 926,
+    "cost": 0.001345325,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001345325,
+      "upstream_inference_prompt_cost": 2.5325e-05,
+      "upstream_inference_completions_cost": 0.00132
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 225,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:36:42.273339+00:00",
+  "latency_s": 2.198,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

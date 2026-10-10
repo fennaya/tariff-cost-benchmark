@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357229",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "8708915000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595338-YIG1sLQPLME2RIynO4Ib",
+    "object": "chat.completion",
+    "created": 1791595338,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Radiators for heavy-duty trucks fall under heading 8708.91, which covers radiators as parts and accessories of motor vehicles of headings 8701 to 8705. The subheading is 8708.91.35 for radiators, with the statistical suffix 8708.91.3500 for other radiators for vehicles other than those of 8703 (which would be 8708.91.2500 for the 8701.10 and 8701.30 to 8705 splits).\n\nThe 8708.91 breakdown, as I recall it:\n- 8708.91.10: Radiators for tractors of 8701\n- 8708.91.25: Radiators for vehicles of 8702, 8703, 8704 and 8705, other (the exact split may differ)\n- 8708.91.35: Other radiators, parts thereof\n- 8708.91.50: Other\n\nI believe 8708.91.35 covers radiators and 8708.91.50 covers parts. The CBP ruling on these Canadian-processed radiators likely resolved to the radiator subheading, which is 8708.91.3500 or possibly 8708.91.5000, so I am settling on the radiator subheading.\n\n{\"hts_code\": \"8708.91.3500\", \"reason\": \"Complete radiators for heavy-duty trucks (motor vehicles of headings 8701-8705) are classified as parts and accessories under heading 8708, subheading 8708.91 for radiators; the Canadian assembly does not change this classification of the finished radiators.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 470,
+      "completion_tokens": 480,
+      "total_tokens": 950,
+      "cost": 0.00574,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00574,
+        "upstream_inference_prompt_cost": 0.00094,
+        "upstream_inference_completions_cost": 0.0048
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708913500",
+  "predicted_reason": "Complete radiators for heavy-duty trucks (motor vehicles of headings 8701-8705) are classified as parts and accessories under heading 8708, subheading 8708.91 for radiators; the Canadian assembly does not change this classification of the finished radiators.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 470,
+    "completion_tokens": 480,
+    "total_tokens": 950,
+    "cost": 0.00574,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00574,
+      "upstream_inference_prompt_cost": 0.00094,
+      "upstream_inference_completions_cost": 0.0048
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:18.605591+00:00",
+  "latency_s": 4.452,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

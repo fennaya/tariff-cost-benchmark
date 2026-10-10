@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357819",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "3004200075",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595502-3W91kt1nxCyLndgFSxZn",
+    "object": "chat.completion",
+    "created": 1791595502,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Doxorubicin is an anthracycline antibiotic, so it falls in heading 2941 (antibiotics). Once it is put up in measured doses or in forms for retail sale, the heading would be 3004 (medicaments), and a vial of liposome injection fits that. Heading 3004 includes subheading 3004.20 for medicaments containing other antibiotics.\n\nThe 3004.20 subheadings are:\n- 3004.20.00 is the general subheading, covering other antibiotics.\n- 3004.20.0010 and the other 10-digit lines under it are the statistical suffixes.\n\nI recall that 3004.20.00 has specific lines: 3004.20.0020 for medicaments containing \"other\" antibiotics, and 3004.20.0060, 3004.20.0070, 3004.20.0080 and 3004.20.0090 for further subdivisions. These are uncertain. The HTSUS 3004.20 structure that I recall is:\n- 3004.20.00 Containing other antibiotics\n- 3004.20.0010 Containing antibiotics of 2941.10 (penicillins)\n- 3004.20.0020 Containing antibiotics of 2941.20\n- 3004.20.0040 Containing antibiotics of 2941.30\n- 3004.20.0050 Containing antibiotics of 2941.40\n- 3004.20.0060 Containing antibiotics of 2941.50\n- 3004.20.0070 Other\n- 3004.20.0080 and 3004.20.0090 for other subdivisions.\n\nI believe the \"Other\" line under 3004.20 is 3004.20.0090 (the 2020s revision), so I'll use that.\n\n```json\n{\"hts_code\": \"3004.20.0090\", \"reason\": \"Doxorubicin liposome injection is an anthracycline antibiotic medicament put up in measured doses for retail sale, so it falls in 3004.20 (medicaments containing other antibiotics), in the residual 'other' line.\"}\n```\n\nFinal answer:\n\n{\"hts_code\": \"3004.20.0090\", \"reason\": \"Doxorubicin liposome injection is an anthracycline antibiotic medicament put up in measured doses for retail sale, so it falls in 3004.20 (medicaments containing other antibiotics), in the residual 'other' line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 277,
+      "completion_tokens": 755,
+      "total_tokens": 1032,
+      "cost": 0.008104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008104,
+        "upstream_inference_prompt_cost": 0.000554,
+        "upstream_inference_completions_cost": 0.00755
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004200090",
+  "predicted_reason": "Doxorubicin liposome injection is an anthracycline antibiotic medicament put up in measured doses for retail sale, so it falls in 3004.20 (medicaments containing other antibiotics), in the residual 'other' line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 277,
+    "completion_tokens": 755,
+    "total_tokens": 1032,
+    "cost": 0.008104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008104,
+      "upstream_inference_prompt_cost": 0.000554,
+      "upstream_inference_completions_cost": 0.00755
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:02.767216+00:00",
+  "latency_s": 6.814,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

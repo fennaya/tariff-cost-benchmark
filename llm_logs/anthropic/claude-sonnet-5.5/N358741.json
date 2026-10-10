@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358741",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595654-GSOSBzTyqDfVE1g4SYGH",
+    "object": "chat.completion",
+    "created": 1791595654,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a costume of festive articles. Adult-size costumes of textile materials are generally classified in Chapter 61/62 as wearing apparel, unless they qualify as \"festive articles\" under 9505. Under Note 1(e) to Chapter 95, the chapter excludes... actually, Chapter 95 does not cover fancy dress of textiles, Chapter 11 (Section XI) articles. Note 1(e) to Chapter 95 excludes \"sports clothing or fancy dress, of textiles, of Chapter 61 or 62.\" So the costume goes to Chapter 62 (or 61).\n\nThe costume is a robe, cape and turban headpiece. Sets of costumes are often classified under 6211.33 or 6211.43 as other garments, or as a costume under 6210. Robe plus cape, where the fabric is likely woven polyester (this would be a woven costume), would typically be classified as \"Other garments: Men's or boys': Of man-made fibers\" under 6211.33.0040 (other, other, men's). Without fiber content known, I'll assume polyester. The costume is adult size and the Sultan is male, so men's apparel.\n\nHTS 6211.33.9060? The subheadings: 6211.33.00 \"Of man-made fibers\"; statistical suffixes: 6211.33.0040 \"Other: Men's or boys'...\" Actually 6211.33.00: 6211.33.0010 \"Track suits\"? Not sure. I recall 6211.33.9060 doesn't exist; the actual is 6211.33.9010 \"Other: Garments, designed for use by men...\"? I'll go with 6211.33.0040... Hmm. CBP rulings on adult costumes: \"6211.33.0040, HTSUS, which provides for 'Track suits, ski-suits and swimwear; other garments: Men's or boys': Of man-made fibers: Other: Other'\" \u2014 I recall 6211.33.0040 is \"Other\" under the men's. I'll go with that.\n\n{\"hts_code\": \"6211.33.0040\", \"reason\": \"Adult textile fancy-dress costume (robe, cape, turban) is excluded from Chapter 95 by Note 1(e) and is classified as other men's wearing apparel of man-made fibers in heading 6211.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 200,
+      "completion_tokens": 756,
+      "total_tokens": 956,
+      "cost": 0.00796,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00796,
+        "upstream_inference_prompt_cost": 0.0004,
+        "upstream_inference_completions_cost": 0.00756
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211330040",
+  "predicted_reason": "Adult textile fancy-dress costume (robe, cape, turban) is excluded from Chapter 95 by Note 1(e) and is classified as other men's wearing apparel of man-made fibers in heading 6211.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 756,
+    "total_tokens": 956,
+    "cost": 0.00796,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00796,
+      "upstream_inference_prompt_cost": 0.0004,
+      "upstream_inference_completions_cost": 0.00756
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:34.404809+00:00",
+  "latency_s": 7.635,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

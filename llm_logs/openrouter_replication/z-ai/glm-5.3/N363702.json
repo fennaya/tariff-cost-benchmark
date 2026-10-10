@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363702",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7310290065",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600445-0QL1wkpxUvIwIi2c7sMY",
+    "object": "chat.completion",
+    "created": 1791600445,
+    "model": "z-ai/glm-5.3",
+    "provider": "SiliconFlow",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8418.99.9595\", \"reason\": \"A steel receiver that collects and stores liquid refrigerant in an HVAC system is a part of refrigerating equipment, classified as other parts under heading 8418.\"}",
+          "refusal": null,
+          "reasoning": "Receiver \u2014 steel pressure vessel, part of HVAC. Likely 8418.99.9505? Parts of refrigerating equipment: 8418.99.95 (other parts). 10-digit: 8418.99.9505? Actually 8418.99.95 subdivided: 8418.99.9505? There's 8418.99.9550, 8418.99.9595... Parts of other refrigerating/freezing equipment: 8418.99.9550? I recall 8418.99.9505 \"of refrigerators/freezers\"? Safer: 8418.99.9595 (other). Use 8418.99.9595.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Receiver \u2014 steel pressure vessel, part of HVAC. Likely 8418.99.9505? Parts of refrigerating equipment: 8418.99.95 (other parts). 10-digit: 8418.99.9505? Actually 8418.99.95 subdivided: 8418.99.9505? There's 8418.99.9550, 8418.99.9595... Parts of other refrigerating/freezing equipment: 8418.99.9550? I recall 8418.99.9505 \"of refrigerators/freezers\"? Safer: 8418.99.9595 (other). Use 8418.99.9595.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 224,
+      "total_tokens": 392,
+      "cost": 0.00097664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00097664,
+        "upstream_inference_prompt_cost": 0.00018816,
+        "upstream_inference_completions_cost": 0.00078848
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 169,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8418999595",
+  "predicted_reason": "A steel receiver that collects and stores liquid refrigerant in an HVAC system is a part of refrigerating equipment, classified as other parts under heading 8418.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 168,
+    "completion_tokens": 224,
+    "total_tokens": 392,
+    "cost": 0.00097664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00097664,
+      "upstream_inference_prompt_cost": 0.00018816,
+      "upstream_inference_completions_cost": 0.00078848
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 169,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "SiliconFlow",
+  "requested_at": "2026-10-10T02:47:25.904726+00:00",
+  "latency_s": 3.502,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

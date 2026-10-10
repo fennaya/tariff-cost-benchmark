@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356963",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "0802801000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595294-oftH2ZeGrjrGYsjkWzH7",
+    "object": "chat.completion",
+    "created": 1791595294,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Areca nuts (betel nuts) fall under HTSUS 0802.80, \"Areca nuts.\" The 10-digit statistical suffix needs checking.\n\nThe 2023 HTSUS structure is:\n- 0802.80.00 Areca nuts\n- 0802.80.0010 Areca nuts, shelled\n- 0802.80.0090 Areca nuts, other\n\nI am not sure of that breakdown, and I recall the 8-digit line as 0802.80.00 with a single 10-digit statistical line, 0802.80.0000. The relevant CBP rulings describe areca nuts classified in 0802.80.0000, HTSUS, \"Areca nuts,\" so I am going with that.\n\n{\"hts_code\": \"0802.80.0000\", \"reason\": \"Areca (betel) nuts, dried and de-husked, are classified in heading 0802 as other nuts, in subheading 0802.80 for areca nuts.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 274,
+      "completion_tokens": 305,
+      "total_tokens": 579,
+      "cost": 0.003598,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003598,
+        "upstream_inference_prompt_cost": 0.000548,
+        "upstream_inference_completions_cost": 0.00305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0802800000",
+  "predicted_reason": "Areca (betel) nuts, dried and de-husked, are classified in heading 0802 as other nuts, in subheading 0802.80 for areca nuts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 274,
+    "completion_tokens": 305,
+    "total_tokens": 579,
+    "cost": 0.003598,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003598,
+      "upstream_inference_prompt_cost": 0.000548,
+      "upstream_inference_completions_cost": 0.00305
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:34.907880+00:00",
+  "latency_s": 3.061,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

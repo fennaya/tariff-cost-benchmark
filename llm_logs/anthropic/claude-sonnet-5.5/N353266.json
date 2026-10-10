@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N353266",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "9617001000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593789-lGiYXMyxxj0arMDkGFzd",
+    "object": "chat.completion",
+    "created": 1791593789,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Vacuum-insulated stainless steel bottles are classified in heading 9617 (vacuum flasks and other vacuum vessels, complete with cases; parts thereof other than glass inners). Within 9617.00, the subheadings are 9617.00.10 for vacuum flasks and other vacuum vessels, with 9617.00.1000 covering those over 0.75 liter and 9617.00.2000 (by recollection) covering the rest. The HTSUS breakdown is:\n\n- 9617.00.10: Vacuum flasks and other vacuum vessels, complete with cases; parts thereof other than glass inners: Vacuum flasks and other vacuum vessels, having a capacity not exceeding 0.75 liter. This is 9617.00.1000 (by recollection, \"Vacuum flasks and other vacuum vessels, complete with cases\").\n- 9617.00.20: Other.\n- 9617.00.30: Parts.\n\nRulings on stainless steel insulated bottles (e.g., NY N-series) place them in 9617.00.30, \"Other vacuum flasks: Other\", while the 9617.00.1000 line covers vacuum flasks with glass inners. I'm not certain which numbering is right, so I'm going with 9617.00.3000, which I recall as the code for vacuum vessels other than glass-lined ones.\n\nThe most commonly cited code in such rulings is 9617.00.30. The 32 oz size is under 1 liter, but the structure I recall doesn't split on capacity. I'll go with 9617.00.3000.\n\n{\"hts_code\": \"9617.00.3000\", \"reason\": \"A double-walled, vacuum-insulated stainless steel water bottle is a vacuum vessel of heading 9617, and I believe it falls in the subheading for vacuum flasks and vessels other than those with glass inners, though I am not fully certain of the 10-digit statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 630,
+      "total_tokens": 1122,
+      "cost": 0.007284,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007284,
+        "upstream_inference_prompt_cost": 0.000984,
+        "upstream_inference_completions_cost": 0.0063
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9617003000",
+  "predicted_reason": "A double-walled, vacuum-insulated stainless steel water bottle is a vacuum vessel of heading 9617, and I believe it falls in the subheading for vacuum flasks and vessels other than those with glass inners, though I am not fully certain of the 10-digit statistical suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 492,
+    "completion_tokens": 630,
+    "total_tokens": 1122,
+    "cost": 0.007284,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007284,
+      "upstream_inference_prompt_cost": 0.000984,
+      "upstream_inference_completions_cost": 0.0063
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:29.882871+00:00",
+  "latency_s": 5.431,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

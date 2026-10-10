@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357207",
+  "rulingDate": "2026-01-06T00:00:00",
+  "true_code": "3403990000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595329-qjt0H1kip9NTqo9Ms18W",
+    "object": "chat.completion",
+    "created": 1791595329,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Lubricating grease with a lithium soap thickener, containing petroleum oils, falls under heading 2710 if petroleum oils are 70% or more by weight, or under 3403 if less than 70%. SKF LAGD 125 is a 'LAGD 125/' product, a heavy-duty grease for large bearings in a cartridge (the LAGD 400 and 125 are 'Grease for open gears/ dust protection'?). It is likely a mineral oil-based lithium soap grease, with a petroleum oil content under 70% as is typical for greases (about 80-90% oil, but the thickener is 5-15%, and additives are included). Most greases are about 85-90% oil, so heading 2710 would apply.\n\nUnder 2710.19.30 are lubricating oils and greases, but the tariff structure for 2710.19 is: 2710.19.30 \"Lubricating oils... \" and 2710.19.45 \"Other: Lubricating greases\"? Checking: 2710.19.30 is \"Lubricating oils, hydraulic...\"? I recall 2710.19.3000 is \"Lubricating oils and greases\"? In HTSUS, 2710.19.30 is \"Lubricating oils and greases\" with the subheadings 2710.19.3010 (Lubricating oils) and 2710.19.3050 (Lubricating greases). Hmm, I recall that 2710.19.3500 is \"Lubricating oils\" and 2710.19.4500 \"Lubricating greases\"? I believe the current structure is: 2710.19.30 Lubricating oils: 2710.19.3010 Motor oil..., 2710.19.35 Other: 2710.19.3500? And 2710.19.4500 is \"Lubricating greases\"? I'll choose 2710.19.4500? In the HTS, 2710.19.40 is \"Other: Lubricating greases,\" and 2710.19.45 is \"Other\" with 2710.19.4500? I will go with 2710.19.3500? The best recollection from CBP rulings for greases: \"classified in 2710.19.4590\"? Hmm, CBP rulings cite \"2710.19.3500\" for lubricating oils and \"2710.19.4500\" for \"other\". For greases, rulings often cite 2710.19.4500 hmm. I'll go with 2710.19.4590? I'll pick 2710.19.3500? Decide: 2710.19.4500.\n\n{\"hts_code\": \"2710.19.4500\", \"reason\": \"A lithium-soap lubricating grease based predominantly on petroleum oils (70% or more by weight) is classified in heading 2710 as a other petroleum preparation, in the lubricating grease provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 876,
+      "total_tokens": 1162,
+      "cost": 0.009332,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009332,
+        "upstream_inference_prompt_cost": 0.000572,
+        "upstream_inference_completions_cost": 0.00876
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2710194500",
+  "predicted_reason": "A lithium-soap lubricating grease based predominantly on petroleum oils (70% or more by weight) is classified in heading 2710 as a other petroleum preparation, in the lubricating grease provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 876,
+    "total_tokens": 1162,
+    "cost": 0.009332,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009332,
+      "upstream_inference_prompt_cost": 0.000572,
+      "upstream_inference_completions_cost": 0.00876
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:09.748721+00:00",
+  "latency_s": 7.773,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

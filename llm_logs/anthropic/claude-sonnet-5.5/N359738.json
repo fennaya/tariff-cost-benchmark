@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359738",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "7615105040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595906-zyIHnTj6NlfOlCwJVz15",
+    "object": "chat.completion",
+    "created": 1791595906,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Cast aluminum skillet falls under HTS 7615.10 (table, kitchen or other household articles of aluminum). Within 7615.10, the subheadings are: 7615.10.10 (cooking and kitchen ware, enameled or glazed or nonstick interior finish? actually 7615.10.10 is \"Cooking and kitchen ware: Of cast aluminum, not enameled or glazed\" and 7615.10.20 is \"Other\"?). Let me recall: 7615.10.10 \"Cooking and kitchen ware: Enameled or glazed\"? The HTSUS structure:\n\n7615.10 Table, kitchen or other household articles and parts thereof; pot scourers and scouring or polishing pads, gloves and the like:\n 7615.10.10 Cooking and kitchen ware: Enameled or glazed? Actually, 7615.10.10 is \"Cooking and kitchen ware: Enameled or glazed\" \u2014 hmm, I recall 7615.10.20 \"Other: Cooking and kitchen ware: Other\" and 7615.10.30 \"Other\". Further, 7615.10.50 is \"Other: Cooking ware... of cast aluminum\"? I recall 7615.10.2000 is \"Cooking and kitchen ware: Other: Not enameled or glazed...\". Common CBP rulings for cast aluminum skillets: \"7615.10.2015 - Table, kitchen or other household articles: Cooking and kitchen ware: Other: Cooking ware of cast aluminum\"? I recall 7615.10.2015 as \"Cooking ware: Other: Of cast aluminum... Other\" Rulings cite 7615.10.2015 for cast aluminum cooking ware without nonstick interior. I'll go with that.\n\n{\"hts_code\": \"7615.10.2015\", \"reason\": \"A cast aluminum stovetop skillet without enameled, glazed or nonstick finish is cooking ware of aluminum classified in heading 7615, subheading 7615.10.20 (other cooking ware, cast, 15 statistical suffix).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 686,
+      "total_tokens": 1026,
+      "cost": 0.00754,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00754,
+        "upstream_inference_prompt_cost": 0.00068,
+        "upstream_inference_completions_cost": 0.00686
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615102015",
+  "predicted_reason": "A cast aluminum stovetop skillet without enameled, glazed or nonstick finish is cooking ware of aluminum classified in heading 7615, subheading 7615.10.20 (other cooking ware, cast, 15 statistical suffix).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 686,
+    "total_tokens": 1026,
+    "cost": 0.00754,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00754,
+      "upstream_inference_prompt_cost": 0.00068,
+      "upstream_inference_completions_cost": 0.00686
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:46.766398+00:00",
+  "latency_s": 6.033,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

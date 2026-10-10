@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363487",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8413600030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596678-99Z2R9Smepw0C1ZW7SS3",
+    "object": "chat.completion",
+    "created": 1791596678,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Gear hydraulic units that function as either a pump or a motor are classified in HTSUS 8413 (pumps for liquids) or 8412 (hydraulic motors). Their primary described function is a gear pump, so heading 8413 applies. Within 8413.60 (other rotary positive displacement pumps), the gear pump falls under 8413.60.00 and is statistically reported under 8413.60.0000 or a more specific 10-digit number.\n\nThe subheadings are:\n- 8413.60.00: Other rotary positive displacement pumps\n- 8413.60.20: Hydraulic fluid power pumps\n- 8413.60.40: Other, with 8413.60.4000 for other\n- 8413.60.60 and 8413.60.70 are for other rotary pumps, with 8413.60.7000 as the statistical suffix\n\nHydraulic fluid power pumps for gear types fall under 8413.60.20, and the statistical suffixes are 8413.60.2010 for vane pumps, 8413.60.2020 for gear pumps, and so on. I recall 8413.60.20 splitting into 8413.60.2020 for gear and 8413.60.2030 for other. Recent schedules show 8413.60.20 \"Hydraulic fluid power pumps\" with 8413.60.2010 for vane, 8413.60.2020 for gear, and 8413.60.2030 for other, so I'll use the gear number.\n\n```json\n{\"hts_code\": \"8413.60.2020\", \"reason\": \"Aluminum-cased external gear hydraulic units driven by a motor operate principally as hydraulic fluid power rotary gear pumps under heading 8413, subheading 8413.60.20.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 560,
+      "total_tokens": 890,
+      "cost": 0.00626,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00626,
+        "upstream_inference_prompt_cost": 0.00066,
+        "upstream_inference_completions_cost": 0.0056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8413602020",
+  "predicted_reason": "Aluminum-cased external gear hydraulic units driven by a motor operate principally as hydraulic fluid power rotary gear pumps under heading 8413, subheading 8413.60.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 330,
+    "completion_tokens": 560,
+    "total_tokens": 890,
+    "cost": 0.00626,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00626,
+      "upstream_inference_prompt_cost": 0.00066,
+      "upstream_inference_completions_cost": 0.0056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:38.505125+00:00",
+  "latency_s": 4.994,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

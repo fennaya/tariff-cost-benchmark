@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357469",
+  "rulingDate": "2026-01-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595434-KvzXVeAXb3FfwVjlSEJ7",
+    "object": "chat.completion",
+    "created": 1791595434,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a Renaissance peasant shirt costume. Such costumes are typically classified as festive articles in heading 9505 only if they aren't wearing apparel of ordinary type. CBP often holds that costumes of non-textile or flimsy materials go to 9505.90.6000. But a well-made peasant shirt with a belt could be classified as apparel in chapter 61 or 62. The submission says \"long-sleeved pullover top and belt,\" so it is likely a woven or knit shirt, and a pullover shirt of cotton or polyester is the most probable.\n\nIs it a costume or ordinary apparel? CBP rulings on \"Renaissance peasant shirt\" have, I recall, found that the garment is not a festive article because it is a well-made, ordinary-looking shirt, and so classified it as a men's or women's shirt. An adult unisex shirt would go to men's by default. If woven polyester, the code would be 6205.30.2060 (men's shirts of man-made fibers, other). If cotton, it would be 6205.20.20. If knit, it would be 6105.\n\nThe most likely scenario is a woven polyester shirt with a drawstring neckline, sold as a set with a belt. The set would be classified under GRI 3(b) by the shirt. The man-made fiber woven men's shirt, \"other,\" is 6205.30.2070 (other, not containing 36 percent or more of... ). Going with 6205.30.2070 would be a guess, and 6205.30.2060 is another option. I'll pick 6205.30.2070.\n\n{\"hts_code\": \"6205.30.2070\", \"reason\": \"The peasant shirt is an ordinary well-made woven man-made fiber pullover shirt (the belt being an accessory), so it is classified as men's shirts of man-made fibers in heading 6205 rather than as a festive article in heading 9505.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 225,
+      "completion_tokens": 615,
+      "total_tokens": 840,
+      "cost": 0.0066,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0066,
+        "upstream_inference_prompt_cost": 0.00045,
+        "upstream_inference_completions_cost": 0.00615
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6205302070",
+  "predicted_reason": "The peasant shirt is an ordinary well-made woven man-made fiber pullover shirt (the belt being an accessory), so it is classified as men's shirts of man-made fibers in heading 6205 rather than as a festive article in heading 9505.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 225,
+    "completion_tokens": 615,
+    "total_tokens": 840,
+    "cost": 0.0066,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0066,
+      "upstream_inference_prompt_cost": 0.00045,
+      "upstream_inference_completions_cost": 0.00615
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:54.893742+00:00",
+  "latency_s": 6.9,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

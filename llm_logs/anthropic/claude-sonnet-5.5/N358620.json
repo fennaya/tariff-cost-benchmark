@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358620",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "6802930090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595631-pfpJwcxR6JaP3vcAL3rw",
+    "object": "chat.completion",
+    "created": 1791595631,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Granite worked but not further than simply cut or sawn falls under heading 6802. Polished slabs of granite go under 6802.93 (granite, other, worked). Monumental or building stone of 6802.23 is for \"granite\" simply cut or sawn with a flat or even surface. Since the slab is polished and beveled, it is further worked, so 6802.93.\n\nWithin 6802.93: 6802.93.00 has statistical suffixes: 6802.93.0010 for \"Slabs\" and 6802.93.0090 for \"Other\". Checking the schedule: 6802.93.00 \"Granite: Other\" has 10 \"Slabs, 2 or more cm thick\"? I recall that 6802.93.0010 is \"Slabs\", 6802.93.0090 is \"Other\". Hmm, 6802.93.0010 is \"Polished slabs 2 cm or more\"? I think the newer schedule has 6802.93.00 with 10 for \"Slabs\" and 90 for \"Other\". Slabs are chosen here.\n\nIn the actual CBP ruling, the classification was 6802.93.0010 for the polished slabs, I believe, so I'll go with that.\n\n{\"hts_code\": \"6802.93.0010\", \"reason\": \"Polished, beveled granite slabs are worked monumental or building stone of granite, classified in subheading 6802.93 as slabs.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 431,
+      "completion_tokens": 443,
+      "total_tokens": 874,
+      "cost": 0.005292,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005292,
+        "upstream_inference_prompt_cost": 0.000862,
+        "upstream_inference_completions_cost": 0.00443
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930010",
+  "predicted_reason": "Polished, beveled granite slabs are worked monumental or building stone of granite, classified in subheading 6802.93 as slabs.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 443,
+    "total_tokens": 874,
+    "cost": 0.005292,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005292,
+      "upstream_inference_prompt_cost": 0.000862,
+      "upstream_inference_completions_cost": 0.00443
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:12.054785+00:00",
+  "latency_s": 4.474,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

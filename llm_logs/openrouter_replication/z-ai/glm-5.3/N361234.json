@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361234",
+  "rulingDate": "2026-06-04T00:00:00",
+  "true_code": "6402999005",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600155-6QfD1jFWpGcUiUR4mlXo",
+    "object": "chat.completion",
+    "created": 1791600155,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6402.19.3000\", \"reason\": \"The smart shoes have an upper and outer sole of rubber/plastics and possess the construction features of athletic/sports footwear, classifiable as sports footwear with rubber/plastics uppers.\"",
+          "refusal": null,
+          "reasoning": "Smart shoes with outer sole and upper of rubber/plastics \u2014 likely 6402.99 or athletic 6402.19? Additional US note athletic: textile upper? Upper is rubber/plastics constituent \u2192 6402.19.30? Athletic footwear with rubber/plastics upper: 6402.19.30, duty 4.37? Actually 6402.19 covers sports footwear with upper of rubber/plastics. 10-digit: 6402.19.3000? There's 6402.19.30 with subdivisions... I'll answer 6402.19.3000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Smart shoes with outer sole and upper of rubber/plastics \u2014 likely 6402.99 or athletic 6402.19? Additional US note athletic: textile upper? Upper is rubber/plastics constituent \u2192 6402.19.30? Athletic footwear with rubber/plastics upper: 6402.19.30, duty 4.37? Actually 6402.19 covers sports footwear with upper of rubber/plastics. 10-digit: 6402.19.3000? There's 6402.19.30 with subdivisions... I'll answer 6402.19.3000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 189,
+      "total_tokens": 481,
+      "cost": 0.000918524,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000918524,
+        "upstream_inference_prompt_cost": 1.1324e-05,
+        "upstream_inference_completions_cost": 0.0009072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 131,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Expecting ',' delimiter: line 1 column 233 (char 232)",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 189,
+    "total_tokens": 481,
+    "cost": 0.000918524,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000918524,
+      "upstream_inference_prompt_cost": 1.1324e-05,
+      "upstream_inference_completions_cost": 0.0009072
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 131,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:35.569469+00:00",
+  "latency_s": 1.533,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360873",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "3004390055",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600125-MlxJwwPtkVlcxh0cFd1a",
+    "object": "chat.completion",
+    "created": 1791600125,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.39.0090\", \"reason\": \"Testosterone gel is a packaged medicament containing a hormone (other than insulin) for therapeutic use, classified under HTSUS 3004.39.00.\"}",
+          "refusal": null,
+          "reasoning": "Testosterone gel \u2014 hormone preparation. HTS 3004.39 or 3004.90? Testosterone is a steroid hormone, not antibiotic etc. 3004.39.00? Actually hormones fall under 3004.39? Heading 3004 subheadings: 3004.20 antibiotics, 3004.31/32 insulin, 3004.39 other... hormones are 3004.39? No\u20143004.39 is \"other\" containing hormones? Subheading 3004.39 covers medicaments of 3004 other than those containing antibiotics/insulin... hormones are in 3004.39? There's 3004.39.00 \"Other\" \u2014 yes hormones other than insulin. Actually 3002 covers hormones in bulk; 3004.39 covers medicaments containing hormones other than insulin? I recall 3004.39.0000? Hmm, there is 3004.39.00 with stat breakouts. Testosterone gel: 3004.39.0020? Common classification: 3004.39.00. I'll answer 3004.39.0020? Safer: 3004.39.0090? I'll go with 3004.39.0020? Uncertain; choose 3004.39.00.90? I'll say 3004.39.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Testosterone gel \u2014 hormone preparation. HTS 3004.39 or 3004.90? Testosterone is a steroid hormone, not antibiotic etc. 3004.39.00? Actually hormones fall under 3004.39? Heading 3004 subheadings: 3004.20 antibiotics, 3004.31/32 insulin, 3004.39 other... hormones are 3004.39? No\u20143004.39 is \"other\" containing hormones? Subheading 3004.39 covers medicaments of 3004 other than those containing antibiotics/insulin... hormones are in 3004.39? There's 3004.39.00 \"Other\" \u2014 yes hormones other than insulin. Actually 3002 covers hormones in bulk; 3004.39 covers medicaments containing hormones other than insulin? I recall 3004.39.0000? Hmm, there is 3004.39.00 with stat breakouts. Testosterone gel: 3004.39.0020? Common classification: 3004.39.00. I'll answer 3004.39.0020? Safer: 3004.39.0090? I'll go with 3004.39.0020? Uncertain; choose 3004.39.00.90? I'll say 3004.39.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 113,
+      "completion_tokens": 347,
+      "total_tokens": 460,
+      "cost": 0.0015407,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015407,
+        "upstream_inference_prompt_cost": 1.39e-05,
+        "upstream_inference_completions_cost": 0.0015268
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 292,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004390090",
+  "predicted_reason": "Testosterone gel is a packaged medicament containing a hormone (other than insulin) for therapeutic use, classified under HTSUS 3004.39.00.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 113,
+    "completion_tokens": 347,
+    "total_tokens": 460,
+    "cost": 0.0015407,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015407,
+      "upstream_inference_prompt_cost": 1.39e-05,
+      "upstream_inference_completions_cost": 0.0015268
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 292,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:42:06.154860+00:00",
+  "latency_s": 2.545,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

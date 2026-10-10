@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359532",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7323999080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595865-JdZ0Kn0XZqKtakrGGiBg",
+    "object": "chat.completion",
+    "created": 1791595865,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a set of a trash can and a toilet brush with holder, so I first considered whether it is a GRI 3 set. The two items are not put up for a single need in the sense of a set, and the brush is classified under 9603. In practice, CBP rulings on similar sets have classified the trash can on its own as the principal article, or have split the items. The description addresses only the trash can, so I classified that.\n\nCandidates for the trash can:\n- 7323.93: table, kitchen or other household articles of stainless steel.\n- 7323.99: the same for other materials, covering iron or steel that is enameled or painted.\n- 3924.90: plastic household articles.\n- 7326.90: other articles of iron or steel.\n\nThe body is powder-coated iron sheet metal and the plastic is only the inner bucket and base, so the metal gives the essential character. Household waste bins of iron or steel fall under 7323.99. I recalled 7323.99.9060 as the code for other household articles of iron or steel that are not enameled or porcelain-coated, and 7323.99.90 as its parent. Painted or powder-coated items fall under 7323.99.90. The 10-digit suffix I used is 7323.99.9060.\n\n```json\n{\"hts_code\": \"7323.99.9060\", \"reason\": \"The foot-pedal trash can is a household article whose essential character comes from its powder-coated iron sheet metal body, lid and pedal, so it falls under heading 7323 as an other household article of iron or steel that is not enameled.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 489,
+      "total_tokens": 841,
+      "cost": 0.005594,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005594,
+        "upstream_inference_prompt_cost": 0.000704,
+        "upstream_inference_completions_cost": 0.00489
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7323999060",
+  "predicted_reason": "The foot-pedal trash can is a household article whose essential character comes from its powder-coated iron sheet metal body, lid and pedal, so it falls under heading 7323 as an other household article of iron or steel that is not enameled.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 489,
+    "total_tokens": 841,
+    "cost": 0.005594,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005594,
+      "upstream_inference_prompt_cost": 0.000704,
+      "upstream_inference_completions_cost": 0.00489
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:05.669499+00:00",
+  "latency_s": 5.196,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

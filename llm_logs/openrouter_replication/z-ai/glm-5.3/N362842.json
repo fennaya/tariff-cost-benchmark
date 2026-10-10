@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362842",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8428900390",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600359-GQypA4YWSBCkcyOIVvcF",
+    "object": "chat.completion",
+    "created": 1791600359,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.9497\", \"reason\": \"The automated lumber bundle formation system is a functional unit of mechanical machinery for handling/processing lumber, not a machine tool or conveyor per se, and is classified as other machinery having individual functions under heading 8479.\"}",
+          "refusal": null,
+          "reasoning": "Automated lumber stacking/bundling machine \u2014 machinery for working wood, other. 8465.99? Actually stacking machine not machine tool. Likely 8479.89.94 (other machinery for treatment of materials). Could be 8428 conveyors? Functional unit \u2014 heading 8479.89.9497? 10-digit: 8479.89.9497? Common: 8479.89.94. Use 8479.89.9497? Safer 8479.89.9497 is \"other\" machines. Actually 8479.89.94 has suffixes 00? 8479.89.9400? HTS: 8479.89.95 (other). I'll answer 8479.89.9497.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Automated lumber stacking/bundling machine \u2014 machinery for working wood, other. 8465.99? Actually stacking machine not machine tool. Likely 8479.89.94 (other machinery for treatment of materials). Could be 8428 conveyors? Functional unit \u2014 heading 8479.89.9497? 10-digit: 8479.89.9497? Common: 8479.89.94. Use 8479.89.9497? Safer 8479.89.9497 is \"other\" machines. Actually 8479.89.94 has suffixes 00? 8479.89.9400? HTS: 8479.89.95 (other). I'll answer 8479.89.9497.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 687,
+      "completion_tokens": 248,
+      "total_tokens": 935,
+      "cost": 0.00114616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00114616,
+        "upstream_inference_prompt_cost": 5.496e-05,
+        "upstream_inference_completions_cost": 0.0010912
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 182,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479899497",
+  "predicted_reason": "The automated lumber bundle formation system is a functional unit of mechanical machinery for handling/processing lumber, not a machine tool or conveyor per se, and is classified as other machinery having individual functions under heading 8479.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 687,
+    "completion_tokens": 248,
+    "total_tokens": 935,
+    "cost": 0.00114616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00114616,
+      "upstream_inference_prompt_cost": 5.496e-05,
+      "upstream_inference_completions_cost": 0.0010912
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 182,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:45:59.358251+00:00",
+  "latency_s": 2.794,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

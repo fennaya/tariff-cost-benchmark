@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357970",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595527-GqqbfWI4bv1pJ0pjh8d4",
+    "object": "chat.completion",
+    "created": 1791595527,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a stainless steel housing for a magnetostrictive linear position sensor in an ambulatory stretcher. The question is whether it is a part of a measuring instrument (9031.90) or a part of a stretcher or other article (9402.90 or similar).\n\nPosition sensors are classified in 9031.80 (measuring or checking instruments), so their parts fall under 9031.90. Under Note 2(b) to Section XVI, parts are classified with their machine only if they are not goods of heading 8483, 8484, or 8487. This is Chapter 90, where Note 2 applies, and a housing is suitable for use solely with a sensor. A protective housing for a sensor would therefore go in 9031.90.\n\nAlternatively, 8538.90 covers parts for apparatus of heading 8535, 8536, or 8537, but that does not fit a sensor. A magnetostrictive linear position sensor could also be classed in 9033 or 9031.80. Parts of 9031.80 are in 9031.90.\n\nThe 10-digit subheadings of 9031.90 are 9031.90.01 (optical measuring), 9031.90.21 (parts of coordinate measuring machines), 9031.90.70 (other), and 9031.90.91 (other). I am not certain of the exact statistical suffix, but 9031.90.9195 is the usual \"other\" parts line.\n\nMy answer is 9031.90.9195, though I have not confirmed it against the ruling.\n\n{\"hts_code\": \"9031.90.9195\", \"reason\": \"The housing is a part solely used with a magnetostrictive linear position sensor (a measuring or checking instrument of heading 9031), so it is classified as a part in 9031.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 563,
+      "total_tokens": 917,
+      "cost": 0.006338,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006338,
+        "upstream_inference_prompt_cost": 0.000708,
+        "upstream_inference_completions_cost": 0.00563
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9031909195",
+  "predicted_reason": "The housing is a part solely used with a magnetostrictive linear position sensor (a measuring or checking instrument of heading 9031), so it is classified as a part in 9031.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 563,
+    "total_tokens": 917,
+    "cost": 0.006338,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006338,
+      "upstream_inference_prompt_cost": 0.000708,
+      "upstream_inference_completions_cost": 0.00563
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:27.601637+00:00",
+  "latency_s": 5.689,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

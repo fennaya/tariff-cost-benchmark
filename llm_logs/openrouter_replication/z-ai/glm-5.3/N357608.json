@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357608",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8412909005",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599671-mlsU06uj4nZU4r8sng0Z",
+    "object": "chat.completion",
+    "created": 1791599671,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7304.59.10.30\", \"reason\": \"The E355 steel hydraulic pipe is a cold-drawn seamless steel tube of circular cross section (per EN 10305-4), classified as other seamless pipe of iron or steel.\"}",
+          "refusal": null,
+          "reasoning": "Hydraulic steel pipe, seamless? Likely 7304.41? Actually steel pipe for hydraulic systems \u2014 likely 7306.30 or 7304.59. E355 seamless precision tube per EN 10305-4 is cold-drawn seamless \u2192 7304.59.10? Cold-drawn seamless of circular cross section other \u2192 7304.59.10.30? Common ruling: 7304.59.10.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hydraulic steel pipe, seamless? Likely 7304.41? Actually steel pipe for hydraulic systems \u2014 likely 7306.30 or 7304.59. E355 seamless precision tube per EN 10305-4 is cold-drawn seamless \u2192 7304.59.10? Cold-drawn seamless of circular cross section other \u2192 7304.59.10.30? Common ruling: 7304.59.10.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 379,
+      "completion_tokens": 159,
+      "total_tokens": 538,
+      "cost": 0.000777981,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000777981,
+        "upstream_inference_prompt_cost": 1.4781e-05,
+        "upstream_inference_completions_cost": 0.0007632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 108,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7304591030",
+  "predicted_reason": "The E355 steel hydraulic pipe is a cold-drawn seamless steel tube of circular cross section (per EN 10305-4), classified as other seamless pipe of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 379,
+    "completion_tokens": 159,
+    "total_tokens": 538,
+    "cost": 0.000777981,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000777981,
+      "upstream_inference_prompt_cost": 1.4781e-05,
+      "upstream_inference_completions_cost": 0.0007632
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 108,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:31.433624+00:00",
+  "latency_s": 1.385,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

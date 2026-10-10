@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359106",
+  "rulingDate": "2026-03-09T00:00:00",
+  "true_code": "8716390090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595745-W6Ry2FSxUAQNQcmNscSa",
+    "object": "chat.completion",
+    "created": 1791595745,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a non-self-propelled semitrailer for transporting industrial loads, so it falls in heading 8716. Subheading 8716.39 covers other trailers and semitrailers for the transport of goods. Within it, 8716.39.00 is split into statistical suffixes, and the 8716.39.0090 line is the \"Other\" residual.\n\nThe 8716.39 subheadings are:\n- 8716.39.00 (since 2022 reorganized): 8716.39.0010 for trailers designed for agricultural use (not applicable), 8716.39.0030 for other trailers of the tank type, 8716.39.0040 for other, and so on.\n\nMy recollection of the 8716.39 structure:\n- 8716.31 tanker trailers and semitrailers\n- 8716.39.00: Other\n  - 8716.39.0010: Trailers designed for agricultural use\n  - 8716.39.0030 / 0040 / 0050 / 0090 and similar lines, which I am not certain of\n\nThe exact suffix is uncertain. I believe 8716.39.0090 is \"Other\" and use it as the best fit. The cassette is treated as part of the integrated configuration, with the trailer giving the essential character.\n\n```json\n{\"hts_code\": \"8716.39.0090\", \"reason\": \"A non-self-propelled semitrailer for transporting industrial goods, entered with its cassette and with the trailer giving the essential character, is classified in heading 8716 as an other trailer/semitrailer for the transport of goods (8716.39), in the residual 'Other' line.\"}\n```\n\nFinal answer:\n\n{\"hts_code\": \"8716.39.0090\", \"reason\": \"A non-self-propelled semitrailer for transporting industrial goods, entered with its cassette and with the trailer giving the essential character, is classified in heading 8716 as an other trailer/semitrailer for the transport of goods (8716.39), in the residual 'Other' line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 493,
+      "completion_tokens": 626,
+      "total_tokens": 1119,
+      "cost": 0.007246,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007246,
+        "upstream_inference_prompt_cost": 0.000986,
+        "upstream_inference_completions_cost": 0.00626
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716390090",
+  "predicted_reason": "A non-self-propelled semitrailer for transporting industrial goods, entered with its cassette and with the trailer giving the essential character, is classified in heading 8716 as an other trailer/semitrailer for the transport of goods (8716.39), in the residual 'Other' line.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 493,
+    "completion_tokens": 626,
+    "total_tokens": 1119,
+    "cost": 0.007246,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007246,
+      "upstream_inference_prompt_cost": 0.000986,
+      "upstream_inference_completions_cost": 0.00626
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:05.315536+00:00",
+  "latency_s": 7.656,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

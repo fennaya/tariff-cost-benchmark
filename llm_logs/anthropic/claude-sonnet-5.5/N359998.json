@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359998",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8411919085",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596007-5VayHbPrbcwXqo4IBv50",
+    "object": "chat.completion",
+    "created": 1791596007,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling about turbine blades for a Rolls-Royce BR715 civil aircraft engine. The relevant candidates are 8411.99 (parts of turbojets and turbopropellers and other gas turbines) and 8803.30 (other parts of airplanes). Turbine blades for aircraft engines fall under 8411.99. The HTSUS subheading is 8411.99.90 (\"Other\" parts of gas turbines), with statistical suffixes 8411.99.9080 and others. Civil aircraft parts can enter duty-free under 8411.99.10 only if the article is certified for use in civil aircraft (the \"certified\" provision, 8411.99.10 has been... ). Under HTSUS 8411.99.10 there is no such civil aircraft line; the duty-free treatment comes via Chapter 98 (9817.00.50) or the Agreement on Trade in Civil Aircraft. Since the blades are not yet certified at importation, 9817.00.50 does not apply, so the classification is under 8411.99.\n\nThe 8411.99 breakdown is: 8411.99.10 (of turbojets/turboprops, \"Of a thrust... \"?). Actually 8411.99.10 is \"Of turbojets or turbopropellers\" in older schedules, and 8411.99.90 is \"Other\". The BR715 is a turbofan, which is a turbojet type, so 8411.99.10 is plausible. Currently, 8411.91 covers parts of turbojets/turbopropellers and 8411.99 covers parts of other gas turbines. Turbofans are turbojets, so the parts fall under 8411.91. Within 8411.91, 8411.91.10 is for parts of turbojets and 8411.91.90 is \"Other\"; the 8411.91.90 line has a statistical suffix 8411.91.9080 for other. Turbine blades are most likely 8411.91.9080 (\"Other\").\n\n{\"hts_code\": \"8411.91.9080\", \"reason\": \"Unfinished (dimensionally complete) turbine blades solely for a BR715 turbofan engine are parts of turbojets under heading 8411, subheading 8411.91, and are not yet certified for civil aircraft duty-free treatment at importation.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 713,
+      "completion_tokens": 739,
+      "total_tokens": 1452,
+      "cost": 0.008816,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008816,
+        "upstream_inference_prompt_cost": 0.001426,
+        "upstream_inference_completions_cost": 0.00739
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8411919080",
+  "predicted_reason": "Unfinished (dimensionally complete) turbine blades solely for a BR715 turbofan engine are parts of turbojets under heading 8411, subheading 8411.91, and are not yet certified for civil aircraft duty-free treatment at importation.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 713,
+    "completion_tokens": 739,
+    "total_tokens": 1452,
+    "cost": 0.008816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008816,
+      "upstream_inference_prompt_cost": 0.001426,
+      "upstream_inference_completions_cost": 0.00739
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:27.552055+00:00",
+  "latency_s": 7.299,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

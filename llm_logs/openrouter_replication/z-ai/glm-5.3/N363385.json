@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363385",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "4201006000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600407-hbmUKxAyWY6AkZvib3mZ",
+    "object": "chat.completion",
+    "created": 1791600407,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4201.00.0600\", \"reason\": \"Dog apparel such as knit sweaters and hoodies of textile materials is classified as saddlery and harness for animals (pet clothing) in heading 4201, specifically under the subheading for dog coats and similar articles.\"}",
+          "refusal": null,
+          "reasoning": "Dog apparel, knit, cotton \u2192 4201.00.0600? Dog clothing classified in 4201.00. HTS 4201.00.0600: dog coats... Actually 4201.00.0600 \"coats, raincoats\" \u2014 sweaters? 4201.00.0600 covers dog clothing of textile. CBP ruling: dog sweaters in 4201.00.0600.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Dog apparel, knit, cotton \u2192 4201.00.0600? Dog clothing classified in 4201.00. HTS 4201.00.0600: dog coats... Actually 4201.00.0600 \"coats, raincoats\" \u2014 sweaters? 4201.00.0600 covers dog clothing of textile. CBP ruling: dog sweaters in 4201.00.0600.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 184,
+      "completion_tokens": 164,
+      "total_tokens": 348,
+      "cost": 0.00073632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00073632,
+        "upstream_inference_prompt_cost": 1.472e-05,
+        "upstream_inference_completions_cost": 0.0007216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 98,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4201000600",
+  "predicted_reason": "Dog apparel such as knit sweaters and hoodies of textile materials is classified as saddlery and harness for animals (pet clothing) in heading 4201, specifically under the subheading for dog coats and similar articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 184,
+    "completion_tokens": 164,
+    "total_tokens": 348,
+    "cost": 0.00073632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00073632,
+      "upstream_inference_prompt_cost": 1.472e-05,
+      "upstream_inference_completions_cost": 0.0007216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 98,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:46:47.578558+00:00",
+  "latency_s": 1.562,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

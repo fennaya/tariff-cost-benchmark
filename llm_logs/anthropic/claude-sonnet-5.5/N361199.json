@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361199",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "6912004500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596224-MW8J7FhE6zpnv82wGn14",
+    "object": "chat.completion",
+    "created": 1791596224,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a ceramic mug shaped like a cowboy boot, made of dolomite ceramic, which is a type of stoneware. The relevant heading is 6912, ceramic tableware and kitchenware other than porcelain. Porcelain or china falls under 6911, and dolomite ceramic is generally treated as stoneware or earthenware, so 6912 applies.\n\nWithin 6912.00 the subheadings are:\n- 6912.00.10: household-type articles containing 1% or more by weight of bone ash.\n- 6912.00.20: other, of stoneware (classified as ordinary).\n- 6912.00.2200 and similar: various statistical lines.\n- 6912.00.39 and 6912.00.40: more specific lines.\n- 6912.00.44, 6912.00.45, 6912.00.48 and 6912.00.50: other, \"Other: Other, cups valued\u2026\".\n\nMy recollection of the structure is:\n- 6912.00.21 to 6912.00.29: stoneware.\n- 6912.00.3x: non-stoneware earthenware tableware, including 6912.00.35 for \"other\" and 6912.00.39.\n- 6912.00.4x: other, including 6912.00.44, 6912.00.45, 6912.00.48 and 6912.00.50.\n\nThe most likely line is 6912.00.48 (other, other, valued over $5 each, or the nearest equivalent). The $13.90 per dozen value is about $1.16 each. The 6912.00.45 line is for items valued not over $0.38 each, and 6912.00.48 is for items valued over $0.38 but not over $1.19... I'm not certain of those exact thresholds. Given the ~$1.16 value, the nearest fit is 6912.00.48 for cups, though this is from memory.\n\nDolomite is commonly treated as earthenware, and the cup is a novelty mug. I will therefore go with 6912.00.4800.\n\n{\"hts_code\": \"6912.00.4800\", \"reason\": \"A dolomite ceramic (earthenware-type, non-porcelain) novelty mug is ceramic tableware/kitchenware of heading 6912, and at about $1.16 each it falls in the 'other' line for items valued over $0.38 but not over $1.19, which I recall as 6912.00.48 but have not verified.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 759,
+      "total_tokens": 1153,
+      "cost": 0.008378,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008378,
+        "upstream_inference_prompt_cost": 0.000788,
+        "upstream_inference_completions_cost": 0.00759
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6912004800",
+  "predicted_reason": "A dolomite ceramic (earthenware-type, non-porcelain) novelty mug is ceramic tableware/kitchenware of heading 6912, and at about $1.16 each it falls in the 'other' line for items valued over $0.38 but not over $1.19, which I recall as 6912.00.48 but have not verified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 759,
+    "total_tokens": 1153,
+    "cost": 0.008378,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008378,
+      "upstream_inference_prompt_cost": 0.000788,
+      "upstream_inference_completions_cost": 0.00759
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:04.571658+00:00",
+  "latency_s": 6.979,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

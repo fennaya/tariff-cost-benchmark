@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358590",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599780-iZ68glM28OvwzsAXIukL",
+    "object": "chat.completion",
+    "created": 1791599780,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3604.10.0000\", \"reason\": \"Pyrotechnic mortar launching apparatus (HDPE tubes, wooden plugs, steel rack) for launching aerial fireworks shells is classified as fireworks in heading 3604 per CBP rulings on mortar racks.\"}",
+          "refusal": null,
+          "reasoning": "Fireworks launching apparatus \u2014 likely classified as part of fireworks? NY rulings: mortar racks classified under 3604.10.0000? Actually fireworks launching apparatus \u2014 HDPE tubes racks have been classified in 9303? No. Ruling: fireworks mortar tubes classified under 3604.10.00 (fireworks). I recall NY ruling classifying HDPE mortar tubes in 3604.10.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fireworks launching apparatus \u2014 likely classified as part of fireworks? NY rulings: mortar racks classified under 3604.10.0000? Actually fireworks launching apparatus \u2014 HDPE tubes racks have been classified in 9303? No. Ruling: fireworks mortar tubes classified under 3604.10.00 (fireworks). I recall NY ruling classifying HDPE mortar tubes in 3604.10.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 181,
+      "completion_tokens": 148,
+      "total_tokens": 329,
+      "cost": 0.0004718125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004718125,
+        "upstream_inference_prompt_cost": 0.0001018125,
+        "upstream_inference_completions_cost": 0.00037
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 87,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3604100000",
+  "predicted_reason": "Pyrotechnic mortar launching apparatus (HDPE tubes, wooden plugs, steel rack) for launching aerial fireworks shells is classified as fireworks in heading 3604 per CBP rulings on mortar racks.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 181,
+    "completion_tokens": 148,
+    "total_tokens": 329,
+    "cost": 0.0004718125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004718125,
+      "upstream_inference_prompt_cost": 0.0001018125,
+      "upstream_inference_completions_cost": 0.00037
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 87,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:36:21.234857+00:00",
+  "latency_s": 1.422,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

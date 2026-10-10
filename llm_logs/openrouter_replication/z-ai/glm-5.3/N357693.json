@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357693",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7228706000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599678-HeQjAHrf9RQFBmIl2cKI",
+    "object": "chat.completion",
+    "created": 1791599678,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7225.99.0090\", \"reason\": \"Alloy steel flat-rolled product over 600 mm wide that has been further worked by corrugation is classified in HTSUS 7225.99.0090.\"}",
+          "refusal": null,
+          "reasoning": "Corrugated sheets of alloy steel \u2014 likely 7225.91 or 7226.91. Alloy steel corrugated, width 680mm (>600mm) \u2192 7225.91.00 (flat-rolled, not further worked? corrugated = further worked). 7225.99? Actually corrugated = \"other, not further worked than...\" no. Flat-rolled alloy steel width \u2265600mm, corrugated: 7225.99.0090? Corrugation counts as further worked. 7225.99.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Corrugated sheets of alloy steel \u2014 likely 7225.91 or 7226.91. Alloy steel corrugated, width 680mm (>600mm) \u2192 7225.91.00 (flat-rolled, not further worked? corrugated = further worked). 7225.99? Actually corrugated = \"other, not further worked than...\" no. Flat-rolled alloy steel width \u2265600mm, corrugated: 7225.99.0090? Corrugation counts as further worked. 7225.99.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 175,
+      "completion_tokens": 190,
+      "total_tokens": 365,
+      "cost": 0.0008225,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008225,
+        "upstream_inference_prompt_cost": 2.45e-05,
+        "upstream_inference_completions_cost": 0.000798
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 130,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7225990090",
+  "predicted_reason": "Alloy steel flat-rolled product over 600 mm wide that has been further worked by corrugation is classified in HTSUS 7225.99.0090.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 175,
+    "completion_tokens": 190,
+    "total_tokens": 365,
+    "cost": 0.0008225,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008225,
+      "upstream_inference_prompt_cost": 2.45e-05,
+      "upstream_inference_completions_cost": 0.000798
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 130,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:34:38.690408+00:00",
+  "latency_s": 3.279,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

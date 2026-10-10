@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360065",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "9403200040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600035-ZkdPI8TEgvh8zaIDI5Fb",
+    "object": "chat.completion",
+    "created": 1791600035,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.20.0080\", \"reason\": \"The steel chassis provides the essential character of this unassembled loft bed, classifying it as other furniture of metal under heading 9403.\"}",
+          "refusal": null,
+          "reasoning": "Loft bed of metal and wood \u2014 metal frame gives character? Beds of metal 9303.50? Furniture chapter 94. Metal beds: 9303.50.00? Actually HTSUS 9403.50.00 \u2014 other metal furniture? Beds: 9403.50 is wooden bedroom furniture? Bedroom furniture: 9403.50 wooden, 9403.20 metal furniture. Beds of metal: 9403.20.00. Loft bed metal frame \u2192 9403.20.0090? 10-digit: 9403.20.0080? Metal furniture other: 9403.20.0080 \"other\". Actually 9403.20.00 subdivided: 9403.20.0010 household? Let me recall: 9403.20.0080 Other furniture of metal... Common answer: 9403.20.0080. But mixed materials \u2014 metal frame essential character \u2192 metal. Use 9403.20.0080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Loft bed of metal and wood \u2014 metal frame gives character? Beds of metal 9303.50? Furniture chapter 94. Metal beds: 9303.50.00? Actually HTSUS 9403.50.00 \u2014 other metal furniture? Beds: 9403.50 is wooden bedroom furniture? Bedroom furniture: 9403.50 wooden, 9403.20 metal furniture. Beds of metal: 9403.20.00. Loft bed metal frame \u2192 9403.20.0090? 10-digit: 9403.20.0080? Metal furniture other: 9403.20.0080 \"other\". Actually 9403.20.00 subdivided: 9403.20.0010 household? Let me recall: 9403.20.0080 Other furniture of metal... Common answer: 9403.20.0080. But mixed materials \u2014 metal frame essential character \u2192 metal. Use 9403.20.0080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 282,
+      "total_tokens": 654,
+      "cost": 0.00141684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00141684,
+        "upstream_inference_prompt_cost": 6.324e-05,
+        "upstream_inference_completions_cost": 0.0013536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 235,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200080",
+  "predicted_reason": "The steel chassis provides the essential character of this unassembled loft bed, classifying it as other furniture of metal under heading 9403.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 282,
+    "total_tokens": 654,
+    "cost": 0.00141684,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00141684,
+      "upstream_inference_prompt_cost": 6.324e-05,
+      "upstream_inference_completions_cost": 0.0013536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 235,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:36.013060+00:00",
+  "latency_s": 2.173,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

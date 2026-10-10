@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357137",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "7616995190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599575-asj3E2oBlMeE8lwvACes",
+    "object": "chat.completion",
+    "created": 1791599575,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9506.91.0030\", \"reason\": \"Locking carabiners designed and marketed for climbing, mountaineering, and belaying are articles and equipment for general physical exercise or sports, specifically mountaineering equipment of heading 9506.\"}",
+          "refusal": null,
+          "reasoning": "Climbing carabiners classified as mountaineering equipment \u2014 9506.91.0030? Sporting equipment for mountaineering: 9506.91.0030 (other, mountaineering). Actually 9506.91.0030 is \"mountaineering\" under 9506.91.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Climbing carabiners classified as mountaineering equipment \u2014 9506.91.0030? Sporting equipment for mountaineering: 9506.91.0030 (other, mountaineering). Actually 9506.91.0030 is \"mountaineering\" under 9506.91.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 139,
+      "total_tokens": 465,
+      "cost": 0.00062944,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00062944,
+        "upstream_inference_prompt_cost": 4.564e-05,
+        "upstream_inference_completions_cost": 0.0005838
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 76,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506910030",
+  "predicted_reason": "Locking carabiners designed and marketed for climbing, mountaineering, and belaying are articles and equipment for general physical exercise or sports, specifically mountaineering equipment of heading 9506.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 326,
+    "completion_tokens": 139,
+    "total_tokens": 465,
+    "cost": 0.00062944,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00062944,
+      "upstream_inference_prompt_cost": 4.564e-05,
+      "upstream_inference_completions_cost": 0.0005838
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:32:56.087831+00:00",
+  "latency_s": 3.093,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360897",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8462290050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596174-CkBKTngZoMnkncg6jA8r",
+    "object": "chat.completion",
+    "created": 1791596174,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a stretch-bend-leveling line. The candidates are in heading 8455 (metal-rolling mills) or heading 8462 (machine tools for working metal by forging, bending, straightening, or flattening).\n\nHeading 8462 covers \"straightening, flattening\" machines. Subheading 8462.91 covers hydraulic presses and 8462.99 covers other machines. A stretch-bend leveling line for strip would fall under 8462.39 (other machine tools for bending, folding, straightening or flattening), or possibly under 8462.10 (forging). Alternatively, heading 8455 covers rolling mills, but a leveler is not a rolling mill. Heading 8462 also covers \"machines for working sheet metal in coils,\" which is 8462.33 (numerically controlled slitting lines) or 8462.39.\n\nI recall CBP rulings on stretch-bend-leveling lines classifying them in 8462.39.0000, with the statistical suffix being 8462.39.0001 for older non-numerically-controlled lines. The current HTSUS has 8462.39.00 with 10-digit suffixes: 8462.39.0040 for other, 8462.39.0020 for numerically controlled, and 8462.39.0010 for hydraulic. Since the line is not CNC, I'll select the non-NC \"other\" subheading.\n\nActual structure (from memory): 8462.39 \"Other\": 8462.39.0001 was the older form, and the current form is 8462.39.0040 \"Other\". I'll go with 8462.39.0040.\n\n{\"hts_code\": \"8462.39.0040\", \"reason\": \"A stretch-bend-leveling line that flattens and straightens metal strip is a machine tool for flattening/straightening metal under heading 8462, falling in the non-numerically-controlled 'other' subheading of 8462.39.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 388,
+      "completion_tokens": 613,
+      "total_tokens": 1001,
+      "cost": 0.006906,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006906,
+        "upstream_inference_prompt_cost": 0.000776,
+        "upstream_inference_completions_cost": 0.00613
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8462390040",
+  "predicted_reason": "A stretch-bend-leveling line that flattens and straightens metal strip is a machine tool for flattening/straightening metal under heading 8462, falling in the non-numerically-controlled 'other' subheading of 8462.39.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 613,
+    "total_tokens": 1001,
+    "cost": 0.006906,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006906,
+      "upstream_inference_prompt_cost": 0.000776,
+      "upstream_inference_completions_cost": 0.00613
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:15.314560+00:00",
+  "latency_s": 5.114,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

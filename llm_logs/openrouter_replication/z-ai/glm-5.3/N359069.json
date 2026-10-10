@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359069",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599848-bIsTR1klKEr94cphAdoj",
+    "object": "chat.completion",
+    "created": 1791599848,
+    "model": "z-ai/glm-5.3",
+    "provider": "DigitalOcean",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9880\", \"reason\": \"Plastic cable ties are articles of other plastics, classified in heading 3926, and this subheading covers other articles of plastics not elsewhere specified.\"}",
+          "refusal": null,
+          "reasoning": "Plastic cable tie \u2014 HTS 3926.90.9805? Cable ties of plastics: 3919? Actually cable ties classified under 3926.90.99 (other articles of plastics). Specific: 3926.90.9880? There's a specific subheading? Cable ties: HTS 3926.90.9880... I recall NY rulings classify plastic cable ties under 3926.90.9880 (other articles of plastics). New 2022 codes: 3926.90.9880? The old 9905? Use 3926.90.9880.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Plastic cable tie \u2014 HTS 3926.90.9805? Cable ties of plastics: 3919? Actually cable ties classified under 3926.90.99 (other articles of plastics). Specific: 3926.90.9880? There's a specific subheading? Cable ties: HTS 3926.90.9880... I recall NY rulings classify plastic cable ties under 3926.90.9880 (other articles of plastics). New 2022 codes: 3926.90.9880? The old 9905? Use 3926.90.9880.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 162,
+      "completion_tokens": 198,
+      "total_tokens": 360,
+      "cost": 0.0007137,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007137,
+        "upstream_inference_prompt_cost": 0.00014742,
+        "upstream_inference_completions_cost": 0.00056628
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909880",
+  "predicted_reason": "Plastic cable ties are articles of other plastics, classified in heading 3926, and this subheading covers other articles of plastics not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 198,
+    "total_tokens": 360,
+    "cost": 0.0007137,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007137,
+      "upstream_inference_prompt_cost": 0.00014742,
+      "upstream_inference_completions_cost": 0.00056628
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DigitalOcean",
+  "requested_at": "2026-10-10T02:37:28.778287+00:00",
+  "latency_s": 3.781,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362757",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "8704210100",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600346-MSD28M8KPanTVW3M9sHY",
+    "object": "chat.completion",
+    "created": 1791600346,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8701.90.0000\", \"reason\": \"Per the applicable CBP ruling, the amphibious all-terrain SHERP N1200, designed to transport personnel and goods over challenging terrain, is classified in HTSUS subheading 8701.90.0000 as an other tractor-type vehicle.\"}",
+          "refusal": null,
+          "reasoning": "SHERP N1200 \u2014 likely classified as special purpose vehicle? Actual NY ruling classified SHERP under 8701.90.0000? Actually N1200 ruling (NY N325955?) classified amphibious ATV under 8701.90.00? Hmm. Payload 1.1 metric tons \u2014 heading 8701 covers tractors. There was ruling classifying SHERP N1200 in 8701.90.0000? I recall ruling NY N322955 classified SHERP under 8701.90.00. Yes, \"vehicles for the transport of goods\" 8704 \u2014 but amphibious... I believe the ruling placed it in 8701.90.0000 (other tractors). Actually I recall SHERP classified 8701.90.0000. Go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "SHERP N1200 \u2014 likely classified as special purpose vehicle? Actual NY ruling classified SHERP under 8701.90.0000? Actually N1200 ruling (NY N325955?) classified amphibious ATV under 8701.90.00? Hmm. Payload 1.1 metric tons \u2014 heading 8701 covers tractors. There was ruling classifying SHERP N1200 in 8701.90.0000? I recall ruling NY N322955 classified SHERP under 8701.90.00. Yes, \"vehicles for the transport of goods\" 8704 \u2014 but amphibious... I believe the ruling placed it in 8701.90.0000 (other tractors). Actually I recall SHERP classified 8701.90.0000. Go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 271,
+      "completion_tokens": 260,
+      "total_tokens": 531,
+      "cost": 0.00116568,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00116568,
+        "upstream_inference_prompt_cost": 2.168e-05,
+        "upstream_inference_completions_cost": 0.001144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 185,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8701900000",
+  "predicted_reason": "Per the applicable CBP ruling, the amphibious all-terrain SHERP N1200, designed to transport personnel and goods over challenging terrain, is classified in HTSUS subheading 8701.90.0000 as an other tractor-type vehicle.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 260,
+    "total_tokens": 531,
+    "cost": 0.00116568,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00116568,
+      "upstream_inference_prompt_cost": 2.168e-05,
+      "upstream_inference_completions_cost": 0.001144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:45:46.546716+00:00",
+  "latency_s": 1.726,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

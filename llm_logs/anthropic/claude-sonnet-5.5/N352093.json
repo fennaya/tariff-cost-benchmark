@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N352093",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "2908998000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593775-kvRHdW5QCatoWCzBpLst",
+    "object": "chat.completion",
+    "created": 1791593775,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "TFM (3-trifluoromethyl-4-nitrophenol) is a phenol derivative with nitro groups, so it falls in heading 2908, which covers halogenated, sulfonated, nitrated or nitrosated derivatives of phenols. Its use as a lampricide could suggest heading 3808, but a single, separately defined chemical compound of 100% purity is classified in Chapter 29 rather than as a prepared pesticide. Chapter 29 note 1 excludes products of heading 3808 only if they are put up as formulated products. Here the goods are imported in bulk as the pure compound, so Chapter 29 applies.\n\nWithin 2908, the relevant subheading is 2908.99, \"Other\" derivatives (2908.91 is dinoseb and 2908.19 is for halogenated derivatives). TFM contains both a nitro group and a CF3 group, so the 2908.99 \"Other\" provision fits. I recall the statistical suffix for 2908.99 as 2908.99.9000 for other, with 2908.99.5000 being a different provision. I believe CBP ruling NY N0xxxx assigned TFM to 2908.99.9000. HTSUS 2908.99: 2908.99.10 covers \"4,6-Dinitro-o-cresol\", 2908.99.20 \"Other: Nitro derivatives\u2026\", and 2908.99.9000 is \"Other.\" Here I'm not certain of the details. I'll go with 2908.99.9000.\n\n{\"hts_code\": \"2908.99.9000\", \"reason\": \"TFM (3-trifluoromethyl-4-nitrophenol) is a separately defined, pure nitrated and halogenated phenol derivative, so it is classified in heading 2908 as an 'Other' derivative rather than as a prepared pesticide in heading 3808.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 599,
+      "total_tokens": 863,
+      "cost": 0.006518,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006518,
+        "upstream_inference_prompt_cost": 0.000528,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2908999000",
+  "predicted_reason": "TFM (3-trifluoromethyl-4-nitrophenol) is a separately defined, pure nitrated and halogenated phenol derivative, so it is classified in heading 2908 as an 'Other' derivative rather than as a prepared pesticide in heading 3808.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 264,
+    "completion_tokens": 599,
+    "total_tokens": 863,
+    "cost": 0.006518,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006518,
+      "upstream_inference_prompt_cost": 0.000528,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:15.382436+00:00",
+  "latency_s": 8.365,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

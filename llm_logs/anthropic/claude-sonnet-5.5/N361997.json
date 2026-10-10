@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361997",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "8204110060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596399-pM7yFEh6uzSUSpF8mJ2t",
+    "object": "chat.completion",
+    "created": 1791596399,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Hex keys (Allen keys) are classified in HTSUS 8204.11 or 8204.12, which covers hand-operated spanners and wrenches. Sets of wrenches go to 8206.00.00 only when they combine tools from two or more of headings 8202 to 8205 and are put up for retail sale. A set of five Allen keys contains only heading 8204 tools, so heading 8206 does not apply.\n\nWithin heading 8204, subheading 8204.11 is for non-adjustable wrenches and 8204.12 is for adjustable ones. Allen keys are non-adjustable, so 8204.11 applies, and 8204.11.00 is the 8-digit level. The 10-digit codes under it are 8204.11.0030 (Metric) and 8204.11.0060 (Other). The subheading structure has two parts: 8204.11.00 splits into 8204.11.0030 (Hand-operated spanners and wrenches, nonadjustable: Other) and 8204.11.0060.\n\nI recall that Allen key rulings, such as NY N-series rulings, classify them under 8204.11.0060. Customs rulings on hex keys sold as sets have also used 8204.11.0060, so I use that code.\n\n{\"hts_code\": \"8204.11.0060\", \"reason\": \"A retail set of L-shaped steel hex (Allen) keys is a set of non-adjustable hand-operated wrenches of heading 8204, and because it contains only one kind of tool it is not a heading 8206 set.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 257,
+      "completion_tokens": 495,
+      "total_tokens": 752,
+      "cost": 0.005464,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005464,
+        "upstream_inference_prompt_cost": 0.000514,
+        "upstream_inference_completions_cost": 0.00495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8204110060",
+  "predicted_reason": "A retail set of L-shaped steel hex (Allen) keys is a set of non-adjustable hand-operated wrenches of heading 8204, and because it contains only one kind of tool it is not a heading 8206 set.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 495,
+    "total_tokens": 752,
+    "cost": 0.005464,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005464,
+      "upstream_inference_prompt_cost": 0.000514,
+      "upstream_inference_completions_cost": 0.00495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:00.281154+00:00",
+  "latency_s": 4.839,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

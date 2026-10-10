@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360281",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8537109170",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596061-ltUlxmWbntQCXUGyRfcP",
+    "object": "chat.completion",
+    "created": 1791596061,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a printed circuit assembly with a bimetal thermostat. The candidate headings are:\n\n- 9032.10: thermostats (automatic regulating or controlling instruments). 9032.10.00 covers thermostats, with the 10-digit subdivisions 9032.10.0015 (Electrical ... ) etc. Specifically, 9032.10.00 is split into 9032.10.0015 (Thermostats: Electrical, for use in civil aircraft?), 9032.10.0025 (other: ...), 9032.10.0040 (Other: Other), and 9032.10.0050.\n- 8537.10: control panels, boards and similar bases for electrical control, at 1000 V or less.\n- 8536.50: switches for a voltage not exceeding 1000 V. A thermal switch that opens or closes a circuit could fall here, but the device includes a relay and a PCB, and it is a thermostat.\n\nThe device is a bimetal thermostat that sends a signal to the printed circuit assembly, which makes 9032.10 the best fit. The 9032.10.00 subheadings are:\n\n- 9032.10.0015: Thermostats, electrical, for use in civil aircraft?\n- 9032.10.0020: Household appliance types?\n- 9032.10.0025: Other: Electrical?\n- 9032.10.0040: Other?\n- 9032.10.0050: Other?\n\nI recall the structure as 9032.10.00 \"Thermostats\", with 9032.10.0015 for \"Gas-fueled; Other: ...\", 9032.10.0025 for \"Electrical: Designed for use in household appliances/Other\", 9032.10.0035 for \"Other\", and 9032.10.0040 for \"Other, Electrical\". I am not certain of these suffixes.\n\nThe actual structure I recall is 9032.10.00: \"Thermostats\": 9032.10.0015 (Ordinary?), 9032.10.0020 (Other: For use in refrigerators?), 9032.10.0025, 9032.10.0030 (Other: Electrical: Other), 9032.10.0040, 9032.10.0050. I'll go with 9032.10.0045, the \"other\" electrical thermostat line, though I'm unsure of the exact suffix.\n\n```json\n{\"hts_code\": \"9032.10.0045\", \"reason\": \"The printed circuit assembly with a bimetal thermal switch functions as an automatic temperature-regulating thermostat for heaters, so it classifies in heading 9032 as an other (non-household) electrical thermostat; the 10-digit suffix is my best recollection and is not certain.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 375,
+      "completion_tokens": 865,
+      "total_tokens": 1240,
+      "cost": 0.0094,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0094,
+        "upstream_inference_prompt_cost": 0.00075,
+        "upstream_inference_completions_cost": 0.00865
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9032100045",
+  "predicted_reason": "The printed circuit assembly with a bimetal thermal switch functions as an automatic temperature-regulating thermostat for heaters, so it classifies in heading 9032 as an other (non-household) electrical thermostat; the 10-digit suffix is my best recollection and is not certain.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 375,
+    "completion_tokens": 865,
+    "total_tokens": 1240,
+    "cost": 0.0094,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0094,
+      "upstream_inference_prompt_cost": 0.00075,
+      "upstream_inference_completions_cost": 0.00865
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:21.907275+00:00",
+  "latency_s": 7.361,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

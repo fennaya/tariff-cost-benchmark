@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358392",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "7615109100",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599757-MVMAGgVtqFccPPHCS4Mw",
+    "object": "chat.completion",
+    "created": 1791599757,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8419.89.9500\", \"reason\": \"The non-electric aluminum chiller alters beverage temperature via heat exchange in a freezer, classifying as other temperature-change machinery/equipment under HTSUS 8419.89.\"}",
+          "refusal": null,
+          "reasoning": "Beverage cooling device, aluminum, household use \u2014 likely 7615.20? Actually household articles of aluminum: 7615.20.00. But it's a cooling device... could be 8419.89 (refrigerating equipment, non-electric?). Rapid chiller using freezer \u2014 heat exchanger, non-electrical. CBP rulings classify such aluminum can chillers under 8419.89.95? There's ruling on \"Kewl-It\" chiller \u2014 I recall NY ruling classifying under 8419.89.95.60? HTS 8419.89.95 covers other machinery/plant for treatment of materials by temperature change. 10-digit: 8419.89.9500? Subheadings: 8419.89.95 \"Other\" then suffixes 8419.89.9550? Actually 8419.89.9590? I'll answer 8419.89.9550? Safer: 8419.89.9500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Beverage cooling device, aluminum, household use \u2014 likely 7615.20? Actually household articles of aluminum: 7615.20.00. But it's a cooling device... could be 8419.89 (refrigerating equipment, non-electric?). Rapid chiller using freezer \u2014 heat exchanger, non-electrical. CBP rulings classify such aluminum can chillers under 8419.89.95? There's ruling on \"Kewl-It\" chiller \u2014 I recall NY ruling classifying under 8419.89.95.60? HTS 8419.89.95 covers other machinery/plant for treatment of materials by temperature change. 10-digit: 8419.89.9500? Subheadings: 8419.89.95 \"Other\" then suffixes 8419.89.9550? Actually 8419.89.9590? I'll answer 8419.89.9550? Safer: 8419.89.9500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 291,
+      "total_tokens": 546,
+      "cost": 0.00131418,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00131418,
+        "upstream_inference_prompt_cost": 3.378e-05,
+        "upstream_inference_completions_cost": 0.0012804
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 231,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8419899500",
+  "predicted_reason": "The non-electric aluminum chiller alters beverage temperature via heat exchange in a freezer, classifying as other temperature-change machinery/equipment under HTSUS 8419.89.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 291,
+    "total_tokens": 546,
+    "cost": 0.00131418,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00131418,
+      "upstream_inference_prompt_cost": 3.378e-05,
+      "upstream_inference_completions_cost": 0.0012804
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 231,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:35:57.589928+00:00",
+  "latency_s": 60.058,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

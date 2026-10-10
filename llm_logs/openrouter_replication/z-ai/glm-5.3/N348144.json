@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N348144",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "6110909026",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594009-LjyhZk3CO2v8GlpJoVzh",
+    "object": "chat.completion",
+    "created": 1791594009,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6110.20.2060\", \"reason\": \"A women's knit sweater of 50% cotton (chief fiber weight) with fewer than 9 stitches per 2 cm is classified in heading 6110 as a women's sweater of cotton, other.\"}",
+          "refusal": null,
+          "reasoning": "Women's knit sweater, cotton predominant, less than 9 stitches per 2 cm \u2192 heading 6110, cotton. 6110.20.2060? Women's sweaters cotton other. 6110.20.2060 is women's other sweaters? Actually 6110.20.20 women's sweaters: 6110.20.2060 (other).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Women's knit sweater, cotton predominant, less than 9 stitches per 2 cm \u2192 heading 6110, cotton. 6110.20.2060? Women's sweaters cotton other. 6110.20.2060 is women's other sweaters? Actually 6110.20.20 women's sweaters: 6110.20.2060 (other).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 218,
+      "completion_tokens": 150,
+      "total_tokens": 368,
+      "cost": 0.0005536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005536,
+        "upstream_inference_prompt_cost": 4.36e-05,
+        "upstream_inference_completions_cost": 0.00051
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 86,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110202060",
+  "predicted_reason": "A women's knit sweater of 50% cotton (chief fiber weight) with fewer than 9 stitches per 2 cm is classified in heading 6110 as a women's sweater of cotton, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 218,
+    "completion_tokens": 150,
+    "total_tokens": 368,
+    "cost": 0.0005536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005536,
+      "upstream_inference_prompt_cost": 4.36e-05,
+      "upstream_inference_completions_cost": 0.00051
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 86,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:09.761631+00:00",
+  "latency_s": 2.407,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

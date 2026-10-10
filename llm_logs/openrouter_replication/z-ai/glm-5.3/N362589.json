@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362589",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "6201407511",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600335-hchlwEF6vDohU78rZLjY",
+    "object": "chat.completion",
+    "created": 1791600335,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.33.1000\", \"reason\": \"Since neither the knit nor woven fabric imparts the essential character and neither exceeds 60% of the visible surface area, CBP practice classifies such mixed-construction men's jackets as 'other garments' of man-made fibers in heading 6211, specifically the anorak/\u7c7b\u4f3c subheading 6211.33.1000.\"}",
+          "refusal": null,
+          "reasoning": "Garment of mixed knit/woven, neither essential character \u2014 classified under 6211 (other garments, woven?) Actually CBP rule: when neither imparts essential character, heading 6211 \"other garments\" \u2014 but 6211 is woven. For mixed construction with no essential character, classification in 6211.80? Men's jacket, other garments of man-made fibers: 6211.33.1000? That's anoraks etc.? 6211.33.1000 covers anoraks... Actually 6211.33.1000: Other garments, men's, of man-made fibers, anoraks etc.? Known ruling: such garments classified 6211.33.1000 (water resistant?) Hmm. Common CBP answer: 6211.33.1000, duty 2.6%? I'll go with 6211.33.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Garment of mixed knit/woven, neither essential character \u2014 classified under 6211 (other garments, woven?) Actually CBP rule: when neither imparts essential character, heading 6211 \"other garments\" \u2014 but 6211 is woven. For mixed construction with no essential character, classification in 6211.80? Men's jacket, other garments of man-made fibers: 6211.33.1000? That's anoraks etc.? 6211.33.1000 covers anoraks... Actually 6211.33.1000: Other garments, men's, of man-made fibers, anoraks etc.? Known ruling: such garments classified 6211.33.1000 (water resistant?) Hmm. Common CBP answer: 6211.33.1000, duty 2.6%? I'll go with 6211.33.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 269,
+      "completion_tokens": 290,
+      "total_tokens": 559,
+      "cost": 0.00125566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00125566,
+        "upstream_inference_prompt_cost": 3.766e-05,
+        "upstream_inference_completions_cost": 0.001218
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 198,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211331000",
+  "predicted_reason": "Since neither the knit nor woven fabric imparts the essential character and neither exceeds 60% of the visible surface area, CBP practice classifies such mixed-construction men's jackets as 'other garments' of man-made fibers in heading 6211, specifically the anorak/\u7c7b\u4f3c subheading 6211.33.1000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 269,
+    "completion_tokens": 290,
+    "total_tokens": 559,
+    "cost": 0.00125566,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00125566,
+      "upstream_inference_prompt_cost": 3.766e-05,
+      "upstream_inference_completions_cost": 0.001218
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 198,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:45:36.186603+00:00",
+  "latency_s": 4.829,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

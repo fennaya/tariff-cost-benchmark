@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362823",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8907900090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596563-gY9jQwaatc6quak8oKF6",
+    "object": "chat.completion",
+    "created": 1791596563,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on floating hull protectors (hull lifts or \"hull-dry\" type). Floating structures other than vessels fall in heading 8905, which covers light-vessels, fire-floats, dredgers, floating cranes, and other vessels where navigability is subsidiary to the main function, as well as floating docks and floating or submersible drilling platforms. Subheading 8905.90 covers \"Other,\" and 8905.90.50 is \"Other\" under that. A floating structure used to support a vessel out of the water would be a floating dock-like structure. However, the importer says it is not a dock.\n\nAlternative classification: Chapter 89 also includes \"other floating structures (for example, rafts, tanks, coffer-dams, landing stages, buoys and beacons)\" in heading 8907. Landing stages and rafts fit a floating platform on which a boat sits. Subheading 8907.90 covers \"Other,\" and 8907.90.00 is the statistical suffix line: 8907.90.0000.\n\nHeading 8907 is the best fit because the item is a floating structure that is not a vessel and not a dock.\n\n```json\n{\"hts_code\": \"8907.90.0000\", \"reason\": \"The floating hull protectors are non-vessel floating structures similar to rafts or landing stages, so they fall in heading 8907 as other floating structures.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 520,
+      "completion_tokens": 441,
+      "total_tokens": 961,
+      "cost": 0.00545,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00545,
+        "upstream_inference_prompt_cost": 0.00104,
+        "upstream_inference_completions_cost": 0.00441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8907900000",
+  "predicted_reason": "The floating hull protectors are non-vessel floating structures similar to rafts or landing stages, so they fall in heading 8907 as other floating structures.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 441,
+    "total_tokens": 961,
+    "cost": 0.00545,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00545,
+      "upstream_inference_prompt_cost": 0.00104,
+      "upstream_inference_completions_cost": 0.00441
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:44.078048+00:00",
+  "latency_s": 4.943,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

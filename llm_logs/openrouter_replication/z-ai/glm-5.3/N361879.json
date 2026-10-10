@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361879",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "4803004000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600248-0rkNyyxDkEoFpfphnXN6",
+    "object": "chat.completion",
+    "created": 1791600248,
+    "model": "z-ai/glm-5.3",
+    "provider": "Friendli",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4803.00.6080\", \"reason\": \"Uncoated lightweight absorbent paper in jumbo rolls exceeding 36 cm width, made from virgin wood pulp for industrial conversion into absorbent pads, is classified in HTSUS subheading 4803.00.60 as other tissue-type paper in rolls.\"}",
+          "refusal": null,
+          "reasoning": "Uncoated absorbent paper in jumbo rolls, lightweight, for sanitary pads \u2014 likely 4803? 4803 is toilet/facial tissue stock in rolls. Actually absorbent paper for pads \u2014 NY rulings classify under 4803.00.20 or 4803.00.40? 4803.00.60? 4803 covers tissue paper in rolls of width exceeding 36 cm... \"for\" industrial use? 4803.00.60 \"Other\" \u2014 likely 4803.00.6080? HTS 4803.00.60 \"Other\" duty-free. 10-digit: 4803.00.6080? Actually subheadings: 4803.00.20 creped, 4803.00.40 embossed, 4803.00.60 other. 10-digit 4803.00.6080? I recall 4803.00.6080 exists. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Uncoated absorbent paper in jumbo rolls, lightweight, for sanitary pads \u2014 likely 4803? 4803 is toilet/facial tissue stock in rolls. Actually absorbent paper for pads \u2014 NY rulings classify under 4803.00.20 or 4803.00.40? 4803.00.60? 4803 covers tissue paper in rolls of width exceeding 36 cm... \"for\" industrial use? 4803.00.60 \"Other\" \u2014 likely 4803.00.6080? HTS 4803.00.60 \"Other\" duty-free. 10-digit: 4803.00.6080? Actually subheadings: 4803.00.20 creped, 4803.00.40 embossed, 4803.00.60 other. 10-digit 4803.00.6080? I recall 4803.00.6080 exists. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 279,
+      "completion_tokens": 279,
+      "total_tokens": 558,
+      "cost": 0.00145638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145638,
+        "upstream_inference_prompt_cost": 0.00035154,
+        "upstream_inference_completions_cost": 0.00110484
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 142,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4803006080",
+  "predicted_reason": "Uncoated lightweight absorbent paper in jumbo rolls exceeding 36 cm width, made from virgin wood pulp for industrial conversion into absorbent pads, is classified in HTSUS subheading 4803.00.60 as other tissue-type paper in rolls.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 279,
+    "completion_tokens": 279,
+    "total_tokens": 558,
+    "cost": 0.00145638,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00145638,
+      "upstream_inference_prompt_cost": 0.00035154,
+      "upstream_inference_completions_cost": 0.00110484
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 142,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Friendli",
+  "requested_at": "2026-10-10T02:44:09.196700+00:00",
+  "latency_s": 11.884,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

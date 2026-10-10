@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360190",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "3923210030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596050-lxzAmqpG1JUqXZaVZYmx",
+    "object": "chat.completion",
+    "created": 1791596050,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a plastic zipper-type bag with a laminate. The relevant heading is 3923, articles for the conveyance or packing of goods, of plastics. Within it, 3923.21 covers sacks and bags (including cones) of polymers of ethylene. Since the polyethylene is 80% by weight, the bag is classified as of polymers of ethylene.\n\nSubheading 3923.21 splits into 3923.21.00 (sacks and bags, of polymers of ethylene) with the following statistical suffixes: 3923.21.0080 (Other, 3923.21.0085 is Other). In the HTSUS, 3923.21.00 is \"Of polymers of ethylene: Sacks and bags (including cones)\", with 3923.21.0100 for \"Of polymers of ethylene: Other: Medical...\" I recall 3923.21.0085 as \"Other\" and 3923.21.0080 as \"Retail packaging\" or similar. The commonly used one is 3923.21.0085, which I'll use here.\n\nNote that the bag is not simply a polyethylene sheet. The laminate includes OPP and PET, but the ruling treats the 80% polyethylene content as making it a bag of ethylene polymers. Heading 3923 is for articles made from plastics in general, so the laminate does not change the heading.\n\n{\"hts_code\": \"3923.21.0085\", \"reason\": \"A plastic bag with an integral extruded closure for packing goods is classified in heading 3923 as a sack or bag of polymers of ethylene, since polyethylene makes up 80% of its weight by weight.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 313,
+      "completion_tokens": 529,
+      "total_tokens": 842,
+      "cost": 0.005916,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005916,
+        "upstream_inference_prompt_cost": 0.000626,
+        "upstream_inference_completions_cost": 0.00529
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3923210085",
+  "predicted_reason": "A plastic bag with an integral extruded closure for packing goods is classified in heading 3923 as a sack or bag of polymers of ethylene, since polyethylene makes up 80% of its weight by weight.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 313,
+    "completion_tokens": 529,
+    "total_tokens": 842,
+    "cost": 0.005916,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005916,
+      "upstream_inference_prompt_cost": 0.000626,
+      "upstream_inference_completions_cost": 0.00529
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:10.900215+00:00",
+  "latency_s": 5.128,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

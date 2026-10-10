@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357453",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1602502140",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596929-NFlbJU5Uu8lOcbiivI1t",
+    "object": "chat.completion",
+    "created": 1791596929,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Prepared beef falls under heading 1602.50. The subheadings below it split cured or pickled beef from other beef, and other beef is further divided by whether it is in airtight containers.\n\n- **Not cured or pickled:** the beef is marinated, seared and cooked, so it belongs under \"Other\" (1602.50.09 and following).\n- **Container type:** it is in vacuum-sealed pouches. Airtight containers are generally read as cans or retort pouches. A vacuum pouch that is frozen and sous vide cooked has been ruled not airtight in CBP's similar sous vide rulings, which used 1602.50.9080.\n- **Statistical suffix:** under 1602.50.9080, the \"Other\" category covers beef that is not airtight-packed and is not prepared meals.\n- **Not a prepared meal:** the mixture is about 86% meat with onions and mushrooms. I believe \"prepared meals\" under 1602.50.9040 means products containing meat plus vegetables or starch that are ready to serve. That could fit this product, but CBP has typically ruled similar braised beef items under 9080.\n\n```json\n{\"hts_code\": \"1602.50.9080\", \"reason\": \"Fully cooked, seasoned beef (not cured or pickled) is a prepared bovine meat product of heading 1602.50; a frozen vacuum pouch is not an airtight container, so it falls under the 'other' statistical line.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 529,
+      "completion_tokens": 468,
+      "total_tokens": 997,
+      "cost": 0.011476,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.011476,
+        "upstream_inference_prompt_cost": 0.002116,
+        "upstream_inference_completions_cost": 0.00936
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1602509080",
+  "predicted_reason": "Fully cooked, seasoned beef (not cured or pickled) is a prepared bovine meat product of heading 1602.50; a frozen vacuum pouch is not an airtight container, so it falls under the 'other' statistical line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 529,
+    "completion_tokens": 468,
+    "total_tokens": 997,
+    "cost": 0.011476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.011476,
+      "upstream_inference_prompt_cost": 0.002116,
+      "upstream_inference_completions_cost": 0.00936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:48:50.335319+00:00",
+  "latency_s": 6.504,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

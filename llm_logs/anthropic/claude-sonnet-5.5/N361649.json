@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361649",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8409915085",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596318-QvJaSaZgArJUR1BKK8bo",
+    "object": "chat.completion",
+    "created": 1791596318,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a chain tensioner assembly for a gasoline engine (Hyundai Theta 3). The candidate headings are:\n\n- 8409.91 covers parts suitable for use solely or principally with spark-ignition internal combustion piston engines. Its subheadings are 8409.91.10 (for aircraft engines), 8409.91.20 (for engines of heading 8407 and for vehicles), and 8409.91.50 (other), among others.\n- 8483 covers transmission shafts, bearings, gears, and similar parts. It was not chosen because a tensioner is not a transmission shaft, gear, or bearing.\n- 8409.91.99 is the usual HTS code for other engine parts, and 8409.91.50 is a separate subheading in that same group.\n\nThe HTSUS structure under 8409.91 is as follows:\n- 8409.91.10: for aircraft engines.\n- 8409.91.50: parts for engines of heading 8407 or 8408 for vehicles of chapter 87.\n- 8409.91.9910 (and nearby): other.\n\nCustoms rulings on engine tensioners and timing chain tensioners generally place them in 8409.91.99 (other parts of spark-ignition engines). 8409.91.99 splits into statistical suffixes such as 8409.91.9990 (other), so I am using the 8409.91.9990 form.\n\nA rival possibility is 8409.91.5030 or similar numbers for vehicle engines. I don't think those exist in the current schedule, so I am going with 8409.91.9990.\n\n```json\n{\"hts_code\": \"8409.91.9990\", \"reason\": \"A hydraulic chain tensioner assembly for the oil pump/balance shaft drive of a spark-ignition piston engine is a part suitable for use solely or principally with such engines, so it falls under heading 8409.91 as an other part.\"}\n```\n\n{\"hts_code\": \"8409.91.9990\", \"reason\": \"A hydraulic chain tensioner assembly for the oil pump/balance shaft drive of a spark-ignition piston engine is a part suitable for use solely or principally with such engines, so it falls under heading 8409.91 as an other part.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 838,
+      "completion_tokens": 709,
+      "total_tokens": 1547,
+      "cost": 0.008766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008766,
+        "upstream_inference_prompt_cost": 0.001676,
+        "upstream_inference_completions_cost": 0.00709
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8409919990",
+  "predicted_reason": "A hydraulic chain tensioner assembly for the oil pump/balance shaft drive of a spark-ignition piston engine is a part suitable for use solely or principally with such engines, so it falls under heading 8409.91 as an other part.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 838,
+    "completion_tokens": 709,
+    "total_tokens": 1547,
+    "cost": 0.008766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008766,
+      "upstream_inference_prompt_cost": 0.001676,
+      "upstream_inference_completions_cost": 0.00709
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:38.858253+00:00",
+  "latency_s": 6.059,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358307",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "3401190000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595583-zutl3DYkrgyLwncURoO2",
+    "object": "chat.completion",
+    "created": 1791595583,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on pre-moistened lens cleaning wipes. The essential character comes from the cleaning solution, which is water, isopropyl alcohol and a surfactant. That points to heading 3402 (surface-active preparations, washing and cleaning preparations put up for retail sale) rather than the paper headings.\n\nSimilar rulings on pre-moistened wipes with a cleaning solution as the essential character classify them in 3402.90, \"other\" washing and cleaning preparations. The retail-sale line is 3402.90.5000, which covers other organic surface-active agents and preparations put up for retail sale. The 3402.20 subheading covers preparations put up for retail sale, and 3402.20.5100 is for those that are not surface-active agents. The 3402.20 line is the more likely fit.\n\nSince the wipes are put up for retail sale, 3402.20.51 is the correct subheading. Under it, 3402.20.5100 is \"Other: Other: Other\" and 3402.20.1100 is for \"Put up for retail sale: In packages... \" The wipes are a cleaning preparation, and the 3402.20.51 line is the one used for the wipes in similar rulings.\n\nThe HTSUS structure is: 3402.20 \"Preparations put up for retail sale\", with 3402.20.11 for \"Anionic and cationic/nonionic\" surface-active preparations, 3402.20.51 for \"Other: Other\" (the general line), and 3402.20.5100 as the stat suffix.\n\nSince 3402.20.51 is the broad \"Other\" line, I'll use it.\n\n```json\n{\"hts_code\": \"3402.20.5100\", \"reason\": \"Pre-moistened wipes whose essential character comes from the cleaning solution (water, isopropyl alcohol, surfactant) are classified as retail-packaged washing and cleaning preparations in heading 3402.\"}\n```\n\n{\"hts_code\": \"3402.20.5100\", \"reason\": \"Pre-moistened wipes whose essential character comes from the cleaning solution (water, isopropyl alcohol, surfactant) are classified as retail-packaged washing and cleaning preparations in heading 3402.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 786,
+      "completion_tokens": 712,
+      "total_tokens": 1498,
+      "cost": 0.008692,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008692,
+        "upstream_inference_prompt_cost": 0.001572,
+        "upstream_inference_completions_cost": 0.00712
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3402205100",
+  "predicted_reason": "Pre-moistened wipes whose essential character comes from the cleaning solution (water, isopropyl alcohol, surfactant) are classified as retail-packaged washing and cleaning preparations in heading 3402.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 786,
+    "completion_tokens": 712,
+    "total_tokens": 1498,
+    "cost": 0.008692,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008692,
+      "upstream_inference_prompt_cost": 0.001572,
+      "upstream_inference_completions_cost": 0.00712
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:23.484144+00:00",
+  "latency_s": 6.693,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

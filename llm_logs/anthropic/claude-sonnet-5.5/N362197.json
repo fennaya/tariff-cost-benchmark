@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362197",
+  "rulingDate": "2026-07-06T00:00:00",
+  "true_code": "3405400000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596442-A6JiYTWmAzzWvT1JfcEp",
+    "object": "chat.completion",
+    "created": 1791596442,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a retail set under GRI 3(b), so the classification depends on which component gives the set its essential character. The cream is a scouring paste, and the scraper is a razor-blade scraper.\n\nThe cream would fall under 3405 (polishes and scouring pastes), most likely 3405.40 (scouring pastes and powders and other scouring preparations). The scraper would fall under 8205.59 (hand tools) or 9603.50 (other brush/handheld items), and its blades would fall under 8208.\n\nThe product is named \"Range Doctor\" and is built around the cream, which does the polishing and protecting. The scraper is an auxiliary tool for stubborn stains. I treat the cream as imparting the essential character. CBP rulings on similar cooktop cleaner kits with a scraper generally classify them under 3405.40.\n\nThe HTS 3405.40 subheadings are 3405.40.00 (scouring pastes, powders and other scouring preparations), with statistical suffixes 3405.40.5000 for other and 3405.40.1000 for the other category. The correct one is 3405.40.50 and I use the statistical suffix 00.\n\n{\"hts_code\": \"3405.40.5000\", \"reason\": \"The retail set is classified under GRI 3(b) by the essential character of the scouring paste cream (heading 3405), with the scraper as an auxiliary tool, giving 3405.40.50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 768,
+      "completion_tokens": 455,
+      "total_tokens": 1223,
+      "cost": 0.006086,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006086,
+        "upstream_inference_prompt_cost": 0.001536,
+        "upstream_inference_completions_cost": 0.00455
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3405405000",
+  "predicted_reason": "The retail set is classified under GRI 3(b) by the essential character of the scouring paste cream (heading 3405), with the scraper as an auxiliary tool, giving 3405.40.50.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 768,
+    "completion_tokens": 455,
+    "total_tokens": 1223,
+    "cost": 0.006086,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006086,
+      "upstream_inference_prompt_cost": 0.001536,
+      "upstream_inference_completions_cost": 0.00455
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:42.380334+00:00",
+  "latency_s": 5.267,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

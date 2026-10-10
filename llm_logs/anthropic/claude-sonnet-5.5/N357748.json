@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357748",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8543709860",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595490-xlUOgN61yJc7cgmwWTPk",
+    "object": "chat.completion",
+    "created": 1791595490,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a steering wheel ECU. The candidate headings are 8537.10 (control units for voltage up to 1,000V), 8537.10.9170 (other programmable controllers), and 8708.99 (parts of vehicles).\n\nI recall CBP rulings holding that steering wheel ECUs which process inputs and send signals to vehicle systems are classified in 8537.10. The question is which subheading. Within 8537.10, 8537.10.91 covers \"other\", and 8537.10.9170 is \"other\" for use in vehicle applications. I believe the 8537.10.91 line is for \"Other: for a voltage not exceeding 1,000 V\", with 8537.10.9170 as the last \"other\" tier. Programmable controllers fall under 8537.10.30, and 8537.10.60 covers other controllers. The microcontroller here acts as a processing unit rather than a PLC, so 8537.10.9170 is the best fit.\n\n{\"hts_code\": \"8537.10.9170\", \"reason\": \"A steering wheel ECU with a microcontroller that processes inputs and directs signals to vehicle systems is a control apparatus of heading 8537 for voltage not exceeding 1,000 V, falling in the residual 'other' subheading 8537.10.9170.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 370,
+      "completion_tokens": 424,
+      "total_tokens": 794,
+      "cost": 0.00498,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00498,
+        "upstream_inference_prompt_cost": 0.00074,
+        "upstream_inference_completions_cost": 0.00424
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8537109170",
+  "predicted_reason": "A steering wheel ECU with a microcontroller that processes inputs and directs signals to vehicle systems is a control apparatus of heading 8537 for voltage not exceeding 1,000 V, falling in the residual 'other' subheading 8537.10.9170.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 370,
+    "completion_tokens": 424,
+    "total_tokens": 794,
+    "cost": 0.00498,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00498,
+      "upstream_inference_prompt_cost": 0.00074,
+      "upstream_inference_completions_cost": 0.00424
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:50.863381+00:00",
+  "latency_s": 4.155,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

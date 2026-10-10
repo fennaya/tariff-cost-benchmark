@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358654",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "3824994140",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599797-34NQEDe22cDAuwNTkaLd",
+    "object": "chat.completion",
+    "created": 1791599797,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2918.99.6030\", \"reason\": \"Methyl 12-hydroxystearate and other fatty acid esters are carboxylic acids with additional oxygen functions and their ester derivatives, classified in HTSUS subheading 2918.99 as chemical intermediates not for retail sale.\"}",
+          "refusal": null,
+          "reasoning": "Methyl 12-hydroxystearate \u2014 fatty acid ester, acyclic monoesters. Likely 2917.15? No, that's 12-hydroxystearic acid itself (2918.15? Actually 2918.15 is hydroxystearic acid). Methyl ester \u2192 2918.99 or 2915... Methyl 12-hydroxystearate: hydroxy monocarboxylic acid ester \u2192 2918.99.60? Common ruling: 2918.99.6030? I'll answer 2918.99.6030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Methyl 12-hydroxystearate \u2014 fatty acid ester, acyclic monoesters. Likely 2917.15? No, that's 12-hydroxystearic acid itself (2918.15? Actually 2918.15 is hydroxystearic acid). Methyl ester \u2192 2918.99 or 2915... Methyl 12-hydroxystearate: hydroxy monocarboxylic acid ester \u2192 2918.99.60? Common ruling: 2918.99.6030? I'll answer 2918.99.6030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 163,
+      "completion_tokens": 214,
+      "total_tokens": 377,
+      "cost": 0.00092162,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00092162,
+        "upstream_inference_prompt_cost": 2.282e-05,
+        "upstream_inference_completions_cost": 0.0008988
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 139,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2918996030",
+  "predicted_reason": "Methyl 12-hydroxystearate and other fatty acid esters are carboxylic acids with additional oxygen functions and their ester derivatives, classified in HTSUS subheading 2918.99 as chemical intermediates not for retail sale.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 163,
+    "completion_tokens": 214,
+    "total_tokens": 377,
+    "cost": 0.00092162,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00092162,
+      "upstream_inference_prompt_cost": 2.282e-05,
+      "upstream_inference_completions_cost": 0.0008988
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 139,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:36:37.661200+00:00",
+  "latency_s": 4.491,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

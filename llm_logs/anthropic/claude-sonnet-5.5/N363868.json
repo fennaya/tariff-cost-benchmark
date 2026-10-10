@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363868",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "4421999880",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596739-GRoka1hmMdc9BWyOTzfc",
+    "object": "chat.completion",
+    "created": 1791596739,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a wooden pet crate/dog bed. Candidate classifications:\n\n- 4421.99 (other articles of wood). Pet crates of wood are typically classified as \"other articles of wood\" in 4421.99.9780 (HTSUS 4421.99.97 after the 2022 revision). Another option is 9403.60 (wooden furniture), but pet furniture is generally not considered furniture under heading 9403 because it is not for human use. CBP has ruled that dog beds and crates are not furniture.\n- Dog beds with a textile cushion could go in 9404 or 6307, but the essential character here is the wood crate.\n\nThe wood crate comprises plywood and solid wood, so 4421.99 applies. Within 4421.99, the options are:\n\n- 4421.99.2000, 4421.99.40 (clothespins and similar), and 4421.99.60 (wood articles of plywood, e.g., 4421.99.70 and others).\n- Current HTS: 4421.99.70 covers \"Other: Other\" with statistical suffix 4421.99.9780 under \"Other.\" After the 2022 revision, 4421.99.9880 may be used, and 4421.99.9880 is the \"Other\" statistical suffix.\n\nI recall the HTS structure as 4421.91 (of bamboo) and 4421.99 (other). Under 4421.99: 4421.99.10 (wood in chips), 4421.99.20 (wooden toothpicks), 4421.99.30 (wooden clothespins), 4421.99.40, 4421.99.50, 4421.99.60, 4421.99.70 (Other), and 4421.99.9880 is the current \"Other\". I will go with 4421.99.9880.\n\n{\"hts_code\": \"4421.99.9880\", \"reason\": \"A wooden pet crate of plywood and solid oak is not furniture for human use, so it is classified as an 'other article of wood' in heading 4421, with wood giving the composite its essential character.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 650,
+      "total_tokens": 972,
+      "cost": 0.007144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007144,
+        "upstream_inference_prompt_cost": 0.000644,
+        "upstream_inference_completions_cost": 0.0065
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4421999880",
+  "predicted_reason": "A wooden pet crate of plywood and solid oak is not furniture for human use, so it is classified as an 'other article of wood' in heading 4421, with wood giving the composite its essential character.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 650,
+    "total_tokens": 972,
+    "cost": 0.007144,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007144,
+      "upstream_inference_prompt_cost": 0.000644,
+      "upstream_inference_completions_cost": 0.0065
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:39.614204+00:00",
+  "latency_s": 6.166,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357063",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599571-xxspg0kyIIhwgOvkUBn1",
+    "object": "chat.completion",
+    "created": 1791599571,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9980\", \"reason\": \"The PCB CLAW is a specialized holding tool made primarily of PETG plastic, and as an article of plastics not elsewhere specified or included, it is classified under heading 3926 as other articles of plastics.\"}",
+          "refusal": null,
+          "reasoning": "Plastic tool, other articles of plastics? Likely 3926.90.9980? Actually tools of plastics \u2014 heading 3924 household articles no; 3926 other articles of plastics. 3926.90.99.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Plastic tool, other articles of plastics? Likely 3926.90.9980? Actually tools of plastics \u2014 heading 3924 household articles no; 3926 other articles of plastics. 3926.90.99.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 119,
+      "total_tokens": 405,
+      "cost": 0.0004334,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004334,
+        "upstream_inference_prompt_cost": 0.0001716,
+        "upstream_inference_completions_cost": 0.0002618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909980",
+  "predicted_reason": "The PCB CLAW is a specialized holding tool made primarily of PETG plastic, and as an article of plastics not elsewhere specified or included, it is classified under heading 3926 as other articles of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 119,
+    "total_tokens": 405,
+    "cost": 0.0004334,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004334,
+      "upstream_inference_prompt_cost": 0.0001716,
+      "upstream_inference_completions_cost": 0.0002618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:32:52.067903+00:00",
+  "latency_s": 1.168,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

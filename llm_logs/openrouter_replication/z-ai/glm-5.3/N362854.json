@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362854",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "8306290000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600363-p1uXzmKHuFQAC31R8Fyl",
+    "object": "chat.completion",
+    "created": 1791600363,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8306.29.0000\", \"reason\": \"The beaded wire-frame decorative ornaments are ornamental articles with a base-metal (steel wire) framework, classifiable as statuettes and other ornamental articles of base metal.\"}",
+          "refusal": null,
+          "reasoning": "Wire frame with glass beads \u2014 likely glass beads article? Actual CBP ruling: classified as glass beads articles of heading 7018? Or statuary of 8306? Known ruling NY N-series: beaded wire ornaments classified in 8306.29.0000? Actually CBP ruled similar beaded wire animals under 8306.29 (statuettes of base metal). But glass beads threaded... I recall ruling on beaded gecko ornaments classified 8306.29.0000. Hmm, alternatively 7018.99. Others: heading 8306 statuettes and ornamental articles of base metal. Wire frame is base metal, beads decorative. I'll go 8306.29.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Wire frame with glass beads \u2014 likely glass beads article? Actual CBP ruling: classified as glass beads articles of heading 7018? Or statuary of 8306? Known ruling NY N-series: beaded wire ornaments classified in 8306.29.0000? Actually CBP ruled similar beaded wire animals under 8306.29 (statuettes of base metal). But glass beads threaded... I recall ruling on beaded gecko ornaments classified 8306.29.0000. Hmm, alternatively 7018.99. Others: heading 8306 statuettes and ornamental articles of base metal. Wire frame is base metal, beads decorative. I'll go 8306.29.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 216,
+      "total_tokens": 464,
+      "cost": 0.001046472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001046472,
+        "upstream_inference_prompt_cost": 9.672e-06,
+        "upstream_inference_completions_cost": 0.0010368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 159,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8306290000",
+  "predicted_reason": "The beaded wire-frame decorative ornaments are ornamental articles with a base-metal (steel wire) framework, classifiable as statuettes and other ornamental articles of base metal.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 216,
+    "total_tokens": 464,
+    "cost": 0.001046472,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001046472,
+      "upstream_inference_prompt_cost": 9.672e-06,
+      "upstream_inference_completions_cost": 0.0010368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:46:03.842755+00:00",
+  "latency_s": 2.102,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355376",
+  "rulingDate": "2026-05-22T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593810-WvXIwQRdV1dYfowXSblu",
+    "object": "chat.completion",
+    "created": 1791593810,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is gneiss slabs, which are granite-type stone (\"granite\" in the trade sense, covering gneiss) and are cut into rectangular slabs. Chapter 68 covers worked monumental or building stone (6802), while Chapter 25 covers stone that is merely cut into rectangular blocks or slabs (2516).\n\nHeading 6802 covers worked stone. Its note says that stone that has been worked beyond simple cutting or sawing, for example polished or honed, goes there. Because the top face is honed, the slab is more than simply sawn, so 6802 applies.\n\nWithin 6802, subheading 6802.93 covers granite, and gneiss is considered granite for this purpose (Chapter 25 notes treat granite as including gneiss). Subheading 6802.93.00 is \"Other monumental or building stone, worked: Granite.\" Its 10-digit breakdown is:\n- 6802.93.0010: Slabs, 1 cm or more in thickness, over 2 m... \n\nI recall the 6802.93 structure as 6802.93.0010 (Polished or honed... \"Of a thickness not exceeding 5 cm\"?), 6802.93.0090, and others. The actual structure is uncertain.\n\nI believe 6802.93.00 has these statistical suffixes:\n- 6802.93.0010: Slabs, of a thickness not over 1 cm?\n- 6802.93.0020: Other, slabs\n- 6802.93.0090: Other\n\nI'm fairly sure about 6802.93.0090 as a generic \"other\" provision. A 6802.93.0010 listing is also plausible, since similar rulings have used \"Granite: Slabs... 6802.93.0010\". I'll go with 6802.93.0010, covering slabs.\n\n```json\n{\"hts_code\": \"6802.93.0010\", \"reason\": \"Gneiss is classified as granite, and slabs with a honed face are worked beyond simple sawing, so they fall under heading 6802 rather than 2516, in subheading 6802.93 for granite slabs.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 670,
+      "total_tokens": 1072,
+      "cost": 0.007504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007504,
+        "upstream_inference_prompt_cost": 0.000804,
+        "upstream_inference_completions_cost": 0.0067
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930010",
+  "predicted_reason": "Gneiss is classified as granite, and slabs with a honed face are worked beyond simple sawing, so they fall under heading 6802 rather than 2516, in subheading 6802.93 for granite slabs.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 670,
+    "total_tokens": 1072,
+    "cost": 0.007504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007504,
+      "upstream_inference_prompt_cost": 0.000804,
+      "upstream_inference_completions_cost": 0.0067
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:51.185015+00:00",
+  "latency_s": 6.753,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

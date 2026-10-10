@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362761",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "3923109000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600346-2jPQZSsUgIPKYMEpLfXI",
+    "object": "chat.completion",
+    "created": 1791600346,
+    "model": "z-ai/glm-5.3",
+    "provider": "Together",
+    "system_fingerprint": "default",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3923.91.00\", \"reason\": \"The boxes are containers of plastics (calcium carbonate-filled polyethylene stone paper), and as articles for the conveyance or packing of goods of polyethylene they fall under heading 3923, specifically the subheading for such articles of polyethylene.\"}",
+          "refusal": null,
+          "reasoning": "Stone paper corrugated boxes \u2014 likely classified as paperboard containers? Stone paper is often classified as plastics sheet (3920) since calcium carbonate filled PE. NY rulings classified stone paper as plastics in heading 3920/3923? Boxes of plastics \u2192 3923.10? Actually corrugated boxes of stone paper: ruling classified under 4819? Stone paper (Rich Mineral Paper) rulings: NY N265424 classified stone paper sheet under 3921? Known ruling: stone paper classified in 3920.10 (of polymers of ethylene) \u2014 boxes would be 3923.10.00? 3923.10 is carboys/bottles/flasks; boxes are \"other\" 3923.90. Hmm, but there's a specific ruling on stone paper corrugated boxes \u2014 NY N308624? I recall classification under 4819.30? Actually there is a ruling classifying stone paper corrugated boxes under 3923.90.00? Wait 3923.90 was split: 3923.91 (of polyethylene). So 3923.91.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Stone paper corrugated boxes \u2014 likely classified as paperboard containers? Stone paper is often classified as plastics sheet (3920) since calcium carbonate filled PE. NY rulings classified stone paper as plastics in heading 3920/3923? Boxes of plastics \u2192 3923.10? Actually corrugated boxes of stone paper: ruling classified under 4819? Stone paper (Rich Mineral Paper) rulings: NY N265424 classified stone paper sheet under 3921? Known ruling: stone paper classified in 3920.10 (of polymers of ethylene) \u2014 boxes would be 3923.10.00? 3923.10 is carboys/bottles/flasks; boxes are \"other\" 3923.90. Hmm, but there's a specific ruling on stone paper corrugated boxes \u2014 NY N308624? I recall classification under 4819.30? Actually there is a ruling classifying stone paper corrugated boxes under 3923.90.00? Wait 3923.90 was split: 3923.91 (of polyethylene). So 3923.91.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 154,
+      "completion_tokens": 323,
+      "total_tokens": 477,
+      "cost": 0.0016368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016368,
+        "upstream_inference_prompt_cost": 0.0002156,
+        "upstream_inference_completions_cost": 0.0014212
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 253,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "39239100",
+  "predicted_reason": "The boxes are containers of plastics (calcium carbonate-filled polyethylene stone paper), and as articles for the conveyance or packing of goods of polyethylene they fall under heading 3923, specifically the subheading for such articles of polyethylene.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 154,
+    "completion_tokens": 323,
+    "total_tokens": 477,
+    "cost": 0.0016368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016368,
+      "upstream_inference_prompt_cost": 0.0002156,
+      "upstream_inference_completions_cost": 0.0014212
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 253,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Together",
+  "requested_at": "2026-10-10T02:45:46.732392+00:00",
+  "latency_s": 8.507,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

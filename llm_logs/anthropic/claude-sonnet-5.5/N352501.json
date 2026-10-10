@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N352501",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "3824999397",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593780-I858YPz7m8w0C3GTtiGv",
+    "object": "chat.completion",
+    "created": 1791593780,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on alanine dosimeter pellets. Dosimeters that measure ionizing radiation fall under heading 9030, which covers instruments for measuring or detecting ionizing radiations. Subheading 9030.10 covers instruments and apparatus for measuring or detecting ionizing radiations. The specific code is 9030.10.0000.\n\nI recall a ruling (NY N2xxxx) about alanine dosimeters from France (Aerial) that classified them in 9030.82? That subheading covers semiconductor wafers or devices, so it does not fit. Heading 9030.10.00 is \"Instruments and apparatus for measuring or detecting ionizing radiations.\" The HTSUS statistical suffix is 9030.10.0000. I'm going with that.\n\nAn alternative would be 3822 (certified reference materials) or 3824, but the pellets function as dosimeters, so 9030 is the better fit.\n\n{\"hts_code\": \"9030.10.0000\", \"reason\": \"The alanine pellets function as dosimeters that measure high-dose ionizing radiation, so they fall under heading 9030 as instruments for measuring or detecting ionizing radiations.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 513,
+      "completion_tokens": 393,
+      "total_tokens": 906,
+      "cost": 0.004956,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004956,
+        "upstream_inference_prompt_cost": 0.001026,
+        "upstream_inference_completions_cost": 0.00393
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9030100000",
+  "predicted_reason": "The alanine pellets function as dosimeters that measure high-dose ionizing radiation, so they fall under heading 9030 as instruments for measuring or detecting ionizing radiations.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 513,
+    "completion_tokens": 393,
+    "total_tokens": 906,
+    "cost": 0.004956,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004956,
+      "upstream_inference_prompt_cost": 0.001026,
+      "upstream_inference_completions_cost": 0.00393
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:21.194872+00:00",
+  "latency_s": 5.025,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

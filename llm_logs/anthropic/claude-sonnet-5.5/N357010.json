@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357010",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3004909239",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595304-iVx7JvAmuHAkpPL9h1ln",
+    "object": "chat.completion",
+    "created": 1791595304,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Venlafaxine in dosage form (extended-release capsules) falls under heading 3004, medicaments in measured doses. Venlafaxine is an organic compound containing amine and alcohol functions, and it is not an antibiotic, hormone, or alkaloid. So it goes to 3004.90, \"Other.\"\n\nThe HTS 3004.90.92 covers \"Other\" medicaments, and I recall CBP rulings placing venlafaxine ER capsules in 3004.90.9244 or 3004.90.9250. The 3004.90.92 breakdown is:\n- 3004.90.9210: Containing 3004.90.92 \u2013 Other: ...\n- 3004.90.9215: Antidepressants? \n\nI am not certain of that list. One ruling I recall for venlafaxine ER tablets gave 3004.90.9245. I do remember the following entries:\n- 3004.90.9222: Analgesics\n- 3004.90.9225: Anticonvulsants\n- 3004.90.9230: Antidiabetic\n- 3004.90.9240: Antidepressants? \n- 3004.90.9244: Anti-inflammatory? \n- 3004.90.9247: Antidepressants? \n\nI cannot confirm any of these. Antidepressant medicaments are often classified in 3004.90.9205 or 3004.90.9250. I'll go with 3004.90.9255, which I think is \"Other\" within the 3004.90.92 group, though I'm unsure it is the right subheading.\n\n{\"hts_code\": \"3004.90.9255\", \"reason\": \"Venlafaxine HCl extended-release capsules are non-antibiotic, non-hormonal medicaments put up in measured doses for retail sale, classified in heading 3004 under the 'Other' subheading; the final statistical suffix is my best recollection rather than a confirmed match.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 280,
+      "completion_tokens": 606,
+      "total_tokens": 886,
+      "cost": 0.00662,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00662,
+        "upstream_inference_prompt_cost": 0.00056,
+        "upstream_inference_completions_cost": 0.00606
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909255",
+  "predicted_reason": "Venlafaxine HCl extended-release capsules are non-antibiotic, non-hormonal medicaments put up in measured doses for retail sale, classified in heading 3004 under the 'Other' subheading; the final statistical suffix is my best recollection rather than a confirmed match.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 280,
+    "completion_tokens": 606,
+    "total_tokens": 886,
+    "cost": 0.00662,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00662,
+      "upstream_inference_prompt_cost": 0.00056,
+      "upstream_inference_completions_cost": 0.00606
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:44.415766+00:00",
+  "latency_s": 5.917,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

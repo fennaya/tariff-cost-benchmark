@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N348642",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "5208212090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593762-xoubYRKkSQRyDntb0OHG",
+    "object": "chat.completion",
+    "created": 1791593762,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on medical gauze with an x-ray detectable thread and a DMT or RFID tag. The relevant candidates are:\n\n- 3005.90 covers wadding, gauze, bandages and similar articles impregnated or coated with pharmaceutical substances or put up for retail sale for medical, surgical, dental or veterinary purposes. The gauze here is not stated to be impregnated or coated, and the ruling's wording (\"wound coverage and fluid absorption\") points to this heading only if it is put up for retail sale.\n- 5803.00 covers gauze other than narrow fabrics of heading 5806.\n- 3005.90.5010 is the other-category within 3005.90 (the 3005.90.50 subheading covers other items, including gauze in the piece).\n\nThe deciding factor is that the product is cut to size, folded, and made up for medical use as surgical sponges, with an x-ray detectable thread. That fits heading 3005 as wadding or gauze \"put up in forms for medical or surgical use.\" Heading 3005 covers articles \"for medical, surgical purposes\", and the cotton gauze here is in forms for surgical use. I recall CBP ruling NY N-series classifying similar x-ray detectable gauze sponges in 3005.90.5080 (other, cotton).\n\nThe HTSUS 3005.90.50 subheading breaks down as:\n\n- 3005.90.10: Wadding, gauze, bandages and similar articles, impregnated or coated with pharmaceutical substances, or put up for retail sale, other than of cotton.\n- 3005.90.50: Other.\n  - 3005.90.5010: Of cotton? Actually, I recall 3005.90.5010 is \"Laparotomy sponges\" and 3005.90.5080 is \"Other.\"\n\nChoosing 3005.90.5080 as the other cotton gauze.\n\n{\"hts_code\": \"3005.90.5080\", \"reason\": \"Cut, folded multi-ply cotton gauze with x-ray detectable thread and tracking tag is made up for medical/surgical use and falls in heading 3005 as other gauze articles.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1452,
+      "completion_tokens": 696,
+      "total_tokens": 2148,
+      "cost": 0.009864,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009864,
+        "upstream_inference_prompt_cost": 0.002904,
+        "upstream_inference_completions_cost": 0.00696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3005905080",
+  "predicted_reason": "Cut, folded multi-ply cotton gauze with x-ray detectable thread and tracking tag is made up for medical/surgical use and falls in heading 3005 as other gauze articles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1452,
+    "completion_tokens": 696,
+    "total_tokens": 2148,
+    "cost": 0.009864,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009864,
+      "upstream_inference_prompt_cost": 0.002904,
+      "upstream_inference_completions_cost": 0.00696
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:02.479158+00:00",
+  "latency_s": 6.808,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

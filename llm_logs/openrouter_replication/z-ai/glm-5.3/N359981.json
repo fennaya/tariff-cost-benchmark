@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359981",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7320905060",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600018-grOG9Zc2Zvwwm5h0LH0h",
+    "object": "chat.completion",
+    "created": 1791600018,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7320.90.6000\", \"reason\": \"The stainless steel flat spring clip functions as a spring (using compression to secure and release), classifying it as an other spring of iron or steel under heading 7320.\"}",
+          "refusal": null,
+          "reasoning": "Spring clip of stainless steel \u2014 likely 7326.90.86 (other articles of iron/steel). Flat spring... could be 7320.20 (leaf springs)? It's a spring clip, flat spring \u2014 7320.20.60? Helical springs 7320.10; leaf springs 7320.20; other 7320.90. A flat spring clip \u2014 7320.90.60? Actually 7320.90 covers other springs. CBP rulings classify spring clips as 7320.90.60 (other springs of iron/steel). Use 7320.90.6090? HTS: 7320.90.60 \"Other\" \u2014 10-digit 7320.90.6090? Check: 7320.90.60 exists with suffixes 6090? 7320.90.6000 likely. I'll answer 7320.90.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Spring clip of stainless steel \u2014 likely 7326.90.86 (other articles of iron/steel). Flat spring... could be 7320.20 (leaf springs)? It's a spring clip, flat spring \u2014 7320.20.60? Helical springs 7320.10; leaf springs 7320.20; other 7320.90. A flat spring clip \u2014 7320.90.60? Actually 7320.90 covers other springs. CBP rulings classify spring clips as 7320.90.60 (other springs of iron/steel). Use 7320.90.6090? HTS: 7320.90.60 \"Other\" \u2014 10-digit 7320.90.6090? Check: 7320.90.60 exists with suffixes 6090? 7320.90.6000 likely. I'll answer 7320.90.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 332,
+      "completion_tokens": 273,
+      "total_tokens": 605,
+      "cost": 0.0009946,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009946,
+        "upstream_inference_prompt_cost": 6.64e-05,
+        "upstream_inference_completions_cost": 0.0009282
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 216,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7320906000",
+  "predicted_reason": "The stainless steel flat spring clip functions as a spring (using compression to secure and release), classifying it as an other spring of iron or steel under heading 7320.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 332,
+    "completion_tokens": 273,
+    "total_tokens": 605,
+    "cost": 0.0009946,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009946,
+      "upstream_inference_prompt_cost": 6.64e-05,
+      "upstream_inference_completions_cost": 0.0009282
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 216,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:40:18.919460+00:00",
+  "latency_s": 2.834,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

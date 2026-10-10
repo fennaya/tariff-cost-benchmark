@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357991",
+  "rulingDate": "2026-01-30T00:00:00",
+  "true_code": "8543709860",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595532-Xmu49k2Oy5rAGUdDFwgb",
+    "object": "chat.completion",
+    "created": 1791595532,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on wearable LED patch devices. The candidate headings are:\n\n- 8543.70 (electrical machines with individual functions), with 8543.70.9960 as the other residual.\n- 9018 (medical instruments), but the description says the device is cosmetic and not prescribed.\n- 9013.20 (lasers) does not apply, since these are LEDs.\n- 3304 (beauty or skincare preparations), but the device is more than a cosmetic preparation.\n- 9405 (lamps).\n- 9019.10 (massage apparatus, and other mechano-therapy and light therapy appliances). Light therapy under 9019 is limited to ozone therapy, oxygen therapy, and similar respiratory apparatus, so it does not fit.\n- 8543.70.9960 versus 8543.70.8800. Subheading 8543.70.88 is \"Other: Other\" and covers machines with individual functions.\n\nThe patch combines an LED, a cosmetic ingredient layer, and an adhesive backing, so it could be a set under GRI 3(b) with the essential character coming from the LED electronics. I think CBP classified it in 8543.70.9960, which is the HTSUS \"Other: Other\" provision for electrical machines and apparatus having individual functions. I recall 8543.70.9960 being used for LED face masks, and the LED mask rulings have also gone to 8543.70.9960. I'll go with that.\n\n{\"hts_code\": \"8543.70.9960\", \"reason\": \"The battery-powered wearable LED patch is an electrical device with an individual function, not a medical instrument, and is not specified elsewhere in Chapter 85, so it falls under the 8543.70 residual provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 563,
+      "total_tokens": 932,
+      "cost": 0.006368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006368,
+        "upstream_inference_prompt_cost": 0.000738,
+        "upstream_inference_completions_cost": 0.00563
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "The battery-powered wearable LED patch is an electrical device with an individual function, not a medical instrument, and is not specified elsewhere in Chapter 85, so it falls under the 8543.70 residual provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 563,
+    "total_tokens": 932,
+    "cost": 0.006368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006368,
+      "upstream_inference_prompt_cost": 0.000738,
+      "upstream_inference_completions_cost": 0.00563
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:32.848712+00:00",
+  "latency_s": 5.873,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

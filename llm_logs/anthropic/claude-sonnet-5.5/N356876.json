@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356876",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "7103102000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593831-1EjbdnRrLdrIH8mV2SCJ",
+    "object": "chat.completion",
+    "created": 1791593831,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on amethyst clusters, druzys and points. Amethyst is a quartz variety, and the main candidates are heading 7103 (precious and semiprecious stones, worked or unworked) and heading 2506 (quartz). Specimens for collectors would fall under 9705, but the rulings I recall for amethyst clusters classified them in 7103.\n\nHeading 7103 covers precious and semiprecious stones, whether or not worked or graded, but not strung, mounted or set. Subheading 7103.10 covers unworked or simply sawn or roughly shaped stones. Within 7103.10, 7103.10.20 is for \"Rough, unworked\" and 7103.10.40 is for \"Other.\" In the HTSUS, 7103.10.2000 is \"Rough or unworked, imported in bulk: Other,\" and 7103.10.4000 is \"Other.\" The earlier lines are 7103.10.10 (emeralds) and 7103.10.20 (rubies/sapphires), but I'm not certain of that.\n\nRecalled structure of 7103.10:\n- 7103.10.10 \u2013 Rubies, sapphires... \n- 7103.10.20 \u2013 Other, unworked, \"Rough\" \n- 7103.10.40 \u2013 Other, \"Simply sawn or roughly shaped\"\n\nI cannot confirm the exact 10-digit split, so I'm choosing the most likely: 7103.10.2000 for unworked stones. Cleaned-only amethyst clusters are unworked, so 7103.10.2000 fits.\n\n{\"hts_code\": \"7103.10.2000\", \"reason\": \"Cleaned-only amethyst clusters, druzys and points are unworked semiprecious stones, so they fall under heading 7103, subheading 7103.10 (unworked or simply sawn or roughly shaped).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 605,
+      "total_tokens": 853,
+      "cost": 0.006546,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006546,
+        "upstream_inference_prompt_cost": 0.000496,
+        "upstream_inference_completions_cost": 0.00605
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7103102000",
+  "predicted_reason": "Cleaned-only amethyst clusters, druzys and points are unworked semiprecious stones, so they fall under heading 7103, subheading 7103.10 (unworked or simply sawn or roughly shaped).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 605,
+    "total_tokens": 853,
+    "cost": 0.006546,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006546,
+      "upstream_inference_prompt_cost": 0.000496,
+      "upstream_inference_completions_cost": 0.00605
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:57:11.654422+00:00",
+  "latency_s": 5.589,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

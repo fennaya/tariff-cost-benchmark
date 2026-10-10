@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361764",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9403200050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596340-43vEl6LVCjJxfKXuFA9Q",
+    "object": "chat.completion",
+    "created": 1791596340,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a steel mobile workstation with drawers, a wood tabletop, a pegboard and an overhead hutch. It is classified as furniture, and the choice is between heading 9403 (other furniture) and a more specific subheading.\n\nThe relevant subheadings are:\n- 9403.10 covers metal furniture of a kind used in offices.\n- 9403.20 covers other metal furniture.\n\nThe unit is a garage or workshop workstation, not office furniture, so 9403.20 applies. Its subheading 9403.20.00 breaks down into statistical lines:\n- 9403.20.0010: Cabinets, other than office-type (later versions)\n- 9403.20.0020: Other\n- 9403.20.0030: Other\n\nI am not certain of the exact statistical suffix. Current HTS has 9403.20.0010 (luggage lockers), 9403.20.0020 (other: bed frames), and 9403.20.0030 (other). The 9403.20.00 breakout also includes 9403.20.0050 for tool chests, which I have not verified. A CBP ruling on similar garage cabinets (the Gladiator workstation) classified them in 9403.20.0090. The more recent HTS structure has 9403.20.0010 (Household-type, other), 9403.20.0020 (Other), 9403.20.0030 (Other?), 9403.20.0050 (Other?), and 9403.20.0090 (Other). I chose 9403.20.0090 as the general \"other\" line.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"The steel workstation with cabinets, drawers, a worktop and a hutch is metal furniture that is not office-type, so it falls under heading 9403 in the 'other metal furniture' subheading 9403.20.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 480,
+      "completion_tokens": 578,
+      "total_tokens": 1058,
+      "cost": 0.00674,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00674,
+        "upstream_inference_prompt_cost": 0.00096,
+        "upstream_inference_completions_cost": 0.00578
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "The steel workstation with cabinets, drawers, a worktop and a hutch is metal furniture that is not office-type, so it falls under heading 9403 in the 'other metal furniture' subheading 9403.20.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 480,
+    "completion_tokens": 578,
+    "total_tokens": 1058,
+    "cost": 0.00674,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00674,
+      "upstream_inference_prompt_cost": 0.00096,
+      "upstream_inference_completions_cost": 0.00578
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:00.712040+00:00",
+  "latency_s": 6.08,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

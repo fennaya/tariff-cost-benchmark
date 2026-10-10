@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362002",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596400-q6NDhqD21GGei9yYq1Cr",
+    "object": "chat.completion",
+    "created": 1791596400,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a polyurethane foam pad for an oil drain container. Open-cell reticulated polyurethane foam is cellular plastic, classified in heading 3921. Polyurethane cellular sheets fall under 3921.11 (of polymers of styrene) or 3921.13 (of polyurethanes). Subheading 3921.13.11 covers flexible, of polyurethanes, \"Combined with textile materials...\" and 3921.13.90 covers other. Within 3921.13, the 10-digit codes are 3921.13.1000 (Combined with textile materials) and 3921.13.9000 (Other).\n\nThe alternative is that the pad is a part of the container (heading 3923 or 3926). However, if it is a die-cut piece of foam that is not a finished article, it is classified by material. The \"will not be sold separately\" and \"incorporated\" language points to a part. Since a part of a plastic container would fall under 3923.90 or 3926.90, the question is whether the foam is just a cut sheet. Because the foam is die-cut into a circle and is dedicated to the container, CBP could classify it in 3926.90.9990 as an \"other article of plastics\". However, a pad of cellular plastic cut to shape remains in heading 3921 under the Section VII notes, which say plates and sheets include those cut to shape. A circle cut from the sheet still qualifies as a cellular sheet, so I go with 3921.13.9000. Note, though, that the HTS statistical suffix may differ: 3921.13.9000 is likely \"Other\".\n\n```json\n{\"hts_code\": \"3921.13.9000\", \"reason\": \"A die-cut circular pad of flexible open-cell reticulated polyurethane foam is a cellular plastic sheet cut to shape, so it falls under heading 3921 as 'Other' cellular polyurethane plates, sheets, film, and strip.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 624,
+      "total_tokens": 978,
+      "cost": 0.006948,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006948,
+        "upstream_inference_prompt_cost": 0.000708,
+        "upstream_inference_completions_cost": 0.00624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3921139000",
+  "predicted_reason": "A die-cut circular pad of flexible open-cell reticulated polyurethane foam is a cellular plastic sheet cut to shape, so it falls under heading 3921 as 'Other' cellular polyurethane plates, sheets, film, and strip.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 624,
+    "total_tokens": 978,
+    "cost": 0.006948,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006948,
+      "upstream_inference_prompt_cost": 0.000708,
+      "upstream_inference_completions_cost": 0.00624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:01.305324+00:00",
+  "latency_s": 6.492,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

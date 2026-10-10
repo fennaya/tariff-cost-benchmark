@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357571",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7326908688",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599664-EjY9JXz1v8EHDnV9pRFG",
+    "object": "chat.completion",
+    "created": 1791599664,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7308.90.0090\", \"reason\": \"A rigid steel rack structure of carbon steel members used for material handling in a workshop is classified as an other steel structure and parts thereof of heading 7308.\"}",
+          "refusal": null,
+          "reasoning": "Steel rack structure \u2014 likely 7308.90.0090 (other steel structures).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Steel rack structure \u2014 likely 7308.90.0090 (other steel structures).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 196,
+      "completion_tokens": 76,
+      "total_tokens": 272,
+      "cost": 0.00036184,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00036184,
+        "upstream_inference_prompt_cost": 2.744e-05,
+        "upstream_inference_completions_cost": 0.0003344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 18,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7308900090",
+  "predicted_reason": "A rigid steel rack structure of carbon steel members used for material handling in a workshop is classified as an other steel structure and parts thereof of heading 7308.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 196,
+    "completion_tokens": 76,
+    "total_tokens": 272,
+    "cost": 0.00036184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00036184,
+      "upstream_inference_prompt_cost": 2.744e-05,
+      "upstream_inference_completions_cost": 0.0003344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 18,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:34:24.628832+00:00",
+  "latency_s": 4.04,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

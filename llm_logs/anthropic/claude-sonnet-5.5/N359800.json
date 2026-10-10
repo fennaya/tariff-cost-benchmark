@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359800",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "3925200010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595935-8bjwZOZtDZlZg91fnhwr",
+    "object": "chat.completion",
+    "created": 1791595935,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be from a CBP ruling or an AD/CVD scope inquiry on \"Wood Mouldings\"/\"Fiberglass doors\". Door classification options:\n- 4418.20.80 (wood doors, other)\n- 6810 (articles of cement, concrete or artificial stone)\n- 3925.20.00 (plastic doors, windows, frames)\n- 7610.10 (aluminum doors)\n- 7308.30 (iron or steel doors)\n\nA door skin of stone plastic composite (SPC) with basalt fiber reinforcement is plastic, with a PVC and wood frame and a polyurethane foam core. Fiberglass doors are typically classified in 3925.20.0010 (plastic doors). HTSUS 3925.20.00 has the statistical suffix 00 (Doors, windows and their frames and thresholds for doors), so the code is 3925.20.0000.\n\nBecause the product is akin to a fiberglass door in structure and function, with a plastic composite skin that gives the door its essential character, classification in heading 3925 is appropriate.\n\n```json\n{\"hts_code\": \"3925.20.0000\", \"reason\": \"The door's essential character comes from its plastic composite (basalt fiber reinforced stone plastic) skin, PVC/foam construction like a fiberglass door, so it is classified as a plastic door in heading 3925, subheading 3925.20.\"}\n```\n\nReturning the JSON only:\n\n{\"hts_code\": \"3925.20.0000\", \"reason\": \"The door's essential character comes from its plastic composite (basalt fiber reinforced stone plastic) skin, PVC/foam construction like a fiberglass door, so it is classified as a plastic door in heading 3925, subheading 3925.20.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 276,
+      "completion_tokens": 572,
+      "total_tokens": 848,
+      "cost": 0.006272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006272,
+        "upstream_inference_prompt_cost": 0.000552,
+        "upstream_inference_completions_cost": 0.00572
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3925200000",
+  "predicted_reason": "The door's essential character comes from its plastic composite (basalt fiber reinforced stone plastic) skin, PVC/foam construction like a fiberglass door, so it is classified as a plastic door in heading 3925, subheading 3925.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 276,
+    "completion_tokens": 572,
+    "total_tokens": 848,
+    "cost": 0.006272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006272,
+      "upstream_inference_prompt_cost": 0.000552,
+      "upstream_inference_completions_cost": 0.00572
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:15.779293+00:00",
+  "latency_s": 5.821,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

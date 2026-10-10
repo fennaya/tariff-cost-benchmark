@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362807",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "7216910010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596561-tCDaOYvXEM0KAhphHus4",
+    "object": "chat.completion",
+    "created": 1791596561,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Sigma-shaped, cold-formed, zinc-coated steel posts for solar farms are most likely classified in heading 7216 (angles, shapes, and sections of iron or nonalloy steel) or heading 7228, or possibly 7308 for structures. This appears to come from a CBP ruling or an AD/CVD case on \"Steel Solar Torque Tubes\", but sigma posts are different.\n\nHeading 7216 covers angles, shapes, and sections, with 7216.61 for cold-formed or cold-finished products obtained from flat-rolled products and 7216.69 for other. Subheading 7216.99 covers others. The description of cold-rolled posts of sigma shape points to cold-forming from flat-rolled steel. Subheading 7216.69 reads \"Other,\" and 7216.61 reads \"Angles, shapes and sections, not further worked than cold-formed or cold-finished from flat-rolled products.\" The posts have holes drilled, so they are further worked than cold-formed, which excludes 7216.61. Note that 7216.91 reads \"cold-formed or cold-finished from flat-rolled products\" under \"Other\", and 7216.99 reads \"Other.\"\n\nDrilled holes are further working, so 7216.91 may not apply either, but it is the only provision for cold-formed products from flat-rolled steel in \"Other.\" Heading 7216.91 is \"Cold-formed or cold-finished from flat-rolled products,\" and the statistical suffix is 7216.91.0010 for \"Not drilled, not punched and not otherwise advanced,\" 7216.91.0090 for \"Other.\" Drilled holes would put these in the \"Other\" suffix, but this is an unsettled point.\n\nAlternatively, heading 7308.90 covers structures and parts of structures, which fits solar mounting posts that have been drilled. However, 7216 covers profiles with drilling, and the Chapter 73 note excludes only if the products are prepared for use in structures, which these are (\"holes drilled for use in structures\"). Note 1 to chapter 72 does not cover that, while heading 7308 includes \"plates, rods, angles, shapes, sections... prepared for use in structures.\" Drilled holes mean they are prepared for use in structures, so 7308.90.9590 fits.\n\n{\"hts_code\": \"7308.90.9590\", \"reason\": \"Zinc-coated cold-formed sigma steel posts with drilled holes are profiles prepared for use in structures (solar farm mounting), so they fall in heading 7308 as other structures and parts of structures of iron or steel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 840,
+      "total_tokens": 1099,
+      "cost": 0.008918,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008918,
+        "upstream_inference_prompt_cost": 0.000518,
+        "upstream_inference_completions_cost": 0.0084
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7308909590",
+  "predicted_reason": "Zinc-coated cold-formed sigma steel posts with drilled holes are profiles prepared for use in structures (solar farm mounting), so they fall in heading 7308 as other structures and parts of structures of iron or steel.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 840,
+    "total_tokens": 1099,
+    "cost": 0.008918,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008918,
+      "upstream_inference_prompt_cost": 0.000518,
+      "upstream_inference_completions_cost": 0.0084
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:41.504805+00:00",
+  "latency_s": 7.764,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

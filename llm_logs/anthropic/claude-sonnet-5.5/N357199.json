@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357199",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5702422080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595329-DMKHXnurrsfesfHOXLv5",
+    "object": "chat.completion",
+    "created": 1791595329,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on woven chenille bathmats. Bathmats of textile materials fall in heading 5703 (tufted carpets), 5702 (woven carpets), or 6302 (bath linen). Woven chenille bathmats are typically classified in 5702 as woven floor coverings, not tufted, with an exposed surface of man-made fibers. Within 5702, subheading 5702.39 covers other woven carpets, not pile, of man-made textile materials, and 5702.31 covers pile, not tufted or flocked. Chenille fabric is a woven pile fabric, but chenille yarns are used as weft in a flat-woven fabric, so it is not a pile construction by the carpet definition. Floor coverings of the 5702.39 type are \"other, of man-made textile materials, not pile construction, not made up,\" whereas made up items are different. Rulings on similar chenille bathmats often use 5702.39.2090 (\"Other: Other: of man-made textile materials\"). Another option, 5705.00.2090, covers other carpets and textile floor coverings, whether or not made up, of other textile materials.\n\nLaminated and made up with foam backing, the mats would be woven, not pile (chenille yarn is woven flat), so 5702.39 is the likely heading. Checking 5702.39 in the HTS: 5702.39.20 is \"Other: Of man-made fibers\"? The 5702.39 structure has statistical suffixes 5702.39.2000 for \"Other\" and 5702.39.1000 for \"Of man-made fibers,\" and I can't confirm this, but I'll settle on 5702.39.2090.\n\nHeading 5702 does require the goods to be woven, but the pile question remains open. I'll go with the ruling-style answer.\n\n{\"hts_code\": \"5702.39.2090\", \"reason\": \"Woven (non-tufted) polyester chenille bathmats with laminated non-skid backing are textile floor coverings of man-made fibers, classified in heading 5702 as other woven, non-pile floor coverings.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 641,
+      "completion_tokens": 668,
+      "total_tokens": 1309,
+      "cost": 0.007962,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007962,
+        "upstream_inference_prompt_cost": 0.001282,
+        "upstream_inference_completions_cost": 0.00668
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5702392090",
+  "predicted_reason": "Woven (non-tufted) polyester chenille bathmats with laminated non-skid backing are textile floor coverings of man-made fibers, classified in heading 5702 as other woven, non-pile floor coverings.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 641,
+    "completion_tokens": 668,
+    "total_tokens": 1309,
+    "cost": 0.007962,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007962,
+      "upstream_inference_prompt_cost": 0.001282,
+      "upstream_inference_completions_cost": 0.00668
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:09.342514+00:00",
+  "latency_s": 6.606,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

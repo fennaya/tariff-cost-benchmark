@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361005",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "8483405010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600136-VuSSHDDeq3h2wEqeT3BR",
+    "object": "chat.completion",
+    "created": 1791600136,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.0000\", \"reason\": \"A planetary gearbox/reducer with fixed ratio is a transmission shaft, gear box, or speed changer, classified under HTSUS 8483.40.0000.\"}",
+          "refusal": null,
+          "reasoning": "Planetary gearbox \u2014 speed changer? Gears and gearing \u2014 8483.40.0000? Planetary gear reducers classified under 8483.40 (toothed wheels, transmission elements) or 8483.90? Gearboxes are 8483.40.00.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Planetary gearbox \u2014 speed changer? Gears and gearing \u2014 8483.40.0000? Planetary gear reducers classified under 8483.40 (toothed wheels, transmission elements) or 8483.90? Gearboxes are 8483.40.00.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 153,
+      "completion_tokens": 122,
+      "total_tokens": 275,
+      "cost": 0.00054904,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00054904,
+        "upstream_inference_prompt_cost": 1.224e-05,
+        "upstream_inference_completions_cost": 0.0005368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 66,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483400000",
+  "predicted_reason": "A planetary gearbox/reducer with fixed ratio is a transmission shaft, gear box, or speed changer, classified under HTSUS 8483.40.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 153,
+    "completion_tokens": 122,
+    "total_tokens": 275,
+    "cost": 0.00054904,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00054904,
+      "upstream_inference_prompt_cost": 1.224e-05,
+      "upstream_inference_completions_cost": 0.0005368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 66,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:42:17.185541+00:00",
+  "latency_s": 1.456,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

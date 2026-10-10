@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358871",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "4819504040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595685-2avMj6TNcfjnIT0Jffwn",
+    "object": "chat.completion",
+    "created": 1791595685,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a paperboard gift box with a hinged lid. Candidates:\n- 4819.20.00 covers folding cartons, boxes and cases of non-corrugated paper or paperboard. The subheading is 4819.20.00 with statistical suffixes 4819.20.0020 (rigid, set-up boxes) and 4819.20.0040 (other).\n- 4820 is for stationery, so it does not apply.\n- 4823.90 covers other articles of paper pulp. It is less appropriate here.\n\nThe HTSUS 4819.20.00 breakdown: 4819.20.00 \"Folding cartons, boxes and cases, of non-corrugated paper or paperboard\", with statistical suffix 10 for \"Folding cartons\" and 4819.20.0020 / 0040 under that. I recall 4819.20.0020 as \"Set-up boxes\" and 4819.20.0040 as \"Other\". Since this is a rigid box, it is a set-up box, which is not a folding carton. The rigid hinged-lid box is therefore best classified as 4819.20.0040, or perhaps the set-up box number.\n\nI'm going with 4819.20.0040. The reasoning is that the Chapter 48 note and heading 4819 cover cartons, boxes, and cases of paper or paperboard, and the molded pulp overlay is only a surface decoration.\n\n{\"hts_code\": \"4819.20.0040\", \"reason\": \"A rigid paperboard hinged-lid box with a molded pulp overlay for texture is a carton/box of non-corrugated paperboard under heading 4819, subheading 4819.20 (folding cartons, boxes and cases), in the 'other' statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 304,
+      "completion_tokens": 567,
+      "total_tokens": 871,
+      "cost": 0.006278,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006278,
+        "upstream_inference_prompt_cost": 0.000608,
+        "upstream_inference_completions_cost": 0.00567
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4819200040",
+  "predicted_reason": "A rigid paperboard hinged-lid box with a molded pulp overlay for texture is a carton/box of non-corrugated paperboard under heading 4819, subheading 4819.20 (folding cartons, boxes and cases), in the 'other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 304,
+    "completion_tokens": 567,
+    "total_tokens": 871,
+    "cost": 0.006278,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006278,
+      "upstream_inference_prompt_cost": 0.000608,
+      "upstream_inference_completions_cost": 0.00567
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:06.171284+00:00",
+  "latency_s": 5.507,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

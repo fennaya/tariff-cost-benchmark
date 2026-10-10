@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358086",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8528520000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595541-5eZGNYQoHVRr7gQs0vbl",
+    "object": "chat.completion",
+    "created": 1791595541,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on a wearable display. The monitor function is principal, so the classification is as a monitor of heading 8528. Monitors that are capable of connecting directly to an ADP machine fall under 8528.52 (\"other monitors, capable of directly connecting to and designed for use with an automatic data processing machine of heading 8471\"). The 8528.52.00 subheading has statistical suffixes under HTSUS: 8528.52.0000 is for monitors with a color display. Heading 8528.52 has the 10-digit lines 8528.52.0000 (wait: older version had 8528.52.0000 only). The monitors would be 8528.52.0000 in the current schedule, but the entry for OLED might be under 8528.52.0000 as well.\n\nThe 8528.52 subheading structure: 8528.52.00 with statistical suffixes 8528.52.0000 \u2013 a single line. I'm going with that.\n\n{\"hts_code\": \"8528.52.0000\", \"reason\": \"The wearable micro-OLED display connects directly to an ADP machine via USB-C and its principal function is as a monitor, so it is classified in 8528.52 as a monitor capable of directly connecting to and designed for use with an ADP machine of heading 8471.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 407,
+      "total_tokens": 894,
+      "cost": 0.005044,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005044,
+        "upstream_inference_prompt_cost": 0.000974,
+        "upstream_inference_completions_cost": 0.00407
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8528520000",
+  "predicted_reason": "The wearable micro-OLED display connects directly to an ADP machine via USB-C and its principal function is as a monitor, so it is classified in 8528.52 as a monitor capable of directly connecting to and designed for use with an ADP machine of heading 8471.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 487,
+    "completion_tokens": 407,
+    "total_tokens": 894,
+    "cost": 0.005044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005044,
+      "upstream_inference_prompt_cost": 0.000974,
+      "upstream_inference_completions_cost": 0.00407
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:41.968935+00:00",
+  "latency_s": 4.254,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

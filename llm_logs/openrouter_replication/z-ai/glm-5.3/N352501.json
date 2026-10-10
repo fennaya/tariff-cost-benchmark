@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N352501",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "3824999397",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594022-phzApvoxCuhYRp3UT1mz",
+    "object": "chat.completion",
+    "created": 1791594022,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3822.90.5050\", \"reason\": \"The alanine-based pellet dosimeters function as certified laboratory/measurement reagents for radiation dose calibration, classified as other diagnostic or laboratory reagents in heading 3822.\"}",
+          "refusal": null,
+          "reasoning": "Alanine dosimeter pellets \u2014 known ruling: 3822.90.5050? Actually alanine dosimeters classified in 3824? There's a ruling classifying alanine pellet dosimeters under 3822.90.5050 (diagnostic reagents?) Hmm. NY ruling N266565? Alanine dosimeter classified in 3824.90... I recall alanine/EPR dosimeters classified under 3822.90.5050? 3822 is diagnostic or laboratory reagents. Dosimeter pellets used for calibration measurement \u2014 likely 3822.90.5050. Actually there's ruling HQ H236... alanine dosimeters under 9027? I'll go with 3822.90.5050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Alanine dosimeter pellets \u2014 known ruling: 3822.90.5050? Actually alanine dosimeters classified in 3824? There's a ruling classifying alanine pellet dosimeters under 3822.90.5050 (diagnostic reagents?) Hmm. NY ruling N266565? Alanine dosimeter classified in 3824.90... I recall alanine/EPR dosimeters classified under 3822.90.5050? 3822 is diagnostic or laboratory reagents. Dosimeter pellets used for calibration measurement \u2014 likely 3822.90.5050. Actually there's ruling HQ H236... alanine dosimeters under 9027? I'll go with 3822.90.5050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 337,
+      "completion_tokens": 227,
+      "total_tokens": 564,
+      "cost": 0.00100058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00100058,
+        "upstream_inference_prompt_cost": 4.718e-05,
+        "upstream_inference_completions_cost": 0.0009534
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 170,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3822905050",
+  "predicted_reason": "The alanine-based pellet dosimeters function as certified laboratory/measurement reagents for radiation dose calibration, classified as other diagnostic or laboratory reagents in heading 3822.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 227,
+    "total_tokens": 564,
+    "cost": 0.00100058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00100058,
+      "upstream_inference_prompt_cost": 4.718e-05,
+      "upstream_inference_completions_cost": 0.0009534
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T01:00:22.416914+00:00",
+  "latency_s": 4.317,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

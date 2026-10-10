@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361363",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "4811906010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596255-34hDvs6VDYNFA6tBafWF",
+    "object": "chat.completion",
+    "created": 1791596255,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Printed tissue paper at 22 gsm, cut to size, falls in heading 4802 if it is printed paper not used for printing/writing, or in 4818 or 4823. The relevant CBP rulings treat printed tissue paper (wrapping tissue) as 4802 only if it is used for writing or printing. Tissue wrapping paper with a brand name printed on it is likely classified in 4823.90, \"other paper, cut to size or shape.\"\n\nHeading 4802 covers uncoated paper for writing, printing or other graphic purposes. Heading 4804 covers kraft. Heading 4805 covers other uncoated paper. Heading 4818 covers toilet paper and similar household paper. Heading 4823 covers other paper cut to size.\n\nHeading 4805 would be a possibility, but printed products go to Chapter 49 only if the printing is the essential feature. Printing a brand name on tissue is incidental, so Chapter 49 is out. Tissue paper of 22 gsm is under 4802's weight definition, but 4802 excludes paper of 4803, and 4803 covers tissue stock of 4803.00 (toilet tissue, facial tissue, towel or napkin stock) in rolls or sheets. Wrapping tissue is not exactly \"household or sanitary\" stock, though it is often classified in 4802.\n\nBased on my recollection of the ruling for printed tissue paper in sheets for gift wrapping, it was classified as 4823.90.8600 (\"Other: Other\"). The current subheading is 4823.90.8600 (previously 4823.90.85). I'll go with that.\n\n{\"hts_code\": \"4823.90.8600\", \"reason\": \"Lightweight tissue paper cut to size and printed only with an incidental brand name is classified as other paper cut to size in heading 4823, not in Chapter 49 or heading 4802.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 611,
+      "total_tokens": 852,
+      "cost": 0.006592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006592,
+        "upstream_inference_prompt_cost": 0.000482,
+        "upstream_inference_completions_cost": 0.00611
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4823908600",
+  "predicted_reason": "Lightweight tissue paper cut to size and printed only with an incidental brand name is classified as other paper cut to size in heading 4823, not in Chapter 49 or heading 4802.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 241,
+    "completion_tokens": 611,
+    "total_tokens": 852,
+    "cost": 0.006592,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006592,
+      "upstream_inference_prompt_cost": 0.000482,
+      "upstream_inference_completions_cost": 0.00611
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:35.352271+00:00",
+  "latency_s": 7.31,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}
