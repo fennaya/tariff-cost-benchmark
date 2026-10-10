@@ -1,0 +1,30 @@
+[models_config] skipping gemini-3.8-flash: 2/200 cached (incomplete)
+[models_config] skipping gemini-3.8-flash: 2/200 cached (incomplete)
+# All-ruling scores next to post-cutoff scores (scripts/analyze_all_rulings.py)
+
+Post hoc, no API calls. 'post-cutoff' = the headline basis (rulings after the model's vendor-stated cutoff; all rulings the model answered when no cutoff is stated); 'all' = every ruling the model answered, including rulings that may be in training data, so read the 'all' columns as upper bounds. 8-digit accuracy has Wilson 95% CIs. Underpay = share of rate-changing errors that underpay; Gate B uses the pre-registered rule (permutation p < 0.05 against Baseline 2 and n >= 30). For models with no stated cutoff, or with a cutoff before the first ruling, both blocks are the same rows.
+
+## Main-table models
+
+| Model | n (post-cutoff) | 8-digit | Invalid | Underpay (n) | Gate B | n (all) | 8-digit, all rulings | Invalid, all | Underpay (n), all | Gate B, all | 8-digit difference (all minus post-cutoff, points) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 1,098 | 0.3% (0.1% to 0.8%) | 98.4% | 67.4% (n = 46) | met | 1,098 | 0.3% (0.1% to 0.8%) | 98.4% | 67.4% (n = 46) | met (same rows) | +0.0 |
+| openai/gpt-oss-120b | 1,098 | 5.6% (4.3% to 7.1%) | 96.6% | 65.3% (n = 49) | met | 1,098 | 5.6% (4.3% to 7.1%) | 96.6% | 65.3% (n = 49) | met (same rows) | +0.0 |
+| allam-2-7b | 1,098 | 2.4% (1.6% to 3.4%) | 87.2% | 65.5% (n = 116) | met | 1,098 | 2.4% (1.6% to 3.4%) | 87.2% | 65.5% (n = 116) | met (same rows) | +0.0 |
+| deepseek-ai/DeepSeek-V4.1-Flash | 1,098 | 39.3% (36.4% to 42.2%) | 32.2% | 54.0% (n = 324) | not met | 1,098 | 39.3% (36.4% to 42.2%) | 32.2% | 54.0% (n = 324) | not met (same rows) | +0.0 |
+| zai-org/GLM-5.3 | 1,098 | 25.1% (22.7% to 27.8%) | 67.6% | 55.7% (n = 212) | met | 1,098 | 25.1% (22.7% to 27.8%) | 67.6% | 55.7% (n = 212) | met (same rows) | +0.0 |
+| moonshotai/Kimi-K3 | 1,098 | 43.4% (40.5% to 46.4%) | 25.3% | 59.2% (n = 311) | met | 1,098 | 43.4% (40.5% to 46.4%) | 25.3% | 59.2% (n = 311) | met (same rows) | +0.0 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 349 | 24.1% (19.9% to 28.8%) | 39.8% | 56.2% (n = 130) | met | 1,098 | 30.0% (27.3% to 32.7%) | 41.8% | 49.0% (n = 384) | not met | +5.9 |
+| openai/gpt-6-sol | 538 | 49.6% (45.4% to 53.8%) | 24.9% | 52.2% (n = 138) | not met | 1,098 | 54.4% (51.4% to 57.3%) | 22.6% | 56.6% (n = 256) | met | +4.7 |
+| anthropic/claude-haiku-5.5 | 228 | 17.5% (13.2% to 23.0%) | 66.2% | 56.9% (n = 65) | met | 1,098 | 18.1% (16.0% to 20.5%) | 63.7% | 53.0% (n = 281) | met | +0.6 |
+| anthropic/claude-sonnet-5.5 | 228 | 40.4% (34.2% to 46.8%) | 39.0% | 57.1% (n = 49) | not met | 1,098 | 44.9% (42.0% to 47.9%) | 39.9% | 53.8% (n = 264) | not met | +4.5 |
+| anthropic/claude-opus-5.5 | 228 | 53.5% (47.0% to 59.9%) | 27.6% | 45.1% (n = 51) | not met | 1,098 | 55.4% (52.4% to 58.3%) | 27.8% | 46.3% (n = 268) | not met | +1.9 |
+
+## Provider replication runs (OpenRouter, Baseten excluded; not in any main table)
+
+| Model | n (post-cutoff) | 8-digit | Invalid | Underpay (n) | Gate B | n (all) | 8-digit, all rulings | Invalid, all | Underpay (n), all | Gate B, all | 8-digit difference (all minus post-cutoff, points) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| replication/moonshotai/kimi-k3 | 1,098 | 42.2% (39.3% to 45.1%) | 24.9% | 58.1% (n = 322) | met | 1,098 | 42.2% (39.3% to 45.1%) | 24.9% | 58.1% (n = 322) | met (same rows) | +0.0 |
+| replication/deepseek/deepseek-v4.1-flash | 1,098 | 38.6% (35.8% to 41.5%) | 31.3% | 52.4% (n = 330) | not met | 1,098 | 38.6% (35.8% to 41.5%) | 31.3% | 52.4% (n = 330) | not met (same rows) | +0.0 |
+| replication/z-ai/glm-5.3 | 1,098 | 22.7% (20.3% to 25.2%) | 68.5% | 51.2% (n = 240) | not met | 1,098 | 22.7% (20.3% to 25.2%) | 68.5% | 51.2% (n = 240) | not met (same rows) | +0.0 |
+

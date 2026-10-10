@@ -25,7 +25,7 @@ Baseline 1: random sibling sharing the true code's 4-digit heading. Baseline 2: 
 | deepseek-ai/DeepSeek-V4.1-Flash | 0.540 (324) | 0.592 [0.550, 0.633] | 0.9930 | 0.520 [0.480, 0.560] | 0.1748 | NOT MET |
 | zai-org/GLM-5.3 | 0.557 (212) | 0.576 [0.539, 0.614] | 0.8322 | 0.510 [0.474, 0.545] | 0.0060 | PASS |
 | moonshotai/Kimi-K3 | 0.592 (311) | 0.589 [0.546, 0.629] | 0.4496 | 0.535 [0.493, 0.578] | 0.0040 | PASS |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 0.515 (66) | 0.536 [0.439, 0.631] | 0.6803 | 0.462 [0.374, 0.539] | 0.0959 | NOT MET |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 0.490 (384) | 0.594 [0.553, 0.633] | 1.0000 | 0.491 [0.454, 0.529] | 0.5305 | NOT MET |
 | openai/gpt-6-sol | 0.566 (256) | 0.588 [0.542, 0.632] | 0.8402 | 0.509 [0.465, 0.554] | 0.0080 | PASS |
 | anthropic/claude-haiku-5.5 | 0.530 (281) | 0.580 [0.538, 0.618] | 0.9930 | 0.480 [0.445, 0.515] | 0.0040 | PASS |
 | anthropic/claude-sonnet-5.5 | 0.538 (264) | 0.593 [0.550, 0.631] | 0.9940 | 0.507 [0.467, 0.547] | 0.0739 | NOT MET |
@@ -72,9 +72,9 @@ Baseline 1: random sibling sharing the true code's 4-digit heading. Baseline 2: 
 
 ### nvidia/nemotron-3-ultra-550b-a55b:free
 
-- True codes of wrong answers that are an "Other"-type basket: 104/172 (60.5%)
-- Predicted codes of wrong answers (where resolvable) that are an "Other"-type basket: 47/98 (48.0%)
-- Mean rate when the TRUE code is an "Other" basket: 2.65% (n=103) vs. 4.47% for named/specific true codes (n=65)
+- True codes of wrong answers that are an "Other"-type basket: 596/942 (63.3%)
+- Predicted codes of wrong answers (where resolvable) that are an "Other"-type basket: 243/487 (49.9%)
+- Mean rate when the TRUE code is an "Other" basket: 2.72% (n=590) vs. 4.04% for named/specific true codes (n=333)
 
 ### openai/gpt-6-sol
 
@@ -112,7 +112,7 @@ Baseline 1: random sibling sharing the true code's 4-digit heading. Baseline 2: 
 | deepseek-ai/DeepSeek-V4.1-Flash | $2,800.00 | 175 | $3,700.00 | 149 |
 | zai-org/GLM-5.3 | $2,900.00 | 118 | $3,450.00 | 94 |
 | moonshotai/Kimi-K3 | $2,800.00 | 184 | $3,200.00 | 127 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | $3,300.00 | 34 | $6,300.00 | 32 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | $2,900.00 | 188 | $3,700.00 | 196 |
 | openai/gpt-6-sol | $2,800.00 | 145 | $3,200.00 | 111 |
 | anthropic/claude-haiku-5.5 | $2,800.00 | 149 | $3,800.00 | 132 |
 | anthropic/claude-sonnet-5.5 | $3,200.00 | 142 | $4,100.00 | 122 |

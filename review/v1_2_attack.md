@@ -12,7 +12,7 @@ Written after the v1.2 runs, as a hostile reviewer would, repeating the checks o
 - *Concession 3.* DeepSeek V4.1 Flash, GLM 5.3, Kimi K3 and allam-2-7b still have no stated cutoff, so all four are marked † and their accuracy is an upper bound.
 ## 2. "The pipeline changed between v1.1 and v1.2, so old and new numbers are not comparable."
 
-- The prompt template, temperature (0), parser, validity check and scoring code were not changed. The v1.0 rows for the three Groq models and the v1.1 rows for DeepSeek, GLM, Kimi and Nemotron are identical to the published ones in `analysis_results.json`, `invalid_breakdown.json`, `validity_check.json` and `underpay_summary.json`; only GPT-6 Sol's row changed, as it should after 898 more rulings.
+- The prompt template, temperature (0), parser, validity check and scoring code were not changed. The v1.0 rows for the three Groq models and the v1.1 rows for DeepSeek, GLM and Kimi are identical to the published ones in `analysis_results.json`, `invalid_breakdown.json`, `validity_check.json` and `underpay_summary.json`; only GPT-6 Sol's row changed, as it should after 898 more rulings. After the first push, Nemotron 3 Ultra was extended from 200 to 1,098 rulings (section 9), which changes its row too.
 - Every new answer's returned model name was compared with the requested one: 1,098 of 1,098 matched for each of the seven new caches. None of the 3,294 replication answers was served by Baseten.
 - *Concession.* The analysis scripts were rewritten to read models from `config.json` and gained same-sample table B and the replication script. These are code changes after the v1.1 publication, though not changes to scoring.
 - Parse failures are small but not zero: Claude Haiku 14, and in the replication DeepSeek 9 and GLM 42 (counted as invalid answers, as in v1.1). Non-stop finish reasons: Haiku 1, DeepSeek replication 6, GLM replication 13.
@@ -25,16 +25,17 @@ Written after the v1.2 runs, as a hostile reviewer would, repeating the checks o
 
 ## 4. "The underpay finding fades in the most accurate models" may be over-read.
 
-- Gate B as pre-registered is met for 7 of 11 models and for 6 of 11 under Holm; the one change is Claude Haiku 5.5 (p = 0.021, adjusted p = 0.105).
+- Gate B as pre-registered is met for 7 of 11 models and for 5 of 11 under Holm; the two that change are Nemotron 3 Ultra (p = 0.033, adjusted p = 0.165) and Claude Haiku 5.5 (p = 0.021, adjusted p = 0.126).
 - The two most accurate models are the two where it is not met: GPT-6 Sol 52.2% underpaid (n = 138, p = 0.092) and Claude Opus 5.5 45.1% (n = 51, p = 0.586). The one in between on accuracy, Claude Sonnet 5.5, is at 57.1% (n = 49, p = 0.059), also not met.
 - *Concessions.* This is three or four models, not a trend test; I did not model accuracy against share. Opus 5.5's n = 51 and Sonnet's n = 49 are close to the n = 30 floor and the intervals are wide (32.3% to 58.6% for Opus, 43.3% to 70.0% for Sonnet). On the shared sample (table B) the underpay shares of the seven stronger full-sample models sit between 45% and 62%. The honest statement is "the lean is not detected in the two most accurate models", not "better models stop underpaying". The v1.1 conclusion (small lean in some, none in others) stands.
-- Excluding the 40 INADEQUATE rulings changes no verdict among all 11 models.
+- Excluding the 40 INADEQUATE rulings changes one verdict among the 11 models: Nemotron 3 Ultra goes from met to not met (p = 0.052). The earlier statement that it changes none was true before Nemotron was extended.
+- *Concession (all-ruling scores).* On all 1,098 rulings, which include possibly seen rulings, GPT-6 Sol does meet Gate B (56.6% of 256 rate-changing errors, p = 0.008) while Opus 5.5 does not (46.3% of 268, p = 0.58). So "not detected in the two most accurate" is true for Opus 5.5 on every subset but for GPT-6 Sol only on its 538 post-cutoff rulings, where n = 138 is small. The README says so.
 
 ## 5. "228 rulings is too small for the Claude models."
 
 - *Supports:* the gap between Haiku (17.5%), Sonnet (40.4%) and Opus (53.5%) at 8 digits (intervals about plus or minus 6 points and mostly separated), and the validity-check numbers (41.2% of Opus' wrong answers are non-existent codes, 52.4% for Sonnet, 72.2% for Haiku).
 - *Does not support:* a ranking of Opus against GPT-6 Sol or Kimi, month trends (84 to 144 rulings per month at most), the format-versus-invention split of Opus to better than a few points (it has 63 invalid answers on the 228), or Gate B verdicts (n = 49 to 65).
-- Table A (all 11 models) has only 68 rulings because Nemotron 3 Ultra ran on 200; its numbers are only descriptive.
+- Table A (all 11 models) has 228 rulings now that every model has all 1,098 (it had 68 while Nemotron 3 Ultra was on 200). Per-model counts in it are small (for example 9 to 91 rate-changing errors), so its underpay shares are descriptive, not Gate B tests.
 
 ## 6. "Reasoning was set differently across the models, so the comparison is unfair."
 
@@ -54,3 +55,11 @@ Written after the v1.2 runs, as a hostile reviewer would, repeating the checks o
 - **Cost.** The round cost $21.36 in OpenRouter usage (cap $30), $10.96 of it for Opus 5.5 and $6.60 for Sonnet 5.5. The cap was raised from $25 on the user's instruction after the pilot; the spend stayed under the original cap.
 - **Closed models.** GPT-6 Sol and the three Claude models are one model each on one task; nothing here says how other GPT, Claude or Gemini models would score. Gemini 3.8 Flash is in no table.
 - **Duty figures.** MFN-only lower bounds, unchanged from v1.1.
+
+## 9. "The Nemotron extension and the all-ruling column were added after you saw the results."
+
+- Yes, and both are marked as post-hoc additions in `PREREG_v1.2.md`, `findings.md` and `DECISIONS.md`. Both were requested after the first v1.2 push, cost $0 (Nemotron on the free route with a per-call `:free` check and a per-call `usage.cost` check; the OpenRouter key's lifetime usage was 21.567164001 before and after), and did not touch the prompt, temperature or scoring code.
+- *What changed.* Nemotron 3 Ultra's post-cutoff sample went from 105 to 349 rulings and its Gate B from met (60.0%, n = 40, p = 0.007) to met only as pre-registered (56.2%, n = 130, p = 0.033; not met under Holm or without the INADEQUATE rulings). I report the v1.1 figure as superseded rather than keep both in the table. The v1.1 accuracy (23.8%, 16.7% to 32.8%) sits inside the new interval (24.1%, 19.9% to 28.8%).
+- *Concession.* Because the extension came after seeing other results, the Nemotron verdict should be read as an exploratory update. The "7 of 11 met" count did not change (Nemotron was in it before and after), but its fragility is new information.
+- *All-ruling column.* It cannot be a headline: it includes rulings that may be in training data, and the gap to the post-cutoff figure (Nemotron 3 Ultra +5.9 points, GPT-6 Sol +4.7, Sonnet 5.5 +4.5, Opus 5.5 +1.9, Haiku 5.5 +0.6) is exactly the quantity the time-drift test could not attribute to contamination or to harder later rulings. It is labelled "upper bound" next to the number.
+
