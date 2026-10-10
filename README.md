@@ -2,7 +2,8 @@
 
 **In plain terms.** The two most accurate models tested, Claude Opus 5.5 and GPT-6 Sol, are tied (paired p = 0.54) and still wrong about half the time on the 8 digits that set the duty (53.5% and 49.6% right). Their wrong answers are mostly real codes (64% for GPT-6 Sol, 59% for Opus 5.5), so a "does this code exist?" check catches only 36% to 41% of them; most of their invalid codes (70% and 75% of those on all 1,098 rulings) are suffix slips on a real 8-digit tariff line, which a tariff lookup could catch, although the first 8 digits are also right in only 38% and 43% of their invalid answers. Only about a third of their wrong answers change the duty rate (38% for GPT-6 Sol, 33% for Opus 5.5; median duty at stake $0 per $100,000), and the lean toward underpaying appears in weaker models and is not detected in these two.
 
-](https://doi.org/10.5281/zenodo.23284516)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23284516.svg)](https://doi.org/10.5281/zenodo.23284516)
+
 Interactive demo: https://claude.ai/artifact/F7JGzyoPMmeXtaNgDv4R3Z
 
 **v1.2 (2026-10-10).** v1.1 plus three things: GPT-6 Sol extended from 200 to all 1,098 rulings, three Claude models added (Haiku 5.5, Sonnet 5.5, Opus 5.5), and a provider replication of Kimi K3, DeepSeek V4.1 Flash and GLM 5.3 through OpenRouter. The v1.0 numbers for the three Groq models and the v1.1 numbers for the other models are unchanged. Gemini 3.8 Flash is still in no table (2 of 200 responses). Pre-registrations: [PREREG_v1.1.md](PREREG_v1.1.md) and [PREREG_v1.2.md](PREREG_v1.2.md); deviations are listed in the [findings.md](findings.md) sections "Deviations from pre-registration".
