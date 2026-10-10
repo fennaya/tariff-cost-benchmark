@@ -57,12 +57,76 @@ def now():
     return datetime.now(timezone.utc).isoformat()
 
 
+SESSION_FILE = ROOT / "run_logs" / "v1_2_session_cost.json"
+DEFAULT_SESSION_CAP = 25.0
+
+
+def _session_read():
+    if SESSION_FILE.exists():
+        return json.loads(SESSION_FILE.read_text(encoding="utf-8"))
+    return {"usd": 0.0, "calls": 0, "since": now()}
+
+
+def cost_of(usage, model):
+    """The response's own usage.cost when it has one, else list price from the token counts."""
+    usage = usage or {}
+    if usage.get("cost") is not None:
+        return float(usage["cost"])
+    return (usage.get("prompt_tokens", 0) * model.get("price_in_per_1m", 0)
+            + usage.get("completion_tokens", 0) * model.get("price_out_per_1m", 0)) / 1e6
+
+
+def add_session_cost(model, usage):
+    """v1.2 spend guard: cumulative usage.cost of all v1.2 calls (PREREG_v1.2.md section 6)."""
+    if not model.get("session"):
+        return 0.0
+    c = cost_of(usage, model)
+    with lock:
+        st = _session_read()
+        st["usd"] = round(st["usd"] + c, 8)
+        st["calls"] += 1
+        SESSION_FILE.parent.mkdir(exist_ok=True)
+        SESSION_FILE.write_text(json.dumps(st), encoding="utf-8")
+    return c
+
+
+def check_session_cap(model):
+    if model.get("session"):
+        cap = model.get("session_cap_usd", DEFAULT_SESSION_CAP)
+        with lock:
+            total = _session_read()["usd"]
+        if total >= cap:
+            raise StopRun(f"session spend ${total:.4f} reached the ${cap} cap")
+
+
+def _norm(x):
+    return (x or "").lower().replace(".", "-")
+
+
+def response_problem(d, model):
+    """None if the response came from the requested model (and, when configured, not from a
+    rejected provider); otherwise a short reason."""
+    if not model.get("strict_model_check"):
+        return None
+    want = _norm(model.get("api_model", model["model_id"])).split("/")[-1].split(":")[0]
+    got = _norm(d.get("model"))
+    if want not in got:
+        return f"model_mismatch:{d.get('model')}"
+    served = str(d.get("provider") or "").lower()
+    for bad in model.get("provider_reject", []):
+        if bad.lower() in served:
+            return f"provider_rejected:{d.get('provider')}"
+    return None
+
+
 def log_call(method, endpoint, model, status, usage=None, note=None):
     CALL_LOG.parent.mkdir(exist_ok=True)
     rec = {"time": now(), "method": method, "endpoint": endpoint, "model": model, "status": status}
     if usage:
         rec["prompt_tokens"] = usage.get("prompt_tokens")
         rec["completion_tokens"] = usage.get("completion_tokens")
+        if usage.get("cost") is not None:
+            rec["cost"] = usage.get("cost")
     if note:
         rec["note"] = note
     with lock:
@@ -86,7 +150,7 @@ def check_openrouter_model(model):
     """Free models: id must end in :free and both listed prices must be "0". A model
     marked paid in config.json (user-authorised, with max_spend_usd) must instead be
     listed at exactly the configured prices."""
-    model_id = model["model_id"]
+    model_id = model.get("api_model", model["model_id"])
     resp = requests.get("https://openrouter.ai/api/v1/models", timeout=60)
     log_call("GET", "openrouter.ai/api/v1/models", None, resp.status_code)
     m = next((x for x in resp.json()["data"] if x["id"] == model_id), None)
@@ -106,13 +170,17 @@ def check_openrouter_model(model):
 
 
 def one_call(provider, model, messages):
-    body = {"model": model["model_id"], "messages": messages, "temperature": 0.0, "max_tokens": 2048,
+    body = {"model": model.get("api_model", model["model_id"]), "messages": messages, "temperature": 0.0, "max_tokens": 2048,
             **model.get("extra_params", {})}
+    if model.get("provider_routing"):
+        body["provider"] = model["provider_routing"]
+    check_fails = 0
     endpoint = provider.base_url.replace("https://", "") + provider.chat_path
     last = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         if stop_event.is_set():
             raise StopRun("stopped")
+        check_session_cap(model)
         t0 = time.time()
         requested_at = now()
         try:
@@ -138,6 +206,16 @@ def one_call(provider, model, messages):
                 time.sleep(min(30, 8 * attempt))
                 continue
             log_call("POST", endpoint, model["model_id"], 200, d.get("usage"))
+            add_session_cost(model, d.get("usage"))
+            problem = response_problem(d, model)
+            if problem:
+                check_fails += 1
+                last = problem
+                log_call("POST", endpoint, model["model_id"], "failed_check:" + problem)
+                if check_fails >= 2:  # retried once, still wrong: mark failed
+                    break
+                time.sleep(2)
+                continue
             return d, latency, requested_at, body, resp.status_code
         log_call("POST", endpoint, model["model_id"], resp.status_code)
         if billing_error(resp.status_code, text):
@@ -217,7 +295,7 @@ def main():
         else:
             messages = build_messages(row["cleaned_description"])
         if prov_name == "openrouter":
-            time.sleep(OR_PACE_SECONDS)
+            time.sleep(model.get("pace_seconds", OR_PACE_SECONDS))
         try:
             d, latency, requested_at, body, status = one_call(provider, model, messages)
         except StopRun as e:
@@ -252,8 +330,7 @@ def main():
         with lock:
             counters["done"] += 1
             counters["consec_fail"] = 0
-            spent["usd"] += (usage.get("prompt_tokens", 0) * model["price_in_per_1m"]
-                             + usage.get("completion_tokens", 0) * model["price_out_per_1m"]) / 1e6
+            spent["usd"] += cost_of(usage, model)
             if model.get("paid") and spent["usd"] >= model["max_spend_usd"]:
                 print(f"STOP: list-price spend ${spent['usd']:.4f} reached the ${model['max_spend_usd']} cap", flush=True)
                 stop_event.set()
@@ -276,7 +353,7 @@ def main():
                 print("daily free-model allowance reached 0; stopping cleanly", flush=True)
                 stop_event.set()
 
-    threads = args.threads or (4 if prov_name == "baseten" else 1)
+    threads = args.threads or model.get("threads") or (4 if prov_name == "baseten" else 1)
     with ThreadPoolExecutor(max_workers=threads) as ex:
         list(ex.map(work, todo))
 

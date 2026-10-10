@@ -105,9 +105,9 @@
       "provider": "openrouter",
       "model_id": "openai/gpt-6-sol",
       "cohort": "v1.1",
-      "sample": "subset200",
+      "sample": "all",
       "paid": true,
-      "max_spend_usd": 2.0,
+      "max_spend_usd": 25.0,
       "reasoning_effort": "none",
       "extra_params": {
         "reasoning": {
@@ -117,8 +117,187 @@
       "price_in_per_1m": 2.0,
       "price_out_per_1m": 10.0,
       "training_cutoff": "2026-04-20",
-      "training_cutoff_source": "https://computingforgeeks.com/gpt-6-sol-luna-released-features-benchmarks/ (third-party report: knowledge cutoff April 20, 2026; not checked against an OpenAI page)",
-      "note": "Paid model, added on the user's mid-run request with a hard spend cap; see DECISIONS.md"
+      "training_cutoff_source": "https://developers.openai.com/api/docs/models/gpt-6-sol (OpenAI's own page: \"Apr 20, 2026 knowledge cutoff\"); v1.1 used a third-party report for the same date",
+      "note": "v1.1: 200 rulings (user-authorised paid route, cap $2); v1.2 part A extends it to all 1,098",
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4
+    },
+    {
+      "provider": "openrouter",
+      "paid": true,
+      "max_spend_usd": 25.0,
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4,
+      "sample": "all",
+      "cohort": "v1.2",
+      "reasoning_effort": "reasoning.effort=none",
+      "extra_params": {
+        "reasoning": {
+          "effort": "none"
+        }
+      },
+      "model_id": "anthropic/claude-haiku-5.5",
+      "price_in_per_1m": 0.1,
+      "price_out_per_1m": 0.5,
+      "training_cutoff": "2026-06-30",
+      "training_cutoff_source": "https://platform.claude.com/docs/en/models/overview (Anthropic's models overview; reliable knowledge cutoff Jun 2026 and training data cutoff Jun 2026; 2026-06-30 = end of that month, the conservative choice)"
+    },
+    {
+      "provider": "openrouter",
+      "paid": true,
+      "max_spend_usd": 25.0,
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4,
+      "sample": "all",
+      "cohort": "v1.2",
+      "reasoning_effort": "reasoning.effort=minimal",
+      "extra_params": {
+        "reasoning": {
+          "effort": "minimal"
+        }
+      },
+      "model_id": "anthropic/claude-sonnet-5.5",
+      "price_in_per_1m": 2.0,
+      "price_out_per_1m": 10.0,
+      "training_cutoff": "2026-06-30",
+      "training_cutoff_source": "https://platform.claude.com/docs/en/models/overview (Anthropic's models overview; reliable knowledge cutoff Jun 2026 and training data cutoff Jun 2026; 2026-06-30 = end of that month, the conservative choice)"
+    },
+    {
+      "provider": "openrouter",
+      "paid": true,
+      "max_spend_usd": 25.0,
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4,
+      "sample": "all",
+      "cohort": "v1.2",
+      "reasoning_effort": "reasoning.effort=low",
+      "extra_params": {
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "model_id": "anthropic/claude-opus-5.5",
+      "price_in_per_1m": 4.0,
+      "price_out_per_1m": 20.0,
+      "training_cutoff": "2026-06-30",
+      "training_cutoff_source": "https://platform.claude.com/docs/en/models/overview (Anthropic's models overview; reliable knowledge cutoff Jun 2026 and training data cutoff Jun 2026; 2026-06-30 = end of that month, the conservative choice)"
+    },
+    {
+      "provider": "openrouter",
+      "paid": true,
+      "max_spend_usd": 25.0,
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4,
+      "sample": "all",
+      "cohort": "v1.2",
+      "reasoning_effort": "reasoning.effort=none",
+      "extra_params": {
+        "reasoning": {
+          "effort": "none"
+        }
+      },
+      "model_id": "replication/moonshotai/kimi-k3",
+      "api_model": "moonshotai/kimi-k3",
+      "dir_name": "openrouter_replication/moonshotai/kimi-k3",
+      "role": "replication",
+      "provider_routing": {
+        "ignore": [
+          "Baseten"
+        ],
+        "allow_fallbacks": true
+      },
+      "provider_reject": [
+        "baseten"
+      ],
+      "price_in_per_1m": 0.8,
+      "price_out_per_1m": 13.5,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "no vendor-stated cutoff (same models as the v1.1 Baseten runs); provider replication per PREREG_v1.2.md part C"
+    },
+    {
+      "provider": "openrouter",
+      "paid": true,
+      "max_spend_usd": 25.0,
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4,
+      "sample": "all",
+      "cohort": "v1.2",
+      "reasoning_effort": "reasoning.effort=none",
+      "extra_params": {
+        "reasoning": {
+          "effort": "none"
+        }
+      },
+      "model_id": "replication/deepseek/deepseek-v4.1-flash",
+      "api_model": "deepseek/deepseek-v4.1-flash",
+      "dir_name": "openrouter_replication/deepseek/deepseek-v4.1-flash",
+      "role": "replication",
+      "provider_routing": {
+        "ignore": [
+          "Baseten"
+        ],
+        "allow_fallbacks": true
+      },
+      "provider_reject": [
+        "baseten"
+      ],
+      "price_in_per_1m": 0.3,
+      "price_out_per_1m": 1.2,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "no vendor-stated cutoff (same models as the v1.1 Baseten runs); provider replication per PREREG_v1.2.md part C"
+    },
+    {
+      "provider": "openrouter",
+      "paid": true,
+      "max_spend_usd": 25.0,
+      "session": "v1.2",
+      "session_cap_usd": 25.0,
+      "strict_model_check": true,
+      "pace_seconds": 0.25,
+      "threads": 4,
+      "sample": "all",
+      "cohort": "v1.2",
+      "reasoning_effort": "reasoning.effort=low",
+      "extra_params": {
+        "reasoning": {
+          "effort": "low"
+        }
+      },
+      "model_id": "replication/z-ai/glm-5.3",
+      "api_model": "z-ai/glm-5.3",
+      "dir_name": "openrouter_replication/z-ai/glm-5.3",
+      "role": "replication",
+      "provider_routing": {
+        "ignore": [
+          "Baseten"
+        ],
+        "allow_fallbacks": true
+      },
+      "provider_reject": [
+        "baseten"
+      ],
+      "price_in_per_1m": 0.039,
+      "price_out_per_1m": 6.0,
+      "training_cutoff": "unknown",
+      "training_cutoff_source": "no vendor-stated cutoff (same models as the v1.1 Baseten runs); provider replication per PREREG_v1.2.md part C"
     }
   ],
   "ruling_window_start": "2026-01-01",
