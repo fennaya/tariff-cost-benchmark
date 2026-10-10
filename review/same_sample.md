@@ -1,0 +1,114 @@
+# Same-sample analysis: every model graded on exactly the same rulings (scripts/analyze_same_sample.py)
+
+Post hoc restructure, no API calls, possible because all 11 models have answered all 1,098 rulings. Ranking order is 8-digit accuracy on the 228. † = no stated training cutoff: July-August is the best available window for these models, not a guarantee.
+
+## Table 1. Primary: all 11 models on the same 228 rulings dated 2026-07-01 to 2026-08-14 (after every stated training cutoff)
+
+Duty-changing errors = wrong answers whose duty rate differs from the true code's (both rates must resolve). Underpaid share is descriptive only here: several models have fewer than 30 duty-changing errors on 228 rulings, so Gate B is not run on this set.
+
+| Model | n | 8-digit accuracy (95% CI) | 10-digit accuracy (95% CI) | Invalid share (95% CI) | Format / invented, of invalid | Duty-changing errors (n) | Underpaid share (descriptive only) |
+|---|---|---|---|---|---|---|---|
+| anthropic/claude-opus-5.5 | 228 | 53.5% (47.0% to 59.9%) | 32.9% (27.1% to 39.2%) | 27.6% (22.2% to 33.8%) | 43 / 20 (68% / 32%) | 51 | 45.1% (32.3% to 58.6%) |
+| openai/gpt-6-sol | 228 | 49.1% (42.7% to 55.6%) | 34.2% (28.4% to 40.6%) | 21.1% (16.3% to 26.8%) | 31 / 17 (65% / 35%) | 57 | 61.4% (48.4% to 72.9%) |
+| anthropic/claude-sonnet-5.5 | 228 | 40.4% (34.2% to 46.8%) | 25.4% (20.2% to 31.5%) | 39.0% (32.9% to 45.5%) | 47 / 42 (53% / 47%) | 49 | 57.1% (43.3% to 70.0%) |
+| moonshotai/Kimi-K3 † | 228 | 39.0% (32.9% to 45.5%) | 25.0% (19.8% to 31.0%) | 25.0% (19.8% to 31.0%) | 39 / 18 (68% / 32%) | 74 | 58.1% (46.7% to 68.7%) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 228 | 34.6% (28.8% to 41.0%) | 23.2% (18.2% to 29.1%) | 28.1% (22.6% to 34.2%) | 38 / 26 (59% / 41%) | 79 | 62.0% (51.0% to 71.9%) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 228 | 22.8% (17.8% to 28.7%) | 11.0% (7.5% to 15.7%) | 40.8% (34.6% to 47.3%) | 64 / 29 (69% / 31%) | 91 | 53.8% (43.7% to 63.7%) |
+| zai-org/GLM-5.3 † | 228 | 19.3% (14.7% to 24.9%) | 10.1% (6.8% to 14.7%) | 66.7% (60.3% to 72.5%) | 59 / 93 (39% / 61%) | 50 | 60.0% (46.2% to 72.4%) |
+| anthropic/claude-haiku-5.5 | 228 | 17.5% (13.2% to 23.0%) | 8.3% (5.4% to 12.6%) | 66.2% (59.9% to 72.1%) | 75 / 76 (50% / 50%) | 65 | 56.9% (44.8% to 68.2%) |
+| openai/gpt-oss-120b | 228 | 3.9% (2.1% to 7.3%) | 0.0% (0.0% to 1.7%) | 97.4% (94.4% to 98.8%) | 47 / 175 (21% / 79%) | 12 | 50.0% (25.4% to 74.6%) |
+| allam-2-7b † | 228 | 1.8% (0.7% to 4.4%) | 0.4% (0.1% to 2.4%) | 87.3% (82.3% to 91.0%) | 17 / 182 (9% / 91%) | 27 | 81.5% (63.3% to 91.8%) |
+| openai/gpt-oss-20b | 228 | 0.0% (0.0% to 1.7%) | 0.0% (0.0% to 1.7%) | 98.7% (96.2% to 99.6%) | 28 / 197 (12% / 88%) | 9 | 55.6% (26.7% to 81.1%) |
+
+## Paired tests on the 228 (exact McNemar at 8 digits, neighbours in the ranking, Holm over these tests)
+
+a only = rulings the higher-ranked model got right and the lower-ranked missed; b only = the reverse.
+
+| Higher-ranked (a) | Next (b) | a only | b only | p | Holm-adjusted p | Verdict |
+|---|---|---|---|---|---|---|
+| anthropic/claude-opus-5.5 | openai/gpt-6-sol | 30 | 20 | 0.2026 | 1.0000 | tie (not distinguishable) |
+| openai/gpt-6-sol | anthropic/claude-sonnet-5.5 | 37 | 17 | 0.0091 | 0.0726 | tie (not distinguishable) |
+| anthropic/claude-sonnet-5.5 | moonshotai/Kimi-K3 † | 29 | 26 | 0.7877 | 1.0000 | tie (not distinguishable) |
+| moonshotai/Kimi-K3 † | deepseek-ai/DeepSeek-V4.1-Flash † | 30 | 20 | 0.2026 | 1.0000 | tie (not distinguishable) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | nvidia/nemotron-3-ultra-550b-a55b:free | 41 | 14 | 0.0004 | 0.0032 | real gap |
+| nvidia/nemotron-3-ultra-550b-a55b:free | zai-org/GLM-5.3 † | 30 | 22 | 0.3317 | 1.0000 | tie (not distinguishable) |
+| zai-org/GLM-5.3 † | anthropic/claude-haiku-5.5 | 28 | 24 | 0.6778 | 1.0000 | tie (not distinguishable) |
+| anthropic/claude-haiku-5.5 | openai/gpt-oss-120b | 37 | 6 | 0.0000 | 0.0000 | real gap |
+| openai/gpt-oss-120b | allam-2-7b † | 9 | 4 | 0.2668 | 1.0000 | tie (not distinguishable) |
+| allam-2-7b † | openai/gpt-oss-20b | 4 | 0 | 0.1250 | 0.8750 | tie (not distinguishable) |
+
+Supplementary, all 55 pairs with Holm over 55 (exploratory): the pairs that are NOT distinguishable are:
+
+- anthropic/claude-opus-5.5 and openai/gpt-6-sol (Holm-adjusted p = 1.000)
+- openai/gpt-6-sol and anthropic/claude-sonnet-5.5 (Holm-adjusted p = 0.091)
+- anthropic/claude-sonnet-5.5 and moonshotai/Kimi-K3 † (Holm-adjusted p = 1.000)
+- anthropic/claude-sonnet-5.5 and deepseek-ai/DeepSeek-V4.1-Flash † (Holm-adjusted p = 1.000)
+- moonshotai/Kimi-K3 † and deepseek-ai/DeepSeek-V4.1-Flash † (Holm-adjusted p = 1.000)
+- nvidia/nemotron-3-ultra-550b-a55b:free and zai-org/GLM-5.3 † (Holm-adjusted p = 1.000)
+- nvidia/nemotron-3-ultra-550b-a55b:free and anthropic/claude-haiku-5.5 (Holm-adjusted p = 1.000)
+- zai-org/GLM-5.3 † and anthropic/claude-haiku-5.5 (Holm-adjusted p = 1.000)
+- openai/gpt-oss-120b and allam-2-7b † (Holm-adjusted p = 1.000)
+- allam-2-7b † and openai/gpt-oss-20b (Holm-adjusted p = 1.000)
+
+## Table 2. Second: all 11 models on the same 1,098 rulings (upper bound: includes rulings that may be in training data)
+
+Gate B (pre-registered rule: permutation p < 0.05 against Baseline 2 and n >= 30 duty-changing errors) is run on this set. Same ranking order as Table 1.
+
+| Model | n | 8-digit accuracy (95% CI) | 10-digit accuracy (95% CI) | Invalid share (95% CI) | Format / invented, of invalid | Duty-changing errors (n) | Underpaid share (95% CI) | Gate B | Gate B under Holm |
+|---|---|---|---|---|---|---|---|---|---|
+| anthropic/claude-opus-5.5 | 1,098 | 55.4% (52.4% to 58.3%) | 35.3% (32.6% to 38.2%) | 27.8% (25.2% to 30.5%) | 229 / 76 (75% / 25%) | 268 | 46.3% (40.4% to 52.2%) | not met (p = 0.5814) | not met (adjusted p = 1.0000) |
+| openai/gpt-6-sol | 1,098 | 54.4% (51.4% to 57.3%) | 37.5% (34.7% to 40.4%) | 22.6% (20.2% to 25.2%) | 173 / 75 (70% / 30%) | 256 | 56.6% (50.5% to 62.6%) | met (p = 0.0080) | met (adjusted p = 0.0400) |
+| anthropic/claude-sonnet-5.5 | 1,098 | 44.9% (42.0% to 47.9%) | 25.2% (22.7% to 27.9%) | 39.9% (37.0% to 42.8%) | 271 / 167 (62% / 38%) | 264 | 53.8% (47.8% to 59.7%) | not met (p = 0.0739) | not met (adjusted p = 0.2957) |
+| moonshotai/Kimi-K3 † | 1,098 | 43.4% (40.5% to 46.4%) | 28.4% (25.8% to 31.2%) | 25.3% (22.8% to 28.0%) | 188 / 90 (68% / 32%) | 311 | 59.2% (53.6% to 64.5%) | met (p = 0.0040) | met (adjusted p = 0.0320) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1,098 | 39.3% (36.4% to 42.2%) | 25.0% (22.6% to 27.7%) | 32.2% (29.5% to 35.1%) | 206 / 148 (58% / 42%) | 324 | 54.0% (48.6% to 59.4%) | not met (p = 0.1748) | not met (adjusted p = 0.5245) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 1,098 | 30.0% (27.3% to 32.7%) | 14.2% (12.3% to 16.4%) | 41.8% (38.9% to 44.7%) | 339 / 120 (74% / 26%) | 384 | 49.0% (44.0% to 53.9%) | not met (p = 0.5305) | not met (adjusted p = 1.0000) |
+| zai-org/GLM-5.3 † | 1,098 | 25.1% (22.7% to 27.8%) | 12.4% (10.6% to 14.5%) | 67.6% (64.8% to 70.3%) | 312 / 430 (42% / 58%) | 212 | 55.7% (48.9% to 62.2%) | met (p = 0.0060) | met (adjusted p = 0.0360) |
+| anthropic/claude-haiku-5.5 | 1,098 | 18.1% (16.0% to 20.5%) | 7.9% (6.5% to 9.7%) | 63.7% (60.8% to 66.5%) | 343 / 356 (49% / 51%) | 281 | 53.0% (47.2% to 58.8%) | met (p = 0.0040) | met (adjusted p = 0.0320) |
+| openai/gpt-oss-120b | 1,098 | 5.6% (4.3% to 7.1%) | 0.5% (0.3% to 1.2%) | 96.6% (95.4% to 97.5%) | 245 / 816 (23% / 77%) | 49 | 65.3% (51.3% to 77.1%) | met (p = 0.0010) | met (adjusted p = 0.0110) |
+| allam-2-7b † | 1,098 | 2.4% (1.6% to 3.4%) | 1.7% (1.1% to 2.7%) | 87.2% (85.0% to 89.0%) | 72 / 885 (8% / 92%) | 116 | 65.5% (56.5% to 73.5%) | met (p = 0.0010) | met (adjusted p = 0.0110) |
+| openai/gpt-oss-20b | 1,098 | 0.3% (0.1% to 0.8%) | 0.0% (0.0% to 0.3%) | 98.4% (97.4% to 99.0%) | 146 / 934 (14% / 86%) | 46 | 67.4% (53.0% to 79.1%) | met (p = 0.0010) | met (adjusted p = 0.0110) |
+
+## Sensitivity: Table 2 without the 40 rulings whose cleaned description is not a product description (review/description_quality.md)
+
+| Model | n | 8-digit accuracy | Duty-changing errors (n) | Underpaid share | Gate B | Gate B on all 1,098 | Changed? |
+|---|---|---|---|---|---|---|---|
+| anthropic/claude-opus-5.5 | 1,058 | 56.6% | 243 | 47.7% | not met (p = 0.4985) | not met | no |
+| openai/gpt-6-sol | 1,058 | 55.9% | 245 | 58.0% | met (p = 0.0140) | met | no |
+| anthropic/claude-sonnet-5.5 | 1,058 | 46.0% | 247 | 55.5% | not met (p = 0.0609) | not met | no |
+| moonshotai/Kimi-K3 † | 1,058 | 44.6% | 294 | 60.9% | met (p = 0.0050) | met | no |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1,058 | 40.3% | 310 | 56.1% | not met (p = 0.0769) | not met | no |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 1,058 | 30.9% | 370 | 49.5% | not met (p = 0.6244) | not met | no |
+| zai-org/GLM-5.3 † | 1,058 | 26.0% | 205 | 57.1% | met (p = 0.0080) | met | no |
+| anthropic/claude-haiku-5.5 | 1,058 | 18.7% | 271 | 54.2% | met (p = 0.0030) | met | no |
+| openai/gpt-oss-120b | 1,058 | 5.8% | 48 | 64.6% | met (p = 0.0010) | met | no |
+| allam-2-7b † | 1,058 | 2.5% | 111 | 66.7% | met (p = 0.0010) | met | no |
+| openai/gpt-oss-20b | 1,058 | 0.3% | 46 | 67.4% | met (p = 0.0010) | met | no |
+
+## Numbers behind the README plain summary (both sets)
+
+Wrong = not a 10-digit match. Validity check = flag any answer that is not a 10-digit code in the HTS. FORMAT share = suffix-slip share of invalid answers. First-8 = invalid answers whose first 8 digits equal the true code's. Priced = wrong answers for which both rates resolve; duty-changing = priced answers whose rate differs. Median duty = median |rate difference| x $100,000 over priced wrong answers.
+
+| Model | Set | Wrong | Wrong and flagged invalid | Wrong with a valid code | Invalid | FORMAT share of invalid | First 8 right, of invalid | Priced wrong | Duty-changing, of wrong | Duty-changing, of priced | Median duty per $100,000 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| anthropic/claude-opus-5.5 | 228 | 153 | 63 (41.2%) | 90 (58.8%) | 63 | 43 (68.3%) | 27 (42.9%) | 128 | 51 (33.3%) | 51 of 128 (39.8%) | $0 |
+| anthropic/claude-opus-5.5 | 1,098 | 710 | 292 (41.1%) | 418 (58.9%) | 305 | 229 (75.1%) | 132 (43.3%) | 617 | 268 (37.7%) | 268 of 617 (43.4%) | $0 |
+| openai/gpt-6-sol | 228 | 150 | 47 (31.3%) | 103 (68.7%) | 48 | 31 (64.6%) | 16 (33.3%) | 127 | 57 (38.0%) | 57 of 127 (44.9%) | $0 |
+| openai/gpt-6-sol | 1,098 | 686 | 239 (34.8%) | 447 (65.2%) | 248 | 173 (69.8%) | 96 (38.7%) | 593 | 256 (37.3%) | 256 of 593 (43.2%) | $0 |
+| anthropic/claude-sonnet-5.5 | 228 | 170 | 89 (52.4%) | 81 (47.6%) | 89 | 47 (52.8%) | 20 (22.5%) | 122 | 49 (28.8%) | 49 of 122 (40.2%) | $0 |
+| anthropic/claude-sonnet-5.5 | 1,098 | 821 | 431 (52.5%) | 390 (47.5%) | 438 | 271 (61.9%) | 143 (32.6%) | 632 | 264 (32.2%) | 264 of 632 (41.8%) | $0 |
+| moonshotai/Kimi-K3 † | 228 | 171 | 57 (33.3%) | 114 (66.7%) | 57 | 39 (68.4%) | 15 (26.3%) | 143 | 74 (43.3%) | 74 of 143 (51.7%) | $600 |
+| moonshotai/Kimi-K3 † | 1,098 | 786 | 270 (34.4%) | 516 (65.6%) | 278 | 188 (67.6%) | 97 (34.9%) | 673 | 311 (39.6%) | 311 of 673 (46.2%) | $0 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 228 | 175 | 63 (36.0%) | 112 (64.0%) | 64 | 38 (59.4%) | 9 (14.1%) | 145 | 79 (45.1%) | 79 of 145 (54.5%) | $600 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 1,098 | 823 | 347 (42.2%) | 476 (57.8%) | 354 | 206 (58.2%) | 87 (24.6%) | 657 | 324 (39.4%) | 324 of 657 (49.3%) | $0 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 228 | 203 | 93 (45.8%) | 110 (54.2%) | 93 | 64 (68.8%) | 21 (22.6%) | 166 | 91 (44.8%) | 91 of 166 (54.8%) | $1,150 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 1,098 | 942 | 455 (48.3%) | 487 (51.7%) | 459 | 339 (73.9%) | 128 (27.9%) | 786 | 384 (40.8%) | 384 of 786 (48.9%) | $0 |
+| zai-org/GLM-5.3 † | 228 | 205 | 152 (74.1%) | 53 (25.9%) | 152 | 59 (38.8%) | 16 (10.5%) | 97 | 50 (24.4%) | 50 of 97 (51.5%) | $200 |
+| zai-org/GLM-5.3 † | 1,098 | 962 | 739 (76.8%) | 223 (23.2%) | 742 | 312 (42.0%) | 123 (16.6%) | 483 | 212 (22.0%) | 212 of 483 (43.9%) | $0 |
+| anthropic/claude-haiku-5.5 | 228 | 209 | 151 (72.2%) | 58 (27.8%) | 151 | 75 (49.7%) | 16 (10.6%) | 124 | 65 (31.1%) | 65 of 124 (52.4%) | $600 |
+| anthropic/claude-haiku-5.5 | 1,098 | 1011 | 697 (68.9%) | 314 (31.1%) | 699 | 343 (49.1%) | 94 (13.4%) | 613 | 281 (27.8%) | 281 of 613 (45.8%) | $0 |
+| openai/gpt-oss-120b | 228 | 228 | 222 (97.4%) | 6 (2.6%) | 222 | 47 (21.2%) | 9 (4.1%) | 23 | 12 (5.3%) | 12 of 23 (52.2%) | $200 |
+| openai/gpt-oss-120b | 1,098 | 1092 | 1061 (97.2%) | 31 (2.8%) | 1061 | 245 (23.1%) | 55 (5.2%) | 93 | 49 (4.5%) | 49 of 93 (52.7%) | $300 |
+| allam-2-7b † | 228 | 227 | 199 (87.7%) | 28 (12.3%) | 199 | 17 (8.5%) | 3 (1.5%) | 38 | 27 (11.9%) | 27 of 38 (71.1%) | $2,850 |
+| allam-2-7b † | 1,098 | 1079 | 957 (88.7%) | 122 (11.3%) | 957 | 72 (7.5%) | 7 (0.7%) | 147 | 116 (10.8%) | 116 of 147 (78.9%) | $3,400 |
+| openai/gpt-oss-20b | 228 | 228 | 225 (98.7%) | 3 (1.3%) | 225 | 28 (12.4%) | 0 (0.0%) | 16 | 9 (3.9%) | 9 of 16 (56.2%) | $1,900 |
+| openai/gpt-oss-20b | 1,098 | 1098 | 1080 (98.4%) | 18 (1.6%) | 1080 | 146 (13.5%) | 3 (0.3%) | 101 | 46 (4.2%) | 46 of 101 (45.5%) | $0 |
