@@ -10,7 +10,7 @@ Rule: the word "significant" is used only for models with n >= 30 rate-changing 
 | deepseek-ai/DeepSeek-V4.1-Flash | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.1648 | 0.9930 | 0.1748 | not significantly different from the matched-depth baseline |
 | zai-org/GLM-5.3 | 212 | 118 | 55.7% (48.9% to 62.2%) | 0.1140 | 0.8322 | 0.0060 | significantly more than the matched-depth baseline |
 | moonshotai/Kimi-K3 | 311 | 184 | 59.2% (53.6% to 64.5%) | 0.0015 | 0.4496 | 0.0040 | significantly more than the matched-depth baseline |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 66 | 34 | 51.5% (39.7% to 63.2%) | 0.9022 | 0.6803 | 0.0959 | not significantly different from the matched-depth baseline |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 384 | 188 | 49.0% (44.0% to 53.9%) | 0.7210 | 1.0000 | 0.5305 | not significantly different from the matched-depth baseline |
 | openai/gpt-6-sol | 256 | 145 | 56.6% (50.5% to 62.6%) | 0.0390 | 0.8402 | 0.0080 | significantly more than the matched-depth baseline |
 | anthropic/claude-haiku-5.5 | 281 | 149 | 53.0% (47.2% to 58.8%) | 0.3399 | 0.9930 | 0.0040 | significantly more than the matched-depth baseline |
 | anthropic/claude-sonnet-5.5 | 264 | 142 | 53.8% (47.8% to 59.7%) | 0.2422 | 0.9940 | 0.0739 | not significantly different from the matched-depth baseline |

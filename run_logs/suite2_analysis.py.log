@@ -1,0 +1,124 @@
+[models_config] skipping gemini-3.8-flash: 2/200 cached (incomplete)
+Wrote C:\Users\emssa\Downloads\tariff-cost-benchmark\data\processed\analysis_results.json
+Wrote figures to C:\Users\emssa\Downloads\tariff-cost-benchmark\figures
+
+=== openai/gpt-oss-20b (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.557 (95% CI [0.527847945754484, 0.5865060593947133])
+  4-digit: 0.200 (95% CI [0.17775106523073542, 0.22506690787901104])
+  6-digit: 0.030 (95% CI [0.021479326760641834, 0.04190691677926443])
+  8-digit: 0.003 (95% CI [0.0009296170867217807, 0.00800233828689998])
+  10-digit: 0.000 (95% CI [-2.1608441456359677e-19, 0.0034865265569933098])
+Wrong: 1098 (1080 invalid codes)
+Direction test: 0.674 underpay (n=46, p=0.0259)
+Duty at stake per $100k: median $0.00, IQR [0.0, 3500.0000000000005], bootstrap 95% CI of median [0.0, 1900.0]
+
+=== openai/gpt-oss-120b (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.682 (95% CI [0.6540123373638707, 0.7090162504113595])
+  4-digit: 0.451 (95% CI [0.42161039588939314, 0.4803718854112947])
+  6-digit: 0.211 (95% CI [0.18817439398016583, 0.23642529439609444])
+  8-digit: 0.056 (95% CI [0.043491299263354904, 0.07071894656508358])
+  10-digit: 0.005 (95% CI [0.002506721098034918, 0.011870663092215293])
+Wrong: 1092 (1061 invalid codes)
+Direction test: 0.653 underpay (n=49, p=0.0444)
+Duty at stake per $100k: median $300.00, IQR [0.0, 2500.0], bootstrap 95% CI of median [0.0, 1000.0]
+
+=== allam-2-7b (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.415 (95% CI [0.3864976315264224, 0.4446940751580956])
+  4-digit: 0.097 (95% CI [0.0812857764655938, 0.11642104455114763])
+  6-digit: 0.044 (95% CI [0.033129492146433084, 0.057483895476615456])
+  8-digit: 0.024 (95% CI [0.01620984719430094, 0.03447039577347229])
+  10-digit: 0.017 (95% CI [0.011105510490058599, 0.026868731905581564])
+Wrong: 1079 (957 invalid codes)
+Direction test: 0.655 underpay (n=116, p=0.0011)
+Duty at stake per $100k: median $3400.00, IQR [350.0000000000001, 6500.0], bootstrap 95% CI of median [2799.9999999999995, 4400.0]
+
+=== deepseek-ai/DeepSeek-V4.1-Flash (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.786 (95% CI [0.7607391928891416, 0.8092156899179697])
+  4-digit: 0.677 (95% CI [0.6484433278344578, 0.7036944023075155])
+  6-digit: 0.528 (95% CI [0.4986582472980741, 0.5576111838070865])
+  8-digit: 0.393 (95% CI [0.3640707425226459, 0.42174239068996827])
+  10-digit: 0.250 (95% CI [0.22572710065790652, 0.2769237340900282])
+Wrong: 823 (354 invalid codes)
+Direction test: 0.540 underpay (n=324, p=0.1648)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2900.0], bootstrap 95% CI of median [0.0, 500.0]
+
+=== zai-org/GLM-5.3 (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.757 (95% CI [0.730588451500566, 0.7812818572625084])
+  4-digit: 0.638 (95% CI [0.6095774715679882, 0.6663242551411865])
+  6-digit: 0.453 (95% CI [0.4234151435118227, 0.48219742366661744])
+  8-digit: 0.251 (95% CI [0.22660390007673817, 0.2778620776100727])
+  10-digit: 0.124 (95% CI [0.1056774130327306, 0.1446685532114192])
+Wrong: 962 (742 invalid codes)
+Direction test: 0.557 underpay (n=212, p=0.1140)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2799.9999999999995], bootstrap 95% CI of median [0.0, 0.0]
+
+=== moonshotai/Kimi-K3 (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.805 (95% CI [0.7806224304669281, 0.8274504540565824])
+  4-digit: 0.700 (95% CI [0.6726074515827724, 0.7267239949699807])
+  6-digit: 0.553 (95% CI [0.5232803800352199, 0.5819979104195969])
+  8-digit: 0.434 (95% CI [0.4053855507342143, 0.46392415766670286])
+  10-digit: 0.284 (95% CI [0.25826422226435636, 0.3115469012219959])
+Wrong: 786 (278 invalid codes)
+Direction test: 0.592 underpay (n=311, p=0.0015)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2799.9999999999995], bootstrap 95% CI of median [0.0, 0.0]
+
+=== nvidia/nemotron-3-ultra-550b-a55b:free (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.718 (95% CI [0.6903197815087467, 0.7434993808826532])
+  4-digit: 0.596 (95% CI [0.5663146793158922, 0.6242753292661036])
+  6-digit: 0.414 (95% CI [0.38559932165130034, 0.4437772420943415])
+  8-digit: 0.300 (95% CI [0.2732760050300192, 0.3273925484172276])
+  10-digit: 0.142 (95% CI [0.1226717447452876, 0.16397708027638522])
+Wrong: 942 (459 invalid codes)
+Direction test: 0.490 underpay (n=384, p=0.7210)
+Duty at stake per $100k: median $0.00, IQR [0.0, 3200.0], bootstrap 95% CI of median [0.0, 500.0]
+
+=== openai/gpt-6-sol (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.843 (95% CI [0.8206593960360963, 0.8636494919202125])
+  4-digit: 0.765 (95% CI [0.7390514784498802, 0.7891551167630796])
+  6-digit: 0.670 (95% CI [0.6419515675070967, 0.6974801620627435])
+  8-digit: 0.544 (95% CI [0.5141526866574413, 0.572974174408614])
+  10-digit: 0.375 (95% CI [0.3470700140936057, 0.40425540328036164])
+Wrong: 686 (248 invalid codes)
+Direction test: 0.566 underpay (n=256, p=0.0390)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2600.0000000000005], bootstrap 95% CI of median [0.0, 0.0]
+
+=== anthropic/claude-haiku-5.5 (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.680 (95% CI [0.6521555207275144, 0.7072427811699634])
+  4-digit: 0.536 (95% CI [0.5059462067725858, 0.564844367843584])
+  6-digit: 0.325 (95% CI [0.2980805030491627, 0.3534120526866163])
+  8-digit: 0.181 (95% CI [0.15957708661153902, 0.2051228847818083])
+  10-digit: 0.079 (95% CI [0.06468580473973547, 0.09671815749948295])
+Wrong: 1011 (699 invalid codes)
+Direction test: 0.530 underpay (n=281, p=0.3399)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2900.0], bootstrap 95% CI of median [0.0, 0.0]
+
+=== anthropic/claude-sonnet-5.5 (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.803 (95% CI [0.7787252123972392, 0.8257173862485189])
+  4-digit: 0.707 (95% CI [0.6791275957260545, 0.7329098513988317])
+  6-digit: 0.617 (95% CI [0.5874565132743359, 0.6448817829018115])
+  8-digit: 0.449 (95% CI [0.41980604443330005, 0.4785459509896356])
+  10-digit: 0.252 (95% CI [0.2274808487084172, 0.27880027191726986])
+Wrong: 821 (438 invalid codes)
+Direction test: 0.538 underpay (n=264, p=0.2422)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2900.0], bootstrap 95% CI of median [0.0, 0.0]
+
+=== anthropic/claude-opus-5.5 (n=1098) ===
+Accuracy by digit level:
+  2-digit: 0.833 (95% CI [0.8101350408351724, 0.8542072747934988])
+  4-digit: 0.749 (95% CI [0.7221379223899272, 0.773396099923262])
+  6-digit: 0.692 (95% CI [0.6642335237542533, 0.7187616363486145])
+  8-digit: 0.554 (95% CI [0.524193694414938, 0.5828997389787548])
+  10-digit: 0.353 (95% CI [0.3256510237401544, 0.38211096310078535])
+Wrong: 710 (305 invalid codes)
+Direction test: 0.463 underpay (n=268, p=0.2458)
+Duty at stake per $100k: median $0.00, IQR [0.0, 2700.0000000000005], bootstrap 95% CI of median [0.0, 0.0]

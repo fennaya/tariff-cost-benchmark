@@ -1,12 +1,12 @@
 # MFN rates at the ruling-date release vs the current schedule (scripts/check_rate_impact.py)
 
-Distinct (code, ruling date) pairs used by the cost analysis (true and predicted codes of wrong answers, all 3 models): **8,150**; of these, 4,042 resolve to an ad valorem or free rate on the current JSON.
+Distinct (code, ruling date) pairs used by the cost analysis (true and predicted codes of wrong answers, all 3 models): **8,583**; of these, 4,390 resolve to an ad valorem or free rate on the current JSON.
 
 | Comparison | Pairs that differ |
 |---|---|
-| parser check: 2026HTSRev20 PDF vs current JSON | 146 |
+| parser check: 2026HTSRev20 PDF vs current JSON | 152 |
 | time effect: ruling-date release vs 2026HTSRev20 (same parser) | 0 |
-| combined: ruling-date release vs current JSON | 146 |
+| combined: ruling-date release vs current JSON | 152 |
 
 ## Direction and dollar figures re-run with ruling-date rates
 
@@ -30,9 +30,9 @@ Distinct (code, ruling date) pairs used by the cost analysis (true and predicted
 | moonshotai/Kimi-K3 | original Phase 3 (JSON only, markup unparsed) | 661 | 308 | 182 | 59.1% (53.5% to 64.4%) | $0 | $0 to $2,800 |
 | moonshotai/Kimi-K3 | JSON only, markup stripped | 663 | 308 | 182 | 59.1% (53.5% to 64.4%) | $0 | $0 to $2,800 |
 | moonshotai/Kimi-K3 | ruling-date release rates (final) | 673 | 311 | 184 | 59.2% (53.6% to 64.5%) | $0 | $0 to $2,800 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | original Phase 3 (JSON only, markup unparsed) | 134 | 66 | 34 | 51.5% (39.7% to 63.2%) | $0 | $0 to $3,975 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | JSON only, markup stripped | 136 | 66 | 34 | 51.5% (39.7% to 63.2%) | $0 | $0 to $3,925 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | ruling-date release rates (final) | 138 | 66 | 34 | 51.5% (39.7% to 63.2%) | $0 | $0 to $3,775 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | original Phase 3 (JSON only, markup unparsed) | 763 | 379 | 186 | 49.1% (44.1% to 54.1%) | $0 | $0 to $3,200 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | JSON only, markup stripped | 773 | 379 | 186 | 49.1% (44.1% to 54.1%) | $0 | $0 to $3,200 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | ruling-date release rates (final) | 786 | 384 | 188 | 49.0% (44.0% to 53.9%) | $0 | $0 to $3,200 |
 | openai/gpt-6-sol | original Phase 3 (JSON only, markup unparsed) | 581 | 249 | 140 | 56.2% (50.0% to 62.2%) | $0 | $0 to $2,600 |
 | openai/gpt-6-sol | JSON only, markup stripped | 585 | 250 | 140 | 56.0% (49.8% to 62.0%) | $0 | $0 to $2,600 |
 | openai/gpt-6-sol | ruling-date release rates (final) | 593 | 256 | 145 | 56.6% (50.5% to 62.6%) | $0 | $0 to $2,600 |

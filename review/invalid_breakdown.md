@@ -12,7 +12,7 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 275 (25.0%) | 476 (43.4%) | 142 (12.9%) | 113 (10.3%) | 33 (3.0%) | 58 (5.3%) | 1 (0.1%) |
 | zai-org/GLM-5.3 | 1098 | 136 (12.4%) | 223 (20.3%) | 255 (23.2%) | 339 (30.9%) | 91 (8.3%) | 27 (2.5%) | 27 (2.5%) |
 | moonshotai/Kimi-K3 | 1098 | 312 (28.4%) | 516 (47.0%) | 102 (9.3%) | 70 (6.4%) | 19 (1.7%) | 79 (7.2%) | 0 (0.0%) |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 28 (14.0%) | 98 (49.0%) | 39 (19.5%) | 17 (8.5%) | 8 (4.0%) | 10 (5.0%) | 0 (0.0%) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 1098 | 156 (14.2%) | 487 (44.4%) | 283 (25.8%) | 95 (8.7%) | 24 (2.2%) | 53 (4.8%) | 0 (0.0%) |
 | openai/gpt-6-sol | 1098 | 412 (37.5%) | 447 (40.7%) | 76 (6.9%) | 54 (4.9%) | 20 (1.8%) | 88 (8.0%) | 1 (0.1%) |
 | anthropic/claude-haiku-5.5 | 1098 | 87 (7.9%) | 314 (28.6%) | 273 (24.9%) | 287 (26.1%) | 69 (6.3%) | 45 (4.1%) | 23 (2.1%) |
 | anthropic/claude-sonnet-5.5 | 1098 | 277 (25.2%) | 390 (35.5%) | 191 (17.4%) | 140 (12.8%) | 27 (2.5%) | 73 (6.6%) | 0 (0.0%) |
@@ -28,7 +28,7 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | deepseek-ai/DeepSeek-V4.1-Flash | 347 | 142 (40.9%) | 113 (32.6%) | 33 (9.5%) | 58 (16.7%) | 1 (0.3%) |
 | zai-org/GLM-5.3 | 739 | 255 (34.5%) | 339 (45.9%) | 91 (12.3%) | 27 (3.7%) | 27 (3.7%) |
 | moonshotai/Kimi-K3 | 270 | 102 (37.8%) | 70 (25.9%) | 19 (7.0%) | 79 (29.3%) | 0 (0.0%) |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 74 | 39 (52.7%) | 17 (23.0%) | 8 (10.8%) | 10 (13.5%) | 0 (0.0%) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 455 | 283 (62.2%) | 95 (20.9%) | 24 (5.3%) | 53 (11.6%) | 0 (0.0%) |
 | openai/gpt-6-sol | 239 | 76 (31.8%) | 54 (22.6%) | 20 (8.4%) | 88 (36.8%) | 1 (0.4%) |
 | anthropic/claude-haiku-5.5 | 697 | 273 (39.2%) | 287 (41.2%) | 69 (9.9%) | 45 (6.5%) | 23 (3.3%) |
 | anthropic/claude-sonnet-5.5 | 431 | 191 (44.3%) | 140 (32.5%) | 27 (6.3%) | 73 (16.9%) | 0 (0.0%) |
@@ -44,7 +44,7 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | deepseek-ai/DeepSeek-V4.1-Flash | 142 | 0 | 142 |
 | zai-org/GLM-5.3 | 255 | 10 | 245 |
 | moonshotai/Kimi-K3 | 102 | 3 | 99 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 39 | 2 | 37 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 283 | 10 | 273 |
 | openai/gpt-6-sol | 76 | 0 | 76 |
 | anthropic/claude-haiku-5.5 | 273 | 0 | 273 |
 | anthropic/claude-sonnet-5.5 | 191 | 2 | 189 |
@@ -78,10 +78,11 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | moonshotai/Kimi-K3 | six_eight|outdated=True | 1 |
 | moonshotai/Kimi-K3 | suffix_only|outdated=False | 102 |
 | moonshotai/Kimi-K3 | suffix_only|outdated=True | 78 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | fabricated|outdated=False | 8 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | six_eight|outdated=False | 17 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | suffix_only|outdated=False | 39 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | suffix_only|outdated=True | 10 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | fabricated|outdated=False | 24 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | six_eight|outdated=False | 95 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | six_eight|outdated=True | 1 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | suffix_only|outdated=False | 283 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | suffix_only|outdated=True | 52 |
 | openai/gpt-6-sol | fabricated|outdated=False | 20 |
 | openai/gpt-6-sol | six_eight|outdated=False | 54 |
 | openai/gpt-6-sol | suffix_only|outdated=False | 76 |
@@ -109,7 +110,7 @@ All 1,098 usable rulings per model. Outdated check uses 20,876 distinct 10-digit
 | deepseek-ai/DeepSeek-V4.1-Flash | 476 | 464 | $500 | $0 to $3,000 | 217 |
 | zai-org/GLM-5.3 | 223 | 214 | $1,500 | $0 to $3,700 | 88 |
 | moonshotai/Kimi-K3 | 516 | 497 | $100 | $0 to $2,900 | 245 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 98 | 92 | $1,250 | $0 to $5,000 | 43 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 487 | 469 | $1,300 | $0 to $3,700 | 203 |
 | openai/gpt-6-sol | 447 | 432 | $0 | $0 to $2,800 | 228 |
 | anthropic/claude-haiku-5.5 | 314 | 304 | $450 | $0 to $3,025 | 147 |
 | anthropic/claude-sonnet-5.5 | 390 | 380 | $0 | $0 to $3,500 | 201 |

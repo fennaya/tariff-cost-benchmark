@@ -36,7 +36,7 @@ True codes of the 1098 usable rulings absent from their own ruling-date release 
 - deepseek-ai/DeepSeek-V4.1-Flash: 17
 - zai-org/GLM-5.3: 15
 - moonshotai/Kimi-K3: 20
-- nvidia/nemotron-3-ultra-550b-a55b:free: 4
+- nvidia/nemotron-3-ultra-550b-a55b:free: 21
 - openai/gpt-6-sol: 27
 - anthropic/claude-haiku-5.5: 9
 - anthropic/claude-sonnet-5.5: 27

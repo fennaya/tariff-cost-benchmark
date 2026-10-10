@@ -76,11 +76,11 @@ New scoring (this check): same digit-only stripping, then zero-pad both codes to
 
 | Digit level | Old accuracy | Zero-padded accuracy | Difference (pts) |
 |---|---|---|---|
-| 2 | 0.6850 | 0.6850 | +0.00 |
-| 4 | 0.5850 | 0.5850 | +0.00 |
-| 6 | 0.3950 | 0.3950 | +0.00 |
-| 8 | 0.2900 | 0.2900 | +0.00 |
-| 10 | 0.1400 | 0.1400 | +0.00 |
+| 2 | 0.7177 | 0.7177 | +0.00 |
+| 4 | 0.5956 | 0.5956 | +0.00 |
+| 6 | 0.4144 | 0.4144 | +0.00 |
+| 8 | 0.2996 | 0.2996 | +0.00 |
+| 10 | 0.1421 | 0.1421 | +0.00 |
 
 ### openai/gpt-6-sol
 
@@ -136,7 +136,7 @@ The last 2 digits of a 10-digit HTS code are a US-only statistical suffix, frequ
 | deepseek-ai/DeepSeek-V4.1-Flash | 0.3925 | 0.2505 |
 | zai-org/GLM-5.3 | 0.2514 | 0.1239 |
 | moonshotai/Kimi-K3 | 0.4344 | 0.2842 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 0.2900 | 0.1400 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 0.2996 | 0.1421 |
 | openai/gpt-6-sol | 0.5437 | 0.3752 |
 | anthropic/claude-haiku-5.5 | 0.1812 | 0.0792 |
 | anthropic/claude-sonnet-5.5 | 0.4490 | 0.2523 |
@@ -152,7 +152,7 @@ The last 2 digits of a 10-digit HTS code are a US-only statistical suffix, frequ
 | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 1 (0.1%) | 353 (32.1%) | 476 (43.4%) | 268 (24.4%) | 0.2441 | 0.3602 |
 | zai-org/GLM-5.3 | 1098 | 27 (2.5%) | 715 (65.1%) | 223 (20.3%) | 133 (12.1%) | 0.1211 | 0.3736 |
 | moonshotai/Kimi-K3 | 1098 | 0 (0.0%) | 278 (25.3%) | 516 (47.0%) | 304 (27.7%) | 0.2769 | 0.3707 |
-| nvidia/nemotron-3-ultra-550b-a55b:free | 200 | 0 (0.0%) | 75 (37.5%) | 98 (49.0%) | 27 (13.5%) | 0.1350 | 0.2160 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 1098 | 0 (0.0%) | 459 (41.8%) | 487 (44.4%) | 152 (13.8%) | 0.1384 | 0.2379 |
 | openai/gpt-6-sol | 1098 | 0 (0.0%) | 248 (22.6%) | 447 (40.7%) | 403 (36.7%) | 0.3670 | 0.4741 |
 | anthropic/claude-haiku-5.5 | 1098 | 14 (1.3%) | 685 (62.4%) | 314 (28.6%) | 85 (7.7%) | 0.0774 | 0.2130 |
 | anthropic/claude-sonnet-5.5 | 1098 | 0 (0.0%) | 438 (39.9%) | 390 (35.5%) | 270 (24.6%) | 0.2459 | 0.4091 |
@@ -170,7 +170,7 @@ zai-org/GLM-5.3: 67.6% of responses are unparseable or an invalid code (>5%). Th
 
 moonshotai/Kimi-K3: 25.3% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.2769 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.3707, computed here for comparison only.
 
-nvidia/nemotron-3-ultra-550b-a55b:free: 37.5% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.1350 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.2160, computed here for comparison only.
+nvidia/nemotron-3-ultra-550b-a55b:free: 41.8% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.1384 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.2379, computed here for comparison only.
 
 openai/gpt-6-sol: 22.6% of responses are unparseable or an invalid code (>5%). The headline (Round 1 findings.md) used accuracy INCLUDING these as wrong -- 0.3670 -- because a non-existent or unparseable code is a real failure an importer would hit, not noise to discard. Excluding them would be 0.4741, computed here for comparison only.
 
@@ -236,7 +236,7 @@ All "this project" numbers below are for the 3 **free, open-weight models run on
 | This project: deepseek-ai/DeepSeek-V4.1-Flash | CBP CROSS, NY collection, 2026+ | 52.8% | 25.0% | 36.0% |
 | This project: zai-org/GLM-5.3 | CBP CROSS, NY collection, 2026+ | 45.3% | 12.4% | 37.4% |
 | This project: moonshotai/Kimi-K3 | CBP CROSS, NY collection, 2026+ | 55.3% | 28.4% | 37.1% |
-| This project: nvidia/nemotron-3-ultra-550b-a55b:free | CBP CROSS, NY collection, 2026+ | 39.5% | 14.0% | 21.6% |
+| This project: nvidia/nemotron-3-ultra-550b-a55b:free | CBP CROSS, NY collection, 2026+ | 41.4% | 14.2% | 23.8% |
 | This project: openai/gpt-6-sol | CBP CROSS, NY collection, 2026+ | 67.0% | 37.5% | 47.4% |
 | This project: anthropic/claude-haiku-5.5 | CBP CROSS, NY collection, 2026+ | 32.5% | 7.9% | 21.3% |
 | This project: anthropic/claude-sonnet-5.5 | CBP CROSS, NY collection, 2026+ | 61.7% | 25.2% | 40.9% |

@@ -1,0 +1,26 @@
+openai/gpt-oss-20b                            main  calls= 1098 in=  355994 out=  221636 list=$0.0000 avg_latency=
+openai/gpt-oss-120b                           main  calls= 1098 in=  355994 out=  197337 list=$0.0000 avg_latency=
+allam-2-7b                                    main  calls= 1098 in=  333971 out=   85131 list=$0.0000 avg_latency=
+deepseek-ai/DeepSeek-V4.1-Flash               main  calls= 1098 in=  285779 out=   71272 list=$0.1713 avg_latency=1.28
+deepseek-ai/DeepSeek-V4.1-Flash               probe calls=  100 in=    3300 out=    9194 list=$0.0120 avg_latency=1.44
+zai-org/GLM-5.3                               main  calls= 1098 in=  295994 out=  197432 list=$1.2831 avg_latency=2.75
+zai-org/GLM-5.3                               probe calls=  100 in=    4269 out=   11955 list=$0.0586 avg_latency=2.17
+moonshotai/Kimi-K3                            main  calls= 1098 in=  298112 out=   71540 list=$1.9674 avg_latency=8.97
+moonshotai/Kimi-K3                            probe calls=  100 in=    4500 out=    1990 list=$0.0433 avg_latency=1.34
+nvidia/nemotron-3-ultra-550b-a55b:free        main  calls= 1098 in=  309695 out=   82572 list=$0.0000 avg_latency=4.48
+nvidia/nemotron-3-ultra-550b-a55b:free        probe calls=   25 in=    1225 out=     500 list=$0.0000 avg_latency=2.55
+openai/gpt-6-sol                              main  calls= 1098 in=  284624 out=   51951 list=$1.0888 avg_latency=1.71
+openai/gpt-6-sol                              probe calls=   25 in=     850 out=     440 list=$0.0061 avg_latency=1.67
+anthropic/claude-haiku-5.5                    main  calls= 1098 in=  461478 out=  153055 list=$0.1227 avg_latency=1.88
+anthropic/claude-sonnet-5.5                   main  calls= 1098 in=  463674 out=  567364 list=$6.6010 avg_latency=5.33
+anthropic/claude-opus-5.5                     main  calls= 1098 in=  463674 out=  455055 list=$10.9558 avg_latency=6.64
+replication/moonshotai/kimi-k3                main  calls= 1098 in=  298967 out=   71784 list=$1.1604 avg_latency=2.59
+replication/deepseek/deepseek-v4.1-flash      main  calls= 1098 in=  284843 out=   83565 list=$0.1857 avg_latency=3.19
+replication/z-ai/glm-5.3                      main  calls= 1098 in=  301121 out=  245144 list=$1.1884 avg_latency=3.18
+
+List-price cost of all cached calls by provider (main runs and probes; a handful of uncached settings tests are not included):
+  groq: $0.0000
+  baseten: $3.5357
+  openrouter: $21.3089
+
+wrote data/exports/api_calls.csv (15722 rows) and api_calls_summary.csv
