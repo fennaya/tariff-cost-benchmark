@@ -40,7 +40,7 @@ def main():
     for l in table:
         cells = [c.strip() for c in l.strip().strip("|").split("|")]
         if len(cells) == 7:
-            by_short[cells[0].replace(" †", "")] = cells
+            by_short[re.sub(r"\s*[†‡]", "", cells[0]).strip()] = cells
     bad = checked = 0
     for m in M.analysis_models():
         short = m["model_id"].split("/")[-1].replace(":free", "")
@@ -55,7 +55,7 @@ def main():
         inv = sum(1 for r in rows if r["tag"] == "INVALID_CODE")
         g = A.gate_b(rows)
         want = {"n": f"{n:,}", "acc8": f"{k8 / n:.1%}", "inv": f"{inv / n:.1%}", "under": f"{g['share']:.1%} (n = {g['n']})"}
-        got = {"n": cells[1], "acc8": cells[2].split(" ")[0], "inv": cells[3], "under": cells[5]}
+        got = {"n": cells[1].split(" ")[0], "acc8": cells[2].split(" ")[0], "inv": cells[3], "under": cells[5]}
         for k in want:
             checked += 1
             if want[k] != got[k]:
