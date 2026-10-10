@@ -1,0 +1,192 @@
+{
+  "anthropic/claude-haiku-5.5": {
+    "tests": [
+      {
+        "variant": "reasoning.effort=none",
+        "http": 200,
+        "returned_model": "anthropic/claude-haiku-5.5",
+        "provider": "Claude Platform on AWS",
+        "finish": "stop",
+        "in": 390,
+        "out": 164,
+        "reasoning_tokens": 0,
+        "content_chars": 420,
+        "cost": 0.000121,
+        "problem": null
+      }
+    ],
+    "chosen": "reasoning.effort=none"
+  },
+  "anthropic/claude-sonnet-5.5": {
+    "tests": [
+      {
+        "variant": "reasoning.effort=none",
+        "http": 400,
+        "error": "Reasoning is mandatory for this endpoint and cannot be disabled."
+      },
+      {
+        "variant": "reasoning.enabled=false",
+        "http": 400,
+        "error": "Reasoning is mandatory for this endpoint and cannot be disabled."
+      },
+      {
+        "variant": "reasoning.effort=minimal",
+        "http": 200,
+        "returned_model": "anthropic/claude-sonnet-5.5",
+        "provider": "Claude Platform on AWS",
+        "finish": "stop",
+        "in": 392,
+        "out": 452,
+        "reasoning_tokens": 0,
+        "content_chars": 1120,
+        "cost": 0.005304,
+        "problem": null
+      }
+    ],
+    "chosen": "reasoning.effort=minimal"
+  },
+  "anthropic/claude-opus-5.5": {
+    "tests": [
+      {
+        "variant": "reasoning.effort=none",
+        "http": 400,
+        "error": "Reasoning is mandatory for this endpoint and cannot be disabled."
+      },
+      {
+        "variant": "reasoning.enabled=false",
+        "http": 400,
+        "error": "Reasoning is mandatory for this endpoint and cannot be disabled."
+      },
+      {
+        "variant": "reasoning.effort=minimal",
+        "http": 200,
+        "returned_model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "finish": "stop",
+        "in": 392,
+        "out": 636,
+        "reasoning_tokens": 517,
+        "content_chars": 307,
+        "cost": 0.014288,
+        "problem": null
+      },
+      {
+        "variant": "reasoning.effort=low",
+        "http": 200,
+        "returned_model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "finish": "stop",
+        "in": 392,
+        "out": 549,
+        "reasoning_tokens": 424,
+        "content_chars": 318,
+        "cost": 0.012548,
+        "problem": null
+      },
+      {
+        "variant": "no reasoning parameter",
+        "http": 200,
+        "returned_model": "anthropic/claude-opus-5.5",
+        "provider": "Claude Platform on AWS",
+        "finish": "stop",
+        "in": 392,
+        "out": 903,
+        "reasoning_tokens": 778,
+        "content_chars": 334,
+        "cost": 0.019628,
+        "problem": null
+      }
+    ],
+    "chosen": "reasoning.effort=low"
+  },
+  "replication/moonshotai/kimi-k3": {
+    "tests": [
+      {
+        "variant": "reasoning.effort=none",
+        "http": 200,
+        "returned_model": "moonshotai/kimi-k3",
+        "provider": "Wafer",
+        "finish": "stop",
+        "in": 249,
+        "out": 73,
+        "reasoning_tokens": 0,
+        "content_chars": 227,
+        "cost": 0.001344,
+        "problem": null
+      }
+    ],
+    "chosen": "reasoning.effort=none"
+  },
+  "replication/deepseek/deepseek-v4.1-flash": {
+    "tests": [
+      {
+        "variant": "reasoning.effort=none",
+        "http": 200,
+        "returned_model": "deepseek/deepseek-v4.1-flash",
+        "provider": "Morph",
+        "finish": "stop",
+        "in": 241,
+        "out": 80,
+        "reasoning_tokens": 0,
+        "content_chars": 300,
+        "cost": 7.4122e-05,
+        "problem": null
+      }
+    ],
+    "chosen": "reasoning.effort=none"
+  },
+  "replication/z-ai/glm-5.3": {
+    "tests": [
+      {
+        "variant": "reasoning.effort=none",
+        "http": 400,
+        "error": "Reasoning is mandatory for this endpoint and cannot be disabled."
+      },
+      {
+        "variant": "reasoning.enabled=false",
+        "http": 400,
+        "error": "Reasoning is mandatory for this endpoint and cannot be disabled."
+      },
+      {
+        "variant": "reasoning.effort=minimal",
+        "http": 200,
+        "returned_model": "z-ai/glm-5.3",
+        "provider": "Sail Research",
+        "finish": "stop",
+        "in": 248,
+        "out": 265,
+        "reasoning_tokens": 197,
+        "content_chars": 216,
+        "cost": 0.0009506,
+        "problem": null
+      },
+      {
+        "variant": "reasoning.effort=low",
+        "http": 200,
+        "returned_model": "z-ai/glm-5.3",
+        "provider": "Alibaba",
+        "finish": "stop",
+        "in": 248,
+        "out": 252,
+        "reasoning_tokens": 180,
+        "content_chars": 222,
+        "cost": 0.0012376,
+        "problem": null
+      },
+      {
+        "variant": "no reasoning parameter",
+        "http": 200,
+        "returned_model": "z-ai/glm-5.3",
+        "provider": "Z.AI",
+        "finish": "length",
+        "in": 248,
+        "out": 2048,
+        "reasoning_tokens": 2044,
+        "content_chars": 0,
+        "cost": 0.0093584,
+        "problem": null
+      }
+    ],
+    "chosen": "reasoning.effort=low"
+  }
+}
