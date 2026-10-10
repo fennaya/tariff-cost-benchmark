@@ -1,6 +1,6 @@
 # v1.1 results (scripts/analyze_v1_1.py)
 
-Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown or after 2026-08-14 the model is labelled "contamination not ruled out" and the primary rows are all its rows. Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. † contamination not ruled out (no stated cutoff); treat this model's accuracy as an upper bound. Closed frontier models were not tested. Duty figures are MFN-only lower bounds.
+Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown or after 2026-08-14 the model is labelled "contamination not ruled out" and the primary rows are all its rows. Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. † contamination not ruled out (no stated cutoff); treat this model's accuracy as an upper bound. Closed models in the tables: GPT-6 Sol and Claude Haiku/Sonnet/Opus 5.5 (paid, via OpenRouter); Gemini is not in any table and no other closed model was tested. Duty figures are MFN-only lower bounds.
 
 ## Models and scope
 

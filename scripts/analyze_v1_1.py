@@ -139,7 +139,7 @@ def main():
         "or after 2026-08-14 the model is labelled \"contamination not ruled out\" and the primary rows are all its rows. "
         "Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. "
         + DAGGER_NOTE + " "
-        "Closed frontier models were not tested. Duty figures are MFN-only lower bounds.\n")
+        "Closed models in the tables: GPT-6 Sol and Claude Haiku/Sonnet/Opus 5.5 (paid, via OpenRouter); Gemini is not in any table and no other closed model was tested. Duty figures are MFN-only lower bounds.\n")
 
     out("## Models and scope\n")
     out("| Model | Provider | Rulings run | Stated cutoff (source) | Contamination status | Primary rows | Reasoning setting |")
