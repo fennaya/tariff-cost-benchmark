@@ -443,7 +443,7 @@ Before versus after the stated cutoff, for the two models whose cutoff falls ins
 | nvidia/nemotron-3-ultra-550b-a55b:free | 2026-05-31 | 95 | 34.7% (25.9% to 44.7%) | 105 | 23.8% (16.7% to 32.8%) |
 | openai/gpt-6-sol | 2026-04-20 | 33 | 48.5% (32.5% to 64.8%) | 167 | 49.7% (42.2% to 57.2%) |
 
-The two models that ran on the 200-ruling sample show an inconsistent pattern around their cutoffs: GPT-6 Sol has no drop, but Nemotron 3 Ultra scores 34.7% on rulings up to its cutoff and 23.8% after it. Read the Nemotron gap as a descriptive warning sign that contamination can inflate scores, not as a test (the intervals overlap). The same warning applies, unmeasurably, to every model marked †, which has no stated cutoff, so their accuracy is an upper bound. The DeepSeek V4.1 Flash and GLM 5.3 probes are uninformative because the models refused 96 and 95 of 100 probes.
+The two models that ran on the 200-ruling sample show an inconsistent pattern around their cutoffs: GPT-6 Sol has no drop [corrected in v1.2: this rested on 33 rulings before the cutoff; on all 1,098 rulings GPT-6 Sol scores 58.9% before and 49.6% after, see the v1.2 section], but Nemotron 3 Ultra scores 34.7% on rulings up to its cutoff and 23.8% after it. Read the Nemotron gap as a descriptive warning sign that contamination can inflate scores, not as a test (the intervals overlap). The same warning applies, unmeasurably, to every model marked †, which has no stated cutoff, so their accuracy is an upper bound. The DeepSeek V4.1 Flash and GLM 5.3 probes are uninformative because the models refused 96 and 95 of 100 probes.
 
 ### Results: how accurate are stronger models?
 
@@ -643,6 +643,8 @@ The v1.0 numbers for the three Groq models are unchanged (checked after the full
 
 ## v1.2: GPT-6 Sol extension, Claude models, and provider replication
 
+**Opus 5.5 and GPT-6 Sol are tied (paired p = 0.54); both are wrong about half the time at 8 digits.** The underpay lean appears in the weaker models and is not detected in the two most accurate. Opus 5.5 scores 53.5% (95% CI 47.0% to 59.9%, n = 228, July and August 2026 rulings only; reasoning could not be disabled, about 297 reasoning tokens per answer) and GPT-6 Sol 49.6% (45.4% to 53.8%, n = 538).
+
 v1.2 is run exactly like v1.1 (same prompt, temperature 0, scoring code, metrics and Gate B rule) and adds three things, fixed in [PREREG_v1.2.md](PREREG_v1.2.md) before any v1.2 call (commit `88f513af48eed29084cbcb42b04ab9b3c2b294d1`; settings addendum and dated deviations in the same file, commits `f3887b6` and later): **A.** GPT-6 Sol from the 200-ruling sample to all 1,098 rulings; **B.** three Claude models (Haiku 5.5, Sonnet 5.5, Opus 5.5) on all 1,098; **C.** Kimi K3, DeepSeek V4.1 Flash and GLM 5.3 rerun through OpenRouter with Baseten excluded, to test whether the v1.1 results hold across providers. All calls went through OpenRouter. The round cost $21.36 in OpenRouter usage (hard cap $30, raised from $25 by the user after the pilot), and every call is in `data/exports/api_calls.csv`. The v1.1 text above is unchanged; the v1.0 numbers for the three Groq models and the v1.1 numbers for the other models are unchanged (checked after the rerun). Only GPT-6 Sol's row changes, because it now covers 1,098 rulings. Gemini 3.8 Flash is still in no table (2 of 200 responses). No other closed model is in these tables, and none of these models stands in for GPT, Claude or Gemini.
 
 ### Deviations from pre-registration (v1.2)
@@ -655,15 +657,18 @@ v1.2 is run exactly like v1.1 (same prompt, temperature 0, scoring code, metrics
 6. **The replication was served by many providers**, not one: 18 (Kimi K3), 27 (DeepSeek V4.1 Flash) and 31 (GLM 5.3) different providers in the recorded `provider` field. None of the 3,294 replication answers was served by Baseten.
 7. **The number of exploratory hypothesis tests grew** from 64 to 121 (the new models add McNemar pairs); none is corrected for multiple comparison.
 8. **Holm sensitivity changes one pre-registered Gate B verdict under correction** (Claude Haiku 5.5, below). The pre-registered verdicts themselves are not changed.
+9. **Time-drift test added after the results were seen** (user's request, no new API calls; `scripts/analyze_time_drift.py`, `review/time_drift.md`). It is post-hoc and exploratory, 13 rows, p-values uncorrected.
 
 ### Limits (before interpretation)
 
 - **Claude scores rest on 228 rulings** (July and August 2026 only), so their 95% intervals are about plus or minus 6 points. Rankings inside the top group (Opus 5.5, GPT-6 Sol, Sonnet 5.5, Kimi K3) are not supported beyond what the intervals show; the paired 8-digit test on all 1,098 rulings gives Opus 5.5 vs GPT-6 Sol p = 0.54.
 - **Reasoning was not off for Sonnet 5.5, Opus 5.5 and the GLM replication** (above), so these are not like-for-like with the models run with reasoning off.
-- **Contamination can inflate the full-sample numbers.** GPT-6 Sol scores 58.9% at 8 digits on the 560 rulings up to its stated cutoff and 49.6% on the 538 after it; Claude Sonnet 5.5 scores 46.1% and 40.4%, Opus 5.5 55.9% and 53.5%, Haiku 5.5 18.3% and 17.5%. This is descriptive, not a test, and case mix differs by month; it is the reason the primary scores use only post-cutoff rulings. The memorisation probe was not repeated in v1.2.
+- **Contamination or harder later rulings: not separated.** GPT-6 Sol scores 58.9% at 8 digits on the 560 rulings up to its stated cutoff and 49.6% on the 538 after it. The time-drift test below splits every model at the same date: the 2024-cutoff gpt-oss models show no drop, which by the pre-set rule makes contamination the more likely reading and the † models' all-1,098 numbers likely inflated (upper bounds); but that control has only 5% to 10% power, and Claude Sonnet 5.5 (cutoff June 30) also drops across April 20, which fits harder later rulings. This is why the primary scores use only post-cutoff rulings where a cutoff is stated. The memorisation probe was not repeated in v1.2.
 - **† models** (allam-2-7b, DeepSeek V4.1 Flash, GLM 5.3, Kimi K3) have no stated cutoff: contamination not ruled out, accuracy is an upper bound.
 - **The replication measures a provider mix**, and for GLM also a setting change.
 - **Gate B verdicts rest on small n for several models** (n = 40 to 65 for Nemotron, the Claude models and the small models' subsets).
+- **No retrieval or tariff lookup.** The models answer from the description alone; a system with access to the tariff schedule could do better.
+- **Top tiers not tested.** Claude Fable 5.1 and OpenAI's tier above GPT-6 Sol were not run.
 - **Closed models cost money and are one model each**; nothing here says how any other GPT, Claude or Gemini model would score.
 - **40 of 1,098 rulings have an INADEQUATE description** (v1.1 audit); excluding them changes no Gate B verdict (re-run on all 11 models).
 - **Duty figures are MFN-only lower bounds.**
@@ -680,29 +685,31 @@ Primary scores (rulings after each model's stated cutoff; † models use all the
 | gpt-oss-120b | 1,098 | 5.6% (4.3% to 7.1%) | 96.6% | 23% / 77% | 65.3% (n = 49) | met |
 | allam-2-7b † | 1,098 | 2.4% (1.6% to 3.4%) | 87.2% | 8% / 92% | 65.5% (n = 116) | met |
 | DeepSeek-V4.1-Flash † | 1,098 | 39.3% (36.4% to 42.2%) | 32.2% | 58% / 42% | 54.0% (n = 324) | not met |
-| GLM-5.3 † | 1,098 | 25.1% (22.7% to 27.8%) | 67.6% | 42% / 58% | 55.7% (n = 212) | met |
+| GLM-5.3 † ‡ | 1,098 | 25.1% (22.7% to 27.8%) | 67.6% | 42% / 58% | 55.7% (n = 212) | met |
 | Kimi-K3 † | 1,098 | 43.4% (40.5% to 46.4%) | 25.3% | 68% / 32% | 59.2% (n = 311) | met |
 | nemotron-3-ultra-550b-a55b | 105 | 23.8% (16.7% to 32.8%) | 33.3% | 67% / 33% | 60.0% (n = 40) | met |
 | gpt-6-sol | 538 | 49.6% (45.4% to 53.8%) | 24.9% | 70% / 30% | 52.2% (n = 138) | not met |
-| claude-haiku-5.5 | 228 | 17.5% (13.2% to 23.0%) | 66.2% | 49% / 51% | 56.9% (n = 65) | met (not met under Holm) |
-| claude-sonnet-5.5 | 228 | 40.4% (34.2% to 46.8%) | 39.0% | 62% / 38% | 57.1% (n = 49) | not met |
-| claude-opus-5.5 | 228 | 53.5% (47.0% to 59.9%) | 27.6% | 75% / 25% | 45.1% (n = 51) | not met |
+| claude-haiku-5.5 | 228 (July-August rulings only) | 17.5% (13.2% to 23.0%) | 66.2% | 49% / 51% | 56.9% (n = 65) | met (not met under Holm) |
+| claude-sonnet-5.5 ‡ | 228 (July-August rulings only) | 40.4% (34.2% to 46.8%) | 39.0% | 62% / 38% | 57.1% (n = 49) | not met |
+| claude-opus-5.5 ‡ | 228 (July-August rulings only) | 53.5% (47.0% to 59.9%) | 27.6% | 75% / 25% | 45.1% (n = 51) | not met |
 
-**The most accurate models tested are Claude Opus 5.5 and GPT-6 Sol, and both are still wrong about half the time at 8 digits.** On their own post-cutoff rulings Opus 5.5 is at 53.5% (n = 228) and GPT-6 Sol at 49.6% (n = 538). On the 228 rulings that all ten full-sample models share (table B below) they are at 53.5% and 49.1% with overlapping intervals, followed by Sonnet 5.5 (40.4%), Kimi K3 (39.0%), DeepSeek V4.1 Flash (34.6%), GLM 5.3 (19.3%) and Haiku 5.5 (17.5%). The three small Groq models stay under 6%.
+‡ reasoning could not be disabled: Opus 5.5 used about 297 reasoning tokens per answer, Sonnet 5.5 ran at minimal effort (reports no reasoning tokens but writes about 517 output tokens), and GLM 5.3 still emits reasoning tokens with thinking switched off (about 140 per answer on Baseten). The Claude rows are July and August 2026 rulings only (n = 228), with 95% intervals of about plus or minus 6 points.
+
+**Claude Opus 5.5 and GPT-6 Sol are tied (paired p = 0.54); both are wrong about half the time at 8 digits.** On their own post-cutoff rulings Opus 5.5 is at 53.5% (95% CI 47.0% to 59.9%, n = 228, July and August rulings only; reasoning could not be disabled, about 297 reasoning tokens per answer) and GPT-6 Sol at 49.6% (45.4% to 53.8%, n = 538). On the 228 rulings that all ten full-sample models share (table B below) they are at 53.5% and 49.1% (42.7% to 55.6%) with overlapping intervals, followed by Sonnet 5.5 (40.4%), Kimi K3 (39.0%), DeepSeek V4.1 Flash (34.6%), GLM 5.3 (19.3%) and Haiku 5.5 (17.5%). The three small Groq models stay under 6%.
 
 ### Part A: GPT-6 Sol on all 1,098 rulings
 
-v1.1 had GPT-6 Sol on 200 rulings: 49.5% at 8 digits (95% CI 42.6% to 56.4%, all dates), 49.7% on the 167 post-cutoff rulings, and a Gate B verdict "not met" with n = 41 (p = 0.114). With all 1,098 rulings it is 54.4% (51.4% to 57.3%, all dates) and **49.6% (45.4% to 53.8%) on the 538 rulings after its cutoff**, so the v1.1 headline figure holds with more than three times the rulings. Gate B is still **not met** with 138 rate-changing errors (52.2% underpaid, 43.9% to 60.3%, p vs Baseline 2 = 0.092), so the v1.1 statement that the underpay lean does not beat chance in GPT-6 Sol is no longer a small-sample result. Before its cutoff it scores 58.9% (560 rulings); the nine-point drop after the cutoff is the contamination warning sign described in the limits.
+v1.1 had GPT-6 Sol on 200 rulings: 49.5% at 8 digits (95% CI 42.6% to 56.4%, all dates), 49.7% on the 167 post-cutoff rulings, and a Gate B verdict "not met" with n = 41 (p = 0.114). With all 1,098 rulings it is 54.4% (51.4% to 57.3%, all dates) and **49.6% (45.4% to 53.8%) on the 538 rulings after its cutoff**, so the v1.1 headline figure holds with more than three times the rulings. Gate B is still **not met** with 138 rate-changing errors (52.2% underpaid, 43.9% to 60.3%, p vs Baseline 2 = 0.092), so the v1.1 statement that the underpay lean does not beat chance in GPT-6 Sol is no longer a small-sample result. Before its cutoff it scores 58.9% (560 rulings); the nine-point drop after the cutoff is examined in the time-drift test below. The v1.1 statement that GPT-6 Sol showed no drop at its cutoff rested on 33 rulings before the cutoff and does not hold on the full sample.
 
 ### Part B: Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5
 
-- **Opus 5.5** is at the top: 53.5% (47.0% to 59.9%) at 8 digits and 32.9% at 10 digits on the 228 post-cutoff rulings; 27.6% of its answers are invalid, and across all 1,098 rulings 75% of its invalid answers are suffix slips (format group) and 25% are invented codes (`review/format_vs_invention.md`).
-- **Sonnet 5.5** is at 40.4% (34.2% to 46.8%), with 39.0% invalid answers.
-- **Haiku 5.5** is at 17.5% (13.2% to 23.0%) and 66.2% invalid. Across all 1,098 rulings half of its invalid answers are suffix slips (49%) and half are invented (51%).
+- **Opus 5.5** has the highest point estimate, tied with GPT-6 Sol (reasoning could not be disabled: about 297 reasoning tokens per answer; n = 228, July and August rulings only): 53.5% (47.0% to 59.9%) at 8 digits and 32.9% at 10 digits on the 228 post-cutoff rulings; 27.6% of its answers are invalid, and across all 1,098 rulings 75% of its invalid answers are suffix slips (format group) and 25% are invented codes (`review/format_vs_invention.md`).
+- **Sonnet 5.5** (n = 228, July and August rulings only; reasoning could not be disabled, run at minimal effort) is at 40.4% (34.2% to 46.8%), with 39.0% invalid answers.
+- **Haiku 5.5** (n = 228, July and August rulings only) is at 17.5% (13.2% to 23.0%) and 66.2% invalid. Across all 1,098 rulings half of its invalid answers are suffix slips (49%) and half are invented (51%).
 - **Validity check.** Flagging any non-existent code catches 41.2% of Opus 5.5's wrong answers, 52.4% of Sonnet 5.5's and 72.2% of Haiku 5.5's, so for the stronger Claude models a validity check misses most errors.
 - **Direction.** Opus 5.5 underpays on 45.1% of 51 rate-changing errors (32.3% to 58.6%), below 50% and not distinguishable from chance; Sonnet 5.5 is at 57.1% (n = 49, p = 0.059, not met); Haiku 5.5 is at 56.9% (n = 65, p = 0.021, met as pre-registered but not under Holm).
 
-The two most accurate models, GPT-6 Sol and Opus 5.5, are the two where the underpay lean does not beat chance. That fits, but does not prove, the v1.1 suggestion that the lean fades as models improve; Sonnet 5.5, in between on accuracy, is also not distinguishable from chance.
+The two most accurate models, GPT-6 Sol and Opus 5.5, are the two where the underpay lean is not detected. That fits, but does not prove, the v1.1 suggestion that the lean fades as models improve; Sonnet 5.5, in between on accuracy, is also not distinguishable from chance.
 
 ### Same-sample tables (post-cutoff rulings all models share)
 
@@ -767,7 +774,38 @@ The two most accurate models, GPT-6 Sol and Opus 5.5, are the two where the unde
 | anthropic/claude-sonnet-5.5 | 49 | 0.0589 | 0.2358 | not met | not met | no |
 | anthropic/claude-opus-5.5 | 51 | 0.5864 | 0.5864 | not met | not met | no |
 
-**Gate B is met for 7 of 11 models as pre-registered (gpt-oss-20b, gpt-oss-120b, allam-2-7b, GLM 5.3, Kimi K3, Nemotron 3 Ultra, Claude Haiku 5.5) and for 6 of 11 under Holm.** Haiku 5.5 is the only verdict that changes (adjusted p = 0.105).
+**The lean appears in the weaker models and is not detected in the two most accurate. Gate B is met for 7 of 11 models as pre-registered (gpt-oss-20b, gpt-oss-120b, allam-2-7b, GLM 5.3, Kimi K3, Nemotron 3 Ultra, Claude Haiku 5.5) and for 6 of 11 under Holm.** Haiku 5.5 is the only verdict that changes (adjusted p = 0.105).
+
+### Time-drift test: contamination or harder later rulings?
+
+Added after the results were seen (no new API calls). If GPT-6 Sol's drop across its cutoff (58.9% before, 49.6% after) were only due to later rulings being harder, models that cannot have seen any ruling should drop at the same split date. So every model's 8-digit accuracy on all 1,098 rulings is split at 2026-04-20 (Sol's cutoff) with Wilson 95% CIs and two-sided two-proportion tests. Interpretation rule, set before running: if the 2024-cutoff models show no drop, the Sol gap is more likely contamination and the † models' all-1,098 numbers are likely inflated; if they also drop, later rulings are harder.
+
+| Model | Stated cutoff | n up to 2026-04-20 | 8-digit up to 2026-04-20 | n after | 8-digit after | drop (points) | p (z-test) | p (Fisher) |
+|---|---|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 2024-06-01 | 560 | 0.0% (0.0% to 0.7%) | 538 | 0.6% (0.2% to 1.6%) | -0.6 | 0.0768 | 0.1173 |
+| openai/gpt-oss-120b | 2024-06-01 | 560 | 5.9% (4.2% to 8.2%) | 538 | 5.2% (3.6% to 7.4%) | +0.7 | 0.6186 | 0.6931 |
+| allam-2-7b | none stated † | 560 | 3.0% (1.9% to 4.8%) | 538 | 1.7% (0.9% to 3.1%) | +1.4 | 0.1376 | 0.1658 |
+| deepseek-ai/DeepSeek-V4.1-Flash | none stated † | 560 | 43.0% (39.0% to 47.2%) | 538 | 35.3% (31.4% to 39.4%) | +7.7 | 0.0088 | 0.0094 |
+| zai-org/GLM-5.3 | none stated † | 560 | 28.9% (25.3% to 32.8%) | 538 | 21.2% (17.9% to 24.8%) | +7.7 | 0.0031 | 0.0035 |
+| moonshotai/Kimi-K3 | none stated † | 560 | 48.2% (44.1% to 52.4%) | 538 | 38.5% (34.5% to 42.7%) | +9.7 | 0.0011 | 0.0012 |
+| openai/gpt-6-sol | 2026-04-20 | 560 | 58.9% (54.8% to 62.9%) | 538 | 49.6% (45.4% to 53.8%) | +9.3 | 0.0020 | 0.0020 |
+| anthropic/claude-haiku-5.5 | 2026-06-30 | 560 | 19.3% (16.2% to 22.8%) | 538 | 16.9% (14.0% to 20.3%) | +2.4 | 0.3079 | 0.3098 |
+| anthropic/claude-sonnet-5.5 | 2026-06-30 | 560 | 48.4% (44.3% to 52.5%) | 538 | 41.3% (37.2% to 45.5%) | +7.1 | 0.0176 | 0.0181 |
+| anthropic/claude-opus-5.5 | 2026-06-30 | 560 | 56.8% (52.7% to 60.8%) | 538 | 53.9% (49.7% to 58.1%) | +2.9 | 0.3368 | 0.3624 |
+| replication: moonshotai/kimi-k3 | none stated † | 560 | 47.1% (43.0% to 51.3%) | 538 | 37.0% (33.0% to 41.1%) | +10.2 | 0.0007 | 0.0008 |
+| replication: deepseek/deepseek-v4.1-flash | none stated † | 560 | 41.4% (37.4% to 45.6%) | 538 | 35.7% (31.8% to 39.8%) | +5.7 | 0.0508 | 0.0547 |
+| replication: z-ai/glm-5.3 | none stated † | 560 | 24.6% (21.3% to 28.4%) | 538 | 20.6% (17.4% to 24.3%) | +4.0 | 0.1126 | 0.1136 |
+
+**Result.** GPT-6 Sol falls 9.3 points (p = 0.002). DeepSeek V4.1 Flash, GLM 5.3 and Kimi K3 (Baseten runs, no stated cutoff) fall 7.7, 7.7 and 9.7 points (p = 0.009, 0.003, 0.001), and the OpenRouter replications fall 5.7, 4.0 and 10.2 points. gpt-oss-120b (2024 cutoff) does not fall (5.9% to 5.2%, p = 0.62) and gpt-oss-20b is at 0.0% before and 0.6% after. Applying the rule as written, the Sol gap is more likely contamination and the † models' all-1,098 numbers are likely inflated, so they are upper bounds.
+
+**Why that is weaker than it sounds.** The 2024-cutoff control sits at the floor. Table of the power to detect a drop of Sol's relative size:
+
+| Model | observed before | drop of the same relative size (points) | power to detect it |
+|---|---|---|---|
+| openai/gpt-oss-20b | 0.0% | 0.03 | 5% |
+| openai/gpt-oss-120b | 5.9% | 0.93 | 10% |
+
+A test with 5% to 10% power cannot show that there is no drop. Against the contamination reading, Claude Sonnet 5.5 (cutoff June 30, so it had both sides of April 20 in training) also falls 7.1 points (p = 0.018) and Opus 5.5 and Haiku 5.5 fall 2.9 and 2.4 points (not significant). A smooth time trend (later rulings harder, or about newer products) fits that, and so does contamination; the data do not separate them. Nothing here changes the primary scores, which already use only post-cutoff rulings where a cutoff is stated.
 
 ### Part C: provider replication
 
@@ -779,8 +817,8 @@ Kimi K3, DeepSeek V4.1 Flash and GLM 5.3 were rerun on all 1,098 rulings through
 | deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 884 (80.5%) | 928 of 1089 (85.2%) | 431 (39.3%) | 424 (38.6%) | -0.6 points (-2.1 to +0.8) | 32.2% / 31.3% | 84 |
 | zai-org/GLM-5.3 | 1098 | 252 (23.0%) | 417 of 1029 (40.5%) | 276 (25.1%) | 249 (22.7%) | -2.5 points (-4.8 to -0.1) | 67.6% / 68.5% | 314 |
 
-**Aggregate accuracy holds across providers, individual answers do not.** 8-digit accuracy moves by -1.3, -0.6 and -2.5 points (the intervals for Kimi K3 and GLM 5.3 only just exclude zero, DeepSeek's includes it) and the invalid share by under one point. But the identical code comes back for 85.2% (Kimi K3), 80.5% (DeepSeek V4.1 Flash) and only 23.0% (GLM 5.3) of the rulings, even at temperature 0. GLM's low agreement mixes the provider effect with the reasoning-setting change (disabled on Baseten, low effort on OpenRouter), so it cannot be attributed to the provider alone. A single run of a model at one provider should be read with that spread in mind.
+**Kimi K3 and DeepSeek V4.1 Flash replicate; GLM 5.3 accuracy matches but its answers do not (23% identical codes, reasoning setting changed).** 8-digit accuracy moves by -1.3, -0.6 and -2.5 points (the intervals for Kimi K3 and GLM 5.3 only just exclude zero, DeepSeek's includes it) and the invalid share by under one point. The identical code comes back for 85.2% (Kimi K3), 80.5% (DeepSeek V4.1 Flash) and only 23.0% (GLM 5.3) of the rulings, even at temperature 0. GLM's low agreement mixes the provider effect with the reasoning-setting change (disabled on Baseten, low effort on OpenRouter), so it cannot be attributed to the provider alone. A single run of a model at one provider should be read with that spread in mind.
 
 ### What v1.2 changes in the v1.1 conclusions
 
-The v1.0 and v1.1 numbers are unchanged. The GPT-6 Sol headline figure holds on 1,098 rulings. The new top of the table is Claude Opus 5.5 together with GPT-6 Sol, at about half of 8-digit classifications correct. The underpay lean is 65% to 67% in the three small models and 45% to 60% in the other eight, beating the pre-registered baseline in 7 of 11 models, and not in the two most accurate. The v1.1 results hold across providers in aggregate, with the answer-level caveat above.
+The v1.0 and v1.1 numbers are unchanged. The GPT-6 Sol headline figure holds on 1,098 rulings. Claude Opus 5.5 and GPT-6 Sol are tied (paired p = 0.54) at the top, both wrong about half the time at 8 digits. The underpay lean appears in the weaker models and is not detected in the two most accurate: it is 65% to 67% in the three small models and 45% to 60% in the other eight, beating the pre-registered baseline in 7 of 11 models. The v1.1 results hold across providers in aggregate, with the answer-level caveat above.
