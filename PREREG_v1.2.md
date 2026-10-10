@@ -59,6 +59,21 @@ No threshold for "replicated" is set in advance; the numbers are reported as the
 
 Every script that names models reads them from `config.json`. A v1.2 section is added to `findings.md` with three parts (extension, Claude, replication) and the v1.1 text stays intact. The v1.1 self-attack checks (`review/v1_1_attack.md`) are repeated on the new results. All deviations are logged in DECISIONS.md and in a "Deviations from pre-registration" subsection. No other tests are added after results are seen.
 
+## Addendum A: reasoning settings found (2026-10-10, before any pilot or full run)
+
+One test call per setting on the first usable ruling, real prompt, temperature 0, `max_tokens` 2048; log in `run_logs/v1_2_settings_test.json`; test spend $0.0649 (counted against the $25 cap). The returned `model` matched the request in every accepted call and no response was served by Baseten.
+
+| Model | Accepted setting | Reasoning tokens in the test | Notes |
+|---|---|---|---|
+| `anthropic/claude-haiku-5.5` | `reasoning.effort = none` | 0 | |
+| `anthropic/claude-sonnet-5.5` | `reasoning.effort = minimal` | 0 reported | "none" and `enabled = false` rejected: "Reasoning is mandatory for this endpoint and cannot be disabled." The answer was 1,120 characters (452 output tokens). |
+| `anthropic/claude-opus-5.5` | `reasoning.effort = low` | 424 | Same rejection for "none". Minimal gave 517, no parameter 778. Reasoning cannot be turned off for this model. |
+| `moonshotai/kimi-k3` (replication) | `reasoning.effort = none` | 0 | served by Wafer |
+| `deepseek/deepseek-v4.1-flash` (replication) | `reasoning.effort = none` | 0 | served by Morph |
+| `z-ai/glm-5.3` (replication) | `reasoning.effort = low` | 180 | "none" and `enabled = false` rejected. Minimal gave 197; no parameter gave 2,044 reasoning tokens and an empty answer. Providers seen: Sail Research, Alibaba, Z.AI. |
+
+`openai/gpt-6-sol` keeps its v1.1 setting (`reasoning.effort = none`).
+
 ## Deviations
 
-(none yet)
+- **2026-10-10, reasoning could not be turned off for three models.** Section 3 and 4 say "off where the model accepts it, otherwise the lowest level accepted, with the same settings as in v1.1". Sonnet 5.5 (minimal), Opus 5.5 (low) and GLM 5.3 on OpenRouter (low) reject "off". The GLM replication therefore differs from the v1.1 Baseten run, which used `thinking: disabled` (about 140 reasoning tokens per call); a difference between the two GLM runs can come from the setting as well as from the provider.
