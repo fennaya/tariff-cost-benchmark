@@ -9,6 +9,7 @@ out" and the primary rows are all rows. The full sample is reported as secondary
 Gate B (pre-registered): "underpays more than chance" only if the underpay share beats Baseline 2
 at p < 0.05 AND n >= 30 rate-changing errors.
 """
+import csv
 import json
 import sys
 from collections import Counter, defaultdict
@@ -207,7 +208,8 @@ def main():
     out("\n".join(vc_lines))
 
     # ---- same-200 comparison
-    ids200 = M.sample_ids(next(m for m in models if m.get("sample") == "subset200")) if any(m.get("sample") == "subset200" for m in models) else []
+    with M.SUBSET_PATH.open(encoding="utf-8") as f:  # the fixed 200-ruling sample; every model's answers to these are in its cache
+        ids200 = [row["rulingNumber"] for row in csv.DictReader(f)]
     if ids200:
         s200 = set(ids200)
         out(f"\n## Same-200 comparison (all models restricted to the {len(s200)} rulings in data/gemini_subset.csv; all dates, secondary)\n")
@@ -275,8 +277,14 @@ def main():
             out(f"| {m['model_id']} | {n} | {ci(acc(rows, 8), n)} | {ci(len(inv), n)} | {split} | {und} |")
 
     shared_table("v1.2 same-sample table A: all main-table models on their shared post-cutoff rulings", models)
-    shared_table("v1.2 same-sample table B: the models run on all 1,098 rulings, on their shared post-cutoff rulings",
-                 [m for m in models if m.get("sample", "all") == "all"])
+    group_b = [m for m in models if m.get("sample", "all") == "all"]
+    if len(group_b) < len(models):
+        shared_table("v1.2 same-sample table B: the models run on all 1,098 rulings, on their shared post-cutoff rulings", group_b)
+    else:
+        out("")
+        out("## v1.2 same-sample table B")
+        out("")
+        out("Every model has now run all 1,098 rulings (Nemotron 3 Ultra was extended from 200 to 1,098 on 2026-10-10), so table B would repeat table A.")
 
     # ---- Holm sensitivity for Gate B (added after the first results were seen; not pre-registered)
     out("\n## Sensitivity: Holm correction of the Gate B p-values across all models\n")

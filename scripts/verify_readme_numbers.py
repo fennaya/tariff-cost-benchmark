@@ -39,7 +39,7 @@ def main():
     by_short = {}
     for l in table:
         cells = [c.strip() for c in l.strip().strip("|").split("|")]
-        if len(cells) == 7:
+        if len(cells) == 8:
             by_short[re.sub(r"\s*[†‡]", "", cells[0]).strip()] = cells
     bad = checked = 0
     for m in M.analysis_models():
@@ -56,6 +56,11 @@ def main():
         g = A.gate_b(rows)
         want = {"n": f"{n:,}", "acc8": f"{k8 / n:.1%}", "inv": f"{inv / n:.1%}", "under": f"{g['share']:.1%} (n = {g['n']})"}
         got = {"n": cells[1].split(" ")[0], "acc8": cells[2].split(" ")[0], "inv": cells[3], "under": cells[5]}
+        # post-hoc column "All 1,098 (upper bound)": 8-digit accuracy on every ruling the model answered
+        all_rows = recompute(m)
+        k_all = sum(1 for r in all_rows if digit_match(r["true_code"], r.get("predicted_code"), 8))
+        want["all8"] = f"{k_all / len(all_rows):.1%}"
+        got["all8"] = cells[7].split(" ")[0]
         for k in want:
             checked += 1
             if want[k] != got[k]:

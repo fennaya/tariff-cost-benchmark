@@ -9,9 +9,9 @@ and two-sided two-proportion tests (pooled z-test and Fisher exact).
 
 Models: gpt-oss-20b and gpt-oss-120b (cutoff 2024-06-01, cannot have seen any 2026 ruling), allam-2-7b,
 DeepSeek V4.1 Flash, GLM 5.3 and Kimi K3 (Baseten runs, no stated cutoff), GPT-6 Sol (reference), the three
-Claude models (cutoff 2026-06-30, so their split here is a different, earlier date and only descriptive) and
-the three OpenRouter replication runs (same models as the Baseten runs). Nemotron ran on 200 rulings and
-is left out. Writes review/time_drift.md and review/time_drift.json.
+Claude models (cutoff 2026-06-30) and Nemotron 3 Ultra (cutoff 2026-05-31, extended to all 1,098 rulings
+after the v1.2 results), whose split here is a different, earlier date than their own cutoff and only descriptive,
+and the three OpenRouter replication runs (same models as the Baseten runs). Writes review/time_drift.md and review/time_drift.json.
 """
 import json
 import sys
@@ -47,7 +47,7 @@ def main():
     cfg = {m["model_id"]: m for m in M.load()}
     order = ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "allam-2-7b", "deepseek-ai/DeepSeek-V4.1-Flash",
              "zai-org/GLM-5.3", "moonshotai/Kimi-K3", "openai/gpt-6-sol", "anthropic/claude-haiku-5.5",
-             "anthropic/claude-sonnet-5.5", "anthropic/claude-opus-5.5", "replication/moonshotai/kimi-k3",
+             "anthropic/claude-sonnet-5.5", "anthropic/claude-opus-5.5", "nvidia/nemotron-3-ultra-550b-a55b:free", "replication/moonshotai/kimi-k3",
              "replication/deepseek/deepseek-v4.1-flash", "replication/z-ai/glm-5.3"]
     res, rows_md = {}, []
     for mid in order:
@@ -77,8 +77,8 @@ def main():
     L = ["# Time-drift test: 8-digit accuracy before vs after 2026-04-20 (scripts/analyze_time_drift.py)\n",
          "Added after the v1.2 results were seen; no new API calls. Rulings dated on or before 2026-04-20 vs after it, all 1,098 rulings per model, "
          "8-digit accuracy with Wilson 95% CIs. 'Drop' = before minus after, in percentage points. p-values: two-sided pooled two-proportion z-test and Fisher exact test (descriptive, not corrected for multiple comparison; "
-         "13 rows). GPT-6 Sol's stated cutoff is the split date. gpt-oss-20b and gpt-oss-120b have a 2024 cutoff and cannot have seen any ruling. "
-         "The Claude models' stated cutoff is 2026-06-30, so the split here is not their cutoff and only shows the time trend. † no stated cutoff.\n",
+         "14 rows). GPT-6 Sol's stated cutoff is the split date. gpt-oss-20b and gpt-oss-120b have a 2024 cutoff and cannot have seen any ruling. "
+         "The Claude models' stated cutoff is 2026-06-30 and Nemotron's 2026-05-31, so the split here is not their cutoff and only shows the time trend. † no stated cutoff.\n",
          "| Model | Stated cutoff | n up to 2026-04-20 | 8-digit up to 2026-04-20 | n after | 8-digit after | drop (points) | p (z-test) | p (Fisher) |",
          "|---|---|---|---|---|---|---|---|---|"] + rows_md
     # power of the control: could the 2024-cutoff models have shown a drop as large (in relative terms) as Sol's?
