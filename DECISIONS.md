@@ -968,3 +968,33 @@ Requested after the user read the first v1.1 results; written into findings.md (
 **Biggest misses.** 5 rows from flagged rulings were dropped and refilled from the next largest: under N361449 (Kimi K3, $28,200) and N361705 (allam-2-7b, $27,700); over N361310 and N361321 (GLM 5.3, $32,000 each) and N361312 (GPT-6 Sol, $32,000). `demo_data.json` carries `inadequate_description: true` on the 40 flagged rulings; none of the biggest-miss rulings is flagged.
 
 **What would prove this wrong.** If long but thin descriptions (not caught by the rule) matter as much as the flagged ones, the sensitivity understates the extractor's effect; the audit is a floor, not a measurement.
+
+## 2026-10-10 -- v1.2 (GPT-6 Sol extension, Claude models, provider replication)
+
+Pre-registered in PREREG_v1.2.md (commit 88f513a) before any v1.2 call; the dated deviations are also in that file. Every judgment call and deviation is listed here.
+
+**1. Reasoning could not be turned off for three models.** The pre-registration said "off where accepted, otherwise the lowest level accepted". One test call per variant per model (`scripts/test_v1_2_settings.py`, `run_logs/v1_2_settings_test.json`): Haiku 5.5 accepts none; Sonnet 5.5 minimal is the lowest accepted; Opus 5.5 low is the lowest accepted; Kimi K3 and DeepSeek V4.1 Flash on OpenRouter accept none; GLM 5.3 on OpenRouter accepts low only ("Reasoning is mandatory for this endpoint"). Consequences: Opus 5.5 used about 297 reasoning tokens per answer (424 in the test call), Sonnet 5.5 reports none but writes about 517 output tokens, and the GLM replication differs from the Baseten run (thinking disabled) in setting as well as provider. Recorded in the pre-registration addendum, the README and findings.md. What would prove this wrong: if Opus' lead over GPT-6 Sol is only extra reasoning, "most accurate" describes a setting, not the model; nothing here separates the two.
+
+**2. Spend cap raised from $25 to $30** on the user's message after the pilot ("as long as it doesn't go over 30 it's good go"). The projection was about $23.8. The runner stops when the cumulative `usage.cost` reaches the cap (`run_logs/v1_2_session_cost.json`). Final session counter: $21.36 over 7,496 calls (includes the settings test and the pilot). Per-model cost from the caches: GPT-6 Sol $1.09 (including the $0.198 of v1.1), Haiku $0.12, Sonnet $6.60, Opus $10.96, Kimi replication $1.48, DeepSeek replication $0.08, GLM replication $1.16.
+
+**3. OpenRouter lowered the list prices of GLM 5.3 and Kimi K3 during the run.** The runner's price guard (listing price must equal config) refused both runs; I updated config.json, logged it in PREREG_v1.2.md, committed, and restarted them. Prices went down, so no limit was at risk, and the cost reported is always each response's own `usage.cost`.
+
+**4. Contamination rule and cutoff sources.** Claude: Anthropic's models overview gives "Jun 2026" for both reliable knowledge and training data; I used 2026-06-30 (end of the month, the conservative reading), so the primary rows are the 228 rulings dated July and August 2026. GPT-6 Sol: 2026-04-20 now from OpenAI's own page rather than a third-party report (same date). Kimi K3, DeepSeek V4.1 Flash and GLM 5.3 (OpenRouter replication): no stated cutoff, marked with the dagger like the Baseten runs and excluded from the main tables.
+
+**5. Replication design.** Baseten excluded through the OpenRouter provider-ignore setting with fallbacks allowed, and every answer's recorded provider checked (reject list, retry once): no replication answer was served by Baseten. OpenRouter then routed each model to 18 (Kimi), 27 (DeepSeek) and 31 (GLM) different providers, which I accepted because the alternative was restricting to one host, which would have been a different experiment and could not have been decided from the pre-registration. Reported: identical-code rate, identical first-8-digits rate, accuracy difference with a paired-bootstrap 95% CI (10,000 resamples, seed 20261010), invalid share. No threshold for "replicated" was set; the README says "within 2.5 points" and gives the answer-level agreement next to it.
+
+**6. Model-identity check.** Every response's `model` field was compared with the requested id (`strict_model_check`); 1,098 of 1,098 matched for each of the seven caches. A mismatch would have been retried once and then stopped the run. No finished ruling was ever resent.
+
+**7. Second same-sample table (post-hoc).** Table A (all 11 models) shares only 68 post-cutoff rulings because Nemotron 3 Ultra ran on 200, so I added table B (the 10 models run on all 1,098: 228 shared rulings). The user asked for one shared table; this is an addition, not a replacement.
+
+**8. Holm.** Gate B verdict changes under Holm for Claude Haiku 5.5 only (p = 0.021, Holm-adjusted 0.105). The pre-registered verdict (met) is kept in the table and the README states the Holm outcome next to it ("met (not met under Holm)"). 7 of 11 met as pre-registered, 6 of 11 under Holm.
+
+**9. README headline.** Rewritten for the new top of the table. It names Opus 5.5 and GPT-6 Sol together as "among the most accurate models tested", not "the best", because the intervals overlap (53.5% vs 49.1% on 228 shared rulings; paired p = 0.54 on all 1,098). Scores for the Claude models rest on 228 rulings; stated in the README and findings.md.
+
+**10. Parse failures.** Claude Haiku 14 answers, replication DeepSeek 9, GLM 42: counted as invalid answers as in v1.1 (the parser and scoring code are unchanged). Non-stop finish reasons: Haiku 1, DeepSeek replication 6, GLM replication 13.
+
+**11. Self-check (Step 7).** `scripts/verify_readme_numbers.py` re-parses every cached raw response, restricts to each model's post-cutoff rulings, recomputes n, 8-digit accuracy, invalid share and the Gate B underpay share and compares each with the README table: 44 values, 0 mismatches. The v1.0 and v1.1 model rows in `analysis_results.json`, `invalid_breakdown.json`, `validity_check.json` and `underpay_summary.json` were compared with the published versions: identical except GPT-6 Sol (extended). `review/v1_2_attack.md` repeats the v1.1 attack on the new results.
+
+**12. Exploratory test count.** 121 exploratory tests now (64 in v1.1), uncorrected, as stated in findings.md.
+
+**What would prove this wrong.** If the vendors' stated cutoffs are optimistic, the post-cutoff rows are still partly seen data and the Claude and GPT-6 Sol figures are upper bounds; the GPT-6 Sol drop from 58.9% to 49.6% across its cutoff is the evidence that this matters. If OpenRouter's routing mixes quantised hosts, the replication understates what the full-precision model would do.

@@ -640,3 +640,147 @@ Baseten and OpenRouter cost, from `data/exports/api_calls_summary.csv` (list pri
 ### What v1.1 changes in the v1.0 conclusions
 
 The v1.0 numbers for the three Groq models are unchanged (checked after the full rerun). What changes is the framing: "free models mostly return codes that do not exist" is true for the three small Groq models and for GLM 5.3, but not for DeepSeek V4.1 Flash, Kimi K3, Nemotron 3 Ultra or GPT-6 Sol, whose invalid answers are mostly suffix slips and stale codes, and whose wrong answers are mostly valid codes that a validity check does not catch.
+
+## v1.2: GPT-6 Sol extension, Claude models, and provider replication
+
+v1.2 is run exactly like v1.1 (same prompt, temperature 0, scoring code, metrics and Gate B rule) and adds three things, fixed in [PREREG_v1.2.md](PREREG_v1.2.md) before any v1.2 call (commit `88f513af48eed29084cbcb42b04ab9b3c2b294d1`; settings addendum and dated deviations in the same file, commits `f3887b6` and later): **A.** GPT-6 Sol from the 200-ruling sample to all 1,098 rulings; **B.** three Claude models (Haiku 5.5, Sonnet 5.5, Opus 5.5) on all 1,098; **C.** Kimi K3, DeepSeek V4.1 Flash and GLM 5.3 rerun through OpenRouter with Baseten excluded, to test whether the v1.1 results hold across providers. All calls went through OpenRouter. The round cost $21.36 in OpenRouter usage (hard cap $30, raised from $25 by the user after the pilot), and every call is in `data/exports/api_calls.csv`. The v1.1 text above is unchanged; the v1.0 numbers for the three Groq models and the v1.1 numbers for the other models are unchanged (checked after the rerun). Only GPT-6 Sol's row changes, because it now covers 1,098 rulings. Gemini 3.8 Flash is still in no table (2 of 200 responses). No other closed model is in these tables, and none of these models stands in for GPT, Claude or Gemini.
+
+### Deviations from pre-registration (v1.2)
+
+1. **Reasoning could not be turned off for three models.** The pre-registration says "off where the model accepts it, otherwise the lowest level accepted". Claude Sonnet 5.5 (minimal), Claude Opus 5.5 (low) and GLM 5.3 on OpenRouter (low) reject "off". Opus still used about 297 reasoning tokens per answer; Sonnet reports none but wrote long answers (about 517 output tokens). The GLM replication therefore differs from the v1.1 Baseten run in reasoning setting as well as provider.
+2. **The spend cap was raised from $25 to $30** on the user's instruction after the pilot (projected cost was about $23.8). Actual OpenRouter spend was $21.36.
+3. **OpenRouter lowered the list prices of GLM 5.3 and Kimi K3 during the run** ($4.80 out instead of $6.00 for GLM; $0.64 in instead of $0.80 for Kimi). The price guard refused both runs; the config was updated and they were restarted. Prices went down, and every cost reported is each response's own `usage.cost`.
+4. **Two same-sample tables instead of one.** Table A (all 11 models on the post-cutoff rulings all of them share) has only 68 rulings because Nemotron 3 Ultra ran on a 200-ruling sample, so table B (the 10 models run on all 1,098, 228 shared rulings) was added.
+5. **Cutoff sources.** GPT-6 Sol's cutoff (2026-04-20) now comes from OpenAI's own page; v1.1 used a third-party report for the same date. The three Claude models' cutoff is Anthropic's "Jun 2026" for both reliable knowledge and training data; 2026-06-30 (end of the month) is used, so Claude scores use only the 228 rulings dated July and August 2026.
+6. **The replication was served by many providers**, not one: 18 (Kimi K3), 27 (DeepSeek V4.1 Flash) and 31 (GLM 5.3) different providers in the recorded `provider` field. None of the 3,294 replication answers was served by Baseten.
+7. **The number of exploratory hypothesis tests grew** from 64 to 121 (the new models add McNemar pairs); none is corrected for multiple comparison.
+8. **Holm sensitivity changes one pre-registered Gate B verdict under correction** (Claude Haiku 5.5, below). The pre-registered verdicts themselves are not changed.
+
+### Limits (before interpretation)
+
+- **Claude scores rest on 228 rulings** (July and August 2026 only), so their 95% intervals are about plus or minus 6 points. Rankings inside the top group (Opus 5.5, GPT-6 Sol, Sonnet 5.5, Kimi K3) are not supported beyond what the intervals show; the paired 8-digit test on all 1,098 rulings gives Opus 5.5 vs GPT-6 Sol p = 0.54.
+- **Reasoning was not off for Sonnet 5.5, Opus 5.5 and the GLM replication** (above), so these are not like-for-like with the models run with reasoning off.
+- **Contamination can inflate the full-sample numbers.** GPT-6 Sol scores 58.9% at 8 digits on the 560 rulings up to its stated cutoff and 49.6% on the 538 after it; Claude Sonnet 5.5 scores 46.1% and 40.4%, Opus 5.5 55.9% and 53.5%, Haiku 5.5 18.3% and 17.5%. This is descriptive, not a test, and case mix differs by month; it is the reason the primary scores use only post-cutoff rulings. The memorisation probe was not repeated in v1.2.
+- **† models** (allam-2-7b, DeepSeek V4.1 Flash, GLM 5.3, Kimi K3) have no stated cutoff: contamination not ruled out, accuracy is an upper bound.
+- **The replication measures a provider mix**, and for GLM also a setting change.
+- **Gate B verdicts rest on small n for several models** (n = 40 to 65 for Nemotron, the Claude models and the small models' subsets).
+- **Closed models cost money and are one model each**; nothing here says how any other GPT, Claude or Gemini model would score.
+- **40 of 1,098 rulings have an INADEQUATE description** (v1.1 audit); excluding them changes no Gate B verdict (re-run on all 11 models).
+- **Duty figures are MFN-only lower bounds.**
+
+The hostile review, with evidence for and against each point, is in [review/v1_2_attack.md](review/v1_2_attack.md).
+
+### Results: all models
+
+Primary scores (rulings after each model's stated cutoff; † models use all their rulings):
+
+| Model | Rulings scored | 8-digit accuracy (95% CI) | Invalid share | Format / invented, of invalid (all rulings run) | Underpay share (n) | Gate B |
+|---|---|---|---|---|---|---|
+| gpt-oss-20b | 1,098 | 0.3% (0.1% to 0.8%) | 98.4% | 14% / 86% | 67.4% (n = 46) | met |
+| gpt-oss-120b | 1,098 | 5.6% (4.3% to 7.1%) | 96.6% | 23% / 77% | 65.3% (n = 49) | met |
+| allam-2-7b † | 1,098 | 2.4% (1.6% to 3.4%) | 87.2% | 8% / 92% | 65.5% (n = 116) | met |
+| DeepSeek-V4.1-Flash † | 1,098 | 39.3% (36.4% to 42.2%) | 32.2% | 58% / 42% | 54.0% (n = 324) | not met |
+| GLM-5.3 † | 1,098 | 25.1% (22.7% to 27.8%) | 67.6% | 42% / 58% | 55.7% (n = 212) | met |
+| Kimi-K3 † | 1,098 | 43.4% (40.5% to 46.4%) | 25.3% | 68% / 32% | 59.2% (n = 311) | met |
+| nemotron-3-ultra-550b-a55b | 105 | 23.8% (16.7% to 32.8%) | 33.3% | 67% / 33% | 60.0% (n = 40) | met |
+| gpt-6-sol | 538 | 49.6% (45.4% to 53.8%) | 24.9% | 70% / 30% | 52.2% (n = 138) | not met |
+| claude-haiku-5.5 | 228 | 17.5% (13.2% to 23.0%) | 66.2% | 49% / 51% | 56.9% (n = 65) | met (not met under Holm) |
+| claude-sonnet-5.5 | 228 | 40.4% (34.2% to 46.8%) | 39.0% | 62% / 38% | 57.1% (n = 49) | not met |
+| claude-opus-5.5 | 228 | 53.5% (47.0% to 59.9%) | 27.6% | 75% / 25% | 45.1% (n = 51) | not met |
+
+**The most accurate models tested are Claude Opus 5.5 and GPT-6 Sol, and both are still wrong about half the time at 8 digits.** On their own post-cutoff rulings Opus 5.5 is at 53.5% (n = 228) and GPT-6 Sol at 49.6% (n = 538). On the 228 rulings that all ten full-sample models share (table B below) they are at 53.5% and 49.1% with overlapping intervals, followed by Sonnet 5.5 (40.4%), Kimi K3 (39.0%), DeepSeek V4.1 Flash (34.6%), GLM 5.3 (19.3%) and Haiku 5.5 (17.5%). The three small Groq models stay under 6%.
+
+### Part A: GPT-6 Sol on all 1,098 rulings
+
+v1.1 had GPT-6 Sol on 200 rulings: 49.5% at 8 digits (95% CI 42.6% to 56.4%, all dates), 49.7% on the 167 post-cutoff rulings, and a Gate B verdict "not met" with n = 41 (p = 0.114). With all 1,098 rulings it is 54.4% (51.4% to 57.3%, all dates) and **49.6% (45.4% to 53.8%) on the 538 rulings after its cutoff**, so the v1.1 headline figure holds with more than three times the rulings. Gate B is still **not met** with 138 rate-changing errors (52.2% underpaid, 43.9% to 60.3%, p vs Baseline 2 = 0.092), so the v1.1 statement that the underpay lean does not beat chance in GPT-6 Sol is no longer a small-sample result. Before its cutoff it scores 58.9% (560 rulings); the nine-point drop after the cutoff is the contamination warning sign described in the limits.
+
+### Part B: Claude Haiku 5.5, Sonnet 5.5 and Opus 5.5
+
+- **Opus 5.5** is at the top: 53.5% (47.0% to 59.9%) at 8 digits and 32.9% at 10 digits on the 228 post-cutoff rulings; 27.6% of its answers are invalid, and across all 1,098 rulings 75% of its invalid answers are suffix slips (format group) and 25% are invented codes (`review/format_vs_invention.md`).
+- **Sonnet 5.5** is at 40.4% (34.2% to 46.8%), with 39.0% invalid answers.
+- **Haiku 5.5** is at 17.5% (13.2% to 23.0%) and 66.2% invalid. Across all 1,098 rulings half of its invalid answers are suffix slips (49%) and half are invented (51%).
+- **Validity check.** Flagging any non-existent code catches 41.2% of Opus 5.5's wrong answers, 52.4% of Sonnet 5.5's and 72.2% of Haiku 5.5's, so for the stronger Claude models a validity check misses most errors.
+- **Direction.** Opus 5.5 underpays on 45.1% of 51 rate-changing errors (32.3% to 58.6%), below 50% and not distinguishable from chance; Sonnet 5.5 is at 57.1% (n = 49, p = 0.059, not met); Haiku 5.5 is at 56.9% (n = 65, p = 0.021, met as pre-registered but not under Holm).
+
+The two most accurate models, GPT-6 Sol and Opus 5.5, are the two where the underpay lean does not beat chance. That fits, but does not prove, the v1.1 suggestion that the lean fades as models improve; Sonnet 5.5, in between on accuracy, is also not distinguishable from chance.
+
+### Same-sample tables (post-cutoff rulings all models share)
+
+**Table A: all 11 models, 68 shared post-cutoff rulings**
+
+| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |
+|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 68 | 0.0% (0.0% to 5.3%) | 98.5% (92.1% to 99.7%) | 10 / 57 (15% / 85%) | 100.0% (43.8% to 100.0%), n = 3 |
+| openai/gpt-oss-120b | 68 | 5.9% (2.3% to 14.2%) | 98.5% (92.1% to 99.7%) | 14 / 53 (21% / 79%) | 33.3% (6.1% to 79.2%), n = 3 |
+| allam-2-7b † | 68 | 1.5% (0.3% to 7.9%) | 92.6% (83.9% to 96.8%) | 7 / 56 (11% / 89%) | 75.0% (40.9% to 92.9%), n = 8 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 68 | 25.0% (16.2% to 36.4%) | 33.8% (23.7% to 45.7%) | 12 / 11 (52% / 48%) | 62.5% (42.7% to 78.8%), n = 24 |
+| zai-org/GLM-5.3 † | 68 | 19.1% (11.5% to 30.0%) | 61.8% (49.9% to 72.4%) | 15 / 27 (36% / 64%) | 44.4% (24.6% to 66.3%), n = 18 |
+| moonshotai/Kimi-K3 † | 68 | 39.7% (28.9% to 51.6%) | 26.5% (17.4% to 38.0%) | 10 / 8 (56% / 44%) | 65.0% (43.3% to 81.9%), n = 20 |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 68 | 20.6% (12.7% to 31.6%) | 33.8% (23.7% to 45.7%) | 13 / 10 (57% / 43%) | 60.7% (42.4% to 76.4%), n = 28 |
+| openai/gpt-6-sol | 68 | 48.5% (37.1% to 60.2%) | 23.5% (15.0% to 34.9%) | 11 / 5 (69% / 31%) | 64.7% (41.3% to 82.7%), n = 17 |
+| anthropic/claude-haiku-5.5 | 68 | 19.1% (11.5% to 30.0%) | 66.2% (54.3% to 76.3%) | 20 / 25 (44% / 56%) | 62.5% (38.6% to 81.5%), n = 16 |
+| anthropic/claude-sonnet-5.5 | 68 | 38.2% (27.6% to 50.1%) | 39.7% (28.9% to 51.6%) | 16 / 11 (59% / 41%) | 58.8% (36.0% to 78.4%), n = 17 |
+| anthropic/claude-opus-5.5 | 68 | 54.4% (42.7% to 65.7%) | 29.4% (19.9% to 41.1%) | 17 / 3 (85% / 15%) | 57.1% (32.6% to 78.6%), n = 14 |
+
+**Table B: the 10 models run on all 1,098 rulings, 228 shared post-cutoff rulings**
+
+| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |
+|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 228 | 0.0% (0.0% to 1.7%) | 98.7% (96.2% to 99.6%) | 28 / 197 (12% / 88%) | 55.6% (26.7% to 81.1%), n = 9 |
+| openai/gpt-oss-120b | 228 | 3.9% (2.1% to 7.3%) | 97.4% (94.4% to 98.8%) | 47 / 175 (21% / 79%) | 50.0% (25.4% to 74.6%), n = 12 |
+| allam-2-7b † | 228 | 1.8% (0.7% to 4.4%) | 87.3% (82.3% to 91.0%) | 17 / 182 (9% / 91%) | 81.5% (63.3% to 91.8%), n = 27 |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 228 | 34.6% (28.8% to 41.0%) | 28.1% (22.6% to 34.2%) | 38 / 26 (59% / 41%) | 62.0% (51.0% to 71.9%), n = 79 |
+| zai-org/GLM-5.3 † | 228 | 19.3% (14.7% to 24.9%) | 66.7% (60.3% to 72.5%) | 59 / 93 (39% / 61%) | 60.0% (46.2% to 72.4%), n = 50 |
+| moonshotai/Kimi-K3 † | 228 | 39.0% (32.9% to 45.5%) | 25.0% (19.8% to 31.0%) | 39 / 18 (68% / 32%) | 58.1% (46.7% to 68.7%), n = 74 |
+| openai/gpt-6-sol | 228 | 49.1% (42.7% to 55.6%) | 21.1% (16.3% to 26.8%) | 31 / 17 (65% / 35%) | 61.4% (48.4% to 72.9%), n = 57 |
+| anthropic/claude-haiku-5.5 | 228 | 17.5% (13.2% to 23.0%) | 66.2% (59.9% to 72.1%) | 75 / 76 (50% / 50%) | 56.9% (44.8% to 68.2%), n = 65 |
+| anthropic/claude-sonnet-5.5 | 228 | 40.4% (34.2% to 46.8%) | 39.0% (32.9% to 45.5%) | 47 / 42 (53% / 47%) | 57.1% (43.3% to 70.0%), n = 49 |
+| anthropic/claude-opus-5.5 | 228 | 53.5% (47.0% to 59.9%) | 27.6% (22.2% to 33.8%) | 43 / 20 (68% / 32%) | 45.1% (32.3% to 58.6%), n = 51 |
+
+### Direction of duty errors and the Holm sensitivity
+
+| Model | rate-changing errors n | underpaid | underpay share (95% CI) | p vs Baseline 1 | p vs Baseline 2 | Gate B verdict | comparable wrong answers n | median duty per $100k (IQR) |
+|---|---|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 46 | 31 | 67.4% (53.0% to 79.1%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 101 | $0 ($0 to $3,500) |
+| openai/gpt-oss-120b | 49 | 32 | 65.3% (51.3% to 77.1%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 93 | $300 ($0 to $2,500) |
+| allam-2-7b † | 116 | 76 | 65.5% (56.5% to 73.5%) | < 0.001 | < 0.001 | underpays more than chance (Gate B met) | 147 | $3,400 ($350 to $6,500) |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 324 | 175 | 54.0% (48.6% to 59.4%) | 0.9930 | 0.1748 | not distinguishable from chance (Gate B not met) | 657 | $0 ($0 to $2,900) |
+| zai-org/GLM-5.3 † | 212 | 118 | 55.7% (48.9% to 62.2%) | 0.8322 | 0.0060 | underpays more than chance (Gate B met) | 483 | $0 ($0 to $2,800) |
+| moonshotai/Kimi-K3 † | 311 | 184 | 59.2% (53.6% to 64.5%) | 0.4496 | 0.0040 | underpays more than chance (Gate B met) | 673 | $0 ($0 to $2,800) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 40 | 24 | 60.0% (44.6% to 73.7%) | 0.2987 | 0.0070 | underpays more than chance (Gate B met) | 73 | $1,300 ($0 to $4,400) |
+| openai/gpt-6-sol | 138 | 72 | 52.2% (43.9% to 60.3%) | 0.9940 | 0.0919 | not distinguishable from chance (Gate B not met) | 306 | $0 ($0 to $2,800) |
+| anthropic/claude-haiku-5.5 | 65 | 37 | 56.9% (44.8% to 68.2%) | 0.5524 | 0.0210 | underpays more than chance (Gate B met) | 124 | $600 ($0 to $2,900) |
+| anthropic/claude-sonnet-5.5 | 49 | 28 | 57.1% (43.3% to 70.0%) | 0.8172 | 0.0589 | not distinguishable from chance (Gate B not met) | 122 | $0 ($0 to $2,800) |
+| anthropic/claude-opus-5.5 | 51 | 23 | 45.1% (32.3% to 58.6%) | 1.0000 | 0.5864 | not distinguishable from chance (Gate B not met) | 128 | $0 ($0 to $2,600) |
+
+| Model | n | p vs Baseline 2 | Holm-adjusted p | Gate B as pre-registered | Verdict under Holm | Changed? |
+|---|---|---|---|---|---|---|
+| openai/gpt-oss-20b | 46 | < 0.001 | 0.0110 | met | met | no |
+| openai/gpt-oss-120b | 49 | < 0.001 | 0.0110 | met | met | no |
+| allam-2-7b † | 116 | < 0.001 | 0.0110 | met | met | no |
+| deepseek-ai/DeepSeek-V4.1-Flash † | 324 | 0.1748 | 0.3497 | not met | not met | no |
+| zai-org/GLM-5.3 † | 212 | 0.0060 | 0.0420 | met | met | no |
+| moonshotai/Kimi-K3 † | 311 | 0.0040 | 0.0320 | met | met | no |
+| nvidia/nemotron-3-ultra-550b-a55b:free | 40 | 0.0070 | 0.0420 | met | met | no |
+| openai/gpt-6-sol | 138 | 0.0919 | 0.2757 | not met | not met | no |
+| anthropic/claude-haiku-5.5 | 65 | 0.0210 | 0.1049 | met | not met | YES |
+| anthropic/claude-sonnet-5.5 | 49 | 0.0589 | 0.2358 | not met | not met | no |
+| anthropic/claude-opus-5.5 | 51 | 0.5864 | 0.5864 | not met | not met | no |
+
+**Gate B is met for 7 of 11 models as pre-registered (gpt-oss-20b, gpt-oss-120b, allam-2-7b, GLM 5.3, Kimi K3, Nemotron 3 Ultra, Claude Haiku 5.5) and for 6 of 11 under Holm.** Haiku 5.5 is the only verdict that changes (adjusted p = 0.105).
+
+### Part C: provider replication
+
+Kimi K3, DeepSeek V4.1 Flash and GLM 5.3 were rerun on all 1,098 rulings through OpenRouter with Baseten excluded. The Baseten runs stay the primary results; this section is separate and never enters the tables above.
+
+| Model | rulings both | identical code | identical first 8 digits (both >= 8 digits) | 8-digit accuracy Baseten | 8-digit accuracy OpenRouter | difference (95% CI) | invalid share Baseten / OpenRouter | answers with a different valid/invalid tag |
+|---|---|---|---|---|---|---|---|---|
+| moonshotai/Kimi-K3 | 1098 | 936 (85.2%) | 997 of 1098 (90.8%) | 477 (43.4%) | 463 (42.2%) | -1.3 points (-2.4 to -0.2) | 25.3% / 24.9% | 65 |
+| deepseek-ai/DeepSeek-V4.1-Flash | 1098 | 884 (80.5%) | 928 of 1089 (85.2%) | 431 (39.3%) | 424 (38.6%) | -0.6 points (-2.1 to +0.8) | 32.2% / 31.3% | 84 |
+| zai-org/GLM-5.3 | 1098 | 252 (23.0%) | 417 of 1029 (40.5%) | 276 (25.1%) | 249 (22.7%) | -2.5 points (-4.8 to -0.1) | 67.6% / 68.5% | 314 |
+
+**Aggregate accuracy holds across providers, individual answers do not.** 8-digit accuracy moves by -1.3, -0.6 and -2.5 points (the intervals for Kimi K3 and GLM 5.3 only just exclude zero, DeepSeek's includes it) and the invalid share by under one point. But the identical code comes back for 85.2% (Kimi K3), 80.5% (DeepSeek V4.1 Flash) and only 23.0% (GLM 5.3) of the rulings, even at temperature 0. GLM's low agreement mixes the provider effect with the reasoning-setting change (disabled on Baseten, low effort on OpenRouter), so it cannot be attributed to the provider alone. A single run of a model at one provider should be read with that spread in mind.
+
+### What v1.2 changes in the v1.1 conclusions
+
+The v1.0 and v1.1 numbers are unchanged. The GPT-6 Sol headline figure holds on 1,098 rulings. The new top of the table is Claude Opus 5.5 together with GPT-6 Sol, at about half of 8-digit classifications correct. The underpay lean is 65% to 67% in the three small models and 45% to 60% in the other eight, beating the pre-registered baseline in 7 of 11 models, and not in the two most accurate. The v1.1 results hold across providers in aggregate, with the answer-level caveat above.
