@@ -180,6 +180,8 @@ def one_call(provider, model, messages):
     for attempt in range(1, MAX_ATTEMPTS + 1):
         if stop_event.is_set():
             raise StopRun("stopped")
+        if not model.get("paid") and not body["model"].endswith(":free"):  # v1.2 post-hoc zero-spend rule, checked before every call
+            raise StopRun(f"refusing {body['model']}: id does not end in :free")
         check_session_cap(model)
         t0 = time.time()
         requested_at = now()
@@ -207,6 +209,8 @@ def one_call(provider, model, messages):
                 continue
             log_call("POST", endpoint, model["model_id"], 200, d.get("usage"))
             add_session_cost(model, d.get("usage"))
+            if not model.get("paid") and float((d.get("usage") or {}).get("cost") or 0) > 0:  # zero-spend rule, checked after every call
+                raise StopRun(f"free-route call reported usage.cost = {d['usage']['cost']} > 0; stopping")
             problem = response_problem(d, model)
             if problem:
                 check_fails += 1
@@ -246,6 +250,7 @@ def main():
     ap.add_argument("--n", type=int, default=None, help="only the first N rulings of this model's sample")
     ap.add_argument("--probe", action="store_true", help="Check A: ruling number only, no description")
     ap.add_argument("--threads", type=int, default=None)
+    ap.add_argument("--all", action="store_true", help="run all usable rulings instead of the model's configured sample (post-hoc extension, v1.2 Part B)")
     args = ap.parse_args()
 
     model = M.by_id(args.model)
@@ -263,7 +268,7 @@ def main():
         ids = ids[:100] if prov_name == "baseten" else ids[:25]
         out_dir = PROBES_DIR / M.dir_name(model)
     else:
-        ids = M.sample_ids(model) or [r["rulingNumber"] for r in usable]
+        ids = [r["rulingNumber"] for r in usable] if args.all else (M.sample_ids(model) or [r["rulingNumber"] for r in usable])
         out_dir = M.model_dir(model)
     if args.n:
         ids = ids[: args.n]
