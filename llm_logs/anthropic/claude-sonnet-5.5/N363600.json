@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363600",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "8479899597",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596706-zCkODes92INF056mrSfB",
+    "object": "chat.completion",
+    "created": 1791596706,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on grain bins with a hopper cone bottom. Grain bins of galvanized steel are generally classified in 7309 (reservoirs, tanks, vats and similar containers for any material, of iron or steel, capacity over 300 L) or in 8436.99 (parts of agricultural machinery). Grain drying equipment is under 8419.33 (dryers for agricultural products). Here the system is a storage bin with an aeration floor, and the fan is separate. The drying function is by aeration, with fans and heaters supplied.\n\nI think the ruling classified it under 8419.39 or 7309. The primary use is \"store and drydown\", and a bin with a built-in aeration system could be considered a dryer. The upper bin has no mechanical equipment, but the set is a composite or a functional unit. If the fans are included, the system functions as a grain dryer (8419.33 covers dryers for agricultural products, and the HTS 8419.33.00 is \"Drying machinery for agricultural products\"). Still, 7309.00.0030 is the \"Reservoirs, tanks... for any material... of iron or steel: other, not lined or heat insulated: holding 300 L or more: Other\", which fits the bulk of grain bin rulings.\n\nThe use of the unit is storage first, with aeration drying, and the fans are the only mechanical item. Past rulings on grain bins with aeration floors: grain bins classify in 7309.00.0090, whereas grain bin dryers fall under 8419.33. Since the description says the pieces constitute a \"grain storage and aeration drying system package,\" I'll go with 7309.00.0090 (other, not lined or heat insulated, which includes the grain bin).\n\nThe 7309 subheading breaks down as 7309.00.00 with statistical suffixes: 10 (for liquids?), 30 (for solids/other?), and 50/90. Under the current HTS, 7309.00.00 has 7309.00.0030 \"Reservoirs, tanks, vats... Of a capacity exceeding 300 L, lined or heat insulated\", 7309.00.0090 \"Other\". I'll go with 7309.00.0090.\n\n{\"hts_code\": \"7309.00.0090\", \"reason\": \"The galvanized steel grain storage bin with its aeration hopper bottom is a steel reservoir/container for solid material of over 300 L capacity, not lined or heat insulated, so it falls in heading 7309.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 655,
+      "completion_tokens": 800,
+      "total_tokens": 1455,
+      "cost": 0.00931,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00931,
+        "upstream_inference_prompt_cost": 0.00131,
+        "upstream_inference_completions_cost": 0.008
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7309000090",
+  "predicted_reason": "The galvanized steel grain storage bin with its aeration hopper bottom is a steel reservoir/container for solid material of over 300 L capacity, not lined or heat insulated, so it falls in heading 7309.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 655,
+    "completion_tokens": 800,
+    "total_tokens": 1455,
+    "cost": 0.00931,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00931,
+      "upstream_inference_prompt_cost": 0.00131,
+      "upstream_inference_completions_cost": 0.008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:06.799531+00:00",
+  "latency_s": 8.305,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

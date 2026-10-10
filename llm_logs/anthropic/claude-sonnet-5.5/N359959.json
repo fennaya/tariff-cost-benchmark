@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359959",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "4421999880",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595989-IBtRAP04UQRzdyfrNpzV",
+    "object": "chat.completion",
+    "created": 1791595989,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on edge-glued lumber panels overlaid with HDF and melamine paper. The question is whether the product belongs in heading 4412 (plywood), 4410/4411 (fiberboard), 4418 (builders' joinery, which includes laminated panels), or 4421.\n\nHeading 4418 includes cellular wood panels and assembled parquet panels, and 4418.99 covers other builders' joinery. Heading 4412 requires plywood, veneered panels, or similar laminated wood, and here there are no veneers. The product is edge-glued lumber core with HDF faces. Heading 4412 includes \"other laminated wood,\" but the HDF faces are not wood plies in the sense of that heading. In that case the panel is more likely classified under 4421 or 4418.\n\nThe relevant rulings treat edge-glued panels as glued laminated or solid wood panels under 4421.99 or 4418.99. Solid wood panels classify under 4418.99 (formerly 4418.90). Note 4418.99.9095 is \"Other: Other.\" However, the panel is a composite of lumber and HDF. HDF is wood fiberboard, and the lumber core is edge-glued. This could fall under 4421.99.98 (other articles of wood), but panels of edge-glued lumber are commonly placed in 4412.99 as \"other laminated wood.\" Because HDF is not veneer or plywood, 4412 is doubtful.\n\nI'll choose 4421.99.9880, other articles of wood.\n\nConsidering 4418.99 again: it covers \"Other,\" which includes glued laminated timber and panels. Solid wood panels of edge-glued lumber are classified by CBP in 4418.99.9095 when they are builders' joinery, such as shelving or tabletops. The product here is a general panel, however, so it is better classified in 4421.\n\n{\"hts_code\": \"4421.99.9880\", \"reason\": \"Edge-glued tropical lumber core overlaid with HDF and melamine paper, with no veneer plies, is not plywood or veneered panel of heading 4412, so it falls in the residual provision for other articles of wood.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 305,
+      "completion_tokens": 700,
+      "total_tokens": 1005,
+      "cost": 0.00761,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00761,
+        "upstream_inference_prompt_cost": 0.00061,
+        "upstream_inference_completions_cost": 0.007
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4421999880",
+  "predicted_reason": "Edge-glued tropical lumber core overlaid with HDF and melamine paper, with no veneer plies, is not plywood or veneered panel of heading 4412, so it falls in the residual provision for other articles of wood.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 305,
+    "completion_tokens": 700,
+    "total_tokens": 1005,
+    "cost": 0.00761,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00761,
+      "upstream_inference_prompt_cost": 0.00061,
+      "upstream_inference_completions_cost": 0.007
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:10.188924+00:00",
+  "latency_s": 6.784,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

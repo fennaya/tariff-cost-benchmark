@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357260",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "3004390050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595348-ycKJOOw78ubBuORXD2bB",
+    "object": "chat.completion",
+    "created": 1791595348,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Calcitonin is a hormone polypeptide, and in the HTSUS hormones fall under heading 2937. Subheading 2937.91 covers insulin and its salts, and 2937.2x covers adrenal cortex hormones. Polypeptide hormones appear in 2937.19 (other polypeptide hormones, proteins hormones and glycoprotein hormones, their derivatives and structural analogues). The statistical suffix 2937.19.00 00 would be for bulk.\n\nHowever, this product is put up in measured doses as vials of injection for retail sale, which points to heading 3004. Within 3004, the hormone-containing subheadings are 3004.32 (corticosteroid hormones), 3004.39 (other hormones) and 3004.90 (other). Calcitonin injection therefore goes under 3004.39.\n\nThe statistical suffix is the uncertain part. I believe 3004.39.0050 is \"Other\" and 3004.39.0010 is for the \"Other\" within a group, but I am not certain. The usual layout is 3004.39.00 with statistical suffixes 10 (Hormones: Containing insulin?), 50 (Other). I am going with 3004.39.0050.\n\n{\"hts_code\": \"3004.39.0050\", \"reason\": \"Calcitonin salmon is a polypeptide hormone put up in measured-dose vials for therapeutic use, so it is classified in heading 3004 as a medicament containing hormones, under 3004.39 (other hormones), statistical suffix 50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 497,
+      "total_tokens": 743,
+      "cost": 0.005462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005462,
+        "upstream_inference_prompt_cost": 0.000492,
+        "upstream_inference_completions_cost": 0.00497
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004390050",
+  "predicted_reason": "Calcitonin salmon is a polypeptide hormone put up in measured-dose vials for therapeutic use, so it is classified in heading 3004 as a medicament containing hormones, under 3004.39 (other hormones), statistical suffix 50.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 497,
+    "total_tokens": 743,
+    "cost": 0.005462,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005462,
+      "upstream_inference_prompt_cost": 0.000492,
+      "upstream_inference_completions_cost": 0.00497
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:28.933194+00:00",
+  "latency_s": 5.401,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

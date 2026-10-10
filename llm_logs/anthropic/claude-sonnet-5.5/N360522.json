@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360522",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8481809025",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596103-dPT3uA1MvOWq1vVMq7s7",
+    "object": "chat.completion",
+    "created": 1791596103,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Active grille shutters for passenger vehicles: CBP rulings (e.g., NY N325xxx) classified active grille shutters in 8708.29.5160 (other parts and accessories of bodies, other) or 8708.99? I recall a ruling classifying an active grille shutter under 8708.29.5160 as a body part. Others considered 8708.99.8180 (other parts) for radiator-related items. Since the shutter is mounted behind the grille, in front of the radiator, and regulates airflow for aerodynamics and cooling, the ruling I recall (HQ H3xxxxx, 2023?) concluded it's a body part: 8708.29.5160 (other parts and accessories of bodies, other: other). The current HTS statistical suffix for 8708.29.5160 is \"Other\" under \"Other\" within 8708.29.51 (for vehicles of heading 8703). I'll go with 8708.29.5160.\n\n{\"hts_code\": \"8708.29.5160\", \"reason\": \"The active grille shutter is a motorized louver assembly mounted behind the grille that serves as a body part or accessory of passenger motor vehicles, so it falls under heading 8708 as other parts and accessories of bodies.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 639,
+      "completion_tokens": 398,
+      "total_tokens": 1037,
+      "cost": 0.005258,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005258,
+        "upstream_inference_prompt_cost": 0.001278,
+        "upstream_inference_completions_cost": 0.00398
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708295160",
+  "predicted_reason": "The active grille shutter is a motorized louver assembly mounted behind the grille that serves as a body part or accessory of passenger motor vehicles, so it falls under heading 8708 as other parts and accessories of bodies.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 639,
+    "completion_tokens": 398,
+    "total_tokens": 1037,
+    "cost": 0.005258,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005258,
+      "upstream_inference_prompt_cost": 0.001278,
+      "upstream_inference_completions_cost": 0.00398
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:03.973778+00:00",
+  "latency_s": 4.268,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

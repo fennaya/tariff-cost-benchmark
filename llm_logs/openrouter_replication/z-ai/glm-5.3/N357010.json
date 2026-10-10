@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357010",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3004909239",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599568-RMsdBIQxI99JscSR0gpS",
+    "object": "chat.completion",
+    "created": 1791599568,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2922.19.5000\", \"reason\": \"Venlafaxine HCl is an amino-naphthol-type oxygen-function amine (an aminocyclohexanol ether compound) not elsewhere specified, classified as an amino-alcohol/ether compound in heading 2922.\"}",
+          "refusal": null,
+          "reasoning": "Venlafaxine: 2938? No\u2014venlafaxine is an aminonaphthalene? Actually venlafaxine HCl classified 2933.79? It's a propanamine... Venlafaxine: 1-[2-(dimethylamino)-1-(4-methoxyphenyl)ethyl]cyclohexanol \u2014 heterocyclic? No N ring. It's under 2922.19? Contains ether and amine. Commonly classified 2922.19.50? Actually known HTS: 2922.19.5000? Venlafaxine base... I recall 2922.19.5000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Venlafaxine: 2938? No\u2014venlafaxine is an aminonaphthalene? Actually venlafaxine HCl classified 2933.79? It's a propanamine... Venlafaxine: 1-[2-(dimethylamino)-1-(4-methoxyphenyl)ethyl]cyclohexanol \u2014 heterocyclic? No N ring. It's under 2922.19? Contains ether and amine. Commonly classified 2922.19.50? Actually known HTS: 2922.19.5000? Venlafaxine base... I recall 2922.19.5000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 178,
+      "completion_tokens": 226,
+      "total_tokens": 404,
+      "cost": 0.000804,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000804,
+        "upstream_inference_prompt_cost": 3.56e-05,
+        "upstream_inference_completions_cost": 0.0007684
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 154,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2922195000",
+  "predicted_reason": "Venlafaxine HCl is an amino-naphthol-type oxygen-function amine (an aminocyclohexanol ether compound) not elsewhere specified, classified as an amino-alcohol/ether compound in heading 2922.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 226,
+    "total_tokens": 404,
+    "cost": 0.000804,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000804,
+      "upstream_inference_prompt_cost": 3.56e-05,
+      "upstream_inference_completions_cost": 0.0007684
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 154,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:32:48.604814+00:00",
+  "latency_s": 3.2,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

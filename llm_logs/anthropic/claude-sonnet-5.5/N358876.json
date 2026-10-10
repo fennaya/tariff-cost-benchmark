@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358876",
+  "rulingDate": "2026-03-02T00:00:00",
+  "true_code": "7308909590",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595686-pDK718ZpMbNGnrYUcXWL",
+    "object": "chat.completion",
+    "created": 1791595686,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Sandwich panels with steel facings and a mineral wool core, used as prefabricated walls and ceilings, are most likely classified under heading 7308 (structures and parts of structures of iron or steel). Heading 7308.90 covers \"other\" structures and parts, and its statistical suffix 7308.90.9590 is the usual \"other\" line. Several alternatives were considered:\n\n- **Heading 9406** covers prefabricated buildings, but cleanroom partition panels are better treated as parts of a building system. Under the 9406 revision, 9406.90 is \"other\" prefabricated buildings, and the metal-parts line, 9406.90.0030, would apply.\n- **Heading 6809** (mineral wool articles) is not a fit because the steel facings give the panels their essential character.\n- **Heading 7308** is the established CBP ruling position for sandwich panels with steel skins. Rulings on insulated steel panels for cold storage rooms have gone to 9406 (prefabricated buildings) or 7308.90.\n\nChapter 94 Note 4 defines prefabricated buildings as those finished in the factory or presented as elements to be assembled, such as cleanroom partition systems. Heading 9406 therefore applies, but it excludes none of these panels. A cleanroom partition system presented as panels with fasteners is a prefabricated building element, so 9406 fits. Since 2022, the subheadings under 9406 are 9406.10 (wood), 9406.20 (sandwich panels with steel facings), and 9406.90 (other). Sandwich panels with steel facings are covered by 9406.20.00, with statistical suffix 9406.20.0010 or 9406.20.0090. I will go with 9406.90.0030 only if no such line exists. I am fairly confident the new 9406.20 line exists as \"Modular buildings of steel,\" which would not cover loose panels. Panels would then fall under 9406.90.00, with the metal-parts line 9406.90.0030 as the likely statistical suffix.\n\n```json\n{\"hts_code\": \"9406.90.0030\", \"reason\": \"Steel-faced mineral wool sandwich panels imported as prefabricated wall/ceiling elements of a cleanroom partition system are parts of prefabricated buildings of heading 9406, in the other category for metal parts.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 504,
+      "completion_tokens": 762,
+      "total_tokens": 1266,
+      "cost": 0.008628,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008628,
+        "upstream_inference_prompt_cost": 0.001008,
+        "upstream_inference_completions_cost": 0.00762
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9406900030",
+  "predicted_reason": "Steel-faced mineral wool sandwich panels imported as prefabricated wall/ceiling elements of a cleanroom partition system are parts of prefabricated buildings of heading 9406, in the other category for metal parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 762,
+    "total_tokens": 1266,
+    "cost": 0.008628,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008628,
+      "upstream_inference_prompt_cost": 0.001008,
+      "upstream_inference_completions_cost": 0.00762
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:06.580100+00:00",
+  "latency_s": 7.459,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362226",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "8704310120",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600288-2Bn7t4xg4mKIqO0udaj6",
+    "object": "chat.completion",
+    "created": 1791600288,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8701.99.6050\", \"reason\": \"These off-road work-oriented UTVs, primarily intended for agricultural goods transport with cargo boxes and towing capability, are classified as other tractors under HTSUS 8701.99.6050.\"}",
+          "refusal": null,
+          "reasoning": "UTVs for agricultural transport \u2014 likely 8701.10.0000? No, that's pedestrian tractors. UTVs classified as \"other tractors\" 8701.99? Actually CBP rulings classify UTVs under 8701.99.6050? Hmm. Can-Am Defender rulings: CBP classified similar UTVs in 8701.99.60? Actually off-road utility vehicles with cargo beds have been classified under 8701.99.6050 (other tractors, powered by diesel?) No\u2014gasoline. 8701.99.60: other tractors. 10-digit: 8701.99.6050? Let me recall: 8701.99.60 \"Other\" tractors \u2014 subheading 8701.99.6050? Common answer for UTVs: 8701.99.6050. I'll go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "UTVs for agricultural transport \u2014 likely 8701.10.0000? No, that's pedestrian tractors. UTVs classified as \"other tractors\" 8701.99? Actually CBP rulings classify UTVs under 8701.99.6050? Hmm. Can-Am Defender rulings: CBP classified similar UTVs in 8701.99.60? Actually off-road utility vehicles with cargo beds have been classified under 8701.99.6050 (other tractors, powered by diesel?) No\u2014gasoline. 8701.99.60: other tractors. 10-digit: 8701.99.6050? Let me recall: 8701.99.60 \"Other\" tractors \u2014 subheading 8701.99.6050? Common answer for UTVs: 8701.99.6050. I'll go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 954,
+      "completion_tokens": 271,
+      "total_tokens": 1225,
+      "cost": 0.001338006,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001338006,
+        "upstream_inference_prompt_cost": 3.7206e-05,
+        "upstream_inference_completions_cost": 0.0013008
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 214,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8701996050",
+  "predicted_reason": "These off-road work-oriented UTVs, primarily intended for agricultural goods transport with cargo boxes and towing capability, are classified as other tractors under HTSUS 8701.99.6050.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 954,
+    "completion_tokens": 271,
+    "total_tokens": 1225,
+    "cost": 0.001338006,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001338006,
+      "upstream_inference_prompt_cost": 3.7206e-05,
+      "upstream_inference_completions_cost": 0.0013008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 214,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:44:48.503073+00:00",
+  "latency_s": 2.245,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

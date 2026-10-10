@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362921",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "7607205000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596593-MLVO2B42EhossMtnLxxj",
+    "object": "chat.completion",
+    "created": 1791596593,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a PET/aluminum laminate. Aluminum foil (thickness not exceeding 0.2 mm, excluding backing) falls in heading 7607. Foil backed with plastics falls in 7607.20 (backed). The aluminum is 6.35 microns and the PET is 12 microns. Under Note to chapter 76 and the heading 7607 definition, foil backed with plastics is included if the foil's thickness (excluding backing) is not over 0.2 mm. The film would therefore go to 7607.20.50 (backed, other), with 7607.20.10 covering foil not cut to shape, with a backing... Actually the HTS breakdown is: 7607.20.10 \"Aluminum foil, backed, not cut to shape, of a thickness not exceeding 0.15 mm\"? Statistical suffixes under 7607.20.50 are 7607.20.5000, so I'm using that.\n\nI considered whether this could be a plastic laminate under 3921 instead. Classification depends on which material gives the essential character. Aluminum foil with a plastic backing is expressly provided for in 7607, and the heading text \"backed with paper, paperboard, plastics or similar backing materials\" fits this product. The tariff schedule also has 7607.20.10 for foil \"not cut to shape\" and 7607.20.50 for \"other.\" The panels are probably cut to shape, but I can't be sure. Going with the 7607.20.50 provision.\n\n{\"hts_code\": \"7607.20.5000\", \"reason\": \"A laminate of 6.35-micron aluminum foil backed with PET film is aluminum foil of a thickness (excluding backing) not over 0.2 mm, backed with plastics, so it is classified in heading 7607 and subheading 7607.20.50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 294,
+      "completion_tokens": 590,
+      "total_tokens": 884,
+      "cost": 0.006488,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006488,
+        "upstream_inference_prompt_cost": 0.000588,
+        "upstream_inference_completions_cost": 0.0059
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7607205000",
+  "predicted_reason": "A laminate of 6.35-micron aluminum foil backed with PET film is aluminum foil of a thickness (excluding backing) not over 0.2 mm, backed with plastics, so it is classified in heading 7607 and subheading 7607.20.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 294,
+    "completion_tokens": 590,
+    "total_tokens": 884,
+    "cost": 0.006488,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006488,
+      "upstream_inference_prompt_cost": 0.000588,
+      "upstream_inference_completions_cost": 0.0059
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:14.085344+00:00",
+  "latency_s": 5.924,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

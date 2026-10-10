@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356879",
+  "rulingDate": "2026-01-09T00:00:00",
+  "true_code": "0904227600",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595284-MrRB0etf53WiecJ7odPy",
+    "object": "chat.completion",
+    "created": 1791595284,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Ground chili pepper falls under HTSUS heading 0904: \"Pepper of the genus Piper; fruits of the genus Capsicum or of the genus Pimenta, dried or crushed or ground.\" Within 0904.22 (\"Crushed or ground\"), the 10-digit subheading is 0904.22.4000 for Capsicum, other than \"Neither crushed nor ground.\" I need to check the 0904.22 breakdown.\n\n0904.21 covers dried, neither crushed nor ground, and 0904.22 covers crushed or ground. Under 0904.22, the subheadings are:\n- 0904.22.05 \u2013 Pepper of the genus Piper\n- 0904.22.20 \u2013 Capsicum, other: Paprika (?)\n- 0904.22.40 \u2013 Capsicum\n- 0904.22.60 \u2013 Pimenta\n\nI recall 0904.22.2000 as \"Pepper of the genus Piper: Black / White\", and 0904.22.4000 as \"Capsicum: Chili pepper, ground\"? I'm not sure. The CBP rulings for ground red chili pepper powder from Korea cite 0904.22.4000, which I think reads \"Fruits of the genus Capsicum... Crushed or ground: Other: Capsicum, ground\" \u2014 I believe the ruling classification is 0904.22.4000. I'll go with it.\n\n{\"hts_code\": \"0904.22.4000\", \"reason\": \"Dried, heat-treated and ground 100% Capsicum red chili pepper powder is classified in heading 0904 as crushed or ground fruits of the genus Capsicum (subheading 0904.22).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 536,
+      "total_tokens": 856,
+      "cost": 0.006,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006,
+        "upstream_inference_prompt_cost": 0.00064,
+        "upstream_inference_completions_cost": 0.00536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0904224000",
+  "predicted_reason": "Dried, heat-treated and ground 100% Capsicum red chili pepper powder is classified in heading 0904 as crushed or ground fruits of the genus Capsicum (subheading 0904.22).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 536,
+    "total_tokens": 856,
+    "cost": 0.006,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006,
+      "upstream_inference_prompt_cost": 0.00064,
+      "upstream_inference_completions_cost": 0.00536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:24.269033+00:00",
+  "latency_s": 4.908,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

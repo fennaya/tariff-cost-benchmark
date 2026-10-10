@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357266",
+  "rulingDate": "2026-01-21T00:00:00",
+  "true_code": "1904900140",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599601-Gomvuy5Ao85h8P5PdwWx",
+    "object": "chat.completion",
+    "created": 1791599601,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.9998\", \"reason\": \"Because the genmaicha tea bags contain over 50 percent roasted brown rice, the essential character is not tea of heading 0902, so the mixed preparation is classified as an other food preparation of heading 2106.\"}",
+          "refusal": null,
+          "reasoning": "Genmaicha \u2014 mixture of rice and tea; rice is 60%, so not pure tea. Likely classified as prepared food / other food preparations? CBP has ruled genmaicha with >50% rice classified in 2106.90? Actually CBP ruling classified genmaicha (rice 60%) under 2106.90.98? Or 1904 (prepared cereals)? Roasted rice... likely 2106.90.9998? Hmm. There is ruling on genmaicha: HQ ruling classified under 2106.90.98 (food preparations). Use 2106.90.9998? Current stat suffixes: 2106.90.98 food preparations... 2106.90.9834? Safer: 2106.90.9998 \"Other\". I'll answer 2106.90.9998.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Genmaicha \u2014 mixture of rice and tea; rice is 60%, so not pure tea. Likely classified as prepared food / other food preparations? CBP has ruled genmaicha with >50% rice classified in 2106.90? Actually CBP ruling classified genmaicha (rice 60%) under 2106.90.98? Or 1904 (prepared cereals)? Roasted rice... likely 2106.90.9998? Hmm. There is ruling on genmaicha: HQ ruling classified under 2106.90.98 (food preparations). Use 2106.90.9998? Current stat suffixes: 2106.90.98 food preparations... 2106.90.9834? Safer: 2106.90.9998 \"Other\". I'll answer 2106.90.9998.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 248,
+      "total_tokens": 493,
+      "cost": 0.0010759,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010759,
+        "upstream_inference_prompt_cost": 3.43e-05,
+        "upstream_inference_completions_cost": 0.0010416
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 182,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "Because the genmaicha tea bags contain over 50 percent roasted brown rice, the essential character is not tea of heading 0902, so the mixed preparation is classified as an other food preparation of heading 2106.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 248,
+    "total_tokens": 493,
+    "cost": 0.0010759,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010759,
+      "upstream_inference_prompt_cost": 3.43e-05,
+      "upstream_inference_completions_cost": 0.0010416
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 182,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:33:21.328578+00:00",
+  "latency_s": 4.422,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358154",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8714100050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595551-ACtAYkPka5nuD3RP6erM",
+    "object": "chat.completion",
+    "created": 1791595551,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The Suzuki RM500 is a motocross motorcycle, so its parts fall under heading 8714 (parts and accessories of motorcycles of heading 8711). Brakes, including coaster braking hubs and hub brakes, and parts thereof, are classified in subheading 8714.10 (parts and accessories of motorcycles). The relevant HTS lines are:\n\n- 8714.10.00 covers parts and accessories of motorcycles (including mopeds).\n- 8714.10.10 is for frames, and 8714.10.20 for front forks.\n- 8714.10.30 is for wheel rims.\n- 8714.10.40 is for brakes? I recall 8714.10.40 as \"Brakes and parts thereof\"? Not sure; I believe the lines are 8714.10.10 (frames and front forks, and parts thereof), 8714.10.20 (wheel rims), 8714.10.30 (brakes and parts), 8714.10.40 (non-wheel hub), 8714.10.50 (saddles), and 8714.10.60 (hub brake). To keep it safe, I'll go with the 8714.10.70 / 8714.10.90 area.\n\nThe statistical suffixes I'm fairly confident of are 8714.10.30 for \"Brakes... and parts\" and 8714.10.9030 or 8714.10.90 for other. I'll answer with the brakes line: 8714.10.3000? I'm not fully certain, but the brake plate (backing plate) is a part of a brake, so it fits there.\n\n{\"hts_code\": \"8714.10.3000\", \"reason\": \"A front brake plate for a motorcycle is a part of the brake assembly, classified as a motorcycle part under heading 8714 (subheading 8714.10).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 274,
+      "completion_tokens": 575,
+      "total_tokens": 849,
+      "cost": 0.006298,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006298,
+        "upstream_inference_prompt_cost": 0.000548,
+        "upstream_inference_completions_cost": 0.00575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8714103000",
+  "predicted_reason": "A front brake plate for a motorcycle is a part of the brake assembly, classified as a motorcycle part under heading 8714 (subheading 8714.10).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 274,
+    "completion_tokens": 575,
+    "total_tokens": 849,
+    "cost": 0.006298,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006298,
+      "upstream_inference_prompt_cost": 0.000548,
+      "upstream_inference_completions_cost": 0.00575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:51.532598+00:00",
+  "latency_s": 5.419,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

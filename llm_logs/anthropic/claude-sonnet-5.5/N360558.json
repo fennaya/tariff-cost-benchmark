@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360558",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8903310020",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596107-Ym6GXh3I0Och54ypgtPg",
+    "object": "chat.completion",
+    "created": 1791596107,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling scenario. Motorized fishing kayak: the candidates are 8903 (yachts and other vessels for pleasure or sports; rowing boats and canoes) and 8901/8902 (fishing vessels). A kayak is a canoe, so 8903.99 (other) or, if motor-propelled, 8903.92 (motorboats, other than outboard motorboats). Kayaks that are not inflatable fall under 8903.99.\n\nHeading 8903.93 covers sailboats, 8903.92 covers motorboats other than outboard, and 8903.99 covers other. A kayak with an inboard motor well and an electric motor, but with pedal-driven primary propulsion, is a different case. The description says the motor is a secondary propulsion mechanism and that the kayak may be imported without the motor.\n\nI recall CBP rulings on Hobie-type pedal kayaks, which were classified in 8903.99.9000 (other). With an inboard motor, however, 8903.92 could apply. Because the motor is optional and the kayak is imported without it, the article is a kayak under 8903.99. Statistical suffixes for 8903.99 are 8903.99.0600 (canoes, other?) and 8903.99.0690 etc. In the current HTSUS, 8903.99.06 covers \"Canoes\" and 8903.99.10 covers \"Other: Sailboats\"... I recall 8903.99.0600 as \"Canoes and kayaks\"? The current structure is 8903.99.06 \"Of a length not exceeding 6 m... Other\" and 8903.99.9000 \"Other\". I'll go with 8903.99.0600 for a kayak under 6 m; I think 8903.99.06 does exist, as \"Other: Of a length not exceeding 6 m\" or similar.\n\n```json\n{\"hts_code\": \"8903.99.0600\", \"reason\": \"A rigid non-inflatable HDPE fishing kayak (a canoe-type sports vessel) under 6 m, with the motor optional and not installed, is classified in the 'other' pleasure/sport vessels provision of heading 8903.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 371,
+      "completion_tokens": 697,
+      "total_tokens": 1068,
+      "cost": 0.007712,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007712,
+        "upstream_inference_prompt_cost": 0.000742,
+        "upstream_inference_completions_cost": 0.00697
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8903990600",
+  "predicted_reason": "A rigid non-inflatable HDPE fishing kayak (a canoe-type sports vessel) under 6 m, with the motor optional and not installed, is classified in the 'other' pleasure/sport vessels provision of heading 8903.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 371,
+    "completion_tokens": 697,
+    "total_tokens": 1068,
+    "cost": 0.007712,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007712,
+      "upstream_inference_prompt_cost": 0.000742,
+      "upstream_inference_completions_cost": 0.00697
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:08.285099+00:00",
+  "latency_s": 6.99,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

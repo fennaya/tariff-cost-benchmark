@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360885",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "3926903500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596169-4Dv4CqI97js3aPpUQvzY",
+    "object": "chat.completion",
+    "created": 1791596169,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a Halloween bead set, a kit of plastic beads and thread for making jewelry. Classification options:\n\n- Beads of plastic, loose, fall under 3926.90 (other articles of plastics) or 7018 (glass beads, which doesn't apply here). Imitation jewelry beads are not 7117 as such, since that heading covers finished imitation jewelry.\n- As a set put up for retail sale, GRI 3(b) would determine the essential character. The beads give the set its essential character, and the thread is incidental.\n- Plastic beads are commonly classified in 3926.90.99 (other articles of plastics). Loose beads, unstrung, are often classified in 3926.90.9990 (now 3926.90.99 with statistical suffix).\n- Some rulings place loose plastic beads in 7117.90 as imitation jewelry parts. Heading 7117 covers imitation jewelry, and Note 11 to Chapter 71 defines it as articles of personal adornment without precious metal. Parts of such articles would fall in 7117.90, but loose beads are generally treated as 3926.90 in CBP rulings (e.g., bead kits).\n- The 3926 heading covers \"other articles of plastics\", and beads specifically appear in the 3926.90 area. Within it, 3926.90.99 is the residual subheading. The statistical suffix is 3926.90.9990 for \"other\".\n\nI'll go with 3926.90.9990, which is the most likely outcome.\n\n{\"hts_code\": \"3926.90.9990\", \"reason\": \"The kit's essential character comes from the 950 plastic beads (with incidental thread), so under GRI 3(b) the set is classified as other articles of plastics.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 242,
+      "completion_tokens": 568,
+      "total_tokens": 810,
+      "cost": 0.006164,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006164,
+        "upstream_inference_prompt_cost": 0.000484,
+        "upstream_inference_completions_cost": 0.00568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "The kit's essential character comes from the 950 plastic beads (with incidental thread), so under GRI 3(b) the set is classified as other articles of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 242,
+    "completion_tokens": 568,
+    "total_tokens": 810,
+    "cost": 0.006164,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006164,
+      "upstream_inference_prompt_cost": 0.000484,
+      "upstream_inference_completions_cost": 0.00568
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:09.665476+00:00",
+  "latency_s": 5.748,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

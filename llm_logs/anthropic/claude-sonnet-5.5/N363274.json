@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363274",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8533210030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596634-0R9CmyhHs7KVBoTcdc3i",
+    "object": "chat.completion",
+    "created": 1791596634,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Fixed thick film chip resistors fall in HTSUS heading 8533, \"Electrical resistors (including rheostats and potentiometers), other than heating resistors.\" Subheading 8533.21 covers fixed resistors for a power handling capacity not exceeding 20 W. Within that subheading, 8533.21.00 is divided into statistical suffixes, and I recall 8533.21.0040 as \"Fixed resistors, other than composition/film types\" and 8533.21.0030 and 0050 as other categories. I am not certain of the exact suffix breakdown, so this is from memory.\n\nMy recollection of the 8533.21.00 statistical suffixes is:\n- 8533.21.0010: Chip resistors (possibly)\n- 8533.21.0030: Metal film\n- 8533.21.0040: Carbon film\n- 8533.21.0050: Other\n\nChip resistors are a separate category, so I am going with 8533.21.0010 as my best recollection, though the suffix is unconfirmed.\n\n```json\n{\"hts_code\": \"8533.21.0010\", \"reason\": \"Fixed thick film chip resistor of low power rating (not over 20 W) falls under heading 8533, subheading 8533.21 for fixed resistors, with the statistical suffix for chip resistors recalled from memory and not verified.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 436,
+      "total_tokens": 865,
+      "cost": 0.005218,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005218,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00436
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8533210010",
+  "predicted_reason": "Fixed thick film chip resistor of low power rating (not over 20 W) falls under heading 8533, subheading 8533.21 for fixed resistors, with the statistical suffix for chip resistors recalled from memory and not verified.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 436,
+    "total_tokens": 865,
+    "cost": 0.005218,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005218,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00436
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:54.733294+00:00",
+  "latency_s": 4.373,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362742",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8471500150",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596538-vOjFdCGOD3AhePdeRvM9",
+    "object": "chat.completion",
+    "created": 1791596538,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a populated motherboard with an APU, memory, and other components, intended for incorporation into computers and servers. It is not a complete computer, so it falls under parts of automatic data processing machines in heading 8473.30 (parts and accessories of machines of heading 8471). The subheading 8473.30.11 covers printed circuit assemblies, and the 10-digit statistical suffix is 8473.30.1180, \"Other\" printed circuit assemblies.\n\nHTSUS structure: 8473.30.11 is \"Printed circuit assemblies\" under \"Parts and accessories of the machines of heading 8471,\" with 8473.30.1100 \"Of automatic data processing machines\" or similar. I recall 8473.30.1140 being \"Other\" for printed circuit assemblies, and 8473.30.1180 \"Other\". The motherboard (a loaded PCB) is commonly classified in 8473.30.1180 in CBP rulings, e.g., \"motherboards... classified under 8473.30.1180.\"\n\nHowever, one could consider 8471.50 or 8542 (as a multi-component integrated circuit). But a motherboard with discrete mounted components is a PCB assembly, not an 8542 circuit. Section XVI Note 2(b) directs parts suitable for use solely with machines of heading 8471 to 8473. I'll go with 8473.30.1180.\n\n{\"hts_code\": \"8473.30.1180\", \"reason\": \"A populated motherboard (PCB assembly with APU, memory, and controllers) for use in computers and servers is a printed circuit assembly that is a part of automatic data processing machines of heading 8471, classified in 8473.30.11.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 386,
+      "completion_tokens": 542,
+      "total_tokens": 928,
+      "cost": 0.006192,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006192,
+        "upstream_inference_prompt_cost": 0.000772,
+        "upstream_inference_completions_cost": 0.00542
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8473301180",
+  "predicted_reason": "A populated motherboard (PCB assembly with APU, memory, and controllers) for use in computers and servers is a printed circuit assembly that is a part of automatic data processing machines of heading 8471, classified in 8473.30.11.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 386,
+    "completion_tokens": 542,
+    "total_tokens": 928,
+    "cost": 0.006192,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006192,
+      "upstream_inference_prompt_cost": 0.000772,
+      "upstream_inference_completions_cost": 0.00542
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:18.497349+00:00",
+  "latency_s": 5.326,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

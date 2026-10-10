@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360021",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8708806590",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596014-Ve7wS3WKkkDExHFHdZgR",
+    "object": "chat.completion",
+    "created": 1791596014,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Control arms for passenger vehicle suspension fall under HTSUS 8708.80 (suspension systems and parts thereof). The 10-digit statistical suffixes under 8708.80 are:\n\n- 8708.80.1000: Suspension shock absorbers (this was the old split)\n- 8708.80.6590: Other, Other (current)\n\nThe current structure runs as follows:\n- 8708.80.20 - Shock absorbers\n- 8708.80.65 - Other: For vehicles of heading 8703: 8708.80.6590 other\n- 8708.80.6530: Suspension system parts, other? \n\nThe most reliable version I recall is:\n- 8708.80.65: Other: For the vehicles of 8701.20, 8704.10, 8704.22/23/31/32 or 8705... \n- 8708.80.6590: Other\n\nThe earlier subheadings were 8708.80.1000 (MacPherson struts), 8708.80.5000 (Other suspension shock absorbers), and 8708.80.6590 (Other parts). Control arms are suspension parts, not shock absorbers or struts, so they fall in 8708.80.65. I recall 8708.80.6590 being used for control arms in CBP rulings, so I'm going with that.\n\n{\"hts_code\": \"8708.80.6590\", \"reason\": \"A finished control arm with ball joint is a suspension system part for passenger motor vehicles, classified in heading 8708 under subheading 8708.80 as other suspension parts (not shock absorbers or struts).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 772,
+      "completion_tokens": 501,
+      "total_tokens": 1273,
+      "cost": 0.006554,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006554,
+        "upstream_inference_prompt_cost": 0.001544,
+        "upstream_inference_completions_cost": 0.00501
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708806590",
+  "predicted_reason": "A finished control arm with ball joint is a suspension system part for passenger motor vehicles, classified in heading 8708 under subheading 8708.80 as other suspension parts (not shock absorbers or struts).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 772,
+    "completion_tokens": 501,
+    "total_tokens": 1273,
+    "cost": 0.006554,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006554,
+      "upstream_inference_prompt_cost": 0.001544,
+      "upstream_inference_completions_cost": 0.00501
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:35.139994+00:00",
+  "latency_s": 4.861,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359154",
+  "rulingDate": "2026-03-10T00:00:00",
+  "true_code": "8716390090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595766-lpIzANtMunxa95WAmA8N",
+    "object": "chat.completion",
+    "created": 1791595766,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a gooseneck roll trailer, towed by a tractor and used to carry containers and cargo in ports and industrial sites. Trailers for the transport of goods fall in heading 8716. The candidate subheadings are:\n\n- 8716.39: other trailers and semi-trailers for the transport of goods.\n- 8716.39.00 is split into 8716.39.0030 (other trailers), 8716.39.0050 (other, including flatbed), and others. I recall the structure as follows:\n  - 8716.31: tanker trailers and tanker semi-trailers.\n  - 8716.39: other.\n    - 8716.39.00: agricultural trailers (0010 and 0030), then other (0090).\n    - 8716.39.0040: other, of iron or steel, chassis for containers, container trailers (\"Trailers and semi-trailers of the container chassis type\").\n    - 8716.39.0090: other.\n\nMy recollection of the statistical suffixes is not fully reliable. I believe the 8716.39.00 suffixes are 10 (trailers for agricultural use), 30 (other, van type), 50 (other, flatbed or platform), 70 (other, dump), and 90 (other). The 2012 schedule has 8716.39.0010 for goods trailers of the van type, 8716.39.0030 for flatbed/platform, 8716.39.0050 for container chassis, and 8716.39.0090 for other.\n\nA roll trailer (also called a terminal or port trailer) is a platform, so a flat-bed type is plausible. But it is designed for ISO containers, which points to a container chassis. CBP rulings on similar roll trailers (Mafi-type) have classified them under 8716.39.0090. I will go with 8716.39.0090.\n\n{\"hts_code\": \"8716.39.0090\", \"reason\": \"Towed, non-self-propelled gooseneck roll trailers for transporting containers and industrial cargo are other trailers for the transport of goods under heading 8716, subheading 8716.39.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 358,
+      "completion_tokens": 657,
+      "total_tokens": 1015,
+      "cost": 0.007286,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007286,
+        "upstream_inference_prompt_cost": 0.000716,
+        "upstream_inference_completions_cost": 0.00657
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716390090",
+  "predicted_reason": "Towed, non-self-propelled gooseneck roll trailers for transporting containers and industrial cargo are other trailers for the transport of goods under heading 8716, subheading 8716.39.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 358,
+    "completion_tokens": 657,
+    "total_tokens": 1015,
+    "cost": 0.007286,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007286,
+      "upstream_inference_prompt_cost": 0.000716,
+      "upstream_inference_completions_cost": 0.00657
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:26.968229+00:00",
+  "latency_s": 6.366,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

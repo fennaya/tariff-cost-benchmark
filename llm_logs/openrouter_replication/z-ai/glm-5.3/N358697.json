@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358697",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "4421999400",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599806-6MTKfOaA6C1Y43zoV0wr",
+    "object": "chat.completion",
+    "created": 1791599806,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4407.29.0580\", \"reason\": \"Finger-jointed, edge-glued rubberwood boards over 6 mm thick, not further worked than sanded and not dedicated by shape to a particular use, are classified as sawn wood of other tropical hardwoods in heading 4407.\"}",
+          "refusal": null,
+          "reasoning": "Finger-jointed edge-glued lumber, tropical wood, over 6mm thick: 4407.29 \u2014 but finger-jointed edge-glued boards... likely 4407.29.05? Actually edge-glued lumber classified in 4407. Rubberwood: 4407.29.0180? Common ruling: 4407.29.05 \"tropical wood, other\" \u2014 10-digit: 4407.29.0180? I recall CBP ruling classifying rubberwood edge-glued panels under 4407.29.05... Use 4407.29.0180? Safer: 4407.29.0580? Hmm. HTS 4407.29: 4407.29.01 (teak), 4407.29.02, ... 4407.29.05 \"Other\" with suffixes. I'll answer 4407.29.0580.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Finger-jointed edge-glued lumber, tropical wood, over 6mm thick: 4407.29 \u2014 but finger-jointed edge-glued boards... likely 4407.29.05? Actually edge-glued lumber classified in 4407. Rubberwood: 4407.29.0180? Common ruling: 4407.29.05 \"tropical wood, other\" \u2014 10-digit: 4407.29.0180? I recall CBP ruling classifying rubberwood edge-glued panels under 4407.29.05... Use 4407.29.0180? Safer: 4407.29.0580? Hmm. HTS 4407.29: 4407.29.01 (teak), 4407.29.02, ... 4407.29.05 \"Other\" with suffixes. I'll answer 4407.29.0580.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 289,
+      "total_tokens": 518,
+      "cost": 0.00124586,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00124586,
+        "upstream_inference_prompt_cost": 3.206e-05,
+        "upstream_inference_completions_cost": 0.0012138
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 216,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4407290580",
+  "predicted_reason": "Finger-jointed, edge-glued rubberwood boards over 6 mm thick, not further worked than sanded and not dedicated by shape to a particular use, are classified as sawn wood of other tropical hardwoods in heading 4407.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 289,
+    "total_tokens": 518,
+    "cost": 0.00124586,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00124586,
+      "upstream_inference_prompt_cost": 3.206e-05,
+      "upstream_inference_completions_cost": 0.0012138
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 216,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:36:46.309611+00:00",
+  "latency_s": 4.989,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

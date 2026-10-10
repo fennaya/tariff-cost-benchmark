@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356982",
+  "rulingDate": "2026-07-06T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595300-W8SspyfQmOGMAJOIm9pU",
+    "object": "chat.completion",
+    "created": 1791595300,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on Saturnia stone, a non-calcareous metamorphic rock, imported as slabs. The relevant heading is 6802, worked monumental or building stone, rather than 2515 (marble, travertine) or 2516 (granite, porphyry, basalt, sandstone and other monumental or building stone).\n\nHeading 6802 covers stone that has been worked beyond simple cutting, for example by polishing. Subheading 6802.91 covers other stone that is calcareous (marble, travertine, alabaster), 6802.92 covers other calcareous stone, and 6802.93 covers granite. Other stone falls under 6802.99.\n\nThe stone here is non-calcareous and is not granite, so it falls under 6802.99. The polished top is what moves it out of heading 2516, which covers only roughly cut or sawn stone. Stone of heading 2516 may be merely cut into blocks or slabs of rectangular shape, but polishing takes it beyond that.\n\nThe 6802.99 breakdown: 6802.99.00 is \"Other stone\", with statistical suffixes 6802.99.0010 for slabs and 6802.99.0090 for other. Some versions of the schedule instead list \"Other: Other\" under 6802.99.00 with 10 for \"Slabs\" and 60 for \"Other\". I recall the actual 6802.99.0060 as \"Other\", and 6802.99.0010 as \"Slabs\".\n\nI'm settling on slabs, 6802.99.0010, though I'm working from memory of the suffixes.\n\n{\"hts_code\": \"6802.99.0010\", \"reason\": \"Polished-top slabs of non-calcareous metamorphic stone that is not granite are worked monumental or building stone of heading 6802, classified in the 'other stone' subheading 6802.99 as slabs.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 597,
+      "total_tokens": 1005,
+      "cost": 0.006786,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006786,
+        "upstream_inference_prompt_cost": 0.000816,
+        "upstream_inference_completions_cost": 0.00597
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990010",
+  "predicted_reason": "Polished-top slabs of non-calcareous metamorphic stone that is not granite are worked monumental or building stone of heading 6802, classified in the 'other stone' subheading 6802.99 as slabs.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 408,
+    "completion_tokens": 597,
+    "total_tokens": 1005,
+    "cost": 0.006786,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006786,
+      "upstream_inference_prompt_cost": 0.000816,
+      "upstream_inference_completions_cost": 0.00597
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:40.971739+00:00",
+  "latency_s": 5.597,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

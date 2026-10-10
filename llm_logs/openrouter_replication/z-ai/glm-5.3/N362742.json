@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362742",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8471500150",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600343-SZryhrBe4LpgwWbPtuFK",
+    "object": "chat.completion",
+    "created": 1791600343,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8471.50.0000\", \"reason\": \"Per CBP ruling practice, computer motherboards incorporating a CPU are classified as processing units for automatic data processing machines of heading 8471, subheading 8471.50.0000.\"}",
+          "refusal": null,
+          "reasoning": "Motherboards are classified under 8471.50.0000? Actually motherboards for computers: 8471.50 covers \"processing units... whether or not with...\" Motherboards classified in 8471.50.00? CBP rulings classify motherboards under 8471.50.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Motherboards are classified under 8471.50.0000? Actually motherboards for computers: 8471.50 covers \"processing units... whether or not with...\" Motherboards classified in 8471.50.00? CBP rulings classify motherboards under 8471.50.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 130,
+      "total_tokens": 370,
+      "cost": 0.0006176,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006176,
+        "upstream_inference_prompt_cost": 4.56e-05,
+        "upstream_inference_completions_cost": 0.000572
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471500000",
+  "predicted_reason": "Per CBP ruling practice, computer motherboards incorporating a CPU are classified as processing units for automatic data processing machines of heading 8471, subheading 8471.50.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 130,
+    "total_tokens": 370,
+    "cost": 0.0006176,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006176,
+      "upstream_inference_prompt_cost": 4.56e-05,
+      "upstream_inference_completions_cost": 0.000572
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:45:43.523139+00:00",
+  "latency_s": 2.537,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

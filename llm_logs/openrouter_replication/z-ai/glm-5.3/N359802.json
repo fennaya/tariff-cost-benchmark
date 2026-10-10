@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359802",
+  "rulingDate": "2026-03-30T00:00:00",
+  "true_code": "3824999397",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599970-sHHfY1Mg77Ynq1z22cA7",
+    "object": "chat.completion",
+    "created": 1791599970,
+    "model": "z-ai/glm-5.3",
+    "provider": "Decart",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3824.99.9197\", \"reason\": \"FoamaDerm is a mixed chemical preparation (microemulsion preconcentrate/compounding base) containing no pharmacologically active ingredients, so it falls under chemical mixtures nesoi in Chapter 38 rather than the pharmaceutical headings of Chapter 30.\"}",
+          "refusal": null,
+          "reasoning": "This is a known NY ruling \u2014 FoamaDerm classified as pharmaceutical preparation? It's an intermediate, not containing active ingredient... Ruling classified it in 1302? Actually ruling N316331? I recall classification under 3003.90? It's a compounding base without active ingredients \u2014 likely 3824 or 3005? Known ruling: FoamaDerm classified in subheading 3004.90? Hmm. It's a microemulsion preconcentrate for pharmaceutical use, no active. Likely 3824.90? I think ruling said 3003.90.0000? Actually 3003 requires active ingredients. Without active, likely 3824.99. I'll answer 3824.99.9197? Choose 3824.99.9197? Safer: 3824.99.9197 \"chemical mixtures nesoi\". Hmm, but known ruling (NY N271647?) classified FoamaDerm in 3004.90.5060? I'll go with 3824.99.9197... Actually I recall ruling HQ H266808? Not sure. Given \"ready-to-use pharmaceutical compounding base,\" CBP might classify 3003.90.0000 as medicament excluding active? 3003 covers medicaments consisting of two or more constituents mixed together for therapeutic/prophylactic uses, measured in doses \u2014 no active required? Heading 3003: \"consisting of two or more constituents which have been mixed together for therapeutic or prophylactic uses, not put up in measured doses.\" FoamaDerm is a base, not therapeutic itself. CBP ruling (N-####) I believe classified it 3824.99. I'll answer 3824.99.9197.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a known NY ruling \u2014 FoamaDerm classified as pharmaceutical preparation? It's an intermediate, not containing active ingredient... Ruling classified it in 1302? Actually ruling N316331? I recall classification under 3003.90? It's a compounding base without active ingredients \u2014 likely 3824 or 3005? Known ruling: FoamaDerm classified in subheading 3004.90? Hmm. It's a microemulsion preconcentrate for pharmaceutical use, no active. Likely 3824.90? I think ruling said 3003.90.0000? Actually 3003 requires active ingredients. Without active, likely 3824.99. I'll answer 3824.99.9197? Choose 3824.99.9197? Safer: 3824.99.9197 \"chemical mixtures nesoi\". Hmm, but known ruling (NY N271647?) classified FoamaDerm in 3004.90.5060? I'll go with 3824.99.9197... Actually I recall ruling HQ H266808? Not sure. Given \"ready-to-use pharmaceutical compounding base,\" CBP might classify 3003.90.0000 as medicament excluding active? 3003 covers medicaments consisting of two or more constituents mixed together for therapeutic/prophylactic uses, measured in doses \u2014 no active required? Heading 3003: \"consisting of two or more constituents which have been mixed together for therapeutic or prophylactic uses, not put up in measured doses.\" FoamaDerm is a base, not therapeutic itself. CBP ruling (N-####) I believe classified it 3824.99. I'll answer 3824.99.9197.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 464,
+      "total_tokens": 901,
+      "cost": 0.0015966616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015966616,
+        "upstream_inference_prompt_cost": 0.0003681288,
+        "upstream_inference_completions_cost": 0.0012285328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 389,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3824999197",
+  "predicted_reason": "FoamaDerm is a mixed chemical preparation (microemulsion preconcentrate/compounding base) containing no pharmacologically active ingredients, so it falls under chemical mixtures nesoi in Chapter 38 rather than the pharmaceutical headings of Chapter 30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 464,
+    "total_tokens": 901,
+    "cost": 0.0015966616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0015966616,
+      "upstream_inference_prompt_cost": 0.0003681288,
+      "upstream_inference_completions_cost": 0.0012285328
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 389,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Decart",
+  "requested_at": "2026-10-10T02:39:31.077741+00:00",
+  "latency_s": 3.28,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362924",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7318290000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596596-HIxX1m4EPWVcucbvGFaf",
+    "object": "chat.completion",
+    "created": 1791596596,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on compression limiters. The candidate headings are:\n\n- 7318 (screws, bolts, nuts, washers and similar articles of iron or steel). A compression limiter is a sleeve or spacer, so it may fit 7318.29 (other non-threaded articles) or 7318.22 (other washers).\n- 8708 (parts of motor vehicles). Chapter 73 articles are generally not excluded by Section XVII Note 2, which excludes only certain base metal parts of headings 7301-7326 under 2(a). Under that note, parts of general use as defined in Note 2 of Section XV, including articles of heading 7318, are excluded from Section XVII. So 7318 prevails.\n\nWithin 7318, a non-threaded sleeve falls under 7318.29. The statistical suffix for 7318.29.00 is 7318.29.0000 (HTSUS 7318.29.00 \"Other non-threaded articles\"), but 7318.29 is divided into 7318.29.0030 (bushings) and 7318.29.0060 (other). A sleeve or spacer pressed into plastic is closest to a bushing. I recall CBP rulings on compression limiters classifying them under 7318.29.0000, and I will go with the current 10-digit number for \"other\".\n\n{\"hts_code\": \"7318.29.0000\", \"reason\": \"A steel non-threaded sleeve or spacer used with a bolt is a non-threaded fastener article of heading 7318, and Section XVII Note 2 excludes it from motor vehicle parts in 8708.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 506,
+      "completion_tokens": 516,
+      "total_tokens": 1022,
+      "cost": 0.006172,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006172,
+        "upstream_inference_prompt_cost": 0.001012,
+        "upstream_inference_completions_cost": 0.00516
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7318290000",
+  "predicted_reason": "A steel non-threaded sleeve or spacer used with a bolt is a non-threaded fastener article of heading 7318, and Section XVII Note 2 excludes it from motor vehicle parts in 8708.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 506,
+    "completion_tokens": 516,
+    "total_tokens": 1022,
+    "cost": 0.006172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006172,
+      "upstream_inference_prompt_cost": 0.001012,
+      "upstream_inference_completions_cost": 0.00516
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:16.931222+00:00",
+  "latency_s": 5.266,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

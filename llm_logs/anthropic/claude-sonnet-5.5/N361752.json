@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361752",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "9018498080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596339-Hn6N04mxkh9soOQhAhju",
+    "object": "chat.completion",
+    "created": 1791596339,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a dental milling machine that cuts material (e.g., zirconia, PMMA) to make prostheses. The candidate headings are 8459 (milling machines), 8464 (machines for working stone, ceramics, etc.), 8465, and 9018 (dental instruments and appliances).\n\nCBP rulings on dental milling machines such as Roland DWX and similar CAD/CAM units have classified them in 8459.61.5040, \"Other milling machines, numerically controlled, other\" (the 8459.61 subheading covers \"other milling machines, numerically controlled\"). Some rulings have also used 8464 for machines that work ceramics or glass. Because this machine mills dental material generally and has a 4-axis cartesian mechanism, 8459.61 is the likely fit.\n\nThe parts (subassemblies) would go under 8466.94 as parts of machines of heading 8456-8465. However, the question asks for a single code, and the heading covers the compact milling machine as the main item. Under Section XVI Note 2, parts that are solely or principally used with a machine of heading 8459 go to 8466.94. The main item, the machine, goes to 8459.61.5040.\n\nThe 8459.61 subheading breaks down as 8459.61.50 \"Other\" with statistical suffix 40 for \"Other.\" I'll go with 8459.61.5040.\n\n{\"hts_code\": \"8459.61.5040\", \"reason\": \"The numerically controlled compact dental milling machine is classified as an other numerically controlled milling machine in heading 8459, with its dedicated subassemblies treated as parts of that machine.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 972,
+      "completion_tokens": 520,
+      "total_tokens": 1492,
+      "cost": 0.007144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007144,
+        "upstream_inference_prompt_cost": 0.001944,
+        "upstream_inference_completions_cost": 0.0052
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8459615040",
+  "predicted_reason": "The numerically controlled compact dental milling machine is classified as an other numerically controlled milling machine in heading 8459, with its dedicated subassemblies treated as parts of that machine.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 972,
+    "completion_tokens": 520,
+    "total_tokens": 1492,
+    "cost": 0.007144,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007144,
+      "upstream_inference_prompt_cost": 0.001944,
+      "upstream_inference_completions_cost": 0.0052
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:59.462947+00:00",
+  "latency_s": 5.457,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

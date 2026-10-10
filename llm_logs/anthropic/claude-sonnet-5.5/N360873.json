@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360873",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "3004390055",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596165-DyNSfHDNFJdllG35eouz",
+    "object": "chat.completion",
+    "created": 1791596165,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This describes a testosterone gel (e.g., Androgel 1.62%) dispensed by a metered pump. Testosterone is a hormone, so the heading is 3004 (medicaments, put up in measured doses or retail packings). Within 3004, subheading 3004.32 covers medicaments containing corticosteroid hormones, their derivatives or structural analogues. Testosterone is an androgen, not a corticosteroid, so it falls under 3004.39 (other hormones or steroids used as hormones).\n\nThe HTSUS statistical suffix for 3004.39.00 is 3004.39.0000, but there is also a breakout under 3004.39. I recall 3004.39.00 with statistical suffixes 10 and 50, though I am not certain of them. The safest answer is 3004.39.0000.\n\n{\"hts_code\": \"3004.39.0000\", \"reason\": \"Metered-dose testosterone gel is a medicament containing a hormone (not a corticosteroid, insulin or antibiotic) put up in measured doses for retail sale, so it falls under heading 3004, subheading 3004.39.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 176,
+      "completion_tokens": 364,
+      "total_tokens": 540,
+      "cost": 0.003992,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.003992,
+        "upstream_inference_prompt_cost": 0.000352,
+        "upstream_inference_completions_cost": 0.00364
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004390000",
+  "predicted_reason": "Metered-dose testosterone gel is a medicament containing a hormone (not a corticosteroid, insulin or antibiotic) put up in measured doses for retail sale, so it falls under heading 3004, subheading 3004.39.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 176,
+    "completion_tokens": 364,
+    "total_tokens": 540,
+    "cost": 0.003992,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.003992,
+      "upstream_inference_prompt_cost": 0.000352,
+      "upstream_inference_completions_cost": 0.00364
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:06.286337+00:00",
+  "latency_s": 4.19,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

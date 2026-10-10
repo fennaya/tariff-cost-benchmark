@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362780",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "9014109000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596556-zRaYzO6xTS7NV3i1WnBf",
+    "object": "chat.completion",
+    "created": 1791596556,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "A magnetic compass for aircraft falls under heading 9014, which covers direction-finding compasses and other navigational instruments. Subheading 9014.20 covers instruments and appliances for aeronautical or space navigation (other than compasses). Subheading 9014.10 covers direction-finding compasses. A magnetic compass is a direction-finding compass, so 9014.10 applies even though it is intended for aircraft. The 9014.20 text excludes compasses, so it does not fit.\n\nThe statistical suffix under 9014.10 is 9014.10.4000 for \"Other\" (non-electrical) direction-finding compasses. HTSUS 9014.10 breaks down as 9014.10.20 (flight-type compasses), 9014.10.40 (other), and 9014.10.60 (parts and accessories). I recall 9014.10.10 as \"Of a kind used in civil aircraft\" at the 8-digit level, with 9014.10.20 as \"Other, magnetic compasses\" and 9014.10.40 as \"Other\". That is uncertain, so I'm going with the civil aircraft line, 9014.10.10, with the statistical suffix 9014.10.1000 (civil aircraft use). The item is designed for light aircraft, gliders, and microlights, which are civil aircraft.\n\n{\"hts_code\": \"9014.10.1000\", \"reason\": \"A magnetic navigator compass for light civil aircraft is a direction-finding compass of heading 9014, subheading 9014.10, and falls in the civil-aircraft provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 507,
+      "total_tokens": 831,
+      "cost": 0.005718,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005718,
+        "upstream_inference_prompt_cost": 0.000648,
+        "upstream_inference_completions_cost": 0.00507
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9014101000",
+  "predicted_reason": "A magnetic navigator compass for light civil aircraft is a direction-finding compass of heading 9014, subheading 9014.10, and falls in the civil-aircraft provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 507,
+    "total_tokens": 831,
+    "cost": 0.005718,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005718,
+      "upstream_inference_prompt_cost": 0.000648,
+      "upstream_inference_completions_cost": 0.00507
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:36.355163+00:00",
+  "latency_s": 4.875,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

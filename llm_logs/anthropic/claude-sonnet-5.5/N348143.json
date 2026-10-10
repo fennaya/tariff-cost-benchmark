@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N348143",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "6110909030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593755-jLGpNRwxGmdoWN2OBCfA",
+    "object": "chat.completion",
+    "created": 1791593755,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a women's sweater, knit, of mixed fibers: 71% polyester, 18% wool, 9% metallic, 2% elastane. It belongs in heading 6110 (sweaters, pullovers). The fiber that predominates by weight is man-made, so the garment is \"of other textile materials\" (6110.90) rather than wool (6110.11/19). The metallic and polyester are both man-made, but metallic yarn is classified separately in Section XI. Polyester at 71% still predominates over wool at 18%.\n\nNext I looked at the 6110.90 subheadings. 6110.90.10 is of silk, 6110.90.90 is other. Cotton, wool, and man-made fibers fall under 6110.20, 6110.30, and 6110.90. Since polyester is a man-made fiber, 6110.30 applies: \"Of man-made fibers\". Subheading 6110.30.30 covers sweaters and pullovers other than those containing 23% or more of leather. Sweaters under 6110.30.30 break down as:\n- 6110.30.30: Sweaters, pullovers, sweatshirts, waistcoats (vests) and similar articles, knitted or crocheted, of man-made fibers, containing 23% or more by weight of leather: no, that is 6110.30.10.\n- 6110.30.15 through 6110.30.30: other, with 6110.30.20 for vests, 6110.30.30 for other.\n- 6110.30.3053 is women's or girls' sweaters.\n\nHere is the structure: 6110.30.30 \"Other: Sweaters, pullovers...\" with statistical suffix 6110.30.3053 for women's or girls' sweaters (53) and 3059 for other women's or girls' articles (59).\n\nUnder the 9-stitch rule: the heading-level distinction for sweaters of 6110.30.20 applies to \"Other\" with specific criteria. The less-than-9-stitches note is relevant for the cotton/wool breakouts, but the 6110.30.30 grouping stays as is.\n\nI settled on 6110.30.3053 for women's sweaters of man-made fibers.\n\n{\"hts_code\": \"6110.30.3053\", \"reason\": \"Women's knit crew-neck sweater whose predominant fiber by weight is man-made (71% polyester), so it falls under heading 6110 as a sweater of man-made fibers, women's.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 782,
+      "total_tokens": 1122,
+      "cost": 0.0085,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0085,
+        "upstream_inference_prompt_cost": 0.00068,
+        "upstream_inference_completions_cost": 0.00782
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110303053",
+  "predicted_reason": "Women's knit crew-neck sweater whose predominant fiber by weight is man-made (71% polyester), so it falls under heading 6110 as a sweater of man-made fibers, women's.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 782,
+    "total_tokens": 1122,
+    "cost": 0.0085,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0085,
+      "upstream_inference_prompt_cost": 0.00068,
+      "upstream_inference_completions_cost": 0.00782
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:55:55.984973+00:00",
+  "latency_s": 7.909,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

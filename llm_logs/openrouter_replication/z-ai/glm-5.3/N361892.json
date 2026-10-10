@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361892",
+  "rulingDate": "2026-06-29T00:00:00",
+  "true_code": "6402999005",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600253-lmLWtqs115EPeLUgOBWx",
+    "object": "chat.completion",
+    "created": 1791600253,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6402.99.31\", \"reason\": \"Both styles are below-the-ankle athletic footwear with rubber/plastic soles and uppers whose external surface is predominantly rubber/plastics, featuring a foxing-like band and valued over $12 per pair.\"}",
+          "refusal": null,
+          "reasoning": "6402.99.31? Athletic footwear with foxing-like band, rubber/plastics esau majority, over $12/pair: 6402.99.31 (footwear with foxing-like band, valued over $12... actually 6402.99.31 is \"of rubber or plastics, having uppers of which over 90% is rubber/plastics\"? No\u20146402.99.31: footwear with outer soles and uppers of rubber/plastics, not covering ankle, foxing-like band, over $12/pair? The classic code: 6402.99.31 covers \"tennis shoes, basketball shoes... with foxing-like band, valued over $12/pair\" \u2014 yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "6402.99.31? Athletic footwear with foxing-like band, rubber/plastics esau majority, over $12/pair: 6402.99.31 (footwear with foxing-like band, valued over $12... actually 6402.99.31 is \"of rubber or plastics, having uppers of which over 90% is rubber/plastics\"? No\u20146402.99.31: footwear with outer soles and uppers of rubber/plastics, not covering ankle, foxing-like band, over $12/pair? The classic code: 6402.99.31 covers \"tennis shoes, basketball shoes... with foxing-like band, valued over $12/pair\" \u2014 yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 219,
+      "total_tokens": 610,
+      "cost": 0.0008228,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008228,
+        "upstream_inference_prompt_cost": 7.82e-05,
+        "upstream_inference_completions_cost": 0.0007446
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 157,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "64029931",
+  "predicted_reason": "Both styles are below-the-ankle athletic footwear with rubber/plastic soles and uppers whose external surface is predominantly rubber/plastics, featuring a foxing-like band and valued over $12 per pair.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 219,
+    "total_tokens": 610,
+    "cost": 0.0008228,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008228,
+      "upstream_inference_prompt_cost": 7.82e-05,
+      "upstream_inference_completions_cost": 0.0007446
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:44:13.483991+00:00",
+  "latency_s": 3.283,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

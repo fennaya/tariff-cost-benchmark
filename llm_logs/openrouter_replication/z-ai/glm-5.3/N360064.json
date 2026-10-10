@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360064",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "7615107125",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600034-SGVF9ptnhd7WexJOZi53",
+    "object": "chat.completion",
+    "created": 1791600034,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7612.90.0090\", \"reason\": \"The disposable aluminum foil trays, with a wall thickness of 0.050\u20130.070 mm (not exceeding 0.2 mm), are aluminum containers for food service, classifiable as other aluminum casks, cans, and similar containers.\"}",
+          "refusal": null,
+          "reasoning": "Aluminum foil containers, thickness 0.05-0.07mm >0.2mm? Foil is \u22640.2mm. Household articles of aluminum 7615.10.60? But foil thickness under 0.2mm \u2014 7612.90? Trays of aluminum foil: 7612.90.00... Actually ruling likely 7612.90.0090? Containers of aluminum foil for food: 7612.90.00.90? HTS 7612.90.00 covers aluminum casks, cans, boxes etc. of a wall thickness not exceeding 0.2mm. 7612.90.0090? There's 7612.90.0010 and 7612.90.0090? I recall 7612.90.0090 \"Other\". Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Aluminum foil containers, thickness 0.05-0.07mm >0.2mm? Foil is \u22640.2mm. Household articles of aluminum 7615.10.60? But foil thickness under 0.2mm \u2014 7612.90? Trays of aluminum foil: 7612.90.00... Actually ruling likely 7612.90.0090? Containers of aluminum foil for food: 7612.90.00.90? HTS 7612.90.00 covers aluminum casks, cans, boxes etc. of a wall thickness not exceeding 0.2mm. 7612.90.0090? There's 7612.90.0010 and 7612.90.0090? I recall 7612.90.0090 \"Other\". Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 266,
+      "total_tokens": 564,
+      "cost": 0.00119424,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00119424,
+        "upstream_inference_prompt_cost": 2.384e-05,
+        "upstream_inference_completions_cost": 0.0011704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 192,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7612900090",
+  "predicted_reason": "The disposable aluminum foil trays, with a wall thickness of 0.050\u20130.070 mm (not exceeding 0.2 mm), are aluminum containers for food service, classifiable as other aluminum casks, cans, and similar containers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 298,
+    "completion_tokens": 266,
+    "total_tokens": 564,
+    "cost": 0.00119424,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00119424,
+      "upstream_inference_prompt_cost": 2.384e-05,
+      "upstream_inference_completions_cost": 0.0011704
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:40:34.679862+00:00",
+  "latency_s": 2.531,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

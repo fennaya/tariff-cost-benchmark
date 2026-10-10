@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361006",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "7616995190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596189-oK5ghiNqeYDbUBHFTfyl",
+    "object": "chat.completion",
+    "created": 1791596189,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on the Satechi Fold stand. The stand is made of aluminum plates with hinges and rubber pads, and it holds laptops and smartphones. A stand of this kind would most likely fall under 8302.41 (base metal mountings, fittings and similar articles suitable for buildings) or 8302.50 (hat racks, brackets and similar fixtures). It could also be classified as an article of aluminum under 7616.99.\n\nI recall the ruling as classifying it in 8302.49.6085 (other mountings, fittings and similar articles, of aluminum or other base metal). The classification could also be 7616.99.5090. Both are plausible, but I think the more likely answer is 8302.49.\n\nThe relevant 8302.49 subheadings are:\n- 8302.41.60 for other mountings suitable for buildings\n- 8302.49.60, which covers \"Other: of aluminum\" (8302.49.6045 and 8302.49.6085 are the statistical suffixes)\n\nThe stand is not suitable for buildings, so 8302.41 does not apply. 8302.49.6000 covers \"Other\" and falls under the \"Other mountings, fittings\u2026 suitable for furniture, doorways, staircases, windows, \u2026 coachwork, saddlery, trunks, chests, caskets\" heading. A laptop stand is not clearly any of those, so 8302.50 or 7616 may fit better.\n\nI'll go with the aluminum article classification under 7616.99.5190, \"Other articles of aluminum: Other: Other.\" That is a guess about the ruling, since I cannot verify it. I considered 8302.10, 8302.42 (other mountings suitable for furniture), and 8302.49 first. In the end I judged that 8302.49.60 is the likelier match, as the stand is a mounting or fitting that holds equipment.\n\n{\"hts_code\": \"8302.49.6085\", \"reason\": \"The foldable hinged aluminum stand is a base-metal mounting or fitting that holds a laptop or smartphone, which fits heading 8302 (other mountings, fittings and similar articles, of aluminum), though I could not verify this against the actual ruling.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 709,
+      "total_tokens": 1146,
+      "cost": 0.007964,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007964,
+        "upstream_inference_prompt_cost": 0.000874,
+        "upstream_inference_completions_cost": 0.00709
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8302496085",
+  "predicted_reason": "The foldable hinged aluminum stand is a base-metal mounting or fitting that holds a laptop or smartphone, which fits heading 8302 (other mountings, fittings and similar articles, of aluminum), though I could not verify this against the actual ruling.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 709,
+    "total_tokens": 1146,
+    "cost": 0.007964,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007964,
+      "upstream_inference_prompt_cost": 0.000874,
+      "upstream_inference_completions_cost": 0.00709
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:30.285496+00:00",
+  "latency_s": 6.825,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

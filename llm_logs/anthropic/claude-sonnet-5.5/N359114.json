@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359114",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "6505004090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595749-laSlcWBpmOsOgxFUExb4",
+    "object": "chat.completion",
+    "created": 1791595749,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Felt hats fall under heading 6505 (hats and other headgear, knitted or made up from lace, felt or other textile fabric in the piece). A seamless hat felted from loose fibers could instead be hat bodies, hoods, or plateaux of felt, not blocked or with brim, under 6501. A felted cone or hood without a brim would be classified in 6501. But a finished sauna hat is made up, so 6505 applies.\n\nWithin 6505, subheading 6505.00.15 covers \"Hats and headgear of felt, made from hat bodies or hoods of 6501\", and 6505.00.60 covers \"Other: of wool felt...\" The 6505.00 subheadings in the HTSUS are:\n- 6505.00.80 \u2013 Other: Of cotton...\n- 6505.00.15 \u2013 Fur felt or fur-blend felt hats... \n- 6505.00.20 \u2013 Hard hats\n- 6505.00.30 \u2013 Hats and headgear of felt...?\n- 6505.00.90 \u2013 Other: Of man-made fibers...\n\nI recall: 6505.00.15 is \"Hats and headgear, of fur felt,\" 6505.00.20 is \"Hard hats,\" 6505.00.30 is \"Hats and headgear, of felt, of wool, ... Other\", and 6505.00.60 is \"Other: of cotton,\" 6505.00.80 is \"Of man-made fibers,\" and 6505.00.90 is \"Other.\" This is a bit unclear, but a wool felt hat that is not made from a hat body likely falls under 6505.00.90 or the felt categories.\n\nI believe the actual structure is: 6505.00.15 \u2013 Hats and headgear, of felt, of fur felt; 6505.00.20 \u2013 Hard hats; 6505.00.30 \u2013 Hats of wool felt (wool or fine animal hair), 6505.00.60 \u2013 Other: Of cotton, 6505.00.80 \u2013 Of man-made fibers, 6505.00.90 \u2013 Other. I'll go with 6505.00.30 for wool felt.\n\n```json\n{\"hts_code\": \"6505.00.30\", \"reason\": \"A finished seamless head covering of wool felt is classified as made-up felt headgear in heading 6505, under the wool felt hats subheading.\"}\n```\n\nFinal answer:\n\n{\"hts_code\": \"6505.00.30\", \"reason\": \"A finished seamless head covering of wool felt is classified as made-up felt headgear in heading 6505, under the wool felt hats subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 809,
+      "total_tokens": 1067,
+      "cost": 0.008606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008606,
+        "upstream_inference_prompt_cost": 0.000516,
+        "upstream_inference_completions_cost": 0.00809
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "65050030",
+  "predicted_reason": "A finished seamless head covering of wool felt is classified as made-up felt headgear in heading 6505, under the wool felt hats subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 258,
+    "completion_tokens": 809,
+    "total_tokens": 1067,
+    "cost": 0.008606,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008606,
+      "upstream_inference_prompt_cost": 0.000516,
+      "upstream_inference_completions_cost": 0.00809
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:09.629784+00:00",
+  "latency_s": 7.455,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356909",
+  "rulingDate": "2026-01-05T00:00:00",
+  "true_code": "9013809100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595284-VcSNwtPJL8hkq7gLvZ7g",
+    "object": "chat.completion",
+    "created": 1791595284,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on PON cabinets. Fiber optic splitter modules are classified in 9001.10 (optical fibers, optical fiber bundles and cables), or possibly 9001.90 (other optical elements), or 8517.62. A passive splitter with no electrical components is not a machine of heading 8517, so a heading 9001 or 9013 classification is more likely.\n\nI recall the ruling for \"PON cabinets\" being classified in 9001.90.4000? Hmm. Planar lightwave circuit splitters are generally classified under 9001.90. Cassettes with splitters and connectors, housed in a cabinet, are a composite good. The essential character comes from the splitters, which are optical elements. Heading 9001 covers optical fibers and cables other than those of heading 8544, as well as other optical elements. The subheading 9001.90.40 is for \"Other optical elements, unmounted\" (actually 9001.90.40 covers \"Other: Lenses...\"?). Within 9001.90, the 10-digit codes are 9001.90.4000 (Other optical elements, mounted/unmounted?) and 9001.90.6000 (Other). I believe the splitters' classification is 9001.90.6000 (Other). \n\nSettling on 9001.90.6000 is a guess, so I'll go with it.\n\n{\"hts_code\": \"9001.90.6000\", \"reason\": \"The passive cabinet of fiber optic splitter cassettes has no electrical components, so its essential character comes from the optical splitter modules, which fall under heading 9001 as other optical elements (a best-recollection classification, not a verified ruling).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 327,
+      "completion_tokens": 538,
+      "total_tokens": 865,
+      "cost": 0.006034,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006034,
+        "upstream_inference_prompt_cost": 0.000654,
+        "upstream_inference_completions_cost": 0.00538
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9001906000",
+  "predicted_reason": "The passive cabinet of fiber optic splitter cassettes has no electrical components, so its essential character comes from the optical splitter modules, which fall under heading 9001 as other optical elements (a best-recollection classification, not a verified ruling).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 327,
+    "completion_tokens": 538,
+    "total_tokens": 865,
+    "cost": 0.006034,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006034,
+      "upstream_inference_prompt_cost": 0.000654,
+      "upstream_inference_completions_cost": 0.00538
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:24.278466+00:00",
+  "latency_s": 5.148,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362265",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "8409999190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596457-J5u1v7A7yS55bS0DIngZ",
+    "object": "chat.completion",
+    "created": 1791596457,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Gaskets of vulcanized rubber other than hard rubber fall under heading 4016. Subheading 4016.93 covers gaskets, washers and other seals. Within it, 4016.93.50 is \"Other\" (not for the 4016.93.10 category of items for certain uses), and 4016.93.1050 is for \"Of a kind used in the manufacture of... \"? Checking the structure: 4016.93.10 covers \"Gaskets, washers and other seals: Of a hardness of less than 80 Shore A\" ... actually 4016.93.10 is \"Of a kind used with machinery of chapters 84/85\"? Per HTSUS, 4016.93.10 is \"Gaskets, washers and other seals: Of a kind used in the manufacture of goods of heading 8701-8705...\" Not certain. I recall 4016.93.10 = \"Of a hardness of less than 80 Shore A\" with 4016.93.1010 for \"Gaskets, washers and other seals, of cellular rubber\"? The more reliable recollection: 4016.93.50 \"Other\" with statistical suffix 4016.93.5010 \"Gaskets, washers and other seals: Other: Gaskets\" and 4016.93.5020 \"O-rings\", 4016.93.5050 \"Other\". CBP rulings on engine gaskets of rubber typically use 4016.93.5010. Under 4016.93.10 (the \"of a kind used in the manufacture of...\" category) there is 4016.93.1000 for \"Of a kind used with machines of 8701\u20138705\"? I'm unsure, so I will go with 4016.93.5010.\n\n{\"hts_code\": \"4016.93.5010\", \"reason\": \"A gasket of vulcanized FKM (fluoroelastomer) rubber is classified as a gasket, washer or other seal of vulcanized rubber other than hard rubber in heading 4016, subheading 4016.93.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 270,
+      "completion_tokens": 626,
+      "total_tokens": 896,
+      "cost": 0.0068,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0068,
+        "upstream_inference_prompt_cost": 0.00054,
+        "upstream_inference_completions_cost": 0.00626
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4016935010",
+  "predicted_reason": "A gasket of vulcanized FKM (fluoroelastomer) rubber is classified as a gasket, washer or other seal of vulcanized rubber other than hard rubber in heading 4016, subheading 4016.93.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 270,
+    "completion_tokens": 626,
+    "total_tokens": 896,
+    "cost": 0.0068,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0068,
+      "upstream_inference_prompt_cost": 0.00054,
+      "upstream_inference_completions_cost": 0.00626
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:57.669073+00:00",
+  "latency_s": 6.125,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

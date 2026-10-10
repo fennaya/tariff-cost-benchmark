@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361689",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8307103000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596326-dsgcx8U4V0Elj3Fz4uUt",
+    "object": "chat.completion",
+    "created": 1791596326,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a corrugated stainless steel flexible gas connector with a braid and a PVC cover. The relevant heading is 8307, which covers flexible tubing of base metal, with or without fittings. Heading 8307.10 covers flexible tubing of iron or steel. CBP rulings on similar gas connectors (e.g., Dormont) have classified them under 8307.10.30, which is for flexible tubing of iron or steel with fittings, or 8307.10.60 for other.\n\nThe ruling-type products with PVC covering and end fittings (the model number suggests fittings) fall under 8307.10.30 or 8307.10.60. The HTSUS breakdown is 8307.10.30 for \"Combined with fittings\" and 8307.10.60 for \"Other\". I believe the 8307.10 statistical suffixes are 8307.10.3000 and 8307.10.6000. I am working from memory on the subheadings, and I'm not certain of them. The description says it is designed to connect a gas supply, which implies fittings are attached. I chose 8307.10.30.\n\n{\"hts_code\": \"8307.10.3000\", \"reason\": \"Flexible corrugated stainless steel braided gas connector tube (with PVC cover) is flexible tubing of iron or steel with fittings, classified in heading 8307, subheading 8307.10.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 295,
+      "completion_tokens": 436,
+      "total_tokens": 731,
+      "cost": 0.00495,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00495,
+        "upstream_inference_prompt_cost": 0.00059,
+        "upstream_inference_completions_cost": 0.00436
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8307103000",
+  "predicted_reason": "Flexible corrugated stainless steel braided gas connector tube (with PVC cover) is flexible tubing of iron or steel with fittings, classified in heading 8307, subheading 8307.10.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 295,
+    "completion_tokens": 436,
+    "total_tokens": 731,
+    "cost": 0.00495,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00495,
+      "upstream_inference_prompt_cost": 0.00059,
+      "upstream_inference_completions_cost": 0.00436
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:46.340528+00:00",
+  "latency_s": 4.37,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

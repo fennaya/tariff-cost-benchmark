@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360629",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "6404119050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596119-b4VMYm9h8H6P75mGxlBI",
+    "object": "chat.completion",
+    "created": 1791596119,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a women's cycling shoe with a textile upper and a rubber/plastic outsole. The classification question is whether it falls under 6404 (textile uppers) or 6402 (rubber/plastic uppers).\n\nThe external surface area of the upper is mostly textile, so it goes in 6404.11 or 6404.19. Heading 6404.11 covers sports footwear, tennis shoes, basketball shoes, gym shoes, training shoes and the like. Cycling shoes are generally treated as athletic footwear. CBP rulings on cycling shoes with cleat provisions classify them in 6404.11.\n\nThe statistical suffixes under 6404.11.90 are:\n- 6404.11.20: footwear with a foam-sole/\"slip-on\" type, or valued at a different level.\n- 6404.11.90: other.\n\nWithin 6404.11, the subheading structure is:\n- 6404.11.20: Footwear with outer soles of rubber/plastics, valued over $12/pair, is not in 6404.11.20. That line covers \"Having uppers of which over 90% of the external surface is rubber or plastics\".\n- 6404.11.40: Ski boots, cross-country ski footwear, and snowboard boots.\n- 6404.11.50 and 6404.11.60: Other, for men's and women's footwear, valued under $12 per pair.\n- 6404.11.80 and 6404.11.90: Other, covering values over $12 per pair.\n- 6404.11.90 is the line for other footwear valued over $12 per pair. The sub-lines are 6404.11.8 for men's, and 6404.11.90 for other.\n\nI believe the sequence is 6404.11.80 for tennis shoes and similar, with 6404.11.90 for other. I'm not certain, but the usual result for women's athletic footwear valued over $12 is 6404.11.90, with a final suffix of 6404.11.9060 for women's.\n\nI recall 6404.11.9060 as \"Other: Women's\". That is the code I will use.\n\n{\"hts_code\": \"6404.11.9060\", \"reason\": \"Women's cycling shoe with a predominantly textile upper and a rubber/plastic outsole, which is sports footwear under 6404.11, valued over $12 per pair, in the women's 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 424,
+      "completion_tokens": 750,
+      "total_tokens": 1174,
+      "cost": 0.008348,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008348,
+        "upstream_inference_prompt_cost": 0.000848,
+        "upstream_inference_completions_cost": 0.0075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6404119060",
+  "predicted_reason": "Women's cycling shoe with a predominantly textile upper and a rubber/plastic outsole, which is sports footwear under 6404.11, valued over $12 per pair, in the women's 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 424,
+    "completion_tokens": 750,
+    "total_tokens": 1174,
+    "cost": 0.008348,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008348,
+      "upstream_inference_prompt_cost": 0.000848,
+      "upstream_inference_completions_cost": 0.0075
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:19.382807+00:00",
+  "latency_s": 6.886,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

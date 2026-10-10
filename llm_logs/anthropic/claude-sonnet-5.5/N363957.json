@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363957",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "4016996050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596749-qS1vuJGh8hxKu0NcAtvb",
+    "object": "chat.completion",
+    "created": 1791596749,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on roofer's kneepads. The kneepad is a composite of rubber, EVA foam, and polyurethane foam, with a textile liner. I recall that kneepads for roofers were classified in 4015.90.0100 (other articles of apparel and clothing accessories of vulcanized rubber) or 6307.90 (other made-up articles). Another possibility is 3926.20 (plastic apparel and accessories). Since the outer layer is vulcanized rubber (the wearing surface) and the principal component by function is the 5 mm SBR contact layer, the 4015 heading is plausible. However, the thickest layers are foam plastics, which would suggest chapter 39. Items of cellular rubber or plastics are also possible, though the vulcanized rubber outer layer is the one that contacts the roof.\n\nI recall NY rulings on kneepads classified under 6307.90.9889 for textile-lined kneepads. But the description of three permanently glued layers with an SBR outer layer reads like a ruling for 4016.99 or 4015.90. Since kneepads are protective accessories worn on the body, and the rubber is not textile-based, 4015.90.0100 is my best choice. The general-note exclusion for gloves does not apply here.\n\n{\"hts_code\": \"4015.90.0100\", \"reason\": \"Kneepads are worn clothing accessories whose vulcanized SBR rubber outer layer gives the composite its essential character, so they fall under other articles of apparel and clothing accessories of vulcanized rubber (heading 4015).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 296,
+      "completion_tokens": 517,
+      "total_tokens": 813,
+      "cost": 0.005762,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005762,
+        "upstream_inference_prompt_cost": 0.000592,
+        "upstream_inference_completions_cost": 0.00517
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4015900100",
+  "predicted_reason": "Kneepads are worn clothing accessories whose vulcanized SBR rubber outer layer gives the composite its essential character, so they fall under other articles of apparel and clothing accessories of vulcanized rubber (heading 4015).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 296,
+    "completion_tokens": 517,
+    "total_tokens": 813,
+    "cost": 0.005762,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005762,
+      "upstream_inference_prompt_cost": 0.000592,
+      "upstream_inference_completions_cost": 0.00517
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:49.426149+00:00",
+  "latency_s": 5.454,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

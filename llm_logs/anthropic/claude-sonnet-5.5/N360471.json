@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360471",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596092-6TamZ4bqJOJhwCfvMqMD",
+    "object": "chat.completion",
+    "created": 1791596092,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Handbags fall under heading 4202.22 when the outer surface is of plastic sheeting or textile materials. Heading 4202.29 covers other materials. An injection molded plastic bag is not made of plastic sheeting, which is the usual point of dispute. CBP rulings on molded EVA bags, such as handbags made entirely of injection molded plastic, have classified them under 4202.92.9100 or 4202.99. Other rulings treat them as 4202.32.\n\nThe structure of 4202.2 is: 4202.21 leather, 4202.22 outer surface of sheeting of plastic or textile materials, 4202.29 other. In this case the handbag is not sheeting, so it goes to 4202.29. The 4202.29 subheading is \"Other\" and has statistical suffix 4202.29.0000 or 4202.29.5000. I recall 4202.29.90 and 4202.29.50 as the options.\n\nThe current HTSUS under 4202.29 reads: 4202.29.10 of cotton or other vegetable fibers; 4202.29.50 of other materials with a 5.3% rate, statistical suffix 4202.29.5000 I believe. Rulings for molded plastic handbags (e.g., NY N-series) have used 4202.29.5000 for handbags of molded plastic, with the description \"Other: Handbags with or without shoulder strap, including those without handle: Other: Other.\"\n\nHeading 4202.29 has the following subheadings: 4202.29.01 \"Other\" with 10-digit 4202.29.0100 for \"Handbags of plastic\" or similar? I believe the more recent HTS revision made 4202.29.0000 \"Other\". I'll go with 4202.29.5000.\n\n{\"hts_code\": \"4202.29.5000\", \"reason\": \"A handbag made entirely of injection molded plastic is not made of plastic sheeting, so it falls under 4202.2 'other' (4202.29) as a handbag of other materials.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 294,
+      "completion_tokens": 642,
+      "total_tokens": 936,
+      "cost": 0.007008,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007008,
+        "upstream_inference_prompt_cost": 0.000588,
+        "upstream_inference_completions_cost": 0.00642
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202295000",
+  "predicted_reason": "A handbag made entirely of injection molded plastic is not made of plastic sheeting, so it falls under 4202.2 'other' (4202.29) as a handbag of other materials.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 294,
+    "completion_tokens": 642,
+    "total_tokens": 936,
+    "cost": 0.007008,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007008,
+      "upstream_inference_prompt_cost": 0.000588,
+      "upstream_inference_completions_cost": 0.00642
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:52.940932+00:00",
+  "latency_s": 5.992,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

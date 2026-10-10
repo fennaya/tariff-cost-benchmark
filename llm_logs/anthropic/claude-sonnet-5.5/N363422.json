@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363422",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "7309000090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596657-36gyTo8rr7m64yn3Y3m0",
+    "object": "chat.completion",
+    "created": 1791596657,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a steel energy storage cabinet imported unassembled. A 20-foot container-sized steel structure (6058 x 2438 x 2896 mm) that holds batteries.\n\nThe candidate headings are:\n- 9406 (prefabricated buildings), which is unlikely.\n- 8609 (containers), though these are not specially designed for carriage by transport modes.\n- 7308 (structures of iron or steel and parts thereof), where 7308.90 covers other structures.\n- 8537 or 8538 (parts of electrical control apparatus), where 8538.10 covers enclosures, boards, panels and other bases for apparatus of 8537 without the apparatus.\n- 8507.90 (parts of batteries).\n\nThe cabinet holds batteries and has no electrical components at import. CBP has ruled on similar items, with some ruling the steel enclosures were classified in 7308.90.9590 as structures, and others using 8609. Because the cabinet is a steel structure divided into compartments with wall, floor and roof modules and battery racks, I think 7308.90.9590 is the likely result. The 7308.90 subheadings were 7308.90.30 (panels, for sandwich), 7308.90.60 (other), 7308.90.95 (other), and so the statistical suffix 7308.90.9590 applies.\n\nAn alternative is 8609.00.00, but that heading covers containers specially designed and equipped for carriage by one or more modes of transport, and this cabinet is not that. I am going with 7308.90.9590.\n\n{\"hts_code\": \"7308.90.9590\", \"reason\": \"The unassembled steel cabinet, with wall, floor and roof modules and battery racks and no electrical components at import, is a steel structure and its parts, classified in heading 7308 as other structures of iron or steel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 432,
+      "completion_tokens": 598,
+      "total_tokens": 1030,
+      "cost": 0.006844,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006844,
+        "upstream_inference_prompt_cost": 0.000864,
+        "upstream_inference_completions_cost": 0.00598
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7308909590",
+  "predicted_reason": "The unassembled steel cabinet, with wall, floor and roof modules and battery racks and no electrical components at import, is a steel structure and its parts, classified in heading 7308 as other structures of iron or steel.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 598,
+    "total_tokens": 1030,
+    "cost": 0.006844,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006844,
+      "upstream_inference_prompt_cost": 0.000864,
+      "upstream_inference_completions_cost": 0.00598
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:17.747008+00:00",
+  "latency_s": 5.94,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

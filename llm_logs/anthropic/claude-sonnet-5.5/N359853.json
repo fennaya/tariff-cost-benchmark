@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359853",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "3824993990",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595955-gfG4RZ3JJAOusLF2nLUV",
+    "object": "chat.completion",
+    "created": 1791595955,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a foliar fertilizer made of mineral components (cobalt sulfate, nickel sulfate, sodium molybdate) with no nitrogen, phosphorus, or potassium. Chapter 31 covers fertilizers, but heading 3105 requires N, P, or K, so it falls outside. Heading 3101 (animal or vegetable origin) and 3102-3104 do not apply either. Heading 3105 covers mineral or chemical fertilizers containing two or three of the fertilizing elements N, P, K, and other fertilizers. The \"other fertilizers\" provision is 3105.90, but it is limited to goods of that chapter, and Chapter 31 Note 1 excludes separate chemically defined compounds. A mixture of several chemical compounds, however, is not a single chemically defined compound.\n\nThe remaining question is whether this mixture belongs in 3105.90 or in 3824. Heading 3105 is a fertilizer heading with the \"other\" subheading 3105.90.00, and in the HTSUS it is subdivided as 3105.90.0010 (in packages over 10 kg?) and 3105.90.0050. The statistical suffixes are 3105.90.0010 for \"Other fertilizers: Fertilizers (nitrogenous?)\" and 3105.90.0050 for \"Other\". I'll go with 3105.90.0050. CBP has classified similar micronutrient fertilizers in 3105.90.0010 or 3105.90.0050, and the 0050 \"Other\" line best fits a micronutrient mixture.\n\n{\"hts_code\": \"3105.90.0050\", \"reason\": \"A liquid micronutrient foliar fertilizer mixture of cobalt sulfate, nickel sulfate and sodium molybdate with no N, P or K is classified as an 'other' fertilizer in heading 3105, subheading 3105.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 616,
+      "total_tokens": 1230,
+      "cost": 0.007388,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007388,
+        "upstream_inference_prompt_cost": 0.001228,
+        "upstream_inference_completions_cost": 0.00616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105900050",
+  "predicted_reason": "A liquid micronutrient foliar fertilizer mixture of cobalt sulfate, nickel sulfate and sodium molybdate with no N, P or K is classified as an 'other' fertilizer in heading 3105, subheading 3105.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 614,
+    "completion_tokens": 616,
+    "total_tokens": 1230,
+    "cost": 0.007388,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007388,
+      "upstream_inference_prompt_cost": 0.001228,
+      "upstream_inference_completions_cost": 0.00616
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:35.814119+00:00",
+  "latency_s": 5.539,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

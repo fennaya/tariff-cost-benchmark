@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359104",
+  "rulingDate": "2026-03-19T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595741-Zvekp1w3GsZ77JSwcvfp",
+    "object": "chat.completion",
+    "created": 1791595741,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a film holder for camera scanning, made of acrylic and nylon plastic, with no optical or electronic parts. The candidate headings are:\n\n- **Heading 9006 (photographic equipment):** Parts and accessories of cameras are classified in 9006.91 and 9006.99.\n- **Heading 9010 (darkroom apparatus):** This covers apparatus and equipment for photographic laboratories, including film-handling accessories. 9010.60 covers projection screens, and 9010.90 covers parts and accessories. Negatoscopes are in 9010.50.\n- **Heading 3926 (other articles of plastics):** 3926.90.99 is the fallback if no other heading fits.\n\nHeading 9010 reads \"Apparatus and equipment for photographic (including cinematographic) laboratories, not specified or included elsewhere in this chapter; negatoscopes; projection screens.\" A film holder for digitizing film is plausibly an accessory for photographic lab equipment. Heading 9006 parts and accessories apply to cameras, and the holder is used with a camera, but it is not attached to one. In CBP rulings, similar film holders for camera scanning (e.g., the Negative Supply film holder) have been classified in 9010.50.60 as other apparatus for photographic laboratories. I will go with 9010.50.6000. The masks and replacement mask layers are parts of that system.\n\nSubheading 9010.50 is \"Other apparatus and equipment for photographic laboratories; negatoscopes.\" The statistical suffix is 9010.50.60, so the full code is 9010.50.6000.\n\n```json\n{\"hts_code\": \"9010.50.6000\", \"reason\": \"A plastic film holder used to position film for camera digitization, with its masks and replacement mask layers, is apparatus and equipment for photographic laboratories under heading 9010, classified in the other apparatus subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 430,
+      "completion_tokens": 623,
+      "total_tokens": 1053,
+      "cost": 0.00709,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00709,
+        "upstream_inference_prompt_cost": 0.00086,
+        "upstream_inference_completions_cost": 0.00623
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9010506000",
+  "predicted_reason": "A plastic film holder used to position film for camera digitization, with its masks and replacement mask layers, is apparatus and equipment for photographic laboratories under heading 9010, classified in the other apparatus subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 623,
+    "total_tokens": 1053,
+    "cost": 0.00709,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00709,
+      "upstream_inference_prompt_cost": 0.00086,
+      "upstream_inference_completions_cost": 0.00623
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:01.549438+00:00",
+  "latency_s": 5.628,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

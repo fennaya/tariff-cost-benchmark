@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359078",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8507600090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595740-uT8U1RfJvVanC728MnNZ",
+    "object": "chat.completion",
+    "created": 1791595740,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Lithium-ion accumulators fall under heading 8507.60. The subheading 8507.60.00 splits into statistical suffixes: 8507.60.0010 covers cylindrical cells for notebook computers, and 8507.60.0020 covers other batteries of a type used for... Actually, the current HTSUS structure under 8507.60.00 is:\n- 8507.60.0010: Lithium-ion batteries of a kind used as the primary source of power for electric vehicles of subheading 8703.40, 8703.50, 8703.60, 8703.70, or 8703.80\n- 8507.60.0020: Other (the earlier version of this had \"Of a kind used in notebooks\")\n- 8507.60.0030 and 8507.60.0090 also exist as other statistical lines.\n\nI recall that 8507.60.0020 is \"Other: Cylindrical cells\" and 8507.60.0090 is \"Other\". The battery here is a rectangular, prismatic headset battery, so it would go under \"Other,\" 8507.60.0090.\n\n{\"hts_code\": \"8507.60.0090\", \"reason\": \"A rechargeable rectangular lithium-ion battery for a headset is classified as a lithium-ion electric accumulator under heading 8507, subheading 8507.60, in the residual 'other' statistical line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 305,
+      "completion_tokens": 431,
+      "total_tokens": 736,
+      "cost": 0.00492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00492,
+        "upstream_inference_prompt_cost": 0.00061,
+        "upstream_inference_completions_cost": 0.00431
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8507600090",
+  "predicted_reason": "A rechargeable rectangular lithium-ion battery for a headset is classified as a lithium-ion electric accumulator under heading 8507, subheading 8507.60, in the residual 'other' statistical line.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 305,
+    "completion_tokens": 431,
+    "total_tokens": 736,
+    "cost": 0.00492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00492,
+      "upstream_inference_prompt_cost": 0.00061,
+      "upstream_inference_completions_cost": 0.00431
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:00.534678+00:00",
+  "latency_s": 4.502,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

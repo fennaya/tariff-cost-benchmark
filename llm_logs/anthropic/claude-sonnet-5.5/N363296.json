@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363296",
+  "rulingDate": "2026-08-03T00:00:00",
+  "true_code": "8517620090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596639-x3OfQm0FGfGP1dn3CFkD",
+    "object": "chat.completion",
+    "created": 1791596639,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a PCBA that works as a network communication subsystem. It receives data and transmits it over WiFi or Ethernet, so it is a machine for the transmission or reception of data. That points to heading 8517.62, \"Machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus.\"\n\nThe alternative is heading 8543 or 8537, but a board that converts data and transmits it over WiFi fits 8517.62 best. As a board it would also be a part of an energy monitor (9028 meters, parts 9028.90). However, Note 2(b) to Section XVI directs parts that are goods of heading 8517 to 8517, and the board's own function (communication) is classified there. Whether it is a part or a standalone unit, 8517.62 or 8517.79 applies.\n\nA PCBA with its own WiFi communication function and a processor is most likely to fall under 8517.62.00.90 (\"Other\") rather than 8517.62.0090 variants for specific apparatus. The 8517.62.00 subheadings are: 8517.62.0010 (Cellular telephone network base stations), .0020 (Other: Wireless local area network apparatus?), .0050 (Other), .0090 (Other). I'm not certain of the exact statistical suffix. The \"Other\" suffix 8517.62.0090 is a safe choice.\n\nAlternatively, 8517.79.0000 covers parts of 8517 apparatus. Because this PCBA performs the communication function itself, I chose 8517.62.0090.\n\n{\"hts_code\": \"8517.62.0090\", \"reason\": \"The Logic Board PCBA receives data, converts it to MQTT/JSON over TCP/IP, and transmits it via WiFi or Ethernet, so it is a data reception/conversion/transmission machine under heading 8517.62 (other).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 609,
+      "total_tokens": 976,
+      "cost": 0.006824,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006824,
+        "upstream_inference_prompt_cost": 0.000734,
+        "upstream_inference_completions_cost": 0.00609
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517620090",
+  "predicted_reason": "The Logic Board PCBA receives data, converts it to MQTT/JSON over TCP/IP, and transmits it via WiFi or Ethernet, so it is a data reception/conversion/transmission machine under heading 8517.62 (other).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 609,
+    "total_tokens": 976,
+    "cost": 0.006824,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006824,
+      "upstream_inference_prompt_cost": 0.000734,
+      "upstream_inference_completions_cost": 0.00609
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:00.175380+00:00",
+  "latency_s": 6.348,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

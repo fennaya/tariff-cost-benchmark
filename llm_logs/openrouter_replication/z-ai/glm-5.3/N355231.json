@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355231",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594035-C25iPh6Qunzxm8h8Pgwu",
+    "object": "chat.completion",
+    "created": 1791594035,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.99.0090\", \"reason\": \"Laboratory analysis identified White Ice as an igneous rock other than granite/marble, so the worked monumental/building stone falls in HTSUS 6802.99 as other stone.\"}",
+          "refusal": null,
+          "reasoning": "Granite? \"Other igneous rock\" \u2014 likely classified as granite 6802.93? Actually igneous rock predominantly quartz and plagioclase \u2014 could be granite. But lab says \"other igneous rock\" \u2014 6802.99? Granite is 6802.93.00. If not granite, \"other stone\" 6802.99.00. Description says \"other igneous rock\" \u2014 likely andesite? CBP ruling on White Ice... likely 6802.99.00. Hmm, but granite defined by quartz+feldspar. \"Other igneous rock\" suggests not granite \u2192 6802.99.0090? 6802.99.00 has subdivisions: 6802.99.0000? Actually 6802.99.0090 \"other\". Use 6802.99.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Granite? \"Other igneous rock\" \u2014 likely classified as granite 6802.93? Actually igneous rock predominantly quartz and plagioclase \u2014 could be granite. But lab says \"other igneous rock\" \u2014 6802.99? Granite is 6802.93.00. If not granite, \"other stone\" 6802.99.00. Description says \"other igneous rock\" \u2014 likely andesite? CBP ruling on White Ice... likely 6802.99.00. Hmm, but granite defined by quartz+feldspar. \"Other igneous rock\" suggests not granite \u2192 6802.99.0090? 6802.99.00 has subdivisions: 6802.99.0000? Actually 6802.99.0090 \"other\". Use 6802.99.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 255,
+      "total_tokens": 541,
+      "cost": 0.00157798,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00157798,
+        "upstream_inference_prompt_cost": 4.798e-05,
+        "upstream_inference_completions_cost": 0.00153
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 203,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990090",
+  "predicted_reason": "Laboratory analysis identified White Ice as an igneous rock other than granite/marble, so the worked monumental/building stone falls in HTSUS 6802.99 as other stone.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 255,
+    "total_tokens": 541,
+    "cost": 0.00157798,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00157798,
+      "upstream_inference_prompt_cost": 4.798e-05,
+      "upstream_inference_completions_cost": 0.00153
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 203,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T01:00:35.729879+00:00",
+  "latency_s": 1.996,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

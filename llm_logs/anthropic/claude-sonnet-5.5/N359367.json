@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359367",
+  "rulingDate": "2026-03-16T00:00:00",
+  "true_code": "8544422000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595817-xvET1ICDcBEs37vp5bXP",
+    "object": "chat.completion",
+    "created": 1791595817,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an audio cable assembly with a 5-position connector on one end and two stereo plugs on the other, fitted with connectors and carrying audio signals at low voltage. It most likely falls under heading 8544, insulated wire, cable and other insulated electric conductors fitted with connectors.\n\nSubheading 8544.42 covers conductors for a voltage not exceeding 1,000 V that are fitted with connectors. Within it, 8544.42.90 is \"Other\", and 8544.42.20 covers conductors of a kind used for telecommunications. Audio headset cables have been ruled on in CBP rulings, often under 8544.42.9090. Telecommunications use is the alternative: 8544.42.20 is limited to conductors \"of a kind used for telecommunications,\" and audio cables for an aircraft intercom could arguably qualify. However, the common ruling for audio cables with 3.5mm plugs is 8544.42.9090, so I am going with that.\n\n{\"hts_code\": \"8544.42.9090\", \"reason\": \"An insulated audio cable for under 1,000 V fitted with a 5-position connector and stereo plugs is classified as an insulated electric conductor fitted with connectors under heading 8544, subheading 8544.42, in the residual 'Other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 320,
+      "completion_tokens": 419,
+      "total_tokens": 739,
+      "cost": 0.00483,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00483,
+        "upstream_inference_prompt_cost": 0.00064,
+        "upstream_inference_completions_cost": 0.00419
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "An insulated audio cable for under 1,000 V fitted with a 5-position connector and stereo plugs is classified as an insulated electric conductor fitted with connectors under heading 8544, subheading 8544.42, in the residual 'Other' provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 320,
+    "completion_tokens": 419,
+    "total_tokens": 739,
+    "cost": 0.00483,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00483,
+      "upstream_inference_prompt_cost": 0.00064,
+      "upstream_inference_completions_cost": 0.00419
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:17.593170+00:00",
+  "latency_s": 4.777,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

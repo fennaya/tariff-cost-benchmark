@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359616",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595882-3vkGKxb53WZxBFNDD6XK",
+    "object": "chat.completion",
+    "created": 1791595882,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a \"mandrel\" that acts as a blind plug, similar to a blind rivet, where the head stays and the shaft breaks off. Candidates are 8307 (flexible tubing), 7318 (screws, bolts, rivets), and 7318.19 (other threaded articles) or 7318.29 (other non-threaded articles).\n\nI recall a ruling on \"Monobolt\" or \"break-stem plugs\" classified under 7318.29.00 as other non-threaded articles. The head is a plug and the shaft is discarded, so the shaft is threaded only for attachment to the tool. The installed head is unthreaded, so I chose 7318.29.0000 (other non-threaded articles). Rivets fall under 7318.23, but this is a plug, not a rivet. Other possibilities are 8466 (parts of tools) and 7326 (other articles of iron or steel). A sealing plug for a bore is, in my view, most likely classified in 7318.29.0000 as a blind plug fastener, though 7326.90.8688 is also plausible. I'll go with 7318.29.0000.\n\n{\"hts_code\": \"7318.29.0000\", \"reason\": \"The steel mandrel's head stays installed as a non-threaded, rivet-like fastener plug while the shaft breaks off and is discarded, so it falls under other non-threaded articles of heading 7318.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 428,
+      "completion_tokens": 458,
+      "total_tokens": 886,
+      "cost": 0.005436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005436,
+        "upstream_inference_prompt_cost": 0.000856,
+        "upstream_inference_completions_cost": 0.00458
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7318290000",
+  "predicted_reason": "The steel mandrel's head stays installed as a non-threaded, rivet-like fastener plug while the shaft breaks off and is discarded, so it falls under other non-threaded articles of heading 7318.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 428,
+    "completion_tokens": 458,
+    "total_tokens": 886,
+    "cost": 0.005436,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005436,
+      "upstream_inference_prompt_cost": 0.000856,
+      "upstream_inference_completions_cost": 0.00458
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:23.036089+00:00",
+  "latency_s": 5.697,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

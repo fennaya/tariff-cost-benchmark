@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360635",
+  "rulingDate": "2026-04-22T00:00:00",
+  "true_code": "8543400040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596120-FExWi8fHxu25wpfRcpMx",
+    "object": "chat.completion",
+    "created": 1791596120,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a vaporizer device for inhaling liquid extracts. The candidate headings are:\n\n- 8543.70 (electrical machines with individual functions, not elsewhere specified). CBP has classified e-cigarettes and vaporizers here: 8543.70.9960 was used for electronic cigarettes, and the 2022 HTS reorganized it to 8543.40.00 for \"Electronic cigarettes and similar personal electric vaporizing devices.\"\n- 2404.11 and 2404.19 (products containing tobacco or nicotine). These do not apply, because the device is imported without any liquid.\n\nHeading 8543.40 reads \"Electronic cigarettes and similar personal electric vaporizing devices.\" The statistical suffixes are 8543.40.0100 for \"Electronic cigarettes and similar personal electric vaporizing devices, not containing tobacco or nicotine\"? I am not certain of this. I recall 8543.40.0000 with a 10-digit statistical breakdown: 8543.40.0100 for devices to be used with tobacco and 8543.40.0500 for others. I'm not confident, so I'll go with 8543.40.0000.\n\n{\"hts_code\": \"8543.40.0000\", \"reason\": \"A reusable battery-powered device that heats a separately added liquid ampoule to produce inhalable vapor is a personal electric vaporizing device, classified in heading 8543.40.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 474,
+      "total_tokens": 840,
+      "cost": 0.005472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005472,
+        "upstream_inference_prompt_cost": 0.000732,
+        "upstream_inference_completions_cost": 0.00474
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543400000",
+  "predicted_reason": "A reusable battery-powered device that heats a separately added liquid ampoule to produce inhalable vapor is a personal electric vaporizing device, classified in heading 8543.40.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 474,
+    "total_tokens": 840,
+    "cost": 0.005472,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005472,
+      "upstream_inference_prompt_cost": 0.000732,
+      "upstream_inference_completions_cost": 0.00474
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:20.738932+00:00",
+  "latency_s": 5.116,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

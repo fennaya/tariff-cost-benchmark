@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357282",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "3305900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595360-OmfWGsIvqrzAgYquCdVG",
+    "object": "chat.completion",
+    "created": 1791595360,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Hair treatment (conditioner-type preparation) falls under HTSUS heading 3305, \"Preparations for use on the hair.\" Subheading 3305.90 covers \"Other\" hair preparations, which includes treatments. Shampoos are 3305.10, permanent waves 3305.20, and hair lacquers 3305.30. Conditioners and treatments are classified in 3305.90. The statistical suffix for 3305.90.10 is \"Hair rinses, hair conditioners...\"? In HTSUS, 3305.90.10 is \"Hair oils\" and 3305.90.20 is \"Other\"? Checking: 3305.90.10 is \"Hair oils and brilliantines\" or \"Hair preparations in packings for retail sale\"? I recall 3305.90.10.00 as \"Hair oils\" and 3305.90.20.00 as \"Other\", with the \"Other\" category being 3305.90.20.00. Hair treatment cream is therefore classified under 3305.90.20.00.\n\n{\"hts_code\": \"3305.90.2000\", \"reason\": \"A retail-packaged hair treatment/conditioning preparation is classified in heading 3305 as an other hair preparation, not a shampoo, wave, lacquer, or oil, under subheading 3305.90.20.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 249,
+      "completion_tokens": 418,
+      "total_tokens": 667,
+      "cost": 0.004678,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004678,
+        "upstream_inference_prompt_cost": 0.000498,
+        "upstream_inference_completions_cost": 0.00418
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3305902000",
+  "predicted_reason": "A retail-packaged hair treatment/conditioning preparation is classified in heading 3305 as an other hair preparation, not a shampoo, wave, lacquer, or oil, under subheading 3305.90.20.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 249,
+    "completion_tokens": 418,
+    "total_tokens": 667,
+    "cost": 0.004678,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004678,
+      "upstream_inference_prompt_cost": 0.000498,
+      "upstream_inference_completions_cost": 0.00418
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:40.518262+00:00",
+  "latency_s": 3.813,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

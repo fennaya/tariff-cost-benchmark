@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363690",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600444-cm1hG5IDQ3XpprhjUqNd",
+    "object": "chat.completion",
+    "created": 1791600444,
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.0060\", \"reason\": \"A used passenger sedan with a 2,500cc spark-ignition engine falls under subheading 8703.23 for vehicles with engine displacement exceeding 1,500cc but not exceeding 3,000cc, with statistical suffix 0060 for used vehicles.\"}",
+          "refusal": null,
+          "reasoning": "8703.23.00 \u2014 spark-ignition engine 1500-3000cc. 10-digit: 8703.23.0060? For used passenger cars 1500-3000cc: 8703.23.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "8703.23.00 \u2014 spark-ignition engine 1500-3000cc. 10-digit: 8703.23.0060? For used passenger cars 1500-3000cc: 8703.23.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 200,
+      "completion_tokens": 139,
+      "total_tokens": 339,
+      "cost": 0.0008916,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008916,
+        "upstream_inference_prompt_cost": 0.00028,
+        "upstream_inference_completions_cost": 0.0006116
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 32,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230060",
+  "predicted_reason": "A used passenger sedan with a 2,500cc spark-ignition engine falls under subheading 8703.23 for vehicles with engine displacement exceeding 1,500cc but not exceeding 3,000cc, with statistical suffix 0060 for used vehicles.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 200,
+    "completion_tokens": 139,
+    "total_tokens": 339,
+    "cost": 0.0008916,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008916,
+      "upstream_inference_prompt_cost": 0.00028,
+      "upstream_inference_completions_cost": 0.0006116
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 32,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Mistral",
+  "requested_at": "2026-10-10T02:47:25.095186+00:00",
+  "latency_s": 0.773,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

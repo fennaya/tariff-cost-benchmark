@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360896",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403999040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596173-fvVL4uqX88XTKOQAJxQn",
+    "object": "chat.completion",
+    "created": 1791596173,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on steel shelving accessories (pegboard and rail). The candidates are:\n- 9403.20.00 (other metal furniture), specifically 9403.20.0090 or 9403.20.0050.\n- 9403.90 (parts of furniture), specifically 9403.99.9045 for parts of metal furniture.\n- 7326.90 (other articles of iron or steel).\n\nThe pegboard and rail are designed to attach to specific shelving units, so they are parts of furniture. Heading 9403 covers other furniture and parts thereof, and the parts provision is 9403.99 (\"Parts: Other\"). Metal parts fall under 9403.99.90, with 9403.99.9045 for \"Other: Other\" metal parts. The 9403.99.90 subheading has two statistical suffixes, 9403.99.9010 (of metal, household) and 9403.99.9045 (other).\n\nShelving units are typically household or garage items, and the pegboard is for garage tool storage. The 9403.99.9045 line may read \"Other, of metal: Other,\" while 9403.99.9010 is \"Household.\" Garage shelving is likely classified as household, but I'm not certain, so I'll go with 9403.99.9045, which is the usual choice for metal furniture parts.\n\n```json\n{\"hts_code\": \"9403.99.9045\", \"reason\": \"The pegboard and K-Rail with brackets are steel parts designed solely for use with specific shelving units, so they classify as parts of other metal furniture in heading 9403.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 763,
+      "completion_tokens": 505,
+      "total_tokens": 1268,
+      "cost": 0.006576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006576,
+        "upstream_inference_prompt_cost": 0.001526,
+        "upstream_inference_completions_cost": 0.00505
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403999045",
+  "predicted_reason": "The pegboard and K-Rail with brackets are steel parts designed solely for use with specific shelving units, so they classify as parts of other metal furniture in heading 9403.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 763,
+    "completion_tokens": 505,
+    "total_tokens": 1268,
+    "cost": 0.006576,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006576,
+      "upstream_inference_prompt_cost": 0.001526,
+      "upstream_inference_completions_cost": 0.00505
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:14.303145+00:00",
+  "latency_s": 4.642,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

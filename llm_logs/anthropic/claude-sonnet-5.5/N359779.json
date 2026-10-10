@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359779",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "9401790015",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595924-RN4xuoRC3ZucEywoYOGY",
+    "object": "chat.completion",
+    "created": 1791595924,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling covering two items. The two-seat beach chair with umbrella is likely classified as a seat in 9401, and the Big Easy armchair is also in 9401. The task asks for a single code.\n\nFolding chairs with an aluminum frame: 9401.79 covers other seats with metal frames, not upholstered. 9401.71 covers upholstered seats with metal frames. Camp chairs with textile fabric seats are generally treated as 9401.79.0050 (other seats, with metal frames, other) \u2014 in the ruling for similar camp chairs, CBP often uses 9401.79.0050. Before 2022 the subheading was 9401.79.0050 \"Other\". Folding camp chairs with fabric are commonly classified in 9401.79.0050.\n\nFor item 1, the two seats with the storage compartment form a unitary whole and the umbrella provides shade. It could be classified as 9401.79.0050 as well, or by the essential character of the seat. Both fall under 9401.79.0050.\n\n```json\n{\"hts_code\": \"9401.79.0050\", \"reason\": \"Both collapsible metal-frame outdoor chairs with textile seating (not upholstered) are other seats with metal frames of heading 9401, covered by subheading 9401.79.0050.\"}\n```\n\n{\"hts_code\": \"9401.79.0050\", \"reason\": \"Both collapsible metal-frame outdoor chairs with textile seating (not upholstered) are other seats with metal frames of heading 9401, covered by subheading 9401.79.0050.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 694,
+      "completion_tokens": 507,
+      "total_tokens": 1201,
+      "cost": 0.006458,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006458,
+        "upstream_inference_prompt_cost": 0.001388,
+        "upstream_inference_completions_cost": 0.00507
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401790050",
+  "predicted_reason": "Both collapsible metal-frame outdoor chairs with textile seating (not upholstered) are other seats with metal frames of heading 9401, covered by subheading 9401.79.0050.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 694,
+    "completion_tokens": 507,
+    "total_tokens": 1201,
+    "cost": 0.006458,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006458,
+      "upstream_inference_prompt_cost": 0.001388,
+      "upstream_inference_completions_cost": 0.00507
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:04.183873+00:00",
+  "latency_s": 5.064,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

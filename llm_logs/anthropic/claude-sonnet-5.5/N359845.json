@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359845",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "3105100000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595947-sVkJgMxdihuDzibSoZwm",
+    "object": "chat.completion",
+    "created": 1791595947,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Multiple products are described, but all are liquid fertilizers in 1-liter containers. HTS 3105 covers mineral or chemical fertilizers with two or three of the fertilizing elements nitrogen, phosphorus, and potassium, in packages of 10 kg or less. Aminomix has N and P. Biofran has N, P, and K. Mega has N, P, and K. Max Fulvic has only N and K, so it also fits under two fertilizing elements.\n\nWithin 3105, the candidate subheadings are:\n- 3105.10: goods of this chapter in tablets or similar forms or in packages of gross weight not exceeding 10 kg.\n- 3105.20: mineral or chemical fertilizers containing the three elements N, P, and K.\n- 3105.51 and 3105.59: other fertilizers containing N and P.\n- 3105.60: fertilizers containing P and K.\n\nSubheading 3105.10 covers packages of 10 kg or less, which includes 1-liter containers. The statistical suffix for 3105.10.00 is 3105.10.0000, with 3105.10.00 being the general subheading for packages not exceeding 10 kg. Since the 1-liter containers fall within this limit, 3105.10.0000 is the most applicable.\n\n```json\n{\"hts_code\": \"3105.10.0000\", \"reason\": \"Mineral/chemical fertilizers containing nitrogen, phosphorus and/or potassium imported in 1-liter containers (packages not exceeding 10 kg) fall under HTSUS 3105.10.\"}\n```\n\n{\"hts_code\": \"3105.10.0000\", \"reason\": \"Mineral/chemical fertilizers containing nitrogen, phosphorus and/or potassium imported in 1-liter containers (packages not exceeding 10 kg) fall under HTSUS 3105.10.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1923,
+      "completion_tokens": 608,
+      "total_tokens": 2531,
+      "cost": 0.009926,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009926,
+        "upstream_inference_prompt_cost": 0.003846,
+        "upstream_inference_completions_cost": 0.00608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105100000",
+  "predicted_reason": "Mineral/chemical fertilizers containing nitrogen, phosphorus and/or potassium imported in 1-liter containers (packages not exceeding 10 kg) fall under HTSUS 3105.10.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1923,
+    "completion_tokens": 608,
+    "total_tokens": 2531,
+    "cost": 0.009926,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009926,
+      "upstream_inference_prompt_cost": 0.003846,
+      "upstream_inference_completions_cost": 0.00608
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:28.278573+00:00",
+  "latency_s": 5.523,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359962",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "8512909000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595992-OxraPqntqKhEofC6yps3",
+    "object": "chat.completion",
+    "created": 1791595992,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Windshield wipers for motor vehicles are classified in heading 8512, which covers electrical lighting, signaling, windshield wipers, defrosters and demisters of a kind used on cycles or motor vehicles. Subheading 8512.40 covers windshield wipers, defrosters and demisters. The 8512.40.40 line is for windshield wipers, and the 8512.40.4000 line is the one I recall for them.\n\nWiper blades alone, as opposed to complete wiper systems, are classified in 8512.90 as parts (8512.90.10 for parts of lighting and signaling equipment, 8512.90.20 for other parts). CBP rulings, however, classify complete wiper blade assemblies as parts of windshield wipers under 8512.90.9060, and I recall that 8512.90.90 is the \"other parts\" line. Rulings such as NY N0xxxx on wiper blades classify them in 8512.90.9060. I believe the \"Other\" parts line was 8512.90.9060 after the 2012 restructuring, though earlier it was 8512.90.90. I'll go with 8512.90.9060.\n\n```json\n{\"hts_code\": \"8512.90.9060\", \"reason\": \"Replacement wiper blade assemblies for motor vehicles are classified as parts of windshield wipers of heading 8512 under subheading 8512.90 (other parts), consistent with CBP rulings.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 265,
+      "completion_tokens": 463,
+      "total_tokens": 728,
+      "cost": 0.00516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00516,
+        "upstream_inference_prompt_cost": 0.00053,
+        "upstream_inference_completions_cost": 0.00463
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8512909060",
+  "predicted_reason": "Replacement wiper blade assemblies for motor vehicles are classified as parts of windshield wipers of heading 8512 under subheading 8512.90 (other parts), consistent with CBP rulings.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 265,
+    "completion_tokens": 463,
+    "total_tokens": 728,
+    "cost": 0.00516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00516,
+      "upstream_inference_prompt_cost": 0.00053,
+      "upstream_inference_completions_cost": 0.00463
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:12.931376+00:00",
+  "latency_s": 4.549,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

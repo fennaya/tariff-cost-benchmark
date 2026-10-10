@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358212",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "3504001000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595563-0Ol50M95E74AFL4ypqXt",
+    "object": "chat.completion",
+    "created": 1791595563,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a recombinant lactoferrin produced by fermentation. Lactoferrin is a protein, and the likely candidates are heading 3504 (peptones and other protein substances and their derivatives, n.e.s.) or 2106 (food preparations n.e.s.). Lactoferrin from milk is classified in 3504.00.10 (peptones and their derivatives), while other protein substances fall under 3504.00.50.\n\nHeading 3504 covers \"Peptones and their derivatives; other protein substances and their derivatives, not elsewhere specified or included; hide powder.\" The 2023 HTSUS has 3504.00.10 for peptones and their derivatives, and 3504.00.50 for other. Lactoferrin is a protein isolate, not a peptone, so 3504.00.50 is the better fit. Its statistical suffixes are 3504.00.5000 under the \"other\" line, with no further breakout.\n\nAlternatively, heading 3002 could apply, since lactoferrin is sometimes treated as an immunological or blood fraction product. But for a protein isolate used as a multi-purpose ingredient, 3504 is more appropriate.\n\n```json\n{\"hts_code\": \"3504.00.5000\", \"reason\": \"Fermentation-derived lactoferrin protein isolate (>93% protein) is a protein substance not elsewhere specified, classified in heading 3504 under the 'other' subheading rather than as a peptone.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 333,
+      "completion_tokens": 485,
+      "total_tokens": 818,
+      "cost": 0.005516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005516,
+        "upstream_inference_prompt_cost": 0.000666,
+        "upstream_inference_completions_cost": 0.00485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3504005000",
+  "predicted_reason": "Fermentation-derived lactoferrin protein isolate (>93% protein) is a protein substance not elsewhere specified, classified in heading 3504 under the 'other' subheading rather than as a peptone.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 485,
+    "total_tokens": 818,
+    "cost": 0.005516,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005516,
+      "upstream_inference_prompt_cost": 0.000666,
+      "upstream_inference_completions_cost": 0.00485
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:03.328311+00:00",
+  "latency_s": 4.864,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

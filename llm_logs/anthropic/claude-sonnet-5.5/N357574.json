@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357574",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "8544493080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595450-vvWzqelRk6GwruGphKte",
+    "object": "chat.completion",
+    "created": 1791595450,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on Cat 5e cable without connectors, rated at 300 V, so it falls under heading 8544. Within 8544.42 (other electric conductors, for voltage not exceeding 1,000 V, fitted with connectors) it would not qualify, because the cable has no connectors. The applicable subheading is 8544.49 (other electric conductors, for a voltage not exceeding 1,000 V, not fitted with connectors). The 8544.49 split is: 8544.49.10 (of a kind used for telecommunications, \u226480 V), 8544.49.20 (other, \u226480 V), and 8544.49.30 and onward for 80\u20131,000 V. The 300 V rating puts it above 80 V, so 8544.49.30 or 8544.49.90 would apply. In the current schedule:\n- 8544.49.10: Of a kind used for telecommunications, for a voltage not exceeding 80 V\n- 8544.49.20: Other, for a voltage not exceeding 80 V\n- 8544.49.30: Other, for a voltage exceeding 80 V but not exceeding 1,000 V: Of copper\n- 8544.49.90 (the remainder)\n\nThe conductors are solid copper wires, so the cable is a copper conductor. Under the 8544.49 breakdown, 8544.49.30 covers \"Other, for a voltage exceeding 80 V but not exceeding 1,000 V: Of copper,\" and the 10-digit statistical suffix is 8544.49.3000.\n\nNote that CBP has classified Cat 5e cables with a 300 V rating in 8544.49.30, which matches this result. The 80 V telecommunications provision was not applied, because the stated rating is 300 V.\n\n{\"hts_code\": \"8544.49.3000\", \"reason\": \"Unconnectorized insulated copper data cable rated at 300 V (above 80 V, not over 1,000 V) falls in heading 8544 under subheading 8544.49.30 for other electric conductors of copper.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 354,
+      "completion_tokens": 665,
+      "total_tokens": 1019,
+      "cost": 0.007358,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007358,
+        "upstream_inference_prompt_cost": 0.000708,
+        "upstream_inference_completions_cost": 0.00665
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544493000",
+  "predicted_reason": "Unconnectorized insulated copper data cable rated at 300 V (above 80 V, not over 1,000 V) falls in heading 8544 under subheading 8544.49.30 for other electric conductors of copper.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 665,
+    "total_tokens": 1019,
+    "cost": 0.007358,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007358,
+      "upstream_inference_prompt_cost": 0.000708,
+      "upstream_inference_completions_cost": 0.00665
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:10.845469+00:00",
+  "latency_s": 5.872,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

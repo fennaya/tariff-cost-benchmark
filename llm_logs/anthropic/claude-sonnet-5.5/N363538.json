@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363538",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "8507600090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596693-wJkr8gJwNg1578WM33fb",
+    "object": "chat.completion",
+    "created": 1791596693,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Power banks with lithium-ion batteries are generally classified in 8507.60.00 (lithium-ion accumulators). CBP rulings on power banks typically place them in 8507.60.0010 (lithium-ion batteries, of a kind used as the primary source of power for electric vehicles of subheading 8703) or 8507.60.0020 (other). The statistical suffix for \"other\" is 8507.60.0090 in the current schedule, with 8507.60.0010 covering the vehicle batteries.\n\nMany CBP rulings on power banks cite 8507.60.0020, which is the code for \"Other: Rechargeable lithium-ion batteries\" and was in use for years. The HTSUS was revised: 8507.60.00 has 8507.60.0010 \"Batteries of a kind used as the primary source of electric power for electrically powered vehicles of 8703\" and 8507.60.0020 \"Other\"? In recent rulings (2023), power banks are classified in 8507.60.0020, \"Lithium-ion storage batteries: Other: Other\". I'll go with that.\n\nAlternatively, a power bank could be considered under 8504.40 as a static converter, but CBP generally treats power banks as 8507.60.\n\n{\"hts_code\": \"8507.60.0020\", \"reason\": \"A portable lithium-ion power bank is a rechargeable lithium-ion accumulator classified in heading 8507, subheading 8507.60, in the 'other' statistical provision rather than the electric-vehicle battery provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 495,
+      "total_tokens": 899,
+      "cost": 0.005758,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005758,
+        "upstream_inference_prompt_cost": 0.000808,
+        "upstream_inference_completions_cost": 0.00495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8507600020",
+  "predicted_reason": "A portable lithium-ion power bank is a rechargeable lithium-ion accumulator classified in heading 8507, subheading 8507.60, in the 'other' statistical provision rather than the electric-vehicle battery provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 404,
+    "completion_tokens": 495,
+    "total_tokens": 899,
+    "cost": 0.005758,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005758,
+      "upstream_inference_prompt_cost": 0.000808,
+      "upstream_inference_completions_cost": 0.00495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:54.107397+00:00",
+  "latency_s": 4.694,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

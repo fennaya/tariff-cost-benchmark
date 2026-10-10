@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362917",
+  "rulingDate": "2026-07-28T00:00:00",
+  "true_code": "8544700000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596591-AFprmsXNufhfwTD1uuCX",
+    "object": "chat.completion",
+    "created": 1791596591,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on ASML EUV lithography cable sets. The likely classification is 8486.90, parts and accessories of machines used for manufacturing semiconductor devices. The alternative is 8544 for the cables, but because the set is a component dedicated to a lithography system, Section XVI Note 2 and the specific parts provision in 8486 point to 8486.90.\n\nHeading 8486 covers machines and apparatus of a kind used solely or principally for manufacturing semiconductor boules or wafers, semiconductor devices, and so on. Subheading 8486.20 covers machines for manufacturing semiconductor devices or electronic integrated circuits, and 8486.90 covers parts and accessories. Within 8486.90, the statistical suffixes are 8486.90.0000 (HTS 2022 onward) or earlier splits. I believe the code is 8486.90.0000.\n\nCables are normally classified in 8544, but Note 1 to Section XVI excludes only certain items, and 8544 is not among them. Since 8544 cables are not specifically excluded, the question is whether the cables as a set are a part of the machine. A cable set that is made up as a specific assembly for the machine is generally treated as a part of that machine. Under Note 2(a), parts that are goods included in a heading of Chapter 84 or 85 (other than 8487 and 8548) are classified in their own heading. This could push the cables to 8544, but 8486 parts are specifically provided for in Note 11 to Chapter 84 and Note 9(C) as well. I lean toward the ruling classifying the set in 8486.90.0000.\n\n{\"hts_code\": \"8486.90.0000\", \"reason\": \"The pre-install cable set is a dedicated component of an EUV semiconductor lithography system, so it is classified as a part of machines for manufacturing semiconductor devices under heading 8486 (subheading 8486.90) rather than as cables under 8544.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 468,
+      "completion_tokens": 641,
+      "total_tokens": 1109,
+      "cost": 0.007346,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007346,
+        "upstream_inference_prompt_cost": 0.000936,
+        "upstream_inference_completions_cost": 0.00641
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8486900000",
+  "predicted_reason": "The pre-install cable set is a dedicated component of an EUV semiconductor lithography system, so it is classified as a part of machines for manufacturing semiconductor devices under heading 8486 (subheading 8486.90) rather than as cables under 8544.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 468,
+    "completion_tokens": 641,
+    "total_tokens": 1109,
+    "cost": 0.007346,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007346,
+      "upstream_inference_prompt_cost": 0.000936,
+      "upstream_inference_completions_cost": 0.00641
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:11.730870+00:00",
+  "latency_s": 6.167,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

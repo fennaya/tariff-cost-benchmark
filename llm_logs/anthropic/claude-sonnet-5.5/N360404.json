@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360404",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596073-WCYHi9ipF4PCc5t00pkF",
+    "object": "chat.completion",
+    "created": 1791596073,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on steel target stands. Candidates are 9506.99 (other articles for sports and outdoor games), 7326.19/7326.90 (other articles of iron or steel), and 9305.20 (parts and accessories of shotguns or rifles).\n\nTarget stands for recreational shooting games are likely classified in heading 9506 as articles and equipment for general physical exercise, sports, or outdoor games, not elsewhere specified. Heading 9506.99 covers \"other,\" and subheading 9506.99.60 covers \"other\" sports equipment, with 9506.99.5500 covering other items. I recall the 9506.99.60 line as \"Other: Other,\" and the final 9506.99.6080 as \"Other.\"\n\nAn alternative is 9504.90 for game articles, but shooting targets are generally put in 9506.99.\n\nThe stands are not firearm parts, so 9305 does not apply.\n\nI will use 9506.99.6080.\n\n{\"hts_code\": \"9506.99.6080\", \"reason\": \"Steel stands designed to hold targets for recreational outdoor target shooting are other articles and equipment for sports and outdoor games, classified in heading 9506, subheading 9506.99.60.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 576,
+      "completion_tokens": 394,
+      "total_tokens": 970,
+      "cost": 0.005092,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005092,
+        "upstream_inference_prompt_cost": 0.001152,
+        "upstream_inference_completions_cost": 0.00394
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506996080",
+  "predicted_reason": "Steel stands designed to hold targets for recreational outdoor target shooting are other articles and equipment for sports and outdoor games, classified in heading 9506, subheading 9506.99.60.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 576,
+    "completion_tokens": 394,
+    "total_tokens": 970,
+    "cost": 0.005092,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005092,
+      "upstream_inference_prompt_cost": 0.001152,
+      "upstream_inference_completions_cost": 0.00394
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:33.716663+00:00",
+  "latency_s": 4.608,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

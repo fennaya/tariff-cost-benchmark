@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359913",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3004909225",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595975-Unta6hyUwcj9A0TLVaUV",
+    "object": "chat.completion",
+    "created": 1791595975,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Olmesartan medoxomil tablets are a packaged medicament for retail sale with a single active ingredient, so they fall under heading 3004. Olmesartan medoxomil is a tetrazole-containing compound, and its HTS listing is 2933.99.xxxx for bulk. For finished tablets, the relevant subheading is 3004.90.92 (other medicaments, other), with the statistical suffix commonly 3004.90.9265 for \"Other: other\" (ARBs or similar). I'm not certain of that suffix. The 3004.90.92 breakdown is: 9201 (antihypertensives?), and so on. The classic list under 3004.90.92 includes: 3004.90.9215 (antihypertensive?)... I recall 3004.90.9205 = \"Other: Medicaments for human use: containing...\" I'm unsure, so I'll go with the more general 3004.90.9290 (\"Other\") or 3004.90.9295? I believe the 3004.90.92 suffixes are: 05 Antineoplastic... In the 2020s HTS, 3004.90.92 includes 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 92, 95. I recall that 3004.90.9244 is a cardiovascular line. I'll answer with 3004.90.9285... Reconsidering, 3004.90.9285 is not something I can confirm, so I'll choose 3004.90.9290 as a safe fallback.\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Olmesartan medoxomil tablets are a finished dosage-form medicament put up in measured doses for retail sale, so they fall under heading 3004 in the 'other medicaments' subheading 3004.90.92.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 222,
+      "completion_tokens": 599,
+      "total_tokens": 821,
+      "cost": 0.006434,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006434,
+        "upstream_inference_prompt_cost": 0.000444,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Olmesartan medoxomil tablets are a finished dosage-form medicament put up in measured doses for retail sale, so they fall under heading 3004 in the 'other medicaments' subheading 3004.90.92.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 222,
+    "completion_tokens": 599,
+    "total_tokens": 821,
+    "cost": 0.006434,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006434,
+      "upstream_inference_prompt_cost": 0.000444,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:55.785064+00:00",
+  "latency_s": 5.744,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

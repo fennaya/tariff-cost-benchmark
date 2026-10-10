@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362892",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "8452219000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600365-66r0apjATe7cClMK6CxX",
+    "object": "chat.completion",
+    "created": 1791600365,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8452.21.9040\", \"reason\": \"The machine's essential function is industrial sewing of leather automotive components, and per CBP rulings on similar Richpeace combination sewing/perforation/embroidery machines, it is classified as an automatic industrial sewing machine of heading 8452 rather than as an embroidery or perforating machine.\"}",
+          "refusal": null,
+          "reasoning": "CNC sewing machine \u2014 likely 8452.21? Industrial sewing machines 8452.21.90. But perforating/embroidery combo... NY rulings classified similar Richpeace machine under 8452.21.90? Actually embroidery machines are 8452.24. Perforation machine? There was a ruling classifying this machine under 8452.21.90? I recall NY N317375 classified Richpeace sewing/perforation machine in 8452.21.90? Hmm. Sewing function essential \u2192 8452.21.9060? HTS 8452.21.90 with stat suffix 0040/0060... 8452.21.9040? Actual: 8452.21.9040 \"other\" automatic sewing machines? I'll answer 8452.21.9040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "CNC sewing machine \u2014 likely 8452.21? Industrial sewing machines 8452.21.90. But perforating/embroidery combo... NY rulings classified similar Richpeace machine under 8452.21.90? Actually embroidery machines are 8452.24. Perforation machine? There was a ruling classifying this machine under 8452.21.90? I recall NY N317375 classified Richpeace sewing/perforation machine in 8452.21.90? Hmm. Sewing function essential \u2192 8452.21.9060? HTS 8452.21.90 with stat suffix 0040/0060... 8452.21.9040? Actual: 8452.21.9040 \"other\" automatic sewing machines? I'll answer 8452.21.9040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 276,
+      "total_tokens": 604,
+      "cost": 0.00124064,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00124064,
+        "upstream_inference_prompt_cost": 2.624e-05,
+        "upstream_inference_completions_cost": 0.0012144
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 196,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8452219040",
+  "predicted_reason": "The machine's essential function is industrial sewing of leather automotive components, and per CBP rulings on similar Richpeace combination sewing/perforation/embroidery machines, it is classified as an automatic industrial sewing machine of heading 8452 rather than as an embroidery or perforating machine.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 328,
+    "completion_tokens": 276,
+    "total_tokens": 604,
+    "cost": 0.00124064,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00124064,
+      "upstream_inference_prompt_cost": 2.624e-05,
+      "upstream_inference_completions_cost": 0.0012144
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 196,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:46:06.230897+00:00",
+  "latency_s": 2.192,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

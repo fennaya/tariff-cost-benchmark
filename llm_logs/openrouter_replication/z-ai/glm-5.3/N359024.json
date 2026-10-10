@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359024",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "8471609050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599842-zOJUks31Nill7ZhzcpjS",
+    "object": "chat.completion",
+    "created": 1791599842,
+    "model": "z-ai/glm-5.3",
+    "provider": "Together",
+    "system_fingerprint": "default",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8471.60.9580\", \"reason\": \"The smart pen functions as an input unit for automatic data processing machines (smartphones/tablets/computers), capturing and transferring writing data, so it is classified as an ADP input unit under heading 8471 rather than as a pen under 9608.\"}",
+          "refusal": null,
+          "reasoning": "Smart pen \u2014 likely 8471.60? Actually writing pen with electronic functions \u2014 NY rulings classify smart pens under 8471.60.95? Nuwa Pen ruling classified in 8471.60.9580? There's actual ruling: Nuwa Pen classified under 8471.60.95 (input units). Use 8471.60.9580.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Smart pen \u2014 likely 8471.60? Actually writing pen with electronic functions \u2014 NY rulings classify smart pens under 8471.60.95? Nuwa Pen ruling classified in 8471.60.9580? There's actual ruling: Nuwa Pen classified under 8471.60.95 (input units). Use 8471.60.9580.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 246,
+      "completion_tokens": 162,
+      "total_tokens": 408,
+      "cost": 0.0010572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0010572,
+        "upstream_inference_prompt_cost": 0.0003444,
+        "upstream_inference_completions_cost": 0.0007128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 85,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471609580",
+  "predicted_reason": "The smart pen functions as an input unit for automatic data processing machines (smartphones/tablets/computers), capturing and transferring writing data, so it is classified as an ADP input unit under heading 8471 rather than as a pen under 9608.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 246,
+    "completion_tokens": 162,
+    "total_tokens": 408,
+    "cost": 0.0010572,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0010572,
+      "upstream_inference_prompt_cost": 0.0003444,
+      "upstream_inference_completions_cost": 0.0007128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 85,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Together",
+  "requested_at": "2026-10-10T02:37:22.907565+00:00",
+  "latency_s": 1.237,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

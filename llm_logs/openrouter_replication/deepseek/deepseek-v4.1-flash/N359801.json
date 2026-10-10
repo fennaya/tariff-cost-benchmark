@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N359801",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "4820102060",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598991-0sCVlbl8ag3s9QkIOaNE",
+    "object": "chat.completion",
+    "created": 1791598991,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "StreamLake",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4820.10.2010\", \"reason\": \"All five items are bound paper notebooks (diaries and similar notebooks) with paperboard or non-paper covers, classifiable under HTSUS 4820.10.20 as diaries, notebooks, and address books with paper or paperboard covers, with the specific statistical breakout for lined or blank pages.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 81,
+      "total_tokens": 592,
+      "cost": 0.000122745,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000122745,
+        "upstream_inference_prompt_cost": 7.5117e-05,
+        "upstream_inference_completions_cost": 4.7628e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4820102010",
+  "predicted_reason": "All five items are bound paper notebooks (diaries and similar notebooks) with paperboard or non-paper covers, classifiable under HTSUS 4820.10.20 as diaries, notebooks, and address books with paper or paperboard covers, with the specific statistical breakout for lined or blank pages.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 511,
+    "completion_tokens": 81,
+    "total_tokens": 592,
+    "cost": 0.000122745,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000122745,
+      "upstream_inference_prompt_cost": 7.5117e-05,
+      "upstream_inference_completions_cost": 4.7628e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "StreamLake",
+  "requested_at": "2026-10-10T02:23:12.177223+00:00",
+  "latency_s": 2.115,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359850",
+  "rulingDate": "2026-04-14T00:00:00",
+  "true_code": "3824993990",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595953-efRSkB9vrNnzqILtrACV",
+    "object": "chat.completion",
+    "created": 1791595953,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a foliar fertilizer supplying copper, nickel, and sulfur, so Chapter 31 is the likely home. Chapter 31 covers mineral or chemical fertilizers. Heading 3105 covers mixed fertilizers containing two or more of the fertilizing elements nitrogen, phosphorus, and potassium. Combate contains none of these, so 3105 does not apply. Heading 3104 (potassic) and 3102 (nitrogenous) also do not apply.\n\nChapter 31 therefore fails, and the product falls under 3824 (prepared chemical products) or 2833 (copper sulfate). Note 1 to Chapter 31 excludes separate chemically defined compounds other than those specifically listed. This is a mixture of copper sulfate and nickel sulfate with additives, and it is not a Chapter 31 fertilizer. CBP has ruled on similar micronutrient foliar fertilizers and generally placed them in 3824.99. The additives (surfactants, antifreeze) mean the product is not a pure chemical, which supports 3824.\n\nIn the 3824.99 subheadings, 3824.99.92 is \"Other\" and 3824.99.9295 is the residual line, though there are also lines for specific products. I'll use 3824.99.9295.\n\nBefore settling on this, I considered 3808 and found it inapplicable because the product has no pesticidal claims. I also considered 2833.25 (copper sulfates), but the mixture with nickel sulfate and additives points to 3824.\n\n```json\n{\"hts_code\": \"3824.99.9295\", \"reason\": \"A liquid copper/nickel sulfate micronutrient foliar mixture with additives lacks nitrogen, phosphorus, or potassium needed for Chapter 31 (heading 3105) and is not a single chemically defined compound, so it falls in the residual heading 3824 for chemical preparations not elsewhere specified.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 566,
+      "completion_tokens": 636,
+      "total_tokens": 1202,
+      "cost": 0.007492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007492,
+        "upstream_inference_prompt_cost": 0.001132,
+        "upstream_inference_completions_cost": 0.00636
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3824999295",
+  "predicted_reason": "A liquid copper/nickel sulfate micronutrient foliar mixture with additives lacks nitrogen, phosphorus, or potassium needed for Chapter 31 (heading 3105) and is not a single chemically defined compound, so it falls in the residual heading 3824 for chemical preparations not elsewhere specified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 566,
+    "completion_tokens": 636,
+    "total_tokens": 1202,
+    "cost": 0.007492,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007492,
+      "upstream_inference_prompt_cost": 0.001132,
+      "upstream_inference_completions_cost": 0.00636
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:34.230998+00:00",
+  "latency_s": 6.175,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

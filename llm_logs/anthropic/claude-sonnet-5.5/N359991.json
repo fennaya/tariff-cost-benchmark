@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359991",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8708936000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596005-qQh4YUDtqwFCtnugHgUz",
+    "object": "chat.completion",
+    "created": 1791596005,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a controllable one-way clutch for automatic transmissions of passenger vehicles. The most likely heading is 8708.40, which covers gear boxes and parts thereof for motor vehicles. CBP rulings on similar clutch assemblies for automatic transmissions have classified them as parts of gear boxes under 8708.40.\n\nThe 8708.40 subheadings are:\n- 8708.40.11: gear boxes, for tractors of 8701 (and other vehicles)\n- 8708.40.20: gear boxes for vehicles of 8703 etc.\n- 8708.40.50: parts for gear boxes, with sub-numbers 8708.40.5010 (parts of transmissions for vehicles of 8701, 8702, 8703?...)\n\nI recall the 8708.40.50 structure as \"Parts: Other; Other\" with statistical suffixes. The 8708.40.75 structure is \"Parts of gear boxes, other: 8708.40.7500 Other\"? I am not certain of this.\n\nMy recollection is:\n- 8708.40.20: Gear boxes, for vehicles of 8703: 8708.40.2000? \n- 8708.40.50: Gear boxes other\n- 8708.40.60: Parts: Other\n- 8708.40.75: Parts: Other\n- 8708.40.7500 or 8708.40.7000\n\nThe current HTS has 8708.40.11 (for tractors, with 8708.40.1110, 1120, 1130); 8708.40.20 (gear boxes, other, with 2010, 2090?); 8708.40.50 (Parts: Other, Other\u2014\"Other: 8708.40.5010 Parts of transmissions for 8701.20...\"); 8708.40.60 (Other, 8708.40.6000?); and 8708.40.75 (Parts, other: 8708.40.7500?). A passenger-vehicle automatic transmission clutch assembly would go under the 8708.40.75 parts line, and I will go with 8708.40.7500.\n\n```json\n{\"hts_code\": \"8708.40.7500\", \"reason\": \"A solenoid-controlled one-way clutch for passenger-vehicle automatic transmissions is a part of a gear box of heading 8708.40, falling in the residual parts provision.\"}\n```\n\nCorrecting to the exact JSON output requested:\n\n{\"hts_code\": \"8708.40.7500\", \"reason\": \"A solenoid-controlled one-way clutch for passenger-vehicle automatic transmissions is a part of a motor vehicle gear box classifiable in heading 8708.40, in the residual parts provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 859,
+      "completion_tokens": 850,
+      "total_tokens": 1709,
+      "cost": 0.010218,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010218,
+        "upstream_inference_prompt_cost": 0.001718,
+        "upstream_inference_completions_cost": 0.0085
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708407500",
+  "predicted_reason": "A solenoid-controlled one-way clutch for passenger-vehicle automatic transmissions is a part of a motor vehicle gear box classifiable in heading 8708.40, in the residual parts provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 859,
+    "completion_tokens": 850,
+    "total_tokens": 1709,
+    "cost": 0.010218,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010218,
+      "upstream_inference_prompt_cost": 0.001718,
+      "upstream_inference_completions_cost": 0.0085
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:25.790288+00:00",
+  "latency_s": 7.462,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

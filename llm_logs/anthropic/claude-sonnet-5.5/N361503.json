@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361503",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "4901990070",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596295-1fwxZHfLIfoKd2kJHwrU",
+    "object": "chat.completion",
+    "created": 1791596295,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on fill-in \"keepsake\" books, where pages have prompts for the giver to complete. The books are \"Dear Mom, You're the Best\" with decorative pages, and the likely classification is in heading 4903 (children's picture books) or 4901 (printed books). If the pages contain prompts to fill in, they could be classed as blank-type books under 4820 (notebooks, diaries). The description says only \"decorative designs and illustrations,\" with no mention of text, which suggests the ruling treated them as books of 4820 or 4903.\n\nI think the ruling is for fill-in journals: \"Dear Mom, You're the Best\" with pages for the child to write a letter. Without any mention of text, though, the 4820 classification looks more plausible. Hardcover journals with decorative pages would go under 4820.10.2020 (diaries, notebooks... bound, hardcover) or 4820.10.40. On the other hand, if they are picture books with illustrations only, 4903.00.00 would apply.\n\nThe phrase \"interior pages feature decorative designs and illustrations\" points to a fill-in book that is a keepsake journal. I'll go with 4820.10.2040, though the exact subheading is uncertain. The 4820.10.20 line covers \"Diaries, notebooks, address books...: Other: Bound or hardcover\", with 4820.10.2060 for other items, including those in this category. I'll select 4820.10.2060.\n\n{\"hts_code\": \"4820.10.2060\", \"reason\": \"Hardcover 32-page keepsake books with decorative, illustrated interior pages for personalized entries are treated as notebook/diary-type articles of heading 4820 rather than printed books.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 556,
+      "total_tokens": 856,
+      "cost": 0.00616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00616,
+        "upstream_inference_prompt_cost": 0.0006,
+        "upstream_inference_completions_cost": 0.00556
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4820102060",
+  "predicted_reason": "Hardcover 32-page keepsake books with decorative, illustrated interior pages for personalized entries are treated as notebook/diary-type articles of heading 4820 rather than printed books.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 300,
+    "completion_tokens": 556,
+    "total_tokens": 856,
+    "cost": 0.00616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00616,
+      "upstream_inference_prompt_cost": 0.0006,
+      "upstream_inference_completions_cost": 0.00556
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:15.580134+00:00",
+  "latency_s": 5.593,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

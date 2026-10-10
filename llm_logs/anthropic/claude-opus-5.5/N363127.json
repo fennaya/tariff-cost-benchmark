@@ -1,0 +1,102 @@
+{
+  "rulingNumber": "N363127",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "1605290500",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598426-iXotNrMtwelXQoBmO7Q3",
+    "object": "chat.completion",
+    "created": 1791598426,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1605.29.1090\", \"reason\": \"The spring rolls contain more than 20 percent shrimp by weight, so they classify in Chapter 16 as prepared shrimp; packed in airtight trays and neither breaded nor a prepared meal, they fall under 'other' shrimp preparations in subheading 1605.29.10.\"}",
+          "refusal": null,
+          "reasoning": "Since the shrimp content is 44.45% of the filling, I'm checking whether this exceeds the 20% threshold that triggers Chapter 16 classification for fish/crustacean products. The packaging being airtight retail trays pushes this toward heading 1605.29 rather than 1605.21, since the latter specifically requires a non-airtight container.\n\nWorking through the statistical suffixes, since spring rolls aren't typically classified as \"prepared meals\" under CBP rulings and the wrapper isn't breaded, I'm landing on 1605.29.1090 as the \"other\" category under the airtight-container subheading.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Since the shrimp content is 44.45% of the filling, I'm checking whether this exceeds the 20% threshold that triggers Chapter 16 classification for fish/crustacean products. The packaging being airtight retail trays pushes this toward heading 1605.29 rather than 1605.21, since the latter specifically requires a non-airtight container.\n\nWorking through the statistical suffixes, since spring rolls aren't typically classified as \"prepared meals\" under CBP rulings and the wrapper isn't breaded, I'm landing on 1605.29.1090 as the \"other\" category under the airtight-container subheading.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 604,
+      "total_tokens": 1054,
+      "cost": 0.01388,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01388,
+        "upstream_inference_prompt_cost": 0.0018,
+        "upstream_inference_completions_cost": 0.01208
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 486,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1605291090",
+  "predicted_reason": "The spring rolls contain more than 20 percent shrimp by weight, so they classify in Chapter 16 as prepared shrimp; packed in airtight trays and neither breaded nor a prepared meal, they fall under 'other' shrimp preparations in subheading 1605.29.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 450,
+    "completion_tokens": 604,
+    "total_tokens": 1054,
+    "cost": 0.01388,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01388,
+      "upstream_inference_prompt_cost": 0.0018,
+      "upstream_inference_completions_cost": 0.01208
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 486,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T02:13:46.693338+00:00",
+  "latency_s": 8.709,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

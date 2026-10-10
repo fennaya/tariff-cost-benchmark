@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362770",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8509905500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596549-PmSKn4LIayvBVWgtUwTM",
+    "object": "chat.completion",
+    "created": 1791596549,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a zinc alloy ring that is a part solely for an electric toothbrush. Electric toothbrushes are classified in 8509.80 (electromechanical domestic appliances with self-contained electric motor, other appliances). Parts of those appliances fall under 8509.90. Specifically, 8509.90.45 covers parts of \"other\" appliances (8509.80), and 8509.90.65 is also a candidate.\n\nThe HTSUS breakdown for 8509.90 is:\n- 8509.90.10: Parts of floor polishers, etc.\n- 8509.90.25: Parts of food grinders, food mixers, fruit or vegetable juice extractors (parts)\n- 8509.90.45: Parts, other: of goods of subheading 8509.40 (?)\n- 8509.90.65: Other parts, of 8509.80 other (?)\n\nRecalling the actual structure: 8509.90.05 Of goods of 8509.10 (vacuum cleaners); 8509.90.10 Of 8509.40; 8509.90.15 ...; 8509.90.25 Of 8509.80 (other) of cast metal?; 8509.90.45 Other: Of 8509.40 or similar; 8509.90.65 Other.\n\nThe structure is 8509.90: Parts: Of the machines of 8509.10 \u2192 8509.90.05; Of 8509.40 \u2192 8509.90.15 / .20; Other: 8509.90.25 Of cast metal?; 8509.90.45 Other: Of 8509.80...; 8509.90.65 Other.\n\nI believe 8509.90.25 is \"Of the goods of subheading 8509.40 / 8509.80 - Of zinc?\". There is a risk here. Rulings on toothbrush parts go to 8509.90.65 (\"Other\"), and since a die-cast zinc ring isn't a motor part, I'll pick 8509.90.65.\n\n{\"hts_code\": \"8509.90.6500\", \"reason\": \"A die-cast zinc alloy mechanical ring for use solely with an electric toothbrush is a part of an electromechanical domestic appliance of heading 8509, falling in the residual parts provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 293,
+      "completion_tokens": 713,
+      "total_tokens": 1006,
+      "cost": 0.007716,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007716,
+        "upstream_inference_prompt_cost": 0.000586,
+        "upstream_inference_completions_cost": 0.00713
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8509906500",
+  "predicted_reason": "A die-cast zinc alloy mechanical ring for use solely with an electric toothbrush is a part of an electromechanical domestic appliance of heading 8509, falling in the residual parts provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 713,
+    "total_tokens": 1006,
+    "cost": 0.007716,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007716,
+      "upstream_inference_prompt_cost": 0.000586,
+      "upstream_inference_completions_cost": 0.00713
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:29.580549+00:00",
+  "latency_s": 6.326,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

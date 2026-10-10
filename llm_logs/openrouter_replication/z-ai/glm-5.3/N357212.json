@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357212",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "8708706030",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599582-WhwyiBejvk7Rc61mwbPJ",
+    "object": "chat.completion",
+    "created": 1791599582,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8708.99.6000\", \"reason\": \"Steel wheels for an off-highway dumper (a vehicle of heading 8704) are parts/accessories of such trucks, classifiable as other parts under subheading 8708.99.\"}",
+          "refusal": null,
+          "reasoning": "CAT 777 dumper wheels \u2014 NY ruling: wheels for off-highway dumper, diameter >25cm... likely 8708.70.00? No\u2014wheels as parts classified 8431? Actually there's a ruling: steel wheels for CAT 777 classified in 8708? Wheels for vehicles of heading 8704? Off-highway dumper is 8704.10? Dumpers for off-highway use are 8704.10. Parts: 8708.99? Wheels... ruling N284567? I recall HTS 8708.99.6000? Actually wheels for trucks classified 8708.70? 8708.70 is for heading 8703 motor cars. For 8704 trucks, wheels fall in 8708.99. I recall ruling classifying CAT 777 wheels under 8708.99.60? Hmm. There's subheading 8708.99.60 \"parts of trucks with diesel engines\"? Not sure. I'll answer 8708.99.6000? Actually 8708.99.60 is \"Other parts and accessories... for vehicles of subheadings 8704.10, 8704.21-8704.43\"? I think 8708.99.60 covers parts of gaseous-fuel or diesel trucks. Dumpers 8704.10... 8708.99.6080? I'll go 8708.99.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "CAT 777 dumper wheels \u2014 NY ruling: wheels for off-highway dumper, diameter >25cm... likely 8708.70.00? No\u2014wheels as parts classified 8431? Actually there's a ruling: steel wheels for CAT 777 classified in 8708? Wheels for vehicles of heading 8704? Off-highway dumper is 8704.10? Dumpers for off-highway use are 8704.10. Parts: 8708.99? Wheels... ruling N284567? I recall HTS 8708.99.6000? Actually wheels for trucks classified 8708.70? 8708.70 is for heading 8703 motor cars. For 8704 trucks, wheels fall in 8708.99. I recall ruling classifying CAT 777 wheels under 8708.99.60? Hmm. There's subheading 8708.99.60 \"parts of trucks with diesel engines\"? Not sure. I'll answer 8708.99.6000? Actually 8708.99.60 is \"Other parts and accessories... for vehicles of subheadings 8704.10, 8704.21-8704.43\"? I think 8708.99.60 covers parts of gaseous-fuel or diesel trucks. Dumpers 8704.10... 8708.99.6080? I'll go 8708.99.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 186,
+      "completion_tokens": 400,
+      "total_tokens": 586,
+      "cost": 0.00195162,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00195162,
+        "upstream_inference_prompt_cost": 3.162e-05,
+        "upstream_inference_completions_cost": 0.00192
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 350,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708996000",
+  "predicted_reason": "Steel wheels for an off-highway dumper (a vehicle of heading 8704) are parts/accessories of such trucks, classifiable as other parts under subheading 8708.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 400,
+    "total_tokens": 586,
+    "cost": 0.00195162,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00195162,
+      "upstream_inference_prompt_cost": 3.162e-05,
+      "upstream_inference_completions_cost": 0.00192
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 350,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:33:02.429741+00:00",
+  "latency_s": 4.118,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

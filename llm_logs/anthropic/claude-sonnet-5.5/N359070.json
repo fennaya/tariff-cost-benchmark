@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359070",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8518908100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595732-dVQXxNxbzV72l0IXklfe",
+    "object": "chat.completion",
+    "created": 1791595732,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on Lightspeed Zulu 3 faceted cups. Headsets are classified in 8518.30 (headphones and earphones). Parts of these goods fall under 8518.90 (parts of microphones, loudspeakers, headphones, etc.). The subheading is 8518.90.80, and the statistical suffix is 8518.90.8030 or 8518.90.8080. The 8518.90.80 breakdown is: 8518.90.20 for parts of goods of 8518.10 (microphones), and 8518.90.80 for other. I believe the statistical suffixes under 8518.90.80 are 10 (Parts of the goods of subheading 8518.40?), 30, and 80. I can't confirm the exact suffix, so I'll use 8518.90.8080 as \"Other\".\n\nBecause the cups are a magnesium housing and not a speaker or electronic element, the \"other parts\" category fits.\n\n```json\n{\"hts_code\": \"8518.90.8080\", \"reason\": \"The magnesium faceted ear cup housings are parts of headphones/headsets of heading 8518 and fall under the residual 'other parts' provision of subheading 8518.90.80.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 394,
+      "total_tokens": 716,
+      "cost": 0.004584,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004584,
+        "upstream_inference_prompt_cost": 0.000644,
+        "upstream_inference_completions_cost": 0.00394
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8518908080",
+  "predicted_reason": "The magnesium faceted ear cup housings are parts of headphones/headsets of heading 8518 and fall under the residual 'other parts' provision of subheading 8518.90.80.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 394,
+    "total_tokens": 716,
+    "cost": 0.004584,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004584,
+      "upstream_inference_prompt_cost": 0.000644,
+      "upstream_inference_completions_cost": 0.00394
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:52.465877+00:00",
+  "latency_s": 4.296,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

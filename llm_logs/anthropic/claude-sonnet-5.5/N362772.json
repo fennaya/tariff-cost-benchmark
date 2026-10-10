@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362772",
+  "rulingDate": "2026-07-22T00:00:00",
+  "true_code": "1902200040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596549-S1CPUFAdP9TccsgQNlAC",
+    "object": "chat.completion",
+    "created": 1791596549,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a filled dumpling, so it falls in heading 1902 (stuffed pasta), not in 1905 (bakery products) or 2004 (prepared vegetables). Subheading 1902.20 covers stuffed pasta, whether or not cooked or otherwise prepared.\n\nWithin 1902.20:\n- 1902.20.10 covers stuffed pasta containing more than 20 percent by weight of meat, meat offal, fish, crustaceans, or mollusks. None of these products contain meat or fish, so this does not apply.\n- 1902.20.20 covers other stuffed pasta containing over 20% by dry weight of cheese. This probably does not apply, because the cheese content is likely lower.\n- 1902.20.9x covers \"other.\"\n\nThe statistical suffixes under \"Other\" are, as I recall:\n- 1902.20.91: Other, \"Containing over 20 percent by dry weight of sugar\" is not the right branch.\n- 1902.20.9100: \"Other: Dumplings...\" I am not certain of this.\n\nI recall the structure as 1902.20.10 (meat/fish over 20%), 1902.20.20 (other, containing cheese or dairy), 1902.20.40 (other, over 20% sugar), 1902.20.50, 1902.20.80, and 1902.20.90 (other, in the sense of not otherwise specified). I believe 1902.20.91 is \"Other: Cooked or otherwise prepared\" and 1902.20.92 is \"Other: Uncooked.\" Some of this may be wrong.\n\nThese momos are steam cooked, so I'm choosing the cooked/prepared line, 1902.20.9100. I'm not fully sure of that suffix.\n\n{\"hts_code\": \"1902.20.9100\", \"reason\": \"Frozen steam-cooked dumplings with a wheat-flour wrapper and a vegetable/cheese filling are stuffed pasta of heading 1902, which falls under subheading 1902.20 and, with no meat or fish content, the 'other' cooked or otherwise prepared line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1104,
+      "completion_tokens": 675,
+      "total_tokens": 1779,
+      "cost": 0.008958,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008958,
+        "upstream_inference_prompt_cost": 0.002208,
+        "upstream_inference_completions_cost": 0.00675
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1902209100",
+  "predicted_reason": "Frozen steam-cooked dumplings with a wheat-flour wrapper and a vegetable/cheese filling are stuffed pasta of heading 1902, which falls under subheading 1902.20 and, with no meat or fish content, the 'other' cooked or otherwise prepared line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1104,
+    "completion_tokens": 675,
+    "total_tokens": 1779,
+    "cost": 0.008958,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008958,
+      "upstream_inference_prompt_cost": 0.002208,
+      "upstream_inference_completions_cost": 0.00675
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:30.142316+00:00",
+  "latency_s": 6.567,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

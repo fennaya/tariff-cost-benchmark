@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359520",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595863-nR0cwPSV8CRbRWzSvsXY",
+    "object": "chat.completion",
+    "created": 1791595863,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on the Caleffi hydraulic separator. The item is a vessel (steel or brass body) fitted with an air vent and a drain valve, which acts as a hydraulic separator and air and dirt separator in hydronic systems.\n\nCandidate headings:\n- 8481: valves and similar appliances. This is a possible fit, but the unit is not a valve.\n- 8419.89: machinery and plant for treatment of materials involving a change of temperature. The separator does not change temperature, so this does not fit.\n- 8421.39: filtering or purifying machinery for gases or liquids. A dirt and air separator removes impurities, so this fits better. The subheading 8421.29 covers liquid filtering machinery, and 8421.99 covers parts.\n- 8421.21: water filtering or purifying machinery.\n\nI recall rulings on Caleffi air and dirt separators classifying them under 8421.29.0065, \"Filtering or purifying machinery for liquids: other: other.\" The HTS 8421.29.00 subheadings include 8421.29.0020 (for the Kidney dialysis exclusion), 8421.29.0050 (for oil/water), and 8421.29.0065 (other). I'll go with 8421.29.0065.\n\n{\"hts_code\": \"8421.29.0065\", \"reason\": \"The hydraulic separator is a vessel with baffles that separates air and dirt from the circulating liquid in hydronic systems, so it is filtering or purifying machinery for liquids, classified in 8421.29 as 'other'.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 575,
+      "completion_tokens": 511,
+      "total_tokens": 1086,
+      "cost": 0.00626,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00626,
+        "upstream_inference_prompt_cost": 0.00115,
+        "upstream_inference_completions_cost": 0.00511
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421290065",
+  "predicted_reason": "The hydraulic separator is a vessel with baffles that separates air and dirt from the circulating liquid in hydronic systems, so it is filtering or purifying machinery for liquids, classified in 8421.29 as 'other'.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 575,
+    "completion_tokens": 511,
+    "total_tokens": 1086,
+    "cost": 0.00626,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00626,
+      "upstream_inference_prompt_cost": 0.00115,
+      "upstream_inference_completions_cost": 0.00511
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:03.430694+00:00",
+  "latency_s": 5.215,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

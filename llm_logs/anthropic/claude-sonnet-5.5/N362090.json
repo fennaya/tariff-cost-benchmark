@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362090",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "6307909891",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596418-dDtDLlbX9ovawcjFVp1c",
+    "object": "chat.completion",
+    "created": 1791596418,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on swatch books. Swatch books of fabric samples are generally classified in heading 9817.00.96? No: 9817.00.96 covers \"Samples... \" Actually, 9811.00.60 covers \"Fabric swatch... \" Let me recall. HTSUS 9811.00.60 covers \"Sample books... \" hmm. Specifically, HTSUS 9811.00.60: \"Samples... Articles... not for sale, ... Fabric sample books\" Not sure.\n\nI recall the heading 9811.00.60: \"Photographic... \" no. CBP rulings on swatch books (e.g., NY N0xxxx) classify them in 4911.99.80? Others: \"Swatch books designed for soliciting orders... classified in 9811.00.60, HTSUS, which provides for 'Samples, imported solely for use in taking orders for merchandise; ... Textile swatch...'\" Actually, I recall 9811.00.60 is \"Articles... Samples, including books of swatches... Textile samples... for soliciting orders\". The description \"designed for soliciting orders from domestic and foreign customers for products from foreign countries\" matches 9811.00.60 language \"Samples solely for use in soliciting orders for products of foreign countries\". However, this is a duty-free provision only if of negligible value or mutilated; the rulings typically hold that swatch books are classified in 9811.00.60 as \"Samples... Textile samples... swatch books\". The 10-digit is 9811.00.6040? I believe 9811.00.60.00 exists, and the subheading is \"Samples... for the purpose of taking orders\". I'll go with 9811.00.6000.\n\n{\"hts_code\": \"9811.00.6000\", \"reason\": \"The fabric swatch book is a sample book imported solely for soliciting orders for foreign merchandise, fitting the sample provision of heading 9811.00.60.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 599,
+      "completion_tokens": 623,
+      "total_tokens": 1222,
+      "cost": 0.007428,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007428,
+        "upstream_inference_prompt_cost": 0.001198,
+        "upstream_inference_completions_cost": 0.00623
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9811006000",
+  "predicted_reason": "The fabric swatch book is a sample book imported solely for soliciting orders for foreign merchandise, fitting the sample provision of heading 9811.00.60.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 599,
+    "completion_tokens": 623,
+    "total_tokens": 1222,
+    "cost": 0.007428,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007428,
+      "upstream_inference_prompt_cost": 0.001198,
+      "upstream_inference_completions_cost": 0.00623
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:18.965272+00:00",
+  "latency_s": 5.792,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

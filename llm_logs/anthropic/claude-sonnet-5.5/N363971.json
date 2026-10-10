@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363971",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "8458110030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596752-VRZckc7JOOIuB83Wx6ld",
+    "object": "chat.completion",
+    "created": 1791596752,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CNC turning center with live tooling and a sub-spindle. It would be classified in heading 8458 (lathes for removing metal), not 8457 (machining centers), because turning is the principal function. Within 8458, the horizontal lathes are 8458.11 (numerically controlled) and 8458.91 (other, non-horizontal). Under 8458.11, the subheadings are:\n- 8458.11.00 with statistical suffixes\n- 8458.11.0020: Numerically controlled, horizontal, \"Automatic lathes\"? Under the current HTSUS, 8458.11.00 is divided into 8458.11.0020 (Multiple-spindle automatic lathes?), 8458.11.0040, and 8458.11.0060 (other).\n\nI recall that the 8458.11 numerically controlled horizontal lathes breakdown is:\n- 8458.11.0020: Numerically controlled, \"Swiss-type\"? \n- 8458.11.0040: Other?\n- 8458.11.0060: ?\n- 8458.11.0080: Other.\n\nI'm not certain of these. CBP rulings on CNC turning centers with live tooling and sub-spindle generally cite 8458.11.0080 (Lathes, horizontal, numerically controlled, other). I'll go with that.\n\n{\"hts_code\": \"8458.11.0080\", \"reason\": \"A CNC horizontal turning center with live tooling and a sub-spindle is principally a metal-removing lathe, so it falls under heading 8458 as a numerically controlled horizontal lathe (8458.11), in the 'other' statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 263,
+      "completion_tokens": 532,
+      "total_tokens": 795,
+      "cost": 0.005846,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005846,
+        "upstream_inference_prompt_cost": 0.000526,
+        "upstream_inference_completions_cost": 0.00532
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8458110080",
+  "predicted_reason": "A CNC horizontal turning center with live tooling and a sub-spindle is principally a metal-removing lathe, so it falls under heading 8458 as a numerically controlled horizontal lathe (8458.11), in the 'other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 263,
+    "completion_tokens": 532,
+    "total_tokens": 795,
+    "cost": 0.005846,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005846,
+      "upstream_inference_prompt_cost": 0.000526,
+      "upstream_inference_completions_cost": 0.00532
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:52.742292+00:00",
+  "latency_s": 4.841,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

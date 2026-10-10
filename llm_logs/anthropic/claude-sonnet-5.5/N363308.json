@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363308",
+  "rulingDate": "2026-07-30T00:00:00",
+  "true_code": "8706001540",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596640-gyJDmM9x3xlPttzcPLKw",
+    "object": "chat.completion",
+    "created": 1791596640,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Snowmobiles are classified in HTSUS 8703.10 (\"Vehicles specially designed for travelling on snow; golf carts and similar vehicles\"). Unfinished or incomplete vehicles are classified as the complete vehicle under GRI 2(a) if they have the essential character of the complete article. A motorized chassis with the engine, steering and chassis tunnel arguably has that essential character. The alternative is parts of snowmobiles under 8708, but 8708 covers parts of vehicles of headings 8701 to 8705, and 8703 snowmobiles are included in that range. However, the chassis with engine mounted is described as \"motorized chassis,\" and 8706 covers chassis fitted with engines for vehicles of headings 8701 to 8705. Heading 8706 would therefore be the likely result: \"Chassis fitted with engines, for the motor vehicles of headings 8701 to 8705.\"\n\nUnder subheading 8706.00.50, the chassis for vehicles of 8703 are \"Other\" (8706.00.50 is for the vehicles of 8703 and 8706.00.25 is for 8701.20 etc.). The 10-digit code is 8706.00.5000. Because the item lacks the rear skid, skis and other components, it is not a complete snowmobile, and 8706 is the more specific heading for a chassis fitted with an engine. I'm choosing 8706.00.5000, though the classification is not certain.\n\n{\"hts_code\": \"8706.00.5000\", \"reason\": \"An engine-mounted chassis for snowmobiles (8703 vehicles) is too incomplete to be a snowmobile under GRI 2(a), so it falls under heading 8706 as a chassis fitted with an engine for vehicles of 8703.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 681,
+      "completion_tokens": 577,
+      "total_tokens": 1258,
+      "cost": 0.007132,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007132,
+        "upstream_inference_prompt_cost": 0.001362,
+        "upstream_inference_completions_cost": 0.00577
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8706005000",
+  "predicted_reason": "An engine-mounted chassis for snowmobiles (8703 vehicles) is too incomplete to be a snowmobile under GRI 2(a), so it falls under heading 8706 as a chassis fitted with an engine for vehicles of 8703.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 681,
+    "completion_tokens": 577,
+    "total_tokens": 1258,
+    "cost": 0.007132,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007132,
+      "upstream_inference_prompt_cost": 0.001362,
+      "upstream_inference_completions_cost": 0.00577
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:01.101620+00:00",
+  "latency_s": 5.859,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

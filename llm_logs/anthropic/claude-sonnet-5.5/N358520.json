@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358520",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "8486900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595622-M2qa4CwzekiNa6B623Mq",
+    "object": "chat.completion",
+    "created": 1791595622,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on an ASML Pre-Install Kit. The likely classification is as parts of machines under heading 8486, which covers machines and apparatus used for manufacturing semiconductor devices, and its parts and accessories are in 8486.90.\n\nThe 8486.90 subheadings are:\n- 8486.90.00 (statistical suffix 8486.90.0000): parts and accessories.\n\nThe HTSUS has 8486.10 (machines for manufacture of boules or wafers), 8486.20 (semiconductor devices or electronic integrated circuits), 8486.30 (flat panel displays), 8486.40 (machines in note 9(C)), and 8486.90 (parts and accessories). For 8486.90, the 10-digit codes are 8486.90.0000 or the more specific 8486.90.0100 and 8486.90.0500. I'm not sure these exist, so I'll go with 8486.90.0000.\n\nThe kit is imported unassembled and is designed for the EUV system. Since it is a collection of parts dedicated to the machine, Note 11 to Section XVI and Chapter 84 Note 9 on parts apply. A Pre-Install Kit with a platform and valves and pipes would be classified as parts of the 8486.20 machine, which is 8486.90.0000.\n\n```json\n{\"hts_code\": \"8486.90.0000\", \"reason\": \"The Pre-Install Kit consists of dedicated structural support and fluid/electrical connection components for an EUV semiconductor lithography machine, so it is classified as parts and accessories of machines used to manufacture semiconductor devices under heading 8486.\"}\n```\n\nFinal answer:\n\n{\"hts_code\": \"8486.90.0000\", \"reason\": \"The Pre-Install Kit consists of dedicated structural support and fluid/electrical connection components for an EUV semiconductor lithography machine, so it is classified as parts and accessories of semiconductor manufacturing machines under heading 8486.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 706,
+      "completion_tokens": 650,
+      "total_tokens": 1356,
+      "cost": 0.007912,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007912,
+        "upstream_inference_prompt_cost": 0.001412,
+        "upstream_inference_completions_cost": 0.0065
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8486900000",
+  "predicted_reason": "The Pre-Install Kit consists of dedicated structural support and fluid/electrical connection components for an EUV semiconductor lithography machine, so it is classified as parts and accessories of semiconductor manufacturing machines under heading 8486.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 706,
+    "completion_tokens": 650,
+    "total_tokens": 1356,
+    "cost": 0.007912,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007912,
+      "upstream_inference_prompt_cost": 0.001412,
+      "upstream_inference_completions_cost": 0.0065
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:02.967903+00:00",
+  "latency_s": 5.763,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

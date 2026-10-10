@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357608",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "8412909005",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595457-rGQ9s8s6uxJAcYxQwTqJ",
+    "object": "chat.completion",
+    "created": 1791595457,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a hydraulic pipe for a Hiab crane. The question is whether it classifies as a part of a crane (8431.20 or 8431.10) or as a steel tube (7304 or 7306).\n\nSection XVI Note 1(g) excludes parts of general use as defined in Note 2 of Section XV (headings 7301\u20137326). Under Note 2 to Section XV, \"parts of general use\" includes articles of headings 7301 to 7326. A bent steel pipe is a tube or pipe of heading 7304 or 7306, so it would be excluded from Chapter 84 and stay in Chapter 73. The pipe is bent and flared but not fitted with fittings.\n\nWhether heading 7304 applies depends on whether the pipe is seamless. EN10305 covers precision steel tubes, with E355 for seamless cold drawn tubes (EN10305-1). Seamless tubes of other alloy steel or non-alloy steel go in 7304. E355 is non-alloy, so the pipe is probably seamless cold-drawn.\n\nUnder 7304.39 (other, of circular cross-section, iron or non-alloy steel), the subheadings are 7304.31 (cold-drawn or cold-rolled) and 7304.39 (other). Cold-drawn is 7304.31. The statistical suffixes are 7304.31.30 (a 7304.31.3000 line for tubes not of the types for oil or gas), 7304.31.60 for other, and 7304.31.20 for tubes with an outer diameter under 19 mm. I recall 7304.31.3000 as \"Other: with an outside diameter less than 19 mm\" and 7304.31.6050 as \"other, other, other\". My recollection of the ranges is uncertain, but I'll choose 7304.31.6050 over 7304.31.3000 only if the pipe were larger. Since the diameter is 12 mm, I'll go with 7304.31.3000.\n\n```json\n{\"hts_code\": \"7304.31.3000\", \"reason\": \"A bent and flared cold-drawn seamless non-alloy (E355) steel hydraulic tube of 12 mm outside diameter is a steel tube of heading 7304, which is excluded from crane parts of heading 8431 as a part of general use under Section XVI Note 1(g).\"}\n```\n\n\n{\"hts_code\": \"7304.31.3000\", \"reason\": \"A bent and flared cold-drawn seamless non-alloy (E355) steel hydraulic tube of 12 mm outside diameter is a steel tube of heading 7304, which is excluded from crane parts of heading 8431 as a part of general use under Section XVI Note 1(g).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 540,
+      "completion_tokens": 885,
+      "total_tokens": 1425,
+      "cost": 0.00993,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00993,
+        "upstream_inference_prompt_cost": 0.00108,
+        "upstream_inference_completions_cost": 0.00885
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7304313000",
+  "predicted_reason": "A bent and flared cold-drawn seamless non-alloy (E355) steel hydraulic tube of 12 mm outside diameter is a steel tube of heading 7304, which is excluded from crane parts of heading 8431 as a part of general use under Section XVI Note 1(g).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 540,
+    "completion_tokens": 885,
+    "total_tokens": 1425,
+    "cost": 0.00993,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00993,
+      "upstream_inference_prompt_cost": 0.00108,
+      "upstream_inference_completions_cost": 0.00885
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:17.885715+00:00",
+  "latency_s": 7.801,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

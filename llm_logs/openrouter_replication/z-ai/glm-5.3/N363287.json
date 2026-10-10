@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363287",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7607196000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600399-0KhDgdTKQW9uhVIsyf9O",
+    "object": "chat.completion",
+    "created": 1791600399,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7606.12.6090\", \"reason\": \"Self-wound pressure-sensitive adhesive-coated aluminum foil tape is classified as aluminum foil not backed by other material, per Chapter 76 Note 1 and CBP rulings, under 'Other' aluminum foil of alloy thickness exceeding 0.2mm or other.\"}",
+          "refusal": null,
+          "reasoning": "Aluminum foil tape, pressure-sensitive: 7606.12 or 3919? Self-wound aluminum foil tape \u2014 classified as aluminum foil? Rulings classify pressure-sensitive aluminum foil tape under 7606.12.60 (now 7606.12.6090? Actually 7606.12.60 was old; current 7606.12.6090? 7606.12 has stat suffixes: 7606.12.3090? Let me recall: 7606.12.6090 exists? HTS 7606.12: 7606.12.30 (rectangular), 7606.12.60 (other). 10-digit: 7606.12.6090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Aluminum foil tape, pressure-sensitive: 7606.12 or 3919? Self-wound aluminum foil tape \u2014 classified as aluminum foil? Rulings classify pressure-sensitive aluminum foil tape under 7606.12.60 (now 7606.12.6090? Actually 7606.12.60 was old; current 7606.12.6090? 7606.12 has stat suffixes: 7606.12.3090? Let me recall: 7606.12.6090 exists? HTS 7606.12: 7606.12.30 (rectangular), 7606.12.60 (other). 10-digit: 7606.12.6090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 246,
+      "total_tokens": 475,
+      "cost": 0.0007438125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007438125,
+        "upstream_inference_prompt_cost": 0.0001288125,
+        "upstream_inference_completions_cost": 0.000615
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 171,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7606126090",
+  "predicted_reason": "Self-wound pressure-sensitive adhesive-coated aluminum foil tape is classified as aluminum foil not backed by other material, per Chapter 76 Note 1 and CBP rulings, under 'Other' aluminum foil of alloy thickness exceeding 0.2mm or other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 246,
+    "total_tokens": 475,
+    "cost": 0.0007438125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007438125,
+      "upstream_inference_prompt_cost": 0.0001288125,
+      "upstream_inference_completions_cost": 0.000615
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 171,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:46:39.904852+00:00",
+  "latency_s": 2.782,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

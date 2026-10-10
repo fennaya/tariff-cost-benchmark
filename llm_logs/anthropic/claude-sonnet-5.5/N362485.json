@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362485",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4420190000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596505-B4AUkshbChTdNRtnLaV9",
+    "object": "chat.completion",
+    "created": 1791596505,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on MDF decorative blocks cut into animal shapes. Such items are typically classified as statuettes and other ornaments of wood, heading 4420. The relevant subheading is 4420.19 for statuettes and other ornaments of wood (4420.11 covers tropical wood; 4420.19 covers other wood). The goods are MDF, which is fiberboard of heading 4411, but articles of fiberboard fall under 4421 (other articles of wood), and heading 4420 covers statuettes and ornaments of wood. Note 4420 in the HTSUS reads \"Wood marquetry and inlaid wood; caskets and cases for jewelry or cutlery...; statuettes and other ornaments, of wood; wood articles of furniture not falling in chapter 94\". The subheading is 4420.19 for \"Other,\" and there is the statistical suffix 4420.19.0000 within it. Alternatively, a seasonal item would fall under 9505, but these are generic animal themes, so 4420 fits.\n\nSince 4420.19 has no further statistical breakdown beyond 4420.19.0000 for other wood, but 4420.11 and 4420.19 are for wood statuettes, MDF is wood-based, so the code is 4420.19.0000. Current HTS has 4420.19.2000 (wood, other, not tropical) and 4420.90 for others. Fiberboard ornaments have been classified as 4420.90.8000 in some rulings, and 4420.90.80 is the \"Other\" in 4420.90 (\"Other\"), which would apply to non-tropical goods. I'll go with 4420.90.8000.\n\n{\"hts_code\": \"4420.90.8000\", \"reason\": \"MDF animal-shaped printed decorative blocks are ornaments of wood (fiberboard) classifiable in heading 4420 as other wood ornaments.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 618,
+      "total_tokens": 859,
+      "cost": 0.006662,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006662,
+        "upstream_inference_prompt_cost": 0.000482,
+        "upstream_inference_completions_cost": 0.00618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4420908000",
+  "predicted_reason": "MDF animal-shaped printed decorative blocks are ornaments of wood (fiberboard) classifiable in heading 4420 as other wood ornaments.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 241,
+    "completion_tokens": 618,
+    "total_tokens": 859,
+    "cost": 0.006662,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006662,
+      "upstream_inference_prompt_cost": 0.000482,
+      "upstream_inference_completions_cost": 0.00618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:46.290095+00:00",
+  "latency_s": 9.229,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

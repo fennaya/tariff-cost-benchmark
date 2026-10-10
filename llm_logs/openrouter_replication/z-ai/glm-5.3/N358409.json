@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358409",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "4911914040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599759-YIB84nbfxvRQNLGUQNdP",
+    "object": "chat.completion",
+    "created": 1791599759,
+    "model": "z-ai/glm-5.3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4911.91.2020\", \"reason\": \"A digitally printed reproduction of an artwork on canvas, stretched and framed, is classified as a printed picture, design or photograph under heading 4911, specifically other printed matter not over 20 years old at subheading 4911.91.20.\"}",
+          "refusal": null,
+          "reasoning": "Canvas print reproduction \u2014 4911.91.20? Prints over 20 years old... no. Reproductions printed... 4911.91.2020? Actual: 4911.91.20 \"Reproductions... over 20 years old\"? The CBP ruling: printed reproductions on canvas, framed \u2014 4911.91.2020? HTS 4911.91.2020: Other, printed not over 20 years... Actually 4911.91.20 covers \"Lithographs on paper or paperboard over 20 years old\"? No\u20144911.91.2020 is \"Other\" printed reproductions. Use 4911.91.2020.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Canvas print reproduction \u2014 4911.91.20? Prints over 20 years old... no. Reproductions printed... 4911.91.2020? Actual: 4911.91.20 \"Reproductions... over 20 years old\"? The CBP ruling: printed reproductions on canvas, framed \u2014 4911.91.2020? HTS 4911.91.2020: Other, printed not over 20 years... Actually 4911.91.20 covers \"Lithographs on paper or paperboard over 20 years old\"? No\u20144911.91.2020 is \"Other\" printed reproductions. Use 4911.91.2020.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 231,
+      "total_tokens": 419,
+      "cost": 0.0006398,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006398,
+        "upstream_inference_prompt_cost": 0.0001316,
+        "upstream_inference_completions_cost": 0.0005082
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 156,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4911912020",
+  "predicted_reason": "A digitally printed reproduction of an artwork on canvas, stretched and framed, is classified as a printed picture, design or photograph under heading 4911, specifically other printed matter not over 20 years old at subheading 4911.91.20.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 231,
+    "total_tokens": 419,
+    "cost": 0.0006398,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006398,
+      "upstream_inference_prompt_cost": 0.0001316,
+      "upstream_inference_completions_cost": 0.0005082
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 156,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Novita",
+  "requested_at": "2026-10-10T02:35:59.714594+00:00",
+  "latency_s": 4.027,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

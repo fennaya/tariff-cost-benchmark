@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359481",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3004909225",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599921-v2nCbIIoQoQRCLpMF4WL",
+    "object": "chat.completion",
+    "created": 1791599921,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.99.9205\", \"reason\": \"Ivabradine HCl tablets are a cardiovascular medicament not elsewhere specified, packaged for retail sale, classifiable under the cardiovascular medicaments provision of subheading 3004.99.\"}",
+          "refusal": null,
+          "reasoning": "Ivabradine \u2014 cardiovascular drug, not elsewhere specified. Likely 3004.90. In 2024 HTS, 3004.99? Cardiovascular medicaments: 3004.90 was old; current 3004.99.92? Actually 3004.90.0020? For 2023+, 3004.99.92 \"Cardiovascular medicaments\". Use 3004.99.9205? Safer: 3004.99.9290? I'll answer 3004.99.9205? Hmm. Known: 3004.90.0020 cardiovascular (pre-2022). Post restructure: 3004.99.92. I'll give 3004.99.9205.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ivabradine \u2014 cardiovascular drug, not elsewhere specified. Likely 3004.90. In 2024 HTS, 3004.99? Cardiovascular medicaments: 3004.90 was old; current 3004.99.92? Actually 3004.90.0020? For 2023+, 3004.99.92 \"Cardiovascular medicaments\". Use 3004.99.9205? Safer: 3004.99.9290? I'll answer 3004.99.9205? Hmm. Known: 3004.90.0020 cardiovascular (pre-2022). Post restructure: 3004.99.92. I'll give 3004.99.9205.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 226,
+      "total_tokens": 392,
+      "cost": 0.00101572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00101572,
+        "upstream_inference_prompt_cost": 2.132e-05,
+        "upstream_inference_completions_cost": 0.0009944
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 165,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004999205",
+  "predicted_reason": "Ivabradine HCl tablets are a cardiovascular medicament not elsewhere specified, packaged for retail sale, classifiable under the cardiovascular medicaments provision of subheading 3004.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 166,
+    "completion_tokens": 226,
+    "total_tokens": 392,
+    "cost": 0.00101572,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00101572,
+      "upstream_inference_prompt_cost": 2.132e-05,
+      "upstream_inference_completions_cost": 0.0009944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 165,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:38:41.552121+00:00",
+  "latency_s": 1.744,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

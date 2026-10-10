@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362265",
+  "rulingDate": "2026-07-13T00:00:00",
+  "true_code": "8409999190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600293-oeUQEohLWhzAO6QDd8Sv",
+    "object": "chat.completion",
+    "created": 1791600293,
+    "model": "z-ai/glm-5.3",
+    "provider": "Friendli",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4016.93.5050\", \"reason\": \"A gasket made entirely of vulcanized fluoroelastomer (synthetic rubber) is classified as an other article of vulcanized rubber under heading 4016, subheading 4016.93.\"}",
+          "refusal": null,
+          "reasoning": "Gasket of fluoroelastomer \u2014 4016.93.5050? Gaskets of rubber \u2014 4016.93 articles of vulcanized rubber other; 4016.93.50 other. Actually gaskets and similar joints of rubber: 4016.93.5050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Gasket of fluoroelastomer \u2014 4016.93.5050? Gaskets of rubber \u2014 4016.93 articles of vulcanized rubber other; 4016.93.50 other. Actually gaskets and similar joints of rubber: 4016.93.5050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 180,
+      "completion_tokens": 138,
+      "total_tokens": 318,
+      "cost": 0.00077328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00077328,
+        "upstream_inference_prompt_cost": 0.0002268,
+        "upstream_inference_completions_cost": 0.00054648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 48,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4016935050",
+  "predicted_reason": "A gasket made entirely of vulcanized fluoroelastomer (synthetic rubber) is classified as an other article of vulcanized rubber under heading 4016, subheading 4016.93.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 180,
+    "completion_tokens": 138,
+    "total_tokens": 318,
+    "cost": 0.00077328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00077328,
+      "upstream_inference_prompt_cost": 0.0002268,
+      "upstream_inference_completions_cost": 0.00054648
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 48,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Friendli",
+  "requested_at": "2026-10-10T02:44:53.395683+00:00",
+  "latency_s": 1.282,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

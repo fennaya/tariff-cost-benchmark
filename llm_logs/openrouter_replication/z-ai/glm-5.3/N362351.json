@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362351",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "8705900080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600300-TddVIAQEOj6kOYkTpLw7",
+    "object": "chat.completion",
+    "created": 1791600300,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8424.81.0090\", \"reason\": \"Self-propelled agricultural sprayers and floaters for dispensing fertilizers, pesticides, and chemicals over farmland are machinery for agricultural or horticultural use under heading 8424, other than spray guns.\"}",
+          "refusal": null,
+          "reasoning": "8432? Agricultural sprayers: 8424.81 (agricultural or horticultural). Self-propelled sprayers 8424.81.90? HTSUS 8424.81.0090? Actually 8424.81.0090? Subheading 8424.81.00, statistical suffix 90. So 8424.81.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "8432? Agricultural sprayers: 8424.81 (agricultural or horticultural). Self-propelled sprayers 8424.81.90? HTSUS 8424.81.0090? Actually 8424.81.0090? Subheading 8424.81.00, statistical suffix 90. So 8424.81.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 593,
+      "completion_tokens": 157,
+      "total_tokens": 750,
+      "cost": 0.0006524,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006524,
+        "upstream_inference_prompt_cost": 0.0001186,
+        "upstream_inference_completions_cost": 0.0005338
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 92,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8424810090",
+  "predicted_reason": "Self-propelled agricultural sprayers and floaters for dispensing fertilizers, pesticides, and chemicals over farmland are machinery for agricultural or horticultural use under heading 8424, other than spray guns.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 593,
+    "completion_tokens": 157,
+    "total_tokens": 750,
+    "cost": 0.0006524,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006524,
+      "upstream_inference_prompt_cost": 0.0001186,
+      "upstream_inference_completions_cost": 0.0005338
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 92,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:45:01.019013+00:00",
+  "latency_s": 4.524,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

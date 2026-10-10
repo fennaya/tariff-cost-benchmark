@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358851",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595681-DyBFpK1h1HcY2qcSBnpE",
+    "object": "chat.completion",
+    "created": 1791595681,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a plastic wheel cover for walker wheels. Walkers are classified in 9021.10 as orthopedic appliances, and parts and accessories of walkers go in 9021.90. Under the HTSUS, Chapter 90 Note 2(b) says parts that are suitable for use solely or principally with a particular machine or apparatus go in the same heading as that apparatus. A cover that protects walls and furniture from the wheel nut, and the nut itself, is an accessory for the walker.\n\nChapter 39 is excluded only if Chapter 90 covers the article. Section XVIII Note 1 of Chapter 90 and the Section VII notes do not exclude it either, so heading 9021 is still the likely fit. The probable ruling, NY N359095 or something similar, is 9021.90.8000 or 9021.10.0080 for a walker part.\n\nThe HTSUS 9021.10 subheadings are 9021.10.00 for orthopedic or fracture appliances, with statistical suffixes 9021.10.0010 for orthopedic appliances and 9021.10.0050 for others. I'm not sure of those numbers, so I'm using 9021.90.8000 for other parts and accessories. The 9021.90 branch has 9021.90.39, 9021.90.81, and 9021.90.85, so I'm treating 9021.90.8190 as an approximate value. I'm not certain of the exact suffix, but I'm going with 9021.10.0090 as the more probable \"parts and accessories of orthopedic appliances\" number.\n\nHeading 9021 covers orthopedic appliances, and its first subheading 9021.10 reads \"Orthopedic or fracture appliances,\" with parts also falling under 9021.10. Parts of walkers for the disabled therefore plausibly go in 9021.10.0090, which I'll use.\n\n{\"hts_code\": \"9021.10.0090\", \"reason\": \"The cover is a plastic accessory suitable solely for use with walkers (orthopedic appliances), so Chapter 90 Note 2(b) puts it in heading 9021 as a part or accessory rather than in Chapter 39.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 378,
+      "completion_tokens": 701,
+      "total_tokens": 1079,
+      "cost": 0.007766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007766,
+        "upstream_inference_prompt_cost": 0.000756,
+        "upstream_inference_completions_cost": 0.00701
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9021100090",
+  "predicted_reason": "The cover is a plastic accessory suitable solely for use with walkers (orthopedic appliances), so Chapter 90 Note 2(b) puts it in heading 9021 as a part or accessory rather than in Chapter 39.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 701,
+    "total_tokens": 1079,
+    "cost": 0.007766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007766,
+      "upstream_inference_prompt_cost": 0.000756,
+      "upstream_inference_completions_cost": 0.00701
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:01.497195+00:00",
+  "latency_s": 6.547,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

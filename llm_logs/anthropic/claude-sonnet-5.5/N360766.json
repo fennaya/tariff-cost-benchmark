@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360766",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8706805090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596148-zyu62wkocJEIDMnVuU1p",
+    "object": "chat.completion",
+    "created": 1791596148,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on propane tanker trailers. The candidate headings are 8716 (trailers and semi-trailers; other vehicles not mechanically propelled) and 7311 (containers for compressed or liquefied gas, of iron or steel).\n\nI recall the ruling as classifying the item in 8716.80.5090, \"Other vehicles: Other: Other.\" The trailer is towed by tractors or animals, and it is not designed for highway use. Heading 8716.39 covers tanker trailers for agricultural use, but I believe the ruling went to 8716.31 or 8716.39. Heading 8716.31 covers \"Tanker trailers and tanker semi-trailers\", and 8716.39 covers \"Other: agricultural\". I can't pin down which one applies from the facts, so I am reasoning from the text.\n\nThe HTSUS 8716.31.00 reads \"Tanker trailers and tanker semi-trailers,\" and its statistical suffixes are 8716.31.0010 (Tanker trailers and semi-trailers: for the transport of ... ) and 8716.31.0050. The 8716.31 subheading is the more specific fit for a tank on wheels carrying propane. The Section XVII notes do not exclude it.\n\nThe rule that applies is GRI 1: the goods are tanker trailers, and 8716.31 fits. Under 8716.31.00, the statistical suffix I recall is 0010 for \"Tanker trailers and tanker semitrailers: Of a kind used for agricultural purposes?\" I am not sure of that, so I am choosing 8716.31.0000 with the suffix as best I recall it.\n\n{\"hts_code\": \"8716.31.0000\", \"reason\": \"A wheeled, towed propane tank assembly is a tanker trailer, which falls under heading 8716 (trailers and other non-mechanically propelled vehicles) and subheading 8716.31 (tanker trailers and tanker semi-trailers) rather than heading 7311 (containers).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 754,
+      "completion_tokens": 655,
+      "total_tokens": 1409,
+      "cost": 0.008058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008058,
+        "upstream_inference_prompt_cost": 0.001508,
+        "upstream_inference_completions_cost": 0.00655
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716310000",
+  "predicted_reason": "A wheeled, towed propane tank assembly is a tanker trailer, which falls under heading 8716 (trailers and other non-mechanically propelled vehicles) and subheading 8716.31 (tanker trailers and tanker semi-trailers) rather than heading 7311 (containers).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 754,
+    "completion_tokens": 655,
+    "total_tokens": 1409,
+    "cost": 0.008058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008058,
+      "upstream_inference_prompt_cost": 0.001508,
+      "upstream_inference_completions_cost": 0.00655
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:49.130570+00:00",
+  "latency_s": 6.589,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362427",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "3824999397",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596492-8noBobEMh7fpChaYkRjV",
+    "object": "chat.completion",
+    "created": 1791596492,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on \"high carbon silicon\", which I recall as a silicon-carbon product used as a carburizer. I believe it was classified under 2849.20.1000, silicon carbide, though I'm not certain of that.\n\nOther options are 3801.30 (carbonaceous pastes for electrodes), 3801.90, and 3824.99 (chemical products not elsewhere specified). Another is 2804.69 (silicon, other), which doesn't fit because the product is below 99.99% silicon. Ferrosilicon at 7202.21 or 7202.29 is also unlikely, since the product's silicon is combined with carbon rather than iron.\n\nThe description says it consists of silicon carbide plus calcium, aluminum, and iron. Because it is mainly silicon carbide, I would go with 2849.20.1000 (silicon carbide, whether or not chemically defined). The 2849.20.10 subheading covers silicon carbide of a particle size 'in crude form' or in other forms, and 2849.20.1000 is the general one. The 2849.20.20 subheading covers 'other' silicon carbide, but I recall that 2849.20.1000 is the 'Silicon carbide' code, so I'll use it.\n\n```json\n{\"hts_code\": \"2849.20.1000\", \"reason\": \"The product consists mainly of silicon carbide with minor calcium, aluminum and iron, so it is classified as silicon carbide of heading 2849 despite its use as a steel carburizer.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 497,
+      "total_tokens": 727,
+      "cost": 0.00543,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00543,
+        "upstream_inference_prompt_cost": 0.00046,
+        "upstream_inference_completions_cost": 0.00497
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2849201000",
+  "predicted_reason": "The product consists mainly of silicon carbide with minor calcium, aluminum and iron, so it is classified as silicon carbide of heading 2849 despite its use as a steel carburizer.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 230,
+    "completion_tokens": 497,
+    "total_tokens": 727,
+    "cost": 0.00543,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00543,
+      "upstream_inference_prompt_cost": 0.00046,
+      "upstream_inference_completions_cost": 0.00497
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:32.929887+00:00",
+  "latency_s": 5.151,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

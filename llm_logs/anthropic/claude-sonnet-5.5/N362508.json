@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362508",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8708952000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596513-BuIBMNkT9VJjmGBIvcXV",
+    "object": "chat.completion",
+    "created": 1791596513,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on airbag inflator tubes. The question is whether the tubes are classified as steel pipes or as parts of airbag inflators.\n\nSeamless steel tubes of circular cross-section, cut to length with chamfered ends, are likely to be classified in 7304. If they are dedicated to airbag inflators, they could be parts under 8708.95 (safety airbags with inflator systems; parts thereof). Heading 8708.95.8000 covers parts of airbags. Because the tubes are semi-finished and only chamfered, they still lack the essential character of finished parts, so I lean toward 7304.\n\nFor 7304, the options are:\n- 7304.39 for other seamless tubes of iron or non-alloy steel, circular, hot-rolled or cold-drawn\n- 7304.51 for other alloy steel, cold-drawn\n- 7304.31 for cold-drawn or cold-rolled iron or non-alloy steel\n\nAirbag inflator tubes are typically cold-drawn seamless carbon steel. With an outside diameter of 20-40 mm, the best fit is 7304.31.60 (other, not of circular cross-section excluded). The statistical suffix for 7304.31.60 is 7304.31.6050, which covers other seamless cold-drawn tubes of iron or non-alloy steel with an outside diameter under 114.3 mm, not cold-drawn to a particular specification. I'll use that code.\n\n{\"hts_code\": \"7304.31.6050\", \"reason\": \"Semi-finished cold-drawn seamless non-alloy steel tubes of circular cross-section, merely cut to length and chamfered, remain tubes of heading 7304 rather than finished airbag parts of 8708.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 572,
+      "total_tokens": 912,
+      "cost": 0.0064,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0064,
+        "upstream_inference_prompt_cost": 0.00068,
+        "upstream_inference_completions_cost": 0.00572
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7304316050",
+  "predicted_reason": "Semi-finished cold-drawn seamless non-alloy steel tubes of circular cross-section, merely cut to length and chamfered, remain tubes of heading 7304 rather than finished airbag parts of 8708.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 340,
+    "completion_tokens": 572,
+    "total_tokens": 912,
+    "cost": 0.0064,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0064,
+      "upstream_inference_prompt_cost": 0.00068,
+      "upstream_inference_completions_cost": 0.00572
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:53.975642+00:00",
+  "latency_s": 5.762,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

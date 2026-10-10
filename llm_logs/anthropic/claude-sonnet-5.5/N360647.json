@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360647",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "7304515060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596128-a2BxtJDqHpX1kLe38Q2L",
+    "object": "chat.completion",
+    "created": 1791596128,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This matches the Commerce antidumping case \"Small Diameter Seamless Carbon and Alloy Steel Standard, Line and Pressure Pipe\", or possibly the earlier \"High Pressure Diesel Fuel Injection Tubes from Japan\" case. I'm working from memory of that case's scope and HTS listing rather than a lookup.\n\nThe relevant HTS candidates are 7304.39 (other seamless tubes, circular cross-section, iron or non-alloy steel) and 7304.59 (other seamless tubes of other alloy steel, cold-drawn or cold-rolled). The case's scope covers \"seamless, cold-rolled, alloy steel tubes\" with 3 mm ID and 8 mm OD, which points to alloy steel in 7304.59.\n\nUnder 7304.59, subheadings 7304.59.10 and 7304.59.20 cover items 140 mm or more in diameter, and 7304.59.60 and 7304.59.80 cover others. The statistical suffixes are 7304.59.8020 (other, not over 19 mm OD), 7304.59.8025, 7304.59.8030, 7304.59.8035, 7304.59.8040, 7304.59.8045, 7304.59.8050, 7304.59.8055, 7304.59.8060, 7304.59.8065, 7304.59.8070 and 7304.59.8080. 7304.59.60 is for \"Other: outside diameter less than 190 mm\", and 7304.59.80 is for \"Other: 190 mm or more\".\n\nMy recollection of the structure is uncertain, so I'm picking the likely 7304.59.60 branch for an 8 mm OD tube. In the actual schedule, 7304.59.60 is \"Of circular cross section, of other alloy steel, cold-drawn or cold-rolled: Other: Not over 19 mm OD\" or similar, with statistical suffix 7304.59.6000, and the 8 mm OD would fall under that.\n\n```json\n{\"hts_code\": \"7304.59.6000\", \"reason\": \"Seamless cold-rolled alloy steel tubes of circular cross-section with an 8 mm outside diameter fall under HTSUS 7304.59 (other seamless tubes of other alloy steel, cold-drawn or cold-rolled), in the small-diameter subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 770,
+      "total_tokens": 990,
+      "cost": 0.00814,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00814,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.0077
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7304596000",
+  "predicted_reason": "Seamless cold-rolled alloy steel tubes of circular cross-section with an 8 mm outside diameter fall under HTSUS 7304.59 (other seamless tubes of other alloy steel, cold-drawn or cold-rolled), in the small-diameter subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 220,
+    "completion_tokens": 770,
+    "total_tokens": 990,
+    "cost": 0.00814,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00814,
+      "upstream_inference_prompt_cost": 0.00044,
+      "upstream_inference_completions_cost": 0.0077
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:28.894097+00:00",
+  "latency_s": 6.397,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

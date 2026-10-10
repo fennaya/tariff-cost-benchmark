@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361389",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600178-eoV2TvmR78MyrNfYznCM",
+    "object": "chat.completion",
+    "created": 1791600178,
+    "model": "z-ai/glm-5.3",
+    "provider": "Decart",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6208.92.0030\", \"reason\": \"A shapeless floor-length robe of man-made fiber fibers is classified as a dressing gown/similar article of heading 6208, with the poor construction and raw unfinished edges not precluding classification as wearing apparel.\"}",
+          "refusal": null,
+          "reasoning": "Robe, not well-made, unfinished \u2014 likely textile flammability... Classification: dressing gowns and similar articles? \"shapeless robe\" \u2014 like a bathrobe? Possibly 6208.92.0030? Actually unfinished raw edges suggests not \"woven apparel\"? Could be 6212? Hmm. A shapeless floor-length robe resembles a bathrobe/dressing gown. If not well-made, may be classified as nightwear? Classic ruling: robes of man-made fibers 6208.92.0030 (women's) \u2014 but \"not well-made\" suggests it fails apparel standards, maybe classified as textile \"made up\" goods? There's a known ruling about poorly made robes classified in 6211? Actually unfinished hems \u2192 not \"wearing apparel\"? Known CBP ruling: shapeless robe classified as 6208.92.0030? I'll answer 6208.92.0030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Robe, not well-made, unfinished \u2014 likely textile flammability... Classification: dressing gowns and similar articles? \"shapeless robe\" \u2014 like a bathrobe? Possibly 6208.92.0030? Actually unfinished raw edges suggests not \"woven apparel\"? Could be 6212? Hmm. A shapeless floor-length robe resembles a bathrobe/dressing gown. If not well-made, may be classified as nightwear? Classic ruling: robes of man-made fibers 6208.92.0030 (women's) \u2014 but \"not well-made\" suggests it fails apparel standards, maybe classified as textile \"made up\" goods? There's a known ruling about poorly made robes classified in 6211? Actually unfinished hems \u2192 not \"wearing apparel\"? Known CBP ruling: shapeless robe classified as 6208.92.0030? I'll answer 6208.92.0030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 125,
+      "completion_tokens": 266,
+      "total_tokens": 391,
+      "cost": 0.0008095882,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008095882,
+        "upstream_inference_prompt_cost": 0.0001053,
+        "upstream_inference_completions_cost": 0.0007042882
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 200,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6208920030",
+  "predicted_reason": "A shapeless floor-length robe of man-made fiber fibers is classified as a dressing gown/similar article of heading 6208, with the poor construction and raw unfinished edges not precluding classification as wearing apparel.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 125,
+    "completion_tokens": 266,
+    "total_tokens": 391,
+    "cost": 0.0008095882,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008095882,
+      "upstream_inference_prompt_cost": 0.0001053,
+      "upstream_inference_completions_cost": 0.0007042882
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 200,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Decart",
+  "requested_at": "2026-10-10T02:42:58.852870+00:00",
+  "latency_s": 3.192,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359513",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8421290065",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599924-OrBeZw8tJiA7GXVBN0lJ",
+    "object": "chat.completion",
+    "created": 1791599924,
+    "model": "z-ai/glm-5.3",
+    "provider": "Io Net",
+    "system_fingerprint": "vllm-0.28.0-tp4-ep-9600fb5f",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8421.39.8010\", \"reason\": \"The DISCAL air separator is a mechanical apparatus for separating gases (entrained air/micro-bubbles) from liquids in closed-loop hydronic systems, classifiable as other filtering or purifying machinery and apparatus for liquids under HTSUS 8421.39.\"}",
+          "refusal": null,
+          "reasoning": "Air separator for hydronic systems \u2014 likely 8421.39 (filtering/gas separation machinery for liquids). 8421.39.8010? Centrifuges/filtering for liquids: 8421.29 or 8421.39. Code: 8421.39.8010? Actual HTS: 8421.39.80 \"Other\" \u2014 8421.39.8010? I recall 8421.39.8010 \"Other\" for filtering/purifying machinery. Use 8421.39.8010.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Air separator for hydronic systems \u2014 likely 8421.39 (filtering/gas separation machinery for liquids). 8421.39.8010? Centrifuges/filtering for liquids: 8421.29 or 8421.39. Code: 8421.39.8010? Actual HTS: 8421.39.80 \"Other\" \u2014 8421.39.8010? I recall 8421.39.8010 \"Other\" for filtering/purifying machinery. Use 8421.39.8010.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 440,
+      "completion_tokens": 210,
+      "total_tokens": 650,
+      "cost": 0.001044,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001044,
+        "upstream_inference_prompt_cost": 0.00033,
+        "upstream_inference_completions_cost": 0.000714
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421398010",
+  "predicted_reason": "The DISCAL air separator is a mechanical apparatus for separating gases (entrained air/micro-bubbles) from liquids in closed-loop hydronic systems, classifiable as other filtering or purifying machinery and apparatus for liquids under HTSUS 8421.39.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 440,
+    "completion_tokens": 210,
+    "total_tokens": 650,
+    "cost": 0.001044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001044,
+      "upstream_inference_prompt_cost": 0.00033,
+      "upstream_inference_completions_cost": 0.000714
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 132,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Io Net",
+  "requested_at": "2026-10-10T02:38:45.132317+00:00",
+  "latency_s": 3.424,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

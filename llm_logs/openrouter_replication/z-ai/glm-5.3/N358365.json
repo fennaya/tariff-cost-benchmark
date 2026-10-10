@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358365",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8529909760",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599756-I7vY4IZzCHMidxrxm4Nz",
+    "object": "chat.completion",
+    "created": 1791599756,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9980\", \"reason\": \"These PC-ABS button, cover, cover assembly, and housing parts have no independent electrical function and are classified as other articles of plastics per CBP practice for non-electrical key fob housing parts.\"}",
+          "refusal": null,
+          "reasoning": "Parts of key fob, plastic, no electrical function \u2192 8543.90? Actually key fobs classified 8526.92? Parts of remote control (8526) \u2192 8526.90? Parts of radio remote control apparatus: 8526.90.60? HTS: 8526.91/8526.92 for apparatus; parts 8526.90. But plastic parts without electrical function may fall 3926.90. CBP rulings classify key fob housings/covers of plastic as 3926.90.99 (other articles of plastics). Use 3926.90.9980? 3926.90.99 covers other, stat suffix 9980? Common: 3926.90.9880? Actually 3926.90.99 with suffixes 9910/9950/9980... \"Other\" is 9980? I'll answer 3926.90.9980.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Parts of key fob, plastic, no electrical function \u2192 8543.90? Actually key fobs classified 8526.92? Parts of remote control (8526) \u2192 8526.90? Parts of radio remote control apparatus: 8526.90.60? HTS: 8526.91/8526.92 for apparatus; parts 8526.90. But plastic parts without electrical function may fall 3926.90. CBP rulings classify key fob housings/covers of plastic as 3926.90.99 (other articles of plastics). Use 3926.90.9980? 3926.90.99 covers other, stat suffix 9980? Common: 3926.90.9880? Actually 3926.90.99 with suffixes 9910/9950/9980... \"Other\" is 9980? I'll answer 3926.90.9980.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 237,
+      "completion_tokens": 288,
+      "total_tokens": 525,
+      "cost": 0.00131223,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00131223,
+        "upstream_inference_prompt_cost": 4.503e-05,
+        "upstream_inference_completions_cost": 0.0012672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 148,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909980",
+  "predicted_reason": "These PC-ABS button, cover, cover assembly, and housing parts have no independent electrical function and are classified as other articles of plastics per CBP practice for non-electrical key fob housing parts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 237,
+    "completion_tokens": 288,
+    "total_tokens": 525,
+    "cost": 0.00131223,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00131223,
+      "upstream_inference_prompt_cost": 4.503e-05,
+      "upstream_inference_completions_cost": 0.0012672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 148,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:35:56.930014+00:00",
+  "latency_s": 3.459,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

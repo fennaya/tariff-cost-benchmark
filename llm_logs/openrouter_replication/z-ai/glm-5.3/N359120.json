@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359120",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599862-W8vIS2xyeRDLtyl75Ppx",
+    "object": "chat.completion",
+    "created": 1791599862,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.32.1000\", \"reason\": \"The item is a small drawstring pouch of plastic-sheeting (synthetic leather) construction of a kind normally carried in the pocket or handbag, used as a protective cover for a headset microphone.\"}",
+          "refusal": null,
+          "reasoning": "Mic cover of synthetic leather \u2014 likely 4202.32 (articles of a kind normally carried in pocket/handbag)? It's a cover for a microphone, not carrying case. Could be 8518 accessory? Ruling: microphone windscreen covers classified 8518? Actually NY rulings classify mic covers of textile under 6307? Synthetic leather pouch \u2014 4202.92? It's a protective cover, drawstring pouch \u2014 4202.32.1000 (of sheeting of plastics)? Foam-backed synthetic leather = plastic sheeting. 4202.32.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Mic cover of synthetic leather \u2014 likely 4202.32 (articles of a kind normally carried in pocket/handbag)? It's a cover for a microphone, not carrying case. Could be 8518 accessory? Ruling: microphone windscreen covers classified 8518? Actually NY rulings classify mic covers of textile under 6307? Synthetic leather pouch \u2014 4202.92? It's a protective cover, drawstring pouch \u2014 4202.32.1000 (of sheeting of plastics)? Foam-backed synthetic leather = plastic sheeting. 4202.32.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 199,
+      "completion_tokens": 186,
+      "total_tokens": 385,
+      "cost": 0.00085621,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00085621,
+        "upstream_inference_prompt_cost": 3.781e-05,
+        "upstream_inference_completions_cost": 0.0008184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 122,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202321000",
+  "predicted_reason": "The item is a small drawstring pouch of plastic-sheeting (synthetic leather) construction of a kind normally carried in the pocket or handbag, used as a protective cover for a headset microphone.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 199,
+    "completion_tokens": 186,
+    "total_tokens": 385,
+    "cost": 0.00085621,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00085621,
+      "upstream_inference_prompt_cost": 3.781e-05,
+      "upstream_inference_completions_cost": 0.0008184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 122,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:37:42.623060+00:00",
+  "latency_s": 2.365,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361188",
+  "rulingDate": "2026-05-20T00:00:00",
+  "true_code": "8479899599",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596220-K61RcaIZMnGvTd1yUN5s",
+    "object": "chat.completion",
+    "created": 1791596220,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a screw-driven lifting device for extracting stakes, powered by an external impact wrench. The likely candidates are:\n\n- 8425.49 (jacks and hoists, other, non-hydraulic). Heading 8425 covers \"jacks; hoists... pulley tackle and hoists other than skip hoists; winches and capstans; jacks of a kind used for raising vehicles\". 8425.42 is hydraulic jacks and hoists, other. 8425.49 is other jacks and hoists. The tool is a screw-driven jack-like puller, so 8425.49.00 is plausible. Subheading 8425.49.00 has statistical suffixes: 8425.49.0000 in the HTSUS.\n- 8467 (tools for working in the hand, pneumatic, hydraulic, or with self-contained electric or non-electric motor). The tool has no motor, so 8467 does not fit. 8467.99 covers parts of such tools only.\n- 8205.59 (hand tools). The stake puller is not powered by its own motor but is operated by an external wrench, so it is not a simple hand tool.\n\nHeading 8425 is the best fit, since it covers jacks and tools that lift or pull by screw action.\n\n{\"hts_code\": \"8425.49.0000\", \"reason\": \"A screw-driven, non-hydraulic jack-type lifting/pulling device that applies force through a threaded rod and carriage is classified as other jacks and hoists in heading 8425, subheading 8425.49.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 342,
+      "completion_tokens": 490,
+      "total_tokens": 832,
+      "cost": 0.005584,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005584,
+        "upstream_inference_prompt_cost": 0.000684,
+        "upstream_inference_completions_cost": 0.0049
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8425490000",
+  "predicted_reason": "A screw-driven, non-hydraulic jack-type lifting/pulling device that applies force through a threaded rod and carriage is classified as other jacks and hoists in heading 8425, subheading 8425.49.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 490,
+    "total_tokens": 832,
+    "cost": 0.005584,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005584,
+      "upstream_inference_prompt_cost": 0.000684,
+      "upstream_inference_completions_cost": 0.0049
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:01.127511+00:00",
+  "latency_s": 5.354,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

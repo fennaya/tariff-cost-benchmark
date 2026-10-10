@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359637",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8703240190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595883-qrhTapZyoYfGS50NVXqQ",
+    "object": "chat.completion",
+    "created": 1791595883,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "A 2003 Ferrari 575 Maranello is a passenger motor vehicle with a 5.7L spark-ignition engine, so it falls in heading 8703. Subheading 8703.24 covers vehicles with engines over 3,000 cc, and the statistical suffix is 8703.24.0190 or 8703.24.0180. The current HTSUS structure is:\n\n- 8703.24.01 \u2013 Of a cylinder capacity exceeding 3,000 cc\n- 8703.24.0110 and 8703.24.0120 \u2013 older numbering, not current\n- 8703.24.0180 \u2013 Other\n\nOlder HTS codes were 8703.24.0000 with statistical suffixes. Current structure (2022 onward) separates by \"new vehicles\" and \"used.\" The 8703.24.01 line does include a \"Other\" with 8703.24.0190, and the 8703.24.0180 was previously for ... I'm not certain, so I'll go with 8703.24.0190, which I recall as the usual code for non-electric, spark-ignition vehicles over 3,000 cc. I considered whether the car's U.S. origin matters. It is a car of Italian origin being imported into the U.S. (returned), so heading 9801 could apply to U.S. goods returned, but since it is a foreign-made Ferrari, 9801.00.10 doesn't apply, and the 8703 heading is correct.\n\n{\"hts_code\": \"8703.24.0190\", \"reason\": \"A used Ferrari 575 Maranello is a passenger motor vehicle with a spark-ignition engine over 3,000 cc, classified in heading 8703, subheading 8703.24.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 339,
+      "completion_tokens": 539,
+      "total_tokens": 878,
+      "cost": 0.006068,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006068,
+        "upstream_inference_prompt_cost": 0.000678,
+        "upstream_inference_completions_cost": 0.00539
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703240190",
+  "predicted_reason": "A used Ferrari 575 Maranello is a passenger motor vehicle with a spark-ignition engine over 3,000 cc, classified in heading 8703, subheading 8703.24.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 339,
+    "completion_tokens": 539,
+    "total_tokens": 878,
+    "cost": 0.006068,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006068,
+      "upstream_inference_prompt_cost": 0.000678,
+      "upstream_inference_completions_cost": 0.00539
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:23.464865+00:00",
+  "latency_s": 5.494,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

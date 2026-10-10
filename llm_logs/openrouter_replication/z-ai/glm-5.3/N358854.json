@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358854",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "6406200000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599824-BdBkEdt5XYbvp1yM3iJb",
+    "object": "chat.completion",
+    "created": 1791599824,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6406.10.6040\", \"reason\": \"Per ruling N355798, the DIY crochet shoe kit's components (cotton yarn and sole parts) are assembled by the consumer into footwear uppers, classifying it as a footwear upper of cotton textile materials under heading 6406.\"}",
+          "refusal": null,
+          "reasoning": "Ruling N355798 \u2014 DIY crochet shoe kit, cotton yarn ball plus components, retail kit for making shoes \u2014 classified as footwear parts? Likely classified in 6406.10 (footwear uppers) or as textile craft kit 9505? Actual ruling: classified under 6406.10.6040? Cotton uppers... 6406.10.90? Cotton uppers: 6406.10.60 \"of textile materials, other\". Let me pick 6406.10.6040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ruling N355798 \u2014 DIY crochet shoe kit, cotton yarn ball plus components, retail kit for making shoes \u2014 classified as footwear parts? Likely classified in 6406.10 (footwear uppers) or as textile craft kit 9505? Actual ruling: classified under 6406.10.6040? Cotton uppers... 6406.10.90? Cotton uppers: 6406.10.60 \"of textile materials, other\". Let me pick 6406.10.6040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 191,
+      "total_tokens": 357,
+      "cost": 0.00086364,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00086364,
+        "upstream_inference_prompt_cost": 2.324e-05,
+        "upstream_inference_completions_cost": 0.0008404
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 94,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6406106040",
+  "predicted_reason": "Per ruling N355798, the DIY crochet shoe kit's components (cotton yarn and sole parts) are assembled by the consumer into footwear uppers, classifying it as a footwear upper of cotton textile materials under heading 6406.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 166,
+    "completion_tokens": 191,
+    "total_tokens": 357,
+    "cost": 0.00086364,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00086364,
+      "upstream_inference_prompt_cost": 2.324e-05,
+      "upstream_inference_completions_cost": 0.0008404
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 94,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:37:04.561161+00:00",
+  "latency_s": 1.555,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

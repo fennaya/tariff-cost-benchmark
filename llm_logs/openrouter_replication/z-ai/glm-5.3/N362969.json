@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362969",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4602198000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600381-bn0HCqyRHCNzNW3S5Iog",
+    "object": "chat.completion",
+    "created": 1791600381,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6702.90.2500\", \"reason\": \"A decorative owl figure made of a styrofoam base covered with plant materials (sisal, cattail, straw, banana leaf) is classified as an artificial ornamental article of other materials under heading 6702.\"}",
+          "refusal": null,
+          "reasoning": "Decorative owl of styrofoam covered with plant materials \u2014 likely 6702.10 (artificial flowers/plants?) No \u2014 decorative articles of plastics? NY rulings classify such decorative figures under 6702.90 (of other materials) as artificial flowers/foliage? Actually similar owl figures classified in 6702.90.00 e.g., 6702.90.2500? HTS 6702.90.25: of other materials, other. I'll answer 6702.90.2500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Decorative owl of styrofoam covered with plant materials \u2014 likely 6702.10 (artificial flowers/plants?) No \u2014 decorative articles of plastics? NY rulings classify such decorative figures under 6702.90 (of other materials) as artificial flowers/foliage? Actually similar owl figures classified in 6702.90.00 e.g., 6702.90.2500? HTS 6702.90.25: of other materials, other. I'll answer 6702.90.2500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 252,
+      "completion_tokens": 185,
+      "total_tokens": 437,
+      "cost": 0.0006794,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006794,
+        "upstream_inference_prompt_cost": 5.04e-05,
+        "upstream_inference_completions_cost": 0.000629
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 117,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6702902500",
+  "predicted_reason": "A decorative owl figure made of a styrofoam base covered with plant materials (sisal, cattail, straw, banana leaf) is classified as an artificial ornamental article of other materials under heading 6702.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 252,
+    "completion_tokens": 185,
+    "total_tokens": 437,
+    "cost": 0.0006794,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006794,
+      "upstream_inference_prompt_cost": 5.04e-05,
+      "upstream_inference_completions_cost": 0.000629
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:46:22.020810+00:00",
+  "latency_s": 2.232,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

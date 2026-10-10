@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363820",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "0604903000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596733-nKakHAZa8IQrw7FaA7Qx",
+    "object": "chat.completion",
+    "created": 1791596733,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on dried poppy pods. Dried plants suitable for ornamental use fall under heading 0604 (foliage, branches and other parts of plants, without flowers or buds, and grasses, mosses and lichens, suitable for bouquets or ornamental purposes), in subheading 0604.90 for other, fresh/dried/dyed etc. Poppy capsules are fruits, but CBP has classified dried poppy pods under 0604.90.</br>\n\nSubheading 0604.20 covers fresh items, and 0604.90 covers other. Within 0604.90, the statistical suffixes are 0604.90.3000 (mosses and lichens), 0604.90.6000 (other, dried) and similar.\n\nHeading 0604 in the HTSUS reads:\n- 0604.20: Fresh\n- 0604.20.20: Mosses and lichens\n- 0604.20.40: Other\n- 0604.90: Other\n- 0604.90.30: Mosses and lichens\n- 0604.90.60: Other\n- 0604.90.6000: Other\n\nBut the other possibility is 1211.90 (plants used in pharmacy), or 1207.91 (poppy seeds). Because the stated use is only decorative, 0604 applies. Poppy pods are fruit/seed capsules, not foliage or branches, but CBP treats them as \"parts of plants\" for ornamental use. I'll go with 0604.90.6000.\n\n{\"hts_code\": \"0604.90.6000\", \"reason\": \"Dried poppy capsules with no additives, imported solely for ornamental use (floral arrangements and d\u00e9cor), are dried plant parts suitable for bouquets or ornamental purposes under heading 0604, other than mosses and lichens.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 369,
+      "completion_tokens": 574,
+      "total_tokens": 943,
+      "cost": 0.006478,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006478,
+        "upstream_inference_prompt_cost": 0.000738,
+        "upstream_inference_completions_cost": 0.00574
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0604906000",
+  "predicted_reason": "Dried poppy capsules with no additives, imported solely for ornamental use (floral arrangements and d\u00e9cor), are dried plant parts suitable for bouquets or ornamental purposes under heading 0604, other than mosses and lichens.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 369,
+    "completion_tokens": 574,
+    "total_tokens": 943,
+    "cost": 0.006478,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006478,
+      "upstream_inference_prompt_cost": 0.000738,
+      "upstream_inference_completions_cost": 0.00574
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:33.758234+00:00",
+  "latency_s": 5.568,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

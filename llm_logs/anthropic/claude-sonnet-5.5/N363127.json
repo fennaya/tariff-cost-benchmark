@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363127",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "1605290500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596622-DQR5ZFsnZKHHVhLwTWRu",
+    "object": "chat.completion",
+    "created": 1791596622,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a prepared food containing shrimp at 44.45%, so it belongs in Chapter 16 (preparations of crustaceans), not Chapter 19. Heading 1605 covers prepared or preserved crustaceans, and 1605.21 covers shrimp and prawns not in airtight containers.\n\nChapter 19 is less likely. Heading 1902 covers stuffed pasta, and CBP has ruled on spring rolls under 1904 or 1905, but those rulings usually involve a wheat-based wrapper and a filling that is mostly vegetable or meat. Here the shrimp content is high, and Chapter 16 note 3 covers preparations containing more than 20 percent crustaceans by weight. Heading 1605 fits.\n\nWithin 1605.29, the 1605.21 split depends on whether the product is in airtight containers. These retail trays are not airtight containers in the sense of canned goods, so 1605.29 would apply. The other option is 1605.21, \"not in airtight containers,\" which I take to be the correct subheading. In the HTSUS:\n- 1605.21 is \"Shrimps and prawns: not in airtight containers.\"\n- 1605.29 is \"Other,\" meaning in airtight containers.\n\nThe statistical suffixes under 1605.21.10 are:\n- 1605.21.10: Shrimp and prawns, not in airtight containers, \"Fish paste, ... \" \u2014 I recall that 1605.21.10 is \"In immediate containers of a net content not exceeding 2 kg,\" and 1605.21.20 is \"Other.\"\n- 1605.21.1030 is \"Frozen, breaded\" shrimp (statistical).\n- 1605.21.1090 is \"Other.\"\n\nI'll go with 1605.21.1090.\n\n{\"hts_code\": \"1605.21.1090\", \"reason\": \"Frozen shrimp spring rolls with about 44% shrimp are a prepared shrimp preparation under heading 1605, in non-airtight packaging, and not covered by the breaded-shrimp statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 667,
+      "total_tokens": 1117,
+      "cost": 0.00757,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00757,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.00667
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1605211090",
+  "predicted_reason": "Frozen shrimp spring rolls with about 44% shrimp are a prepared shrimp preparation under heading 1605, in non-airtight packaging, and not covered by the breaded-shrimp statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 450,
+    "completion_tokens": 667,
+    "total_tokens": 1117,
+    "cost": 0.00757,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00757,
+      "upstream_inference_prompt_cost": 0.0009,
+      "upstream_inference_completions_cost": 0.00667
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:42.556975+00:00",
+  "latency_s": 6.858,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

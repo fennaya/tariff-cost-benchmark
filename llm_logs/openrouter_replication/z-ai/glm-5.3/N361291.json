@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361291",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "8716310000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600162-JXxuIgreRzbSIk9QWN0R",
+    "object": "chat.completion",
+    "created": 1791600162,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.31.0000\", \"reason\": \"The item is a tanker trailer designed for the transport of propane, classified as a tanker trailer under HTSUS subheading 8716.31.00.\"}",
+          "refusal": null,
+          "reasoning": "This is a trailer (vehicle) for transporting propane \u2014 likely classified as a tank trailer, HTS 8716.90? Actually trailers designed for transport of goods: 8716.39 or 8716.90. Tank trailers... 8716.39.00? CBP rulings classify propane tanker trailers under 8716.39.00? There's 8716.39.00 \"tanker trailers\"? Subheading 8716.39 covers other trailers... Actually 8716.31 = tanker trailers (self-loading/unloading?). Heading 8716: 8716.10 trailers for semi-trailers... 8716.31 \"tanker trailers and semi-trailers\"; 8716.39 other. This is a tanker trailer \u2192 8716.31.00.00? Check: 8716.31.00 Tanker trailers and tanker semi-trailers. 10-digit: 8716.31.0000? Likely 8716.31.0000. But note it's a small trailer towed by ball hitch \u2014 still tanker trailer. Use 8716.31.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a trailer (vehicle) for transporting propane \u2014 likely classified as a tank trailer, HTS 8716.90? Actually trailers designed for transport of goods: 8716.39 or 8716.90. Tank trailers... 8716.39.00? CBP rulings classify propane tanker trailers under 8716.39.00? There's 8716.39.00 \"tanker trailers\"? Subheading 8716.39 covers other trailers... Actually 8716.31 = tanker trailers (self-loading/unloading?). Heading 8716: 8716.10 trailers for semi-trailers... 8716.31 \"tanker trailers and semi-trailers\"; 8716.39 other. This is a tanker trailer \u2192 8716.31.00.00? Check: 8716.31.00 Tanker trailers and tanker semi-trailers. 10-digit: 8716.31.0000? Likely 8716.31.0000. But note it's a small trailer towed by ball hitch \u2014 still tanker trailer. Use 8716.31.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 537,
+      "completion_tokens": 309,
+      "total_tokens": 846,
+      "cost": 0.00143286,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143286,
+        "upstream_inference_prompt_cost": 7.326e-05,
+        "upstream_inference_completions_cost": 0.0013596
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 254,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716310000",
+  "predicted_reason": "The item is a tanker trailer designed for the transport of propane, classified as a tanker trailer under HTSUS subheading 8716.31.00.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 537,
+    "completion_tokens": 309,
+    "total_tokens": 846,
+    "cost": 0.00143286,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00143286,
+      "upstream_inference_prompt_cost": 7.326e-05,
+      "upstream_inference_completions_cost": 0.0013596
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 254,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:42:42.606946+00:00",
+  "latency_s": 2.597,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

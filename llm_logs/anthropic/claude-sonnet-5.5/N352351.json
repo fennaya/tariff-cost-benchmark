@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N352351",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3907995050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593778-659PIkcb0bnfSAaKfrbI",
+    "object": "chat.completion",
+    "created": 1791593778,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a PBS-corn starch composite in primary forms (pellets). Polybutylene succinate is a polyester, so the candidate headings are 3907 (polyesters) and 3912 (cellulose and chemical derivatives)/3913 (natural polymers such as starch derivatives, modified natural polymers). Corn starch itself falls under 1108, and modified starches under 3505.\n\nThe lab found that the process does not change the chemical properties of the PBS. That points to the PBS remaining the essential character component and the product being classified as a PBS polyester in primary forms. PBS is a saturated polyester, so it goes in 3907.99 (other polyesters). Within the 3907.99 subheading, the other-polyester statistical lines are 3907.99.5000 (other) and 3907.99.2000 (in primary forms, not otherwise specified). Several lines in the 3907.99 range are for unsaturated polyesters.\n\nGiven the mix with starch, another possibility is 3905 or 3913. The ruling's conclusion that the PBS is not substantially transformed means the origin stays China, so Chapter 99 duties would apply. The classification is still most likely 3907.99.5000.\n\n```json\n{\"hts_code\": \"3907.99.5000\", \"reason\": \"The pelletized PBS-starch composite is a polyester (PBS) in primary forms that is not substantially changed chemically, so it falls under other polyesters in heading 3907.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 801,
+      "completion_tokens": 483,
+      "total_tokens": 1284,
+      "cost": 0.006432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006432,
+        "upstream_inference_prompt_cost": 0.001602,
+        "upstream_inference_completions_cost": 0.00483
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3907995000",
+  "predicted_reason": "The pelletized PBS-starch composite is a polyester (PBS) in primary forms that is not substantially changed chemically, so it falls under other polyesters in heading 3907.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 801,
+    "completion_tokens": 483,
+    "total_tokens": 1284,
+    "cost": 0.006432,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006432,
+      "upstream_inference_prompt_cost": 0.001602,
+      "upstream_inference_completions_cost": 0.00483
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:18.275975+00:00",
+  "latency_s": 5.829,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

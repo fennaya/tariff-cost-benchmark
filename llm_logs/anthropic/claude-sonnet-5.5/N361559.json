@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361559",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9011800000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596306-hGMNmxJteCxurxoy3TW5",
+    "object": "chat.completion",
+    "created": 1791596306,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a confocal fluorescence microscope-based high-content imaging system. Heading 9012 covers microscopes other than optical microscopes, while optical microscopes fall in 9011. Compound optical microscopes for photomicrography fall in 9011.20, and other compound optical microscopes in 9011.80. Because this system is built around a confocal optical microscope with cameras for imaging, 9011 is the best fit. It is not a machine for photomicrography or microphotography in the classic sense. CBP rulings on the CellVoyager have classified it under 9011.80.\n\nThe 9011.80 subheadings are:\n- 9011.80.20 (Other microscopes, stereoscopic)\n- 9011.80.40 (Other microscopes, inverted?)\n- 9011.80.60 (Other)\n\nI'm not certain of the exact statistical suffix. The 9011.20 line is \"Other microscopes, for photomicrography, cinephotomicrography or microprojection\" (9011.20.80). Here the system is automated imaging with cameras, which suggests photomicrography, but I could not confirm the ruling. The 9011.80 residual covers other optical microscopes, and I believe it is 9011.80.0000 or 9011.80.0010.\n\nI'll go with 9011.80.0000.\n\n{\"hts_code\": \"9011.80.0000\", \"reason\": \"The CellVoyager CV8000 is a confocal (spinning-disk) compound optical microscope-based imaging system with integrated cameras and accessories, so it falls in heading 9011 as an other optical microscope, subheading 9011.80.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 836,
+      "completion_tokens": 525,
+      "total_tokens": 1361,
+      "cost": 0.006922,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006922,
+        "upstream_inference_prompt_cost": 0.001672,
+        "upstream_inference_completions_cost": 0.00525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9011800000",
+  "predicted_reason": "The CellVoyager CV8000 is a confocal (spinning-disk) compound optical microscope-based imaging system with integrated cameras and accessories, so it falls in heading 9011 as an other optical microscope, subheading 9011.80.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 836,
+    "completion_tokens": 525,
+    "total_tokens": 1361,
+    "cost": 0.006922,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006922,
+      "upstream_inference_prompt_cost": 0.001672,
+      "upstream_inference_completions_cost": 0.00525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:26.761438+00:00",
+  "latency_s": 5.381,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

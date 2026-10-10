@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359366",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "7318220000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595816-yV1pwt2eVKBdTHxkgMeO",
+    "object": "chat.completion",
+    "created": 1791595816,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a flat steel washer, so it falls under heading 7318 (screws, bolts, nuts, washers and similar articles of iron or steel). Within that heading, subheading 7318.22 covers other non-threaded articles, which includes washers other than spring washers. SUS301 is stainless steel, which points to 7318.22.00 and a statistical suffix.\n\nThe 7318.22.00 subheading is for \"Other washers.\" The 10-digit codes are as follows:\n- 7318.22.0000 is the single national line, covering other washers.\n\nThe spring washers fall under 7318.21.\n\nThe description says a flat washer, so 7318.22.0000 applies. It is used in a headset, but the washer is a general-purpose item and is not a specialized part. Under Section XVI Note 2(a), parts that are goods of heading 7318 are excluded from Section XVI parts classification. The washer therefore stays in 7318.\n\n{\"hts_code\": \"7318.22.0000\", \"reason\": \"A flat stainless steel washer is a non-spring washer of heading 7318, and Section XVI Note 2(a) keeps it there rather than classing it as a part of the headset.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 378,
+      "total_tokens": 664,
+      "cost": 0.004352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004352,
+        "upstream_inference_prompt_cost": 0.000572,
+        "upstream_inference_completions_cost": 0.00378
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7318220000",
+  "predicted_reason": "A flat stainless steel washer is a non-spring washer of heading 7318, and Section XVI Note 2(a) keeps it there rather than classing it as a part of the headset.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 378,
+    "total_tokens": 664,
+    "cost": 0.004352,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004352,
+      "upstream_inference_prompt_cost": 0.000572,
+      "upstream_inference_completions_cost": 0.00378
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:16.883530+00:00",
+  "latency_s": 4.828,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

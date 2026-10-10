@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360787",
+  "rulingDate": "2026-05-07T00:00:00",
+  "true_code": "8701915000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596154-7ZoJj2pJ01mb9DFGe5K2",
+    "object": "chat.completion",
+    "created": 1791596154,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on the Korechi Pik'r robotic tractor. Candidate headings are 8701 (tractors), 8429 and 8479. Heading 8701 covers tractors, which are vehicles built to haul or push other vehicles, appliances or loads. The Pik'r tows a golf ball collector, so it fits the definition. Other tractors are classified in 8701.91 to 8701.95 by engine power, and the electric versions fall under 8701.91 through 8701.95 with a \"other\" line. Under the heading, 8701.91 covers tractors with an engine power not exceeding 18 kW. 8701.10 covers pedestrian-controlled tractors, which this is not, since it is autonomous.\n\nAn electric tractor with power under 18 kW would go in 8701.91. The statistical suffixes there are 8701.91.10 (agricultural tractors, with sub-lines) and 8701.91.50 (other). The 8701.91.10 line is for \"Tractors suitable for agricultural use\", and a golf course tractor is not agricultural. I believe the ruling classified it in 8701.91.5000, although I'm not certain.\n\nI'm going with 8701.91.5000.\n\n{\"hts_code\": \"8701.91.5000\", \"reason\": \"The autonomous robotic tractor is a road-tractor-type vehicle designed to tow a golf ball collector, so it falls in heading 8701 as an other tractor with engine power not exceeding 18 kW, not suitable for agricultural use.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 501,
+      "total_tokens": 793,
+      "cost": 0.005594,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005594,
+        "upstream_inference_prompt_cost": 0.000584,
+        "upstream_inference_completions_cost": 0.00501
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8701915000",
+  "predicted_reason": "The autonomous robotic tractor is a road-tractor-type vehicle designed to tow a golf ball collector, so it falls in heading 8701 as an other tractor with engine power not exceeding 18 kW, not suitable for agricultural use.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 501,
+    "total_tokens": 793,
+    "cost": 0.005594,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005594,
+      "upstream_inference_prompt_cost": 0.000584,
+      "upstream_inference_completions_cost": 0.00501
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:54.869365+00:00",
+  "latency_s": 4.716,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

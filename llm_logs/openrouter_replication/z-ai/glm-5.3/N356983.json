@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N356983",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "6802930010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599565-zZGvcUsUXhLW59OJFGgi",
+    "object": "chat.completion",
+    "created": 1791599565,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.93.0000\", \"reason\": \"Granite slabs that are sawn on the sides and polished on one face, imported for subsequent cutting into countertops and similar surfaces, are classified as granite merely cut, sawn or otherwise worked.\"}",
+          "refusal": null,
+          "reasoning": "Granite, polished, cut/sawn slabs \u2014 worked granite. 6802.93.0000? Granite worked articles: 6802.93.00 (merely cut). 6802.93.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Granite, polished, cut/sawn slabs \u2014 worked granite. 6802.93.0000? Granite worked articles: 6802.93.00 (merely cut). 6802.93.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 245,
+      "completion_tokens": 113,
+      "total_tokens": 358,
+      "cost": 0.0005315,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005315,
+        "upstream_inference_prompt_cost": 3.43e-05,
+        "upstream_inference_completions_cost": 0.0004972
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 51,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930000",
+  "predicted_reason": "Granite slabs that are sawn on the sides and polished on one face, imported for subsequent cutting into countertops and similar surfaces, are classified as granite merely cut, sawn or otherwise worked.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 245,
+    "completion_tokens": 113,
+    "total_tokens": 358,
+    "cost": 0.0005315,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005315,
+      "upstream_inference_prompt_cost": 3.43e-05,
+      "upstream_inference_completions_cost": 0.0004972
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 51,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:32:46.316765+00:00",
+  "latency_s": 2.446,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

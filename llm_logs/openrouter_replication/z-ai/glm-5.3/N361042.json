@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361042",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "9013809100",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600142-HPHnXoUXZXkFN1r3B8Ku",
+    "object": "chat.completion",
+    "created": 1791600142,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8517.62.0090\", \"reason\": \"A passive DWDM optical mux/dmux is apparatus for the transmission of light signals in a telecommunications network, classified in HTSUS 8517.62.0090 as other apparatus for the transmission or reception of voice, images or data.\"}",
+          "refusal": null,
+          "reasoning": "8517.62 no\u2014passive optical mux: 8517.62.0090? Passive apparatus for communication networks classified 8517.62.00. Historically NY rulings put passive DWDM mux in 8517.62.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "8517.62 no\u2014passive optical mux: 8517.62.0090? Passive apparatus for communication networks classified 8517.62.00. Historically NY rulings put passive DWDM mux in 8517.62.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 291,
+      "completion_tokens": 133,
+      "total_tokens": 424,
+      "cost": 0.00060848,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00060848,
+        "upstream_inference_prompt_cost": 2.328e-05,
+        "upstream_inference_completions_cost": 0.0005852
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517620090",
+  "predicted_reason": "A passive DWDM optical mux/dmux is apparatus for the transmission of light signals in a telecommunications network, classified in HTSUS 8517.62.0090 as other apparatus for the transmission or reception of voice, images or data.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 291,
+    "completion_tokens": 133,
+    "total_tokens": 424,
+    "cost": 0.00060848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00060848,
+      "upstream_inference_prompt_cost": 2.328e-05,
+      "upstream_inference_completions_cost": 0.0005852
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:42:22.505537+00:00",
+  "latency_s": 1.694,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

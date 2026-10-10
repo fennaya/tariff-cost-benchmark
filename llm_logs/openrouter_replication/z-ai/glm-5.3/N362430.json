@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362430",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "2106909997",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600315-i6AdmjCMTyfd1OzZCO4O",
+    "object": "chat.completion",
+    "created": 1791600315,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2106.90.9998\", \"reason\": \"These plant-based, dairy-free pistachio 'yogurt' alternatives are composite edible preparations not elsewhere specified or included, classified as other food preparations in subheading 2106.90.99.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling \u2014 pistachio yogurt alternative classified in 2106.90.99 (food preparations). Actual ruling: 2106.90.9998? The ruling N316647? I recall classification 2106.90.99, 9899? Use 2106.90.9998.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling \u2014 pistachio yogurt alternative classified in 2106.90.99 (food preparations). Actual ruling: 2106.90.9998? The ruling N316647? I recall classification 2106.90.99, 9899? Use 2106.90.9998.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 309,
+      "completion_tokens": 131,
+      "total_tokens": 440,
+      "cost": 0.00059346,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00059346,
+        "upstream_inference_prompt_cost": 4.326e-05,
+        "upstream_inference_completions_cost": 0.0005502
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 70,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "These plant-based, dairy-free pistachio 'yogurt' alternatives are composite edible preparations not elsewhere specified or included, classified as other food preparations in subheading 2106.90.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 131,
+    "total_tokens": 440,
+    "cost": 0.00059346,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00059346,
+      "upstream_inference_prompt_cost": 4.326e-05,
+      "upstream_inference_completions_cost": 0.0005502
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 70,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:45:16.185577+00:00",
+  "latency_s": 2.67,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

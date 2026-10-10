@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363274",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8533210030",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600397-vpqoADZ7Ae7BU9QnhXZR",
+    "object": "chat.completion",
+    "created": 1791600397,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8533.29.0090\", \"reason\": \"A fixed thick-film chip resistor is a fixed electrical resistor not of carbon composition or a power rating over 20 W, classified under the 'Other' provision for fixed resistors.\"}",
+          "refusal": null,
+          "reasoning": "Fixed chip resistors: 8533.21.0090? HTS 8533.21.00 fixed carbon resistors... actually 8533.21.0040/0090. Fixed resistors >20W? No. 8533.21.00 covers fixed carbon resistors; thick film is \"other\" 8533.29.00. Actually 8533.21 = fixed carbon composition; film resistors fall 8533.29.0090? HTS: 8533.21.0040 fixed resistors carbon; 8533.29.0090 other fixed resistors. Use 8533.29.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fixed chip resistors: 8533.21.0090? HTS 8533.21.00 fixed carbon resistors... actually 8533.21.0040/0090. Fixed resistors >20W? No. 8533.21.00 covers fixed carbon resistors; thick film is \"other\" 8533.29.00. Actually 8533.21 = fixed carbon composition; film resistors fall 8533.29.0090? HTS: 8533.21.0040 fixed resistors carbon; 8533.29.0090 other fixed resistors. Use 8533.29.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 217,
+      "total_tokens": 476,
+      "cost": 0.00100401,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00100401,
+        "upstream_inference_prompt_cost": 4.921e-05,
+        "upstream_inference_completions_cost": 0.0009548
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 96,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8533290090",
+  "predicted_reason": "A fixed thick-film chip resistor is a fixed electrical resistor not of carbon composition or a power rating over 20 W, classified under the 'Other' provision for fixed resistors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 217,
+    "total_tokens": 476,
+    "cost": 0.00100401,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00100401,
+      "upstream_inference_prompt_cost": 4.921e-05,
+      "upstream_inference_completions_cost": 0.0009548
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 96,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:46:38.164807+00:00",
+  "latency_s": 3.015,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

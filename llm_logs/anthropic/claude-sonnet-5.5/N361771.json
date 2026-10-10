@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361771",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "8302416080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596346-fthmrOeZmUdHqgAGfegP",
+    "object": "chat.completion",
+    "created": 1791596346,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on steel awning brackets. Candidate headings are 7308 (structures and parts of structures of iron or steel) and 7326 (other articles of iron or steel). Another is 8302 (base metal mountings, fittings for buildings), whose 8302.42 covers \"other mountings, fittings and similar articles, suitable for furniture\" and 8302.49 covers \"other\". Brackets permanently affixed to buildings would fall under 8302.49 (other, of base metal), but the Note 2 to Chapter 83 and the \"suitable for buildings\" language point to 8302.10 hinges, 8302.30 other mountings for motor vehicles, 8302.41 \"suitable for buildings\", and 8302.42 for furniture.\n\n8302.41 covers \"Other, suitable for buildings.\" Within it, 8302.41.60 is \"Other,\" and 8302.41.3000 is \"Base metal mountings, fittings and similar articles suitable for buildings: Of iron or steel\"? Looking at the structure: 8302.41.30 is \"Of iron or steel\" (the 2012-era subheading for \"Other: Of iron, steel\"), and 8302.41.60 is \"Other\" (Other: Other). The subheadings read: 8302.41.30 \"Of aluminum\"? I recall 8302.41.30 as \"Architectural hardware\"? A prior ruling on awning brackets classified them under 8302.41.6080, \"Other base metal mountings, fittings... suitable for buildings: Other: Other: Other.\" I'll go with 8302.41.6080.\n\n{\"hts_code\": \"8302.41.6080\", \"reason\": \"Steel awning brackets permanently mounted to building walls are base metal mountings and fittings suitable for buildings under heading 8302, subheading 8302.41.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 336,
+      "completion_tokens": 594,
+      "total_tokens": 930,
+      "cost": 0.006612,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006612,
+        "upstream_inference_prompt_cost": 0.000672,
+        "upstream_inference_completions_cost": 0.00594
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8302416080",
+  "predicted_reason": "Steel awning brackets permanently mounted to building walls are base metal mountings and fittings suitable for buildings under heading 8302, subheading 8302.41.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 336,
+    "completion_tokens": 594,
+    "total_tokens": 930,
+    "cost": 0.006612,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006612,
+      "upstream_inference_prompt_cost": 0.000672,
+      "upstream_inference_completions_cost": 0.00594
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:06.543376+00:00",
+  "latency_s": 5.518,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

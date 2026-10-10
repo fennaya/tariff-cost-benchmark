@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361192",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9403200082",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596221-a1qKdiAa7FnZTCUj1j2i",
+    "object": "chat.completion",
+    "created": 1791596221,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on steel storage racks (likely for kayaks or similar items). Unassembled steel racks for storage are classified as furniture of base metal, or as other articles of iron or steel.\n\nCandidates: 9403.20.0090 (other metal furniture) or 7326.90.86 (other articles of iron or steel). Floor-standing racks for storing items in a garage or warehouse are generally treated as furniture under heading 9403 if they are for floor use and \"other metal furniture.\" Racks used for storing kayaks, lumber, or similar items are often classified in 9403.20.0090. Heading 9403 covers other furniture, including shelving units that stand on the floor. CBP has classified \"free-standing racks\" for storing items such as hanging carpets or lumber in 9403.20.0090. Alternatively, shelving that is not designed for household use may go under 9403.20.0050 (other metal furniture). I'll go with 9403.20.0090.\n\nThe current HTS 9403.20.00 subdivisions are 9403.20.0010 (luggage racks and the like), 9403.20.0020 (other: tables?), 9403.20.0030, 9403.20.0050 (other: Household?), and 9403.20.0080/0090. I recall 9403.20.0090 as \"Other\" (other metal furniture), so I'll use it.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"Unassembled floor-standing 14-gauge steel storage racks with hangers are classified as other metal furniture under heading 9403 (9403.20.0090).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 616,
+      "completion_tokens": 519,
+      "total_tokens": 1135,
+      "cost": 0.006422,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006422,
+        "upstream_inference_prompt_cost": 0.001232,
+        "upstream_inference_completions_cost": 0.00519
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "Unassembled floor-standing 14-gauge steel storage racks with hangers are classified as other metal furniture under heading 9403 (9403.20.0090).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 616,
+    "completion_tokens": 519,
+    "total_tokens": 1135,
+    "cost": 0.006422,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006422,
+      "upstream_inference_prompt_cost": 0.001232,
+      "upstream_inference_completions_cost": 0.00519
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:01.574624+00:00",
+  "latency_s": 5.278,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

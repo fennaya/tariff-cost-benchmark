@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357206",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "3214100020",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595329-6Mb20EzaZuOMYO8bWUn9",
+    "object": "chat.completion",
+    "created": 1791595329,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Silicone RTV gasket makers are generally classified in heading 3214 (glaziers' putty, grafting putty, resin cements, caulking compounds and other mastics) or heading 3506 (prepared glues and adhesives), or possibly 3910 (silicones in primary forms). CBP rulings on products such as Permatex gasket makers have typically placed them in 3214.10.00, \"Glaziers' putty, grafting putty, resin cements, caulking compounds and other mastics.\" Silicone sealants used for forming gaskets are mastics or caulking compounds. The product description emphasizes \"not consumer adhesives,\" which points away from 3506 (adhesives put up for retail sale, 3506.10) and toward 3214.\n\nThe HTS subheading is 3214.10.00 with the statistical suffix 3214.10.0010 for \"Glaziers' putty, grafting putty, resin cements, caulking compounds and other mastics\" (general). The suffix is uncertain: I recall 3214.10.0010 as \"Caulking compounds\" and 3214.10.0050 as \"Other.\" The silicone gasket sealant is a mastic/caulking compound, so I'll go with 3214.10.0010.\n\n```json\n{\"hts_code\": \"3214.10.0010\", \"reason\": \"Silicone non-corrosive sealing compounds that form gaskets between metal flanges are mastic/caulking-type sealants of heading 3214, not retail adhesives of 3506.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 308,
+      "completion_tokens": 484,
+      "total_tokens": 792,
+      "cost": 0.005456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005456,
+        "upstream_inference_prompt_cost": 0.000616,
+        "upstream_inference_completions_cost": 0.00484
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3214100010",
+  "predicted_reason": "Silicone non-corrosive sealing compounds that form gaskets between metal flanges are mastic/caulking-type sealants of heading 3214, not retail adhesives of 3506.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 308,
+    "completion_tokens": 484,
+    "total_tokens": 792,
+    "cost": 0.005456,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005456,
+      "upstream_inference_prompt_cost": 0.000616,
+      "upstream_inference_completions_cost": 0.00484
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:09.517490+00:00",
+  "latency_s": 4.526,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

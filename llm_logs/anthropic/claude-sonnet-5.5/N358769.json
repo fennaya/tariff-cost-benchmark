@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358769",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "7616995190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595667-hcbQz3Io7pEwC811eBz9",
+    "object": "chat.completion",
+    "created": 1791595667,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a lipstick container (case) imported empty. CBP rulings on lipstick holders: heading 9616 covers \"scent sprays and similar toilet sprays... powder puffs and pads for application of cosmetics.\" Lipstick tubes or holders are classified in 9616.20? No, 9616.10 covers scent sprays and their mounts and heads. Lipstick cases are usually classified under 3923.50 (plastic stoppers, lids, caps) or 7612.90 (aluminum containers), and 8214.20 covers manicure sets. Aluminum lipstick containers have been classified under 7612.90.- (\"Aluminum casks, drums, cans, boxes and similar containers... for any material, capacity not exceeding 300 L\"). Within 7612.90, the 10-digit statistical suffix is 7612.90.1090 (\"Other: Other\"), with 7612.90.10 being \"Collapsible tubes\", I believe. The 7612.90.50 subheading is \"Other\". So the candidates are 7612.90.1000 and 7612.90.5000, and I'm not certain which is correct.\n\nMy recollection of the HTSUS 7612 structure:\n- 7612.10.00: Collapsible tubular containers\n- 7612.90: Other\n  - 7612.90.10: Round cans...\n  - 7612.90.20: Aerosol containers\n  - 7612.90.50: Other (Other: 7612.90.5000)\n\nI'm not confident, but the composition is mostly aluminum (73%), and the parts of the case are mixed materials. Heading 9616 could apply, but CBP has treated lipstick holders as aluminum containers under 7612.90.5000 in rulings I vaguely recall. I'll go with 7612.90.5000.\n\n{\"hts_code\": \"7612.90.5000\", \"reason\": \"The empty, predominantly aluminum (73%) lipstick container is classified as an aluminum container similar to a box or can of heading 7612, in the residual subheading for other containers.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 444,
+      "completion_tokens": 659,
+      "total_tokens": 1103,
+      "cost": 0.007478,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007478,
+        "upstream_inference_prompt_cost": 0.000888,
+        "upstream_inference_completions_cost": 0.00659
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7612905000",
+  "predicted_reason": "The empty, predominantly aluminum (73%) lipstick container is classified as an aluminum container similar to a box or can of heading 7612, in the residual subheading for other containers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 444,
+    "completion_tokens": 659,
+    "total_tokens": 1103,
+    "cost": 0.007478,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007478,
+      "upstream_inference_prompt_cost": 0.000888,
+      "upstream_inference_completions_cost": 0.00659
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:47.414037+00:00",
+  "latency_s": 6.714,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

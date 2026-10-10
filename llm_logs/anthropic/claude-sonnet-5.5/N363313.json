@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363313",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8205595560",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596641-Ic7vF7Gzf1WMfHSiUIg2",
+    "object": "chat.completion",
+    "created": 1791596641,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a tire repair kit as a set put up for retail sale under GRI 3(b). The question is which component gives the set its essential character. The likely candidates are the tire plugs and rubber nails, classified in 4006 (other forms of unvulcanized rubber, and articles) or 4016. The tools would fall under 8205 (hand tools) and the gauge under 9029 or 9026.\n\nPast CBP rulings on tire plug repair kits, such as NY N301000-era rulings, classified them under 8205.59.5510 or 8205.40 (screwdrivers) when the tools gave the kit its essential character. I recall tire repair kits with T-handle reamer and insertion tools being classified in 8205.59.55, \"Other hand tools: Other: Other.\" Some rulings classified tire repair kits under 4006.90.00 as patches. This kit has a spiral tool, an insert tool, plugs, and a range of other tools, and the T-handle tools are the main components. I'll go with 8206.00.00 (tools of two or more of headings 8202 to 8205, put up in sets for retail sale). The kit includes a screwdriver (8205.40), pliers (8203.20), a wrench (8204), and a spiral tool/reamer (8205.59). Since these are tools from several of those headings, 8206 fits if the tools are the essential character. However, 8206 applies only if the set consists solely of tools from 8202-8205, and here the plugs, valve cores, and gauge are also present. GRI 3(b) can still assign the whole set to 8206 if the tools give it its essential character. I'll choose 8206.00.0000.\n\n{\"hts_code\": \"8206.00.0000\", \"reason\": \"The retail set is classified under GRI 3(b) as tools of headings 8202-8205 (T-handle reamer/insert tools, pliers, screwdriver, wrench) put up in a set, since the tools give the kit its essential character.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 470,
+      "completion_tokens": 643,
+      "total_tokens": 1113,
+      "cost": 0.00737,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00737,
+        "upstream_inference_prompt_cost": 0.00094,
+        "upstream_inference_completions_cost": 0.00643
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8206000000",
+  "predicted_reason": "The retail set is classified under GRI 3(b) as tools of headings 8202-8205 (T-handle reamer/insert tools, pliers, screwdriver, wrench) put up in a set, since the tools give the kit its essential character.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 470,
+    "completion_tokens": 643,
+    "total_tokens": 1113,
+    "cost": 0.00737,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00737,
+      "upstream_inference_prompt_cost": 0.00094,
+      "upstream_inference_completions_cost": 0.00643
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:01.842539+00:00",
+  "latency_s": 6.703,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

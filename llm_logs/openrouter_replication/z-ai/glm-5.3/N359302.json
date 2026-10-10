@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359302",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "3004909246",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599891-gK8KHbItMlfbxvvSJwoc",
+    "object": "chat.completion",
+    "created": 1791599891,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.92\", \"reason\": \"Doxepin tablets are packaged medicaments for retail sale containing an antidepressant active ingredient not specified elsewhere in heading 3004, falling under the 'other' subheading for goods not containing insulin, antibiotics, or hormones.\"}",
+          "refusal": null,
+          "reasoning": "Doxepin tablets \u2014 HTS 3004.49? Doxepin is an antidepressant, not listed elsewhere; 3004.49.10? Actually 3004.49 covers medicaments containing antibiotics? No \u2014 3004.40 antibiotics, 3004.50 insulin, 3004.60 adrenal cortex, 3004.90 others. Doxepin \u2192 3004.90.92? For \"other\" \u2014 3004.90.92 is \"Other\" for retail? 3004.90.92: medicaments... other, other. Use 3004.90.92.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Doxepin tablets \u2014 HTS 3004.49? Doxepin is an antidepressant, not listed elsewhere; 3004.49.10? Actually 3004.49 covers medicaments containing antibiotics? No \u2014 3004.40 antibiotics, 3004.50 insulin, 3004.60 adrenal cortex, 3004.90 others. Doxepin \u2192 3004.90.92? For \"other\" \u2014 3004.90.92 is \"Other\" for retail? 3004.90.92: medicaments... other, other. Use 3004.90.92.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 136,
+      "completion_tokens": 200,
+      "total_tokens": 336,
+      "cost": 0.00089088,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00089088,
+        "upstream_inference_prompt_cost": 1.088e-05,
+        "upstream_inference_completions_cost": 0.00088
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 135,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "30049092",
+  "predicted_reason": "Doxepin tablets are packaged medicaments for retail sale containing an antidepressant active ingredient not specified elsewhere in heading 3004, falling under the 'other' subheading for goods not containing insulin, antibiotics, or hormones.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 136,
+    "completion_tokens": 200,
+    "total_tokens": 336,
+    "cost": 0.00089088,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00089088,
+      "upstream_inference_prompt_cost": 1.088e-05,
+      "upstream_inference_completions_cost": 0.00088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 135,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:38:11.929139+00:00",
+  "latency_s": 2.24,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

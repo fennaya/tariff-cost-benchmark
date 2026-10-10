@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361820",
+  "rulingDate": "2026-06-15T00:00:00",
+  "true_code": "6402993165",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596356-10vskKIxde6Cio3VVdcR",
+    "object": "chat.completion",
+    "created": 1791596356,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a woman's casual flat shoe with an upper whose external surface is more than 90% rubber or plastics and an outer sole of rubber/plastics. That points to heading 6402, footwear with outer soles and uppers of rubber or plastics. Within 6402, the \"other footwear\" subheading 6402.99 applies because the shoe is not sports footwear, not slip-on with a protective toe cap, and so on.\n\nUnder 6402.99, the options I recall are:\n- 6402.99.18: footwear with open toes or open heels, and footwear of the slip-on type.\n- 6402.99.20: footwear with a upper with a protective metal toe cap.\n- 6402.99.31: other footwear with an upper whose external surface is rubber or plastics, with a vamp that has a closed toe and is not covered by 6402.99.33 or others. This applies to footwear that does not cover the ankle.\n- 6402.99.33: for men's.\n- 6402.99.50: for women's, 6402.99.80 for other.\n\nThe 6402.99.31 line is \"Footwear with open toes or open heels; footwear of the slip-on type, that is held to the foot without the use of laces or buckles or other fasteners, the foregoing except footwear having a foxing or a foxing-like band wholly or almost wholly of rubber or plastics\". Here the shoe has a lace, so it is not slip-on. The shoe has no foxing band, so the foxing-based lines are out.\n\nThe remaining \"other\" lines under 6402.99.90 are split by gender. For the \"other\" group, I believe the men's line is 6402.99.90.. and the women's line is 6402.99.80 or 6402.99.90 depending on the category. I recall 6402.99.9065 covering women's, and 6402.99.9070 covering other.\n\nGoing with the \"Other: Other: For women\" line, I'll select 6402.99.9065 as the best fit.\n\n{\"hts_code\": \"6402.99.9065\", \"reason\": \"Woman's laced, non-ankle-covering casual shoe with rubber/plastic upper (>90% external surface) and rubber/plastic sole, no foxing band, falls in 6402.99 other footwear for women.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 715,
+      "total_tokens": 1081,
+      "cost": 0.007882,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007882,
+        "upstream_inference_prompt_cost": 0.000732,
+        "upstream_inference_completions_cost": 0.00715
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6402999065",
+  "predicted_reason": "Woman's laced, non-ankle-covering casual shoe with rubber/plastic upper (>90% external surface) and rubber/plastic sole, no foxing band, falls in 6402.99 other footwear for women.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 715,
+    "total_tokens": 1081,
+    "cost": 0.007882,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007882,
+      "upstream_inference_prompt_cost": 0.000732,
+      "upstream_inference_completions_cost": 0.00715
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:16.848587+00:00",
+  "latency_s": 6.8,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361405",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9403200050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596276-pP0Hbz2a5j7YnRqh0VNy",
+    "object": "chat.completion",
+    "created": 1791596276,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a steel tool chest and cabinet system. The likely classification is heading 9403, furniture, rather than 4202 (tool cases) or 8302.\n\nHeading 4202 covers tool boxes and cases, but these are designed to be stacked and used as storage, and the cabinet with doors is more like furniture. The chests are small (11x6x6 inches), which fits a tool chest or box.\n\nFor the set, the cabinet with doors is likely classified under 9403.20.0090 (other metal furniture). Items of heading 4202 include \"tool cases... shaped or fitted,\" but CBP has typically held that metal tool chests with drawers are classified in 9403.20.0090, and I recall the 4202 position being for portable tool boxes. Because this set is retail-packed as a unit and is a stackable system with a cabinet, the principal function is storage furniture. The sets would then be classified under 9403.20.0090 (other metal furniture), with the 9403.20.0020 provision for \"other\" possibly applying. The 9403.20.00 subheadings are 9403.20.0010 (luggage racks, etc.), 9403.20.0020 (of a kind used in offices, hmm), and 9403.20.0030 (shelving), with 9403.20.0050 and 9403.20.0090 covering other items. I'll go with 9403.20.0090.\n\n```json\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"The stackable steel chest and cabinet storage system is metal furniture for storing tools and small items in the home, so it is classified in heading 9403 as other metal furniture rather than as tool cases of heading 4202.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 534,
+      "completion_tokens": 547,
+      "total_tokens": 1081,
+      "cost": 0.006538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006538,
+        "upstream_inference_prompt_cost": 0.001068,
+        "upstream_inference_completions_cost": 0.00547
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "The stackable steel chest and cabinet storage system is metal furniture for storing tools and small items in the home, so it is classified in heading 9403 as other metal furniture rather than as tool cases of heading 4202.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 534,
+    "completion_tokens": 547,
+    "total_tokens": 1081,
+    "cost": 0.006538,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006538,
+      "upstream_inference_prompt_cost": 0.001068,
+      "upstream_inference_completions_cost": 0.00547
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:57.036235+00:00",
+  "latency_s": 5.728,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

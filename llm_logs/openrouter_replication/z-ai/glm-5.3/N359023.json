@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359023",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8306290000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599841-ZhwE5ZCA25hagAHybwqf",
+    "object": "chat.completion",
+    "created": 1791599841,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7615.10.5050\", \"reason\": \"Aluminum decorative cremation urns for household/commemorative use are classified as other household articles of aluminum under subheading 7615.10.5050, HTSUS.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling about aluminum cremation urns \u2014 classified as household articles of aluminum? Actually aluminum cremation urns classified in 7615.10 \u2014 aluminum household articles... Cremation urns \u2014 there is ruling classifying aluminum urns in 7615.10.90? HTS 7615.10.5050? Aluminum household articles: 7615.10.30 (tableware), 7615.10.5050? Actually 7615.10.5050 is \"other\" household articles. But ruling (NY N266847?) classified decorative cremation urns in 7615.10.5050? Hmm, some rulings put urns in 8306.29? No, aluminum. I recall NY ruling classifying aluminum cremation urns in 7615.10.5050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling about aluminum cremation urns \u2014 classified as household articles of aluminum? Actually aluminum cremation urns classified in 7615.10 \u2014 aluminum household articles... Cremation urns \u2014 there is ruling classifying aluminum urns in 7615.10.90? HTS 7615.10.5050? Aluminum household articles: 7615.10.30 (tableware), 7615.10.5050? Actually 7615.10.5050 is \"other\" household articles. But ruling (NY N266847?) classified decorative cremation urns in 7615.10.5050? Hmm, some rulings put urns in 8306.29? No, aluminum. I recall NY ruling classifying aluminum cremation urns in 7615.10.5050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 293,
+      "completion_tokens": 252,
+      "total_tokens": 545,
+      "cost": 0.001221027,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001221027,
+        "upstream_inference_prompt_cost": 1.1427e-05,
+        "upstream_inference_completions_cost": 0.0012096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 190,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615105050",
+  "predicted_reason": "Aluminum decorative cremation urns for household/commemorative use are classified as other household articles of aluminum under subheading 7615.10.5050, HTSUS.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 252,
+    "total_tokens": 545,
+    "cost": 0.001221027,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001221027,
+      "upstream_inference_prompt_cost": 1.1427e-05,
+      "upstream_inference_completions_cost": 0.0012096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 190,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:37:21.694728+00:00",
+  "latency_s": 1.498,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

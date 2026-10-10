@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362881",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8535908040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596578-ryy73DVb9eatF3NICJcM",
+    "object": "chat.completion",
+    "created": 1791596578,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on deadend connectors. The likely classification is heading 8536.90 (apparatus for making connections to electrical circuits, for a voltage not exceeding 1,000 V) or 8535.90 (for a voltage exceeding 1,000 V). High-voltage overhead power lines operate above 1,000 V, so heading 8535 applies: 8535.90 \"Other\" apparatus for making connections to or in electrical circuits. The statistical suffix is 8535.90.8055 or 8535.90.8085.\n\nWithin 8535.90, subheading 8535.90.40 covers connectors, 8535.90.80 covers other, and 8535.90.20 covers lightning arrestors. The 8535.90.80 line is \"Other\", and its statistical suffixes include 8535.90.8010 (electrical junction boxes), 8535.90.8020 (other), and 8535.90.8040, among others. I believe the 8535.90.80 line is the one that applies, so I'm using 8535.90.8080, though I am unsure of the exact suffix.\n\nHeading 7616 (aluminum articles) and 7326 are excluded because heading 8535 covers the goods specifically. I considered 7614 and 8546, but the connectors are not insulators.\n\n{\"hts_code\": \"8535.90.8040\", \"reason\": \"Deadend connectors for high-voltage (over 1,000 V) overhead lines are apparatus for making connections to electrical circuits, so they fall in heading 8535, subheading 8535.90.80; I am not certain of the final statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1143,
+      "completion_tokens": 521,
+      "total_tokens": 1664,
+      "cost": 0.007496,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007496,
+        "upstream_inference_prompt_cost": 0.002286,
+        "upstream_inference_completions_cost": 0.00521
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8535908040",
+  "predicted_reason": "Deadend connectors for high-voltage (over 1,000 V) overhead lines are apparatus for making connections to electrical circuits, so they fall in heading 8535, subheading 8535.90.80; I am not certain of the final statistical suffix.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1143,
+    "completion_tokens": 521,
+    "total_tokens": 1664,
+    "cost": 0.007496,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007496,
+      "upstream_inference_prompt_cost": 0.002286,
+      "upstream_inference_completions_cost": 0.00521
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:59.070006+00:00",
+  "latency_s": 5.271,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

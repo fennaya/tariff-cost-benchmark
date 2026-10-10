@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357199",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5702422080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599579-ONbot9TruGEHLPZaQEtL",
+    "object": "chat.completion",
+    "created": 1791599579,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6302.59.0020\", \"reason\": \"Woven bathmats of 100% man-made fiber (polyester chenille) are classified in heading 6302 as toilet/bath linen, specifically the subheading for other woven articles of man-made fibers.\"}",
+          "refusal": null,
+          "reasoning": "Bathmats of textile \u2014 likely 6302.59.0020? Woven bath mats of man-made fibers: 6302.59.0020 (other woven bath mats, man-made fibers). Actually heading 6302, other toilet linen and kitchen linen: 6302.59.00 \u2014 bath mats? Subheading 6302.59.0020 covers \"other\" man-made fiber. There's 6302.59.0010? Historically 6302.59.0020 \"Other, of man-made fibers\". Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Bathmats of textile \u2014 likely 6302.59.0020? Woven bath mats of man-made fibers: 6302.59.0020 (other woven bath mats, man-made fibers). Actually heading 6302, other toilet linen and kitchen linen: 6302.59.00 \u2014 bath mats? Subheading 6302.59.0020 covers \"other\" man-made fiber. There's 6302.59.0010? Historically 6302.59.0020 \"Other, of man-made fibers\". Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 433,
+      "completion_tokens": 193,
+      "total_tokens": 626,
+      "cost": 0.0007428,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007428,
+        "upstream_inference_prompt_cost": 8.66e-05,
+        "upstream_inference_completions_cost": 0.0006562
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 126,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6302590020",
+  "predicted_reason": "Woven bathmats of 100% man-made fiber (polyester chenille) are classified in heading 6302 as toilet/bath linen, specifically the subheading for other woven articles of man-made fibers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 433,
+    "completion_tokens": 193,
+    "total_tokens": 626,
+    "cost": 0.0007428,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007428,
+      "upstream_inference_prompt_cost": 8.66e-05,
+      "upstream_inference_completions_cost": 0.0006562
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 126,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:32:59.850448+00:00",
+  "latency_s": 1.969,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

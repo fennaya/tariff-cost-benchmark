@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361111",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "6116106500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600147-OKbjvtbaolyyYgumoVSV",
+    "object": "chat.completion",
+    "created": 1791600147,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6116.10.0000\", \"reason\": \"A knit textile glove with an outer polyurethane dip coating is classified as textile gloves impregnated or coated with plastics under heading 6116.\"}",
+          "refusal": null,
+          "reasoning": "String knit glove with PU dip coating \u2014 likely impregnated/coated textile glove. Classification: gloves, mittens of textile, impregnated/coated plastics \u2014 6116.10.00? Actually 6116.10 covers impregnated, coated or covered with plastics. 95% nylon knit glove with PU coating \u2192 6116.10.0000? But polyurethane dip coating on outer surface \u2014 if plastics visible, could be 3926.20 or 4205? Textile gloves coated with plastics where textile still visible \u2192 6116.10.00. Rate? 6116.10.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "String knit glove with PU dip coating \u2014 likely impregnated/coated textile glove. Classification: gloves, mittens of textile, impregnated/coated plastics \u2014 6116.10.00? Actually 6116.10 covers impregnated, coated or covered with plastics. 95% nylon knit glove with PU coating \u2192 6116.10.0000? But polyurethane dip coating on outer surface \u2014 if plastics visible, could be 3926.20 or 4205? Textile gloves coated with plastics where textile still visible \u2192 6116.10.00. Rate? 6116.10.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 192,
+      "total_tokens": 380,
+      "cost": 0.000928868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000928868,
+        "upstream_inference_prompt_cost": 7.268e-06,
+        "upstream_inference_completions_cost": 0.0009216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 144,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6116100000",
+  "predicted_reason": "A knit textile glove with an outer polyurethane dip coating is classified as textile gloves impregnated or coated with plastics under heading 6116.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 192,
+    "total_tokens": 380,
+    "cost": 0.000928868,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000928868,
+      "upstream_inference_prompt_cost": 7.268e-06,
+      "upstream_inference_completions_cost": 0.0009216
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 144,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:27.544041+00:00",
+  "latency_s": 2.278,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

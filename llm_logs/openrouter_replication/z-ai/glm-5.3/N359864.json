@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359864",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3502110000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599987-lktqcqzCgplWj8v6LuGQ",
+    "object": "chat.completion",
+    "created": 1791599987,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3502.11.0000\", \"reason\": \"Spray-dried egg albumen (egg white protein powder) with no other added substances is classified as dried egg albumin in subheading 3502.11.0000, HTSUS.\"}",
+          "refusal": null,
+          "reasoning": "Egg albumen dried: 3502.90.60? Egg albumin heading 3502. Dried egg albumen 3502.90.6020? Actually 3502.11 is egg albumin... 3502.11.00 dried egg albumin? Heading 3502: albumin (including concentrates of two or more whey proteins). 3502.11 egg albumin, dried. So 3502.11.0000? There's 3502.11.0000 dried egg albumin. But hydrolyzed protein could be 3504 (peptones). Degree of hydrolysis 7% \u2014 NY rulings classified hydrolyzed egg white as 3502.11.0000? Actually rulings put hydrolyzed egg albumen in 3502.90.6020? I'll go 3502.11.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Egg albumen dried: 3502.90.60? Egg albumin heading 3502. Dried egg albumen 3502.90.6020? Actually 3502.11 is egg albumin... 3502.11.00 dried egg albumin? Heading 3502: albumin (including concentrates of two or more whey proteins). 3502.11 egg albumin, dried. So 3502.11.0000? There's 3502.11.0000 dried egg albumin. But hydrolyzed protein could be 3504 (peptones). Degree of hydrolysis 7% \u2014 NY rulings classified hydrolyzed egg white as 3502.11.0000? Actually rulings put hydrolyzed egg albumen in 3502.90.6020? I'll go 3502.11.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 291,
+      "completion_tokens": 250,
+      "total_tokens": 541,
+      "cost": 0.00112328,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00112328,
+        "upstream_inference_prompt_cost": 2.328e-05,
+        "upstream_inference_completions_cost": 0.0011
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 189,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3502110000",
+  "predicted_reason": "Spray-dried egg albumen (egg white protein powder) with no other added substances is classified as dried egg albumin in subheading 3502.11.0000, HTSUS.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 291,
+    "completion_tokens": 250,
+    "total_tokens": 541,
+    "cost": 0.00112328,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00112328,
+      "upstream_inference_prompt_cost": 2.328e-05,
+      "upstream_inference_completions_cost": 0.0011
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 189,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:39:45.958674+00:00",
+  "latency_s": 3.385,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

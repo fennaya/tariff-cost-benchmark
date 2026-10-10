@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357951",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "9403608093",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599708-2c6mo8U1HLc3a8GYUUYu",
+    "object": "chat.completion",
+    "created": 1791599708,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.60.0081\", \"reason\": \"An unassembled wooden storage cabinet with no electrical or mechanical components is other wooden furniture under subheading 9403.60, and unassembled goods are classified as the assembled article per GIR 2(a).\"}",
+          "refusal": null,
+          "reasoning": "Wooden furniture, unassembled \u2014 9403.60.0081? Wooden furniture other, 9403.60.8141? Kitchen/bedroom... Other wooden furniture: 9403.60.0081 (post-2022). Actually 9403.60.8141 was old; current 9403.60.0081.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Wooden furniture, unassembled \u2014 9403.60.0081? Wooden furniture other, 9403.60.8141? Kitchen/bedroom... Other wooden furniture: 9403.60.0081 (post-2022). Actually 9403.60.8141 was old; current 9403.60.0081.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 520,
+      "completion_tokens": 149,
+      "total_tokens": 669,
+      "cost": 0.0006986,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006986,
+        "upstream_inference_prompt_cost": 7.28e-05,
+        "upstream_inference_completions_cost": 0.0006258
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 85,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403600081",
+  "predicted_reason": "An unassembled wooden storage cabinet with no electrical or mechanical components is other wooden furniture under subheading 9403.60, and unassembled goods are classified as the assembled article per GIR 2(a).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 520,
+    "completion_tokens": 149,
+    "total_tokens": 669,
+    "cost": 0.0006986,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006986,
+      "upstream_inference_prompt_cost": 7.28e-05,
+      "upstream_inference_completions_cost": 0.0006258
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 85,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:35:08.919390+00:00",
+  "latency_s": 3.839,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

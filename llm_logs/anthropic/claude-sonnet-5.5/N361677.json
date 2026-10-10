@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361677",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "8418998050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596324-ej9HFU35S7n7WVmgcViG",
+    "object": "chat.completion",
+    "created": 1791596324,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a Whirlpool part (W11803498), a leveler nut assembly for an appliance. It is a steel bolt with a nut, which falls under heading 7318 (threaded articles).\n\nThe bolt has a \"sticky circular head,\" so it is likely a threaded bolt with a round head. Within 7318.15 (other screws and bolts, whether or not with their nuts or washers), the candidates are:\n\n- 7318.15.20: screws and bolts, not threaded? Not applicable.\n- 7318.15.30 to 7318.15.80: various categories.\n- 7318.15.20 covers machine screws of \u22656 mm diameter, and 7318.15.50 covers other machine screws.\n- 7318.15.20 is also described as \"Other screws and bolts: other: having shanks or threads with a diameter of less than 6 mm,\" so it is not the right fit either.\n\nI'm not certain of the exact subheading. I'll choose 7318.15.80 for other bolts, with the 7318.15.8 series covering \"other\" items. Of those, 7318.15.8085 is \"Other\" within the other category.\n\n{\"hts_code\": \"7318.15.8085\", \"reason\": \"A steel threaded bolt with a round head and a mating steel nut is a threaded bolt with its nut, classified under heading 7318.15 as other screws and bolts, not of stainless steel, in the residual 'other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 457,
+      "total_tokens": 667,
+      "cost": 0.00499,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00499,
+        "upstream_inference_prompt_cost": 0.00042,
+        "upstream_inference_completions_cost": 0.00457
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7318158085",
+  "predicted_reason": "A steel threaded bolt with a round head and a mating steel nut is a threaded bolt with its nut, classified under heading 7318.15 as other screws and bolts, not of stainless steel, in the residual 'other' provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 457,
+    "total_tokens": 667,
+    "cost": 0.00499,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00499,
+      "upstream_inference_prompt_cost": 0.00042,
+      "upstream_inference_completions_cost": 0.00457
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:45.202962+00:00",
+  "latency_s": 8.072,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361145",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "8486200000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596214-nhpcgvdWjUMRL0hnavAe",
+    "object": "chat.completion",
+    "created": 1791596214,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The DAD3430 is a Disco dicing saw used to cut silicon wafers. Machines for dicing wafers fall under heading 8486, which covers machines and apparatus used solely or principally for manufacturing semiconductor devices or integrated circuits.\n\nWithin 8486.20 (machines for manufacturing semiconductor devices or ICs), the relevant subheadings run roughly as follows:\n- 8486.20.00 is the general subheading, with statistical suffixes under it.\n- 8486.20.0010 covers apparatus for physical deposition.\n- Other suffixes cover items such as 8486.20.0020 for chemical vapor deposition, along with ion implanters, etching, and similar machines.\n\nUnder 8486.10 (machines for manufacturing boules or wafers), the HTS has 8486.10.00 with suffixes such as 8486.10.0040 for \"Machines for sawing boules into wafers.\" That does not fit here, because the DAD3430 dices processed wafers rather than sawing boules.\n\nUnder 8486.20.00, the suffixes I recall are:\n- 8486.20.0010 \u2013 Apparatus for physical deposition\n- 8486.20.0020 \u2013 Chemical vapor deposition\n- 8486.20.0030 \u2013 Apparatus for ion implantation (doping)\n- 8486.20.0040 \u2013 Etching/stripping\n- 8486.20.0050 \u2013 Lithography/direct write\n- 8486.20.0055 \u2013 Other?\n- 8486.20.0060 \u2013 Dicing/cutting machines? \n- 8486.20.0090 \u2013 Other\n\nI am not certain of the exact suffix for dicing, but 8486.20.0090 is the safe \"other\" choice. Dicing and cutting machines fall in subheading 8486.20, and I believe the HTS lists \"Machines for dicing, scribing or cutting\" as 8486.20.0060, but I cannot confirm that. I'll go with the \"other\" suffix.\n\n{\"hts_code\": \"8486.20.0090\", \"reason\": \"A wafer dicing saw that singulates ICs from processed silicon wafers is a machine for manufacturing semiconductor devices or integrated circuits under heading 8486, subheading 8486.20, classified in the residual statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 741,
+      "total_tokens": 1063,
+      "cost": 0.008054,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008054,
+        "upstream_inference_prompt_cost": 0.000644,
+        "upstream_inference_completions_cost": 0.00741
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8486200090",
+  "predicted_reason": "A wafer dicing saw that singulates ICs from processed silicon wafers is a machine for manufacturing semiconductor devices or integrated circuits under heading 8486, subheading 8486.20, classified in the residual statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 741,
+    "total_tokens": 1063,
+    "cost": 0.008054,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008054,
+      "upstream_inference_prompt_cost": 0.000644,
+      "upstream_inference_completions_cost": 0.00741
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:54.703132+00:00",
+  "latency_s": 6.608,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359594",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8703240190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599937-lEqRhz3I1JhYQwe7iNFJ",
+    "object": "chat.completion",
+    "created": 1791599937,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.0060\", \"reason\": \"A used spark-ignition passenger automobile with engine displacement exceeding 3,000 cc, over 25 years old, is classified in HTSUS subheading 8703.23.0060.\"}",
+          "refusal": null,
+          "reasoning": "1975 Jaguar XKE, V12 5.3L, spark-ignition, over 3000cc. Heading 8703.23 (3000cc or more). 10-digit: 8703.23.0030? Passenger cars SI 3000cc+ \u2014 8703.23.0030 is \"new\". Used? 8703.23.0060 \"used, over 25 years old\"? Actually subheadings: 8703.23.0030 new; 8703.23.0060 used; 8703.23.0090? There's 8703.23.0030 (new), 8703.23.0060 (used, 25 years or older). 1975 car, over 25 years \u2192 8703.23.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "1975 Jaguar XKE, V12 5.3L, spark-ignition, over 3000cc. Heading 8703.23 (3000cc or more). 10-digit: 8703.23.0030? Passenger cars SI 3000cc+ \u2014 8703.23.0030 is \"new\". Used? 8703.23.0060 \"used, over 25 years old\"? Actually subheadings: 8703.23.0030 new; 8703.23.0060 used; 8703.23.0090? There's 8703.23.0030 (new), 8703.23.0060 (used, 25 years or older). 1975 car, over 25 years \u2192 8703.23.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 183,
+      "completion_tokens": 261,
+      "total_tokens": 444,
+      "cost": 0.00112182,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00112182,
+        "upstream_inference_prompt_cost": 2.562e-05,
+        "upstream_inference_completions_cost": 0.0010962
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 196,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230060",
+  "predicted_reason": "A used spark-ignition passenger automobile with engine displacement exceeding 3,000 cc, over 25 years old, is classified in HTSUS subheading 8703.23.0060.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 183,
+    "completion_tokens": 261,
+    "total_tokens": 444,
+    "cost": 0.00112182,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00112182,
+      "upstream_inference_prompt_cost": 2.562e-05,
+      "upstream_inference_completions_cost": 0.0010962
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 196,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:38:58.104124+00:00",
+  "latency_s": 4.621,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

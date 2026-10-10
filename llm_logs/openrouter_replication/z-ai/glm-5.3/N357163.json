@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357163",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "3916905000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599577-S4dQ3OxKZFmFFuOxrzE7",
+    "object": "chat.completion",
+    "created": 1791599577,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9988\", \"reason\": \"A hollow glass-fiber-reinforced polyester rod finished and ready-to-use as a closet rod is an other article of plastics not more specifically provided for, classifiable as other articles of plastics under heading 3926.\"}",
+          "refusal": null,
+          "reasoning": "GFRP rod \u2014 other articles of plastics? Actually glass fiber reinforced plastic rods \u2014 heading 3926? But rods of plastics: 3916? Monofilament rods? 3916 covers rods of plastics, but \"other rods\" of polymers... 3916.90 is rods of thermoplastics extruded. GFRP rods \u2014 likely 3926.90.99? But glass fiber reinforced plastic could be 7019? No, that's glass fibers articles. Composite rods of plastics classified 3926.90.9880? Common answer: 3926.90.99. Use 3926.90.9988? Safer: 3926.90.9988? I'll answer 3926.90.9988... Actually statistical suffixes: 3926.90.9988 \"Other\" other. I'll go with 3926.90.9988.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "GFRP rod \u2014 other articles of plastics? Actually glass fiber reinforced plastic rods \u2014 heading 3926? But rods of plastics: 3916? Monofilament rods? 3916 covers rods of plastics, but \"other rods\" of polymers... 3916.90 is rods of thermoplastics extruded. GFRP rods \u2014 likely 3926.90.99? But glass fiber reinforced plastic could be 7019? No, that's glass fibers articles. Composite rods of plastics classified 3926.90.9880? Common answer: 3926.90.99. Use 3926.90.9988? Safer: 3926.90.9988? I'll answer 3926.90.9988... Actually statistical suffixes: 3926.90.9988 \"Other\" other. I'll go with 3926.90.9988.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 277,
+      "total_tokens": 517,
+      "cost": 0.00133896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00133896,
+        "upstream_inference_prompt_cost": 9.36e-06,
+        "upstream_inference_completions_cost": 0.0013296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 212,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909988",
+  "predicted_reason": "A hollow glass-fiber-reinforced polyester rod finished and ready-to-use as a closet rod is an other article of plastics not more specifically provided for, classifiable as other articles of plastics under heading 3926.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 277,
+    "total_tokens": 517,
+    "cost": 0.00133896,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00133896,
+      "upstream_inference_prompt_cost": 9.36e-06,
+      "upstream_inference_completions_cost": 0.0013296
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 212,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:32:57.684928+00:00",
+  "latency_s": 2.422,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

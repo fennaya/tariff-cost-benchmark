@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362844",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8516790000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596572-QzkXZeKxgnHLRQblnm15",
+    "object": "chat.completion",
+    "created": 1791596572,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on the \"Solid Processor\" by OLO. The likely candidates are 8516.80 (electric heating resistors) and 8516.79 (other electrothermic appliances for domestic purposes), or 8514 (industrial or laboratory induction furnaces). Heading 8516 covers \"electric space heating apparatus and other electrothermic appliances of a kind used for domestic purposes.\" The description stresses \"residential electric heating (induction heating) appliance,\" which points to 8516.79.00 (other electrothermic appliances), with statistical suffix 8516.79.0070 for other.\n\nHeading 8514 covers industrial or laboratory electric furnaces and ovens, including induction or dielectric heating equipment. A residential unit would likely fall under 8516, though 8514.20 (induction furnaces) was also possible. Because the description emphasizes domestic use, I chose 8516.79.0070.\n\nHeading 8516.79 has the subheadings 8516.79.0010 (electrothermic appliances: toasters?) and 8516.79.0070 (other). I'm fairly confident that 8516.79.0070 is the \"other\" line.\n\n{\"hts_code\": \"8516.79.0070\", \"reason\": \"An electrically driven induction-heating appliance designed for household use at a single-family residence is an other electrothermic appliance of a kind used for domestic purposes under heading 8516, not an industrial furnace under 8514.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 431,
+      "completion_tokens": 476,
+      "total_tokens": 907,
+      "cost": 0.005622,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005622,
+        "upstream_inference_prompt_cost": 0.000862,
+        "upstream_inference_completions_cost": 0.00476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8516790070",
+  "predicted_reason": "An electrically driven induction-heating appliance designed for household use at a single-family residence is an other electrothermic appliance of a kind used for domestic purposes under heading 8516, not an industrial furnace under 8514.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 431,
+    "completion_tokens": 476,
+    "total_tokens": 907,
+    "cost": 0.005622,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005622,
+      "upstream_inference_prompt_cost": 0.000862,
+      "upstream_inference_completions_cost": 0.00476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:52.900593+00:00",
+  "latency_s": 4.915,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355647",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "7020006000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593812-gTpD4wJ7QkEfiCTr3306",
+    "object": "chat.completion",
+    "created": 1791593812,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on crystalline silica-free agglomerated slabs made of glass and resin. Candidate headings:\n\n- 6810: articles of cement, concrete, or artificial stone. This does not fit, because the binder is a polymer resin rather than cement.\n- 6802.91/6802.93: worked monumental or building stone. Agglomerated stone is sometimes classified in 6810 or 6802 (artificial stone). Quartz agglomerate slabs are typically 6810.99.0010, but that depends on a quartz aggregate and a resin binder.\n- 7016: pressed or moulded glass blocks, slabs, tiles, and similar articles used for building or construction. Agglomerated glass slabs may fall here, but they are not formed by pressing or moulding glass.\n- 3926.90: other articles of plastics. Glass makes up most of the composition, but the resin gives the slab its character.\n\nI recall CBP rulings on recycled-glass resin slabs classifying them in 6810.19 or 6810.99. For example, NY N313\u2026 classified glass-resin slabs in 6810.99.0010 (\"other articles: other\"), and artificial stone is defined to include agglomerated materials. The analogous quartz slab classification is 6810.99.0010.\n\nHeading 6810 covers \"articles of artificial stone,\" and glass agglomerated with resin plausibly qualifies, so I am choosing 6810.99.0010.\n\n{\"hts_code\": \"6810.99.0010\", \"reason\": \"Polished slabs of crushed glass agglomerated with polymer resin are artificial stone articles of heading 6810, classified in the other (non-tile) subheading 6810.99.0010.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 550,
+      "completion_tokens": 559,
+      "total_tokens": 1109,
+      "cost": 0.00669,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00669,
+        "upstream_inference_prompt_cost": 0.0011,
+        "upstream_inference_completions_cost": 0.00559
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6810990010",
+  "predicted_reason": "Polished slabs of crushed glass agglomerated with polymer resin are artificial stone articles of heading 6810, classified in the other (non-tile) subheading 6810.99.0010.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 550,
+    "completion_tokens": 559,
+    "total_tokens": 1109,
+    "cost": 0.00669,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00669,
+      "upstream_inference_prompt_cost": 0.0011,
+      "upstream_inference_completions_cost": 0.00559
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:52.885301+00:00",
+  "latency_s": 6.195,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

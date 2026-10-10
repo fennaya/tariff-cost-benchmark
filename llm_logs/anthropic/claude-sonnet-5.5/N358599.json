@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358599",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "9404902090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595631-kurPm2BXseL7D8jVMo4g",
+    "object": "chat.completion",
+    "created": 1791595631,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is likely a CBP ruling on electrically heated pillows. Electric heating pads and cushions classify in heading 6301 (electric blankets) only for blankets. Cushions with electric heating fall under 9404.90 (cushions, pillows) or 8516.80 (electric heating resistors). Chapter 94 Note 1 covers articles of bedding \"fitted with any springs or stuffed or internally fitted with any material\". Heading 9404 includes \"articles of bedding and similar furnishings fitted with springs or stuffed\", but Chapter 94 note excludes electrically heated ones? Note 1(c) of Chapter 94 excludes... actually, Chapter 94 does not exclude heated pillows, but heading 9404 does state \"(for example, mattresses, quilts, eiderdowns, cushions, pouffes and pillows) fitted with springs or stuffed\". Heated pads in 8516.80 are for heating pads, but CBP has ruled that heated cushions of textile are classified in 9404.90.\n\nWithin 9404.90: 9404.90.10 is for pillows, cushions and similar furnishings of cotton; 9404.90.20 is of other materials, and 9404.90.85 is other. Specifically, 9404.90.10 = of cotton; 9404.90.20 = other, containing... the actual structure is 9404.90.10 Pillows and cushions (cotton), 9404.90.20 (other, of man-made fibers?), 9404.90.85 other. Following CBP practice, the 9404.90.85 subheading is \"Other: Other\" (e.g., of other materials). I think there is a split: 9404.90.80 \"Other: Pillows, cushions, similar furnishings: other, 9404.90.85 Other, 9404.90.95 other.\" I'll go with 9404.90.8580 (a statistical suffix common to such items).\n\n{\"hts_code\": \"9404.90.8580\", \"reason\": \"Stuffed, electrically heated polyester-covered cushions/pillows are classified as cushions and similar furnishings stuffed with material in heading 9404, subheading 9404.90 (other, of man-made fibers).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 898,
+      "completion_tokens": 710,
+      "total_tokens": 1608,
+      "cost": 0.008896,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008896,
+        "upstream_inference_prompt_cost": 0.001796,
+        "upstream_inference_completions_cost": 0.0071
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9404908580",
+  "predicted_reason": "Stuffed, electrically heated polyester-covered cushions/pillows are classified as cushions and similar furnishings stuffed with material in heading 9404, subheading 9404.90 (other, of man-made fibers).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 898,
+    "completion_tokens": 710,
+    "total_tokens": 1608,
+    "cost": 0.008896,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008896,
+      "upstream_inference_prompt_cost": 0.001796,
+      "upstream_inference_completions_cost": 0.0071
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:12.048271+00:00",
+  "latency_s": 6.641,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

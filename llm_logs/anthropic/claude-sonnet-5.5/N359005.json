@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359005",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "6116105520",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595711-9CLmYowEC0kaYmSXOOh1",
+    "object": "chat.completion",
+    "created": 1791595711,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on a knit glove with a nitrile coating. The glove is seamless or string-knit and impregnated or coated with plastics or rubber. That puts it in heading 6116, \"Gloves, mittens and mitts, knitted or crocheted: impregnated, coated, covered or laminated with plastics or rubber.\"\n\nThe subheadings are 6116.10 for gloves impregnated, coated or covered with plastics or rubber, and 6116.10.04 for seamless gloves, which is the \"Other\" under 6116.10.05 onwards. The 6116.10.0400 line is \"Seamless gloves, wholly of cotton or ... \" I believe, although I'm not certain. The subsequent lines are 6116.10.08 (containing 50% or more by weight of fibers... ), 6116.10.1720 (other, of cotton), 6116.10.45 (with fourchettes) and 6116.10.55 (other), 6116.10.65 (other, other). I recall the 2017-era structure as: 6116.10.0400 for \"Other: Gloves... of man-made fibers\"? To be precise from memory, 6116.10.08 is \"Other: Containing 70% or more by weight of rubber or plastics\" and 6116.10.1300 or 6116.10.1720 and so on... Then 6116.10.45 is \"Other: Of wool or fine animal hair,\" 6116.10.55 is \"Of cotton,\" and 6116.10.65 is \"Of man-made fibers.\" Finally 6116.10.75 is \"Other.\"\n\nHere the textile is more than 50% by weight, so the \"70% or more rubber/plastics\" lines don't apply. The glove is mostly man-made fibers (polyethylene, nylon), with steel fiber a minor component. Fits \"Other: Of man-made fibers\": 6116.10.6500? I recall 6116.10.9500 as \"Other\" for gloves of other materials, and 6116.10.65 as \"Other: Of man-made fibers\"? I'll go with 6116.10.6500.\n\n{\"hts_code\": \"6116.10.6500\", \"reason\": \"Knit glove coated with nitrile rubber, textile over 50% by weight and predominantly man-made fibers, falls under heading 6116 as a coated knit glove of man-made fibers.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 753,
+      "total_tokens": 1105,
+      "cost": 0.008234,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008234,
+        "upstream_inference_prompt_cost": 0.000704,
+        "upstream_inference_completions_cost": 0.00753
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6116106500",
+  "predicted_reason": "Knit glove coated with nitrile rubber, textile over 50% by weight and predominantly man-made fibers, falls under heading 6116 as a coated knit glove of man-made fibers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 753,
+    "total_tokens": 1105,
+    "cost": 0.008234,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008234,
+      "upstream_inference_prompt_cost": 0.000704,
+      "upstream_inference_completions_cost": 0.00753
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:31.528072+00:00",
+  "latency_s": 6.911,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

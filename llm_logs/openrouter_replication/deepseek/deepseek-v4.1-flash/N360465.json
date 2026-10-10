@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N360465",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4016935050",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599074-5mWY5kFUseWmCWFTTmDL",
+    "object": "chat.completion",
+    "created": 1791599074,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "DekaLLM",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.9990\", \"reason\": \"The well seal is a composite article of plastics (ABS plates) and rubber (SBR gland) where the essential character is imparted by the plastic components, making it an other article of plastics under heading 3926.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 250,
+      "completion_tokens": 65,
+      "total_tokens": 315,
+      "cost": 0.000108,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000108,
+        "upstream_inference_prompt_cost": 3e-05,
+        "upstream_inference_completions_cost": 7.8e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "The well seal is a composite article of plastics (ABS plates) and rubber (SBR gland) where the essential character is imparted by the plastic components, making it an other article of plastics under heading 3926.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 250,
+    "completion_tokens": 65,
+    "total_tokens": 315,
+    "cost": 0.000108,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000108,
+      "upstream_inference_prompt_cost": 3e-05,
+      "upstream_inference_completions_cost": 7.8e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DekaLLM",
+  "requested_at": "2026-10-10T02:24:34.612741+00:00",
+  "latency_s": 1.329,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360690",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "6702903500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600109-0dj4iP7e0tmkwzNToKbd",
+    "object": "chat.completion",
+    "created": 1791600109,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6702.90.0000\", \"reason\": \"The wreath is an article of artificial flowers made of polyester (textile) materials, classified as artificial flowers of materials other than plastics.\"}",
+          "refusal": null,
+          "reasoning": "Artificial flowers of plastics/textiles \u2014 wreath of artificial flowers. HTS 6702.10 covers artificial flowers of plastics; 6702.90 other. Polyester fabric flowers \u2192 6702.90.0000? Actually 6702.10 = of plastics, 6702.90 = of other materials. Textile flowers \u2192 6702.90.0000. But assembled with binding... CBP rulings classify wreaths of artificial flowers in 6702.90.0000? Some rulings: artificial wreaths of polyester flowers classified 6702.90.0000? Actually 6702.10.0000 is \"of plastics\". Polyester fabric is textile, so 6702.90.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Artificial flowers of plastics/textiles \u2014 wreath of artificial flowers. HTS 6702.10 covers artificial flowers of plastics; 6702.90 other. Polyester fabric flowers \u2192 6702.90.0000? Actually 6702.10 = of plastics, 6702.90 = of other materials. Textile flowers \u2192 6702.90.0000. But assembled with binding... CBP rulings classify wreaths of artificial flowers in 6702.90.0000? Some rulings: artificial wreaths of polyester flowers classified 6702.90.0000? Actually 6702.10.0000 is \"of plastics\". Polyester fabric is textile, so 6702.90.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 178,
+      "completion_tokens": 212,
+      "total_tokens": 390,
+      "cost": 0.000630125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000630125,
+        "upstream_inference_prompt_cost": 0.000100125,
+        "upstream_inference_completions_cost": 0.00053
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 162,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6702900000",
+  "predicted_reason": "The wreath is an article of artificial flowers made of polyester (textile) materials, classified as artificial flowers of materials other than plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 212,
+    "total_tokens": 390,
+    "cost": 0.000630125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000630125,
+      "upstream_inference_prompt_cost": 0.000100125,
+      "upstream_inference_completions_cost": 0.00053
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 162,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:41:49.337245+00:00",
+  "latency_s": 2.363,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

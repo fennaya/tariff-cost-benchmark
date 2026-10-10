@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361373",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "8419899585",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596260-HSs3TgDEIV1D4olLNz9G",
+    "object": "chat.completion",
+    "created": 1791596260,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a thermoelectric temperature control unit (chiller). The candidates are heading 8419 (machinery for temperature-change treatment of materials), heading 8418 (refrigerating equipment), and heading 9032 (automatic temperature regulating instruments).\n\nHeading 8418 covers \"other refrigerating or freezing equipment, electric or other; heat pumps.\" Subheading 8418.69 covers other refrigerating equipment, and 8418.69.01 is the likely 8-digit line. Thermoelectric (Peltier) chillers have been classified in 8418.69. The unit both heats and cools, so it functions as a heat pump or chiller in the 8418 sense. The remaining question is the 10-digit statistical suffix.\n\nFrom memory, 8418.69.0120 is \"Other: Liquid chillers\" (formerly 8418.69.0100). I believe the current HTS structure is 8418.69.01 \"Refrigerating or freezing equipment... Other\", with 8418.69.0120 \"Industrial process chillers\"? I can't verify the exact suffix. I recall 8418.69.0190 as \"Other\", and I think 8418.69.01 is \"Compression type\" with 8418.69.0120 as \"Other\". Given the uncertainty, I will go with 8418.69.0190.\n\nHeading 8419.89 is a plausible alternative, but I think 8418.69 fits better for a chiller that cools a circulating coolant.\n\n{\"hts_code\": \"8418.69.0190\", \"reason\": \"A thermoelectric (Peltier) recirculating coolant chiller/temperature control unit is other refrigerating equipment of heading 8418, classified in subheading 8418.69 as other.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 534,
+      "completion_tokens": 569,
+      "total_tokens": 1103,
+      "cost": 0.006758,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006758,
+        "upstream_inference_prompt_cost": 0.001068,
+        "upstream_inference_completions_cost": 0.00569
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8418690190",
+  "predicted_reason": "A thermoelectric (Peltier) recirculating coolant chiller/temperature control unit is other refrigerating equipment of heading 8418, classified in subheading 8418.69 as other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 534,
+    "completion_tokens": 569,
+    "total_tokens": 1103,
+    "cost": 0.006758,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006758,
+      "upstream_inference_prompt_cost": 0.001068,
+      "upstream_inference_completions_cost": 0.00569
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:40.794144+00:00",
+  "latency_s": 5.57,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

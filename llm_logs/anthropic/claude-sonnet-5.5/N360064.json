@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360064",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "7615107125",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596023-723y0zKbDRRahu9NKgd0",
+    "object": "chat.completion",
+    "created": 1791596023,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Disposable aluminum foil trays of foil not exceeding 0.2 mm thick are classified in heading 7615 as table, kitchen or other household articles of aluminum. The relevant subheading is 7615.10, which covers table, kitchen or other household articles and parts thereof, and pot scourers and scouring or polishing pads, gloves and the like. The 10-digit statistical suffix under 7615.10.20 is for cooking and kitchen ware, other than cast, and the other lines in the group are:\n\n- 7615.10.10: Cooking and kitchen ware, cast, enameled or porcelain-coated\n- 7615.10.20: Other cooking and kitchen ware, other than cast\n- 7615.10.30: Table ware...\n- 7615.10.50: Other, cast\n- 7615.10.71: Other, not cast, other\n\nI believe 7615.10.20 is split into 7615.10.2015 (cooking ware) and 7615.10.2025 (kitchenware). Disposable foil trays are often ruled under 7615.10.7130 (\"Other: Other: Other, ... \") but I recall that rulings on aluminum foil containers put them in 7615.10.7125 (\"Other: Not cast: Other: Household articles\"?). The CBP ruling on foil pans (e.g., N-series) usually gives 7615.10.7125 or 7615.10.7130... I'll go with 7615.10.7125.\n\n```json\n{\"hts_code\": \"7615.10.7125\", \"reason\": \"Disposable aluminum foil trays used for cooking, baking, storing and serving food are household/kitchen articles of aluminum, not cast, classified in heading 7615, subheading 7615.10.\"}\n```\n\nCorrecting to output only the JSON:\n\n{\"hts_code\": \"7615.10.7125\", \"reason\": \"Disposable aluminum foil trays used for cooking, baking, storing and serving food are household/kitchen articles of aluminum, not cast, classified in heading 7615, subheading 7615.10.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 663,
+      "total_tokens": 1116,
+      "cost": 0.007536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007536,
+        "upstream_inference_prompt_cost": 0.000906,
+        "upstream_inference_completions_cost": 0.00663
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615107125",
+  "predicted_reason": "Disposable aluminum foil trays used for cooking, baking, storing and serving food are household/kitchen articles of aluminum, not cast, classified in heading 7615, subheading 7615.10.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 453,
+    "completion_tokens": 663,
+    "total_tokens": 1116,
+    "cost": 0.007536,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007536,
+      "upstream_inference_prompt_cost": 0.000906,
+      "upstream_inference_completions_cost": 0.00663
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:44.222365+00:00",
+  "latency_s": 5.809,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358452",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "8527214080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595612-RBV12K3u1CR8O7GmCw82",
+    "object": "chat.completion",
+    "created": 1791595612,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a Pioneer MVH-S230BT digital media receiver, a car radio with AM/FM tuner that also plays sound from USB devices. It falls under heading 8527.21, which covers radio-broadcast receivers that can operate without an external power source, of a kind used in motor vehicles, combined with sound recording or reproducing apparatus. A receiver that plays back from USB flash memory is generally treated as combined with sound reproducing apparatus.\n\nHeading 8527.21 has two subheadings: 8527.21.10 for radio receivers combined with laser-read systems, and 8527.21.20 for those combined with a cassette player. The remainder is 8527.21.40 or 8527.21.60, with 8527.21.40 being the one I recall as \"other.\" For the statistical suffix I am uncertain, but I believe the 8527.21.40 line carries 00 as its suffix.\n\nIn the 2012 schedule, 8527.21.10 was \"Incorporating a tape player\" and 8527.21.15 was \"Incorporating a laser-read system.\" The line 8527.21.20 was \"Other, combined with sound recording or reproducing apparatus\" (it replaced the older .40 and .60 lines). I recall CBP rulings for similar Pioneer units classifying them under 8527.21.4000 or 8527.21.6000, and later under 8527.21.2000 or 8527.21.4000. The current schedule has these lines:\n- 8527.21.20: Incorporating a tape player\n- 8527.21.40: Incorporating a laser-read system\n- 8527.21.60: Other, with 8527.21.6000 as the statistical line\n\nA USB-only unit with no laser-read system and no tape player would fall in the \"Other\" line, so I'll go with that.\n\n{\"hts_code\": \"8527.21.6000\", \"reason\": \"A car AM/FM radio receiver combined with sound reproducing apparatus (USB/Bluetooth playback), with no tape player or laser-read system, falls under 8527.21 in the 'other' line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 301,
+      "completion_tokens": 667,
+      "total_tokens": 968,
+      "cost": 0.007272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007272,
+        "upstream_inference_prompt_cost": 0.000602,
+        "upstream_inference_completions_cost": 0.00667
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8527216000",
+  "predicted_reason": "A car AM/FM radio receiver combined with sound reproducing apparatus (USB/Bluetooth playback), with no tape player or laser-read system, falls under 8527.21 in the 'other' line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 301,
+    "completion_tokens": 667,
+    "total_tokens": 968,
+    "cost": 0.007272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007272,
+      "upstream_inference_prompt_cost": 0.000602,
+      "upstream_inference_completions_cost": 0.00667
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:53.026516+00:00",
+  "latency_s": 5.854,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

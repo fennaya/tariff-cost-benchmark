@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361401",
+  "rulingDate": "2026-05-22T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596272-bhQ36LH7jce8RWQxB3JL",
+    "object": "chat.completion",
+    "created": 1791596272,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description is ambiguous. It reads like a set (pants plus a scarf), possibly sold together as a costume or a \"disco\" outfit. Under GRI 3(b), if it were a retail set, the pants would likely give the set its essential character. The set rule for apparel in Chapter 62 covers suits and ensembles, but a scarf is not part of the \"ensemble\" definition, so it is not clearly one. Pants and a scarf would normally be classified separately.\n\nI have to give a single code, so I'll pick the pants. The fiber content and the wearer are unknown. I'll assume women's synthetic trousers: 6204.63 covers women's trousers of synthetic fibers. The statistical suffix 6204.63.3510 is for women's trousers and breeches of synthetic fibers, other, other. I'm not certain of that suffix, so I'll use 6204.63.3510, which is commonly used for such pants.\n\n{\"hts_code\": \"6204.63.3510\", \"reason\": \"The pants are the essential-character component of the pants-and-scarf grouping, and since fiber content is unstated I assumed women's synthetic-fiber trousers under heading 6204; the scarf would otherwise be classified separately in heading 6214 or 6215.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 405,
+      "total_tokens": 570,
+      "cost": 0.00438,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00438,
+        "upstream_inference_prompt_cost": 0.00033,
+        "upstream_inference_completions_cost": 0.00405
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6204633510",
+  "predicted_reason": "The pants are the essential-character component of the pants-and-scarf grouping, and since fiber content is unstated I assumed women's synthetic-fiber trousers under heading 6204; the scarf would otherwise be classified separately in heading 6214 or 6215.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 165,
+    "completion_tokens": 405,
+    "total_tokens": 570,
+    "cost": 0.00438,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00438,
+      "upstream_inference_prompt_cost": 0.00033,
+      "upstream_inference_completions_cost": 0.00405
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:52.286603+00:00",
+  "latency_s": 4.639,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

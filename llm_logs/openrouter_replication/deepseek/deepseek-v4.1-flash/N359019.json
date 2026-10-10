@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N359019",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "6210505555",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598861-NpaxKwKZIOedmhDuijGi",
+    "object": "chat.completion",
+    "created": 1791598861,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.33.0030\", \"reason\": \"The garment is a unisex vest made of nylon woven fabric with a visible polyurethane coating on the inner surface, classifiable under heading 6211 as other garments of man-made fibers, specifically under subheading 6211.33.0030 for vests.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 230,
+      "completion_tokens": 74,
+      "total_tokens": 304,
+      "cost": 7.86e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.86e-05,
+        "upstream_inference_prompt_cost": 4.6e-06,
+        "upstream_inference_completions_cost": 7.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211330030",
+  "predicted_reason": "The garment is a unisex vest made of nylon woven fabric with a visible polyurethane coating on the inner surface, classifiable under heading 6211 as other garments of man-made fibers, specifically under subheading 6211.33.0030 for vests.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 230,
+    "completion_tokens": 74,
+    "total_tokens": 304,
+    "cost": 7.86e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 7.86e-05,
+      "upstream_inference_prompt_cost": 4.6e-06,
+      "upstream_inference_completions_cost": 7.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T02:21:02.208532+00:00",
+  "latency_s": 5.102,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

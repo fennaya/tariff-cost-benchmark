@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357786",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "7318210090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599694-HQO3YZrFpQuSaqNxYMer",
+    "object": "chat.completion",
+    "created": 1791599694,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7318.22.0000\", \"reason\": \"CBP rulings classify stainless-steel Belleville washers as lock/other washers of heading 7318 (subheading 7318.22), not as springs, since they function as washers under nuts or screw heads despite their conical spring-like form.\"}",
+          "refusal": null,
+          "reasoning": "Belleville washers were classified as washers, not springs \u2014 7318.22.00 (other washers). Actually CBP rulings classified Belleville washers under 7318.22.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Belleville washers were classified as washers, not springs \u2014 7318.22.00 (other washers). Actually CBP rulings classified Belleville washers under 7318.22.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 125,
+      "total_tokens": 357,
+      "cost": 0.000609048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000609048,
+        "upstream_inference_prompt_cost": 9.048e-06,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 57,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7318220000",
+  "predicted_reason": "CBP rulings classify stainless-steel Belleville washers as lock/other washers of heading 7318 (subheading 7318.22), not as springs, since they function as washers under nuts or screw heads despite their conical spring-like form.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 125,
+    "total_tokens": 357,
+    "cost": 0.000609048,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000609048,
+      "upstream_inference_prompt_cost": 9.048e-06,
+      "upstream_inference_completions_cost": 0.0006
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 57,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:55.146853+00:00",
+  "latency_s": 1.533,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

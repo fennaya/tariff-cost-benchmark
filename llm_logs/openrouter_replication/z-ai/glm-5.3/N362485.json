@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362485",
+  "rulingDate": "2026-06-26T00:00:00",
+  "true_code": "4420190000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600327-bzknova3vmzrYwc6cVrM",
+    "object": "chat.completion",
+    "created": 1791600327,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4420.99.8000\", \"reason\": \"MDF-cut decorative animal-shaped blocks printed with images are ornamental wood articles of fiberboard, classifiable in HTSUS 4420.99.8000.\"}",
+          "refusal": null,
+          "reasoning": "MDF decorative blocks \u2014 wood articles of MDF, printed. Likely 4419? No, that's tableware. Decorative wood articles: 4420.99? 4420 is wooden articles of furniture? Actually 4420: wood marquetry; statuettes and other ornaments. MDF is chapter 44 (wood). 4420.90? Ornaments of wood: 4420.99.8000? Statuettes/ornaments: 4420.99.8000? Actually 4420.99 covers other, including of other wood... 4420.99.8000? Let me recall: 4420.90.9000 old. Current: 4420.99.8000 \"Other\" ornaments? I'll answer 4420.99.8000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "MDF decorative blocks \u2014 wood articles of MDF, printed. Likely 4419? No, that's tableware. Decorative wood articles: 4420.99? 4420 is wooden articles of furniture? Actually 4420: wood marquetry; statuettes and other ornaments. MDF is chapter 44 (wood). 4420.90? Ornaments of wood: 4420.99.8000? Statuettes/ornaments: 4420.99.8000? Actually 4420.99 covers other, including of other wood... 4420.99.8000? Let me recall: 4420.90.9000 old. Current: 4420.99.8000 \"Other\" ornaments? I'll answer 4420.99.8000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 187,
+      "completion_tokens": 240,
+      "total_tokens": 427,
+      "cost": 0.001159229,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001159229,
+        "upstream_inference_prompt_cost": 7.229e-06,
+        "upstream_inference_completions_cost": 0.001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 194,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4420998000",
+  "predicted_reason": "MDF-cut decorative animal-shaped blocks printed with images are ornamental wood articles of fiberboard, classifiable in HTSUS 4420.99.8000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 187,
+    "completion_tokens": 240,
+    "total_tokens": 427,
+    "cost": 0.001159229,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001159229,
+      "upstream_inference_prompt_cost": 7.229e-06,
+      "upstream_inference_completions_cost": 0.001152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 194,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:45:28.002605+00:00",
+  "latency_s": 1.983,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

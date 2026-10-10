@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357315",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "9403910080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599616-rCXj0Ruz9DnrJGWEvwW1",
+    "object": "chat.completion",
+    "created": 1791599616,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4411.99.9000\", \"reason\": \"Pre-cut, pre-drilled, hinge-bored, painted and veneered MDF cabinet doors and drawer fronts are worked articles of medium-density fiberboard, classified as other fiberboard under heading 4411 rather than as furniture parts or builders' joinery.\"}",
+          "refusal": null,
+          "reasoning": "MDF doors for furniture, not complete furniture \u2014 classified as builders' joinery/carpentry of wood, MDF: 4418.99? Actually MDF articles: 4411.99? Cabinet doors of MDF \u2014 heading 4411 (MDF) articles thereof? 4411 covers board itself; worked doors fall under 4418? 4418 includes builders' joinery of wood... but MDF doors classified in 4411.99.90? CBP rulings classify MDF cabinet doors under 4411.99.90 (other fiberboard). Yes, 4411.99.9000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "MDF doors for furniture, not complete furniture \u2014 classified as builders' joinery/carpentry of wood, MDF: 4418.99? Actually MDF articles: 4411.99? Cabinet doors of MDF \u2014 heading 4411 (MDF) articles thereof? 4411 covers board itself; worked doors fall under 4418? 4418 includes builders' joinery of wood... but MDF doors classified in 4411.99.90? CBP rulings classify MDF cabinet doors under 4411.99.90 (other fiberboard). Yes, 4411.99.9000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 328,
+      "completion_tokens": 215,
+      "total_tokens": 543,
+      "cost": 0.00094892,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00094892,
+        "upstream_inference_prompt_cost": 4.592e-05,
+        "upstream_inference_completions_cost": 0.000903
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 141,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4411999000",
+  "predicted_reason": "Pre-cut, pre-drilled, hinge-bored, painted and veneered MDF cabinet doors and drawer fronts are worked articles of medium-density fiberboard, classified as other fiberboard under heading 4411 rather than as furniture parts or builders' joinery.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 328,
+    "completion_tokens": 215,
+    "total_tokens": 543,
+    "cost": 0.00094892,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00094892,
+      "upstream_inference_prompt_cost": 4.592e-05,
+      "upstream_inference_completions_cost": 0.000903
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 141,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:33:36.237812+00:00",
+  "latency_s": 3.986,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

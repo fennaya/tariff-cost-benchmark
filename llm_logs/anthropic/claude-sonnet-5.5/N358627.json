@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358627",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8306290000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595638-ATgHNUDf5wgs8M7UrORn",
+    "object": "chat.completion",
+    "created": 1791595638,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This reads like a CBP ruling on coin-cards. The composite good would be classified by the component giving essential character. The likely candidates are:\n\n- Medals of base metal: 7117.19 (imitation jewelry) or 9705 (collectors' pieces). Heading 9705 covers collections and collectors' pieces of numismatic interest, but modern commemorative medallions are not generally of numismatic interest. Non-legal-tender coins would fall under 7117 or 8306.\n- Heading 8306: statuettes and other ornaments of base metal. 8306.29 covers other statuettes and ornaments, and 8306.30 covers photograph frames.\n- Heading 4911: printed matter, other printed pictures. 4911.99 is possible if the card gives the essential character.\n\nI recall that CBP ruling N301... classified a similar \"coin card\" in 4911.99.80 as printed matter, with the educational card giving the essential character. Another possibility is 9705.00.0090 as a collectors' piece. Since the product is sold as educational, with the card carrying the image and text, I believe the ruling went to 9705.00.0090 or to 8306.29.00.00. I can't confirm which.\n\nWeighing the options: the coin is the principal item, and a zinc alloy medallion would go to 7117.19.9000 as imitation jewelry only if it were worn, which this is not. It is an ornament for collecting, so 8306.29.0000 seems plausible. Chapter 97 note 1 excludes 9705 for items of numismatic interest only if they are legal tender or similar. Here, the products are marketed as collectible souvenirs, not as numismatic items. I'll go with 8306.29.0000, which has statistical suffix 8306.29.0000 (other, not plated with precious metal).\n\n```json\n{\"hts_code\": \"8306.29.0000\", \"reason\": \"The zinc alloy commemorative medallion encapsulated in a plastic card is a composite good whose essential character comes from the base-metal ornament, so it falls under other base-metal ornaments of heading 8306.\"}\n```\n\nActually, to meet the format requirement, here is the final answer only:\n\n{\"hts_code\": \"8306.29.0000\", \"reason\": \"The zinc alloy commemorative medallion encapsulated in a plastic card is a composite good whose essential character comes from the base-metal ornament, so it falls under other base-metal ornaments of heading 8306.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 441,
+      "completion_tokens": 794,
+      "total_tokens": 1235,
+      "cost": 0.008822,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008822,
+        "upstream_inference_prompt_cost": 0.000882,
+        "upstream_inference_completions_cost": 0.00794
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8306290000",
+  "predicted_reason": "The zinc alloy commemorative medallion encapsulated in a plastic card is a composite good whose essential character comes from the base-metal ornament, so it falls under other base-metal ornaments of heading 8306.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 441,
+    "completion_tokens": 794,
+    "total_tokens": 1235,
+    "cost": 0.008822,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008822,
+      "upstream_inference_prompt_cost": 0.000882,
+      "upstream_inference_completions_cost": 0.00794
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:19.180459+00:00",
+  "latency_s": 7.443,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359022",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "1509202030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595717-RPIzekdcUmI11d86PDEJ",
+    "object": "chat.completion",
+    "created": 1791595717,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Extra virgin olive oil falls in HTSUS heading 1509, \"Olive oil and its fractions, whether or not refined, but not chemically modified.\" Virgin olive oil goes in subheading 1509.10 and is split by packaging size. The break is whether the container holds more or less than 18 kg. A 750 ml tin is under 18 kg, so it takes the \"in containers holding not over 18 kg\" line.\n\nUnder the 2022 HTSUS structure, the subheadings are:\n- 1509.20: extra virgin olive oil\n- 1509.30: virgin olive oil\n- 1509.40: other virgin olive oils\n- 1509.90: other\n\nI recall 1509.10 being \"Virgin\" with 1509.10.20 for lampante, but the later structure of 1509.20 for extra virgin and 1509.30 for virgin is the one I am relying on. Under that structure, the statistical breakouts for extra virgin are:\n- 1509.20.40: in containers holding not over 18 kg\n- 1509.20.80: other\n\nThe 10-digit codes under the 1509.20.40 line are 1509.20.4020 and 1509.20.4040. I am unsure of the exact split. I believe 1509.20.40 has 10-digit codes 1509.20.4000 or similar, so I will go with 1509.20.4000.\n\n```json\n{\"hts_code\": \"1509.20.4000\", \"reason\": \"Cold-pressed, unrefined extra virgin olive oil imported in a 750 ml tin (container not over 18 kg) falls under heading 1509, extra virgin subheading 1509.20, in the not-over-18-kg line.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 276,
+      "completion_tokens": 544,
+      "total_tokens": 820,
+      "cost": 0.005992,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005992,
+        "upstream_inference_prompt_cost": 0.000552,
+        "upstream_inference_completions_cost": 0.00544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1509204000",
+  "predicted_reason": "Cold-pressed, unrefined extra virgin olive oil imported in a 750 ml tin (container not over 18 kg) falls under heading 1509, extra virgin subheading 1509.20, in the not-over-18-kg line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 276,
+    "completion_tokens": 544,
+    "total_tokens": 820,
+    "cost": 0.005992,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005992,
+      "upstream_inference_prompt_cost": 0.000552,
+      "upstream_inference_completions_cost": 0.00544
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:36.478164+00:00",
+  "latency_s": 6.467,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363001",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8426190000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596612-2ZValzzK6Ar3oULfKcgA",
+    "object": "chat.completion",
+    "created": 1791596612,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a self-propelled machine on crawler tracks that lifts and carries track sections. The candidate headings are 8426 (derricks, cranes, works-truck, self-propelled), 8427 (fork-lift trucks and other works trucks fitted with lifting or handling equipment), 8428 (other lifting/handling machinery), and 8705 (special purpose motor vehicles). Heading 8705 covers motor vehicles, which typically means wheeled vehicles, so I set it aside.\n\nHeading 8426 includes subheading 8426.30 for portal or pedestal jib cranes, and 8426.19 for other overhead travelling cranes, transporter cranes, gantry cranes, bridge cranes and mobile lifting frames. This machine straddles the track and lifts panels beneath its frame, so it works like a gantry or portal frame. 8426.41 covers other machinery that is self-propelled on tires, and 8426.49 covers other self-propelled machinery. A crawler-mounted unit falls under 8426.49.\n\nCBP rulings on the TRACS describe it as a self-propelled, crawler-mounted lifting machine and I recall it was classified in 8426.49.0000. Subheading 8426.49.00 has statistical suffixes, with 8426.49.0000 as a single line. I'm going with that.\n\n{\"hts_code\": \"8426.49.0000\", \"reason\": \"A self-propelled, crawler-mounted straddle lifting machine that lifts and carries track panels is other self-propelled lifting machinery of heading 8426, not on tires, so it falls under 8426.49.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 529,
+      "total_tokens": 1110,
+      "cost": 0.006452,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006452,
+        "upstream_inference_prompt_cost": 0.001162,
+        "upstream_inference_completions_cost": 0.00529
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8426490000",
+  "predicted_reason": "A self-propelled, crawler-mounted straddle lifting machine that lifts and carries track panels is other self-propelled lifting machinery of heading 8426, not on tires, so it falls under 8426.49.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 581,
+    "completion_tokens": 529,
+    "total_tokens": 1110,
+    "cost": 0.006452,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006452,
+      "upstream_inference_prompt_cost": 0.001162,
+      "upstream_inference_completions_cost": 0.00529
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:33.201776+00:00",
+  "latency_s": 5.647,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

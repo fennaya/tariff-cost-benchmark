@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358655",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8306290000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595643-c9oBzsjYQBBY8hBThQct",
+    "object": "chat.completion",
+    "created": 1791595643,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on decorative Christmas items made of iron frames with LED lights. Festive articles fall under heading 9505, and Christmas articles are in 9505.10. Candidates are 9505.10.25 (other Christmas ornaments and articles, of plastics), 9505.10.15 (glass), 9505.10.35 (of other materials), and 9505.10.5000 (other).\n\nCurrent HTSUS structure:\n- 9505.10.10 is Christmas tree ornaments, of glass.\n- 9505.10.15 is other Christmas ornaments, of glass.\n- 9505.10.25 is other, of plastics.\n- 9505.10.35 is artificial Christmas trees.\n- 9505.10.50 is other.\n\nThe 9505.10.25 line (plastics) is also used for non-ornament articles of plastics. Here the essential character comes from the iron frame, a metal article, so it falls under \"other\" at 9505.10.5000.\n\nPossibly the ruling treated the item as a Christmas article of other materials, which is 9505.10.5000.\n\n{\"hts_code\": \"9505.10.5000\", \"reason\": \"Iron-framed decorative Christmas-themed cookie-cutter shaped articles with incidental LED lighting are festive articles of heading 9505, classified as Christmas articles of other materials (not plastic or glass).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 449,
+      "total_tokens": 901,
+      "cost": 0.005394,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005394,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.00449
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505105000",
+  "predicted_reason": "Iron-framed decorative Christmas-themed cookie-cutter shaped articles with incidental LED lighting are festive articles of heading 9505, classified as Christmas articles of other materials (not plastic or glass).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 452,
+    "completion_tokens": 449,
+    "total_tokens": 901,
+    "cost": 0.005394,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005394,
+      "upstream_inference_prompt_cost": 0.000904,
+      "upstream_inference_completions_cost": 0.00449
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:23.796238+00:00",
+  "latency_s": 4.229,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N364227",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "6307101090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596756-DW0nY2JeeWVMuIM9T3lE",
+    "object": "chat.completion",
+    "created": 1791596756,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description is very sparse: a cloth measuring 17 \u00d7 11 inches with sewn edges. It does not state the material or the use. The likely candidates are cleaning or dusting cloths, such as microfiber cloths, or dishcloths.\n\nMicrofiber cleaning cloths are typically knit polyester/polyamide. They would fall under 6307.10 (floor cloths, dishcloths, dusters and similar cleaning cloths). Within that heading, 6307.10.20 covers dishcloths, and 6307.10.90 covers other items. Subheading 6307.10.20.00 is \"Dishcloths, floorcloths, dust cloths...\" I recall 6307.10.10 as \"Of cotton: Dishcloths\", and 6307.10.20 as \"Floor cloths, dishcloths, dusters and similar cleaning cloths: Of cotton\"? I'm not certain.\n\nMy best recollection of the HTSUS structure is:\n- 6307.10.10 Dishcloths and polishing cloths, of cotton: 6307.10.10.00\n- 6307.10.20 Shop towels: 6307.10.20.00\n- 6307.10.90 Other: 6307.10.90.00. Possibly with statistical suffixes such as 6307.10.9089 or 6307.10.9090.\n\nI am settling on 6307.10.9090 as the general \"other\" cleaning cloth number, since the material is unknown.\n\n```json\n{\"hts_code\": \"6307.10.9090\", \"reason\": \"A hemmed (sewn-edge) rectangular cloth of unspecified material is most likely a made-up cleaning cloth (floor cloth, dishcloth, duster or similar), classified in the 'other' provision of heading 6307.10.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 166,
+      "completion_tokens": 575,
+      "total_tokens": 741,
+      "cost": 0.006082,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006082,
+        "upstream_inference_prompt_cost": 0.000332,
+        "upstream_inference_completions_cost": 0.00575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6307109090",
+  "predicted_reason": "A hemmed (sewn-edge) rectangular cloth of unspecified material is most likely a made-up cleaning cloth (floor cloth, dishcloth, duster or similar), classified in the 'other' provision of heading 6307.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 166,
+    "completion_tokens": 575,
+    "total_tokens": 741,
+    "cost": 0.006082,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006082,
+      "upstream_inference_prompt_cost": 0.000332,
+      "upstream_inference_completions_cost": 0.00575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:57.176244+00:00",
+  "latency_s": 5.466,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

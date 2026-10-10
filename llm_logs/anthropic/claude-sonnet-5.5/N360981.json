@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360981",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "6912004500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596185-7yFaQtTehoneMso8kXOY",
+    "object": "chat.completion",
+    "created": 1791596185,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Ceramic cups of dolomite (a type of earthenware/stoneware) fall under heading 6912, \"Ceramic tableware, kitchenware, other household articles and toilet articles, other than of porcelain or china.\" The subheading is 6912.00 for items not of porcelain. Within 6912.00, the breakdown is:\n- 6912.00.10 \u2013 Tableware and kitchenware: of ceramic, other than... Specifically, 6912.00.20 is \"Cooking ware\"; 6912.00.21/23/25... cover household items.\n- 6912.00.40 is \"Other: Tableware and kitchenware: Other\" (the 6912.00.4x series covers \"Other\" ware, with .42, .44, .46, .48 for specific kinds).\n\nThe current HTS structure under 6912.00:\n- 6912.00.10 Articles of a kind used for table, kitchen, or other household purposes... of ceramic with other than... \n- 6912.00.2x Cooking ware\n- 6912.00.3x Tableware and kitchenware, other: 6912.00.35 \u2013 Other: Ceramic tableware of stoneware...\n- 6912.00.39/.41/.42/.44/.45/.46/.48 \u2013 Other: Other: Cups and saucers etc.\n\nThe commonly cited code for mugs and cups of earthenware is 6912.00.44 (\"Other: Other: Mugs and other steins\") or 6912.00.4810 (\"Other: Other: Other: Other\"). Based on that, 6912.00.44 covers \"Mugs and other steins\" and is the best match for a handled cup. In 6912.00.44 the statistical suffix 00 applies. Another candidate is 6912.00.4800 for other cups. Because the item has a handle and is a cup of this size, it is a mug, so I'll choose 6912.00.4400.\n\n```json\n{\"hts_code\": \"6912.00.4400\", \"reason\": \"Handled dolomite ceramic drinking cups (mugs) are non-porcelain ceramic tableware of heading 6912, classified as mugs and other steins.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 686,
+      "total_tokens": 1077,
+      "cost": 0.007642,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007642,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.00686
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6912004400",
+  "predicted_reason": "Handled dolomite ceramic drinking cups (mugs) are non-porcelain ceramic tableware of heading 6912, classified as mugs and other steins.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 686,
+    "total_tokens": 1077,
+    "cost": 0.007642,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007642,
+      "upstream_inference_prompt_cost": 0.000782,
+      "upstream_inference_completions_cost": 0.00686
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:25.911638+00:00",
+  "latency_s": 6.324,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

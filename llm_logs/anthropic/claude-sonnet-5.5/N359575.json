@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359575",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "8428900390",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595870-0FkuKJBbXBz8B3IOpoa9",
+    "object": "chat.completion",
+    "created": 1791595870,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This matches a CBP ruling on the Barrier Transfer Machine (Lindsay Transportation Solutions' MOOVOP). I recall the classification as heading 8705 (special purpose motor vehicles) versus 8479 or 8426. The machine is self-propelled and cannot be used on public highways. Heading 8705 covers special purpose motor vehicles other than those for passenger or goods transport, and the Note to Section XVII and the heading 8704 notes address off-highway vehicles. Heading 8705 covers crane lorries, mobile cranes, fire fighting vehicles, concrete mixer lorries, and similar, so a barrier transfer machine could fit as \"other\" under 8705.90.\n\nI believe the CBP ruling (HQ H298407, or a related ruling) classified it under 8705.90.7500, hmm, but there is also the possibility of 8479.89.9599 as machinery with individual functions. The vehicle is self-propelled with an engine and steering, and Chapter 87 covers vehicles that are self-propelled on wheels. Since it has an open frame and requires operators, heading 8705 is plausible. However, EN 87.05 excludes work-trucks of heading 8709 and self-propelled machines of 8429 or 8426. Heading 8426 covers lifting machinery, and 8426.41 covers other self-propelled machinery on tires. A barrier transfer machine that lifts and moves barriers is lifting/handling machinery, but 8705 is the more likely CBP outcome. I'll go with 8705.90.7500, though 8705.90.5000 is the other candidate.\n\n{\"hts_code\": \"8705.90.7500\", \"reason\": \"A self-propelled, off-highway special purpose motor vehicle that lifts and transfers concrete barriers falls under heading 8705 as an 'other' special purpose motor vehicle.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 532,
+      "completion_tokens": 618,
+      "total_tokens": 1150,
+      "cost": 0.007244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007244,
+        "upstream_inference_prompt_cost": 0.001064,
+        "upstream_inference_completions_cost": 0.00618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8705907500",
+  "predicted_reason": "A self-propelled, off-highway special purpose motor vehicle that lifts and transfers concrete barriers falls under heading 8705 as an 'other' special purpose motor vehicle.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 532,
+    "completion_tokens": 618,
+    "total_tokens": 1150,
+    "cost": 0.007244,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007244,
+      "upstream_inference_prompt_cost": 0.001064,
+      "upstream_inference_completions_cost": 0.00618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:11.146827+00:00",
+  "latency_s": 6.426,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

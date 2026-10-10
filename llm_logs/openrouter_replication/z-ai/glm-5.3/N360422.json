@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360422",
+  "rulingDate": "2026-04-30T00:00:00",
+  "true_code": "2008999195",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600076-U6Ys59sonTKSBjoMFiFk",
+    "object": "chat.completion",
+    "created": 1791600076,
+    "model": "z-ai/glm-5.3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2005.99.9700\", \"reason\": \"Fried taro root chips are other vegetables prepared or preserved otherwise than by vinegar or acetic acid, not frozen, classified as other vegetables in subheading 2005.99.97.\"}",
+          "refusal": null,
+          "reasoning": "Taro chips \u2014 prepared vegetables, other vegetables, taro \u2014 2005.99 \u2014 frozen? No, otherwise prepared. 2005.99.9700? Taro... likely 2005.99.9700 (other vegetables, other). Actually taro chips rulings cite 2005.99.97.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Taro chips \u2014 prepared vegetables, other vegetables, taro \u2014 2005.99 \u2014 frozen? No, otherwise prepared. 2005.99.9700? Taro... likely 2005.99.9700 (other vegetables, other). Actually taro chips rulings cite 2005.99.97.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 233,
+      "completion_tokens": 130,
+      "total_tokens": 363,
+      "cost": 0.0004491,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004491,
+        "upstream_inference_prompt_cost": 0.0001631,
+        "upstream_inference_completions_cost": 0.000286
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 69,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2005999700",
+  "predicted_reason": "Fried taro root chips are other vegetables prepared or preserved otherwise than by vinegar or acetic acid, not frozen, classified as other vegetables in subheading 2005.99.97.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 233,
+    "completion_tokens": 130,
+    "total_tokens": 363,
+    "cost": 0.0004491,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004491,
+      "upstream_inference_prompt_cost": 0.0001631,
+      "upstream_inference_completions_cost": 0.000286
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 69,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Novita",
+  "requested_at": "2026-10-10T02:41:16.831205+00:00",
+  "latency_s": 3.017,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

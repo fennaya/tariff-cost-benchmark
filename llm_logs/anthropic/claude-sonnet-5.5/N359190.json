@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359190",
+  "rulingDate": "2026-03-13T00:00:00",
+  "true_code": "9403608093",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595775-EHM2gRD6dtPiEvKnRQ79",
+    "object": "chat.completion",
+    "created": 1791595775,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on display units (Essence, Elmwood, Cabico) for cabinetry, likely showroom displays of doors/cabinets. These are wood furniture, so the question is which furniture subheading applies.\n\nThe candidates are 9403.60.80 (other wooden furniture), 9403.30 (wooden office furniture), and 9403.50 (wooden bedroom furniture). Showroom displays used to present kitchen cabinet doors are probably not office or bedroom furniture, so 9403.60.80 is the best fit. The statistical suffix for 9403.60.80 is 9403.60.8081 (other wooden furniture, other). 9403.60.8093 also exists, as the 2022 suffix for \"other\" (while 8081 was used earlier).\n\nThe floor- and wall-mounted display units could also be treated as cabinets with shelves, but they are not kitchen cabinets since they are display units, so 9403.60.80 remains the best classification.\n\nI'll go with 9403.60.8081.\n\n{\"hts_code\": \"9403.60.8081\", \"reason\": \"Floor and wall mounted wooden display units with shelves and drawers are other wooden furniture of heading 9403, falling under subheading 9403.60.80.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 363,
+      "completion_tokens": 410,
+      "total_tokens": 773,
+      "cost": 0.004826,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004826,
+        "upstream_inference_prompt_cost": 0.000726,
+        "upstream_inference_completions_cost": 0.0041
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403608081",
+  "predicted_reason": "Floor and wall mounted wooden display units with shelves and drawers are other wooden furniture of heading 9403, falling under subheading 9403.60.80.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 410,
+    "total_tokens": 773,
+    "cost": 0.004826,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004826,
+      "upstream_inference_prompt_cost": 0.000726,
+      "upstream_inference_completions_cost": 0.0041
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:35.799486+00:00",
+  "latency_s": 4.324,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

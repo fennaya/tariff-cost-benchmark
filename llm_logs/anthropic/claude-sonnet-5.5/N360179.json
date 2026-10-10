@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360179",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "9008501000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596042-Gsv9JdnlMfqfk1HcsLIa",
+    "object": "chat.completion",
+    "created": 1791596042,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a Disney tracing projector set, likely a \"Disney Princess Tracing Projector\" or similar. Such art sets for children are typically classified as toys in a set (GRI 3(b)) under heading 9503, or as drawing sets under heading 9023, or as a projector under 9008.\n\nMy recollection is that CBP has classified similar projection art sets, where the projector provides play value for drawing, as \"other toys\" under 9503.00.00. The set is for children aged 3 and up, and its essential character is the projector with its images, so it is a toy. The subheading would be 9503.00.0073 (\"Other toys; other\"), since the 9503.00.00 line has specific statistical suffixes. In the current schedule, the \"Other\" toys line is 9503.00.0090, and 9503.00.0073 is \"Toys, not elsewhere specified: Other\" in older versions. I believe the current line for other toys is 9503.00.0073 (Other toys, put up in sets or otherwise; other), so I'll use that.\n\n```json\n{\"hts_code\": \"9503.00.0073\", \"reason\": \"The child-oriented projector and tracing set is classified as a toy set whose essential character is the play-value projector, so it falls under heading 9503 as other toys.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 296,
+      "completion_tokens": 418,
+      "total_tokens": 714,
+      "cost": 0.004772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004772,
+        "upstream_inference_prompt_cost": 0.000592,
+        "upstream_inference_completions_cost": 0.00418
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "The child-oriented projector and tracing set is classified as a toy set whose essential character is the play-value projector, so it falls under heading 9503 as other toys.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 296,
+    "completion_tokens": 418,
+    "total_tokens": 714,
+    "cost": 0.004772,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004772,
+      "upstream_inference_prompt_cost": 0.000592,
+      "upstream_inference_completions_cost": 0.00418
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:02.499457+00:00",
+  "latency_s": 4.957,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

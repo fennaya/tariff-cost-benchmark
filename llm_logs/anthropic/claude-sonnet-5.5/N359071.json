@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359071",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "8518908100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595733-9JNk55QHDfY24tt4NAg9",
+    "object": "chat.completion",
+    "created": 1791595733,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on ear cup subassemblies for aviation headsets. The headset itself classifies in 8518.30 (headphones and earphones). Parts of those articles go to 8518.90. The magnesium housings are parts suitable for use solely or principally with headphones, so 8518.90 applies, and the statistical suffix is 8518.90.8000 (\"Other\"). The 8518.90 subheadings are 8518.90.20 for parts of microphones and 8518.90.40 for parts of loudspeakers, with 8518.90.80 for other parts. I take 8518.90.8000 as the best fit, since the ear cup housings are not loudspeaker parts as such.\n\nSection XVI Note 1 excludes some items, but magnesium housings are not excluded. Magnesium articles of heading 8104 are also not applicable, because the parts provision is more specific and Section XVI governs.\n\n{\"hts_code\": \"8518.90.8000\", \"reason\": \"The magnesium ear cup and badge sub-assemblies are parts suitable for use solely or principally with headphones of subheading 8518.30, so they fall in the 'other parts' provision of 8518.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 537,
+      "completion_tokens": 388,
+      "total_tokens": 925,
+      "cost": 0.004954,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004954,
+        "upstream_inference_prompt_cost": 0.001074,
+        "upstream_inference_completions_cost": 0.00388
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8518908000",
+  "predicted_reason": "The magnesium ear cup and badge sub-assemblies are parts suitable for use solely or principally with headphones of subheading 8518.30, so they fall in the 'other parts' provision of 8518.90.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 537,
+    "completion_tokens": 388,
+    "total_tokens": 925,
+    "cost": 0.004954,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004954,
+      "upstream_inference_prompt_cost": 0.001074,
+      "upstream_inference_completions_cost": 0.00388
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:53.935442+00:00",
+  "latency_s": 4.272,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

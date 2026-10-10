@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359644",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "6406200000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595886-kjyg81axhiP77jCYvn0J",
+    "object": "chat.completion",
+    "created": 1791595886,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on DIY crochet shoe kits, a follow-on to N355798 (the DIY knit shoe kit). In N355798, I recall the kit was classified as unassembled footwear under GRI 2(a), in heading 6404 (footwear with outer soles of rubber/plastics and uppers of textile materials). Here the kits contain felt uppers components and outer soles, so the uppers are textile material (felt). Footwear with textile uppers would fall under 6404.19 (other), or 6404.11 for sports footwear.\n\nThe sole material is unknown. The ruling for the crochet kits likely classified them in 6404.19.9060 or similar. I recall 6404.19.90 as \"Footwear with outer soles of rubber or plastics, other,\" with statistical suffix 6404.19.9060 for other, women's. A kit with a felt upper may also be treated as slipper-type footwear, since 6404.19.20 covers \"Footwear designed to be worn over, or in lieu of, other footwear... 6404.19.20 is for protective.\" Slippers fall under 6404.19.35 (Other, house slippers, with textile uppers, valued...). If a kit has a felt upper and a sole, it may be a house shoe. Because the kits come in boot and shoe variations, I'll go with 6404.19.9060 (other, women's).\n\nFelt uppers with rubber/plastic soles and a textile material upper fit 6404.19.90. The 6404.19.90 line is \"Other,\" and I believe the statistical suffix 60 is for \"Other\" footwear for women.\n\n```json\n{\"hts_code\": \"6404.19.9060\", \"reason\": \"The unassembled DIY kits with felt/yarn textile uppers and outer soles are classified as footwear under GRI 2(a), in heading 6404 as other footwear with outer soles of rubber/plastics and textile uppers.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 411,
+      "completion_tokens": 625,
+      "total_tokens": 1036,
+      "cost": 0.007072,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007072,
+        "upstream_inference_prompt_cost": 0.000822,
+        "upstream_inference_completions_cost": 0.00625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6404199060",
+  "predicted_reason": "The unassembled DIY kits with felt/yarn textile uppers and outer soles are classified as footwear under GRI 2(a), in heading 6404 as other footwear with outer soles of rubber/plastics and textile uppers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 411,
+    "completion_tokens": 625,
+    "total_tokens": 1036,
+    "cost": 0.007072,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007072,
+      "upstream_inference_prompt_cost": 0.000822,
+      "upstream_inference_completions_cost": 0.00625
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:26.462492+00:00",
+  "latency_s": 6.849,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359859",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8704105060",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791597592-AQlvcKLqQkE08b9XzE0p",
+    "object": "chat.completion",
+    "created": 1791597592,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Dumpers designed for off-highway use fall under heading 8704, motor vehicles for the transport of goods. Subheading 8704.10 covers off-highway dumpers, and the applicable statistical breakdown is 8704.10.5020 or 8704.10.5050. Current HTS lists 8704.10.10 \"Off-highway dumpers, rear-dump type\" and 8704.10.50 \"Other,\" with statistical suffixes .0020 and .0050.\n\nThe two models have payloads of 6,000 kg and 3,500 kg, which are both under 18.1 metric tons. These dumpers tip their load forward, toward the driver. That makes them front-dump rather than rear-dump vehicles, so they belong under 8704.10.50 \"Other.\" Under that subheading, the statistical breakdown sets the dividing line by payload rather than by tare weight:\n\n- 8704.10.5020: payload under 18.1 metric tons\n- 8704.10.5050: payload 18.1 metric tons or more\n\nWith payloads well below 18.1 metric tons, both models fall under 8704.10.5020.\n\n{\"hts_code\": \"8704.10.5020\", \"reason\": \"These articulated front-tipping dumpers are designed for off-highway use with features such as no suspension, low speed and earth-moving tires, so they are off-highway dumpers of subheading 8704.10 (other than rear-dump) with a payload under 18.1 metric tons.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 936,
+      "completion_tokens": 472,
+      "total_tokens": 1408,
+      "cost": 0.013184,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.013184,
+        "upstream_inference_prompt_cost": 0.003744,
+        "upstream_inference_completions_cost": 0.00944
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8704105020",
+  "predicted_reason": "These articulated front-tipping dumpers are designed for off-highway use with features such as no suspension, low speed and earth-moving tires, so they are off-highway dumpers of subheading 8704.10 (other than rear-dump) with a payload under 18.1 metric tons.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 936,
+    "completion_tokens": 472,
+    "total_tokens": 1408,
+    "cost": 0.013184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.013184,
+      "upstream_inference_prompt_cost": 0.003744,
+      "upstream_inference_completions_cost": 0.00944
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:59:53.074365+00:00",
+  "latency_s": 6.705,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

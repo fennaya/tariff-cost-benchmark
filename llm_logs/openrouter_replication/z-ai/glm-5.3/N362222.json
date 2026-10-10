@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600284-YtB6K6qGULxdmJATzx4A",
+    "object": "chat.completion",
+    "created": 1791600284,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1515.90.2020\", \"reason\": \"Shea butter, a fixed vegetable fat not elsewhere specified or included, is classified under heading 1515 as other fixed vegetable fats and oils, with refined shea butter in subheading 1515.90.2020.\"}",
+          "refusal": null,
+          "reasoning": "Shea butter \u2014 vegetable fat, liquid or solid? Shea butter is a solid fat. HTS 1511.90 or shea nuts... Shea butter classified in 1511.90.00? Actually shea butter: heading 1511 (palm oil) no. Shea is a vegetable fat not elsewhere specified \u2014 1515.90.2020? Shea butter previously 1515.90.20. Current: 1515.90.2020, duty free.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Shea butter \u2014 vegetable fat, liquid or solid? Shea butter is a solid fat. HTS 1511.90 or shea nuts... Shea butter classified in 1511.90.00? Actually shea butter: heading 1511 (palm oil) no. Shea is a vegetable fat not elsewhere specified \u2014 1515.90.2020? Shea butter previously 1515.90.20. Current: 1515.90.2020, duty free.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 422,
+      "completion_tokens": 168,
+      "total_tokens": 590,
+      "cost": 0.00076468,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00076468,
+        "upstream_inference_prompt_cost": 5.908e-05,
+        "upstream_inference_completions_cost": 0.0007056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 102,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1515902020",
+  "predicted_reason": "Shea butter, a fixed vegetable fat not elsewhere specified or included, is classified under heading 1515 as other fixed vegetable fats and oils, with refined shea butter in subheading 1515.90.2020.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 168,
+    "total_tokens": 590,
+    "cost": 0.00076468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00076468,
+      "upstream_inference_prompt_cost": 5.908e-05,
+      "upstream_inference_completions_cost": 0.0007056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 102,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:44:45.165501+00:00",
+  "latency_s": 3.062,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

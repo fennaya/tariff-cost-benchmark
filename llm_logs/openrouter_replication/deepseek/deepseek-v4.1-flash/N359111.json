@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N359111",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "4420908000",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598881-AZnTN2JKr9cqr86q8e5X",
+    "object": "chat.completion",
+    "created": 1791598881,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4420.90.8000\", \"reason\": \"The product is a decorative hinged box made of medium density fiberboard (MDF), classifiable as other wooden articles of furniture or other wood articles under HTSUS heading 4420, specifically subheading 4420.90.8000 for other articles of wood.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 76,
+      "total_tokens": 366,
+      "cost": 8.18e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.18e-05,
+        "upstream_inference_prompt_cost": 5.8e-06,
+        "upstream_inference_completions_cost": 7.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4420908000",
+  "predicted_reason": "The product is a decorative hinged box made of medium density fiberboard (MDF), classifiable as other wooden articles of furniture or other wood articles under HTSUS heading 4420, specifically subheading 4420.90.8000 for other articles of wood.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 76,
+    "total_tokens": 366,
+    "cost": 8.18e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.18e-05,
+      "upstream_inference_prompt_cost": 5.8e-06,
+      "upstream_inference_completions_cost": 7.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T02:21:22.120596+00:00",
+  "latency_s": 5.206,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

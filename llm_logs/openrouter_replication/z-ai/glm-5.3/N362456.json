@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362456",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "8479899597",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600320-Pn2HJYsJRxg1LHm0S4s8",
+    "object": "chat.completion",
+    "created": 1791600320,
+    "model": "z-ai/glm-5.3",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7311.00.30\", \"reason\": \"These steel diaphragm/bladder pressure tanks for water pumping systems are pressure vessels of iron or steel, and the largest models (e.g., 85.9-gallon/325-liter SFN-US-325LV) exceed 100 liters capacity, classifying under HTSUS 7311.00.30.\"}",
+          "refusal": null,
+          "reasoning": "Pressure tanks for water systems \u2014 likely 8413.70? No, that's pumps. Tanks: 7311.00 (air pressure vessels of steel)? Diaphragm pressure tanks classified as pressure vessels of iron/steel, 7311.00.15? Actually 7311.00.60? Common ruling: well water pressure tanks \u2192 7311.00.15 (other, capacity...). 7311.00.15: \"Of a capacity of 50 liters or more but not exceeding 100 liters\"? Let me recall: 7311.00.10 compressed air vessels... 7311.00.15 other, 50L or more but not exceeding 100L; 7311.00.30 over 100L; 7311.00.60 less than 50L. Capacities 4.8\u201385.9 gal (18\u2013325 L). Largest model 325LV ~ 85.9 gal \u2248 325L \u2192 7311.00.30. But single code... choose 7311.00.30? Hmm, mixed. Rulings classify diaphragm pressure tanks under 7311.00.60 (under 50L) or 7311.00.30. Given range, pick 7311.00.30? Actually many tanks under 50L. I'll go 7311.00.30... safer: 7311.00.60? The largest capacity 85.9 gal exceeds 100L. I'll answer 7311.00.30.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Pressure tanks for water systems \u2014 likely 8413.70? No, that's pumps. Tanks: 7311.00 (air pressure vessels of steel)? Diaphragm pressure tanks classified as pressure vessels of iron/steel, 7311.00.15? Actually 7311.00.60? Common ruling: well water pressure tanks \u2192 7311.00.15 (other, capacity...). 7311.00.15: \"Of a capacity of 50 liters or more but not exceeding 100 liters\"? Let me recall: 7311.00.10 compressed air vessels... 7311.00.15 other, 50L or more but not exceeding 100L; 7311.00.30 over 100L; 7311.00.60 less than 50L. Capacities 4.8\u201385.9 gal (18\u2013325 L). Largest model 325LV ~ 85.9 gal \u2248 325L \u2192 7311.00.30. But single code... choose 7311.00.30? Hmm, mixed. Rulings classify diaphragm pressure tanks under 7311.00.60 (under 50L) or 7311.00.30. Given range, pick 7311.00.30? Actually many tanks under 50L. I'll go 7311.00.30... safer: 7311.00.60? The largest capacity 85.9 gal exceeds 100L. I'll answer 7311.00.30.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 388,
+      "completion_tokens": 436,
+      "total_tokens": 824,
+      "cost": 0.0024616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0024616,
+        "upstream_inference_prompt_cost": 0.0005432,
+        "upstream_inference_completions_cost": 0.0019184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 346,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "73110030",
+  "predicted_reason": "These steel diaphragm/bladder pressure tanks for water pumping systems are pressure vessels of iron or steel, and the largest models (e.g., 85.9-gallon/325-liter SFN-US-325LV) exceed 100 liters capacity, classifying under HTSUS 7311.00.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 436,
+    "total_tokens": 824,
+    "cost": 0.0024616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0024616,
+      "upstream_inference_prompt_cost": 0.0005432,
+      "upstream_inference_completions_cost": 0.0019184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 346,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Baidu",
+  "requested_at": "2026-10-10T02:45:21.052100+00:00",
+  "latency_s": 6.378,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

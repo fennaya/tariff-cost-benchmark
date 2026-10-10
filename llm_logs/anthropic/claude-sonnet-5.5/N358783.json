@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358783",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "9030333800",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595668-QRPdeu6zi11wOPqbN8Ew",
+    "object": "chat.completion",
+    "created": 1791595668,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP-style ruling. A regenerative AC grid emulator is a programmable power source that also measures voltage and current. The candidate headings are:\n\n- 8504.40 (static converters), where the unit would fall as a power supply or converter.\n- 9030 (instruments for measuring or checking electrical quantities). 9030.89 covers other instruments without a recording device. 9030.33 covers other instruments for measuring voltage, current, resistance or power, without a recording device.\n- 9030.40 and 9030.82 cover other instruments and semiconductor testing, but they do not fit here.\n\nThe description stresses that the unit has no recording device and measures voltage and current, which suggests CBP classified it in 9030.33. The 9030.33 subheadings are 9030.33.3400 (other, not specially provided for) and 9030.33.6700 (parts?). I recall that 9030.33.3400 is \"Other instruments and apparatus, without a recording device: Other: Other\". By contrast, an AC power source would normally be 8504.40.\n\nThe emphasis on the lack of recording capability points to Chapter 90. Although the function is primarily that of a power source, I'll go with 9030.33.3400 as the best fit.\n\n```json\n{\"hts_code\": \"9030.33.3400\", \"reason\": \"The AC emulator measures and monitors voltage and current of devices under test and has no recording device, so it falls in heading 9030 as an instrument for measuring electrical quantities (9030.33, other, without a recording device).\"}\n```\n\n{\"hts_code\": \"9030.33.3400\", \"reason\": \"The AC emulator measures and monitors voltage and current of devices under test and has no recording device, so it falls in heading 9030 as an instrument for measuring electrical quantities (9030.33, other, without a recording device).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 835,
+      "completion_tokens": 588,
+      "total_tokens": 1423,
+      "cost": 0.00755,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00755,
+        "upstream_inference_prompt_cost": 0.00167,
+        "upstream_inference_completions_cost": 0.00588
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9030333400",
+  "predicted_reason": "The AC emulator measures and monitors voltage and current of devices under test and has no recording device, so it falls in heading 9030 as an instrument for measuring electrical quantities (9030.33, other, without a recording device).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 835,
+    "completion_tokens": 588,
+    "total_tokens": 1423,
+    "cost": 0.00755,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00755,
+      "upstream_inference_prompt_cost": 0.00167,
+      "upstream_inference_completions_cost": 0.00588
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:48.685140+00:00",
+  "latency_s": 12.534,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363803",
+  "rulingDate": "2026-08-07T00:00:00",
+  "true_code": "8543704500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600449-PtFLTGvz5ZBMMByL9BEu",
+    "object": "chat.completion",
+    "created": 1791600449,
+    "model": "z-ai/glm-5.3",
+    "provider": "Crusoe",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8543.70.9960\", \"reason\": \"The crankshaft position sensor is an electrical device with no more specific heading, functioning as a transducer that converts magnetic field changes into electrical signals, classifiable as other electrical machines and apparatus in HTSUS 8543.70.\"}",
+          "refusal": null,
+          "reasoning": "CROSS ruling: crankshaft position sensor classified 8533.39.00? Actually similar ruling classified as 9030? Known NY ruling: CKP sensor 8533.39.0040? There's ruling classifying under 8543.70? I recall a ruling classifying crankshaft position sensor in 8533.39.00 (variable resistors?) No\u20148533 is resistors. Sensors often 9032? There's a ruling (NY N268343?) classifying CKP sensor under 8543.70.99? Actually I recall CROSS ruling classifying camshaft position sensor under 8543.70.9650? Hmm. Common answer: 8537? I think ruling classified it as 8543.70.9960 \"other electrical machines\". I'll go with 8543.70.9960.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "CROSS ruling: crankshaft position sensor classified 8533.39.00? Actually similar ruling classified as 9030? Known NY ruling: CKP sensor 8533.39.0040? There's ruling classifying under 8543.70? I recall a ruling classifying crankshaft position sensor in 8533.39.00 (variable resistors?) No\u20148533 is resistors. Sensors often 9032? There's a ruling (NY N268343?) classifying CKP sensor under 8543.70.99? Actually I recall CROSS ruling classifying camshaft position sensor under 8543.70.9650? Hmm. Common answer: 8537? I think ruling classified it as 8543.70.9960 \"other electrical machines\". I'll go with 8543.70.9960.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 249,
+      "completion_tokens": 266,
+      "total_tokens": 515,
+      "cost": 0.001519,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001519,
+        "upstream_inference_prompt_cost": 0.0003486,
+        "upstream_inference_completions_cost": 0.0011704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 195,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "The crankshaft position sensor is an electrical device with no more specific heading, functioning as a transducer that converts magnetic field changes into electrical signals, classifiable as other electrical machines and apparatus in HTSUS 8543.70.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 249,
+    "completion_tokens": 266,
+    "total_tokens": 515,
+    "cost": 0.001519,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001519,
+      "upstream_inference_prompt_cost": 0.0003486,
+      "upstream_inference_completions_cost": 0.0011704
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 195,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Crusoe",
+  "requested_at": "2026-10-10T02:47:29.824185+00:00",
+  "latency_s": 2.185,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

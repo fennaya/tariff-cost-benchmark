@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359518",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599927-koI2tQrtSUnH9ChCje8f",
+    "object": "chat.completion",
+    "created": 1791599927,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8421.29.9090\", \"reason\": \"The SEP4 is a multifunctional separator (air, dirt, and magnetic) for water systems, classifiable as filtering or purifying machinery and apparatus for liquids, other than water filtration under 8421.21.\"}",
+          "refusal": null,
+          "reasoning": "Separator for water systems \u2014 likely 8421.29 (filtering/gas separation) or 8481? Air and dirt separator \u2014 filtering apparatus for liquids: 8421.29.9090? Actually 8421.21 is water filtration; other filtering for liquids 8421.29. 8421.29.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Separator for water systems \u2014 likely 8421.29 (filtering/gas separation) or 8481? Air and dirt separator \u2014 filtering apparatus for liquids: 8421.29.9090? Actually 8421.21 is water filtration; other filtering for liquids 8421.29. 8421.29.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 282,
+      "completion_tokens": 148,
+      "total_tokens": 430,
+      "cost": 0.00068876,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00068876,
+        "upstream_inference_prompt_cost": 3.756e-05,
+        "upstream_inference_completions_cost": 0.0006512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 79,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421299090",
+  "predicted_reason": "The SEP4 is a multifunctional separator (air, dirt, and magnetic) for water systems, classifiable as filtering or purifying machinery and apparatus for liquids, other than water filtration under 8421.21.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 282,
+    "completion_tokens": 148,
+    "total_tokens": 430,
+    "cost": 0.00068876,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00068876,
+      "upstream_inference_prompt_cost": 3.756e-05,
+      "upstream_inference_completions_cost": 0.0006512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:38:47.396464+00:00",
+  "latency_s": 2.166,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

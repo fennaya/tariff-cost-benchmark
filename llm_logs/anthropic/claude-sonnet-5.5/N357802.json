@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357802",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "2930909251",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595499-WWDtX3dxdLwhqmqmIO9j",
+    "object": "chat.completion",
+    "created": 1791595499,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "DMSO is classified in heading 2930 (organo-sulfur compounds). Subheading 2930.90 covers other organo-sulfur compounds. The statistical suffix for DMSO is 2930.90.4390? Looking at the tariff structure: 2930.90.10 (Dithiocarbonates (xanthates)), 2930.90.20 (DL-Methionine?), ... 2930.90.29 (Other, in some versions), 2930.90.30 (Aldicarb...), 2930.90.43 (Other: ... ), 2930.90.46, 2930.90.49 (Other), 2930.90.91 (Other, mixtures?), 2930.90.99 (Other).\n\nCBP rulings on DMSO: NY N0XXXX classify dimethyl sulfoxide in 2930.90.4390? I recall \"2930.90.4390, HTSUS, which provides for Other organo-sulfur compounds: Other: Other: Other\" \u2014 and I believe DMSO rulings cite 2930.90.9190 or 2930.90.4390. The tariff has 2930.90.43 as \"Other: Aromatic ...\"? I recall 2930.90.4390 as \"Other\" within the group of compounds with 9% duty at 6.5%. I'll go with 2930.90.4390? Actually DMSO is on the list of items with a Section 301 duty, and ruling N301547 \"DMSO ... 2930.90.9190\". Hmm. 2930.90.91 is \"Other: Other: Other: Other\" with 2930.90.9190 being the statistical \"Other\"? I think 2930.90.99 exists as 2930.90.9950 and so on. I'll go with 2930.90.4390? I recall DMSO's duty is 6.5%, and 2930.90.43 is 6.5% for \"Other\" in the group \"Other: Other: Other\". 2930.90.91/99 are also 6.5%. I'll choose 2930.90.4390.\n\n{\"hts_code\": \"2930.90.4390\", \"reason\": \"Dimethyl sulfoxide is a separate chemically defined organo-sulfur compound classified in heading 2930, subheading 2930.90 as an other organo-sulfur compound.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 236,
+      "completion_tokens": 729,
+      "total_tokens": 965,
+      "cost": 0.007762,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007762,
+        "upstream_inference_prompt_cost": 0.000472,
+        "upstream_inference_completions_cost": 0.00729
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2930904390",
+  "predicted_reason": "Dimethyl sulfoxide is a separate chemically defined organo-sulfur compound classified in heading 2930, subheading 2930.90 as an other organo-sulfur compound.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 236,
+    "completion_tokens": 729,
+    "total_tokens": 965,
+    "cost": 0.007762,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007762,
+      "upstream_inference_prompt_cost": 0.000472,
+      "upstream_inference_completions_cost": 0.00729
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:59.546868+00:00",
+  "latency_s": 6.531,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N348144",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "6110909026",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593946-UW5m1Ww5AvCYexYF1v9K",
+    "object": "chat.completion",
+    "created": 1791593946,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": " {\"hts_code\": \"6110.30.3020\", \"reason\": \"The garment is a women's knit sweater of man-made fibers (polyester, polyamide, elastane, metallic) with less than 9 stitches per 2 cm, classifiable under HTSUS 6110.30.30 for sweaters of man-made fibers.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 76,
+      "total_tokens": 285,
+      "cost": 8.018e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.018e-05,
+        "upstream_inference_prompt_cost": 4.18e-06,
+        "upstream_inference_completions_cost": 7.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110303020",
+  "predicted_reason": "The garment is a women's knit sweater of man-made fibers (polyester, polyamide, elastane, metallic) with less than 9 stitches per 2 cm, classifiable under HTSUS 6110.30.30 for sweaters of man-made fibers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 209,
+    "completion_tokens": 76,
+    "total_tokens": 285,
+    "cost": 8.018e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.018e-05,
+      "upstream_inference_prompt_cost": 4.18e-06,
+      "upstream_inference_completions_cost": 7.6e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T00:59:06.548777+00:00",
+  "latency_s": 8.238,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

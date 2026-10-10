@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357469",
+  "rulingDate": "2026-01-27T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599657-AGtwlo0MHogUF4xifwyc",
+    "object": "chat.completion",
+    "created": 1791599657,
+    "model": "z-ai/glm-5.3",
+    "provider": "Mistral",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.00.6080\", \"reason\": \"Adult costume apparel (Renaissance peasant shirt with belt) is classified as festive/carnival costume articles of textile materials in HTSUS 9505.00.6080.\"}",
+          "refusal": null,
+          "reasoning": "Fancy dress costumes of textile: 9505.00.60 (festive articles)? Costumes classified as festive articles 9505.00.6080? Actually 9505.00.60 is \"festive, carnival... costumes\". 10-digit: 9505.00.6080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fancy dress costumes of textile: 9505.00.60 (festive articles)? Costumes classified as festive articles 9505.00.6080? Actually 9505.00.60 is \"festive, carnival... costumes\". 10-digit: 9505.00.6080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 153,
+      "completion_tokens": 132,
+      "total_tokens": 285,
+      "cost": 0.000795,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000795,
+        "upstream_inference_prompt_cost": 0.0002142,
+        "upstream_inference_completions_cost": 0.0005808
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 50,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505006080",
+  "predicted_reason": "Adult costume apparel (Renaissance peasant shirt with belt) is classified as festive/carnival costume articles of textile materials in HTSUS 9505.00.6080.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 153,
+    "completion_tokens": 132,
+    "total_tokens": 285,
+    "cost": 0.000795,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000795,
+      "upstream_inference_prompt_cost": 0.0002142,
+      "upstream_inference_completions_cost": 0.0005808
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Mistral",
+  "requested_at": "2026-10-10T02:34:17.936679+00:00",
+  "latency_s": 0.825,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

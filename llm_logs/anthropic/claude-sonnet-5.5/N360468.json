@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360468",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9506696020",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596089-pCoAAgYrbzSOS3Un3WJP",
+    "object": "chat.completion",
+    "created": 1791596089,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on weighted training balls (PlyoCare). Candidate headings are 9506.69 (balls other than golf and tennis), 9506.91 (exercise equipment), and 9506.99.\n\nBaseballs fall under 9506.69.20 (baseballs and softballs). Other balls fall under 9506.69.40 (inflatable balls) and 9506.69.60 (other). The PlyoCare balls are filled with sand, with only minimal air pressure, so they are not inflatable in the usual sense. I recall CBP ruling NY N3xxxxx classifying weighted balls in 9506.91.0030 as exercise equipment. These balls are used as baseball training implements, though, not general exercise equipment.\n\nIn HTSUS, 9506.69.20 is \"Baseballs and softballs\", and 9506.69.40 is \"Inflatable balls, other\". 9506.69.60 is \"Other\", which is where I recall similar weighted balls being placed. The statistical suffix would be 9506.69.6000. Since the balls are not designed for baseball play, they are not baseballs, so the residual \"other balls\" provision fits best.\n\n{\"hts_code\": \"9506.69.6000\", \"reason\": \"Sand-filled PVC weighted training balls are not baseballs for play and are not inflatable balls, so they fall under the residual provision for balls other than golf, tennis, baseballs, softballs, and inflatable balls in heading 9506.69.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 463,
+      "completion_tokens": 484,
+      "total_tokens": 947,
+      "cost": 0.005766,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005766,
+        "upstream_inference_prompt_cost": 0.000926,
+        "upstream_inference_completions_cost": 0.00484
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506696000",
+  "predicted_reason": "Sand-filled PVC weighted training balls are not baseballs for play and are not inflatable balls, so they fall under the residual provision for balls other than golf, tennis, baseballs, softballs, and inflatable balls in heading 9506.69.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 463,
+    "completion_tokens": 484,
+    "total_tokens": 947,
+    "cost": 0.005766,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005766,
+      "upstream_inference_prompt_cost": 0.000926,
+      "upstream_inference_completions_cost": 0.00484
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:49.964003+00:00",
+  "latency_s": 4.544,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

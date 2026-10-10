@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359226",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "4811596000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599877-TAIVE143lw9YyR5kToaW",
+    "object": "chat.completion",
+    "created": 1791599877,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4811.90.0000\", \"reason\": \"The product is bleached paper under 150 g/m2, coated on one side with plastic and printed on the other, which falls under heading 4811 as other surface-treated paper, since the plastic coating is not the outer surface relative to printing and no more specific subheading applies.\"}",
+          "refusal": null,
+          "reasoning": "Paper coated with plastic, printed \u2014 likely 4811.90.0000? Paper coated/impregnated with plastics, printed: 4811.90 covers other surface-treated paper. Actually 4811.90.00 \u2014 \"Other\" surface-treated paper. Printed paper coated with plastics: heading 4811. 4811.90.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Paper coated with plastic, printed \u2014 likely 4811.90.0000? Paper coated/impregnated with plastics, printed: 4811.90 covers other surface-treated paper. Actually 4811.90.00 \u2014 \"Other\" surface-treated paper. Printed paper coated with plastics: heading 4811. 4811.90.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 308,
+      "completion_tokens": 161,
+      "total_tokens": 469,
+      "cost": 0.000784812,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000784812,
+        "upstream_inference_prompt_cost": 1.2012e-05,
+        "upstream_inference_completions_cost": 0.0007728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 81,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4811900000",
+  "predicted_reason": "The product is bleached paper under 150 g/m2, coated on one side with plastic and printed on the other, which falls under heading 4811 as other surface-treated paper, since the plastic coating is not the outer surface relative to printing and no more specific subheading applies.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 308,
+    "completion_tokens": 161,
+    "total_tokens": 469,
+    "cost": 0.000784812,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000784812,
+      "upstream_inference_prompt_cost": 1.2012e-05,
+      "upstream_inference_completions_cost": 0.0007728
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 81,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:37:57.763993+00:00",
+  "latency_s": 1.384,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "rulingNumber": "N358622",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "6402998031",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791597196-E1mLJQWT1ZzU5H3Vrdzj",
+    "object": "chat.completion",
+    "created": 1791597196,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6402.99.8091\", \"reason\": \"These are men's non-athletic shoes with rubber/plastic uppers and outer soles, and the foxing-like band rules out the 90% rubber/plastics provision, leaving the 'other' footwear tier for shoes valued over $6.50 but not over $12 per pair ($10.03 FOB); the final statistical suffix (91) is my best recollection and should be checked against the current HTSUS.\"}",
+          "refusal": null,
+          "reasoning": "This looks like rubber/plastic footwear falling under heading 6402, since the uppers and soles are both rubber or plastics and it's not athletic footwear. I'm working through the subheading structure under 6402.99, distinguishing between footwear with a foxing-like band versus the \"other\" category, which would land it around 6402.99.31.\n\nSince this isn't covered by the exclusion for footwear over 90% rubber/plastic without a foxing band, I'm narrowing it down based on value brackets\u20146402.99.40 for $3 or under, .60 for $3-6.50, .80 for $6.50-12, and .90 for over $12\u2014with statistical suffixes distinguishing by gender, likely landing on something like 6402.99.9031 for men's footwear valued over $12.\n\n",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This looks like rubber/plastic footwear falling under heading 6402, since the uppers and soles are both rubber or plastics and it's not athletic footwear. I'm working through the subheading structure under 6402.99, distinguishing between footwear with a foxing-like band versus the \"other\" category, which would land it around 6402.99.31.\n\nSince this isn't covered by the exclusion for footwear over 90% rubber/plastic without a foxing band, I'm narrowing it down based on value brackets\u20146402.99.40 for $3 or under, .60 for $3-6.50, .80 for $6.50-12, and .90 for over $12\u2014with statistical suffixes distinguishing by gender, likely landing on something like 6402.99.9031 for men's footwear valued over $12.\n\n",
+              "format": "anthropic-claude-v1",
+              "index": 0,
+              "signature": "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.eyJlbmRwb2ludF9zbHVnIjoiYW50aHJvcGljL2NsYXVkZS1vcHVzLTUuNS0yMDI2MDkyMXxjbGF1ZGUtb24tYXdzIn0"
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 1019,
+      "total_tokens": 1415,
+      "cost": 0.021964,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.021964,
+        "upstream_inference_prompt_cost": 0.001584,
+        "upstream_inference_completions_cost": 0.02038
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 866,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6402998091",
+  "predicted_reason": "These are men's non-athletic shoes with rubber/plastic uppers and outer soles, and the foxing-like band rules out the 90% rubber/plastics provision, leaving the 'other' footwear tier for shoes valued over $6.50 but not over $12 per pair ($10.03 FOB); the final statistical suffix (91) is my best recollection and should be checked against the current HTSUS.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 1019,
+    "total_tokens": 1415,
+    "cost": 0.021964,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.021964,
+      "upstream_inference_prompt_cost": 0.001584,
+      "upstream_inference_completions_cost": 0.02038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 866,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:53:16.616911+00:00",
+  "latency_s": 13.071,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

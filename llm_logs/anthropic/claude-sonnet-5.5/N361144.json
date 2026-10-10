@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361144",
+  "rulingDate": "2026-05-14T00:00:00",
+  "true_code": "8486200000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596211-uJY8EZT5FBzIZQgakpaV",
+    "object": "chat.completion",
+    "created": 1791596211,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a Disco DAD3231 dicing saw used to cut silicon wafers into individual die. Machines for dicing semiconductor wafers fall under HTS 8486.20, \"machines and apparatus of a kind used solely or principally for the manufacture of semiconductor devices or of electronic integrated circuits.\"\n\nWithin 8486.20, the statistical suffixes are:\n- 8486.20.0000 is the general subheading, with 8486.20.00 as the 8-digit line.\n- The 10-digit statistical lines under it are 8486.20.0010 (Apparatus for dry etching), 8486.20.0020 and others. I'm not certain of the full list.\n\nThe dicing saw is a wafer-cutting machine. The HTS 8486.20.00 lines are as follows, as best I recall:\n- 8486.20.0020: Apparatus for physical deposition\n- 8486.20.0030: Chemical vapor deposition\n- 8486.20.0040: Other deposition\n- 8486.20.0050: Ion implanters\n- 8486.20.0060: Other\n- 8486.20.0090: Other\n\nThose are my best recollection, not a verified list. Because a dicing saw doesn't fit any of the specific lines, I'm choosing the residual \"Other\" line, 8486.20.0090.\n\n{\"hts_code\": \"8486.20.0090\", \"reason\": \"A wafer dicing saw is a machine used solely or principally for manufacturing semiconductor devices (heading 8486, subheading 8486.20), and it fits none of the specific process-apparatus lines, so the residual 'Other' statistical line applies.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 321,
+      "completion_tokens": 533,
+      "total_tokens": 854,
+      "cost": 0.005972,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005972,
+        "upstream_inference_prompt_cost": 0.000642,
+        "upstream_inference_completions_cost": 0.00533
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8486200090",
+  "predicted_reason": "A wafer dicing saw is a machine used solely or principally for manufacturing semiconductor devices (heading 8486, subheading 8486.20), and it fits none of the specific process-apparatus lines, so the residual 'Other' statistical line applies.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 321,
+    "completion_tokens": 533,
+    "total_tokens": 854,
+    "cost": 0.005972,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005972,
+      "upstream_inference_prompt_cost": 0.000642,
+      "upstream_inference_completions_cost": 0.00533
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:52.153789+00:00",
+  "latency_s": 5.011,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

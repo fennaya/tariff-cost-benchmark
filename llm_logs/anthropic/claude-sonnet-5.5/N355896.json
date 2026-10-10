@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355896",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "6802930090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593818-5iaPPeKPXNFkK1IhuGio",
+    "object": "chat.completion",
+    "created": 1791593818,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is granite, so it falls in heading 6802 (worked monumental or building stone). Polished slabs of granite are classified in 6802.93 (\"Granite: other\"). Subheading 6802.93.00 covers \"Other: Granite\", and the 10-digit statistical suffixes are 6802.93.0010 (Slabs, 2 or more cm thick?) Let me recall. 6802.93.00 has these statistical suffixes: 10 \"Slabs\" and 90 \"Other.\" Actually, I recall 6802.93.0010 as \"Slabs\" and 6802.93.0090 as \"Other.\" Slabs as such are imported for further cutting, which fits here.\n\nThere is also a split by thickness. 6802.93.00 splits into 6802.93.0010 (Slabs: 2 cm or more... ) Not sure, but I will go with 6802.93.0010. The 6802.23 subheading is for granite worked simply cut or sawn with a flat or even surface. The polished and beveled stone goes beyond that, so 6802.93 is right. 6802.93.00 is \"Granite: Other,\" and a 6802.93.0010 \"Slabs\" suffix is plausible.\n\n```json\n{\"hts_code\": \"6802.93.0010\", \"reason\": \"Polished, beveled granite slabs (per lab analysis) are worked building stone beyond simple cutting, so they fall in heading 6802, subheading 6802.93 (granite, other), statistical suffix for slabs.\"}\n```\n\n{\"hts_code\": \"6802.93.0010\", \"reason\": \"Polished, beveled granite slabs (per lab analysis) are worked building stone beyond simple cutting, so they fall in heading 6802, subheading 6802.93 (granite, other), statistical suffix for slabs.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 420,
+      "completion_tokens": 581,
+      "total_tokens": 1001,
+      "cost": 0.00665,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00665,
+        "upstream_inference_prompt_cost": 0.00084,
+        "upstream_inference_completions_cost": 0.00581
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930010",
+  "predicted_reason": "Polished, beveled granite slabs (per lab analysis) are worked building stone beyond simple cutting, so they fall in heading 6802, subheading 6802.93 (granite, other), statistical suffix for slabs.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 420,
+    "completion_tokens": 581,
+    "total_tokens": 1001,
+    "cost": 0.00665,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00665,
+      "upstream_inference_prompt_cost": 0.00084,
+      "upstream_inference_completions_cost": 0.00581
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:58.435664+00:00",
+  "latency_s": 5.524,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

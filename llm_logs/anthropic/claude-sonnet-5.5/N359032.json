@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359032",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8421290065",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595723-l20xVkf3UqHdBort1JeO",
+    "object": "chat.completion",
+    "created": 1791595723,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Filter presses for liquids fall under HTS 8421.29 (\"Filtering or purifying machinery for liquids: other\"). Within 8421.29, the 10-digit statistical suffixes include 8421.29.0065 (\"Other\"), and earlier lines cover specific uses such as oil filters, water filters, and beverage filters.\n\nThe subheading 8421.21 covers water filtering machinery, 8421.22 covers beverages other than water, and 8421.23 covers oil or fuel filters for engines. 8421.29 is the residual: 8421.29.0005 covers disk-type ceramic filters, 8421.29.0020 covers \"Filter presses,\" 8421.29.0035 covers rotary drum vacuum filters, 8421.29.0050 covers other specified types, and 8421.29.0065 covers \"Other.\"\n\nThis machine is a pressure filter of the filter press type. CBP rulings on the Roxia Tower Press and similar vertical pressure filters classify them as filter presses, so the \"Filter presses\" line is the best fit. I recall that line as 8421.29.0020.\n\n{\"hts_code\": \"8421.29.0020\", \"reason\": \"The Tower Press is an automatic pressure filter (filter press) for solid-liquid separation, classified as filtering machinery for liquids under 8421.29, filter presses line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 817,
+      "completion_tokens": 440,
+      "total_tokens": 1257,
+      "cost": 0.006034,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006034,
+        "upstream_inference_prompt_cost": 0.001634,
+        "upstream_inference_completions_cost": 0.0044
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421290020",
+  "predicted_reason": "The Tower Press is an automatic pressure filter (filter press) for solid-liquid separation, classified as filtering machinery for liquids under 8421.29, filter presses line.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 817,
+    "completion_tokens": 440,
+    "total_tokens": 1257,
+    "cost": 0.006034,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006034,
+      "upstream_inference_prompt_cost": 0.001634,
+      "upstream_inference_completions_cost": 0.0044
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:43.435995+00:00",
+  "latency_s": 4.204,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

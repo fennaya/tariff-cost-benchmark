@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361443",
+  "rulingDate": "2026-05-18T00:00:00",
+  "true_code": "3926400090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596285-jpOs7E32TivvLodI2o7H",
+    "object": "chat.completion",
+    "created": 1791596285,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on plastic alphabet charms for crafts. The candidates are:\n\n- 3926.40.00 (statuettes and other ornamental articles of plastics), with the 10-digit 3926.40.0000 (later 3926.40.0010 and 3926.40.0090).\n- 3926.90.99 (other articles of plastics).\n- 7117 (imitation jewelry), which would apply only if the charms were jewelry. Loose charms for crafts are not jewelry, though CBP has sometimes classified loose charms in 7117.90. Here the charms are plastic letters with loops that are strung for craft projects. Beads are in 7018 for glass, and plastic beads fall in 3926.90.\n\nOrnamental articles under 3926.40 are described as decorative, and loose craft letters are not really figurines. I recall rulings on plastic alphabet beads for crafts that went to 3926.90.9990 (the older 3926.90.98 became 3926.90.99). The current HTS 3926.90.99 has statistical suffixes 3926.90.9910 (industrial) and 3926.90.9990 (other), so 3926.90.9990 is the best choice.\n\nImitation jewelry in 7117.90.9000 is still a possibility, but I'm going with 3926.90.9990.\n\n{\"hts_code\": \"3926.90.9990\", \"reason\": \"Loose molded plastic alphabet charms with loops for stringing in home craft projects are not jewelry or figurines, so they are classified as other articles of plastics.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 248,
+      "completion_tokens": 506,
+      "total_tokens": 754,
+      "cost": 0.005556,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005556,
+        "upstream_inference_prompt_cost": 0.000496,
+        "upstream_inference_completions_cost": 0.00506
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "Loose molded plastic alphabet charms with loops for stringing in home craft projects are not jewelry or figurines, so they are classified as other articles of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 248,
+    "completion_tokens": 506,
+    "total_tokens": 754,
+    "cost": 0.005556,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005556,
+      "upstream_inference_prompt_cost": 0.000496,
+      "upstream_inference_completions_cost": 0.00506
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:05.324918+00:00",
+  "latency_s": 5.131,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

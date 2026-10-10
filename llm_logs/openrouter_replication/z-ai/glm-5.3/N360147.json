@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360147",
+  "rulingDate": "2026-04-27T00:00:00",
+  "true_code": "8903992110",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600048-eK9LshiQ9K1Il0pgbQV6",
+    "object": "chat.completion",
+    "created": 1791600048,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8903.99.0090\", \"reason\": \"The aluminum vessel, imported without motor but having the essential character of a motorboat for fishing/pleasure use, is classified in the residual provision for other motorboats and vessels for pleasure.\"}",
+          "refusal": null,
+          "reasoning": "Aluminum fishing vessel, >9m? Hull length 9.6m. 8903.99... Motorboats other than outboard? No motor. Fishing vessels 8902? It's for fishing but pleasure-style? NY ruling: aluminum fishing boat classified 8903.99.0090? Actually 8903.99 covers motorboats/yachts with other than outboard motor... but no motor. Ruling similar: Gospel Boats hull \u2014 classified 8903.99.0090? Length 9.6m hull, over 9m? 8903.92 vs 8903.99: 8903.92 motorboats with inboard motor... Since no motor, essential character of boat. Known ruling NY N268022? I recall answer 8903.99.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Aluminum fishing vessel, >9m? Hull length 9.6m. 8903.99... Motorboats other than outboard? No motor. Fishing vessels 8902? It's for fishing but pleasure-style? NY ruling: aluminum fishing boat classified 8903.99.0090? Actually 8903.99 covers motorboats/yachts with other than outboard motor... but no motor. Ruling similar: Gospel Boats hull \u2014 classified 8903.99.0090? Length 9.6m hull, over 9m? 8903.92 vs 8903.99: 8903.92 motorboats with inboard motor... Since no motor, essential character of boat. Known ruling NY N268022? I recall answer 8903.99.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 257,
+      "completion_tokens": 244,
+      "total_tokens": 501,
+      "cost": 0.0007545625,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007545625,
+        "upstream_inference_prompt_cost": 0.0001445625,
+        "upstream_inference_completions_cost": 0.00061
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 183,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8903990090",
+  "predicted_reason": "The aluminum vessel, imported without motor but having the essential character of a motorboat for fishing/pleasure use, is classified in the residual provision for other motorboats and vessels for pleasure.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 257,
+    "completion_tokens": 244,
+    "total_tokens": 501,
+    "cost": 0.0007545625,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007545625,
+      "upstream_inference_prompt_cost": 0.0001445625,
+      "upstream_inference_completions_cost": 0.00061
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 183,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:40:48.442138+00:00",
+  "latency_s": 2.61,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

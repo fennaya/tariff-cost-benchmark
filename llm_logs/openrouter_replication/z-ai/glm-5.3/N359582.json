@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359582",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "6203424551",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599937-ua9HOEqtrNCiPbObGZE4",
+    "object": "chat.completion",
+    "created": 1791599937,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6203.42.0520\", \"reason\": \"Men's woven shorts of 88% cotton are classified in HTSUS 6203.42.0520, which covers men's or boys' shorts of cotton.\"}",
+          "refusal": null,
+          "reasoning": "Men's cotton shorts, woven, 88% cotton \u2192 6203.42.0520? Men's shorts of cotton woven: 6203.42.05xx. Shorts category: 6203.42.0520? Actually 6203.42.0515 trousers, 6203.42.0521 shorts? Historically NY rulings cite 6203.42.0520 for men's cotton woven shorts. Yes, 6203.42.0520.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Men's cotton shorts, woven, 88% cotton \u2192 6203.42.0520? Men's shorts of cotton woven: 6203.42.05xx. Shorts category: 6203.42.0520? Actually 6203.42.0515 trousers, 6203.42.0521 shorts? Historically NY rulings cite 6203.42.0520 for men's cotton woven shorts. Yes, 6203.42.0520.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 180,
+      "completion_tokens": 174,
+      "total_tokens": 354,
+      "cost": 0.00078,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00078,
+        "upstream_inference_prompt_cost": 1.44e-05,
+        "upstream_inference_completions_cost": 0.0007656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 115,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6203420520",
+  "predicted_reason": "Men's woven shorts of 88% cotton are classified in HTSUS 6203.42.0520, which covers men's or boys' shorts of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 180,
+    "completion_tokens": 174,
+    "total_tokens": 354,
+    "cost": 0.00078,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00078,
+      "upstream_inference_prompt_cost": 1.44e-05,
+      "upstream_inference_completions_cost": 0.0007656
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 115,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:38:57.942380+00:00",
+  "latency_s": 1.733,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

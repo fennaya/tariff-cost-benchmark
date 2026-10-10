@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357335",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "7326908688",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599624-ZiEhRn6cnSxX0sC4y91u",
+    "object": "chat.completion",
+    "created": 1791599624,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8538.90.8060\", \"reason\": \"An empty steel enclosure designed to house electrical apparatus components is classified as a part suitable for use solely or principally with electrical apparatus of heading 8537, per Additional U.S. Note 2 to Section XVI.\"}",
+          "refusal": null,
+          "reasoning": "Empty steel junction box \u2014 likely 8538.90 (parts of boxes suitable for electrical apparatus) \u2014 actually empty enclosure for electrical equipment: 8538.90.8060? Common ruling: 8538.90.8060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Empty steel junction box \u2014 likely 8538.90 (parts of boxes suitable for electrical apparatus) \u2014 actually empty enclosure for electrical equipment: 8538.90.8060? Common ruling: 8538.90.8060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 312,
+      "completion_tokens": 120,
+      "total_tokens": 432,
+      "cost": 0.00056976,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00056976,
+        "upstream_inference_prompt_cost": 4.176e-05,
+        "upstream_inference_completions_cost": 0.000528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 54,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8538908060",
+  "predicted_reason": "An empty steel enclosure designed to house electrical apparatus components is classified as a part suitable for use solely or principally with electrical apparatus of heading 8537, per Additional U.S. Note 2 to Section XVI.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 120,
+    "total_tokens": 432,
+    "cost": 0.00056976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00056976,
+      "upstream_inference_prompt_cost": 4.176e-05,
+      "upstream_inference_completions_cost": 0.000528
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:33:44.607923+00:00",
+  "latency_s": 26.806,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

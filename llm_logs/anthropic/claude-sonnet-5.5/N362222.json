@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362222",
+  "rulingDate": "2026-07-07T00:00:00",
+  "true_code": "1515902100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596442-1ay8ly1p6r8UPCuUYJgr",
+    "object": "chat.completion",
+    "created": 1791596442,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Shea butter is classified in HTSUS 1515.90 (\"Other fixed vegetable fats and oils and their fractions, whether or not refined, but not chemically modified\"). Within 1515.90, the subheadings are:\n- 1515.90.20: Other, crude\n- 1515.90.40: Other, refined... Actually, the structure is 1515.90.20 for \"Other: Crude\", 1515.90.40 for \"Other, fractions\" or similar, and 1515.90.60 and 1515.90.80 for other.\n\nThe wording of those statistical suffixes is uncertain, so I'm relying on memory of the schedule and of CBP rulings on shea butter. In those rulings, the refined shea butter was classified in 1515.90.4000 (\"Other: Other: Fixed vegetable oils, fats and their fractions, ... Other\"), and I recall 1515.90.40 being \"Other\" with statistical suffixes of 00 for the others. The 1515.90 structure I recall:\n- 1515.90.10: Illipe nut oil...\n- 1515.90.20: Other, Of a type used for industrial...\n- 1515.90.40: Other: Fixed oils, fats... \"Other\" (Kokum, etc.)\n- 1515.90.51 through 1515.90.59: Other, \"Other\" with detailed suffixes.\n\nThis is the best match I can give. The origin question (China, where the substantial transformation happens, or Ghana) does not affect the classification itself. Both products are refined or partially refined shea butter, which are other fixed vegetable fats, so 1515.90.40 is the best fit. I'm not certain of the 10-digit suffix.\n\n{\"hts_code\": \"1515.90.4000\", \"reason\": \"Shea butter, a fixed vegetable fat that is washed, filtered and (for one product) physically decolorized and deodorized but not chemically modified, falls in heading 1515 as an other fixed vegetable fat under subheading 1515.90; the 10-digit suffix is my best recollection rather than a confirmed one.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 669,
+      "completion_tokens": 672,
+      "total_tokens": 1341,
+      "cost": 0.008058,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008058,
+        "upstream_inference_prompt_cost": 0.001338,
+        "upstream_inference_completions_cost": 0.00672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1515904000",
+  "predicted_reason": "Shea butter, a fixed vegetable fat that is washed, filtered and (for one product) physically decolorized and deodorized but not chemically modified, falls in heading 1515 as an other fixed vegetable fat under subheading 1515.90; the 10-digit suffix is my best recollection rather than a confirmed one.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 669,
+    "completion_tokens": 672,
+    "total_tokens": 1341,
+    "cost": 0.008058,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008058,
+      "upstream_inference_prompt_cost": 0.001338,
+      "upstream_inference_completions_cost": 0.00672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:43.054023+00:00",
+  "latency_s": 7.041,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359637",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8703240190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599942-tdhGbzuPnJpOeFPpvkpp",
+    "object": "chat.completion",
+    "created": 1791599942,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.0060\", \"reason\": \"A used passenger automobile with a spark-ignition reciprocating piston engine exceeding 3,000 cc (5.7L) is classified in subheading 8703.23.00, with the used-vehicle statistical suffix 60.\"}",
+          "refusal": null,
+          "reasoning": "Used car returning? Actually US-spec vehicle exported to Canada, now re-imported \u2014 9702? No, that's for returning after repair. A used passenger vehicle with spark-ignition engine >3000cc: 8703.23.0030? Passenger cars, spark-ignition engine >3000 cc: 8703.23.00. Actually 10-digit: 8703.23.0030 (new) vs 8703.23.0060 (used). Used: 8703.23.0060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Used car returning? Actually US-spec vehicle exported to Canada, now re-imported \u2014 9702? No, that's for returning after repair. A used passenger vehicle with spark-ignition engine >3000cc: 8703.23.0030? Passenger cars, spark-ignition engine >3000 cc: 8703.23.00. Actually 10-digit: 8703.23.0030 (new) vs 8703.23.0060 (used). Used: 8703.23.0060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 198,
+      "total_tokens": 451,
+      "cost": 0.000960203,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000960203,
+        "upstream_inference_prompt_cost": 9.803e-06,
+        "upstream_inference_completions_cost": 0.0009504
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 125,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230060",
+  "predicted_reason": "A used passenger automobile with a spark-ignition reciprocating piston engine exceeding 3,000 cc (5.7L) is classified in subheading 8703.23.00, with the used-vehicle statistical suffix 60.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 198,
+    "total_tokens": 451,
+    "cost": 0.000960203,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000960203,
+      "upstream_inference_prompt_cost": 9.803e-06,
+      "upstream_inference_completions_cost": 0.0009504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:39:03.208146+00:00",
+  "latency_s": 1.211,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355231",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593803-JWXqmLIfOCvvWA4miLt9",
+    "object": "chat.completion",
+    "created": 1791593803,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on \"White Ice\" stone, identified by lab analysis as an igneous rock, probably granite-like, imported as slabs. The lab says it is \"other igneous rock,\" not true granite, and is not marble or travertine.\n\nHeading 6802 covers worked monumental or building stone. Subheading 6802.93 covers granite, and 6802.99 covers other stone. Heading 6802 would include polished slabs. Because this is \"other igneous rock,\" it falls under 6802.99, not granite. That makes the likely code 6802.99.0090, which is \"Other worked monumental or building stone: Other stone: Other.\"\n\nSubheading 6802.91 covers marble, travertine and alabaster. 6802.92 covers other calcareous stone. 6802.93 covers granite. 6802.99 covers other stone. In the HTSUS, the 6802.99 statistical suffixes are 6802.99.0010 for slate and 6802.99.0090 for other. So 6802.99.0090 is the answer.\n\nGranite in the tariff is defined by the Chapter 68 note as including igneous rocks, but the ruling's laboratory analysis calls it \"other igneous rock\", and the ruling I recall classified a similar item under 6802.93. Under the Explanatory Notes, \"granite\" in commercial parlance includes quartz-feldspar rocks. The description says \"predominantly quartz and plagioclase feldspars,\" which fits a tonalite or similar rock. The 6802.93 subheading covers \"granite\" and the ruling may treat it that way, but because the lab did not call it granite, I'll choose the \"other\" provision.\n\nSlabs polished on top and sides with beveled edges are worked beyond simple cutting, so 6802 is appropriate. For granite, 6802.93.00 has suffixes by value per cubic meter, which would also apply. I'm going with 6802.99.0090.\n\n{\"hts_code\": \"6802.99.0090\", \"reason\": \"Polished, beveled slabs of other igneous rock (not true granite, marble, or slate) are worked building stone of heading 6802, falling under the other stone subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 703,
+      "total_tokens": 1110,
+      "cost": 0.007844,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007844,
+        "upstream_inference_prompt_cost": 0.000814,
+        "upstream_inference_completions_cost": 0.00703
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990090",
+  "predicted_reason": "Polished, beveled slabs of other igneous rock (not true granite, marble, or slate) are worked building stone of heading 6802, falling under the other stone subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 407,
+    "completion_tokens": 703,
+    "total_tokens": 1110,
+    "cost": 0.007844,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007844,
+      "upstream_inference_prompt_cost": 0.000814,
+      "upstream_inference_completions_cost": 0.00703
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:44.197816+00:00",
+  "latency_s": 6.725,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

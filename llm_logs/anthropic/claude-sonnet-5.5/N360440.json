@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360440",
+  "rulingDate": "2026-04-28T00:00:00",
+  "true_code": "8708998180",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596081-nqmtRZtJPworvcnl26j0",
+    "object": "chat.completion",
+    "created": 1791596081,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-type question. A coolant manifold made predominantly of polypropylene, used in a passenger vehicle, could fall under 8708.99 (other parts of motor vehicles) or 3926.90 (other articles of plastics). Since it is a vehicle part, Section XVII Note 2 matters: it excludes parts of general use under Note 2(a), meaning articles of heading 7307, and plastic articles of Chapter 39 are not excluded as parts of general use. A plastic manifold is therefore not excluded from Section XVII. Note 2(b) excludes the parts and accessories listed in Section XVII only for goods in heading 8401-8479 and so on, which does not apply here.\n\nFor the Tesla-type thermal management system, the likely 8708 subheading is 8708.99.8180 (other parts and accessories, other). Another option is 8708.99.68, but that is for the other category of non-specified parts. An electric vehicle does not have an engine cooling system in the usual sense, so 8708.91 (radiators) does not fit. \n\nI recall CBP rulings on Tesla coolant manifolds classifying them in 8708.99.8180. I'll go with that.\n\n{\"hts_code\": \"8708.99.8180\", \"reason\": \"The coolant manifold assembly is a dedicated part of a passenger vehicle's thermal management system and is not covered by a more specific 8708 subheading, so it falls in the residual 'other parts and accessories of motor vehicles' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 497,
+      "completion_tokens": 493,
+      "total_tokens": 990,
+      "cost": 0.005924,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005924,
+        "upstream_inference_prompt_cost": 0.000994,
+        "upstream_inference_completions_cost": 0.00493
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708998180",
+  "predicted_reason": "The coolant manifold assembly is a dedicated part of a passenger vehicle's thermal management system and is not covered by a more specific 8708 subheading, so it falls in the residual 'other parts and accessories of motor vehicles' provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 497,
+    "completion_tokens": 493,
+    "total_tokens": 990,
+    "cost": 0.005924,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005924,
+      "upstream_inference_prompt_cost": 0.000994,
+      "upstream_inference_completions_cost": 0.00493
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:42.155167+00:00",
+  "latency_s": 6.474,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

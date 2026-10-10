@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358080",
+  "rulingDate": "2026-02-17T00:00:00",
+  "true_code": "3307102000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599720-8ncOBF8nW1ekuO560rgW",
+    "object": "chat.completion",
+    "created": 1791599720,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3303.00.30\", \"reason\": \"Aftershave preparations for skin soothing fall under heading 3303 as perfumery/cosmetic preparations, with the aftershave subheading applying to this retail-packaged alcohol-containing product.\"}",
+          "refusal": null,
+          "reasoning": "After shave preparations \u2014 3303.00.30? HTSUS 3303.00.30: aftershaves containing alcohol? Actually 3303.00.30 is \"Aftershaves\" \u2014 subheadings: 3303.00.10 containing alcohol? Let me recall: 3303.00.30 \"Aftershaves\" \u2014 I think 3303.00.30 is correct.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "After shave preparations \u2014 3303.00.30? HTSUS 3303.00.30: aftershaves containing alcohol? Actually 3303.00.30 is \"Aftershaves\" \u2014 subheadings: 3303.00.10 containing alcohol? Let me recall: 3303.00.30 \"Aftershaves\" \u2014 I think 3303.00.30 is correct.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 159,
+      "completion_tokens": 149,
+      "total_tokens": 308,
+      "cost": 0.000721401,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000721401,
+        "upstream_inference_prompt_cost": 6.201e-06,
+        "upstream_inference_completions_cost": 0.0007152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 90,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "33030030",
+  "predicted_reason": "Aftershave preparations for skin soothing fall under heading 3303 as perfumery/cosmetic preparations, with the aftershave subheading applying to this retail-packaged alcohol-containing product.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 159,
+    "completion_tokens": 149,
+    "total_tokens": 308,
+    "cost": 0.000721401,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000721401,
+      "upstream_inference_prompt_cost": 6.201e-06,
+      "upstream_inference_completions_cost": 0.0007152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:35:20.714626+00:00",
+  "latency_s": 1.551,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

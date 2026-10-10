@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360409",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8544602000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596076-92VgaZFWa9ssJWWTmHQs",
+    "object": "chat.completion",
+    "created": 1791596076,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is likely a CBP ruling on side mount electrical conductor assemblies for EV battery modules. Candidates are 8544.42 / 8544.49 (insulated electric conductors) and 8536.90 (connectors) or 8536.90.40/8536.90.85. A part with an aluminum bus bar in a molded housing is also covered by 8548 or 8507.90 (parts of batteries).\n\nI recall CBP ruling N319... on \"busbar assemblies\" for EV battery: classified in 8544.42.9090 (other electric conductors, for a voltage not exceeding 1,000 V, fitted with connectors). Other rulings classify bus bars with insulated housings in 8536.90.8585 or 8538.90. A conductor bar enclosed in an insulating housing is an insulated conductor, and an assembly with connector configurations fits 8544.42. With a voltage above 80 V but not above 1,000 V, the code is 8544.42.90 with statistical suffix 90. Since aluminum bar is \"other conductors,\" I'll go with 8544.42.9090.\n\n{\"hts_code\": \"8544.42.9090\", \"reason\": \"The aluminum conductor bar in an insulating polyamide 66 housing with connector configurations is an insulated electric conductor fitted with connectors, for a voltage not exceeding 1,000 V, so it falls under heading 8544 (8544.42).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 462,
+      "total_tokens": 916,
+      "cost": 0.005528,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005528,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00462
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544429090",
+  "predicted_reason": "The aluminum conductor bar in an insulating polyamide 66 housing with connector configurations is an insulated electric conductor fitted with connectors, for a voltage not exceeding 1,000 V, so it falls under heading 8544 (8544.42).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 462,
+    "total_tokens": 916,
+    "cost": 0.005528,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005528,
+      "upstream_inference_prompt_cost": 0.000908,
+      "upstream_inference_completions_cost": 0.00462
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:36.357294+00:00",
+  "latency_s": 4.503,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

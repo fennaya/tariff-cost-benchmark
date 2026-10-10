@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358036",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "8302500000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599718-InHWqRwnDMU2gq6XCXZt",
+    "object": "chat.completion",
+    "created": 1791599718,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7323.93.0080\", \"reason\": \"These steel-wire household bath articles (soap saver, shower basket, corner basket, hook) are composite goods in which the steel wire imparts the essential character, classifying them as other household articles of iron or steel other than of stainless steel.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling style \u2014 likely classified in 7323.93.0080 (household articles of steel, other). Actually known ruling: soap saver/shower baskets classified 7323.93.0080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling style \u2014 likely classified in 7323.93.0080 (household articles of steel, other). Actually known ruling: soap saver/shower baskets classified 7323.93.0080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 513,
+      "completion_tokens": 122,
+      "total_tokens": 635,
+      "cost": 0.00067281,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00067281,
+        "upstream_inference_prompt_cost": 8.721e-05,
+        "upstream_inference_completions_cost": 0.0005856
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 50,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7323930080",
+  "predicted_reason": "These steel-wire household bath articles (soap saver, shower basket, corner basket, hook) are composite goods in which the steel wire imparts the essential character, classifying them as other household articles of iron or steel other than of stainless steel.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 513,
+    "completion_tokens": 122,
+    "total_tokens": 635,
+    "cost": 0.00067281,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00067281,
+      "upstream_inference_prompt_cost": 8.721e-05,
+      "upstream_inference_completions_cost": 0.0005856
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 50,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:35:19.207188+00:00",
+  "latency_s": 0.937,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

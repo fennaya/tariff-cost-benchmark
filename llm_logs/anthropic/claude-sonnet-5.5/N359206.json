@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359206",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "8479899599",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595779-hGbb08acY319VAQU0CuO",
+    "object": "chat.completion",
+    "created": 1791595779,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a portable elevator cable lubrication system with an electric pump and motor. Candidate headings:\n\n- 8413: pumps for liquids. A lubricant-dispensing pump would fit here, but the pump is only one component of a system whose function is cleaning and lubricating cable.\n- 8424: mechanical appliances for projecting, dispersing or spraying liquids. Subheading 8424.89 covers other such appliances, and the 8424.89.90 line is \"Other\".\n- 8479: machines having individual functions not specified elsewhere. This is the likely alternative.\n- 8428: elevator parts. The device is not part of the installation, since it is removed after use, so this heading does not fit.\n\nI recall a CBP ruling on the SkyOiler, possibly classifying it in 8479.89.9499 as a machine with individual function. Heading 8424 covers \"mechanical appliances for projecting, dispersing or spraying liquids\", and the SkyOiler applies oil through brushes rather than spraying it. That points away from 8424 and toward 8479.\n\nWithin 8479, the lubrication system is an electromechanical machine with an individual function. The candidate lines are:\n\n- 8479.89.94: other machines, \"Other\".\n- 8479.89.9599: the \"Other\" line under the 8479.89.95 group.\n\nThe 8479.89 \"Other\" breakout is 8479.89.94 for \"Other\" machines and 8479.89.98 for \"Other\". In the current schedule, 8479.89.94 is \"Other: Other\" with the statistical suffix 8479.89.9499 as \"Other\" (8479.89.9400 was an older version). I will go with 8479.89.9499.\n\n```json\n{\"hts_code\": \"8479.89.9499\", \"reason\": \"Portable battery-powered elevator cable cleaning and lubricating machine with built-in pump, motor and controls is a machine with an individual function not specified elsewhere in Chapter 84, classified in heading 8479 as other machines.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 650,
+      "completion_tokens": 648,
+      "total_tokens": 1298,
+      "cost": 0.00778,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00778,
+        "upstream_inference_prompt_cost": 0.0013,
+        "upstream_inference_completions_cost": 0.00648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479899499",
+  "predicted_reason": "Portable battery-powered elevator cable cleaning and lubricating machine with built-in pump, motor and controls is a machine with an individual function not specified elsewhere in Chapter 84, classified in heading 8479 as other machines.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 650,
+    "completion_tokens": 648,
+    "total_tokens": 1298,
+    "cost": 0.00778,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00778,
+      "upstream_inference_prompt_cost": 0.0013,
+      "upstream_inference_completions_cost": 0.00648
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:39.319437+00:00",
+  "latency_s": 6.47,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

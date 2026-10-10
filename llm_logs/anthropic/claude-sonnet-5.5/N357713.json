@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357713",
+  "rulingDate": "2026-02-09T00:00:00",
+  "true_code": "9401614011",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595481-tIiBViRSAN0hTCdVQna5",
+    "object": "chat.completion",
+    "created": 1791595481,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an upholstered seat with a wooden frame, which falls under heading 9401. Within that heading, subheading 9401.61 covers other seats with wooden frames, upholstered. The statistical suffix is the open question. HTSUS 9401.61.40 covers \"Other seats, with wooden frames, upholstered: Other\" in the older structure. The current structure is 9401.61.20 (Stuffed with... ) and 9401.61.40 (Other). Current HTSUS:\n\n- 9401.61.20: Seats, with wooden frames, upholstered, \"Of a kind used for... \" This is unclear to me.\n\nWhat I do recall of the structure:\n- 9401.61.20 00: Imported as furniture for non-domestic use...\n- 9401.61.40 00: Other, \"Other seats, with wooden frames, upholstered, Other: Other\"\n- 9401.61.60 00: Other\n\nI recall 9401.61.40 as \"Other: Stuffed or cushioned: Other: Other\" and 9401.61.60 as \"Other\". Customs rulings on upholstered wooden-frame chairs typically classify them under 9401.61.6011, which is \"Other: Other: Other: Other: Upholstered\", while 9401.61.40 is for seats imported as furniture for non-domestic use. I'm fairly confident of 9401.61.6011, so I'm going with it.\n\n{\"hts_code\": \"9401.61.6011\", \"reason\": \"An upholstered, non-reclining single-person seat with a wooden frame is classified in subheading 9401.61 as other upholstered seats with wooden frames, under the 9401.61.60 provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 538,
+      "total_tokens": 975,
+      "cost": 0.006254,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006254,
+        "upstream_inference_prompt_cost": 0.000874,
+        "upstream_inference_completions_cost": 0.00538
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401616011",
+  "predicted_reason": "An upholstered, non-reclining single-person seat with a wooden frame is classified in subheading 9401.61 as other upholstered seats with wooden frames, under the 9401.61.60 provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 538,
+    "total_tokens": 975,
+    "cost": 0.006254,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006254,
+      "upstream_inference_prompt_cost": 0.000874,
+      "upstream_inference_completions_cost": 0.00538
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:41.987005+00:00",
+  "latency_s": 5.428,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

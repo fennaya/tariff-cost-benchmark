@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358392",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "7615109100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595594-un61aGsfILbKcaWfW3gi",
+    "object": "chat.completion",
+    "created": 1791595594,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a beverage chiller made of aluminum. Candidate headings are 8418 (refrigerating equipment), 7615 (household articles of aluminum), and 7616 (other articles of aluminum).\n\nThe device is a passive aluminum block placed in a freezer. It has no refrigerating mechanism of its own, so it is not \"refrigerating equipment\" under 8418. Heading 8418.99 covers parts of refrigerating equipment, but a passive cooler is not a part. A beverage chiller is more naturally a household article of aluminum under 7615.10, \"table, kitchen or other household articles... of aluminum.\" 7615.10.71 covers \"cast, other\" and 7615.10.91 covers \"other\" (stamped, etc.). Because the item is made of extruded aluminum with knobs, I would classify it under 7615.10.9100 (other household articles), though 7615.10.7130 and 7615.10.7155 also exist for cast products.\n\nHTS 7615.10: 7615.10.10 is cooking and kitchen ware of cast aluminum, 7615.10.20 is other cooking and kitchen ware, 7615.10.30 is other, 7615.10.50 is table, kitchen and other household articles, and 7615.10.71 and 7615.10.91 are further subdivisions. I'm not certain of the exact subheading, so I'm going with 7615.10.9100 as the \"other household articles\" catch-all.\n\n```json\n{\"hts_code\": \"7615.10.9100\", \"reason\": \"The passive extruded-aluminum freezer beverage chiller is a household article of aluminum classified in heading 7615 as an other table, kitchen or household article, not refrigerating equipment under 8418.\"}\n```\n\n{\"hts_code\": \"7615.10.9100\", \"reason\": \"The passive extruded-aluminum freezer beverage chiller is a household article of aluminum classified in heading 7615 as an other table, kitchen or household article, not refrigerating equipment under 8418.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 661,
+      "total_tokens": 1053,
+      "cost": 0.007394,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007394,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.00661
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7615109100",
+  "predicted_reason": "The passive extruded-aluminum freezer beverage chiller is a household article of aluminum classified in heading 7615 as an other table, kitchen or household article, not refrigerating equipment under 8418.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 661,
+    "total_tokens": 1053,
+    "cost": 0.007394,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007394,
+      "upstream_inference_prompt_cost": 0.000784,
+      "upstream_inference_completions_cost": 0.00661
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:34.763123+00:00",
+  "latency_s": 6.45,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359719",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "9505102500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599949-PoVQ5qz9O0xOGbGT6kje",
+    "object": "chat.completion",
+    "created": 1791599949,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.10.6020\", \"reason\": \"The item is an artificial Christmas foliage decoration made predominantly of plastics, classified as a Christmas article of plastics under heading 9505.\"}",
+          "refusal": null,
+          "reasoning": "Christmas article, plastic \u2014 9505.10.6020? Artificial Christmas foliage of plastics: 9505.10.6020? Actually 9505.10.6020 is \"Christmas articles... other\"? Subheadings: 9505.10.60 \u2014 Christmas ornaments of glass? 9505.10.6020: other, of plastics? Commonly artificial Christmas trees of plastics 9505.10.6080? Let me recall: 9505.10.6020 \"Other, of plastics\"? CBP rulings on artificial swags: 9505.10.6020? I think 9505.10.6020 covers Christmas articles of plastics other than ornaments. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Christmas article, plastic \u2014 9505.10.6020? Artificial Christmas foliage of plastics: 9505.10.6020? Actually 9505.10.6020 is \"Christmas articles... other\"? Subheadings: 9505.10.60 \u2014 Christmas ornaments of glass? 9505.10.6020: other, of plastics? Commonly artificial Christmas trees of plastics 9505.10.6080? Let me recall: 9505.10.6020 \"Other, of plastics\"? CBP rulings on artificial swags: 9505.10.6020? I think 9505.10.6020 covers Christmas articles of plastics other than ornaments. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 216,
+      "total_tokens": 428,
+      "cost": 0.00107284,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00107284,
+        "upstream_inference_prompt_cost": 3.604e-05,
+        "upstream_inference_completions_cost": 0.0010368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 167,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505106020",
+  "predicted_reason": "The item is an artificial Christmas foliage decoration made predominantly of plastics, classified as a Christmas article of plastics under heading 9505.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 216,
+    "total_tokens": 428,
+    "cost": 0.00107284,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00107284,
+      "upstream_inference_prompt_cost": 3.604e-05,
+      "upstream_inference_completions_cost": 0.0010368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:39:10.134578+00:00",
+  "latency_s": 2.152,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

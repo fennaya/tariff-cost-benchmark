@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360607",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "5702422080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596115-UlQVjHabM36Dq96dynYj",
+    "object": "chat.completion",
+    "created": 1791596115,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a chenille bath mat. Candidates are 5705 (other carpets and textile floor coverings) and 6304 (furnishing articles). Bath mats of textile are normally classified in 5705 if they are floor coverings. Mats made of woven chenille fabric laminated to foam are typically 5705.00.2090 (other, of man-made fibers, not tufted, not knitted).\n\nSeveral rulings (e.g., NY N301\u2026) classify bath mats made of woven fabric laminated to foam in 5705.00.2090. Under the 2022 HTSUS, 5705.00.20 is \"Of man-made textile materials\", with 5705.00.2090 as \"Other\" (5705.00.2010 is \"Rugs, ... \"?). The 5705.00.20 subheadings are: 5705.00.2005 (Carpets and rugs, tufted?), 5705.00.2010 (Of man-made fibers: Rugs, Hand-hooked?), 5705.00.2090 (Other). I'll use 5705.00.2090.\n\nAlternatively, 5703 covers tufted carpets, which doesn't apply. Chenille fabric is woven, so 5705 fits.\n\n```json\n{\"hts_code\": \"5705.00.2090\", \"reason\": \"A textile bath/floor mat with woven polyester chenille surface laminated to foam is an other textile floor covering of man-made fibers, not tufted or knitted, under heading 5705.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 434,
+      "completion_tokens": 486,
+      "total_tokens": 920,
+      "cost": 0.005728,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005728,
+        "upstream_inference_prompt_cost": 0.000868,
+        "upstream_inference_completions_cost": 0.00486
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5705002090",
+  "predicted_reason": "A textile bath/floor mat with woven polyester chenille surface laminated to foam is an other textile floor covering of man-made fibers, not tufted or knitted, under heading 5705.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 434,
+    "completion_tokens": 486,
+    "total_tokens": 920,
+    "cost": 0.005728,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005728,
+      "upstream_inference_prompt_cost": 0.000868,
+      "upstream_inference_completions_cost": 0.00486
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:15.061325+00:00",
+  "latency_s": 5.407,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357329",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595387-mC2p7kkCRRde0Bwz24vP",
+    "object": "chat.completion",
+    "created": 1791595387,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Vegetable saps and extracts fall in heading 1302. Subheading 1302.19 covers \"other\" vegetable saps and extracts, and its statistical suffixes are 1302.19.91 (other) and 1302.19.40 (medicinal use?).\n\nThe 1302.19 breakdown is roughly:\n- 1302.19.05 \u2013 Ginseng extracts\n- 1302.19.10 \u2013 Licorice\n- 1302.19.15 \u2013 Capsicum oleoresin?\n- 1302.19.20 \u2013 Other, of medicinal use?\n- 1302.19.91 \u2013 Other\n\nMy recollection of the HTS is as follows. Under 1302.19, the codes are 1302.19.05 (Containing alcohol? / Ginseng), 1302.19.10, 1302.19.15 (Medicinal: Mixtures for pharmaceutical use?), 1302.19.21, 1302.19.30, 1302.19.40 (Other), 1302.19.91, and 1302.19.4000, which I believe is \"Other: Other.\" 1302.19.91 is \"Other\" under the 1302.19.9 group. I'm not certain of the exact suffixes.\n\nThe best answer I can give is 1302.19.4000, though the suffix is uncertain. Teasel and red root are not specifically enumerated, so a residual \"other\" is appropriate. The glycerin carrier does not change the classification, since the extract remains a plant extract of heading 1302.\n\n```json\n{\"hts_code\": \"1302.19.4000\", \"reason\": \"Liquid botanical extracts of red root, teaweed and teasel in a glycerin-water carrier are vegetable extracts of heading 1302, falling in the residual 'other' provision of subheading 1302.19 (suffix uncertain).\"}\n```\n\n{\"hts_code\": \"1302.19.4000\", \"reason\": \"Liquid botanical extracts of red root, teaweed and teasel in a glycerin-water carrier are vegetable extracts of heading 1302, falling in the residual 'other' provision of subheading 1302.19 (suffix uncertain).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 437,
+      "completion_tokens": 684,
+      "total_tokens": 1121,
+      "cost": 0.007714,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007714,
+        "upstream_inference_prompt_cost": 0.000874,
+        "upstream_inference_completions_cost": 0.00684
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302194000",
+  "predicted_reason": "Liquid botanical extracts of red root, teaweed and teasel in a glycerin-water carrier are vegetable extracts of heading 1302, falling in the residual 'other' provision of subheading 1302.19 (suffix uncertain).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 437,
+    "completion_tokens": 684,
+    "total_tokens": 1121,
+    "cost": 0.007714,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007714,
+      "upstream_inference_prompt_cost": 0.000874,
+      "upstream_inference_completions_cost": 0.00684
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:07.918715+00:00",
+  "latency_s": 6.311,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

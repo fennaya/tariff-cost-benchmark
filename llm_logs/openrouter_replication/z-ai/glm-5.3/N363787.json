@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363787",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600447-M5DM3wzEwIzk4yYr5AqL",
+    "object": "chat.completion",
+    "created": 1791600447,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.23.0090\", \"reason\": \"A used spark-ignition sedan with a 1,994 cc engine falls under subheading 8703.23 for passenger vehicles with engine displacement over 1,500 cc but not over 3,000 cc, and as a used vehicle not specified elsewhere it classifies in the residual 'Other' statistical suffix 0090.\"}",
+          "refusal": null,
+          "reasoning": "Used sedan, spark-ignition, 1,994 cc (between 1500 and 3000 cc), used \u2192 8703.23.0090? Subheading 8703.23.00 \u2014 used, other. 8703.23.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Used sedan, spark-ignition, 1,994 cc (between 1500 and 3000 cc), used \u2192 8703.23.0090? Subheading 8703.23.00 \u2014 used, other. 8703.23.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 158,
+      "total_tokens": 364,
+      "cost": 0.0005784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005784,
+        "upstream_inference_prompt_cost": 4.12e-05,
+        "upstream_inference_completions_cost": 0.0005372
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 65,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230090",
+  "predicted_reason": "A used spark-ignition sedan with a 1,994 cc engine falls under subheading 8703.23 for passenger vehicles with engine displacement over 1,500 cc but not over 3,000 cc, and as a used vehicle not specified elsewhere it classifies in the residual 'Other' statistical suffix 0090.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 158,
+    "total_tokens": 364,
+    "cost": 0.0005784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005784,
+      "upstream_inference_prompt_cost": 4.12e-05,
+      "upstream_inference_completions_cost": 0.0005372
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 65,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:47:27.903045+00:00",
+  "latency_s": 1.451,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

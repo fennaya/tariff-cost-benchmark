@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361432",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8541430010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600190-THpTCyNbBCaBjqEdol8D",
+    "object": "chat.completion",
+    "created": 1791600190,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8541.43.0000\", \"reason\": \"The trailer serves merely as a mounting/transport platform for the integrated photovoltaic panels, which impart the essential character, and the panels are classified as photovoltaic cells assembled in modules under heading 8541.\"}",
+          "refusal": null,
+          "reasoning": "Solar trailer \u2014 likely classified as solar panels module? Actually a trailer with solar panels \u2014 likely 8716 trailer? But solar panels integrated... Ruling likely classifies under 8541.43 solar cells? The trailer's function is to support solar panels \u2014 likely 8501? Known ruling: solar-powered trailer classified in 8541.43 as photovoltaic panels? I'd say 8716.39.0090? Hmm. The trailer is essentially a carrier for solar panels; essence is solar panels \u2192 8541.43.0000? HTS 8541.43.0000 (cells and modules). I'll go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Solar trailer \u2014 likely classified as solar panels module? Actually a trailer with solar panels \u2014 likely 8716 trailer? But solar panels integrated... Ruling likely classifies under 8541.43 solar cells? The trailer's function is to support solar panels \u2014 likely 8501? Known ruling: solar-powered trailer classified in 8541.43 as photovoltaic panels? I'd say 8716.39.0090? Hmm. The trailer is essentially a carrier for solar panels; essence is solar panels \u2192 8541.43.0000? HTS 8541.43.0000 (cells and modules). I'll go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 208,
+      "total_tokens": 462,
+      "cost": 0.00093552,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00093552,
+        "upstream_inference_prompt_cost": 2.032e-05,
+        "upstream_inference_completions_cost": 0.0009152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 143,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8541430000",
+  "predicted_reason": "The trailer serves merely as a mounting/transport platform for the integrated photovoltaic panels, which impart the essential character, and the panels are classified as photovoltaic cells assembled in modules under heading 8541.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 254,
+    "completion_tokens": 208,
+    "total_tokens": 462,
+    "cost": 0.00093552,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00093552,
+      "upstream_inference_prompt_cost": 2.032e-05,
+      "upstream_inference_completions_cost": 0.0009152
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 143,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:43:10.551132+00:00",
+  "latency_s": 3.364,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

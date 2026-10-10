@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361312",
+  "rulingDate": "2026-05-15T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596248-hwf8ugRfN0Pxy4tVlTsD",
+    "object": "chat.completion",
+    "created": 1791596248,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description is too thin to classify with certainty. It gives only a vest with raw armholes and five non-functional buttons. It does not state the fiber content, whether the vest is knit or woven, or whether it is for men or women. I assumed a woven vest for women or girls in man-made fibers, which is a common type of article. That points to heading 6211 or 6206, though a vest is more likely classified under 6110 if knit, or 6211 as a \"garment, n.e.s.\"\n\nOther candidate headings are 6104 and 6204. Under HTSUS, women's suit-type vests are in 6204, and women's waistcoats in 6204.62 are trousers, so those don't fit. Women's knit vests are in 6110.30 (sweaters, waistcoats of man-made fibers). A buttoned vest with raw armholes is more likely a woven waistcoat. For women's woven vests, 6211.43 covers other garments of man-made fibers.\n\nFor men's, 6211.33 covers other garments of man-made fibers. I'll pick a women's vest in man-made fibers under 6211.43.\n\n6211.43.9060 is \"Women's or girls' other garments, of man-made fibers: Other: Other: Vests.\" I am not fully sure of the statistical suffix.\n\n{\"hts_code\": \"6211.43.9060\", \"reason\": \"Assuming a woven women's man-made-fiber vest (fiber, construction and gender not stated), it falls under heading 6211 as other women's garments of man-made fibers; the decorative non-functional buttons and raw armholes do not change this.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 174,
+      "completion_tokens": 510,
+      "total_tokens": 684,
+      "cost": 0.005448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005448,
+        "upstream_inference_prompt_cost": 0.000348,
+        "upstream_inference_completions_cost": 0.0051
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211439060",
+  "predicted_reason": "Assuming a woven women's man-made-fiber vest (fiber, construction and gender not stated), it falls under heading 6211 as other women's garments of man-made fibers; the decorative non-functional buttons and raw armholes do not change this.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 174,
+    "completion_tokens": 510,
+    "total_tokens": 684,
+    "cost": 0.005448,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005448,
+      "upstream_inference_prompt_cost": 0.000348,
+      "upstream_inference_completions_cost": 0.0051
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:28.727304+00:00",
+  "latency_s": 5.475,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362816",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "9503000073",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596562-NJ7t5FbAf8i498rw5c49",
+    "object": "chat.completion",
+    "created": 1791596562,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on squishy toys. Such items are generally classified in heading 9503 as toys. The character shapes (bunny, chick, carrot) are not stuffed toys representing animals in the 9503.00.0041 sense, since those are stuffed with textile materials. The 9503.00.00 subheadings are:\n\n- 9503.00.0073 is \"Other toys; \u2026 Other\" (the residual), though other options exist.\n- 9503.00.0041 covers \"Stuffed toys representing animals or non-human creatures,\" which in the 9503.00.00 structure is \"Toys representing animals or non-human creatures (for example, robots and monsters) and parts and accessories thereof: Stuffed toys.\"\n- 9503.00.0045 is probably \"Other\" under that group.\n\nFor the 2022 HTS, the structure runs: 9503.00.00 Tricycles... ; 9503.00.0010 Toys... ; 9503.00.0021 Dolls; 9503.00.0041 \"Toys representing animals or non-human creatures: Stuffed toys\"; 9503.00.0045 \"Other\"? I recall 9503.00.0049 as \"Other\" for animal toys with 9503.00.0041 as \"Stuffed\". Rulings on squishy animal toys filled with non-textile fillings often use 9503.00.0073 (\"Other toys\"), but animal-shaped ones use 9503.00.0049 (not stuffed, other). The carrot is not an animal, though, and the set is of three shapes. I believe the ruling classified them under 9503.00.0073 as \"Other toys,\" since in a set the carrot isn't an animal and the items are not stuffed with textile.\n\nI'll go with 9503.00.0073.\n\n{\"hts_code\": \"9503.00.0073\", \"reason\": \"Squishy manipulative toys for children's amusement are classified as other toys in heading 9503, falling in the residual subheading since they are not stuffed animal toys or other more specific toy types.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 378,
+      "completion_tokens": 650,
+      "total_tokens": 1028,
+      "cost": 0.007256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007256,
+        "upstream_inference_prompt_cost": 0.000756,
+        "upstream_inference_completions_cost": 0.0065
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "Squishy manipulative toys for children's amusement are classified as other toys in heading 9503, falling in the residual subheading since they are not stuffed animal toys or other more specific toy types.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 378,
+    "completion_tokens": 650,
+    "total_tokens": 1028,
+    "cost": 0.007256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007256,
+      "upstream_inference_prompt_cost": 0.000756,
+      "upstream_inference_completions_cost": 0.0065
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:43.012711+00:00",
+  "latency_s": 6.09,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

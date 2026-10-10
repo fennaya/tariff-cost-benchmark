@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363546",
+  "rulingDate": "2026-08-13T00:00:00",
+  "true_code": "9019200000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600435-v4Rg4ruOAXu2jwpwr2Da",
+    "object": "chat.completion",
+    "created": 1791600435,
+    "model": "z-ai/glm-5.3",
+    "provider": "Crusoe",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8481.90.9060\", \"reason\": \"CBP has classified nasal atomizer assemblies of this type as parts of the articles of heading 8481, since the atomizer functions as a valve/dispenser mechanism delivering medication from a syringe.\"}",
+          "refusal": null,
+          "reasoning": "Nasal atomizer \u2014 likely 9018.39 (other instruments for administration of medication?) Actually mucosal atomizer classified under 8481? CBP rulings classify nasal atomizers under 8481.40? There are rulings: MAD device classified 8479.89? Known ruling NY N... nasal atomizer classified under 8481.90? I recall CBP ruling classifying mucosal atomization device under 8481.90.90? Hmm. There's ruling NY N268349 classifying nasal atomizer under 8481.90.9060? Actually 8481.90 parts of taps/valves. But atomizer is a spray device \u2014 8424.89? \"Atomizing\" \u2014 8424.89.90? There's ruling classifying nasal spray pump under 8424.89? I think CBP ruled nasal atomizer assembly under 8481.90.9060 (parts). Hmm, but unassembled components imported together \u2014 GRI 2(a). I'll go with 8424.89.90? Choose 8481.90.9060? I recall NYRL N272527: mucosal atomizer classified in 8481.90.90. I'll answer 8481.90.9060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Nasal atomizer \u2014 likely 9018.39 (other instruments for administration of medication?) Actually mucosal atomizer classified under 8481? CBP rulings classify nasal atomizers under 8481.40? There are rulings: MAD device classified 8479.89? Known ruling NY N... nasal atomizer classified under 8481.90? I recall CBP ruling classifying mucosal atomization device under 8481.90.90? Hmm. There's ruling NY N268349 classifying nasal atomizer under 8481.90.9060? Actually 8481.90 parts of taps/valves. But atomizer is a spray device \u2014 8424.89? \"Atomizing\" \u2014 8424.89.90? There's ruling classifying nasal spray pump under 8424.89? I think CBP ruled nasal atomizer assembly under 8481.90.9060 (parts). Hmm, but unassembled components imported together \u2014 GRI 2(a). I'll go with 8424.89.90? Choose 8481.90.9060? I recall NYRL N272527: mucosal atomizer classified in 8481.90.90. I'll answer 8481.90.9060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 355,
+      "total_tokens": 679,
+      "cost": 0.0020156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0020156,
+        "upstream_inference_prompt_cost": 0.0004536,
+        "upstream_inference_completions_cost": 0.001562
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 290,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8481909060",
+  "predicted_reason": "CBP has classified nasal atomizer assemblies of this type as parts of the articles of heading 8481, since the atomizer functions as a valve/dispenser mechanism delivering medication from a syringe.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 355,
+    "total_tokens": 679,
+    "cost": 0.0020156,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0020156,
+      "upstream_inference_prompt_cost": 0.0004536,
+      "upstream_inference_completions_cost": 0.001562
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 290,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Crusoe",
+  "requested_at": "2026-10-10T02:47:15.666391+00:00",
+  "latency_s": 3.103,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

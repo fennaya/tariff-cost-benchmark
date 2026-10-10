@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359221",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "8704310140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595782-7MwlJZe3jorEFiZinQX3",
+    "object": "chat.completion",
+    "created": 1791595782,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Motor vehicles for transport of goods fall under heading 8704. Spark-ignition engine vehicles are classified in 8704.21 (diesel) or 8704.31 (spark-ignition), and the GVW decides the subheading. A Honda Acty is a small kei truck with a GVW under 5 tonnes, so it falls under 8704.31. Within that, the statistical suffix for spark-ignition, GVW not exceeding 5 metric tons is 8704.31.0000 in the 2023 HTSUS, with statistical suffixes 8704.31.0120 (Chassis) and similar ones.\n\nIn the HTSUS, 8704.31.01 is \"Other: g.v.w. not exceeding 5 metric tons\", and the 10-digit codes are:\n- 8704.31.0120: Chassis\n- 8704.31.0140: Pickup trucks\n- 8704.31.0160: Other (probably)\n\nThe CBP ruling on a Honda Acty (NY N-series) classified it in 8704.31.0160? Ruling for kei trucks: \"The applicable subheading for the Honda Acty truck will be 8704.31.0160, HTSUS, which provides for Motor vehicles for the transport of goods: Other, with spark-ignition internal combustion piston engine: G.v.w. not exceeding 5 metric tons: Other: Other.\" I recall the 8704.31.0160 designation as correct for these rulings, since the statistical suffix 8704.31.0140 covers only a particular pickup category: \"Pickup trucks\"? I'll go with 8704.31.0160.\n\n{\"hts_code\": \"8704.31.0160\", \"reason\": \"The Honda Acty is a small spark-ignition motor vehicle for transporting goods with a GVW not exceeding 5 metric tons, so it falls under heading 8704, subheading 8704.31, in the 'Other' statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 630,
+      "total_tokens": 889,
+      "cost": 0.006818,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006818,
+        "upstream_inference_prompt_cost": 0.000518,
+        "upstream_inference_completions_cost": 0.0063
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8704310160",
+  "predicted_reason": "The Honda Acty is a small spark-ignition motor vehicle for transporting goods with a GVW not exceeding 5 metric tons, so it falls under heading 8704, subheading 8704.31, in the 'Other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 630,
+    "total_tokens": 889,
+    "cost": 0.006818,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006818,
+      "upstream_inference_prompt_cost": 0.000518,
+      "upstream_inference_completions_cost": 0.0063
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:42.802557+00:00",
+  "latency_s": 5.66,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

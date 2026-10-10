@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362043",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "5702202000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596405-J8COWDiDHV9DTJI40qib",
+    "object": "chat.completion",
+    "created": 1791596405,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on coir door mats with rubber backing. Coir mats fall under HTSUS 5702 (carpets and floor coverings, woven, not tufted or flocked) or 5705, or under 4601/4602 for plaited materials. Coir mats are specifically covered in 5702 and 5703.\n\nHeading 5702 covers woven floor coverings, not tufted or flocked, including Kelem, Schumacks and Karamanie type rugs. Subheading 5702.10 covers those, 5702.20 covers floor coverings of coconut fibers (coir). Within 5702.20, the statistical suffix is 5702.20.1000 for \"floor coverings of coconut fibers (coir).\"\n\nFor STRIPE-2, the woven coir fabric is the main surface, so 5702.20.1000 applies. For CAT-1, if the coir pile is not woven, it might be tufted (5703) or other (5705). Since the question asks for a single code, I'll pick the one that covers the described product overall: the woven coir mat, 5702.20.1000.\n\nThe rubber is not the main component by surface area, since the majority of the face is coir. So heading 5702 is better than 4016.\n\n{\"hts_code\": \"5702.20.1000\", \"reason\": \"Coir door mats whose face is predominantly woven coir fiber, with rubber backing and design, are classified as floor coverings of coconut fibers (coir) in heading 5702.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 554,
+      "completion_tokens": 476,
+      "total_tokens": 1030,
+      "cost": 0.005868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005868,
+        "upstream_inference_prompt_cost": 0.001108,
+        "upstream_inference_completions_cost": 0.00476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5702201000",
+  "predicted_reason": "Coir door mats whose face is predominantly woven coir fiber, with rubber backing and design, are classified as floor coverings of coconut fibers (coir) in heading 5702.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 554,
+    "completion_tokens": 476,
+    "total_tokens": 1030,
+    "cost": 0.005868,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005868,
+      "upstream_inference_prompt_cost": 0.001108,
+      "upstream_inference_completions_cost": 0.00476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:05.628811+00:00",
+  "latency_s": 5.248,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

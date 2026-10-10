@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358538",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "5609003000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599777-pCfweXEqnLsvEb1E6oNJ",
+    "object": "chat.completion",
+    "created": 1791599777,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"5609.00.0000\", \"reason\": \"The braided polyester monofilament yarn string fastener, with minor plastic components, is an article of twine/cordage not elsewhere specified, classified in heading 5609.\"}",
+          "refusal": null,
+          "reasoning": "This is a textile string fastener \u2014 likely heading 5607 or 6307? Plastic components joined... Actually resembles NY N ruling: plastic tag fasteners. Likely classified as article of plastics 3926.90? But textile string braided... Ruling likely classifies under 5609? Articles of yarn... 5609.00.0000 \"Articles of yarn, strip or the like of heading 5404 or 5405, twine, cordage, rope or cables, not elsewhere specified.\" Braided polyester string fastener \u2192 5609.00.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a textile string fastener \u2014 likely heading 5607 or 6307? Plastic components joined... Actually resembles NY N ruling: plastic tag fasteners. Likely classified as article of plastics 3926.90? But textile string braided... Ruling likely classifies under 5609? Articles of yarn... 5609.00.0000 \"Articles of yarn, strip or the like of heading 5404 or 5405, twine, cordage, rope or cables, not elsewhere specified.\" Braided polyester string fastener \u2192 5609.00.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 272,
+      "completion_tokens": 190,
+      "total_tokens": 462,
+      "cost": 0.00095824,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00095824,
+        "upstream_inference_prompt_cost": 4.624e-05,
+        "upstream_inference_completions_cost": 0.000912
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 136,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5609000000",
+  "predicted_reason": "The braided polyester monofilament yarn string fastener, with minor plastic components, is an article of twine/cordage not elsewhere specified, classified in heading 5609.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 272,
+    "completion_tokens": 190,
+    "total_tokens": 462,
+    "cost": 0.00095824,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00095824,
+      "upstream_inference_prompt_cost": 4.624e-05,
+      "upstream_inference_completions_cost": 0.000912
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 136,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:36:17.648212+00:00",
+  "latency_s": 2.68,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

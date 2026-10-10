@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357307",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "8424899000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595371-Zu9TT5DfmS6Ar32nKvh3",
+    "object": "chat.completion",
+    "created": 1791595371,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on ceramic soap dispensers. Classification options:\n- 3924.90 (plastic household articles): not applicable, since the body is ceramic.\n- 6912.00 (ceramic tableware, kitchenware, other household articles and toilet articles, other than porcelain or china): fits a dolomite ceramic body, which is stoneware or earthenware.\n- 8424.89 (mechanical appliances for projecting or dispersing liquids): a possible alternative, but a pump soap dispenser is generally treated as a ceramic toilet article.\n\nCBP has classified ceramic soap dispensers with pumps in 6912.00. The 6912.00 subheadings are:\n- 6912.00.10 (household cooking ware)\n- 6912.00.2000 (tableware and kitchenware, not including 6912.00.10)\n- 6912.00.4000 (other ceramic tableware, kitchenware, other household articles and toilet articles; not in these specific sets)\n- 6912.00.48 (other, other)\n- 6912.00.4810 (other: ... )\n- 6912.00.50 (other)\n\nMy recollection of the 6912.00 structure is:\n- 6912.00.21 to 6912.00.29 (tableware and kitchenware)\n- 6912.00.35 (other, with specific sets)\n- 6912.00.39\n- 6912.00.41 (articles of a kind used for toilet purposes)\n- 6912.00.44\n- 6912.00.45\n- 6912.00.48 (other: ...)\n- 6912.00.50 (other: ...)\n\nThe 6912.00.4810 and 6912.00.4820 lines cover \"Other: Other: Other: Other\" and, I believe, include items valued over $0.30 but not over $3, with the 6912.00.50 subheading covering the rest. The ruling most likely uses 6912.00.4810 (\"Other... Other: Other\"), which is my best guess.\n\n```json\n{\"hts_code\": \"6912.00.4810\", \"reason\": \"Dolomite ceramic (non-porcelain) pump soap dispensers are ceramic household/toilet articles of heading 6912, falling in the residual 'other' subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 726,
+      "total_tokens": 1093,
+      "cost": 0.007994,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007994,
+        "upstream_inference_prompt_cost": 0.000734,
+        "upstream_inference_completions_cost": 0.00726
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6912004810",
+  "predicted_reason": "Dolomite ceramic (non-porcelain) pump soap dispensers are ceramic household/toilet articles of heading 6912, falling in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 726,
+    "total_tokens": 1093,
+    "cost": 0.007994,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007994,
+      "upstream_inference_prompt_cost": 0.000734,
+      "upstream_inference_completions_cost": 0.00726
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:52.262818+00:00",
+  "latency_s": 6.272,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360766",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "8706805090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600119-lhtRUooZDoZkf0kCXo1E",
+    "object": "chat.completion",
+    "created": 1791600119,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8716.31.0030\", \"reason\": \"The propane tanker trailer is a non-mechanically propelled tanker trailer designed to be towed, classifiable as other tanker trailers and semi-trailers.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling-like; propane tanker trailer towable \u2014 likely classified as a tank trailer under 8716.39? But towed at low speeds by tractor/beast \u2014 still trailer. Likely 8716.39.0030? Actually 8716.39.00 \"Other\". 10-digit: 8716.39.0030? Tank trailers are 8716.31? No\u20148716.31 tankers for goods transport. 8716.31.00 \"Tanker trailers and semi-trailers\". 10-digit 8716.31.0030? Check: 8716.31.0030 \"Tanker trailers and semi-trailers: Other\". Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling-like; propane tanker trailer towable \u2014 likely classified as a tank trailer under 8716.39? But towed at low speeds by tractor/beast \u2014 still trailer. Likely 8716.39.0030? Actually 8716.39.00 \"Other\". 10-digit: 8716.39.0030? Tank trailers are 8716.31? No\u20148716.31 tankers for goods transport. 8716.31.00 \"Tanker trailers and semi-trailers\". 10-digit 8716.31.0030? Check: 8716.31.0030 \"Tanker trailers and semi-trailers: Other\". Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 511,
+      "completion_tokens": 215,
+      "total_tokens": 726,
+      "cost": 0.001051865,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001051865,
+        "upstream_inference_prompt_cost": 1.9865e-05,
+        "upstream_inference_completions_cost": 0.001032
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 161,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8716310030",
+  "predicted_reason": "The propane tanker trailer is a non-mechanically propelled tanker trailer designed to be towed, classifiable as other tanker trailers and semi-trailers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 511,
+    "completion_tokens": 215,
+    "total_tokens": 726,
+    "cost": 0.001051865,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001051865,
+      "upstream_inference_prompt_cost": 1.9865e-05,
+      "upstream_inference_completions_cost": 0.001032
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 161,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:41:59.676628+00:00",
+  "latency_s": 1.299,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

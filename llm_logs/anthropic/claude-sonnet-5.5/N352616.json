@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N352616",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "5404198020",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593783-I7yMs36yefyFvjZ2OYfb",
+    "object": "chat.completion",
+    "created": 1791593783,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a String Art kit, which CBP has ruled on as a set. The components are a wooden base with nails, nylon monofilament, a stand, and software. The kit is not a toy and is for ages 14 and up. The question is whether it is a GRI 3(b) set put up for retail sale and, if so, which component gives it its essential character.\n\nThe essential character is probably the wooden base with nails, which forms the art piece, or possibly the monofilament. Wooden articles fall under 4420 or 4421, and 4421.99.98 is \"other articles of wood\". Nylon monofilament falls under 5404, for synthetic monofilament of 67 decitex or more with a cross-section not exceeding 1 mm. Another option is 9503 for toys, but the kit is stated not to be a toy. Another is 9023 for demonstration items, which does not fit. Another is 9701, which does not fit either.\n\nI recall CBP rulings on string art kits (such as the \"String Art Kit\" ruling) that classified them by essential character. The yarn weighs 150 g, and the wooden base is the large item that carries the nails. The ruling analyzed the yarn as monofilament, which suggests the outcome was 5404. Since the laboratory analysis of the yarn is emphasized, the ruling probably classified it as 5404.19.0000, other monofilament of synthetic textile materials, or as 5404.90. Nylon monofilament of 67 decitex or more with a cross-section not exceeding 1 mm is 5404.19 (other, not elastomeric). The 5404.11 subheading covers elastomeric monofilament. Under 5404.19 the statistical suffix is 5404.19.8000 or 5404.19.0000. I'm not certain, but I'll go with the wood base as the essential character.\n\nOn balance, the wooden base is the dominant component by size, and the yarn's emphasized analysis suggests it matters. I'll choose 4421.99.9880.\n\n```json\n{\"hts_code\": \"4421.99.9880\", \"reason\": \"The kit is a GRI 3(b) retail set whose essential character is given by the wooden nailed base, so it is classified as an other article of wood.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 627,
+      "completion_tokens": 710,
+      "total_tokens": 1337,
+      "cost": 0.008354,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008354,
+        "upstream_inference_prompt_cost": 0.001254,
+        "upstream_inference_completions_cost": 0.0071
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4421999880",
+  "predicted_reason": "The kit is a GRI 3(b) retail set whose essential character is given by the wooden nailed base, so it is classified as an other article of wood.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 627,
+    "completion_tokens": 710,
+    "total_tokens": 1337,
+    "cost": 0.008354,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008354,
+      "upstream_inference_prompt_cost": 0.001254,
+      "upstream_inference_completions_cost": 0.0071
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:23.695698+00:00",
+  "latency_s": 7.077,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

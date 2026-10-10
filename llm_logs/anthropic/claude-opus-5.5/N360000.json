@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360000",
+  "rulingDate": "2026-04-03T00:00:00",
+  "true_code": "8471500150",
+  "model": "anthropic/claude-opus-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791597649-NKVrgA9XP70HFjB2aOET",
+    "object": "chat.completion",
+    "created": 1791597649,
+    "model": "anthropic/claude-opus-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Servers like this are classified under 8471.41.01, which covers ADP machines containing in the same housing at least a CPU and an input and output unit, whether or not combined. They can also fall under 8471.50.01, which covers processing units. CBP rulings on servers that lack a keyboard or display have typically placed them in 8471.50.0150, processing units other than those of 8471.41/49, as \"Other.\" This server takes user input through a separate personal computer, so it has no integrated input or output unit. That points to 8471.50.0150.\n\n{\"hts_code\": \"8471.50.0150\", \"reason\": \"The Dell PowerEdge R7625 is a rack-mounted digital processing unit (server) that has CPUs but no integrated input/output units and is operated via a separate PC, so it falls under processing units of subheading 8471.50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 350,
+      "completion_tokens": 269,
+      "total_tokens": 619,
+      "cost": 0.00678,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00678,
+        "upstream_inference_prompt_cost": 0.0014,
+        "upstream_inference_completions_cost": 0.00538
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471500150",
+  "predicted_reason": "The Dell PowerEdge R7625 is a rack-mounted digital processing unit (server) that has CPUs but no integrated input/output units and is operated via a separate PC, so it falls under processing units of subheading 8471.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 269,
+    "total_tokens": 619,
+    "cost": 0.00678,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00678,
+      "upstream_inference_prompt_cost": 0.0014,
+      "upstream_inference_completions_cost": 0.00538
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T02:00:50.148753+00:00",
+  "latency_s": 4.617,
+  "request_params": {
+    "model": "anthropic/claude-opus-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    }
+  }
+}

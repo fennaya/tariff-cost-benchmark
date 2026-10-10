@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363815",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "4901990010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596733-Qkl9ydM0NNboWUHsAzTM",
+    "object": "chat.completion",
+    "created": 1791596733,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Gray's Anatomy for Students is a printed softcover book, so it falls in heading 4901. Heading 4901 covers printed books, brochures and similar printed matter. Under 4901.99 (other, not in single sheets), the textbook subheading is 4901.99.00 with statistical suffixes. I recalled the suffixes as 4901.99.0040 (textbooks), but I'm not certain of that figure.\n\nHTSUS 4901.99.00 breaks down as follows:\n- 4901.99.0030: Hardbound religious books?\n- 4901.99.0040: Textbooks? Not sure.\n- 4901.99.0050: Other.\n\nWithin 4901.99.00 the 10-digit lines I recall are:\n- 4901.99.0040 Other: Hardbound \u2014 Textbooks\n- 4901.99.0060: Other hardbound\n- 4901.99.0070: Other: Textbooks? Not sure.\n- 4901.99.0090: Other\n\nSince this is a softcover textbook, the best match I can give is 4901.99.0092 (other, not hardbound), though I'm not confident of the exact suffix. I recall that 4901.99.0092 is \"Other: Other: Other\", and 4901.99.0040 relates to textbooks. Because the item is a textbook, I'm choosing 4901.99.0040? Since 4901.99.0040 may be the hardbound \"Textbooks\" line, 4901.99.0050 is the more likely softcover match.\n\nI'll go with 4901.99.0050.\n\n{\"hts_code\": \"4901.99.0050\", \"reason\": \"A printed softcover anatomy textbook bound as a book (not in single sheets) is classified in heading 4901 under the 4901.99 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 575,
+      "total_tokens": 815,
+      "cost": 0.00623,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00623,
+        "upstream_inference_prompt_cost": 0.00048,
+        "upstream_inference_completions_cost": 0.00575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4901990050",
+  "predicted_reason": "A printed softcover anatomy textbook bound as a book (not in single sheets) is classified in heading 4901 under the 4901.99 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 575,
+    "total_tokens": 815,
+    "cost": 0.00623,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00623,
+      "upstream_inference_prompt_cost": 0.00048,
+      "upstream_inference_completions_cost": 0.00575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:33.265099+00:00",
+  "latency_s": 7.329,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360549",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "6307200000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600090-TL2IRy9rob8rh5aRYkAD",
+    "object": "chat.completion",
+    "created": 1791600090,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6307.20.0000\", \"reason\": \"Life jackets and life belts are specifically provided for in HTSUS heading 6307 as other made-up textile articles, and the textile construction here does not qualify for the life-saving equipment provisions of heading 9506 or 8424/9018.\"}",
+          "refusal": null,
+          "reasoning": "Life jackets: 6307.20.0000? Actually life jackets classified 6307.20.00 (life jackets and life belts). 10-digit: 6307.20.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Life jackets: 6307.20.0000? Actually life jackets classified 6307.20.00 (life jackets and life belts). 10-digit: 6307.20.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1504,
+      "completion_tokens": 123,
+      "total_tokens": 1627,
+      "cost": 0.00084544,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00084544,
+        "upstream_inference_prompt_cost": 0.00025504,
+        "upstream_inference_completions_cost": 0.0005904
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 47,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6307200000",
+  "predicted_reason": "Life jackets and life belts are specifically provided for in HTSUS heading 6307 as other made-up textile articles, and the textile construction here does not qualify for the life-saving equipment provisions of heading 9506 or 8424/9018.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1504,
+    "completion_tokens": 123,
+    "total_tokens": 1627,
+    "cost": 0.00084544,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00084544,
+      "upstream_inference_prompt_cost": 0.00025504,
+      "upstream_inference_completions_cost": 0.0005904
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 47,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:41:31.279934+00:00",
+  "latency_s": 1.139,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

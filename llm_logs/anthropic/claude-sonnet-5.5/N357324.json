@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357324",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1302194140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595379-20CziqkiPAqep8XkM6CB",
+    "object": "chat.completion",
+    "created": 1791595379,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on herbal tinctures made from several botanicals. The relevant heading is 1302 (vegetable saps and extracts), specifically 1302.19 (other).\n\nThe subheading 1302.19 is split into 1302.19.05 (of a kind used primarily in pharmacy), 1302.19.15 (other), and so on. The HTSUS breaks down as follows:\n- 1302.11 is opium.\n- 1302.12 is licorice.\n- 1302.13 is hops.\n- 1302.14 is pyrethrum or derris.\n- 1302.19 is other.\n  - 1302.19.05: Medicinal.\n  - 1302.19.10: Ginseng extracts.\n  - 1302.19.15: Other, including those used in food flavors.\n  - 1302.19.21 and 1302.19.40: Other.\n\nI recall the subheadings as 1302.19.05 (containing mixtures, with 1302.19.0500 \"Medicinal\"), 1302.19.15 (for 1302.19.15 \"Of a kind used primarily in pharmacy\" with 1302.19.1500), 1302.19.20 (ginseng) and 1302.19.40 (other). I'm not certain of these breakdowns, so I'm choosing 1302.19.9100 as a safe general \"other\" option. The actual structure has 1302.19.91 for \"Other: Other\" in the \"Other\" group, and 1302.19.4100 for \"Other\" as well, which I'm not sure about.\n\nI'll go with the medicinal-use option, 1302.19.4000, though an alternative would be 1302.19.9190.\n\nClassification is under heading 1302, with an uncertain choice among the statistical suffixes.\n\n{\"hts_code\": \"1302.19.4000\", \"reason\": \"Liquid botanical extracts made by glycerin-water maceration of plants are vegetable extracts of heading 1302, falling in the 'other' vegetable saps and extracts subheading 1302.19, and I am not certain of the exact 10-digit statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 502,
+      "completion_tokens": 674,
+      "total_tokens": 1176,
+      "cost": 0.007744,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007744,
+        "upstream_inference_prompt_cost": 0.001004,
+        "upstream_inference_completions_cost": 0.00674
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302194000",
+  "predicted_reason": "Liquid botanical extracts made by glycerin-water maceration of plants are vegetable extracts of heading 1302, falling in the 'other' vegetable saps and extracts subheading 1302.19, and I am not certain of the exact 10-digit statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 502,
+    "completion_tokens": 674,
+    "total_tokens": 1176,
+    "cost": 0.007744,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007744,
+      "upstream_inference_prompt_cost": 0.001004,
+      "upstream_inference_completions_cost": 0.00674
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:59.431703+00:00",
+  "latency_s": 6.599,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362099",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "6702102000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600275-fD4wj8rl8GxmXoZSZEID",
+    "object": "chat.completion",
+    "created": 1791600275,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6702.10.2500\", \"reason\": \"The wreaths are artificial foliage articles of man-made plastics, with plastic flowers on molded plastic stems bound to a vine base, classifiable in heading 6702 as artificial flowers/foliage of plastics.\"}",
+          "refusal": null,
+          "reasoning": "CROSS ruling: artificial wreaths of plastics \u2014 6702.10.2500? HTS 6702.10 articles of plastics. 6702.10.2500? Wreaths of plastics 6702.10.2500? Actually 6702.10.2500: \"Of man-made plastics... Wreaths, Christmas ornaments...\" Let me recall: 6702.10.2500 is \"Of man-made plastics: Other: Other\"? Known ruling 6702.10.2500 for artificial wreaths of plastic.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "CROSS ruling: artificial wreaths of plastics \u2014 6702.10.2500? HTS 6702.10 articles of plastics. 6702.10.2500? Wreaths of plastics 6702.10.2500? Actually 6702.10.2500: \"Of man-made plastics... Wreaths, Christmas ornaments...\" Let me recall: 6702.10.2500 is \"Of man-made plastics: Other: Other\"? Known ruling 6702.10.2500 for artificial wreaths of plastic.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 195,
+      "completion_tokens": 187,
+      "total_tokens": 382,
+      "cost": 0.0008368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008368,
+        "upstream_inference_prompt_cost": 1.4e-05,
+        "upstream_inference_completions_cost": 0.0008228
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 124,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6702102500",
+  "predicted_reason": "The wreaths are artificial foliage articles of man-made plastics, with plastic flowers on molded plastic stems bound to a vine base, classifiable in heading 6702 as artificial flowers/foliage of plastics.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 195,
+    "completion_tokens": 187,
+    "total_tokens": 382,
+    "cost": 0.0008368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008368,
+      "upstream_inference_prompt_cost": 1.4e-05,
+      "upstream_inference_completions_cost": 0.0008228
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 124,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:44:36.264441+00:00",
+  "latency_s": 2.264,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

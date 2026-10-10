@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357694",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "8543709860",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599680-BmpPXqX02cpKNSroKkQl",
+    "object": "chat.completion",
+    "created": 1791599680,
+    "model": "z-ai/glm-5.3",
+    "provider": "Z.AI",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7614.90.9000\", \"reason\": \"The IPB's inner conductor is a bare, uninsulated aluminum conductor, and aluminum wire, cables and the like not electrically insulated are classified in heading 7614, specifically the 'other' subheading for non-steel-core aluminum conductors.\"}",
+          "refusal": null,
+          "reasoning": "Bare aluminum conductor \u2014 likely 8544.42? No, bare bars/rods of aluminum: 7614 \u2014 stranded wire/cables not insulated, of aluminum. Hollow tube conductor... NY ruling likely 7614.90.10 or similar. Aluminum wire, cables not electrically insulated: 7614.90.10 (other, with steel core? Actually 7614.10 with steel core, 7614.90 other). Rate/provisions: 7614.90.10 stranded? I'll answer 7614.90.9000? Subheadings: 7614.90.10 \u2014 having a steel core? no that's 7614.10. 7614.90.00? Let me pick 7614.90.1000? Safer: 7614.90.9000. Hmm. 7614.90 has subdivisions .10 (other, stranded) and .90? I'll go with 7614.90.9000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Bare aluminum conductor \u2014 likely 8544.42? No, bare bars/rods of aluminum: 7614 \u2014 stranded wire/cables not insulated, of aluminum. Hollow tube conductor... NY ruling likely 7614.90.10 or similar. Aluminum wire, cables not electrically insulated: 7614.90.10 (other, with steel core? Actually 7614.10 with steel core, 7614.90 other). Rate/provisions: 7614.90.10 stranded? I'll answer 7614.90.9000? Subheadings: 7614.90.10 \u2014 having a steel core? no that's 7614.10. 7614.90.00? Let me pick 7614.90.1000? Safer: 7614.90.9000. Hmm. 7614.90 has subdivisions .10 (other, stranded) and .90? I'll go with 7614.90.9000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 265,
+      "completion_tokens": 298,
+      "total_tokens": 563,
+      "cost": 0.0016822,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016822,
+        "upstream_inference_prompt_cost": 0.000371,
+        "upstream_inference_completions_cost": 0.0013112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 224,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7614909000",
+  "predicted_reason": "The IPB's inner conductor is a bare, uninsulated aluminum conductor, and aluminum wire, cables and the like not electrically insulated are classified in heading 7614, specifically the 'other' subheading for non-steel-core aluminum conductors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 265,
+    "completion_tokens": 298,
+    "total_tokens": 563,
+    "cost": 0.0016822,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0016822,
+      "upstream_inference_prompt_cost": 0.000371,
+      "upstream_inference_completions_cost": 0.0013112
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 224,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Z.AI",
+  "requested_at": "2026-10-10T02:34:40.461266+00:00",
+  "latency_s": 15.481,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

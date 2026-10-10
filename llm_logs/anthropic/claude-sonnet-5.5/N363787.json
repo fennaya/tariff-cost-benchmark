@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363787",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703230190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596721-35XwzWSJMGSpJo1CiwZv",
+    "object": "chat.completion",
+    "created": 1791596721,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Passenger motor vehicle with spark-ignition engine of 1,994 cc falls in heading 8703. Engine displacement over 1,500 cc but not over 3,000 cc is subheading 8703.23. The statistical suffix for 8703.23.01 is as follows: 8703.23.01 covers vehicles of cylinder capacity exceeding 1,500 cc but not exceeding 3,000 cc, and the 10-digit codes are 8703.23.0160 (other, new) or 8703.23.0190 (used?). Checking the HTSUS: 8703.23.01 has statistical suffixes 8703.23.0110 (Sedans, 4x2?) ... I recall the older structure: 8703.23.01 with 10-digit codes: 20 \"Passenger automobiles, designed for transporting \u2264 9 persons\"? The current structure is 8703.23.01 followed by 8703.23.0150 for \"Not for the transportation of goods... Sedans ... 4WD\"? I believe the current codes are 8703.23.0160 (Other: Station wagons?), 8703.23.0190 (\"Other\"). Prior CBP rulings on used Japanese imports (e.g., Subaru WRX STI) cite 8703.23.0190, the general \"Other\" category, which I'll use.\n\n{\"hts_code\": \"8703.23.0190\", \"reason\": \"A passenger sedan with a spark-ignition piston engine of 1,994 cc (over 1,500 cc but not over 3,000 cc) is classified in subheading 8703.23, with the 8703.23.0190 statistical suffix covering other vehicles.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 540,
+      "total_tokens": 863,
+      "cost": 0.006046,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006046,
+        "upstream_inference_prompt_cost": 0.000646,
+        "upstream_inference_completions_cost": 0.0054
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703230190",
+  "predicted_reason": "A passenger sedan with a spark-ignition piston engine of 1,994 cc (over 1,500 cc but not over 3,000 cc) is classified in subheading 8703.23, with the 8703.23.0190 statistical suffix covering other vehicles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 323,
+    "completion_tokens": 540,
+    "total_tokens": 863,
+    "cost": 0.006046,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006046,
+      "upstream_inference_prompt_cost": 0.000646,
+      "upstream_inference_completions_cost": 0.0054
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:22.062276+00:00",
+  "latency_s": 5.553,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

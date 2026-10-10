@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360648",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596130-Z6j8v98PSygHebEdPEaE",
+    "object": "chat.completion",
+    "created": 1791596130,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be based on a CBP ruling on the Sleipner excavator carrier. My recollection is that it was classified as parts of machinery of heading 8431, specifically 8431.49 (parts suitable for use with machinery of heading 8426, 8429 or 8430). The carrier attaches to an excavator, so it would be a part or accessory of the excavator (8429), which falls under 8431.49.\n\nThe 8431.49 subheadings:\n- 8431.49.10: parts of machinery of 8426.\n- 8431.49.90: other, with 8431.49.9060 not matching my memory.\n\nUnder 8431.49 there is also 8431.49.20 for parts of machinery of 8429 and 8430, but I'm not sure of the statistical suffix. The HTSUS structure I recall:\n- 8431.41: buckets, shovels, grabs and grips\n- 8431.42: bulldozer or angledozer blades\n- 8431.43: parts for boring or sinking machinery of 8430.41 or 8430.49\n- 8431.49: other\n  - 8431.49.10: of machinery of 8426\n  - 8431.49.90: other (statistical suffixes 8431.49.9010 for parts of 8429 and 8430 machines, 8431.49.9090 other)\n\nI'm not certain about the suffix. I'll go with 8431.49.9095, though it's a guess.\n\nAlternatively, the item could be a transport vehicle accessory classified under 8716.90, but the carrier attaches to the tracks of an excavator, so the 8431 classification seems more plausible.\n\n{\"hts_code\": \"8431.49.9095\", \"reason\": \"The wheeled carrier attaches to an excavator's tracks and is a part or accessory of excavating machinery of heading 8429, so it falls under the 8431.49 'other parts' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 613,
+      "completion_tokens": 603,
+      "total_tokens": 1216,
+      "cost": 0.007256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007256,
+        "upstream_inference_prompt_cost": 0.001226,
+        "upstream_inference_completions_cost": 0.00603
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8431499095",
+  "predicted_reason": "The wheeled carrier attaches to an excavator's tracks and is a part or accessory of excavating machinery of heading 8429, so it falls under the 8431.49 'other parts' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 613,
+    "completion_tokens": 603,
+    "total_tokens": 1216,
+    "cost": 0.007256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007256,
+      "upstream_inference_prompt_cost": 0.001226,
+      "upstream_inference_completions_cost": 0.00603
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:30.840872+00:00",
+  "latency_s": 5.928,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359056",
+  "rulingDate": "2026-03-19T00:00:00",
+  "true_code": "4911914040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595723-x6l4vd3ouKaT1vcaCCcn",
+    "object": "chat.completion",
+    "created": 1791595723,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on framed digitally printed photographs. Printed photographs would normally fall in heading 4911, but when they are mounted in a frame, the framed article is classified under 4414 (wooden frames for paintings, photographs, mirrors or similar objects) unless the frame is only incidental. In CBP rulings on framed art, the essential character is usually given by the picture, and framed prints go to 4911.91. Framed photographs are different: heading 4911 covers \"printed pictures and photographs,\" and the 4911.91 subheading covers \"pictures, designs and photographs.\" The statistical suffix for 4911.91.40 is \"Other\" (printed lithographically are 4911.91.20 and 4911.91.30; 4911.91.40 is other). Digitally printed photographs would go under 4911.91.40.\n\nAlternatively, photographs proper are in chapter 37 or 4911. Digitally printed photos are printed matter, so 4911.91. The 10-digit code is 4911.91.4040 (\"Other: Other\").\n\nChecking the HTS structure: 4911.91.40 \"Other\" has the statistical suffixes 4911.91.4000 (older) and 4911.91.4040 (\"Other\"). 4911.91.20 covers photographs, and 4911.91.30 covers \"Printed in whole or in part by a lithographic process.\" I'll go with 4911.91.4040.\n\n```json\n{\"hts_code\": \"4911.91.4040\", \"reason\": \"Digitally printed photographs permanently mounted in wooden frames are classified by the printed picture, which gives the article its essential character, as other printed pictures and photographs of heading 4911.\"}\n```\n\n{\"hts_code\": \"4911.91.4040\", \"reason\": \"Digitally printed photographs permanently mounted in wooden frames are classified by the printed picture, which gives the article its essential character, as other printed pictures and photographs of heading 4911.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 198,
+      "completion_tokens": 628,
+      "total_tokens": 826,
+      "cost": 0.006676,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006676,
+        "upstream_inference_prompt_cost": 0.000396,
+        "upstream_inference_completions_cost": 0.00628
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4911914040",
+  "predicted_reason": "Digitally printed photographs permanently mounted in wooden frames are classified by the printed picture, which gives the article its essential character, as other printed pictures and photographs of heading 4911.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 198,
+    "completion_tokens": 628,
+    "total_tokens": 826,
+    "cost": 0.006676,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006676,
+      "upstream_inference_prompt_cost": 0.000396,
+      "upstream_inference_completions_cost": 0.00628
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:43.444386+00:00",
+  "latency_s": 6.133,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

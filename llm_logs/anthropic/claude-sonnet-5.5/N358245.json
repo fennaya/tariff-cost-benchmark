@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358245",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "8205513030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595571-xdWilh7zXdw8NptMEDbr",
+    "object": "chat.completion",
+    "created": 1791595571,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Manual knife sharpeners are not machines. They are hand tools or implements, so the likely heading is 8205 (hand tools not elsewhere specified) or 8210 (hand-operated mechanical appliances for food preparation, weighing 10 kg or less). Another option is 8214, which covers manicure sets and other articles of cutlery.\n\nA knife sharpener is a sharpening tool. Heading 8203 covers files, rasps, pliers, and similar tools, and 8205 covers hand tools not elsewhere specified. Heading 8205 includes grinding wheels mounted with frames, but a pull-through sharpener is not that. CBP rulings for pull-through knife sharpeners have generally classified them under 8205.59.55, which is \"Other hand tools: Other: Other: Other.\" Some rulings use 8205.59.5510 or 8205.51.30 for household tools. Household kitchen tools of base metal fall under 8205.51.30 (\"Other household tools and base metal parts thereof\"). Because these are household knife sharpeners, 8205.51.30 fits well. The 8205.51 subheading covers \"Household tools and base metal parts thereof,\" and 8205.51.30 covers \"Other\" household tools, with an older 8205.51.3060 statistical suffix.\n\nI choose 8205.51.30 with the statistical suffix 8205.51.3030, but I am not fully sure of that suffix. I believe the HTS lists 8205.51.30 as \"Other\" with a statistical suffix of 60 for \"Other.\" I will use 8205.51.3060.\n\n```json\n{\"hts_code\": \"8205.51.3060\", \"reason\": \"Manual pull-through household knife sharpeners are hand tools not elsewhere specified, classified in heading 8205 as other household hand tools of base metal (8205.51.30).\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1023,
+      "completion_tokens": 603,
+      "total_tokens": 1626,
+      "cost": 0.008076,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008076,
+        "upstream_inference_prompt_cost": 0.002046,
+        "upstream_inference_completions_cost": 0.00603
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8205513060",
+  "predicted_reason": "Manual pull-through household knife sharpeners are hand tools not elsewhere specified, classified in heading 8205 as other household hand tools of base metal (8205.51.30).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1023,
+    "completion_tokens": 603,
+    "total_tokens": 1626,
+    "cost": 0.008076,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008076,
+      "upstream_inference_prompt_cost": 0.002046,
+      "upstream_inference_completions_cost": 0.00603
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:11.462980+00:00",
+  "latency_s": 6.071,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

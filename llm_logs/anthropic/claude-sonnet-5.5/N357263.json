@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357263",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "2935907500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595353-0A43W7PnhyKS3SaWy1IV",
+    "object": "chat.completion",
+    "created": 1791595353,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "N-Phenyl-N-(trichloromethylsulfenyl)benzenesulfonamide is an organic compound containing sulfur, chlorine, and a sulfonamide group. Candidate headings:\n\n- 2935 covers sulfonamides. 2935.90 is \"other\" sulfonamides, with 2935.90.9000 as the likely statistical suffix in older schedules. Recent schedules use 2935.90.90 and similar.\n- 3812.10 covers prepared rubber accelerators, and 3812.20 covers compound plasticizers. A vulcanizing agent mixed with stabilizers or dedusting agents could point to 3812.10 (\"prepared rubber accelerators\"), but this product is a retarder or vulcanizing agent. In CBP rulings, \"prepared rubber accelerators; compound plasticizers; anti-oxidizing preparations and other compound stabilizers for rubber or plastics\" fall under 3812.\n- This product, a pre-vulcanization inhibitor, is similar to N-cyclohexylthiophthalimide (CTP). CBP has classified CTP in 2925.19. For this product, the sulfonamide is the principal function, and the additives are only a stabilizer and a dedusting agent. Such additives are permitted in 2935 only if they are there solely for stabilization or transport, per the Chapter 29 notes. The note on 2935 admits those additives, so the product stays in the chapter 29 heading.\n\nSo the classification is 2935.90.9500 (HTS 2935.90.95, other sulfonamides). I'm not fully certain of the suffix, but 2935.90.95 exists as \"Other\" under 2935.90.\n\n{\"hts_code\": \"2935.90.9500\", \"reason\": \"The active ingredient is a sulfonamide (N-phenyl-N-(trichloromethylsulfenyl)benzenesulfonamide), a separate chemically defined compound, and the calcium carbonate stabilizer and paraffinic dedusting oil are permitted additives, so it falls in heading 2935 as an other sulfonamide.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 314,
+      "completion_tokens": 691,
+      "total_tokens": 1005,
+      "cost": 0.007538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007538,
+        "upstream_inference_prompt_cost": 0.000628,
+        "upstream_inference_completions_cost": 0.00691
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2935909500",
+  "predicted_reason": "The active ingredient is a sulfonamide (N-phenyl-N-(trichloromethylsulfenyl)benzenesulfonamide), a separate chemically defined compound, and the calcium carbonate stabilizer and paraffinic dedusting oil are permitted additives, so it falls in heading 2935 as an other sulfonamide.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 314,
+    "completion_tokens": 691,
+    "total_tokens": 1005,
+    "cost": 0.007538,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007538,
+      "upstream_inference_prompt_cost": 0.000628,
+      "upstream_inference_completions_cost": 0.00691
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:33.516574+00:00",
+  "latency_s": 6.737,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

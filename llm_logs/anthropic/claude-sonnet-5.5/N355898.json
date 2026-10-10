@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355898",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "6802930090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593819-ClAGWfxvHshbIHP81aTK",
+    "object": "chat.completion",
+    "created": 1791593819,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a granite slab, polished and cut to rectangular shape, so it falls in heading 6802 (worked monumental or building stone). Heading 6802.93 covers granite, other than monumental or building stone worked into tiles, cubes and similar articles. The lab determined the material is granite, and the slabs are polished with beveled edges.\n\nThe subheadings are:\n- 6802.91: marble, travertine, alabaster\n- 6802.92: other calcareous stone\n- 6802.93: granite\n  - 6802.93.00 covers granite, with statistical suffixes\n    - 6802.93.0010: \"Granite, not over 7 cm thick\" is not exact in my memory\n    - 6802.93.0090: other\n\nI recall that 6802.93.00 has the following structure:\n- 6802.93.00.10: Slabs, over 2.5 cm? (not certain)\n- 6802.93.00.20: Tiles\n- 6802.93.00.90: Other\n\nIn practice, rulings for polished granite slabs cite 6802.93.0090 for \"Other: Other\". The more precise breakdown is: 6802.93.00 is divided into \"Of a thickness not exceeding 7.5 cm\" (6802.93.0010 for 'Slabs'?), and \"Other\" 6802.93.0090. I'll go with the common slab classification, 6802.93.0090.\n\n{\"hts_code\": \"6802.93.0090\", \"reason\": \"Polished granite slabs with beveled edges, further cut for countertops and cladding after import, are worked granite building stone under heading 6802, subheading 6802.93 (granite).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 376,
+      "completion_tokens": 526,
+      "total_tokens": 902,
+      "cost": 0.006012,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006012,
+        "upstream_inference_prompt_cost": 0.000752,
+        "upstream_inference_completions_cost": 0.00526
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802930090",
+  "predicted_reason": "Polished granite slabs with beveled edges, further cut for countertops and cladding after import, are worked granite building stone under heading 6802, subheading 6802.93 (granite).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 376,
+    "completion_tokens": 526,
+    "total_tokens": 902,
+    "cost": 0.006012,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006012,
+      "upstream_inference_prompt_cost": 0.000752,
+      "upstream_inference_completions_cost": 0.00526
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:59.346383+00:00",
+  "latency_s": 5.775,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

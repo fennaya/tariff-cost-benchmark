@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363253",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "3926909989",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596629-ayffLL2w8IVc9juEw0xN",
+    "object": "chat.completion",
+    "created": 1791596629,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a clamp that holds a bowl to a table. It is made of ABS plastic with internal metal components, and it is used as a feeding accessory for children.\n\nThe candidate headings are:\n- 3924: tableware, kitchenware, other household articles of plastics. 3924.10 covers tableware and kitchenware, and a bowl clamp used with tableware could arguably fit there.\n- 3926.90: other articles of plastics.\n- 8205 or 8203: hand tools, clamps, vises. 8205.70 covers vises and clamps, but it is for workshop use, and this item is not a tool.\n\nHeading 3924 covers \"tableware, kitchenware, other household articles and hygienic or toilet articles, of plastics.\" A feeding bowl holder is a household article used at the table, so 3924.10.40 (other tableware and kitchenware) is the best fit. The 10-digit statistical suffix is 3924.10.4000.\n\nCBP rulings on similar items, such as suction-based bowl holders, have gone to 3924.10.40. The metal components are internal and the plastic is the main material, so the plastic classification holds.\n\n{\"hts_code\": \"3924.10.4000\", \"reason\": \"A plastic (ABS) household feeding accessory that secures a bowl at the table is classified as other plastic tableware/kitchenware in heading 3924, with the internal metal parts incidental to the plastic.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 458,
+      "total_tokens": 858,
+      "cost": 0.00538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00538,
+        "upstream_inference_prompt_cost": 0.0008,
+        "upstream_inference_completions_cost": 0.00458
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3924104000",
+  "predicted_reason": "A plastic (ABS) household feeding accessory that secures a bowl at the table is classified as other plastic tableware/kitchenware in heading 3924, with the internal metal parts incidental to the plastic.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 458,
+    "total_tokens": 858,
+    "cost": 0.00538,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00538,
+      "upstream_inference_prompt_cost": 0.0008,
+      "upstream_inference_completions_cost": 0.00458
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:49.692177+00:00",
+  "latency_s": 4.748,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

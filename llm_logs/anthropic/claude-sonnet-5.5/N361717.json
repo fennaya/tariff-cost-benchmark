@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361717",
+  "rulingDate": "2026-06-08T00:00:00",
+  "true_code": "0603900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596333-LcQD4unugyWSzrdZgQ4h",
+    "object": "chat.completion",
+    "created": 1791596333,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a framed preserved-flower arrangement used as wall decor. The candidate headings are:\n\n- **Heading 0604:** foliage, branches and other parts of plants, dried, dyed, bleached or otherwise prepared, for bouquets or ornamental purposes. Subheading 0604.20 covers fresh and 0604.90 covers other. This heading covers the flowers themselves, but the goods here are further worked and framed.\n- **Heading 6702:** artificial flowers and articles made of them. This does not fit because the flowers are natural.\n- **Heading 4420:** wooden articles of marquetry and ornaments. Subheading 4420.19 (other wooden ornaments) is a possible fit, but the flowers give the article its essential character.\n- **Heading 9701:** paintings and pictures. This does not fit because the article is not a painting.\n- **Heading 4414:** wooden frames for paintings, photographs, mirrors or similar objects. This covers the frame alone, not the finished assembly.\n- **Heading 9705:** collectors' pieces. This does not fit.\n\nThe framed floral composition is a decorative article with natural flowers as its essential character. Under GRI 3(b), the flowers are the characterizing component, and CBP has classified framed pressed flowers under 4420.90 or 0604.90. Framed dried flower arrangements are typically 4420.90.80 (other wooden articles). I will go with heading 4420 as the more specific description of a framed decorative article.\n\nThe 4420.90 residual subheading, \"Other,\" has a statistical suffix of 4420.90.8000 (other, 4420.90.80 with 00).\n\n```json\n{\"hts_code\": \"4420.90.8000\", \"reason\": \"Framed, glass-enclosed preserved-flower decorative wall art is treated as an ornamental wooden-framed article of heading 4420, falling in the residual 'other' subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 512,
+      "completion_tokens": 628,
+      "total_tokens": 1140,
+      "cost": 0.007304,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007304,
+        "upstream_inference_prompt_cost": 0.001024,
+        "upstream_inference_completions_cost": 0.00628
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4420908000",
+  "predicted_reason": "Framed, glass-enclosed preserved-flower decorative wall art is treated as an ornamental wooden-framed article of heading 4420, falling in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 512,
+    "completion_tokens": 628,
+    "total_tokens": 1140,
+    "cost": 0.007304,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007304,
+      "upstream_inference_prompt_cost": 0.001024,
+      "upstream_inference_completions_cost": 0.00628
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:53.564433+00:00",
+  "latency_s": 6.715,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

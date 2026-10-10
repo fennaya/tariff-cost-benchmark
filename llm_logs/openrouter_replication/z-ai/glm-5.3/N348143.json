@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N348143",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "6110909030",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594009-wCXReuEaGCyfF9L8Q40Z",
+    "object": "chat.completion",
+    "created": 1791594009,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6110.30.1520\", \"reason\": \"A women's knit sweater of man-made fiber construction (polyester predominating over wool) with fewer than 9 stitches per 2 cm is classified as a women's sweater of synthetic fibers under heading 6110.\"}",
+          "refusal": null,
+          "reasoning": "Women's knit sweater, wool not majority \u2014 polyester 71% is majority fiber. Sweaters under 6110? Metallic yarn... classification: knit sweater, chief weight polyester \u2192 6110.30.1520? Women's sweaters 6110.30.15... Actually 6110.30.1520 is women's pullovers etc. of man-made fibers. Sweater rate: 6110.30.1520? Women's sweaters: 6110.30.1520 (sweaters), 6110.30.1530 pullovers? Historically 6110.30.1520 women's sweaters. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Women's knit sweater, wool not majority \u2014 polyester 71% is majority fiber. Sweaters under 6110? Metallic yarn... classification: knit sweater, chief weight polyester \u2192 6110.30.1520? Women's sweaters 6110.30.15... Actually 6110.30.1520 is women's pullovers etc. of man-made fibers. Sweater rate: 6110.30.1520? Women's sweaters: 6110.30.1520 (sweaters), 6110.30.1530 pullovers? Historically 6110.30.1520 women's sweaters. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 215,
+      "total_tokens": 427,
+      "cost": 0.00065675,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00065675,
+        "upstream_inference_prompt_cost": 0.00011925,
+        "upstream_inference_completions_cost": 0.0005375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 148,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110301520",
+  "predicted_reason": "A women's knit sweater of man-made fiber construction (polyester predominating over wool) with fewer than 9 stitches per 2 cm is classified as a women's sweater of synthetic fibers under heading 6110.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 215,
+    "total_tokens": 427,
+    "cost": 0.00065675,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00065675,
+      "upstream_inference_prompt_cost": 0.00011925,
+      "upstream_inference_completions_cost": 0.0005375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 148,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T01:00:09.763639+00:00",
+  "latency_s": 2.146,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

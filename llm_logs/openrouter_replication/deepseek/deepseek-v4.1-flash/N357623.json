@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N357623",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "9503000073",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598725-LFWcnbHLf0suIdl5Zr3V",
+    "object": "chat.completion",
+    "created": 1791598725,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "OpenInference",
+    "system_fingerprint": "vllm-dev-b2e6e867",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4903.00.0000\", \"reason\": \"The products are children's puzzle books classifiable as children's picture books under HTSUS heading 4903, which covers children's picture, drawing or coloring books.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 529,
+      "completion_tokens": 54,
+      "total_tokens": 583,
+      "cost": 6.458e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.458e-05,
+        "upstream_inference_prompt_cost": 1.058e-05,
+        "upstream_inference_completions_cost": 5.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4903000000",
+  "predicted_reason": "The products are children's puzzle books classifiable as children's picture books under HTSUS heading 4903, which covers children's picture, drawing or coloring books.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 529,
+    "completion_tokens": 54,
+    "total_tokens": 583,
+    "cost": 6.458e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.458e-05,
+      "upstream_inference_prompt_cost": 1.058e-05,
+      "upstream_inference_completions_cost": 5.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "OpenInference",
+  "requested_at": "2026-10-10T02:18:45.637982+00:00",
+  "latency_s": 4.445,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

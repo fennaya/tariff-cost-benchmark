@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357946",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "8421210000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595523-zRvZORLq1Z2YDZMpigz6",
+    "object": "chat.completion",
+    "created": 1791595523,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on a straw-type water filter. The likely classification is heading 8421.21 (filtering or purifying machinery for water). Within that heading, 8421.21.0000 covers \"Filtering or purifying machinery and apparatus for liquids: for filtering or purifying water.\" The HTSUS has 8421.21.00 with statistical suffixes: 8421.21.0010 (household-type filters, not including pitcher-type) and 8421.21.0090 (other). I recall 8421.21.0000 as the current 10-digit form, with older suffixes such as 8421.21.0010 for \"Water filters for household\" and 8421.21.0090 for \"Other.\" Alternatives such as 9617 (vacuum flasks) or 3924 (household plastics) do not fit as well, because the cartridge performs the essential filtering function and the straw is a filtering device.\n\nThe HTSUS currently reads 8421.21.00 with these statistical lines:\n- 8421.21.0000: \"For filtering or purifying water\" (the heading text itself, and the code I believe is current)\n\nOther ruling references for portable water bottle filters used 8421.21.0000, so I'll use that.\n\n{\"hts_code\": \"8421.21.0000\", \"reason\": \"The FlavaFil is a portable straw-type device whose essential function, performed by the filtration cartridge, is filtering or purifying drinking water, so it falls under filtering or purifying machinery and apparatus for water in heading 8421.21.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 785,
+      "completion_tokens": 487,
+      "total_tokens": 1272,
+      "cost": 0.00644,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00644,
+        "upstream_inference_prompt_cost": 0.00157,
+        "upstream_inference_completions_cost": 0.00487
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421210000",
+  "predicted_reason": "The FlavaFil is a portable straw-type device whose essential function, performed by the filtration cartridge, is filtering or purifying drinking water, so it falls under filtering or purifying machinery and apparatus for water in heading 8421.21.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 785,
+    "completion_tokens": 487,
+    "total_tokens": 1272,
+    "cost": 0.00644,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00644,
+      "upstream_inference_prompt_cost": 0.00157,
+      "upstream_inference_completions_cost": 0.00487
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:23.188898+00:00",
+  "latency_s": 5.678,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

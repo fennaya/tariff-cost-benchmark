@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359915",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "3004909245",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595978-lztaxCXXqMHQczcCqdQ6",
+    "object": "chat.completion",
+    "created": 1791595978,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Olanzapine is a thienobenzodiazepine, so the relevant heading is 3004 (medicaments in measured doses or retail packings). Its subheading 3004.90 covers other medicaments, and the 10-digit statistical suffix needs to be identified from there.\n\nHTSUS 3004.90.92 is \"Other\" under 3004.90.9x. The 3004.90.91 line covers other medicaments, and 3004.90.92 is \"Other: Other\". The usual lines are:\n\n- 3004.90.10: Antiasthmatics, etc.\n- 3004.90.20: ...\n- 3004.90.91: Medicaments for treating... (a catch-all not specifically listed)\n- 3004.90.92: Other (this is the statistical suffix commonly used for CNS agents)\n\nCustoms rulings on olanzapine have used 3004.90.9255, \"Other: Other: Other: Other: Psychotherapeutic agents\". I'm not fully certain of that suffix, but it matches my recollection of the CNS-agent suffixes under 3004.90.92 (3004.90.9215 for the first group, and so on). I'll go with 3004.90.9255 as my best recollection.\n\n{\"hts_code\": \"3004.90.9255\", \"reason\": \"Olanzapine orally disintegrating tablets are an antipsychotic medicament put up in measured doses for retail sale, so they fall in heading 3004 under the 3004.90.92 subheading for other medicaments, with the 55 statistical suffix for CNS/psychotherapeutic agents (suffix from recollection, not verified).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 234,
+      "completion_tokens": 525,
+      "total_tokens": 759,
+      "cost": 0.005718,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005718,
+        "upstream_inference_prompt_cost": 0.000468,
+        "upstream_inference_completions_cost": 0.00525
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909255",
+  "predicted_reason": "Olanzapine orally disintegrating tablets are an antipsychotic medicament put up in measured doses for retail sale, so they fall in heading 3004 under the 3004.90.92 subheading for other medicaments, with the 55 statistical suffix for CNS/psychotherapeutic agents (suffix from recollection, not verified).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 234,
+    "completion_tokens": 525,
+    "total_tokens": 759,
+    "cost": 0.005718,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005718,
+      "upstream_inference_prompt_cost": 0.000468,
+      "upstream_inference_completions_cost": 0.00525
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:58.663220+00:00",
+  "latency_s": 5.266,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

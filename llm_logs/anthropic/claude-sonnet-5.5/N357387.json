@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357387",
+  "rulingDate": "2026-01-22T00:00:00",
+  "true_code": "7013999090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595401-d7yXW6WyEZsj2EUg8VXj",
+    "object": "chat.completion",
+    "created": 1791595401,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on a Lalique car mascot. Since the item is now used as a decorative glass article for the home or office, it falls in heading 7018 or 7020, or possibly 7013. Heading 7013 covers glassware of a kind used for table, kitchen, toilet, office, indoor decoration or similar purposes, other than that of heading 7010 or 7018. Heading 7018 covers glass beads, imitation pearls, imitation precious stones, glass eyes, and statuettes and other ornaments of lampworked glass, excluding imitation jewelry. A molded glass dragonfly would not be lampworked, so 7018 does not apply. Heading 7013 therefore fits.\n\nWithin 7013, the subheading 7013.99 covers other glassware, and 7013.99.50 covers other items valued over $3 but not over $5. The item is valued over $5, so the relevant lines are 7013.99.60 (over $5 but not over $10?) and 7013.99.70 (over $5). Checking against the tariff: 7013.91 covers glassware of lead crystal, and 7013.99 covers other glassware, with subdivisions such as 7013.99.10 (other, valued not over $0.30), 7013.99.20, 7013.99.25, 7013.99.30, 7013.99.40, 7013.99.50 (valued over $3 but not over $5), 7013.99.60 (over $5), and 7013.99.70 and 7013.99.80 (other). I recall that the \"Other glassware\" lines under 7013.99 are: 7013.99.50 \"Valued over $3 but not over $5,\" 7013.99.60 \"Valued over $5.\" Hmm, I believe 7013.99.80 and 7013.99.90 are the lines for items valued over $5: 7013.99.80 is \"Other\" (valued over $0.30 but not over $3?), and 7013.99.90 is \"Valued over $5.\" I settle on 7013.99.90 as the most plausible line for items valued over $5.\n\n{\"hts_code\": \"7013.99.9000\", \"reason\": \"The molded glass dragonfly figure, now used as a decorative article for home or office, is classified as other glassware for indoor decoration under heading 7013, in the 'other' subheading for articles valued over $5.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 337,
+      "completion_tokens": 748,
+      "total_tokens": 1085,
+      "cost": 0.008154,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008154,
+        "upstream_inference_prompt_cost": 0.000674,
+        "upstream_inference_completions_cost": 0.00748
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7013999000",
+  "predicted_reason": "The molded glass dragonfly figure, now used as a decorative article for home or office, is classified as other glassware for indoor decoration under heading 7013, in the 'other' subheading for articles valued over $5.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 748,
+    "total_tokens": 1085,
+    "cost": 0.008154,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008154,
+      "upstream_inference_prompt_cost": 0.000674,
+      "upstream_inference_completions_cost": 0.00748
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:22.159968+00:00",
+  "latency_s": 6.625,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

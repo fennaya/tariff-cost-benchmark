@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362089",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "4823906700",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600273-s4kc7UeyO5sOkuwucl8I",
+    "object": "chat.completion",
+    "created": 1791600273,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.0073\", \"reason\": \"The tab-and-slot die-cut 3D assembly model kit is a self-assembly puzzle, classified as a toy puzzle in heading 9503.\"}",
+          "refusal": null,
+          "reasoning": "Likely 9503 puzzle? It's a 3D puzzle model kit \u2014 NY ruling classified similar Pok\u00e9mon 3D puzzle kits under 9503.00.0073? Actually 3D puzzles classified as puzzles in 9503.00.0073 (puzzles). Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely 9503 puzzle? It's a 3D puzzle model kit \u2014 NY ruling classified similar Pok\u00e9mon 3D puzzle kits under 9503.00.0073? Actually 3D puzzles classified as puzzles in 9503.00.0073 (puzzles). Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 117,
+      "total_tokens": 328,
+      "cost": 0.000384,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000384,
+        "upstream_inference_prompt_cost": 0.0001266,
+        "upstream_inference_completions_cost": 0.0002574
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 64,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "The tab-and-slot die-cut 3D assembly model kit is a self-assembly puzzle, classified as a toy puzzle in heading 9503.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 117,
+    "total_tokens": 328,
+    "cost": 0.000384,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000384,
+      "upstream_inference_prompt_cost": 0.0001266,
+      "upstream_inference_completions_cost": 0.0002574
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 64,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:44:34.024650+00:00",
+  "latency_s": 1.344,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

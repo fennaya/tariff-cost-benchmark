@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359291",
+  "rulingDate": "2026-03-24T00:00:00",
+  "true_code": "8504409580",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595801-dmJ0hA1o3RQbdHgZW5U5",
+    "object": "chat.completion",
+    "created": 1791595801,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Battery chargers for lithium-ion batteries are classified in HTSUS 8504.40 (static converters). The specific subheading is 8504.40.95 (other static converters), with the statistical suffix 8504.40.9580 for other chargers. However, some battery chargers fall under 8504.40.85 (battery chargers, with a power handling capacity not exceeding 100 W?). Checking the structure: 8504.40.30 covers automatic data processing machine power supplies; 8504.40.40 covers other power supplies for ADP; 8504.40.55 covers static converters of a kind used with telecommunication apparatus; 8504.40.60 covers other static converters, and 8504.40.70 covers... 8504.40.75 covers... 8504.40.85 and 8504.40.95 cover other. Current structure: 8504.40.95 is \"Other\", with 8504.40.9510 or 8504.40.9520 for specific categories. CBP rulings on battery chargers (e.g., for headsets) generally use 8504.40.9580, \"Other: Other\".\n\n{\"hts_code\": \"8504.40.9580\", \"reason\": \"A standalone lithium-ion battery charger with PCBAs and USB-C input is a static converter of heading 8504, falling under the residual 'other static converters' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 428,
+      "total_tokens": 820,
+      "cost": 0.005064,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005064,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.00428
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8504409580",
+  "predicted_reason": "A standalone lithium-ion battery charger with PCBAs and USB-C input is a static converter of heading 8504, falling under the residual 'other static converters' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 428,
+    "total_tokens": 820,
+    "cost": 0.005064,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005064,
+      "upstream_inference_prompt_cost": 0.000784,
+      "upstream_inference_completions_cost": 0.00428
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:01.146701+00:00",
+  "latency_s": 5.504,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

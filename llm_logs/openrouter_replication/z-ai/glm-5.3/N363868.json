@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363868",
+  "rulingDate": "2026-08-06T00:00:00",
+  "true_code": "4421999880",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600454-ueFlRQpdMCogpdBkVuyT",
+    "object": "chat.completion",
+    "created": 1791600454,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9403.60.8141\", \"reason\": \"The floor-standing wooden pet crate serves as furniture for a dog's rest/sleep, and CBP has classified such wooden pet furniture as other wooden furniture under heading 9403, with the wood component providing the essential character.\"}",
+          "refusal": null,
+          "reasoning": "Wooden pet crate \u2014 likely 4421.99.98 other articles of wood? Or 9403? It's furniture-like? Rulings treat pet crates of wood as 4421.99. Actually dog houses of wood classified 9403.60? CBP rulings: wooden dog house \u2192 4421.90? There's ruling on wooden pet crate classified 9403.60.8141? Hmm. Pet crate functioning as bed/rest \u2014 furniture of wood, 9403.60.8141 (other wooden furniture). I'll go with 9403.60.8141.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Wooden pet crate \u2014 likely 4421.99.98 other articles of wood? Or 9403? It's furniture-like? Rulings treat pet crates of wood as 4421.99. Actually dog houses of wood classified 9403.60? CBP rulings: wooden dog house \u2192 4421.90? There's ruling on wooden pet crate classified 9403.60.8141? Hmm. Pet crate functioning as bed/rest \u2014 furniture of wood, 9403.60.8141 (other wooden furniture). I'll go with 9403.60.8141.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 204,
+      "total_tokens": 416,
+      "cost": 0.00088648,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00088648,
+        "upstream_inference_prompt_cost": 2.968e-05,
+        "upstream_inference_completions_cost": 0.0008568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 136,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403608141",
+  "predicted_reason": "The floor-standing wooden pet crate serves as furniture for a dog's rest/sleep, and CBP has classified such wooden pet furniture as other wooden furniture under heading 9403, with the wood component providing the essential character.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 212,
+    "completion_tokens": 204,
+    "total_tokens": 416,
+    "cost": 0.00088648,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00088648,
+      "upstream_inference_prompt_cost": 2.968e-05,
+      "upstream_inference_completions_cost": 0.0008568
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 136,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:47:34.952321+00:00",
+  "latency_s": 4.101,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

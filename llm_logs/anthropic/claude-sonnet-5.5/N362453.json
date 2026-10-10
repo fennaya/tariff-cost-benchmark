@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362453",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8708295190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596498-ZrpeDdcWyPP7Uu1VAbYq",
+    "object": "chat.completion",
+    "created": 1791596498,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a part for a pickup truck, so Chapter 87 applies: heading 8708 covers parts and accessories of motor vehicles of headings 8701 to 8705. The question is whether it falls under 8708.99 (other parts) or somewhere else.\n\nThe alternative is Section XV, where aluminum articles would go under 7616. Note 2 to Section XVII excludes \"parts of general use\" as defined in Note 2 to Section XV, such as articles of heading 7615 and similar. A channel designed specifically for the Nissan H61P cargo box is not a part of general use, and it is a specific vehicle part. That puts it in 8708.\n\nWithin 8708, the cargo box is part of the body, so 8708.29 (other parts and accessories of bodies) is a candidate. Heading 8708 covers parts and accessories of bodies (including cabs) for vehicles of 8701 to 8705. The pickup truck cargo box is part of the body, so 8708.29.\n\nThe 8708.29 subheadings are:\n- 8708.29.21: Stamped parts\n- 8708.29.51: Other, parts of body\n- 8708.29.5160: Other\n\nBecause the slide rail is an extruded aluminum part and not a stamped one, 8708.29.5160 (other) is the right choice, so I'm using that code.\n\n{\"hts_code\": \"8708.29.5160\", \"reason\": \"A vehicle-specific extruded aluminum cargo-box side rail for a pickup truck is a part or accessory of the vehicle body of heading 8708, falling in the residual 'other' provision of 8708.29.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 432,
+      "completion_tokens": 523,
+      "total_tokens": 955,
+      "cost": 0.006094,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006094,
+        "upstream_inference_prompt_cost": 0.000864,
+        "upstream_inference_completions_cost": 0.00523
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708295160",
+  "predicted_reason": "A vehicle-specific extruded aluminum cargo-box side rail for a pickup truck is a part or accessory of the vehicle body of heading 8708, falling in the residual 'other' provision of 8708.29.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 523,
+    "total_tokens": 955,
+    "cost": 0.006094,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006094,
+      "upstream_inference_prompt_cost": 0.000864,
+      "upstream_inference_completions_cost": 0.00523
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:38.345582+00:00",
+  "latency_s": 5.218,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

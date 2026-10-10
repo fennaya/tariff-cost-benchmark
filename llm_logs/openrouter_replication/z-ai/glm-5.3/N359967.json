@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359967",
+  "rulingDate": "2026-04-10T00:00:00",
+  "true_code": "9031808085",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600014-ur9S1t4P0VmIGjyzNUwT",
+    "object": "chat.completion",
+    "created": 1791600014,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8471.80.1000\", \"reason\": \"Like the DAQ-800 in NY N301112, the device merely converts analog signals to digital data for processing/transmission, functioning as an automatic data processing unit of heading 8471 rather than a measuring or controlling apparatus.\"}",
+          "refusal": null,
+          "reasoning": "This is NY ruling N301112 \u2014 DAQ-800 classified in 8537.10? Actually data recorders... The ruling classified DAQ-800 in heading 8517? Let me recall: N301112 concerned data acquisition device classified in 8537.10.90? Hmm. Actually I recall it was classified under 8471.80? The DAQ-800 converts analog to digital \u2014 automatic data processing machine? I believe N301112 classified it in 8471.80.10? Hmm. Data recorders H112722 classified in 8523? No.\n\nI think N301112 result: 8537.10.90? Actually a \"signal converter\" could be 8537 (control panels). But DAQ-800 performs no control. H112722 data recorders were classified in 9026? No\u2014likely 8531? I recall H112722 classified data recorders in heading 8517? Hmm.\n\nBest guess: 8471.80.10? Actually ADP units 8471.80.00. I'll go with 8471.80.1000? The valid code: 8471.80.1000 exists (\"other ADP machines... incorporating a CPU\"). I'll answer 8471.80.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is NY ruling N301112 \u2014 DAQ-800 classified in 8537.10? Actually data recorders... The ruling classified DAQ-800 in heading 8517? Let me recall: N301112 concerned data acquisition device classified in 8537.10.90? Hmm. Actually I recall it was classified under 8471.80? The DAQ-800 converts analog to digital \u2014 automatic data processing machine? I believe N301112 classified it in 8471.80.10? Hmm. Data recorders H112722 classified in 8523? No.\n\nI think N301112 result: 8537.10.90? Actually a \"signal converter\" could be 8537 (control panels). But DAQ-800 performs no control. H112722 data recorders were classified in 9026? No\u2014likely 8531? I recall H112722 classified data recorders in heading 8517? Hmm.\n\nBest guess: 8471.80.10? Actually ADP units 8471.80.00. I'll go with 8471.80.1000? The valid code: 8471.80.1000 exists (\"other ADP machines... incorporating a CPU\"). I'll answer 8471.80.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 356,
+      "total_tokens": 756,
+      "cost": 0.00177616,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00177616,
+        "upstream_inference_prompt_cost": 6.736e-05,
+        "upstream_inference_completions_cost": 0.0017088
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 288,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471801000",
+  "predicted_reason": "Like the DAQ-800 in NY N301112, the device merely converts analog signals to digital data for processing/transmission, functioning as an automatic data processing unit of heading 8471 rather than a measuring or controlling apparatus.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 400,
+    "completion_tokens": 356,
+    "total_tokens": 756,
+    "cost": 0.00177616,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00177616,
+      "upstream_inference_prompt_cost": 6.736e-05,
+      "upstream_inference_completions_cost": 0.0017088
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 288,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:40:14.876877+00:00",
+  "latency_s": 3.752,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

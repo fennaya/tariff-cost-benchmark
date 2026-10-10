@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360065",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "9403200040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596024-0Kq00NRCGe6M6Eewg3pH",
+    "object": "chat.completion",
+    "created": 1791596024,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a loft bed of mixed materials (steel, MDF, particleboard), imported unassembled. It is a bed, so it falls under heading 9403. The steel chassis gives the article its structure, but the wood panels make up the stairs and storage, so I considered both the metal and wood subheadings.\n\nMetal furniture is 9403.20, with \"other\" at 9403.20.00 and statistical suffixes. Wooden bedroom furniture is 9403.50.90. Beds are not specifically provided for in the metal subheadings, so I looked at the metal-bed rulings. CBP has ruled that metal-framed beds classify in 9403.20.0090 (other metal furniture), while wooden beds classify in 9403.50.9045 (other wooden bedroom furniture).\n\nFor this loft bed, the steel frame is the essential structure, and the MDF and particleboard panels make the stairs and storage. The steel chassis provides the structure and support for all the components. I classify it as metal furniture, consistent with similar CBP rulings on metal loft beds with wood components. The 9403.20.0090 number is the statistical suffix for \"other\" metal furniture. Some such rulings used 9403.20.0050 for beds, though I'm not sure of this. I recall 9403.20.0010 being \"Luggage racks, bed frames...\" and 9403.20.0020 for other, but that is also uncertain. The best fit appears to be 9403.20.0090, since the 9403.20.00 suffixes were restructured in recent years.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"A loft bed with a powder-coated steel chassis providing the essential structure, with MDF and particleboard stairs and storage panels, is classified as other metal furniture in heading 9403 (subheading 9403.20), even when imported unassembled.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 547,
+      "completion_tokens": 599,
+      "total_tokens": 1146,
+      "cost": 0.007084,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007084,
+        "upstream_inference_prompt_cost": 0.001094,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "A loft bed with a powder-coated steel chassis providing the essential structure, with MDF and particleboard stairs and storage panels, is classified as other metal furniture in heading 9403 (subheading 9403.20), even when imported unassembled.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 547,
+    "completion_tokens": 599,
+    "total_tokens": 1146,
+    "cost": 0.007084,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007084,
+      "upstream_inference_prompt_cost": 0.001094,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:44.474154+00:00",
+  "latency_s": 5.972,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

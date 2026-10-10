@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N357748",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "8543709860",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791598745-VL6S4B6q3INkDwA32tbV",
+    "object": "chat.completion",
+    "created": 1791598745,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8537.10.9170\", \"reason\": \"The ECU is an electrical control panel/board assembly with a microcontroller and wire harnesses that processes sensor inputs and controls vehicle steering wheel functions, classified as other boards/panels for electric control under 8537.10.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 218,
+      "completion_tokens": 65,
+      "total_tokens": 283,
+      "cost": 8.454e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.454e-05,
+        "upstream_inference_prompt_cost": 6.54e-06,
+        "upstream_inference_completions_cost": 7.8e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8537109170",
+  "predicted_reason": "The ECU is an electrical control panel/board assembly with a microcontroller and wire harnesses that processes sensor inputs and controls vehicle steering wheel functions, classified as other boards/panels for electric control under 8537.10.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 218,
+    "completion_tokens": 65,
+    "total_tokens": 283,
+    "cost": 8.454e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 8.454e-05,
+      "upstream_inference_prompt_cost": 6.54e-06,
+      "upstream_inference_completions_cost": 7.8e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:19:05.345577+00:00",
+  "latency_s": 1.07,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

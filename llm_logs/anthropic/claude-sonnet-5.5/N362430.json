@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362430",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "2106909997",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596492-ZQBhplYvYGoyTxnB1aCJ",
+    "object": "chat.completion",
+    "created": 1791596492,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on plant-based yogurt alternatives made from pistachio milk, soybeans and coconut. I recall similar rulings placing these in 2106.90, food preparations not elsewhere specified. Since the products contain pistachios, soy and coconut, the likely classification is 2106.90.9998 (other food preparations not elsewhere specified or included, other). Several details argue against alternatives:\n\n- Sugar content: the products contain cane sugar, but 2106.90.42 and 2106.90.44 cover articles containing sugar as a dairy-product-related provision, which is not applicable here. The sugar-containing provisions for 2106.90.46 and 2106.90.54 to 2106.90.58 cover other items, and the dairy-related ones apply only to products containing milk solids.\n- Fruit or nuts: the pistachio-based, non-dairy content could point to 2008 for prepared nuts, but these are blends, so 2106 fits better.\n- Nut content: the 2106.90.9998 provision is the general residual, and there is no dairy content.\n\nI considered 2106.90.66 (articles containing butterfat or milk solids), but there are no dairy ingredients, so the residual 2106.90.9998 applies. A product with added sugar might instead fall under 2106.90.9400 or similar, but there is no sugar-specific provision for such mixtures under 2106.90.\n\nThe entry is 2106.90.9998, though this is from memory rather than a confirmed ruling.\n\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"Ready-to-eat plant-based yogurt alternatives made from pistachio milk, soy and coconut, with no dairy content, are food preparations not elsewhere specified or included under heading 2106, falling in the residual subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 512,
+      "completion_tokens": 591,
+      "total_tokens": 1103,
+      "cost": 0.006934,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006934,
+        "upstream_inference_prompt_cost": 0.001024,
+        "upstream_inference_completions_cost": 0.00591
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "Ready-to-eat plant-based yogurt alternatives made from pistachio milk, soy and coconut, with no dairy content, are food preparations not elsewhere specified or included under heading 2106, falling in the residual subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 512,
+    "completion_tokens": 591,
+    "total_tokens": 1103,
+    "cost": 0.006934,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006934,
+      "upstream_inference_prompt_cost": 0.001024,
+      "upstream_inference_completions_cost": 0.00591
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:33.064699+00:00",
+  "latency_s": 6.153,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357453",
+  "rulingDate": "2026-01-23T00:00:00",
+  "true_code": "1602502140",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599646-YmbRSnrZbwPvxbj9oBMz",
+    "object": "chat.completion",
+    "created": 1791599646,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1602.50.4040\", \"reason\": \"The fully cooked, seasoned, and frozen beef is a prepared meat of bovine animals, classifiable in heading 1602 as other prepared beef, frozen.\"}",
+          "refusal": null,
+          "reasoning": "Prepared beef, cooked, frozen \u2014 1602.50.4040? HTS 1602.50: prepared meat of bovine animals. 1602.50.4040? Actually 1602.50.40 covers \"other, prepared meals\"? Let me recall: 1602.50.4040 is frozen prepared beef? Common ruling: 1602.50.4040, HTS 1602.50.4040, duty 4.4\u00a2/kg? I'll go with 1602.50.4040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Prepared beef, cooked, frozen \u2014 1602.50.4040? HTS 1602.50: prepared meat of bovine animals. 1602.50.4040? Actually 1602.50.40 covers \"other, prepared meals\"? Let me recall: 1602.50.4040 is frozen prepared beef? Common ruling: 1602.50.4040, HTS 1602.50.4040, duty 4.4\u00a2/kg? I'll go with 1602.50.4040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 178,
+      "total_tokens": 527,
+      "cost": 0.000868011,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000868011,
+        "upstream_inference_prompt_cost": 1.3611e-05,
+        "upstream_inference_completions_cost": 0.0008544
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1602504040",
+  "predicted_reason": "The fully cooked, seasoned, and frozen beef is a prepared meat of bovine animals, classifiable in heading 1602 as other prepared beef, frozen.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 178,
+    "total_tokens": 527,
+    "cost": 0.000868011,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000868011,
+      "upstream_inference_prompt_cost": 1.3611e-05,
+      "upstream_inference_completions_cost": 0.0008544
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 132,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:34:07.194410+00:00",
+  "latency_s": 1.624,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

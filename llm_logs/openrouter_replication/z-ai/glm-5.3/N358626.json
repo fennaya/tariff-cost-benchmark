@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358626",
+  "rulingDate": "2026-03-09T00:00:00",
+  "true_code": "2931590080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599790-C9IHkTzCrpiLI1lXOiO3",
+    "object": "chat.completion",
+    "created": 1791599790,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2931.90.9050\", \"reason\": \"Clodronate disodium is an organo-inorganic compound (C-P bonded bisphosphonate) not elsewhere specified or included, classifiable in HTSUS subheading 2931.90.9050, which covers other organo-inorganic compounds.\"}",
+          "refusal": null,
+          "reasoning": "Clodronate disodium \u2014 likely 2933.99? Bisphosphonates contain phosphorus-carbon bond; clodronic acid is a phosphonic acid \u2014 heading 2931 organo-inorganic compounds. Clodronate disodium: 2931.90? Actually HTS 2931.90.9050? Common classification: 2931.90.9043? Bisphosphonate drugs often 2931.90.90. I'll answer 2931.90.9050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Clodronate disodium \u2014 likely 2933.99? Bisphosphonates contain phosphorus-carbon bond; clodronic acid is a phosphonic acid \u2014 heading 2931 organo-inorganic compounds. Clodronate disodium: 2931.90? Actually HTS 2931.90.9050? Common classification: 2931.90.9043? Bisphosphonate drugs often 2931.90.90. I'll answer 2931.90.9050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 154,
+      "completion_tokens": 200,
+      "total_tokens": 354,
+      "cost": 0.00086156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00086156,
+        "upstream_inference_prompt_cost": 2.156e-05,
+        "upstream_inference_completions_cost": 0.00084
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 121,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2931909050",
+  "predicted_reason": "Clodronate disodium is an organo-inorganic compound (C-P bonded bisphosphonate) not elsewhere specified or included, classifiable in HTSUS subheading 2931.90.9050, which covers other organo-inorganic compounds.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 154,
+    "completion_tokens": 200,
+    "total_tokens": 354,
+    "cost": 0.00086156,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00086156,
+      "upstream_inference_prompt_cost": 2.156e-05,
+      "upstream_inference_completions_cost": 0.00084
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 121,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:36:30.346115+00:00",
+  "latency_s": 3.717,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

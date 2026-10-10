@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363486",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596676-ikN4v4xbSbYb59BDE8Sr",
+    "object": "chat.completion",
+    "created": 1791596676,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on a costume. Adult-size costumes of textile materials are classified in 9505.90 as festive articles only if they are not \"wearing apparel.\" Note 1(e) to Chapter 95 excludes sports clothing and fancy dress of textiles in Chapters 61 and 62. CBP generally classifies costumes made of ordinary textile fabric as wearing apparel in Chapter 61 or 62 when they are well-made, although flimsy, non-durable costumes go in 9505.\n\nHere the item is a sleeveless pullover dress with a drape, and the knit or woven construction is not stated. For adult costumes of this kind, CBP has often ruled the dress is a woven polyester dress under 6204.\n\nA set classification is possible, since the dress, medallions, and armbands could be a set under GRI 3(b). The dress gives the set its essential character, so the set would follow it. If the dress is woven synthetic fiber, the heading would be 6204.44 (dresses of artificial fibers) or 6204.43 (synthetic fibers). The Olympian Goddess dress is likely polyester, which gives 6204.43.4040: \"Dresses, other, of synthetic fibers, other, women's.\"\n\nThe 6204.43 subheadings split as follows: 6204.43.10 is of synthetic fibers, and 6204.43.20 is \"Other: Sleeveless, ...\". On the HTS, 6204.43.30 covers \"Other: Of 100% polyester,\" 6204.43.40 covers \"Other\", and 6204.43.4010 is \"Other, Other, Women's.\" I'm not certain of these subheading numbers. I'll go with 6204.43.4040 as the usual statistical suffix for women's dresses of synthetic fibers.\n\n```json\n{\"hts_code\": \"6204.43.4040\", \"reason\": \"The costume is a woven synthetic-fiber women's sleeveless dress with minor accessories, so under GRI 3(b) the dress gives the set its essential character and the set is classified as a dress in heading 6204 rather than as a festive article of Chapter 95.\"}\n```\n\n{\"hts_code\": \"6204.43.4040\", \"reason\": \"The costume's essential character comes from the woven synthetic-fiber women's dress, so it is classified as a dress in heading 6204 rather than as a festive article.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 767,
+      "total_tokens": 984,
+      "cost": 0.008104,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008104,
+        "upstream_inference_prompt_cost": 0.000434,
+        "upstream_inference_completions_cost": 0.00767
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6204434040",
+  "predicted_reason": "The costume's essential character comes from the woven synthetic-fiber women's dress, so it is classified as a dress in heading 6204 rather than as a festive article.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 217,
+    "completion_tokens": 767,
+    "total_tokens": 984,
+    "cost": 0.008104,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008104,
+      "upstream_inference_prompt_cost": 0.000434,
+      "upstream_inference_completions_cost": 0.00767
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:36.918485+00:00",
+  "latency_s": 7.436,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357328",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595386-AJ7UCgJX9yJ1lMk1uXJP",
+    "object": "chat.completion",
+    "created": 1791595386,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a plant extract in a glycerin-water solvent, so heading 1302 (vegetable saps and extracts) is the most likely fit. Subheading 1302.19 covers \"other\" vegetable saps and extracts. Within it, 1302.19.91 covers other extracts, and the 10-digit statistical suffixes under 1302.19.91 need checking.\n\nThe 1302.19 breakdown, as I recall it:\n- 1302.19.05: Medicinal... (I believe this is the line for extracts of plants used primarily in pharmacy, e.g., \"Containing 1302.19.05 - Of plant used primarily in pharmacy\" and, as I recall, 1302.19.4000 is \"Other: Medicinal\").\n- 1302.19.91: Other, with subdivisions 1302.19.9110 and so on.\n\nI can't pin down the exact suffixes from memory. The product is a medicinal tincture, so I'll use 1302.19.4000, which I recall as \"Other vegetable saps and extracts, Other, Medicinal\" (possibly 1302.19.4000 or 1302.19.4100). I'm settling on 1302.19.4000.\n\nThis is an antidumping/countervailing duty review case. Such cases often cover herbal extracts under 1302.19.4100, and I think 1302.19.4100 is the \"Other\" line. I'm not certain, but I'll go with 1302.19.4000.\n\n{\"hts_code\": \"1302.19.4000\", \"reason\": \"Liquid botanical (medicinal plant) extracts made by maceration in glycerin and water are vegetable extracts of heading 1302, falling under subheading 1302.19 (other extracts, medicinal); the 10-digit suffix is from memory and not verified.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 574,
+      "total_tokens": 1065,
+      "cost": 0.006722,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006722,
+        "upstream_inference_prompt_cost": 0.000982,
+        "upstream_inference_completions_cost": 0.00574
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302194000",
+  "predicted_reason": "Liquid botanical (medicinal plant) extracts made by maceration in glycerin and water are vegetable extracts of heading 1302, falling under subheading 1302.19 (other extracts, medicinal); the 10-digit suffix is from memory and not verified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 491,
+    "completion_tokens": 574,
+    "total_tokens": 1065,
+    "cost": 0.006722,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006722,
+      "upstream_inference_prompt_cost": 0.000982,
+      "upstream_inference_completions_cost": 0.00574
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:06.498916+00:00",
+  "latency_s": 5.811,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

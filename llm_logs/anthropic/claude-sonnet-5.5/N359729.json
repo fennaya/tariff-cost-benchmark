@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359729",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8544493080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595900-3daboAW1XXanH2ob09Px",
+    "object": "chat.completion",
+    "created": 1791595900,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an insulated electric conductor without connectors, rated at 250V (under 1,000V). That places it in heading 8544, in subheading 8544.49 (\"other electric conductors, for a voltage not exceeding 1,000 V\"), not in 8544.42, which covers conductors fitted with connectors.\n\nWithin 8544.49, the 10-digit line depends on the conductor and its size. Under 8544.49.10, the 8544.49.10 line covers conductors of 8544.49 with individual wires not exceeding 0.51 mm in diameter. The 8544.49.20 line covers other conductors for voltages not exceeding 80 V. The 8544.49.30 line covers other conductors for 80 V to 1,000 V, and the 8544.49.90 line covers other.\n\nI recall that CBP rulings on similar shielded data cables, with copper conductors, 250V and no connectors, classify them under 8544.49.3000 (\"Other, of copper, for a voltage exceeding 80 V but not exceeding 1,000 V\"). Since 250V falls in the 80\u20131,000 V range, 8544.49.30 fits. Its statistical suffix is 8544.49.3000 (the 8544.49.30 line has suffix 00 in the HTSUS).\n\n{\"hts_code\": \"8544.49.3000\", \"reason\": \"Unterminated insulated copper data cable rated at 250V (over 80V, not over 1,000V) without connectors falls under heading 8544, subheading 8544.49.30 for other insulated electric conductors.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 286,
+      "completion_tokens": 507,
+      "total_tokens": 793,
+      "cost": 0.005642,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005642,
+        "upstream_inference_prompt_cost": 0.000572,
+        "upstream_inference_completions_cost": 0.00507
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544493000",
+  "predicted_reason": "Unterminated insulated copper data cable rated at 250V (over 80V, not over 1,000V) without connectors falls under heading 8544, subheading 8544.49.30 for other insulated electric conductors.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 507,
+    "total_tokens": 793,
+    "cost": 0.005642,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005642,
+      "upstream_inference_prompt_cost": 0.000572,
+      "upstream_inference_completions_cost": 0.00507
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:41.149884+00:00",
+  "latency_s": 5.328,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

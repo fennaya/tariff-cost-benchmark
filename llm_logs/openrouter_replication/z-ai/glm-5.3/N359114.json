@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359114",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "6505004090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599859-uBpbguLY4pgZIUBMJ2yX",
+    "object": "chat.completion",
+    "created": 1791599859,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6505.00.1500\", \"reason\": \"A seamless head covering of wool felt is classified in heading 6505 as a hat of felt, of wool or fine animal hair.\"}",
+          "refusal": null,
+          "reasoning": "Felt hat of wool \u2014 6505.00? Hats of felt are 6505.00.80? Actually felt hats: heading 6505 includes hats of felt? 6505.00.80 \"of man-made fibers\"? Wool felt hats: 6505.00.15? Let me recall: 6505.00.15 hats of wool felt? There is 6505.00.15 \"Of wool or fine animal hair\" \u2014 duty free? I think 6505.00.15 is hats of felt of wool. Use 6505.00.1500? Subcategories: 6505.00.15 (of wool...), 6505.00.30 knit, 6505.00.40... I'll answer 6505.00.1500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Felt hat of wool \u2014 6505.00? Hats of felt are 6505.00.80? Actually felt hats: heading 6505 includes hats of felt? 6505.00.80 \"of man-made fibers\"? Wool felt hats: 6505.00.15? Let me recall: 6505.00.15 hats of wool felt? There is 6505.00.15 \"Of wool or fine animal hair\" \u2014 duty free? I think 6505.00.15 is hats of felt of wool. Use 6505.00.1500? Subcategories: 6505.00.15 (of wool...), 6505.00.30 knit, 6505.00.40... I'll answer 6505.00.1500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 165,
+      "completion_tokens": 217,
+      "total_tokens": 382,
+      "cost": 0.0007708,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007708,
+        "upstream_inference_prompt_cost": 3.3e-05,
+        "upstream_inference_completions_cost": 0.0007378
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 170,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6505001500",
+  "predicted_reason": "A seamless head covering of wool felt is classified in heading 6505 as a hat of felt, of wool or fine animal hair.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 165,
+    "completion_tokens": 217,
+    "total_tokens": 382,
+    "cost": 0.0007708,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007708,
+      "upstream_inference_prompt_cost": 3.3e-05,
+      "upstream_inference_completions_cost": 0.0007378
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:37:39.260538+00:00",
+  "latency_s": 2.148,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

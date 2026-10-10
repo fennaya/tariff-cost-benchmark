@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360414",
+  "rulingDate": "2026-04-23T00:00:00",
+  "true_code": "8537109170",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600075-RAdA9qDS3sPNsITT9VGg",
+    "object": "chat.completion",
+    "created": 1791600075,
+    "model": "z-ai/glm-5.3",
+    "provider": "Cloudflare",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8538.90.8080\", \"reason\": \"The aluminum cabinet is a base part suitable for housing electrical apparatus of headings 8536/8537, and the attached bus bar, terminal block, and grounding cables do not change its character as a cabinet/base for electrical control or distribution equipment.\"}",
+          "refusal": null,
+          "reasoning": "Cabinet of aluminum, housing electrical apparatus \u2014 likely 8538.90.8080? Aluminum cabinet for electrical equipment \u2014 heading 8538 (parts suitable for use solely with 8536/8537 apparatus). NY rulings classify such cabinets in 8538.90.8080? Actually 8538.90.8080 is \"Other\" boards, panels... For aluminum electrical cabinets, rulings use 8538.90.8080? There's 7614? No. CBP ruling on aluminum electrical cabinet with bus bar \u2014 8538.90.8080? I recall 8538.90.8080 covers \"Other\" of 8538.90.80. Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Cabinet of aluminum, housing electrical apparatus \u2014 likely 8538.90.8080? Aluminum cabinet for electrical equipment \u2014 heading 8538 (parts suitable for use solely with 8536/8537 apparatus). NY rulings classify such cabinets in 8538.90.8080? Actually 8538.90.8080 is \"Other\" boards, panels... For aluminum electrical cabinets, rulings use 8538.90.8080? There's 7614? No. CBP ruling on aluminum electrical cabinet with bus bar \u2014 8538.90.8080? I recall 8538.90.8080 covers \"Other\" of 8538.90.80. Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 178,
+      "completion_tokens": 236,
+      "total_tokens": 414,
+      "cost": 0.0012876,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012876,
+        "upstream_inference_prompt_cost": 0.0002492,
+        "upstream_inference_completions_cost": 0.0010384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 126,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8538908080",
+  "predicted_reason": "The aluminum cabinet is a base part suitable for housing electrical apparatus of headings 8536/8537, and the attached bus bar, terminal block, and grounding cables do not change its character as a cabinet/base for electrical control or distribution equipment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 178,
+    "completion_tokens": 236,
+    "total_tokens": 414,
+    "cost": 0.0012876,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012876,
+      "upstream_inference_prompt_cost": 0.0002492,
+      "upstream_inference_completions_cost": 0.0010384
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 126,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Cloudflare",
+  "requested_at": "2026-10-10T02:41:15.472706+00:00",
+  "latency_s": 6.339,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

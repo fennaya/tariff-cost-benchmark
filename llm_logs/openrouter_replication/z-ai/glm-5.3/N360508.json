@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360508",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "7616995190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600088-qOjLO9svtMsU4VGtISd4",
+    "object": "chat.completion",
+    "created": 1791600088,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8538.90.9090\", \"reason\": \"A spacer damper designed solely for attachment to overhead electrical conductors is a part suitable for use solely with electrical apparatus of headings 8535 or 8536, other, other.\"}",
+          "refusal": null,
+          "reasoning": "Spacer damper \u2014 likely 8544.42? No, it's a damper for conductors \u2014 classified as part of electrical machinery? Ruling: spacer dampers classified in 8538.90? Actually similar NY ruling classified spacer dampers under 8544? They're attachments to powerlines \u2014 heading 8538 (parts suitable for use solely with apparatus of 8535/8536)? Overhead line fittings \u2014 8538.90. Use 8538.90.9090? There's ruling classifying spacer dampers in 8538.90.30? I'll go 8538.90.9090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Spacer damper \u2014 likely 8544.42? No, it's a damper for conductors \u2014 classified as part of electrical machinery? Ruling: spacer dampers classified in 8538.90? Actually similar NY ruling classified spacer dampers under 8544? They're attachments to powerlines \u2014 heading 8538 (parts suitable for use solely with apparatus of 8535/8536)? Overhead line fittings \u2014 8538.90. Use 8538.90.9090? There's ruling classifying spacer dampers in 8538.90.30? I'll go 8538.90.9090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 207,
+      "total_tokens": 530,
+      "cost": 0.0007684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007684,
+        "upstream_inference_prompt_cost": 6.46e-05,
+        "upstream_inference_completions_cost": 0.0007038
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 146,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8538909090",
+  "predicted_reason": "A spacer damper designed solely for attachment to overhead electrical conductors is a part suitable for use solely with electrical apparatus of headings 8535 or 8536, other, other.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 323,
+    "completion_tokens": 207,
+    "total_tokens": 530,
+    "cost": 0.0007684,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007684,
+      "upstream_inference_prompt_cost": 6.46e-05,
+      "upstream_inference_completions_cost": 0.0007038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 146,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:41:28.974593+00:00",
+  "latency_s": 2.145,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

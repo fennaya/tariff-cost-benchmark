@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357367",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "8517790000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599625-D1nD2vtaC8QROcS0AlfQ",
+    "object": "chat.completion",
+    "created": 1791599625,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8517.70.2000\", \"reason\": \"The assembly is a component part of a cellular smartphone, classified as a part of apparatus for cellular telephony under heading 8517.\"}",
+          "refusal": null,
+          "reasoning": "Likely classified as parts of cellular phones: 8517.70.2000? HTSUS 8517.70.20 covers parts of telephones for cellular networks... Actually 8517.70.60? Current: 8517.70.00 subdivided; cellular phone parts: 8517.70.20 (antennas?) Hmm. 8517.70.30? For smartphones, parts classified 8517.70.60? I recall 8517.70.20 = parts of telephone sets for cellular networks. Use 8517.70.2000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely classified as parts of cellular phones: 8517.70.2000? HTSUS 8517.70.20 covers parts of telephones for cellular networks... Actually 8517.70.60? Current: 8517.70.00 subdivided; cellular phone parts: 8517.70.20 (antennas?) Hmm. 8517.70.30? For smartphones, parts classified 8517.70.60? I recall 8517.70.20 = parts of telephone sets for cellular networks. Use 8517.70.2000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 184,
+      "total_tokens": 415,
+      "cost": 0.00084002,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00084002,
+        "upstream_inference_prompt_cost": 3.042e-05,
+        "upstream_inference_completions_cost": 0.0008096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 134,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517702000",
+  "predicted_reason": "The assembly is a component part of a cellular smartphone, classified as a part of apparatus for cellular telephony under heading 8517.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 231,
+    "completion_tokens": 184,
+    "total_tokens": 415,
+    "cost": 0.00084002,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00084002,
+      "upstream_inference_prompt_cost": 3.042e-05,
+      "upstream_inference_completions_cost": 0.0008096
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 134,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:33:46.081982+00:00",
+  "latency_s": 2.323,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

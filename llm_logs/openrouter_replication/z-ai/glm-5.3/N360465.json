@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360465",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "4016935050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600082-4aHw5VwgLzKhmgzBImT9",
+    "object": "chat.completion",
+    "created": 1791600082,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3926.90.7500\", \"reason\": \"The well seal kit, with its essential character imparted by the ABS plastic top and bottom plates that compress the rubber gland, is an article of plastics not elsewhere specified, per prior CBP rulings on similar well seals.\"}",
+          "refusal": null,
+          "reasoning": "Well seal of plastics and rubber \u2014 likely classified as other articles of plastics, 3926.90.7500? Or rubber article 4016.99. Actual CBP ruling: well seals classified 3926.90.75? There is ruling on well seals \u2014 NY ruling classified plastic well seals in 3926.90.75. I'll answer 3926.90.7500.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Well seal of plastics and rubber \u2014 likely classified as other articles of plastics, 3926.90.7500? Or rubber article 4016.99. Actual CBP ruling: well seals classified 3926.90.75? There is ruling on well seals \u2014 NY ruling classified plastic well seals in 3926.90.75. I'll answer 3926.90.7500.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 261,
+      "completion_tokens": 154,
+      "total_tokens": 415,
+      "cost": 0.00069848,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00069848,
+        "upstream_inference_prompt_cost": 2.088e-05,
+        "upstream_inference_completions_cost": 0.0006776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 89,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926907500",
+  "predicted_reason": "The well seal kit, with its essential character imparted by the ABS plastic top and bottom plates that compress the rubber gland, is an article of plastics not elsewhere specified, per prior CBP rulings on similar well seals.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 154,
+    "total_tokens": 415,
+    "cost": 0.00069848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00069848,
+      "upstream_inference_prompt_cost": 2.088e-05,
+      "upstream_inference_completions_cost": 0.0006776
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 89,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:41:23.206480+00:00",
+  "latency_s": 1.904,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N362780",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "9014109000",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599387-Z3uouaE3Hp91ttS4vfG6",
+    "object": "chat.completion",
+    "created": 1791599387,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9014.10.1000\", \"reason\": \"The NV2C-28V-SF is a navigational compass for aircraft, specifically classified as a direction-finding compass under HTSUS heading 9014.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 192,
+      "completion_tokens": 54,
+      "total_tokens": 246,
+      "cost": 5.9568e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 5.9568e-05,
+        "upstream_inference_prompt_cost": 5.568e-06,
+        "upstream_inference_completions_cost": 5.4e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9014101000",
+  "predicted_reason": "The NV2C-28V-SF is a navigational compass for aircraft, specifically classified as a direction-finding compass under HTSUS heading 9014.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 54,
+    "total_tokens": 246,
+    "cost": 5.9568e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 5.9568e-05,
+      "upstream_inference_prompt_cost": 5.568e-06,
+      "upstream_inference_completions_cost": 5.4e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T02:29:47.894591+00:00",
+  "latency_s": 5.131,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

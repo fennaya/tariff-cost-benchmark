@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357120",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "8414904190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595316-C9C3jwCw6BeqcMMvV4yp",
+    "object": "chat.completion",
+    "created": 1791595316,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on marine turbocharger parts. Turbochargers fall in heading 8414.80 (air compressors), and the parts go in 8414.90. Within 8414.80, turbochargers for marine engines pressurizing above 35 psi would be 8414.80.16 (turbochargers and superchargers, 8414.80.1605?). The relevant provisions of 8414.80 are: 8414.80.05 (Turbocharger and supercharger... ), 8414.80.10 (Compressors, other than for refrigerating equipment: Other, of a type used in ...), 8414.80.16 (Other: Compressors: Other: Free-piston?) and 8414.80.20 onwards (Other: Gas compressors: Other than compressors with a pressure of 3 bar...).\n\nThe parts provisions in 8414.90 are: 8414.90.00 (Parts); 8414.90.10 (Of compressors), 8414.90.30 (Of ... ), 8414.90.41 (Parts of compressors of subheading 8414.30 or 8414.80: Other: 8414.90.4160 or 8414.90.4170 ... ). In the 8414.90.41 structure, 8414.90.4150 covers parts of machines of 8414.80.05, .15, .16, .17, .22, .28, .30, .45, .60, .75, .80, .90. Specifically, 8414.90.4115 covers parts of 8414.80.16 or .17 etc. I recall 8414.90.4175 as \"Other\" parts for compressors of 8414.30 or 8414.80, used in civil aircraft, and 8414.90.4175 being the other parts.\n\nI'll go with 8414.90.4175.\n\n{\"hts_code\": \"8414.90.4175\", \"reason\": \"Diffusers, shafts, compressor wheels and casings dedicated to a marine turbocharger are parts of air compressors of heading 8414, falling under 8414.90.41 for parts of compressors of subheading 8414.80, in the residual 'other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 574,
+      "completion_tokens": 672,
+      "total_tokens": 1246,
+      "cost": 0.007868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007868,
+        "upstream_inference_prompt_cost": 0.001148,
+        "upstream_inference_completions_cost": 0.00672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8414904175",
+  "predicted_reason": "Diffusers, shafts, compressor wheels and casings dedicated to a marine turbocharger are parts of air compressors of heading 8414, falling under 8414.90.41 for parts of compressors of subheading 8414.80, in the residual 'other' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 574,
+    "completion_tokens": 672,
+    "total_tokens": 1246,
+    "cost": 0.007868,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007868,
+      "upstream_inference_prompt_cost": 0.001148,
+      "upstream_inference_completions_cost": 0.00672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:56.534935+00:00",
+  "latency_s": 6.919,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

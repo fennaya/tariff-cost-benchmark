@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359300",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "3004909246",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599890-CKrdkPItNMb5hJwCgUec",
+    "object": "chat.completion",
+    "created": 1791599890,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.90.99\", \"reason\": \"Clozapine is an atypical antipsychotic medicament (not an antibiotic, hormone, or alkaloid) put up in measured-dose tablet form, classifiable under the residual provision for other medicaments in subheading 3004.90.90.99.\"}",
+          "refusal": null,
+          "reasoning": "Clozapine is an antibiotic? No\u2014it's an antipsychotic, but HTS 3004.20 covers antibiotics... Actually clozapine classified under 3004.90. CBP rulings classify clozapine tablets under 3004.90.90.99? Ruling NY 871976: clozapine tablets 3004.90.90.99? Likely 3004.90.90.99 (other medicaments, other, other).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Clozapine is an antibiotic? No\u2014it's an antipsychotic, but HTS 3004.20 covers antibiotics... Actually clozapine classified under 3004.90. CBP rulings classify clozapine tablets under 3004.90.90.99? Ruling NY 871976: clozapine tablets 3004.90.90.99? Likely 3004.90.90.99 (other medicaments, other, other).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 162,
+      "completion_tokens": 178,
+      "total_tokens": 340,
+      "cost": 0.00077028,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00077028,
+        "upstream_inference_prompt_cost": 2.268e-05,
+        "upstream_inference_completions_cost": 0.0007476
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 101,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909099",
+  "predicted_reason": "Clozapine is an atypical antipsychotic medicament (not an antibiotic, hormone, or alkaloid) put up in measured-dose tablet form, classifiable under the residual provision for other medicaments in subheading 3004.90.90.99.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 178,
+    "total_tokens": 340,
+    "cost": 0.00077028,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00077028,
+      "upstream_inference_prompt_cost": 2.268e-05,
+      "upstream_inference_completions_cost": 0.0007476
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 101,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:38:10.526736+00:00",
+  "latency_s": 3.389,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

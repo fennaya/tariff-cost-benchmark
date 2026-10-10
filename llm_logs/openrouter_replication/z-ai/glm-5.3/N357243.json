@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357243",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "2517490000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599593-fsP7Q3EdUzvddldPG71u",
+    "object": "chat.completion",
+    "created": 1791599593,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2517.10.0000\", \"reason\": \"The simulants are mixtures of crushed, milled, and sieved naturally derived igneous rocks (anorthosite, basalt, peridotite), classifiable as pebbles, gravel, broken or crushed stone of heading 2517, specifically limestone-type crushed stone under 2517.10.0000.\"}",
+          "refusal": null,
+          "reasoning": "Crushed stone mixtures \u2014 heading 2517? Crushed/milled rock, sieved \u2014 2517.10.0000? Actually 2517 covers pebbles, gravel, broken/crushed stone. 2517.10.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Crushed stone mixtures \u2014 heading 2517? Crushed/milled rock, sieved \u2014 2517.10.0000? Actually 2517 covers pebbles, gravel, broken/crushed stone. 2517.10.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 149,
+      "total_tokens": 447,
+      "cost": 0.0005662,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005662,
+        "upstream_inference_prompt_cost": 5.96e-05,
+        "upstream_inference_completions_cost": 0.0005066
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 60,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2517100000",
+  "predicted_reason": "The simulants are mixtures of crushed, milled, and sieved naturally derived igneous rocks (anorthosite, basalt, peridotite), classifiable as pebbles, gravel, broken or crushed stone of heading 2517, specifically limestone-type crushed stone under 2517.10.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 298,
+    "completion_tokens": 149,
+    "total_tokens": 447,
+    "cost": 0.0005662,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005662,
+      "upstream_inference_prompt_cost": 5.96e-05,
+      "upstream_inference_completions_cost": 0.0005066
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 60,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:33:13.815821+00:00",
+  "latency_s": 1.676,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

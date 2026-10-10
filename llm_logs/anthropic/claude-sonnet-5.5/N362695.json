@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362695",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "4911914040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596536-cfMho7uKS5x72FFxonxu",
+    "object": "chat.completion",
+    "created": 1791596536,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on diamond painting kits. The kit is likely classified as a set under GRI 3(b). The essential character is probably the printed board, but the choices are several. Possible headings: 9503 (toys, such as a craft kit), 4911 (printed pictures), 4421 or 4412 (wood articles), and 9701 (paintings).\n\nI recall rulings treating diamond painting kits as \"other toys\" in 9503.00.00 (e.g., NY N301234). Many diamond painting kits were classified in 9503.00.0073 (Toys... other: other), but 9503.00.00 has been restructured. Current subheadings: 9503.00.00 with statistical suffixes such as 9503.00.0073 \"Other toys; reduced-size models; puzzles; parts and accessories: Other.\" Since 2022, 9503.00.00 has been split into 9503.00.0071 (Toys representing animals or non-human creatures, stuffed), 9503.00.0073 (Other), and so on. I believe 9503.00.0073 stands. Alternatively, there is a ruling stating diamond painting kits are classified in 9503.00.0090 for \"Other.\" But 9503.00.0073 is the one I'll go with.\n\nNote that the glitter and MDF board point toward a craft kit, though the 3D Glitter version may be classified as a decorative item instead (e.g., 4414 or 4420). I'll stay with the toy classification, since a craft kit for children's amusement fits 9503.\n\n```json\n{\"hts_code\": \"9503.00.0073\", \"reason\": \"The diamond painting kit is a craft set for amusement, classified as an other toy in heading 9503 under GRI 1 and 3(b).\"}\n```\n\nFinal answer:\n\n{\"hts_code\": \"9503.00.0073\", \"reason\": \"The diamond painting kit is a craft set for amusement, classified as an other toy in heading 9503 under GRI 1 and 3(b).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 644,
+      "total_tokens": 1010,
+      "cost": 0.007172,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007172,
+        "upstream_inference_prompt_cost": 0.000732,
+        "upstream_inference_completions_cost": 0.00644
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "The diamond painting kit is a craft set for amusement, classified as an other toy in heading 9503 under GRI 1 and 3(b).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 366,
+    "completion_tokens": 644,
+    "total_tokens": 1010,
+    "cost": 0.007172,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007172,
+      "upstream_inference_prompt_cost": 0.000732,
+      "upstream_inference_completions_cost": 0.00644
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:16.525704+00:00",
+  "latency_s": 6.466,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

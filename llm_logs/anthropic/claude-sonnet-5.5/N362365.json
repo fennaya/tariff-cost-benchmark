@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362365",
+  "rulingDate": "2026-07-09T00:00:00",
+  "true_code": "8708937500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596476-NllKv12StThpibPdh4iA",
+    "object": "chat.completion",
+    "created": 1791596476,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "A clutch release bearing is a ball bearing assembly. CBP rulings on clutch release bearings (e.g., NY rulings) have classified them in 8482.10.50 (ball bearings, other) or 8482.10.10 (ball bearings with integral shafts) or as parts of clutches in 8708.93. The ruling for \"clutch release bearing\" generally concluded 8708.93.6000 (clutches and parts thereof, other) because the bearing is dedicated to the clutch, but some rulings stated 8482. Chapter 87 notes: Section XVII excludes articles of heading 8482 (Note 2(e)? Section XVII Note 2 excludes parts of general use as defined in Note 2 to Section XV... and also \"(e) ... \" hmm). Section XVII Note 2 does not exclude 8482 bearings; in fact, the exclusion list includes \"(f) machines or mechanical appliances of heading 8401-8479 ... \" and 8482 isn't listed. Actually, Section XVII Note 2 excludes \"(e) Articles of heading 8482 ...\"? I recall that Section XVII Note 2 says: \"(a) joints, washers of heading 4016; (b) parts of general use ... (c) Chapter 82; (d) heading 8306; (e) machines of 8401-8479 and 8482 ..., \" Yes, I believe \"(f) Articles of heading 8482\" appears: \"Machines and mechanical appliances of headings 8401 to 8479, or parts thereof, other than the radiators for the articles of this Section; articles of heading 8482\". Hmm, I think that's right, so classification is 8482. Release bearing is a ball bearing with an angular contact: 8482.10.50 with 8482.10.5028 or similar statistical suffix. Common: 8482.10.5048 \"other ball bearings\".\n\n{\"hts_code\": \"8482.10.5028\", \"reason\": \"A clutch release bearing is a ball bearing assembly classified in heading 8482 (excluded from Section XVII by note), falling under ball bearings, other, in 8482.10.50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 273,
+      "completion_tokens": 694,
+      "total_tokens": 967,
+      "cost": 0.007486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007486,
+        "upstream_inference_prompt_cost": 0.000546,
+        "upstream_inference_completions_cost": 0.00694
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8482105028",
+  "predicted_reason": "A clutch release bearing is a ball bearing assembly classified in heading 8482 (excluded from Section XVII by note), falling under ball bearings, other, in 8482.10.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 273,
+    "completion_tokens": 694,
+    "total_tokens": 967,
+    "cost": 0.007486,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007486,
+      "upstream_inference_prompt_cost": 0.000546,
+      "upstream_inference_completions_cost": 0.00694
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:16.637926+00:00",
+  "latency_s": 7.543,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

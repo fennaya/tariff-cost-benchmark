@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360981",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "6912004500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600136-HUFa0I5OahBBSmdASTN8",
+    "object": "chat.completion",
+    "created": 1791600136,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6912.00.4800\", \"reason\": \"Dolomite ceramic drinking cups for household/table use are classified as other ceramic tableware of heading 6912, specifically the 'other' subheading covering non-porcelain/non-china cups.\"}",
+          "refusal": null,
+          "reasoning": "Dolomite ceramic drinking cups \u2192 6913.49? Drinking cups of ceramic: 6912.01 (table/kitchen articles). Dolomite cups safe for drinking \u2192 6912.01.48? 6912.01.4800? Actually 6912.01.48 \"other ceramic tableware... of dolomite\"? Subheadings: 6912.01.10 porcelain/china cups; 6912.01.20 other ceramic household articles... Let me recall: 6912.00 ceramic tableware. HTS 6912.00.21? Actually heading 6912: 6912.00.10 porcelain cups... 6912.00.2000? New: 6912.00.21 other cups... For dolomite: 6912.00.4800? I'll answer 6912.00.4800.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Dolomite ceramic drinking cups \u2192 6913.49? Drinking cups of ceramic: 6912.01 (table/kitchen articles). Dolomite cups safe for drinking \u2192 6912.01.48? 6912.01.4800? Actually 6912.01.48 \"other ceramic tableware... of dolomite\"? Subheadings: 6912.01.10 porcelain/china cups; 6912.01.20 other ceramic household articles... Let me recall: 6912.00 ceramic tableware. HTS 6912.00.21? Actually heading 6912: 6912.00.10 porcelain cups... 6912.00.2000? New: 6912.00.21 other cups... For dolomite: 6912.00.4800? I'll answer 6912.00.4800.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 261,
+      "completion_tokens": 262,
+      "total_tokens": 523,
+      "cost": 0.00117368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00117368,
+        "upstream_inference_prompt_cost": 2.088e-05,
+        "upstream_inference_completions_cost": 0.0011528
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 200,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6912004800",
+  "predicted_reason": "Dolomite ceramic drinking cups for household/table use are classified as other ceramic tableware of heading 6912, specifically the 'other' subheading covering non-porcelain/non-china cups.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 261,
+    "completion_tokens": 262,
+    "total_tokens": 523,
+    "cost": 0.00117368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00117368,
+      "upstream_inference_prompt_cost": 2.088e-05,
+      "upstream_inference_completions_cost": 0.0011528
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 200,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:42:16.830947+00:00",
+  "latency_s": 2.29,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

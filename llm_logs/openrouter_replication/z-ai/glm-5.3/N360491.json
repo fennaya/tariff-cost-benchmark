@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360491",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004390055",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600086-AwD2Xy8CVemt9NuJ09h8",
+    "object": "chat.completion",
+    "created": 1791600086,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3002.10.0090\", \"reason\": \"Glucagon is a polypeptide hormone (other than insulin) imported in dosage form, classifiable under HTSUS 3002.10 as glandular extracts and hormones.\"}",
+          "refusal": null,
+          "reasoning": "Glucagon is a polypeptide hormone, not insulin. Diagnostic use \u2014 likely 3002.15? Hormones, polypeptide hormones, put up in measured doses \u2192 3002.15.00? Actually 3002.15 covers insulin and salts; glucagon falls under 3002.10? Human/animal hormones, in measured doses: 3002.10.00... Glucagon classified as hormone preparation: 3002.10.00? CBP rulings classify glucagon under 3002.10.00 (hormones, not insulin). 10-digit: 3002.10.0090? Old rulings say 3002.10.0000? HTSUS 3002.10.00... likely 3002.10.0090? I'll answer 3002.10.0090? Safer: 3002.10.0000 doesn't exist; subheading 3002.10.00 with suffixes. I'll use 3002.10.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Glucagon is a polypeptide hormone, not insulin. Diagnostic use \u2014 likely 3002.15? Hormones, polypeptide hormones, put up in measured doses \u2192 3002.15.00? Actually 3002.15 covers insulin and salts; glucagon falls under 3002.10? Human/animal hormones, in measured doses: 3002.10.00... Glucagon classified as hormone preparation: 3002.10.00? CBP rulings classify glucagon under 3002.10.00 (hormones, not insulin). 10-digit: 3002.10.0090? Old rulings say 3002.10.0000? HTSUS 3002.10.00... likely 3002.10.0090? I'll answer 3002.10.0090? Safer: 3002.10.0000 doesn't exist; subheading 3002.10.00 with suffixes. I'll use 3002.10.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 192,
+      "completion_tokens": 282,
+      "total_tokens": 474,
+      "cost": 0.001361024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001361024,
+        "upstream_inference_prompt_cost": 7.424e-06,
+        "upstream_inference_completions_cost": 0.0013536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 234,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3002100090",
+  "predicted_reason": "Glucagon is a polypeptide hormone (other than insulin) imported in dosage form, classifiable under HTSUS 3002.10 as glandular extracts and hormones.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 192,
+    "completion_tokens": 282,
+    "total_tokens": 474,
+    "cost": 0.001361024,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001361024,
+      "upstream_inference_prompt_cost": 7.424e-06,
+      "upstream_inference_completions_cost": 0.0013536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 234,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:41:26.543999+00:00",
+  "latency_s": 2.415,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

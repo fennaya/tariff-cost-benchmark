@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359569",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3824994190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595868-ZeX3IBP5T0Jf36eJjtVA",
+    "object": "chat.completion",
+    "created": 1791595868,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on hockey wax. Mixtures of beeswax, soybean wax and oils are likely classified as prepared waxes in heading 3404 (artificial waxes and prepared waxes). Subheading 3404.90 covers other, and 3404.90.51 covers \"Other: Other\" (the 3404.90.10 line is for chemically modified lignite and 3404.90.50 for other). The current HTSUS has 3404.20 for poly(oxyethylene) waxes and 3404.90 for other. Under 3404.90, 3404.90.10 is \"Of chemically modified lignite,\" 3404.90.51 is \"Other: Of modified... \" and 3404.90.5100 is \"Other: Other\"?\n\nI recall the structure: 3404.90.10 00 \"Of chemically modified lignite\"; 3404.90.50 00 \"Other\". The 10-digit code would be 3404.90.5000, which I judge the most likely. Alternatively, 1521.90 covers beeswax, but because this is a mixture with soybean wax, it falls under 3404.\n\n{\"hts_code\": \"3404.90.5000\", \"reason\": \"The hockey waxes are prepared waxes made from a blend of beeswax, hydrogenated soybean wax and oils, so they fall in heading 3404 as other prepared waxes.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 713,
+      "completion_tokens": 441,
+      "total_tokens": 1154,
+      "cost": 0.005836,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005836,
+        "upstream_inference_prompt_cost": 0.001426,
+        "upstream_inference_completions_cost": 0.00441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3404905000",
+  "predicted_reason": "The hockey waxes are prepared waxes made from a blend of beeswax, hydrogenated soybean wax and oils, so they fall in heading 3404 as other prepared waxes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 713,
+    "completion_tokens": 441,
+    "total_tokens": 1154,
+    "cost": 0.005836,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005836,
+      "upstream_inference_prompt_cost": 0.001426,
+      "upstream_inference_completions_cost": 0.00441
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:09.193409+00:00",
+  "latency_s": 4.522,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

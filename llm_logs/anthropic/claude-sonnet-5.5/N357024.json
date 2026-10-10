@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357024",
+  "rulingDate": "2026-07-08T00:00:00",
+  "true_code": "3824994190",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595306-4rGCaCW5h7XtuDB27fsl",
+    "object": "chat.completion",
+    "created": 1791595306,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Finamul 6016 is a mixture of sodium stearate, sodium stearoyl lactylates. The likely classification is heading 3823 or 3402 or 2915. Sodium stearoyl lactylate is typically classified as an emulsifier in 3823.70 or 3824.99. I recall CBP rulings that classified sodium stearoyl lactylate in 3823.70 (industrial fatty alcohols), or 2918.11 (lactic acid, its salts and esters). A mixture with sodium stearate (soap, 3401) would be... The mixture as an emulsifier would be an organic surface-active agent of 3402 if put up for retail sale, but it is not a preparation for washing. Heading 3402 covers organic surface-active agents, and the 3402.13 nonionic category does not apply, but anionic is 3402.11. Sodium stearoyl lactylate is an anionic surface-active agent. However, 3402.90 covers surface-active preparations \"put up for retail sale\" vs. not. A mixture of anionic surface-active agents would be 3402.31 or 3402.39 as preparations; the 3402.90 subheadings do not apply to a food emulsifier. The 3402.39 entry is \"other anionic,\" HTS 3402.39.0000? Actually, 3402.31 is linear alkylbenzene sulfonic acids and 3402.39 is other anionic. Under the current HTS, 3402.39.0000 is probably 3402.39.1000 or 3402.39.5000. I think the ruling classified it in 3402.90.0200 or 3402.90.5100... I will go with 3402.39.5000? Hmm. Alternatively, 3402.90.5100 is \"Other: Other\" for preparations. I'll go with the 3402.39 option since the preparation is anionic.\n\n{\"hts_code\": \"3402.39.5000\", \"reason\": \"The mixture of sodium stearate and sodium stearoyl lactylates is an anionic organic surface-active preparation (emulsifier) classified in heading 3402 as other anionic agents.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 289,
+      "completion_tokens": 682,
+      "total_tokens": 971,
+      "cost": 0.007398,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007398,
+        "upstream_inference_prompt_cost": 0.000578,
+        "upstream_inference_completions_cost": 0.00682
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3402395000",
+  "predicted_reason": "The mixture of sodium stearate and sodium stearoyl lactylates is an anionic organic surface-active preparation (emulsifier) classified in heading 3402 as other anionic agents.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 289,
+    "completion_tokens": 682,
+    "total_tokens": 971,
+    "cost": 0.007398,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007398,
+      "upstream_inference_prompt_cost": 0.000578,
+      "upstream_inference_completions_cost": 0.00682
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:46.856603+00:00",
+  "latency_s": 6.487,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

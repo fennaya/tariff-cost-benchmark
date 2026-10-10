@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362483",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6406106500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596503-Z4XU5tfYcdPCvvjvaMux",
+    "object": "chat.completion",
+    "created": 1791596503,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling about a women's leather work boot upper imported with a hole in the heel. The question is whether it is \"footwear\" or \"parts of footwear (uppers)\". Because the upper is already sewn to a midsole and has a hole in the heel area, it probably has the essential character of footwear, and the likely classification is as incomplete footwear under GRI 2(a). The boot is a women's leather boot covering the ankle, with a rubber/plastic outsole to be attached, so it goes under 6403.91 (footwear with outer soles of rubber, plastics, or composition leather and uppers of leather, covering the ankle).\n\nHeading 6403.91 splits as follows: 6403.91.60 covers other footwear for women, and the 6403.91.9 subheadings cover other footwear. Women's footwear that is not welted falls under 6403.91.90 and its statistical suffixes. Within the 6403.91.60 line, 6403.91.60 is \"Other: For women,\" and the statistical suffix 6403.91.6090 is \"Other.\" I'm not sure about the suffix, but the women's boot is most likely 6403.91.6090.\n\nThe outsole is not stated, but a rubber heel is nailed on, and the midsole suggests a rubber or plastic outsole. This fits 6403.91.\n\nThe boot is described as a work-boot style. The \"work footwear\" provision at 6403.91.30 is not applicable, though, because it requires protective features, and this is described as casual.\n\nI'll go with 6403.91.6090.\n\n{\"hts_code\": \"6403.91.6090\", \"reason\": \"The imported boot upper, already sewn to a midsole, has the essential character of finished footwear under GRI 2(a), and as a women's ankle-covering leather-upper boot with a rubber outsole it is classified in 6403.91.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 442,
+      "completion_tokens": 595,
+      "total_tokens": 1037,
+      "cost": 0.006834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006834,
+        "upstream_inference_prompt_cost": 0.000884,
+        "upstream_inference_completions_cost": 0.00595
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6403916090",
+  "predicted_reason": "The imported boot upper, already sewn to a midsole, has the essential character of finished footwear under GRI 2(a), and as a women's ankle-covering leather-upper boot with a rubber outsole it is classified in 6403.91.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 442,
+    "completion_tokens": 595,
+    "total_tokens": 1037,
+    "cost": 0.006834,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006834,
+      "upstream_inference_prompt_cost": 0.000884,
+      "upstream_inference_completions_cost": 0.00595
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:43.824676+00:00",
+  "latency_s": 5.775,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

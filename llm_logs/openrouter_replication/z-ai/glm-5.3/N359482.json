@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359482",
+  "rulingDate": "2026-03-27T00:00:00",
+  "true_code": "8526925000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599922-zOTC2j1bMSrVl30QTEgt",
+    "object": "chat.completion",
+    "created": 1791599922,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8526.92.0050\", \"reason\": \"The remote control key fobs impart the essential character of the set and are radio remote control apparatus, classified in heading 8526.\"}",
+          "refusal": null,
+          "reasoning": "Remote controls for apparatus by radio \u2014 8526.92? Radio remote control apparatus: 8526.92.00. Actually HTSUS 8526.92.00 covers remote control apparatus. 10-digit: 8526.92.0000? There's 8526.92.0050? Radio remote control apparatus \u2014 8526.92.0050? I recall 8526.92.0050 \"other\". Use 8526.92.0050.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Remote controls for apparatus by radio \u2014 8526.92? Radio remote control apparatus: 8526.92.00. Actually HTSUS 8526.92.00 covers remote control apparatus. 10-digit: 8526.92.0000? There's 8526.92.0050? Radio remote control apparatus \u2014 8526.92.0050? I recall 8526.92.0050 \"other\". Use 8526.92.0050.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 166,
+      "total_tokens": 466,
+      "cost": 0.00058375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00058375,
+        "upstream_inference_prompt_cost": 0.00016875,
+        "upstream_inference_completions_cost": 0.000415
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 115,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8526920050",
+  "predicted_reason": "The remote control key fobs impart the essential character of the set and are radio remote control apparatus, classified in heading 8526.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 300,
+    "completion_tokens": 166,
+    "total_tokens": 466,
+    "cost": 0.00058375,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00058375,
+      "upstream_inference_prompt_cost": 0.00016875,
+      "upstream_inference_completions_cost": 0.000415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 115,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:38:42.705462+00:00",
+  "latency_s": 2.156,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

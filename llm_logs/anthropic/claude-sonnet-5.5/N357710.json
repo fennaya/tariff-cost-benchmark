@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357710",
+  "rulingDate": "2026-02-09T00:00:00",
+  "true_code": "9401614011",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595480-iy1w60TNf9a5DQH4mwHe",
+    "object": "chat.completion",
+    "created": 1791595480,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an upholstered armchair with a wooden frame, so it falls in heading 9401. It is not a swivel chair and not a reclining chair, which points to the \"other seats, with wooden frames\" provision in 9401.61 (upholstered).\n\nHTSUS 9401.61.40 covers \"Other seats, with wooden frames: Upholstered: Other\" and has the following breakouts: 9401.61.40 (Other) \u2192 9401.61.4011 (Dining chairs / other?). I recall the 9401.61.60 provision is \"Other\" and 9401.61.40 is \"Seats of a kind used in motor vehicles\"? That is not right either. The actual structure is:\n- 9401.61.20: Seats of the type used for... (nonvehicle?)\n- 9401.61.40: Other: Chairs... \n- 9401.61.60: Other.\n\nCBP rulings for upholstered wooden-frame armchairs usually classify them under 9401.61.6011 (Other seats, with wooden frames, upholstered, other, \"Other\"). In practice, 9401.61.6011 is used for \"Other: Household\" items, and 9401.61.4011 is for \"Stackable\" or similar items. I will go with 9401.61.6011.\n\n```json\n{\"hts_code\": \"9401.61.6011\", \"reason\": \"Upholstered non-reclining, non-swivel seat with a wooden frame for household use falls under heading 9401, subheading 9401.61 (other seats, wooden frames, upholstered).\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 425,
+      "completion_tokens": 494,
+      "total_tokens": 919,
+      "cost": 0.00579,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00579,
+        "upstream_inference_prompt_cost": 0.00085,
+        "upstream_inference_completions_cost": 0.00494
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401616011",
+  "predicted_reason": "Upholstered non-reclining, non-swivel seat with a wooden frame for household use falls under heading 9401, subheading 9401.61 (other seats, wooden frames, upholstered).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 425,
+    "completion_tokens": 494,
+    "total_tokens": 919,
+    "cost": 0.00579,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00579,
+      "upstream_inference_prompt_cost": 0.00085,
+      "upstream_inference_completions_cost": 0.00494
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:40.891865+00:00",
+  "latency_s": 5.12,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

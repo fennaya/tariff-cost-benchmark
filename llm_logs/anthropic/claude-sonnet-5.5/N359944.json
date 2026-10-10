@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359944",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "7318290000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595987-TOH9q7Xny0GzbFM3Whd9",
+    "object": "chat.completion",
+    "created": 1791595987,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a headless, unthreaded pin used in a headset. The likely candidates are:\n\n- 7318.24.00 (cotter pins / clevis pins, etc.): 7318.24 covers \"cotters and cotter pins\". Headless pins are not typically classified there.\n- 7318.29: other non-threaded articles.\n- 8518.99: parts of headphones.\n\nThe pin is a steel (presumably) non-threaded fastener, so it falls under 7318.29.00. Within the HTSUS, non-threaded articles are 7318.21 (spring washers and other lock washers), 7318.22 (other washers), 7318.23 (rivets), 7318.24 (cotters and cotter pins), and 7318.29 (other). Within 7318.29, the statistical suffix is 7318.29.0000 (older) or 7318.29.0030 (newer, if one exists). The HTS has 7318.29.00 with the 10-digit 7318.29.0000.\n\nIs the pin a part of headphones? Heading 8518 parts: Note 2 to Section XV excludes general-purpose parts of base metal (headings 7301\u20137326) from being classified as parts elsewhere. Section XVI Note 1(g) excludes parts of general use as defined in Note 2 to Section XV. A pin of base metal is therefore a general-purpose part and goes in 7318.\n\nI'll go with 7318.29.0000.\n\n{\"hts_code\": \"7318.29.0000\", \"reason\": \"A headless, unthreaded base-metal pin is a general-purpose non-threaded fastener, classified in heading 7318 as an 'other non-threaded article' rather than as a part of headphones under Section XV Note 2.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 273,
+      "completion_tokens": 566,
+      "total_tokens": 839,
+      "cost": 0.006206,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006206,
+        "upstream_inference_prompt_cost": 0.000546,
+        "upstream_inference_completions_cost": 0.00566
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7318290000",
+  "predicted_reason": "A headless, unthreaded base-metal pin is a general-purpose non-threaded fastener, classified in heading 7318 as an 'other non-threaded article' rather than as a part of headphones under Section XV Note 2.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 273,
+    "completion_tokens": 566,
+    "total_tokens": 839,
+    "cost": 0.006206,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006206,
+      "upstream_inference_prompt_cost": 0.000546,
+      "upstream_inference_completions_cost": 0.00566
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:07.913416+00:00",
+  "latency_s": 5.241,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359733",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "8479899599",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595902-nRYN9ynqfKNUuvjcpoAZ",
+    "object": "chat.completion",
+    "created": 1791595902,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a plastic wall-mounted paper towel dispenser with a mechanical cutting mechanism. There are two candidate headings.\n\n- Heading 3924 covers household articles of plastics, but this dispenser is commercial and has a cutting mechanism.\n- Heading 3922 covers plastic sanitary ware such as toilet-paper holders and towel dispensers. The 3922.90 subheading covers other sanitary ware, though 3924.90 is also possible.\n- Heading 8439 and 8441 cover machinery for paper, and 8441.90 covers parts, but that does not fit a towel dispenser.\n- Heading 8441.80 covers other machinery for cutting paper. The dispenser does cut a sheet, which makes it arguable. It is a mechanical device with a cutting mechanism, and CBP has ruled on similar dispensers. I recall rulings placing automatic paper towel dispensers in 8479.89 or 3924.90.\n\nHeading 3922's \"toilet paper holders, towel racks\" language is the closest textual match. Because the dispenser has a mechanism, however, CBP may have classified it as a machine. Heading 8441.80 includes \"other machinery for making up paper pulp, paper or paperboard, including cutting machines of all kinds\". Dispensers are not used for making up paper, so 8441 is a poor fit. A mechanical dispenser with a cutting function more plausibly goes to 8479.89.\n\nHeading 3922 has a legal-note problem. Its sanitary ware must be fixtures, and I believe the heading text covers \"toilet seats and covers, and similar sanitary ware\" along with fittings. The 3922.90.00 subheading is \"Other\". Towel dispensers are commonly cited as 3922.90.\n\nI'm going with 3922.90.0000 as the best-supported choice.\n\n{\"hts_code\": \"3922.90.0000\", \"reason\": \"A non-electric, wall-mounted plastic paper towel dispenser is a bathroom fixture of plastics, which falls in heading 3922 as other sanitary ware.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 443,
+      "completion_tokens": 684,
+      "total_tokens": 1127,
+      "cost": 0.007726,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007726,
+        "upstream_inference_prompt_cost": 0.000886,
+        "upstream_inference_completions_cost": 0.00684
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3922900000",
+  "predicted_reason": "A non-electric, wall-mounted plastic paper towel dispenser is a bathroom fixture of plastics, which falls in heading 3922 as other sanitary ware.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 443,
+    "completion_tokens": 684,
+    "total_tokens": 1127,
+    "cost": 0.007726,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007726,
+      "upstream_inference_prompt_cost": 0.000886,
+      "upstream_inference_completions_cost": 0.00684
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:31:42.585634+00:00",
+  "latency_s": 6.758,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

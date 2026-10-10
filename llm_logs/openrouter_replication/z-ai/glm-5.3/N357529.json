@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357529",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "8512202040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599662-LJkiBSMiWAq7iOaPXUVJ",
+    "object": "chat.completion",
+    "created": 1791599662,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8512.20.2080\", \"reason\": \"A fixed auxiliary/driving LED light for motor vehicles is lighting/visual signaling equipment of heading 8512, classified as other lighting equipment for motor vehicles.\"}",
+          "refusal": null,
+          "reasoning": "Ruling style: auxiliary light for motor vehicles \u2014 likely 8512.20.2080 (other visual signaling equipment? Actually auxiliary driving lights classified in 8512.20.20). 8512.20.2080: other, other.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ruling style: auxiliary light for motor vehicles \u2014 likely 8512.20.2080 (other visual signaling equipment? Actually auxiliary driving lights classified in 8512.20.20). 8512.20.2080: other, other.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 194,
+      "completion_tokens": 109,
+      "total_tokens": 303,
+      "cost": 0.0004094,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004094,
+        "upstream_inference_prompt_cost": 3.88e-05,
+        "upstream_inference_completions_cost": 0.0003706
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 56,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8512202080",
+  "predicted_reason": "A fixed auxiliary/driving LED light for motor vehicles is lighting/visual signaling equipment of heading 8512, classified as other lighting equipment for motor vehicles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 194,
+    "completion_tokens": 109,
+    "total_tokens": 303,
+    "cost": 0.0004094,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004094,
+      "upstream_inference_prompt_cost": 3.88e-05,
+      "upstream_inference_completions_cost": 0.0003706
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 56,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:34:22.815855+00:00",
+  "latency_s": 1.539,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

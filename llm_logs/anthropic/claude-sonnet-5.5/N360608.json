@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360608",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "3824999397",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596115-GTEZvFR6jYCQpPkZJJln",
+    "object": "chat.completion",
+    "created": 1791596115,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on test wafers (silicon wafers with metal layers, used for testing semiconductor manufacturing equipment). The candidate headings are:\n\n- 3818.00.00: chemical elements doped for use in electronics, in the form of discs, wafers or similar forms. Bare silicon wafers that are doped are classified here, under 3818.00.0000.\n- 8486.90: parts and accessories of machines for manufacturing semiconductor devices.\n- 8542: processed wafers that are electronic integrated circuits. These wafers perform no electronic function, so 8542 does not apply.\n- 9031: measuring or checking instruments. The wafer is not an instrument.\n\nWafers with metal layers, redistribution layers and bumps but no electronic function are still essentially doped silicon wafers with added layers. Chapter 38 therefore seems the most likely heading, since the wafer is not a finished device. Testing and qualification wafers are also sometimes ruled to be parts of semiconductor manufacturing equipment, but a wafer is a consumable material rather than a part of the machine. I'm going with 3818.00.0000.\n\n{\"hts_code\": \"3818.00.0000\", \"reason\": \"The test wafer is a silicon substrate with passive metal layers and no electronic function, so it is a doped chemical element in wafer form for electronics under heading 3818 rather than an integrated circuit or machine part.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 504,
+      "completion_tokens": 470,
+      "total_tokens": 974,
+      "cost": 0.005708,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005708,
+        "upstream_inference_prompt_cost": 0.001008,
+        "upstream_inference_completions_cost": 0.0047
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3818000000",
+  "predicted_reason": "The test wafer is a silicon substrate with passive metal layers and no electronic function, so it is a doped chemical element in wafer form for electronics under heading 3818 rather than an integrated circuit or machine part.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 504,
+    "completion_tokens": 470,
+    "total_tokens": 974,
+    "cost": 0.005708,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005708,
+      "upstream_inference_prompt_cost": 0.001008,
+      "upstream_inference_completions_cost": 0.0047
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:15.823153+00:00",
+  "latency_s": 4.607,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

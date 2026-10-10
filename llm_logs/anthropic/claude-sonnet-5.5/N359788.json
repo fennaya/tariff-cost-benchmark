@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359788",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "8509805095",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595929-8v3Jm8nPX3AfX0sDKkjn",
+    "object": "chat.completion",
+    "created": 1791595929,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on motorized sausage stuffers. The candidate headings are 8509 (electromechanical domestic appliances with self-contained electric motor) and 8435 (presses for manufacture of beverages), or 8438 (machinery for industrial preparation of food, not elsewhere specified).\n\nHeading 8509 covers domestic appliances with a self-contained electric motor, but it excludes fruit or vegetable juice extractors and food grinders and mixers (8509.40). The residual 8509.80 covers other appliances. The stuffer is designed for domestic use, weighs under 20 kg, and has a self-contained motor. It does not grind, so it falls outside 8509.40 and into 8509.80.\n\nThe 8509.80 subheadings are 8509.80.20 for floor polishers and 8509.80.50 for other. The 10-digit number is 8509.80.5000, which is the full statistical suffix.\n\nHeading 8509 is the better fit than 8438 because the goods are domestic.\n\n{\"hts_code\": \"8509.80.5000\", \"reason\": \"Domestic-use motorized sausage stuffers with a self-contained electric motor, weighing under 20 kg and neither grinding nor mixing food, fall in heading 8509 as other electromechanical domestic appliances.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 589,
+      "completion_tokens": 429,
+      "total_tokens": 1018,
+      "cost": 0.005468,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005468,
+        "upstream_inference_prompt_cost": 0.001178,
+        "upstream_inference_completions_cost": 0.00429
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8509805000",
+  "predicted_reason": "Domestic-use motorized sausage stuffers with a self-contained electric motor, weighing under 20 kg and neither grinding nor mixing food, fall in heading 8509 as other electromechanical domestic appliances.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 589,
+    "completion_tokens": 429,
+    "total_tokens": 1018,
+    "cost": 0.005468,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005468,
+      "upstream_inference_prompt_cost": 0.001178,
+      "upstream_inference_completions_cost": 0.00429
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:09.520794+00:00",
+  "latency_s": 4.199,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

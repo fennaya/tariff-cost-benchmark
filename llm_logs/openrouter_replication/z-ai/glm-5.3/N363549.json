@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363549",
+  "rulingDate": "2026-08-14T00:00:00",
+  "true_code": "3407002000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600437-GFmMWaHOJOYdyGp8nAaS",
+    "object": "chat.completion",
+    "created": 1791600437,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9503.00.0073\", \"reason\": \"A dorodango crafting kit is a hobby/craft activity set regarded as an educational amusement item, classifiable as other toys in heading 9503.\"}",
+          "refusal": null,
+          "reasoning": "Dorodango = Japanese mud ball polishing craft. Crafting kit \u2014 likely arts/crafts kit, various materials. Likely 9503? Or 3926/4820? A craft kit could be classified as educational toy 9503.00.0073? Perhaps 9503.00.0073 (other toys, educational). I'll go with 9503.00.0073.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Dorodango = Japanese mud ball polishing craft. Crafting kit \u2014 likely arts/crafts kit, various materials. Likely 9503? Or 3926/4820? A craft kit could be classified as educational toy 9503.00.0073? Perhaps 9503.00.0073 (other toys, educational). I'll go with 9503.00.0073.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 106,
+      "completion_tokens": 143,
+      "total_tokens": 249,
+      "cost": 0.00063768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00063768,
+        "upstream_inference_prompt_cost": 8.48e-06,
+        "upstream_inference_completions_cost": 0.0006292
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 90,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9503000073",
+  "predicted_reason": "A dorodango crafting kit is a hobby/craft activity set regarded as an educational amusement item, classifiable as other toys in heading 9503.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 106,
+    "completion_tokens": 143,
+    "total_tokens": 249,
+    "cost": 0.00063768,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00063768,
+      "upstream_inference_prompt_cost": 8.48e-06,
+      "upstream_inference_completions_cost": 0.0006292
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:47:17.304520+00:00",
+  "latency_s": 2.27,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

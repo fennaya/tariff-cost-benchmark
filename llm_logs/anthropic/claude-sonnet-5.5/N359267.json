@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359267",
+  "rulingDate": "2026-03-13T00:00:00",
+  "true_code": "8486900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595792-8SyQCC9qG5cvvTsI9zue",
+    "object": "chat.completion",
+    "created": 1791595792,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a part of a DUV photolithography stepper used to make semiconductors. Machines for projecting circuit patterns onto semiconductor materials fall under 8486.20, and their parts and accessories fall under 8486.90.\n\nWithin subheading 8486.90, the options are:\n- 8486.90.00 is the general parts provision, with statistical suffixes.\n- Currently the 8486.90 breakout is 8486.90.0000, which covers parts and accessories.\n\nThe HTSUS also has 8486.20.00 for machines for the manufacture of semiconductor devices or integrated circuits. 8486.90.00 is the parts line, and I recall it as 8486.90.0000.\n\nCBP rulings on ASML modules, such as the lens manipulator, have classified them in 8486.90.0000 as parts of machines of heading 8486. The ruling may have considered Chapter 90 (optical elements, 9002), but Note 1(q) to Section XVI excludes Chapter 90 items. Note 9(C) to Chapter 90 and the Section XVI notes point to heading 8486 for parts of those machines. So 8486.90.0000 is the answer.\n\n{\"hts_code\": \"8486.90.0000\", \"reason\": \"The Module is a part of a DUV semiconductor photolithography scanner, a machine of heading 8486 used to manufacture semiconductor devices, so it is classified as a part under subheading 8486.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 470,
+      "total_tokens": 1084,
+      "cost": 0.005928,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005928,
+        "upstream_inference_prompt_cost": 0.001228,
+        "upstream_inference_completions_cost": 0.0047
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8486900000",
+  "predicted_reason": "The Module is a part of a DUV semiconductor photolithography scanner, a machine of heading 8486 used to manufacture semiconductor devices, so it is classified as a part under subheading 8486.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 614,
+    "completion_tokens": 470,
+    "total_tokens": 1084,
+    "cost": 0.005928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005928,
+      "upstream_inference_prompt_cost": 0.001228,
+      "upstream_inference_completions_cost": 0.0047
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:52.993101+00:00",
+  "latency_s": 5.251,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

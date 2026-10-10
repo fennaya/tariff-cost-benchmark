@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362038",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8537109160",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596402-CT77yT1ZfJQUjp0fJG6Z",
+    "object": "chat.completion",
+    "created": 1791596402,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on an electrical enclosure assembly for a dental milling machine. The assembly is a control cabinet holding a PLC and related modules. Heading 8537 covers boards, panels, consoles and cabinets equipped with two or more apparatus of heading 8535 or 8536 for electric control, for a voltage not exceeding 1,000 V. Within it, 8537.10 covers a voltage not exceeding 1,000 V, and 8537.10.91 is \"Other\" (8537.10.9170 is the other-other line). The PLC makes 8537.10.30 a possible fit, since that subheading covers \"Programmable logic controllers.\" The assembly contains a PLC with I/O modules, drives and a PCBA, so it works as a programmable control cabinet. I think CBP classified it in 8537.10.9170. The alternative, 8537.10.3000, is the PLC line, which is a plausible fit, but the ruling probably went to the \"other\" line, so I will go with 8537.10.9170.\n\n{\"hts_code\": \"8537.10.9170\", \"reason\": \"The enclosure is a control cabinet that mounts a PLC, I/O and drive modules and a control board for electric control of a machine at 1,000 V or less, so it falls in heading 8537 under the 8537.10.91 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 440,
+      "total_tokens": 928,
+      "cost": 0.005376,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005376,
+        "upstream_inference_prompt_cost": 0.000976,
+        "upstream_inference_completions_cost": 0.0044
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8537109170",
+  "predicted_reason": "The enclosure is a control cabinet that mounts a PLC, I/O and drive modules and a control board for electric control of a machine at 1,000 V or less, so it falls in heading 8537 under the 8537.10.91 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 488,
+    "completion_tokens": 440,
+    "total_tokens": 928,
+    "cost": 0.005376,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005376,
+      "upstream_inference_prompt_cost": 0.000976,
+      "upstream_inference_completions_cost": 0.0044
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:03.198286+00:00",
+  "latency_s": 5.611,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

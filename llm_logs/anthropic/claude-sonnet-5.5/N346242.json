@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N346242",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "5208214090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593755-ikbN04rknelejku0uMZl",
+    "object": "chat.completion",
+    "created": 1791593755,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on gauze fabric. The fabric is cotton, plain weave, 19.7 g/m2, and bleached. Gauze fabric under heading 5803 means leno weave, but this is plain weave, so it falls under 5208. Weight is under 100 g/m2, and bleached plain weave cotton is 5208.21 (not over 100 g/m2), with the 5208.21.40 and 5208.21.60 subdivisions below it.\n\nHowever, the end use is a wound dressing, which could point to heading 3005 (gauze, bandages, and similar articles impregnated or coated with pharmaceutical substances or in retail packings for medical use). The gauze here is cut to size and has an x-ray detectable thread, and the packing is in bags. Heading 3005 requires impregnation or coating, or put up for retail sale for medical purposes. Cut gauze pads with an x-ray thread, packaged for medical use, are typically classified in 3005.90. In this ruling, the gauze is made into multi-ply sizes (sponges), and the origin of the fabric is Vietnam, with the cutting done in China. Heading 3005.90.50 covers other items, \"other\" being 3005.90.5060 for other than nonwoven, and similar subdivisions exist. The ruling is likely about country of origin, since the fabric is woven in Vietnam and finished in China. For classification, 3005.90.5010 may be \"Surgical sponges\", or something similar.\n\nSince I recall that 3005.90.50 has subdivisions of 10 (Of cotton? \"Gauze, bandages... of cotton\"?), I'll pick 3005.90.5010 as my best guess.\n\n{\"hts_code\": \"3005.90.5010\", \"reason\": \"Cut, folded multi-ply cotton gauze with an x-ray detectable thread, put up for covering wounds and absorbing fluids, is a wadding/gauze dressing article of heading 3005 (other, of cotton).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 628,
+      "completion_tokens": 650,
+      "total_tokens": 1278,
+      "cost": 0.007756,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007756,
+        "upstream_inference_prompt_cost": 0.001256,
+        "upstream_inference_completions_cost": 0.0065
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3005905010",
+  "predicted_reason": "Cut, folded multi-ply cotton gauze with an x-ray detectable thread, put up for covering wounds and absorbing fluids, is a wadding/gauze dressing article of heading 3005 (other, of cotton).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 628,
+    "completion_tokens": 650,
+    "total_tokens": 1278,
+    "cost": 0.007756,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007756,
+      "upstream_inference_prompt_cost": 0.001256,
+      "upstream_inference_completions_cost": 0.0065
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:55:55.986291+00:00",
+  "latency_s": 6.506,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

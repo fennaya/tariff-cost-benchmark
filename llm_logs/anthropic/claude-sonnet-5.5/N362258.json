@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362258",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "9029204080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596457-8uyJeisvZXXTG6RXHb3E",
+    "object": "chat.completion",
+    "created": 1791596457,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a heart rate monitor wristband with Bluetooth. Candidate headings are 9029.20 (speed indicators), 9031.80 (measuring instruments), 8517.62 (wireless apparatus for reception/transmission of data), and 9018.19 (electro-diagnostic apparatus).\n\nCBP has classified similar fitness trackers and heart rate monitors under 8517.62.0090 as smartwatches or wearable devices that transmit data. However, a device that only monitors heart rate, with no smartwatch functions, is more likely to fall under 9018.19.9550 (other electrodiagnostic apparatus, including patient-monitoring apparatus). Optical PPG heart rate monitors have been ruled under 9018.19.9550 in the past, and the Spirit HRM measures physiological data, so I chose that.\n\n```json\n{\"hts_code\": \"9018.19.9550\", \"reason\": \"A wrist-worn optical PPG heart rate monitor that measures and displays physiological data is classified as other electro-diagnostic (patient monitoring) apparatus under heading 9018.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 710,
+      "completion_tokens": 375,
+      "total_tokens": 1085,
+      "cost": 0.00517,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00517,
+        "upstream_inference_prompt_cost": 0.00142,
+        "upstream_inference_completions_cost": 0.00375
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9018199550",
+  "predicted_reason": "A wrist-worn optical PPG heart rate monitor that measures and displays physiological data is classified as other electro-diagnostic (patient monitoring) apparatus under heading 9018.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 710,
+    "completion_tokens": 375,
+    "total_tokens": 1085,
+    "cost": 0.00517,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00517,
+      "upstream_inference_prompt_cost": 0.00142,
+      "upstream_inference_completions_cost": 0.00375
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:57.437049+00:00",
+  "latency_s": 4.152,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

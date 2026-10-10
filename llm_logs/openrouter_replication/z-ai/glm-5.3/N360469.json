@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360469",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "7306505050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600084-vZ6geYXcjUqQ7zWV47PR",
+    "object": "chat.completion",
+    "created": 1791600084,
+    "model": "z-ai/glm-5.3",
+    "provider": "Baidu",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7306.50.0030\", \"reason\": \"Hot-rolled ERW welded alloy steel pipes of circular cross section (31.8 mm OD, 2.6 mm wall) are classified as other welded pipes of other alloy steel in subheading 7306.50, with the specific statistical suffix for circular cross-section pipes.\"}",
+          "refusal": null,
+          "reasoning": "ERW alloy steel pipes, circular, 31.8mm OD \u2014 likely 7304.59 (other alloy steel, cold-drawn?) Hot-rolled ERW is welded, so 7306. Alloy steel welded pipes: 7306.50 (other alloy steel). Ruling likely 7306.50.0030? Common: 7306.50.0030, other, welded, other. Actually 7306.50.0030 is \"Of other alloy steel... having walls 2.6mm\"? Subheadings: 7306.50.00 circular cross section... I'll answer 7306.50.0030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "ERW alloy steel pipes, circular, 31.8mm OD \u2014 likely 7304.59 (other alloy steel, cold-drawn?) Hot-rolled ERW is welded, so 7306. Alloy steel welded pipes: 7306.50 (other alloy steel). Ruling likely 7306.50.0030? Common: 7306.50.0030, other, welded, other. Actually 7306.50.0030 is \"Of other alloy steel... having walls 2.6mm\"? Subheadings: 7306.50.00 circular cross section... I'll answer 7306.50.0030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 186,
+      "completion_tokens": 231,
+      "total_tokens": 417,
+      "cost": 0.0012768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012768,
+        "upstream_inference_prompt_cost": 0.0002604,
+        "upstream_inference_completions_cost": 0.0010164
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 150,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7306500030",
+  "predicted_reason": "Hot-rolled ERW welded alloy steel pipes of circular cross section (31.8 mm OD, 2.6 mm wall) are classified as other welded pipes of other alloy steel in subheading 7306.50, with the specific statistical suffix for circular cross-section pipes.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 186,
+    "completion_tokens": 231,
+    "total_tokens": 417,
+    "cost": 0.0012768,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012768,
+      "upstream_inference_prompt_cost": 0.0002604,
+      "upstream_inference_completions_cost": 0.0010164
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 150,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Baidu",
+  "requested_at": "2026-10-10T02:41:24.298534+00:00",
+  "latency_s": 4.078,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

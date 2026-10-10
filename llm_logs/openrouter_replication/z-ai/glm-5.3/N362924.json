@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362924",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "7318290000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600374-v7oaLK72pY9mL8TlzBis",
+    "object": "chat.completion",
+    "created": 1791600374,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7326.90.8686\", \"reason\": \"The steel compression limiter functions as a sleeve/spacer rather than a threaded fastener, so it is classified as an other article of iron or steel under heading 7326.\"}",
+          "refusal": null,
+          "reasoning": "This is a known NY ruling \u2014 compression limiter classified as 7326.90.86 (other articles of iron or steel)? Actually NY N-styles: compression limiters classified under 7326.90 as steel articles, not 8483 fasteners. Likely 7326.90.8586? HTS 7326.90.86 was old. Current: 7326.90.64? Let me recall: 7326.90.8586? The ruling (e.g., NY N312947) classified compression limiter in 7326.90.86, duty 2.9%. 10-digit: 7326.90.8686? Actually 7326.90.86 splits into 7326.90.8686? No\u20147326.90.86 is 8-digit; 10-digit 7326.90.8686? The statistical suffixes: 7326.90.8680, 7326.90.8686? I think 7326.90.8686 exists (\"other\"). Answer 7326.90.8686.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a known NY ruling \u2014 compression limiter classified as 7326.90.86 (other articles of iron or steel)? Actually NY N-styles: compression limiters classified under 7326.90 as steel articles, not 8483 fasteners. Likely 7326.90.8586? HTS 7326.90.86 was old. Current: 7326.90.64? Let me recall: 7326.90.8586? The ruling (e.g., NY N312947) classified compression limiter in 7326.90.86, duty 2.9%. 10-digit: 7326.90.8686? Actually 7326.90.86 splits into 7326.90.8686? No\u20147326.90.86 is 8-digit; 10-digit 7326.90.8686? The statistical suffixes: 7326.90.8680, 7326.90.8686? I think 7326.90.8686 exists (\"other\"). Answer 7326.90.8686.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 344,
+      "completion_tokens": 321,
+      "total_tokens": 665,
+      "cost": 0.001554152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001554152,
+        "upstream_inference_prompt_cost": 1.3352e-05,
+        "upstream_inference_completions_cost": 0.0015408
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 262,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7326908686",
+  "predicted_reason": "The steel compression limiter functions as a sleeve/spacer rather than a threaded fastener, so it is classified as an other article of iron or steel under heading 7326.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 344,
+    "completion_tokens": 321,
+    "total_tokens": 665,
+    "cost": 0.001554152,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001554152,
+      "upstream_inference_prompt_cost": 1.3352e-05,
+      "upstream_inference_completions_cost": 0.0015408
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 262,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:46:14.723325+00:00",
+  "latency_s": 2.776,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

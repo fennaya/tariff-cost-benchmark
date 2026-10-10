@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361860",
+  "rulingDate": "2026-06-12T00:00:00",
+  "true_code": "8471410150",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596367-s2L8F4vUUkR4wJQZWguI",
+    "object": "chat.completion",
+    "created": 1791596367,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on the Optiq SVDU (Panasonic Avionics). The device has a CPU, memory, storage, and a touchscreen, so it could be an automatic data processing machine under 8471. Alternatively it could be a monitor under 8528, or a part of aircraft entertainment equipment under 8517 or 8803.\n\nI recall the ruling classified it in 8471.30.0100, as a portable ADP machine weighing not more than 10 kg with a CPU, input and output. I am not certain, however. Other possibilities are 8471.41 or 8471.50, or 8471.60 for an input/output unit. An SVDU with its own CPU, memory, and Android OS that runs applications is a complete computer-like device, and a seatback unit is not \"portable\" in the usual sense. CBP has ruled that tablet-like devices go to 8471.30.01, so I will go with that.\n\n{\"hts_code\": \"8471.30.0100\", \"reason\": \"The touchscreen unit has its own CPU, memory, storage and Android OS, so it functions as an automatic data processing machine weighing under 10 kg, which falls in subheading 8471.30.01.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 386,
+      "total_tokens": 792,
+      "cost": 0.004672,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004672,
+        "upstream_inference_prompt_cost": 0.000812,
+        "upstream_inference_completions_cost": 0.00386
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471300100",
+  "predicted_reason": "The touchscreen unit has its own CPU, memory, storage and Android OS, so it functions as an automatic data processing machine weighing under 10 kg, which falls in subheading 8471.30.01.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 386,
+    "total_tokens": 792,
+    "cost": 0.004672,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004672,
+      "upstream_inference_prompt_cost": 0.000812,
+      "upstream_inference_completions_cost": 0.00386
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:27.885874+00:00",
+  "latency_s": 4.311,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

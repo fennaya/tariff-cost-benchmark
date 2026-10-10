@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359445",
+  "rulingDate": "2026-04-02T00:00:00",
+  "true_code": "3006305000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595839-0RnxfPBUAZhRvSJomcSw",
+    "object": "chat.completion",
+    "created": 1791595839,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Fluorescein injection is a diagnostic reagent for administration to patients, put up in measured doses. That points to heading 3006, which covers pharmaceutical goods such as \"opacifying preparations for X-ray examinations; diagnostic reagents designed to be administered to the patient.\" The relevant subheading is 3006.30, which covers opacifying preparations for X-ray examinations and diagnostic reagents designed to be administered to the patient. Under 3006.30.10 are the preparations for X-ray, and 3006.30.50 is \"Other.\"\n\nI recall the HTSUS structure as follows: 3006.30.10 covers barium sulfate, 3006.30.50 covers other. I'm not certain of the exact statistical suffixes for 3006.30. I believe the line is 3006.30.1000 for \"Opacifying preparations for X-ray examinations; diagnostic reagents designed to be administered to the patient: Barium sulfate\" and 3006.30.5000 for the other items. Fluorescein sodium injection is classified in 3006.30.5000.\n\n```json\n{\"hts_code\": \"3006.30.5000\", \"reason\": \"Fluorescein injection is a diagnostic reagent designed to be administered to the patient, falling under HTSUS 3006.30 (other).\"}\n```\n\n{\"hts_code\": \"3006.30.5000\", \"reason\": \"Fluorescein injection is a diagnostic reagent designed to be administered to the patient, falling under HTSUS 3006.30 (other).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 215,
+      "completion_tokens": 495,
+      "total_tokens": 710,
+      "cost": 0.00538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00538,
+        "upstream_inference_prompt_cost": 0.00043,
+        "upstream_inference_completions_cost": 0.00495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3006305000",
+  "predicted_reason": "Fluorescein injection is a diagnostic reagent designed to be administered to the patient, falling under HTSUS 3006.30 (other).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 215,
+    "completion_tokens": 495,
+    "total_tokens": 710,
+    "cost": 0.00538,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00538,
+      "upstream_inference_prompt_cost": 0.00043,
+      "upstream_inference_completions_cost": 0.00495
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:39.333643+00:00",
+  "latency_s": 4.779,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

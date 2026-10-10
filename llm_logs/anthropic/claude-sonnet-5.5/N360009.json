@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360009",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "5907006000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596014-YANPCpGkj7XaEoI9xvdw",
+    "object": "chat.completion",
+    "created": 1791596014,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a flocked textile fabric: a PET knit base coated with PU and flocked with leather fibers. The candidate headings are:\n\n- **5907** (textile fabrics otherwise impregnated, coated or covered): flocking is a covering, so this heading fits. 5907.00.80 covers other items, and 5907.00.60 covers fabrics with flocking.\n- **5903** (textile fabrics impregnated, coated, covered or laminated with plastics): the PU coating points here. Under Note 2 to Chapter 59, however, flocked fabrics fall under 5907, and 5903 covers only plastic coatings that are not flocked. The flock is leather fiber rather than textile fiber, so 5601 does not apply. Flocking with leather dust is still a covering, so 5907 holds.\n- **Chapter 41 (leather)**: composition leather under 4115 is a poor fit, since the product is a textile base.\n- **Chapter 60**: knit fabric with a coating is excluded from it by Chapter 59 Note 1.\n\nI recall a CBP ruling on this kind of product, a knit PET base with PU and leather flocking, that classified it in 5907.00.60 or 5907.00.80. The HTS breakdown is 5907.00.60 for \"Textile products with flocking\" (HTSUS 5907.00.60.00 reads \"Other: Textile fabrics with flocking\"?). I believe 5907.00.60 is described as \"Fabrics with textile flock,\" and 5907.00.80 as \"Other.\" Because the flock here is leather rather than textile, 5907.00.80 may fit better. The statistical suffix is 5907.00.80.00.\n\n```json\n{\"hts_code\": \"5907.00.8090\", \"reason\": \"Knit PET fabric coated with PU and flocked with leather fibers is a textile fabric otherwise coated or covered, classified in heading 5907 in the residual 'other' subheading.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 638,
+      "total_tokens": 1129,
+      "cost": 0.007362,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007362,
+        "upstream_inference_prompt_cost": 0.000982,
+        "upstream_inference_completions_cost": 0.00638
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "5907008090",
+  "predicted_reason": "Knit PET fabric coated with PU and flocked with leather fibers is a textile fabric otherwise coated or covered, classified in heading 5907 in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 491,
+    "completion_tokens": 638,
+    "total_tokens": 1129,
+    "cost": 0.007362,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007362,
+      "upstream_inference_prompt_cost": 0.000982,
+      "upstream_inference_completions_cost": 0.00638
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:34.593592+00:00",
+  "latency_s": 5.778,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

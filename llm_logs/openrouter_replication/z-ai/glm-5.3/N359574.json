@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359574",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "3303003000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599936-2O1vhzGhKJeHMZN3RWv8",
+    "object": "chat.completion",
+    "created": 1791599936,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3303.00.3000\", \"reason\": \"Fragrance mists for body application are perfumed waters classified as perfumes and toilet waters under heading 3303.\"}",
+          "refusal": null,
+          "reasoning": "Body sprays/fragrance mists \u2192 3303.00.30 (containing no alcohol... actually perfumes and toilet waters 3303.00.30). 8 oz fragrance mist with alcohol \u2192 3303.00.30.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Body sprays/fragrance mists \u2192 3303.00.30 (containing no alcohol... actually perfumes and toilet waters 3303.00.30). 8 oz fragrance mist with alcohol \u2192 3303.00.30.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 98,
+      "total_tokens": 447,
+      "cost": 0.000403,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000403,
+        "upstream_inference_prompt_cost": 6.98e-05,
+        "upstream_inference_completions_cost": 0.0003332
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 53,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3303003000",
+  "predicted_reason": "Fragrance mists for body application are perfumed waters classified as perfumes and toilet waters under heading 3303.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 98,
+    "total_tokens": 447,
+    "cost": 0.000403,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000403,
+      "upstream_inference_prompt_cost": 6.98e-05,
+      "upstream_inference_completions_cost": 0.0003332
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 53,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:38:56.397615+00:00",
+  "latency_s": 1.437,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

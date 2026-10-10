@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358186",
+  "rulingDate": "2026-02-25T00:00:00",
+  "true_code": "3004909225",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599732-827bMY8TaEC2IeZvjHeN",
+    "object": "chat.completion",
+    "created": 1791599732,
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.9290\", \"reason\": \"Rivaroxaban tablets are a medicament put up in measured doses that is not an antibiotic, hormone, alkaloid, vitamin, or other specifically enumerated drug, so they fall under the residual provision for other medicaments in dosage form.\"}",
+          "refusal": null,
+          "reasoning": "Rivaroxaban is an anticoagulant, not an antibiotic/hormone/alkaloid. Unlisted drugs in dosage form: 3004.90. In HTSUS, 3004.90.92? Let me recall: 3004.90 covers \"Other\" medicaments. Subheadings: 3004.90.10 (for fentanyl?), 3004.90.92 \"Other\" \u2014 actually 3004.90.92 is \"Other\" for products in dosage form. There's 3004.90.92 \"Other\" and 3004.90.99? The 10-digit: 3004.90.9290? Let me think.\n\nHTSUS 3004.90: Medicaments (excluding goods of 3002, 3003...) put up in measured doses, other. Statistical breakouts: 3004.90.10 (containing ephedrine? no that's 3004.90.10 for... ) Actually 3004.90.10 is \"Containing insulin\"? No, insulin is 3004.90.10? Hmm.\n\nKnown: 3004.90.92 \u2014 \"Other\" \u2014 with stat suffixes 3004.90.9290 \"Other\". Common answer for unclassified drugs: 3004.90.9290. Actually I recall 3004.90.9290 being used for many drugs. There's also 3004.90.9260? The statistical suffixes under 3004.90.92: 9210 (containing insulin?), 9220, 9230, 9240, 9250, 9260, 9270, 9280, 9290. I believe 3004.90.9290 is \"Other\" \u2014 correct for drugs not elsewhere specified. Rivaroxaban fits 3004.90.9290.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Rivaroxaban is an anticoagulant, not an antibiotic/hormone/alkaloid. Unlisted drugs in dosage form: 3004.90. In HTSUS, 3004.90.92? Let me recall: 3004.90 covers \"Other\" medicaments. Subheadings: 3004.90.10 (for fentanyl?), 3004.90.92 \"Other\" \u2014 actually 3004.90.92 is \"Other\" for products in dosage form. There's 3004.90.92 \"Other\" and 3004.90.99? The 10-digit: 3004.90.9290? Let me think.\n\nHTSUS 3004.90: Medicaments (excluding goods of 3002, 3003...) put up in measured doses, other. Statistical breakouts: 3004.90.10 (containing ephedrine? no that's 3004.90.10 for... ) Actually 3004.90.10 is \"Containing insulin\"? No, insulin is 3004.90.10? Hmm.\n\nKnown: 3004.90.92 \u2014 \"Other\" \u2014 with stat suffixes 3004.90.9290 \"Other\". Common answer for unclassified drugs: 3004.90.9290. Actually I recall 3004.90.9290 being used for many drugs. There's also 3004.90.9260? The statistical suffixes under 3004.90.92: 9210 (containing insulin?), 9220, 9230, 9240, 9250, 9260, 9270, 9280, 9290. I believe 3004.90.9290 is \"Other\" \u2014 correct for drugs not elsewhere specified. Rivaroxaban fits 3004.90.9290.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 169,
+      "completion_tokens": 487,
+      "total_tokens": 656,
+      "cost": 0.002988417,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002988417,
+        "upstream_inference_prompt_cost": 6.6417e-05,
+        "upstream_inference_completions_cost": 0.002922
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 419,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Rivaroxaban tablets are a medicament put up in measured doses that is not an antibiotic, hormone, alkaloid, vitamin, or other specifically enumerated drug, so they fall under the residual provision for other medicaments in dosage form.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 169,
+    "completion_tokens": 487,
+    "total_tokens": 656,
+    "cost": 0.002988417,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002988417,
+      "upstream_inference_prompt_cost": 6.6417e-05,
+      "upstream_inference_completions_cost": 0.002922
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 419,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T02:35:32.846157+00:00",
+  "latency_s": 9.485,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361288",
+  "rulingDate": "2026-05-11T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596235-9rM5B7oYYRHMhpqenPI6",
+    "object": "chat.completion",
+    "created": 1791596235,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description gives no fiber content, gender, or knit/woven construction, so the code rests on assumptions. This looks like a CBP ruling on a vest with raw edges, likely a knit garment. A common candidate is women's knit vests of cotton under 6110 (sweaters, pullovers, sweatshirts, waistcoats and vests, knitted), but a \"vest\" with raw cut edges and overlock stitching could equally be a knit tank-style top or a waistcoat.\n\nI considered the likely options:\n- Women's knitted or crocheted vests of man-made fibers: 6110.30.3060 is the sweater/vest line, not a clean fit.\n- Women's cotton knit vests: 6110.20.2075 is \"other, women's\" in the cotton sweaters/vests group, but the HTS code for sweater vests is a separate line.\n- Women's or men's woven vests (6211, 6210, 6201, 6202): 6211.43.0091 covers women's other garments of man-made fibers, and 6211.42.0081 covers cotton.\n\nSince the product is most likely a knit vest, I'll go with the women's cotton knit line. Fiber content is assumed to be cotton, which is the most common.\n\n{\"hts_code\": \"6110.20.2079\", \"reason\": \"Assumed to be a women's cotton knitted vest (raw-edged, overlock-stitched), classified in heading 6110 as a knitted sweater/waistcoat-type garment; the description gives no fiber or gender, so this is a best guess.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 197,
+      "completion_tokens": 497,
+      "total_tokens": 694,
+      "cost": 0.005364,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005364,
+        "upstream_inference_prompt_cost": 0.000394,
+        "upstream_inference_completions_cost": 0.00497
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110202079",
+  "predicted_reason": "Assumed to be a women's cotton knitted vest (raw-edged, overlock-stitched), classified in heading 6110 as a knitted sweater/waistcoat-type garment; the description gives no fiber or gender, so this is a best guess.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 197,
+    "completion_tokens": 497,
+    "total_tokens": 694,
+    "cost": 0.005364,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005364,
+      "upstream_inference_prompt_cost": 0.000394,
+      "upstream_inference_completions_cost": 0.00497
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:16.153225+00:00",
+  "latency_s": 5.221,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

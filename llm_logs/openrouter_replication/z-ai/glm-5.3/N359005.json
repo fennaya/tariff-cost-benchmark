@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359005",
+  "rulingDate": "2026-03-12T00:00:00",
+  "true_code": "6116105520",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599838-BKGmld9v7MHCXSkUvFeX",
+    "object": "chat.completion",
+    "created": 1791599838,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6116.10.4520\", \"reason\": \"The glove is a string-knit textile glove with a plastics (nitrile) coating, and since the textile portion exceeds 50% of the glove's weight, it is classified as coated knit gloves of man-made fibers under heading 6116.\"}",
+          "refusal": null,
+          "reasoning": "Coated textile gloves, textile over 50% weight \u2192 6116.10 (impregnated/coated plastics). Nitrile coated, HPPE knit. Likely 6116.10.4520? Common ruling: 6116.10.4520 (other, of man-made fibers). Actually 6116.10.4500? Subheadings: 6116.10.45 other, of man-made fibers... 6116.10.4520? I recall rulings citing 6116.10.4520 for coated knit gloves of man-made fibers.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Coated textile gloves, textile over 50% weight \u2192 6116.10 (impregnated/coated plastics). Nitrile coated, HPPE knit. Likely 6116.10.4520? Common ruling: 6116.10.4520 (other, of man-made fibers). Actually 6116.10.4500? Subheadings: 6116.10.45 other, of man-made fibers... 6116.10.4520? I recall rulings citing 6116.10.4520 for coated knit gloves of man-made fibers.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 207,
+      "total_tokens": 438,
+      "cost": 0.00075,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075,
+        "upstream_inference_prompt_cost": 4.62e-05,
+        "upstream_inference_completions_cost": 0.0007038
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 133,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6116104520",
+  "predicted_reason": "The glove is a string-knit textile glove with a plastics (nitrile) coating, and since the textile portion exceeds 50% of the glove's weight, it is classified as coated knit gloves of man-made fibers under heading 6116.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 231,
+    "completion_tokens": 207,
+    "total_tokens": 438,
+    "cost": 0.00075,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00075,
+      "upstream_inference_prompt_cost": 4.62e-05,
+      "upstream_inference_completions_cost": 0.0007038
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 133,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:37:19.161866+00:00",
+  "latency_s": 1.887,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

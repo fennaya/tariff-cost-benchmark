@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357623",
+  "rulingDate": "2026-02-03T00:00:00",
+  "true_code": "9503000073",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599673-YXJDTo2HTuFLSWdt40Rh",
+    "object": "chat.completion",
+    "created": 1791599673,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.99.1000\", \"reason\": \"These children's puzzle books (dot-to-dot, maze, search-and-find, and mixed puzzles) are printed books principally designed for the amusement of children, classified as children's picture, drawing or coloring books in subheading 4901.99.10.\"}",
+          "refusal": null,
+          "reasoning": "Children's puzzle books \u2014 amusement books, printed matter. 4901.99? CBP rulings classify children's activity/puzzle books for amusement under 4901.99.10? Actually 4901.99.05 \"other\" \u2014 children's picture books 4901.99.10? Puzzle books for amusement classified in 4901.99.91? Known ruling: dot-to-dot books 4901.99.10? HTS 4901.99.10: \"Children's picture, drawing or coloring books\". Puzzle books for amusement: 4901.99.91? Let me recall: 4901.99.05 other... 4901.99.10 children's picture/drawing/coloring books. Rulings (e.g., NY N266347) classify children's puzzle books in 4901.99.10? Actually maze/puzzle books for amusement classified 4901.99.10? I think 4901.99.10 covers children's picture, drawing or coloring books; puzzle books for amusement fall there per rulings. Use 4901.99.1000? Hmm, some rulings put activity books in 4901.99.10. I'll go with 4901.99.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Children's puzzle books \u2014 amusement books, printed matter. 4901.99? CBP rulings classify children's activity/puzzle books for amusement under 4901.99.10? Actually 4901.99.05 \"other\" \u2014 children's picture books 4901.99.10? Puzzle books for amusement classified in 4901.99.91? Known ruling: dot-to-dot books 4901.99.10? HTS 4901.99.10: \"Children's picture, drawing or coloring books\". Puzzle books for amusement: 4901.99.91? Let me recall: 4901.99.05 other... 4901.99.10 children's picture/drawing/coloring books. Rulings (e.g., NY N266347) classify children's puzzle books in 4901.99.10? Actually maze/puzzle books for amusement classified 4901.99.10? I think 4901.99.10 covers children's picture, drawing or coloring books; puzzle books for amusement fall there per rulings. Use 4901.99.1000? Hmm, some rulings put activity books in 4901.99.10. I'll go with 4901.99.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 539,
+      "completion_tokens": 354,
+      "total_tokens": 893,
+      "cost": 0.00163306,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00163306,
+        "upstream_inference_prompt_cost": 7.546e-05,
+        "upstream_inference_completions_cost": 0.0015576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 219,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4901991000",
+  "predicted_reason": "These children's puzzle books (dot-to-dot, maze, search-and-find, and mixed puzzles) are printed books principally designed for the amusement of children, classified as children's picture, drawing or coloring books in subheading 4901.99.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 539,
+    "completion_tokens": 354,
+    "total_tokens": 893,
+    "cost": 0.00163306,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00163306,
+      "upstream_inference_prompt_cost": 7.546e-05,
+      "upstream_inference_completions_cost": 0.0015576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 219,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:34:33.619329+00:00",
+  "latency_s": 1.655,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357743",
+  "rulingDate": "2026-02-02T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599686-ZAZD4GHqyfDPUGcIK9eT",
+    "object": "chat.completion",
+    "created": 1791599686,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8517.69.0040\", \"reason\": \"The empty fiber terminal box is a dedicated enclosure for routing and managing fiber optic cables, functioning as apparatus for the transmission of optical data in communication networks, and is classified under HTSUS 8517.69.0040.\"}",
+          "refusal": null,
+          "reasoning": "Fiber optic cable management enclosure, empty plastic box \u2014 likely 8517.69 or 3926.90? Ruling: fiber terminal box classified as article of plastics? Actually similar NY rulings classify fiber optic enclosures under 8517.69.00? Empty enclosure for fiber cables \u2014 CBP has ruled such boxes under 8517.62 or 3926.90. A plastic enclosure housing fiber cables, no electrical parts \u2014 classified as parts of apparatus? I'd go 8517.79.0000? Hmm. Similar ruling N266459: fiber optic termination box classified 8517.69.00? Actually 8517.69.0040 \"other apparatus for carrier-current line systems\". I'll pick 8517.69.0040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fiber optic cable management enclosure, empty plastic box \u2014 likely 8517.69 or 3926.90? Ruling: fiber terminal box classified as article of plastics? Actually similar NY rulings classify fiber optic enclosures under 8517.69.00? Empty enclosure for fiber cables \u2014 CBP has ruled such boxes under 8517.62 or 3926.90. A plastic enclosure housing fiber cables, no electrical parts \u2014 classified as parts of apparatus? I'd go 8517.79.0000? Hmm. Similar ruling N266459: fiber optic termination box classified 8517.69.00? Actually 8517.69.0040 \"other apparatus for carrier-current line systems\". I'll pick 8517.69.0040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 214,
+      "completion_tokens": 243,
+      "total_tokens": 457,
+      "cost": 0.000663,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000663,
+        "upstream_inference_prompt_cost": 0.0001284,
+        "upstream_inference_completions_cost": 0.0005346
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 172,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8517690040",
+  "predicted_reason": "The empty fiber terminal box is a dedicated enclosure for routing and managing fiber optic cables, functioning as apparatus for the transmission of optical data in communication networks, and is classified under HTSUS 8517.69.0040.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 214,
+    "completion_tokens": 243,
+    "total_tokens": 457,
+    "cost": 0.000663,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000663,
+      "upstream_inference_prompt_cost": 0.0001284,
+      "upstream_inference_completions_cost": 0.0005346
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 172,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:34:47.282010+00:00",
+  "latency_s": 1.554,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359907",
+  "rulingDate": "2026-04-06T00:00:00",
+  "true_code": "8505192000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595972-LhfzEW10WLKob2RXcg2I",
+    "object": "chat.completion",
+    "created": 1791595972,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on decorative magnets (refrigerator magnets). Such magnets are usually classified under 8505.19.1000 (permanent magnets and articles intended to become permanent magnets, of metallic... other: ferrite magnets), or as 8505.19.3000 / 8505.19.6000.\n\nHTS 8505.19: \"Other\" permanent magnets: 8505.19.10 is \"Flexible magnets, including rubber or plastic bonded\", 8505.19.30 is \"Other: Of metallic material\"? Actual structure:\n- 8505.11 of metal\n- 8505.19 Other: 8505.19.10 Flexible magnets, including rubber or plastic bonded; 8505.19.30 Other (ferrite?) ...\n\nHowever, CBP has ruled that decorative refrigerator magnets are classified as 8505.19.1000 in some rulings, while others went to 8306.29 (statuettes and ornaments) or 8505.19.\n\nHere the item is a decorative magnet with a rubber magnet backing and an image on a wooden base. The magnet function is secondary to its decorative purpose, but the description emphasizes the rubber magnet composition, which suggests 8505.19.1000 for flexible magnets. Alternatively, the item could be classified as a wooden ornament under 4420.90 (wooden statuettes and other ornaments). Since the description focuses on strontium ferrite and chlorinated polyethylene rubber, I'll go with 8505.19.1000. The full code would be 8505.19.1000 padded to ten digits: 8505.19.1000 is already ten digits.\n\n{\"hts_code\": \"8505.19.1000\", \"reason\": \"The decorative magnet has a flexible rubber-bonded strontium ferrite magnet backing, so it is classified as a flexible permanent magnet under heading 8505.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 616,
+      "total_tokens": 906,
+      "cost": 0.00674,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00674,
+        "upstream_inference_prompt_cost": 0.00058,
+        "upstream_inference_completions_cost": 0.00616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8505191000",
+  "predicted_reason": "The decorative magnet has a flexible rubber-bonded strontium ferrite magnet backing, so it is classified as a flexible permanent magnet under heading 8505.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 616,
+    "total_tokens": 906,
+    "cost": 0.00674,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00674,
+      "upstream_inference_prompt_cost": 0.00058,
+      "upstream_inference_completions_cost": 0.00616
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:53.001727+00:00",
+  "latency_s": 5.361,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

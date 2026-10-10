@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359135",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "7312103012",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595761-3SLrUSMhMnvvIzsAheVP",
+    "object": "chat.completion",
+    "created": 1791595761,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "PC strand of nonalloy steel falls in heading 7312 (stranded wire, ropes, cables, not electrically insulated). Subheading 7312.10 covers stranded wire, ropes and cables. Within 7312.10, the 7312.10.30 group covers products with a coating of... Let me recall the structure:\n\n7312.10.10 \u2013 Stranded wire, ropes and cables: of stainless steel\n7312.10.20 \u2013 Coated with brass... \n7312.10.30 \u2013 Other, not coated or plated, ... \n7312.10.30 is \"Prestressed concrete steel strand (PC strand)?\" Actually I recall 7312.10.30 as \"Not coated or plated with metal and not fitted with fittings: Of steel, with maximum cross-sectional dimension not exceeding 3 mm\" - uncertain.\n\nMy recollection of the HTSUS: \n7312.10.30: Stranded wire, ropes, cables, of iron or steel, not coated or plated with metal: Of stainless steel\n7312.10.50 \u2013 Of stainless steel \n7312.10.60 \u2013 Coated or plated with copper \n7312.10.30 \u2013 Other: ... \n7312.10.90 \u2013 Other\nThere is also 7312.10.3010 (Prestressed concrete strand, 7-wire) and 7312.10.3012 for PC strand, in the 7312.10.30 \"Not coated or plated with metal... Other\" group. CBP rulings on PC strand classify it in 7312.10.3010 (\"Stranded wire... not coated, of non-stainless steel, cross-section exceeding 3 mm\"). Actually the antidumping case on PC strand lists 7312.10.3010, 7312.10.3012, 7312.10.9030, 7312.10.9060. 7312.10.3012 is \"Other: coated or not coated with plastics, ... PC strand.\" Given the strand may be coated with corrosion preventatives (not metal), 7312.10.3012 is the commonly cited code.\n\n\n{\"hts_code\": \"7312.10.3012\", \"reason\": \"Seven-wire nonalloy steel PC strand, uncoated with metal, is stranded wire of heading 7312, classified under the statistical suffix for prestressed concrete strand in 7312.10.30.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 752,
+      "total_tokens": 1119,
+      "cost": 0.008254,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008254,
+        "upstream_inference_prompt_cost": 0.000734,
+        "upstream_inference_completions_cost": 0.00752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7312103012",
+  "predicted_reason": "Seven-wire nonalloy steel PC strand, uncoated with metal, is stranded wire of heading 7312, classified under the statistical suffix for prestressed concrete strand in 7312.10.30.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 752,
+    "total_tokens": 1119,
+    "cost": 0.008254,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008254,
+      "upstream_inference_prompt_cost": 0.000734,
+      "upstream_inference_completions_cost": 0.00752
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:21.443334+00:00",
+  "latency_s": 6.838,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359293",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "4819200040",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599889-vjEtzi6Xw9dmtiK5dfk0",
+    "object": "chat.completion",
+    "created": 1791599889,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4819.50.4040\", \"reason\": \"A folding solid bleached sulfate paperboard box of a kind used for packing goods is classified as an other packing container of paperboard under heading 4819.50.\"}",
+          "refusal": null,
+          "reasoning": "Folding paperboard box, non-corrugated, bleached paperboard \u2014 4819.50.4040? Folding cartons of paperboard: 4819.50 covers packing containers of paperboard non-corrugated. Non-folding vs folding: 4819.50 is \"other packing containers... of a kind commonly used for packing goods\" \u2014 actually 4819.10 corrugated, 4819.20 non-corrugated flexible, 4819.30 folders/boxes of a kind used for correspondence, 4819.40 other bags, 4819.50 other packing containers. Folding box \u2192 4819.50.4040? Stat suffixes: 4819.50.40 (of paperboard), with 10-digit 4819.50.4040? Commonly cited: 4819.50.4040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Folding paperboard box, non-corrugated, bleached paperboard \u2014 4819.50.4040? Folding cartons of paperboard: 4819.50 covers packing containers of paperboard non-corrugated. Non-folding vs folding: 4819.50 is \"other packing containers... of a kind commonly used for packing goods\" \u2014 actually 4819.10 corrugated, 4819.20 non-corrugated flexible, 4819.30 folders/boxes of a kind used for correspondence, 4819.40 other bags, 4819.50 other packing containers. Folding box \u2192 4819.50.4040? Stat suffixes: 4819.50.40 (of paperboard), with 10-digit 4819.50.4040? Commonly cited: 4819.50.4040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 181,
+      "completion_tokens": 259,
+      "total_tokens": 440,
+      "cost": 0.00127397,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00127397,
+        "upstream_inference_prompt_cost": 3.077e-05,
+        "upstream_inference_completions_cost": 0.0012432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 208,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4819504040",
+  "predicted_reason": "A folding solid bleached sulfate paperboard box of a kind used for packing goods is classified as an other packing container of paperboard under heading 4819.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 181,
+    "completion_tokens": 259,
+    "total_tokens": 440,
+    "cost": 0.00127397,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00127397,
+      "upstream_inference_prompt_cost": 3.077e-05,
+      "upstream_inference_completions_cost": 0.0012432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 208,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:38:09.413845+00:00",
+  "latency_s": 2.068,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

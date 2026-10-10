@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357742",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "2921303000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595487-Nc2PQhD7PcsTwiagyLlj",
+    "object": "chat.completion",
+    "created": 1791595487,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Cyclohexylamine falls under HTSUS 2921.30 (cyclanic, cyclenic or cycloterpenic mono- or polyamines and their derivatives; salts thereof). Within 2921.30, the subheadings are 2921.30.10 (cyclohexylamine... actually, I recall 2921.30.10 as \"Cyclohexylamine and cyclohexylenediamines\" or similar) and 2921.30.50 for other. I believe the 10-digit statistical suffix for 2921.30.10 is 00, giving 2921.30.1000.\n\nLooking at my recollection of the schedule: 2921.30.10 covers \"Cyclohexylamine and cyclohexylenediamines,\" 2921.30.50 covers \"Other.\" Cyclohexylamine therefore goes to 2921.30.10, and the statistical suffix is 00.\n\n{\"hts_code\": \"2921.30.1000\", \"reason\": \"Cyclohexylamine is a cyclanic monoamine, classified in heading 2921 (amine-function compounds), subheading 2921.30 and specifically provided for in 2921.30.10.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 287,
+      "completion_tokens": 373,
+      "total_tokens": 660,
+      "cost": 0.004304,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004304,
+        "upstream_inference_prompt_cost": 0.000574,
+        "upstream_inference_completions_cost": 0.00373
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2921301000",
+  "predicted_reason": "Cyclohexylamine is a cyclanic monoamine, classified in heading 2921 (amine-function compounds), subheading 2921.30 and specifically provided for in 2921.30.10.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 287,
+    "completion_tokens": 373,
+    "total_tokens": 660,
+    "cost": 0.004304,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004304,
+      "upstream_inference_prompt_cost": 0.000574,
+      "upstream_inference_completions_cost": 0.00373
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:47.699150+00:00",
+  "latency_s": 3.814,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

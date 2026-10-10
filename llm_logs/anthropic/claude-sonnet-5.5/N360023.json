@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360023",
+  "rulingDate": "2026-04-16T00:00:00",
+  "true_code": "6217109510",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596017-kFsuOaQ0vO96yL9rs0SH",
+    "object": "chat.completion",
+    "created": 1791596017,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on bibs for people with disabilities. Cotton woven bibs would normally fall under 6307.90 (other made up articles) or 6217.10 (clothing accessories). Adult bibs, or clothing protectors, are often classified in 6307.90.9889. However, a bib designed for infants and adults might be classified under 6111 or 6209 if it counts as a baby garment, but CBP generally treats bibs as made-up articles, 6307.90. \n\nAnother possibility is that the bibs are designed for people with disabilities, which could point to Chapter 98 (9817.00.96, articles specially designed for the handicapped). Chapter 98 applies to articles specially designed or adapted for use by persons with physical or mental impairments, but it excludes articles for the general use of the sick. CBP rulings on adaptive clothing protectors have sometimes held that 9817.00.96 doesn't apply to ordinary bibs. The description emphasizes \"designed for people with permanent or chronic disabilities that affect eating, drinking, saliva control,\" which suggests the requester was seeking 9817.00.9640. Hmm, but the product description is just a bib of woven cotton, and CBP would likely say that it is classified in 6307.90.9889 and that it is not eligible for 9817. I'll go with 6307.90.9889.\n\n```json\n{\"hts_code\": \"6307.90.9889\", \"reason\": \"A reusable 100% cotton woven clothing protector (bib) with snap closures is a other made-up textile article of heading 6307, not a garment or specially-designed handicapped article.\"}\n```\n\nOutput only the JSON as required:\n\n{\"hts_code\": \"6307.90.9889\", \"reason\": \"A reusable 100% cotton woven clothing protector (bib) with snap closures is an other made-up textile article of heading 6307, not a garment.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 443,
+      "completion_tokens": 610,
+      "total_tokens": 1053,
+      "cost": 0.006986,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006986,
+        "upstream_inference_prompt_cost": 0.000886,
+        "upstream_inference_completions_cost": 0.0061
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6307909889",
+  "predicted_reason": "A reusable 100% cotton woven clothing protector (bib) with snap closures is an other made-up textile article of heading 6307, not a garment.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 443,
+    "completion_tokens": 610,
+    "total_tokens": 1053,
+    "cost": 0.006986,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006986,
+      "upstream_inference_prompt_cost": 0.000886,
+      "upstream_inference_completions_cost": 0.0061
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:38.119616+00:00",
+  "latency_s": 5.833,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

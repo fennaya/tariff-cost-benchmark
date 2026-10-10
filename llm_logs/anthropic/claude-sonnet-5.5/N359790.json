@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359790",
+  "rulingDate": "2026-03-31T00:00:00",
+  "true_code": "9404902090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595929-oNdrZSvlzbmBPs7ZiZ82",
+    "object": "chat.completion",
+    "created": 1791595929,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a \"NapMat.\" I recall that CBP classified similar nap mats as quilted bedding of man-made fibers. The candidate headings are 9404.90 (articles of bedding, stuffed, other) and 6307.90 (other made-up articles).\n\nThe mat is a stuffed sleep mat with an integrated pillowcase and a blanket. Heading 9404 covers \"mattress supports; articles of bedding and similar furnishing, fitted with springs or stuffed or internally fitted with any material.\" A stuffed sleep mat fits there. Within 9404.90, the subheadings are 9404.90.10 (pillows, cushions and similar furnishings) and 9404.90.20 (other: quilts, comforters, etc.), with the 9404.90.85 line covering other (9404.90.8522 for other of cotton and 9404.90.8580 for other).\n\nBy my memory of the subheading structure:\n- 9404.90.10: Pillows, cushions and similar furnishings\n- 9404.90.20: Other, of cotton\n- 9404.90.80: Other, other (9404.90.8010 comforters/quilts, 9404.90.8020 other)\n\nThe \"other\" line appears to be 9404.90.8000, with statistical suffixes 9404.90.8505 and 9404.90.9505 (the latter for other). I am not certain of these.\n\nChoosing between them, the mat is a sleeping bag-like article of man-made fiber stuffing. Sleeping bags fall under 9404.30. This one is not a bag, so I'll go with 9404.90.9505, the \"other, other\" line for non-cotton articles. I recall 9404.90.85 as \"other: other: of cotton\" and 9404.90.95 as \"other: other,\" so I'm using 9404.90.9570 as a plausible statistical suffix.\n\n{\"hts_code\": \"9404.90.9570\", \"reason\": \"The polyester-filled quilted sleep mat with an attached blanket and pillow is stuffed bedding of man-made fibers, classified in heading 9404 as other articles of bedding, not of cotton.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 679,
+      "completion_tokens": 694,
+      "total_tokens": 1373,
+      "cost": 0.008298,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008298,
+        "upstream_inference_prompt_cost": 0.001358,
+        "upstream_inference_completions_cost": 0.00694
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9404909570",
+  "predicted_reason": "The polyester-filled quilted sleep mat with an attached blanket and pillow is stuffed bedding of man-made fibers, classified in heading 9404 as other articles of bedding, not of cotton.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 679,
+    "completion_tokens": 694,
+    "total_tokens": 1373,
+    "cost": 0.008298,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008298,
+      "upstream_inference_prompt_cost": 0.001358,
+      "upstream_inference_completions_cost": 0.00694
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:09.557079+00:00",
+  "latency_s": 7.358,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361593",
+  "rulingDate": "2026-06-11T00:00:00",
+  "true_code": "2106909995",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596312-pwXK3BW2ONuD4H35DcOo",
+    "object": "chat.completion",
+    "created": 1791596312,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on Quorn products. Mycoprotein is derived from a fungus (Fusarium venenatum). In the ruling on Quorn Turkey Style Roast (NY N-series), I recall the classification was in 2106.90, as a food preparation not elsewhere specified. The ingredients include mycoprotein, egg white, and wheat gluten, and the product is sold frozen.\n\nWithin 2106.90, the candidates are 2106.90.99 (other) and 2106.90.9800 (other, not containing milk fat or sugar, etc.). Quorn products have generally been classified under 2106.90.9998 (other, other, other). Items in 2106.90.66 and 2106.90.69 cover sugars and syrups, and 2106.90.46 covers dairy products, so none of those apply. The remaining subheading is 2106.90.99, whose statistical suffixes include 9998 (\"Other\"). I'll go with that.\n\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"Meat-free mycoprotein-based roast is an edible food preparation not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 392,
+      "total_tokens": 632,
+      "cost": 0.0044,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0044,
+        "upstream_inference_prompt_cost": 0.00048,
+        "upstream_inference_completions_cost": 0.00392
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "Meat-free mycoprotein-based roast is an edible food preparation not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 392,
+    "total_tokens": 632,
+    "cost": 0.0044,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0044,
+      "upstream_inference_prompt_cost": 0.00048,
+      "upstream_inference_completions_cost": 0.00392
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:32.405289+00:00",
+  "latency_s": 4.133,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

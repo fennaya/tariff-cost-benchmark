@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362414",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "8414593000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596486-DMtnzWv1mWixmuIFUnhL",
+    "object": "chat.completion",
+    "created": 1791596486,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Turbochargers for compression-ignition engines fall under HTS 8414.59 (other fans/blowers) or 8414.80 (compressors)? Per CBP rulings, turbochargers are classified in 8414.80. Specifically, 8414.80.16 covers turbochargers and superchargers: \"Turbochargers and supercharges, intake air compressors for internal combustion engines\" \u2014 the sub-breakdown is 8414.80.16 (Turbocompressors: single-stage, other: operating at gauge pressure not exceeding 11.74 kPa?), 8414.80.17 (multistage), 8414.80.20 (other turbocompressors), etc.\n\nRecalled structure:\n- 8414.80.05: Turbocharger and supercharger, for engines... Actually 8414.80.05 is \"Turbocharger and supercharger..., of a kind used with ... gas turbines\"? I recall 8414.80.1605 \"Turbocompressors, single stage, other: Not exceeding 22.4 kW? \" and 8414.80.2000 \"Other turbocompressors\". CBP rulings on turbochargers: \"classified in 8414.80.1605, HTSUS, which provides for 'Air or vacuum pumps, air or other gas compressors...: Other: Compressors: Turbocompressors: Single stage: Other: Other: Other: Exceeding 22.4 kW?\" Hmm. I recall rulings: \"8414.80.1690 Other\" for turbochargers not exceeding 35 psi? Indeed, the 35 psi mention hints at the subheading: 8414.80.16 \"Compressors... Single stage, Other: Other 'Other'\"; 8414.80.05 is \"Compressors capable of pressure exceeding 3 bar (about 43.5 psi)?\" Actually 8414.80.05 is \"Turbocharger and supercharger... \" Hmm. I recall 8414.80.1605 \"Other: Not exceeding 35 psi? \" The 35 psi threshold fits 8414.80.16 \"Other: Single stage: Other: Other: Operating at pressure not exceeding 35 psi?\" I'll go with 8414.80.1690? I'll pick 8414.80.1690.\n\n{\"hts_code\": \"8414.80.1690\", \"reason\": \"The kit's essential character is a turbocharger (single-stage turbocompressor) operating at no more than 35 psi, classified in heading 8414 as other air compressors under subheading 8414.80.16.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 823,
+      "total_tokens": 1153,
+      "cost": 0.00889,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00889,
+        "upstream_inference_prompt_cost": 0.00066,
+        "upstream_inference_completions_cost": 0.00823
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8414801690",
+  "predicted_reason": "The kit's essential character is a turbocharger (single-stage turbocompressor) operating at no more than 35 psi, classified in heading 8414 as other air compressors under subheading 8414.80.16.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 330,
+    "completion_tokens": 823,
+    "total_tokens": 1153,
+    "cost": 0.00889,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00889,
+      "upstream_inference_prompt_cost": 0.00066,
+      "upstream_inference_completions_cost": 0.00823
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:26.922739+00:00",
+  "latency_s": 7.559,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

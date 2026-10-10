@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359996",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "6402199031",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596005-yA910y5sP5vQkUs5Caz7",
+    "object": "chat.completion",
+    "created": 1791596005,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a men's golf shoe with an upper whose external surface area is mostly rubber or plastics (TPU) and an outer sole of rubber or plastics. That places it in heading 6402 (footwear with outer soles and uppers of rubber or plastics).\n\nHeading 6402 subheadings:\n- 6402.12 covers ski-boots and snowboard boots.\n- 6402.19 covers other sports footwear.\n- 6402.20 covers footwear with upper straps or thongs assembled to the sole by plugs.\n- 6402.91 covers other footwear covering the ankle.\n- 6402.99 covers other footwear.\n\nThe shoe is below the ankle, so 6402.91 is out. Golf shoes with spikes or cleats are not within 6402.19, which covers only the specifically listed items (ski and snowboard boots, wrestling shoes, etc.), so the shoe goes to 6402.99.\n\nWithin 6402.99:\n- 6402.99.18 covers footwear with open toe or open heel.\n- 6402.99.20 covers footwear with a foxing or foxing-like band.\n- 6402.99.31 and below cover footwear where the value is not over $3/pair.\n- 6402.99.33 covers footwear with \"protective\" open toe.\n- 6402.99.50 covers footwear for men, valued over $12/pair.\n\nThe description specifically mentions a foxing-like band, which points to the 6402.99.30 area. The subheading structure there is: 6402.99.2000 (welt footwear), 6402.99.2500, and 6402.99.30 (footwear with foxing or foxing-like band, with a \"valued over $3 but not over $6.50/pair\" tier etc.). I recall that the \"Other\" footwear with foxing includes 6402.99.3100 (protective), 6402.99.3300 (other, with foxing, not over $3), and 6402.99.3500 and 6402.99.3800 (other, valued over $3 but not over $6.50). In addition, 6402.99.4000 covers footwear with a foxing-like band in the $6.50\u2013$12 range, which presumably excludes it. This shoe at over $40 FOB with a foxing-like band, being men's, would fall under 6402.99.9065, or the 6402.99.80 and 6402.99.90 families. The 6402.99.90 family covers \"Other: For men,\" and I believe the statistical suffix 6402.99.9065 is \"Other, men's, valued over $12/pair.\"\n\nI'm not certain of that last suffix, but 6402.99.9065 is my best estimate.\n\n{\"hts_code\": \"6402.99.9065\", \"reason\": \"Men's below-the-ankle golf shoe with rubber/plastics (TPU) upper by external surface area and a molded rubber/plastics cleated outsole falls in heading 6402, subheading 6402.99 (other footwear), in the men's tier with FOB value over $12/pair.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 556,
+      "completion_tokens": 958,
+      "total_tokens": 1514,
+      "cost": 0.010692,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010692,
+        "upstream_inference_prompt_cost": 0.001112,
+        "upstream_inference_completions_cost": 0.00958
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6402999065",
+  "predicted_reason": "Men's below-the-ankle golf shoe with rubber/plastics (TPU) upper by external surface area and a molded rubber/plastics cleated outsole falls in heading 6402, subheading 6402.99 (other footwear), in the men's tier with FOB value over $12/pair.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 556,
+    "completion_tokens": 958,
+    "total_tokens": 1514,
+    "cost": 0.010692,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010692,
+      "upstream_inference_prompt_cost": 0.001112,
+      "upstream_inference_completions_cost": 0.00958
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:26.217160+00:00",
+  "latency_s": 8.105,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

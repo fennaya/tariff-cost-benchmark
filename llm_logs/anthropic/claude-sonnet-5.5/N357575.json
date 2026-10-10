@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357575",
+  "rulingDate": "2026-01-20T00:00:00",
+  "true_code": "8544493080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595450-ZMLmObdlWMvfaiYLWWlQ",
+    "object": "chat.completion",
+    "created": 1791595450,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CAT 6 LAN cable made of insulated copper conductors, without connectors, rated for 300 V (under 1,000 V). That places it in heading 8544, under subheading 8544.49 (\"other electric conductors, for a voltage not exceeding 1,000 V\"), not in 8544.42, which covers conductors fitted with connectors.\n\nFor the 8544.49 statistical suffixes, I recall these breakouts:\n- 8544.49.10: Of a kind used for telecommunications, \u226480 V\n- 8544.49.20: Other, of copper, \u226480 V\n- 8544.49.30: Other, of copper, >80 V but \u22641,000 V (this is where 300 V falls)\n\nI believe the 10-digit statistical lines under 8544.49.30 are 8544.49.3010 and 8544.49.3090.\n\nCBP rulings on CAT 5e and CAT 6 cable have often placed it in 8544.42.9090, which is for conductors fitted with connectors, but that does not fit here. For unconnectorized cable, rulings have used 8544.49.1000 for telecommunications use at \u226480 V. Some rulings refer to 8544.49.2000 for insulated copper at \u226480 V. LAN cable carries low voltage signals, but the stated maximum of 300 V suggests that a ruling put it in the over-80 V category. I am unsure of that last point, but with a stated 300 V rating, 8544.49.30 is the best fit.\n\nThe 8544.49.30 line is \"Other, of copper, for a voltage exceeding 80 V but not exceeding 1,000 V,\" and I believe the 8544.49.3000 suffix applies.\n\n```json\n{\"hts_code\": \"8544.49.3000\", \"reason\": \"Unconnectorized insulated copper LAN cable rated at 300 V falls under heading 8544 as other electric conductors for voltage over 80 V but not exceeding 1,000 V.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 363,
+      "completion_tokens": 647,
+      "total_tokens": 1010,
+      "cost": 0.007196,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007196,
+        "upstream_inference_prompt_cost": 0.000726,
+        "upstream_inference_completions_cost": 0.00647
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8544493000",
+  "predicted_reason": "Unconnectorized insulated copper LAN cable rated at 300 V falls under heading 8544 as other electric conductors for voltage over 80 V but not exceeding 1,000 V.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 363,
+    "completion_tokens": 647,
+    "total_tokens": 1010,
+    "cost": 0.007196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007196,
+      "upstream_inference_prompt_cost": 0.000726,
+      "upstream_inference_completions_cost": 0.00647
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:10.987011+00:00",
+  "latency_s": 6.398,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360809",
+  "rulingDate": "2026-05-01T00:00:00",
+  "true_code": "9403200050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596155-3oYCOPN1eqMqHfodNURd",
+    "object": "chat.completion",
+    "created": 1791596155,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on wall-mounted steel storage chests and cabinets. The likely candidates are:\n\n- 9403.20.0090 (other metal furniture), or 9403.20.0050 (metal furniture, other, household?). Wall-mounted cabinets are furniture under 9403 as \"other furniture\" designed to be fixed to the wall.\n- 8303 for armored or reinforced safes, which does not fit.\n- 7326 or 8302 for other steel articles, which also do not fit.\n- 9403.20.0018, which is the subheading for metal furniture for household use.\n\nHTSUS 9403.20 breaks down as follows:\n- 9403.20.0010: Furniture designed for use in the home? I believe 9403.20.0010 covers luggage racks, 9403.20.0020 is \"Other: Tables\" or similar, and 9403.20.0030 is \"Other,\" then 0050 and 0090.\n- Actual 9403.20.00 breakdown: 9403.20.0010 is \"Luggage racks, hotel,\" 9403.20.0020 is \"Other: Tables,\" 9403.20.0030? I am not certain about these.\n- I recall 9403.20.0018 as \"Other: Household: Other,\" and 9403.20.0020 as \"Other: Other: Other,\" but I am unsure.\n\nMetal furniture that is wall-mounted and used in the home or garage would be classified under 9403.20.0090, which I believe is \"Other: Other\" in the metal furniture subheading. It is a plausible choice for the \"other\" category. I also recall that CBP has ruled on similar wall-mounted tool chests as furniture of heading 9403, in the \"other metal furniture\" subheading.\n\nBetween 9403.20.0050 and 9403.20.0090, I will go with 9403.20.0090.\n\n{\"hts_code\": \"9403.20.0090\", \"reason\": \"Wall-mounted unequipped steel storage chests and cabinets for homes, garages and workshops are metal furniture of heading 9403, falling in the residual 'other metal furniture' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 564,
+      "completion_tokens": 680,
+      "total_tokens": 1244,
+      "cost": 0.007928,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007928,
+        "upstream_inference_prompt_cost": 0.001128,
+        "upstream_inference_completions_cost": 0.0068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403200090",
+  "predicted_reason": "Wall-mounted unequipped steel storage chests and cabinets for homes, garages and workshops are metal furniture of heading 9403, falling in the residual 'other metal furniture' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 564,
+    "completion_tokens": 680,
+    "total_tokens": 1244,
+    "cost": 0.007928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007928,
+      "upstream_inference_prompt_cost": 0.001128,
+      "upstream_inference_completions_cost": 0.0068
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:35:56.006798+00:00",
+  "latency_s": 6.665,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361287",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "3504001000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600159-7UxCFDGP6894L0T6glrB",
+    "object": "chat.completion",
+    "created": 1791600159,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3504.00.9890\", \"reason\": \"Pea protein isolate, a vegetable protein isolate not elsewhere specified, is classified in subheading 3504.00.9890 regardless of its use as a dietary supplement ingredient.\"}",
+          "refusal": null,
+          "reasoning": "Pea protein isolate for dietary supplement \u2014 HTS 2106.90.98? Food preparations not elsewhere specified. Pea protein isolate: 3504.00? Actually protein isolates are 3504.00.00 (3504.00.5000?). Pea protein isolate classified under 3504.00.9890? HTS 3504.00.9890, duty free. Common ruling: pea protein isolate 3504.00.9890.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Pea protein isolate for dietary supplement \u2014 HTS 2106.90.98? Food preparations not elsewhere specified. Pea protein isolate: 3504.00? Actually protein isolates are 3504.00.00 (3504.00.5000?). Pea protein isolate classified under 3504.00.9890? HTS 3504.00.9890, duty free. Common ruling: pea protein isolate 3504.00.9890.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 195,
+      "completion_tokens": 162,
+      "total_tokens": 357,
+      "cost": 0.000785141,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000785141,
+        "upstream_inference_prompt_cost": 7.541e-06,
+        "upstream_inference_completions_cost": 0.0007776
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 108,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3504009890",
+  "predicted_reason": "Pea protein isolate, a vegetable protein isolate not elsewhere specified, is classified in subheading 3504.00.9890 regardless of its use as a dietary supplement ingredient.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 195,
+    "completion_tokens": 162,
+    "total_tokens": 357,
+    "cost": 0.000785141,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000785141,
+      "upstream_inference_prompt_cost": 7.541e-06,
+      "upstream_inference_completions_cost": 0.0007776
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 108,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:39.992999+00:00",
+  "latency_s": 1.804,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

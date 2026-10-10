@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359919",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "8516790000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600001-S7dHbKZEw4fonDBzZkdP",
+    "object": "chat.completion",
+    "created": 1791600001,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8516.60.0090\", \"reason\": \"An electric countertop skillet is an electrothermic cooking appliance classified in heading 8516, specifically the residual 'other cooking appliances' subheading.\"}",
+          "refusal": null,
+          "reasoning": "Electric skillet \u2014 8516.60 or 8516.60.90? Cooking appliances, electro-thermic: 8516.60.00 \"Other cooking appliances\". 10-digit: 8516.60.0090? HTSUS 8516.60.0090 \"Other, other\".",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Electric skillet \u2014 8516.60 or 8516.60.90? Cooking appliances, electro-thermic: 8516.60.00 \"Other cooking appliances\". 10-digit: 8516.60.0090? HTSUS 8516.60.0090 \"Other, other\".",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 127,
+      "total_tokens": 291,
+      "cost": 0.0004646,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004646,
+        "upstream_inference_prompt_cost": 3.28e-05,
+        "upstream_inference_completions_cost": 0.0004318
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 74,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8516600090",
+  "predicted_reason": "An electric countertop skillet is an electrothermic cooking appliance classified in heading 8516, specifically the residual 'other cooking appliances' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 164,
+    "completion_tokens": 127,
+    "total_tokens": 291,
+    "cost": 0.0004646,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004646,
+      "upstream_inference_prompt_cost": 3.28e-05,
+      "upstream_inference_completions_cost": 0.0004318
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 74,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:40:01.581386+00:00",
+  "latency_s": 1.86,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

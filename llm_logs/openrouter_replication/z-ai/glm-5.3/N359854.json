@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359854",
+  "rulingDate": "2026-04-15T00:00:00",
+  "true_code": "3105100000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599983-Rn9K44dmELTiVaGJSTzg",
+    "object": "chat.completion",
+    "created": 1791599983,
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3105.60.0000\", \"reason\": \"Herbitec is a mixed nitrogen/potassium fertilizer imported in one-liter plastic containers with a gross weight not exceeding 10 kg, which falls under the HTSUS provision for fertilizers in packages with a gross weight not exceeding 10 kg.\"}",
+          "refusal": null,
+          "reasoning": "This is a foliar fertilizer containing nitrogen and potassium, a liquid fertilizer. HTSUS 3105 covers fertilizers. Liquid fertilizers with nitrogen and potassium... 3105.60.0000 covers \"fertilizers, in tablets or similar forms or in packages with gross weight not exceeding 10 kg\" \u2014 no. Chapter 31: 3105.10 (in tablets), 3105.20 (diammonium phosphate), 3105.30 (ammonium dihydrogen orthophosphate), 3105.40 (dipotassium...), 3105.51 (containing nitrates and phosphates), 3105.59 (other, containing nitrogen, phosphorus, potassium), 3105.60 (not exceeding 10 kg), 3105.90 (other).\n\nProduct contains N and K, no phosphates. So 3105.59.00 \u2014 \"Other, including mixtures; animal blood... : Other: Other\" \u2014 3105.59.0000? Actually 3105.59.00 covers \"Other\" containing N, P, K. Wait 3105.59 is \"Other\" under 3105.50 \"containing nitrogen, phosphorus and potassium\". Since it lacks phosphorus, it goes to 3105.90.00 \"Other\". Hmm.\n\n3105.60: packages \u226410 kg. One-liter plastic container \u2014 density 1.00 g/mL, so 1 kg net; gross weight likely under 10 kg. So 3105.60.0000 applies. This is a common CBP ruling: liquid fertilizer in 1-liter containers classified 3105.60.0000. Yes, e.g., NY rulings classify small-package fertilizers in 3105.60.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a foliar fertilizer containing nitrogen and potassium, a liquid fertilizer. HTSUS 3105 covers fertilizers. Liquid fertilizers with nitrogen and potassium... 3105.60.0000 covers \"fertilizers, in tablets or similar forms or in packages with gross weight not exceeding 10 kg\" \u2014 no. Chapter 31: 3105.10 (in tablets), 3105.20 (diammonium phosphate), 3105.30 (ammonium dihydrogen orthophosphate), 3105.40 (dipotassium...), 3105.51 (containing nitrates and phosphates), 3105.59 (other, containing nitrogen, phosphorus, potassium), 3105.60 (not exceeding 10 kg), 3105.90 (other).\n\nProduct contains N and K, no phosphates. So 3105.59.00 \u2014 \"Other, including mixtures; animal blood... : Other: Other\" \u2014 3105.59.0000? Actually 3105.59.00 covers \"Other\" containing N, P, K. Wait 3105.59 is \"Other\" under 3105.50 \"containing nitrogen, phosphorus and potassium\". Since it lacks phosphorus, it goes to 3105.90.00 \"Other\". Hmm.\n\n3105.60: packages \u226410 kg. One-liter plastic container \u2014 density 1.00 g/mL, so 1 kg net; gross weight likely under 10 kg. So 3105.60.0000 applies. This is a common CBP ruling: liquid fertilizer in 1-liter containers classified 3105.60.0000. Yes, e.g., NY rulings classify small-package fertilizers in 3105.60.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 284,
+      "completion_tokens": 447,
+      "total_tokens": 731,
+      "cost": 0.002793612,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002793612,
+        "upstream_inference_prompt_cost": 0.000111612,
+        "upstream_inference_completions_cost": 0.002682
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 379,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3105600000",
+  "predicted_reason": "Herbitec is a mixed nitrogen/potassium fertilizer imported in one-liter plastic containers with a gross weight not exceeding 10 kg, which falls under the HTSUS provision for fertilizers in packages with a gross weight not exceeding 10 kg.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 447,
+    "total_tokens": 731,
+    "cost": 0.002793612,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002793612,
+      "upstream_inference_prompt_cost": 0.000111612,
+      "upstream_inference_completions_cost": 0.002682
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 379,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T02:39:42.940472+00:00",
+  "latency_s": 4.18,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

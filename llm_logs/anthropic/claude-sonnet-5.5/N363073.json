@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363073",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "1605290500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596621-rQSkqK3JE7AbSNkTkMuI",
+    "object": "chat.completion",
+    "created": 1791596621,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a frozen potato-wrapped shrimp product. The key question is whether it falls under shrimp preparations (1605.29) or potato preparations (2004.10).\n\nShrimp is 36.5% of the product and potato is the other main component. Heading 1605 covers crustaceans prepared or preserved, including breaded shrimp. Frozen potato preparations fall in 2004.10. Heading 1605 would apply if the product is a shrimp paste or filling coated with potato, with the essential character coming from the shrimp.\n\nThe product is also a \"shrimp filling,\" so it contains minced shrimp plus other ingredients. Under the 1605 heading, shrimp products in airtight containers would go to 1605.29 (other shrimp and prawns), and the statistical suffix for 1605.29.10 covers \"Products containing fish meat...\" Actually, 1605.21 is shrimp not in airtight containers and 1605.29 is shrimp in airtight containers. Retail trays are not airtight containers in the sense of hermetically sealed ones, so 1605.21 is the likelier subheading. Under 1605.21, 1605.21.10 covers shrimp \"in airtight containers\" and 1605.21.20 covers other, with a statistical suffix. For 1605.29: 1605.29.10 is \"Shrimp and prawns, in airtight containers,\" and 1605.29.xx is other. In the 2022 HTSUS, 1605.21 is \"Not in airtight containers,\" with 1605.21.10 for shrimp and prawns, and 1605.21.1020 being \"Other, breaded\", whereas 1605.21.1030 is \"Other.\" I believe that 1605.21.10 is \"Shrimp and prawns: Not in airtight containers: Frozen, breaded\" and 1605.21.20 is \"Other.\" So I am choosing 1605.21.1030.\n\n{\"hts_code\": \"1605.21.1030\", \"reason\": \"Frozen shrimp-filled appetizer with a potato coating, not in hermetically sealed airtight containers, classified as prepared shrimp under heading 1605 based on shrimp essential character.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 463,
+      "completion_tokens": 711,
+      "total_tokens": 1174,
+      "cost": 0.008036,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008036,
+        "upstream_inference_prompt_cost": 0.000926,
+        "upstream_inference_completions_cost": 0.00711
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1605211030",
+  "predicted_reason": "Frozen shrimp-filled appetizer with a potato coating, not in hermetically sealed airtight containers, classified as prepared shrimp under heading 1605 based on shrimp essential character.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 463,
+    "completion_tokens": 711,
+    "total_tokens": 1174,
+    "cost": 0.008036,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008036,
+      "upstream_inference_prompt_cost": 0.000926,
+      "upstream_inference_completions_cost": 0.00711
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:41.350906+00:00",
+  "latency_s": 6.445,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

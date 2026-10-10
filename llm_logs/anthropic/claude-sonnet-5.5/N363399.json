@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363399",
+  "rulingDate": "2026-07-31T00:00:00",
+  "true_code": "8307903000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596656-CRVoQ3oJ0hclPmeqHMbI",
+    "object": "chat.completion",
+    "created": 1791596656,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a metal bellows used as a part of gas pressure control valves. Candidates are 8481.90 (parts of valves) and 8307.10 (flexible tubing of iron or steel) or 8307.90 (of other base metal).\n\nFlexible tubing of base metal is classified in 8307, but a bellows that is dedicated to valves is arguably a valve part under 8481.90. Section XV Note 2 excludes goods of heading 8481 from the \"parts of general use\" category, and heading 8307 is not in that category, so the question is whether 8307 or 8481 takes precedence. Because the bellows is designed as a housing and seal for a piston in a valve, it is a valve part. However, the Section XVI notes exclude articles of Section XV, such as 8307 flexible tubing, which takes priority. Section XVI Note 1(g) excludes parts of general use as defined in Note 2 to Section XV, of base metal (Section XV), and 8307 is not among those. Rulings on similar bellows have gone to 8307.90 when the tube is of inconel (nickel alloy), since heading 8307 covers flexible tubing of base metal with or without fittings. The tube is inconel, so 8307.90.\n\nThe HTS subheading 8307.90.10 covers \"Of other base metal, combined with textile material\" and 8307.90.90 covers other. The 10-digit code is 8307.90.9000.\n\n{\"hts_code\": \"8307.90.9000\", \"reason\": \"The bellows is flexible corrugated tubing of base metal (inconel) with fittings, which is classified in heading 8307 as flexible tubing of other base metal rather than as a valve part.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 298,
+      "completion_tokens": 555,
+      "total_tokens": 853,
+      "cost": 0.006146,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006146,
+        "upstream_inference_prompt_cost": 0.000596,
+        "upstream_inference_completions_cost": 0.00555
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8307909000",
+  "predicted_reason": "The bellows is flexible corrugated tubing of base metal (inconel) with fittings, which is classified in heading 8307 as flexible tubing of other base metal rather than as a valve part.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 298,
+    "completion_tokens": 555,
+    "total_tokens": 853,
+    "cost": 0.006146,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006146,
+      "upstream_inference_prompt_cost": 0.000596,
+      "upstream_inference_completions_cost": 0.00555
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:16.825094+00:00",
+  "latency_s": 6.125,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

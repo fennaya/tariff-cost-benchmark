@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358236",
+  "rulingDate": "2026-02-26T00:00:00",
+  "true_code": "9506996080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595565-shwLw7gFNxOZJLENUhus",
+    "object": "chat.completion",
+    "created": 1791595565,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Athletic protective cups fall under HTSUS 9506.99 (\"Other articles and equipment for general physical exercise, gymnastics, athletics, other sports\"). However, there is a more specific line in heading 6507 or 9506.99.\n\nI recall CBP rulings on athletic cups classifying them in 9506.99.2000 (\"Articles and equipment for... athletics... Other: Protective equipment\"?). Checking the 9506.99 structure: 9506.99.05 is \"Baseball and softball (except balls)\"; 9506.99.10 \"Lacrosse\"; 9506.99.15 \"Field hockey\"; 9506.99.20 \"Other: Articles and equipment for... Protective equipment\"? I believe 9506.99.2000 is \"Other\" for \"Articles and equipment... Other: Racket sports\"? Given the actual structure: 9506.99.05 Baseball/softball, .10 Lacrosse, .15 Field hockey/ice hockey?, .20 Rugby?, .25 Cricket?, .28 Other: Rugby, cricket... .30 Other: Other-Hockey?, .55 Other: Other, 9506.99.60 Other. The CBP rulings on protective cups (e.g., NY N301338) used 9506.99.6080 \"Other: Other: Other.\" I'll go with 9506.99.6080.\n\n{\"hts_code\": \"9506.99.6080\", \"reason\": \"Athletic groin protectors are protective equipment for sports, classified in heading 9506 as other articles and equipment for sports, in the residual 'Other' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 390,
+      "completion_tokens": 524,
+      "total_tokens": 914,
+      "cost": 0.00602,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00602,
+        "upstream_inference_prompt_cost": 0.00078,
+        "upstream_inference_completions_cost": 0.00524
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9506996080",
+  "predicted_reason": "Athletic groin protectors are protective equipment for sports, classified in heading 9506 as other articles and equipment for sports, in the residual 'Other' subheading.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 524,
+    "total_tokens": 914,
+    "cost": 0.00602,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00602,
+      "upstream_inference_prompt_cost": 0.00078,
+      "upstream_inference_completions_cost": 0.00524
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:06.080626+00:00",
+  "latency_s": 5.107,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

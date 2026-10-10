@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360960",
+  "rulingDate": "2026-05-12T00:00:00",
+  "true_code": "8709100060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596184-x3QZJfWSAIXIEEJKp8LX",
+    "object": "chat.completion",
+    "created": 1791596184,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is an autonomous mobile robot (AMR) for moving pallets and materials, which is a self-propelled vehicle for carrying loads in a factory or warehouse. Heading 8427 covers fork-lift trucks and other works trucks fitted with lifting or handling equipment. Heading 8709 covers works trucks, self-propelled, not fitted with lifting or handling equipment, of the type used in factories, warehouses, and similar settings for short-distance transport of goods. The P2200 is a base platform with no lifting equipment, so 8709 fits.\n\nWithin 8709, 8709.11 covers electrical works trucks and 8709.19 covers other. The P2200 is presumably battery-electric, so it goes under 8709.11. The statistical suffix for 8709.11.00 is 8709.11.0000. CBP rulings on similar Canadian AMRs (such as the OTTO) have classified them in 8709.11.0000.\n\n```json\n{\"hts_code\": \"8709.11.0000\", \"reason\": \"A self-propelled, battery-electric autonomous mobile robot platform that carries loads in factories and warehouses without lifting or handling equipment is an electrical works truck of heading 8709.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 500,
+      "completion_tokens": 399,
+      "total_tokens": 899,
+      "cost": 0.00499,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00499,
+        "upstream_inference_prompt_cost": 0.001,
+        "upstream_inference_completions_cost": 0.00399
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8709110000",
+  "predicted_reason": "A self-propelled, battery-electric autonomous mobile robot platform that carries loads in factories and warehouses without lifting or handling equipment is an electrical works truck of heading 8709.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 500,
+    "completion_tokens": 399,
+    "total_tokens": 899,
+    "cost": 0.00499,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00499,
+      "upstream_inference_prompt_cost": 0.001,
+      "upstream_inference_completions_cost": 0.00399
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:24.705777+00:00",
+  "latency_s": 4.412,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

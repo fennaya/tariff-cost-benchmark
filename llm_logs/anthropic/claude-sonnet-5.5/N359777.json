@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359777",
+  "rulingDate": "2026-04-09T00:00:00",
+  "true_code": "2106909998",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595922-EiCLyOq6s3t9kpva0oBQ",
+    "object": "chat.completion",
+    "created": 1791595922,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on powdered dietary supplements made in Australia from Chinese ingredients. The blend is a mixture of amino acids, minerals, vitamins, and botanical extracts, and it is not a single chemically defined compound. That points to heading 2106, food preparations not elsewhere specified, and subheading 2106.90 for \"other.\"\n\nWithin 2106.90, the choices are:\n- 2106.90.93 or 2106.90.99 for other preparations. The 2106.90.99 line is \"Other,\" and its statistical suffix is 2106.90.9998 for other.\n- 2106.90.66 for preparations containing sugars, which does not apply here.\n- 2106.90.10 for powdered dietary supplements that are not specified elsewhere, which does not match.\n\nInputs: the products are not made with sugar, milk solids, or dairy, so those lines are out. The cocoa powder is a small component, and the mix does not look like a cocoa preparation of heading 1806.\n\nThe origin is Australia, which has a free-trade agreement with the US. Since the blending is only mechanical, there may be no substantial transformation, but that affects origin and duty rates, not classification.\n\nThe classification path for 2106.90.99 is the \"Other\" line for preparations not containing milk solids, and it falls under 2106.90.99 with a statistical suffix. The usual codes are 2106.90.9998 for other and 2106.90.9200 and 2106.90.9500 for items with other conditions. I'll use 2106.90.9998.\n\n```json\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"Powdered dietary supplement beverage mixes made by blending amino acids, minerals, vitamins and botanical extracts are food preparations not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.\"}\n```\n\n{\"hts_code\": \"2106.90.9998\", \"reason\": \"Powdered dietary supplement beverage mixes made by blending amino acids, minerals, vitamins and botanical extracts are food preparations not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1171,
+      "completion_tokens": 703,
+      "total_tokens": 1874,
+      "cost": 0.009372,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.009372,
+        "upstream_inference_prompt_cost": 0.002342,
+        "upstream_inference_completions_cost": 0.00703
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2106909998",
+  "predicted_reason": "Powdered dietary supplement beverage mixes made by blending amino acids, minerals, vitamins and botanical extracts are food preparations not elsewhere specified or included, classified in heading 2106 under the residual 'other' provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1171,
+    "completion_tokens": 703,
+    "total_tokens": 1874,
+    "cost": 0.009372,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.009372,
+      "upstream_inference_prompt_cost": 0.002342,
+      "upstream_inference_completions_cost": 0.00703
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:02.971301+00:00",
+  "latency_s": 6.323,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358273",
+  "rulingDate": "2026-02-13T00:00:00",
+  "true_code": "3822190030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595572-KsjwNUCPX4yctMwiSIox",
+    "object": "chat.completion",
+    "created": 1791595572,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "These are ELISA diagnostic kits for measuring hormones in serum or plasma. The relevant heading is 3822, which covers diagnostic or laboratory reagents. Within it, 3822.00 is split into subheadings, and since 2022 the HTSUS has had 3822.11 to 3822.19 (the 3822.1x subheadings) and 3822.90.\n\nThe 2022 HTSUS structure for 3822 is as follows:\n- 3822.11.00: Diagnostic or laboratory reagents on a backing, for malaria\n- 3822.12.00: for Zika and other diseases transmitted by Aedes mosquitoes\n- 3822.13.00: for blood-grouping\n- 3822.19.00: other\n- 3822.90.00: other\n\nI recall the statistical suffixes under 3822.19 as 3822.19.0010 (Diagnostic or laboratory reagents, other), but I am less sure of the 3822.90 ones.\n\nThe description mentions that the kits contain antigens, which points to the older 3002 distinction. Heading 3002 covers antisera and other blood fractions, and its immunological products now sit under 3002.13 to 3002.15. However, ELISA kits with antibodies on a plate are generally classified in 3822. CBP rulings on ELISA kits are usually 3822.19.0000 or 3822.90.0000, depending on whether the kit is for human or other use. The note about antigens seems aimed at excluding 3002.\n\nI could not recall the exact current 3822.00 statistical suffixes with confidence. As I remember it, the 2023 and later HTSUS reads:\n- 3822.00.50: Other (of the pre-2022 layout)\n- 3822.00.0000\n- 3822.19.00 for \"Other: Diagnostic or laboratory reagents on a backing\"\n\nI'll go with 3822.19.0000 for these kits. The coated plate acts as the backing, which fits that subheading.\n\n```json\n{\"hts_code\": \"3822.19.0000\", \"reason\": \"ELISA diagnostic kits with antibody-coated microplates and reagents for measuring glucagon and insulin are diagnostic reagents on a backing, classified in heading 3822 rather than 3002.\"}\n```\n\n{\"hts_code\": \"3822.19.0000\", \"reason\": \"ELISA diagnostic kits with antibody-coated microplates and reagents for measuring glucagon and insulin are diagnostic reagents on a backing, classified in heading 3822 rather than 3002.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 1087,
+      "completion_tokens": 826,
+      "total_tokens": 1913,
+      "cost": 0.010434,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.010434,
+        "upstream_inference_prompt_cost": 0.002174,
+        "upstream_inference_completions_cost": 0.00826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3822190000",
+  "predicted_reason": "ELISA diagnostic kits with antibody-coated microplates and reagents for measuring glucagon and insulin are diagnostic reagents on a backing, classified in heading 3822 rather than 3002.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 1087,
+    "completion_tokens": 826,
+    "total_tokens": 1913,
+    "cost": 0.010434,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.010434,
+      "upstream_inference_prompt_cost": 0.002174,
+      "upstream_inference_completions_cost": 0.00826
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:12.850137+00:00",
+  "latency_s": 7.53,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

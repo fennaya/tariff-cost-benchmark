@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357330",
+  "rulingDate": "2026-01-26T00:00:00",
+  "true_code": "1302194140",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599623-7dPeg3bLGzbxnxCQJZht",
+    "object": "chat.completion",
+    "created": 1791599623,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1302.19.4040\", \"reason\": \"These filtered glycerin-water liquid botanical extracts of Echinacea, Houttuynia, Isatis, and Japanese Knotweed are vegetable saps/extracts not elsewhere specified, classified in HTSUS subheading 1302.19.4040.\"}",
+          "refusal": null,
+          "reasoning": "Herbal tinctures \u2014 glycerin-water extracts. Likely 1302.19.4040? Vegetable alkaloids... 1302 is vegetable saps and extracts. 1302.19 covers other, including for food/beverage? Glycerin-based extracts... 1302.19.4040 \"Other: Other: Other\" \u2014 actually food flavoring? Common ruling: herbal glycerites classified 1302.19.4040? There's 1302.19.4090? Let me recall: 1302.19.4040 is \"Other: Other: Other\" for vegetable extracts. I'll answer 1302.19.4040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Herbal tinctures \u2014 glycerin-water extracts. Likely 1302.19.4040? Vegetable alkaloids... 1302 is vegetable saps and extracts. 1302.19 covers other, including for food/beverage? Glycerin-based extracts... 1302.19.4040 \"Other: Other: Other\" \u2014 actually food flavoring? Common ruling: herbal glycerites classified 1302.19.4040? There's 1302.19.4090? Let me recall: 1302.19.4040 is \"Other: Other: Other\" for vegetable extracts. I'll answer 1302.19.4040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 299,
+      "completion_tokens": 224,
+      "total_tokens": 523,
+      "cost": 0.00112603,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00112603,
+        "upstream_inference_prompt_cost": 5.083e-05,
+        "upstream_inference_completions_cost": 0.0010752
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 161,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1302194040",
+  "predicted_reason": "These filtered glycerin-water liquid botanical extracts of Echinacea, Houttuynia, Isatis, and Japanese Knotweed are vegetable saps/extracts not elsewhere specified, classified in HTSUS subheading 1302.19.4040.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 299,
+    "completion_tokens": 224,
+    "total_tokens": 523,
+    "cost": 0.00112603,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00112603,
+      "upstream_inference_prompt_cost": 5.083e-05,
+      "upstream_inference_completions_cost": 0.0010752
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 161,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:33:43.637462+00:00",
+  "latency_s": 2.159,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

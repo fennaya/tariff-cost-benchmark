@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358678",
+  "rulingDate": "2026-03-05T00:00:00",
+  "true_code": "9401790046",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599802-RypqicgAentDW5T6xtB5",
+    "object": "chat.completion",
+    "created": 1791599802,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9401.79.0060\", \"reason\": \"Non-upholstered metal-framed folding seats for one person are classified as other seats with metal frames, not upholstered.\"}",
+          "refusal": null,
+          "reasoning": "Folding metal chairs \u2014 seats 9401.79 \u2014 but metal? 9401.79 is seats of other materials... Metal folding chairs: 9401.79.0045? Actually metal chairs are 9401.79.0045? HTS 9401.79.00 covers seats with metal frames... 9401.79.0045 \"other seats with metal frames, upholstered\"? Non-upholstered metal chairs: 9401.79.0060? Common ruling: folding metal chairs classified 9401.79.0045? Let me recall: 9401.79.00 subdivided: 0045 upholstered, 0060 non-upholstered? Actually 9401.79.0045 \"Other, with metal frames, upholstered\" and 9401.79.0060 \"Other, with metal frames, not upholstered\". Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Folding metal chairs \u2014 seats 9401.79 \u2014 but metal? 9401.79 is seats of other materials... Metal folding chairs: 9401.79.0045? Actually metal chairs are 9401.79.0045? HTS 9401.79.00 covers seats with metal frames... 9401.79.0045 \"other seats with metal frames, upholstered\"? Non-upholstered metal chairs: 9401.79.0060? Common ruling: folding metal chairs classified 9401.79.0045? Let me recall: 9401.79.00 subdivided: 0045 upholstered, 0060 non-upholstered? Actually 9401.79.0045 \"Other, with metal frames, upholstered\" and 9401.79.0060 \"Other, with metal frames, not upholstered\". Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 625,
+      "completion_tokens": 254,
+      "total_tokens": 879,
+      "cost": 0.00120318,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00120318,
+        "upstream_inference_prompt_cost": 8.558e-05,
+        "upstream_inference_completions_cost": 0.0011176
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 206,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401790060",
+  "predicted_reason": "Non-upholstered metal-framed folding seats for one person are classified as other seats with metal frames, not upholstered.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 625,
+    "completion_tokens": 254,
+    "total_tokens": 879,
+    "cost": 0.00120318,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00120318,
+      "upstream_inference_prompt_cost": 8.558e-05,
+      "upstream_inference_completions_cost": 0.0011176
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 206,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:36:42.432240+00:00",
+  "latency_s": 8.253,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

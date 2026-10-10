@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N355897",
+  "rulingDate": "2026-07-15T00:00:00",
+  "true_code": "6802990090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594046-QCinWKadlGtvEvgkO081",
+    "object": "chat.completion",
+    "created": 1791594046,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6802.91.0500\", \"reason\": \"Laboratory analysis identifies Bahamas White as a metamorphic calcareous stone (marble) that is simply cut and polished, which falls under HTSUS 6802.91.05 as marble/travertine/alabaster merely cut/sawn or otherwise worked.\"}",
+          "refusal": null,
+          "reasoning": "Metamorphic stone \u2014 likely marble/travertine worked stone. Bahamas White is actually a quartzite? Metamorphic... CBP ruled it as marble? \"Bahamas White\" \u2014 this resembles NY ruling; metamorphic stone polished \u2014 heading 6802. If marble: 6802.91.05, but metamorphic could be 6802.99.00? Actually 6802.99 covers other stone. Bahamas White is a quartzite? Lab said metamorphic \u2014 CBP classified as marble? Marble is metamorphic. Polished marble slabs: 6802.91.05.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Metamorphic stone \u2014 likely marble/travertine worked stone. Bahamas White is actually a quartzite? Metamorphic... CBP ruled it as marble? \"Bahamas White\" \u2014 this resembles NY ruling; metamorphic stone polished \u2014 heading 6802. If marble: 6802.91.05, but metamorphic could be 6802.99.00? Actually 6802.99 covers other stone. Bahamas White is a quartzite? Lab said metamorphic \u2014 CBP classified as marble? Marble is metamorphic. Polished marble slabs: 6802.91.05.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 255,
+      "completion_tokens": 209,
+      "total_tokens": 464,
+      "cost": 0.001263945,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001263945,
+        "upstream_inference_prompt_cost": 9.945e-06,
+        "upstream_inference_completions_cost": 0.001254
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 142,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802910500",
+  "predicted_reason": "Laboratory analysis identifies Bahamas White as a metamorphic calcareous stone (marble) that is simply cut and polished, which falls under HTSUS 6802.91.05 as marble/travertine/alabaster merely cut/sawn or otherwise worked.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 255,
+    "completion_tokens": 209,
+    "total_tokens": 464,
+    "cost": 0.001263945,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001263945,
+      "upstream_inference_prompt_cost": 9.945e-06,
+      "upstream_inference_completions_cost": 0.001254
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 142,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T01:00:47.114117+00:00",
+  "latency_s": 5.128,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

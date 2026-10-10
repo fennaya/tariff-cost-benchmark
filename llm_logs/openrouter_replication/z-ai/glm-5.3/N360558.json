@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360558",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "8903310020",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600092-WfP0prFGUbODKAT0e1RH",
+    "object": "chat.completion",
+    "created": 1791600092,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8903.99.0090\", \"reason\": \"A motorized rigid kayak is a vessel for pleasure, and as a motorized craft not specifically provided for elsewhere, it falls under the residual 'other' provision for pleasure vessels.\"}",
+          "refusal": null,
+          "reasoning": "Motorized fishing kayak \u2014 vessel for pleasure, motorized \u2192 8903.99? Kayaks with motor... likely 8903.91.00? Actually 8903.99 covers other motorized vessels... but kayaks classified 8903.99.00? Hmm. Ruling: motorized kayaks classified under 8903.99.0090? HTSUS 8903.99.0090 \"other, other\". Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Motorized fishing kayak \u2014 vessel for pleasure, motorized \u2192 8903.99? Kayaks with motor... likely 8903.91.00? Actually 8903.99 covers other motorized vessels... but kayaks classified 8903.99.00? Hmm. Ruling: motorized kayaks classified under 8903.99.0090? HTSUS 8903.99.0090 \"other, other\". Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 229,
+      "completion_tokens": 162,
+      "total_tokens": 391,
+      "cost": 0.00074294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00074294,
+        "upstream_inference_prompt_cost": 3.014e-05,
+        "upstream_inference_completions_cost": 0.0007128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 103,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8903990090",
+  "predicted_reason": "A motorized rigid kayak is a vessel for pleasure, and as a motorized craft not specifically provided for elsewhere, it falls under the residual 'other' provision for pleasure vessels.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 229,
+    "completion_tokens": 162,
+    "total_tokens": 391,
+    "cost": 0.00074294,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00074294,
+      "upstream_inference_prompt_cost": 3.014e-05,
+      "upstream_inference_completions_cost": 0.0007128
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 103,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:41:32.452632+00:00",
+  "latency_s": 9.157,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

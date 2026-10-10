@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361398",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600182-5sHqkK8QtCBM5R1uhCbQ",
+    "object": "chat.completion",
+    "created": 1791600182,
+    "model": "z-ai/glm-5.3",
+    "provider": "Novita",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9209.92.0000\", \"reason\": \"The description indicates an unfinished guitar/instrument neck blank, classifiable as a part of string musical instruments under heading 9209.\"}",
+          "refusal": null,
+          "reasoning": "Likely a doll or toy figure? \"Neck... capping... deep back opening with raw unfinished edges\" \u2014 sounds like a guitar neck blank? Unfinished wood neck \u2014 musical instrument part. Likely HTS 4421? Actually guitar necks classified 9202.90.6040? Unfinished neck blank of wood \u2014 4407? Hmm. Could be a mannequin? Ambiguous. Possibly a violin/guitar neck \u2014 parts of musical instruments 9209.92.0000 (parts of guitars). Choose 9209.92.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely a doll or toy figure? \"Neck... capping... deep back opening with raw unfinished edges\" \u2014 sounds like a guitar neck blank? Unfinished wood neck \u2014 musical instrument part. Likely HTS 4421? Actually guitar necks classified 9202.90.6040? Unfinished neck blank of wood \u2014 4407? Hmm. Could be a mannequin? Ambiguous. Possibly a violin/guitar neck \u2014 parts of musical instruments 9209.92.0000 (parts of guitars). Choose 9209.92.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 111,
+      "completion_tokens": 173,
+      "total_tokens": 284,
+      "cost": 0.0004583,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004583,
+        "upstream_inference_prompt_cost": 7.77e-05,
+        "upstream_inference_completions_cost": 0.0003806
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 124,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9209920000",
+  "predicted_reason": "The description indicates an unfinished guitar/instrument neck blank, classifiable as a part of string musical instruments under heading 9209.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 111,
+    "completion_tokens": 173,
+    "total_tokens": 284,
+    "cost": 0.0004583,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004583,
+      "upstream_inference_prompt_cost": 7.77e-05,
+      "upstream_inference_completions_cost": 0.0003806
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 124,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Novita",
+  "requested_at": "2026-10-10T02:43:02.501835+00:00",
+  "latency_s": 3.696,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

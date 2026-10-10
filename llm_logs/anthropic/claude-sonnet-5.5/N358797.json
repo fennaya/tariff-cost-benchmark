@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358797",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8703900100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595674-HLTuOM3Lcpb21cZ9ToYP",
+    "object": "chat.completion",
+    "created": 1791595674,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a four-wheeled electric vehicle that carries a single person, so it falls in heading 8703 (motor vehicles principally designed for transporting persons). Golf carts and similar vehicles are classified in 8703.10 (\"Vehicles specially designed for travelling on snow; golf carts and similar vehicles\"). The question is whether this enclosed security patrol vehicle is \"similar\" to a golf cart. CBP rulings on enclosed low-speed electric personnel carriers have generally placed them in 8703.80 (other vehicles, with only electric motor for propulsion) rather than in the golf cart subheading.\n\nFor 8703.80, the statistical suffix depends on the vehicle type. The 8703.80 subheading has been reorganized in recent years, and 8703.80.0100 is \"Other vehicles, with only electric motor for propulsion: Vehicles principally designed for transporting persons.\" I believe the structure is 8703.80.00 with statistical suffixes 10 (Passenger automobiles) and 90 (Other), but I am not certain.\n\nThe 10-digit code I am choosing is 8703.80.0110 or 8703.80.0100. Since I can't confirm, I'll go with 8703.80.0100.\n\n{\"hts_code\": \"8703.80.0100\", \"reason\": \"A fully enclosed four-wheeled battery-electric vehicle that carries one person is a motor vehicle principally designed for transporting persons, propelled only by an electric motor (heading 8703, subheading 8703.80), and is not a golf cart because it is enclosed and built for security patrol use.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 609,
+      "completion_tokens": 524,
+      "total_tokens": 1133,
+      "cost": 0.006458,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006458,
+        "upstream_inference_prompt_cost": 0.001218,
+        "upstream_inference_completions_cost": 0.00524
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703800100",
+  "predicted_reason": "A fully enclosed four-wheeled battery-electric vehicle that carries one person is a motor vehicle principally designed for transporting persons, propelled only by an electric motor (heading 8703, subheading 8703.80), and is not a golf cart because it is enclosed and built for security patrol use.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 609,
+    "completion_tokens": 524,
+    "total_tokens": 1133,
+    "cost": 0.006458,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006458,
+      "upstream_inference_prompt_cost": 0.001218,
+      "upstream_inference_completions_cost": 0.00524
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:54.415089+00:00",
+  "latency_s": 5.342,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

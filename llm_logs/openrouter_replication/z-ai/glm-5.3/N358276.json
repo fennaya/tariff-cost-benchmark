@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358276",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "2845400000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599743-BzB3z7OCj77Pxp9IBoiI",
+    "object": "chat.completion",
+    "created": 1791599743,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2804.29.0000\", \"reason\": \"Helium-3, being an isotope of helium not separately provided for, is classified as an other rare gas under HTSUS 2804.29.0000, and the French purification does not change its Canadian origin.\"}",
+          "refusal": null,
+          "reasoning": "Helium-3 \u2014 rare gas. HTS 2804.29 \u2014 other rare gases. Helium-3 isotope... 2804.29.0000? Helium is 2804.21.00. Helium-3 likely classified as other rare gases: 2804.29.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Helium-3 \u2014 rare gas. HTS 2804.29 \u2014 other rare gases. Helium-3 isotope... 2804.29.0000? Helium is 2804.21.00. Helium-3 likely classified as other rare gases: 2804.29.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 135,
+      "total_tokens": 367,
+      "cost": 0.00059948,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00059948,
+        "upstream_inference_prompt_cost": 3.248e-05,
+        "upstream_inference_completions_cost": 0.000567
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 68,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2804290000",
+  "predicted_reason": "Helium-3, being an isotope of helium not separately provided for, is classified as an other rare gas under HTSUS 2804.29.0000, and the French purification does not change its Canadian origin.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 232,
+    "completion_tokens": 135,
+    "total_tokens": 367,
+    "cost": 0.00059948,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00059948,
+      "upstream_inference_prompt_cost": 3.248e-05,
+      "upstream_inference_completions_cost": 0.000567
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 68,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:35:43.895634+00:00",
+  "latency_s": 2.921,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

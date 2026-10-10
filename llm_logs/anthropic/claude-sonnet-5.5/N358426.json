@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358426",
+  "rulingDate": "2026-02-10T00:00:00",
+  "true_code": "8422309140",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595601-voN52GW656lk5TTGhFFu",
+    "object": "chat.completion",
+    "created": 1791595601,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a liquid dosing system (Concordia I). The likely candidates are heading 8479 (machines with individual functions), heading 8422 (filling machines), or heading 8413 (pumps).\n\nHeading 8422.30 covers machinery for filling, closing, sealing, capping or labeling bottles, cans, boxes, bags or other containers. Subheading 8422.30.91 covers \"other\" machinery for filling containers, and 8422.30.9190 may be a further breakout. The 8422.30 breakouts are:\n- 8422.30.02: machinery for filling/closing... (beverage-related)\n- 8422.30.03\n- 8422.30.04\n- 8422.30.05\n- 8422.30.08, 8422.30.09, 8422.30.91 (other)\n\nThe description stresses that the liquid is dispensed in a metered stream that is neither sprayed nor dripped and does not rely solely on gravity, which is the language used to exclude heading 8424 (spraying or dispensing appliances). Dosing into containers therefore points to 8422.30.\n\nThe most likely code is 8422.30.9190, but I'm not sure of the statistical suffix. The 8422.30 breakouts I recall are 8422.30.02 (for beverages), 8422.30.03 (other filling), 8422.30.05 (other), 8422.30.08 (other), and 8422.30.91 (other), with 8422.30.9140 and 8422.30.9190 under them. I'll go with 8422.30.9190.\n\n{\"hts_code\": \"8422.30.9190\", \"reason\": \"The automated metered dosing and filling system dispenses set quantities of liquid into containers, so it is filling machinery of heading 8422.30 and not a sprayer under 8424 or a standalone pump under 8413.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 512,
+      "completion_tokens": 595,
+      "total_tokens": 1107,
+      "cost": 0.006974,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006974,
+        "upstream_inference_prompt_cost": 0.001024,
+        "upstream_inference_completions_cost": 0.00595
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8422309190",
+  "predicted_reason": "The automated metered dosing and filling system dispenses set quantities of liquid into containers, so it is filling machinery of heading 8422.30 and not a sprayer under 8424 or a standalone pump under 8413.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 512,
+    "completion_tokens": 595,
+    "total_tokens": 1107,
+    "cost": 0.006974,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006974,
+      "upstream_inference_prompt_cost": 0.001024,
+      "upstream_inference_completions_cost": 0.00595
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:41.479209+00:00",
+  "latency_s": 5.337,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

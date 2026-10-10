@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N352351",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "3907995050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594020-bHnYVOzv4SMDmZQmsvch",
+    "object": "chat.completion",
+    "created": 1791594020,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3907.99.30\", \"reason\": \"The PBS-corn starch composite pellets are a primary-form polyester (polybutylene succinate) plastic material whose chemical properties were not changed by processing, classifiable as other polyesters in heading 3907.\"}",
+          "refusal": null,
+          "reasoning": "This is a classic NY ruling scenario \u2014 PBS/starch composite, country of origin Taiwan vs China? Classification: 3901-3915... PBS is polyether? PBS is a poly ester \u2014 heading 3907.39... but composite with starch \u2014 likely 3913? Actually starch is 3505. Composite of PBS and starch \u2014 NY N- ruling classified as 3907.99? Hmm. There's a ruling on PBS/starch composite classified in 3913.90? Starch chemically modified... Actually known ruling N325864? PBS-corn starch composite pellets classified under 3907.99? PBS = polybutylene succinate, polyether? No, polyester. 3907.69/3907.99. Post-2022: 3907.99.30? Hmm. Alternatively 3913.90.20? I'll go 3907.99.30? Not sure. Safer: 3907.99.30 \"polyesters, other\". Actually current HTS: 3907.99.30? There's 3907.99.30 for polyethylene terephthalate? PET is 3907.61. Other polyesters 3907.99.30? I'll answer 3907.99.30.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This is a classic NY ruling scenario \u2014 PBS/starch composite, country of origin Taiwan vs China? Classification: 3901-3915... PBS is polyether? PBS is a poly ester \u2014 heading 3907.39... but composite with starch \u2014 likely 3913? Actually starch is 3505. Composite of PBS and starch \u2014 NY N- ruling classified as 3907.99? Hmm. There's a ruling on PBS/starch composite classified in 3913.90? Starch chemically modified... Actually known ruling N325864? PBS-corn starch composite pellets classified under 3907.99? PBS = polybutylene succinate, polyether? No, polyester. 3907.69/3907.99. Post-2022: 3907.99.30? Hmm. Alternatively 3913.90.20? I'll go 3907.99.30? Not sure. Safer: 3907.99.30 \"polyesters, other\". Actually current HTS: 3907.99.30? There's 3907.99.30 for polyethylene terephthalate? PET is 3907.61. Other polyesters 3907.99.30? I'll answer 3907.99.30.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 501,
+      "completion_tokens": 353,
+      "total_tokens": 854,
+      "cost": 0.0013004,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013004,
+        "upstream_inference_prompt_cost": 0.0001002,
+        "upstream_inference_completions_cost": 0.0012002
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 290,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "39079930",
+  "predicted_reason": "The PBS-corn starch composite pellets are a primary-form polyester (polybutylene succinate) plastic material whose chemical properties were not changed by processing, classifiable as other polyesters in heading 3907.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 501,
+    "completion_tokens": 353,
+    "total_tokens": 854,
+    "cost": 0.0013004,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013004,
+      "upstream_inference_prompt_cost": 0.0001002,
+      "upstream_inference_completions_cost": 0.0012002
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 290,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T01:00:20.701729+00:00",
+  "latency_s": 3.265,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

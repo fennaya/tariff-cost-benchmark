@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361760",
+  "rulingDate": "2026-06-17T00:00:00",
+  "true_code": "4901990070",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596339-iwlGeHi0kuLL25oDyc6i",
+    "object": "chat.completion",
+    "created": 1791596339,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a children's book, so the question is whether it falls under heading 4903 (children's picture, drawing or coloring books) or 4901 (printed books). Heading 4903 covers children's picture books in which the illustrations are the principal feature and the text is subsidiary. This book has illustrations with text describing facts about the fish. Customs rulings on similar educational board books with illustrations on each page usually place them in 4903.\n\nHTSUS 4903.00.00 is \"Children's picture, drawing or coloring books\", and the statistical suffix is 4903.00.0000. A fact-based book with an educational narrative could instead be classed in 4901.99. However, a 24-page board book for young children with an illustration on each spread fits the 4903 definition, and the Chapter 49 note says it covers books where the pictures carry the story and the text is incidental.\n\nThe text here is substantial, but the book is a hardcover board book for children, and CBP has classified comparable titles in 4903. I'll go with 4903.00.0000.\n\n{\"hts_code\": \"4903.00.0000\", \"reason\": \"A hardcover children's board book with an illustration on every spread is a children's picture book of heading 4903, where the illustrations are the principal feature and the text is subsidiary.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 367,
+      "completion_tokens": 404,
+      "total_tokens": 771,
+      "cost": 0.004774,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004774,
+        "upstream_inference_prompt_cost": 0.000734,
+        "upstream_inference_completions_cost": 0.00404
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4903000000",
+  "predicted_reason": "A hardcover children's board book with an illustration on every spread is a children's picture book of heading 4903, where the illustrations are the principal feature and the text is subsidiary.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 367,
+    "completion_tokens": 404,
+    "total_tokens": 771,
+    "cost": 0.004774,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004774,
+      "upstream_inference_prompt_cost": 0.000734,
+      "upstream_inference_completions_cost": 0.00404
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:00.123332+00:00",
+  "latency_s": 6.138,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

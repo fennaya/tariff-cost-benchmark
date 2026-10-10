@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361555",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "1905901049",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596303-Uytcn3kEmi9BZQuFwe4W",
+    "object": "chat.completion",
+    "created": 1791596303,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling covering five frozen baked products. The question asks for a single code, so I need the one that best covers them, which is bread and pastry under heading 1905.\n\nMost of the products are bread-type goods. Pretzels, buns and loaves fall under 1905.90 (\"Other\"), where the 1905.90.10 subheading covers \"Bread, pastry, cakes, biscuits and similar baked products, and puddings, whether or not containing chocolate, fruit, nuts or confectionery\". The 1905.90.10 tariff line is \"Bread, pastry, cakes, biscuits and similar baked products, and puddings, whether or not containing chocolate, fruit, nuts or confectionery,\" and its statistical suffix 1905.90.1000 is the one used for bread.\n\nFrozen pretzels could instead be classed as 1905.90.10 or 1905.90.90. Pretzels are generally treated as bread-type products and fall under 1905.90.10 (similar baked products), so 1905.90.1000 fits all five.\n\n```json\n{\"hts_code\": \"1905.90.1000\", \"reason\": \"Fully baked, frozen pretzel buns, pretzels, sourdough/rye breads and rolls are bread and similar baked products of heading 1905, classified in subheading 1905.90.10 as bread, pastry and similar baked products.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 839,
+      "completion_tokens": 449,
+      "total_tokens": 1288,
+      "cost": 0.006168,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006168,
+        "upstream_inference_prompt_cost": 0.001678,
+        "upstream_inference_completions_cost": 0.00449
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1905901000",
+  "predicted_reason": "Fully baked, frozen pretzel buns, pretzels, sourdough/rye breads and rolls are bread and similar baked products of heading 1905, classified in subheading 1905.90.10 as bread, pastry and similar baked products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 839,
+    "completion_tokens": 449,
+    "total_tokens": 1288,
+    "cost": 0.006168,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006168,
+      "upstream_inference_prompt_cost": 0.001678,
+      "upstream_inference_completions_cost": 0.00449
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:23.571580+00:00",
+  "latency_s": 4.539,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357372",
+  "rulingDate": "2026-01-14T00:00:00",
+  "true_code": "8543709860",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599627-BlGSVHRlmCtkIPCzkgv8",
+    "object": "chat.completion",
+    "created": 1791599627,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9032.89.6000\", \"reason\": \"The SCR ECU automatically regulates and controls NOx emissions by processing sensor data and sending control signals, classifying it as other automatic regulating or controlling instruments/instruments and apparatus under heading 9032.\"}",
+          "refusal": null,
+          "reasoning": "ECU for emissions control \u2014 likely 9032 or 8537? SCR ECU controlling emissions \u2014 typically classified 9032.89 or 8537.10. CBP rulings on engine ECUs often 9032.89.60 (automatic regulating/controlling apparatus). Actually similar ruling: SCR ECU classified in 9032.89.60.90? 10-digit: 9032.89.6000? HTS 9032.89.60 exists. Use 9032.89.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "ECU for emissions control \u2014 likely 9032 or 8537? SCR ECU controlling emissions \u2014 typically classified 9032.89 or 8537.10. CBP rulings on engine ECUs often 9032.89.60 (automatic regulating/controlling apparatus). Actually similar ruling: SCR ECU classified in 9032.89.60.90? 10-digit: 9032.89.6000? HTS 9032.89.60 exists. Use 9032.89.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 300,
+      "completion_tokens": 183,
+      "total_tokens": 483,
+      "cost": 0.0008901,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008901,
+        "upstream_inference_prompt_cost": 1.17e-05,
+        "upstream_inference_completions_cost": 0.0008784
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 113,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9032896000",
+  "predicted_reason": "The SCR ECU automatically regulates and controls NOx emissions by processing sensor data and sending control signals, classifying it as other automatic regulating or controlling instruments/instruments and apparatus under heading 9032.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 300,
+    "completion_tokens": 183,
+    "total_tokens": 483,
+    "cost": 0.0008901,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008901,
+      "upstream_inference_prompt_cost": 1.17e-05,
+      "upstream_inference_completions_cost": 0.0008784
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 113,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:33:48.061472+00:00",
+  "latency_s": 2.698,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

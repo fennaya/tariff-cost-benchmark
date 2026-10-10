@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359926",
+  "rulingDate": "2026-04-13T00:00:00",
+  "true_code": "9209998000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595982-IrMWwSSCOn5ygcevlbOz",
+    "object": "chat.completion",
+    "created": 1791595982,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on cymbal blanks. Cymbals are classified in 9206.00.40 (\"Cymbals\"), formerly 9206.00.4000, with parts in 9209. The question is whether the blanks are classifiable as unfinished cymbals under GRI 2(a) or as parts of musical instruments in 9209.92 or 9209.99.\n\nI recall CBP ruling N-series: \"The applicable subheading for the stamped cymbal blanks will be 9206.00.4000, HTSUS, which provides for Musical instruments: Percussion instruments: Cymbals.\" Reasoning: the blanks are unfinished cymbals that have the essential character of finished cymbals. However, the alternative of a part classified in 9209.99.4000 is plausible. The blanks are circular with a center hole, already stamped to specific mass and diameter, so they are essentially unfinished cymbals. Under GRI 2(a), an unfinished article with the essential character of the finished article is classified with it. I'll go with 9206.00.40.\n\nThe HTSUS 9206.00 breakdown: 9206.00.20 covers drums, 9206.00.40 covers cymbals, 9206.00.60 covers other. The 10-digit form is 9206.00.4000.\n\n{\"hts_code\": \"9206.00.4000\", \"reason\": \"The stamped, precisely sized and weighted blanks with a center hole are unfinished cymbals that have the essential character of finished cymbals under GRI 2(a), so they are classified as cymbals in heading 9206.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 432,
+      "completion_tokens": 515,
+      "total_tokens": 947,
+      "cost": 0.006014,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006014,
+        "upstream_inference_prompt_cost": 0.000864,
+        "upstream_inference_completions_cost": 0.00515
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9206004000",
+  "predicted_reason": "The stamped, precisely sized and weighted blanks with a center hole are unfinished cymbals that have the essential character of finished cymbals under GRI 2(a), so they are classified as cymbals in heading 9206.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 515,
+    "total_tokens": 947,
+    "cost": 0.006014,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006014,
+      "upstream_inference_prompt_cost": 0.000864,
+      "upstream_inference_completions_cost": 0.00515
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:02.614573+00:00",
+  "latency_s": 5.012,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

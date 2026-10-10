@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357245",
+  "rulingDate": "2026-07-14T00:00:00",
+  "true_code": "9617001000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595347-NViGmJ1vsHaOBRuPS4F5",
+    "object": "chat.completion",
+    "created": 1791595347,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a double-walled vacuum drinking vessel. Vacuum flasks and other vacuum vessels, complete with cases, fall under heading 9617. Heading 9617 covers vacuum flasks and other vacuum vessels, complete with cases, and parts thereof other than glass inners. Subheading 9617.00.10 covers vacuum vessels with a capacity not exceeding 0.75 liter, and 9617.00.20 covers those over 0.75 liter. The subheading 9617.00.10 breaks down further: 9617.00.1000 is the \"Vacuum flasks and other vacuum vessels, complete with cases; parts thereof other than glass inners: Vacuum flasks and other vacuum vessels, complete with cases: ...\" Under the current HTSUS, the structure is:\n\n- 9617.00.00 as the base, with 9617.00.10 for \"Vacuum flasks and other vacuum vessels, complete with cases: Each with a capacity not exceeding 0.75 liter.\"\n- 9617.00.20 for \"Each with a capacity exceeding 0.75 liter\" and 9617.00.30 for parts.\n\nStainless steel vacuum bottles in similar CBP rulings have been classified in 9617.00.1000, and I recall 9617.00.1000 being used for those of 0.75 liter or less. The 600 ml capacity is under 0.75 liter. The bamboo cap is only a component of the whole and does not change the classification.\n\n```json\n{\"hts_code\": \"9617.00.1000\", \"reason\": \"A 600 ml double-walled stainless-steel vacuum vessel is a vacuum flask of heading 9617 with a capacity not exceeding 0.75 liter.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 721,
+      "completion_tokens": 570,
+      "total_tokens": 1291,
+      "cost": 0.007142,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007142,
+        "upstream_inference_prompt_cost": 0.001442,
+        "upstream_inference_completions_cost": 0.0057
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9617001000",
+  "predicted_reason": "A 600 ml double-walled stainless-steel vacuum vessel is a vacuum flask of heading 9617 with a capacity not exceeding 0.75 liter.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 721,
+    "completion_tokens": 570,
+    "total_tokens": 1291,
+    "cost": 0.007142,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007142,
+      "upstream_inference_prompt_cost": 0.001442,
+      "upstream_inference_completions_cost": 0.0057
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:28.166636+00:00",
+  "latency_s": 5.079,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

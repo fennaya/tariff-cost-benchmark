@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361448",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "8421390115",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600193-8rKD43Nbywhv3HdXObKj",
+    "object": "chat.completion",
+    "created": 1791600193,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8479.89.94\", \"reason\": \"These aseptic/containment isolators are multi-function machines (HEPA filtration, VHP decontamination, PLC pressure control) with no single principal function, classifiable as machines and mechanical appliances having individual functions not specified elsewhere.\"}",
+          "refusal": null,
+          "reasoning": "Isolators for pharmaceutical use \u2014 likely 8419.89 or machinery for treatment by temperature/chemical change? Aseptic isolators classified under 8479.89.94? CBP rulings classify aseptic isolators under 8419.89.95? Actually HEPA filtration + VHP \u2014 similar to sterilizing machinery 8419.20? Sterility testing isolator \u2014 CBP has classified barrier isolators under 8479.89.94 (machinery having individual functions). I'll go 8479.89.94.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Isolators for pharmaceutical use \u2014 likely 8419.89 or machinery for treatment by temperature/chemical change? Aseptic isolators classified under 8479.89.94? CBP rulings classify aseptic isolators under 8419.89.95? Actually HEPA filtration + VHP \u2014 similar to sterilizing machinery 8419.20? Sterility testing isolator \u2014 CBP has classified barrier isolators under 8479.89.94 (machinery having individual functions). I'll go 8479.89.94.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 839,
+      "completion_tokens": 187,
+      "total_tokens": 1026,
+      "cost": 0.00093834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00093834,
+        "upstream_inference_prompt_cost": 0.00011554,
+        "upstream_inference_completions_cost": 0.0008228
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "84798994",
+  "predicted_reason": "These aseptic/containment isolators are multi-function machines (HEPA filtration, VHP decontamination, PLC pressure control) with no single principal function, classifiable as machines and mechanical appliances having individual functions not specified elsewhere.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 839,
+    "completion_tokens": 187,
+    "total_tokens": 1026,
+    "cost": 0.00093834,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00093834,
+      "upstream_inference_prompt_cost": 0.00011554,
+      "upstream_inference_completions_cost": 0.0008228
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:43:13.311699+00:00",
+  "latency_s": 19.597,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

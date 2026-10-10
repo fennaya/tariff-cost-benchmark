@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357461",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595423-pduJO9mFiO4Yw83ip9wa",
+    "object": "chat.completion",
+    "created": 1791595423,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a Ninja Girl costume set. Costumes of textile materials are generally classified in heading 9505 as festive articles only if they are not wearing apparel of chapters 61/62. Under Note 1(e) to Chapter 95, the chapter excludes... wait, Chapter 95 does not cover \"fancy dress of textiles, of chapters 61 or 62\", so the costume is classified as wearing apparel in Chapter 61 or 62.\n\nA set of a hooded top, leggings, and other items is a girls' costume. Knit or woven construction is unknown, but such ninja costumes were typically made of woven polyester. Girls' woven \"suits\" or \"ensembles\" fall under 6211 or 6208, and 6211.43 covers other garments of man-made fibers for women or girls. If the set is classified as a costume, the likely classification is 6211.43.0091 (\"Other garments, women's or girls': Of man-made fibers: Other: Other\"). 6211.43.9060 is the later statistical suffix, \"Girls' other garments of man-made fibers\".\n\nI'm not certain whether it is knit or woven. Because the leggings suggest knit, it could be 6104. However, in the ruling, I recall that the costume was classified as a set under 6211.43.9060 (earlier 6211.43.0091). I'll go with 6211.43.9060.\n\n{\"hts_code\": \"6211.43.9060\", \"reason\": \"The textile ninja costume set is wearing apparel excluded from Chapter 95 and is classified as girls' other garments of man-made fibers in heading 6211.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 531,
+      "total_tokens": 751,
+      "cost": 0.00575,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00575,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_completions_cost": 0.00531
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211439060",
+  "predicted_reason": "The textile ninja costume set is wearing apparel excluded from Chapter 95 and is classified as girls' other garments of man-made fibers in heading 6211.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 220,
+    "completion_tokens": 531,
+    "total_tokens": 751,
+    "cost": 0.00575,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00575,
+      "upstream_inference_prompt_cost": 0.00044,
+      "upstream_inference_completions_cost": 0.00531
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:43.472047+00:00",
+  "latency_s": 5.623,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

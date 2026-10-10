@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357215",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "9002909500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599585-9MJKdCGN15I7ZAvRjD0n",
+    "object": "chat.completion",
+    "created": 1791599585,
+    "model": "z-ai/glm-5.3",
+    "provider": "Together",
+    "system_fingerprint": "default",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8512.90.3000\", \"reason\": \"The lens holder assembly functions as a part of motor vehicle lighting equipment of heading 8512, and parts of the lighting apparatus of subheading 8512.20 are classified under 8512.90.30.\"}",
+          "refusal": null,
+          "reasoning": "Lens cover for headlamp \u2014 likely 8512.20.20 (lighting equipment parts? Actually parts of lamps of 8512). Lens for headlamp classified as part of motor vehicle lighting: 8512.20.20? HTS 8512.20.20: \"Other, for motor vehicles\"? 8512.20 covers lighting/visual signaling equipment; parts 8512.90.30? Parts of 8512.20: 8512.90.30. Lens assembly is a part \u2192 8512.90.3000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Lens cover for headlamp \u2014 likely 8512.20.20 (lighting equipment parts? Actually parts of lamps of 8512). Lens for headlamp classified as part of motor vehicle lighting: 8512.20.20? HTS 8512.20.20: \"Other, for motor vehicles\"? 8512.20 covers lighting/visual signaling equipment; parts 8512.90.30? Parts of 8512.20: 8512.90.30. Lens assembly is a part \u2192 8512.90.3000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 177,
+      "completion_tokens": 196,
+      "total_tokens": 373,
+      "cost": 0.0011102,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0011102,
+        "upstream_inference_prompt_cost": 0.0002478,
+        "upstream_inference_completions_cost": 0.0008624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 128,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8512903000",
+  "predicted_reason": "The lens holder assembly functions as a part of motor vehicle lighting equipment of heading 8512, and parts of the lighting apparatus of subheading 8512.20 are classified under 8512.90.30.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 196,
+    "total_tokens": 373,
+    "cost": 0.0011102,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0011102,
+      "upstream_inference_prompt_cost": 0.0002478,
+      "upstream_inference_completions_cost": 0.0008624
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 128,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Together",
+  "requested_at": "2026-10-10T02:33:05.488662+00:00",
+  "latency_s": 1.502,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

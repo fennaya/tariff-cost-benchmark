@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356961",
+  "rulingDate": "2026-01-08T00:00:00",
+  "true_code": "8708704546",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595290-NAaV9CTlxUiiFt7lHush",
+    "object": "chat.completion",
+    "created": 1791595290,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on golf cart tire and wheel assemblies. The key question is whether the assembly is classified as tires (4011) or as wheels (8708 for motor vehicle parts).\n\nGolf carts are classified in heading 8703 (HTSUS 8703.10 covers vehicles specially designed for traveling on snow and golf carts). Wheels for golf carts would therefore be parts of vehicles of heading 8703, and 8708 covers parts and accessories of motor vehicles of headings 8701 to 8705, which would put wheels in 8708.70. However, a tire mounted on a rim is classified by the tire under Section XVII Note 2 and the heading 4011 text, which covers new pneumatic tires of rubber. In prior rulings, CBP has classified tires mounted on rims in 8708.70 as road wheels. Here, 8708.70.45 covers wheels, other, for the vehicles of 8703, and the 8708.70.4530 and 8708.70.6030 subdivisions apply to wheel assemblies.\n\nThe assembled wheel with its tire is therefore classified in 8708.70. The stated diameter of 57\u201363 cm is relevant to the 8708.70.45 split. Under 8708.70.45, \"Other: For the vehicles of heading 8701 or 8702...\" does not apply. The breakdown is:\n- 8708.70.20: for vehicles of 8701.\n- 8708.70.45: other, certain wheels, with 8708.70.4530 for wheels for vehicles of 8703.\n- 8708.70.60: other, with 8708.70.6030 as a further subdivision.\n\nBased on this, I choose 8708.70.4560 as the \"other\" subdivision under 8708.70.45. I am not certain of the final suffix.\n\n{\"hts_code\": \"8708.70.4560\", \"reason\": \"Tire-and-rim wheel assemblies for golf carts (heading 8703) are classified as road wheels and parts of motor vehicles under 8708.70, in the 'other' subdivision of 8708.70.45.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 485,
+      "completion_tokens": 683,
+      "total_tokens": 1168,
+      "cost": 0.0078,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0078,
+        "upstream_inference_prompt_cost": 0.00097,
+        "upstream_inference_completions_cost": 0.00683
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708704560",
+  "predicted_reason": "Tire-and-rim wheel assemblies for golf carts (heading 8703) are classified as road wheels and parts of motor vehicles under 8708.70, in the 'other' subdivision of 8708.70.45.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 485,
+    "completion_tokens": 683,
+    "total_tokens": 1168,
+    "cost": 0.0078,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0078,
+      "upstream_inference_prompt_cost": 0.00097,
+      "upstream_inference_completions_cost": 0.00683
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:21:30.506194+00:00",
+  "latency_s": 6.739,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

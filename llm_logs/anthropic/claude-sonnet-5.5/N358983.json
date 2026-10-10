@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358983",
+  "rulingDate": "2026-03-03T00:00:00",
+  "true_code": "8543901200",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595706-Ee8RTGZW4lzbs10qHmJe",
+    "object": "chat.completion",
+    "created": 1791595706,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "These are parts of PVD machines, which fall under heading 8486 (machines used for manufacture of semiconductors/flat panel displays) or 8543 (electrical machines with individual functions, including PVD coating machines, 8543.70). A CBP ruling on these cages was likely classified in 8543.90.\n\nVacuum-deposition machines for general coating would be classified under 8419.89 (thermal-process machinery). For semiconductor PVD, 8486.20 applies, and its parts fall under 8486.90. The description does not mention semiconductors, though, so the cages could instead be parts of 8419.89 PVD machines, giving 8419.90.\n\nThe cages hold the items to be coated and rotate them in a carousel. If the PVD machine is a general-purpose coating machine for things like tools or optical lenses, CBP would likely use 8543.70 for electrical machines (PVD apparatus), with parts in 8543.90.\n\nI recall a ruling on \"PVD machine cages\" that classified them in 8543.90.8885, with the PVD machines themselves in 8543.70.9960. I'm going with that.\n\n{\"hts_code\": \"8543.90.8885\", \"reason\": \"The cages are parts of physical vapor deposition machines, which are electrical machines with individual functions of heading 8543, so they classify as parts under 8543.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 388,
+      "completion_tokens": 439,
+      "total_tokens": 827,
+      "cost": 0.005166,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005166,
+        "upstream_inference_prompt_cost": 0.000776,
+        "upstream_inference_completions_cost": 0.00439
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543908885",
+  "predicted_reason": "The cages are parts of physical vapor deposition machines, which are electrical machines with individual functions of heading 8543, so they classify as parts under 8543.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 388,
+    "completion_tokens": 439,
+    "total_tokens": 827,
+    "cost": 0.005166,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005166,
+      "upstream_inference_prompt_cost": 0.000776,
+      "upstream_inference_completions_cost": 0.00439
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:28:26.710692+00:00",
+  "latency_s": 4.534,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

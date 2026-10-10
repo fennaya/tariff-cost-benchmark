@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N355317",
+  "rulingDate": "2026-03-23T00:00:00",
+  "true_code": "6802990090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593806-TwUK4hDkhOXYvBSJ0jpo",
+    "object": "chat.completion",
+    "created": 1791593806,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Blue Bahia is an igneous stone (a sodalite-bearing syenite, which is not granite). It is imported as slabs that are surface-worked, so heading 6802 (worked monumental or building stone) applies rather than 2516.\n\nWithin 6802:\n- 6802.10 covers tiles, cubes and similar articles with a largest surface area under 7 cm square.\n- 6802.21 to 6802.29 cover other monumental or building stone, simply cut or sawn with a flat or even surface. 6802.23 is granite and 6802.29 is other stone.\n- 6802.91 to 6802.99 cover other worked stone. 6802.93 is granite, and 6802.99 is other stone.\n\nBecause the slab is surface-worked (polished), it falls under 6802.91 to 6802.99 rather than the simply-cut subheadings. Since the stone is \"other igneous\", 6802.99 applies. The 6802.99.00 statistical suffixes are 6802.99.0010 for other stone, and I recall a 6802.93 granite split into 6802.93.0010 for over 4 cm thick and 6802.93.0090 for other. For 6802.99.00, the 10-digit code is 6802.99.0090, with 6802.99.0010 for over 4 cm thick. The slab is 3 cm thick, so it takes 6802.99.0090.\n\n{\"hts_code\": \"6802.99.0090\", \"reason\": \"Surface-worked (polished) slab of other igneous stone (not granite) for countertops is worked building stone of heading 6802, falling under other worked stone, 6802.99.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 329,
+      "completion_tokens": 527,
+      "total_tokens": 856,
+      "cost": 0.005928,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005928,
+        "upstream_inference_prompt_cost": 0.000658,
+        "upstream_inference_completions_cost": 0.00527
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6802990090",
+  "predicted_reason": "Surface-worked (polished) slab of other igneous stone (not granite) for countertops is worked building stone of heading 6802, falling under other worked stone, 6802.99.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 329,
+    "completion_tokens": 527,
+    "total_tokens": 856,
+    "cost": 0.005928,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005928,
+      "upstream_inference_prompt_cost": 0.000658,
+      "upstream_inference_completions_cost": 0.00527
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:56:47.185012+00:00",
+  "latency_s": 5.135,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

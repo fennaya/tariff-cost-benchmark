@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361310",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600166-qR3JLcxYUlNTFuOXiVq8",
+    "object": "chat.completion",
+    "created": 1791600166,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6110.30.3010\", \"reason\": \"The description indicates a knitted pullover-type garment with unfinished sleeve and hem edges, most plausibly a cotton knit top classified as a women's pullover.\"}",
+          "refusal": null,
+          "reasoning": "Vague description\u2014garment with raw edges, likely a knit top? Ambiguous. Best guess: 6110.30.3010? Actually unfinished edges suggest not fully finished... Could be 6114 or 6216? I'll pick 6110.30.3010 (women's knit pullover cotton).",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vague description\u2014garment with raw edges, likely a knit top? Ambiguous. Best guess: 6110.30.3010? Actually unfinished edges suggest not fully finished... Could be 6114 or 6216? I'll pick 6110.30.3010 (women's knit pullover cotton).",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 103,
+      "completion_tokens": 126,
+      "total_tokens": 229,
+      "cost": 0.000449,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000449,
+        "upstream_inference_prompt_cost": 2.06e-05,
+        "upstream_inference_completions_cost": 0.0004284
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 72,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110303010",
+  "predicted_reason": "The description indicates a knitted pullover-type garment with unfinished sleeve and hem edges, most plausibly a cotton knit top classified as a women's pullover.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 103,
+    "completion_tokens": 126,
+    "total_tokens": 229,
+    "cost": 0.000449,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000449,
+      "upstream_inference_prompt_cost": 2.06e-05,
+      "upstream_inference_completions_cost": 0.0004284
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 72,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:42:46.821191+00:00",
+  "latency_s": 2.021,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

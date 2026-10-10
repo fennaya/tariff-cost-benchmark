@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359513",
+  "rulingDate": "2026-03-25T00:00:00",
+  "true_code": "8421290065",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595860-eKAUX5FgywqVqGENjViW",
+    "object": "chat.completion",
+    "created": 1791595860,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling-type item. An air separator for hydronic systems with an automatic air vent is probably classified as a filtering/purifying machine or as a valve. Past CBP rulings on Caleffi air separators (e.g., NY N0xx) classified them in 8421.29 (filtering or purifying machinery for liquids, other) or in 8481.80. Air/dirt separators have been classified in 8421.29.0065 (\"Other: Other\"). The device removes gas from liquid by coalescence, which is a purifying function, so I'm going with 8421.29.0065.\n\nThe HTS lists 8421.29.00 with these subdivisions: 8421.29.0005 (Dialysis), 8421.29.0020 (Of a kind used for filtering or purifying beverages), 8421.29.0030 (Oil filters), 8421.29.0050 (Other: Filtering/purifying machinery for water), and 8421.29.0065 (Other). That gives 8421.29.0065 for this item.\n\n{\"hts_code\": \"8421.29.0065\", \"reason\": \"The air separator purifies hydronic system fluid by removing entrained air through coalescence, making it filtering or purifying machinery for liquids, other (8421.29), rather than a mere valve.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 713,
+      "completion_tokens": 415,
+      "total_tokens": 1128,
+      "cost": 0.005576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005576,
+        "upstream_inference_prompt_cost": 0.001426,
+        "upstream_inference_completions_cost": 0.00415
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421290065",
+  "predicted_reason": "The air separator purifies hydronic system fluid by removing entrained air through coalescence, making it filtering or purifying machinery for liquids, other (8421.29), rather than a mere valve.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 713,
+    "completion_tokens": 415,
+    "total_tokens": 1128,
+    "cost": 0.005576,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005576,
+      "upstream_inference_prompt_cost": 0.001426,
+      "upstream_inference_completions_cost": 0.00415
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:59.643424+00:00",
+  "latency_s": 5.759,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

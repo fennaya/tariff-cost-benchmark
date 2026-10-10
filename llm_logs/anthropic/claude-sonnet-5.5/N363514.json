@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363514",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "9504500000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596684-mEbuMARahV2JY65VLaAP",
+    "object": "chat.completion",
+    "created": 1791596684,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a racing simulator kit (steering wheel, pedals, base) that connects to a PC by USB. It is not a game console, so I considered two headings.\n\n- **Heading 9504** covers video game consoles and machines, and its subheading 9504.50 covers video game consoles and machines other than those of 9504.30. Accessories for these fall under 9504.50.40 or 9504.50.00, but only when the goods are for use with a television receiver or a self-contained display.\n- **Heading 8471** covers input units for automatic data processing machines, such as joysticks and game controllers for PCs. Subheading 8471.60.70 covers \"other\" input or output units, such as joysticks.\n\nMy recollection is that CBP has classified PC-connected racing wheels in 8471.60.90 (other input or output units), and some Logitech-type wheel rulings go there. Some PC game controllers, such as joysticks, have been ruled under 9504.50.\n\nThe kit connects to a PC and has no console function, so heading 8471 fits. Within it, 8471.60.70 is \"Input or output units... other: Input units: Other\" \u2014 a more specific category than 8471.60.90 \u2014 so I chose the current statistical suffix under 8471.60.90 as the best match.\n\nThe 8471.60 subheadings, as I recall them, are 8471.60.10 (keyboards-type for the first split), 8471.60.20 and 8471.60.25 (printers), 8471.60.30 (digital input), 8471.60.65, 8471.60.70 (data storage-type), and 8471.60.90 (other). I am not certain of this layout, so I settled on 8471.60.90.\n\nFinal answer is 8471.60.9000, the \"other\" input or output units provision.\n\n{\"hts_code\": \"8471.60.9000\", \"reason\": \"The racing wheel and pedal kit is a dedicated input unit for a PC (not a game console) connected via USB, so it falls in heading 8471 as an other input/output unit of an automatic data processing machine.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 650,
+      "total_tokens": 1047,
+      "cost": 0.007294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007294,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.0065
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8471609000",
+  "predicted_reason": "The racing wheel and pedal kit is a dedicated input unit for a PC (not a game console) connected via USB, so it falls in heading 8471 as an other input/output unit of an automatic data processing machine.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 650,
+    "total_tokens": 1047,
+    "cost": 0.007294,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007294,
+      "upstream_inference_prompt_cost": 0.000794,
+      "upstream_inference_completions_cost": 0.0065
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:44.632972+00:00",
+  "latency_s": 6.286,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

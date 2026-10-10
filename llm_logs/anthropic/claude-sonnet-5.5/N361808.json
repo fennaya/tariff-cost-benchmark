@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361808",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8479899599",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596350-nFS7sW5hbHfVLPQlSeFM",
+    "object": "chat.completion",
+    "created": 1791596350,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a magnetic article sorting system. The candidate headings are:\n\n- 8421 covers filtering and purifying machinery.\n- 8474 covers machinery for sorting, screening, separating or washing earth, stone, ores or other mineral substances in solid form. Its subheading 8474.10 covers sorting, screening, separating or washing machines.\n- 8505 covers electromagnets and permanent magnets, but this system is a complete machine rather than a magnet.\n- 8479 covers machines with individual functions not specified elsewhere.\n- 8537 covers control panels, which does not fit.\n\nRecyclable waste is not a mineral substance, so 8474 is doubtful. Magnetic separators for waste are often classified in 8479.82 (mixing, kneading, crushing, grinding, screening, sifting, homogenizing, emulsifying or stirring machines), but 8479.89 is also possible. Another possibility is 8421.29 for filtering or purifying machinery for liquids, which does not apply to solids.\n\nBecause this is a ferrous-metal separator for recyclables, the system likely falls under 8479.89, which covers other machines and mechanical appliances. The likely statistical suffix is 8479.89.9599 (other). There is also 8479.82.0000 for separating machines, but 8479.82 lists mixing, kneading, crushing, grinding, screening, sifting, homogenizing, emulsifying or stirring, and \"separating\" is not explicitly named. I'll go with 8479.89.9599.\n\n{\"hts_code\": \"8479.89.9599\", \"reason\": \"An integrated machine with an overhead permanent magnet and conveyor that separates ferrous metal from recyclable waste is a machine with individual function not specified elsewhere in Chapter 84, so it falls in the 8479.89 residual subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 423,
+      "completion_tokens": 611,
+      "total_tokens": 1034,
+      "cost": 0.006956,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006956,
+        "upstream_inference_prompt_cost": 0.000846,
+        "upstream_inference_completions_cost": 0.00611
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479899599",
+  "predicted_reason": "An integrated machine with an overhead permanent magnet and conveyor that separates ferrous metal from recyclable waste is a machine with individual function not specified elsewhere in Chapter 84, so it falls in the 8479.89 residual subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 423,
+    "completion_tokens": 611,
+    "total_tokens": 1034,
+    "cost": 0.006956,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006956,
+      "upstream_inference_prompt_cost": 0.000846,
+      "upstream_inference_completions_cost": 0.00611
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:10.821328+00:00",
+  "latency_s": 5.748,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

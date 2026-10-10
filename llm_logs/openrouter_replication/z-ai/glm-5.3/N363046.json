@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363046",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "4814200000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600390-IJcSg3Tt0mCwQjY2Y7xS",
+    "object": "chat.completion",
+    "created": 1791600390,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4814.49.1000\", \"reason\": \"Vinyl-faced wallcoverings on a paper backing are classified as other (non-woven) wallcoverings of heading 4814, per HTSUS statistical breakouts.\"}",
+          "refusal": null,
+          "reasoning": "Vinyl wallcoverings on paper backing \u2014 classified as wallcoverings 4814.49? Textured vinyl on paper backing \u2014 HTS 4814.49.10? Actually 4814.49 covers other wallcoverings. 10-digit: 4814.49.1000? Common ruling: 4814.49.10.00.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vinyl wallcoverings on paper backing \u2014 classified as wallcoverings 4814.49? Textured vinyl on paper backing \u2014 HTS 4814.49.10? Actually 4814.49 covers other wallcoverings. 10-digit: 4814.49.1000? Common ruling: 4814.49.10.00.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 164,
+      "completion_tokens": 139,
+      "total_tokens": 303,
+      "cost": 0.00063264,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 48,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00063264,
+        "upstream_inference_prompt_cost": 2.104e-05,
+        "upstream_inference_completions_cost": 0.0006116
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4814491000",
+  "predicted_reason": "Vinyl-faced wallcoverings on a paper backing are classified as other (non-woven) wallcoverings of heading 4814, per HTSUS statistical breakouts.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 164,
+    "completion_tokens": 139,
+    "total_tokens": 303,
+    "cost": 0.00063264,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 48,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00063264,
+      "upstream_inference_prompt_cost": 2.104e-05,
+      "upstream_inference_completions_cost": 0.0006116
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:46:30.491893+00:00",
+  "latency_s": 1.183,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

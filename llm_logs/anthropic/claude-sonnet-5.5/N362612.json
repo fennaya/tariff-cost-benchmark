@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362612",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "9603500000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596530-vfpZEuOESNqEwzkPLiqv",
+    "object": "chat.completion",
+    "created": 1791596530,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a push broom for forklifts. Candidate headings are 9603 (brooms and brushes, including parts of machines, hand-operated mechanical floor sweepers) and 8479 or 8705 (machinery or vehicle attachments).\n\nHeading 9603 covers \"brushes constituting parts of machines, appliances or vehicles\" (9603.50) and \"hand-operated mechanical floor sweepers, not motor driven\" (9603.10 covers brooms and brushes consisting of twigs or other vegetable materials bound together). Other relevant subheadings are:\n- 9603.10: brooms of twigs or vegetable materials\n- 9603.21: toothbrushes\n- 9603.29: shaving brushes, hair brushes\n- 9603.30: artists' brushes\n- 9603.40: paint brushes\n- 9603.50: other brushes constituting parts of machines, appliances or vehicles\n- 9603.90: other, including hand-operated mechanical floor sweepers, mops and feather dusters (9603.90.80 and 9603.90.50 for other brooms and brushes)\n\nThe broom here is non-motorized and mounted on a host vehicle, so it is not a hand-operated sweeper. It is a push broom with a steel frame and polypropylene bristles. Under 9603.90, 9603.90.80 is \"other\" and 9603.90.50 is \"Other: Brooms and brushes valued over 40 cents each\". I believe 9603.90.8050 and 9603.90.9100 are the actual ones, but I am not certain.\n\nAlternatively, 9603.50.00 covers brushes that are parts of machines or vehicles. A broom attachment mounted on a forklift fits \"brushes constituting parts of vehicles\". Still, the attachment is an implement of the vehicle, not a part. I am not sure which one CBP chose, but I think the ruling classified it under 9603.90.8050 as other brooms and brushes.\n\nThe kit is imported unassembled but complete, so it is classified as the assembled article.\n\nI'll go with 9603.90.8050.\n\n{\"hts_code\": \"9603.90.8050\", \"reason\": \"The unassembled but complete kit is classified as the finished industrial push broom (a broom/brush with steel frame and polypropylene bristles) under heading 9603 as other brooms and brushes, not as a part of a machine or vehicle.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 605,
+      "completion_tokens": 789,
+      "total_tokens": 1394,
+      "cost": 0.0091,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0091,
+        "upstream_inference_prompt_cost": 0.00121,
+        "upstream_inference_completions_cost": 0.00789
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9603908050",
+  "predicted_reason": "The unassembled but complete kit is classified as the finished industrial push broom (a broom/brush with steel frame and polypropylene bristles) under heading 9603 as other brooms and brushes, not as a part of a machine or vehicle.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 605,
+    "completion_tokens": 789,
+    "total_tokens": 1394,
+    "cost": 0.0091,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0091,
+      "upstream_inference_prompt_cost": 0.00121,
+      "upstream_inference_completions_cost": 0.00789
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:10.992022+00:00",
+  "latency_s": 6.975,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

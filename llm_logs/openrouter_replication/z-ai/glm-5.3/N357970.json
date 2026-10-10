@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357970",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "7326908688",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599712-Z8VpqjbT36ERkdG2nZ3F",
+    "object": "chat.completion",
+    "created": 1791599712,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7326.90.8686\", \"reason\": \"The item is a machined stainless steel protective housing/article not more specifically provided for, classifiable as an other article of iron or steel.\"}",
+          "refusal": null,
+          "reasoning": "Stainless steel machined part \u2014 likely 7326.90.86 (other articles of iron or steel). If threaded bolt-like... it's a housing, article of steel: 7326.90.8686? Common: 7326.90.45 (threaded) vs 7326.90.60. Use 7326.90.8686? Actual HTS: 7326.90.86 covers other, including 7326.90.8686 \"other\". I'll answer 7326.90.8686.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Stainless steel machined part \u2014 likely 7326.90.86 (other articles of iron or steel). If threaded bolt-like... it's a housing, article of steel: 7326.90.8686? Common: 7326.90.45 (threaded) vs 7326.90.60. Use 7326.90.8686? Actual HTS: 7326.90.86 covers other, including 7326.90.8686 \"other\". I'll answer 7326.90.8686.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 234,
+      "completion_tokens": 179,
+      "total_tokens": 413,
+      "cost": 0.00083206,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00083206,
+        "upstream_inference_prompt_cost": 4.446e-05,
+        "upstream_inference_completions_cost": 0.0007876
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7326908686",
+  "predicted_reason": "The item is a machined stainless steel protective housing/article not more specifically provided for, classifiable as an other article of iron or steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 234,
+    "completion_tokens": 179,
+    "total_tokens": 413,
+    "cost": 0.00083206,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00083206,
+      "upstream_inference_prompt_cost": 4.446e-05,
+      "upstream_inference_completions_cost": 0.0007876
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 80,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:35:12.707236+00:00",
+  "latency_s": 2.07,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

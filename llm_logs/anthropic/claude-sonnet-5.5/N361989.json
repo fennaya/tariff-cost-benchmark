@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361989",
+  "rulingDate": "2026-06-09T00:00:00",
+  "true_code": "1605290500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596398-xMGfgDttlrhlTgd578gy",
+    "object": "chat.completion",
+    "created": 1791596398,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a frozen shrimp scampi meal. Shrimp prepared or preserved falls under heading 1605.21 (shrimps and prawns, not in airtight containers) or 1605.29 (other, which covers airtight containers). A frozen product would go in 1605.21.\n\nThe subheading 1605.21 covers shrimp and prawns \"not in airtight containers.\" The statistical suffixes under 1605.21 are:\n- 1605.21.10 \u2013 Containing fish meal... Actually, 1605.21.05 covers \"Products containing rice, or dough\" and 1605.21.10 covers \"Other, in immediate containers of a net contents not exceeding 2 kg\" (or similar).\n\nMy recollection of the 1605.21 structure is:\n- 1605.21.05: Shrimp and prawns, not in airtight containers: Containing fish meal... (uncertain)\n- 1605.21.10: Other, in immediate containers weighing with their contents not over 2 kg\n- 1605.21.20: Other\n\nThe actual HTSUS reads:\n- 1605.21.10: \"Shrimps and prawns, not in airtight containers: Frozen, in immediate containers weighing with their contents not more than 2 kg\" (uncertain)\n- 1605.21.1010 and 1605.21.1020: breaded, other\n\nSince the sauce makes this a prepared product with 45% shrimp, I am settling on 1605.21.2090. The 1605.21.20 line, \"Other,\" has a statistical suffix 90 for \"Other,\" which is my best fit. I did not verify this against the current schedule.\n\n{\"hts_code\": \"1605.21.2090\", \"reason\": \"Shrimp prepared in a sauce (shrimp scampi), frozen and not in airtight containers, is classified as prepared shrimp in heading 1605, subheading 1605.21 (other, not breaded), though the final suffix is my best recollection and not verified.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 639,
+      "total_tokens": 929,
+      "cost": 0.00697,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00697,
+        "upstream_inference_prompt_cost": 0.00058,
+        "upstream_inference_completions_cost": 0.00639
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1605212090",
+  "predicted_reason": "Shrimp prepared in a sauce (shrimp scampi), frozen and not in airtight containers, is classified as prepared shrimp in heading 1605, subheading 1605.21 (other, not breaded), though the final suffix is my best recollection and not verified.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 290,
+    "completion_tokens": 639,
+    "total_tokens": 929,
+    "cost": 0.00697,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00697,
+      "upstream_inference_prompt_cost": 0.00058,
+      "upstream_inference_completions_cost": 0.00639
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:58.337011+00:00",
+  "latency_s": 6.254,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

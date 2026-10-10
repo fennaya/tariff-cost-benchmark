@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359330",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "8509905500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595806-RpUJSD2GbVdimqFEt5gc",
+    "object": "chat.completion",
+    "created": 1791595806,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a PCBA for a medication dispenser for disabled persons. The likely classification is heading 9817.00.96, which covers articles specially designed or adapted for use by persons with permanent or chronic physical or mental impairment, and parts of such articles. The alternative is 9021 or 8537.\n\nI recall that 9817.00.96 covers \"Articles specially designed or adapted for the use or benefit of the blind or other physically or mentally handicapped persons; parts and accessories (except parts and accessories of articles described in 9817.00.92 and 9817.00.94) that are specially designed or adapted for use with such articles.\" The PCBA is a part of the medication system and is designed solely for it, so it would qualify under that provision.\n\nThe full code is 9817.00.9690, but I am not certain of the statistical suffix. The 9817.00.96 line has suffixes such as 9817.00.9600 or 9817.00.9690. I believe the 10-digit form is 9817.00.9690, so I will use that.\n\n{\"hts_code\": \"9817.00.9690\", \"reason\": \"The PCBA is a part designed solely for a medication dispensing system made for persons with permanent or chronic disabilities, so it falls under the Chapter 98 provision for articles and parts specially designed for the handicapped (9817.00.96).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 494,
+      "completion_tokens": 438,
+      "total_tokens": 932,
+      "cost": 0.005368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005368,
+        "upstream_inference_prompt_cost": 0.000988,
+        "upstream_inference_completions_cost": 0.00438
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9817009690",
+  "predicted_reason": "The PCBA is a part designed solely for a medication dispensing system made for persons with permanent or chronic disabilities, so it falls under the Chapter 98 provision for articles and parts specially designed for the handicapped (9817.00.96).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 494,
+    "completion_tokens": 438,
+    "total_tokens": 932,
+    "cost": 0.005368,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005368,
+      "upstream_inference_prompt_cost": 0.000988,
+      "upstream_inference_completions_cost": 0.00438
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:06.945220+00:00",
+  "latency_s": 4.437,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

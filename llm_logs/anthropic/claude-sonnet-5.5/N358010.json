@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358010",
+  "rulingDate": "2026-02-04T00:00:00",
+  "true_code": "3206500000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595533-XHlZXfHXSUTESkL9wzb6",
+    "object": "chat.completion",
+    "created": 1791595533,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on quantum dots dispersed in organic solvent. I recall that CBP classified quantum dots (e.g., cadmium selenide in solvent) in heading 3824.99 as chemical preparations not elsewhere specified, or sometimes in 3206.50 as inorganic products of a kind used as luminophores. Heading 3206.50 covers \"Inorganic products of a kind used as luminophores,\" and a ruling on quantum dots may have placed them there. However, a dispersion in an organic solvent is a preparation, and the quantum dots are not luminescent in the classic sense. Photoluminescent quantum dots are luminophores, though, and the Chapter 32 note covers preparations based on them.\n\nAnother option is 2853.90 for other inorganic compounds. A mixture of a zinc selenide/zinc sulfide core-shell in solvent would be a preparation, so 3824.99 is the likely choice. I recall NY N301906 on quantum dots classified in 3824.99.9297 for \"chemical preparations... other: other.\" Another candidate is 3824.99.2800 or 3824.99.9399. The current 3824.99 subheadings are 3824.99.28 (certain mixtures), .32 (mixtures containing nonrubber), .39, .41, .45, .50, .92 (other: mixtures and preparations consisting of... ), and .93 (other). I'll choose 3824.99.9397? I'm unsure whether that is exact, and 3824.99.9297 or 3824.99.9399 may be more precise. The common residual code is 3824.99.9295 \"Other: Other: Other,\" and I believe the 10-digit version is 3824.99.9297 or 3824.99.9399.\n\nI'll go with 3824.99.9399? Hmm. The 3824.99.92 is \"Other\" for products of the chemical industry, with 3824.99.9297 as the statistical suffix? My recollection is 3824.99.92 with 9297? I'll answer 3824.99.9297.\n\n{\"hts_code\": \"3824.99.9297\", \"reason\": \"Quantum dots (ZnSe/ZnS) dispersed in organic solvent are a chemical preparation not elsewhere specified, so they fall in the residual heading 3824.99 (chemical products and preparations of the chemical industry).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 273,
+      "completion_tokens": 768,
+      "total_tokens": 1041,
+      "cost": 0.008226,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008226,
+        "upstream_inference_prompt_cost": 0.000546,
+        "upstream_inference_completions_cost": 0.00768
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3824999297",
+  "predicted_reason": "Quantum dots (ZnSe/ZnS) dispersed in organic solvent are a chemical preparation not elsewhere specified, so they fall in the residual heading 3824.99 (chemical products and preparations of the chemical industry).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 273,
+    "completion_tokens": 768,
+    "total_tokens": 1041,
+    "cost": 0.008226,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008226,
+      "upstream_inference_prompt_cost": 0.000546,
+      "upstream_inference_completions_cost": 0.00768
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:33.712370+00:00",
+  "latency_s": 7.751,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

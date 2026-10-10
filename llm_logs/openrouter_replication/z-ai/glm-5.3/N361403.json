@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361403",
+  "rulingDate": "2026-05-29T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600184-MbMh4Z3Rfr1xAdZwyqRk",
+    "object": "chat.completion",
+    "created": 1791600184,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.90.6020\", \"reason\": \"The description indicates a costume with cape and sleeves, which is classified as a festive/costume article of Chapter 95.\"}",
+          "refusal": null,
+          "reasoning": "Likely a costume \u2014 flammable costume? Textile costume of heading 9505? Actually unfinished raw edges suggests textile apparel? \"cape, sleeves\" \u2014 a costume. HTS 9505.90.6000? But 10-digit: 9505.90.6000 is 8-digit... 10-digit 9505.90.6020? Festive costumes: 9505.90.6020? Actually 9505.90.60 covers other, with 9505.90.6020? I recall costumes classified 9505.90.6000 (8-digit), statistical 9505.90.6020? Hmm. There's 9505.90.6020 \"other\" \u2014 I'll go with 9505.90.6020.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Likely a costume \u2014 flammable costume? Textile costume of heading 9505? Actually unfinished raw edges suggests textile apparel? \"cape, sleeves\" \u2014 a costume. HTS 9505.90.6000? But 10-digit: 9505.90.6000 is 8-digit... 10-digit 9505.90.6020? Festive costumes: 9505.90.6020? Actually 9505.90.60 covers other, with 9505.90.6020? I recall costumes classified 9505.90.6000 (8-digit), statistical 9505.90.6020? Hmm. There's 9505.90.6020 \"other\" \u2014 I'll go with 9505.90.6020.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 123,
+      "completion_tokens": 230,
+      "total_tokens": 353,
+      "cost": 0.00102184,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00102184,
+        "upstream_inference_prompt_cost": 9.84e-06,
+        "upstream_inference_completions_cost": 0.001012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 183,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505906020",
+  "predicted_reason": "The description indicates a costume with cape and sleeves, which is classified as a festive/costume article of Chapter 95.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 123,
+    "completion_tokens": 230,
+    "total_tokens": 353,
+    "cost": 0.00102184,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00102184,
+      "upstream_inference_prompt_cost": 9.84e-06,
+      "upstream_inference_completions_cost": 0.001012
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 183,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:43:04.335766+00:00",
+  "latency_s": 2.318,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361489",
+  "rulingDate": "2026-06-01T00:00:00",
+  "true_code": "9401710011",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596294-FoHmmPr9Aw5XUl2UKePv",
+    "object": "chat.completion",
+    "created": 1791596294,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on upholstered seats with steel frames and hardwood components. The relevant heading is 9401. Seats with a metal frame, upholstered, fall under 9401.61 (other seats with wooden frames, upholstered) or 9401.71 (other seats with metal frames, upholstered).\n\nThe description says the seat foundations and backrests are affixed to steel metal frame bases, and the seats have solid hardwood components. The frame base is steel, so the classification is most likely 9401.71 (with metal frame, upholstered). The 9401.71.00 subheading has the statistical suffix 9401.71.0040 for \"Other\" (the 0010 suffix is for swivel seats, adjustable height). The swivel bar stool, item 1, would take a different suffix from the others. For a single answer, the common subheading is 9401.71.00 with suffix 40 (other).\n\nChecking the breakdown: 9401.71.00 has suffixes 9401.71.0020 for \"Seats of a kind used in dining rooms\" (I'm not sure of this), 9401.71.0040 for \"Other\". In practice, I'm unsure, so I'll go with 9401.71.0040.\n\n{\"hts_code\": \"9401.71.0040\", \"reason\": \"Upholstered seats (stools and armchair) mounted on steel metal frame bases are classified in heading 9401 as other upholstered seats with metal frames, subheading 9401.71, under the 'other' statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 510,
+      "completion_tokens": 487,
+      "total_tokens": 997,
+      "cost": 0.00589,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00589,
+        "upstream_inference_prompt_cost": 0.00102,
+        "upstream_inference_completions_cost": 0.00487
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401710040",
+  "predicted_reason": "Upholstered seats (stools and armchair) mounted on steel metal frame bases are classified in heading 9401 as other upholstered seats with metal frames, subheading 9401.71, under the 'other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 510,
+    "completion_tokens": 487,
+    "total_tokens": 997,
+    "cost": 0.00589,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00589,
+      "upstream_inference_prompt_cost": 0.00102,
+      "upstream_inference_completions_cost": 0.00487
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:15.243603+00:00",
+  "latency_s": 4.472,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

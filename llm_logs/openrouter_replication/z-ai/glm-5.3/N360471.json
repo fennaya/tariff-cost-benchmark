@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360471",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600084-QDC5nPOcjPiWp9T1rBha",
+    "object": "chat.completion",
+    "created": 1791600084,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4202.22.4500\", \"reason\": \"A handbag designed to carry small personal effects with an outer surface of molded plastic material is classified in heading 4202 as a handbag of plastic sheeting, with the 'other' subheading applying since it is not of vegetable fibers or sheeting of plastics reinforced/laminated in the specified manners.\"}",
+          "refusal": null,
+          "reasoning": "Plastic handbag \u2014 4202.32 if outer surface plastic sheeting? Injection molded plastic handbag with handles \u2014 4202.22? Handbags with outer surface of plastic sheeting: 4202.22.4500? Actually 4202.22.80? Handbags of plastic sheeting: 4202.22.4500 (18%? no). HTSUS 4202.22.4500: with outer surface of sheeting of plastics, other. Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Plastic handbag \u2014 4202.32 if outer surface plastic sheeting? Injection molded plastic handbag with handles \u2014 4202.22? Handbags with outer surface of plastic sheeting: 4202.22.4500? Actually 4202.22.80? Handbags of plastic sheeting: 4202.22.4500 (18%? no). HTSUS 4202.22.4500: with outer surface of sheeting of plastics, other. Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 189,
+      "completion_tokens": 188,
+      "total_tokens": 377,
+      "cost": 0.00081606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00081606,
+        "upstream_inference_prompt_cost": 2.646e-05,
+        "upstream_inference_completions_cost": 0.0007896
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 106,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202224500",
+  "predicted_reason": "A handbag designed to carry small personal effects with an outer surface of molded plastic material is classified in heading 4202 as a handbag of plastic sheeting, with the 'other' subheading applying since it is not of vegetable fibers or sheeting of plastics reinforced/laminated in the specified manners.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 188,
+    "total_tokens": 377,
+    "cost": 0.00081606,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00081606,
+      "upstream_inference_prompt_cost": 2.646e-05,
+      "upstream_inference_completions_cost": 0.0007896
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 106,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:41:25.116301+00:00",
+  "latency_s": 4.307,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

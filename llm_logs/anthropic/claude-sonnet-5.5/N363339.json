@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363339",
+  "rulingDate": "2026-07-20T00:00:00",
+  "true_code": "8536308000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596646-rMbXxzrUNIeTK1I0o8c2",
+    "object": "chat.completion",
+    "created": 1791596646,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Littelfuse polymer ESD suppressors (PulseGuard, AXGD1, PGB1, XGD) are voltage-dependent polymer devices. Classification is under heading 8533 (resistors) or 8536 (apparatus for protecting electrical circuits, for a voltage not exceeding 1,000 V) or 8541 (varistors).\n\nHeading 8533 includes varistors, which are voltage-dependent resistors. Subheading 8533.40 covers other variable resistors, including rheostats and potentiometers, and varistors fall there. Polymer ESD suppressors are non-linear voltage-dependent resistive devices, so they would be varistors under 8533.40.\n\nSeveral CBP rulings on Littelfuse PulseGuard ESD suppressors classified them under 8533.40.8000 or 8536.30.8000. I recall that NY N-rulings put the polymer ESD suppressors in 8536.30.8030, \"Other apparatus for protecting electrical circuits, for a voltage not exceeding 1,000 V.\" Surface-mount ones were often placed in 8533.40.80. The statistical suffix for 8536.30.80 is 8000 (post-2022, with 8536.30.8000 as the line).\n\nI considered the Explanatory Notes: 8536.30 covers fuses, circuit breakers, surge suppressors, and similar devices. The polymer ESD devices operate by switching, as a voltage-variable material, in a way similar to a surge suppressor. I will go with 8536.30.8000.\n\n```json\n{\"hts_code\": \"8536.30.8000\", \"reason\": \"One-channel polymer ESD suppressors rated at 24V are apparatus for protecting electrical circuits for a voltage not exceeding 1,000 V under heading 8536.\"}\n```\n\n{\"hts_code\": \"8536.30.8000\", \"reason\": \"One-channel polymer ESD suppressors rated at 24V are apparatus for protecting electrical circuits for a voltage not exceeding 1,000 V under heading 8536.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 335,
+      "completion_tokens": 675,
+      "total_tokens": 1010,
+      "cost": 0.00742,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00742,
+        "upstream_inference_prompt_cost": 0.00067,
+        "upstream_inference_completions_cost": 0.00675
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8536308000",
+  "predicted_reason": "One-channel polymer ESD suppressors rated at 24V are apparatus for protecting electrical circuits for a voltage not exceeding 1,000 V under heading 8536.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 335,
+    "completion_tokens": 675,
+    "total_tokens": 1010,
+    "cost": 0.00742,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00742,
+      "upstream_inference_prompt_cost": 0.00067,
+      "upstream_inference_completions_cost": 0.00675
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:06.796952+00:00",
+  "latency_s": 6.302,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

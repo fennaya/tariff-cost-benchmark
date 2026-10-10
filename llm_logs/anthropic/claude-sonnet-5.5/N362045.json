@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362045",
+  "rulingDate": "2026-06-16T00:00:00",
+  "true_code": "8531809051",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596408-p7Me4E22FA6SLpuFaCEP",
+    "object": "chat.completion",
+    "created": 1791596408,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a walk-through weapons detection system that uses magnetic sensors and AI to detect concealed metallic objects. The most likely classification is heading 9031, \"Measuring or checking instruments, appliances and machines, not specified elsewhere,\" or heading 8543, \"Electrical machines with individual functions.\" Metal detectors fall under 8543.20 (signal generators) or 9027, but walk-through metal detectors are typically classified in 8543.70.\n\nCBP rulings on walk-through metal detectors (e.g., Garrett) have placed them in 8543.70.9960, \"Other electrical machines and apparatus.\" The Evolv Express is a similar ruling subject. Some rulings place such devices in 9031.80 as measuring/checking instruments, but the 8543.70 route is more common for metal detectors. Heading 9031 covers instruments for checking, and Note 7 to Chapter 90 might apply. Still, metal detectors have usually gone to 8543.70.\n\nUnder the 2022+ HTS, 8543.70.99 is subdivided. The code 8543.70.9960 was the \"Other\" provision, and it was later restructured as 8543.70.9960 \"Other: Other.\" I'll use that.\n\n{\"hts_code\": \"8543.70.9960\", \"reason\": \"A walk-through AI-enabled magnetic-signature metal/weapon detection system is an electrical machine with individual function not specified elsewhere in Chapter 85, so it falls under heading 8543, subheading 8543.70 (other machines and apparatus).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 847,
+      "completion_tokens": 506,
+      "total_tokens": 1353,
+      "cost": 0.006754,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006754,
+        "upstream_inference_prompt_cost": 0.001694,
+        "upstream_inference_completions_cost": 0.00506
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "A walk-through AI-enabled magnetic-signature metal/weapon detection system is an electrical machine with individual function not specified elsewhere in Chapter 85, so it falls under heading 8543, subheading 8543.70 (other machines and apparatus).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 847,
+    "completion_tokens": 506,
+    "total_tokens": 1353,
+    "cost": 0.006754,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006754,
+      "upstream_inference_prompt_cost": 0.001694,
+      "upstream_inference_completions_cost": 0.00506
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:09.077855+00:00",
+  "latency_s": 5.614,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

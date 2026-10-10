@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362411",
+  "rulingDate": "2026-06-30T00:00:00",
+  "true_code": "9401616011",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600310-m9uH7VGLm1ZZBYYjsScZ",
+    "object": "chat.completion",
+    "created": 1791600310,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9401.61.6010\", \"reason\": \"The modular sectional seating components are upholstered seats with wooden frames, classified as other upholstered seating in subheading 9401.61.\"}",
+          "refusal": null,
+          "reasoning": "9401.61 \u2014 upholstered seats, non-folding. Modular sectional seating components \u2192 9401.61.6010? Upholstered seats with metal frames... wooden frames. 9401.61.6010 \"Upholstered, other\" \u2014 actually 9401.61.60 is other seats upholstered; statistical suffix 10? Common ruling: 9401.61.6010.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "9401.61 \u2014 upholstered seats, non-folding. Modular sectional seating components \u2192 9401.61.6010? Upholstered seats with metal frames... wooden frames. 9401.61.6010 \"Upholstered, other\" \u2014 actually 9401.61.60 is other seats upholstered; statistical suffix 10? Common ruling: 9401.61.6010.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 322,
+      "completion_tokens": 146,
+      "total_tokens": 468,
+      "cost": 0.0005608,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005608,
+        "upstream_inference_prompt_cost": 6.44e-05,
+        "upstream_inference_completions_cost": 0.0004964
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 95,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401616010",
+  "predicted_reason": "The modular sectional seating components are upholstered seats with wooden frames, classified as other upholstered seating in subheading 9401.61.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 322,
+    "completion_tokens": 146,
+    "total_tokens": 468,
+    "cost": 0.0005608,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0005608,
+      "upstream_inference_prompt_cost": 6.44e-05,
+      "upstream_inference_completions_cost": 0.0004964
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 95,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:45:11.110739+00:00",
+  "latency_s": 2.498,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

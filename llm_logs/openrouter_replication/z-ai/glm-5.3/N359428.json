@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359428",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909206",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599908-zY4g2iQTYJht62k7wYnM",
+    "object": "chat.completion",
+    "created": 1791599908,
+    "model": "z-ai/glm-5.3",
+    "provider": "Io Net",
+    "system_fingerprint": "vllm-0.28.0-tp4-ep-9600fb5f",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.90.0090\", \"reason\": \"Valacyclovir hydrochloride tablets are medicaments containing no specifically enumerated active ingredient, classifying under heading 3004 as other medicaments put up in measured doses for retail sale.\"}",
+          "refusal": null,
+          "reasoning": "Valacyclovir hydrochloride tablets \u2014 antiviral. Heading 3004. Valacyclovir is not listed specifically? HTS 3004.50? No, that's alkaloids. Antivirals: 3004.90 perhaps. Actually 3003/3004.90 \"Other\" \u2014 but there is 3004.99? 3004.90.00? There's 3004.90.0090? Valacyclovir... Acyclovir? Not specifically listed. Use 3004.90.0090? Actually 3004.90.00 \"Other\" with suffixes: 3004.90.0090? There's 3004.90.0060? I'll answer 3004.90.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Valacyclovir hydrochloride tablets \u2014 antiviral. Heading 3004. Valacyclovir is not listed specifically? HTS 3004.50? No, that's alkaloids. Antivirals: 3004.90 perhaps. Actually 3003/3004.90 \"Other\" \u2014 but there is 3004.99? 3004.90.00? There's 3004.90.0090? Valacyclovir... Acyclovir? Not specifically listed. Use 3004.90.0090? Actually 3004.90.00 \"Other\" with suffixes: 3004.90.0090? There's 3004.90.0060? I'll answer 3004.90.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 137,
+      "completion_tokens": 231,
+      "total_tokens": 368,
+      "cost": 0.00088815,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00088815,
+        "upstream_inference_prompt_cost": 0.00010275,
+        "upstream_inference_completions_cost": 0.0007854
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 171,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004900090",
+  "predicted_reason": "Valacyclovir hydrochloride tablets are medicaments containing no specifically enumerated active ingredient, classifying under heading 3004 as other medicaments put up in measured doses for retail sale.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 137,
+    "completion_tokens": 231,
+    "total_tokens": 368,
+    "cost": 0.00088815,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00088815,
+      "upstream_inference_prompt_cost": 0.00010275,
+      "upstream_inference_completions_cost": 0.0007854
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 171,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Io Net",
+  "requested_at": "2026-10-10T02:38:29.234072+00:00",
+  "latency_s": 3.376,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

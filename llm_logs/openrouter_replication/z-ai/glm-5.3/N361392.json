@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361392",
+  "rulingDate": "2026-05-28T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600179-0iknwzuIeqpqZetfU7vC",
+    "object": "chat.completion",
+    "created": 1791600179,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.42.0560\", \"reason\": \"The product is a women's cotton bathrobe/dressing gown (unfinished stitching does not preclude garment classification), classifiable in HTSUS 6211.42.0560.\"}",
+          "refusal": null,
+          "reasoning": "Robe, unfinished \u2014 likely 6211.42.00... women's robe of cotton? Actually \"unfinished\" suggests not fully manufactured; but classification as garment 6211 nightwear? Robes are 6211.42.0560? Women's cotton robes: 6211.42.0560? Actually 6211.42.00 women's of cotton. 10-digit: 6211.42.0520? Let me recall: 6211.42.0560 women's or girls' bathrobes... 6211.42.0520? Bathrobes, dressing gowns cotton women's: 6211.42.0560.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Robe, unfinished \u2014 likely 6211.42.00... women's robe of cotton? Actually \"unfinished\" suggests not fully manufactured; but classification as garment 6211 nightwear? Robes are 6211.42.0560? Women's cotton robes: 6211.42.0560? Actually 6211.42.00 women's of cotton. 10-digit: 6211.42.0520? Let me recall: 6211.42.0560 women's or girls' bathrobes... 6211.42.0520? Bathrobes, dressing gowns cotton women's: 6211.42.0560.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 167,
+      "completion_tokens": 218,
+      "total_tokens": 385,
+      "cost": 0.001052849,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001052849,
+        "upstream_inference_prompt_cost": 6.449e-06,
+        "upstream_inference_completions_cost": 0.0010464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 157,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211420560",
+  "predicted_reason": "The product is a women's cotton bathrobe/dressing gown (unfinished stitching does not preclude garment classification), classifiable in HTSUS 6211.42.0560.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 167,
+    "completion_tokens": 218,
+    "total_tokens": 385,
+    "cost": 0.001052849,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001052849,
+      "upstream_inference_prompt_cost": 6.449e-06,
+      "upstream_inference_completions_cost": 0.0010464
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:59.516826+00:00",
+  "latency_s": 1.427,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

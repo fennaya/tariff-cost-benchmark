@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357157",
+  "rulingDate": "2026-01-15T00:00:00",
+  "true_code": "6404199090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599576-9ZzS8moS0VyNsnlTkZZL",
+    "object": "chat.completion",
+    "created": 1791599576,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6404.19.3560\", \"reason\": \"Footwear with textile upper (53% textile, majority external surface area) and rubber/plastics soles, below-the-ankle, valued over $12 per pair, falls in the over-$12 subheading for other footwear with textile uppers.\"}",
+          "refusal": null,
+          "reasoning": "Classic ruling: textile upper 53%, over $12/pair, foxing-like band \u2014 6404.19.3560? That's for textile upper, not over 50% textile... Actually 6404.19.35 covers textile upper footwear with soles of rubber/plastics, valued over $12, not covering ankle... 6404.19.3560 (other, valued over $12/pair). Yes.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Classic ruling: textile upper 53%, over $12/pair, foxing-like band \u2014 6404.19.3560? That's for textile upper, not over 50% textile... Actually 6404.19.35 covers textile upper footwear with soles of rubber/plastics, valued over $12, not covering ankle... 6404.19.3560 (other, valued over $12/pair). Yes.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 249,
+      "completion_tokens": 169,
+      "total_tokens": 418,
+      "cost": 0.00074466,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00074466,
+        "upstream_inference_prompt_cost": 3.486e-05,
+        "upstream_inference_completions_cost": 0.0007098
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 96,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6404193560",
+  "predicted_reason": "Footwear with textile upper (53% textile, majority external surface area) and rubber/plastics soles, below-the-ankle, valued over $12 per pair, falls in the over-$12 subheading for other footwear with textile uppers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 249,
+    "completion_tokens": 169,
+    "total_tokens": 418,
+    "cost": 0.00074466,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00074466,
+      "upstream_inference_prompt_cost": 3.486e-05,
+      "upstream_inference_completions_cost": 0.0007098
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 96,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:32:57.081259+00:00",
+  "latency_s": 9.306,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

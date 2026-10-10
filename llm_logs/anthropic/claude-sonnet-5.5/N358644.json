@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358644",
+  "rulingDate": "2026-02-18T00:00:00",
+  "true_code": "8481809050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595640-jkaDizjq8KscVGy6LOw0",
+    "object": "chat.completion",
+    "created": 1791595640,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Fuel injectors for diesel engines are classified in heading 8409 as parts suitable for use solely or principally with compression-ignition internal combustion piston engines. Marine diesel engines fall under 8408.10, so parts go in 8409.99 or 8409.91. Heading 8409.91 covers parts for spark-ignition engines, and 8409.99 covers other parts. The 8409.99 statistical suffixes include 8409.99.91 (other) and 8409.99.9190 for \"Other\". Both subheadings cover non-spark parts, and 8409.99.91 has further breakouts such as 8409.99.9130 for fuel injection pumps or nozzles.\n\nBosch injector 0432191581 is a nozzle holder assembly. CBP rulings have classified fuel injectors for diesel engines under 8409.99.9190 (other), after earlier use of 8409.99.9130. I recall the HTS 8409.99.91 subdivisions: 8409.99.9130 is \"Fuel injection pumps,\" 8409.99.9150 is \"Cylinder liners,\" 8409.99.9160 is \"Pistons,\" and 8409.99.9190 is \"Other\". I'm not confident fuel injectors have their own breakout, so I'll go with 8409.99.9190.\n\n{\"hts_code\": \"8409.99.9190\", \"reason\": \"A fuel injector used in marine diesel (compression-ignition) engines is a part suitable for use solely or principally with engines of heading 8408, so it falls under 8409.99 as an other part.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 292,
+      "completion_tokens": 508,
+      "total_tokens": 800,
+      "cost": 0.005664,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005664,
+        "upstream_inference_prompt_cost": 0.000584,
+        "upstream_inference_completions_cost": 0.00508
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8409999190",
+  "predicted_reason": "A fuel injector used in marine diesel (compression-ignition) engines is a part suitable for use solely or principally with engines of heading 8408, so it falls under 8409.99 as an other part.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 292,
+    "completion_tokens": 508,
+    "total_tokens": 800,
+    "cost": 0.005664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005664,
+      "upstream_inference_prompt_cost": 0.000584,
+      "upstream_inference_completions_cost": 0.00508
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:20.918073+00:00",
+  "latency_s": 5.147,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

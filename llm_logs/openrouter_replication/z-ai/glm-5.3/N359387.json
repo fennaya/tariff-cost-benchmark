@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359387",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "3004909216",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599899-2ASphyiob1w4cfZLyUWb",
+    "object": "chat.completion",
+    "created": 1791599899,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.59.5020\", \"reason\": \"Tofacitinib citrate is a pyrrolopyrimidine (heterocyclic, other than specified) active ingredient in dosed tablet form, classifiable as a medicament of heading 3004 under the 'Other' heterocyclic subheading 3004.59.50.\"}",
+          "refusal": null,
+          "reasoning": "Tofacitinib citrate \u2014 other heterocyclic? It's a pyrrolo[2,3-d]pyrimidine \u2014 heading 3004. Likely 3004.90.92xx? Actually tofacitinib classified under 3004.99? Pyrimidine derivatives are 2933.59, so 3004.59? Tofacitinib is a pyrrolopyrimidine \u2014 subheading 2933.59. Finished dose 3004.59.50? Common classification: 3004.59.5020? There's a specific provision? I recall tofacitinib tablets classified 3004.59.5020? Not sure. Use 3004.59.5020? Safer: 3004.59.5090? Actually 3004.59.50 covers \"Other\" packed for retail. Stat suffixes: 3004.59.5020 \"Other\" ... I'll answer 3004.59.5020? Hmm. Known: FDA products often 3004.59.5020 is \"Other, other\". I'll go with 3004.59.5020.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Tofacitinib citrate \u2014 other heterocyclic? It's a pyrrolo[2,3-d]pyrimidine \u2014 heading 3004. Likely 3004.90.92xx? Actually tofacitinib classified under 3004.99? Pyrimidine derivatives are 2933.59, so 3004.59? Tofacitinib is a pyrrolopyrimidine \u2014 subheading 2933.59. Finished dose 3004.59.50? Common classification: 3004.59.5020? There's a specific provision? I recall tofacitinib tablets classified 3004.59.5020? Not sure. Use 3004.59.5020? Safer: 3004.59.5090? Actually 3004.59.50 covers \"Other\" packed for retail. Stat suffixes: 3004.59.5020 \"Other\" ... I'll answer 3004.59.5020? Hmm. Known: FDA products often 3004.59.5020 is \"Other, other\". I'll go with 3004.59.5020.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 341,
+      "total_tokens": 547,
+      "cost": 0.001644834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001644834,
+        "upstream_inference_prompt_cost": 8.034e-06,
+        "upstream_inference_completions_cost": 0.0016368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 258,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004595020",
+  "predicted_reason": "Tofacitinib citrate is a pyrrolopyrimidine (heterocyclic, other than specified) active ingredient in dosed tablet form, classifiable as a medicament of heading 3004 under the 'Other' heterocyclic subheading 3004.59.50.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 206,
+    "completion_tokens": 341,
+    "total_tokens": 547,
+    "cost": 0.001644834,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001644834,
+      "upstream_inference_prompt_cost": 8.034e-06,
+      "upstream_inference_completions_cost": 0.0016368
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 258,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:38:20.144316+00:00",
+  "latency_s": 7.474,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

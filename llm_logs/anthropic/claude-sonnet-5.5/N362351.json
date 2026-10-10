@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362351",
+  "rulingDate": "2026-06-25T00:00:00",
+  "true_code": "8705900080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596471-hrFriO7cijEWKxlfut2Y",
+    "object": "chat.completion",
+    "created": 1791596471,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Self-propelled agricultural sprayers: HTSUS 8424.82 covers agricultural or horticultural sprayers, but 8424.82 applies to mechanical appliances for projecting liquids or powders. Self-propelled sprayers have historically been classified in 8701.91 or 8424.81, depending on the ruling. CBP rulings (e.g., N-series for Case Patriot sprayers) have classified self-propelled sprayers under 8424.82.0090 or similar. Chapter 87 note: Heading 8701 covers tractors, meaning vehicles constructed essentially for hauling or pushing another machine. A sprayer is not a tractor, so it is classified under 8424.\n\nThe 8424.81 subheading covers \"Agricultural or horticultural,\" and 8424.82 covers \"Agricultural or horticultural\" sprayers, with 8424.81 for other appliances. The correct structure is:\n- 8424.81: Agricultural or horticultural\n- 8424.81.10: Sprayers... in the HTSUS, 8424.81.10 is \"Foggers\"? Actually 8424.81.10 is \"Agricultural or horticultural: Sprayers, ... Other: 8424.81.2000 Hand-operated? 8424.81.30 Foggers? 8424.81.90?\n\nThe HTSUS has 8424.82.00 \"Agricultural or horticultural\" as a subheading with 8424.82.0010 \"Irrigation sprinklers\", 8424.82.0090 \"Other\"? In 8424.81 (agricultural or horticultural), the breakdown is: 8424.81.10 Sprayers, mounted on or drawn by tractors (8424.81.2000?), 8424.81.30 Other sprayers, 8424.81.90 Other. In the actual HTSUS, 8424.81 is \"Agricultural or horticultural,\" and 8424.82 is \"Other.\" Hmm: 8424.82 is \"Agricultural or horticultural\" and 8424.89 is \"Other.\" And 8424.81 is \"Other appliances\"? In HS 2022: 8424.30 steam/sand blasting; 8424.41 portable sprayers; 8424.49 other; 8424.81 agricultural or horticultural; 8424.89 other. So 8424.81 is agricultural. In the HTSUS, 8424.81: 8424.81.10 Sprayers... 8424.81.2000 Irrigation; 8424.81.30 Sprayers? 8424.81.9000 other. Self-propelled sprayers are likely 8424.81.1000 or 8424.81.9000? I'll go with 8424.81.9000, as it's likely.\n\n```json\n{\"hts_code\": \"8424.81.9000\", \"reason\": \"Self-propelled agricultural sprayers/floaters are agricultural spraying appliances of heading 8424 (subheading 8424.81), not tractors of heading 8701.\"}\n```\n\n{\"hts_code\": \"8424.81.9000\", \"reason\": \"Self-propelled agricultural sprayers/floaters are agricultural spraying appliances of heading 8424 (subheading 8424.81), not tractors of heading 8701.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 975,
+      "completion_tokens": 1046,
+      "total_tokens": 2021,
+      "cost": 0.01241,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.01241,
+        "upstream_inference_prompt_cost": 0.00195,
+        "upstream_inference_completions_cost": 0.01046
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8424819000",
+  "predicted_reason": "Self-propelled agricultural sprayers/floaters are agricultural spraying appliances of heading 8424 (subheading 8424.81), not tractors of heading 8701.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 975,
+    "completion_tokens": 1046,
+    "total_tokens": 2021,
+    "cost": 0.01241,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.01241,
+      "upstream_inference_prompt_cost": 0.00195,
+      "upstream_inference_completions_cost": 0.01046
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:41:11.434928+00:00",
+  "latency_s": 8.465,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

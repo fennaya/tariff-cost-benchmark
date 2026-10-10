@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358302",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8481200050",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599746-WHM7XkZFWd162aIsiNN3",
+    "object": "chat.completion",
+    "created": 1791599746,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8481.20.0000\", \"reason\": \"The console assembly's essential character is imparted by the integrated hydraulic valve bank (manifold with 14 steel valves) that controls the flow and direction of hydraulic fluid, classifying it as a hydraulic valve of heading 8481.\"}",
+          "refusal": null,
+          "reasoning": "Hydraulic console with valves for drilling \u2014 likely 8412.21 parts? Actually valve bank with 14 valves \u2014 hydraulic valves 8481.20.0000? The console assembly is a hydraulic control unit. Likely classified as hydraulic valves 8481.20.0090? 8481.20.0000. But console assembly with gauges and levers \u2014 could be 8431? Purpose-built for mining drilling \u2014 machinery of 8430 parts? It's a control console for drilling machinery \u2014 part of drilling machine: 8431.41? Drilling machinery parts 8431.42? Actually 8431.42 parts of boring/sinking machinery. But valve bank dominates. CBP rulings on hydraulic control consoles often classify under 8481.20. I'll go 8481.20.0090? HTS: 8481.20.0000 (hydraulic valves). Use 8481.20.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Hydraulic console with valves for drilling \u2014 likely 8412.21 parts? Actually valve bank with 14 valves \u2014 hydraulic valves 8481.20.0000? The console assembly is a hydraulic control unit. Likely classified as hydraulic valves 8481.20.0090? 8481.20.0000. But console assembly with gauges and levers \u2014 could be 8431? Purpose-built for mining drilling \u2014 machinery of 8430 parts? It's a control console for drilling machinery \u2014 part of drilling machine: 8431.41? Drilling machinery parts 8431.42? Actually 8431.42 parts of boring/sinking machinery. But valve bank dominates. CBP rulings on hydraulic control consoles often classify under 8481.20. I'll go 8481.20.0090? HTS: 8481.20.0000 (hydraulic valves). Use 8481.20.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 283,
+      "total_tokens": 471,
+      "cost": 0.0009998,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0009998,
+        "upstream_inference_prompt_cost": 3.76e-05,
+        "upstream_inference_completions_cost": 0.0009622
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 214,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8481200000",
+  "predicted_reason": "The console assembly's essential character is imparted by the integrated hydraulic valve bank (manifold with 14 steel valves) that controls the flow and direction of hydraulic fluid, classifying it as a hydraulic valve of heading 8481.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 188,
+    "completion_tokens": 283,
+    "total_tokens": 471,
+    "cost": 0.0009998,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0009998,
+      "upstream_inference_prompt_cost": 3.76e-05,
+      "upstream_inference_completions_cost": 0.0009622
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 214,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:35:46.444008+00:00",
+  "latency_s": 2.103,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N352634",
+  "rulingDate": "2026-03-17T00:00:00",
+  "true_code": "2920902000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594024-R5ArE4fmhQrgI1pOxATF",
+    "object": "chat.completion",
+    "created": 1791594024,
+    "model": "z-ai/glm-5.3",
+    "provider": "Cloudflare",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"2933.99.9601\", \"reason\": \"Hexaphenoxycyclotriphosphazene is a nitrogen-containing heterocyclic compound (cyclotriphosphazene) not elsewhere specified or included, classified as an other heterocyclic compound with nitrogen hetero-atoms.\"}",
+          "refusal": null,
+          "reasoning": "Phosphazene flame retardant \u2014 likely 2933.99? Actually cyclophosphazene \u2014 heterocyclic with phosphorus and nitrogen. HTS 2933.99.9601? Known ruling: hexaphenoxycyclotriphosphazene classified 2933.99.9601? There's NY ruling classifying it under 2933.99.96 (heterocyclic compounds with nitrogen, other). 10-digit: 2933.99.9601? Actually 2933.99.96 statistical suffixes: 2933.99.9601 \"other\". I'll answer that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Phosphazene flame retardant \u2014 likely 2933.99? Actually cyclophosphazene \u2014 heterocyclic with phosphorus and nitrogen. HTS 2933.99.9601? Known ruling: hexaphenoxycyclotriphosphazene classified 2933.99.9601? There's NY ruling classifying it under 2933.99.96 (heterocyclic compounds with nitrogen, other). 10-digit: 2933.99.9601? Actually 2933.99.96 statistical suffixes: 2933.99.9601 \"other\". I'll answer that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 218,
+      "total_tokens": 429,
+      "cost": 0.0012546,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0012546,
+        "upstream_inference_prompt_cost": 0.0002954,
+        "upstream_inference_completions_cost": 0.0009592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 104,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "2933999601",
+  "predicted_reason": "Hexaphenoxycyclotriphosphazene is a nitrogen-containing heterocyclic compound (cyclotriphosphazene) not elsewhere specified or included, classified as an other heterocyclic compound with nitrogen hetero-atoms.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 218,
+    "total_tokens": 429,
+    "cost": 0.0012546,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0012546,
+      "upstream_inference_prompt_cost": 0.0002954,
+      "upstream_inference_completions_cost": 0.0009592
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 104,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Cloudflare",
+  "requested_at": "2026-10-10T01:00:24.979072+00:00",
+  "latency_s": 5.374,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

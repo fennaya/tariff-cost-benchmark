@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359715",
+  "rulingDate": "2026-03-20T00:00:00",
+  "true_code": "0511910090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599948-C58qzLFclmZHj138huaT",
+    "object": "chat.completion",
+    "created": 1791599948,
+    "model": "z-ai/glm-5.3",
+    "provider": "Makora",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0511.99.6000\", \"reason\": \"Dried crustacean eggs (fairy shrimp, moina, daphnia) not for human consumption are animal products of crustaceans, classifiable in heading 0511 as dried, unfit-for-human-consumption crustacean products.\"}",
+          "refusal": null,
+          "reasoning": "Dried fairy shrimp eggs \u2014 likely 0511.91.0000? Crustacean eggs... fairy shrimp eggs (like brine shrimp eggs) classified 0511.99? Actually brine shrimp eggs classified in 2309? No\u20140511.91 \"fish\" products? 0511.99 covers crustaceans... 0511.99.60? Crustacean products: 0511.99.60 \"crustacean products, unfit for human consumption\"? I recall 0511.99.6000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Dried fairy shrimp eggs \u2014 likely 0511.91.0000? Crustacean eggs... fairy shrimp eggs (like brine shrimp eggs) classified 0511.99? Actually brine shrimp eggs classified in 2309? No\u20140511.91 \"fish\" products? 0511.99 covers crustaceans... 0511.99.60? Crustacean products: 0511.99.60 \"crustacean products, unfit for human consumption\"? I recall 0511.99.6000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 364,
+      "completion_tokens": 197,
+      "total_tokens": 561,
+      "cost": 0.00091776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00091776,
+        "upstream_inference_prompt_cost": 5.096e-05,
+        "upstream_inference_completions_cost": 0.0008668
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 90,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0511996000",
+  "predicted_reason": "Dried crustacean eggs (fairy shrimp, moina, daphnia) not for human consumption are animal products of crustaceans, classifiable in heading 0511 as dried, unfit-for-human-consumption crustacean products.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 364,
+    "completion_tokens": 197,
+    "total_tokens": 561,
+    "cost": 0.00091776,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00091776,
+      "upstream_inference_prompt_cost": 5.096e-05,
+      "upstream_inference_completions_cost": 0.0008668
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 90,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Makora",
+  "requested_at": "2026-10-10T02:39:08.833077+00:00",
+  "latency_s": 7.479,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

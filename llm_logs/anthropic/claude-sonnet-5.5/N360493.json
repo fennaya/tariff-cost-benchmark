@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360493",
+  "rulingDate": "2026-05-06T00:00:00",
+  "true_code": "3004909225",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596098-Xk8OyZwT9EgzfVOjpkrX",
+    "object": "chat.completion",
+    "created": 1791596098,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Colestipol tablets are a medicament in measured doses for retail sale, so they fall in heading 3004. Colestipol hydrochloride is a copolymer of diethylenetriamine and epichlorohydrin, a polymer with amine groups. Tablets of this kind are generally classified in 3004.90, \"Other\" medicaments. 3004.90.92 was the former \"Other\" subheading, and the more recent 3004.90.9290 is a statistical suffix.\n\nI recall a CBP ruling on Colestipol hydrochloride tablets that classified them in 3004.90.9250 or thereabouts. The 3004.90.92 line reads \"Other: Other: Other,\" with 9230 for antidiabetic and 9240 for others, though I am unsure of those. Older statistical suffixes under 3004.90.92 include 10, 20, 30 and others. The current 3004.90.92 breakdown has 3004.90.9215 for \"Other,\" 9240 for \"Cardiovascular drugs,\" and so on. I am not certain of that either, but \"Other\" is plausible, and 3004.90.9290 or 9255 may also exist. I will go with 3004.90.9290 as the best guess.\n\n```json\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Colestipol hydrochloride 1 g tablets are a medicament put up in measured doses for retail sale, so they fall under heading 3004 in the residual 'other medicaments' subheading.\"}\n```\n\nActual output:\n\n{\"hts_code\": \"3004.90.9290\", \"reason\": \"Colestipol hydrochloride 1 g tablets are a medicament put up in measured doses for retail sale, so they fall under heading 3004 in the residual 'other medicaments' subheading.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 574,
+      "total_tokens": 805,
+      "cost": 0.006202,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006202,
+        "upstream_inference_prompt_cost": 0.000462,
+        "upstream_inference_completions_cost": 0.00574
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909290",
+  "predicted_reason": "Colestipol hydrochloride 1 g tablets are a medicament put up in measured doses for retail sale, so they fall under heading 3004 in the residual 'other medicaments' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 231,
+    "completion_tokens": 574,
+    "total_tokens": 805,
+    "cost": 0.006202,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006202,
+      "upstream_inference_prompt_cost": 0.000462,
+      "upstream_inference_completions_cost": 0.00574
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:58.662857+00:00",
+  "latency_s": 5.219,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

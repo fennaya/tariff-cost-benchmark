@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358767",
+  "rulingDate": "2026-03-04T00:00:00",
+  "true_code": "4911998000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595662-0pmoFJiNjyVya4DfEVVJ",
+    "object": "chat.completion",
+    "created": 1791595662,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on emotion cubes in a presentation case. The cubes are printed with emotion words and prompts, and the set is used by adults for structured reflection and discussion. The case is not the essential character, so the cubes determine classification.\n\nThe candidates are:\n- Heading 4911: other printed matter. Cubes of MDF with printing would not fit well here.\n- Heading 9503: toys. This does not fit because the product is for adults.\n- Heading 9504.90: games. The cubes are not played as a game with rules, although this is possible.\n- Heading 4420: wooden articles. Printed MDF cubes could be classified here as other articles of wood, under 4421.99 for other articles of wood. MDF is fiberboard, so 4421.99.98 would be the \"other articles of wood\" provision for fiberboard.\n\nUnder GRI 3(b), the set's essential character comes from the cubes. The question is which heading applies to cubes with printed words. The cubes are printed with text but are not printed matter in the usual sense. I recall rulings on \"conversation cubes\" that went to 4421.99.9880 (other articles of wood, other). Fiberboard articles are classified at 4421.99.98 in the current schedule. The statistical suffix is 4421.99.9880.\n\n{\"hts_code\": \"4421.99.9880\", \"reason\": \"The set's essential character comes from the printed MDF cubes rather than the case, and as adult educational non-toy, non-game articles of fiberboard they fall under other articles of wood in heading 4421.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 504,
+      "total_tokens": 954,
+      "cost": 0.00594,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00594,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.00504
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4421999880",
+  "predicted_reason": "The set's essential character comes from the printed MDF cubes rather than the case, and as adult educational non-toy, non-game articles of fiberboard they fall under other articles of wood in heading 4421.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 450,
+    "completion_tokens": 504,
+    "total_tokens": 954,
+    "cost": 0.00594,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00594,
+      "upstream_inference_prompt_cost": 0.0009,
+      "upstream_inference_completions_cost": 0.00504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:42.949341+00:00",
+  "latency_s": 5.449,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

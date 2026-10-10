@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359019",
+  "rulingDate": "2026-03-06T00:00:00",
+  "true_code": "6210505555",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599840-k7jWmyTOoTMcJ4tZiXLD",
+    "object": "chat.completion",
+    "created": 1791599840,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6211.33.1000\", \"reason\": \"A fishing vest of woven man-made fiber (nylon) fabric is classified as a vest in HTSUS 6211.33.1000, as the coated woven nylon panels provide the essential character and no water-resistance claim is made.\"}",
+          "refusal": null,
+          "reasoning": "Vest, coated nylon, water resistant? Fishing vest \u2014 likely 6211.43 (of man-made fibers, other garments) \u2014 coated fabric water resistant? Not stated water resistant. 6211.33.2000? Other garments of man-made fibers, woven: 6211.33.1000 vests? Actually 6211.33.10 is \"vests\" \u2014 yes, 6211.33.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Vest, coated nylon, water resistant? Fishing vest \u2014 likely 6211.43 (of man-made fibers, other garments) \u2014 coated fabric water resistant? Not stated water resistant. 6211.33.2000? Other garments of man-made fibers, woven: 6211.33.1000 vests? Actually 6211.33.10 is \"vests\" \u2014 yes, 6211.33.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 169,
+      "total_tokens": 409,
+      "cost": 0.0007892,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007892,
+        "upstream_inference_prompt_cost": 4.56e-05,
+        "upstream_inference_completions_cost": 0.0007436
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 76,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6211331000",
+  "predicted_reason": "A fishing vest of woven man-made fiber (nylon) fabric is classified as a vest in HTSUS 6211.33.1000, as the coated woven nylon panels provide the essential character and no water-resistance claim is made.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 240,
+    "completion_tokens": 169,
+    "total_tokens": 409,
+    "cost": 0.0007892,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007892,
+      "upstream_inference_prompt_cost": 4.56e-05,
+      "upstream_inference_completions_cost": 0.0007436
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 76,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:37:20.299292+00:00",
+  "latency_s": 2.322,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

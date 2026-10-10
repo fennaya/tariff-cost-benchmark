@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361071",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "8543901200",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600144-hqfAyTtbntpEMK8Rfo8Q",
+    "object": "chat.completion",
+    "created": 1791600144,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8483.40.0000\", \"reason\": \"Precision planetary gearboxes (speed changers) are classifiable as gear boxes and other speed changers in heading 8483, and as parts of PVD machines they remain classified here since heading 8483 parts are not excluded by note 2 to section XVI.\"}",
+          "refusal": null,
+          "reasoning": "Gearbox for machinery \u2014 heading 8483 gearboxes? Planetary gearboxes classified 8483.40.00. Likely 8483.40.0040? Gears and gearing: 8483.40.00 \"gear boxes and other speed changers\". 10-digit: 8483.40.0040? Actually 8483.40.0030/0040 exist? HTSUS 8483.40.0000... I'll answer 8483.40.0040? Safer: 8483.40.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Gearbox for machinery \u2014 heading 8483 gearboxes? Planetary gearboxes classified 8483.40.00. Likely 8483.40.0040? Gears and gearing: 8483.40.00 \"gear boxes and other speed changers\". 10-digit: 8483.40.0040? Actually 8483.40.0030/0040 exist? HTSUS 8483.40.0000... I'll answer 8483.40.0040? Safer: 8483.40.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 224,
+      "completion_tokens": 211,
+      "total_tokens": 435,
+      "cost": 0.00094632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00094632,
+        "upstream_inference_prompt_cost": 1.792e-05,
+        "upstream_inference_completions_cost": 0.0009284
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 134,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483400000",
+  "predicted_reason": "Precision planetary gearboxes (speed changers) are classifiable as gear boxes and other speed changers in heading 8483, and as parts of PVD machines they remain classified here since heading 8483 parts are not excluded by note 2 to section XVI.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 224,
+    "completion_tokens": 211,
+    "total_tokens": 435,
+    "cost": 0.00094632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00094632,
+      "upstream_inference_prompt_cost": 1.792e-05,
+      "upstream_inference_completions_cost": 0.0009284
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 134,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:42:24.723630+00:00",
+  "latency_s": 1.461,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

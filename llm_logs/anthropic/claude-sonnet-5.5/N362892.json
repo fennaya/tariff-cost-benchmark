@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362892",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "8452219000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596582-Z10ITOwSlbP1M2UgJ1LE",
+    "object": "chat.completion",
+    "created": 1791596582,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a multi-function machine that sews, embroiders and perforates leather. Under GRI 3(b) or Section XVI Note 3, the classification follows the principal function. The machine is built around sewing and embroidery, and the perforation is a secondary function.\n\nOptions considered:\n- Heading 8452 covers sewing machines. Subheading 8452.21 covers automatic units, and 8452.29 covers other. Heading 8452 excludes embroidery machines, which fall under 8447.\n- Heading 8447 covers embroidery machines, with 8447.90 for other machinery.\n- Heading 8453 covers machines for working hides and skins, including leather. Perforating leather would fall here, and 8453.80 covers other machines.\n\nCBP has issued rulings on similar Richpeace machines, such as the automatic sewing and perforation machine for automotive leather. I recall those were classified in 8452.21.00 as automatic sewing machines, with 8452.21.00 having a statistical suffix of 90. Because this machine has a sewing head, an embroidery head and a perforation system, the sewing function is probably the principal one. The sewing machine heading 8452 notes say it covers units for sewing leather.\n\n8452.21.00 is \"Automatic units\" under \"Other sewing machines.\" The 10-digit statistical code is 8452.21.0090, \"Other,\" while 8452.21.0010 is, I believe, for \"Automatic units: Sewing machines of the household type.\" I am not sure of that suffix assignment.\n\nI'll go with 8452.21.0090.\n\n{\"hts_code\": \"8452.21.0090\", \"reason\": \"The multi-function CNC leather sewing, embroidery and perforation workstation is classified by its principal sewing function as an automatic-unit industrial sewing machine under heading 8452 (GRI 1 and Section XVI Note 3).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 518,
+      "completion_tokens": 609,
+      "total_tokens": 1127,
+      "cost": 0.007126,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007126,
+        "upstream_inference_prompt_cost": 0.001036,
+        "upstream_inference_completions_cost": 0.00609
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8452210090",
+  "predicted_reason": "The multi-function CNC leather sewing, embroidery and perforation workstation is classified by its principal sewing function as an automatic-unit industrial sewing machine under heading 8452 (GRI 1 and Section XVI Note 3).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 518,
+    "completion_tokens": 609,
+    "total_tokens": 1127,
+    "cost": 0.007126,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007126,
+      "upstream_inference_prompt_cost": 0.001036,
+      "upstream_inference_completions_cost": 0.00609
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:02.327358+00:00",
+  "latency_s": 6.059,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

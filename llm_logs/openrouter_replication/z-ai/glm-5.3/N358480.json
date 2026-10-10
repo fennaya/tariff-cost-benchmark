@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358480",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "0307520000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599773-KTvYRz5vCKZ2IIGU4yuZ",
+    "object": "chat.completion",
+    "created": 1791599773,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"0307.51.0000\", \"reason\": \"The cleaning, ozone treatment, salting, and refreezing in Spain do not change the product from its raw frozen octopus state, so it remains classified as frozen octopus under heading 0307.\"}",
+          "refusal": null,
+          "reasoning": "Frozen octopus, cleaned, salted \u2014 likely 1605.55.0000? Octopus prepared/frozen... Whole raw octopus frozen is 0307.51.0000? HTS 0307.51.00 frozen octopus. But processing in Spain (defrost, clean, salt, refreeze) \u2014 still 0307.51.0000? Cleaning and salting... salted could move to 1605? In similar CBP ruling, frozen cleaned octopus remained 0307.51.0000. Actually 0307.51.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Frozen octopus, cleaned, salted \u2014 likely 1605.55.0000? Octopus prepared/frozen... Whole raw octopus frozen is 0307.51.0000? HTS 0307.51.00 frozen octopus. But processing in Spain (defrost, clean, salt, refreeze) \u2014 still 0307.51.0000? Cleaning and salting... salted could move to 1605? In similar CBP ruling, frozen cleaned octopus remained 0307.51.0000. Actually 0307.51.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 193,
+      "total_tokens": 403,
+      "cost": 0.0006982,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0006982,
+        "upstream_inference_prompt_cost": 4.2e-05,
+        "upstream_inference_completions_cost": 0.0006562
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 129,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "0307510000",
+  "predicted_reason": "The cleaning, ozone treatment, salting, and refreezing in Spain do not change the product from its raw frozen octopus state, so it remains classified as frozen octopus under heading 0307.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 210,
+    "completion_tokens": 193,
+    "total_tokens": 403,
+    "cost": 0.0006982,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0006982,
+      "upstream_inference_prompt_cost": 4.2e-05,
+      "upstream_inference_completions_cost": 0.0006562
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 129,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:36:13.982350+00:00",
+  "latency_s": 2.009,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

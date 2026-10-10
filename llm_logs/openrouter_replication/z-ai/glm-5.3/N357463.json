@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357463",
+  "rulingDate": "2026-01-12T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599651-Qd8KSfKmplcIltqGWM63",
+    "object": "chat.completion",
+    "created": 1791599651,
+    "model": "z-ai/glm-5.3",
+    "provider": "Io Net",
+    "system_fingerprint": "vllm-0.28.0-tp4-ep-9600fb5f",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9505.00.6020\", \"reason\": \"Adult fancy dress costumes of man-made fiber textiles are classified as festive/costume articles in heading 9505 rather than as wearing apparel.\"}",
+          "refusal": null,
+          "reasoning": "Fancy dress costumes of textile: 9505.00 (festive articles) vs 6104/6110? CBP ruled costumes classified as clothing if flimsy? Actually adult costumes sold as costumes classified in 9505.00.60? Textile costumes: 9505.00.6020? HTS 9505.00.6020 \"costumes, of man-made fibers\"? There is 9505.00.6020 festive articles... I recall 9505.00.6020 for costumes of man-made fibers.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Fancy dress costumes of textile: 9505.00 (festive articles) vs 6104/6110? CBP ruled costumes classified as clothing if flimsy? Actually adult costumes sold as costumes classified in 9505.00.60? Textile costumes: 9505.00.6020? HTS 9505.00.6020 \"costumes, of man-made fibers\"? There is 9505.00.6020 festive articles... I recall 9505.00.6020 for costumes of man-made fibers.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 141,
+      "completion_tokens": 179,
+      "total_tokens": 320,
+      "cost": 0.00092155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00092155,
+        "upstream_inference_prompt_cost": 0.00013395,
+        "upstream_inference_completions_cost": 0.0007876
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 127,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505006020",
+  "predicted_reason": "Adult fancy dress costumes of man-made fiber textiles are classified as festive/costume articles in heading 9505 rather than as wearing apparel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 141,
+    "completion_tokens": 179,
+    "total_tokens": 320,
+    "cost": 0.00092155,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00092155,
+      "upstream_inference_prompt_cost": 0.00013395,
+      "upstream_inference_completions_cost": 0.0007876
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 127,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Io Net",
+  "requested_at": "2026-10-10T02:34:12.045384+00:00",
+  "latency_s": 3.725,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

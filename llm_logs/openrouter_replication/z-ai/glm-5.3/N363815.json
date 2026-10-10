@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363815",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "4901990010",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600452-am0W9ZcyGG82vHplOxha",
+    "object": "chat.completion",
+    "created": 1791600452,
+    "model": "z-ai/glm-5.3",
+    "provider": "Reka",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4901.99.6050\", \"reason\": \"Printed textbooks of heading 4901, other than those specified, classified under the \"other books\" subheading for educational texts.\"}",
+          "refusal": null,
+          "reasoning": "4901.99 books \u2014 textbooks, printed. 4901.99.60? For books other than... 4901.99.6050? Textbooks printed over 20 years... likely 4901.99.60.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "4901.99 books \u2014 textbooks, printed. 4901.99.60? For books other than... 4901.99.6050? Textbooks printed over 20 years... likely 4901.99.60.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 154,
+      "completion_tokens": 105,
+      "total_tokens": 259,
+      "cost": 0.00046256,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00046256,
+        "upstream_inference_prompt_cost": 2.156e-05,
+        "upstream_inference_completions_cost": 0.000441
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 55,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Expecting ',' delimiter: line 1 column 126 (char 125)",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 154,
+    "completion_tokens": 105,
+    "total_tokens": 259,
+    "cost": 0.00046256,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00046256,
+      "upstream_inference_prompt_cost": 2.156e-05,
+      "upstream_inference_completions_cost": 0.000441
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 55,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Reka",
+  "requested_at": "2026-10-10T02:47:32.337122+00:00",
+  "latency_s": 2.334,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

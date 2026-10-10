@@ -1,0 +1,99 @@
+{
+  "rulingNumber": "N363283",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8501528040",
+  "model": "replication/deepseek/deepseek-v4.1-flash",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599437-mZZ1mwV98yRBFBbo9Sih",
+    "object": "chat.completion",
+    "created": 1791599437,
+    "model": "deepseek/deepseek-v4.1-flash",
+    "provider": "Relace",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8501.53.8040\", \"reason\": \"The DSC4 is a multi-phase AC electric motor with a power output of 42.5 kW (exceeding 37.5 kW but not exceeding 75 kW), imported without gearing or pump assembly, so it is classified under subheading 8501.53 for multi-phase AC motors of an output exceeding 37.5 kW, specifically 8501.53.8040 for other motors.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 103,
+      "total_tokens": 314,
+      "cost": 6.5176e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 6.5176e-05,
+        "upstream_inference_prompt_cost": 3.376e-06,
+        "upstream_inference_completions_cost": 6.18e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8501538040",
+  "predicted_reason": "The DSC4 is a multi-phase AC electric motor with a power output of 42.5 kW (exceeding 37.5 kW but not exceeding 75 kW), imported without gearing or pump assembly, so it is classified under subheading 8501.53 for multi-phase AC motors of an output exceeding 37.5 kW, specifically 8501.53.8040 for other motors.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 211,
+    "completion_tokens": 103,
+    "total_tokens": 314,
+    "cost": 6.5176e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 6.5176e-05,
+      "upstream_inference_prompt_cost": 3.376e-06,
+      "upstream_inference_completions_cost": 6.18e-05
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Relace",
+  "requested_at": "2026-10-10T02:30:37.870713+00:00",
+  "latency_s": 6.112,
+  "request_params": {
+    "model": "deepseek/deepseek-v4.1-flash",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

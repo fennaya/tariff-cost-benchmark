@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359379",
+  "rulingDate": "2026-03-26T00:00:00",
+  "true_code": "3910000000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595818-vRLGE4gb1AKnAealvqpB",
+    "object": "chat.completion",
+    "created": 1791595818,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Otoform AK is a silicone dental/ear impression material. The candidates are:\n\n- Heading 3407: \"dental wax or dental impression compounds, put up in sets, packings for retail sale or in plates, horseshoe shapes, sticks or similar forms; other preparations for use in dentistry, with a basis of plaster\". Otoform AK is used for ear impressions, not dentistry, so this probably does not fit. CBP rulings on Otoform have classified it in 3407.00.40 or 3407.00.20, but I'm not certain.\n- Heading 3910: silicones in primary forms. A silicone paste would be 3910.00.00.\n- Heading 3407.00.20 covers \"modeling pastes, including those put up for children's amusement\" and 3407.00.40 covers \"preparations known as dental impression compounds\".\n\nI recall CBP ruling NY N-series on \"Otoform AK Soft\", a silicone impression material for ear molds, which classified it in 3407.00.2000 as a modeling paste or \"other\". The 2022 HTS structure is 3407.00.20 for modeling pastes, 3407.00.40 for preparations put up in sets or retail packings for dental use, and 3407.00.80 for other. Since the product is a silicone paste for impressions, I'll go with 3407.00.20 (3407.00.2000), modeling pastes and similar preparations.\n\n```json\n{\"hts_code\": \"3407.00.2000\", \"reason\": \"Ready-to-use silicone impression paste for making ear molds is a modeling-paste-type preparation of heading 3407, which covers modeling pastes and impression preparations.\"}\n```\n\n{\"hts_code\": \"3407.00.2000\", \"reason\": \"Ready-to-use silicone impression paste for making ear molds is a modeling-paste-type preparation of heading 3407, which covers modeling pastes and impression preparations.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 225,
+      "completion_tokens": 617,
+      "total_tokens": 842,
+      "cost": 0.00662,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00662,
+        "upstream_inference_prompt_cost": 0.00045,
+        "upstream_inference_completions_cost": 0.00617
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3407002000",
+  "predicted_reason": "Ready-to-use silicone impression paste for making ear molds is a modeling-paste-type preparation of heading 3407, which covers modeling pastes and impression preparations.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 225,
+    "completion_tokens": 617,
+    "total_tokens": 842,
+    "cost": 0.00662,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00662,
+      "upstream_inference_prompt_cost": 0.00045,
+      "upstream_inference_completions_cost": 0.00617
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:18.505038+00:00",
+  "latency_s": 6.343,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

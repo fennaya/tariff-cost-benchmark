@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359979",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "8483908040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595999-lwngtMDnmUBeYlqiJPyx",
+    "object": "chat.completion",
+    "created": 1791595999,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a yoke for a universal joint. Universal joints are classified in 8483.60 (clutches and shaft couplings, including universal joints), and parts of these fall under 8483.90. The yoke is a part of a universal joint, so 8483.90 applies.\n\nWithin 8483.90, the subheadings are:\n- 8483.90.10: parts of articles of 8483.10 (?), with the exact breakdown being 8483.90.10 for parts of tractors; 8483.90.20 for parts of machinery of 8483.10 (?), 8483.90.30 for parts of ball bearings; 8483.90.50, 8483.90.70 for other parts.\n\nThe actual HTS structure reads:\n- 8483.90.10: Parts for machinery of heading 8429 or 8430 (?)\n- 8483.90.20: Parts of articles of subheading 8483.10 (?)\n- 8483.90.30: Parts of articles of 8483.10\n- 8483.90.50: Other, parts of 8483.20 (?)\n- 8483.90.70: Other\n- 8483.90.80: Other parts\n\nThe 8483.90 parts break down as: 8483.90.20 (tractors), 8483.90.30 (parts of articles of 8483.10), 8483.90.50 (parts of 8483.20, 8483.30...), and 8483.90.70 (other, including other parts of 8483.60 universal joints). The 8483.90.70 option is not fully certain, but 8483.90.80 is the other parts category with 8483.90.70 being \"Other: Parts of articles of subheading 8483.10...\" I will go with 8483.90.8080 as the more likely \"other\" statistical suffix.\n\nBoth finished and pre-machined yokes are classified as parts of universal joints, since the pre-machined yoke already has the essential character of the finished yoke.\n\n{\"hts_code\": \"8483.90.8080\", \"reason\": \"The steel yoke, finished or pre-machined, is a part of a universal joint (shaft coupling) and so falls in heading 8483 as an 'other' part under subheading 8483.90.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 324,
+      "completion_tokens": 699,
+      "total_tokens": 1023,
+      "cost": 0.007638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007638,
+        "upstream_inference_prompt_cost": 0.000648,
+        "upstream_inference_completions_cost": 0.00699
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8483908080",
+  "predicted_reason": "The steel yoke, finished or pre-machined, is a part of a universal joint (shaft coupling) and so falls in heading 8483 as an 'other' part under subheading 8483.90.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 324,
+    "completion_tokens": 699,
+    "total_tokens": 1023,
+    "cost": 0.007638,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007638,
+      "upstream_inference_prompt_cost": 0.000648,
+      "upstream_inference_completions_cost": 0.00699
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:19.731453+00:00",
+  "latency_s": 6.206,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

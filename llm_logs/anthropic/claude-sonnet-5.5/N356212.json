@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N356212",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "3808931500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791593825-FaI07NuhYMdBiHfxWsei",
+    "object": "chat.completion",
+    "created": 1791593825,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a herbicide put up in 2.5-gallon jugs. That is not retail packaging under heading 3808, so the goods are not classified as \"put up for retail sale\" under 3808.93 by packaging alone. Heading 3808 covers herbicides, and subheading 3808.93 covers them in any form. The dicamba salts are separate chemically defined compounds, but once they are formulated into a finished herbicide, the goods fall in heading 3808.\n\nThe 3808.93 subheadings are:\n- 3808.93.11: herbicides, based on... (the statistical breakdown is not certain to me)\n- 3808.93.15: herbicides, other\n- 3808.93.20 and 3808.93.50: other (3808.93.20 is for products with a particular active ingredient; I can't recall the details)\n\nThe HTSUS structure under 3808.93 is:\n- 3808.93.11: Herbicides, anti-sprouting products and plant-growth regulators: Herbicides: Containing... (I can't recall exactly)\n- 3808.93.15: Herbicides, put up in forms or packings for retail sale or as preparations or articles: Other; I believe this item is specific to herbicides.\n- 3808.93.17, 3808.93.20, 3808.93.22, 3808.93.23, 3808.93.27 (likely \"Other\")\n\nI recall that 3808.93.15 is \"Herbicides,\" with 3808.93.1500 covering the other listed herbicides. Related CBP rulings classify dicamba herbicide formulations in 3808.93.15. Dicamba salt herbicides were classified there in these rulings, so I am going with that code.\n\n{\"hts_code\": \"3808.93.1500\", \"reason\": \"Finished dicamba DMA and DGA salt formulations are herbicides put up in 2.5-gallon jugs, so they fall under heading 3808 as herbicides in subheading 3808.93.15.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 938,
+      "completion_tokens": 629,
+      "total_tokens": 1567,
+      "cost": 0.008166,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008166,
+        "upstream_inference_prompt_cost": 0.001876,
+        "upstream_inference_completions_cost": 0.00629
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3808931500",
+  "predicted_reason": "Finished dicamba DMA and DGA salt formulations are herbicides put up in 2.5-gallon jugs, so they fall under heading 3808 as herbicides in subheading 3808.93.15.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 938,
+    "completion_tokens": 629,
+    "total_tokens": 1567,
+    "cost": 0.008166,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008166,
+      "upstream_inference_prompt_cost": 0.001876,
+      "upstream_inference_completions_cost": 0.00629
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T00:57:05.387518+00:00",
+  "latency_s": 6.003,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

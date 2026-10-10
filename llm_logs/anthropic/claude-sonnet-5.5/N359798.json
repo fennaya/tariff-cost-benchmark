@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359798",
+  "rulingDate": "2026-04-07T00:00:00",
+  "true_code": "8428900390",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595933-Jx4K5K9ucbO9eII6rdX7",
+    "object": "chat.completion",
+    "created": 1791595933,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a portal robot handling unit. Industrial robots are classified in heading 8479.50 (\"Industrial robots, not elsewhere specified or included\"), whose subheading is 8479.50.0000 (HTSUS 8479.50.00 with the 10-digit statistical suffix 8479.50.0000).\n\nA gantry cartesian robot that loads and unloads workpieces is a multipurpose, programmable manipulator, so it fits the industrial robot definition. Heading 8428 (lifting and handling machinery) is also a candidate, but the robot heading is more specific here.\n\nThe Z1-axis lift and clamping module are part of the overall system, which is a machine with a gantry robot handling unit. I conclude that 8479.50.0000 is the most applicable code.\n\n{\"hts_code\": \"8479.50.0000\", \"reason\": \"The Miba Cube is a programmable three-axis cartesian gantry handling unit that loads and unloads workpieces, which makes it an industrial robot not elsewhere specified in heading 8479, subheading 8479.50.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 361,
+      "total_tokens": 849,
+      "cost": 0.004586,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004586,
+        "upstream_inference_prompt_cost": 0.000976,
+        "upstream_inference_completions_cost": 0.00361
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8479500000",
+  "predicted_reason": "The Miba Cube is a programmable three-axis cartesian gantry handling unit that loads and unloads workpieces, which makes it an industrial robot not elsewhere specified in heading 8479, subheading 8479.50.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 488,
+    "completion_tokens": 361,
+    "total_tokens": 849,
+    "cost": 0.004586,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004586,
+      "upstream_inference_prompt_cost": 0.000976,
+      "upstream_inference_completions_cost": 0.00361
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:32:14.238589+00:00",
+  "latency_s": 3.849,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363923",
+  "rulingDate": "2026-08-11T00:00:00",
+  "true_code": "8543709860",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596748-BW6DsQqsxbQ5ayhQjCAI",
+    "object": "chat.completion",
+    "created": 1791596748,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on the \"BassBand\" tactile audio device. As I recall, it was classified in 8543.70, as an electrical machine with individual functions not specified elsewhere. I think the ruling placed it in subheading 8543.70.99 (other), and the statistical suffix is likely 8543.70.9960. I am not fully certain of that suffix.\n\nOther headings are less likely. Heading 8518 covers microphones, but this device is not an audio-output device and its function is to produce vibration. Heading 8517 (communication apparatus) does not fit either. Heading 8501 (motors) does not cover the whole assembled device.\n\nThe 8543.70.9960 suffix is the current \"other\" line, so I'll use it.\n\n{\"hts_code\": \"8543.70.9960\", \"reason\": \"A wrist-worn device that converts ambient sound picked up by a microphone into haptic vibration is an electrical apparatus with an individual function not specified elsewhere, so it falls in heading 8543 (other electrical machines and apparatus).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 283,
+      "completion_tokens": 344,
+      "total_tokens": 627,
+      "cost": 0.004006,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004006,
+        "upstream_inference_prompt_cost": 0.000566,
+        "upstream_inference_completions_cost": 0.00344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "A wrist-worn device that converts ambient sound picked up by a microphone into haptic vibration is an electrical apparatus with an individual function not specified elsewhere, so it falls in heading 8543 (other electrical machines and apparatus).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 344,
+    "total_tokens": 627,
+    "cost": 0.004006,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004006,
+      "upstream_inference_prompt_cost": 0.000566,
+      "upstream_inference_completions_cost": 0.00344
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:48.530771+00:00",
+  "latency_s": 3.933,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358187",
+  "rulingDate": "2026-02-25T00:00:00",
+  "true_code": "3004909225",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595560-eGZUSe8tTZYrLMUjgjvv",
+    "object": "chat.completion",
+    "created": 1791595560,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Sacubitril/valsartan (Entresto) tablets are put up in measured doses for retail sale, so they fall in heading 3004. The question is which subheading. Valsartan is a tetrazole-containing compound. CBP rulings on Entresto-type tablets have classified them under 3004.90.9250, which covers other medicaments for the cardiovascular system. Subheading 3004.90.92 is \"Other: Other: Other\", and the 10-digit breakouts there are:\n\n- 3004.90.9215: antidiabetic\n- 3004.90.9220: other\n- 3004.90.9230: antihypertensives\n- 3004.90.9240: and so on\n- 3004.90.9250: other\n\nMy recollection of CBP's ruling is that sacubitril/valsartan was classified under 3004.90.9265 or 3004.90.9285, but I am not certain which. I considered that the tablets are indicated for heart failure and so might fit the cardiovascular-drug breakout, but I could not confirm that such a breakout exists for this subheading.\n\nI'll go with 3004.90.9255, which I recall as the statistical suffix for \"other\" medicaments that are not further specified. This is a best recollection, not a verified match.\n\n{\"hts_code\": \"3004.90.9255\", \"reason\": \"Sacubitril/valsartan tablets are medicaments put up in measured doses for retail sale, classified in heading 3004 under the 'other' medicaments subheading (3004.90.92), and 3004.90.9255 is my best recollection of the specific statistical suffix rather than a confirmed match.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 337,
+      "completion_tokens": 520,
+      "total_tokens": 857,
+      "cost": 0.005874,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005874,
+        "upstream_inference_prompt_cost": 0.000674,
+        "upstream_inference_completions_cost": 0.0052
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004909255",
+  "predicted_reason": "Sacubitril/valsartan tablets are medicaments put up in measured doses for retail sale, classified in heading 3004 under the 'other' medicaments subheading (3004.90.92), and 3004.90.9255 is my best recollection of the specific statistical suffix rather than a confirmed match.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 337,
+    "completion_tokens": 520,
+    "total_tokens": 857,
+    "cost": 0.005874,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005874,
+      "upstream_inference_prompt_cost": 0.000674,
+      "upstream_inference_completions_cost": 0.0052
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:00.723859+00:00",
+  "latency_s": 5.065,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

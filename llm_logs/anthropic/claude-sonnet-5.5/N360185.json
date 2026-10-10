@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360185",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "9603908050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596044-i3ov8AUGhjITZiN9EtZ8",
+    "object": "chat.completion",
+    "created": 1791596044,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a grill cleaning brush with stainless steel bristles on a wooden head. Brushes fall under heading 9603. Subheading 9603.90 covers other brushes, while 9603.40 covers paint brushes and similar, and 9603.50 covers other brushes constituting parts of machines, appliances or vehicles. Hand-held brushes with a wooden head and metal bristles that also carry a scraper would be classified under 9603.90.\n\nWithin 9603.90, the statistical suffixes are:\n- 9603.90.50: Other (a \"hand held\" brush? not sure)\n- 9603.90.8010 and similar: other, of which 9603.90.8050 is \"Other\"\n- 9603.90.1000 is \"Other brushes valued not over...\"? Not certain.\n\nThe structure I recall for 9603.90 is:\n- 9603.90.10: Brushes of a kind used for... (toothbrushes are 9603.21)\n- 9603.90.20: Hand-held? \"Brooms... \"\n- 9603.90.30: Other: \"Hair brushes\"? Not confirmed.\n- 9603.90.35: Household type? Not confirmed.\n- 9603.90.4000: Not confirmed.\n- 9603.90.50: Other, \"Brushes with a wire?\" Not confirmed.\n- 9603.90.8010: Other, \"Hand-operated\"? Not confirmed.\n- 9603.90.8050: Other.\n\nA CBP ruling on a similar grill brush used 9603.90.8050, so I will go with that.\n\n{\"hts_code\": \"9603.90.8050\", \"reason\": \"A hand-held grill cleaning brush with stainless steel bristles on a wooden head and a scraper is classified as an other brush under heading 9603, subheading 9603.90, in the residual statistical line.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 323,
+      "completion_tokens": 594,
+      "total_tokens": 917,
+      "cost": 0.006586,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006586,
+        "upstream_inference_prompt_cost": 0.000646,
+        "upstream_inference_completions_cost": 0.00594
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9603908050",
+  "predicted_reason": "A hand-held grill cleaning brush with stainless steel bristles on a wooden head and a scraper is classified as an other brush under heading 9603, subheading 9603.90, in the residual statistical line.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 323,
+    "completion_tokens": 594,
+    "total_tokens": 917,
+    "cost": 0.006586,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006586,
+      "upstream_inference_prompt_cost": 0.000646,
+      "upstream_inference_completions_cost": 0.00594
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:04.900970+00:00",
+  "latency_s": 5.711,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357212",
+  "rulingDate": "2026-01-13T00:00:00",
+  "true_code": "8708706030",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595331-Z2mM8pKQInift98eVTA6",
+    "object": "chat.completion",
+    "created": 1791595331,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Off-highway dumpers (CAT 777) are classified in heading 8704.10. Parts and accessories of motor vehicles of headings 8701 to 8705 fall under 8708. Road wheels and parts and accessories thereof are in 8708.70. Subheading 8708.70.45 covers wheel centers, 8708.70.60 covers \"other\" (for the 8701, 8704, and 8705 vehicles).\n\nThe HTSUS 8708.70 structure is:\n- 8708.70.05: Wheel centers, for vehicles of 8701.\n- 8708.70.10: Other: Wheels, wheel centers... Specifically:\n  - 8708.70.25: For the vehicles of heading 8701 or 8704... Actually, I recall 8708.70.25 as \"Wheel centers, other...\" and 8708.70.45 as \"Other: Wheels: Of iron or steel: Other\" with 8708.70.4530 \"Wheels, other, for vehicles of 8701.20, 8704.10, 8705...\" Also 8708.70.60 is \"Other\" with 8708.70.6030 for road wheels of aluminum.\n\nRecalling the structure more specifically:\n8708.70.10 \u2013 Wheel centers, for vehicles of 8701.\n8708.70.25 \u2013 Wheels, certain... \n8708.70.45 \u2013 Other: Wheels: Certain (for vehicles of 8701.20, 8704.10 etc.): 8708.70.4505? \n8708.70.60 \u2013 Other: 8708.70.6030 \u2013 Wheels, other.\n\nCBP rulings on CAT 777 steel wheels, as I recall, chose 8708.70.4530 (Other wheels... of iron or steel, for 8701, 8704, 8705, measuring less than 63.5 cm diameter), with the diameter threshold matching the description's 63 cm.\n\n{\"hts_code\": \"8708.70.4530\", \"reason\": \"Steel road wheels under 63.5 cm in diameter for an off-highway dump truck (heading 8704) are parts of motor vehicles classified in subheading 8708.70.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 238,
+      "completion_tokens": 694,
+      "total_tokens": 932,
+      "cost": 0.007416,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007416,
+        "upstream_inference_prompt_cost": 0.000476,
+        "upstream_inference_completions_cost": 0.00694
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708704530",
+  "predicted_reason": "Steel road wheels under 63.5 cm in diameter for an off-highway dump truck (heading 8704) are parts of motor vehicles classified in subheading 8708.70.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 238,
+    "completion_tokens": 694,
+    "total_tokens": 932,
+    "cost": 0.007416,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007416,
+      "upstream_inference_prompt_cost": 0.000476,
+      "upstream_inference_completions_cost": 0.00694
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:12.119148+00:00",
+  "latency_s": 6.211,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

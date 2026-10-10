@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363601",
+  "rulingDate": "2026-08-12T00:00:00",
+  "true_code": "4202924500",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596707-Ief2y6rkPZfYJMWwklDP",
+    "object": "chat.completion",
+    "created": 1791596707,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a backpack of textile material with an outer surface of plastic sheeting. It falls in heading 4202, which covers travel goods and backpacks.\n\nSubheading 4202.92 covers articles with an outer surface of plastic sheeting or textile materials. Within it, 4202.92.04 covers \"Travel, sports and similar bags\" with an outer surface of textile materials, and the plastic-sheeting version falls under 4202.92.0210 or nearby.\n\nI am recalling the 4202.92 breakdown from memory, so the exact statistical suffix is uncertain:\n- 4202.92.02 is \"Insulated food or beverage bags.\"\n- 4202.92.04 is \"Travel, sports and similar bags: With outer surface of sheeting of plastic material.\"\n- 4202.92.08 is \"Other, with outer surface of sheeting of plastic.\"\n- 4202.92.15 is \"Other: With outer surface of textile materials: Of vegetable fibers.\"\n- 4202.92.20 is \"Other textile: Of man-made fibers.\"\n- 4202.92.31 is \"Other: Backpacks, with outer surface of sheeting of plastic or of textile materials.\"\n\nThe last entry is the one I am unsure of. Backpacks with an outer surface of textile are generally classified under 4202.92.3131, which is \"Backpacks: Other: Of man-made fibers.\" Since this one has an outer surface of plastic sheeting, I settled on 4202.92.0450, though I am not certain of that suffix.\n\n```json\n{\"hts_code\": \"4202.92.0450\", \"reason\": \"Backpack with outer surface of plastic sheeting is classified as a travel, sports or similar bag under heading 4202, subheading 4202.92 (outer surface of plastic sheeting or textile materials).\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 592,
+      "total_tokens": 994,
+      "cost": 0.006724,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006724,
+        "upstream_inference_prompt_cost": 0.000804,
+        "upstream_inference_completions_cost": 0.00592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202920450",
+  "predicted_reason": "Backpack with outer surface of plastic sheeting is classified as a travel, sports or similar bag under heading 4202, subheading 4202.92 (outer surface of plastic sheeting or textile materials).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 402,
+    "completion_tokens": 592,
+    "total_tokens": 994,
+    "cost": 0.006724,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006724,
+      "upstream_inference_prompt_cost": 0.000804,
+      "upstream_inference_completions_cost": 0.00592
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:45:07.773501+00:00",
+  "latency_s": 5.418,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

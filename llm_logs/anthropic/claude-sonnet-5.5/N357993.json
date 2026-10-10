@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357993",
+  "rulingDate": "2026-02-11T00:00:00",
+  "true_code": "8536908585",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595533-2bGBvlzkG161flK4mdeP",
+    "object": "chat.completion",
+    "created": 1791595533,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be from a CBP ruling on battery lead tab assemblies. The likely classification is 8507.90 (parts of electric accumulators). The ruling probably classified them under 8507.90.80 (other parts) or 8507.90.60 (other parts of lithium-ion batteries?). HTSUS 8507.90: 8507.90.30 covers lead-acid battery parts (separators); 8507.90.40 covers other parts of lead-acid batteries; 8507.90.50 is \"Other: of nickel-cadmium, etc.\"? As I recall, 8507.90.60 and 8507.90.70 are not subdivided that way. The actual structure is:\n\n- 8507.90.30: Separators, ... \n- 8507.90.40: Other of lead-acid\n- 8507.90.50: Other, of other... \n- 8507.90.60: Other: Battery parts of lithium-ion? \n- 8507.90.80: Other.\n\nIn the 2022 version, 8507.90.80 reads \"Other\" and has statistical suffixes 8507.90.8010 and 8507.90.8090? I'm fairly sure 8507.90.80 is the general \"other parts\" provision, so I'll choose 8507.90.8000.\n\n```json\n{\"hts_code\": \"8507.90.8000\", \"reason\": \"Lithium-ion battery lead tab assemblies of NiCu-plated copper or aluminum with PP film are identifiable parts of electric accumulators, classified in heading 8507 as other parts.\"}\n```\n\nBecause the instructions require only a JSON object, here it is again without the code fence:\n\n{\"hts_code\": \"8507.90.8000\", \"reason\": \"Lithium-ion battery lead tab assemblies of NiCu-plated copper or aluminum with PP film are identifiable parts of electric accumulators, classified in heading 8507 as other parts.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 611,
+      "total_tokens": 1040,
+      "cost": 0.006968,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006968,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00611
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8507908000",
+  "predicted_reason": "Lithium-ion battery lead tab assemblies of NiCu-plated copper or aluminum with PP film are identifiable parts of electric accumulators, classified in heading 8507 as other parts.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 611,
+    "total_tokens": 1040,
+    "cost": 0.006968,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006968,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00611
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:33.562438+00:00",
+  "latency_s": 5.67,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

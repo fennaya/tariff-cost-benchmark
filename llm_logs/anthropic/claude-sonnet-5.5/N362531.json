@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362531",
+  "rulingDate": "2026-07-21T00:00:00",
+  "true_code": "4202929100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596522-fREcNzJNdAKznnaKsado",
+    "object": "chat.completion",
+    "created": 1791596523,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a fitted carry case for a medical device. Cases specially shaped to fit particular articles, of a kind normally sold with those articles, fall in heading 4202. Here, though, the case is imported separately and empty, and the question is whether it still qualifies as a fitted case under 4202. Under the Legal Note 2 / EN to 4202, specially shaped cases for instruments are classified in 4202 when they are imported separately, since the \"presented with\" condition applies to the article in general terms.\n\nNext is the subheading. 4202.92 covers containers with an outer surface of sheeting of plastics or textile materials. Within 4202.92, 4202.92.90 is \"Other\", and 4202.92.31 covers travel, sports and similar bags with an outer surface of textile materials. The 4202.92.20 and .30 lines cover \"Other\" under 4202.92, with a requirement of man-made fibers.\n\nFor this case, the likely classification is 4202.92.9026 (other, of man-made fibers), or 4202.92.9060. I recall that 4202.92.90 is \"Other\" with statistical suffixes: 4202.92.9010 for items of cotton, 4202.92.9020 for items of vegetable fibers, and 4202.92.9026 for other. I'm not certain of these suffixes. The earlier 4202.92.45 line covers \"Other: with outer surface of textile materials: of man-made fibers: Other\" and I believe it carries the 4202.92.4500 type. I'll settle on 4202.92.9026.\n\n```json\n{\"hts_code\": \"4202.92.9026\", \"reason\": \"A fitted carry case with a man-made textile outer surface, imported empty and specially shaped for a medical device, is classified in heading 4202 as a case with an outer surface of textile materials.\"}\n```\n\n{\"hts_code\": \"4202.92.9026\", \"reason\": \"A fitted carry case with a man-made textile outer surface, imported empty and specially shaped for a medical device, is classified in heading 4202 as a case with an outer surface of textile materials.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 430,
+      "completion_tokens": 679,
+      "total_tokens": 1109,
+      "cost": 0.00765,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00765,
+        "upstream_inference_prompt_cost": 0.00086,
+        "upstream_inference_completions_cost": 0.00679
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4202929026",
+  "predicted_reason": "A fitted carry case with a man-made textile outer surface, imported empty and specially shaped for a medical device, is classified in heading 4202 as a case with an outer surface of textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 679,
+    "total_tokens": 1109,
+    "cost": 0.00765,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00765,
+      "upstream_inference_prompt_cost": 0.00086,
+      "upstream_inference_completions_cost": 0.00679
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:42:01.942436+00:00",
+  "latency_s": 8.463,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

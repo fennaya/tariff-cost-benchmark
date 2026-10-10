@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359779",
+  "rulingDate": "2026-04-01T00:00:00",
+  "true_code": "9401790015",
+  "model": "anthropic/claude-haiku-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791594945-wwgb4na3fMob9kOOscsZ",
+    "object": "chat.completion",
+    "created": 1791594945,
+    "model": "anthropic/claude-haiku-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "The description covers two items, but the task asks for a single code. Item 1 (two-seat beach chair with umbrella and storage compartment, in one box for retail sale as a unit) is the more distinctive item, and the umbrella and collapsible seating point to chairs of textile construction. Under HTSUS, camping/beach chairs with metal frames and textile seats are classified under heading 9401.71 or 9401.79 (seats with metal frames, upholstered/not upholstered). Since item 1's structure (collapsible metal frame, textile seating) fits 9401.71 for upholstered/ textile-covered seats with metal frames, the appropriate subheading is 9401.71.00 for upholstered seats with metal frames, with the statistical suffix 9401.71.0000 applied.\n\n{\"hts_code\": \"9401.71.0000\", \"reason\": \"The two-seat beach chair with umbrella is a collapsible metal-framed seat with polyester textile seating and backing, which falls under HTSUS heading 9401 (seats) and subheading 9401.71 for upholstered seats with metal frames.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 692,
+      "completion_tokens": 361,
+      "total_tokens": 1053,
+      "cost": 0.0002497,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002497,
+        "upstream_inference_prompt_cost": 6.92e-05,
+        "upstream_inference_completions_cost": 0.0001805
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401710000",
+  "predicted_reason": "The two-seat beach chair with umbrella is a collapsible metal-framed seat with polyester textile seating and backing, which falls under HTSUS heading 9401 (seats) and subheading 9401.71 for upholstered seats with metal frames.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 361,
+    "total_tokens": 1053,
+    "cost": 0.0002497,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0002497,
+      "upstream_inference_prompt_cost": 6.92e-05,
+      "upstream_inference_completions_cost": 0.0001805
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:15:45.582988+00:00",
+  "latency_s": 2.962,
+  "request_params": {
+    "model": "anthropic/claude-haiku-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "none"
+    }
+  }
+}

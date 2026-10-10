@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358568",
+  "rulingDate": "2026-02-19T00:00:00",
+  "true_code": "8479899596",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595626-IqJ1iGZAE33nhePm3Zlr",
+    "object": "chat.completion",
+    "created": 1791595626,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on tow-behind mowing/sweeping machines. The candidates are 8433.40 (mowers, including cutter bars for tractor mounting) and 8479.89 (other machines), with 8433.11 and 8433.19 also possible. Sweepers for lawns fall under 8479.89 or 8705.\n\nThe principal function is mowing, which points to heading 8433, specifically \"Mowers for lawns, parks or sports grounds.\" The machines have no independent drive, so they are not self-propelled, and the cutting is by rotary blades. Under 8433.11 the mowers are powered, with a horizontal cutting device, and 8433.19 covers the others, with 8433.19.90 as the \"other\" subheading. Because the machine is a trailed (tow-behind) unit with no motor of its own that provides the cutting, 8433.19 is the likely fit. Under 8433.20 are the \"other mowers, including cutter bars for tractor mounting,\" and tow-behind mowers typically fall there: 8433.20.10 is for \"mowers, including cutter bars for tractor mounting,\" with 8433.20.1000 covering the \"Mowers.\" \n\nThe subheading structure is 8433.20 \"Other mowers, including cutter bars for tractor mounting,\" with the statistical suffix 8433.20.5090 for \"Other.\" I'll go with 8433.20.5090 (currently \"Other mowers... Other\").\n\n{\"hts_code\": \"8433.20.5090\", \"reason\": \"Tow-behind machines whose principal function is mowing parks and sports grounds, with no independent drive and powered by a tractor, are classified as other mowers for tractor mounting or towing under heading 8433 as a composite machine under Section XVI Note 3.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 575,
+      "completion_tokens": 576,
+      "total_tokens": 1151,
+      "cost": 0.00691,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00691,
+        "upstream_inference_prompt_cost": 0.00115,
+        "upstream_inference_completions_cost": 0.00576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8433205090",
+  "predicted_reason": "Tow-behind machines whose principal function is mowing parks and sports grounds, with no independent drive and powered by a tractor, are classified as other mowers for tractor mounting or towing under heading 8433 as a composite machine under Section XVI Note 3.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 575,
+    "completion_tokens": 576,
+    "total_tokens": 1151,
+    "cost": 0.00691,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00691,
+      "upstream_inference_prompt_cost": 0.00115,
+      "upstream_inference_completions_cost": 0.00576
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:06.464526+00:00",
+  "latency_s": 5.329,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

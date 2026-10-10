@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361194",
+  "rulingDate": "2026-05-27T00:00:00",
+  "true_code": "4010125000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600154-aeEEXYvDeIs0sJXxweJL",
+    "object": "chat.completion",
+    "created": 1791600154,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"4010.12.1000\", \"reason\": \"Rubber conveyor belts reinforced with textile plies are classified in HTSUS 4010.12, with the 10-digit statistical suffix 1000 applying to such textile-reinforced conveyor belts.\"}",
+          "refusal": null,
+          "reasoning": "Conveyor belts of textile reinforcement rubber \u2014 4010.12 no, textile reinforced belts: 4010.12? HTSUS 4010.12 covers conveyor belts of rubber reinforced with textile. 4010.12.1000? Actual: 4010.12.10 solid woven? 4010.12.10 00? Codes: 4010.12.1000 (conveyor belts, solid woven)? I recall 4010.12.10 \"Of a thickness exceeding...\" Hmm. Common answer: 4010.12.1000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Conveyor belts of textile reinforcement rubber \u2014 4010.12 no, textile reinforced belts: 4010.12? HTSUS 4010.12 covers conveyor belts of rubber reinforced with textile. 4010.12.1000? Actual: 4010.12.10 solid woven? 4010.12.10 00? Codes: 4010.12.1000 (conveyor belts, solid woven)? I recall 4010.12.10 \"Of a thickness exceeding...\" Hmm. Common answer: 4010.12.1000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 193,
+      "total_tokens": 409,
+      "cost": 0.00096312,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00096312,
+        "upstream_inference_prompt_cost": 3.672e-05,
+        "upstream_inference_completions_cost": 0.0009264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 138,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "4010121000",
+  "predicted_reason": "Rubber conveyor belts reinforced with textile plies are classified in HTSUS 4010.12, with the 10-digit statistical suffix 1000 applying to such textile-reinforced conveyor belts.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 216,
+    "completion_tokens": 193,
+    "total_tokens": 409,
+    "cost": 0.00096312,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00096312,
+      "upstream_inference_prompt_cost": 3.672e-05,
+      "upstream_inference_completions_cost": 0.0009264
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 138,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:34.682733+00:00",
+  "latency_s": 2.011,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

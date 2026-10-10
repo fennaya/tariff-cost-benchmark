@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357552",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "6105100010",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595444-oPxgjeteTGLlj3xRUlfu",
+    "object": "chat.completion",
+    "created": 1791595444,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a men's knit quarter-zip pullover-type garment. The fabric is knit, with more than 10 stitches per cm, so it is not a sweater of heading 6110 by stitch count alone. Heading 6110 covers jerseys, pullovers, and similar articles, but a knit garment with a hemmed bottom and a zip collar is often classified in 6110 as a sweatshirt-type item. The question is whether the fabric is a sweater-type or a T-shirt-type knit. Heading 6105 covers shirts, but those typically have a collar and an opening of at least a third of the length. The partial zip with a stand-up collar and rib knit cuffs, with a straight hemmed bottom (not ribbed), suggests CBP may have classified it in 6110. Cotton is the predominant fiber at 56%, so the subheading is 6110.20 (of cotton). Within 6110.20, the 6110.20.20 group covers other garments, with 6110.20.2065 for men's or boys' items, so the code is 6110.20.2079 or 6110.20.2075.\n\nChecking the statistical suffixes: 6110.20.20 splits into 6110.20.2065 (sweaters, men's/boys' of cotton), 6110.20.2069 (women's sweaters), 6110.20.2075 (other, men's), and 6110.20.2079 (other, women's). A sweatshirt-like pullover would go under 6110.20.2075, the \"other\" men's or boys' line.\n\n```json\n{\"hts_code\": \"6110.20.2075\", \"reason\": \"Men's knit cotton-predominant (56%) pullover-type upper body garment with partial zip, long sleeves and ribbed cuffs falls under heading 6110, subheading for cotton, other men's or boys' garments.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 310,
+      "completion_tokens": 599,
+      "total_tokens": 909,
+      "cost": 0.00661,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00661,
+        "upstream_inference_prompt_cost": 0.00062,
+        "upstream_inference_completions_cost": 0.00599
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110202075",
+  "predicted_reason": "Men's knit cotton-predominant (56%) pullover-type upper body garment with partial zip, long sleeves and ribbed cuffs falls under heading 6110, subheading for cotton, other men's or boys' garments.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 310,
+    "completion_tokens": 599,
+    "total_tokens": 909,
+    "cost": 0.00661,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00661,
+      "upstream_inference_prompt_cost": 0.00062,
+      "upstream_inference_completions_cost": 0.00599
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:05.258333+00:00",
+  "latency_s": 5.705,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

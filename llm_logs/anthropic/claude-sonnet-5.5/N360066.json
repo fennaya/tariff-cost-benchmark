@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360066",
+  "rulingDate": "2026-04-21T00:00:00",
+  "true_code": "3924905650",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596026-OzmikN36vSAiS0x70vit",
+    "object": "chat.completion",
+    "created": 1791596026,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a cat toy pom pom launcher. Cat toys are not \"toys\" of heading 9503, since that heading covers toys for children, and pet toys are generally classified elsewhere. CBP has classified dog and cat toys by material or as other articles. For a set of plastic launcher and polyester pom poms, the plastic launcher gives the essential character, so classification would be under 3926.90 (other articles of plastics). Pet toys of plastic are typically classified in 3926.40 (statuettes and other ornamental articles) or 3926.90.99. Rulings for plastic pet toys, such as dog chew toys, generally give 3926.90.9990. The spring-loaded piston is metal but minor. Another possibility is 9508 or 9503.00.00, but CBP has held that pet toys are not 9503, and 9503 does not cover them.\n\nThe statistical suffix for 3926.90.99 is 3926.90.9990 (other). I'll go with that.\n\n{\"hts_code\": \"3926.90.9990\", \"reason\": \"A cat toy is not a 'toy' of heading 9503, so the set is classified by the essential character of its plastic (PP) launcher as an other article of plastics under 3926.90.9990.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 409,
+      "total_tokens": 838,
+      "cost": 0.004948,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004948,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00409
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "A cat toy is not a 'toy' of heading 9503, so the set is classified by the essential character of its plastic (PP) launcher as an other article of plastics under 3926.90.9990.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 409,
+    "total_tokens": 838,
+    "cost": 0.004948,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004948,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00409
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:33:45.445311+00:00",
+  "latency_s": 5.642,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

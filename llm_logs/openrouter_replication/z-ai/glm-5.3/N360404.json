@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360404",
+  "rulingDate": "2026-04-20T00:00:00",
+  "true_code": "7326908688",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600071-h3IAaSqR1SdcIlpuFpNF",
+    "object": "chat.completion",
+    "created": 1791600071,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7326.90.6080\", \"reason\": \"Steel target stands are other articles of iron or steel not more specifically covered elsewhere, classified in HTSUS 7326.90 as other articles of steel.\"}",
+          "refusal": null,
+          "reasoning": "Steel target stands \u2014 likely classified as articles of iron/steel, other: 7326.90. Other articles of iron or steel. NY rulings classify target stands under 7326.90.45? Common: 7326.90.64 (other, welded)? Ruling on steel target stands: NY N... classified in 7326.90.45? Let me recall: 7326.90.45 \"other\" duty 2.9%? Actually 7326.90.45 is \"other: other\" pre-2022. Post-2022 headings: 7326.90.60? I'll go with 7326.90.6480? Safer: 7326.90.4580? Hmm. Current HTS: 7326.90.60 \"Other\" (2022+). Use 7326.90.6080? I'll answer 7326.90.6480? Pick 7326.90.6080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Steel target stands \u2014 likely classified as articles of iron/steel, other: 7326.90. Other articles of iron or steel. NY rulings classify target stands under 7326.90.45? Common: 7326.90.64 (other, welded)? Ruling on steel target stands: NY N... classified in 7326.90.45? Let me recall: 7326.90.45 \"other\" duty 2.9%? Actually 7326.90.45 is \"other: other\" pre-2022. Post-2022 headings: 7326.90.60? I'll go with 7326.90.6480? Safer: 7326.90.4580? Hmm. Current HTS: 7326.90.60 \"Other\" (2022+). Use 7326.90.6080? I'll answer 7326.90.6480? Pick 7326.90.6080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 282,
+      "total_tokens": 673,
+      "cost": 0.001368849,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001368849,
+        "upstream_inference_prompt_cost": 1.5249e-05,
+        "upstream_inference_completions_cost": 0.0013536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 233,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7326906080",
+  "predicted_reason": "Steel target stands are other articles of iron or steel not more specifically covered elsewhere, classified in HTSUS 7326.90 as other articles of steel.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 282,
+    "total_tokens": 673,
+    "cost": 0.001368849,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001368849,
+      "upstream_inference_prompt_cost": 1.5249e-05,
+      "upstream_inference_completions_cost": 0.0013536
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 233,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:41:11.812396+00:00",
+  "latency_s": 2.123,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

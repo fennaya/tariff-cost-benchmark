@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N357384",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "8707100020",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599630-aSLeS8OZrf9z6ZkosAOu",
+    "object": "chat.completion",
+    "created": 1791599630,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8706.00.0090\", \"reason\": \"The BP&C is a chassis fitted with a body but lacking an engine/motor, classifiable as an incomplete motor vehicle chassis with body under HTSUS 8706.00.0090.\"",
+          "refusal": null,
+          "reasoning": "This resembles a real CBP ruling \u2014 body panel and chassis assembly for a low-speed vehicle. Likely classified as parts of motor vehicles 8708, or as golf cart chassis? There's a ruling about a similar \"chassis with body\" for LSV classified under 8706.00.00? Actually incomplete vehicle without engine \u2014 8706.00.0090? Chassis fitted with body = 8706. HTS 8706.00.0090 \"Chassis fitted with engine, other\" \u2014 no. Chassis with body, no engine: 8706.00.0090? Subheadings: 8706.00.0010 chassis with engine; 8706.00.0090 other. Golf carts are 8703? Low-speed vehicles classified 8703.90.01 (vehicles for transport of \u226410 persons, other). Parts of 8703 \u2192 8703.90.01 parts? Actually parts of 8703 vehicles: 8703.90.0190? There's 8703.90.01 with parts under 8703.90.0190? Hmm. Chassis with body for 8703 vehicles \u2192 8706.00.0090. I'll answer 8706.00.0090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "This resembles a real CBP ruling \u2014 body panel and chassis assembly for a low-speed vehicle. Likely classified as parts of motor vehicles 8708, or as golf cart chassis? There's a ruling about a similar \"chassis with body\" for LSV classified under 8706.00.00? Actually incomplete vehicle without engine \u2014 8706.00.0090? Chassis fitted with body = 8706. HTS 8706.00.0090 \"Chassis fitted with engine, other\" \u2014 no. Chassis with body, no engine: 8706.00.0090? Subheadings: 8706.00.0010 chassis with engine; 8706.00.0090 other. Golf carts are 8703? Low-speed vehicles classified 8703.90.01 (vehicles for transport of \u226410 persons, other). Parts of 8703 \u2192 8703.90.01 parts? Actually parts of 8703 vehicles: 8703.90.0190? There's 8703.90.01 with parts under 8703.90.0190? Hmm. Chassis with body for 8703 vehicles \u2192 8706.00.0090. I'll answer 8706.00.0090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 888,
+      "completion_tokens": 358,
+      "total_tokens": 1246,
+      "cost": 0.001753032,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001753032,
+        "upstream_inference_prompt_cost": 3.4632e-05,
+        "upstream_inference_completions_cost": 0.0017184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 308,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": null,
+  "predicted_reason": null,
+  "parse_error": "json_decode_error:Expecting ',' delimiter: line 1 column 199 (char 198)",
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 888,
+    "completion_tokens": 358,
+    "total_tokens": 1246,
+    "cost": 0.001753032,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001753032,
+      "upstream_inference_prompt_cost": 3.4632e-05,
+      "upstream_inference_completions_cost": 0.0017184
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 308,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:33:51.200365+00:00",
+  "latency_s": 2.747,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

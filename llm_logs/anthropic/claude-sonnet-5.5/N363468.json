@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363468",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8543709100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596668-tdCV6EasiaKmoyHdOmKq",
+    "object": "chat.completion",
+    "created": 1791596668,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a digital signal processor for loudspeakers. Candidate headings are 8543.70 (electrical machines with individual functions), 8518.40 (audio-frequency electric amplifiers), 8518.50, and 8519/8521. Since there is no amplification, 8518.40 does not apply. 8518.90 covers parts of loudspeakers, but the device is a standalone unit, so that doesn't fit either. The device does equalization, crossover, and D/A conversion, which points to 8543.70.\n\nI recall CBP rulings on similar audio DSPs and equalizers classifying them under 8543.70.9960 (other machines and apparatus, other). The 8543.70 subheadings run 8543.70.10 through 8543.70.99. In the 2022 HTS, the 8543.70.99 subheadings are 8543.70.9960 (other) and 8543.70.9925 (for goods of 8517), so I'll go with 8543.70.9960.\n\nThe alternative is 8518.40.20, \"other audio-frequency electric amplifiers\", but that requires amplification. The description's explicit statement that it does no amplification suggests the ruling landed on 8543.70.\n\n{\"hts_code\": \"8543.70.9960\", \"reason\": \"A standalone audio DSP that performs D/A conversion, crossover, equalization and level adjustment without amplification is an electrical apparatus with an individual function not specified elsewhere, so it falls under heading 8543.70 (other).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 494,
+      "total_tokens": 923,
+      "cost": 0.005798,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005798,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00494
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "A standalone audio DSP that performs D/A conversion, crossover, equalization and level adjustment without amplification is an electrical apparatus with an individual function not specified elsewhere, so it falls under heading 8543.70 (other).",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 494,
+    "total_tokens": 923,
+    "cost": 0.005798,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005798,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00494
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:29.192659+00:00",
+  "latency_s": 4.891,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

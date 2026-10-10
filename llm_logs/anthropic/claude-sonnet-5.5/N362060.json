@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362060",
+  "rulingDate": "2026-06-18T00:00:00",
+  "true_code": "8306290000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596410-KIlngyRBsCbLgVBpEcNE",
+    "object": "chat.completion",
+    "created": 1791596410,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on an LED lighted bow decoration. Christmas decorative lighting would normally go to 9405.31 (lighting strings of a kind used for Christmas trees) or 9405.39 (other electric garlands). But this article is a bow frame covered in fabric with LEDs, so it is a festive article under 9505.10 (Christmas articles). The question is which subheading.\n\nHeading 9505 covers festive articles. 9505.10.25 covers Christmas ornaments and other Christmas decorations of other materials, and 9505.10.15 covers glass. 9505.10.50 covers other Christmas articles, and 9505.10.25 covers \"Other: Of textile materials, other\". I recall HTS 9505.10.25 is \"Other: Of plastics\" (or similar), and 9505.10.35 is \"Other: Of textile materials\"? Roughly:\n- 9505.10.10 Nativity scenes\n- 9505.10.15 glass articles\n- 9505.10.20 Christmas tree skirts, stockings\n- 9505.10.25 Other: of plastics\n- 9505.10.30 ... other\n- 9505.10.35 ... other\n- 9505.10.40 Other: Other\n- 9505.10.50 Other (not of glass, other Christmas)\n\nI believe the current breakdown is:\n- 9505.10.25 Of plastics\n- 9505.10.35 Of textile materials\n- 9505.10.40 Of other materials\n- 9505.10.50 Other\n\nUnder GRI 3(b), the essential character of the bow is likely given by the textile mesh fabric covering the frame, which supplies the visible decorative bow. The classification would then be 9505.10.3500 or 9505.10.2500. CBP rulings on lighted bows with wire and mesh have often used 9505.10.2500 (Christmas ornaments and other Christmas decorations, of other materials). I'm not certain which applies, so I'll go with the textile option.\n\n```json\n{\"hts_code\": \"9505.10.3500\", \"reason\": \"The LED-lit bow is a festive Christmas decoration whose essential character comes from the polyester mesh fabric, so it classifies under heading 9505 as a Christmas article of textile materials.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 742,
+      "total_tokens": 1193,
+      "cost": 0.008322,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008322,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00742
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9505103500",
+  "predicted_reason": "The LED-lit bow is a festive Christmas decoration whose essential character comes from the polyester mesh fabric, so it classifies under heading 9505 as a Christmas article of textile materials.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 451,
+    "completion_tokens": 742,
+    "total_tokens": 1193,
+    "cost": 0.008322,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008322,
+      "upstream_inference_prompt_cost": 0.000902,
+      "upstream_inference_completions_cost": 0.00742
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:10.292246+00:00",
+  "latency_s": 7.143,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

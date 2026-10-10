@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359472",
+  "rulingDate": "2026-03-18T00:00:00",
+  "true_code": "8530900000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595847-YouyuLyd58IxHj9C9zdX",
+    "object": "chat.completion",
+    "created": 1791595847,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a part of an LED roadway warning light for crosswalks. The relevant candidates are:\n\n- 8530.80 (electrical signaling, safety or traffic control equipment for roads), with parts under 8530.90.\n- 9405.42 (LED lighting fittings), with parts under 9405.99.\n\nThe device is a signaling device that warns motorists of a pedestrian, so it is traffic signaling equipment under 8530.80. The stainless steel housing is a part of that equipment, so 8530.90 applies.\n\nThe HTSUS breakdown under 8530.90 is:\n\n- 8530.90.00: Parts\n- 8530.90.0000 is the 10-digit statistical form.\n\nCBP ruling (NY N-series) for a similar LightStar housing: I recall the classification as 8530.90.0000, parts of electrical signaling equipment.\n\n{\"hts_code\": \"8530.90.0000\", \"reason\": \"The stainless steel housing is a part of electrical traffic signaling equipment, a roadway pedestrian crosswalk warning light, so it falls under heading 8530 as a part (8530.90).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 422,
+      "completion_tokens": 366,
+      "total_tokens": 788,
+      "cost": 0.004504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004504,
+        "upstream_inference_prompt_cost": 0.000844,
+        "upstream_inference_completions_cost": 0.00366
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8530900000",
+  "predicted_reason": "The stainless steel housing is a part of electrical traffic signaling equipment, a roadway pedestrian crosswalk warning light, so it falls under heading 8530 as a part (8530.90).",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 422,
+    "completion_tokens": 366,
+    "total_tokens": 788,
+    "cost": 0.004504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004504,
+      "upstream_inference_prompt_cost": 0.000844,
+      "upstream_inference_completions_cost": 0.00366
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:30:47.981929+00:00",
+  "latency_s": 3.913,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

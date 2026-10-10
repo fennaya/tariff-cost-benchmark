@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358243",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "9401790035",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595569-1Pk3QOcIjeX6GEq34DUe",
+    "object": "chat.completion",
+    "created": 1791595569,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to come from a CBP ruling on an urban bench with a planter. Outdoor benches with metal frames and wooden seats are usually classified as other furniture. The candidate headings are:\n\n- 9401: seats. Subheading 9401.69 covers other seats with wooden frames, and 9401.79 covers other seats with metal frames. Subheading 9401.71 covers upholstered seats with metal frames, and 9401.79 covers other seats with metal frames.\n- 9403: other furniture. Subheading 9403.20 covers other metal furniture. 9403.20.0050 is probably the \"other\" provision, but the bench-with-planter could instead fall under 9401.79.\n\nThe bench is a seat with a metal frame and wood planks, so it is a metal-frame seat under 9401.79. Subheading 9401.79.0050 covers other seats with metal frames, not upholstered, and 9401.79.00 applies to other seats with metal frames. The planter is incorporated into the bench and does not change that, because the seating is the essential character. I believe the ruling classified it in 9401.79.0050, though I am not certain of that.\n\nThe 10-digit statistical suffix is the uncertain part. Under 9401.79.00, the 8-digit subheading is 9401.79.00 with 10-digit codes 9401.79.0010 (stacking) and 9401.79.0050 (other). I'll go with 9401.79.0050.\n\n{\"hts_code\": \"9401.79.0050\", \"reason\": \"The bench is a seat with a galvanized steel frame and wood or HPL planks, so it falls under heading 9401 as an other seat with a metal frame, and the integrated planter does not change its essential character as a seat.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 503,
+      "completion_tokens": 560,
+      "total_tokens": 1063,
+      "cost": 0.006606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006606,
+        "upstream_inference_prompt_cost": 0.001006,
+        "upstream_inference_completions_cost": 0.0056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401790050",
+  "predicted_reason": "The bench is a seat with a galvanized steel frame and wood or HPL planks, so it falls under heading 9401 as an other seat with a metal frame, and the integrated planter does not change its essential character as a seat.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 503,
+    "completion_tokens": 560,
+    "total_tokens": 1063,
+    "cost": 0.006606,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006606,
+      "upstream_inference_prompt_cost": 0.001006,
+      "upstream_inference_completions_cost": 0.0056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:09.266782+00:00",
+  "latency_s": 5.655,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

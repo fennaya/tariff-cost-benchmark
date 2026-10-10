@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357861",
+  "rulingDate": "2026-02-05T00:00:00",
+  "true_code": "8481903000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595511-O13iZwha1dpV10SA4iux",
+    "object": "chat.completion",
+    "created": 1791595511,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on flushometer valve parts. Parts of valves fall under 8481.90. The question is which subheading applies: 8481.90.10 covers parts of hand-operated valves of iron or steel, and 8481.90.30 covers parts of other valves... Specifically, 8481.90.10 is \"Parts of hand operated valves of iron or steel\" (older structure), 8481.90.30 is \"Of copper\", 8481.90.50 is \"Of other materials\"? The current HTS reads:\n\n- 8481.90.10: Bodies... Actually, 8481.90.10 is \"Of hand operated valves of copper\".\n- 8481.90.30: \"Of hand operated valves of iron or steel\"? Not certain.\n- 8481.90.50: \"Of valves of other materials\"? Not certain.\n- 8481.90.90: Other, with 8481.90.9060 and 8481.90.9040.\n\nI recall 8481.90.1000 as \"Of hand operated valves of iron or steel\" and 8481.90.3000 as \"Of hand operated valves of copper\"? I believe 8481.90.10 is \"Hand operated: of copper\" and 8481.90.30 is \"of iron or steel\"? Earlier text of 8481.80: 8481.80.10 is hand operated of copper, 8481.80.30 hand operated of iron or steel, 8481.80.50 is hand operated other. For 8481.90 the structure is 8481.90.10 \"Bodies, for hand operated valves\"? Hmm. I think 8481.90.10 is \"Parts of hand operated or check valves of copper\", 8481.90.30 is \"Parts of hand operated or check valves of iron or steel\", 8481.90.50 is \"Parts of other valves\"? The real list: 8481.90.1000 \"Of hand operated or check valves of copper\", 8481.90.3000 \"Of hand operated or check valves of iron or steel\", 8481.90.5000 \"Other\", 8481.90.9000 \"Other\"? Likely the answer is 8481.90.9060 or 8481.90.3000. The flushometer is a hand-operated valve (push button), made of steel, so I'll go with 8481.90.3000.\n\n{\"hts_code\": \"8481.90.3000\", \"reason\": \"The steel stem and plunger are parts of a flushometer valve, a hand-operated valve, so they are classified as parts of hand-operated valves of iron or steel in heading 8481.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 383,
+      "completion_tokens": 805,
+      "total_tokens": 1188,
+      "cost": 0.008816,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008816,
+        "upstream_inference_prompt_cost": 0.000766,
+        "upstream_inference_completions_cost": 0.00805
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8481903000",
+  "predicted_reason": "The steel stem and plunger are parts of a flushometer valve, a hand-operated valve, so they are classified as parts of hand-operated valves of iron or steel in heading 8481.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 383,
+    "completion_tokens": 805,
+    "total_tokens": 1188,
+    "cost": 0.008816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008816,
+      "upstream_inference_prompt_cost": 0.000766,
+      "upstream_inference_completions_cost": 0.00805
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:25:11.254669+00:00",
+  "latency_s": 7.049,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

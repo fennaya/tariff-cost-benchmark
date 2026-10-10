@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362167",
+  "rulingDate": "2026-07-01T00:00:00",
+  "true_code": "3505100092",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596436-ElViyjf3zebZp2lg3c2E",
+    "object": "chat.completion",
+    "created": 1791596436,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Physically modified (heat-treated) waxy tapioca starch is a modified starch of heading 3505, which covers dextrins and other modified starches. Heading 1108 covers starches in general, including native tapioca starch (1108.14), so the question is whether this product belongs there or in 3505.\n\nHeat treatment, or \"heat-moisture treatment,\" has been addressed in CBP rulings. Some rulings classify heat-treated, \"pregelatinized\" or \"physically modified\" starch in 3505.10 as \"other modified starches.\" The Explanatory Notes to heading 3505 cover starches chemically modified, such as etherified, esterified, or pregelatinized. Dry heat treatment that alters the pasting profile yields a modified starch, so 3505.10 applies.\n\nWithin 3505.10, the HTSUS subheadings are:\n- 3505.10.10: dextrins\n- 3505.10.20: starch ethers and esters\n- 3505.10.50: other, covering other modified starches\n\nThe statistical suffixes under 3505.10.50 are 3505.10.5000 for the general \"other\" category. Since this is a modified starch that is not a dextrin, ether, or ester, the code is 3505.10.5000.\n\n{\"hts_code\": \"3505.10.5000\", \"reason\": \"Dry-heat physically modified waxy tapioca starch with an altered pasting profile is a modified starch of heading 3505, falling under 'other' modified starches rather than native starch of heading 1108.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 486,
+      "total_tokens": 903,
+      "cost": 0.005694,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005694,
+        "upstream_inference_prompt_cost": 0.000834,
+        "upstream_inference_completions_cost": 0.00486
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3505105000",
+  "predicted_reason": "Dry-heat physically modified waxy tapioca starch with an altered pasting profile is a modified starch of heading 3505, falling under 'other' modified starches rather than native starch of heading 1108.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 417,
+    "completion_tokens": 486,
+    "total_tokens": 903,
+    "cost": 0.005694,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005694,
+      "upstream_inference_prompt_cost": 0.000834,
+      "upstream_inference_completions_cost": 0.00486
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:37.310837+00:00",
+  "latency_s": 4.869,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

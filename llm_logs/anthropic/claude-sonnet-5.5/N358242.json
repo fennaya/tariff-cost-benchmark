@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358242",
+  "rulingDate": "2026-02-12T00:00:00",
+  "true_code": "7326908688",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595568-wAqWEsFlE9MhN1YwXNUB",
+    "object": "chat.completion",
+    "created": 1791595568,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on steel bollards. Candidates are 7308.90 (structures and parts of structures of iron or steel) and 7325/7326 (other articles of iron or steel). Bollards of tube steel with cast iron decorative elements, fixed by concrete footings, were likely classified as \"other structures and parts of structures\" under 7308.90.\n\nWithin 7308.90, the statistical suffixes are 7308.90.30 (Grill, grating, ...?) and 7308.90.60 (Other: Other). The 7308.90 breakdown is:\n- 7308.90.30: Panels... (corrugated/sheets)\n- 7308.90.60: Other, of iron or steel, 7308.90.6000 \"Other\"\n- 7308.90.90: Other, 7308.90.9530 \"Other\" ...\n\nIn the actual schedule, 7308.90.30 covers \"Grating, ...\", 7308.90.60 covers \"Other: Other (not galvanized?)\", and 7308.90.95 is \"Other\", with 7308.90.9530 being \"Other\". I recall that 7308.90.9530 is \"Other: Other: Other\" for items other than \"Open-type... \" and that 7308.90.60 covers \"Parts of ... \"\n\nI'll go with 7308.90.9590, which is the general \"other\" category.\n\n{\"hts_code\": \"7308.90.9590\", \"reason\": \"Steel tube bollards anchored in concrete footings are structures or parts of structures of iron or steel, classified in the residual subheading of heading 7308.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 372,
+      "completion_tokens": 504,
+      "total_tokens": 876,
+      "cost": 0.005784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005784,
+        "upstream_inference_prompt_cost": 0.000744,
+        "upstream_inference_completions_cost": 0.00504
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7308909590",
+  "predicted_reason": "Steel tube bollards anchored in concrete footings are structures or parts of structures of iron or steel, classified in the residual subheading of heading 7308.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 504,
+    "total_tokens": 876,
+    "cost": 0.005784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005784,
+      "upstream_inference_prompt_cost": 0.000744,
+      "upstream_inference_completions_cost": 0.00504
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:26:08.458126+00:00",
+  "latency_s": 5.227,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N363847",
+  "rulingDate": "2026-08-04T00:00:00",
+  "true_code": "8703800020",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600454-jfVM7UpxuSEmEvtKut1s",
+    "object": "chat.completion",
+    "created": 1791600454,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8703.80.0000\", \"reason\": \"An all-electric passenger motor car (SUV) with only electric motive power is classified in subheading 8703.80.0000.\"}",
+          "refusal": null,
+          "reasoning": "Electric SUV passenger vehicle: 8703.80.0000? HTS 8703.80.00.00? Actually 8703.80 covers only vehicles with spark-ignition... no, electric vehicles: 8703.80.00.00? Electric passenger vehicles are 8703.80.0000? The subheading 8703.80 is \"other, with only electric motor\". 10-digit: 8703.80.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Electric SUV passenger vehicle: 8703.80.0000? HTS 8703.80.00.00? Actually 8703.80 covers only vehicles with spark-ignition... no, electric vehicles: 8703.80.00.00? Electric passenger vehicles are 8703.80.0000? The subheading 8703.80 is \"other, with only electric motor\". 10-digit: 8703.80.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 189,
+      "completion_tokens": 158,
+      "total_tokens": 347,
+      "cost": 0.000765771,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000765771,
+        "upstream_inference_prompt_cost": 7.371e-06,
+        "upstream_inference_completions_cost": 0.0007584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 118,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8703800000",
+  "predicted_reason": "An all-electric passenger motor car (SUV) with only electric motive power is classified in subheading 8703.80.0000.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 189,
+    "completion_tokens": 158,
+    "total_tokens": 347,
+    "cost": 0.000765771,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.000765771,
+      "upstream_inference_prompt_cost": 7.371e-06,
+      "upstream_inference_completions_cost": 0.0007584
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:47:34.932020+00:00",
+  "latency_s": 2.104,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

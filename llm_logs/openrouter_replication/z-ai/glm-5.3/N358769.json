@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N358769",
+  "rulingDate": "2026-02-27T00:00:00",
+  "true_code": "7616995190",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791599817-TMK5j5mBI1VD0p2sdowL",
+    "object": "chat.completion",
+    "created": 1791599817,
+    "model": "z-ai/glm-5.3",
+    "provider": "InferenceNet",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7612.99.1030\", \"reason\": \"As an aluminum-based (73.02% aluminum) rigid container imported empty, the lipstick container is classified as an aluminum cask, drum, can, box or similar container under heading 7612, specifically other containers of a capacity exceeding 300 liters... other, per applicable CBP rulings on similar lipstick containers.\"}",
+          "refusal": null,
+          "reasoning": "Ruling: lipstick containers classified 7612.99? Actually NY ruling classified lipstick container of aluminum in 7612.99.10? 7612 = aluminum casks, cans... 7612.99.10? 10-digit: 7612.99.1030? Common ruling: 7612.99.10, \"other\". I recall NY N266447? Lipstick container aluminum classified in 7612.99.10. 10-digit likely 7612.99.1030.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Ruling: lipstick containers classified 7612.99? Actually NY ruling classified lipstick container of aluminum in 7612.99.10? 7612 = aluminum casks, cans... 7612.99.10? 10-digit: 7612.99.1030? Common ruling: 7612.99.10, \"other\". I recall NY N266447? Lipstick container aluminum classified in 7612.99.10. 10-digit likely 7612.99.1030.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 288,
+      "completion_tokens": 205,
+      "total_tokens": 493,
+      "cost": 0.00092504,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00092504,
+        "upstream_inference_prompt_cost": 2.304e-05,
+        "upstream_inference_completions_cost": 0.000902
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 119,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7612991030",
+  "predicted_reason": "As an aluminum-based (73.02% aluminum) rigid container imported empty, the lipstick container is classified as an aluminum cask, drum, can, box or similar container under heading 7612, specifically other containers of a capacity exceeding 300 liters... other, per applicable CBP rulings on similar lipstick containers.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 205,
+    "total_tokens": 493,
+    "cost": 0.00092504,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00092504,
+      "upstream_inference_prompt_cost": 2.304e-05,
+      "upstream_inference_completions_cost": 0.000902
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 119,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "InferenceNet",
+  "requested_at": "2026-10-10T02:36:57.476035+00:00",
+  "latency_s": 1.608,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

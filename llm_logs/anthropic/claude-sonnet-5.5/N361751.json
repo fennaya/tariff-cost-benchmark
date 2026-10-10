@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361751",
+  "rulingDate": "2026-06-03T00:00:00",
+  "true_code": "8543709860",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596337-MNhF2tzrVErwVsclm21Q",
+    "object": "chat.completion",
+    "created": 1791596337,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a Pasternack 90-degree hybrid coupler. Passive RF couplers are typically classified in 8543.70 as electrical machines with individual functions, or in 8517.70 as parts of apparatus. I recall rulings on Pasternack directional couplers and power dividers that placed them in 8543.70.9960 (other machines and apparatus, not elsewhere specified). I'm going from memory of those rulings rather than a verified lookup.\n\nA 2011 ruling on a \"hybrid coupler\" may have used 8543.70.9960 as well. Alternatively, 8517.70.0000 covers parts of telecommunications apparatus, but a standalone passive component that is not dedicated to a specific apparatus is less likely to land there. I'll go with 8543.70.9960.\n\n{\"hts_code\": \"8543.70.9960\", \"reason\": \"A passive RF 90-degree hybrid coupler is an electrical apparatus with an individual function not specified elsewhere in Chapter 85, so it falls under heading 8543 as other machines and apparatus.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 259,
+      "completion_tokens": 360,
+      "total_tokens": 619,
+      "cost": 0.004118,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.004118,
+        "upstream_inference_prompt_cost": 0.000518,
+        "upstream_inference_completions_cost": 0.0036
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8543709960",
+  "predicted_reason": "A passive RF 90-degree hybrid coupler is an electrical apparatus with an individual function not specified elsewhere in Chapter 85, so it falls under heading 8543 as other machines and apparatus.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 259,
+    "completion_tokens": 360,
+    "total_tokens": 619,
+    "cost": 0.004118,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.004118,
+      "upstream_inference_prompt_cost": 0.000518,
+      "upstream_inference_completions_cost": 0.0036
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:57.490820+00:00",
+  "latency_s": 3.775,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

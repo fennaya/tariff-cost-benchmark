@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N359958",
+  "rulingDate": "2026-04-17T00:00:00",
+  "true_code": "3926909989",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600011-aGwhh07T6LvqnIV4wo4p",
+    "object": "chat.completion",
+    "created": 1791600011,
+    "model": "z-ai/glm-5.3",
+    "provider": "Inceptron",
+    "system_fingerprint": "vllm-0.31.0-tp4-ep-9cb14e99",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8481.90.3000\", \"reason\": \"A plastic faucet aerator is regarded as a part of a tap/valve of heading 8481, classified in the residual parts provision.\"}",
+          "refusal": null,
+          "reasoning": "Faucet aerator of plastics \u2014 likely 8481.90.30? Actually faucet aerators classified as parts of valves? NY rulings classify plastic faucet aerators under 3924.90? Hmm. Aerator of plastics \u2014 NY N-series rulings classify faucet aerators under 8481.90.30 (parts of taps, cocks... of other). But plastic ones... There's ruling classifying aerator as article of plastics 3926.90? I recall aerators classified under 8481.90.30. Use that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Faucet aerator of plastics \u2014 likely 8481.90.30? Actually faucet aerators classified as parts of valves? NY rulings classify plastic faucet aerators under 3924.90? Hmm. Aerator of plastics \u2014 NY N-series rulings classify faucet aerators under 8481.90.30 (parts of taps, cocks... of other). But plastic ones... There's ruling classifying aerator as article of plastics 3926.90? I recall aerators classified under 8481.90.30. Use that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 190,
+      "completion_tokens": 169,
+      "total_tokens": 359,
+      "cost": 0.0004858,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004858,
+        "upstream_inference_prompt_cost": 0.000114,
+        "upstream_inference_completions_cost": 0.0003718
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 117,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8481903000",
+  "predicted_reason": "A plastic faucet aerator is regarded as a part of a tap/valve of heading 8481, classified in the residual parts provision.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 190,
+    "completion_tokens": 169,
+    "total_tokens": 359,
+    "cost": 0.0004858,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0004858,
+      "upstream_inference_prompt_cost": 0.000114,
+      "upstream_inference_completions_cost": 0.0003718
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 117,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Inceptron",
+  "requested_at": "2026-10-10T02:40:11.226847+00:00",
+  "latency_s": 1.965,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

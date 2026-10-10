@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357708",
+  "rulingDate": "2026-01-28T00:00:00",
+  "true_code": "8708706060",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595478-X3y2U4qLzmlso2WtDim1",
+    "object": "chat.completion",
+    "created": 1791595478,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on skidder tracks (steel tracks fitted over wheels of forestry machines). These are likely classified as parts of machinery for harvesters/skidders. Candidates include 8431.49 (parts of machinery of 8426-8430), 8433.90 (parts of harvesting machinery), 8708.99 (parts of motor vehicles), and 7326.90 (other articles of iron or steel).\n\nSkidders are tractors, or vehicles of heading 8701 or 8701.9x. Forwarders are likely 8704 or 8701. Harvesters for forestry are 8433.5 or 8436.80. Tracks used on wheels could be treated as parts of tractors (8708.99), but the Section XVII note excludes certain items. Parts of tractors fall under 8708 (parts of vehicles of headings 8701 to 8705), and 8708.99.81 is \"other parts and accessories: other.\" Forestry skidders and forwarders are typically classified under 8701 or 8704 as vehicles, so 8708.99 is plausible. However, I recall a CBP ruling on \"Olofsfors Bluetrack,\" which was classified in 8431.49? That's for machinery of 8429 (bulldozers, graders, etc.), whereas forestry machines are 8701/8427/8433. I think the Olofsfors ruling was 8708.99.8180.\n\nSkidder tracks that are steel with studs are accessories, and 8708.99.8180 is the best fit.\n\n{\"hts_code\": \"8708.99.8180\", \"reason\": \"Steel studded traction tracks fitted over the wheels of skidders, forwarders and harvesters are parts and accessories of motor vehicles of heading 8701-8705, falling in the residual 'other parts' subheading 8708.99.81.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 596,
+      "total_tokens": 1008,
+      "cost": 0.006784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006784,
+        "upstream_inference_prompt_cost": 0.000824,
+        "upstream_inference_completions_cost": 0.00596
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8708998180",
+  "predicted_reason": "Steel studded traction tracks fitted over the wheels of skidders, forwarders and harvesters are parts and accessories of motor vehicles of heading 8701-8705, falling in the residual 'other parts' subheading 8708.99.81.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 412,
+    "completion_tokens": 596,
+    "total_tokens": 1008,
+    "cost": 0.006784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006784,
+      "upstream_inference_prompt_cost": 0.000824,
+      "upstream_inference_completions_cost": 0.00596
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:39.115433+00:00",
+  "latency_s": 6.027,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

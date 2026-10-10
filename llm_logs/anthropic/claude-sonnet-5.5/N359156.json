@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N359156",
+  "rulingDate": "2026-03-09T00:00:00",
+  "true_code": "8507600090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595770-flbzfIhlcxRyNeAsL15C",
+    "object": "chat.completion",
+    "created": 1791595771,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a lithium-ion battery module, so it falls in heading 8507. The relevant subheading is 8507.60 (lithium-ion accumulators). I recall CBP rulings on similar battery assemblies for headsets, which classified them under 8507.60.0010, the lithium-ion batteries of the type used as the primary source of power for electric vehicles. That one doesn't fit here. The other statistical suffix is 8507.60.0020, which covers other lithium-ion batteries. Within 8507.60.00, the statistical suffixes I recall are:\n\n- 8507.60.0010: Lithium-ion batteries of a kind used as the primary source of electrical power of electrically powered vehicles of subheading 8703.40, 8703.50, 8703.60, 8703.70, 8703.80\n- 8507.60.0020: Other, with a 2.7% duty rate\n\nBefore the 2022 revisions the structure was similar. The battery pack with a PCB and a single cell is still classified as an accumulator under 8507, not as a part of the headset, since it is a battery.\n\n{\"hts_code\": \"8507.60.0020\", \"reason\": \"A lithium-ion battery module (single 18650 cell with a circuit board in a plastic housing) is an electric accumulator of heading 8507, subheading 8507.60 for lithium-ion, and is not a vehicle-type battery, so it falls in the 'other' statistical suffix.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 309,
+      "completion_tokens": 468,
+      "total_tokens": 777,
+      "cost": 0.005298,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005298,
+        "upstream_inference_prompt_cost": 0.000618,
+        "upstream_inference_completions_cost": 0.00468
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8507600020",
+  "predicted_reason": "A lithium-ion battery module (single 18650 cell with a circuit board in a plastic housing) is an electric accumulator of heading 8507, subheading 8507.60 for lithium-ion, and is not a vehicle-type battery, so it falls in the 'other' statistical suffix.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 309,
+    "completion_tokens": 468,
+    "total_tokens": 777,
+    "cost": 0.005298,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005298,
+      "upstream_inference_prompt_cost": 0.000618,
+      "upstream_inference_completions_cost": 0.00468
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:29:31.299423+00:00",
+  "latency_s": 4.223,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

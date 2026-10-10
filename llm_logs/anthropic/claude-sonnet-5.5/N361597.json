@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361597",
+  "rulingDate": "2026-05-26T00:00:00",
+  "true_code": "8704230100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596312-lO2m26yQaDPrdWvZOwZN",
+    "object": "chat.completion",
+    "created": 1791596312,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a CBP ruling on the John Deere 1610G forwarder. The likely options are heading 8704 (motor vehicles for transport of goods), heading 8701, or heading 8427 (forklift and other works trucks fitted with lifting or handling equipment) and 8705 (special purpose motor vehicles).\n\nI recall CBP rulings on forwarders (e.g., the Ponsse and John Deere forwarders) classifying them in 8704.22 or 8704.23. A GVW over 20 tons points to 8704.23 for diesel vehicles. The 8704 classification fits because the machine is designed principally to transport logs, with a crane being only ancillary, whereas heading 8705 covers vehicles whose function is something other than transport. Another ruling classified a forwarder in 8427.20 (other self-propelled works trucks), but a forwarder with a rear load space and a payload of 16,000 kg is most plausibly a transport vehicle.\n\nBoth versions have GVW of 32.4 and 34.3 tons, so both exceed 20 tons, which puts them in 8704.23. The statistical suffix for 8704.23.0100 is \"Designed for off-highway use\" in the 2022+ schedule. Earlier, 8704.23.0100 was \"Dumpers designed for off-highway use,\" and 8704.23.0000 was the generic number. Currently the schedule has 8704.10 (dumpers designed for off-highway use) and 8704.23.0100 for \"Other, g.v.w. exceeding 20 tons.\" I will go with 8704.23.0100.\n\n{\"hts_code\": \"8704.23.0100\", \"reason\": \"The self-propelled forestry forwarder is principally a motor vehicle for transporting goods (logs) with a diesel engine and GVW over 20 metric tons, so it falls under heading 8704.23, with the crane being ancillary.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 661,
+      "completion_tokens": 618,
+      "total_tokens": 1279,
+      "cost": 0.007502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007502,
+        "upstream_inference_prompt_cost": 0.001322,
+        "upstream_inference_completions_cost": 0.00618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8704230100",
+  "predicted_reason": "The self-propelled forestry forwarder is principally a motor vehicle for transporting goods (logs) with a diesel engine and GVW over 20 metric tons, so it falls under heading 8704.23, with the crane being ancillary.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 661,
+    "completion_tokens": 618,
+    "total_tokens": 1279,
+    "cost": 0.007502,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007502,
+      "upstream_inference_prompt_cost": 0.001322,
+      "upstream_inference_completions_cost": 0.00618
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:38:32.544987+00:00",
+  "latency_s": 5.944,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

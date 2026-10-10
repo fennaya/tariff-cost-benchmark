@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357460",
+  "rulingDate": "2026-01-09T00:00:00",
+  "true_code": "9505906000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595422-Rq8jG6VNJyNWBcp4dUCs",
+    "object": "chat.completion",
+    "created": 1791595422,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on a child's costume. Carnival costumes fall under heading 9505 (festive articles), but the exclusion in Note 1(e) to Chapter 95 removes fancy dress of textile materials in Chapters 61 and 62. Rulings usually classify these costumes as wearing apparel when made of ordinary textile fabric, so I need to decide which applies.\n\nThe set has a dress, a shawl and flower hair clips. Because it is a set of a dress and shawl, it may not be a \"set\" for GRI 3(b) purposes. The essential character would be the dress, with the other items as accessories. Costumes of this type are often classified as girls' dresses in 6104.4x (knit) or 6204.4x (woven). Hair clips would go in 9615, but the essential character is still the dress.\n\n\"Short-sleeved pullover dress\" suggests a knit garment. Knit girls' dresses of synthetic fibers fall under 6104.43.2020 (women's or girls' dresses, of synthetic fibers, other, girls'). The \"Inspired Artist\" costume probably has a smock-like dress with a shawl, which could be either knit or woven. A pullover dress is more likely knit, and the fiber content is probably polyester.\n\nThe code 6104.43.2020 covers girls' knit synthetic dresses, so I will go with that.\n\n{\"hts_code\": \"6104.43.2020\", \"reason\": \"The child's costume is wearing apparel excluded from heading 9505 by Chapter 95 Note 1(e), and its essential character is the knit synthetic-fiber girls' pullover dress, so it falls under girls' knit dresses of synthetic fibers.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 554,
+      "total_tokens": 756,
+      "cost": 0.005944,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005944,
+        "upstream_inference_prompt_cost": 0.000404,
+        "upstream_inference_completions_cost": 0.00554
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6104432020",
+  "predicted_reason": "The child's costume is wearing apparel excluded from heading 9505 by Chapter 95 Note 1(e), and its essential character is the knit synthetic-fiber girls' pullover dress, so it falls under girls' knit dresses of synthetic fibers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 202,
+    "completion_tokens": 554,
+    "total_tokens": 756,
+    "cost": 0.005944,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005944,
+      "upstream_inference_prompt_cost": 0.000404,
+      "upstream_inference_completions_cost": 0.00554
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:23:42.384790+00:00",
+  "latency_s": 5.699,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

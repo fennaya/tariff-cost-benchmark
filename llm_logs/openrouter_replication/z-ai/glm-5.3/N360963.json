@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N360963",
+  "rulingDate": "2026-05-05T00:00:00",
+  "true_code": "7505221000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600135-e5gNNHHmeTBxSQ80W9Zd",
+    "object": "chat.completion",
+    "created": 1791600135,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7507.20.0000\", \"reason\": \"NiTi wire and flat strip are articles of nickel alloy (nickel-titanium), classified as wire of nickel alloys under heading 7507.\"}",
+          "refusal": null,
+          "reasoning": "NiTi wire/strip of nickel-titanium alloy \u2014 heading 7507? Nickel alloys articles. Wire of nickel alloys: 7507.20? Actually 7507 covers bars, rods, profiles, wire. Wire of nickel alloys: 7507.20.00? Let me recall: 7507.11 bars/rods/profiles nickel not alloyed; 7507.19 other; 7507.20 wire of nickel alloys? Structure: 7507.10 wire? I think 7507.20 is wire. Then 7507.20.0000? Actually 7507.20 wire, with subdivisions 7507.20.00. Hmm, 10-digit: 7507.20.0000? There may be 7507.20.0030 etc. I'll answer 7507.20.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "NiTi wire/strip of nickel-titanium alloy \u2014 heading 7507? Nickel alloys articles. Wire of nickel alloys: 7507.20? Actually 7507 covers bars, rods, profiles, wire. Wire of nickel alloys: 7507.20.00? Let me recall: 7507.11 bars/rods/profiles nickel not alloyed; 7507.19 other; 7507.20 wire of nickel alloys? Structure: 7507.10 wire? I think 7507.20 is wire. Then 7507.20.0000? Actually 7507.20 wire, with subdivisions 7507.20.00. Hmm, 10-digit: 7507.20.0000? There may be 7507.20.0030 etc. I'll answer 7507.20.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 144,
+      "completion_tokens": 234,
+      "total_tokens": 378,
+      "cost": 0.0008244,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008244,
+        "upstream_inference_prompt_cost": 2.88e-05,
+        "upstream_inference_completions_cost": 0.0007956
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 184,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7507200000",
+  "predicted_reason": "NiTi wire and flat strip are articles of nickel alloy (nickel-titanium), classified as wire of nickel alloys under heading 7507.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 144,
+    "completion_tokens": 234,
+    "total_tokens": 378,
+    "cost": 0.0008244,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008244,
+      "upstream_inference_prompt_cost": 2.88e-05,
+      "upstream_inference_completions_cost": 0.0007956
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 184,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:42:15.471622+00:00",
+  "latency_s": 2.161,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

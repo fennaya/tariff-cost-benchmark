@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362910",
+  "rulingDate": "2026-07-17T00:00:00",
+  "true_code": "7013998090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596589-j8XvPBhvJxGMBqqBTmd1",
+    "object": "chat.completion",
+    "created": 1791596589,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on decorative glass cylinders with LED lights, likely Christmas items. Candidate classifications:\n\n- 9405.39 (other electric lamps and lighting fittings, of the Christmas-tree-lighting-set type) is unlikely.\n- 9505.10 (Christmas festive articles) is a possibility. Glass Christmas articles fall under 9505.10.25 (\"Other: of glass\"), a heading for Christmas ornaments. These cylinders are decorative glass with Christmas designs, so 9505.10 fits. Within it, 9505.10.25.00 is \"Articles for Christmas festivities and parts thereof: Other: Of glass\".\n- 7013 (glassware for indoor decoration) is another possibility. But the \"does not provide significant lighting\" language suggests the ruling concluded the LED does not make the item a lamp. The red and green colors and the trees-and-snowflakes design indicate Christmas, so 9505.10 is plausible.\n- The mention of unit value, plus the note that the glass is not lead crystal and so on, suggests the ruling used 7013 value brackets. 7013.99.50 or 7013.99.90 (other glassware, valued over $0.30 but not over $3, or over $3) would then apply. The statement that the glass is not cut, engraved, or crystalline also reads like 7013 subheading criteria, which points toward 7013.\n- Chapter 95 notes exclude nothing relevant here, but 9505 covers festive articles generally, and glass Christmas articles do fall there. Still, the detailed glass characterization strongly suggests 7013, and the $3.65 unit value would exceed $3, pointing to 7013.99.90.\n- With the LED, the item might be classified under 7013 as \"other glassware,\" since the lighting is incidental. The 7013.99.90 subheading is \"Other glassware: Other: Other: Valued over $3 each\", and the statistical suffix is 7013.99.9000.\n\nI'll go with 7013.99.9000, given the emphasis on glass characteristics and unit value.\n\n{\"hts_code\": \"7013.99.9000\", \"reason\": \"Decorative borosilicate glass cylinders with an incidental LED are other glassware for indoor decoration of heading 7013, not lead crystal and valued over $3 each.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 352,
+      "completion_tokens": 767,
+      "total_tokens": 1119,
+      "cost": 0.008374,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.008374,
+        "upstream_inference_prompt_cost": 0.000704,
+        "upstream_inference_completions_cost": 0.00767
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7013999000",
+  "predicted_reason": "Decorative borosilicate glass cylinders with an incidental LED are other glassware for indoor decoration of heading 7013, not lead crystal and valued over $3 each.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 767,
+    "total_tokens": 1119,
+    "cost": 0.008374,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.008374,
+      "upstream_inference_prompt_cost": 0.000704,
+      "upstream_inference_completions_cost": 0.00767
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:10.066650+00:00",
+  "latency_s": 7.473,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

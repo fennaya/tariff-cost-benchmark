@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361192",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9403200082",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600153-OHD7EclPVSbos3Lt5UAo",
+    "object": "chat.completion",
+    "created": 1791600153,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7323.93.0080\", \"reason\": \"Unassembled floor-standing steel storage/organization racks are other articles of iron or steel, not furniture, classified in subheading 7323.93.0080.\"}",
+          "refusal": null,
+          "reasoning": "Steel rack, floor-standing, unassembled. Likely 7323.93 or 9403.20? Metal furniture? Racks for storage \u2014 likely classified as furniture of metal 9403.20.00 or steel articles 7323. Storage racks like this are often classified 9403.20.0085? Actually 9403.20.00 metal furniture. But \"racks\" for storage of items \u2014 NY rulings often classify steel storage racks under 7323.93 or 9403. If not furniture (industrial storage), 7323.93.0080. Free-standing racks with hangers \u2014 likely 7323.93.0080 (household/other steel articles) or 7308? Load-bearing racks, industrial storage: 7308.90? Hmm. Similar ruling: \"steel storage racks\" classified 7323.93.00. I'll go 7323.93.0080.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Steel rack, floor-standing, unassembled. Likely 7323.93 or 9403.20? Metal furniture? Racks for storage \u2014 likely classified as furniture of metal 9403.20.00 or steel articles 7323. Storage racks like this are often classified 9403.20.0085? Actually 9403.20.00 metal furniture. But \"racks\" for storage of items \u2014 NY rulings often classify steel storage racks under 7323.93 or 9403. If not furniture (industrial storage), 7323.93.0080. Free-standing racks with hangers \u2014 likely 7323.93.0080 (household/other steel articles) or 7308? Load-bearing racks, industrial storage: 7308.90? Hmm. Similar ruling: \"steel storage racks\" classified 7323.93.00. I'll go 7323.93.0080.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 432,
+      "completion_tokens": 272,
+      "total_tokens": 704,
+      "cost": 0.0013784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0013784,
+        "upstream_inference_prompt_cost": 7.28e-05,
+        "upstream_inference_completions_cost": 0.0013056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 224,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7323930080",
+  "predicted_reason": "Unassembled floor-standing steel storage/organization racks are other articles of iron or steel, not furniture, classified in subheading 7323.93.0080.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 432,
+    "completion_tokens": 272,
+    "total_tokens": 704,
+    "cost": 0.0013784,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0013784,
+      "upstream_inference_prompt_cost": 7.28e-05,
+      "upstream_inference_completions_cost": 0.0013056
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 224,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:42:34.198402+00:00",
+  "latency_s": 2.273,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

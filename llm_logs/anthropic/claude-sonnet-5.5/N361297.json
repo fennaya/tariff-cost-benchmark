@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361297",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9021908100",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596241-VzmKlGnoscrRVQdJJOLj",
+    "object": "chat.completion",
+    "created": 1791596241,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a silk-fibroin nerve guide conduit, an implantable medical device that is bioabsorbable. The candidate headings are:\n\n- 3006.10: sterile surgical catgut, similar sterile suture materials, sterile tissue adhesives, sterile absorbable surgical or dental hemostatics, and similar items. 3006.10.0000 covers \"sterile surgical catgut, similar sterile suture materials (including sterile absorbable surgical or dental yarns)...\". It does not fit well.\n- 9021.10: orthopedic or fracture appliances. 9021.90 covers other appliances worn or carried, or implanted in the body, to compensate for a defect or disability. A nerve guide is implanted to compensate for a defect, so 9021.90 fits. Within it, 9021.90.8 is \"Other\", and the statistical suffix 9021.90.9000 is \"Other\".\n- 9018.39: catheters, cannulae and the like. This is a possible alternative, but the implant is a better fit under 9021.\n\nHTS 9021.90: 9021.90.10 covers parts and accessories of artificial joints, and 9021.90.39 and 9021.90.41 cover other items. 9021.90.8 is \"Other\" (9021.90.81 is for electrical items, 9021.90.85 for other). I believe the structure is 9021.90.81 for \"Other: Electrical\", 9021.90.85 for \"Other: Other\", and 9021.90.39 for \"Other\" implanted. I'll go with 9021.90.8590.\n\n```json\n{\"hts_code\": \"9021.90.8590\", \"reason\": \"A bioabsorbable silk-fibroin nerve guide conduit is an implanted appliance that compensates for a defect in the body, so it falls in heading 9021 under the other-appliances provision.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 598,
+      "total_tokens": 1004,
+      "cost": 0.006792,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006792,
+        "upstream_inference_prompt_cost": 0.000812,
+        "upstream_inference_completions_cost": 0.00598
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9021908590",
+  "predicted_reason": "A bioabsorbable silk-fibroin nerve guide conduit is an implanted appliance that compensates for a defect in the body, so it falls in heading 9021 under the other-appliances provision.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 406,
+    "completion_tokens": 598,
+    "total_tokens": 1004,
+    "cost": 0.006792,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006792,
+      "upstream_inference_prompt_cost": 0.000812,
+      "upstream_inference_completions_cost": 0.00598
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:37:22.090873+00:00",
+  "latency_s": 6.366,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

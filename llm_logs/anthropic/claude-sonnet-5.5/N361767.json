@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N361767",
+  "rulingDate": "2026-06-22T00:00:00",
+  "true_code": "8310000000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596344-Gi7PZNMfcsMszlR3JyXQ",
+    "object": "chat.completion",
+    "created": 1791596344,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on aluminum business cards and table signs. Aluminum articles printed with information: candidates are 7616.99 (other articles of aluminum), 4911.99 (printed matter), or 8310 (sign plates, nameplates, and similar plates, numbers, letters, and other symbols of base metal, printed).\n\nHeading 8310 covers \"Sign plates, name plates, address plates and similar plates, numerals, letters and other symbols, of base metal, excluding those of heading 9405.\" Table signs fit 8310. Business cards: the printing is not merely incidental, so they could be 4911 printed matter. However, the cards are aluminum and the printing is on metal. Note 2 to Section XV excludes nothing here, and Chapter 49 covers printed matter, including products printed on non-paper. Chapter 49 excludes items in which printing is incidental to the primary use; for metal cards, the printing is the primary purpose, but the metal is the material.\n\nI recall that CBP ruling NY N2xxxxx classified the aluminum business cards and table signs in 8310.00.00 (\"Sign plates, name plates... of base metal\"). The 10-digit code is 8310.00.0000 (in the HTSUS, 8310.00.00 has statistical suffixes 8310.00.0000 for plates; some versions have 8310.00.0000 only).\n\nI'll go with 8310.00.0000.\n\n{\"hts_code\": \"8310.00.0000\", \"reason\": \"The printed aluminum table signs and business cards are base-metal sign plates and similar plates bearing printed information, classified in heading 8310.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 535,
+      "total_tokens": 884,
+      "cost": 0.006048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006048,
+        "upstream_inference_prompt_cost": 0.000698,
+        "upstream_inference_completions_cost": 0.00535
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8310000000",
+  "predicted_reason": "The printed aluminum table signs and business cards are base-metal sign plates and similar plates bearing printed information, classified in heading 8310.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 535,
+    "total_tokens": 884,
+    "cost": 0.006048,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006048,
+      "upstream_inference_prompt_cost": 0.000698,
+      "upstream_inference_completions_cost": 0.00535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:39:05.204578+00:00",
+  "latency_s": 5.331,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

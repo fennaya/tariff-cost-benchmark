@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357679",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "3926903000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595467-k21zqFAxkdTOAJ9NWBGU",
+    "object": "chat.completion",
+    "created": 1791595467,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on fin stabilizers for yachts. Parts of yachts fall under heading 8907 or 8906, but the glass fiber reinforced resin fins are more likely classified as parts of vessels under 8908? Heading 8907 covers other floating structures, and 8908 covers vessels for breaking up. Parts of pleasure vessels are not specifically provided for in Chapter 89. Parts of vessels are generally classified in heading 8903 only for the vessels themselves. Parts of yachts of 8903 would go by material or function. The fins are made of plastic, so Chapter 39 is plausible: 3926.90 other articles of plastics, \"Other.\" Note that Section XVII Note 2 excludes parts of general use and plastic articles of Chapter 39 (Section XVII note 2(l) excludes... \"articles of Chapter 39\"? Actually note 2 excludes parts of general use as defined in Note 2 to Section XV of base metal (headings 7307 etc.) and similar goods of plastics (Chapter 39)). Fins are not general-use parts, though. Chapter 89 has no parts heading, other than hulls under 8907. Section XVII note 2 doesn't exclude Chapter 39 broadly, so the fins would still be classified by material under 3926.90.\n\nOn the other hand, stabilizer fins that are functional parts of a vessel could be classified as 8479 machines? Without an actuator, they're just fins, so plastics. The glass fiber reinforcement still makes this Chapter 39, with 3926.90.99 as the basket subheading. The 3926.90.9990 statistical suffix is the most likely.\n\n```json\n{\"hts_code\": \"3926.90.9990\", \"reason\": \"Stand-alone glass-fiber-reinforced resin stabilizer fins (without actuators) are not machines or vessel parts specifically provided for elsewhere, so they are classified as other articles of plastics in heading 3926.\"}\n```",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 546,
+      "completion_tokens": 653,
+      "total_tokens": 1199,
+      "cost": 0.007622,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007622,
+        "upstream_inference_prompt_cost": 0.001092,
+        "upstream_inference_completions_cost": 0.00653
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926909990",
+  "predicted_reason": "Stand-alone glass-fiber-reinforced resin stabilizer fins (without actuators) are not machines or vessel parts specifically provided for elsewhere, so they are classified as other articles of plastics in heading 3926.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 546,
+    "completion_tokens": 653,
+    "total_tokens": 1199,
+    "cost": 0.007622,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007622,
+      "upstream_inference_prompt_cost": 0.001092,
+      "upstream_inference_completions_cost": 0.00653
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:27.519602+00:00",
+  "latency_s": 6.793,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

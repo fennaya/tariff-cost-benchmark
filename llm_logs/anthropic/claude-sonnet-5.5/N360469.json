@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360469",
+  "rulingDate": "2026-04-29T00:00:00",
+  "true_code": "7306505050",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596090-rPDsgyqhs4MAr6hWlySV",
+    "object": "chat.completion",
+    "created": 1791596090,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on door impact beams made from ERW alloy steel pipe. The product is a tube of circular cross section, welded, with an outside diameter of 31.8 mm (under 114.3 mm) and a wall thickness of 2.6 mm. The question is whether it falls under heading 7306 or under 8708 as a vehicle part.\n\nHeading 7306 covers other tubes, pipes and hollow profiles (welded, riveted, etc.). The alloy steel, welded, circular cross-section tubes would be 7306.30 (other, welded, of circular cross section, of iron or non-alloy steel) or 7306.50 (other, welded, of circular cross section, of other alloy steel). Since the steel is alloy, 7306.50 applies. 7306.50.10 covers seamless? Actually 7306.50.10 is \"Of circular cross section, of other alloy steel: Welded,\" with 7306.50.10 being \"Having a wall thickness of less than 4 mm\"? I believe the structure is 7306.50.10 for tubes with an outside diameter under 19 mm, and 7306.50.50 for others, probably. Based on memory, 7306.50.21 and 7306.50.51 are not certain either.\n\nThe tube is coated, with only a surface treatment, and is not yet specially formed. The ruling probably held that it remains classified in 7306 because it is a simple pipe, not a finished part. Being hot-rolled and coated, it would probably go under 7306.50.50 as \"Other: Other\", with the subdivision 7306.50.5030 (or 5010) giving the 10-digit. I'll answer 7306.50.5040? Not sure; I'll choose 7306.50.5070? I recall 7306.50.50 statistical suffixes: 30 (Having outside diameter less than 38.1 mm?), 50 ... I'll go with 7306.50.5030.\n\n{\"hts_code\": \"7306.50.5030\", \"reason\": \"Welded circular-section alloy steel tubes that are only coated and not further worked are classified in heading 7306 as other welded tubes of other alloy steel, not as vehicle parts under 8708.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 293,
+      "completion_tokens": 712,
+      "total_tokens": 1005,
+      "cost": 0.007706,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.007706,
+        "upstream_inference_prompt_cost": 0.000586,
+        "upstream_inference_completions_cost": 0.00712
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7306505030",
+  "predicted_reason": "Welded circular-section alloy steel tubes that are only coated and not further worked are classified in heading 7306 as other welded tubes of other alloy steel, not as vehicle parts under 8708.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 293,
+    "completion_tokens": 712,
+    "total_tokens": 1005,
+    "cost": 0.007706,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.007706,
+      "upstream_inference_prompt_cost": 0.000586,
+      "upstream_inference_completions_cost": 0.00712
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:34:50.680356+00:00",
+  "latency_s": 7.368,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

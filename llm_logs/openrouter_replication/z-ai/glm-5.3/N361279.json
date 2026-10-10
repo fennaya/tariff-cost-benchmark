@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361279",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "8421390115",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600156-cXcVA7gkXVsyUPnnG279",
+    "object": "chat.completion",
+    "created": 1791600156,
+    "model": "z-ai/glm-5.3",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8421.39.8040\", \"reason\": \"These multi-stage composite HEPA replacement filter elements for residential air purifiers are classified as filtering/purifying apparatus for gases, other air filtering equipment, per CBP ruling practice for such filter cartridges.\"}",
+          "refusal": null,
+          "reasoning": "HEPA filter for air purifier \u2014 machinery filter, likely 8421.39.8040? Filters for air purification machinery \u2014 heading 8421 parts? Actually complete filter elements classified as parts of filtering machinery: 8421.99.0080? Ruling style: air filter cartridges for purifiers classified in 8421.39 as filtering apparatus? CBP rulings classify replacement HEPA filters under 8421.39.8040 (\"other air filtering apparatus\"?). 8421.39 covers filtering/purifying apparatus for gases. Replacement filter elements have been classified under 8421.39.8040 in rulings (e.g., NY N-series). Use 8421.39.8040.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "HEPA filter for air purifier \u2014 machinery filter, likely 8421.39.8040? Filters for air purification machinery \u2014 heading 8421 parts? Actually complete filter elements classified as parts of filtering machinery: 8421.99.0080? Ruling style: air filter cartridges for purifiers classified in 8421.39 as filtering apparatus? CBP rulings classify replacement HEPA filters under 8421.39.8040 (\"other air filtering apparatus\"?). 8421.39 covers filtering/purifying apparatus for gases. Replacement filter elements have been classified under 8421.39.8040 in rulings (e.g., NY N-series). Use 8421.39.8040.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 445,
+      "completion_tokens": 223,
+      "total_tokens": 668,
+      "cost": 0.0008078125,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008078125,
+        "upstream_inference_prompt_cost": 0.0002503125,
+        "upstream_inference_completions_cost": 0.0005575
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 160,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8421398040",
+  "predicted_reason": "These multi-stage composite HEPA replacement filter elements for residential air purifiers are classified as filtering/purifying apparatus for gases, other air filtering equipment, per CBP ruling practice for such filter cartridges.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 445,
+    "completion_tokens": 223,
+    "total_tokens": 668,
+    "cost": 0.0008078125,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0008078125,
+      "upstream_inference_prompt_cost": 0.0002503125,
+      "upstream_inference_completions_cost": 0.0005575
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 160,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "DeepInfra",
+  "requested_at": "2026-10-10T02:42:37.260736+00:00",
+  "latency_s": 2.271,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

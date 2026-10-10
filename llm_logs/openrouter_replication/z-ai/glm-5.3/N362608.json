@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362608",
+  "rulingDate": "2026-07-16T00:00:00",
+  "true_code": "7307290090",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600338-7bBHoxRQdYnOzSRC23dB",
+    "object": "chat.completion",
+    "created": 1791600338,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"7307.29.0000\", \"reason\": \"Stainless steel (not cast iron) PEX pipe fittings without threaded pipe connections of the type described in 7307.21/7307.22 fall under the residual provision for other stainless steel tube or pipe fittings in subheading 7307.29.\"}",
+          "refusal": null,
+          "reasoning": "Stainless steel pipe fittings \u2014 7307.29.00? Threaded stainless fittings: 7307.19? Stainless threaded fittings: 7307.19.00... Actually 7307.19 = threaded, other than cast iron; 7307.22 = flanges stainless; 7307.29 = other, stainless. Barbed PEX fittings are not threaded (mostly). CBP rulings classify stainless steel PEX crimp fittings under 7307.29.10 (welded?) Hmm. 7307.29.0030? Let me recall: 7307.29.0000 \"Other, of stainless steel\". Actually HTS 7307.29.0030? I believe subheading 7307.29.00 exists with stat suffixes. Common ruling: NY N-series classified stainless steel PEX fittings in 7307.29.0030? Not sure. Safer: 7307.29.0000? HTS structure: 7307.21 flanges of stainless steel, 7307.22 threaded elbows etc of stainless steel, 7307.29 other of stainless steel. 7307.29.0000? Stat suffixes: 7307.29.0000? I'll answer 7307.29.0000... Actually I recall rulings citing 7307.29.0030 for stainless steel pipe fittings. Hmm, 7307.29.0030 doesn't ring. I'll go 7307.29.0000.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Stainless steel pipe fittings \u2014 7307.29.00? Threaded stainless fittings: 7307.19? Stainless threaded fittings: 7307.19.00... Actually 7307.19 = threaded, other than cast iron; 7307.22 = flanges stainless; 7307.29 = other, stainless. Barbed PEX fittings are not threaded (mostly). CBP rulings classify stainless steel PEX crimp fittings under 7307.29.10 (welded?) Hmm. 7307.29.0030? Let me recall: 7307.29.0000 \"Other, of stainless steel\". Actually HTS 7307.29.0030? I believe subheading 7307.29.00 exists with stat suffixes. Common ruling: NY N-series classified stainless steel PEX fittings in 7307.29.0030? Not sure. Safer: 7307.29.0000? HTS structure: 7307.21 flanges of stainless steel, 7307.22 threaded elbows etc of stainless steel, 7307.29 other of stainless steel. 7307.29.0000? Stat suffixes: 7307.29.0000? I'll answer 7307.29.0000... Actually I recall rulings citing 7307.29.0030 for stainless steel pipe fittings. Hmm, 7307.29.0030 doesn't ring. I'll go 7307.29.0000.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 446,
+      "completion_tokens": 423,
+      "total_tokens": 869,
+      "cost": 0.00204773,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00204773,
+        "upstream_inference_prompt_cost": 1.733e-05,
+        "upstream_inference_completions_cost": 0.0020304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 355,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "7307290000",
+  "predicted_reason": "Stainless steel (not cast iron) PEX pipe fittings without threaded pipe connections of the type described in 7307.21/7307.22 fall under the residual provision for other stainless steel tube or pipe fittings in subheading 7307.29.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 446,
+    "completion_tokens": 423,
+    "total_tokens": 869,
+    "cost": 0.00204773,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00204773,
+      "upstream_inference_prompt_cost": 1.733e-05,
+      "upstream_inference_completions_cost": 0.0020304
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 355,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:45:38.351019+00:00",
+  "latency_s": 6.064,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

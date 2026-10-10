@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357690",
+  "rulingDate": "2026-01-29T00:00:00",
+  "true_code": "9305996000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595474-73sdaxzkAgwgQIxEfu0t",
+    "object": "chat.completion",
+    "created": 1791595474,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on a rifle magazine speed loader. Candidate headings are 9305.20 (parts and accessories of rifles) and 8466 or 3926. Magazine loaders for firearms are generally classified as parts and accessories of firearms in heading 9305. Within it, 9305.20 covers parts and accessories of shotguns or rifles of heading 9303, and the subheading 9305.20.60 is \"Other\", which is the likely home for a speed loader.\n\nThe 9305.20 breakdown is:\n- 9305.20.20: shotgun barrels\n- 9305.20.30: rifle barrels\n- 9305.20.60: other (the 10-digit statistical number is 9305.20.6000)\n\nHowever, the speed loader is not a part of the rifle itself, since it is an accessory that loads magazines. Heading 9305 still covers accessories, and a prior ruling may have treated these as 9305.20.6000. Chapter 93 Note 1 excludes some items, but a speed loader is not among them. I'll go with 9305.20.6000.\n\n{\"hts_code\": \"9305.20.6000\", \"reason\": \"A rifle magazine speed loader is an accessory for rifle magazines, so it falls under heading 9305 as an 'other' part or accessory of rifles of heading 9303.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 651,
+      "completion_tokens": 432,
+      "total_tokens": 1083,
+      "cost": 0.005622,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005622,
+        "upstream_inference_prompt_cost": 0.001302,
+        "upstream_inference_completions_cost": 0.00432
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9305206000",
+  "predicted_reason": "A rifle magazine speed loader is an accessory for rifle magazines, so it falls under heading 9305 as an 'other' part or accessory of rifles of heading 9303.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 651,
+    "completion_tokens": 432,
+    "total_tokens": 1083,
+    "cost": 0.005622,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005622,
+      "upstream_inference_prompt_cost": 0.001302,
+      "upstream_inference_completions_cost": 0.00432
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:24:34.772064+00:00",
+  "latency_s": 4.734,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

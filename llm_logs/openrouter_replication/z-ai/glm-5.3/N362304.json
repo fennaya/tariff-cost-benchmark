@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362304",
+  "rulingDate": "2026-07-10T00:00:00",
+  "true_code": "2008996500",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600297-DxEbiNt4LYl34Pipwcss",
+    "object": "chat.completion",
+    "created": 1791600297,
+    "model": "z-ai/glm-5.3",
+    "provider": "Wafer",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"1905.90.1090\", \"reason\": \"The fully baked, ready-to-eat cassava-based flatbread is classified as other bread and bakery products of heading 1905, specifically flatbread of subheading 1905.90.10.\"}",
+          "refusal": null,
+          "reasoning": "Cassava-based flatbread \u2014 likely 1905.90 or 1106.20? Cassava flour/bread. Flatbread baked from cassava, ready to eat \u2014 1905.90? But 100% cassava, no flour added... Similar rulings: cassava flatbread classified 1905.90. Actually there are CBP rulings on cassava tortillas/flatbreads classified in 1905.90.10? Flatbread 1905.90.10 is a specific subheading? 1905.90.10 \"crispbread\". Flatbread could be 1905.90.10? Crispbread is 1905.10. Flatbread subheading 1905.90.10? HTSUS 1905.90.10 is \"other bread\". Actually 1905.90.10 covers... In current HTSUS, 1905.90.10 is flatbread. Yes, flatbread is 1905.90.10.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Cassava-based flatbread \u2014 likely 1905.90 or 1106.20? Cassava flour/bread. Flatbread baked from cassava, ready to eat \u2014 1905.90? But 100% cassava, no flour added... Similar rulings: cassava flatbread classified 1905.90. Actually there are CBP rulings on cassava tortillas/flatbreads classified in 1905.90.10? Flatbread 1905.90.10 is a specific subheading? 1905.90.10 \"crispbread\". Flatbread could be 1905.90.10? Crispbread is 1905.10. Flatbread subheading 1905.90.10? HTSUS 1905.90.10 is \"other bread\". Actually 1905.90.10 covers... In current HTSUS, 1905.90.10 is flatbread. Yes, flatbread is 1905.90.10.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 318,
+      "completion_tokens": 271,
+      "total_tokens": 589,
+      "cost": 0.001313138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 64,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001313138,
+        "upstream_inference_prompt_cost": 1.2338e-05,
+        "upstream_inference_completions_cost": 0.0013008
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 218,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "1905901090",
+  "predicted_reason": "The fully baked, ready-to-eat cassava-based flatbread is classified as other bread and bakery products of heading 1905, specifically flatbread of subheading 1905.90.10.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 318,
+    "completion_tokens": 271,
+    "total_tokens": 589,
+    "cost": 0.001313138,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 64,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.001313138,
+      "upstream_inference_prompt_cost": 1.2338e-05,
+      "upstream_inference_completions_cost": 0.0013008
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 218,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Wafer",
+  "requested_at": "2026-10-10T02:44:58.127564+00:00",
+  "latency_s": 2.462,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

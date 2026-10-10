@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N362938",
+  "rulingDate": "2026-08-05T00:00:00",
+  "true_code": "3004390080",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600377-AvTkIrzXSFRlhmtEmEmf",
+    "object": "chat.completion",
+    "created": 1791600377,
+    "model": "z-ai/glm-5.3",
+    "provider": "Morph",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"3004.32.0000\", \"reason\": \"Progesterone is a progestin hormone (a product of heading 2937) packaged in measured-dose capsules for therapeutic use, classifying it as a medicament containing hormones other than insulin under subheading 3004.32.\"}",
+          "refusal": null,
+          "reasoning": "Progesterone capsules \u2014 hormone preparations. HTSUS 3004.39 \u2014 other medicaments containing hormones, put up in measured doses. Actually hormones: 3004.32? 3004.31 insulin, 3004.32 hormones containing... 3004.39 other. Progesterone is a hormone (progestogen). Subheading 3004.32.00? Let me recall: 3004.3 \u2013 containing hormones, other than antibiotics. 3004.31 insulin; 3004.32 other, containing hormones; 3004.39 other. Actually structure: 3004.31 \u2013 containing insulin; 3004.32 \u2013 containing hormones or products of heading 2937, other than insulin; 3004.39 \u2013 other. So progesterone \u2192 3004.32.00. 10-digit: 3004.32.0000? There may be statistical suffixes. I believe 3004.32.0000. Actually there's 3004.32.0050? Hmm. Common answer: 3004.32.0000. But some sources: 3004.32.0050 \"Other\" \u2014 I think 3004.32.00 has suffixes 0000? Checking memory: heading 3004.32.00 with statistical suffixes 0000? I recall NY rulings citing 3004.32.0000 for hormone preparations. Go with that.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Progesterone capsules \u2014 hormone preparations. HTSUS 3004.39 \u2014 other medicaments containing hormones, put up in measured doses. Actually hormones: 3004.32? 3004.31 insulin, 3004.32 hormones containing... 3004.39 other. Progesterone is a hormone (progestogen). Subheading 3004.32.00? Let me recall: 3004.3 \u2013 containing hormones, other than antibiotics. 3004.31 insulin; 3004.32 other, containing hormones; 3004.39 other. Actually structure: 3004.31 \u2013 containing insulin; 3004.32 \u2013 containing hormones or products of heading 2937, other than insulin; 3004.39 \u2013 other. So progesterone \u2192 3004.32.00. 10-digit: 3004.32.0000? There may be statistical suffixes. I believe 3004.32.0000. Actually there's 3004.32.0050? Hmm. Common answer: 3004.32.0000. But some sources: 3004.32.0050 \"Other\" \u2014 I think 3004.32.00 has suffixes 0000? Checking memory: heading 3004.32.00 with statistical suffixes 0000? I recall NY rulings citing 3004.32.0000 for hormone preparations. Go with that.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 185,
+      "completion_tokens": 379,
+      "total_tokens": 564,
+      "cost": 0.002346705,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002346705,
+        "upstream_inference_prompt_cost": 7.2705e-05,
+        "upstream_inference_completions_cost": 0.002274
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 311,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3004320000",
+  "predicted_reason": "Progesterone is a progestin hormone (a product of heading 2937) packaged in measured-dose capsules for therapeutic use, classifying it as a medicament containing hormones other than insulin under subheading 3004.32.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 185,
+    "completion_tokens": 379,
+    "total_tokens": 564,
+    "cost": 0.002346705,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.002346705,
+      "upstream_inference_prompt_cost": 7.2705e-05,
+      "upstream_inference_completions_cost": 0.002274
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 311,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Morph",
+  "requested_at": "2026-10-10T02:46:17.767036+00:00",
+  "latency_s": 3.712,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

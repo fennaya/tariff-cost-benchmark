@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363283",
+  "rulingDate": "2026-07-29T00:00:00",
+  "true_code": "8501528040",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596635-cJTRYrvOyEiFHsP3A28T",
+    "object": "chat.completion",
+    "created": 1791596635,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "Multi-phase AC motor, output 42.5 kW, which is above 37.5 W, so it falls under 8501.5x. The relevant range is 750 W to 75 kW, which is 8501.52.\n\nHTSUS 8501.52: \"Other AC motors, multi-phase: of an output exceeding 750 W but not exceeding 75 kW.\"\n- 8501.52.20: Of an output exceeding 746 W but not exceeding 14.92 kW\n- 8501.52.40: Exceeding 14.92 kW but not exceeding 75 kW... Under the current schedule, 8501.52.40 is \"Exceeding 14.92 kW but not exceeding 75 kW,\" with the 10-digit level being 8501.52.4000 (the 8-digit has no further breakdown). Older versions listed 8501.52.40 as 8501.52.4000 and 8501.52.60 as another range. Current: 8501.52.20 (750 W to 14.92 kW), 8501.52.40 (14.92 kW to 75 kW). The 8501.52.20 line has statistical suffixes 8501.52.2000 for the 10-digit level, and I believe 8501.52.4000 is the equivalent for 8501.52.40.\n\nMotors for submersible pumps are not pump parts, since they are imported separately, so they stay in 8501.\n\n{\"hts_code\": \"8501.52.4000\", \"reason\": \"A multi-phase AC motor with an output of 42.5 kW, imported separately from the pump, is classified in 8501.52 for outputs exceeding 750 W but not exceeding 75 kW, and in subheading 8501.52.40 because it exceeds 14.92 kW.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 341,
+      "completion_tokens": 559,
+      "total_tokens": 900,
+      "cost": 0.006272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006272,
+        "upstream_inference_prompt_cost": 0.000682,
+        "upstream_inference_completions_cost": 0.00559
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8501524000",
+  "predicted_reason": "A multi-phase AC motor with an output of 42.5 kW, imported separately from the pump, is classified in 8501.52 for outputs exceeding 750 W but not exceeding 75 kW, and in subheading 8501.52.40 because it exceeds 14.92 kW.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 341,
+    "completion_tokens": 559,
+    "total_tokens": 900,
+    "cost": 0.006272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006272,
+      "upstream_inference_prompt_cost": 0.000682,
+      "upstream_inference_completions_cost": 0.00559
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:43:55.639628+00:00",
+  "latency_s": 5.174,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

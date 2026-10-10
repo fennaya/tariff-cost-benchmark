@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N358696",
+  "rulingDate": "2026-03-05T00:00:00",
+  "true_code": "3926400090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595651-tekhEiuhvomJ0qDS4R8P",
+    "object": "chat.completion",
+    "created": 1791595651,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This appears to be a CBP ruling on \"melting art sculptures resembling melting ice pops,\" likely made of resin or similar material. Sculptures of this kind are decorative articles. Possible headings:\n\n- 9703: original sculptures and statuary, in any material. This applies only to original works by an artist, and commercial production in various colors argues against it.\n- 6913: ceramic statuettes and other ornamental articles.\n- 3926.40: plastic statuettes and other ornamental articles. This is 3926.40.0010 for the HTS \"Statuettes and other ornamental articles.\"\n- 8306.29: base metal statuettes.\n\nThe use of components from the US or Canada and creation in Canada points to a USMCA question, which suggests plastic or resin. I'm assuming the material is plastic or resin, so I chose 3926.40.0090, \"Other\" ornamental articles. The 3926.40.00 subheading has statistical suffixes of 10 for statuettes and figurines and 90 for other, and I'm not certain of that split. Since these are sculptures, I chose 3926.40.0010 for statuettes.\n\n```json\n{\"hts_code\": \"3926.40.0010\", \"reason\": \"Commercially produced decorative melting ice-pop sculptures, presumed to be made of plastic/resin, are classified as plastic statuettes and other ornamental articles.\"}\n```\n\nUltimately the answer is:\n\n{\"hts_code\": \"3926.40.0010\", \"reason\": \"Commercially produced decorative melting ice-pop sculptures, presumed to be made of plastic/resin, are classified as plastic statuettes and other ornamental articles.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 242,
+      "completion_tokens": 535,
+      "total_tokens": 777,
+      "cost": 0.005834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005834,
+        "upstream_inference_prompt_cost": 0.000484,
+        "upstream_inference_completions_cost": 0.00535
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3926400010",
+  "predicted_reason": "Commercially produced decorative melting ice-pop sculptures, presumed to be made of plastic/resin, are classified as plastic statuettes and other ornamental articles.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 242,
+    "completion_tokens": 535,
+    "total_tokens": 777,
+    "cost": 0.005834,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005834,
+      "upstream_inference_prompt_cost": 0.000484,
+      "upstream_inference_completions_cost": 0.00535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:27:31.585830+00:00",
+  "latency_s": 5.347,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N363362",
+  "rulingDate": "2026-07-30T00:00:00",
+  "true_code": "9504909080",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596650-h7l4BKYHpnXTJG5NUjL7",
+    "object": "chat.completion",
+    "created": 1791596650,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on children's games. The likely classification is heading 9504, \"Articles for arcade, table or parlor games...\", with the subheading for other games. The relevant options are:\n\n- 9504.90.40: Tricks and practical joke articles... no.\n- 9504.90.60: Other games, \"Other\" (parlor games, i.e., games not requiring electricity or otherwise specified).\n- 9504.90.9080 / 9504.90.9000: Other.\n\nWithin 9504.90, the subheadings are: 9504.90.20 (Table tennis), 9504.90.40 (Game machines/ Other articles for arcade, table or parlor games, including pinball, bagatelle...), and 9504.90.60 (Other: Other). The statistical suffix for \"Other\" is 9504.90.6000. Board games and card games like these usually go to 9504.90.6000 (\"Other\"). Playing cards specifically are 9504.40, but these are not standard playing cards. The games include a toy biker figure and a chest with pieces, so they are classified as parlor games under 9504.90.\n\nThe 9504.90.40 subheading covers \"Other: Games of skill...\" in some versions. In the current schedule, 9504.90.40 is \"Board games (except chess/checkers)\". The games here are not board games, since there is no board. They are card and guessing games, so \"Other\" is the better fit.\n\n{\"hts_code\": \"9504.90.6000\", \"reason\": \"Children's card/guessing parlor games with components (figure, cards, chest, pieces) but no game board are classified as other table or parlor games in heading 9504, subheading 9504.90.60.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 798,
+      "completion_tokens": 535,
+      "total_tokens": 1333,
+      "cost": 0.006946,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.006946,
+        "upstream_inference_prompt_cost": 0.001596,
+        "upstream_inference_completions_cost": 0.00535
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9504906000",
+  "predicted_reason": "Children's card/guessing parlor games with components (figure, cards, chest, pieces) but no game board are classified as other table or parlor games in heading 9504, subheading 9504.90.60.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 798,
+    "completion_tokens": 535,
+    "total_tokens": 1333,
+    "cost": 0.006946,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.006946,
+      "upstream_inference_prompt_cost": 0.001596,
+      "upstream_inference_completions_cost": 0.00535
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:44:10.507728+00:00",
+  "latency_s": 5.883,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361816",
+  "rulingDate": "2026-06-23T00:00:00",
+  "true_code": "8302500000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600238-GWwQl7gWhcyEFrmOcwJU",
+    "object": "chat.completion",
+    "created": 1791600238,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"8529.90.6090\", \"reason\": \"CBP rulings classify TV wall mounting brackets as parts suitable for use solely with television apparatus of heading 8528, in the residual 'other' subheading.\"}",
+          "refusal": null,
+          "reasoning": "CROSS ruling: TV wall mount steel bracket \u2014 7616.99? No, steel: 7326.90? Actually rulings classify TV wall mounts under 8529.90? There is ruling classifying TV mounting brackets under 8529.90 (parts of TV apparatus). Yes, NY rulings put TV wall mounts in 8529.90.6090? For flat panel TVs, 8529.90.60... 8529.90.6090? HTS 8529.90.6080? I recall 8529.90.6090 \"other\". Use 8529.90.6090.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "CROSS ruling: TV wall mount steel bracket \u2014 7616.99? No, steel: 7326.90? Actually rulings classify TV wall mounts under 8529.90? There is ruling classifying TV mounting brackets under 8529.90 (parts of TV apparatus). Yes, NY rulings put TV wall mounts in 8529.90.6090? For flat panel TVs, 8529.90.60... 8529.90.6090? HTS 8529.90.6080? I recall 8529.90.6090 \"other\". Use 8529.90.6090.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 168,
+      "completion_tokens": 204,
+      "total_tokens": 372,
+      "cost": 0.0007272,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007272,
+        "upstream_inference_prompt_cost": 3.36e-05,
+        "upstream_inference_completions_cost": 0.0006936
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 149,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "8529906090",
+  "predicted_reason": "CBP rulings classify TV wall mounting brackets as parts suitable for use solely with television apparatus of heading 8528, in the residual 'other' subheading.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 168,
+    "completion_tokens": 204,
+    "total_tokens": 372,
+    "cost": 0.0007272,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0007272,
+      "upstream_inference_prompt_cost": 3.36e-05,
+      "upstream_inference_completions_cost": 0.0006936
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 149,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:43:59.055713+00:00",
+  "latency_s": 3.63,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

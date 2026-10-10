@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N360899",
+  "rulingDate": "2026-05-19T00:00:00",
+  "true_code": "9404902090",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596175-hBOOhfPClLzc43dcUCzV",
+    "object": "chat.completion",
+    "created": 1791596175,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a face support cradle with a plywood frame and a PU cushion. It slides between a mattress and box spring to support the head of a person lying prone during massage. It has no electronic or mechanical components and does not massage by itself.\n\nCandidate headings:\n- 9019.10: massage apparatus, but this covers mechano-therapy and massage apparatus. This item does not actively massage, so it is a poor fit.\n- 9403.60 or 9403.70: other furniture of wood or plastics. This is a possible fit.\n- 9404.90: cushions and articles of bedding. The cushion is only a component of the item.\n- 9401.90: parts of seats. A massage table face cradle could be treated as a part of a seat or table, but this one attaches to a mattress rather than a table.\n- 9403.60.80: other wooden furniture. The 9403.60.8081 line is for other wooden furniture, and the frame is plywood, which is the main structural material.\n\nSince the item is a free-standing support device that is mostly wooden furniture-like, I chose 9403.60.8081.\n\n{\"hts_code\": \"9403.60.8081\", \"reason\": \"Non-electric plywood-framed face support cradle with a PU cushion that slides under a mattress is best classified as other wooden furniture under heading 9403, since it does not actively massage and so falls outside 9019.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 429,
+      "completion_tokens": 438,
+      "total_tokens": 867,
+      "cost": 0.005238,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005238,
+        "upstream_inference_prompt_cost": 0.000858,
+        "upstream_inference_completions_cost": 0.00438
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9403608081",
+  "predicted_reason": "Non-electric plywood-framed face support cradle with a PU cushion that slides under a mattress is best classified as other wooden furniture under heading 9403, since it does not actively massage and so falls outside 9019.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 429,
+    "completion_tokens": 438,
+    "total_tokens": 867,
+    "cost": 0.005238,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005238,
+      "upstream_inference_prompt_cost": 0.000858,
+      "upstream_inference_completions_cost": 0.00438
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:36:15.837577+00:00",
+  "latency_s": 5.273,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

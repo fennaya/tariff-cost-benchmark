@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361297",
+  "rulingDate": "2026-05-21T00:00:00",
+  "true_code": "9021908100",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600163-wFdPt2FJOn7Y8kBSEuDB",
+    "object": "chat.completion",
+    "created": 1791600163,
+    "model": "z-ai/glm-5.3",
+    "provider": "AkashML",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"9018.90.6060\", \"reason\": \"A bioabsorbable implantable nerve guide conduit is an other instrument or appliance used in medical/surgical treatment, classified under other devices in heading 9018.\"}",
+          "refusal": null,
+          "reasoning": "Nerve guide conduit \u2014 implantable absorbable device. Likely 9018.39 or prosthetic? Nerve conduit \u2014 HTS 9018.90? Actually implantable nerve guides classified under 9018.39.00? 9018.39 is catheters etc. Nerve guide: 9018.90.60? I'd say 9018.39.00... Better: 9018.90.6060 (other instruments and appliances). Hmm, absorbable nerve conduit often classified 9018.39.0060? Catheters, cannulae \u2014 9018.39.00. Nerve guides are conduits... I'll go 9018.90.6060.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Nerve guide conduit \u2014 implantable absorbable device. Likely 9018.39 or prosthetic? Nerve conduit \u2014 HTS 9018.90? Actually implantable nerve guides classified under 9018.39.00? 9018.39 is catheters etc. Nerve guide: 9018.90.60? I'd say 9018.39.00... Better: 9018.90.6060 (other instruments and appliances). Hmm, absorbable nerve conduit often classified 9018.39.0060? Catheters, cannulae \u2014 9018.39.00. Nerve guides are conduits... I'll go 9018.90.6060.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 218,
+      "total_tokens": 471,
+      "cost": 0.00100727,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00100727,
+        "upstream_inference_prompt_cost": 4.807e-05,
+        "upstream_inference_completions_cost": 0.0009592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 115,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9018906060",
+  "predicted_reason": "A bioabsorbable implantable nerve guide conduit is an other instrument or appliance used in medical/surgical treatment, classified under other devices in heading 9018.",
+  "parse_error": null,
+  "valid_code": false,
+  "tag": "INVALID_CODE",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 218,
+    "total_tokens": 471,
+    "cost": 0.00100727,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00100727,
+      "upstream_inference_prompt_cost": 4.807e-05,
+      "upstream_inference_completions_cost": 0.0009592
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 115,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "AkashML",
+  "requested_at": "2026-10-10T02:42:44.259748+00:00",
+  "latency_s": 2.381,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

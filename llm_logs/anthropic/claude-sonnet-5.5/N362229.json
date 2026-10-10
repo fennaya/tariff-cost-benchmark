@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N362229",
+  "rulingDate": "2026-06-24T00:00:00",
+  "true_code": "9401616011",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791596450-mWLUZx58SNeF9KZbOyb0",
+    "object": "chat.completion",
+    "created": 1791596450,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This is a modular sofa section: an upholstered seat with a wooden frame, covered in leather. It falls under heading 9401, seats.\n\nSubheading 9401.61 covers upholstered seats with wooden frames, and 9401.61.40 is the other (non-convertible into beds) upholstered seat with a wooden frame. The question is whether the \"Leather Storage Console\" unit counts as a seat. It is a console segment with storage and cupholders, and it connects to sofa sections. CBP rulings on similar modular sectional consoles have classified them as seats under 9401.61.60.\n\nThe 9401.61 breakdown is:\n- 9401.61.20: Seats of a kind used for aircraft (the 9401.10 line is separate).\n- 9401.61.30: Chairs for the handicapped? Not certain.\n- 9401.61.40: Other, with wooden frame, upholstered, \"Other.\"\n- 9401.61.60: Other, Other.\n\nI recall that 9401.61.40 is \"Other: Upholstered: Other: Other\" (\"Other\" under 9401.61.40 for seats with wooden frames, 9401.61.60 for other). The actual structure in HTSUS is:\n- 9401.61.20: Seats of a kind used for... (multiple)\n- 9401.61.40: Other, with wooden frames: Other, \"Other\".\n- 9401.61.60: Other\n\nRecent rulings on leather sofa sectional units with wooden frames have used 9401.61.4011, which is \"Upholstered, with wooden frames: Other: Other: Other.\"\n\nSince 9401.61.40 has statistical suffix 11 for \"Stationary seating? Sofas?\" I will go with 9401.61.4011.\n\n```json\n{\"hts_code\": \"9401.61.4011\", \"reason\": \"Upholstered modular sofa sectional unit with a wooden frame is a seat of heading 9401, classified in subheading 9401.61 as an upholstered seat with a wooden frame.\"}\n```\n\n{\"hts_code\": \"9401.61.4011\", \"reason\": \"Upholstered modular sofa sectional unit with a wooden frame is a seat of heading 9401, classified in subheading 9401.61 as an upholstered seat with a wooden frame.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 480,
+      "completion_tokens": 736,
+      "total_tokens": 1216,
+      "cost": 0.00832,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00832,
+        "upstream_inference_prompt_cost": 0.00096,
+        "upstream_inference_completions_cost": 0.00736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "9401614011",
+  "predicted_reason": "Upholstered modular sofa sectional unit with a wooden frame is a seat of heading 9401, classified in subheading 9401.61 as an upholstered seat with a wooden frame.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 480,
+    "completion_tokens": 736,
+    "total_tokens": 1216,
+    "cost": 0.00832,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.00832,
+      "upstream_inference_prompt_cost": 0.00096,
+      "upstream_inference_completions_cost": 0.00736
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:40:50.556868+00:00",
+  "latency_s": 6.611,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}

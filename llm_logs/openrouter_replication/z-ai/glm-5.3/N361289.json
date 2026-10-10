@@ -1,0 +1,107 @@
+{
+  "rulingNumber": "N361289",
+  "rulingDate": "2026-05-13T00:00:00",
+  "true_code": "9505906000",
+  "model": "replication/z-ai/glm-5.3",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791600160-fQujBd336m8M2puYvJOp",
+    "object": "chat.completion",
+    "created": 1791600160,
+    "model": "z-ai/glm-5.3",
+    "provider": "Sail Research",
+    "system_fingerprint": null,
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"hts_code\": \"6110.30.3059\", \"reason\": \"The garment appears to be a knit pullover-style upper-body garment with a collar and long sleeves, classifiable as a women's pullover of man-made fibers.\"}",
+          "refusal": null,
+          "reasoning": "Garment description\u2014likely a knit top? Ambiguous; likely women's knit shirt 6110.30.3059? Description lacks fiber. Assume knit pullover? \"flat collar\" shirt... Choose 6110.30.3059.",
+          "reasoning_details": [
+            {
+              "type": "reasoning.text",
+              "text": "Garment description\u2014likely a knit top? Ambiguous; likely women's knit shirt 6110.30.3059? Description lacks fiber. Assume knit pullover? \"flat collar\" shirt... Choose 6110.30.3059.",
+              "format": "unknown",
+              "index": 0
+            }
+          ]
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 153,
+      "completion_tokens": 108,
+      "total_tokens": 261,
+      "cost": 0.0003978,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003978,
+        "upstream_inference_prompt_cost": 3.06e-05,
+        "upstream_inference_completions_cost": 0.0003672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 54,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "6110303059",
+  "predicted_reason": "The garment appears to be a knit pullover-style upper-body garment with a collar and long sleeves, classifiable as a women's pullover of man-made fibers.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 153,
+    "completion_tokens": 108,
+    "total_tokens": 261,
+    "cost": 0.0003978,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.0003978,
+      "upstream_inference_prompt_cost": 3.06e-05,
+      "upstream_inference_completions_cost": 0.0003672
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 54,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Sail Research",
+  "requested_at": "2026-10-10T02:42:41.062513+00:00",
+  "latency_s": 1.619,
+  "request_params": {
+    "model": "z-ai/glm-5.3",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "ignore": [
+        "Baseten"
+      ],
+      "allow_fallbacks": true
+    }
+  }
+}

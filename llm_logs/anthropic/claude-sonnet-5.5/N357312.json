@@ -1,0 +1,93 @@
+{
+  "rulingNumber": "N357312",
+  "rulingDate": "2026-01-16T00:00:00",
+  "true_code": "3304995000",
+  "model": "anthropic/claude-sonnet-5.5",
+  "probe": false,
+  "raw_response": {
+    "id": "gen-1791595377-FNFXeOcy8PgsTNFCySaH",
+    "object": "chat.completion",
+    "created": 1791595377,
+    "model": "anthropic/claude-sonnet-5.5",
+    "provider": "Claude Platform on AWS",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "end_turn",
+        "message": {
+          "role": "assistant",
+          "content": "This looks like a CBP ruling on hydrogel eye patches. These are skincare preparations, so they fall under heading 3304 (beauty or skin-care preparations). The question is which subheading.\n\nHeading 3304 has these subheadings:\n- 3304.10 lip makeup\n- 3304.20 eye makeup\n- 3304.30 manicure/pedicure\n- 3304.91 powders\n- 3304.99 other\n\nEye patches are skin care rather than eye makeup, so they go under 3304.99. The 3304.99 statistical suffixes are:\n- 3304.99.10 medicaments (HTS 3304.99.1000, a former category)\n- 3304.99.20 (?)\n- 3304.99.50 other: 3304.99.5000 is \"Other\" under the \"Other\" subheading\n- 3304.99.6000 is a more recent category\n\nCurrent HTSUS under 3304.99 reads:\n- 3304.99.10 Anti-acne preparations\n- 3304.99.20 Other: Face creams? \n- 3304.99.50 Other\n- 3304.99.51 ...\n\nI am not certain of the intermediate lines. The usual result for skincare products, such as the Dr. Melaxin patch rulings, is 3304.99.5000, and I'm going with that.\n\n{\"hts_code\": \"3304.99.5000\", \"reason\": \"Hydrogel eye patches with skin-nourishing ingredients are skin-care preparations of heading 3304, classified in the residual 'other' subheading for beauty or skin-care preparations.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 342,
+      "completion_tokens": 509,
+      "total_tokens": 851,
+      "cost": 0.005774,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.005774,
+        "upstream_inference_prompt_cost": 0.000684,
+        "upstream_inference_completions_cost": 0.00509
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "predicted_code": "3304995000",
+  "predicted_reason": "Hydrogel eye patches with skin-nourishing ingredients are skin-care preparations of heading 3304, classified in the residual 'other' subheading for beauty or skin-care preparations.",
+  "parse_error": null,
+  "valid_code": true,
+  "tag": null,
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 342,
+    "completion_tokens": 509,
+    "total_tokens": 851,
+    "cost": 0.005774,
+    "is_byok": false,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "audio_tokens": 0,
+      "video_tokens": 0
+    },
+    "cost_details": {
+      "upstream_inference_cost": 0.005774,
+      "upstream_inference_prompt_cost": 0.000684,
+      "upstream_inference_completions_cost": 0.00509
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "image_tokens": 0,
+      "audio_tokens": 0
+    }
+  },
+  "provider_served": "Claude Platform on AWS",
+  "requested_at": "2026-10-10T01:22:57.476523+00:00",
+  "latency_s": 4.591,
+  "request_params": {
+    "model": "anthropic/claude-sonnet-5.5",
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "effort": "minimal"
+    }
+  }
+}
