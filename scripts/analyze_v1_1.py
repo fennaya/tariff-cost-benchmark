@@ -241,6 +241,43 @@ def main():
             split = f"{fmt} / {invd}" + (f" ({fmt / len(inv):.0%} / {invd / len(inv):.0%})" if inv else "")
             out(f"| {m['model_id']} | {n} | {ci(acc(rows, 8), n)} | {ci(len(inv), n)} | {split} | {und} |")
 
+    # ---- v1.2: same-sample table on the post-cutoff rulings that all models share
+    def shared_table(title, group):
+        sets = []
+        for m in group:
+            cd, _ = cutoff_info(m)
+            rows = rows_by[m["model_id"]]
+            sets.append({r["rulingNumber"] for r in rows if cd is None or rdate(r) > cd})
+        shared = set.intersection(*sets) if sets else set()
+        latest = max((cutoff_info(m)[0] for m in group if cutoff_info(m)[0] is not None), default=None)
+        out("")
+        out(f"## {title}")
+        out("")
+        out(f"{len(group)} models; {len(shared)} rulings that are after every model's stated cutoff (latest stated cutoff: {latest}; models with no stated cutoff contribute all their rulings) and that every model in the table answered. "
+            "FORMAT / INVENTED is the split of each model's invalid answers on these rulings; underpay uses the rate-changing errors among them (small n, not a Gate B test). " + DAGGER_NOTE)
+        out("")
+        out("| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |")
+        out("|---|---|---|---|---|---|")
+        for m in group:
+            rows = [r for r in rows_by[m["model_id"]] if r["rulingNumber"] in shared]
+            n = len(rows)
+            inv = [r for r in rows if r.get("tag") == "INVALID_CODE"]
+            gc = Counter(group_of(r) for r in inv)
+            fmt = gc["a"] + gc["b8"] + gc["b9"] + gc["c"]
+            invd = gc["d"] + gc["e"]
+            g = gate_b(rows)
+            if g["n"]:
+                lo, hi = wilson_ci(g["under"], g["n"])
+                und = f"{g['share']:.1%} ({max(0, lo):.1%} to {hi:.1%}), n = {g['n']}"
+            else:
+                und = "n = 0"
+            split = f"{fmt} / {invd}" + (f" ({fmt / len(inv):.0%} / {invd / len(inv):.0%})" if inv else "")
+            out(f"| {m['model_id']} | {n} | {ci(acc(rows, 8), n)} | {ci(len(inv), n)} | {split} | {und} |")
+
+    shared_table("v1.2 same-sample table A: all main-table models on their shared post-cutoff rulings", models)
+    shared_table("v1.2 same-sample table B: the models run on all 1,098 rulings, on their shared post-cutoff rulings",
+                 [m for m in models if m.get("sample", "all") == "all"])
+
     # ---- Holm sensitivity for Gate B (added after the first results were seen; not pre-registered)
     out("\n## Sensitivity: Holm correction of the Gate B p-values across all models\n")
     out("Added after the first results were seen, as a sensitivity check; the pre-registered verdicts above are not changed. The p-values are the permutation p-values against Baseline 2 on each model's primary rows (the floor of 1,000 simulations is 1/1001 = 0.000999). Holm step-down adjustment over all models; a model still needs n >= 30 rate-changing errors.\n")
