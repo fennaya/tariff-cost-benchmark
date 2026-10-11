@@ -2,7 +2,7 @@
 
 **In plain terms.** On the same 228 customs rulings, the two most accurate models tested, Claude Opus 5.5 and GPT-6 Sol, get the 8 digits that set the duty right only about half the time (53.5% and 49.1%) and cannot be told apart statistically. Their wrong answers are mostly real codes (59% for Opus 5.5, 69% for GPT-6 Sol), so a "does this code exist?" check catches only 31% to 41% of them; most of their invalid codes (68% and 65%) are suffix slips on a real 8-digit tariff line, which a tariff lookup could catch, although the first 8 digits are also right in only 43% and 33% of their invalid answers. About a third of their wrong answers change the duty rate (33% and 38%; median duty at stake $0 per $100,000), and on all 1,098 rulings the lean toward underpaying is detected in GPT-6 Sol (56.6%) but not in Claude Opus 5.5 (46.3%).
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23197896.svg)](https://doi.org/10.5281/zenodo.23197896)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23284516.svg)](https://doi.org/10.5281/zenodo.23284516)
 
 Interactive demo: https://claude.ai/artifact/F7JGzyoPMmeXtaNgDv4R3Z
 
