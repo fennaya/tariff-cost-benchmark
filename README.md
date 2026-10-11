@@ -86,7 +86,7 @@ human decision.
 
 ## Reproduce
 
-The commands use the Windows layout. On Mac or Linux, replace `.venv/Scripts/python` with `.venv/bin/python`. Nothing else changes. `scripts/run_gemini_daily.bat` is Windows only. On Mac or Linux, schedule the same Python command with cron instead.
+The commands use the Windows layout. On Mac or Linux, replace `.venv/Scripts/python` with `.venv/bin/python`. Nothing else changes. The daily-run helper under `scripts/` is Windows only. On Mac or Linux, schedule the same Python command with cron instead. API keys are read from a local `.env` file (gitignored); supply your own, and never commit or paste them.
 
 ```bash
 uv venv --python 3.12.14 .venv
@@ -99,7 +99,7 @@ uv pip install --python .venv requests pandas scipy matplotlib
 .venv/Scripts/python scripts/parse_duty_rates.py       # Phase 3: duty rate resolution (Gate 3)
 .venv/Scripts/python scripts/build_exclusions_table.py
 
-# Requires a free-tier LLM key (GROQ_API_KEY checked first) in the environment:
+# Requires an API key for your model host, set in your own .env (never commit it):
 .venv/Scripts/python scripts/select_models.py          # Phase 0: pin exact model IDs
 .venv/Scripts/python scripts/run_llm_classification.py --n 50   # Phase 4: pilot
 .venv/Scripts/python scripts/run_llm_classification.py          # Phase 5: full run
@@ -119,7 +119,7 @@ uv pip install --python .venv requests pandas scipy matplotlib
 # Round 3 (invalid-code breakdown, guardrail, chart):
 .venv/Scripts/python scripts/fetch_older_hts.py         # archived HTS releases 2022-2026 as PDFs, parsed (slow: ~90 PDFs)
 .venv/Scripts/python scripts/analyze_invalid_codes.py   # breakdown, outdated check, dollar figure
-.venv/Scripts/python scripts/run_guardrail_followup.py --model <model_id>   # needs a Groq key; one run per model
+.venv/Scripts/python scripts/run_guardrail_followup.py --model <model_id>   # needs an API key; one run per model
 .venv/Scripts/python scripts/analyze_guardrail.py
 .venv/Scripts/python scripts/make_error_breakdown_chart.py   # figures/error_breakdown.png
 .venv/Scripts/python scripts/check_revision_impact.py
@@ -128,7 +128,7 @@ uv pip install --python .venv requests pandas scipy matplotlib
 .venv/Scripts/python scripts/analyze_validity_check.py  # what a validity check flags
 .venv/Scripts/python scripts/analyze_underpay_summary.py  # underpay n, Wilson CI, baseline p
 
-# v1.1 (stronger models; keys in .env: BASETEN_API_KEY, OPENROUTER_API_KEY; models and settings in config.json):
+# v1.1 (more models; API keys go in your own .env; models and settings in config.json):
 .venv/Scripts/python scripts/build_probe_ids.py          # Check A sample (seed 20261007)
 .venv/Scripts/python scripts/run_new_models.py --model <model_id> --n 50     # pilot; then without --n for the full run
 .venv/Scripts/python scripts/run_new_models.py --model <model_id> --probe    # Check A, ruling number only
@@ -155,8 +155,7 @@ runs), `review/translation_review_marked.csv`, and all scripts. Run `analysis.py
 `scripts/audit_*.py` / `analyze_language.py` scripts above directly on a fresh clone.
 
 Not tracked: `data/raw/hts_revisions/` (255 MB of raw USITC dumps) and
-`data/raw/hts_older_pdf/` (the archived HTS release PDFs, 1.7 GB), plus the local-only Gemini
-files until v1.1. Note: the 21 files in `data/raw/hts_revisions/` are all copies of the current schedule, because USITC's JSON export ignores the release parameter. Archived releases exist only as PDFs, which `scripts/fetch_older_hts.py` fetches and parses. The scripts layer each ruling-date release's PDF rates onto the JSON. See the Limitations in findings.md. To
+`data/raw/hts_older_pdf/` (the archived HTS release PDFs, 1.7 GB), plus a few local-only files. Note: the 21 files in `data/raw/hts_revisions/` are all copies of the current schedule, because USITC's JSON export ignores the release parameter. Archived releases exist only as PDFs, which `scripts/fetch_older_hts.py` fetches and parses. The scripts layer each ruling-date release's PDF rates onto the JSON. See the Limitations in findings.md. To
 rebuild the untracked files from scratch, from a fresh clone:
 
 ```bash
