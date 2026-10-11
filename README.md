@@ -2,11 +2,11 @@
 
 **In plain terms.** On the same 228 customs rulings, the two most accurate models tested, Claude Opus 5.5 and GPT-6 Sol, get the 8 digits that set the duty right only about half the time (53.5% and 49.1%) and cannot be told apart statistically. Their wrong answers are mostly real codes (59% for Opus 5.5, 69% for GPT-6 Sol), so a "does this code exist?" check catches only 31% to 41% of them; most of their invalid codes (68% and 65%) are suffix slips on a real 8-digit tariff line, which a tariff lookup could catch, although the first 8 digits are also right in only 43% and 33% of their invalid answers. About a third of their wrong answers change the duty rate (33% and 38%; median duty at stake $0 per $100,000), and on all 1,098 rulings the lean toward underpaying is detected in GPT-6 Sol (56.6%) but not in Claude Opus 5.5 (46.3%).
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23284516.svg)](https://doi.org/10.5281/zenodo.23284516)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23197896.svg)](https://doi.org/10.5281/zenodo.23197896)
 
 Interactive demo: https://claude.ai/artifact/F7JGzyoPMmeXtaNgDv4R3Z
 
-**v1.2 (2026-10-11).** v1.1 plus more models and runs, and a same-sample restructure: every model is now graded on exactly the same rulings (Table 1: the same 228 rulings after every stated training cutoff; Table 2: the same 1,098 rulings, labelled as an upper bound). Each model's own post-cutoff results are in the appendix of [findings.md](findings.md), together with the run settings and every deviation from the pre-registrations ([PREREG_v1.1.md](PREREG_v1.1.md), [PREREG_v1.2.md](PREREG_v1.2.md)). The restructure and some of the added runs were decided after the first v1.2 results were seen, and are marked as post hoc there.
+**v1.2 (2026-10-11), released as v1.3.0.** v1.1 plus more models and runs, and a same-sample restructure: every model is now graded on exactly the same rulings (Table 1: the same 228 rulings after every stated training cutoff; Table 2: the same 1,098 rulings, labelled as an upper bound). Each model's own post-cutoff results are in the appendix of [findings.md](findings.md), together with the run settings and every deviation from the pre-registrations ([PREREG_v1.1.md](PREREG_v1.1.md), [PREREG_v1.2.md](PREREG_v1.2.md)). The restructure and some of the added runs were decided after the first v1.2 results were seen, and are marked as post hoc there.
 
 **Headline:** Model choice matters most. On the same 228 rulings (dated July 1 to August 14, 2026, after every stated training cutoff), 8-digit accuracy, the level that sets the duty, runs from 0.0% (gpt-oss-20b) to 53.5% (Claude Opus 5.5). **Claude Opus 5.5 and GPT-6 Sol are tied; both get the 8-digit code right only about half the time.** Paired tests (exact McNemar at 8 digits, Holm-corrected over the 10 neighbouring pairs) find only two real gaps between neighbours in the ranking, DeepSeek V4.1 Flash to Nemotron 3 Ultra (adjusted p = 0.003) and Claude Haiku 5.5 to gpt-oss-120b (adjusted p < 0.0001); every other neighbouring pair is a tie, including Opus 5.5 against GPT-6 Sol (p = 0.20 before correction) and GPT-6 Sol against Sonnet 5.5 (p = 0.009 before correction, 0.073 after: borderline, not established). That gives four tiers: Opus 5.5 and GPT-6 Sol; Sonnet 5.5, Kimi K3 and DeepSeek V4.1 Flash; Nemotron 3 Ultra, GLM 5.3 and Haiku 5.5; and the three small models (under 4%). For Opus 5.5, GPT-6 Sol, Sonnet 5.5, Kimi K3, DeepSeek V4.1 Flash and Nemotron 3 Ultra most invalid codes are suffix slips on a real tariff line (53% to 69% of invalid answers on the 228); Claude Haiku 5.5 invents about as often as it slips and GLM 5.3 more often, and the three small models mostly invent codes. **The underpay lean is not a property of every model.** On all 1,098 rulings (Table 2, an upper bound) it is 46% to 67% of duty-changing errors and Gate B is met, also under a Holm correction, in 7 of 11 models (the three small models, GLM 5.3, Kimi K3, Haiku 5.5 and GPT-6 Sol) and not met in Claude Opus 5.5 (46.3%, n = 268), Sonnet 5.5, DeepSeek V4.1 Flash and Nemotron 3 Ultra. GPT-6 Sol, the second most accurate, shows the lean (56.6%, n = 256), so these tables do not support the idea that the lean fades as models improve. On the 228 the underpaid shares rest on 9 to 91 duty-changing errors and are descriptive only. All duty figures are MFN-only lower bounds.
 
@@ -134,6 +134,15 @@ uv pip install --python .venv requests pandas scipy matplotlib
 .venv/Scripts/python scripts/run_new_models.py --model <model_id> --probe    # Check A, ruling number only
 .venv/Scripts/python scripts/verify_parser.py             # new parser vs every cached v1.0 answer
 .venv/Scripts/python scripts/analyze_format_vs_invention.py
+
+# v1.2 (same-sample restructure; no API calls, reads the cached answers):
+.venv/Scripts/python scripts/analyze_v1_1.py            # each model's own post-cutoff results (findings appendix)
+.venv/Scripts/python scripts/analyze_same_sample.py     # Tables 1 and 2: every model on the same 228 / 1,098 rulings, paired tests, Gate B
+.venv/Scripts/python scripts/analyze_all_rulings.py     # all-ruling vs own post-cutoff scores
+.venv/Scripts/python scripts/analyze_time_drift.py      # accuracy before/after 2026-04-20
+.venv/Scripts/python scripts/analyze_replication.py     # repeat-run agreement
+.venv/Scripts/python scripts/make_error_breakdown_chart.py   # figures/error_breakdown.png and error_breakdown_all.png
+.venv/Scripts/python scripts/verify_readme_numbers.py   # recomputes every README table number from the raw answers (must report 0 mismatches)
 .venv/Scripts/python scripts/analyze_v1_1.py              # review/v1_1_results.md, biggest_misses.md
 .venv/Scripts/python scripts/export_api_calls.py          # data/exports/api_calls.csv
 ```
@@ -192,4 +201,4 @@ This project's own code is MIT licensed; its analysis and findings are CC BY 4.0
 
 ## Cite this work
 
-Emssaad, A. Tariff Cost Benchmark: Duty-at-Stake and Direction Bias in LLM Customs Classification. Zenodo. https://doi.org/10.5281/zenodo.23197896
+Emssaad, A. Tariff Cost Benchmark: Duty-at-Stake and Direction Bias in LLM Customs Classification (v1.3). Zenodo. https://doi.org/10.5281/zenodo.23289975 (all versions: https://doi.org/10.5281/zenodo.23197896)
