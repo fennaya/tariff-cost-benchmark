@@ -8,11 +8,11 @@
 - **v1.1 (version 1.1.0 in CITATION.cff):** deviations from the pre-registration (the unhonoured parser stop, the paid GPT-6 Sol route, and the others) are listed in findings.md under "Deviations from pre-registration". Pre-registered in [PREREG_v1.1.md](PREREG_v1.1.md) before any new call. Adds DeepSeek V4.1 Flash, GLM 5.3 and Kimi K3 (Baseten free credits, 1,098 rulings each), Nemotron 3 Ultra (OpenRouter free tier, 200 rulings) and GPT-6 Sol (OpenRouter, paid, hard cap $2, 200 rulings; run at the user's request, spend $0.20). Results: [findings.md](findings.md) final section, [review/v1_1_results.md](review/v1_1_results.md), [review/v1_1_attack.md](review/v1_1_attack.md), [review/format_vs_invention.md](review/format_vs_invention.md), [review/biggest_misses.md](review/biggest_misses.md). All calls: `data/exports/api_calls.csv`.
 - **Description quality (found after pre-registration):** 40 of 1,098 rulings (3.6%) have a cleaned description that is not a product description (`scripts/audit_description_quality.py`, `review/description_quality.md`, hand spot check in `review/description_quality_spotcheck.md`). Excluding them changes no Gate B verdict; ranges move by a few points (see findings.md). The biggest-misses list drops the 5 rows from those rulings, and `demo_data.json` marks them `inadequate_description`.
 - **OpenRouter run:** finished 2026-10-07 (the live allowance was 1,000 free requests a day, not 50, so all 200 ran in one day). `scripts/run_openrouter_daily.bat` is a no-op now and exists as insurance; no scheduled task was created for it.
-- **Gemini** (`gemini-3.8-flash`, fixed 200-ruling subset in `data/gemini_subset.csv`) is **not progressing: 2 of 200 are cached** and it is in no table (`scripts/models_config.py` skips incomplete runs). History: on 2026-10-05 the daily free-tier quota was hit after 2 successes; the Task Scheduler job `GeminiTariffDailyRun` (daily 09:00, registered 2026-10-06 19:50) logged no run on Oct 7 to 9 (it only runs while the user is logged on, not on battery, and does not catch up missed runs), and on 2026-10-10 it started but exited with code 103 ("No Python at ...") although the same `.venv` Python runs fine interactively; the cause was not found. It has not been fixed or rerun (standing instruction); at 20 rulings a day it needs about 9 more successful days. Check progress with `python scripts/gemini_status.py`.
+- **Gemini was dropped on 2026-10-11** (user's decision): the Task Scheduler job was deleted, the Gemini scripts, config entry and local caches were removed, and the 200-ruling sample file was renamed `data/sample200.csv`. No Gemini result was ever published. The history is kept in the "Task 1" section below and in DECISIONS.md.
 - **Parked:** nothing blocking. One pre-registered check did not pass cleanly (1 of 3,294 re-parsed v1.0 answers parsed differently; cached values kept), see DECISIONS.md. The top-ranked free OpenRouter model (Inkling) refused API access, so Nemotron 3 Ultra was used.
 - **Tracked in git** (same as the README's "What is tracked" section): `data/raw/rulings/` and `data/raw/search_pages/`, `data/processed/`, `data/compact/` (HTS codes and rates, including `hts_older/` and `hts_rates/` parsed from archived release PDFs), `llm_logs/`, `llm_probes/`, `llm_followups/`, `run_logs/`, `data/exports/`, `review/`, `figures/`, and all scripts. **Not tracked:** `data/raw/hts_revisions/` and `data/raw/hts_older_pdf/`, plus the local-only Gemini files.
 - **Duty rates were re-checked** against each ruling-date release's archived PDF: 0 of 4,060 (code, ruling date) pairs differ from the current schedule.
-- **Next:** cut a new release if the latest commits should be archived (they are after v.1.3.0). Decide what to do about the Gemini task (fix the Python path and the missed-run settings, or remove it). When Gemini reaches 200 rulings: rerun the analysis scripts (it is picked up from config.json automatically), `git add -f llm_logs/gemini-3.8-flash` and the Gemini comparison files that are gitignored, add Gemini to the write-up, and cut the release.
+- **Next:** cut a new release if the latest commits should be archived (they are after v.1.3.0).
 
 ## History
 
@@ -23,7 +23,6 @@ Round-by-round notes. Where an older line was superseded, it has been corrected 
 - Lead finding (v1.0 models; v1.1 stronger models behave differently, see findings.md): free models mostly return codes that do not exist (88.7% to 98.4% of wrong answers), and most are not near misses (suffix-only is 6.7% to 22.9% of invalid answers). Outdated codes explain 1 invalid answer. A validity check flags 88.7% to 98.4% of wrong answers; a one-turn retry turned 1.5% to 7.2% of invalid answers into valid codes, none correct. See findings.md and `review/invalid_breakdown.md`, `review/guardrail.md`, `figures/error_breakdown.png`.
 - **Data problem found and checked:** the Phase 3 "per-revision" HTS files were all the current schedule (the export API ignores `release`). Impact on validity checks: 1 answer. Duty rates were then re-checked against each ruling-date release: 0 of 4,060 code-date pairs differ. Details in DECISIONS.md.
 - Final fixes: validity-check framing (detects 88.7% to 98.4% of wrong answers; retry repairs none), underpay n/CI/baseline p reported per model, and MFN rates re-checked against each ruling-date release (0 of 4,060 code-date pairs had a different rate). A markup bug in rate parsing was fixed in the same pass (Gate 3: 1,077/1,098). See DECISIONS.md.
-- Gemini run unchanged (in progress, no results published).
 
 ### Task 2 (pre-publish sweep): DONE, all 3 fixes applied (2026-10-05)
 
@@ -42,7 +41,11 @@ proposed fixes are now applied, not just reported:
 - **Data license fix applied:** README now has a "Data license" section citing 17
   U.S.C. § 105 and CBP's own public-domain statement for its site content.
 
-### Task 1 (Gemini as a 4th model): IN PROGRESS, correctly diagnosed and now resumable
+### Task 1 (Gemini as a 4th model): ABANDONED 2026-10-11
+
+Dropped at the user's request: nothing from this attempt is published or used, and the files it mentions below were removed. The text is kept as the history of the attempt.
+
+(Original heading: IN PROGRESS, correctly diagnosed and now resumable.)
 
 - **Root cause of the slow rate, found 2026-10-05 by reading the actual 429 error body**
   (not inferring from timing, which is how the earlier "resets at Pacific midnight"
@@ -58,7 +61,7 @@ proposed fixes are now applied, not just reported:
   `thinkingConfig.thinkingLevel: "low"` (the API's minimum — "minimal" errors), no
   `tools` key (grounding/tools off), temperature 0, same prompt.
   `min_request_interval=13.0` paces calls under the 5/min cap proactively.
-- **Fixed 200-ruling sample drawn before any new calls:** `data/gemini_subset.csv`
+- **Fixed 200-ruling sample drawn before any new calls:** `data/sample200.csv`
   (seed 20261005, from `scripts/build_gemini_subset.py`), not the full 661-ruling
   eligible pool — a defined, reproducible comparison population rather than whatever
   happened to finish.
@@ -126,7 +129,7 @@ classification task itself is unusually hard: prior work reports 10-digit scores
 
 ### What's NOT done (possible future rounds, not started)
 
-- Gemini's run is in progress, not complete: see Task 1 above; it goes into v1.1.
+- Gemini was dropped on 2026-10-11 (see Task 1 above).
 - No larger-sample language comparison to resolve the "not detected at this sample
   size" result.
 - No testing of non-free-tier or fine-tuned models.

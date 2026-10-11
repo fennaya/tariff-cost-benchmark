@@ -1,5 +1,5 @@
 """
-Guardrail test (Groq models only, on the fixed 200-ruling sample in data/gemini_subset.csv):
+Guardrail test (Groq models only, on the fixed 200-ruling sample in data/sample200.csv):
 when a model's FIRST answer is an invalid code, send exactly one follow-up turn,
 "That code does not exist in the current HTS. Give a valid 10-digit code.", with the
 original prompt and the model's own first reply as the conversation history. Same
@@ -24,7 +24,7 @@ from run_llm_classification import build_messages, parse_prediction, code_is_val
 
 ROOT = Path(__file__).resolve().parent.parent
 FOLLOWUP_PROMPT = "That code does not exist in the current HTS. Give a valid 10-digit code."
-SUBSET_PATH = ROOT / "data" / "gemini_subset.csv"
+SUBSET_PATH = ROOT / "data" / "sample200.csv"
 USABLE_PATH = ROOT / "data" / "processed" / "usable_rulings.jsonl"
 LLM_LOGS_DIR = ROOT / "llm_logs"
 OUT_DIR = ROOT / "llm_followups"

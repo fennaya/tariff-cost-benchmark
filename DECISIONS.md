@@ -1059,3 +1059,13 @@ Requested by the user. Hard rules: no API calls, no change to PROMPT_TEMPLATE, t
 - The 10-digit range in the closing paragraph is now "0.0% to 34.2% on the same 228 rulings".
 
 **API calls:** none were made for this restructure (no script that contacts a network was run; `run_logs/api_calls.jsonl` and `data/exports/api_calls.csv` are unchanged). Spend stays $0.
+
+## 2026-10-11 -- Gemini dropped entirely
+
+At the user's request ("take gemini off entirely and stop it, we don't need it"). No Gemini result was ever published or used in any table; the run had 2 of 200 rulings cached for `gemini-3.8-flash` (plus 19 for the earlier `gemini-3.7-flash`).
+
+**What was removed.** The Windows Task Scheduler job `GeminiTariffDailyRun` (unregistered, confirmed gone, no Gemini process running); scripts `run_gemini_classification.py`, `run_gemini_daily.bat`, `gemini_status.py`, `analyze_gemini_comparison.py` and `build_gemini_subset.py`; the Gemini client code in `scripts/llm_client.py`; the `gemini-3.8-flash` entry in `config.json`; the Gemini lines in `.gitignore` and the Gemini special-cases in `export_api_calls.py` and `analyze_v1_1.py`; and the local, untracked Gemini data (`llm_logs/gemini-3.7-flash`, `llm_logs/gemini-3.8-flash`, `logs/gemini_daily.log`, `review/gemini_comparison.*`; 21 cached responses in total).
+
+**What was kept, and why.** (1) The fixed 200-ruling sample is still used by the same-200 tables and the guardrail test for other models, so `data/gemini_subset.csv` was renamed `data/sample200.csv` (same content) and the code that reads it was updated. (2) The older entries in this file, BLOCKERS.md, PREREG_v1.1.md and the STATUS.md "Task 1" history keep their Gemini text as the record of what was tried; STATUS.md marks it abandoned. (3) The ATLAS citation "Gemini-2.5-Pro-Thinking" in findings.md and audit_accuracy is prior work, not this project's model. (4) The user's own `.env` was not touched: it may still hold a Google key, which is no longer used by anything and can be deleted.
+
+**Documents corrected.** findings.md (v1.0 intro, v1.1 "two exceptions", dated deviations, v1.2 intro and limits), review/v1_1_attack.md and review/v1_2_attack.md no longer say Gemini is running or "in no table"; v1_1_results.md and guardrail.md were regenerated (analysis only, no API calls). The README had no Gemini text left after the earlier cleanup. No model results changed.

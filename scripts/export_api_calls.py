@@ -4,8 +4,7 @@ calls can be analysed elsewhere (spreadsheet, pandas, R). Covers every cached ca
 v1.0 Groq models, the v1.1 models (llm_logs/), and the memorisation probes (llm_probes/).
 The raw requests and full responses stay in the cache files named in the last column.
 Also writes data/exports/api_calls_summary.csv (one row per model and kind) and prints it.
-No keys or prompts are written. Gemini cache files are included only if
-TARIFF_INCLUDE_PARTIAL=1 (its run is unpublished until all 200 are done).
+No keys or prompts are written.
 """
 import csv
 import json
@@ -56,8 +55,6 @@ def main():
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         for m in M.load():
-            if m["provider"] == "gemini" and not include_partial:
-                continue
             for kind, base in (("main", M.model_dir(m)), ("probe", ROOT / "llm_probes" / M.dir_name(m))):
                 for row in rows_for(m, base, kind):
                     w.writerow(row)

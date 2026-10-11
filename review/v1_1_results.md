@@ -1,6 +1,6 @@
 # v1.1 results (scripts/analyze_v1_1.py)
 
-Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown or after 2026-08-14 the model is labelled "contamination not ruled out" and the primary rows are all its rows. Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. † contamination not ruled out (no stated cutoff); treat this model's accuracy as an upper bound. Closed models in the tables: GPT-6 Sol and Claude Haiku/Sonnet/Opus 5.5 (paid, via OpenRouter); Gemini is not in any table and no other closed model was tested. Duty figures are MFN-only lower bounds.
+Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stated training cutoff; if the cutoff is unknown or after 2026-08-14 the model is labelled "contamination not ruled out" and the primary rows are all its rows. Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. † contamination not ruled out (no stated cutoff); treat this model's accuracy as an upper bound. Closed models in the tables: GPT-6 Sol and Claude Haiku/Sonnet/Opus 5.5 (paid, via OpenRouter); no other closed model was tested. Duty figures are MFN-only lower bounds.
 
 ## Models and scope
 
@@ -82,7 +82,7 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 | anthropic/claude-sonnet-5.5 | 170 | 52.4% (44.9% to 59.7%) | 58 | 0 of 58 | 92 | 20 of 92 |
 | anthropic/claude-opus-5.5 | 153 | 41.2% (33.7% to 49.1%) | 75 | 0 of 75 | 122 | 27 of 122 |
 
-## Same-200 comparison (all models restricted to the 200 rulings in data/gemini_subset.csv; all dates, secondary)
+## Same-200 comparison (all models restricted to the 200 rulings in data/sample200.csv; all dates, secondary)
 
 | Model | n | 6-digit | 8-digit | 10-digit | Invalid share |
 |---|---|---|---|---|---|
@@ -98,7 +98,7 @@ Pre-registration: PREREG_v1.1.md. Primary = rulings dated after the model's stat
 | anthropic/claude-sonnet-5.5 | 200 | 56.0% (49.1% to 62.7%) | 41.5% (34.9% to 48.4%) | 21.5% (16.4% to 27.7%) | 37.5% (31.1% to 44.4%) |
 | anthropic/claude-opus-5.5 | 200 | 66.0% (59.2% to 72.2%) | 55.5% (48.6% to 62.2%) | 39.5% (33.0% to 46.4%) | 27.5% (21.8% to 34.1%) |
 
-## Same-sample table: all 11 models on the same 200 rulings (data/gemini_subset.csv; all dates, secondary)
+## Same-sample table: all 11 models on the same 200 rulings (data/sample200.csv; all dates, secondary)
 
 The 200 rulings are dated 2026-04 to 2026-08. Models with a cutoff inside that window (Nemotron 3 Ultra, GPT-6 Sol) are scored here on all 200, including rulings before their cutoff. FORMAT / INVENTED is the split of each model's invalid answers on these rulings (groups in review/format_vs_invention.md). Underpay uses the rate-changing errors among these 200 only, so n is small; the share is shown with its Wilson 95% CI and is not a Gate B test.
 

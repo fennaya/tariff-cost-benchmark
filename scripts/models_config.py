@@ -4,7 +4,7 @@ config.json through this module, so no model name is hardcoded elsewhere.
 
 A model entry in config.json has: provider, model_id, training_cutoff(+source), and for
 v1.1 models also: cohort ("v1.0" | "v1.1"), sample ("all" = the 1,098 usable rulings, or
-"subset200" = data/gemini_subset.csv), extra_params (request fields for the chosen
+"subset200" = data/sample200.csv), extra_params (request fields for the chosen
 reasoning level), prices per 1M tokens, and optionally `dir_name`.
 
 Responses are cached in llm_logs/<dir_name>/<rulingNumber>.json. dir_name defaults to
@@ -18,7 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config.json"
 LLM_LOGS_DIR = ROOT / "llm_logs"
-SUBSET_PATH = ROOT / "data" / "gemini_subset.csv"
+SUBSET_PATH = ROOT / "data" / "sample200.csv"
 USABLE_PATH = ROOT / "data" / "processed" / "usable_rulings.jsonl"
 
 

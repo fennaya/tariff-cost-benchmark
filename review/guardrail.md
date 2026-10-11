@@ -1,6 +1,6 @@
 # Guardrail test: one follow-up turn after an invalid first answer
 
-200 rulings (data/gemini_subset.csv), Groq models only. Follow-up text: "That code does not exist in the current HTS. Give a valid 10-digit code."
+200 rulings (data/sample200.csv), Groq models only. Follow-up text: "That code does not exist in the current HTS. Give a valid 10-digit code."
 
 | Model | invalid first answers | follow-up valid code (fixed) | fixed and correct (10-digit) | still invalid | 8-digit acc before | 8-digit acc after | 10-digit acc before | 10-digit acc after |
 |---|---|---|---|---|---|---|---|---|

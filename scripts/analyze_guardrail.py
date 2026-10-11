@@ -20,9 +20,9 @@ MODELS = [m for m in M.model_ids() if (ROOT / "llm_followups" / M.dir_name(M.by_
 
 
 def main():
-    ids = [r["rulingNumber"] for r in csv.DictReader((ROOT / "data" / "gemini_subset.csv").open(encoding="utf-8"))]
+    ids = [r["rulingNumber"] for r in csv.DictReader((ROOT / "data" / "sample200.csv").open(encoding="utf-8"))]
     res, L = {}, ["# Guardrail test: one follow-up turn after an invalid first answer\n",
-                  f"{len(ids)} rulings (data/gemini_subset.csv), Groq models only. Follow-up text: "
+                  f"{len(ids)} rulings (data/sample200.csv), Groq models only. Follow-up text: "
                   "\"That code does not exist in the current HTS. Give a valid 10-digit code.\"\n",
                   "| Model | invalid first answers | follow-up valid code (fixed) | fixed and correct (10-digit) | still invalid | 8-digit acc before | 8-digit acc after | 10-digit acc before | 10-digit acc after |",
                   "|---|---|---|---|---|---|---|---|---|"]

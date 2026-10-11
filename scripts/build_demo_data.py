@@ -40,7 +40,7 @@ def main():
 
     per_ruling = {}
     # Models come from config.json (complete runs only, so a partial or unpublished run such
-    # as an unfinished Gemini cache never reaches the demo). Keyed by model_id, or
+    # as an unfinished run never reaches the demo). Keyed by model_id, or
     # "<model_id>/lang_ar" for a translation run.
     pairs = []
     for m in M.analysis_models():
