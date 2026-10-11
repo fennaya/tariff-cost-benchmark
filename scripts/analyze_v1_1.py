@@ -140,7 +140,7 @@ def main():
         "or after 2026-08-14 the model is labelled \"contamination not ruled out\" and the primary rows are all its rows. "
         "Models on the 200-ruling sample always show n; they are compared only with other models on the same 200 rulings. "
         + DAGGER_NOTE + " "
-        "Closed models in the tables: GPT-6 Sol and Claude Haiku/Sonnet/Opus 5.5 (paid, via OpenRouter); Gemini is not in any table and no other closed model was tested. Duty figures are MFN-only lower bounds.\n")
+        "Closed models in the tables: GPT-6 Sol and Claude Haiku/Sonnet/Opus 5.5 (paid, via OpenRouter); no other closed model was tested. Duty figures are MFN-only lower bounds.\n")
 
     out("## Models and scope\n")
     out("| Model | Provider | Rulings run | Stated cutoff (source) | Contamination status | Primary rows | Reasoning setting |")
@@ -212,7 +212,7 @@ def main():
         ids200 = [row["rulingNumber"] for row in csv.DictReader(f)]
     if ids200:
         s200 = set(ids200)
-        out(f"\n## Same-200 comparison (all models restricted to the {len(s200)} rulings in data/gemini_subset.csv; all dates, secondary)\n")
+        out(f"\n## Same-200 comparison (all models restricted to the {len(s200)} rulings in data/sample200.csv; all dates, secondary)\n")
         out("| Model | n | 6-digit | 8-digit | 10-digit | Invalid share |")
         out("|---|---|---|---|---|---|")
         for m in models:
@@ -223,7 +223,7 @@ def main():
 
     # ---- same-sample table (all models on the same 200 rulings)
     if ids200:
-        out(f"\n## Same-sample table: all {len(models)} models on the same {len(s200)} rulings (data/gemini_subset.csv; all dates, secondary)\n")
+        out(f"\n## Same-sample table: all {len(models)} models on the same {len(s200)} rulings (data/sample200.csv; all dates, secondary)\n")
         out("The 200 rulings are dated 2026-04 to 2026-08. Models with a cutoff inside that window (Nemotron 3 Ultra, GPT-6 Sol) are scored here on all 200, including rulings before their cutoff. FORMAT / INVENTED is the split of each model's invalid answers on these rulings (groups in review/format_vs_invention.md). Underpay uses the rate-changing errors among these 200 only, so n is small; the share is shown with its Wilson 95% CI and is not a Gate B test.\n")
         out("| Model | n | 8-digit accuracy (95% CI) | Invalid share (95% CI) | FORMAT / INVENTED of invalid | Underpay share (95% CI), n rate-changing |")
         out("|---|---|---|---|---|---|")
@@ -519,7 +519,7 @@ def main():
         lat = [r["latency_s"] for r in rows if r.get("latency_s")] or [u["total_time"] for u in us if u.get("total_time")]
         fin = Counter(r.get("finish_reason") or ((r["raw_response"].get("choices") or [{}])[0].get("finish_reason")) for r in rows)
         pin, pout = m.get("price_in_per_1m"), m.get("price_out_per_1m")
-        cost = "free tier" if m["provider"] in ("groq", "gemini") or (pin == 0 and pout == 0) else f"${1000 * (tin * pin + tout * pout) / 1e6:.2f}"
+        cost = "free tier" if m["provider"] == "groq" or (pin == 0 and pout == 0) else f"${1000 * (tin * pin + tout * pout) / 1e6:.2f}"
         out(f"| {m['model_id']} | {len(rows)} | {tin:.0f} | {tout:.0f} | {np.mean(lat):.1f} | {dict(fin)} | {cost} |" if lat else
             f"| {m['model_id']} | {len(rows)} | {tin:.0f} | {tout:.0f} | n/a | {dict(fin)} | {cost} |")
     out(f"\n**Number of extra (exploratory) hypothesis tests run: {n_tests}** (McNemar pairs at two levels, plus the 8-digit-level baseline tests). The other extras are descriptive.")

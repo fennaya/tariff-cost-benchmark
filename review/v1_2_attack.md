@@ -54,7 +54,7 @@ Written after the v1.2 runs, as a hostile reviewer would, repeating the checks o
 - **Suffix slips are not "nearly right".** Among Opus' 229 answers whose first 8 digits are a real tariff line but whose suffix is wrong or missing, only 131 (57%) have the true code's first 8 digits; the rest name a different line. For the suffix-only slips of Haiku the picture is similar (94 of 343 format answers).
 - **Stale training data is still visible.** 93 of Opus' invalid answers (8.5% of all rulings), 73 of Sonnet's, 88 of GPT-6 Sol's and 45 of Haiku's are 10-digit codes that existed in a 2022 to 2025 HTS release but not in the 2026 schedule. A validity check cannot fix a model whose suffix table is a year old.
 - **Cost.** The round cost $21.36 in OpenRouter usage (cap $30), $10.96 of it for Opus 5.5 and $6.60 for Sonnet 5.5. The cap was raised from $25 on the user's instruction after the pilot; the spend stayed under the original cap.
-- **Closed models.** GPT-6 Sol and the three Claude models are one model each on one task; nothing here says how other GPT, Claude or Gemini models would score. Gemini 3.8 Flash is in no table.
+- **Closed models.** GPT-6 Sol and the three Claude models are one model each on one task; nothing here says how other GPT or Claude models would score.
 - **Duty figures.** MFN-only lower bounds, unchanged from v1.1.
 
 ## 9. "The Nemotron extension and the all-ruling column were added after you saw the results."

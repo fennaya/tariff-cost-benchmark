@@ -1,0 +1,24 @@
+661 usable rulings dated >= 2026-04-01 (Gemini's post-cutoff window)
+  [503] gemini/gemini-3.7-flash: overloaded, sleeping 5s (attempt 1/10)
+  [429] gemini/gemini-3.7-flash: sleeping 15s (attempt 1/10)
+  [429] gemini/gemini-3.7-flash: sleeping 30s (attempt 2/10)
+  [429] gemini/gemini-3.7-flash: sleeping 45s (attempt 3/10)
+  [429] gemini/gemini-3.7-flash: sleeping 60s (attempt 4/10)
+  [429] gemini/gemini-3.7-flash: sleeping 75s (attempt 5/10)
+  [429] gemini/gemini-3.7-flash: sleeping 90s (attempt 6/10)
+  [429] gemini/gemini-3.7-flash: sleeping 105s (attempt 7/10)
+  [429] gemini/gemini-3.7-flash: sleeping 120s (attempt 8/10)
+  [429] gemini/gemini-3.7-flash: sleeping 120s (attempt 9/10)
+  [429] gemini/gemini-3.7-flash: sleeping 120s (attempt 10/10)
+Traceback (most recent call last):
+  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_gemini_classification.py", line 102, in <module>
+    main()
+  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_gemini_classification.py", line 92, in main
+    results.append(classify_one_gemini(provider, row, out_dir))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\run_gemini_classification.py", line 49, in classify_one_gemini
+    raw = gemini_chat_completion(provider, MODEL_ID, prompt_text, temperature=0.0, thinking_level="low")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emssa\Downloads\tariff-cost-benchmark\scripts\llm_client.py", line 200, in gemini_chat_completion
+    raise RuntimeError(f"Exceeded retries calling gemini/{model}")
+RuntimeError: Exceeded retries calling gemini/gemini-3.7-flash
